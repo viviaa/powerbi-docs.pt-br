@@ -15,6 +15,7 @@ ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34471883"
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Modelagem de linguagem e o esquema linguístico 
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no Power BI Desktop permite que você faça. Quando você faz uma pergunta para P e R do Power BI, ele se esforça para responder corretamente. 
