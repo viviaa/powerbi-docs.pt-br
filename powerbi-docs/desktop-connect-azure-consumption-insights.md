@@ -11,10 +11,10 @@ ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 59723d4c8e241781b7f29773ea182cd5b075e0c2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34288189"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Conectar-se ao Azure Consumption Insights no Power BI Desktop (Beta)
@@ -168,7 +168,7 @@ As colunas e os nomes dos detalhes no Portal do Azure são semelhantes na API e 
 | Subcategoria de Medidor |meterSubCategory |Subcategoria de Medidor |Não |
 | MeterId |meterId |ID de Medidor |Não |
 | Mês | |Mês |Não |
-| Produto |product |Produto |Não |
+| Produto |produto |Produto |Não |
 | ProductId |productId | |Sim |
 | Grupo de recursos |resourceGroup |Grupo de recursos |Não |
 | Local do Recurso |resourceLocation |Local do Recurso |Não |
