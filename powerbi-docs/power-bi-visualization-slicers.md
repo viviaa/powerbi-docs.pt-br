@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 338b72ef39c5b9c9fe454c1063f26602e8ce2299
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721491"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964781"
 ---
 # <a name="slicers-in-power-bi"></a>Segmentação de Dados no Power BI
 Seus leitores de relatório devem poder examinar as métricas gerais de vendas, mas também realçar o desempenho de cada gerente regional individual e em diferentes períodos. Você poderia criar relatórios separados ou gráficos comparativos, ou então usar segmentação. Uma segmentação é uma forma alternativa de filtragem que restringe a parte do conjunto de dados que é mostrada em outras visualizações em um relatório. 
@@ -183,7 +183,7 @@ As outras opções de formatação ficam desativadas por padrão. Quando **Ativa
 - **Borda:** adiciona uma borda de 1 pixel em torno da segmentação e define sua cor. (Essa borda da segmentação é separada e não é afetada pelas configurações do Contorno Geral). 
 
 ## <a name="next-steps"></a>Próximas etapas
-[Experimente – é gratuito!](https://powerbi.com/)
+[Inscrever-se em uma avaliação gratuita](https://powerbi.microsoft.com/get-started/)
 
 Você tem algumas ideias para melhorar o Power BI? [Envie uma ideia](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 
