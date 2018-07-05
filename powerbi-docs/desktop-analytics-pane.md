@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 817e01f83904a8481fa1d0915f671c6761247795
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 957408729812ab348cc171360416ee01b432d2e0
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34287660"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136584"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Usando o painel Análise no Power BI Desktop
 Com o painel **Análise** no **Power BI Desktop**, você pode adicionar *linhas de referência* dinâmica para visuais e destacar tendências ou ideias importantes. O painel **Análise** é localizado na área **Visualizações** do Power BI Desktop.
@@ -114,7 +114,7 @@ Há inúmeras coisas que você pode fazer com o Power BI Desktop. Para obter mai
 
 * [Novidades no Power BI Desktop](desktop-latest-update.md)
 * [Baixe o Power BI Desktop](desktop-get-the-desktop.md)
-* [Introdução ao Power BI Desktop](desktop-getting-started.md)
+* [O que é o Power BI Desktop?](desktop-what-is-desktop.md)
 * [Visão geral de Consulta com o Power BI Desktop](desktop-query-overview.md)
 * [Tipos de dados no Power BI Desktop](desktop-data-types.md)
 * [Formatar e combinar dados com o Power BI Desktop](desktop-shape-and-combine-data.md)

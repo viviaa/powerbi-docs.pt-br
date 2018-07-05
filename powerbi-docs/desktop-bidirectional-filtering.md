@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a584d61e1f2f55c244b453e6c086f3222217ee9a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 43119a700b3b660a2734d1a8f974291a2817ce8e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34288994"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37597988"
 ---
 # <a name="bidirectional-cross-filtering-using-directquery-in-power-bi-desktop"></a>Filtragem cruzada bidirecional usando o DirectQuery no Power BI Desktop
 
@@ -33,13 +33,11 @@ Para habilitar a filtragem cruzada, na caixa de diálogo **Editar Relação** de
 
 * A **Direção do filtro cruzado** deve ser definida como **Ambos**
 * A opção **Aplicar filtro de segurança em ambas as direções** também deve ser selecionada
-  
+
   ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Ao criar fórmulas DAX de filtragem cruzada no Power BI Desktop, use *UserPrincipalName* (que é geralmente o mesmo logon do usuário, como *joe@contoso.com*), em vez de *UserName*. Assim, você poderá precisar criar uma tabela relacionada que mapeia *UserName* (ou EmployeeID, por exemplo) para *UserPrincipleName*.
-> 
-> 
+> Ao criar fórmulas DAX de filtragem cruzada no Power BI Desktop, use *UserPrincipalName* (que é geralmente o mesmo logon do usuário, como <em>joe@contoso.com</em>), em vez de *UserName*. Feito isso, talvez seja necessário criar uma tabela relacionada que mapeia *UserName* (ou EmployeeID, por exemplo) para *UserPrincipalName*.
 
 Para obter mais informações e exemplos de como funciona a filtragem cruzada bidirecional, confira o [white paper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mencionado anteriormente neste artigo.
 
