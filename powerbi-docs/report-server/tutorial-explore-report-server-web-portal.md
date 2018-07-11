@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34444993"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092036"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutorial: Explorar o portal da Web do Servidor de Relatórios do Power BI em uma VM
 Neste tutorial, você cria uma máquina virtual do Azure com o Servidor de Relatórios do Power BI já instalado, para que possa experimentar a exibição, a edição e o gerenciamento de relatórios paginados e de exemplo do Power BI, bem como de KPIs.
@@ -100,7 +100,7 @@ Quando sua VM abrir, estes são os itens que você verá na área de trabalho.
 |![Número 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Iniciar o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI (março de 2018)  |
 |![Número 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Abre o portal da Web do Servidor de Relatórios do Power BI no navegador   |
 
-Clique duas vezes no ícone **Portal da Web do Servidor de Relatórios**. O navegador abre http://localhost/reports/browse. No portal da Web, você verá vários arquivos agrupados por tipo. 
+Clique duas vezes no ícone **Portal da Web do Servidor de Relatórios**. O navegador abre `http://localhost/reports/browse`. No portal da Web, você verá vários arquivos agrupados por tipo. 
 
 ![Portal da Web do Servidor de Relatório do Power BI](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

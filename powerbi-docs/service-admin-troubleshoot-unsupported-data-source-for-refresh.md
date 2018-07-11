@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 9ea17fd80c928ee0193ca94aac88fa00f362a523
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 864e7a3d78386f6996d866f45558add3b51faa69
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240456"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145179"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Solucionando problemas de fonte de dados sem suporte para atualização
 Você verá um erro ao tentar configurar um conjunto de dados para atualização agendada.
@@ -39,7 +39,7 @@ Se você não tiver certeza de qual fonte de dados foi usada, você pode encontr
 
 ## <a name="next-steps"></a>Próximas etapas
 [Atualização de dados](refresh-data.md)  
-[Gateway do Power BI – Pessoal](personal-gateway.md)  
+[Gateway do Power BI – Pessoal](service-gateway-personal-mode.md)  
 [Gateway de dados local](service-gateway-onprem.md)  
 [Solução de problemas do gateway de dados local](service-gateway-onprem-tshoot.md)  
 [Solução de problemas do Gateway do Power BI – Pessoal](service-admin-troubleshooting-power-bi-personal-gateway.md)  

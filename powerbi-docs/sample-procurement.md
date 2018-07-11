@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2018
+ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: aea76437664ca531b65601007783aee10fd90f19
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a43ffab1ff30dd624fadb7dacb3cebc989ba3128
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721974"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944665"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: faça um tour
 
@@ -32,7 +32,7 @@ Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pod
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
- Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [arquivo .pbix](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement-Analysis-Sample-PBIX.pbix) ou [pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkId=529784).
+ Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [arquivo .pbix](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) ou [pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkId=529784).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Obter o pacote de conteúdo para este exemplo
 
@@ -65,7 +65,7 @@ Também é possível [baixar apenas o conjunto de dados (pasta de trabalho do Ex
 Primeiro, vamos analisar as tendências em gastos por categoria e local.  
 
 1. Em seu espaço de trabalho, abra a guia **Dashboards** e selecione o dashboard de Análise de Compras.
-2. Selecione o bloco do painel **Total da nota fiscal por país/região**. Abre a página "Visão Geral de Gasto" do relatório "Exemplo de análise de compras".
+2. Selecione o bloco do painel **Total da fatura por país/região**. Abre a página "Visão Geral de Gasto" do relatório "Exemplo de análise de compras".
 
     ![](media/sample-procurement/procurement2.png)
 
@@ -100,7 +100,7 @@ Vamos explorar as áreas de gastos no México.
 ## <a name="evaluate-different-cities"></a>Avaliar cidades diferentes
 Podemos usar o realce para avaliar cidades diferentes.
 
-1. Selecione o bloco do painel **Total da nota fiscal, % de desconto por mês**. O relatório é aberto para a página de "Análise de desconto".
+1. Selecione o bloco do painel **Total da fatura, % de desconto por mês**. O relatório é aberto para a página de "Análise de desconto".
 2. Selecione as cidades diferentes no mapa de árvore **Total da fatura por cidade** para ver uma comparação delas. Quase todas as faturas de Miami são provenientes de fornecedores da Camada 1.
 
    ![](media/sample-procurement/pbi_procsample_miamitreemap2.png)
@@ -124,7 +124,7 @@ Observe que quando o volume aumenta, o desconto é reduzido e quando o volume es
 ### <a name="discount-by-city"></a>Desconto por cidade
 Outra área para explorar é desconto por cidade. Selecione cada cidade no mapa de árvore e veja como os outros gráficos são alterados.
 
-* St. Louis, MO tinha um grande aumento no total da nota fiscal em fevereiro e uma grande diminuição de economia de desconto em abril.
+* St. Louis, MO tinha um grande aumento no total da fatura em fevereiro e uma grande diminuição de economia de desconto em abril.
 * Cidade do México no México tem a maior porcentagem de desconto (% 11,05) e Atlanta, GA tem a menor (% 0,08).
 
 ![](media/sample-procurement/procurement6.png)

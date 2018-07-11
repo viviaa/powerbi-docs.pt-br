@@ -1,5 +1,5 @@
 ---
-title: Requisitos de Hardware e de Software para a instalação do Servidor de Relatório do Power BI
+title: Requisitos de hardware e de software para a instalação do Servidor de Relatório do Power BI
 description: Aqui você encontrará os requisitos mínimos de hardware e de software para instalar e executar o Servidor de Relatório do Power BI.
 author: markingmyname
 manager: kfile
@@ -7,19 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/13/2018
 ms.author: maghan
-ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481706"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37780538"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Requisitos de hardware e de software para a instalação do Servidor de Relatório do Power BI
 Aqui você encontrará os requisitos mínimos de hardware e de software para instalar e executar o Servidor de Relatório do Power BI.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Requisitos de processador, de memória e de sistema operacional
+
 | Componente | Requisito |
 | --- | --- |
 | .NET Framework |4.6<br><br>É possível instalar manualmente o .NET Framework no [Microsoft .NET Framework 4.6 (instalador da Web) para Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Para obter mais informações, recomendações e diretrizes sobre o .NET Framework 4.6, consulte [Guia de implantação do .NET Framework para desenvolvedores](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>O Windows 8.1 e o Windows Server 2012 R2 requerem [KB2919355](http://support.microsoft.com/kb/2919355) antes da instalação do .NET Framework 4.6. |
@@ -41,8 +42,6 @@ O SQL Server é usado para hospedar os bancos de dados do servidor de relatório
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012
-* SQL Server 2008 R2
-* SQL Server 2008
 
 A criação do banco de dados do servidor de relatório em um computador remoto requer que você configure a conexão para usar uma conta de usuário de domínio ou uma conta de serviço com acesso à rede. Se você decidir usar uma instância remota do SQL Server, considere cuidadosamente quais credenciais o servidor de relatório deverá usar para se conectar à instância do SQL Server. Para obter mais informações, consulte [Configure a Report Server Database Connection (Configurar uma conexão de banco de dados do servidor de relatório)](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 

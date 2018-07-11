@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2dc47d1fdf539c20cc0aabadd65b0401dc172ae8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 087813feb7db96a320c48ed6b2433a7183446c71
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298954"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926503"
 ---
 # <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Tutorial: Conectar-se a dados locais no SQL Server
 
@@ -128,7 +128,7 @@ Agora que tem dados de exemplo com que trabalhar, você se conecta ao SQL Server
 
 ## <a name="add-sql-server-as-a-gateway-data-source"></a>Adicionar o SQL Server como uma fonte de dados do gateway
 
-No Power BI Desktop, você se conecta diretamente ao SQL Server, mas o serviço do Power BI requer que um gateway atue como uma ponte. Agora, você adiciona sua instância do SQL Server como uma fonte de dados para o gateway que criou em um artigo anterior (listado em [Pré-requisitos](#prereqisites)). 
+No Power BI Desktop, você se conecta diretamente ao SQL Server, mas o serviço do Power BI requer que um gateway atue como uma ponte. Agora, você adiciona sua instância do SQL Server como uma fonte de dados para o gateway que criou em um artigo anterior (listado em [Pré-requisitos](#prerequisites)). 
 
 1. No canto superior direito do serviço do Power BI, selecione o ícone de engrenagem ![Configurações](media/service-gateway-sql-tutorial/icon-gear.png)  >  **Gerenciar gateways**.
 
@@ -142,15 +142,17 @@ No Power BI Desktop, você se conecta diretamente ao SQL Server, mas o serviço 
 
     ![Inserir configurações da fonte de dados](media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    | Opção | Valor |
-    | ---    | ---   |
-    | **Nome da fonte de dados**       | test-sql-source      |
-    | **Tipo de fonte de dados**       | SQL Server      |
-    | **Servidor**       |  O nome de sua instância do SQL Server (deve ser idêntico ao que você especificou no Power BI Desktop)    |
-    | **Banco de dados**       | TestGatewayDocs      |
-    | **Método de autenticação**       | Windows      |
-    | **Nome de usuário**        |  A conta, como michael@contoso.com, que você usa para se conectar ao SQL Server     |
-    | **Senha**       |  A senha da conta usada para se conectar ao SQL Server    |
+
+   |          Opção           |                                               Valor                                                |
+   |---------------------------|----------------------------------------------------------------------------------------------------|
+   |   **Nome da fonte de dados**    |                                          test-sql-source                                           |
+   |   **Tipo de fonte de dados**    |                                             SQL Server                                             |
+   |        **Servidor**         | O nome de sua instância do SQL Server (deve ser idêntico ao que você especificou no Power BI Desktop) |
+   |       **Banco de dados**        |                                          TestGatewayDocs                                           |
+   | **Método de autenticação** |                                              Windows                                               |
+   |       **Nome de usuário**        |             A conta, como michael@contoso.com, que você usa para se conectar ao SQL Server             |
+   |       **Senha**        |                   A senha da conta usada para se conectar ao SQL Server                    |
+
 
 4. Selecione **Adicionar**. Você verá *Conexão bem-sucedida* quando o processo for bem-sucedido.
 

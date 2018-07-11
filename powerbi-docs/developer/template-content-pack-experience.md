@@ -1,20 +1,20 @@
 ---
 title: Experiências de pacote de conteúdo de modelo no Power BI
 description: Experiência de pacote de conteúdo de modelo
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: maghan
-ms.openlocfilehash: 1a29767eb76122865e93927bbbec1fbdcebe5678
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.author: maggies
+ms.openlocfilehash: 08ef57499c53c084b3b738e8f847d4b7742aae70
+ms.sourcegitcommit: 6407e053c2c6c6fdb212b059693e90fefbaaadec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290765"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290567"
 ---
 # <a name="template-content-pack-experiences-in-power-bi"></a>Experiências de pacote de conteúdo de modelo no Power BI
 Esta seção destaca uma experiência típica de um usuário se conectando a um [pacote de conteúdo](../service-connect-to-services.md) de ISV. 

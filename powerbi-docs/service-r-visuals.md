@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd4198bb6b826f8d4af22e83e313c4c0b8101024
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 016237c95d3494435931e143ff34dbe4a82abb55
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299299"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599639"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Criar visuais do R no serviço do Power BI
 O serviço do Power BI dá suporte à exibição e interação com visuais criados com scripts do R. Os visuais criados com scripts do R, normalmente chamados de *visuais do R*, podem apresentar formatação e análise de dados avançadas, como previsão, usando o poder da análise e da visualização avançadas do R.
@@ -37,7 +37,7 @@ Depois que o relatório for criado no **Power BI Desktop**, será possível publ
 
 Observe que, no serviço, nem todos os pacotes do R têm suporte. Confira os pacotes com suporte ao final deste artigo para obter a lista dos pacotes atualmente com suporte no serviço do Power BI.
 
-Você pode baixar este [arquivo de exemplo do Power BI Desktop](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample SL.pbix) (arquivo .pbix) que contém alguns visuais do R para ver como isso funciona e testá-lo.
+Você pode baixar este [arquivo de exemplo do Power BI Desktop](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (arquivo .pbix) que contém alguns visuais do R para ver como isso funciona e testá-lo.
 
 Na maioria dos casos, os visuais do R criados no **Power BI Desktop** e publicados no serviço do Power BI, se comportam como qualquer outro visual do serviço do Power BI: é possível interagir, filtrar, segmentá-los e fixá-los em um dashboard ou compartilhá-los com outras pessoas. Para obter mais informações sobre como compartilhar dashboards e visuais, veja [compartilhar um dashboard com seus colegas e com outras pessoas](service-share-dashboards.md). Uma diferença entre os visuais do R e outros visuais é que aqueles não podem mostrar dicas de ferramenta e não podem ser usados para filtrar outros visuais.
 

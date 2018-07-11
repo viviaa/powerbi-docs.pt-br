@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4c8601e15a415e680028b2259a4c2b8e56dbd3b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dce044a3f143ba85732c8345639ea57f44f05d5f
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297229"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926572"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
@@ -41,14 +41,13 @@ Este artigo aborda perguntas frequentes sobre a administração do Power BI. Par
 * [Como remover o Power BI para usuários que já se inscreveram?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Como posso saber se novos usuários ingressaram em meu locatário?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Devo estar preparado para outras questões?](#are-there-any-additional-things-i-should-be-prepared-for)
-* [Ele é gratuito? Serei ser cobrado por essas licenças?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Onde está localizado meu locatário do Power BI?](#where-is-my-power-bi-tenant-located)
 * [O que é o SLA (Contrato de Nível de Serviço) do Power BI?](#what-is-the-power-bi-sla)
 
 **Segurança no Power BI**
 
 * [O Power BI atende aos requisitos de conformidade regional, nacional e específicos do setor?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [Como funciona a segurança no Power BI?](#how-does-security-work-in-power-bi?)
+* [Como funciona a segurança no Power BI?](#how-does-security-work-in-power-bi)
 
 ## <a name="sign-up-for-power-bi"></a>Inscrever-se no Power BI
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Como os usuários podem se inscrever para obter o Power BI?
@@ -232,9 +231,6 @@ Você pode perceber um aumento nas solicitações de redefinição de senha. Par
 
 Você pode remover um usuário do seu locatário pelo processo padrão no centro de administração do Office 365. No entanto, se o usuário ainda tiver um endereço de email ativo de sua organização, ele poderá reingressar, a menos que você bloqueie o ingresso de todos os usuários.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Ele é gratuito? Serei ser cobrado por essas licenças?
-As licenças do **Power BI (gratuito)** são para a versão gratuita do Power BI. Se você estiver interessado em recursos adicionais, veja a [versão do Power BI Pro](service-premium.md).
-
 ### <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado meu locatário do Power BI?
 Para aprender a descobrir onde o locatário do Power BI está localizado, também conhecida como uma região de dados, veja [Onde está localizado meu locatário do Power BI?](service-admin-where-is-my-tenant-located.md)
 
@@ -252,7 +248,6 @@ O Power BI foi criado de acordo com a base do Office 365, que por sua vez baseia
 [Portal de administração do Power BI](service-admin-portal.md)  
 [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md)  
 [Inscrição de autoatendimento no Power BI](service-self-service-signup-for-power-bi.md)  
-[Power BI (gratuito) em sua organização](service-admin-service-free-in-your-organization.md)  
 [Compra do Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium – o que é?](service-premium.md)  
 [Como comprar o Power BI Premium](service-admin-premium-purchase.md)  

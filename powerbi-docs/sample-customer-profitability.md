@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: f20fe4595236381106b6cb2a676ffd3d3baa3971
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fb06b83ca2fe949751337347c91b3947e115286d
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34471768"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944711"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemplo de Rentabilidade do Cliente para o Power BI: faça um tour
 
@@ -48,7 +48,7 @@ Quer me acompanhar? Este tutorial usa o serviço Power BI e o pacote de conteúd
 ### <a name="get-the-pbix-file-for-this-sample"></a>Obter o arquivo. pbix para este exemplo
 
 Como alternativa, você pode baixar o exemplo como um arquivo .pbix, que é projetado para uso com o Power BI Desktop.
-[Exemplo de Rentabilidade do Cliente](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer-Profitability-Sample-PBIX.pbix)
+[Exemplo de Rentabilidade do Cliente](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Obter a pasta de trabalho do Excel para este exemplo
 
@@ -100,7 +100,7 @@ Dois blocos neste painel "Destino vs Real" e "Crescimento de receita ano a ano" 
     a. No controle deslizante "Executivo", selecione **Carlos Lima**.   
     b. A primeira Tabela Dinâmica informa que a receita de Carlos para seu principal produto, Primus, diminuiu 152% desde o ano passado. E o gráfico de ano a ano mostra que na maioria dos meses ele está abaixo do orçamento.  
 
-    ![Tabela Dinâmica](media/sample-customer-profitability/power-bi-pivotchart.png)
+    ![Tabela dinâmica](media/sample-customer-profitability/power-bi-pivotchart.png)
 
     ![resultados de Carlos](media/sample-customer-profitability/power-bi-carlos.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6d0a1afe27372c808e63adb34fda96e978b2e2be
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c25a402138c209eb6a4a36bf39865c30c1c0e5b9
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721376"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598932"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Faça um tour pelo painel Filtros do relatório
 Este artigo oferece uma visão mais detalhada do painel Filtros do relatório. Você verá o painel no [Modo de Exibição de Edição e no Modo de Exibição de Leitura do serviço Power BI](service-reading-view-and-editing-view.md) e no [Modo de Exibição de Relatório do Power BI Desktop](desktop-report-view.md).
@@ -77,7 +77,7 @@ Para exibir opções de um filtro específico, selecione a seta para baixo ao la
 ## <a name="add-a-filter"></a>Adicionar um filtro
 * No modo de exibição de Edição do Power BI Desktop e do serviço do Power BI, adicione um filtro a um visual, página, detalhamento ou relatório selecionando um campo no painel Campos e arrastando-o para o filtro apropriado, no qual você verá as palavras **Arrastar campos aqui**. Após a adição de um campo como um filtro, ajuste-o usando os controles de filtragem Básica e Avançada (descritos abaixo).
 
-- **Arrastar um novo campo na área Filtro de nível visual não adicionará esse campo ao visual**, mas permitirá que você filtre esse visual com o novo campo. No exemplo a seguir, **Cadeia** é adicionado como um novo filtro para o visual. Observe que apenas adicionar **Cadeia** como um filtro não altera o visual até que você use os controles Básico ou Avançado de filtragem.
+* **Arrastar um novo campo na área Filtro de nível visual não adicionará esse campo ao visual**, mas permitirá que você filtre esse visual com o novo campo. No exemplo a seguir, **Cadeia** é adicionado como um novo filtro para o visual. Observe que apenas adicionar **Cadeia** como um filtro não altera o visual até que você use os controles Básico ou Avançado de filtragem.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 859ab3fdfd06040d8bbf131ab91ea6c9f84deb40
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d298c750d23e22ef0a6b2791916add13bb260ad0
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241937"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965195"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gerenciar seu espaço de trabalho de aplicativo no Power BI e no Office 365
 Como criador ou administrador de um [espaço de trabalho de aplicativo no Power BI](service-install-use-apps.md) ou no Office 365, você gerencia alguns aspectos do seu espaço de trabalho no Power BI. Outros aspectos que você gerencia no Office 365. 
@@ -33,7 +33,7 @@ Como criador ou administrador de um [espaço de trabalho de aplicativo no Power 
 * Ver o endereço de email do grupo.
 * Excluir o grupo.
 
-Você precisa de uma licença do [Power BI Pro](service-free-vs-pro.md) para ser um administrador ou um membro de um espaço de trabalho do aplicativo. Os usuários de seu aplicativo também precisam de uma licença do Power BI Pro, a menos que seu espaço de trabalho do aplicativo esteja em uma capacidade do Power BI Premium. Os usuários empresariais podem acessar seu aplicativo com uma licença gratuita do Power BI. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
+Você precisa de uma licença do [Power BI Pro](service-free-vs-pro.md) para ser um administrador ou um membro de um espaço de trabalho do aplicativo. Os usuários de seu aplicativo também precisam de uma licença do Power BI Pro, a menos que seu espaço de trabalho do aplicativo esteja em uma capacidade do Power BI Premium. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Editar seu espaço de trabalho de aplicativo no Power BI
 1. No serviço do Power BI, selecione a seta ao lado de **Espaços de trabalho** > selecione as reticências (**...**) ao lado do nome do espaço de trabalho > **Editar espaço de trabalho**. 

@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296287"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600360"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Usar ferramentas de desenvolvedor para criar visuais personalizados
 Os visuais personalizados permitem atender às necessidades dos usuários e corresponder ao design do aplicativo. Aprenda como criar um visual personalizado para o Power BI usando as ferramentas de desenvolvedor.
@@ -32,14 +32,14 @@ Para criar um visual personalizado, você precisará instalar o NodeJS. O NodeJS
 
 1. Baixe e instale o [NodeJS](https://nodejs.org). A versão 4.0 ou posterior é obrigatória, mas é recomendado ter a 5.0 ou posterior.
 2. Instale as ferramentas de linha de comando. Execute o seguinte comando em um prompt de comando.
-   
+
         npm install -g powerbi-visuals-tools
 3. Você pode confirmar se as ferramentas estão instaladas executando o seguinte comando sem parâmetros.
-   
+
         pbiviz
-   
+
     Você verá a saída da ajuda.
-   
+
     <pre><code>
          +syyso+/
     oms/+osyhdhyso/
@@ -59,22 +59,22 @@ Para criar um visual personalizado, você precisará instalar o NodeJS. O NodeJS
                /dmmh /mmmm/ /osyhhy/
                  //   dmmd
                        ++
-   
+
        PowerBI Custom Visual Tool
-   
+
     Usage: pbiviz [options] [command]
-   
+
     Commands:
-   
+
     new [name]        Create a new visual
     info              Display info about the current visual
     start             Start the current visual
     package           Package the current visual into a pbiviz file
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
-   
+
     Options:
-   
+
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
@@ -103,7 +103,7 @@ Para *criar* um certificado, execute o seguinte comando.
 Para *instalar* o certificado, execute o seguinte comando.
 
     pbiviz --install-cert
-    
+
 > [!NOTE]
 > Você verá uma mensagem informando para usar sua frase secreta recém-gerada para instalar um certificado PFX.
 > 
@@ -112,20 +112,20 @@ Para *instalar* o certificado, execute o seguinte comando.
 **Sistema operacional Windows**
 
 1. Selecione **Instalar Certificado...**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Selecione **Usuário Atual** e, em seguida, **Avançar**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Selecione **Colocar todos os certificados no repositório a seguir** e selecione **Procurar...**.
 4. Selecione **Autoridades de Certificação Confiáveis** e, em seguida, **OK**. Selecione **Avançar**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Selecione **Concluir**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Selecione **Sim** na caixa de diálogo de aviso de segurança.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Feche todos os navegadores que estiverem abertos.
 
@@ -137,13 +137,13 @@ Para *instalar* o certificado, execute o seguinte comando.
 **OSX**
 
 1. Se o bloqueio na parte superior esquerda estiver bloqueado, selecione-o para desbloquear. Pesquise *localhost* e clique duas vezes no certificado.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Selecione **Sempre Confiar** e feche a janela.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Insira seu nome de usuário e sua senha. Selecione **Atualizar Configurações**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Feche todos os navegadores que estiverem abertos.
 
@@ -157,15 +157,15 @@ Para habilitar uma visualização dinâmica de seu visual personalizado, siga es
 
 1. Procure [app.powerbi.com](https://app.powerbi.com) e entre.
 2. Selecione o **ícone de engrenagem** e, em seguida, **Configurações**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Selecione **Desenvolvedor** e, em seguida, **Habilitar visual do desenvolvedor para teste**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Selecione o **Visual do Desenvolvedor** no painel **Visualização**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
-   
+
    > [!NOTE]
    > Para isso, é necessário ter executado `pbiviz start` na pasta do visual no computador de desenvolvimento. Para saber mais sobre como criar seu visual, consulte [Criar um novo visual](#create-a-new-visual) neste artigo.
    > 
@@ -196,11 +196,11 @@ Você pode executar o visual, fazendo o seguinte.
 1. Abra um prompt.
 2. Altere o diretório para a pasta do visual. Esta é a pasta que contém o arquivo `pbiviz.json`.
 3. Execute o seguinte comando.
-   
+
     ```
     pbiviz start
     ```
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 Se você estiver no local errado, será exibido um erro semelhante ao seguinte.
@@ -249,7 +249,7 @@ Você pode empacotar o visual, fazendo o seguinte.
 1. Abra um prompt.
 2. Altere o diretório para a pasta do visual. Esta é a pasta que contém o arquivo `pbiviz.json`.
 3. Execute o seguinte comando.
-   
+
     ```
     pbiviz package
     ```
@@ -294,6 +294,7 @@ Esse comando atualizaria seu visual para API versão 1.2.0. Você pode substitui
 Seu projeto de visual é a pasta criada ao executar o comando `pbiviz new`. 
 
 ### <a name="file-structure"></a>Estrutura do arquivo
+
 | Item | Descrição |
 | --- | --- |
 | assets/ |Usado para armazenar ativos visuais (ícone, capturas de tela, etc). |

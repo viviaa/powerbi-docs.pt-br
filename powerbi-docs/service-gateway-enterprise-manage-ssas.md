@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aa4bc70fa67af4e3b82b8ed9a4eb16851d98eaeb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297137"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599171"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gerenciar sua fonte de dados – Analysis Services
 Depois de instalar o gateway de dados local, será necessário adicionar fontes de dados que podem ser usadas com o gateway. Este artigo abordará como trabalhar com gateways e fontes de dados. Você pode usar a fonte de dados do Analysis Services para a atualização agendada ou para conexões em tempo real.
@@ -52,7 +52,7 @@ A exclusão de um gateway também excluirá as fontes de dados contidas nele.  I
 
 1. Selecione o ícone de engrenagem ![](media/service-gateway-enterprise-manage-ssas/pbi_gearicon.png) no canto superior direito > **Gerenciar gateways**.
 2. Gateway > **Remover**
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings7.png)
 
 ## <a name="add-a-data-source"></a>Adicionar uma fonte de dados
@@ -119,15 +119,13 @@ Para chegar à tela de Mapeamento de UPN, faça o seguinte:
 2. Expanda o gateway que contém a fonte de dados do Analysis Services. Caso contrário, se você ainda não tiver criado a fonte de dados do Analysis Services, poderá fazer isso agora.
 3. Selecione a fonte de dados e, em seguida, selecione a guia **Usuários**.
 4. Selecione **Mapear nomes de usuário**.
-   
+
     ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
 
 Em seguida, você verá opções para adicionar regras, bem como para testar determinado usuário.
 
 > [!NOTE]
-> Talvez você altere inadvertidamente um usuário que não pretendia alterar. Por exemplo, se **Substituir (valor original)** for *@contoso.com* e seu **Por (Novo nome)**  for *@contoso.local*, todos os usuários com uma entrada que contém *@contoso.com* serão substituídos por *@contoso.local*. Além disso, se **Substituir (Nome Original)** for *dave@contoso.com* e seu **Por (novo nome)** for *dave@contoso.local*, um usuário com a entrada de v-dave@contoso.com deve ser enviado como v-dave*@contoso.local*.
-> 
-> 
+> Talvez você altere inadvertidamente um usuário que não pretendia alterar. Por exemplo, se **Substituir (valor original)** for <em>@contoso.com</em> e seu **Por (Novo nome)**  for <em>@contoso.local</em>, todos os usuários com uma entrada que contém <em>@contoso.com</em> serão substituídos por <em>@contoso.local</em>. Além disso, se **Substituir (Nome Original)** for <em>dave@contoso.com</em> e seu **Por (novo nome)** for <em>dave@contoso.local</em>, um usuário com a entrada de v-dave@contoso.com deve ser enviado como v-dave<em>@contoso.local</em>.
 
 ### <a name="ad-lookup-mapping"></a>Mapeamento de consulta do AD
 Para realizar a consulta de propriedade do AD local para mapear os UPNs do ADD para usuários do Active Directory, siga as etapas nesta seção. Em primeiro lugar, vamos examinar como isso funciona.
@@ -147,17 +145,17 @@ No gateway de dados local com o mapeamento de usuário personalizado configuráv
 2. Consulte o atributo da Pessoa do AD (como *Email*) com base na cadeia de caracteres UPN (“firstName.lastName@contoso.com”) de entrada no **serviço do Power BI**.
 3. Se a Consulta do AD falhar, ela tentará usar o UPN repassado como EffectiveUser para o SSAS.
 4. Se a Consulta do AD for bem-sucedida, ela recuperará o *UserPrincipalName* dessa Pessoa do AD. 
-5. Ele passa o email *UserPrincipalName* como *EffectiveUser* para o SSAS, tal como:*Alias@corp.on-prem.contoso*
+5. Ele passa o email *UserPrincipalName* como *EffectiveUser* para o SSAS, tal como:<em>Alias@corp.on-prem.contoso</em>
 
 Como configurar seu gateway para executar a Consulta do AD:
 
 1. Baixar e instalar o gateway mais recente
 2. No gateway, é necessário alterar o **serviço do gateway de dados local** para ser executado com uma conta de domínio (em vez de uma conta de serviço local, caso contrário, a consulta do AD não funcionará corretamente no tempo de execução). Será necessário reiniciar o serviço do gateway para que a alteração tenha efeito.  Acesse o aplicativo do gateway em seu computador (pesquise “gateway de dados local”). Para fazer isso, vá para **Configurações de Serviço > Alterar a Conta de Serviço**. Certifique-se de ter a chave de recuperação para esse gateway, uma vez que será preciso restaurá-lo no mesmo computador, a menos que você deseje criar um novo gateway em vez disso. 
 3. Navegue até a pasta de instalação do gateway, *C:\Arquivos de Programas\Gateway de dados locais* como um administrador para garantir que você tem permissões de gravação e edite o seguinte arquivo:
-   
+
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Editar os dois valores de configuração a seguir de acordo com *suas* configurações de atributo do Active Directory dos seus usuários do AD. Os valores de configuração mostrados abaixo são apenas exemplos – é necessário especificá-los com base em sua configuração do Active Directory. 
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
 5. Reinicie o serviço do **gateway de dados local** para que a alteração da configuração entre em vigor.
 

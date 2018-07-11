@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/19/2018
 ms.author: maggies
-ms.openlocfilehash: a7012bf96ee0f8ac7e73d1db21e9a36f0fea88cb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b09fd5846689299f426fc779061efaa30f8f6909
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34481039"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599148"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Linha do tempo de suporte para Servidor de Relatório do Power BI
 O Servidor de Relatório do Power BI será liberado algumas vezes por ano. As atualizações críticas e de segurança estarão disponíveis até que a próxima versão seja lançada para o público geral (GA). Após a próxima versão, a versão anterior continuará recebendo atualizações de segurança pelo restante da expectativa de vida da versão de 12 meses.
@@ -27,6 +27,7 @@ Essa política de suporte nos permite fornecer inovação para os clientes em ri
     ![Grafo ilustrando o período de tempo de suporte](media/support-timeline/report-server-support-timeline-mar-2018.png)
 
 ## <a name="version-history"></a>Histórico de versão
+
 | **Versão** | **Data de disponibilidade** | **Data de término do suporte** |
 | --- | --- | --- |
 | Junho de 2017 |12 de junho de 2017 |12 de junho de 2018 |

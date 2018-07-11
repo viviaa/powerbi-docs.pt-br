@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 07db52bd2ffd881417f7ff59647c6779f7dc6bce
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248332"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598968"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Editar ou remover um bloco do dashboard
 
@@ -35,12 +35,12 @@ Este artigo aborda o seguinte.
 * [Fixar um bloco em um dashboard diferente](#different)
 * [Excluir um bloco](#delete)
   
- > [!TIP]
- > Para alterar a visualização mostrada no próprio bloco, exclua o bloco e adicione um novo [bloco de dashboard](service-dashboard-tiles.md).
- > 
+  > [!TIP]
+  > Para alterar a visualização mostrada no próprio bloco, exclua o bloco e adicione um novo [bloco de dashboard](service-dashboard-tiles.md).
 
- ### <a name="prerequisites"></a>Pré-requisitos
- 1. Para acompanhar, abra o serviço do Power BI (não o Power BI Desktop) e [baixe o exemplo de Análise de Gastos de TI](sample-it-spend.md). Quando a mensagem de "Êxito" for exibida, selecione **Ir para o dashboard**.
+  
+## <a name="prerequisites"></a>Pré-requisitos
+Para acompanhar, abra o serviço do Power BI (não o Power BI Desktop) e [baixe o exemplo de Análise de Gastos de TI](sample-it-spend.md). Quando a mensagem de "Êxito" for exibida, selecione **Ir para o dashboard**.
 
 - - -
 <a name="create"></a>

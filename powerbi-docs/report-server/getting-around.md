@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 9b896c9db6c1368c5e435df21c28cd99b8dda15f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 354ba336407f200d2c311f6bf0de91967cf3f5d1
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721698"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598129"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gerenciar conteúdo no portal da Web 
 O portal da Web do Servidor de Relatório do Power BI é um local para exibir, armazenar e gerenciar seus relatórios paginados, móveis e do Power BI e KPIs.
@@ -38,9 +38,9 @@ O aplicativo do portal da Web é executado em um navegador. Quando você inicia 
     Veja esta lista de [navegadores e versões com suporte](browser-support.md).
 2. Na barra de endereços, digite a URL do portal da Web.
    
-    Por padrão, a URL é *http://[ComputerName]/reports*.
+    Por padrão, a URL é <em>http://[ComputerName]/reports</em>.
    
-    O servidor de relatório pode ser configurado para usar uma porta específica. Por exemplo, *http://[ComputerName]:80/reports* ou *http://[ComputerName]:8080/reports*
+    O servidor de relatório pode ser configurado para usar uma porta específica. Por exemplo, <em>http://[ComputerName]:80/reports</em> ou <em>http://[ComputerName]:8080/reports</em>
    
     Você verá que o portal da Web agrupa itens nestas categorias:
    

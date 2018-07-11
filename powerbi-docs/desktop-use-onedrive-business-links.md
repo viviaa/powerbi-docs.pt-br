@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ec5b46dcfebf614e70a0b8ebf858af7b34906eae
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 8813294f359c6bd6e1bb01fa3cc2ec3f5eb3d280
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290696"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598247"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Usar os links do OneDrive for Business no Power BI Desktop
 Muitas pessoas têm livros de trabalho do Excel armazenados em sua unidade do OneDrive for Business que seriam ótimos para uso com o Power BI Desktop. Com o **Power BI Desktop**, você pode usar links online para arquivos do **Excel** armazenados no **OneDrive for Business** para criar relatórios e visuais. Você pode usar uma conta de grupo do **OneDrive for Business** ou sua conta individual do **OneDrive for Business**.
@@ -26,7 +26,7 @@ Obter um link online do **OneDrive for Business** requer algumas etapas específ
 1. Navegue até o local do seu OneDrive for Business usando um navegador. Clique no arquivo que você deseja usar e selecione **Abrir no Excel**.
    
    > [!NOTE]
-> A interface do navegador pode não ser exatamente igual à imagem a seguir. Há várias maneiras de selecionar **Abrir no Excel** para arquivos em sua interface de navegador do **OneDrive for Business**. Você pode usar qualquer opção que permite abrir o arquivo no Excel.
+   > A interface do navegador pode não ser exatamente igual à imagem a seguir. Há várias maneiras de selecionar **Abrir no Excel** para arquivos em sua interface de navegador do **OneDrive for Business**. Você pode usar qualquer opção que permite abrir o arquivo no Excel.
    > 
    > 
    

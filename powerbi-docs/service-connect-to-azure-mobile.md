@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 336ae9cd9ac2940b244df88aaf5a8fff7bd3a55e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2d2d983da6de5ec88574092289ed2958c7a98923
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241832"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600402"
 ---
 # <a name="connect-to-azure-mobile-engagement-with-power-bi"></a>Conectar-se ao Azure Mobile Engagement com o Power BI
 O pacote de conteúdo do Engajamento Móvel do Azure para o Power BI permite que você obtenha informações rapidamente sobre os dados de seu aplicativo.
@@ -42,7 +42,7 @@ Conecte-se ao [pacote de conteúdo do Engajamento Móvel do Azure](https://app.p
    
     ![](media/service-connect-to-azure-mobile/dashboard.png)
 
- **E agora?**
+## <a name="what-now"></a>O que vem em seguida?
 
 * Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.

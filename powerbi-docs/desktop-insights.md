@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b5959049b65d32eebf7f484e8485ff59a10f459
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5bb3f49ef49ed7bbaeb3f52e0711247e0abdc615
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286073"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134675"
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Usar os insights no Power BI Desktop (Versão Prévia)
 Você pode informar o **Power BI Desktop** para explicar os aumentos ou as diminuições em gráficos e obter uma análise rápida, automatizada e repleta de insights sobre seus dados. Basta clicar com o botão direito do mouse em um ponto de dados e selecionar **Analisar > Explicar a diminuição** (ou o aumento, se a barra anterior era menor) e o insight será fornecido em uma janela de fácil de usar.
@@ -72,7 +72,7 @@ Além disso, atualmente, não há suporte para os seguintes tipos de modelo e fo
 ## <a name="next-steps"></a>Próximas etapas
 Para obter mais informações sobre o **Power BI Desktop** e como começar, confira os artigos a seguir.
 
-* [Introdução ao Power BI Desktop](desktop-getting-started.md)
+* [O que é o Power BI Desktop?](desktop-what-is-desktop.md)
 * [Visão geral de Consulta com o Power BI Desktop](desktop-query-overview.md)
 * [Fontes de dados no Power BI Desktop](desktop-data-sources.md)
 * [Conectar-se a dados no Power BI Desktop](desktop-connect-to-data.md)

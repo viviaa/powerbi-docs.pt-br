@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8b1e94ca0923c3e2ba509df266cec0f05596ab1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852177"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598588"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Criar e publicar um pacote de conteúdo organizacional do Power BI (tutorial)
 > [!NOTE]
@@ -43,24 +43,24 @@ Quer me acompanhar? Em [Serviço do Power BI](https://powerbi.com), acesse **Obt
    
    Tenha em mente que a biblioteca de pacotes de conteúdo de sua organização pode acabar com centenas de pacotes de conteúdo publicados para a organização ou para os grupos. Reserve um tempo para dar um nome significativo ao seu pacote de conteúdo, adicionar uma descrição válida e selecionar o público-alvo correto.  Use palavras que tornarão seu pacote de conteúdo fácil de encontrar por meio de pesquisa.
    
-   1.  Selecione **Grupos Específicos** e insira os endereços de email completos dos indivíduos, [grupos do Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), grupos de distribuição ou grupos de segurança. Por exemplo:
+   1. Selecione **Grupos Específicos** e insira os endereços de email completos dos indivíduos, [grupos do Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), grupos de distribuição ou grupos de segurança. Por exemplo:
       
-         salesmgrs@contoso.com; sales@contoso.com
+        salesmgrs@contoso.com; sales@contoso.com
       
       Para este tutorial, tente usar seu próprio ou seu endereço de email do grupo.
    
-   2.  Nomeie o pacote de conteúdo como **Oportunidades de Vendas**.
+   2. Nomeie o pacote de conteúdo como **Oportunidades de Vendas**.
    
       > [!TIP]
       > Considere incluir o nome do dashboard no nome do pacote de conteúdo. Dessa forma, seus colegas encontrarão o dashboard mais facilmente depois que se conectarem ao pacote de conteúdo.
       > 
       > 
    
-   3.  Recomendável: adicionar uma **descrição**. Isso ajuda os colegas de trabalho a localizar mais facilmente os pacotes de conteúdo que eles precisam. Além de uma descrição, adicione palavras-chave que nossos colegas de trabalho possam usar para pesquisar neste pacote de conteúdo. Inclua informações de contato, caso seus colegas de trabalho tenham alguma dúvida ou precisem de ajuda.
+   3. Recomendável: adicionar uma **descrição**. Isso ajuda os colegas de trabalho a localizar mais facilmente os pacotes de conteúdo que eles precisam. Além de uma descrição, adicione palavras-chave que nossos colegas de trabalho possam usar para pesquisar neste pacote de conteúdo. Inclua informações de contato, caso seus colegas de trabalho tenham alguma dúvida ou precisem de ajuda.
    
-   4.  **Carregue uma imagem ou um logotipo** para facilitar a localização do pacote de conteúdo pelos membros do grupo &#151; é mais rápido verificar se há uma imagem do que encontrar um texto. Usamos uma imagem do bloco de gráfico de coluna 100% de Contagem de Oportunidade na captura de tela abaixo.
+   4. **Carregue uma imagem ou um logotipo** para facilitar a localização do pacote de conteúdo pelos membros do grupo &#151; é mais rápido verificar se há uma imagem do que encontrar um texto. Usamos uma imagem do bloco de gráfico de coluna 100% de Contagem de Oportunidade na captura de tela abaixo.
    
-   5.  Selecione o painel **Exemplo de Análise de Oportunidade** para adicioná-lo ao pacote de conteúdo.  O Power BI adiciona automaticamente o relatório associado e um conjunto de dados. Você poderá adicionar outros, se desejar.
+   5. Selecione o painel **Exemplo de Análise de Oportunidade** para adicioná-lo ao pacote de conteúdo.  O Power BI adiciona automaticamente o relatório associado e um conjunto de dados. Você poderá adicionar outros, se desejar.
    
       > [!NOTE]
       >  São listados apenas dashboards, relatórios, conjuntos de dados e pastas de trabalho que você pode editar. Assim, qualquer um que foi compartilhado com você não está na lista.
@@ -71,7 +71,7 @@ Quer me acompanhar? Em [Serviço do Power BI](https://powerbi.com), acesse **Obt
    
    6. Se você tiver pastas de trabalho do Excel, veja-as em Relatórios, com um ícone do Excel. Você também pode adicioná-las ao pacote de conteúdo.
    
-     ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
+      ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
       > Se os membros do grupo não conseguirem exibir a pasta de trabalho do Excel, [compartilhe a pasta de trabalho com eles no OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).

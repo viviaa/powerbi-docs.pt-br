@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 35171c5b1d61b9df860b72ee98d8fb63a875092d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4ee0f114e6d905f202505f71b194a5b56fd6397
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286372"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137343"
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Visão geral de Consulta no Power BI Desktop
 Com o **Power BI Desktop** você pode se conectar ao mundo dos dados, criar relatórios atraentes e fundamentais e compartilhar seus esforços com outras pessoas — que poderão se basear em seu trabalho e expandir seus esforços de business intelligence.
@@ -137,7 +137,7 @@ Para salvar seu trabalho, selecione **Arquivo \> Salvar** (ou **Arquivo \> Salva
 ## <a name="next-steps"></a>Próximas etapas
 Há inúmeras coisas que você pode fazer com o Power BI Desktop. Para obter mais informações sobre seus recursos, consulte as seguintes fontes:
 
-* [Introdução ao Power BI Desktop](desktop-getting-started.md)
+* [O que é o Power BI Desktop?](desktop-what-is-desktop.md)
 * [Fontes de dados no Power BI Desktop](desktop-data-sources.md)
 * [Conectar-se a dados no Power BI Desktop](desktop-connect-to-data.md)
 * [Formatar e combinar dados com o Power BI Desktop](desktop-shape-and-combine-data.md)

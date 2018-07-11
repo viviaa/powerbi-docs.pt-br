@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3575a94ede595b4d83fef0cddcbb279ea7a533c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0e0f9e857816b44782831640a74801b515919bae
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34285521"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136745"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Usar gráficos de faixa de opções no Power BI
 Use gráficos de faixa de opções no **Power BI** para visualizar dados e determinar rapidamente qual categoria de dados tem a classificação mais alta (maior valor). Gráficos de faixa de opções são eficazes para mostrar alterações na classificação, com o maior intervalo (valor) sempre exibido na parte superior de cada período. Os gráficos de faixa de opções estão disponíveis no **Power BI Desktop** a partir da versão de setembro de 2017 e nas atualizações posteriores do **serviço do Power BI**.
@@ -44,7 +44,7 @@ Essas opções de formatação para gráficos de faixa de opções permitem ajus
 ## <a name="next-steps"></a>Próximas etapas
 Para obter mais informações sobre o **Power BI Desktop** e como começar, confira os artigos a seguir.
 
-* [Introdução ao Power BI Desktop](desktop-getting-started.md)
+* [O que é o Power BI Desktop?](desktop-what-is-desktop.md)
 * [Visão geral de Consulta com o Power BI Desktop](desktop-query-overview.md)
 * [Fontes de dados no Power BI Desktop](desktop-data-sources.md)
 * [Conectar-se a dados no Power BI Desktop](desktop-connect-to-data.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f283a8ed273dcb609e9d5160adbeb714e8935ab9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251923"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599121"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Conectar-se ao Zuora com o Power BI
 O Zuora para Power BI permite visualizar dados importantes de receita, de cobrança e de assinatura. Use o painel e os relatórios padrão para analisar tendências de uso, rastrear cobranças e pagamentos e monitorar receitas recorrentes ou personalizá-las para atender às suas necessidades exclusivas de painel e relatório.
@@ -32,7 +32,7 @@ Conecte-se ao [Zuora](https://app.powerbi.com/getdata/services/Zuora) para o Pow
 3. Selecione **Zuora** \>  **Obter**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Especifique a URL do Zuora. Isso normalmente é "https://www.zuora.com", veja detalhes sobre [como encontrar esses parâmetros](#FindingParams) abaixo.
+4. Especifique a URL do Zuora. Isso normalmente é "<https://www.zuora.com>", veja detalhes sobre [como encontrar esses parâmetros](#FindingParams) abaixo.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Para o **Método de Autenticação**, selecione **Básico** e forneça seu nome de usuário e sua senha (diferencia maiúsculas de minúsculas) e selecione **Entrar**.
@@ -76,13 +76,13 @@ Ela também inclui as medidas calculadas abaixo:
 | Contas: Erros de Pagamento |Valor total de erros de pagamento. |SUM (Payment.Amount)<br>EM QUE<br>Payment.Status = "Error" |
 | Item de Agendamento de Receita: Receita Reconhecida |Receita total reconhecida em um período de contabilidade. |SUM (RevenueScheduleItem.Amount)<br>EM QUE<br>AccountingPeriod.StartDate = TimePeriod.StartDate |
 | Assinatura: Novas Assinaturas |Contagem de novas assinaturas em um período de tempo. |COUNT (Subscription.ID)<br>EM QUE<br>Subscription.Version = "1"<br>E Subscription.CreatedDate <= TimePeriod.EndDate<br>E Subscription.CreatedDate >= TimePeriod.StartDate |
-| Fatura: Itens da Fatura |Valores totais de encargos de item da fatura em um período de tempo. |SUM (InvoiceItem.ChargeAmount)<br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Fatura: Itens de Tributação |Valores totais de item de tributação em um período de tempo. |SUM (TaxationItem.TaxAmount)<br>EM QUE<br>Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Fatura: Ajustes de Item da Fatura |Valores totais de ajuste de item da fatura em um período de tempo. |SUM (InvoiceItemAdjustment.Amount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>E InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
-| Fatura: Ajustes de Fatura |Valores totais de ajuste de fatura em um período de tempo. |SUM (InvoiceAdjustment.Amount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>E InvoiceAdjustment.AdjustmentDate >= TimePeriod.StartDate |
+| Fatura: Itens da Fatura |Valores totais de encargos de item da fatura em um período de tempo. |SUM (InvoiceItem.ChargeAmount)<br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate &lt;= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate &gt;= TimePeriod.StartDate |
+| Fatura: Itens de Tributação |Valores totais de item de tributação em um período de tempo. |SUM (TaxationItem.TaxAmount)<br>EM QUE<br>Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate &lt;= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate &gt;= TimePeriod.StartDate |
+| Fatura: Ajustes de Item da Fatura |Valores totais de ajuste de item da fatura em um período de tempo. |SUM (InvoiceItemAdjustment.Amount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate &lt;= TimePeriod.EndDate<br>E InvoiceItemAdjustment.AdjustmentDate &gt;= TimePeriod.StartDate |
+| Fatura: Ajustes de Fatura |Valores totais de ajuste de fatura em um período de tempo. |SUM (InvoiceAdjustment.Amount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate &lt;= TimePeriod.EndDate<br>E InvoiceAdjustment.AdjustmentDate &gt;= TimePeriod.StartDate |
 | Fatura: Cobranças Líquidas |Soma dos itens da fatura, itens de tributação, ajustes de item da fatura e ajustes da fatura em um período de tempo. |Invoice.InvoiceItems + Invoice.TaxationItems + Invoice.InvoiceItemAdjustments + Invoice.InvoiceAdjustments |
 | Fatura: Saldo a Vencer de Faturas |Soma do saldo de faturas lançadas. |SUM (Invoice.Balance) <br>EM QUE<br>    Invoice.Status = "Posted" |
-| Fatura: Cobranças Brutas |Soma dos valores de cobrança de item da fatura para faturas lançadas em um período de tempo. |SUM (InvoiceItem.ChargeAmount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
+| Fatura: Cobranças Brutas |Soma dos valores de cobrança de item da fatura para faturas lançadas em um período de tempo. |SUM (InvoiceItem.ChargeAmount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate &lt;= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate &gt;= TimePeriod.StartDate |
 | Fatura: Ajustes Totais |Soma de ajustes de fatura processados e ajustes de item de fatura associados às faturas lançadas. |SUM (InvoiceAdjustment.Amount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.Status = "Processed"<br>+<br>SUM (InvoiceItemAdjustment.Amount) <br>EM QUE<br>    Invoice.Status = "Posted"<br>AND    invoiceItemAdjustment.Status = "Processed" |
 | Encargo de Plano de Taxa: MRR Bruta |Soma da receita mensal recorrente das assinaturas em um período de tempo. |SUM (RatePlanCharge.MRR) <br>EM QUE<br>    Subscription.Status != "Expired"<br>E Subscription.Status != "Draft"<br>E RatePlanCharge.EffectiveStartDate <= TimePeriod.StartDate<br>AND        RatePlanCharge.EffectiveEndDate > TimePeriod.StartDate<br>    OU RatePlanCharge.EffectiveEndDate = null --evergreen subscription |
 

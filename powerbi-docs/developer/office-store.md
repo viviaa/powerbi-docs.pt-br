@@ -9,15 +9,15 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 7c3a50fa487b9444b2f10b9d546d247be70dd1c9
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: 2147a5ccb1df8bd107d662559c97400a24dd490e
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301770"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092105"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicar visuais personalizados no AppSource
-Saiba como você pode publicar seu visual personalizado no AppSource para que outros possam descobrir e usá-lo. Office
+Saiba como você pode publicar seu visual personalizado no AppSource para que outros possam descobrir e usá-lo.
 
 Depois de criar seu visual personalizado, talvez você queira publicá-lo no AppSource para que outros possam descobrir e usá-lo. Mas, há alguns preparativos que precisam ser feitos antes disso. Para obter mais informações sobre como criar um visual personalizado, consulte [Usar ferramentas de desenvolvedor para criar visuais personalizados](../service-custom-visuals-getting-started-with-developer-tools.md).
 
@@ -36,7 +36,7 @@ Depois que você terminar de codificar e testar seu visual personalizado e empac
 | Capturas de tela |Sim |Você deve fornecer, pelo menos, uma captura de tela. O formato pode ser .png, .jpg, .jpeg ou .gif. Deve ter exatamente 1366px (largura) x 768px (altura). O tamanho do arquivo não deve exceder 1024kb. *Para melhor utilização, adicione bolhas de texto para articular a proposição de valores dos principais recursos mostrados em cada captura de tela.* |
 | Link de download de suporte |Sim |Forneça a URL para dar suporte a clientes que têm problemas com seu visual. O formato da URL deve incluir https:// ou http://. |
 | Link do documento de privacidade |Sim |Forneça um link para a política de privacidade para clientes que usam o visual. O formato do link deve incluir https:// ou http://. |
-| Contrato de licença de usuário final (EULA) |Sim |Você deve fazer upload de um arquivo EULA. Você pode usar seu próprio EULA ou o EULA padrão na Office Store para visuais personalizados do Power BI. Para usar o EULA padrão, cole a seguinte URL na caixa de diálogo de upload de arquivo do "Contrato de licença de usuário final" do painel do vendedor: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf). |
+| Contrato de licença de usuário final (EULA) |Sim |Você deve fazer upload de um arquivo EULA. Você pode usar seu próprio EULA ou o EULA padrão na Office Store para visuais personalizados do Power BI. Para usar o EULA padrão, cole a seguinte URL na caixa de diálogo de upload de arquivo do "Contrato de licença de usuário final" do painel do vendedor: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Link do vídeo |Não |Para aumentar o interesse dos usuários pelo seu visual personalizado, é recomendável fornecer um link para um vídeo sobre o visual. O formato da URL deve incluir https:// ou http://. |
 | Repositório GitHub |Não |É preferível ter um link válido e público para um repositório [GitHub](https://www.github.com) com as fontes do seu visual e dos dados de exemplo nele para permitir que outros desenvolvedores façam comentários e proponham melhorias ao seu código. |
 
@@ -97,7 +97,7 @@ Siga as etapas abaixo para concluir o envio.
    * Link do vídeo
    * Contrato de Licença de Usuário Final (EULA)
      
-       Você deve fazer upload de um arquivo EULA. Você pode usar seu próprio EULA ou o EULA padrão na Office Store para visuais personalizados do Power BI. Para usar o EULA padrão, cole a seguinte URL na caixa de diálogo de upload de arquivo do "Contrato de licença de usuário final" do painel do vendedor: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf).
+       Você deve fazer upload de um arquivo EULA. Você pode usar seu próprio EULA ou o EULA padrão na Office Store para visuais personalizados do Power BI. Para usar o EULA padrão, cole a seguinte URL na caixa de diálogo de upload de arquivo do "Contrato de licença de usuário final" do painel do vendedor: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 8. Selecione **Avançar** para prosseguir para a página **Detalhes**.
 9. Selecione **Idioma** e escolha um idioma na lista.
    

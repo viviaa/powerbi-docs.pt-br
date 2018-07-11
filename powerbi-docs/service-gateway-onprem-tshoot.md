@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a99200707c8fc7de4fea2e32fe83238011bbf46c
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755060"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926573"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Solução de problemas do gateway de dados local
 Este artigo aborda alguns problemas comuns que você poderá encontrar ao usar o **gateway de dados local**.
@@ -31,10 +31,10 @@ Este artigo aborda alguns problemas comuns que você poderá encontrar ao usar o
 O gateway é executado como um serviço Windows, então você pode iniciá-lo e pará-lo de várias maneiras. Por exemplo, você pode abrir um prompt de comando com permissões elevadas no computador em que o gateway está em execução e, em seguida, executar um destes comandos:
 
 * Para interromper o serviço, execute este comando:
-  
+
     '''   net stop PBIEgwService   '''
 * Para iniciar o serviço, execute este comando:
-  
+
     '''   net start PBIEgwService   '''
 
 ### <a name="error-failed-to-create-gateway-please-try-again"></a>Erro: falha ao criar gateway. Tente novamente.
@@ -70,7 +70,7 @@ Para corrigir esse problema, faça o seguinte:
 
 1. Desinstale o gateway.
 2. Exclua a seguinte pasta:
-   
+
         c:\Program Files\On-premises data gateway
 3. Reinstale o gateway.
 4. Se preferir, aplique a chave de recuperação para restaurar um gateway existente.
@@ -129,11 +129,11 @@ Confirme isso fazendo o seguinte:
 
 1. Conecte-se ao computador do Analysis Services no SQL Server Management Studio. Nas propriedades de conexão Avançada, inclua EffectiveUserName para o usuário em questão e veja se isso reproduz o erro.
 2. Você pode usar a ferramenta dsacls do Active Directory para validar se o atributo está listado. Essa é a ferramenta normalmente encontrada em um controlador de domínio. Você precisará saber qual é o nome diferenciado de domínio da conta e passá-lo para a ferramenta.
-   
+
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
-   
+
     Você deseja ver algo semelhante ao mostrado a seguir nos resultados.
-   
+
             Allow BUILTIN\Windows Authorization Access Group
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
@@ -184,15 +184,15 @@ Para confirmar isso, faça o seguinte:
 
 1. Encontre o nome de usuário efetivo nos [logs do gateway](#logs).
 2. Depois de obter o valor que está sendo passado, valide se ele está correto. Se ele for seu usuário, você poderá usar o comando a seguir em um prompt de comando para ver qual deve ser o UPN. O UPN será parecido com um endereço de email.
-   
+
         whoami /upn
 
 Se preferir, é possível ver o que o Power BI obtém do Azure Active Directory.
 
-1. Navegue até [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
+1. Navegue até [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Selecione **Entrar** no canto superior direito.
 3. Execute a consulta a seguir. Você verá uma resposta JSON bem grande.
-   
+
         https://graph.windows.net/me?api-version=1.5
 4. Procure **userPrincipalName**.
 
@@ -206,7 +206,7 @@ Se o UPN do Azure Active Directory não corresponder ao UPN local do Active Dire
 1. Selecione **?** na parte superior direita do serviço do Power BI.
 2. Selecione **Sobre o Power BI**.
 3. Sua região de dados será listada em **Seus dados estão armazenados em**.
-   
+
     ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 Se você ainda não conseguiu descobri-la, tente obter um rastreamento de rede usando uma ferramenta como [fiddler](#fiddler) ou netsh, embora esses sejam métodos de coleta avançados e você possa precisar de assistência para analisar os dados coletados. Entre em contato com o [suporte](https://support.microsoft.com) para obter assistência.
@@ -329,6 +329,7 @@ No arquivo *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*, alt
 <a name="activities"></a>
 
 ### <a name="activity-types"></a>Tipos de atividade
+
 | Tipo de atividade | Descrição |
 | --- | --- |
 | MGEQ |Consultas executadas no ADO.NET. Estão inclusas outras fontes de dados do DirectQuery. |
@@ -342,9 +343,9 @@ Para determinar o tempo necessário para consultar a fonte de dados, você pode 
 2. Pesquise um [Tipo de Atividade](#activities) para localizar a consulta. Um exemplo seria MGEQ.
 3. Anote o segundo GUID, que é a ID de solicitação.
 4. Continue a pesquisar o MGEQ até encontrar a entrada FireActivityCompletedSuccessfullyEvent com a duração. Você pode verificar se a entrada tem a mesma ID de solicitação. A duração estará em milissegundos.
-   
+
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-   
+
    > [!NOTE]
    > FireActivityCompletedSuccessfullyEvent é uma entrada detalhada. Essa entrada apenas será registrada se o TraceVerbosity estiver no nível 5.
    > 
@@ -423,12 +424,12 @@ Você receberá a mensagem de erro –10709 Falha de conexão se a delegação n
 Ao usar o gateway para atualização agendada, o **Histórico de Atualização** pode ajudá-lo a ver quais erros ocorreram, além de fornecer dados úteis caso precise criar uma solicitação de suporte. Você pode exibir as atualizações programadas ou sob demanda. Aqui está como você pode acessar o **Histórico de atualização**.
 
 1. No painel de navegação do Power BI, em **Conjuntos de Dados**, selecione um conjunto de dados &gt; Abrir Menu &gt; **Agendar Atualização**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 2. Em **Configurações de...** &gt; **Agendar Atualização**, selecione **Histórico de Atualização**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
-   
+
     ![](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 Para obter informações adicionais sobre como solucionar problemas de cenários de atualização, examine o artigo [Solução de problemas de cenários de atualização](refresh-troubleshooting-refresh-scenarios.md).
