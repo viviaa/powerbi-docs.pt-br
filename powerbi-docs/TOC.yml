@@ -12,6 +12,8 @@
       items:
         - name: Conecte-se a um exemplo do GitHub
           href: service-tutorial-connect-to-github.md
+        - name: Introdução ao Power BI
+          href: service-get-started.md
     - name: Conceitos
       items:
         - name: O que há de novo no serviço do Power BI
@@ -382,6 +384,8 @@
                   href: service-excel-workbook-files.md
                 - name: Obter dados de arquivos do Power BI Desktop
                   href: service-desktop-files.md
+                - name: Configurações de parâmetros para conjuntos de dados
+                  href: service-parameters.md
                 - name: Obter dados de arquivos .csv (valores separados por vírgula)
                   href: service-comma-separated-value-files.md
                 - name: Streaming em tempo real no Power BI (visualização)
@@ -860,16 +864,12 @@
           items:
             - name: Introdução ao aplicativo do iOS
               href: mobile-iphone-app-get-started.md
-            - name: Introdução ao aplicativo do iPad
-              href: mobile-ipad-app-get-started.md
             - name: Analista virtual de P e R nos aplicativos móveis para iOS
               href: mobile-apps-ios-qna.md
             - name: Aplicativo Power BI Apple Watch
               href: mobile-apple-watch.md
             - name: Digitalizar um código de barras do aplicativo no seu iPhone
               href: mobile-apps-scan-barcode-iphone.md
-            - name: Power BI para aplicativos iOS
-              href: mobile-ios-ipad-iphone-apps.md
         - name: iOS e Android
           items:
             - name: Anotar e compartilhar em aplicativos móveis
@@ -940,8 +940,6 @@
               href: developer/integrate-tile.md
             - name: Integrar um relatório do Power BI em um aplicativo (usuário possui dados)
               href: developer/integrate-report.md
-            - name: Integrar conteúdo em um aplicativo (aplicativo possui dados)
-              href: developer/embed-sample-for-customers.md
             - name: Integrar conteúdo em seu aplicativo para nuvens soberanas (o aplicativo é proprietário de dados)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Inserir layouts personalizados em um aplicativo
@@ -1234,6 +1232,13 @@
           href: service-admin-syndication-partner.md
         - name: Configurar aplicativos móveis com o Intune
           href: service-admin-mobile-intune.md
+    - name: Referência
+      items:
+        - name: 'SDK do .NET, PowerShell e APIs REST'
+          href: service-admin-reference.md
+        - name: Cmdlets do Power BI para o PowerShell
+          href: 'https://docs.microsoft.com/en-us/powershell/power-bi/'
+          maintainContext: true
     - name: Recursos
       items:
         - name: Abordagens de implantação e governança do Power BI
