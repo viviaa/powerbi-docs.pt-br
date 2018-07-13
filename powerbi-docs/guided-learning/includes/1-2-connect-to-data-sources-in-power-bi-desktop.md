@@ -6,7 +6,7 @@ Quando você inicia o **Power BI Desktop** e passa pela Tela Iniciar, é possív
 
 Há atualizações mensais do Power BI Desktop e, com cada atualização, a página **Novidades do Power BI Desktop** é atualizada com informações sobre as atualizações, links para o blog e um link de download.
 
-No Power BI Desktop, há todos os tipos de fontes de dados diferentes disponíveis. Selecione uma fonte para estabelecer uma conexão. Dependendo da seleção, será solicitado que você encontre a fonte no computador ou na rede ou que faça logon em um serviço para autenticar a solicitação.
+No Power BI Desktop, há todos os tipos de fontes de dados diferentes disponíveis. Selecione uma fonte para estabelecer uma conexão. Dependendo da seleção, será solicitado que você encontre a fonte no computador ou na rede, ou que entre em um serviço para autenticar a solicitação.
 
 ![](media/1-2-connect-to-data-sources-in-power-bi-desktop/1-2_2.gif)
 

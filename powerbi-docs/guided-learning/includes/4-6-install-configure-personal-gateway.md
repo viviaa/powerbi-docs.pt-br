@@ -6,7 +6,7 @@ O sistema que permite a conexão das fontes de dados locais ao serviço do Power
 >O computador executando o Power BI Personal Gateway *deve* estar ligado e conectado à Internet para que o **gateway pessoal** funcione corretamente.
 > 
 
-Para configurar o **gateway pessoal**, primeiro faça logon no serviço do Power BI. Selecione o ícone **Baixar** no canto superior direito da tela e, em seguida, selecione **Gateways de Dados** no menu.
+Para configurar o **gateway pessoal**, primeiro entre no serviço do Power BI. Selecione o ícone **Baixar** no canto superior direito da tela e, em seguida, selecione **Gateways de Dados** no menu.
 
 ![](media/4-6-install-configure-personal-gateway/4-6_1b.png)
 
@@ -22,7 +22,7 @@ Em seguida, você será solicitado a iniciar o assistente de configuração para
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3b.png)
 
-Primeiro, você deverá fazer logon na conta de serviço do Power BI e, em seguida, fazer logon na conta do Windows do computador, pois o serviço do gateway é executado na sua conta.
+Primeiro, você deverá entrar na conta de serviço do Power BI e, em seguida, entrar na conta do Windows do computador, pois o serviço do gateway é executado na sua conta.
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3c.png)
 
