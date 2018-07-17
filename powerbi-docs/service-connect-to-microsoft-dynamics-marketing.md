@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94b019f04fb6fabcad3092524fd2724015a6d8e1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7cc2519353be7f83f69cdc6dda9d5f1a8ccc33a3
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242180"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137000"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Conectar-se ao Microsoft Dynamics Marketing com o Power BI
 O pacote de conteúdo do Microsoft Dynamics Marketing para o Power BI permite que você acesse e analise seus dados com facilidade no Dynamics Marketing. O pacote de conteúdo usa um modelo descritivo no feed OData, com todas as entidades e as medidas necessárias, como Programas, Campanhas, Empresas e Contatos de Marketing, Clientes Potenciais, Interações de Cliente Potencial e Pontuação de Cliente Potencial, Sites e Mensagens de Marketing por Email, observações comportamentais, orçamentos, transações financeiras, KPIs de desempenho e muito mais. 
@@ -72,5 +72,5 @@ Se você ainda está com problemas, abra um tíquete de suporte para entrar em c
 ## <a name="next-steps"></a>Próximas etapas
 [Obter dados para o Power BI](service-get-data.md)
 
-[Introdução ao Power BI](service-get-started.md)
+[O que é o Power BI?](power-bi-overview.md)
 

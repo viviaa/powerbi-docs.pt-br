@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 06/04/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 78edb9d45df1332a25ec27476562d6105c7a8a48
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: c2e0dc401e5927e69ecb9b059042df646b238bd5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755359"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944389"
 ---
 # <a name="what-is-power-bi"></a>O que é Power BI?
 O **Power BI** é uma coleção de serviços de software, aplicativos e conectores que trabalham juntos para transformar suas fontes de dados não relacionadas em informações coerentes, visualmente envolventes e interativas. Quer seus dados sejam uma simples planilha do Excel ou uma coleção de data warehouses híbridos baseados em nuvem e locais, o **Power BI** permite que você se conecte facilmente às suas fontes de dados, visualize (ou descubra) o que é importante e compartilhe isso com qualquer pessoa ou com quem você quiser.
@@ -57,4 +57,5 @@ Crie, implante e gerencie os relatórios paginados, móveis e do Power BI localm
 O Servidor de Relatórios do Power BI é uma solução que você implanta atrás do firewall e, em seguida, fornece relatórios para os usuários corretos de diferentes maneiras, seja exibindo-os em um navegador da Web, em um dispositivo móvel ou como um email. E, como o Servidor de Relatórios do Power BI é compatível com o Power BI na nuvem, você pode ir para a nuvem quando estiver pronto.
 
 ## <a name="next-steps"></a>Próximas etapas
-[Entre, obtenha alguns dados e aprenda a usar o serviço do Power BI](service-the-new-power-bi-experience.md)
+[Entre, obtenha alguns dados e aprenda a usar o serviço do Power BI](service-the-new-power-bi-experience.md)   
+[Tutorial: Introdução ao serviço do Power BI](service-get-started.md)

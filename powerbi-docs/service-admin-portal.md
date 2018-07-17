@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301816"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965494"
 ---
 # <a name="power-bi-admin-portal"></a>Portal de administração do Power BI
 
@@ -99,6 +99,8 @@ Para obter mais informações sobre logs de auditoria, consulte [Auditoria do Po
 ## <a name="tenant-settings"></a>Configurações de locatário
 
 A terceira guia, no portal de administração, é **Configurações de locatário**. As configurações de locatário oferecem mais controle sobre quais recursos são disponibilizados para sua organização. Se você tiver dúvidas relacionadas a dados confidenciais, alguns dos nossos recursos poderão não ser adequados para sua organização, ou talvez você queira apenas que um determinado recurso esteja disponível para um grupo específico. Se esse for o caso, você pode desativá-lo em seu locatário.
+
+Por exemplo, por padrão, os dados por usuário estão habilitados para as métricas de uso e as informações de conta do criador do conteúdo estão incluídas no relatório de métricas. Se você não quiser incluir essa informação para alguns ou todos os usuários, desabilite o recurso para grupos de segurança especificados ou para toda a organização. Em seguida, as informações da conta serão mostradas no relatório como *Sem nome*.
 
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -235,7 +237,7 @@ Os usuários na organização podem interagir com e compartilhar elementos visua
 
 ## <a name="r-visuals-settings"></a>Configurações de elementos visuais do R
 
-### <a name="interact-with-an-dshare-r-visuals"></a>Interagir e compartilhar elementos visuais do R
+### <a name="interact-with-and-share-r-visuals"></a>Interagir e compartilhar visuais do R
 
 Os usuários na organização podem interagir e compartilhar elementos visuais criados com scripts do R. [Saiba mais](service-r-visuals.md)
 

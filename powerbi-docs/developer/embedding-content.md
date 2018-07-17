@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: cb84cb2f4242cb120f187c27bb1b1675177c33a2
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 8a912791777c631208ee40d37c5eaad56806ccf9
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813033"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945220"
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Inserir os dashboards, relatórios e blocos do Power BI
 
@@ -35,6 +35,9 @@ Antes de começar a inserir dashboards e relatórios em seu aplicativo, é neces
 
 * [Verifique se você tem um locatário do Azure Active Directory](embedding-content.md#azureadtenant)
 * [Criar sua conta do Power BI Pro](embedding-content.md#proaccount)
+* [Registro e permissões do aplicativo](embedding-content.md#appreg)
+* [Criar espaços de trabalho do aplicativo](embedding-content.md#appws)
+* [Criar e carregar seus relatórios](embedding-content.md#createreports)
 
 É possível acessar a [Ferramenta de experiência de integração](https://aka.ms/embedsetup) para começar rapidamente e baixar um aplicativo de exemplo.
 
@@ -83,7 +86,7 @@ A conta mestre é apenas um usuário normal com uma licença do Power BI Pro que
 
 Você precisa registrar o aplicativo no Azure AD para fazer chamadas à API REST. Para obter mais informações, consulte [Registrar um aplicativo do Azure AD para inserir o conteúdo do Power BI](register-app.md).
 
-### <a name="create-app-workspaces"></a>Criar espaços de trabalho do aplicativo
+### <a name="appws"></a>Criar espaços de trabalho do aplicativo
 
 Se você estiver inserindo dashboards e relatórios para os clientes, eles precisarão ser colocados em um espaço de trabalho do aplicativo. A conta *mestre*, mencionada acima, precisa ser um administrador do espaço de trabalho do aplicativo.
 
@@ -93,13 +96,17 @@ Se você estiver inserindo dashboards e relatórios para os clientes, eles preci
 > Um usuário não administrador só pode criar até 250 espaços de trabalho do aplicativo. Para criar mais espaços de trabalho do aplicativo, você precisa usar uma conta do administrador de locatário.
 >
 
-### <a name="create-and-upload-your-reports"></a>Criar e carregar seus relatórios
+### <a name="createreports"></a>Criar e carregar seus relatórios
 
 É possível criar seus relatórios e conjuntos de dados usando o Power BI Desktop e, em seguida, publicar esses relatórios em um espaço de trabalho do aplicativo. O usuário final que publicar os relatórios precisará ter uma licença do Power BI Pro para publicar em um espaço de trabalho do aplicativo.
 
 ## <a name="step-2-embed-your-content"></a>Etapa 2: inserir seu conteúdo
 
-No aplicativo, você precisa fazer a autenticação no Power BI. Se estiver inserindo conteúdo para os clientes, você armazenará as credenciais da conta *mestre* dentro do aplicativo. Para obter mais informações, consulte [Autenticar usuários e obter um token de acesso do Azure AD para o aplicativo do Power BI](get-azuread-access-token.md).
+No aplicativo, você precisa fazer a autenticação no Power BI. Se estiver inserindo conteúdo para os clientes, você armazenará as credenciais da conta *mestre* dentro do aplicativo.
+
+> [!NOTE]
+> Para obter mais informações sobre autenticação de usuários durante a inserção para os clientes, consulte [Autenticar usuários e obter um token de acesso do Azure AD para seu aplicativo do Power BI](get-azuread-access-token.md).
+>
 
 Depois de ser autenticar, no aplicativo, use as APIs JavaScript e as APIs REST do Power BI para inserir dashboards e relatórios no aplicativo. 
 
@@ -123,7 +130,7 @@ Passar para a produção requer algumas etapas adicionais.
 
 Se você estiver inserindo para a organização, só será necessário explicar para as pessoas como acessar o seu aplicativo. 
 
-Os usuários gratuitos poderão consumir o conteúdo inserido de um espaço de trabalho do aplicativo (grupo) se capacidade dedicada for compatível com esse espaço de trabalho. Lista o usuário gratuito como um membro do espaço de trabalho do aplicativo (grupo). Caso contrário, você recebe um erro 401 de não autorizado. A tabela a seguir lista os SKUs do Power BI Premium disponíveis no Office 365.
+Todos os usuários, independentemente da licença, poderão consumir o conteúdo inserido de um espaço de trabalho do aplicativo (grupo) se a capacidade dedicada for compatível com esse espaço de trabalho. Você deve adicionar explicitamente ao espaço de trabalho do aplicativo quaisquer usuários que não tenham uma licença do Power BI Pro. Caso contrário, você receberá um erro “401: não autorizado”. A tabela a seguir lista os SKUs do Power BI Premium disponíveis no Office 365.
 
 | Nó de capacidade | Total de núcleos<br/>*(Back-end + front-end)* | Núcleos de back-end | Núcleos de front-end | Limites de conexão dinâmica/DirectQuery | Máx. de renderizações de página no horário de pico |
 | --- | --- | --- | --- | --- | --- |

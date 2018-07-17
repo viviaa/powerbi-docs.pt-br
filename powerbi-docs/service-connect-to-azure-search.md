@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1d67b100620d4517e657f92acb37e370f2bb540e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 09171c02dcbf5af50553c6e82f46f7f81b15a4cc
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34480947"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136193"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Conectar-se ao Azure Search com o Power BI
 A Análise de Tráfego do Azure Search permite que você monitore e entenda o tráfego para o serviço de Azure Search. O pacote de conteúdo de Azure Search para o Power BI fornece informações detalhadas sobre seus dados de pesquisa, incluindo Search, Indexação, Status do Serviço e a Latência dos últimos 30 dias. Mais detalhes podem ser encontrados na [postagem do blog do Azure](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -56,7 +56,7 @@ O pacote de conteúdo de Azure Search exige que a Análise de Tráfego do Azure 
 Certifique-se de que o nome da conta de armazenamento seja fornecido corretamente com a chave de acesso completo. O nome da conta de armazenamento deve corresponder à conta configurada com a Análise de Tráfego do Azure Search.
 
 ## <a name="next-steps"></a>Próximas etapas
-[Introdução ao Power BI](service-get-started.md)
+[O que é o Power BI?](power-bi-overview.md)
 
 [Power BI – conceitos básicos](service-basic-concepts.md)
 

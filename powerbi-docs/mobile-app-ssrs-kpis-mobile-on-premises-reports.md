@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/13/2018
 ms.author: maggies
-ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 32d73b4be55190b908353083b497581cb1b08c6e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482235"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599014"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Exibir KPIs e relatórios locais do servidor de relatório nos aplicativos móveis do Power BI
 
@@ -103,6 +103,9 @@ Agora, é possível exibir e interagir com as KPIs e os relatórios do Power BI 
 Relatórios do Power BI, relatórios móveis do Reporting Services e KPIs são exibidos nas mesmas pastas que eles estão no portal da Web do Reporting Services. 
 
 * Toque em um relatório do Power BI ![Ícone de relatório do Power BI](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-report-icon.png). Ele é aberto no modo paisagem e é possível interagir com ele no aplicativo do Power BI.
+
+    > [!NOTE]
+  > Fazer drill down e up não está habilitado nos relatórios do Power BI em um Servidor de Relatórios do Power BI.
   
     ![Relatório do Power BI](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
 * No Power BI Desktop, os proprietários de relatório podem [otimizar um relatório](desktop-create-phone-report.md) para os aplicativos móveis do Power BI. Em seu telefone celular, os relatórios otimizados têm um ícone especial chamado ![Ícone de relatório otimizado do Power BI](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) e um layout.
@@ -129,6 +132,6 @@ Relatórios do Power BI, relatórios móveis do Reporting Services e KPIs são e
 3. Toque **Remover servidor**.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Introdução ao Power BI](service-get-started.md)  
+* [O que é o Power BI?](power-bi-overview.md)  
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

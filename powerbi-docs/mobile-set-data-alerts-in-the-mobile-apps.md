@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: aa4aac1b0628fb0670a4265095ba2abcae3c1dcf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ca419e1e07485ad29c486d8626e78d9605c8468
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292560"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965011"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Definir alertas de dados nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -25,7 +25,7 @@ Aplica-se a:
 
 Você pode definir alertas em painéis nos aplicativos móveis do Power BI e no serviço do Power BI. Os alertas notificam quando dados em um bloco são alterados além dos limites definidos. Os alertas funcionam em blocos que contêm um único número, como cartões e medidores, mas não em dados de streaming. É possível definir alertas de dados no seu dispositivo móvel e vê-los no serviço do Power BI e vice-versa. Só você pode ver os alertas de dados que você definir, mesmo que você compartilhe um painel ou um instantâneo de um bloco.
 
-Você pode definir alertas em blocos, se você tiver uma licença do Power BI Pro, ou se você tiver uma licença gratuita do Power BI e o painel compartilhado estiver com capacidade de Premium. 
+Você pode definir alertas em blocos se tiver uma licença do Power BI Pro ou se o dashboard compartilhado estiver com capacidade de Premium. 
 
 > [!WARNING]
 > Notificações de alerta controladas por dados fornecem informações sobre seus dados. Se o dispositivo for roubado, recomendamos que você vá para o serviço do Power BI para desligar todas as regras de alerta controladas por dados. 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/22/2018
 ms.author: maghan
-ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 82a4c9c58567f5ace943363b7bed59fa744e85a5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561737"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944090"
 ---
 # <a name="embedding-with-power-bi"></a>Inserção com o Power BI
 O Power BI oferece APIs para inserir seus dashboards e relatórios em aplicativos. As APIs do Power BI oferecem um conjunto consistente de funcionalidades e acesso aos recursos mais recentes do Power BI, tais como painéis, gateways e espaços de trabalho de aplicativo, ao inserir conteúdo.
@@ -29,7 +29,7 @@ Para exibir uma amostra de como a inserção funciona, consulte a [amostra de in
 ## <a name="embedding-for-your-organization"></a>Inserção para a organização
 A inserção para a organização permite que você estenda o serviço do Power BI. Isso exige que os usuários do seu aplicativo façam logon no serviço do Power BI quando desejarem exibir os seus respectivos conteúdos. Depois que alguém na organização conectar-se, este usuário só terá acesso aos painéis e relatórios dos quais ele é proprietário ou que foram compartilhados com ele no serviço do Power BI. 
 
-*Exemplos de inserção para a organização incluem o aplicativo Web interno, a Web Part do SharePoint Online e integração do Microsoft Teams.*
+*Exemplos de inserção para a organização incluem o aplicativo Web interno, a Web Part do SharePoint Online e a [integração do Microsoft Teams (você tem direitos de administrador)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/).*
 
 Para inserir para a organização, consulte o seguinte:
 

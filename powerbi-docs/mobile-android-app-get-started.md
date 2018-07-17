@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 84a2fe350c1146591aa89c5900c10f2747e90cf3
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3323258304f8c36131caf6ef269d9befa6cfbb96
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297436"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136515"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos Android
 O aplicativo Android para Microsoft Power BI oferece a experiência móvel do BI para Power BI, Servidor de Relatório do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. 
@@ -23,7 +23,7 @@ O aplicativo Android para Microsoft Power BI oferece a experiência móvel do BI
 
 Crie relatórios do Power BI no Power BI Desktop e publique-os:
 
-* [Publique-os no serviço do Power BI](service-get-started.md) e crie dashboards.
+* [Publique-os no serviço do Power BI](power-bi-overview.md) e crie dashboards.
 * [Publique-os localmente no Servidor de Relatórios do Power BI](report-server/quickstart-create-powerbi-report.md).
 
 Em seguida, no aplicativo do Power BI para Android, você interage com os dashboards e relatórios, localmente ou na nuvem.
@@ -136,7 +136,7 @@ Aqui estão algumas outras coisas que podem ser feitas no aplicativo do Power BI
 
 ### <a name="see-also"></a>Consulte também
 * [Baixe o aplicativo Android](http://go.microsoft.com/fwlink/?LinkID=544867) na loja de aplicativos Android.
-* [Introdução ao Power BI](service-get-started.md)
+* [O que é o Power BI?](power-bi-overview.md)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 
 

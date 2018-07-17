@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 997dd8b598e67d590723c72fb35245c3b3486c8b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: afcaae9499aa1c7e1461030cfa6b5d7b35a47188
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242436"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136009"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Conectar-se ao Zendesk com o Power BI
 O pacote de conteúdo do Zendesk oferece um painel e um conjunto de relatórios do Power BI que fornecem informações sobre os volumes de tíquetes e o desempenho do agente. Você pode usar o painel e os relatórios como fornecidos, ou então personalizá-los para realçar as informações que mais importam a você.  Os dados serão atualizados automaticamente uma vez por dia. 
@@ -84,6 +84,6 @@ A URL do Zendesk será igual à URL que você usa para se conectar em sua conta 
 Se você estiver com problemas para se conectar, verifique a URL do Zendesk e confirme que está usando uma conta de administrador do Zendesk.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Introdução ao Power BI](service-get-started.md)
+* [O que é o Power BI?](power-bi-overview.md)
 * [Obter dados](service-get-data.md)
 

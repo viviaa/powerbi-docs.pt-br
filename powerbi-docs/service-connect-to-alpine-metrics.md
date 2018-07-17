@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d9e70e0b69f0ce68826f566e6e5cdb0f4d8e113e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 7456a030dd5047642c4de9c7a289fed96fe390f1
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34242922"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135963"
 ---
 # <a name="connect-to-alpine-metrics-sales-predictions-with-power-bi"></a>Conectar-se a Previsões de Vendas do Alpine Metrics com o Power BI
 A Alpine Metrics fornece Otimização do Processo de Vendas Preditivo avançada, na nuvem e a pedido, para pequenas e grandes organizações de vendas. O pacote de conteúdo de Previsões de Vendas do Alpine Metrics para Power BI inclui métricas, como vendas e riscos e potencial e previstos, permitindo que você tenha uma percepção mais aprofundada sobre o futuro de sua empresa. 
@@ -66,7 +66,7 @@ O pacote de conteúdo inclui dados das seguintes tabelas:
 É necessário ter uma conta do Alpine Metrics com permissões de acesso às tabelas acima para criar uma instância deste pacote de conteúdo.
 
 ## <a name="next-steps"></a>Próximas etapas
-[Introdução ao Power BI](service-get-started.md)
+[O que é o Power BI?](power-bi-overview.md)
 
 [Power BI – conceitos básicos](service-basic-concepts.md)
 

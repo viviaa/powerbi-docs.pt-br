@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d350593f3a5168d959711e1ca2bbbd8a86524187
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a69cccafa9651bbda44ea2154ebe68463c9da907
+ms.sourcegitcommit: 7e0335bd8c263b5f8ba4303b986ddc450d842297
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288051"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36330112"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -56,7 +56,7 @@ Configure uma página de relatório da maneira que você deseja que ela seja exi
 
 ![Adicionar um indicador](media/desktop-bookmarks/bookmarks_04.png)
 
-O **Power BI Desktop** cria um indicador e concede a ele um nome genérico. Você pode facilmente *renomear*, *excluir* ou *atualizar* um indicador selecionando as reticências ao lado do nome do indicador e, em seguida, selecionando uma ação no menu que é exibido.
+O **Power BI Desktop** cria um indicador e concede a ele um nome genérico. Você pode facilmente *renomear*, *excluir* ou *atualizar* um indicador selecionando as reticências ao lado do nome do indicador e, em seguida, selecionar uma ação no menu que é exibido.
 
 ![Selecionar o submenu para um indicador usando as reticências](media/desktop-bookmarks/bookmarks_05.png)
 
@@ -104,7 +104,7 @@ Quando um indicador é adicionado, o status visível de cada objeto também é s
 ## <a name="bookmarks-for-shapes-and-images"></a>Indicadores para imagens e formas
 Você também pode vincular formas e imagens a indicadores. Com esse recurso, quando você clica em um objeto, ele mostra o indicador a ele associado. Isso pode ser especialmente útil ao trabalhar com botões; você pode aprender mais lendo o artigo sobre [usar botões no Power BI](desktop-buttons.md). 
 
-Para atribuir um indicador a um objeto, selecione o objeto e expanda a seção **Ação** no painel **Formatar Forma**, conforme mostrado na imagem a seguir.
+Para atribuir um indicador a um objeto, selecione o objeto e expanda a seção **Ação** no painel **Formatar forma**, conforme mostrado na imagem a seguir.
 
 ![Adicionar link de indicador a um objeto](media/desktop-bookmarks/bookmarks_10.png)
 

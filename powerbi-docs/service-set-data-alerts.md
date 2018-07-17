@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 321e66fd5ed185a92c98bf7832dc3b71944be98d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689704"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137506"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Alertas de dados no serviço do Power BI
 Defina alertas para notificá-lo quando os dados em seus dashboards forem alterados além dos limites definidos por você. 
@@ -104,6 +104,6 @@ Existem várias maneiras de gerenciar seus alertas: no próprio bloco do painel,
 ## <a name="next-steps"></a>Próximas etapas
 [Criar um Microsoft Flow que inclui um alerta de dados](service-flow-integration.md)    
 [Definir alertas de dados em seu dispositivo móvel](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Introdução ao Power BI](service-get-started.md)    
+[O que é o Power BI?](power-bi-overview.md)    
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 53c4250949a696f4abbd0722cf89207f2c8d37c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 166d61c78f8e85a91dafa5de698d782b456834a7
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813838"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37601627"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
@@ -255,7 +255,7 @@ Os links ao lado de cada atualização significam o seguinte:
 * Trechos de **[vídeo]** são reproduzidos em uma nova guia do navegador, quando o recurso está sendo discutido.
 * Alguns recursos têm um **[artigo]** que fornece mais detalhes.
 * A maioria dos recursos é explicada na postagem de **[blog]** de atualização mensal.
--   Por fim, alguns recursos são autoexplicativos e não precisam de um artigo ou vídeo.
+* Por fim, alguns recursos são autoexplicativos e não precisam de um artigo ou vídeo.
 
 Você também pode assistir ao vídeo das **Atualizações mais recentes** deste mês desde o início, diretamente neste artigo, clicando no ícone **reproduzir** na imagem de vídeo localizada abaixo da lista de atualizações.
 
@@ -1844,15 +1844,15 @@ Os seguintes recursos foram adicionados ou aprimorados nesta atualização:
     -   Melhor experiência de visualização para fontes multidimensionais (Analysis Services e SAP BusinessObjects)
     -   Opção Mostrar Itens Selecionados
     -   Recursos de Pesquisa aprimorados na árvore do Navegador
--   Novas Transformações
-    -   Operações de Duração e Subtração para colunas de Data/Hora
-    -   Colunas de Agregação: opção de desabilitar o prefixo das novas colunas
--   Aprimoramentos da Lista de Campos
-    -   Expandir/Recolher tabelas
-    -   Ocultar/Reexibir campos
-    -   Layout otimizado (espaçamento, margens e fontes)
--   Navegação de Páginas do Relatório - Suporte de teclado
--   Várias correções de bugs
+- Novas Transformações
+  -   Operações de Duração e Subtração para colunas de Data/Hora
+  -   Colunas de Agregação: opção de desabilitar o prefixo das novas colunas
+- Aprimoramentos da Lista de Campos
+  -   Expandir/Recolher tabelas
+  -   Ocultar/Reexibir campos
+  -   Layout otimizado (espaçamento, margens e fontes)
+- Navegação de Páginas do Relatório - Suporte de teclado
+- Várias correções de bugs
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 

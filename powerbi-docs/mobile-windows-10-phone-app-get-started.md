@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/05/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 6cd1c8aec1bf31a8cae43074531014cbeef71bd5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ee490107b802957b262d0a133d8e8b0e2a42754
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34295113"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135779"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Introdução ao aplicativo móvel do Power BI para Windows 10
 O aplicativo móvel do Power BI para Windows 10 leva o Power BI para seu bolso, com acesso móvel atualizado e sensível ao toque a suas informações corporativas. Veja e interaja com seus dashboards da empresa de qualquer lugar &#151; diretamente na [tela inicial do Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -121,6 +121,6 @@ Aqui estão algumas outras coisas que você pode fazer no aplicativo do Power BI
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Baixar o aplicativo Power BI](http://go.microsoft.com/fwlink/?LinkID=526478) na Windows Store  
-* [Introdução ao Power BI](service-get-started.md)
+* [O que é o Power BI?](power-bi-overview.md)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

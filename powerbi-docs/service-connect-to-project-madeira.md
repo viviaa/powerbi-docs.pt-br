@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245595"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599774"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Conectar-se ao Project “Madeira” com o Power BI
 Obter informações para seus dados do Project “Madeira” é fácil com o Power BI e o conteúdo do Project “Madeira”. O Power BI recupera tanto seus dados de Vendas quanto Financeiros e, em seguida, compila um painel inicial e relatórios com base nesses dados.
@@ -33,7 +33,7 @@ Conecte-se ao [pacote de conteúdo do Project “Madeira” Analytics](https://a
     ![](media/service-connect-to-project-madeira/services.png)
 3. Selecione **Project "Madeira"** e, em seguida, selecione **Obter**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. Quando solicitado, digite a URL do Project “Madeira”. A URL deve seguir fielmente o seguinte padrão https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') com o nome da empresa do Project “Madeira”. Observe que é importante observar que não há nenhuma barra no final e a conexão está em https. Veja detalhes sobre como encontrar essa URL [abaixo](#FindingParams).  
+4. Quando solicitado, digite a URL do Project “Madeira”. A URL deve seguir fielmente o seguinte padrão <https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US>') com o nome da empresa Project “Madeira”. Observe que é importante observar que não há nenhuma barra no final e a conexão está em https. Veja detalhes sobre como encontrar essa URL [abaixo](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. Quando solicitado, selecione Básico como Método de Autenticação, insira o endereço de email do Project "Madeira" como o nome de usuário de email e, em seguida, insira a chave de acesso do serviço Web na conta do seu Project "Madeira" como a senha. Se você já tiver entrado no Project “Madeira” em seu navegador, talvez suas credenciais não sejam solicitadas. Veja detalhes sobre como gerar essa chave de acesso [abaixo](#FindingParams).  
@@ -93,10 +93,10 @@ O painel do Power BI se baseia em serviços Web publicados que estão listados a
 
 Se você vir esse erro depois de digitar a URL do Projeto "Madeira", verifique se os seguintes requisitos foram atendidos:  
 
-   - A URL segue exatamente este padrão https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-   - Exclua qualquer texto após o nome da empresa entre parênteses  
-   - Verifique se que não há nenhuma barra invertida no final da URL.  
-   - Verifique se a URL está usando uma conexão segura, conforme indicado pela URL começando com https.  
+- A URL segue exatamente este padrão https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')  
+- Exclua qualquer texto após o nome da empresa entre parênteses  
+- Verifique se que não há nenhuma barra invertida no final da URL.  
+- Verifique se a URL está usando uma conexão segura, conforme indicado pela URL começando com https.  
 
 **"Falha no logon"** se você receber um erro de "falha no logon" quando fizer logon no painel usando suas credenciais do Project “Madeira”, isso pode ter sido causado por um dos seguintes problemas:  
 
@@ -104,16 +104,16 @@ Se você vir esse erro depois de digitar a URL do Projeto "Madeira", verifique s
    - A instancia do Project "Madeira" à qual você está tentando se conectar não tem um certificado SSL válido. Nesse caso, você verá uma mensagem de erro mais detalhada (“Não é possível estabelecer a relação de confiança SSL”). Observe que não há suporte para os certificados autoassinados.  
 
 **"Opa"** Se você vir um diálogo de erro “Opa” depois de passar pelo diálogo de autenticação, isso costuma ser causado por um problema ao se conectar aos dados do pacote de conteúdo. Verifique se a URL segue o padrão especificado anteriormente:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')
 
 Um erro comum é especificar a URL completa para um serviço Web específico:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')/powerbifinance
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')/powerbifinance
 
 Ou você pode ter esquecido de especificar o nome da empresa:   
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
+    https://<em>mycronusus</em>.projectmadeira.com:7048/NAV/OData/
 
 ## <a name="next-steps"></a>Próximas etapas
-[Introdução ao Power BI](service-get-started.md)
+[O que é o Power BI?](power-bi-overview.md)
 
 [Power BI – conceitos básicos](service-basic-concepts.md)
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6341d5b3bba051cc31fe95f526450e03c14d4b69
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964804"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145377"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Perguntas frequentes sobre o Power BI
 * Se você tiver outras dúvidas, [experimente perguntar à comunidade do Power BI](http://community.powerbi.com/).
@@ -54,7 +54,7 @@ Sim, preços sem fins lucrativos estão disponíveis ao comprar diretamente da M
 O Power BI [https://powerbi.com](https://powerbi.com) não está disponível como um serviço de nuvem privado e interno. No entanto, você tem três outras opções para exibir e trabalhar com os dados locais. 
 
 ### <a name="on-premises-data-gateway"></a>Gateway de dados local
-Com o Power BI e Power BI Desktop, você pode se conectar com segurança às suas próprias fontes de dados locais. Com o [Gateway de dados local](service-gateway-onprem.md), é possível conectar-se dinamicamente ao servidor local do SQL Server Analysis Services e a outras fontes de dados. Você também pode definir a atualização agendada com um gateway centralizado. Se um gateway não estiver disponível, será possível atualizar os dados de fontes de dados locais usando o [Power BI Gateway – Personal](personal-gateway.md).
+Com o Power BI e Power BI Desktop, você pode se conectar com segurança às suas próprias fontes de dados locais. Com o [Gateway de dados local](service-gateway-onprem.md), é possível conectar-se dinamicamente ao servidor local do SQL Server Analysis Services e a outras fontes de dados. Você também pode definir a atualização agendada com um gateway centralizado. Se um gateway não estiver disponível, será possível atualizar os dados de fontes de dados locais usando o [Power BI Gateway – Personal](service-gateway-personal-mode.md).
 
 ### <a name="power-bi-report-server"></a>Servidor de Relatório do Power BI
 O Servidor de Relatório do Power BI é uma solução que você implanta em seu próprio local para criar, publicar e gerenciar relatórios e, em seguida, entregá-los a usuários diferentes de diferentes maneiras, seja exibindo-os em um navegador da Web, no dispositivo móvel ou como um email na caixa de entrada deles. Leia mais sobre o [Servidor de Relatório do Power BI](report-server/get-started.md).
@@ -138,6 +138,7 @@ Como muitos outros serviços da Microsoft e o software, o Power BI fornece uma m
 * Para **desfazer** as últimas ações, pressione CTRL + Z.
 
 ## <a name="next-steps"></a>Próximas etapas
+* [O que é o Power BI?](power-bi-overview.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 * Ainda tem um problema? Visite a [página de suporte do Power BI](https://powerbi.microsoft.com/support/)
 

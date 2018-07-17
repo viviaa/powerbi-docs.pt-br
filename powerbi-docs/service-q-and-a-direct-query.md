@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 7402bc638f27175e1c8e1f733fefd508850d9943
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 75636885da6357a756508558841c99435aa5f442
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245572"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092174"
 ---
 # <a name="enable-qa-for-live-connections"></a>Habilitar P e R para conexões dinâmicas
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>O que é o gateway de dados local?  O que é uma conexão dinâmica?
@@ -56,6 +56,7 @@ Durante a fase de Visualização deste recurso, existem várias limitações:
 
 * Inicialmente, o recurso só está disponível para fontes de dados tabulares do SQL Server 2016 Analysis Services. O recurso é otimizado para funcionar com dados de tabela. Algumas funcionalidades estão disponíveis para fontes de dados multidimensionais, mas ainda não há suporte para a experiência completa de P e R para dados multidimensionais. Fontes de dados adicionais compatíveis com o gateway de dados local serão distribuídas ao longo do tempo.
 * O suporte completo para a segurança em nível de linha definida no SQL Server Analysis Services não está disponível inicialmente na visualização pública. Ao fazer perguntas na P e R, o “preenchimento automático” de perguntas durante a digitação pode mostrar valores de cadeia de caracteres aos quais um usuário não tem acesso. No entanto, a RLS definida no modelo é respeitada em relação a visuais de relatório e de gráfico e, portanto, nenhum dado numérico subjacente pode ser exposto. Opções para controlar esse comportamento serão lançadas em atualizações futuras.
+* A OLS (Segurança em Nível do Objeto) não tem suporte. As P e R não respeitam a segurança em nível de objeto e podem revelar nomes de tabela ou coluna para os usuários que não têm acesso a eles. Você deve habilitar a RLS para garantir que os valores de dados também estejam protegidos adequadamente. 
 * Há suporte para as conexões dinâmicas somente com o Gateway de dados local. Sendo assim, elas não podem ser usadas com o gateway pessoal.
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/13/2018
 ms.author: maikelson
-ms.openlocfilehash: 29aba440f92f37763dd9887b5fa7511d6191a5f7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34299276"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137507"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -22,25 +22,9 @@ Registre-se para os próximos webinars ao vivo ou assista a nossas sessões grav
 
 ## <a name="upcoming-webinars"></a>Próximos webinars
 
-Registrar-se para ouvir especialistas do Power BI e participar de sessões ao vivo de P e R
+Nenhum webinar agendado ainda. Volte em breve para saber se há eventos futuros.
 
-**Tenha os insights certos com o Power BI e o Visio**
-<br>por Shakun Grover
-<br>*22 de maio de 2018, 10h PST, 13h EST*
-
-Junte-se a nós neste webinar para aprender a combinar dashboards do Power BI e diagramas do Microsoft Visio para criar insights visuais avançados. O Visio e o Power BI são altamente visuais e naturalmente complementares. O Visio permite criar diagramas ilustrativos, como fluxos de trabalho interconectados e layouts do mundo real. O Power BI ajuda a criar dashboards intuitivos usando gráficos e mapas para medir indicadores chave de desempenho e acompanhar metas.
-
-[Registre-se para assistir em 22 de maio](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
-
-**Saiba sobre o Power BI Embedded em 20 minutos**
-<br>por Megan Asarrane e Colin Murphy
-<br>*23 de maio de 2018, 10h PST, 13h EST*
-
-Este webinar está sendo apresentado para introduzir o Power BI Embedded. No final desse webinar, os usuários devem ser capazes de compreender o que é o Power BI Embedded, as próximas etapas para começar com o produto e onde obter ajuda/recursos.
-
-[Registre-se para assistir em 23 de maio](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
-
->[Participar dos próximos webinars na comunidade do Power BI](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
+>[Participar dos próximos webinars na comunidade do Power BI](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Webinars em destaque
 
@@ -78,15 +62,27 @@ Assista a sessões gravadas a qualquer momento
 <br>por Charles Sterling
 <br>[Assista agora](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
+**Saiba sobre o Power BI Embedded em 20 minutos**
+<br>por Megan Asarrane e Colin Murphy
+<br>[Registre-se e assista agora](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
+
 **Além da planilha**
 <br>por Gohul Shanmugalingam
 <br>[Registre-se e assista agora](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
+
+**Tenha os insights certos com o Power BI e o Visio**
+<br>por Shakun Grover
+<br>[Registre-se e assista agora](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Transformando um relatório de Bom para ÓTIMO!**
 <br>por Reid Havens
 <br>[Assista agora](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Parceiros ###
+
+**Impulsione seu BI com inteligência de localização**
+<br>por Scott Ball da Esri e Enrique Plaza da Microsoft
+<br>[Registre-se e assista agora](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
 **Melhorando a lucratividade na saúde**
 <br>por Stephen Cracknell e Stuart Macanliss do US Medical IT
@@ -172,7 +168,7 @@ Assista a sessões gravadas a qualquer momento
 
 - [Sessões sob demanda do Microsoft Data Insights Summit 2017](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [Introdução ao Power BI](service-get-started.md)
+- [O que é o Power BI?](power-bi-overview.md)
 
 - Siga [@MSPowerBI no Twitter](https://twitter.com/mspowerbi)
 

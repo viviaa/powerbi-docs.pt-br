@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7a43b5c210c0e7f2bd26eea03bdcd5d2fa975321
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 85bf9630a8c272b513f27f38b24a5d8a77075444
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297298"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599610"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI
 Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](power-bi-visualizations-arcgis.md).
@@ -262,7 +262,7 @@ No serviço do Power BI, os usuários podem parar de usar os Mapas do ArcGIS par
 </tr>
 <tr>
 <td>chave</td>
-<td>Software\Políticas\Microsoft\Power BI Desktop\</td>
+<td>Software\Políticas\Microsoft\Power BI Desktop&lt;/td&gt;
 </tr>
 <tr>
 <td>valueName</td>

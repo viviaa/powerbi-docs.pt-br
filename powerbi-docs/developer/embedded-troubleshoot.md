@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 07/03/2018
 ms.author: maghan
-ms.openlocfilehash: ad23161985cc2721562cfdfd9128e326db887ece
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813148"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926549"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Solucionando problemas do aplicativo inserido
 
@@ -96,6 +96,44 @@ O back-end do aplicativo pode precisar atualizar o token de autenticação antes
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+## <a name="authentication"></a>Autenticação
+
+### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Falha na autenticação com AADSTS70002 ou AADSTS50053
+
+**(AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)**
+
+Se você estiver usando o Power BI Embedded e utilizando a autenticação direta do Azure AD e está recebendo mensagens ao fazer logon, como ***error:unauthorized_client,error_description:AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta***. Isso acontece porque a autenticação direta foi desativada em 14/06/2018.
+
+É recomendável usar o suporte do [acesso condicional do Azure AD](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) para bloqueio de autenticação herdada ou usar a [autenticação de passagem de diretório do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+
+No entanto, há uma maneira de fazer a reativação usando uma [Política do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) que pode ser no escopo da organização ou uma [entidade de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+
+**_É recomendável habilitar isso de acordo com o aplicativo e apenas conforme o necessário para uma solução alternativa._**
+
+Para criar essa política, você precisa ser um **administrador global** do diretório em que está criando a política e a atribuição. Aqui está um script de exemplo para criar a política e atribuí-la ao SP para este aplicativo:
+
+1. Instale o [módulo do PowerShell de visualização do Azure AD](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+
+2. Execute os seguintes comandos do Powershell, linha por linha, (certificando-se de que a variável $sp não tem mais de um aplicativo como resultado).
+
+```powershell
+Connect-AzureAD
+```
+
+```powershell
+$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
+```
+
+```powershell
+$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
+```
+
+```powershell
+Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
+```
+
+Depois de atribuir a política, aguarde aproximadamente de 15 a 20 segundos para a propagação antes de testar.
+
 **Falha na geração do token ao fornecer a identidade em vigor**
 
 Por motivos diferentes, pode haver falha em GenerateToken com a identidade em vigor fornecida.
@@ -113,6 +151,30 @@ Para verificar qual é o problema, tente as opções a seguir.
 * Se a propriedade IsEffectiveIdentityRolesRequired for verdadeira, a Função será necessária.
 * A DatasetId é obrigatória para qualquer EffectiveIdentity.
 * Para o Analysis Services, o usuário mestre deve ser administrador do gateway.
+
+### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: a concessão exige permissão de administrador
+
+**_Sintomas:_**</br>
+Quando um usuário não administrador tenta entrar em um aplicativo pela primeira vez para conceder a autorização, a seguinte mensagem de erro aparece:
+* O ConsentTest precisa de permissão para acessar os recursos em sua organização que apenas um administrador pode conceder. Peça ao administrador para conceder permissão para este aplicativo antes de usá-lo.
+* AADSTS90094: a concessão exige permissão de administrador.
+
+    ![Teste de consentimento](media/embedded-troubleshoot/consent-test-01.png)
+
+Um usuário administrador pode entrar e dar o consentimento com êxito.
+
+**_Causa raiz:_**</br>
+O consentimento do usuário está desabilitado para o locatário.
+
+**_Várias correções são possíveis:_**
+
+*Habilitar o consentimento do usuário para todo o locatário (todos os usuários, todos os aplicativos)*
+1. No Portal do Azure, navegue até "Azure Active Directory" = > "Usuários e grupos" = > "Configurações de usuário"
+2. Habilite a configuração “Os usuários podem consentir que os aplicativos acessem dados da empresa em seus nomes” e, em seguida, salve as alterações
+
+    ![Correção do teste de consentimento](media/embedded-troubleshoot/consent-test-02.png)
+
+*Concessão de permissões por um administrador* Um administrador concede permissões ao aplicativo, para todo o locatário ou para um usuário específico.
 
 ## <a name="data-sources"></a>Fontes de dados
 
@@ -175,7 +237,7 @@ Ao executar o aplicativo de exemplo **Inserir para a organização**, você ver�
 
     AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
 
-Isso ocorre porque a URL de redirecionamento especificada para o aplicativo de servidor Web é diferente da URL do exemplo. Se você quiser registrar o aplicativo de exemplo, use *http://localhost:13526/* como a URL de redirecionamento.
+Isso ocorre porque a URL de redirecionamento especificada para o aplicativo de servidor Web é diferente da URL do exemplo. Se você quiser registrar o aplicativo de exemplo, use `http://localhost:13526/` como a URL de redirecionamento.
 
 Se você quiser editar o aplicativo registrado, aprenda a editar o [aplicativo registrado no AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), assim, o aplicativo poderá fornecer acesso a APIs Web.
 

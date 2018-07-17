@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7c0399072bfef35a1103a5db448da183f64f74c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a30c90b1c180277a584a152f26c7f92549284c7d
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245352"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944734"
 ---
 # <a name="manage-your-data-storage"></a>Gerenciar o armazenamento de dados
 Saiba como você pode gerenciar seu armazenamento de dados ou seu espaço de trabalho do aplicativo individual para garantir que você pode continuar publicando relatórios e conjuntos de dados.
 
 Os usuários e os espaços de trabalho do aplicativo têm suas próprias capacidades de dados
 
-* Os usuários Gratuito e Pro têm um armazenamento de dados máximo de 10 GB.
-* Os usuários Pro podem criar espaços de trabalho do aplicativo, com um armazenamento de dados máximo de 10 GB cada um.
+* Todos os usuários têm um armazenamento de dados máximo de 10 GB.
+* Os usuários com uma licença do Power BI Pro podem criar espaços de trabalho do aplicativo, com um armazenamento de dados máximo de 10 GB cada um.
 
 No nível do locatário, o uso total não pode exceder 10 GB por usuário Pro em todos os usuários Pro e espaços de trabalho do aplicativo no locatário.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e44d4bb48289b515797167fb3b91a9bbf0d2bcdd
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250816"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092151"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Conectar-se ao UserVoice com o Power BI
 É fácil acompanhar e explorar dados do UserVoice com o Power BI e o pacote de conteúdo do UserVoice. O Power BI recupera seus dados, incluindo tíquetes, sugestões e classificações de satisfação, e cria um painel e relatórios prontos para uso com base nesses dados.
@@ -35,7 +35,7 @@ Conecte-se ao [pacote de conteúdo do UserVoice](https://app.powerbi.com/getdata
 3. Selecione **UserVoice** e **Obter**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. Quando solicitado, digite a URL do UserVoice. A URL deve seguir o padrão indicado abaixo com exatamente https://fabrikam.uservoice.com substituindo “fabrikam” pelo nome do produto ou serviço.
+4. Quando solicitado, digite a URL do UserVoice. A URL deve seguir o padrão indicado abaixo com exatamente `https://fabrikam.uservoice.com` substituindo “fabrikam” pelo nome do produto ou serviço.
    
    >[!NOTE]
    >Não há nenhuma barra no final e a conexão está em http**s**.
@@ -63,7 +63,7 @@ Conecte-se ao [pacote de conteúdo do UserVoice](https://app.powerbi.com/getdata
 
 Se você visualizar esse erro depois de digitar a URL do UserVoice. Verifique se que os requisitos a seguir forem atendidos:
 
-* A URL segue exatamente esse padrão "https://fabrikam.uservoice.com" substituindo "fabrikam" pelo prefixo de URL correto do UserVoice.
+* A URL segue exatamente esse padrão `https://fabrikam.uservoice.com` substituindo "fabrikam" pelo prefixo de URL correto do UserVoice.
 * Verifique se todas as letras são minúsculas.
 * Verifique se a URL está em "http**s**".
 * Verifique se que não há nenhuma barra invertida no final da URL.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 4680ab3709f1a2cbe56445e6719ea4de15396eb0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297643"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598594"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorar blocos nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -40,7 +40,7 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *Por exemplo, no gráfico de linhas os valores selecionados são para **Vendas Deste Ano** e **Vendas do Ano Passado** em **agosto**.*  
+   <em>Por exemplo, no gráfico de linhas, os valores selecionados são para **Vendas deste Ano</em>* e **Vendas do Ano Passado** em **agosto**.*  
    
    Em um gráfico de pizza, toque em uma fatia para mostrar seu valor na parte superior da pizza.  
    
@@ -107,7 +107,7 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   *Neste gráfico de barras, os valores da barra **Decor** são exibidos na parte superior do gráfico.*
+   <em>Neste gráfico de barras, os valores da barra **Decor</em>* são exibidos na parte superior do gráfico.*
    
    Toque no ícone **Tela inteira** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) para abrir o bloco em modo de tela inteira, sem barras de menu e de navegação.
    
@@ -126,6 +126,6 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
 4. Toque na seta ou no botão para voltar para fechar o bloco e retornar ao painel.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Introdução ao Power BI](service-get-started.md)
+* [O que é o Power BI?](power-bi-overview.md)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

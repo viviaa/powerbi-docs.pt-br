@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 06/27/2018
 ms.author: maggies
-ms.openlocfilehash: 5dd171ccd7d8859286abeac2f87771b454421448
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: cade8b126742610814f47587c950458796cca474
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292836"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136460"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Exibir os dados offline em aplicativos móveis do Power BI
 Aplica-se a:
@@ -55,7 +55,8 @@ Quando estiver offline com o Power BI em seu dispositivo móvel, talvez você te
 * O Power BI pode armazenar em cache até 250 MB de dados offline.
 * Alguns tipos de bloco necessitam de uma conexão de servidor ativa e, portanto, não estão disponíveis offline &#151; por exemplo, blocos de mapa do Bing e alguns blocos personalizados.
 * Pastas de trabalho do Excel inteiras no Power BI não estão disponíveis offline.
-* Você poderá ver os relatórios móveis e KPIs do Reporting Services offline se eles foram exibidos quando você estava conectado. Eles não são atualizadas em segundo plano. Elas são atualizadas sempre que você as abri-las. 
+* Você poderá ver os relatórios móveis e KPIs do Reporting Services offline se eles foram exibidos quando você estava conectado. Eles não são atualizadas em segundo plano. Elas são atualizadas sempre que você as abri-las.
+* Nos aplicativos móveis do Power BI, não é possível ver os arquivos do Power BI Desktop (.pbix) salvos no Servidor de Relatórios do Power BI. 
 
 ## <a name="next-steps"></a>Próximas etapas
 Seus comentários nos ajudam a decidir o que implementar no futuro, portanto, não se esqueça de votar em outros recursos que você gostaria de ver em aplicativos móveis do Power BI. 
@@ -63,5 +64,5 @@ Seus comentários nos ajudam a decidir o que implementar no futuro, portanto, n�
 * [Aplicativos do Power BI para dispositivos móveis](mobile-apps-for-mobile-devices.md)
 * Siga @MSPowerBI no Twitter
 * Participe da conversa na [Comunidade do Power BI](http://community.powerbi.com/)
-* [Introdução ao Power BI](service-get-started.md)
+* [O que é o Power BI?](power-bi-overview.md)
 
