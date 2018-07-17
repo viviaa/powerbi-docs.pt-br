@@ -896,8 +896,10 @@
           href: developer/what-can-you-do.md
     - name: Tutoriais
       items:
-        - name: Inserir o conteúdo para clientes
+        - name: Inserir o conteúdo para seus clientes
           href: developer/embed-sample-for-customers.md
+        - name: Inserir o conteúdo para sua organização
+          href: developer/embed-sample-for-your-organization.md
     - name: Conceitos
       items:
         - name: Trabalhando com APIs REST do Power BI
@@ -934,12 +936,8 @@
               href: developer/embedding.md
             - name: Como inserir seu conteúdo
               href: developer/embedding-content.md
-            - name: Integrar um dashboard em um aplicativo (usuário possui dados)
-              href: developer/integrate-dashboard.md
-            - name: Integrar um bloco do Power BI em um aplicativo (usuário possui dados)
-              href: developer/integrate-tile.md
-            - name: Integrar um relatório do Power BI em um aplicativo (usuário possui dados)
-              href: developer/integrate-report.md
+            - name: Como inserir de um aplicativo
+              href: developer/embed-from-apps.md
             - name: Integrar conteúdo em seu aplicativo para nuvens soberanas (o aplicativo é proprietário de dados)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Inserir layouts personalizados em um aplicativo
