@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: d9e2f76c63ee9ebff01080686277a3fbb5af46f3
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900067"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877408"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para seus clientes
 Com o **Power BI Embedded no Azure**, você pode inserir relatórios, painéis ou blocos em um aplicativo usando **app owns data**. **App owns data** representa um aplicativo que usa o Power BI como sua plataforma de análise incorporada. Normalmente, esse é um cenário de **desenvolvedor ISV**. Como **desenvolvedor ISV**, você pode criar conteúdo do Power BI que exibe relatórios, dashboards ou blocos em um aplicativo totalmente integrado e interativo, sem precisar que os usuários do aplicativo tenham uma licença do Power BI, ou até mesmo saibam que o Power BI está ativado nos bastidores. Este tutorial demonstra como integrar um relatório em um aplicativo usando o SDK do .NET do **Power BI** com a API JavaScript do **Power BI** ao usar o **Power BI Embedded no Azure** para clientes com **app owns data**.
@@ -54,7 +54,7 @@ Registre seu aplicativo no Azure Active Directory para permitir que ele tenha ac
     ![Pesquisa de registro de aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Registro de novo aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Siga os prompts e crie um novo aplicativo. Para app owns data, você precisa usar **Nativo** como o tipo de aplicativo. Você também precisará fornecer um **URI de redirecionamento** que o **Azure AD** usa para retornar respostas de token. Insira um valor específico ao seu aplicativo (por exemplo, `http://localhost:13526/redirect`).
+4. Siga os prompts e crie um novo aplicativo. Para app owns data, você precisa usar **Nativo** como o tipo de aplicativo. Você também precisará fornecer um **URI de redirecionamento** que o **Azure AD** usa para retornar respostas de token. Insira um valor específico ao seu aplicativo (por exemplo, `http://localhost:13526/Redirect`).
 
     ![Criar Aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
