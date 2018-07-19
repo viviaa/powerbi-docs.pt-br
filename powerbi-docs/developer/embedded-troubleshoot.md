@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.author: maghan
-ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926549"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877014"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Solucionando problemas do aplicativo inserido
 
@@ -102,13 +102,11 @@ O back-end do aplicativo pode precisar atualizar o token de autenticação antes
 
 **(AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)**
 
-Se você estiver usando o Power BI Embedded e utilizando a autenticação direta do Azure AD e está recebendo mensagens ao fazer logon, como ***error:unauthorized_client,error_description:AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta***. Isso acontece porque a autenticação direta foi desativada em 14/06/2018.
+Se você estiver usando o Power BI Embedded e utilizando a autenticação direta do Azure AD e está recebendo mensagens ao fazer logon, como ***error:unauthorized_client,error_description:AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta***. Isso acontece porque a autenticação direta foi desativada por padrão em 14/06/2018.
 
-É recomendável usar o suporte do [acesso condicional do Azure AD](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) para bloqueio de autenticação herdada ou usar a [autenticação de passagem de diretório do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+Há uma maneira de fazer a reativação usando uma [Política do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) que pode ser no escopo da organização ou uma [entidade de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-No entanto, há uma maneira de fazer a reativação usando uma [Política do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) que pode ser no escopo da organização ou uma [entidade de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
-
-**_É recomendável habilitar isso de acordo com o aplicativo e apenas conforme o necessário para uma solução alternativa._**
+É recomendável habilitar isso de acordo com o aplicativo.
 
 Para criar essa política, você precisa ser um **administrador global** do diretório em que está criando a política e a atribuição. Aqui está um script de exemplo para criar a política e atribuí-la ao SP para este aplicativo:
 
