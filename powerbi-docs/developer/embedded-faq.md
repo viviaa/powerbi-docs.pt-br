@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: 07d51448083f61725157d3ea37c5d9dc73e85157
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: f3602f44bd2ab98e115f904baa89429db918637c
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599940"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032061"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Perguntas frequentes sobre o Power BI Embedded
 
@@ -76,7 +76,7 @@ Veja aqui uma lista parcial das diferenças que você pode usar com cada um dele
 |  |SKU A (Power BI Embedded)  |SKU EM (Power BI Premium)  |SKU P (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Comprar     |Portal do Azure |Office |Office |
-|Casos de uso |* Inserir conteúdo em aplicativo próprio |* Inserir conteúdo em aplicativo próprio<br>* Compartilhar conteúdo com usuários do Power BI GRATUITO fora do PowerBI.com e inserir em outros aplicativos SaaS (SharePoint, [Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/)) |* Inserir conteúdo em aplicativo próprio<br>* Compartilhar conteúdo com usuários do Power BI Gratuito fora do PowerBI.com e inserir em outros aplicativos SaaS (SharePoint, Teams)<br>* Compartilhar conteúdo com usuários do Power BI Gratuito por meio do PowerBI.com  |
+|Casos de uso |* Inserir conteúdo em aplicativo próprio |* Inserir conteúdo em aplicativo próprio<br>* Inserir conteúdo em outros aplicativos de SaaS ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Inserir conteúdo em aplicativo próprio<br>* Inserir conteúdo em outros aplicativos de SaaS ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Compartilhar conteúdo com usuários do Power BI por meio do [serviço do Power BI](https://powerbi.microsoft.com/en-us/)  |
 |Cobrança |A cada hora |Mensal |Mensal |
 |Compromisso  |Sem compromisso |Anual  |Mensal/anual |
 |Diferença |Elasticidade completa: pode aumentar/reduzir, pausar/retomar recursos no Portal do Azure ou por meio da API  |Pode ser usado para inserir conteúdo no SharePoint Online e no Microsoft Teams |Combine inserção em aplicativos e use a mesma capacidade do serviço do Power BI |
