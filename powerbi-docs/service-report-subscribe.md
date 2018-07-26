@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 0b1aa1f9cdabc3508906cc87a4d41f277cd0b0b6
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 9436f94add8c8aff4d0378734c83891ef407955d
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092680"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256068"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>Assinar um relatório ou painel no serviço do Power BI (app.powerbi.com)
 Nunca foi tão fácil manter-se atualizado sobre seus dashboards e relatórios mais importantes. Assine as páginas de relatórios e os dashboards mais importantes para você e seus colegas e o Power BI enviará um instantâneo por email para sua caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: de uma vez por dia a uma vez por semana. 
@@ -83,8 +83,10 @@ Uma assinatura será encerrada se a licença Pro expirar, se o dashboard ou o re
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 * Para assinaturas de email do dashboard, se algum bloco tiver a RLS (Segurança em Nível de Linha) aplicada, esse bloco não será exibido.  Para assinaturas de email do relatório, se o conjunto de dados usar a RLS, não será possível criar uma assinatura.
 * As assinaturas da página de relatório são vinculadas ao nome da página de relatório. Se você assinar uma página de relatório e renomeá-la, precisará recriar sua assinatura
+* Atualmente, as assinaturas de email para relatórios/dashboards que usam conjuntos de dados de conexão dinâmica não têm suporte para inscrever outros usuários, exceto a si próprio.
 * Para assinaturas de email em conjuntos de dados de conexão dinâmica, você só receberá emails quando os dados mudarem. Assim, se ocorrer uma atualização, mas os dados não mudarem, o Power BI não enviará um email.
 * Assinaturas de email não dão suporte à maioria dos [visuais personalizados](power-bi-custom-visuals.md).  A única exceção é para os elementos visuais personalizados que foram [certificados](power-bi-custom-visuals-certified.md).  
+* No momento, as assinaturas de email não dão suporte a visuais personalizados da plataforma R.  
 * Se algum bloco do dashboard tiver a RLS (Segurança em Nível de Linha) aplicada, esse bloco não será exibido.
 * Você não pode inscrever outros usuários em um relatório que tem RLS (Segurança em Nível de Linha) aplicada.
 * Assinaturas de email são enviadas com estados de segmentação e filtro padrão do relatório. As alterações feitas nos padrões após a assinatura não serão exibidas no email.    

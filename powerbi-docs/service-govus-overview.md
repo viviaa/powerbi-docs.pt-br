@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 94f4bf71f0b97b202ce05f1caadee43ccea6a733
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: f7c619a5696a6f432f24e5e2c875cfde335ab32c
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135917"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256045"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI para clientes do Governo dos EUA
 O **serviço do Power BI** tem uma versão disponível para clientes do Governo dos Estados Unidos como parte das assinaturas da **Comunidade do Governo dos EUA do Office 365**. A versão do **serviço do Power BI** discutida neste artigo é desenvolvida especificamente para clientes do Governo dos EUA e é separada e diferente da versão comercial do **serviço do Power BI**.
@@ -58,7 +58,7 @@ Alguns dos recursos disponíveis na versão comercial do **serviço do Power BI*
 * O **Power BI do Governo dos EUA** só está disponível como uma licença **Pro**. Todas as referências a licenças do Power BI (Gratuito) em um portal de administrador (ou como usuários) estão em execução em uma nuvem de serviço do Power BI comercial.
 * **Auditoria** – agora a auditoria está disponível por meio do portal de Segurança e Conformidade do Office 365, a partir de junho de 2018.
 * **Conteúdo do Power BI no Cortana** – os resultados do Power BI não aparecerão nos resultados da pesquisa do Cortana, o que inclui resultados para o conteúdo do Power BI (dashboards, relatórios, aplicativos), bem como os resultados que mostram as páginas do relatório de otimização do Cortana para palavras-chave específicas.
-* **Compartilhamento de usuário externo** – o compartilhamento é permitido dentro de um locatário do Power BI e, a partir de junho de 2018, também será possível compartilhar com usuários fora do seu locatário do Power BI.
+* **Compartilhamento de usuário externo** – o compartilhamento é permitido dentro de um locatário do Power BI e, a partir de junho de 2018, também será possível compartilhar com usuários fora do seu locatário do Power BI. Veja [Distribuição do conteúdo do Power BI para usuários convidados externos com o Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Métricas de uso para relatórios e dashboards** – as métricas de uso não estão disponíveis para relatórios e dashboards. Os clientes podem usar dados de log de auditoria para obter informações de uso do conteúdo em sua organização.
 
 Se você tem licenças Gratuitas do **Power BI** atribuídas à sua conta, essas contas estão em execução em uma versão comercial do serviço do **Power BI** e não fazem parte da oferta do **Power BI do Governo dos EUA**. Para essas contas Gratuitas, você poderá se deparar com os seguintes problemas:
