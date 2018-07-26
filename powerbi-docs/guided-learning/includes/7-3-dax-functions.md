@@ -89,7 +89,7 @@ O DAX inclui as seguintes funções **Date**:
 
 Embora essas funções sejam úteis para calcular e extrair informações de valores de *data*, elas não se aplicam à inteligência de dados temporais, que usa uma tabela de data.
 
-> Conteúdo do vídeo gentilmente cedido por [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Conteúdo do vídeo gentilmente cedido por [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

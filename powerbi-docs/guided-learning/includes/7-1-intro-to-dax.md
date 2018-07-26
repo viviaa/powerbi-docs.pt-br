@@ -3,7 +3,7 @@ Bem-vindo à seção **Aprendizado Interativo** do Power BI, desenvolvida para a
 **DAX** significa **Data Analysis Expressions** e é a linguagem de fórmula usada no Power BI (também usada pelo Power BI nos bastidores). O DAX também pode ser encontrado em outras ofertas da Microsoft, como o Power Pivot e SSAS de Tabela, mas esta coleção de tópicos do Aprendizado Interativo se concentra em como o DAX é usado – e pode ser usado por você – no Power BI.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX e essa série de vídeos de Aprendizado Interativo
-O objetivo desta seção **Aprendizado Interativo** é ensinar a você noções básicas e fundamentos do DAX – considerações sobre o DAX, como ele funciona e os recursos mais úteis, explicados (e aprendidos com muita experiência) por um renomado especialista no DAX, [Alberto Ferrari](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+O objetivo desta seção **Aprendizado Interativo** é ensinar a você noções básicas e fundamentos do DAX – considerações sobre o DAX, como ele funciona e os recursos mais úteis, explicados (e aprendidos com muita experiência) por um renomado especialista no DAX, [Alberto Ferrari](http://www.sqlbi.com/learning-dax).
 
 ![Retrato de Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 

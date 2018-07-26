@@ -15,7 +15,7 @@ A função **RELATED** funciona em relações *muitos para um*, enquanto **RELAT
 
 É possível usar funções relacionais para criar expressões que incluem valores em várias tabelas. O DAX retornará um resultado com essas funções, independentemente do tamanho da cadeia da relação.
 
-> Conteúdo do vídeo gentilmente cedido por [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Conteúdo do vídeo gentilmente cedido por [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 
