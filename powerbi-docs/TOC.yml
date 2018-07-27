@@ -682,8 +682,10 @@
               href: desktop-qna-in-reports.md
             - name: Painel de análise no Power BI Desktop
               href: desktop-analytics-pane.md
-            - name: Uso de percepções no Power BI Desktop
+            - name: Uso de insights para explicar aumentos e reduções
               href: desktop-insights.md
+            - name: Uso de insights para localizar onde a distribuição está diferente nos gráficos
+              href: desktop-insights-find-where-different.md
             - name: Indicadores no Power BI
               href: desktop-bookmarks.md
             - name: Usar temas de relatórios
