@@ -8,15 +8,15 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0536dc6fd637db07c0e26a4ed7f0da1071b646eb
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a1719f8a6f9f4ad3989aa498c584b337cd9fdd00
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137412"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182738"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – conceitos básicos do serviço do Power BI
 
@@ -30,7 +30,7 @@ Os principais recursos da sua interface do usuário de serviço do Power BI são
 
 1. painel de navegação (nav esq)
 2. telas (neste caso, painel com blocos)
-3. caixa de perguntas de P e R
+3. Caixa de perguntas de P e R
 4. botões de ícone, incluindo ajuda e comentários
 5. bloco do painel (caminho de navegação, também trilhas)
 6. Iniciador do aplicativo do Office 365
@@ -48,9 +48,9 @@ Ou, talvez você queira assistir a este vídeo primeiro antes de ler o restante 
 Os quatro maiores blocos de construção do Power BI são: ***painéis***, ***relatórios***, ***pastas de trabalho*** e ***conjuntos de dados***. E eles ficam todos organizados em ***pastas de trabalho***. É importante entender os espaços de trabalho antes de nos aprofundarmos nos quatro blocos de construção, então, vamos começar com essa parte. 
 
 ## <a name="workspaces"></a>Espaços de trabalho
-Espaços de trabalho são contêineres para painéis, relatórios, pastas de trabalho e conjunto de dados no Power BI. Há dois tipos de espaços de trabalho: **Meu Espaço de Trabalho* e espaços de trabalho do aplicativo. Então, o que é um *aplicativo*? Um *aplicativo* do Power BI é uma coleção de painéis e relatórios para entregar métricas-chave para sua organização. Aplicativos são interativos, mas não podem ser editados 
+Espaços de trabalho são contêineres para painéis, relatórios, pastas de trabalho e conjunto de dados no Power BI. Há dois tipos de espaços de trabalho: **Meu espaço de trabalho* e *espaços de trabalho do aplicativo*. Então, o que é um *aplicativo*? Um *aplicativo* do Power BI é uma coleção de painéis e relatórios para entregar métricas-chave para sua organização. Aplicativos são interativos, mas não podem ser editados. 
 
-- *Meu Espaço de Trabalho* é o espaços de trabalho para qualquer cliente do Power BI trabalhar com seu conteúdo. Apenas você tem acesso ao Meu Espaço de Trabalho pertencente a você. Caso queira compartilhar algum dos seus conteúdos, você tem várias opções: criar um espaço de trabalho do aplicativo no qual você agrupa conteúdos em um *aplicativo* e o torne disponível para outros na sua organização ou criar um espaço de trabalho do aplicativo e permitir o acesso de seus colegas a ele para que vocês possam compartilhar e colaborar.     
+- *Meu Espaço de Trabalho* é o espaço de trabalho pessoal para qualquer cliente do Power BI trabalhar com seu próprio conteúdo. Apenas você tem acesso ao Meu Espaço de Trabalho pertencente a você. Você pode compartilhar painéis e relatórios de Meu Espaço de Trabalho. Se você quer colaborar em painéis e relatórios ou criar um aplicativo, convém trabalhar em um espaço de trabalho de aplicativo.      
 -  *Espaços de trabalho do aplicativo* são usados para colaborar e compartilhar conteúdo com colegas. Eles também são os locais nos quais você cria, publica e gerencia aplicativos para sua organização. Imagine-os como áreas de preparo e contêineres para o conteúdo que vai formar um aplicativo do Power BI. Você pode adicionar colegas aos seus espaços de trabalho do aplicativo e colaborar em painéis, relatórios, pastas de trabalho e conjunto de dados. Todos os membros do espaço de trabalho do aplicativo precisam ter licenças do Power BI Pro, mas clientes do aplicativo (os colegas que têm acesso aos aplicativos) não necessariamente precisam de licenças Pro.  
 
 Para saber mais, consulte a seção **Compartilhar seu trabalho** do Sumário, começando com [Como eu devo colaborar e compartilhar painéis e relatórios](service-how-to-collaborate-distribute-dashboards-reports.md)
@@ -199,7 +199,7 @@ Uma maneira de explorar seus dados é fazer uma pergunta e deixar que o P e R do
 
 O P e R procura uma resposta no conjunto(s) de dados conectado ao painel.  Um conjunto de dados conectado é aquele que tem pelo menos um bloco anexado a esse painel.
 
-![caixa de perguntas de P e R](media/service-basic-concepts/power-bi-qna.png)
+![Caixa de perguntas de P e R](media/service-basic-concepts/power-bi-qna.png)
 
 Assim que você começa a digitar sua pergunta, o P e R leva você até a página de P e R. Conforme você digita, o P e R ajuda você a fazer a pergunta certa e encontrar a melhor resposta com reformulações, preenchimento automático, sugestões e muito mais. Quando você encontrar uma visualização (resposta) de que gosta, fixe-a em seu painel. Para obter mais informações, veja [P e R no Power BI](power-bi-q-and-a.md).
 

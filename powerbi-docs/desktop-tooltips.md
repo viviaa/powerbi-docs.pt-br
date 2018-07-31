@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1f53b0efc2195221fbcbe45f03102d2c98e8eef3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34232098"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210320"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop (versão prévia)
 Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas que aparecem ao passar o mouse sobre visuais, com base nas páginas de relatório que você cria no **Power BI Desktop**. Ao criar uma página de relatório que sirva como dica de ferramenta, as dicas de ferramenta personalizadas poderão incluir elementos visuais, imagens e qualquer outra coleção de itens que você criar na página de relatório. 
@@ -119,6 +119,7 @@ Quando se faz realce cruzado em um visual em um relatório, as dicas de ferramen
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 Nesta versão prévia das **dicas de ferramenta** de relatório, há algumas limitações e considerações a serem lembradas.
 
+* A partir da versão de julho de 2018 do **Power BI Desktop**, os elementos visuais da Tabela e da Matriz passam a ser compatíveis com as dicas de ferramentas. 
 * Não há suporte para dicas de ferramentas de relatório ao exibir relatórios em aplicativos móveis ou em ambientes inseridos, incluindo Publicar na Web. 
 * Dicas de ferramentas de relatório não são compatíveis com visuais personalizados. 
 * Atualmente não há suporte para usar clusters como campos que podem ser mostrados nas dicas de ferramentas de relatório. 

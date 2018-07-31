@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 8a688f46a46dbb1015629c7785d96b62d4f8df26
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: a9d178ccfdb47152fd2c13d445b9190ced6115e1
+ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813218"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157280"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>O que os desenvolvedores podem fazer com a API do Power BI?
 O Power BI exibe painéis interativos e que podem ser criados e atualizados por meio de várias fontes de dados diferentes em tempo real. Ao usar qualquer linguagem de programação que dá suporte a chamadas REST, você pode criar aplicativos que se integram a um painel do Power BI em tempo real. Você também pode integrar blocos do Power BI e relatórios a aplicativos.
@@ -58,6 +58,11 @@ Escolha a solução certa para você:
 * A [inserção para a organização](embedding.md#embedding-for-your-organization) permite que você estenda o serviço do Power BI. Execute a solução [Inserir para a organização](https://aka.ms/embedsetup/UserOwnsData).
 
 Para obter um exemplo completo de como usar a API JavaScript, use a [ferramenta de Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Trata-se de uma maneira rápida de experimentar diferentes tipos de exemplos do Power BI Embedded. Você também pode obter mais informações sobre a API de JavaScript, visitando a página da [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
+
+## <a name="push-data-into-power-bi"></a>Enviar dados por push ao Power BI
+Você pode usar a API do Power BI para enviar dados por push a um conjunto de dados. Isso permite que você adicione uma linha a uma tabela dentro de um conjunto de dados. Assim, os novos dados podem ser mostrados em blocos em um dashboard e dentro de elementos visuais no seu relatório.
+
+![Exemplo de envio de dados por push](media/what-can-you-do/powerbi-push-data.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 [Enviar dados por push a um conjunto de dados](walkthrough-push-data.md)  
