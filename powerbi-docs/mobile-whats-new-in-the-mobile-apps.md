@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: 7149fd43d4214ed756eff61a523805ec9f50e1ae
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182715"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280767"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -185,7 +185,7 @@ Leia o [resumo de julho de 2017 sobre os recursos dos aplicativos móveis](https
 
 **Novo menu: Aplicativos** Um aplicativo é uma coleção de dashboards e relatórios desenvolvidos pela sua organização para fornecer métricas-chave para tomar decisões mais rápidas e fáceis, orientadas por dados.
 
-Leia mais sobre [how your Power BI content is organized](mobile-apps-find-content-mobile-devices.md) (como o conteúdo do Power BI é organizado).
+Leia mais sobre [how your Power BI content is organized](mobile-apps-quickstart-view-dashboard-report.md) (como o conteúdo do Power BI é organizado).
 
 #### <a name="ios-and-android-devices"></a>Dispositivos Android e iOS
 **Visualização do Servidor de Relatório do Power BI** Crie e publique relatórios locais do Power BI. Em seguida, [exiba e interaja com eles no seu dispositivo móvel iOS ou Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md). 
@@ -241,7 +241,7 @@ Com P e R, faça perguntas sobre seus dados usando suas próprias palavras e o P
 Agora você pode se conectar com até cinco servidores do SSRS (SQL Server Reporting Services) ao mesmo tempo.
 
 #### <a name="android-tablets"></a>Tablets Android
-O **aplicativo móvel do Power BI** para tablets com Android agora está disponível globalmente. Introdução ao [Power BI em seu tablet Android](mobile-android-tablet-app-get-started.md).
+O **aplicativo móvel do Power BI** para tablets com Android agora está disponível globalmente. Introdução ao [Power BI em seu tablet Android](mobile-android-app-get-started.md).
 
 #### <a name="ios-and-android-devices"></a>Dispositivos Android e iOS
 **Novo menu para os blocos de dashboard** Navegue até o relatório subjacente, expanda o bloco ou gerencie um alerta, tudo isso diretamente de um menu no bloco de um dashboard. 
@@ -304,7 +304,7 @@ Leia o [resumo de recursos dos aplicativos móveis do Power BI publicado em nove
 #### <a name="android-tablets"></a>Tablets Android
 **Aplicativo móvel do Power BI para tablets Android** Sim, aqui está a versão prévia.
 
-* Experimente o [Power BI no tablet Android](mobile-android-tablet-app-get-started.md)
+* Experimente o [Power BI no tablet Android](mobile-android-app-get-started.md)
 * Conheça [os relatórios móveis e KPIs do Reporting Services no tablet Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="android-devices"></a>Dispositivos Android
@@ -498,7 +498,7 @@ Todas as melhorias feitas em janeiro já estão incluídas no novo [aplicativo P
 
 **Blocos de R e widgets da Web** Exiba esses novos tipos de bloco no seu dispositivo móvel.
 
-**Dashboards do Bing** No serviço do Power BI, agora é possível criar [dashboards com os resultados da pesquisa do Bing](service-connect-to-bing.md) e vê-los em seu dispositivo móvel.
+**Dashboards do Bing** No serviço do Power BI, agora é possível criar [dashboards com os resultados da pesquisa do Bing](service-connect-to-services.md) e vê-los em seu dispositivo móvel.
 
 **Páginas de relatório fixadas como blocos em dashboards** Agora, você pode fixar uma página de relatório inteira em um dashboard no serviço do Power BI e exibir páginas de relatórios no aplicativo do Power BI no seu iPhone ou telefone Android.
 
