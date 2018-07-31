@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 645e1e40867f52718f2ec79a17cf1b5525a3d951
-ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
+ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864389"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182715"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -22,6 +22,19 @@ Para informações sobre “Novidades” relacionadas, consulte:
 * [Blog da equipe do Power BI para os aplicativos móveis](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Novidades no Power BI Desktop](desktop-latest-update.md)  
 * [Novidades no serviço do Power BI](service-whats-new.md)  
+
+## <a name="july-2018"></a>Julho de 2018
+
+### <a name="ios-and-android-only"></a>Apenas iOS e Android
+
+**Filtros compartilhados**
+
+Agora você pode receber relatórios com segmentações e filtros compartilhados.
+
+**Suporte de imagem em segundo plano**
+
+Quando você exibe um relatório no modo paisagem em seu dispositivo móvel, vê as mesmas imagens em segundo plano que vê no Power BI na Web.
+
 
 ## <a name="june-2018"></a>Junho de 2018
 

@@ -5,7 +5,6 @@ Veja a seguir uma lista com as limitações atuais da Segurança em Nível de Li
 * É possível definir a RLS somente nos conjuntos de dados criados usando o cliente do Power BI Desktop. Se desejar habilitar a RLS para conjuntos de dados criados com o Excel, será necessário converter os arquivos em arquivos PBIX primeiro. [Saiba mais](../desktop-import-excel-workbooks.md)
 * Somente há suporte para conexões ETL e DirectQuery. Conexões dinâmicas do Analysis Services são tratadas no modelo local.
 * No momento, não há suporte para a P e R nem para a Cortana na RLS. Você não verá a caixa de entrada da P e R para os dashboards se todos os modelos tiverem a RLS configurada. Isso está em nossos planos, mas ainda não há um cronograma disponível.
-* Atualmente, não há suporte para o compartilhamento externo com conjuntos de dados que usam RLS.
 * Para qualquer modelo fornecido, o número máximo de entidade de segurança do Azure AD (ou seja, usuários individuais ou grupos de segurança) que podem ser atribuídos a funções de segurança é 1.000. Para atribuir grandes números de usuários a funções, certifique-se de atribuir grupos de segurança em vez de usuários individuais.
 
 ## <a name="known-issues"></a>Problemas conhecidos

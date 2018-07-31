@@ -49,7 +49,7 @@ Ao fazer ou salvar uma alteração no painel que você incluiu em um pacote de c
    
    Observe o ícone de aviso ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  Assim, você sabe que modificou o pacote de conteúdo de alguma forma e ele não coincide mais com o que foi publicado.
 3. Selecione **Editar**.  
-4. Faça as alterações necessárias na janela **Pacote de atualização de conteúdo** e selecione **Atualização**. Será exibida uma mensagem de **êxito**.
+4. Faça as alterações necessárias na janela **Pacote de atualização de conteúdo** e selecione **Atualização**. Será exibida uma mensagem de **êxito** .
    
    * Para membros do grupo que não personalizaram o pacote de conteúdo, a atualização é aplicada automaticamente.
    * Os membros do grupo que personalizaram o pacote de conteúdo receberão uma notificação de que há uma nova versão.  Eles podem acessar o AppSource e obter o pacote de conteúdo atualizado sem perder sua versão personalizada.  Agora eles terão as duas versões: a versão personalizada e o pacote de conteúdo atualizado.  Na versão personalizada, todas as peças do pacote de conteúdo original serão eliminadas.  Mas os blocos fixados de outros relatórios ainda serão renderizados. No entanto, se o proprietário do pacote de conteúdo excluir o conjunto de dados em que o pacote se baseia, todo o relatório desaparecerá.  

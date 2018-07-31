@@ -141,7 +141,7 @@ O vídeo a seguir descreve e mostra cada uma dessas atualizações. Você també
 
 Não é nenhuma mentira o quanto ficamos satisfeitos com as atualizações de abril do **Power BI Desktop**. Fizemos muitas atualizações em várias áreas e esperamos que elas ajudem você a desenvolver seus relatórios futuros com visuais incríveis, muito bonitos. 
 
-As atualizações a seguir foram introduzidas no **Power BI Desktop** em abril:
+Foram feitas as seguintes novas atualizações do **Power BI Desktop** em abril:
 
 ### <a name="reporting"></a>Relatórios
 
@@ -356,7 +356,7 @@ Os links ao lado de cada atualização significam o seguinte:
 
 Você também pode assistir o vídeo das **Atualizações mais recentes** desde o início, diretamente deste artigo, clicando no ícone **reproduzir** na imagem de vídeo localizada abaixo da lista de atualizações.
 
-As atualizações a seguir foram introduzidas no **Power BI Desktop** em dezembro:
+As seguintes atualizações foram introduzidas no **Power BI Desktop** em dezembro:
 
 ### <a name="reporting"></a>Relatórios
 
@@ -411,7 +411,7 @@ Os links ao lado de cada atualização significam o seguinte:
 
 Você também pode assistir o vídeo das **Atualizações mais recentes** desde o início, diretamente deste artigo, clicando no ícone **reproduzir** na imagem de vídeo localizada abaixo da lista de atualizações.
 
-As atualizações a seguir foram introduzidas no **Power BI Desktop** em novembro:
+As seguintes atualizações foram introduzidas no **Power BI Desktop** em novembro:
 
 ### <a name="reporting"></a>Relatórios
 
@@ -915,7 +915,7 @@ O vídeo a seguir descreve e mostra cada uma dessas atualizações. Você també
 ## <a name="november-2016-update-2414581301"></a>Atualização de novembro de 2016 (2.41.4581.301)
 
 
-As atualizações a seguir foram introduzidas no Power BI Desktop em novembro:
+As seguintes atualizações eram novas no Power BI Desktop em novembro:
 
 
 ### <a name="report-view"></a>Visualização de Relatório:
@@ -966,7 +966,7 @@ O vídeo a seguir descreve e mostra cada uma dessas atualizações. Você també
 
 ## <a name="october-2016-update-2404554361"></a>Atualização de outubro de 2016 (2.40.4554.361)
 
-As atualizações a seguir foram introduzidas no Power BI Desktop em outubro:
+As seguintes atualizações eram novas no Power BI Desktop em outubro:
 
 
 ### <a name="report-view"></a>Visualização de Relatório:
@@ -1019,7 +1019,7 @@ O vídeo a seguir descreve e mostra cada uma dessas atualizações. Você també
 
 ## <a name="september-2016-update-2394526362"></a>Atualização de setembro de 2016 (2.39.4526.362)
 
-As atualizações a seguir foram introduzidas no Power BI Desktop em setembro:
+As seguintes atualizações eram novas no Power BI Desktop em setembro:
 
 ### <a name="report-view"></a>Visualização de Relatório:
 
@@ -1434,7 +1434,7 @@ Estamos saindo na frente com mais atualizações este mês! Fevereiro traz 29 di
 -   Classificação em ordem alfabética de colunas no construtor **Escolher Colunas**
 -   Desempenho aprimorado de renomear/remover/reordenar colunas
 -   Visualização virtualizada no **Editor de Consultas**
--   Indicador visual para consultas descarregadas no **Editor de Consultas**
+-   Indicador visual para consultas descarregadas no **Editor de consultas**
 -   Transformação de percentual em um clique
 
 Deseja obter mais informações sobre essas atualizações? Dê uma olhada na [postagem no blog](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/), em que é possível obter informações mais detalhadas sobre cada um desses novos recursos.
@@ -1694,7 +1694,7 @@ A seguinte coleção massiva de 44 recursos foi adicionada a esta atualização:
 - Nova opção de "Excluir Todas" as entradas na caixa de diálogo Configurações de Fonte de Dados
 - Opção "Habilitar Importação de relação durante operações de atualização"
 
-### <a name="data-transformations-and-query-editor-improvements"></a>Transformações de dados e aprimoramentos do Editor de Consultas
+### <a name="data-transformations-and-query-editor-improvements"></a>Transformações de dados e aprimoramentos do Editor de consulta
 
 - Copiar para área de transferência (disponível para colunas/células e tabelas)
 - Filtrar colunas de data por data mais antiga/mais recente (filtro dinâmico)
@@ -1735,7 +1735,7 @@ Os seguintes recursos foram adicionados a esta atualização:
 
 -   Capacidade de selecionar vários itens no Navegador (CTRL + clique, SHIFT + clique, etc.)
 
-**Aprimoramentos do Editor de Consultas:**
+**Aprimoramentos do editor de consultas:**
 
 -   Aprimoramentos de criação/exclusão de Grupo de Consulta (seleção múltipla, etc.)
 
