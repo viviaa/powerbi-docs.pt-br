@@ -38,7 +38,7 @@ O modo de exibição de Edição foi projetado para *criadores* de relatórios. 
 Este gráfico não lista todos os recursos de relatórios do serviço do Power BI. Lista somente as tarefas de relatório que não estão disponíveis no modo de exibição de Leitura **nem** no modo de exibição de Edição.
 
 
-|Tarefa  | Modo de exibição de leitura  | Modo de Exibição de Edição |
+|Tarefa  | Modo de exibição de leitura  | Modo de exibição de edição |
 |-------------------------|-------|-------|
 |**Relatórios, como um todo**  |
 | [Criar ou editar um relatório](service-report-create-new.md) | Não  | Sim |
