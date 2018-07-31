@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: maggies
-ms.openlocfilehash: 1700d5bb6a3c17b0a76e6cf04155050a01136e96
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 9e5d878b676159db7990af983f53ce813ac44441
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136538"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280238"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos iOS
 O aplicativo Microsoft Power BI para iOS no iPhone, iPad ou iPod Touch oferece a experiência móvel do BI para Power BI, Servidor de Relatórios do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. Além disso, mantenha atualizado com seus dados mais recentes em seu [Apple Watch](mobile-apple-watch.md).  
@@ -73,11 +73,11 @@ Você pode exibir e interagir com os exemplos de dashboard do Power BI, mas há 
    ![Exemplos do Reporting Services no aplicativo móvel do Power BI](media/mobile-iphone-app-get-started/power-bi-reporting-services-samples.png)
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Encontre seu conteúdo nos aplicativos móveis do Power BI
-Seus dashboards e relatórios são armazenados em locais diferentes nos aplicativos móveis do Power BI, dependendo de onde eles vieram. Leia sobre [finding your content in the mobile apps](mobile-apps-find-content-mobile-devices.md) (localizando seu conteúdo em aplicativos móveis). Além disso, a qualquer momento, você pode pesquisar por qualquer coisa que você tenha nos aplicativos móveis do Power BI. 
+Seus dashboards e relatórios são armazenados em locais diferentes nos aplicativos móveis do Power BI, dependendo de onde eles vieram. Leia sobre [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md) (localizando seu conteúdo em aplicativos móveis). Além disso, a qualquer momento, você pode pesquisar por qualquer coisa que você tenha nos aplicativos móveis do Power BI. 
 
 ![Painel de navegação à esquerda](media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
-Leia mais sobre [finding your content in the mobile apps](mobile-apps-find-content-mobile-devices.md) (localizando seu conteúdo em aplicativos móveis).
+Leia mais sobre [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md) (localizando seu conteúdo em aplicativos móveis).
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Exibir seus dashboards, KPIs e relatórios favoritos
 Na página Favoritos nos aplicativos móveis, você verá todos os seus dashboards favoritos do Power BI, juntamente com os KPIs e relatórios do Servidor de Relatório do Power BI e do Reporting Services. Quando você torna um painel *favorito* no aplicativo móvel do Power BI, você pode acessá-lo de todos os seus dispositivos, incluindo o serviço do Power BI no seu navegador. 

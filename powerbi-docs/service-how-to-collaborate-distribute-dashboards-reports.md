@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/09/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7c0037534fa61c5340206354beb6af04d3fc1f4a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5899274ba3cc8ce0a059978a9b83ae2a7fd08527
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249495"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280445"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Como devo colaborar e compartilhar no Power BI?
 
@@ -75,7 +75,7 @@ Você está compartilhando um instantâneo do bloco, relatório ou visual e seus
 
 Mais informações sobre [anotação e compartilhamento de blocos, relatórios e visuais](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) nos aplicativos móveis do iOS e Android.
 
-Também é possível [compartilhar um instantâneo de um bloco](mobile-share-tile-windows-10-phone-app.md) no aplicativo do Power BI para dispositivos Windows 10.
+Também é possível [compartilhar um instantâneo de um bloco](mobile-windows-10-phone-app-get-started.md) no aplicativo do Power BI para dispositivos Windows 10.
 
 ## <a name="publish-to-the-web"></a>Publicar na Web
 Você pode publicar relatórios do Power BI em toda a Internet inserindo elementos visuais interativos em postagens de blog, sites, mídia social e outras comunicações online, em qualquer dispositivo. Qualquer pessoa na Internet pode ver seus relatórios, e você não tem controle sobre quem pode ver o que você publicou. Eles não precisam de uma licença do Power BI. A publicação na Web só está disponível para relatórios que você pode editar. Você não pode publicar relatórios na Web se eles são compartilhados com você ou se estiverem em um aplicativo. Mais sobre a [publicação na Web](service-publish-to-web.md).

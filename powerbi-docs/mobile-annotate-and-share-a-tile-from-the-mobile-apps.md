@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: c70a5c50a139423f6c5e69ed6ec9a416dfae8b4e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: bb628f0cc6f723a195f3b90e6d20f4018d9f2709
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295251"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279839"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anotar e compartilhar um bloco, relatório ou visual nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -31,7 +31,7 @@ Aplica-se a:
 
 O email com o instantâneo do bloco, relatório ou visual também inclui um link para o objeto real no serviço do Power BI ([https://powerbi.com](https://powerbi.com)). Se seus destinatários tiverem licenças do Power BI Pro ou se o conteúdo estiver em uma [capacidade Premium](service-premium.md) e você já tiver compartilhado um item com eles, eles poderão clicar no link e ir diretamente para o bloco, relatório ou visualização. 
 
-Você também pode [compartilhar um bloco do aplicativo móvel do Power BI para dispositivos Windows 10](mobile-share-tile-windows-10-phone-app.md), mas não pode anotá-los.
+Você também pode [compartilhar um bloco do aplicativo móvel do Power BI para dispositivos Windows 10](mobile-windows-10-phone-app-get-started.md), mas não pode anotá-los.
 
 ## <a name="open-a-tile-for-annotating"></a>Abrir um bloco para fazer anotações
 1. Toque no bloco para abri-lo no modo de foco.

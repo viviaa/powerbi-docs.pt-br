@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: ae6c7ba3603136aeea3daa412595b9f42ed13d6a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: eb0d584e2383e1b878cfc26739e77d4e50d70a0f
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286901"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280468"
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Marcar código de barras no Power BI Desktop para os aplicativos móveis
 No Power BI Desktop, você pode [categorizar dados](desktop-data-categorization.md) em uma coluna e, portanto, o Power BI Desktop sabe como tratar valores em visuais de um relatório. Você também pode categorizar uma coluna como **Código de barras**. Quando você ou seus colegas [digitalizam um código de barras em um produto com o aplicativo do Power BI](mobile-apps-scan-barcode-iphone.md) no iPhone, você vê qualquer relatório que inclua esse código de barras. Ao abrir o relatório no aplicativo móvel, o Power BI filtra automaticamente o relatório para exibir os dados relacionados a esse código de barras.
@@ -27,7 +27,7 @@ No Power BI Desktop, você pode [categorizar dados](desktop-data-categorization.
 4. Na exibição de Relatório, adicione esse campo aos visuais que serão filtrados pelo código de barras.
 5. Salve o relatório e publique-o no serviço do Power BI.
 
-Agora quando você abrir o scanner no [aplicativo do Power BI para iPhone](mobile-ios-ipad-iphone-apps.md) e digitalizar um código de barras, verá esse relatório na lista de relatórios. Ao abrir o relatório, seus visuais são filtrados pelo código de barras do produto digitalizado.
+Agora quando você abrir o scanner no [aplicativo do Power BI para iPhone](mobile-iphone-app-get-started.md) e digitalizar um código de barras, verá esse relatório na lista de relatórios. Ao abrir o relatório, seus visuais são filtrados pelo código de barras do produto digitalizado.
 
 ## <a name="supported-barcode-formats"></a>Formatos de código de barras com suporte
 Estes serão os códigos de barras reconhecidos pelo Power BI se você conseguir marcá-los em um relatório do Power BI: 

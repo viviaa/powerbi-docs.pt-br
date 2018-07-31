@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: dc3d7fc8e97876f3efb63c29261a5e9746b9ce8a
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 9c3361d831e472a1cb2239a95f2c94b57376dc1b
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34226703"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39329145"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Solucionar problemas de entrada no Power BI Desktop
 Às vezes, você tenta entrar no **Power BI Desktop**, mas recebe erros. Há dois motivos principais para os problemas de entrada: **Erros de Autenticação de Proxy** e **Erros de Redirecionamento de URL sem HTTPS**. 

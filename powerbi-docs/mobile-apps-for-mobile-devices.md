@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: maggies
 ms.custom: ''
-ms.openlocfilehash: 4a3b5aec179eb9436f1d8ed8a58bcf97906e1c1f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75f64de25799488d85b4f9938fa134d0d277f222
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294699"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280031"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Quais são os aplicativos móveis do Power BI?
 O Power BI oferece um conjunto de aplicativos móveis para dispositivos móveis com iOS, Android e Windows 10. Nos aplicativos móveis, você se conecta a e interage com os dados locais e da nuvem. 
@@ -42,6 +42,6 @@ O Microsoft Intune permite que as organizações controlem itens, como exigir um
 Leia mais sobre como [configurar aplicativos móveis do Power BI para Android e iOS com o Microsoft Intune](service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Próximas etapas
-[Exibir um painel nos aplicativos móveis](mobile-apps-find-content-mobile-devices.md)
+[Exibir um painel nos aplicativos móveis](mobile-apps-quickstart-view-dashboard-report.md)
 
 
