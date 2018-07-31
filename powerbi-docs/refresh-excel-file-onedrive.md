@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 6be8c6b5837fc9e9a0b8456b7c545e7f942eabe5
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 778bf925c577c7b38797af8c14ab564dd2770331
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924321"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328524"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Atualizar um conjunto de dados criado com base em uma pasta de trabalho do Excel no OneDrive ou SharePoint Online
 Você pode importar pastas de trabalho do Excel armazenadas no computador local ou no armazenamento em nuvem, como o OneDrive for Business ou o SharePoint Online. Vamos examinar as vantagens de usar o armazenamento em nuvem para os arquivos do Excel. Para obter mais informações sobre como importar arquivos do Excel no Power BI, consulte [Obter dados de arquivos de pasta de trabalho do Excel](service-excel-workbook-files.md).

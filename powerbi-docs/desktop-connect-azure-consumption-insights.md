@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f42efcb833c723e7af9132f7e039c8ff8805d17d
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 05a84d34bf82be99eb52fccfb6318142f7d47de1
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137366"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39329904"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Conectar-se ao Azure Consumption Insights no Power BI Desktop (Beta)
 Com o conector do **Azure Consumption Insights**, você pode usar o **Power BI Desktop** para se conectar ao Azure e obter dados e informações detalhadas sobre o uso de serviços do Azure por sua organização. Você também pode criar medidas, colunas personalizadas e visuais para relatar e compartilhar sobre o uso do Azure por sua organização. Esta versão do conector do **Azure Consumption and Insights** está na versão Beta e está sujeita a alterações.
