@@ -530,11 +530,11 @@
       items:
         - name: Novidades na atualização mais recente do Power BI Desktop
           href: desktop-latest-update.md
-        - name: Modelos compostos no Power BI Desktop (Visualização)
+        - name: Modelos compostos no Power BI Desktop (prévia)
           href: desktop-composite-models.md
         - name: Relações muitos para muitos no Power BI Desktop (Visualização)
           href: desktop-many-to-many-relationships.md
-        - name: Modo de armazenamento no Power BI Desktop (Visualização)
+        - name: Modo de armazenamento no Power BI Desktop (versão prévia)
           href: desktop-storage-mode.md
         - name: Filtragem cruzada bidirecional no Power BI Desktop (Preview)
           href: desktop-bidirectional-filtering.md
@@ -918,14 +918,18 @@
       items:
         - name: Visão geral
           items:
-            - name: Inserção com o Power BI
+            - name: O que é a incorporação com o Power BI?
               href: developer/embedding.md
+            - name: O que é o Power BI Embedded no Azure?
+              href: developer/azure-pbie-what-is-power-bi-embedded.md
         - name: Tutoriais
           items:
             - name: Inserir o conteúdo para clientes
               href: developer/embed-sample-for-customers.md
             - name: Inserir o conteúdo para sua organização
               href: developer/embed-sample-for-your-organization.md
+            - name: Integrar conteúdo ao seu aplicativo para nuvens soberanas
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Conceitos
           items:
             - name: RLS (Segurança em nível de linha)
@@ -936,12 +940,8 @@
               href: developer/power-bi-permissions.md
         - name: Como
           items:
-            - name: Como inserir seu conteúdo
-              href: developer/embedding-content.md
             - name: Como inserir de um aplicativo
               href: developer/embed-from-apps.md
-            - name: Integrar conteúdo em seu aplicativo para nuvens soberanas (o aplicativo é proprietário de dados)
-              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Crie um locatário do Azure Active Directory
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Registrar um aplicativo
@@ -950,18 +950,36 @@
               href: developer/get-azuread-access-token.md
             - name: Incorporação de P e R
               href: developer/qanda.md
-            - name: Como migrar o Power BI Embedded
-              href: developer/migrate-from-powerbi-embedded.md
             - name: Solucionando problemas do aplicativo inserido
               href: developer/embedded-troubleshoot.md
+            - name: Gerenciar capacidades no Azure
+              items:
+                - name: Criar uma capacidade no Azure
+                  href: developer/azure-pbie-create-capacity.md
+                - name: Dimensionar uma capacidade no Azure
+                  href: developer/azure-pbie-scale-capacity.md
+                - name: Pausar e iniciar uma capacidade no Azure
+                  href: developer/azure-pbie-pause-start.md
+            - name: Migrar de Coleções de Espaço de Trabalho
+              items:
+                - name: Como migrar de Coleções de Espaço de Trabalho do Power BI?
+                  href: developer/migrate-from-powerbi-embedded.md
+                - name: Ferramenta de migração
+                  href: developer/migrate-tool.md
+                - name: Trechos de código de migração
+                  href: developer/migrate-code-snippets.md
         - name: Referência
           items:
+            - name: APIs
+              items:
+                - name: APIs REST do Resource Management do Azure
+                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+                - name: APIs REST do Power BI
+                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
             - name: Download do SDK do .NET
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'
             - name: Inserir layouts personalizados em um aplicativo
               href: developer/embedded-custom-layout.md
-            - name: Trechos de código de migração
-              href: developer/migrate-code-snippets.md
         - name: Recursos
           items:
             - name: Centro de Desenvolvimento
@@ -978,8 +996,6 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
             - name: Exemplos
               href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-            - name: Ferramenta de migração Power BI Embedded
-              href: developer/migrate-tool.md
             - name: Comunidade do Power BI
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
             - name: Stack Overflow
@@ -1064,8 +1080,6 @@
           items:
             - name: APIs REST
               href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: Referência da API REST do Power BI
-              href: developer/rest-api-reference.md
             - name: Listagem de código completo
               href: developer/walkthrough-push-data-complete-code.md
         - name: Recursos
