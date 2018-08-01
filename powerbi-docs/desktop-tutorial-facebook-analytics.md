@@ -11,10 +11,10 @@ ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: b7aac59c9d3848db37211475cd82447d6359b459
-ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 07/31/2018
 ms.locfileid: "34456011"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Tutorial: análise do Facebook com o Power BI Desktop
@@ -39,7 +39,7 @@ Este tutorial usa dados da [página do Facebook do Microsoft Power BI](https://w
    
 4. Digite ou cole o nome da página **microsoftbi** na caixa de texto **Nome de usuário**, selecione **Postagens** na lista suspensa **Conexão** e selecione **OK**.
    
-   ![Conectar-se](media/desktop-tutorial-facebook-analytics/2.png)
+   ![Conectar](media/desktop-tutorial-facebook-analytics/2.png)
    
 5. Quando receber a solicitação por credenciais, entre em sua conta do Facebook e permita acesso ao Power BI por meio de sua conta.
    
