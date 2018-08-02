@@ -11,10 +11,10 @@ ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f84e43a96243841b247530b5639f5f0c6ae1bb4f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
+ms.lasthandoff: 08/02/2018
 ms.locfileid: "34813654"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Criar e gerenciar relações no Power BI Desktop
@@ -68,7 +68,7 @@ Consulte a seção Noções básicas sobre opções adicionais, mais adiante nes
 
 Consulte a seção de opções adicionais Noções básicas, mais adiante neste artigo, para obter mais detalhes sobre quando alterar a direção do filtro cruzado.
 
-## <a name="make-this-relationship-active"></a>Ativar esta relação
+## <a name="make-this-relationship-active"></a>Tornar esta relação ativa
 Quando marcada, isso significa que a relação serve como a relação ativa, padrão.  Em casos nos quais há mais de uma relação entre duas tabelas, a relação ativa fornece uma maneira para o Power BI Desktop criar automaticamente visualizações que incluem ambas as tabelas.
 
 Veja a seção Noções básicas sobre opções adicionais mais adiante neste artigo para obter mais detalhes sobre quando tornar ativa uma relação específica.
