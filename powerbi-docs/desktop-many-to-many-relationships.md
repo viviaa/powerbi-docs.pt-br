@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1105de002f6461589d61c6f0077cceeedaada471
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 40799bb2716b2f6e85405e76c2a301acef3509aa
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210489"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388745"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Relações muitos para muitos no Power BI Desktop (prévia)
 
@@ -33,7 +33,7 @@ Esta coleção de três recursos relacionados para os **modelos compostos** é d
 
 * **Modelos compostos** são descritos detalhadamente no artigo [Modelos compostos no Power BI Desktop (prévia)](desktop-composite-models.md).
 * **Relações muitos para muitos** são descritas neste artigo.
-* O **Modo de armazenamento** é descrito em seu próprio artigo, [Modo de armazenamento no Power BI Desktop (prévia)](desktop-storage-mode.md).
+* O **Modo de armazenamento** é descrito em seu próprio artigo, [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md).
 
 ## <a name="enabling-the-many-to-many-relationships-preview-feature"></a>Habilitando recurso de visualização de relações muitos para muitos
 
@@ -110,7 +110,7 @@ Um visual que mostrasse o *Estado* (da tabela *CityData*), juntamente com a *pop
 
 Observe que, dado o uso do estado da tabela *CityData* nessa solução alternativa, somente os *Estado*s na tabela são listados (e, assim, TX é excluído). Além disso, diferentemente do caso de relações**muitos-para-um**, embora a linha do total inclua todas as *Vendas* (incluindo as de TX), os detalhes não incluem uma linha em branco que abrange essas linhas não correspondentes. Da mesma forma, não havia linhas em branco, abrangendo quaisquer *Vendas* para as quais houvesse um valor nulo para o *Estado*.
 
-Se *Cidade* também for adicionado a esse visual, embora a população por *Cidade* seja conhecida, as *Vendas* mostradas para *Cidade* simplesmente repetirão as *Vendas* para o *Estado* correspondente (como é normalmente o caso no agrupamento em uma coluna que não está relacionada a alguma medida de agregação), conforme mostrado na imagem a seguir.
+Se a *Cidade* também for adicionada a esse visual, embora a população por *Cidade* seja conhecida, as *Vendas* mostradas para a *Cidade* simplesmente repetirão as *Vendas* para o *Estado* correspondente (como é normalmente o caso no agrupamento em uma coluna que não está relacionada a alguma medida de agregação), conforme mostrado na imagem a seguir.
 
 ![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 

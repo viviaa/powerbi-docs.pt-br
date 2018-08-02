@@ -1,21 +1,21 @@
 ---
 title: Usar o Modo de armazenamento no Power BI Desktop (versão prévia)
-description: Usar o Modo de armazenamento para controlar se os dados são armazenados em cache na memória para relatórios no Power BI Desktop
+description: Usar o Modo de Armazenamento para controlar se os dados são armazenados em cache na memória para relatórios no Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 15580cd43e4bb2d286310868a8e853daff04f280
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 28dcc4812a37b5ad3f514227f4e5fbcdfebeb579
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210493"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388791"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Modo de armazenamento no Power BI Desktop (versão prévia)
 
@@ -118,7 +118,7 @@ Continuemos com o exemplo da seção anterior e imaginemos a aplicação das seg
 | *Geografia*             | Dupla                 | 
 
 
-Fazer essas configurações de propriedade do modo de armazenamento resulta nos comportamentos a seguir, supondo que a tabela *Vendas* tenha um volume de dados significativos.
+Fazer essas configurações de propriedade do modo de armazenamento resultará nos comportamentos a seguir, supondo que a tabela *Vendas* tenha um volume de dados significativos.
 * As tabelas de dimensões (*Data*, *Cliente* e *Geografia*) são armazenadas em cache; portanto, os tempos de carregamento inicial do relatório devem ser rápidos ao recuperar valores de segmentação de dados a ser exibidos.
 * Se a tabela *Vendas* não for armazenada em cache, ocorrem os seguintes resultados:
     * Os tempos de atualização de dados são aprimorados e o consumo de memória é reduzido
