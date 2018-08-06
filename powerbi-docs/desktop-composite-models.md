@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2eb69896de8226fdf0033f980a8b4b5164c68c3d
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: ddfe0c7ad116a74fa6887491ee41e544096de0f9
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280146"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388837"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modelos compostos no Power BI Desktop (prévia)
 
@@ -33,7 +33,7 @@ Esta coleção de três recursos relacionados para os **modelos compostos** é d
 
 * **Modelos compostos** são descritos em detalhes neste artigo.
 * As **Relações muitos para muitos** são descritas no próprio artigo [Relações muitos para muitos no Power BI Desktop (prévia)](desktop-many-to-many-relationships.md).
-* O **Modo de armazenamento** é descrito em seu próprio artigo, [Modo de armazenamento no Power BI Desktop (prévia)](desktop-storage-mode.md).
+* O **Modo de armazenamento** é descrito em seu próprio artigo, [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md).
 
 ## <a name="enabling-the-composite-models-preview-feature"></a>Como habilitar o recurso de versão prévia de modelos compostos
 
