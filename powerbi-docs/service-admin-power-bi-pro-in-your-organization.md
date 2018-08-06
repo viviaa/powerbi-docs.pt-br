@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 0df9fc81c5e65f74fb7eba8b6699cb579e652b62
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da330e75642e243637f792cde706b6d34ce70062
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34250333"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280721"
 ---
 # <a name="power-bi-pro-in-your-organization"></a>Power BI Pro em sua organização
 
@@ -29,7 +29,7 @@ Estes recursos exigem uma licença do Power BI Pro:
 
 * **Ver conteúdo compartilhado** – os usuários Pro podem ver, interagir e compartilhar novamente dashboards e relatórios compartilhados com eles (se permitido). No entanto, um usuário Pro não pode editar esses dashboards ou relatórios. Para obter mais informações, consulte [Compartilhar seus dashboards e relatórios do Power BI com colegas e outras pessoas](service-share-dashboards.md).
 
-* **Integrar o conteúdo com o Microsoft Teams** – você pode adicionar uma guia do Power BI em um canal do Microsoft (MS) Teams. O MS Teams detecta automaticamente todos os relatórios no espaço de trabalho. Para obter mais informações, consulte [O Power BI junta-se ao Microsoft Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/). 
+* **Integrar o conteúdo com o Microsoft Teams** – você pode adicionar uma guia do Power BI em um canal do MS (Microsoft) Teams. O MS Teams detecta automaticamente todos os relatórios no espaço de trabalho. Para obter mais informações, consulte [O Power BI junta-se ao Microsoft Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/). 
 
 ## <a name="power-bi-pro-60-day-trial-for-individuals"></a>Avaliação de 60 dias do Power BI Pro para indivíduos
 

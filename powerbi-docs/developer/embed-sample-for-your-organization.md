@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: cfc450216202f332f518955d28cb71df6aa0b800
-ms.sourcegitcommit: f2b106b5eb338a64f903e8ce6793bccb07f9440a
+ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39105259"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359721"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutorial: inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para sua organização
 Este tutorial demonstra como integrar um relatório em um aplicativo usando o **SDK do .NET do Power BI** juntamente com a **API JavaScript do Power BI** ao inserir o **Power BI** em um aplicativo para sua organização. Com o **Power BI**, você pode inserir relatórios, dashboards e blocos em um aplicativo usando **user owns data**. O **user owns data** permite que o aplicativo estenda o serviço do Power BI.
@@ -413,11 +413,28 @@ function updateEmbedReport() {
 Agora que você terminou o desenvolvimento do seu aplicativo, é hora de conferir uma capacidade dedicada ao espaço de trabalho do seu aplicativo.
 
 ### <a name="create-a-dedicated-capacity"></a>Criar uma capacidade dedicada
-Ao criar uma capacidade dedicada, você pode usufruir de um recurso dedicado ao conteúdo no espaço de trabalho do aplicativo. Quando um espaço de trabalho não está atribuído a uma capacidade dedicada, ele é considerado uma capacidade compartilhada. Você pode criar uma capacidade dedicada usando o [Power BI Premium ](../service-admin-premium-purchase.md).
+Ao criar uma capacidade dedicada, você pode usufruir de um recurso dedicado ao conteúdo no espaço de trabalho do aplicativo. Você pode criar uma capacidade dedicada usando o [Power BI Premium](../service-premium.md).
+
+A tabela a seguir lista os SKUs do Power BI Premium disponíveis no [Office 365](../service-admin-premium-purchase.md).
+
+| Nó de capacidade | Total de núcleos virtuais<br/>*(Back-end + front-end)* | Núcleos virtuais de back-end | Núcleos virtuais de front-end | Limites de conexão dinâmica/DirectQuery | Máx. de renderizações de página no horário de pico |
+| --- | --- | --- | --- | --- | --- |
+| EM1 |1 v-cores |0,5 núcleo virtual, 10 GB de RAM |0,5 núcleo virtual |3,75 por segundo |150-300 |
+| EM2 |2 núcleos virtuais |1 núcleo virtual, 10 GB de RAM |1 v-cores |7,5 por segundo |301-600 |
+| EM3 |4 núcleos virtuais |2 núcleos virtuais, 10 GB de RAM |2 núcleos virtuais |15 por segundo |601-1.200 |
+| P1 |8 v-cores |4 núcleos virtuais, 25 GB de RAM |4 núcleos virtuais |30 por segundo |1.201-2.400 |
+| P2 |16 v-cores |8 núcleos virtuais, 50 GB de RAM |8 v-cores |60 por segundo |2.401-4.800 |
+| P3 |32 v-cores |16 núcleos virtuais, 100 GB de RAM |16 v-cores |120 por segundo |4.801-9.600 |
+| P4 |64 núcleos virtuais |32 núcleos virtuais, 200 GB de RAM |32 v-cores |240 por segundo |9601 – 19200
+| P5 |128 núcleos virtuais |64 núcleos virtuais, 400 GB de RAM |64 núcleos virtuais |480 por segundo |19201 – 38400
+
+*Com **_SKUS EM_**, **você pode** acessar o conteúdo com uma licença do Power BI GRATUITA durante a tentativa de inserir com os **_aplicativos do MS Office_**, mas **não é possível acessar** conteúdo com uma licença do Power BI GRATUITA ao usar o **_Powerbi.com_** ou o **_Power BI Mobile_**.*
+
+*Com **_SKUs P_**, **você pode** acessar o conteúdo com uma licença GRATUITA do Power BI durante a tentativa de inserir com **_aplicativos do MS Office_**, com o **_Powerbi.com_** ou **_usando o Power BI Mobile_**.*
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Atribua um espaço de trabalho de aplicativo a uma capacidade dedicada
 
-Depois de criar uma capacidade dedicada, você pode atribuir o espaço de trabalho do aplicativo a ela. Para concluir isso, execute estas etapas.
+Depois de criar uma capacidade dedicada, você pode atribuir o espaço de trabalho do aplicativo a uma capacidade dedicada. Para concluir isso, execute estas etapas.
 
 1. No **serviço do Power BI**, expanda os espaços de trabalho e selecione as reticências do espaço de trabalho que você está usando para inserir seu conteúdo. Depois, selecione **Editar espaços de trabalho**.
 
@@ -431,13 +448,17 @@ Depois de criar uma capacidade dedicada, você pode atribuir o espaço de trabal
 
     ![espaço de trabalho do aplicativo vinculado a uma capacidade](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
+## <a name="admin-settings"></a>Configurações de administração
+
+Os Administradores Globais ou administradores do serviço do Power BI, podem ativar ou desativar a capacidade de usar as APIs REST para um locatário. Administradores do Power BI podem definir essa configuração para toda a organização ou para grupos de segurança individuais. Isso é habilitado para toda a organização por padrão. Você pode fazer isso por meio do [portal de administração do Power BI](../service-admin-portal.md).
+
 ## <a name="next-steps"></a>Próximas etapas
-Neste tutorial, você aprendeu como inserir conteúdo do Power BI em um aplicativo usando a **conta da organização do Power BI**. Agora, você pode tentar inserir o conteúdo do Power BI em um aplicativo usando aplicativos.  Você também pode tentar inserir o conteúdo do Power BI para clientes de terceiros.
+Neste tutorial, você aprendeu como inserir conteúdo do Power BI em um aplicativo usando a **conta da organização do Power BI**. Agora, você pode tentar inserir o conteúdo do Power BI em um aplicativo usando aplicativos.  Você também pode tentar inserir o conteúdo do Power BI para seus clientes.
 
 > [!div class="nextstepaction"]
 > [Inserir de aplicativos](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Inserir para clientes de terceiros](embed-sample-for-customers.md)
+>[Inserir para seus clientes](embed-sample-for-customers.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

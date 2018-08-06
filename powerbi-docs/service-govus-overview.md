@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f7c619a5696a6f432f24e5e2c875cfde335ab32c
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: f110464d435130a40666e61dd6a9c89ad6b10ccf
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256045"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39280422"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI para clientes do Governo dos EUA
 O **serviço do Power BI** tem uma versão disponível para clientes do Governo dos Estados Unidos como parte das assinaturas da **Comunidade do Governo dos EUA do Office 365**. A versão do **serviço do Power BI** discutida neste artigo é desenvolvida especificamente para clientes do Governo dos EUA e é separada e diferente da versão comercial do **serviço do Power BI**.
@@ -93,7 +93,7 @@ As seguintes perguntas (e respostas) são fornecidas para ajudá-lo a obter rapi
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Pergunta:** Minha conta é provisionada em mais de uma nuvem soberana. Ao usar o **Power BI Desktop**, como selecionar a qual nuvem posso me conectar?
+**Pergunta:** Minha conta é provisionada em mais de uma nuvem soberana. Ao usar o **Power BI Desktop**, como fazer para selecionar a nuvem a qual posso me conectar?
 
 **Resposta:** Começando com a versão de julho de 2018 do **Power BI Desktop**, você pode escolher qual nuvem deseja usar ao entrar no **Power BI Desktop**.
 

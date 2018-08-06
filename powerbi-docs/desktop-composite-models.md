@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/26/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4f882865271411d04a99c9213a68df24d000677d
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 2eb69896de8226fdf0033f980a8b4b5164c68c3d
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210491"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280146"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modelos compostos no Power BI Desktop (prévia)
 
@@ -112,7 +112,7 @@ Conforme mostrado na imagem a seguir, que se baseia nos dados novos e nas relaç
 
 ## <a name="setting-storage-mode"></a>Como configurar o modo de armazenamento
 
-Cada tabela em uma **modelo composto** tem um **modo de armazenamento** que indica se a tabela é baseada no DirectQuery ou na importação. O **Modo de armazenamento** pode ser exibido e modificado no painel **Propriedade**. Para chegar lá, selecione **Propriedades** na lista **Campos** do menu de contexto de clique com o botão direito do mouse. A imagem a seguir mostra o **modo de armazenamento** (abreviado como **Armazenamento...**  na imagem, devido à largura do painel).
+Cada tabela em um **modelo composto** tem um **modo de armazenamento** que indica se a tabela é baseada no DirectQuery ou em importação. O **Modo de armazenamento** pode ser exibido e modificado no painel **Propriedade**. Para chegar lá, selecione **Propriedades** na lista **Campos** do menu de contexto de clique com o botão direito do mouse. A imagem a seguir mostra o **modo de armazenamento** (abreviado como **Armazenamento...**  na imagem, devido à largura do painel).
 
 ![Configuração do modo de armazenamento](media/desktop-composite-models/composite-models_15.png)
 
@@ -173,7 +173,7 @@ As seguintes fontes multidimensionais não podem ser usadas com os **modelos com
 
 Ao se conectar a essas fontes multidimensionais usando o DirectQuery, não é possível se conectar também a outra fonte de DirectQuery, nem combinar com dados importados.
 
-As limitações existentes no uso do DirectQuery ainda se aplicam ao serem usados **modelos compostos**. Muitas dessas limitações agora são por tabela, dependendo do **modo de armazenamento** da tabela. Por exemplo, uma coluna calculada em uma tabela importada pode se referir a outras tabelas, mas uma coluna calculada em uma tabela do DirectQuery ainda fica restrita para se referir apenas às colunas na mesma tabela. Outras limitações se aplicam ao modelo como um todo, se quaisquer das tabelas no modelo forem DirectQuery. Por exemplo, os recursos **QuickInsights** e **P e R** não estão disponíveis em um modelo se qualquer uma das tabelas nele tiver um **modo de armazenamento** do DirectQuery. 
+As limitações existentes no uso do DirectQuery ainda se aplicam ao serem usados **modelos compostos**. Muitas dessas limitações agora são por tabela, dependendo do **modo de armazenamento** da tabela. Por exemplo, uma coluna calculada em uma tabela importada pode se referir a outras tabelas, mas uma coluna calculada em uma tabela do DirectQuery ainda fica restrita para se referir apenas às colunas na mesma tabela. Outras limitações se aplicam ao modelo como um todo se quaisquer das tabelas no modelo forem DirectQuery. Por exemplo, os recursos **QuickInsights** e **P e R** não estão disponíveis em um modelo se qualquer uma das tabelas nele tiver um **modo de armazenamento** do DirectQuery. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

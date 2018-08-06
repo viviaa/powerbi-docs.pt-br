@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6ac85bcaba34f705b0f21efc86ed1583e69c8c2c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6cd1616dab92eb8709c5e89966259be591e4ede3
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721054"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280652"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Criar relatórios otimizados para os aplicativos de telefone do Power BI
 Quando você [cria um relatório no Power BI Desktop](desktop-report-view.md), você pode melhorar a experiência de usá-lo em aplicativos móveis nos telefones ao criar uma versão do relatório especificamente para o telefone. Você pode adaptar seu relatório para o telefone ao reorganizar e redimensionar os elementos visuais, talvez não incluindo todos eles, para oferecer uma experiência ideal. Além disso, você pode criar [*visuais* responsivos](#optimize-a-visual-for-any-size) e [segmentação responsiva](#enhance-slicers-to-to-work-well-in-phone-reports) que são bem redimensionados para a visualização em um telefone. Você também pode adicionar filtros ao relatório, os quais aparecerão automaticamente no relatório do telefone. Os leitores do relatório poderão vê-los e filtrar o relatório com eles.
@@ -72,7 +72,7 @@ Você opta por ativar a capacidade de resposta para cada visual. Leia mais sobre
   
    ![Removendo um visual](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
 
-## <a name="enhance-slicers-to-to-work-well-in-phone-reports"></a>Aprimorar as segmentações para bom funcionamento em relatórios de telefone
+## <a name="enhance-slicers-to-work-well-in-phone-reports"></a>Melhorar as segmentações funcionar bem em relatórios de telefone
 As segmentações oferecem filtragem de dados de relatório na tela. Ao criar segmentações no modo de criação de relatórios regular, você pode modificar algumas configurações de segmentação para torná-los mais utilizáveis em relatórios de telefone:
 
 * Decida se os leitores do relatório podem selecionar apenas um ou mais de um item.

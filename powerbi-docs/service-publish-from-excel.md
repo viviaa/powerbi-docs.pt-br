@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: aa2bfed2858f93d91ff806b934f16c06555668d6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 964d9dfcc9a22d13b071fd59533821ebf907c7e1
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244820"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328455"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publicar no Power BI por meio do Excel 2016
 Com o Excel 2016, é possível publicar suas pastas de trabalho do Excel diretamente para o site do [Power BI](https://powerbi.microsoft.com), em que é possível criar relatórios e dashboards altamente interativos com base nos dados da pasta de trabalho. Em seguida, você pode compartilhar suas ideias com outras pessoas em sua organização.

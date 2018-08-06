@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 2caa22152580d3de8c6ede585c43dedf4e624f88
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fad7b8453b6d5d29a1f6c5d9d9ed49b0a8b8a66f
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813723"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280330"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Exibição de Dados no Power BI Desktop
 A **Exibição de Dados** ajuda a inspecionar, explorar e compreender os dados no modelo do **Power BI Desktop**. É diferente do modo como você exibe tabelas, colunas e dados no **Editor de Consultas**. Com a Exibição de Dados, você está olhando para seus dados *após* eles terem sido carregados no modelo.
@@ -46,4 +46,5 @@ Você também pode filtrar e classificar dados na **Exibição de Dados**. Cada 
 
 Você pode filtrar valores individuais ou usar a filtragem avançada com base nos dados da coluna. 
 
-
+> [!NOTE]
+> Quando um modelo do Power BI é criado em uma cultura diferente do que a sua interface do usuário atual (por exemplo, o modelo foi criado em inglês dos EUA e você está visualizando-lo em espanhol), a caixa de pesquisa não é exibida na interface do usuário da Exibição de Dados para algo diferente de campos de texto.

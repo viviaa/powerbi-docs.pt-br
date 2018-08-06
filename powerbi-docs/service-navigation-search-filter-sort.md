@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 421ef9609872515ae462de574d67528835bb78ab
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b55f9854d129c4ff7a70117b8382fbdbaff80ce8
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722829"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280261"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navegação: pesquisando, buscando e classificando seu conteúdo no serviço do Power BI
 Há muitas maneiras de navegar pelo seu conteúdo no serviço do Power BI. O conteúdo é organizado em entre pastas de trabalho por tipo: painéis, relatórios, pastas de trabalho e conjuntos de dados.  E o conteúdo também é organizado por uso: favoritos, recentes, aplicativos, compartilhado comigo e em destaque. Esses caminhos diferentes em seu conteúdo permitem que você localize rapidamente aquilo de que precisa no serviço do Power BI.  
@@ -32,7 +32,7 @@ O serviço do Power BI separa seu conteúdo do espaço de trabalho por tipo: pai
 ________________________________________
 
 ## <a name="searching-and-sorting-in-workspaces"></a>Pesquisa e classificação em espaços de trabalho
-Um espaço de trabalho tem quatro guias de conteúdo: Dashboards, Relatórios, Pastas de trabalho e Conjuntos de dados.  Cada uma dessas guias contém um campo de pesquisa e um botão de classificação.  Quando você estiver começando com o serviço do Power BI, talvez não ache esses recursos úteis, porque você terá apenas um ou dois itens por guia.  No entanto, ao longo do tempo você poderá ter que lidar com longas listas de conteúdo.  Use a pesquisa e classificação para encontrar facilmente o que você precisa.
+Um espaço de trabalho tem quatro guias de conteúdo: Dashboards, Relatórios, Pastas de trabalho e Conjuntos de dados.  Cada uma dessas guias contém um campo de pesquisa e um botão de classificação.  Quando você estiver começando com o serviço do Power BI, talvez não ache esses recursos úteis, porque você terá apenas um ou dois itens por guia.  No entanto, ao longo do tempo poderá ser necessário lidar com longas listas de conteúdo.  Use a pesquisa e classificação para encontrar facilmente o que você precisa.
 
 ![Guia Dashboards](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
 

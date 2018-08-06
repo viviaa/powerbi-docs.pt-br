@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 20352a729b43e15fd1cd67cb5d52c321c3d150d4
-ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
+ms.openlocfilehash: 5ea86ab577298b6099487228cdf4c8a87e4fe421
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34852246"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280215"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Localizar e se conectar a um pacote de conteúdo organizacional
 > [!NOTE]
@@ -36,7 +36,7 @@ Todos os usuários do [Power BI Pro](https://powerbi.microsoft.com/pricing) pode
 3. Selecione um pacote de conteúdo para revelar detalhes adicionais.
 
 ## <a name="connect-to-an-organizational-content-pack"></a>Conectar-se a um pacote de conteúdo organizacional
-* Selecione **Obter agora** para adicionar o pacote de conteúdo ao seu espaço de trabalho ativo. Novos painéis, relatórios, pastas de trabalho do Excel e conjuntos de dados contêm um asterisco amarelo.
+* Selecione **Obter agora** para conectar-se ao pacote de conteúdo e adicioná-lo ao espaço de trabalho ativo. Novos painéis, relatórios, pastas de trabalho do Excel e conjuntos de dados contêm um asterisco amarelo.
 
 Se o pacote de conteúdo tiver uma pasta de trabalho do Excel, você poderá ver um aviso informando que você não tem permissões para exibir a pasta de trabalho. Nesse caso, peça ao proprietário do pacote de conteúdo para [compartilhar a pasta de trabalho com você no OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
