@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "37598818"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582561"
 ---
 # <a name="power-bi-performance-best-practices"></a>Práticas Recomendadas de Desempenho do Power BI 
 Este artigo oferece orientação para criar relatórios rápidos e confiáveis no Power BI.  
@@ -24,8 +24,8 @@ Este artigo oferece orientação para criar relatórios rápidos e confiáveis n
 
 Quanto mais dados um visual precisar exibir, mais lentamente esse visual será carregado. Embora esse princípio pareça óbvio, é fácil esquecer. Por exemplo: suponha que você tenha um grande conjunto de dados. Sobre isso, você cria um relatório com uma tabela da tabela. Os usuários finais usam segmentações na página para obter as linhas que desejam – normalmente eles só estão interessados em algumas dezenas de linhas.
 
-Um erro comum é ter o modo de exibição padrão da tabela não filtrado, ou seja, todas as mais de 100 mil linhas. Os dados para essas linhas devem ser carregados na memória e descompactados em cada atualização. Isso criou enormes cargas de memória. A solução: reduza o número máximo de itens que a tabela exibe usando o filtro "Top N". O item máximo pode ser muito maior do que o necessário pelos usuários, por exemplo, 10.000. Como resultado, a experiência do usuário final não foi alterada, mas a utilização de memória do relatório descartou várias ordens de magnitude e o desempenho foi aprimorado de acordo. 
- 
+Um erro comum é ter o modo de exibição padrão da tabela não filtrado, ou seja, todas as mais de 100 mil linhas. Os dados para essas linhas devem ser carregados na memória e descompactados em cada atualização. Isso criou enormes cargas de memória. A solução: reduza o número máximo de itens que a tabela exibe usando o filtro "Top N". O item máximo pode ser muito maior do que o necessário pelos usuários, por exemplo, 10.000. Como resultado, a experiência do usuário final não foi alterada, mas a utilização de memória do relatório descartou várias ordens de magnitude e o desempenho foi aprimorado de acordo.
+
 Uma abordagem semelhante a acima é altamente recomendável para todos os visuais em seus relatórios. Pergunte-se: todos os dados neste visual são necessários? Existem maneiras de filtrar a quantidade de dados mostrados no visual com impacto mínimo na experiência do usuário final? Observe que as tabelas em particular podem ser muito caras. 
  
 ## <a name="limit-visuals-on-report-pages"></a>Limitar visuais em páginas do relatório 
