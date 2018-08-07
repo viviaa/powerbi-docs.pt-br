@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 781e34eadfccb89954c0a8548589e1bf89830079
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877408"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359744"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para seus clientes
 Com o **Power BI Embedded no Azure**, você pode inserir relatórios, painéis ou blocos em um aplicativo usando **app owns data**. **App owns data** representa um aplicativo que usa o Power BI como sua plataforma de análise incorporada. Normalmente, esse é um cenário de **desenvolvedor ISV**. Como **desenvolvedor ISV**, você pode criar conteúdo do Power BI que exibe relatórios, dashboards ou blocos em um aplicativo totalmente integrado e interativo, sem precisar que os usuários do aplicativo tenham uma licença do Power BI, ou até mesmo saibam que o Power BI está ativado nos bastidores. Este tutorial demonstra como integrar um relatório em um aplicativo usando o SDK do .NET do **Power BI** com a API JavaScript do **Power BI** ao usar o **Power BI Embedded no Azure** para clientes com **app owns data**.
@@ -320,16 +320,31 @@ Para obter um exemplo completo de como usar a API JavaScript, use a [ferramenta 
 
 ## <a name="move-to-production"></a>Mover para a produção
 
-Agora que você terminou o desenvolvimento do seu aplicativo, é hora de conferir uma capacidade dedicada ao espaço de trabalho do seu aplicativo. É necessário ter capacidade dedicada para passar para a produção.
+Agora que você terminou o desenvolvimento do seu aplicativo, é hora de conferir uma capacidade dedicada para o espaço de trabalho do seu aplicativo. É necessário ter capacidade dedicada para passar para a produção.
 
 ### <a name="create-a-dedicated-capacity"></a>Criar uma capacidade dedicada
-Ao criar uma capacidade dedicada, é possível tirar proveito de um recurso dedicado para o seu cliente. Os espaços de trabalho que não receberam uma capacidade dedicada terão uma capacidade compartilhada. Crie uma capacidade dedicada usando a solução [Capacidade dedicada do Power BI Embedded](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) no Azure.
+Ao criar uma capacidade dedicada, é possível tirar proveito de um recurso dedicado para o seu cliente. Você pode comprar uma capacidade dedicada no [portal do Microsoft Azure](https://portal.azure.com). Para obter detalhes sobre como criar uma capacidade do Power BI Embedded, veja [Criar capacidade do Power BI Embedded no portal do Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+Use a tabela a seguir para determinar qual capacidade do Power BI Embedded melhor atende as suas necessidades.
+
+| Nó de capacidade | Total de núcleos<br/>*(Back-end + front-end)* | Núcleos de back-end | Núcleos de front-end | Limites de conexão dinâmica/DirectQuery | Máx. de renderizações de página no horário de pico |
+| --- | --- | --- | --- | --- | --- |
+| A1 |1 v-cores |0,5 núcleo, 3 GB de RAM |0,5 núcleo | 5 por segundo |1-300 |
+| A2 |2 núcleos virtuais |1 núcleo, 5 GB de RAM |1 núcleo | 10 por segundo |301-600 |
+| A3 |4 núcleos virtuais |2 núcleos, 10 GB de RAM |2 núcleos | 15 por segundo |601-1.200 |
+| A4 |8 v-cores |4 núcleos, 25 GB de RAM |4 núcleos |30 por segundo |1.201-2.400 |
+| A5 |16 v-cores |8 núcleos, 50 GB de RAM |8 núcleos |60 por segundo |2.401-4.800 |
+| A6 |32 v-cores |16 núcleos, 100 GB de RAM |16 núcleos |120 por segundo |4.801-9.600 |
+
+**_Com os SKUs A, você não pode acessar o conteúdo do Power BI com uma licença do Power BI GRATUITA._**
 
 Os tokens inseridos com licenças PRO destinam-se a teste de desenvolvimento, portanto, o número de tokens inseridos que uma conta mestre do Power BI pode gerar é limitado. Você deve adquirir uma capacidade dedicada para incorporar em um ambiente de produção. Não há limite para a quantidade de tokens inseridos que você pode gerar com uma capacidade dedicada. Acesse [Recursos Disponíveis](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) para verificar o valor de uso que indica o uso inserido atual, em percentual. A quantidade de uso é por conta mestre.
 
+Para obter mais detalhes, consulte [Embedded analytics capacity planning whitepaper (White paper de planejamento de capacidade de análise inserida)](https://aka.ms/pbiewhitepaper).
+
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Atribua um espaço de trabalho de aplicativo a uma capacidade dedicada
 
-Ao criar uma capacidade dedicada, atribua o espaço de trabalho do aplicativo à capacidade dedicada. Para concluir isso, execute estas etapas.
+Depois de criar uma capacidade dedicada, você pode atribuir o espaço de trabalho do aplicativo a uma capacidade dedicada. Para concluir isso, execute estas etapas.
 
 1. No **serviço do Power BI**, expanda os espaços de trabalho e selecione as reticências do espaço de trabalho que você está usando para inserir seu conteúdo. Depois, selecione **Editar espaços de trabalho**.
 
@@ -339,6 +354,14 @@ Ao criar uma capacidade dedicada, atribua o espaço de trabalho do aplicativo à
 
     ![Atribuir capacidade dedicada](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-Para ver as respostas a perguntas sobre o Power BI Embedded, visite a página de [Perguntas frequentes](embedded-faq.md).  Se estiver tendo problemas com o Power BI Embedded dentro de seu aplicativo, visite a página de [solução de problemas](embedded-troubleshoot.md).
+3. Depois que você selecionar **Salvar**, será exibido um **losango** próximo ao nome do espaço de trabalho do aplicativo.
+
+    ![espaço de trabalho do aplicativo vinculado a uma capacidade](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+
+## <a name="next-steps"></a>Próximas etapas
+Neste tutorial, você aprendeu como inserir o conteúdo do Power BI em um aplicativo para seus clientes. Você também pode tentar inserir o conteúdo do Power BI para sua organização.
+
+> [!div class="nextstepaction"]
+>[Inserir para a organização](embed-sample-for-your-organization.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

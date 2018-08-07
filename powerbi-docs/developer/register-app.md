@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 07/31/2018
 ms.author: maghan
-ms.openlocfilehash: 4242e2a88ab930c5f647bbfa4aa97fea1dc313ad
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 06e7c27579f559928dab822a7e0323cfb4abc1a1
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157115"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388584"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Registrar um aplicativo do Azure AD para inserir o conteúdo do Power BI
 Saiba como registrar um aplicativo no Azure AD (Azure Active Directory) para uso com a inserção de conteúdo do Power BI.
@@ -24,7 +24,7 @@ Registre seu aplicativo com o Azure AD para permitir que seu aplicativo acesse a
 > [!IMPORTANT]
 > Antes de registrar um aplicativo do Power BI, é necessário um [locatário do Azure Active Directory e um usuário da organização](create-an-azure-active-directory-tenant.md). Se você ainda não se inscreveu no Power BI com um usuário em seu locatário, o registro do aplicativo não será concluído com êxito.
 
-Há duas maneiras de registrar seu aplicativo. A primeira é com a [Ferramenta de Registro de Aplicativo do Power BI](https://dev.powerbi.com/apps/), sendo que também é possível fazê-lo diretamente no Portal do Azure. A Ferramenta de Registro de Aplicativo do Power BI é a opção mais fácil, pois há apenas alguns campos para preencher. Se você desejar fazer alterações no aplicativo, use o portal do Azure.
+Há duas maneiras de registrar seu aplicativo. A primeira é com a [Ferramenta de Registro de Aplicativo do Power BI](https://dev.powerbi.com/apps/), sendo que também é possível fazê-lo diretamente no portal do Azure. A Ferramenta de Registro de Aplicativo do Power BI é a opção mais fácil, pois há apenas alguns campos para preencher. Se você desejar fazer alterações no aplicativo, use o portal do Azure.
 
 ## <a name="register-with-the-power-bi-app-registration-tool"></a>Registrar um aplicativo com a Ferramenta de Registro de Aplicativo do Power BI
 É necessário registrar seu aplicativo no **Azure Active Directory** para estabelecer uma identidade para o seu aplicativo e especificar permissões para os recursos REST do Power BI. Ao registrar um aplicativo, como um aplicativo de console ou um site, você recebe um identificador que é usado pelo aplicativo para se identificar aos usuários dos quais ele está solicitando permissões.
@@ -36,7 +36,7 @@ Veja aqui como registrar seu aplicativo com a Ferramenta de Registro de Aplicati
 3. Forneça um **Nome do Aplicativo**.
 4. A seleção de Tipo de aplicativo depende do tipo de aplicativo que você está usando.
    
-   * Use **Aplicativo nativo** para aplicativos executados em dispositivos cliente. Você deverá escolher **Aplicativo nativo** se estiver inserindo o conteúdo para clientes, independentemente de qual seja o aplicativo. Mesmo para aplicativos Web.
+   * Use **Aplicativo nativo** para aplicativos executados em dispositivos cliente. Você deverá escolher **Aplicativo nativo** se estiver inserindo o conteúdo para clientes, independentemente de qual seja o aplicativo, até mesmo para aplicativos Web.
    * Use **Aplicativo Web do servidor** para aplicativos Web ou APIs da Web.
 
 5. Insira um valor para **URL de redirecionamento** e **URL da Home Page**. A **URL de redirecionamento** funciona com qualquer URL válida.
@@ -80,8 +80,8 @@ Sua outra opção para registrar seu aplicativo é fazer isso diretamente no por
     ![](media/register-app/azuread-new-app-registration.png)
 5. Siga os prompts e crie um novo aplicativo.
    
-   * Para Aplicativos Web, forneça a URL de Logon, que é a URL base do aplicativo, na qual os usuários podem entrar, por exemplo, `http://localhost:13526`.
-   * Para aplicativos nativos, forneça um **URI de redirecionamento**, que usa o Azure AD para retornar respostas de token. Insira um valor específico para seu aplicativo, por exemplo, `http://myapplication/Redirect`
+   * Para aplicativos Web, forneça a URL de logon, que é a URL base do aplicativo, na qual os usuários podem entrar, por exemplo, `http://localhost:13526`).
+   * Para aplicativos nativos, forneça um **URI de redirecionamento**, que usa o Azure AD para retornar respostas de token. Verifique se um valor específico foi inserido para seu aplicativo (por exemplo, `http://myapplication/Redirect`).
 
 Para obter mais informações sobre como registrar aplicativos no Azure Active Directory, consulte [Integrando aplicativos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 
@@ -93,7 +93,7 @@ Eis como obter uma ID do cliente:
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Escolha seu locatário do Azure AD selecionando a sua conta no canto superior direito da página.
 3. No painel de navegação esquerdo, escolha **Mais serviços** e selecione **Registros de aplicativo**.
-4. Selecione o aplicativo para o qual você deseja recuperar a ID do cliente.
+4. Selecione o aplicativo para o qual você deseja recuperar a ID que precisa usar.
 5. Você verá a **ID do Aplicativo** listada como um GUID. Esta é a ID do cliente para o aplicativo.
    
     ![ID do Cliente listada como ID do Aplicativo no registro de aplicativo](media/register-app/powerbi-embedded-app-registration-client-id.png)
@@ -128,7 +128,7 @@ Você deverá entrar com a conta *mestre*, usada para inserção ou com uma cont
     ![](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
 5. Em **Permissões necessárias**, selecione **Conceder Permissões**.
    
-    A ação **Conceder Permissões** é necessária para a *conta mestre*, a fim de evitar prompts de consentimento pelo Azure AD. Se a conta que executar essa ação for um Administrador Global, você concederá permissões para todos os usuários da organização a esse aplicativo. Se a conta que executa essa ação é a *conta mestre* e não é um Administrador Global, você concede permissões apenas para a *conta mestre* a esse aplicativo.
+    A ação **Conceder permissões** é necessária para a *conta mestre*, a fim de evitar solicitações de consentimento pelo Azure AD. Se a conta que executar essa ação for um Administrador Global, você concederá permissões para todos os usuários da organização a esse aplicativo. Se a conta que executa essa ação é a *conta mestre* e não é um Administrador Global, você concede permissões apenas para a *conta mestre* a esse aplicativo.
    
     ![Conceder permissões na caixa de diálogo Permissões necessárias](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
 
@@ -160,19 +160,25 @@ Você deverá entrar com a conta *mestre*, usada para inserção ou com uma cont
     
      *Conceder permissões* é necessário para que não seja solicitado consentimento da conta mestre pelo Azure AD, o que não é possível ao entrar de forma não interativa.
    
-     ```
+     ```json
      Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
      Authorization: Bearer ey..qw
      Content-Type: application/json
      { 
      "clientId":"{Service_Plan_ID}",
      "consentType":"AllPrincipals",
-     "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
+     "resourceId":"c78a3685-1ce7-52cd-95f7-dc5aea8ec98e",
      "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
      "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
      ```
+    A **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* não é universal, mas ela é dependente de locatário. Esse valor é a objectId do aplicativo “Serviço do Power BI” no locatário do AAD.
+
+    O usuário pode obter rapidamente esse valor no portal do Azure:
+    1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
+    2. Pesquise por “Serviço do Power BI” na caixa de pesquisa
+
 5. Conceder permissões do aplicativo ao AAD (Azure Active Directory)
    
    O valor de **consentType** pode fornecer **AllPrincipals** ou **Principal**.
@@ -182,7 +188,7 @@ Você deverá entrar com a conta *mestre*, usada para inserção ou com uma cont
     
    *Conceder permissões* é necessário para que não seja solicitado consentimento da conta mestre pelo Azure AD, o que não é possível ao entrar de forma não interativa.
 
-   ```
+   ```json
    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
    Authorization: Bearer ey..qw
    Content-Type: application/json
