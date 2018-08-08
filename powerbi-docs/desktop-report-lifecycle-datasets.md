@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b1bfe0e35015cd32024b381a1859330cd8f1862a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c4fbb5ea019ca439ecf063c91a69348ef33bbc2
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721100"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623989"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Conectar-se a conjuntos de dados no serviço do Power BI no Power BI Desktop
 Você pode estabelecer uma conexão dinâmica a um conjunto de dados compartilhado no serviço do Power BI e criar vários relatórios diferentes com base no mesmo conjunto de dados. Isso significa que você pode criar seu modelo de dados perfeito no Power BI Desktop, publicá-lo no serviço do Power BI e, junto com outros usuários, criar vários relatórios diferentes (em arquivos .pbix distintos) utilizando o mesmo common data service. Esse recurso é chamado de **conexão dinâmica do serviço do Power BI**.
@@ -37,7 +37,7 @@ Todos adoram seus relatórios e conjuntos de dados, e é aí que o problema come
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Conectar-se a um conjunto de dados do serviço do Power BI usando uma conexão dinâmica
 Depois de criar o relatório (e o conjunto de dados no qual se baseou), Anna o publica no **serviço do Power BI**, que será exibido no espaço de trabalho da sua equipe no serviço do Power BI. Agora o relatório está disponível para consulta e uso por qualquer pessoa no espaço de trabalho.
 
-Para saber mais sobre espaços de trabalho, confira [Espaços de trabalho de aplicativo](service-create-distribute-apps.md#app-workspaces).
+Para saber mais sobre espaços de trabalho, confira [Espaços de trabalho de aplicativo](service-create-workspaces.md).
 
 Outros membros do espaço de trabalho podem agora estabelecer uma conexão dinâmica com o modelo de dados compartilhado de Anna (usando o recurso de **conexão dinâmica ao serviço do Power BI**) e criar seus próprios relatórios exclusivos a partir do *conjunto de dados original*.
 
