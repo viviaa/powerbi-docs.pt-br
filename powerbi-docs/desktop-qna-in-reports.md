@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8fd04b6c7fe83e7047d2eaecf4fb4b0e564f0e9f
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329628"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475719"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Usar P e R no Power BI Desktop para consultas de linguagem natural
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no **Power BI Desktop** permite que você faça.
@@ -24,6 +24,11 @@ Para habilitar P e R para interpretar com êxito a coleção de perguntas a qual
 
 > [!NOTE]
 > As P e R estarão disponíveis apenas ao trabalhar com um modelo que contenha dados **importados**. Não há suporte para conexões dinâmicas com modelos SSAS e DirectQuery.
+>
+>
+
+> [!NOTE]
+> P e R exigem a seguinte atualização do tempo de execução do C, quando você está usando uma versão do Windows anterior ao Windows 10. Você pode tentar instalar atualizações importantes do Windows Update ou instalar o componente necessário da Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
 

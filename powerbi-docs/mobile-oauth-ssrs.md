@@ -9,19 +9,19 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: ba8a0c6868e84cf9d675fff8f69a34b4befc9b61
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3777d082d8e0d166abadd2ab89035d6895421f24
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852200"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39415336"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Usando o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao SSRS
 Saiba como configurar seu ambiente para dar suporte à autenticação OAuth com o aplicativo móvel do Power BI para conectar-se ao Servidor de Relatórios do Power BI e ao SQL Server Reporting Services 2016 ou posterior.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Você pode usar o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao Reporting Services para exibir relatórios móveis ou KPIs. O Windows Server 2016 oferece algumas melhorias à função do WAP (Proxy de Aplicativo Web) para permitir esse tipo de autenticação. Observe que essa configuração não permite a visualização de relatórios do Power BI nos aplicativos móveis do Power BI. No entanto, você pode exibi-los em um navegador em um dispositivo móvel. Para exibir os relatórios do Power BI no aplicativo móvel, você precisa usar a autenticação do Windows.
+Você pode usar o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao Reporting Services para exibir relatórios móveis ou KPIs. O Windows Server 2016 oferece algumas melhorias à função do WAP (Proxy de Aplicativo Web) para permitir esse tipo de autenticação. Observe que, no momento, não há suporte oficialmente para a exibição de Relatórios do Power BI hospedados no Servidor de Relatórios do Power BI que usa o WAP para autenticação.
 
 ## <a name="requirements"></a>Requisitos
 O Windows Server 2016 é necessário para os servidores WAP (Proxy de aplicativo Web) e Serviços de Federação do Active Directory (AD FS). Não é necessário ter um domínio de nível funcional do Windows 2016.

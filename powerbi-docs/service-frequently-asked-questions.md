@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/28/2018
+sktopms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 5f117bdeb4e37986884c6a1021db1f361bdcddd3
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145377"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582651"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Perguntas frequentes sobre o Power BI
 * Se você tiver outras dúvidas, [experimente perguntar à comunidade do Power BI](http://community.powerbi.com/).
@@ -47,8 +47,8 @@ Apenas um navegador da Web e um endereço de email corporativo. Você pode se in
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Por que é necessário se inscrever com meu email corporativo?
 O Power BI não dá suporte a endereços de email fornecidos por provedores de telecomunicações e serviços de email para consumidores. Saiba mais sobre [o processo de inscrição por autoatendimento do Power BI](service-self-service-signup-for-power-bi.md).
 
-## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Há preços para organizações governamentais, acadêmicas e sem fins lucrativos disponíveis para o Power BI?
-Sim, preços sem fins lucrativos estão disponíveis ao comprar diretamente da Microsoft. É possível saber mais e inscrever-se por meio do site [Doação de Produtos Microsoft](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/). São oferecidos preços diferenciados para organizações governamentais e acadêmicas por meio dos programas de licenciamento MOSP/Direto, EA e Aberto. O preço para uso governamental também está disponível na sindicalização. 
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Há preços para organizações governamentais, acadêmicas e sem fins lucrativos disponíveis para o Power BI?
+Sim, há preços sem fins lucrativos disponíveis ao comprar diretamente da Microsoft. Saiba mais e inscreva-se por meio do site [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi) (Microsoft sem fins lucrativos). São oferecidos preços diferenciados para organizações governamentais e acadêmicas por meio dos programas de licenciamento MOSP/Direto, EA e Aberto. O preço para uso governamental também está disponível na sindicalização. 
 
 ## <a name="is-power-bi-available-on-premises"></a>O Power BI está disponível localmente?
 O Power BI [https://powerbi.com](https://powerbi.com) não está disponível como um serviço de nuvem privado e interno. No entanto, você tem três outras opções para exibir e trabalhar com os dados locais. 

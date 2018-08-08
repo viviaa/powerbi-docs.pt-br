@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 002c1c256a0d78601d112e4ee34326c0914f9ac1
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: d0449087715b1fac82276810397167d2a5de8f28
+ms.sourcegitcommit: 9c0f990ffb66256eb342af8528987bb108069af6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37599679"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501398"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Métricas de uso de dashboards e relatórios
 Se você cria dashboards e relatórios, as métricas de uso ajudam a compreender seus impactos. Quando executa as métricas de uso de um dashboard ou de um relatório, você descobre como esses dashboards e relatórios estão sendo usados em sua organização – o que está sendo usado, por quem e para que finalidade.  
@@ -149,6 +149,10 @@ Os relatórios de métrica de uso são um recurso que o administrador do Power B
 Por padrão, os dados por usuário estão habilitados para as métricas de uso e as informações de conta do criador do conteúdo estão incluídas no relatório de métricas. Se você não quiser incluir essa informação para alguns ou todos os usuários, desabilite o recurso para grupos de segurança especificados ou para toda a organização. Em seguida, as informações da conta serão mostradas no relatório como *Sem nome*.
 
 Ao desabilitar as métricas de uso para toda a sua organização, os administradores podem usar a opção **excluir todo o conteúdo existente de métricas de uso** para excluir todos os relatórios e blocos de dashboards existentes que foram criados usando os relatórios de métricas de uso e os conjuntos de dados. Esta opção remove todo o acesso aos dados de métricas de uso para todos os usuários da organização que já podem estar usando esses dados. Tenha cuidado, pois a exclusão do conteúdo de métricas de uso existente é irreversível.
+
+## <a name="usage-metrics-in-national-clouds"></a>Métricas de uso em nuvens nacionais
+
+O Power BI está disponível em nuvens nacionais separadas. Essas nuvens oferecem os mesmos níveis de segurança, privacidade, conformidade e transparência como a versão global do Power BI, combinado com um modelo exclusivo para regulações locais na entrega do serviço, residência de dados, acesso e controle. Devido a esse modelo exclusivo para regulamentações locais, as métricas de uso não estão disponíveis em nuvens nacionais. Para obter mais informações, confira [nuvens nacionais](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 P: Não consigo executar as métricas de uso em um dashboard ou relatório    
