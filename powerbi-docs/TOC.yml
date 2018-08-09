@@ -112,8 +112,6 @@
                   href: service-install-use-apps.md
                 - name: Localizar e se conectar a um pacote de conteúdo organizacional
                   href: service-organizational-content-pack-find-and-open.md
-                - name: Compartilhar dashboards e relatórios
-                  href: service-share-dashboards.md
                 - name: Introdução à P e R do Power BI
                   href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Conectar aos serviços
@@ -306,9 +304,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Compartilhar seu trabalho
               items:
-                - name: Como devo colaborar e compartilhar relatórios e dashboards?
+                - name: Como devo colaborar e compartilhar?
                   href: service-how-to-collaborate-distribute-dashboards-reports.md
-                - name: Criar e distribuir aplicativos com dashboards e relatórios
+                - name: Compartilhar dashboards e relatórios
+                  href: service-share-dashboards.md
+                - name: Criar espaços de trabalho do aplicativo
+                  href: service-create-workspaces.md
+                - name: Criar os novos espaços de trabalho (visualização)
+                  href: service-create-the-new-workspaces.md
+                - name: Publicar aplicativos com dashboards e relatórios
                   href: service-create-distribute-apps.md
                 - name: Compartilhar um relatório filtrado
                   href: service-share-reports.md
