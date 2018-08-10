@@ -24,14 +24,14 @@ O **ExpressRoute** é um serviço do Azure que permite criar conexões privadas 
 
 ![](media/service-admin-power-bi-expressroute/pbi_expressroute_1.png)
 
-É possível obter [mais informações sobre a Rota Expressa](https://azure.microsoft.com/services/expressroute/) ou sobre [como se inscrever](https://azure.microsoft.com/pricing/details/expressroute/).
+É possível obter [mais informações sobre o ExpressRoute](https://azure.microsoft.com/services/expressroute/) ou sobre [como se inscrever](https://azure.microsoft.com/pricing/details/expressroute/).
 
 > [!NOTE]
 > O Power BI é compatível com o modo de emparelhamento Público, conforme descrito nestas [Perguntas frequentes](https://docs.microsoft.com/azure/expressroute/expressroute-faqs).
 > 
 > 
 
-## <a name="power-bi-expressroute-exceptions"></a>Exceções da Rota Expressa para o Power BI
+## <a name="power-bi-expressroute-exceptions"></a>Exceções do ExpressRoute para o Power BI
 O Power BI está em conformidade com o ExpressRoute, exceto nos casos em que o Power BI recebe ou envia dados pela Internet pública. Em geral, essas exceções específicas incluem dados estáticos, como arquivos de configuração do navegador baixados por meio do nó mais próximo da **CDN (Rede de Distribuição de Conteúdo)**. Existem algumas exceções generalizadas que se aplicam ao Power BI, em contraste com outras que são específicas do serviço ou do recurso. Veja cada uma delas nas seções a seguir.
 
 ### <a name="overall-exceptions-to-power-bi-and-expressroute"></a>Exceções gerais ao Power BI e ao ExpressRoute
