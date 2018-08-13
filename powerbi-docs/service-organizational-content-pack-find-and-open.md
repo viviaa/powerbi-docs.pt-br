@@ -3,29 +3,29 @@ title: Localizar e conectar-se a um pacote de conteúdo organizacional – Power
 description: Encontrar e abrir um pacote de conteúdo organizacional no Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5ea86ab577298b6099487228cdf4c8a87e4fe421
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 67072d690f09e922601c6b14ad1c150e2298040b
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280215"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624265"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Localizar e se conectar a um pacote de conteúdo organizacional
-> [!NOTE]
-> Você já ouviu a respeito dos novos *aplicativos*? Os aplicativos são a nova maneira para distribuir conteúdo a um grande público no Power BI. Estamos planejando desativar os pacotes de conteúdo organizacional em breve, portanto, recomendamos o uso de aplicativos. Saiba [mais sobre os aplicativos](service-install-use-apps.md).
-> 
-> 
 
 Quando alguém publica um pacote de conteúdo organizacional em sua organização, em grupos de segurança ou de distribuição ou nos [grupos do Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9) dos quais você faz parte, ele é exibido no AppSource.  Procure ou pesquise o AppSource para encontrar e abrir pacotes de conteúdo organizacional.
 
 Criar pacotes de conteúdo é diferente de compartilhar dashboards ou colaborar neles em um grupo. Leia [Como devo colaborar e compartilhar relatórios e dashboards?](service-how-to-collaborate-distribute-dashboards-reports.md) para decidir sobre a melhor opção para sua situação.
+
+> [!NOTE]
+> Não é possível criar ou instalar pacotes de conteúdo organizacional na nova versão prévia de experiências de espaço de trabalho. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de espaço de trabalho](service-create-the-new-workspaces.md).
+> 
 
 ## <a name="find-an-organizational-content-pack"></a>Localizar um pacote de conteúdo organizacional
 Todos os usuários do [Power BI Pro](https://powerbi.microsoft.com/pricing) podem acessar o AppSource, que exibe os pacotes de conteúdo compartilhados com toda a sua organização, com grupos de segurança ou de distribuição e com os grupos do Office 365 dos quais eles fazem parte.  

@@ -3,21 +3,26 @@ title: Desconectar-se de um pacote de conteúdo organizacional – Power BI
 description: Leia sobre como remover a conexão a um pacote de conteúdo organizacional, excluindo seu conjunto de dados no Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c0e7bddd23987377bfd8cf05bdfd1ab997e621ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2389ed542a43b28296faf2eed2b69b4e83d227f5
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247632"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624150"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Remover a conexão de um pacote de conteúdo organizacional do Power BI
+
+> [!NOTE]
+> Não é possível criar pacotes de conteúdo organizacional nem os instalalar na nova versão prévia de experiências de espaço de trabalho. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de espaço de trabalho](service-create-the-new-workspaces.md).
+> 
+
 Um colega de trabalho criou um pacote de conteúdo. Você o descobriu no AppSource e adicionou-o ao seu espaço de trabalho do Power BI. Mas você não precisa mais disso.  Como removê-lo?
 
 Para remover um pacote de conteúdo, você remove seu conjunto de dados.  
