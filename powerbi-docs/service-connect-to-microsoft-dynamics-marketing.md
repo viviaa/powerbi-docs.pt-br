@@ -54,7 +54,7 @@ Conecte-se ao [pacote de conteúdo do Dynamics Marketing](https://app.powerbi.co
 
 ## <a name="system-requirements"></a>Requisitos de sistema
 * Você precisa especificar uma URL do OData válida para uma instância do Dynamics Marketing (o pacote de conteúdo não funcionará com uma versão local do CRM).  
-* Um administrador deve habilitar o ponto de extremidade OData nas configurações do site. O endereço do ponto de extremidade OData pode ser encontrado navegando até **Página Inicial \> Configurações \> Configurações de Site** na seção **Serviço de Dados da Organização**.  A URL do OData tem o formato: https:// [instance\_name].marketing.dynamics.com/analytics  
+* Um administrador deve habilitar o ponto de extremidade OData nas configurações do site. O endereço do ponto de extremidade OData pode ser encontrado navegando até **Página Inicial \> Configurações \> Configurações de Site** na seção **Serviço de Dados da Organização**.  A URL do OData tem o formato: https://[instance\_name].marketing.dynamics.com/analytics  
 * A conta/identidade do usuário usada para acessar o Microsoft Dynamics Marketing deve ser a mesma na qual você se inscreveu para usar o Power BI. Ao fazer logon no Microsoft Dynamics Marketing, sua entrada será realizada automaticamente com a mesma identidade que você usa para o Power BI. Se você quiser entrar no Microsoft Dynamics Marketing com uma conta diferente, registre-se como um usuário do Power BI usando essa outra conta. Esperamos resolver esse problema em uma versão futura.   
 
 ## <a name="troubleshooting"></a>Solução de problemas
