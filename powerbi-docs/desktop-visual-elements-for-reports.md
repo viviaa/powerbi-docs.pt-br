@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: be4651d1658c80c84105a65bc48e4072ed203794
-ms.sourcegitcommit: 7bdb76bd80973c5e5174747b7e304705754fe647
+ms.openlocfilehash: a3e39e6326eb5b32cd72e2aefec74c07804b4639
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217618"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657887"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Usar elementos visuais para aprimorar os relatórios do Power BI
 
@@ -59,6 +59,9 @@ Se você definir a transparência do plano de fundo da página para mais de 50%,
 ![Uma transparência superior a 50% resulta em uma borda pontilhada](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
 
 É importante observar que o limite pontilhado *só* aparece ao editar o relatório e *não* é exibido para as pessoas que estiverem visualizando o relatório publicado, da forma como aparece ao ser exibido no **Serviço do Power BI**.
+
+> [!NOTE]
+> Se você usa telas de fundo de cor escura para papel de parede e define a cor do texto como branca ou muito clara, esteja ciente de que o recurso **Exportar para PDF** não inclui o papel de parede; portanto, qualquer exportação com fontes brancas ficará quase invisível no arquivo PDF exportado. Consulte [exportar para PDF](desktop-export-to-pdf.md) para obter mais informações em **Exportar para PDF**.
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Uso de cabeçalhos visuais aprimorados em relatórios do Power BI

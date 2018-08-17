@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b8c4066f3128899d2c3c8121d7c5d41768f89dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327811"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657956"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -113,6 +113,33 @@ Após alterar o controle deslizante **Ação** para **Ativado**, você pode sele
 Há inúmeras coisas interessantes que você pode fazer com indicadores vinculados a objetos. Você pode criar um sumário visual na sua página de relatório ou então você pode fornecer exibições diferentes (como tipos de visual) das mesmas informações apenas clicando em um objeto.
 
 No modo de edição, é possível usar Ctrl + clique para seguir o link; fora do modo de edição, simplesmente clique no objeto para seguir o link. 
+
+## <a name="bookmark-groups"></a>Grupos de indicadores
+
+A partir da versão de agosto de 2018 do **Power BI Desktop**, é possível criar e usar grupos de indicadores. Um grupo de indicadores é uma coleção de indicadores que você especifica, que pode ser mostrado e organizado como um grupo. 
+
+Para criar um grupo de indicadores, mantenha pressionada a tecla CTRL e selecione os indicadores que você deseja incluir no grupo; em seguida, clique nas reticências ao lado de qualquer um dos indicadores selecionados e selecione **Agrupar** no menu exibido.
+
+![Criar um grupo de indicadores](media/desktop-bookmarks/bookmarks_15.png)
+
+O **Power BI Desktop** nomeia automaticamente o grupo *Grupo 1*. Felizmente, basta clicar duas vezes no nome e renomeá-lo como desejar.
+
+![Renomear um grupo de indicadores](media/desktop-bookmarks/bookmarks_16.png)
+
+Com qualquer grupo de indicadores, clicar no seu nome somente expande ou recolhe o grupo de indicadores e não representa um indicador por si só. 
+
+Ao usar o recurso **Exibir** dos indicadores, o seguinte se aplica:
+
+* Se o indicador selecionado estiver em um grupo quando você selecionar **Exibir** nos indicadores, somente os indicadores *nesse grupo* serão mostrados na sessão de exibição. 
+
+* Se o indicador selecionado não for um grupo ou estiver no nível superior (como o nome de um grupo de indicadores), então todos os indicadores de todo o relatório serão reproduzidos, incluindo indicadores em qualquer grupo. 
+
+Para desagrupar indicadores, basta selecionar qualquer indicador em um grupo, clicar nas reticências e selecionar **Desagrupar** no menu exibido. 
+
+![Desagrupar um grupo de indicadores](media/desktop-bookmarks/bookmarks_17.png)
+
+Observe que selecionar **Desagrupar** para qualquer indicador de um grupo tira todos os indicadores dele (exclui o grupo, mas não os indicadores em si). Portanto, para remover um único indicador de um grupo, é necessário **Desagrupar** qualquer membro desse grupo, que exclui o agrupamento e, em seguida, selecionar os membros que você deseja no novo grupo (usando CTRL e clicando em cada indicador) e selecionar **Agrupar** novamente. 
+
 
 ## <a name="using-spotlight"></a>Usando o Destaque
 Outro recurso lançado com indicadores é o **Destaque**. Com o **Destaque**, você pode chamar a atenção para um gráfico específico, por exemplo, ao apresentar seu indicadores no modo de **Exibição**.

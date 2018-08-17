@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34480878"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657795"
 ---
 # <a name="conditional-formatting-in-tables"></a>Formatação condicional em tabelas 
 Com a formatação condicional para tabelas, você pode especificar cores personalizadas para as células com base nos valores das células ou em outros valores ou campos, inclusive usando cores de gradiente. Também é possível exibir valores de célula com barras de dados. 
@@ -24,7 +24,7 @@ Para acessar a formatação condicional, em **Campos** também do painel **Visua
 
 ![Menu Formatação condicional](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-As seções a seguir descrevem cada uma dessas três opções de formatação condicional. Uma ou mais opções podem ser combinadas em uma única coluna de tabela.
+As seções a seguir descrevem cada uma dessas opções de formatação condicional. Uma ou mais opções podem ser combinadas em uma única coluna de tabela.
 
 > [!NOTE]
 > Quando aplicada a uma tabela, a formatação condicional substitui quaisquer estilos de tabela personalizados aplicados a células formatadas condicionalmente.
@@ -47,7 +47,7 @@ Para usar valores de cor discretos para intervalos de valor, selecione **Colorir
 
 ![Caixa de diálogo Escalas de cor da tela de fundo](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
 
-### <a name="color-by-rules"></a>Colorir por regras
+### <a name="color-by-rules"></a>Colorir segundo regras
 
 Quando você seleciona **Colorir por regras**, é possível inserir um ou mais intervalos de valores, cada um com um conjunto de cores.  Cada intervalo de valor começa com uma condição de *valor If*, uma condição de valor *and* e uma cor.
 
@@ -95,3 +95,43 @@ Por padrão, a opção **Mostrar somente a barra** é desmarcada e, portanto, a 
 Se opção **Mostrar somente a barra** estiver marcada, a célula da tabela mostrará apenas a barra.
 
 ![Tabela de exemplo com apenas as barras de dados](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+
+## <a name="color-formatting-by-field-value"></a>Formatação de cor por valor de campo
+
+É possível usar uma medida ou uma coluna que especifica uma cor, usando um valor de texto ou um código hexadecimal, para aplicar essa cor à tela de fundo da cor da fonte de um visual de tabela ou de matriz. Também é possível criar uma lógica personalizada para um determinado campo e fazer essa lógica aplicar a cor desejada à fonte ou tela de fundo.
+
+Por exemplo, na tabela a seguir, há uma cor associada a cada modelo de produto. 
+
+![Campo ProductName com nome de cor](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+
+Para formatar essa célula com base em seu valor de campo, selecione a caixa de diálogo **Formatação condicional** clicando com o botão direito do mouse na coluna *Cor* desse visual e, nesse caso, selecione **Cor da tela de fundo** no menu. 
+
+![Selecionar a cor da tela de fundo do menu](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+
+Na caixa de diálogo exibida, selecione **Valor do campo** na área suspensa **Formatar por**, conforme mostrado na imagem a seguir.
+
+![Formatar por valor Campo](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+
+É possível repetir esse processo para a cor da fonte, e o resultado no visual será uma cor sólida na coluna **cor**, conforme mostrado na tela a seguir.
+
+![Formatar por valor Campo](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+
+Também é possível criar um cálculo de DAX com base na lógica de negócios, que gera códigos hexadecimais diferentes com base nas condições de sua preferência. Geralmente isso é mais fácil do que criar várias regras na caixa de diálogo de formatação condicional. Considere o campo *ColorKPI* na imagem de exemplo a seguir.
+
+![Cálculos DAX](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Depois é possível definir o valor do campo para **Cor da tela de fundo** da seguinte maneira.
+
+![Definir a cor do campo com base em um KPI](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+E, em seguida, é possível obter resultados como a matriz a seguir.
+
+![Visual de matriz com uma cor baseada em um valor de KPI](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Há muito mais variações que você pode criar apenas usando sua imaginação e um pouco do DAX.
+
+## <a name="next-steps"></a>Próximas etapas
+Para obter mais informações, consulte o seguinte artigo:  
+
+* [Dicas e truques para formatação com cores no Power BI](service-tips-and-tricks-for-color-formatting.md)  
+

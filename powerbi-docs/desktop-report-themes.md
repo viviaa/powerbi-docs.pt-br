@@ -1,5 +1,5 @@
 ---
-title: Usar Temas de Relatório no Power BI Desktop (Visualização)
+title: Usar Temas de relatório no Power BI Desktop
 description: Saiba como usar uma paleta de cores personalizada e aplicá-la a um relatório inteiro no Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721169"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657933"
 ---
-# <a name="use-report-themes-in-power-bi-desktop-preview"></a>Usar Temas de Relatório no Power BI Desktop (Visualização)
+# <a name="use-report-themes-in-power-bi-desktop"></a>Usar Temas de relatório no Power BI Desktop
 Com **Temas de Relatório** você pode aplicar um tema de cor ao relatório inteiro, como as cores da empresa, uma coloração sazonal ou qualquer outro tema de cor que você queira aplicar. Quando você aplicar um **Tema de Relatório**, todos os visuais no relatório passarão a usar as cores do tema selecionado (aplicam-se algumas exceções que serão descritas posteriormente neste artigo).
 
 ![](media/desktop-report-themes/report-themes_1.png)
@@ -26,10 +26,14 @@ A aplicação de um **Tema de Relatório** requer um arquivo JSON, usando uma es
 
 A partir da versão de setembro de 2017 do **Power BI Desktop**, você pode definir ainda mais elementos de tema de relatório usando um arquivo JSON, além de personalizar (e padronizar) quase todos os elementos usando o arquivo JSON que pode ser ajustado manualmente no painel **Formatação**. A meta da versão de setembro de 2017 (e posterior) é permitir o controle completo sobre a aparência dos relatórios em um nível granular.
 
-### <a name="enable-report-themes-in-preview"></a>Habilitar Temas de Relatório na Visualização
-Você pode experimentar o novo recurso **Temas de Relatório** a partir da versão de **março de 2017** do **Power BI Desktop**. Para habilitar esse recurso da visualização, selecione **Arquivo > Opções e Configurações > Opções > Recursos da Visualização**, em seguida, marque a caixa de seleção ao lado de **Temas de Relatório Personalizados**. Você precisará reiniciar o **Power BI Desktop** depois de fazer a seleção.
+### <a name="enable-report-themes"></a>Habilitar Temas de relatórios
+A partir da versão de agosto de 2018 do **Power BI Desktop**, os temas de relatório estão disponíveis para o público geral e não precisam ser habilitados. 
+
+Se estiver usando uma versão anterior do **Power BI Desktop**, poderá habilitá-la como uma versão prévia do recurso selecionando **Arquivo > Opções e configuração > Opções > Recursos de visualização** e, em seguida, marque a caixa de seleção ao lado de **Temas de relatório personalizados**. Você precisará reiniciar o **Power BI Desktop** depois de fazer a seleção.
 
 ![](media/desktop-report-themes/report-themes_2.png)
+
+É recomendável sempre atualizar para a versão mais recente do **Power BI Desktop**, que pode ser obtida de um link em [obter o Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Como os temas de relatório funcionam
 Para aplicar um Tema de Relatório em um relatório do Power BI Desktop, selecione o botão **Mudar Tema** na faixa de opções **Início** e selecione **Importar Tema** na lista suspensa.
@@ -71,7 +75,7 @@ Para criar seu próprio arquivo JSON facilmente recortando e colando, aqui está
         "tableAccent": "#568410"
     }
 
-A partir daí, você pode inserir seu próprio código hexadecimal de cor para as cores selecionados.
+Daí, é possível inserir seu próprio código hexadecimal de cor para as cores selecionadas.
 
 A partir da versão de setembro de 2017 do **Power BI Desktop**, o arquivo JSON pode ser muito mais sofisticado. No arquivo JSON, você apenas define a formatação que deseja afetar e tudo *não* especificado no arquivo JSON simplesmente é revertido para as configurações padrão do Power BI.
 
@@ -100,7 +104,7 @@ Além disso, se você definir manualmente a cor de um ponto de dados usando a se
 Além disso, muitos **Visuais Personalizados** não aplicam os Temas de Relatório.
 
 ## <a name="report-theme-files-you-can-use-right-now"></a>Arquivos de Tema de Relatório que você pode usar agora
-Deseja começar a usar **Temas de Relatório**? Ótimo! Aqui estão alguns arquivos de JSON de Tema de Relatório prontos que você pode baixar e importar no relatório **Power BI Desktop**, juntamente com uma imagem desse Tema de Relatório aplicada ao relatório usado neste artigo.
+Deseja começar a usar **Temas de Relatório**? Ótimo! Aqui estão alguns arquivos de JSON de Tema de Relatório prontos que você pode baixar e importar no relatório do **Power BI Desktop**, juntamente com uma imagem desse Tema de Relatório aplicada ao relatório usado neste artigo.
 
 * O [tema](https://go.microsoft.com/fwlink/?linkid=843924) usado na [postagem no blog](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) que anunciou a primeira versão dos **Temas de Relatório** chamava [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
