@@ -41,17 +41,17 @@ As medidas calculam um resultado por meio de uma fórmula de expressão. Quando 
 As fórmulas DAX são muito semelhantes às fórmulas do Excel. O DAX tem muitas das mesmas funções que o Excel, como DATE, SUM e LEFT. As funções do DAX, no entanto, devem funcionar com dados relacionais, como os que temos no Power BI Desktop.
 
 ## <a name="lets-look-at-an-example"></a>Vejamos um exemplo
-Julia é gerente de vendas da Contoso. Foi requisitado que ela fornecesse projeções de vendas de revendedores para o próximo ano fiscal. Sara decide basear suas estimativas nos valores de vendas do ano anterior, com um aumento anual de 6% resultante de várias promoções agendadas para os próximos seis meses.
+Sara é gerente de vendas da Contoso. Foi requisitado que ela fornecesse projeções de vendas de revendedores para o próximo ano fiscal. Sara decide basear suas estimativas nos valores de vendas do ano anterior, com um aumento anual de 6% resultante de várias promoções agendadas para os próximos seis meses.
 
 Para relatar as estimativas, Sara importa os dados de vendas do ano anterior para o Power BI Desktop. Ela localiza o campo SalesAmount na tabela Reseller Sales. Como os dados importados contêm somente valores de vendas do ano anterior, Sara renomeia o campo SalesAmount para Last Years Sales. Em seguida, Sara arrasta Last Years Sales para a tela do relatório. Eles aparecem em uma visualização de gráfico como um valor único, que é a soma de todas as vendas dos revendedores do ano anterior.
 
 Sara observa que um cálculo foi fornecido automaticamente, embora ela não tenha especificado nenhum. O Power BI Desktop criou sua própria medida somando todos os valores em Last Years Sales.
 
-No entanto, Julia precisa de uma medida para calcular as projeções de vendas para o próximo ano, que serão baseadas nas vendas do ano anterior multiplicadas por 1,06 - para considerar o aumento de 6% esperado nos negócios. Para esse cálculo, ela criará sua própria medida. Usando o recurso Nova Medida, ela cria uma nova medida e, em seguida, insere a seguinte fórmula DAX:
+No entanto, Sara precisa de uma medida para calcular as projeções de vendas para o próximo ano, que serão baseadas nas vendas do ano anterior multiplicadas por 1,06 - para considerar o aumento de 6% esperado nos negócios. Para esse cálculo, ela criará sua própria medida. Usando o recurso Nova Medida, ela cria uma nova medida e, em seguida, insere a seguinte fórmula DAX:
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
-Em seguida, Jan arrasta sua nova medida Projected Sales até o gráfico.
+Em seguida, Sara arrasta sua nova medida Projected Sales até o gráfico.
 
 ![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
