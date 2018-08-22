@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
-ms.author: v-mamcge
+ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582561"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256873"
 ---
 # <a name="power-bi-performance-best-practices"></a>Práticas Recomendadas de Desempenho do Power BI 
 Este artigo oferece orientação para criar relatórios rápidos e confiáveis no Power BI.  
@@ -46,10 +46,10 @@ Para obter instruções sobre como otimizar fontes de dados para o DirectQuery, 
  
 ## <a name="directquery-and-live-connection-understand-underlying-data-source-performance"></a>Conexão dinâmica e do DirectQuery: compreender o desempenho da fonte de dados subjacente 
 
-No caso de conexão dinâmica ou do DirectQuery, quando os usuários visitam um relatório do Power BI, o Power BI envia consultas tempo real para a fonte de dados subjacente. Depois que a fonte de dados retorna com os dados da consulta, o relatório é renderizado. Como resultado, o desempenho do relatório nesses casos depende muito do desempenho da fonte de dados subjacente. 
- 
-Nesses casos, é importante entender o desempenho de sua fonte de dados subjacente. Fontes de dados diferentes terão ferramentas diferentes para entender o desempenho da consulta. Por exemplo, SQL Server e SQL Azure fornecem o Repositório de Consultas, que captura um histórico das consultas e suas estatísticas de tempo de execução. 
- 
+No caso de conexão dinâmica ou do DirectQuery, quando os usuários visitam um relatório do Power BI, o Power BI envia consultas tempo real para a fonte de dados subjacente. Depois que a fonte de dados retorna com os dados da consulta, o relatório é renderizado. Como resultado, o desempenho do relatório nesses casos depende muito do desempenho da fonte de dados subjacente.
+
+Nesses casos, é importante entender o desempenho de sua fonte de dados subjacente. Fontes de dados diferentes terão ferramentas diferentes para entender o desempenho da consulta. Por exemplo, SQL Server e SQL Azure fornecem o Repositório de Consultas, que captura um histórico das consultas e suas estatísticas de tempo de execução.
+
 Como regra geral, ao implantar relatórios do Power BI baseados em conexão dinâmica e do DirectQuery, experimente o que os usuários finais farão no Power BI Desktop. Se o relatório apresentar lentidão para ser carregado no Power BI Desktop, certamente ele terá lentidão para ser carregado no serviço para os usuários finais. 
  
 ## <a name="directquery-best-practices"></a>Práticas recomendadas do DirectQuery 
