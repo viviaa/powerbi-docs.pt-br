@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6ccf112a78e69e006a4ca3d6e8a7cd372adf5f05
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3c1000eb48cfb53f5838f19f6c0ece4403e9d3ba
+ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244239"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "40256924"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Conectar-se ao Application Insights com o Power BI
 Use o Power BI para criar painéis personalizados eficientes por meio da telemetria do [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Preveja a telemetria do seu aplicativo de novas maneiras. Combine métricas de vários aplicativos ou serviços de componente em um único painel. Esta primeira versão do pacote de conteúdo do Power BI para o Application Insights inclui widgets de métricas comuns relacionadas ao uso como usuários ativos, exibição de página, sessões, versão do navegador e do SO e distribuição geográfica de usuários em um mapa.
@@ -23,7 +23,7 @@ Use o Power BI para criar painéis personalizados eficientes por meio da telemet
 Conecte-se ao [pacote de conteúdo do Application Insights para o Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
->Para se conectar, é necessário acesso à folha de visão geral do Application Insights para o aplicativo na Versão Prévia do Portal do Azure. Mais detalhes sobre os requisitos abaixo.
+>Esse método de integração foi **preterido**. Para saber mais sobre o método preferencial de conexão do Application Insights com o Power BI use a [funcionalidade de exportação de consulta analítica](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## <a name="how-to-connect"></a>Como se conectar
 1. Selecione **Obter Dados** na parte inferior do painel de navegação esquerdo.

@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600360"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40257228"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Usar ferramentas de desenvolvedor para criar visuais personalizados
 Os visuais personalizados permitem atender às necessidades dos usuários e corresponder ao design do aplicativo. Aprenda como criar um visual personalizado para o Power BI usando as ferramentas de desenvolvedor.
@@ -178,10 +178,10 @@ Agora você pode começar a desenvolver seu visual.
 Você pode criar um novo projeto de visual, executando o comando a seguir.
 
 ```
-pbiviz new My Visual name
+pbiviz new MyVisualName
 ```
 
-Você pode substituir *Nome do Meu Visual* pelo nome que deseja dar ao visual. Isso poderá ser alterado posteriormente, modificando os campos `name` e `displayName` no arquivo `pbiviz.json` gerado.
+Você pode substituir *MyVisualName* pelo nome que deseja dar ao visual. Isso poderá ser alterado posteriormente, modificando os campos `name` e `displayName` no arquivo `pbiviz.json` gerado.
 
 Esse comando criará uma nova pasta no direto no qual o comando foi executado. Será gerado um modelo básico inicial para seu visual. Quando o comando for concluído, você poderá abrir o diretório e usar seu editor favorito para começar a trabalhar no novo visual.
 

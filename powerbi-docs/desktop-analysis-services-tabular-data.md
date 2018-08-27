@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f9c6d161149a4c862636a13ad88d3c43f2dbcd8a
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: cbec15b472e6cfad6134cc48970977132d61dd36
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329301"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40256284"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Usando dados de tabela do Analysis Services no Power BI Desktop
 Com o Power BI Desktop, há duas maneiras de se conectar a seus Modelos de tabela dos SQL Server Analysis Services e obter dados deles: Explorar usando uma conexão dinâmica ou Selecionar itens e importá-los para o Power BI Desktop.
@@ -24,7 +24,9 @@ Vamos ver isso mais de perto.
 
 **Explorar usando uma conexão dinâmica** – ao usar uma conexão dinâmica, os itens em seu Modelo de tabela ou perspectiva como tabelas, colunas e medidas aparecem na sua lista Campos do Power BI Desktop. Você pode usar as ferramentas avançadas de relatório e visualização do Power BI Desktop para explorar seu Modelo de tabela de maneiras novas e altamente interativas.
 
-Ao se conectar dinamicamente, nenhum dado de Modelo de tabela é importado para o Power BI Desktop. Cada vez que você interage com uma visualização, o Power BI Desktop consulta o Modelo de tabela e calcula os resultados que você vê. Você está sempre vendo os dados mais recentes. Lembre-se, Modelos de tabela são altamente seguros. Itens que aparecem na Área de Trabalho do Power BI dependem de suas permissões para o modelo de Tabela ao qual você está conectado.
+Ao se conectar dinamicamente, nenhum dado de Modelo de tabela é importado para o Power BI Desktop. Cada vez que você interage com uma visualização, o Power BI Desktop consulta o Modelo de tabela e calcula os resultados que você vê. Você está sempre vendo os dados mais recentes disponíveis no modelo de tabela, da última hora de processamento ou das tabelas do DirectQuery disponíveis no modelo de tabela. 
+
+Lembre-se que os modelos de tabela são altamente seguros. Itens que aparecem na Área de Trabalho do Power BI dependem de suas permissões para o modelo de Tabela ao qual você está conectado.
 
 Quando você tiver criado relatórios dinâmicos na Área de Trabalho do Power BI, você pode compartilhá-los pela publicação em seu site do Power BI. Ao publicar um arquivo do Power BI Desktop com uma conexão dinâmica em um modelo de Tabela no site do Power BI, um Gateway de dados local deverá ser instalado e configurado por um administrador. Para saber mais, veja [Gateway de dados local](service-gateway-onprem.md).
 

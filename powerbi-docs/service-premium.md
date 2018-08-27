@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 15b64b917fed56e9d9ab6be2023060378324c794
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38925426"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256427"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – o que é?
-O Power BI Premium fornece recursos dedicados à execução de serviço do Power BI para sua organização ou equipe, oferecendo desempenho mais confiável e volumes de dados maiores. O Premium também permite a ampla distribuição de conteúdo sem a necessidade de adquirir licenças de usuário para visualizadores.
+O Power BI Premium fornece recursos dedicados à execução do serviço do Power BI para sua organização ou equipe. Ele oferece um desempenho mais confiável e permite maiores volumes de dados. O Premium também permite a ampla distribuição de conteúdo sem a necessidade de adquirir licenças de usuário para visualizadores.
 
 É possível usar o Power BI Premium atribuindo espaços de trabalho a uma capacidade Premium. *Capacidade de Premium* é um recurso dedicado para sua organização. Os espaços de trabalho que não foram atribuídos a uma capacidade Premium estarão em uma capacidade compartilhada.
 
-*Capacidade compartilhada* é a experiência à qual você está acostumado com o Power BI, na qual as cargas de trabalho são executadas em recursos computacionais compartilhados por outros clientes. Na capacidade compartilhada, mais limites são colocados em usuários individuais para garantir a qualidade da experiência para todos os usuários.
+Com a *capacidade compartilhada*, suas cargas de trabalho são executadas em recursos computacionais compartilhados com outros clientes. Na capacidade compartilhada, mais limites são colocados em usuários individuais para garantir a qualidade da experiência para todos os usuários.
 
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
@@ -33,7 +33,7 @@ Há dois tipos de capacidade dentro do Power BI. Capacidade compartilhada e a ca
 
 |  | Capacidade compartilhada | Capacidade do Power BI Premium |
 | --- | --- | --- |
-| **Taxa de atualização** |8/dia |Não restrito |
+| **Taxa de atualização** |8/dia |48/dia |
 | **Isolamento com hardware dedicado** |![](media/service-premium/not-available.png "Não disponível") |![](media/service-premium/available.png "Disponível") |
 | **Distribuição do Enterprise para** ***todos os usuários*** | | |
 | Compartilhamento e aplicativos |![](media/service-premium/not-available.png "Não disponível") |![](media/service-premium/available.png "Disponível")<sup>1</sup> |
@@ -48,10 +48,10 @@ Para começar a usar a capacidade do Power BI Premium, é necessário atribuir u
 
 Quando o um espaço de trabalho apoiado com a capacidade Premium, é possível usufruir dos benefícios do Power BI Premium.
 
-* Atualizações agendadas: anteriormente, os usuários tinham um limite de 8x atualizações agendadas com modelos importados. Essa limitação foi eliminada para conjuntos de dados nos espaços de trabalho Premium. Isso não se aplica às configurações de atualização de cache agendada para o DirectQuery. Elas continuam as mesmas entre as capacidades Premium e Compartilhada.
-* Isolamento com hardware dedicado – em função da natureza da capacidade compartilhada, o desempenho dos seus relatórios e dashboards pode ser afetado pelas demandas de recursos de outras cargas de trabalho na capacidade, apesar de nossas garantias em relação a ele. Por outro lado, a Premium oferece desempenho mais consistente e confiável para suas cargas de trabalho ao isolá-las de cargas de trabalho não relacionadas.
+* **Atualizações agendadas**: com a capacidade compartilhada, as atualizações agendadas dos modelos importados são limitadas a oito vezes por dia. O número de atualizações é aumentado para 48 vezes por dia para conjuntos de dados em espaços de trabalho Premium. Isso não se aplica às configurações de atualização de cache agendada para o DirectQuery. Elas continuam as mesmas entre as capacidades Premium e Compartilhada.
+* **Isolamento com hardware dedicado**: em função da natureza da capacidade compartilhada, o desempenho dos relatórios e dashboards pode ser afetado pelas demandas de recursos de outras cargas de trabalho na capacidade, apesar de nossas precauções em relação a isso. Por outro lado, a Premium oferece desempenho mais consistente e confiável para suas cargas de trabalho ao isolá-las de cargas de trabalho não relacionadas.
 
-Se um aplicativo for apoiado com a capacidade Premium (ou seja, ele foi publicado com base em um espaço de trabalho do aplicativo atribuído no momento à Premium), então o aplicativo publicado poderá ser usado por qualquer usuário da sua organização, independentemente da licença que eles tiverem.
+Se um aplicativo conta com a capacidade Premium (ou seja, ele foi publicado com base em um espaço de trabalho do aplicativo atribuído à Premium, no momento), o aplicativo publicado pode ser usado por qualquer usuário da organização, independentemente da licença que ele tem.
 
 ### <a name="shared-capacity"></a>Capacidade compartilhada
 Por padrão, o espaço de trabalho estará na capacidade compartilhada. Isso inclui o *Meu espaço de trabalho* pessoal juntamente com espaços de trabalho do aplicativo. Uma capacidade compartilhada é a experiência à qual você está acostumado com o Power BI, na qual as cargas de trabalho são executadas em recursos computacionais compartilhados por outros clientes.
@@ -70,7 +70,7 @@ O Power BI Premium está disponível em configurações de nó com diferentes ca
 | Nó de capacidade | Total de núcleos virtuais<br/>*(Back-end + front-end)* | Núcleos virtuais de back-end | Núcleos virtuais de front-end | Limites de conexão dinâmica/DirectQuery | Máx. de renderizações de página no horário de pico | Disponibilidade |
 | --- | --- | --- | --- | --- | --- | --- |
 | [EM1 (mês a mês)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 núcleo virtual |0,5 núcleo virtual, 2,5 GB de RAM |0,5 núcleo virtual |3,75 por segundo |150-300 |Disponível |
-| [EM2 (mês a mês)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 núcleos virtuais |1 núcleo virtual, 5GB RAM |1 núcleo virtual |7,5 por segundo |301-600 |Disponível |
+| [EM2 (mês a mês)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 núcleos virtuais |1 núcleo virtual, 5 GB de RAM |1 núcleo virtual |7,5 por segundo |301-600 |Disponível |
 | [EM3 (mês a mês)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 núcleos virtuais |2 núcleos virtuais, 10 GB de RAM |2 núcleos virtuais | |601-1.200 |Disponível |
 | [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-cores |4 núcleos virtuais, 25 GB de RAM |4 núcleos virtuais |30 por segundo |1.201-2.400 |Disponível ([mês a mês](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) também está disponível) |
 | [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 v-cores |8 núcleos virtuais, 50 GB de RAM |8 v-cores |60 por segundo |2.401-4.800 |Disponível |

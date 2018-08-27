@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 36343b4db0481ea61fbfac1c791aa84760ee2c77
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624551"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40256901"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Criar os novos espaços de trabalho (versão prévia) no Power BI
 
@@ -112,8 +112,8 @@ Os novos espaços de trabalho oferecem três funções: administradores, membros
 **Os membros podem:** 
 
 - Adicionar membros ou outras pessoas com permissões inferiores.
-- Publicar e atualizar aplicativos.
-- Compartilhar itens e aplicativos.
+- Publicar e atualizar um aplicativo.
+- Compartilhar um item ou um aplicativo.
 - Permitir que outras pessoas compartilhem novamente os itens.
 - Fazer tudo que os colaboradores podem fazer.
 
@@ -129,7 +129,7 @@ Estamos criando fluxos de trabalho Solicitar acesso em todo o serviço para que 
 
 ## <a name="distribute-an-app"></a>Distribuir um aplicativo
 
-Quando o conteúdo estiver pronto, escolha quais dashboards e relatórios você deseja publicar e, em seguida, publique-o como um *aplicativo*. Seus colegas podem obter seus aplicativos de diferentes maneiras. Você poderá instalá-los automaticamente nas contas do Power BI dos seus colegas se o administrador do Power BI der permissão. Caso contrário, eles podem localizar e instalar seus aplicativos no Microsoft AppSource ou você pode enviar um link direto. Eles recebem atualizações automaticamente e você pode controlar a frequência com que os dados são atualizados. Consulte [Publicar aplicativos com dashboards e relatórios no Power BI](service-create-distribute-apps.md) para obter detalhes.
+Quando o conteúdo estiver pronto, escolha quais dashboards e relatórios você deseja publicar e, em seguida, publique-o como um *aplicativo*. Você pode criar um aplicativo de cada espaço de trabalho. Seus colegas podem obter seu aplicativo de algumas maneiras diferentes. Você poderá instalá-lo automaticamente nas contas do Power BI de seus colegas, se o administrador do Power BI lhe der permissão. Caso contrário, eles podem localizar e instalar seus aplicativos do Microsoft AppSource ou você pode enviar um link direto. Eles recebem atualizações automaticamente e você pode controlar a frequência com que os dados são atualizados. Consulte [Publicar aplicativos com dashboards e relatórios no Power BI](service-create-distribute-apps.md) para obter detalhes.
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Converter espaços de trabalho de aplicativo antigos em novos
 
@@ -161,7 +161,7 @@ Alguns outros novos recursos de versão prévia do espaço de trabalho de aplica
 Alguns recursos funcionam de maneira diferente dos espaços de trabalho de aplicativo atuais nos novos espaços de trabalho de aplicativo. Essas diferenças são intencionais, com base nos comentários recebidos dos clientes, e permitirão uma abordagem mais flexível para colaboração com espaços de trabalho:
 
 - Os membros podem ou não compartilhar novamente: substituídos pela função Colaborador
-- Espaços de trabalho somente leitura: substituídos por uma função Visualizador disponível em breve, que permite acesso somente leitura ao conteúdo em um espaço de trabalho.
+- Espaços de trabalho somente leitura: em vez de permitir aos usuários o acesso somente leitura a um espaço de trabalho, você atribui os usuários a uma função de visualizador que estará disponível em breve, o que permite o acesso somente leitura semelhante ao conteúdo em um espaço de trabalho.
 
 ## <a name="known-issues"></a>Problemas conhecidos
 

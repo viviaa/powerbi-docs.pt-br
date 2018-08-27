@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 08/15/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965494"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256993"
 ---
 # <a name="power-bi-admin-portal"></a>Portal de administração do Power BI
 
@@ -100,36 +100,37 @@ Para obter mais informações sobre logs de auditoria, consulte [Auditoria do Po
 
 A terceira guia, no portal de administração, é **Configurações de locatário**. As configurações de locatário oferecem mais controle sobre quais recursos são disponibilizados para sua organização. Se você tiver dúvidas relacionadas a dados confidenciais, alguns dos nossos recursos poderão não ser adequados para sua organização, ou talvez você queira apenas que um determinado recurso esteja disponível para um grupo específico. Se esse for o caso, você pode desativá-lo em seu locatário.
 
-Por exemplo, por padrão, os dados por usuário estão habilitados para as métricas de uso e as informações de conta do criador do conteúdo estão incluídas no relatório de métricas. Se você não quiser incluir essa informação para alguns ou todos os usuários, desabilite o recurso para grupos de segurança especificados ou para toda a organização. Em seguida, as informações da conta serão mostradas no relatório como *Sem nome*.
-
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > Pode levar até 10 minutos para que a configuração entre em vigor para todos em seu locatário.
 
-As configurações podem ter três estados com base nas configurações que você forneceu.
+As configurações podem ter três estados:
 
-### <a name="disabled-for-the-entire-organization"></a>Desabilitado para toda a organização
+* **Desabilitado para toda a organização**: você pode desabilitar um recurso e fazer com que os usuários não o possam usar.
 
-Você pode desabilitar um recurso e fazer isso de forma que os usuários não poderão usá-lo.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+* **Habilitado para toda a organização**: você pode habilitar um recurso para toda a organização, permitindo que todos os usuários tenham acesso a esse recurso.
 
-### <a name="enabled-for-the-entire-organization"></a>Habilitado para toda a organização
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-Você pode habilitar um recurso para toda a organização, o que permitirá que todos os usuários tenham acesso a esse recurso.
+* **Habilitado para um subconjunto da organização**: você também pode habilitar um recurso para uma parte da organização. Isso pode ocorrer de algumas formas diferentes. Você pode habilitá-lo para toda a organização, exceto para um grupo específico de usuários.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-### <a name="enabled-for-a-subset-of-the-organization"></a>Habilitado para um subconjunto da organização
+    Você também pode habilitar o recurso apenas para um grupo específico de usuários e também desabilitá-lo para um grupo de usuários. Isso garantiria que determinados usuários não tivessem acesso ao recurso, mesmo se estivessem no grupo permitido.
 
-Você também pode habilitar um recurso para uma parte de sua organização. Isso pode ocorrer de algumas formas diferentes. Você pode habilitá-lo para toda a organização, exceto para um grupo específico de usuários.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+As próximas seções fornecem uma visão geral dos diferentes tipos de configurações de locatário.
 
-Você também pode habilitar o recurso apenas para um grupo específico de usuários e também desabilitá-lo para um grupo de usuários. Isso garantiria que determinados usuários não tivessem acesso ao recurso, mesmo se estivessem no grupo permitido.
+## <a name="workspace-settings"></a>Configurações de espaço de trabalho
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+### <a name="create-workspaces-preview"></a>Criar espaços de trabalho (versão prévia)
+Os usuários na organização podem criar espaços de trabalho de aplicativo para colaborar em dashboards, relatórios e outros tipos de conteúdo.
+
+Para obter mais informações, confira [Criar os novos espaços de trabalho](service-create-the-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Configurações de exportação e compartilhamento
 
@@ -244,9 +245,9 @@ Os usuários na organização podem interagir e compartilhar elementos visuais c
 > [!NOTE]
 > Essa configuração se aplica a toda a organização e não pode ser limitada a grupos específicos.
 
-## <a name="audit-settings"></a>Configurações de auditoria
+## <a name="audit-and-usage-settings"></a>Configurações de auditoria e de uso
 
-### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Criar registos de auditoria para fins de auditoria de atividade interna e de conformidade
+### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Criar logs de auditoria para conformidade e auditoria de atividade interna
 
 Os usuários na organização podem usar a auditoria para monitorar as ações executadas no Power BI por outros usuários na organização. [Saiba mais](service-admin-auditing.md)
 
@@ -254,6 +255,25 @@ Essa configuração deve ser habilitada para que as entradas de log de auditoria
 
 > [!NOTE]
 > Essa configuração se aplica a toda a organização e não pode ser limitada a grupos específicos.
+
+### <a name="usage-metrics-for-content-creators"></a>Métricas de uso para criadores de conteúdo
+Os usuários na organização podem ver métricas de uso para dashboards e relatórios que eles criaram. [Saiba mais](service-usage-metrics.md).
+
+Você pode mudar a configuração para **Habilitado** e, em seguida, especificar quem pode ver as métricas de uso (organização inteira ou grupos de segurança específicos).
+
+> [!NOTE]
+> Lembre-se de que as alterações na configuração de locatário podem levar algum tempo para entrar em vigor.
+
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Dados por usuário em métricas de uso para criadores de conteúdo
+As métricas de uso para criadores de conteúdo expõem os nomes de exibição e os endereços de email dos usuários que estão acessando o conteúdo. [Saiba mais](service-usage-metrics.md).
+
+Você pode mudar a configuração para **Habilitado** e, em seguida, especificar quem pode ver os nomes de exibição e os endereços de email nas métricas de uso (organização inteira ou grupos de segurança específicos).
+
+Os dados por usuário são habilitados para as métricas de uso, por padrão, e as informações de conta do criador do conteúdo estão incluídas no relatório de métricas. Se você não quiser incluir essa informação para alguns ou todos os usuários, desabilite o recurso para grupos de segurança especificados ou para toda a organização. Em seguida, as informações da conta serão mostradas no relatório como *Sem nome*.
+
+> [!NOTE]
+> Lembre-se de que as alterações na configuração de locatário podem levar algum tempo para entrar em vigor.
+
 
 ## <a name="dashboard-settings"></a>Configurações do dashboard
 
@@ -270,9 +290,9 @@ Os usuários na organização podem marcar dashboards com classificações indic
 
 Usuários da organização podem inserir relatórios e dashboards do Power BI em aplicativos de SaaS (software como serviço). Desabilitar essa configuração impedirá que os usuários usem as APIs REST para inserir conteúdo do Power BI em seus aplicativos.
 
-## <a name="premium-settings"></a>Configurações Premium
+## <a name="capacity-settings"></a>Configurações de capacidade
 
-A guia de Configurações Premium permite que você gerencie qualquer capacidade Premium do Power BI que tiver sido comprada para sua organização. Todos os usuários em sua organização verão a guia de Configurações Premium, mas eles só verão conteúdo dentro dela se forem atribuídos como **Administradores de capacidade** ou se forem um usuário com permissões de atribuição. Se um usuário não tiver nenhuma permissão, ele verá a seguinte mensagem de erro.
+A guia Configurações de capacidade permite que você gerencie qualquer capacidade do Power BI Premium que tenha sido comprada para sua organização. Todos os usuários em sua organização verão a guia de Configurações Premium, mas eles só verão conteúdo dentro dela se forem atribuídos como **Administradores de capacidade** ou se forem um usuário com permissões de atribuição. Se um usuário não tiver nenhuma permissão, ele verá a seguinte mensagem de erro.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "Sem acesso às configurações Premium")
 
@@ -284,7 +304,7 @@ Para obter mais informações sobre como gerenciar as configurações Premium, c
 
 Como administrador, você pode exibir os códigos de inserção que são gerados para seu locatário. Você possui as ações de exibir o relatório e excluir o código de inserção para revogá-lo.
 
-## <a name="organization-visuals"></a>Elementos visuais da organização
+## <a name="organization-visuals"></a>Visuais da organização
 
 A guia de elementos visuais da organização permite implantar e gerenciar elementos visuais personalizados dentro da sua organização, para que você possa implantar facilmente os elementos visuais personalizados proprietários na organização, para que os autores de relatório consigam descobrir e importar esses visuais diretamente do Power BI Desktop em seus relatórios.
  

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: eee7c4989c4856ab86cb4883f8004198da00e4fd
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799408"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40257156"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorar relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -84,7 +84,7 @@ Quando você seleciona um valor em um visual, ele não filtra os outros visuais.
 ## <a name="drill-down-and-up-in-a-visual"></a>Fazer drill down e up em um visual
 Se o autor de um relatório tiver adicionado a funcionalidade de drill down a um visual, você poderá fazer drill down no visual para ver os valores que compõem uma parte dele. Você [adiciona o drill down em um visual](power-bi-visualization-drill-down.md) no Power BI Desktop ou no serviço do Power BI. 
 
-* Toque em um ponto de dados em um visual para exibir sua dica de ferramenta. Se ele tiver drill down, a parte inferior da dica de ferramenta terá setas que podem ser tocadas. 
+* Toque e segure uma barra ou um ponto específico em um visual para exibir sua dica de ferramenta. Se ele tiver drill down, a parte inferior da dica de ferramenta terá setas que podem ser tocadas. 
   
   ![Fazer drill down em um visual](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
