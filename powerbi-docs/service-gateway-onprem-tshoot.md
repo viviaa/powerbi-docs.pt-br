@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f0f29cb88c77f3d7775670c0869ee55938327763
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658002"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151896"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Solução de problemas do gateway de dados local
 
@@ -279,7 +279,7 @@ Aqui está uma lista de contadores de desempenho disponíveis.
 | Número de conexões abertas do Mashup com falha por segundo |Número de ações de conexões abertas do Mashup com falha por segundo. |
 | Número de consultas do Mashup executadas por segundo |Número de consultas do Mashup executadas por segundo (com êxito ou falha). |
 | Número de consultas do Mashup com falha por segundo |Número de consultas do Mashup com falha executadas por segundo |
-| Número de conjuntos de resultados múltiplos de consultas do OLEDB com falha por segundo |Número de conjuntos de resultados múltiplos de consultas do OLEDB com falha executados por segundo. |
+| Número de consultas de conjunto de resultados múltiplos do OLEDB com falha/segundo |Número de conjuntos de resultados múltiplos de consultas do OLEDB com falha executados por segundo. |
 | Número de conjuntos de resultados múltiplos de consultas do OLEDB executados/segundo |Número de conjunto de resultados múltiplos de consultas do OLEDB executados por segundo (com êxito ou falha). |
 | Número de conexões abertas OLEDB executadas por segundo |Número de ações de conexões abertas do OLEDB executadas por segundo (com êxito ou falha). |
 | Número de conexões abertas do OLEDB com falha por segundo |Número de ações de conexões abertas do OLEDB com falha por segundo. |

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 20bdd4731cd4aad3c6412d1959de3be088a3457a
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280123"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151942"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorar blocos nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -28,10 +28,6 @@ Blocos são instantâneos dinâmicos dos seus dados, fixados a um painel. Os seu
 Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco e interaja com eles. É possível abrir blocos com todos os tipos de visuais, incluindo blocos baseados no Bing e no R.
 
 ## <a name="tiles-in-the-ios-apps"></a>Blocos nos aplicativos do iOS
-> [!NOTE]
-> Você pode [criar blocos de imagens com o aplicativo iPhone](mobile-iphone-app-get-started.md) e salvá-los nos dashboards.
-> 
-> 
 
 1. Abra um [dashboard no aplicativo móvel para iOS](mobile-apps-view-dashboard.md).
 2. Toque em um bloco. Ele é aberto no modo de foco, no qual é mais fácil exibir e explorar os dados do bloco. No modo de foco:
@@ -40,7 +36,7 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>Por exemplo, no gráfico de linhas, os valores selecionados são para **Vendas deste Ano</em>* e **Vendas do Ano Passado** em **agosto**.*  
+   *Por exemplo, no gráfico de linhas os valores selecionados são para **Vendas Deste Ano** e **Vendas do Ano Passado** em **agosto**.*  
    
    Em um gráfico de pizza, toque em uma fatia para mostrar seu valor na parte superior da pizza.  
    
@@ -107,7 +103,7 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>Neste gráfico de barras, os valores da barra **Decor</em>* são exibidos na parte superior do gráfico.*
+   *Neste gráfico de barras, os valores da barra **Decor** são exibidos na parte superior do gráfico.*
    
    Toque no ícone **Tela inteira** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) para abrir o bloco em modo de tela inteira, sem barras de menu e de navegação.
    
