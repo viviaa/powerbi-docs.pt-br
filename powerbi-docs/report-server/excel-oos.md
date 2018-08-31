@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: f56e05e51090f37fdb0bcd295ec877ee73b5dac0
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: dc29336754be008b541f146fff7c5f8609472cd0
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40257998"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42702996"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configure seu servidor de relatório para hospedar pastas de trabalho do Excel usando o OOS (Servidor do Office Online)
 
@@ -37,7 +37,7 @@ Realize esses procedimentos no servidor que executará o Servidor do Office Onli
     ```
 
     **Windows Server 2016:**
-   
+
     ```
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
@@ -57,9 +57,9 @@ Se você planeja usar os recursos do Excel Online que utilizam acesso a dados ex
 1. Baixar o Servidor do Office Online do [VLSC (Centro de Atendimento de Licenciamento por Volume)](http://go.microsoft.com/fwlink/p/?LinkId=256561). O download está localizado nesses produtos do Office no portal do VLSC. Para fins de desenvolvimento, você pode baixar o OOS dos downloads do assinante do MSDN.
 2. Execute o Setup.exe.
 3. Na página **Leia os termos de licença para Software Microsoft**, selecione **Aceito os termos deste contrato** e **Continuar**.
-4. Na página **Escolher um local do arquivo**, selecione a pasta na qual deseja que os arquivos do Servidor do Office Online sejam instalados (por exemplo, *C:\Arquivos de Programas\Microsoft Office Web Apps*) e selecione **Instalar Agora**. Se a pasta especificada não existir, o assistente de instalação a criará para você.
+4. Na página **Escolher um local do arquivo**, selecione a pasta na qual você deseja que os arquivos do Servidor do Office Online sejam instalados (por exemplo, C:\Program Files\Microsoft Office Web Apps*) e selecione **Instalar Agora**. Se a pasta especificada não existir, o assistente de instalação a criará para você.
 
-    **_É recomendado que você instale o Servidor do Office Online na unidade do sistema._**
+    É recomendável que você instale o Servidor do Office Online na unidade do sistema.
 
 5. Quando a instalação do Servidor do Office Online for concluída, selecione **Fechar**.
 
@@ -180,7 +180,7 @@ Depois de inserir a URL de descoberta e selecionar **Aplicar**, a seleção de u
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 
-* Você terá a funcionalidade somente leitura nas pastas de trabalho.
+* Você terá a funcionalidade somente leitura das pastas de trabalho.
 
 ## <a name="next-steps"></a>Próximas etapas
 
