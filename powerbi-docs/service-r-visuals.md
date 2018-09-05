@@ -77,7 +77,7 @@ Os visuais do R no serviço do Power BI têm algumas limitações:
 
 * O suporte para os visuais do R é limitado aos pacotes identificados na página a seguir <make this a link to the supported packages page per my excel>. Atualmente, não há suporte para pacotes personalizados.
 * Limitações de tamanho de dados – os dados usados pelo visual R para plotar são limitados a 150.000 linhas. Se mais de 150.000 linhas forem selecionadas, somente as primeiras 150.000 linhas serão usadas e uma mensagem será exibida na imagem.
-* Limite de tempo de cálculo – se um cálculo do visual do R exceder 60 minutos, o script atingirá o tempo limite, resultando em erro.
+* Limite de tempo de cálculo – se um cálculo do visual do R exceder 60 SEGUNDOS, o script atingirá o tempo limite, resultando em erro.
 * Visuais R são atualizados após atualizações de dados, filtragem e realce. No entanto, a própria imagem não é interativa e não dá suporte a dicas de ferramenta.
 * Visuais R respondem ao realce de outros elementos visuais, mas você não pode clicar em elementos no visual R para fazer filtragem cruzada de outros elementos.
 * Atualmente, não há suporte nos visuais do R para o tipo de dados *Hora*. Em vez disso, use Data/Hora.
