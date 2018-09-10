@@ -2,20 +2,20 @@
 title: Publicar na Web por meio do Power BI
 description: Com o recurso Publicar na Web do Power BI, você pode inserir facilmente visualizações interativas online do Power BI, como postagens no blog e sites, por meio de emails ou mídia social, em qualquer dispositivo.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e02b4dfe9798eed393a0097ef4f220746acfdf6
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: b305c684ccf0938cfa8f5d9a2aa06f27a8c8be12
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092335"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380326"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicar na Web por meio do Power BI
 
@@ -28,7 +28,7 @@ Também é possível editar, atualizar ou descompartilhar com facilidade os visu
 
 ## <a name="how-to-use-publish-to-web"></a>Como usar o recurso Publicar na Web
 
-**Publicar na Web** está disponível nos relatórios de seus espaços de trabalho pessoais ou de grupo que você pode editar.  Você não pode usar o recurso Publicar na Web em relatórios que foram compartilhados com você ou em relatórios que se baseiam na segurança em nível de linha para proteger os dados. Veja a seção **Limitações** abaixo para obter uma lista completa de casos em que não há suporte para o recurso Publicar na Web. Leia o **Aviso** indicado acima neste artigo antes de usar o recurso Publicar na Web.
+**Publicar na Web** está disponível nos relatórios de seus espaços de trabalho pessoais ou de grupo que você pode editar.  Você não pode usar o recurso Publicar na Web em relatórios que foram compartilhados com você ou em relatórios que se baseiam na segurança em nível de linha para proteger os dados. Veja a seção **Limitações** abaixo para obter uma lista completa de casos em que não há suporte para o recurso Publicar na Web. Leia o **Aviso** indicado anteriormente neste artigo antes de usar o recurso Publicar na Web.
 
 Você pode ver como esse recurso funciona no *breve vídeo*a seguir. Depois, siga as etapas abaixo para testá-lo por conta própria.
 
@@ -65,7 +65,7 @@ A tabela a seguir fornece diretrizes sobre o Modo de Exibição e como ele apare
 
 | Modo de Exibição | Sua aparência quando inserido |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |**Ajustar à página** respeitará a altura e a largura da página de seu relatório. Se você definir sua página como taxas “Dinâmicas”, tais como 16:9 ou 4:3, seu conteúdo será ajustado para caber no iFrame fornecido. Quando inserido em um iFrame, o uso de **Ajustar à página** pode resultar na **aplicação do formato letterbox**, no qual uma tela de fundo cinza é mostrada nas áreas do iFrame depois que o conteúdo é ajustado para caber no iFrame. Para minimizar a aplicação do formato letterbox, defina a altura/largura do iFrame de modo condizente. |
+| ![](media/service-publish-to-web/publish_to_web6b.png) |**Ajustar à página** respeitará a altura e a largura da página de seu relatório. Se você definir a página como taxas 'Dinâmicas', como 16:9 ou 4:3, o conteúdo será ajustado para caber no iFrame fornecido. Quando inserido em um iFrame, o uso de **Ajustar à página** pode resultar na **aplicação do formato letterbox**, no qual uma tela de fundo cinza é mostrada nas áreas do iFrame depois que o conteúdo é ajustado para caber no iFrame. Para minimizar a aplicação do formato letterbox, defina a altura/largura do iFrame de modo condizente. |
 | ![](media/service-publish-to-web/publish_to_web6d.png) |**Tamanho real** garantirá que o relatório preserve seu tamanho, conforme definido na página do relatório. Isso pode resultar na exibição de barras de rolagem no iFrame. Defina a altura e a largura do iFrame para evitar o uso de barras de rolagem. |
 | ![](media/service-publish-to-web/publish_to_web6c.png) |**Ajustar à largura** garante que o conteúdo se ajusta na área horizontal do iFrame. Uma borda ainda será mostrada, mas o conteúdo será dimensionado para usar todo o espaço horizontal disponível. |
 
@@ -128,15 +128,16 @@ Há suporte para visuais personalizados no recurso **Publicar na Web**. Quando v
 
 Há suporte para o recurso **Publicar na Web** para a maioria das fontes de dados e relatórios no serviço do Power BI; no entanto, veja abaixo o que **não tem suporte ou o que não está disponível atualmente** com Publicar na Web:
 
-1. Relatórios que usam a segurança em nível de linha.
-2. Relatórios que usam qualquer fonte de dados de Conexão Dinâmica, incluindo Tabulares do Analysis Services hospedados localmente no Analysis Service Multidimensional e o Azure Analysis Services.
-3. Relatórios compartilhados com você diretamente ou por meio de um pacote de conteúdo organizacional.
-4. Relatórios em um grupo no qual você não é um membro de edição.
-5. Atualmente, não há suporte para os visuais do “R” em relatórios Publicar na Web.
-6. Exportar dados de visuais em um relatório que foi publicado na Web
-7. Visuais do ArcGIS Maps for Power BI
-8. Relatórios que contêm medidas DAX no nível de relatório
-9. [Informações confidenciais ou proprietárias](#publish-to-web-from-power-bi)
+- Relatórios que usam a segurança em nível de linha.
+- Relatórios que usam qualquer fonte de dados de Conexão Dinâmica, incluindo Tabulares do Analysis Services hospedados localmente no Analysis Service Multidimensional e o Azure Analysis Services.
+- Relatórios compartilhados com você diretamente ou por meio de um pacote de conteúdo organizacional.
+- Relatórios em um grupo no qual você não é um membro de edição.
+- Atualmente, não há suporte para os visuais do “R” em relatórios Publicar na Web.
+- Exportar dados de visuais em um relatório que foi publicado na Web
+- Visuais do ArcGIS Maps for Power BI
+- Relatórios que contêm medidas DAX no nível de relatório
+- Modelos de consulta de dados de logon único
+- [Informações confidenciais ou proprietárias](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Configuração de locatário
 

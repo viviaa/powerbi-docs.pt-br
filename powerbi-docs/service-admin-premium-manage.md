@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 24d585af19dd774cdf6fe7dafb66c12e02d311f9
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 5da624f92093111c1996d9b1c5080cd58a906a45
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924782"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250763"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gerenciar capacidades no Power BI Premium e no Power BI Embedded
 Saiba como gerenciar as capacidades que oferecem recursos dedicados ao seu conteúdo no Power BI Premium e no Power BI Embedded.
@@ -163,33 +163,8 @@ Depois de salvo, o espaço de trabalho e todo o seu conteúdo, será movido para
 
 
 ## <a name="monitor-capacity-usage"></a>Monitorar o uso de capacidade
-Para cada tipo de capacidade, você pode ver as medidas de uso de CPU, de uso de memória, de thrashing de memória e de consulta direta. Sugerimos que você monitore essas medidas para garantir que os usuários vejam o bom desempenho em sua capacidade de:
 
-![Uso dos últimos sete dias](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> O uso da capacidade do Power BI Embedded é monitorado no portal do Azure.
-
-| Métrica | Descrição |
-| --- | --- |
-| CPU |O número de vezes que a CPU excedeu 80% de utilização. |
-| Thrashing de memória |Representa a pressão de memória em seus núcleos de back-end. Especificamente, essa é uma métrica de quantas vezes os conjuntos de dados são removidos da memória devido à pressão de memória do uso de vários conjuntos de dados. |
-| Uso de memória |Uso médio de memória, representado em gigabytes (GB). |
-| DQ/s | Número de vezes em que a consulta direta e as conexões dinâmicas excederam 80% do limite. <br> <br> * Limitamos o número total de consultas DirectQuery e de conexão dinâmica por segundo.<br><br>* Os limites são 30/s para P1, 60/s para P2 e 120/s para P3.<br><br> * A contagem de consultas diretas e de consultas de conexão somam-se à limitação acima. Por exemplo, se você tiver 15 DirectQueries e 15 conexões dinâmicas em um segundo, você atingirá a restrição.<br/><br>* Isso se aplica igualmente a conexões locais e de nuvem. |
-
-As métricas refletem o uso na semana passada.  Se você quiser ver uma exibição mais detalhada das métricas, faça isso clicando em um dos blocos de resumo.  Você acessará gráficos detalhados para cada uma das métricas de capacidade Premium.  Esses gráficos são resumidos por hora para a semana passada e podem ajudar a isolar quando eventos relacionados ao desempenho específicos que possam ter ocorrido na semana passada em sua capacidade premium.  
-
-![Gráfico detalhado de uso da CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Gráfico detalhado de uso do thrashing de memória](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Gráfico detalhado de uso do tamanho da memória](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Gráfico detalhado de uso do thrashing de memória](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-Você também pode exportar os dados subjacentes de qualquer métrica para um arquivo csv.  Essa exportação fornecerá informações detalhadas em intervalos de três minutos para cada dia da semana passada.
+O Power BI fornece um aplicativo para monitorar o uso da capacidade. Para saber mais, confira [Monitorar capacidades do Power BI Premium em sua organização](service-admin-premium-monitor-capacity.md).
 
 ## <a name="what-premium-looks-like-for-users"></a>Qual é a aparência do Premium para os usuários
 Para a maior parte, os usuários nem mesmo precisarão saber que eles estão em uma capacidade Premium. Seus dashboards e relatórios apenas funcionarão. Como uma dica visual, você verá um ícone de losango ao lado dos espaços de trabalho que estão em uma capacidade Premium.

@@ -2,20 +2,20 @@
 title: Agregações (soma, média, máximo, etc.) em visualizações
 description: Alterar a agregação em um gráfico (soma, média, máximo, etc.) no Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/04/2018
+ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 39adfd04118362fa706f0840daa5c2520d899b5e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d48f99c8415b7b347a504525b0c6539d1e90f4dd
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247586"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241535"
 ---
 # <a name="aggregates-in-power-bi-visualizations"></a>Agregações em visualizações do Power BI
 ## <a name="what-is-an-aggregate"></a>O que é uma agregação?
@@ -26,7 +26,7 @@ Quando o serviço do Power BI e o Power BI Desktop criam visualizações, eles p
 Primeiro, vamos dar uma olhada em *tipos* de dados porque o tipo de dados determina como e se eles podem ser agregados.
 
 ## <a name="types-of-data"></a>Tipos de dados
-A maioria dos conjuntos de dados tem mais de um tipo de dados. No nível mais básico, os dados são numéricos ou não. Dados numéricos podem ser agregados usando uma soma, média, contagem, mínimo, variação e muito mais. Até mesmo dados textuais, geralmente chamados de dados *categóricos*, podem ser agregados. Se você tentar agregar campos categóricos (colocando-os em um bucket somente numérico como **Valores** ou **Dicas de ferramenta**), o Power BI contará as ocorrências ou as ocorrências distintas de cada categoria. Tipos especiais de dados, como datas, têm algumas de suas próprias opções de agregação: mais antigo, mais recente, primeiro e último. 
+A maioria dos conjuntos de dados tem mais de um tipo de dados. No nível mais básico, os dados são numéricos ou não. Dados numéricos podem ser agregados usando uma soma, média, contagem, mínimo, variação e muito mais. Até mesmo dados textuais, geralmente chamados de dados *categóricos*, podem ser agregados. Se você tentar agregar um campo categórico (colocando-o em um bucket somente numérico como **Valores** ou **Dicas de ferramenta**), o Power BI contará as ocorrências ou as ocorrências distintas de cada categoria. Tipos especiais de dados, como datas, têm algumas de suas próprias opções de agregação: mais antigo, mais recente, primeiro e último. 
 
 No exemplo abaixo:
 - **Unidades Vendidas** e **Preço de Fabricação** são colunas que contêm dados numéricos
@@ -34,7 +34,7 @@ No exemplo abaixo:
 
    ![](media/service-aggregates/power-bi-aggregate-chart.png)
 
-Ao criar uma visualização no Power BI, os campos numéricos serão agregados (o padrão é *soma*) em algum campo categórico.  Por exemplo, “Unidades Vendidas ***por Produto***”, “Unidades Vendidas ***por Mês***” e “Preço de Fabricação ***por Segmento***”. Alguns campos numéricos são chamados de **medidas**. É fácil identificar medidas no editor de relatório do Power BI – as medidas são mostradas com o símbolo ∑ na lista Campos. Para obter mais informações, veja [O editor de relatório... Faça um tour](service-the-report-editor-take-a-tour.md).
+Ao criar uma visualização no Power BI, os campos numéricos serão agregados (o padrão é *soma*) em algum campo categórico.  Por exemplo, “Unidades Vendidas ***por Produto***”, “Unidades Vendidas ***por Mês***” e “Preço de Fabricação ***por Segmento***”. Alguns campos numéricos são chamados de **medidas**. É fácil identificar medidas no editor de relatório do Power BI – as medidas são mostradas com o símbolo ∑ na lista Campos. Para saber mais, veja [O editor de relatório... Faça um tour](service-the-report-editor-take-a-tour.md).
 
 ![](media/service-aggregates/power-bi-aggregate-fields.png)
 
@@ -139,6 +139,10 @@ R4: E uma terceira possibilidade é que você está usando o campo para um eixo.
 
 >[!NOTE]
 >A exceção a essa regra são os gráficos de dispersão, que *exigem* valores agregados para os eixos X e Y.
+
+P: Por que não é possível agregar campos de texto para fontes de dados SSAS?
+
+R: As conexões dinâmicas para SSAS MD não permitem nenhuma agregação do lado do cliente. Isso inclui primeiro, último, méd., mín., máx. e soma.
 
 P: Tenho um gráfico de dispersão e *não* quero que meu campo seja agregado.  Como faço isso?
 

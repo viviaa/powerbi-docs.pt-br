@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/15/2018
+ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
-ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
+ms.openlocfilehash: 592c3bf5fbd508d63236d16ca21164ee507df35b
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40256993"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300105"
 ---
 # <a name="power-bi-admin-portal"></a>Portal de administração do Power BI
 
@@ -23,7 +23,7 @@ O portal de administração permite o gerenciamento de locatário do Power BI em
 
 O Gerenciamento de locatário do Power BI para sua empresa é feito por meio do portal de administração do Power BI. O portal de administração é acessível a todos os usuários que são administradores globais no Office 365 ou que receberam a função de administrador de serviços do Power BI. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
 
-Todos os usuários verão **Portal de administração** no ícone de engrenagem. Se não forem administradores, eles verão apenas a seção **Configurações Premium** e verão somente as capacidades que têm direitos para gerenciar.
+Todos os usuários verão **Portal de administração** sob o ícone de engrenagem. Se não forem administradores, eles verão apenas a seção **Configurações Premium** e somente as capacidades que têm direitos para gerenciar.
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Como obter o portal de administração
 
@@ -52,9 +52,9 @@ A primeira guia, no portal de administração, é **Métricas de uso**. O relat�
 > [!NOTE]
 > Na primeira vez que acessar o dashboard ou depois de visitar novamente após um longo período de não exibição do dashboard, você provavelmente encontrará uma tela de carregamento enquanto carregamos o dashboard.
 
-Quando o painel for carregado, você encontrará suas seções de blocos. A primeira seção inclui dados de uso para usuários individuais e a segunda seção tem informações semelhantes para grupos em sua organização.
+Quando o painel for carregado, você verá duas seções de blocos. A primeira seção inclui dados de uso para usuários individuais e a segunda seção tem informações semelhantes para grupos em sua organização.
 
-Aqui está uma análise do que você vê em cada bloco:
+Aqui está uma análise do que você verá em cada bloco:
 
 * Contagem distinta de todos os painéis, relatórios e conjuntos de dados no espaço de trabalho do usuário
   
@@ -76,7 +76,7 @@ Aqui está uma análise do que você vê em cada bloco:
   
     ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-A segunda seção mostra o mesmo tipo de informação, mas com base em grupos. Isso permitirá que você veja quais grupos em sua organização são mais ativos e quais tipos de informações eles estão usando.
+A segunda seção mostra o mesmo tipo de informação, mas com base em grupos. Isso permite que você veja quais grupos em sua organização são mais ativos e quais tipos de informações eles estão usando.
 
 Com essas informações, você poderá obter informações reais de como as pessoas estão usando o Power BI em toda a organização e ser capaz de reconhecer esses usuários e grupos, que são muito ativos na sua organização.
 
@@ -140,7 +140,7 @@ Os usuários da organização podem compartilhar dashboards com usuários fora d
 
 ![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Esta é a mensagem que será exibida quando você compartilhar com um usuário externo.
+Esta é a mensagem que é exibida quando você compartilha com um usuário externo.
 
 ![](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
@@ -150,13 +150,13 @@ Os usuários na organização podem publicar relatórios na Web. [Saiba mais](se
 
 ![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
 
-Os usuários verão diferentes opções na interface do usuário conforme a configuração de Publicar na Web.
+Os usuários podem ver diferentes opções na interface do usuário, conforme a configuração de Publicar na Web.
 
 |Recurso |Habilitado para toda a organização |Desabilitado para toda a organização |Especificar grupos de segurança   |
 |---------|---------|---------|---------|
 |**Publicar na Web** no menu **Arquivo** do relatório.|Habilitado para todos|Não visível para todos|Visível somente para usuários ou grupos autorizados.|
 |**Gerenciar códigos de inserção** em **Configurações**|Habilitado para todos|Habilitado para todos|Habilitado para todos<br><br>Opção * **Excluir** somente para usuários ou grupos autorizados.<br>* **Obter códigos** habilitados para todos.|
-|**Códigos de inserção** no portal de administração|O status refletirá o seguinte:<br>* Ativo<br>* Sem suporte<br>* Bloqueado|O status exibirá **Desabilitado**|O status refletirá o seguinte:<br>* Ativo<br>* Sem suporte<br>* Bloqueado<br><br>Se um usuário não estiver autorizado conforme a configuração do locatário, o status exibirá **violado**.|
+|**Códigos de inserção** no portal de administração|O status refletirá uma das seguintes opções:<br>* Ativo<br>* Sem suporte<br>* Bloqueado|O status é exibido como **desabilitado**|O status refletirá uma das seguintes opções:<br>* Ativo<br>* Sem suporte<br>* Bloqueado<br><br>Se um usuário não estiver autorizado conforme a configuração do locatário, o status exibirá **violado**.|
 |Relatórios publicados existentes|Tudo habilitado|Tudo desabilitado|Os relatórios continuam a ser renderizados para todos.|
 
 ### <a name="export-data"></a>Exportar dados
@@ -166,7 +166,7 @@ Os usuários na organização podem exportar dados de um bloco ou visualização
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Desabilitar a opção **Exportar dados** também impedirá os usuários de usar o recurso **Analisar no Excel**, bem como de usar a conexão dinâmica do serviço do Power BI.
+> Desabilitar a opção **Exportar dados** também impede os usuários de usar o recurso **Analisar no Excel**, bem como de usar a conexão dinâmica do serviço do Power BI.
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Exportar relatórios como apresentações do PowerPoint
 
@@ -210,16 +210,18 @@ Acesse aqui para saber mais sobre [Enviar aplicativos por push](service-create-d
 ## <a name="integration-settings"></a>Configurações de integração
 
 ### <a name="ask-questions-about-data-using-cortana"></a>Faça perguntas sobre dados usando a Cortana
+
 Os usuários na organização podem fazer perguntas sobre seus dados usando a Cortana.
 
 > [!NOTE]
 > Essa configuração se aplica a toda a organização e não pode ser limitada a grupos específicos.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Usar a opção Analisar no Excel com conjuntos de dados locais
+
 Os usuários na organização podem usar o Excel para exibir e interagir com conjuntos de dados locais do Power BI. [Saiba mais](service-analyze-in-excel.md)
 
 > [!NOTE]
-> Ao desabilitar a opção **Exportar dados**, os usuários também serão impedidos de usar o recurso **Analisar no Excel**.
+> Desabilitar a opção **Exportar Dados** também impede os usuários de usar o recurso **Analisar no Excel**.
 
 ### <a name="use-arcgis-maps-for-power-bi"></a>Usar o ArcGIS Maps for Power BI
 
@@ -230,7 +232,9 @@ Os usuários na organização podem usar a visualização do ArcGIS Maps for Pow
 Os usuários na organização podem usar recursos de pesquisa externos que se baseiam no Azure Search. Por exemplo, eles podem usar a Cortana para recuperar informações importantes diretamente dos relatórios e dashboards do Power BI. [Saiba mais](service-cortana-intro.md)
 
 ## <a name="custom-visuals-settings"></a>Configurações visuais personalizadas
+
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Habilitar visuais personalizados para toda a organização
+
 Os usuários na organização podem interagir com e compartilhar elementos visuais personalizados. [Saiba mais](power-bi-custom-visuals.md)
 
 > [!NOTE]
@@ -288,15 +292,27 @@ Os usuários na organização podem marcar dashboards com classificações indic
 
 ### <a name="embed-content-in-apps"></a>Inserir conteúdo em aplicativos
 
-Usuários da organização podem inserir relatórios e dashboards do Power BI em aplicativos de SaaS (software como serviço). Desabilitar essa configuração impedirá que os usuários usem as APIs REST para inserir conteúdo do Power BI em seus aplicativos.
+Usuários da organização podem inserir relatórios e dashboards do Power BI em aplicativos de SaaS (software como serviço). Desabilitar essa configuração impede os usuários de usar as APIs REST para inserir conteúdo do Power BI em seus aplicativos.
 
-## <a name="capacity-settings"></a>Configurações de capacidade
+## <a name="capacity-settings"></a>Configurações de Capacidade
 
-A guia Configurações de capacidade permite que você gerencie qualquer capacidade do Power BI Premium que tenha sido comprada para sua organização. Todos os usuários em sua organização verão a guia de Configurações Premium, mas eles só verão conteúdo dentro dela se forem atribuídos como **Administradores de capacidade** ou se forem um usuário com permissões de atribuição. Se um usuário não tiver nenhuma permissão, ele verá a seguinte mensagem de erro.
+### <a name="premium-settings"></a>Configurações Premium
 
-![](media/service-admin-portal/premium-settings-no-access.png "Sem acesso às configurações Premium")
+A guia Configurações Premium permite que você gerencie qualquer capacidade do Power BI Premium (SKU Em ou P) que tenha sido comprada para sua organização. Todos os usuários na organização podem ver a guia de Configurações Premium, mas só verão conteúdo nela se forem atribuídos como **Administradores de capacidade** ou se forem um usuário com permissões de atribuição. Se um usuário não tiver nenhuma permissão, a mensagem de erro a seguir será exibida.
 
-Para obter mais informações sobre como gerenciar as configurações Premium, consulte [Gerenciar o Power BI Premium](service-admin-premium-manage.md).
+![Configurações de administração do Power BI Premium](media/service-admin-portal/premium-settings-no-access.png "Sem acesso às configurações Premium")
+
+Para saber mais sobre como gerenciar as configurações Premium, confira [Gerenciar o Power BI Premium](service-admin-premium-manage.md).
+
+### <a name="power-bi-embedded-settings"></a>Configurações do Power BI Embedded
+
+A guia de configurações do Power BI Embedded permite que você exiba suas capacidades do Power BI Embedded (SKU A) que comprou para o cliente. Como você só pode comprar SKUs A do Azure, pode [gerenciar capacidades incorporadas no Azure](developer/azure-pbie-create-capacity.md) do **Portal do Azure**.
+
+![Configurações de administração do Power BI Embedded](media/service-admin-portal/manage-pbie-capacities-01.png)
+
+![Detalhes de configurações de administração do Power BI Embedded](media/service-admin-portal/manage-pbie-capacities-02.png)
+
+Para saber mais sobre como gerenciar as configurações do Power BI Embedded (SKU A), confira [O que é o Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## <a name="embed-codes"></a>Códigos de inserção
 
@@ -307,10 +323,10 @@ Como administrador, você pode exibir os códigos de inserção que são gerados
 ## <a name="organization-visuals"></a>Visuais da organização
 
 A guia de elementos visuais da organização permite implantar e gerenciar elementos visuais personalizados dentro da sua organização, para que você possa implantar facilmente os elementos visuais personalizados proprietários na organização, para que os autores de relatório consigam descobrir e importar esses visuais diretamente do Power BI Desktop em seus relatórios.
- 
+
 A página mostra todos os elementos visuais personalizados que estão implantados no momento no repositório da organização.
- 
-![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+![Visual de administrador da organização](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### <a name="add-a-new-custom-visual"></a>Adicionar um novo elemento visual personalizado
 
@@ -320,29 +336,41 @@ Para adicionar um novo elemento visual personalizado à lista, selecione **Adici
 
 > [!WARNING]
 > Um elemento visual personalizado pode conter código com riscos de segurança ou privacidade; verifique se você confia no autor e a fonte do visual personalizado antes de implantá-lo no relatório de origem.
-> 
 
 Preencha os campos:
- 
+
 * Escolha um arquivo .pbiviz (obrigatório): selecione um arquivo de elemento visual personalizado para carregar. Apenas os elementos visuais personalizados da API com controle de versão têm suporte (leia aqui o que isso significa).
+
 Antes de carregar um elemento visual personalizado, você deve examinar tal elemento visual em relação à segurança e à privacidade, para verificar se ele se ajusta aos padrões da sua organização. Leia sobre a segurança dos elementos visuais personalizados.
- 
+
 * Nomeie os elementos visuais personalizados (obrigatório): dê um título curto para o elemento visual para que os usuários do Power BI Desktop compreendam facilmente o que ele faz
- 
-* Ícone (obrigatório): o arquivo de ícone que será mostrado na interface do usuário do Power BI Desktop.
- 
+
+* Ícone (obrigatório): o arquivo de ícone que é mostrado na interface do usuário do Power BI Desktop.
+
 * Descrição: uma breve descrição do elemento visual para fornecer mais contexto e treinamento para o usuário
- 
-Selecione "Aplicar" para iniciar a solicitação de carregamento. Se for bem-sucedido, você verá o novo item na lista. Se falhar, você receberá uma mensagem de erro apropriada
- 
+
+Selecione "Aplicar" para iniciar a solicitação de carregamento. Se for bem-sucedido, você poderá ver o novo item na lista. Se falhar, você poderá receber uma mensagem de erro apropriada
+
 ### <a name="delete-a-custom-visual-from-the-list"></a>Exclua um visual personalizado da lista
 
 Selecione o ícone de lixeira para excluir permanentemente o visual do repositório.
-Importante: a exclusão é irreversível. Depois de excluído, o elemento visual parará imediatamente de renderizar em relatórios existentes. Mesmo se você carregar o mesmo elemento visual novamente, ele não substituirá o anterior que foi excluído, os usuários terão que importar o novo elemento visual novamente e substituir a instância que eles têm em seus relatórios.
- 
+Importante: a exclusão é irreversível. Depois de excluído, o elemento visual interrompe imediatamente a renderização em relatórios existentes. Mesmo se você carregar o mesmo elemento visual novamente, ele não substituirá o anterior que foi excluído. Os usuários podem reimportar o novo elemento visual e substituir a instância que têm em seus relatórios.
+
+### <a name="disable-a-custom-visual-in-the-list"></a>Desabilitar um visual personalizado na lista
+
+Para desabilitar o visual do repositório organizacional, selecione o ícone de engrenagem. Na seção **Acesso**, desabilite o visual personalizado.
+
+Depois que você desabilitar o visual, ele não será renderizado em relatórios existentes e exibirá a mensagem de erro abaixo.
+
+*Este visual personalizado não está mais disponível. Entre em contato com o administrador para obter detalhes.*
+
+No entanto, os elementos visuais marcados com um indicador ainda funcionam.
+
+Após qualquer alteração de atualização ou de administrador, os usuários do Power BI Desktop devem reiniciar o aplicativo ou atualizar o navegador no serviço do Power BI para ver as atualizações.
+
 ### <a name="how-to-update-a-visual"></a>Como atualizar um elemento visual
 
-Se você quiser atualizar um visual no repositório devido à existência de uma nova versão do visual (por exemplo, correções de bug, nova funcionalidade, etc.), selecione o ícone **Atualizar** e carregue o novo arquivo. Verifique se a ID do Visual permanece inalterada. O novo arquivo substituirá o arquivo anterior em todos os relatórios de toda a organização. No entanto, se a nova versão do visual prejudicar qualquer estrutura de dados de uso da versão anterior do visual, não substitua a versão anterior. Em vez disso, crie uma nova lista para a nova versão do visual. Por exemplo, adicione um novo número de versão (versão X.X) ao título do novo visual listado. Desse modo, fica claro que é o mesmo visual, apenas com um número de versão atualizada, assim os relatórios existentes não prejudicam a funcionalidade. Novamente, verifique se a ID do Visual permanece inalterada. Assim, da próxima vez que os usuários inserirem o repositório da organização do Power BI Desktop, eles poderão importar a nova versão, que os pedirá para substituir a versão atual que eles têm no relatório.
+Se você quiser atualizar um visual no repositório devido à existência de uma nova versão do visual (por exemplo, correções de bug, nova funcionalidade, etc.), selecione o ícone **Atualizar** e carregue o novo arquivo. Verifique se a ID do Visual permanece inalterada. O novo arquivo substitui o arquivo anterior em todos os relatórios de toda a organização. No entanto, se a nova versão do visual prejudicar qualquer estrutura de dados de uso da versão anterior do visual, não substitua a versão anterior. Em vez disso, crie uma nova lista para a nova versão do visual. Por exemplo, adicione um novo número de versão (versão X.X) ao título do novo visual listado. Desse modo, fica claro que é o mesmo visual, apenas com um número de versão atualizada, assim os relatórios existentes não prejudicam a funcionalidade. Novamente, verifique se a ID do Visual permanece inalterada. Assim, na próxima vez que os usuários inserirem o repositório da organização do Power BI Desktop, poderão importar a nova versão, que pedirá que substituam a versão atual que têm no relatório.
 
 ## <a name="next-steps"></a>Próximas etapas
 

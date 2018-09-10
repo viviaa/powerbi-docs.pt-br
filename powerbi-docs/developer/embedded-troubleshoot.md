@@ -2,19 +2,19 @@
 title: Solucionando problemas do aplicativo inserido
 description: Este artigo aborda alguns problemas comuns que podem ser encontrados ao inserir conteúdo do Power BI.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/09/2018
-ms.author: maghan
-ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 08/31/2018
+ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877014"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241558"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Solucionando problemas do aplicativo inserido
 
@@ -24,13 +24,13 @@ Este artigo aborda alguns problemas comuns que podem ser encontrados ao inserir 
 
 ### <a name="fiddler-trace"></a>Rastreamento do Fiddler
 
-[Fiddler](http://www.telerik.com/fiddler) é uma ferramenta gratuita da Telerik que monitora o tráfego HTTP.  Você pode ver tudo com as APIs do Power BI no computador cliente. Isso pode mostrar erros e outras informações relacionadas.
+[Fiddler](http://www.telerik.com/fiddler) é uma ferramenta gratuita da Telerik que monitora o tráfego HTTP.  Você pode ver o tráfego com as APIs do Power BI do computador cliente. Essa ferramenta pode mostrar erros e outras informações relacionadas.
 
 ![Rastreamento do Fiddler](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
 ### <a name="f12-in-browser-for-front-end-debugging"></a>F12 no navegador para depuração de front-end
 
-A tecla F12 iniciará a janela do desenvolvedor no navegador. Nela é possível examinar o tráfego de rede e outras informações.
+A tecla F12 inicia a janela do desenvolvedor no navegador. Essa ferramenta fornece a capacidade de examinar o tráfego de rede e outras informações.
 
 ![Depuração de navegador com F12](media/embedded-troubleshoot/browser-f12.png)
 
@@ -38,7 +38,7 @@ A tecla F12 iniciará a janela do desenvolvedor no navegador. Nela é possível 
 
 Este trecho de código mostra como extrair os detalhes do erro da exceção HTTP:
 
-```
+```csharp
 public static string GetExceptionText(this HttpOperationException exc)
 {
     var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
@@ -52,16 +52,17 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
-É recomendável registrar em log as IDs de solicitação (e detalhes do erro para solução de problemas).
-Forneça a ID da solicitação ao entrar em contato com o Suporte da Microsoft.
+
+É recomendável registrar em log as IDs de Solicitação (e detalhes do erro para solução de problemas).
+Forneça a ID de Solicitação ao entrar em contato com o Suporte da Microsoft.
 
 ## <a name="app-registration"></a>Registro de aplicativo
 
 **Falha no registro de aplicativo**
 
-As mensagens de erro no Portal do Azure ou na página de registro de aplicativo do Power BI mencionarão privilégios insuficientes. Para registrar um aplicativo, você deve ser administrador no locatário do Azure AD ou os registros do aplicativo devem estar habilitados para usuários não administradores.
+As mensagens de erro no portal do Azure ou na página de registro de aplicativo do Power BI mencionam privilégios insuficientes. Para registrar um aplicativo, você deve ser administrador no locatário do Azure AD ou os registros do aplicativo devem estar habilitados para usuários não administradores.
 
-**O serviço do Power BI não aparece no Portal do Azure ao registrar um novo aplicativo**
+**O serviço do Power BI não aparece no portal do Azure ao ser registrado um novo aplicativo**
 
 Pelo menos um usuário deve estar inscrito no Power BI. Se você não vir **Serviço do Power BI** na lista de APIs, será uma indicação de que nenhum usuário está inscrito no Power BI.
 
@@ -100,9 +101,9 @@ O back-end do aplicativo pode precisar atualizar o token de autenticação antes
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Falha na autenticação com AADSTS70002 ou AADSTS50053
 
-**(AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)**
+**(AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de Usuário ou senha incorreta)**
 
-Se você estiver usando o Power BI Embedded e utilizando a autenticação direta do Azure AD e está recebendo mensagens ao fazer logon, como ***error:unauthorized_client,error_description:AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta***. Isso acontece porque a autenticação direta foi desativada por padrão em 14/06/2018.
+Se você estiver usando o Power BI Embedded e utilizando a autenticação direta do Azure AD e está recebendo mensagens ao fazer logon, como ***error:unauthorized_client, error_description:AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de Usuário ou senha incorreta***. Isso acontece porque a autenticação direta foi desativada por padrão em 14/06/2018.
 
 Há uma maneira de fazer a reativação usando uma [Política do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) que pode ser no escopo da organização ou uma [entidade de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -112,7 +113,7 @@ Para criar essa política, você precisa ser um **administrador global** do dire
 
 1. Instale o [módulo do PowerShell de visualização do Azure AD](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-2. Execute os seguintes comandos do Powershell, linha por linha, (certificando-se de que a variável $sp não tem mais de um aplicativo como resultado).
+2. Execute os seguintes comandos do PowerShell, linha por linha, (certificando-se de que a variável $sp não tem mais de um aplicativo como resultado).
 
 ```powershell
 Connect-AzureAD
@@ -167,12 +168,12 @@ O consentimento do usuário está desabilitado para o locatário.
 **_Várias correções são possíveis:_**
 
 *Habilitar o consentimento do usuário para todo o locatário (todos os usuários, todos os aplicativos)*
-1. No Portal do Azure, navegue até "Azure Active Directory" = > "Usuários e grupos" = > "Configurações de usuário"
+1. No portal do Azure, navegue até "Azure Active Directory" = > "Usuários e grupos" = > "Configurações de usuário"
 2. Habilite a configuração “Os usuários podem consentir que os aplicativos acessem dados da empresa em seus nomes” e, em seguida, salve as alterações
 
     ![Correção do teste de consentimento](media/embedded-troubleshoot/consent-test-02.png)
 
-*Concessão de permissões por um administrador* Um administrador concede permissões ao aplicativo, para todo o locatário ou para um usuário específico.
+*Concessão de permissões por um administrador* Um administrador concede permissões ao aplicativo, para todo o locatário ou um usuário específico.
 
 ## <a name="data-sources"></a>Fontes de dados
 
@@ -188,11 +189,45 @@ Verifique se o token de inserção não expirou. Não se esqueça de verificar a
 
 **O relatório ou o dashboard não carrega**
 
-Se o usuário não puder visualizar o relatório ou o dashboard, verifique se o relatório ou o dashboard foi carregado corretamente no powerbi.com. O relatório ou o dashboard não funcionará no aplicativo se ele não for carregado no powerbi.com.
+Se o usuário não puder visualizar o relatório ou o dashboard, verifique se o relatório ou o dashboard foi carregado corretamente no powerbi.com. O relatório ou o painel não funcionará no aplicativo se ele não for carregado no powerbi.com.
 
 **A execução do relatório ou do dashboard está lenta**
 
 Abra o arquivo no Power BI Desktop ou no powerbi.com e verifique se o desempenho é aceitável para eliminar problemas com o aplicativo ou as APIs de inserção.
+
+## <a name="troubleshooting-your-embedded-application-with-the-ierror-object"></a>Solução de problemas do aplicativo inserido com o objeto IError
+
+Use o [**Objeto IError** retornado pelo evento *erro* do **SDK do JavaScript**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) para depurar o aplicativo e entender melhor a causa dos erros.
+
+Depois de adquirir o objeto IError, você deve examinar a tabela de erros comuns apropriada ao tipo de inserção que está usando. Compare as **Propriedades de IError** às da tabela e encontre os possíveis motivos da falha.
+
+### <a name="typical-errors-when-embedding-for-power-bi-users"></a>Erros típicos durante a inserção para usuários do Power BI
+
+| Mensagem | Mensagem Detalhada | Código de erro | Possíveis motivos |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+| TokenExpired | O token de acesso expirou; reenvie com um novo token de acesso | 403 | Token expirado  |
+| PowerBIEntityNotFound | Falha ao obter relatório | 404 | <li> ID de Relatório incorreta <li> O relatório não existe  |
+| Parâmetros inválidos | Parâmetro powerbiToken não especificado | N/A | <li> Nenhum token de acesso fornecido <li> Nenhuma ID de Relatório fornecida |
+| LoadReportFailed | Falha ao inicializar – não foi possível resolver o cluster | 403 | * Token de acesso inválido * O tipo de inserção não corresponde ao tipo de token |
+| PowerBINotAuthorizedException | Falha ao obter relatório | 401 | <li> Id de grupo incorreta <li> Grupo não autorizado |
+| TokenExpired | O token de acesso expirou. Reenvie com um novo token de acesso. Não foi possível renderizar um relatório visual intitulado: <visual title> | N/A | Token expirado de consulta de dados |
+| OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um relatório visual intitulado: <visual title> | N/A | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/A | <li> Capacidade em pausa <li> Capacidade excluída |
+
+### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Erros típicos durante a inserção para usuários que não são do Power BI (usando um Token de Inserção)
+
+| Mensagem | Mensagem Detalhada | Código de erro | Motivos |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| TokenExpired | O token de acesso expirou; reenvie com um novo token de acesso | 403 | Token expirado  |
+| LoadReportFailed | Falha ao obter relatório | 404 | <li> ID de Relatório incorreta <li> O relatório não existe  |
+| LoadReportFailed | Falha ao obter relatório | 403 | A ID do relatório não corresponde ao token |
+| LoadReportFailed | Falha ao obter relatório | 500 | A de ID relatório fornecida não é um guid |
+| Parâmetros inválidos | Parâmetro powerbiToken não especificado | N/A | <li> Nenhum token de acesso fornecido <li> Nenhuma ID de Relatório fornecida |
+| LoadReportFailed | Falha ao inicializar – não foi possível resolver o cluster | 403 | Tipo de token errado, Token inválido |
+| PowerBINotAuthorizedException | Falha ao obter relatório | 401 | Id de grupo errada/desautorizada |
+| TokenExpired | O token de acesso expirou. Reenvie com um novo token de acesso. Não foi possível renderizar um relatório visual intitulado: <visual title> | N/A | Token expirado de consulta de dados |
+| OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um relatório visual intitulado: <visual title> | N/A | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/A | <li> Capacidade em pausa <li> Capacidade excluída |
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Ferramenta de experiência de integração para inserção
 
@@ -209,7 +244,7 @@ Verifique se você tem todos os pré-requisitos apropriados antes de usar a Ferr
 
 ### <a name="common-issues"></a>Problemas comuns
 
-Alguns problemas comuns que você pode encontrar durante o teste com a Ferramenta de experiência de integração são:
+Alguns problemas comuns que você pode encontrar ao testar com a Ferramenta de experiência de integração são:
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Usando o aplicativo de exemplo Inserir para clientes
 
@@ -244,3 +279,5 @@ Se você quiser editar o perfil do usuário do Power BI ou os dados, aprenda a e
 Para saber mais, veja [Perguntas frequentes do Power BI Embedded](embedded-faq.md).
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
+
+Se você precisar de assistência adicional [entre em contato com o suporte](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) ou [crie um tíquete de suporte por meio do portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) e forneça as mensagens de erro que você encontrar.

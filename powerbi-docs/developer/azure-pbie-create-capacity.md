@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
 ms.date: 07/31/2018
-ms.openlocfilehash: 222a6368bc717880fee4f6ce6958455959b491bd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: f364bb725c492c1bffd2493c1e2a48ee8c442a9e
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360109"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300036"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Criar uma capacidade do Power BI Embedded no portal do Azure
 
@@ -54,7 +54,7 @@ Para concluir este início rápido, você precisa:
     |**Assinatura**|A assinatura na qual você deseja criar a capacidade.|
     |**Grupo de recursos**|O grupo de recursos que contém essa nova capacidade. Escolha um grupo de recursos existente ou crie outro. Para obter mais informações, confira [Visão geral do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).|
     |**Administrador de capacidade do Power BI**|Os administradores de capacidade do Power BI podem exibir a capacidade no portal de administração do Power BI e conceder permissões de atribuição a outros usuários. Por padrão, o administrador de capacidade é a sua conta. O administrador de capacidade precisa pertencer ao locatário do Power BI.|
-    |**Local**|O local em que o Power BI está hospedado para seu locatário. Essa configuração é resolvida automaticamente, e não é possível selecionar um local diferente.|
+    |**Local**|O local em que o Power BI está hospedado para seu locatário. O local padrão é sua região de residência, mas você pode alterar o local usando [Opções de Multi-Geo](embedded-multi-geo.md).
     |**Tipo de preço**|Selecione o SKU (contagem de núcleos virtuais e tamanho da memória) que atende às suas necessidades.  Para obter detalhes, confira [Preços do Power BI Embedded](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
 6. Selecione **Criar**.

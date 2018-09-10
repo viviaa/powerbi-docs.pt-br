@@ -2,20 +2,20 @@
 title: Blocos de dashboard no serviço do Power BI
 description: Tudo sobre blocos de dashboard no Power BI. Isso inclui blocos que são criados no SSRS (SQL Server Reporting Services).
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e53945e0a112d9498dc6798e2441dd3d925a64c1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 09fcce65539d89c9d42bc05369f13a6048eb96c2
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249058"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241581"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Blocos de painel no Power BI
 Os dashboards e blocos de dashboard são um recurso do serviço do Power BI e não do Power BI Desktop. Os blocos de dashboards não podem ser criados ou fixados no Power BI Mobile, mas [podem ser exibidos e compartilhados](mobile-tiles-in-the-mobile-apps.md). E, no Power BI Mobile, você pode [adicionar imagens ao seu dashboard com seu aplicativo de iPhone](mobile-iphone-app-get-started.md).
@@ -67,9 +67,9 @@ Pegue um bloco e [mova-o no dashboard](service-dashboard-edit-tile.md). Passe o 
    
    * [Abrir a planilha que foi usada para criar este bloco ](service-reports.md) ![ícone de planilha](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [Exibir no modo de foco ](service-focus-mode.md) ![ícone de foco](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [Exibir no modo de foco ](service-focus-mode.md) ![ícone de foco](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Exportar os dados usados no bloco](power-bi-visualization-export-data.md) ![ícone exportar dados](media/service-dashboard-tiles/export-icon.png)
-     * [Editar o título e o subtítulo, adicionar um hiperlink, exibir o horário da última atualização](service-dashboard-edit-tile.md) ![ícone editar](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Editar título e subtítulo, adicionar um hiperlink](service-dashboard-edit-tile.md) ![editar ícone](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Executar insights ](service-insights.md) ![ícone de insights](media/service-dashboard-tiles/power-bi-insights.png)
      * [Fixar o bloco em outro dashboard](service-pin-tile-to-another-dashboard.md)
        ![ícone fixar](media/service-dashboard-tiles/pin-icon.jpg)

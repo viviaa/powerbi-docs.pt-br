@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: ec97676fc043f9d8bd014465cc1fd2c0ffcca423
-ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
+ms.openlocfilehash: bfc9b054f9a34757361bf4ab1803aa6904471167
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257180"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380303"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatório do Power BI
 
@@ -24,6 +24,15 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 
 ## <a name="august-2018"></a>Agosto de 2018
 - **Servidor de Relatório do Power BI**
+    - *Versão 1.3.6816.37243 (Build 15.0.2.557), lançamento: 30 de agosto de 2018*
+        - Correções de bug
+            - Foi corrigido um problema que ocorria quando o servidor era atualizado de versões anteriores do Servidor de Relatórios de PBI em que um redirecionamento de associação não era atualizado e o cliente via isto:      
+            *`
+            Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
+             `*
+             
+            - O bug de transparência de rótulo de dados agora foi corrigido.
+            
     - *Versão 1.3.6801.38816 (Build 15.0.2.540), lançamento: 15 de agosto de 2018*
         - Recursos
             - O suporte para DirectQuery de SSO do SAP HANA com o Kerberos já está disponível para relatórios do Power BI

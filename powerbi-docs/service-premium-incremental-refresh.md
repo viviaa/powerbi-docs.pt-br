@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/30/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b6a3c35abeff33e2fb1e0fecdc5c2a5c88e1530
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34298172"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300128"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Atualização incremental no Power BI Premium
 
@@ -43,6 +43,12 @@ Os conjuntos de dados grandes, com possíveis bilhões de linhas, podem não cab
 
 Para aproveitar a atualização incremental no serviço do Power BI, a filtragem precisa ser feita usando os parâmetros de data/hora do Power Query com os nomes reservados, que diferenciam maiúsculas de minúsculas **RangeStart** e **RangeEnd**.
 
+Depois de publicado, os valores de parâmetro serão substituídos automaticamente pelo serviço do Power BI. Não é necessário defini-los nas configurações do conjunto de dados no serviço.
+ 
+É importante que o filtro seja enviado por push para o sistema de origem quando as consultas forem enviadas para operações de atualização. Isso significa que a fonte de dados deve dar suporte a "partição de consulta". Considerando os vários níveis de suporte a dobra de consulta para cada fonte de dados, é recomendável que você verifique se a lógica do filtro está incluída nas consultas de origem. Se isso não ocorrer, cada consulta solicitará todos os dados de origem, o que anulará o objeto de atualização incremental.
+ 
+O filtro será usado para particionar os dados em intervalos no serviço do Power BI. Isso não é projetado para dar suporte à atualização da coluna de data filtrada. Uma atualização será interpretada como uma inserção e uma exclusão (não uma atualização). Se a exclusão ocorrer no intervalo histórico e não no intervalo incremental, não será selecionada.
+
 No Editor Power Query, selecione **Gerenciar Parâmetros** para definir os parâmetros com valores padrão.
 
 ![Gerenciar parâmetros](media/service-premium-incremental-refresh/manage-parameters.png)
@@ -61,9 +67,6 @@ Verifique se as linhas são filtradas com o valor da coluna *após ou igual a* *
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Selecione **Fechar e Aplicar** no Editor Power Query. Um subconjunto do conjunto de dados estará presente no Power BI Desktop.
-
-> [!NOTE]
-> Depois de publicado, os valores de parâmetro serão substituídos automaticamente pelo serviço do Power BI. Não é necessário defini-los nas configurações do conjunto de dados.
 
 ### <a name="define-the-refresh-policy"></a>Definir a política de atualização
 
@@ -102,9 +105,11 @@ A primeira atualização no serviço do Power BI pode demorar mais para importar
 
 **Talvez você precise apenas da definição desses intervalos e, nesse caso, você pode ir diretamente para a etapa de publicação abaixo. As listas suspensas adicionais são para recursos avançados.**
 
+### <a name="advanced-policy-options"></a>Opções avançadas de política
+
 #### <a name="detect-data-changes"></a>Detectar alterações nos dados
 
-A atualização incremental de 10 dias é obviamente muito mais eficiente do que uma atualização completa de cinco anos. No entanto, é possível fazer ainda melhor. Se você marcar a caixa de seleção **Detectar alterações nos dados**, será possível selecionar uma coluna de data/hora usada para identificar e atualizar somente os dias em que os dados foram alterados. Isso pressupõe que uma coluna dessa exista no sistema de origem, normalmente para fins de auditoria. O valor máximo dessa coluna é avaliado para cada um dos períodos no intervalo incremental. Se ele não foi alterado desde a última atualização, não é necessário atualizar o período. No exemplo, isso poderia reduzir ainda mais os dias atualizados incrementalmente de 10 para, talvez, 2.
+A atualização incremental de 10 dias é obviamente muito mais eficiente do que uma atualização completa de cinco anos. No entanto, é possível fazer ainda melhor. Se você marcar a caixa de seleção **Detectar alterações nos dados**, será possível selecionar uma coluna de data/hora usada para identificar e atualizar somente os dias em que os dados foram alterados. Isso pressupõe que uma coluna dessa exista no sistema de origem, normalmente para fins de auditoria. **Essa não deve ser a mesma coluna usada para particionar os dados com os parâmetros RangeStart/RangeEnd.** O valor máximo dessa coluna é avaliado para cada um dos períodos no intervalo incremental. Se ele não foi alterado desde a última atualização, não é necessário atualizar o período. No exemplo, isso poderia reduzir ainda mais os dias atualizados incrementalmente de 10 para, talvez, 2.
 
 ![Detectar alterações](media/service-premium-incremental-refresh/detect-changes.png)
 
