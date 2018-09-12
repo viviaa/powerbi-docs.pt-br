@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: 08ead2570602538218085327c6d385c36e0d7e8c
+ms.sourcegitcommit: 8bad5ed58e9e406aca53996415b1240c2972805e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40256873"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44343313"
 ---
 # <a name="power-bi-performance-best-practices"></a>Práticas Recomendadas de Desempenho do Power BI 
 Este artigo oferece orientação para criar relatórios rápidos e confiáveis no Power BI.  
@@ -38,7 +38,7 @@ Algumas práticas recomendadas:
 - Evite contagens distintas em campos com alta cardinalidade, ou seja, milhões de valores distintos.  
 - Tome medidas para evitar campos com precisão desnecessária e alta cardinalidade. Por exemplo, você pode dividir valores datetime altamente exclusivos em colunas separadas, por exemplo, mês, ano, data etc. Ou, quando possível, use o arredondamento em campos de alta precisão para diminuir a cardinalidade (por exemplo, 13,29889 -> 13.3). 
 - Use números inteiros em vez de cadeias de caracteres, sempre que possível. 
-- Esteja atento a funções DAX que precisam testar cada linha em uma tabela, por exemplo, RANKX. No pior dos casos, essas funções podem aumentar exponencialmente o tempo de execução e os requisitos de memória devido ao aumento linear no tamanho da tabela. 
+- Fique atento a funções DAX que precisam testar cada linha em uma tabela, por exemplo, RANKX. No pior dos casos, essas funções podem aumentar exponencialmente o tempo de execução e os requisitos de memória devido ao aumento linear no tamanho da tabela. 
 - Ao se conectar a fontes de dados por meio do DirectQuery, considere indexar novamente as colunas que normalmente são filtradas ou segmentadas; isso melhorará muito capacidade de resposta do relatório.  
  
 
@@ -59,7 +59,7 @@ A seção a seguir descreve as práticas recomendadas gerais para se conectar po
 - Envie por push colunas calculadas e medidas para a fonte quando possível – quanto mais próximas estiverem da fonte, maior será a probabilidade de desempenho. 
 - Otimize! Entenda os planos de execução de suas consultas, adicione índices a colunas filtradas comumente etc. 
 
-### <a name="modelling-guidance"></a>Diretrizes de modelagem 
+### <a name="modeling-guidance"></a>Diretrizes de modelagem 
 - Inicie o Power BI Desktop. 
 - Evite consultas complexas no Editor de Consultas. 
 - Não use a filtragem de dados relativos no Editor de Consultas.  
@@ -81,7 +81,7 @@ Visuais fixados nos painéis são atendidos pelo cache de consulta quando o pain
 > Quando você fixa blocos de relatório dinâmico a um painel, eles não são atendidos do cache de consulta – em vez disso, eles se comportam como relatórios e fazem consultas em núcleos de back-end dinamicamente. 
  
 
-Como o nome sugere, recuperar os dados do cache de consulta fornece um desempenho melhor e mais consistente do que contar com a fonte de dados. Uma maneira de aproveitar essa funcionalidade é ter painéis como a primeira página de aterrissagem para seus usuários. Fixe os visuais usados com frequência e altamente solicitados aos painéis. Dessa forma, os painéis tornam-se uma valiosa "primeira linha de defesa" que oferece desempenho consistente com menos carga na capacidade. Os usuários ainda podem clicar no relatório para examinar os detalhes.  
+Como o nome sugere, recuperar os dados do cache de consulta fornece um desempenho melhor e mais consistente do que contar com a fonte de dados. Uma maneira de aproveitar essa funcionalidade é ter painéis como a primeira página de aterrissagem para seus usuários. Fixe os visuais usados com frequência e altamente solicitados aos painéis. Dessa forma, os dashboards tornam-se uma valiosa "primeira linha de defesa" que oferece desempenho consistente com menos carga na capacidade. Os usuários ainda podem clicar no relatório para examinar os detalhes.  
  
 
 Observe que para a conexão dinâmica e do DirectQuery, esse cache de consulta é atualizado periodicamente ao consultar a fonte de dados. Por padrão, isso ocorre a cada hora; porém, isso pode ser definido nas configurações do conjunto de dados. Cada atualização de cache de consulta enviará consultas à fonte de dados subjacente para atualizar o cache. O número de consultas geradas depende do número de elementos visuais fixados nos painéis que dependem dessa fonte de dados. Observe que se a segurança em nível de linha estiver habilitada, as consultas serão geradas para cada contexto de segurança diferente. Por exemplo, se você tiver duas funções diferentes nas quais os usuários se encaixam, com duas exibições diferentes dos dados, durante a atualização do cache de consulta, dois conjuntos de consultas serão gerados. 
@@ -110,7 +110,7 @@ Veja as instruções a seguir:
 
    O resultado deve ser uma lista de aplicativos e suas portas abertas, por exemplo:  
 
-   TCP    [::1]:55786            [::1]:55830            ESTABELECIDA 
+   `TCP    [::1]:55786            [::1]:55830            ESTABLISHED`
 
    [msmdsrv.exe] 
 
