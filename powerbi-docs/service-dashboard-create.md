@@ -1,5 +1,5 @@
 ---
-title: Criar um dashboard do Power BI de um relatório
+title: Criar um dashboard do serviço do Power BI de um relatório
 description: Criar um dashboard do Power BI de um relatório
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 09/02/2018
 ms.author: mihart
-ms.openlocfilehash: 56a26b50f50dd52d4355cd8326ec0d104dab19c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248920"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168079"
 ---
-# <a name="create-a-power-bi-dashboard-from-a-report"></a>Criar um dashboard do Power BI de um relatório
+# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Criar um dashboard do Power BI no serviço do Power BI
 Você já leu [Dashboards no Power BI](service-dashboards.md) e agora deseja criar o seu próprio. Há várias maneiras diferentes de criar um dashboard de controle – de um relatório, desde o início, de um conjunto de dados, duplicando um dashboard existente e muito mais.  
 
 Pode parecer complicado quando você está começando, então vamos começar criando um painel rápido e fácil fixando visualizações de um relatório que já esteja criado. Depois de concluir este guia de início rápido, você terá um bom entendimento da relação entre painéis e relatórios, de como abrir o modo de exibição de edição no editor de relatórios, como fixar blocos e navegar entre um painel e um relatório. Em seguida, use os links no sumário à esquerda ou **Próximas etapas** na parte inferior para passar para os tópicos mais avançados.
