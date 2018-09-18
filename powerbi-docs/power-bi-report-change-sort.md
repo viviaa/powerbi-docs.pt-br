@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3c32fc3cc9dc2b16384016ca624d4dd3a773aacb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 89891ead8eda1b8de4c7be943af2a9e9e98314c5
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34561783"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726077"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Altere como um gráfico é classificado em um relatório do Power BI
 Em um relatório do Power BI, você pode classificar a maioria das visualizações em ordem alfabética pelos nomes das categorias no gráfico, ou pelos valores numéricos de cada categoria. Por exemplo, este gráfico é classificado por nome de loja.
@@ -49,7 +49,7 @@ Em alguns casos, é permitido classificar o visual da maneira desejada, por exem
 * No Excel, certifique-se de que as colunas numéricas estejam marcadas como "número inteiro" ou "decimal" e não como "texto".
 
 ## <a name="next-steps"></a>Próximas etapas
-Mais sobre [Visualizações nos relatórios do Power BI](power-bi-report-visualizations.md).
+Mais sobre [Visualizações nos relatórios do Power BI](visuals/power-bi-report-visualizations.md).
 
 [Power BI – conceitos básicos](service-basic-concepts.md)
 

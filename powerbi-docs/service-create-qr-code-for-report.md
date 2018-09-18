@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d99081a3d77ebfa7115d7546c59adc42eab308ca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 52c392123b6bc86b4a40d90a8479ed8fcd6dbc61
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34237935"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726353"
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Criar um código QR para um relatório no Power BI a ser usado nos aplicativos móveis
 Os códigos QR no Power BI podem conectar qualquer coisa do mundo real diretamente às informações do BI relacionadas &#151; não é necessária navegação ou pesquisa.
 
 Crie um código QR no serviço do Power BI para qualquer relatório, até mesmo para um relatório que você não pode editar. Em seguida, coloque o código QR em um local relevante. Por exemplo, você pode colá-lo em um email ou imprimir e colá-lo em um local específico. 
 
-Os colegas com quem você compartilhou o relatório podem digitalizar o código QR para ter acesso ao relatório, diretamente em [seus dispositivos móveis](mobile-apps-qr-code.md). Eles podem usar o scanner de código QR localizado no aplicativo do Power BI ou qualquer outro scanner QR instalado em seu dispositivo. Eles também podem [digitalizar um código QR de relatório com o aplicativo Power BI para Realidade Misturada](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
+Os colegas com quem você compartilhou o relatório podem digitalizar o código QR para ter acesso ao relatório, diretamente em [seus dispositivos móveis](consumer/mobile/mobile-apps-qr-code.md). Eles podem usar o scanner de código QR localizado no aplicativo do Power BI ou qualquer outro scanner QR instalado em seu dispositivo. Eles também podem [digitalizar um código QR de relatório com o aplicativo Power BI para Realidade Misturada](consumer/mobile/mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="create-a-qr-code-for-a-report"></a>Criar um código QR para um relatório
 1. Abra um relatório no serviço do Power BI.
@@ -48,8 +48,8 @@ Power BI gera o código QR como um arquivo JPG, pronto para imprimir.
 2. Recorte o código QR ao longo da borda e associe-o em um local relevante para o relatório. 
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Conectar-se a dados do Power BI do mundo real](mobile-apps-data-in-real-world-context.md) com os aplicativos móveis
-* [Digitalizar um código QR do Power BI em seu dispositivo móvel](mobile-apps-qr-code.md)
+* [Conectar-se a dados do Power BI do mundo real](consumer/mobile/mobile-apps-data-in-real-world-context.md) com os aplicativos móveis
+* [Digitalizar um código QR do Power BI em seu dispositivo móvel](consumer/mobile/mobile-apps-qr-code.md)
 * [Criar um código QR para um bloco](service-create-qr-code-for-tile.md)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

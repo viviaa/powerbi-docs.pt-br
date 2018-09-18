@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d7f966834e2d6b44f3a887991bd0ebd6e38836f0
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 83d9e435c1dca10a444f3125830eb6432aecf6bd
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044338"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728193"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>O que há de novo no serviço do Power BI
 Confira esta página para ver os problemas conhecidos e os recursos lançados recentemente no **Serviço do Power BI**. Para informações sobre “Novidades” relacionadas, consulte:
 
 - [Novidades no Power BI Desktop](desktop-latest-update.md)  
-- [Novidades em aplicativos móveis para o Power BI](mobile-whats-new-in-the-mobile-apps.md)  
+- [Novidades em aplicativos móveis para o Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Blog da equipe do Power BI](https://powerbi.microsoft.com/blog/)
 - [Notas de lançamento dos aplicativos de negócios da primavera de 2018](http://aka.ms/businessappsreleasenotes) do Dynamics 365: as atualizações mais recentes para nossos aplicativos de negócios, bem como novos recursos para a criação de seus aplicativos e extensões em nossa plataforma. 
 

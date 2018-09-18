@@ -2,20 +2,20 @@
 title: Visão geral de P e R no serviço do Power BI e Power BI Desktop
 description: Tópico de visão geral da documentação para consultas de linguagem naturais de P e R do Power BI.
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/18/2018
+ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 1680a1aacf84eb5440703385dc831c32433456bb
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: 94faaac1067b2ab377639d0d6a1822b182e214b6
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44167941"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726560"
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>P e R no serviço do Power BI e Power BI Desktop
 ## <a name="what-is-qa"></a>O que é P e R?
@@ -48,9 +48,11 @@ Além de usar p e r para explorar seus dados, criadores e proprietários de conj
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Como o recurso de P e R sabe como responder a perguntas?
 ### <a name="which-datasets-does-qa-use"></a>Quais conjuntos de dados P e R usa?
-Como o recurso de P e R sabe como responder a perguntas sobre dados específicos? Ele se baseia nos nomes das tabelas, colunas e campos calculados nos conjuntos subjacentes. Portanto, é importante o proprietário do conjunto de dados nomeie as coisas! Se você tiver problemas para obter respostas às suas perguntas no P e R, converse com o proprietário do conjunto de dados para saber se ele pode tornar o conjunto de dados mais amigável.
+Como o recurso de P e R sabe como responder a perguntas sobre dados específicos? Ele se baseia nos nomes das tabelas, colunas e campos calculados nos conjuntos subjacentes. Portanto, é importante que você (ou o proprietário do conjunto de dados) nomei as coisas!
 
-O P e R pode solucionar as dúvidas sobre como o conjunto de dados é organizado. Como isso funciona para dados de vendas? Quando você se conectar à sua conta do salesforce.com, o Power BI gera automaticamente um painel de controle.  Antes de começar a fazer perguntas com o P e R, dê uma olhada em dados exibidos nas visualizações do painel de controle e também os dados exibidos no menu suspenso de perguntas e respostas.
+Por exemplo, suponha que você tenha uma tabela do Excel como o nome de "Vendas", com colunas intituladas "Produto", "Mês", "Unidades vendidas", "Vendas brutas" e "Lucro". Você pode fazer perguntas sobre qualquer uma dessas entidades.  Você poderia perguntar “mostrar as *vendas* ”, “*lucro* total por *mês* ”, “classificar *produtos* por *unidades vendidas* ” e muito mais.
+
+Q & R pode responder a perguntas com base em como o conjunto de dados é organizado. Como isso funciona para dados de vendas? Quando você se conectar à sua conta do salesforce.com, o Power BI gera automaticamente um painel de controle.  Antes de começar a fazer perguntas com o P e R, dê uma olhada em dados exibidos nas visualizações do painel de controle e também os dados exibidos no menu suspenso de perguntas e respostas.
 
 * Se os valores e os rótulos do eixo de visualizações incluírem “vendas”, “conta”, “mês” e “oportunidades”, será possível fazer perguntas como: “qual *conta* tem a *oportunidade* mais alta?” ou “mostrar *vendas* por mês como um gráfico de barras”.
 * Se a lista suspensa inclui "vendedor", "estado" e "ano", você poderá fazer perguntas como: "qual *vendedor* teve as vendas mais *baixas* na *Flórida* em *2013*."
@@ -68,7 +70,7 @@ Para obter informações sobre as palavras-chave reconhecidas pela P e R, confir
 ## <a name="for-more-details-about-power-bi-qa"></a>Para obter mais detalhes sobre P e R do Power BI
 [Visão geral: como usar a P e R em relatórios e dashboards do Power BI](power-bi-tutorial-q-and-a.md): instruções passo a passo para usar a P e R e uma visão geral de como tudo funciona.
 
-[Aplicativo móvel do Microsoft Power BI](mobile-apps-ios-qna.md) para iOS em dispositivos iPod Touch, iPhones e iPads.
+[Aplicativo móvel do Microsoft Power BI](consumer/mobile/mobile-apps-ios-qna.md) para iOS em dispositivos iPod Touch, iPhones e iPads.
 
 [Microsoft Power BI Embedded](developer/qanda.md) Incorporar P e R em um aplicativo.
 
@@ -79,5 +81,7 @@ Para obter informações sobre as palavras-chave reconhecidas pela P e R, confir
 [Habilitar P e R para seus conjuntos de dados locais](service-q-and-a-direct-query.md) Se você precisar que um gateway se conecte ao conjunto de dados, use as configurações do Power BI para ativar e desativar P e R.
 
 [Tutorial: usar a P e R do Power BI com o exemplo de Vendas de Varejo no serviço do Power BI](power-bi-visualization-introduction-to-q-and-a.md): use a P e R em um tutorial realístico do setor.
+
+[Faça seus dados funcionarem bem com o P e R](service-prepare-data-for-q-and-a.md): você é a pessoa que cria conjuntos de dados e modelos de dados?  Então este tópico é para você.
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

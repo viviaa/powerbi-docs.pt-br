@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
-ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
+ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40257228"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726675"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Usar ferramentas de desenvolvedor para criar visuais personalizados
 Os visuais personalizados permitem atender às necessidades dos usuários e corresponder ao design do aplicativo. Aprenda como criar um visual personalizado para o Power BI usando as ferramentas de desenvolvedor.
@@ -388,7 +388,7 @@ Execute o servidor de visual com o comando `pbiviz start` no terminal ou na linh
 Para obter mais informações, veja [Executando seu visual](#running-your-visual) ou [Instalação de certificado de servidor](#ssl-setup).
 
 ## <a name="next-steps"></a>Próximas etapas
-[Visualizações no Power BI](power-bi-report-visualizations.md)  
+[Visualizações no Power BI](visuals/power-bi-report-visualizations.md)  
 [Visualizações personalizadas no Power BI](power-bi-custom-visuals.md)  
 [Publicar visuais personalizados na Office Store](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  

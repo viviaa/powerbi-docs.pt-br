@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: e64850351c9bdc1877eed3a53323e7934e11fbe7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d6ab9619fd1419f94994b65fffef7ddcbfff3f3d
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445108"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727181"
 ---
 # <a name="whitepapers-for-power-bi"></a>White papers para o Power BI
 
@@ -31,7 +31,7 @@ White papers permitem que você explore os tópicos do Power BI em um nível mai
 | [Power BI e GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| O Power BI pode ser uma parte importante da sua jornada em relação à conformidade com o GDPR. A finalidade deste documento é fornecer algumas noções básicas sobre o GDPR e relacionar isso ao Power BI. Embora a conformidade com o GDPR seja obrigatória em situações específicas descritas neste documento, ele não será um exercício de "caixa de seleção". Também é uma maneira de aprimorar a proteção geral dos dados e as funcionalidades de privacidade.|
 | [Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|Esse documento, explicando como distribuir conteúdo para usuários fora da organização usando a integração do Azure Active Directory Business-to-business (AAD B2B).|
 | [Análises avançadas com o Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Descreve os recursos analíticos avançados do Power BI, incluindo análise preditiva, visualizações personalizadas, integração com o R e expressões de análise de dados. |
-| [Práticas recomendadas para criação de relatórios e visuais](power-bi-visualization-best-practices.md) |Fornece práticas recomendadas para criação de relatórios no Power BI. |
+| [Práticas recomendadas para criação de relatórios e visuais](visuals/power-bi-visualization-best-practices.md) |Fornece práticas recomendadas para criação de relatórios no Power BI. |
 | [Filtragem bidirecional](desktop-bidirectional-filtering.md) |Explica a filtragem cruzada bidirecional no Power BI Desktop (o white paper também aborda o SQL Server Analysis Services 2016, pois ambos têm o mesmo comportamento). |
 | [DirectQuery no SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |Para SQL Server 2016, o DirectQuery foi reprojetado para melhorar consideravelmente a velocidade e o desempenho, no entanto, agora está também mais complexo de compreender e implementar. |
 | [Power BI e SAP BW](https://aka.ms/powerbiandsapbw)| Este documento descreve como os clientes da SAP podem se beneficiar conectando o Power BI aos sistemas SAP BW (Business Warehouse) existentes deles.|

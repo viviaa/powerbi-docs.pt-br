@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 324a9b7f8a3718c6da0efb7533751d88dd717bcf
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657795"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728078"
 ---
 # <a name="conditional-formatting-in-tables"></a>Formatação condicional em tabelas 
 Com a formatação condicional para tabelas, você pode especificar cores personalizadas para as células com base nos valores das células ou em outros valores ou campos, inclusive usando cores de gradiente. Também é possível exibir valores de célula com barras de dados. 
@@ -133,5 +133,5 @@ Há muito mais variações que você pode criar apenas usando sua imaginação e
 ## <a name="next-steps"></a>Próximas etapas
 Para obter mais informações, consulte o seguinte artigo:  
 
-* [Dicas e truques para formatação com cores no Power BI](service-tips-and-tricks-for-color-formatting.md)  
+* [Dicas e truques para formatação com cores no Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

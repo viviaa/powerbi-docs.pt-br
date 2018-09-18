@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 2147a5ccb1df8bd107d662559c97400a24dd490e
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: c407b967ce4a8c1ee31b9a750f2e281ff0a8caa7
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092105"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558483"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicar visuais personalizados no AppSource
 Saiba como você pode publicar seu visual personalizado no AppSource para que outros possam descobrir e usá-lo.
@@ -32,7 +32,7 @@ Depois que você terminar de codificar e testar seu visual personalizado e empac
 | --- | --- | --- |
 | O pacote pbiviz contém todos os metadados necessários |Sim |Nome do visual<br>Nome de exibição<br>GUID<br>Versão<br>Descrição<br>Email e nome do autor |
 | Arquivo de relatório .pbix de exemplo |Sim |Para demonstrar seu visual, você deverá ajudar os usuários a se familiarizarem com ele. Você deve enfatizar o valor que o visual traz para o usuário e dar exemplos de uso, opções de formatação, etc. Você também pode adicionar uma página de *"dicas"* no final com algumas dicas e truques, coisas a serem evitadas e assim por diante.<br>O arquivo de relatório .pbix de exemplo deve trabalhar offline, sem nenhuma conexão externa |
-| Ícone |Sim |Você deve incluir o logotipo visual personalizado que será exibido na frente da loja. O formato pode ser .png, .jpg, .jpeg ou .gif. Ele deve ter exatamente 300px (largura) x 300px (altura). **Importante!** Examine o [guia curto](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) com atenção antes de enviar o ícone. |
+| Ícone |Sim |Você deve incluir o logotipo visual personalizado que será exibido na frente da loja. O formato pode ser .png, .jpg, .jpeg ou .gif. Ele deve ter exatamente 300px (largura) x 300px (altura). **Importante!** Examine o [guia curto](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) com atenção antes de enviar o ícone. |
 | Capturas de tela |Sim |Você deve fornecer, pelo menos, uma captura de tela. O formato pode ser .png, .jpg, .jpeg ou .gif. Deve ter exatamente 1366px (largura) x 768px (altura). O tamanho do arquivo não deve exceder 1024kb. *Para melhor utilização, adicione bolhas de texto para articular a proposição de valores dos principais recursos mostrados em cada captura de tela.* |
 | Link de download de suporte |Sim |Forneça a URL para dar suporte a clientes que têm problemas com seu visual. O formato da URL deve incluir https:// ou http://. |
 | Link do documento de privacidade |Sim |Forneça um link para a política de privacidade para clientes que usam o visual. O formato do link deve incluir https:// ou http://. |
@@ -130,7 +130,7 @@ Depois de criar seu visual, você tem a opção de certificá-lo. Isso significa
 
 ## <a name="next-steps"></a>Próximas etapas
 [Usar ferramentas de desenvolvedor para criar visuais personalizados](../service-custom-visuals-getting-started-with-developer-tools.md)  
-[Visualizações no Power BI](../power-bi-report-visualizations.md)  
+[Visualizações no Power BI](../visuals/power-bi-report-visualizations.md)  
 [Visualizações personalizadas no Power BI](../power-bi-custom-visuals.md)  
 [*Certificando* um visual personalizado](../power-bi-custom-visuals-certified.md)
 

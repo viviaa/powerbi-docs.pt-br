@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2ff39f0594150c7b29fd88e8f4e4f6baef86e806
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 58a739c0d566030d2b09094264da14f6afd6d6fc
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044315"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727572"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Modo de tela inteira no serviço do Power BI
 ## <a name="what-is-full-screen-mode"></a>O que é o modo de tela inteira?
@@ -24,7 +24,7 @@ ms.locfileid: "44044315"
 
 Exiba seu conteúdo do Power BI (painéis, páginas de relatório, blocos e visualizações) sem a distração de menus e de barras de navegação.  Você obtém uma visão completa e não adulterada do seu conteúdo instantaneamente, o tempo todo. Isso, às vezes, é chamado de Modo de TV. A funcionalidade disponível no modo de tela inteira varia de acordo com o conteúdo. 
 
-Se você estiver usando o Power BI móvel, a [tela inteira estará disponível para aplicativos móveis do Windows 10](mobile-windows-10-app-presentation-mode.md). O Power BI Desktop não tem um modo de tela inteira para relatórios ou visualizações, mas tem Ajustar à página para [Exibição de Relacionamentos e exibição de Relatório](desktop-report-view.md) e [modo de foco para visuais de relatório](service-focus-mode.md).
+Se você estiver usando o Power BI móvel, a [tela inteira estará disponível para aplicativos móveis do Windows 10](consumer/mobile/mobile-windows-10-app-presentation-mode.md). O Power BI Desktop não tem um modo de tela inteira para relatórios ou visualizações, mas tem Ajustar à página para [Exibição de Relacionamentos e exibição de Relatório](desktop-report-view.md) e [modo de foco para visuais de relatório](service-focus-mode.md).
 
  
 

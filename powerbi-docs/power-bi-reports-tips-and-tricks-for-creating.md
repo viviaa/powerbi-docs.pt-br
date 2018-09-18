@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8305b9eab95e2b13f9104de6bcefe3f03a95d2f5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 891d496fcdf809a816c9c18a6d21e4c486f76d76
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34254868"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726790"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Dicas e truques para criar relatórios no Power BI Desktop e no serviço do Power BI
 Para aproveitar ao máximo seus dados, às vezes você precisa de uma ajuda extra. Reunimos algumas dicas e truques que você pode usar ao criar relatórios no Microsoft Power BI Desktop, serviço do Power BI *e* nas edições Pro-Plus do Microsoft Excel 2013 ou 2016 com o suplemento do Power Pivot habilitado e o Power Query instalado e habilitado.
@@ -167,7 +167,7 @@ DAX é a linguagem de fórmula de cálculo no Power BI Desktop.  Ele é otimizad
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Serviço do Power BI *e* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportspower-bi-visualization-best-practicesmd"></a>Leia o white paper: [Principles for designing Power BI reports](power-bi-visualization-best-practices.md) (Princípios para a criação de relatórios do Power BI)
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Leia o white paper: [Principles for designing Power BI reports](visuals/power-bi-visualization-best-practices.md) (Princípios para a criação de relatórios do Power BI)
 Este documento fornece as práticas recomendadas para a criação de relatórios no Power BI. Começando com o planejamento, ele aborda os princípios de design que podem ser aplicados aos relatórios e às páginas, bem como os visuais individuais que compõem esse relatório. Muitas dessas práticas recomendadas também se aplicam ao design de dashboard.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Leia e/ou assista a “How to design visually stunning reports (and dashboards) in Power BI” (Como criar relatórios [e dashboards] visualmente impressionantes no Power BI)
@@ -209,7 +209,7 @@ Evite a variedade de visualização para fins diversos.  As visualizações deve
 * Preste atenção em como os [gráficos são classificados](power-bi-report-change-sort.md).  Se você deseja chamar a atenção para o número mais alto ou mais baixo, classifique pela medida.  Se você quiser que as pessoas possam localizar rapidamente uma categoria específica em muitas outras categorias, classifique pelo eixo.  
 * Gráficos de pizza são recomendados se eles tiver menos de oito categorias. Porque você não pode comparar valores lado a lado, é mais difícil comparar valores em um gráfico de pizza do que em gráficos de barras e colunas. Os gráficos de pizza pode ser bons para exibir relações de parte de inteiro em vez de comparar as partes. E gráficos de medidor são ótimos para exibir o status atual no contexto de uma meta.    
 
-Para obter diretrizes específicas da visualização, veja [Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+Para obter diretrizes específicas da visualização, veja [Tipos de visualização no Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ### <a name="learn-more-about-best-practice-dashboard-design"></a>Saiba mais sobre a Melhor Prática do Painel de Design
 Alguns dos nossos livros favoritos incluem:

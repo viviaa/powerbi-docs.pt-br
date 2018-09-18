@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 8d7653e6f390959df745fa2b19076ee89b26b1bc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 802107ce9c12075ffc51461375ca3e9a313f2be1
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34293687"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558414"
 ---
 # <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Início Rápido: Inserir um relatório do Servidor de Relatórios do Power BI usando um iFrame no SharePoint Server
 
@@ -24,7 +24,7 @@ Neste início rápido, você aprenderá a inserir um relatório do Servidor de R
 ## <a name="prerequisites"></a>Pré-requisitos
 * Você precisará ter o [Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/en-us/report-server/) instalado e configurado.
 * Você precisará ter o [Power BI Desktop otimizado para o Servidor de Relatórios do Power BI](install-powerbi-desktop.md) instalado.
-* Você precisará ter um ambiente do [SharePoint](https://docs.microsoft.com/en-us/sharepoint/install/install) instalado e configurado.
+* Você precisará ter um ambiente do [SharePoint](https://docs.microsoft.com/sharepoint/install/install) instalado e configurado.
 
 ## <a name="creating-the-power-bi-report-server-report-url"></a>Criando a URL de relatório do Servidor de Relatórios do Power BI
 

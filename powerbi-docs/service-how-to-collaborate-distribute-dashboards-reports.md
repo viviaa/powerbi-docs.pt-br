@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 585c1c854ed3e95cc176d34f442fec6416f23dcd
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623943"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726652"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Como devo colaborar e compartilhar no Power BI?
 
@@ -83,9 +83,9 @@ Nos aplicativos móveis do Power BI para dispositivos iOS e Android, você pode 
 
 Você está compartilhando um instantâneo do bloco, relatório ou visual e seus destinatários veem exatamente como ele era quando você enviou o email. O email também contém um link para o dashboard ou relatório. Se eles tiverem uma licença do Power BI Pro ou se o conteúdo estiver em uma [capacidade Premium](service-premium.md) e você já tiver compartilhado o objeto com eles, eles poderão abri-lo. Envie instantâneos de blocos para qualquer pessoa &#151; não apenas para seus colegas, no mesmo domínio de email.
 
-Mais informações sobre [anotação e compartilhamento de blocos, relatórios e visuais](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) nos aplicativos móveis do iOS e Android.
+Mais informações sobre [anotação e compartilhamento de blocos, relatórios e visuais](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) nos aplicativos móveis do iOS e Android.
 
-Também é possível [compartilhar um instantâneo de um bloco](mobile-windows-10-phone-app-get-started.md) no aplicativo do Power BI para dispositivos Windows 10.
+Também é possível [compartilhar um instantâneo de um bloco](consumer/mobile/mobile-windows-10-phone-app-get-started.md) no aplicativo do Power BI para dispositivos Windows 10.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Imprimir ou salvar como PDF ou outro arquivo estático
 Você pode imprimir ou salvar como PDF (ou outro formato de arquivo estático) um dashboard inteiro, um bloco do dashboard, uma página de relatório ou uma visualização do serviço do Power BI. Relatórios podem ser impressos somente com uma página por vez – não é possível imprimir o relatório inteiro ao mesmo tempo. Mais sobre como [imprimir ou salvar como um arquivo estático](service-print.md).

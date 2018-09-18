@@ -2,28 +2,28 @@
 title: Criar mapa do ArcGIS pelo ESRI no Power BI
 description: 'Criar um mapa do ArcGIS pelo ESRI no Power BI '
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 127187367b2ae5680b50bc1e72de7214c522705e
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168056"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728239"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI
-Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](power-bi-visualizations-arcgis.md).
+Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](visuals/power-bi-visualizations-arcgis.md).
 
 A combinação de mapas do ArcGIS e do Power BI leva o mapeamento para além da apresentação de pontos em um mapa, para um nível totalmente novo. Escolha entre mapas de base, tipos de local, temas, estilos de símbolo e camadas de referência para criar visualizações de mapas informativas e bonitas. A combinação das camadas de dados competentes em um mapa com análise espacial transmite uma compreensão mais ampla dos dados na sua visualização.
 
- Embora não seja possível criar mapas do ArcGIS em um dispositivo móvel, é possível exibir e interagir com ele. Consulte [Interagindo com mapas do ArcGIS](power-bi-visualizations-arcgis.md).
+ Embora não seja possível criar mapas do ArcGIS em um dispositivo móvel, é possível exibir e interagir com ele. Consulte [Interagindo com mapas do ArcGIS](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > GIS significa Geographic Information Science (Ciência de Informações Geográficas).
@@ -329,7 +329,7 @@ Esse é um bug que está sendo resolvido.  Enquanto isso, para limpar o cache, t
 
 **O ArcGIS Maps para Power BI dá suporte aos shapefiles da Esri?**
 
-O ArcGIS Maps para Power BI detecta automaticamente os limites padrão como países/regiões, estados/províncias e CEP. Se você precisar fornecer suas próprias formas, faça isso usando o [Shape Maps para Power BI Desktop (Preview)](desktop-shape-map.md).
+O ArcGIS Maps para Power BI detecta automaticamente os limites padrão como países/regiões, estados/províncias e CEP. Se você precisar fornecer suas próprias formas, faça isso usando o [Shape Maps para Power BI Desktop (Preview)](visuals/desktop-shape-map.md).
 
 **Posso exibir meus mapas do ArcGIS offline?**
 
@@ -340,7 +340,7 @@ Não, o Power BI precisa de conectividade de rede para exibir os mapas.
 Ainda não. [Vote para essa ideia](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases) e nós lhe enviaremos um email quando iniciar o trabalho com esse recurso.  
 
 ## <a name="next-steps"></a>Próximas etapas
-[Interagindo com um mapa do ArcGIS que foi compartilhado com você](power-bi-visualizations-arcgis.md)
+[Interagindo com um mapa do ArcGIS que foi compartilhado com você](visuals/power-bi-visualizations-arcgis.md)
 
 [Postagem do blog anunciando a disponibilidade do ArcGIS Maps para o Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

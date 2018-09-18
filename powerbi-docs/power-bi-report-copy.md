@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 760eda5625bd52bf7129ba7cfe5f213921d469b7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247793"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725617"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Crie um novo relatório por meio de um relatório existente (copiar um relatório)
 Talvez você tenha um relatório que já se conecta ao seu conjunto de dados e tenha alguns visuais que deseja reutilizar ou modificar.  Por que não simplesmente copiar esse relatório como base de um novo relatório?  Para fazer isso:
@@ -37,7 +37,7 @@ Talvez você tenha um relatório que já se conecta ao seu conjunto de dados e t
 5. Divirta-se atualizando e editando seu novo relatório.
 
 ## <a name="next-steps"></a>Próximas etapas:
-[Criar novas visualizações](power-bi-report-add-visualizations-ii.md)
+[Criar novas visualizações](visuals/power-bi-report-add-visualizations-ii.md)
 
 [Excluir visualizações](service-delete.md) que não são necessárias
 

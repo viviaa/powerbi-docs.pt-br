@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: c6c83c51779621b2b722ce0c21cbb00eecde1fb9
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: b56134314b9396dff1b965786e65e62129e5e7b9
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658163"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558437"
 ---
 # <a name="on-premises-data-gateway"></a>Gateway de dados local
 
@@ -89,7 +89,7 @@ Quando você adiciona uma fonte de dados ao gateway, é necessário fornecer cre
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 
-* No momento, não há suporte para a [Proteção de Informações do Azure](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
+* No momento, não há suporte para a [Proteção de Informações do Azure](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 )
 * No momento, não há suporte para o [Access Online](https://products.office.com/en-us/access)
 

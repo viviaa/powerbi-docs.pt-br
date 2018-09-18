@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4d237a308e059ce712872860031f122de9d6795c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d3d2e5dcbfb5163e20dc60470c240378278bbcf1
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34238411"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727227"
 ---
 # <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Criar uma exibição de um dashboard do Power BI otimizado para celulares
 Ao exibir painéis no aplicativo móvel do Power BI em um celular, observe que os blocos do painel são dispostos um após o outro, todos com o mesmo tamanho. No serviço do Power BI, você pode criar uma exibição personalizada de qualquer um de seus dashboards, especificamente, para telefones.
@@ -58,6 +58,6 @@ Ao virar o telefone para os lados, você verá o dashboard da forma como está d
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Criar relatórios otimizados para os aplicativos de telefone do Power BI](desktop-create-phone-report.md)
-* [Criar visuais responsivos otimizados para qualquer tamanho](desktop-create-responsive-visuals.md)
+* [Criar visuais responsivos otimizados para qualquer tamanho](visuals/desktop-create-responsive-visuals.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

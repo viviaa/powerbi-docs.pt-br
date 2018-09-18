@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: c47722fda28fc45289858f082a0838f583b53dbb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 598b3e75aa134a5b5e2ee2a8c01316133b60fdac
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34296769"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727250"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparando o Servidor de Relatórios do Power BI e o serviço do Power BI
 
@@ -40,7 +40,7 @@ O Servidor de Relatórios do Power BI e o serviço do Power BI têm muitas semel
 | Insights rápidos | Não | Sim | [Gerar automaticamente as informações sobre os dados com o Power BI](../service-insights.md) 
 | Analisar no Excel | Não | Sim | [Analisar no Excel](../service-analyze-in-excel.md) 
 | Relatórios paginados | Sim | Não | Relatórios paginados não estão disponíveis no serviço do Power BI, mas você pode [fixar itens de relatório paginados a dashboards do Power BI](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
-| Aplicativos móveis do Power BI | Sim | Sim | [Visão geral de aplicativos móveis no Power BI](../mobile-apps-for-mobile-devices.md) 
+| Aplicativos móveis do Power BI | Sim | Sim | [Visão geral de aplicativos móveis no Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | Mapas do ARC GIS | Não | Sim | [Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI](../power-bi-visualization-arcgis.md)
 | Assinaturas de email para relatórios do Power BI | Não | Sim | [Assinar um relatório ou dashboard](../service-report-subscribe.md) no serviço do Power BI 
 | Assinaturas de email para relatórios paginados | Sim | Não | [Entrega de email no Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
@@ -48,8 +48,8 @@ O Servidor de Relatórios do Power BI e o serviço do Power BI têm muitas semel
 | Segurança em nível de linha | Somente por meio da fonte de dados no modo DirectQuery | Disponível nos modos de DirectQuery (fonte de dados) e de Importação | [RLS (segurança em nível de linha)](../service-admin-rls.md) com o Power BI 
 | Modo de tela inteira | Não | Sim | [Modo de tela inteira](../service-fullscreen-mode.md) no serviço do Power BI 
 | Colaboração avançada com o Office 365 | Não | Sim | [Colaborar em um espaço de trabalho de aplicativo](../service-collaborate-power-bi-workspace.md) com o Office 365 
-| Visuais do R | Não | Sim | [Criar visuais do R](../service-r-visuals.md) no serviço do Power BI  
-| Recursos de versão prévia | Não | Sim | [Aceitar recursos de visualização do serviço](../service-preview-features.md) do Power BI 
+| Visuais do R | Não | Sim | [Criar visuais do R](../visuals/service-r-visuals.md) no serviço do Power BI  
+| Recursos em versão prévia | Não | Sim | [Aceitar recursos de visualização do serviço](../service-preview-features.md) do Power BI 
 | Visuais personalizados | Sim | Sim | [Elementos visuais personalizados no Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Versão otimizada para o Servidor de Relatório, disponível para download com o Servidor de Relatório | Versão otimizado para o serviço do Power BI, disponível na Windows Store | [Power BI Desktop para o servidor de relatório](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop para o serviço do Power BI](http://aka.ms/pbidesktopstore)
 

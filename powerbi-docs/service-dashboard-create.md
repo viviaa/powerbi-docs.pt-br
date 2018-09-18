@@ -1,5 +1,5 @@
 ---
-title: Criar um dashboard do serviço do Power BI de um relatório
+title: Criar um dashboard do Power BI de um relatório
 description: Criar um dashboard do Power BI de um relatório
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: a528c4a641dbdecce7d33f29e7afbe6118ee34b5
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168079"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726468"
 ---
-# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Criar um dashboard do Power BI no serviço do Power BI
+# <a name="create-a-power-bi-dashboard-from-a-report"></a>Criar um dashboard do Power BI de um relatório
 Você já leu [Dashboards no Power BI](service-dashboards.md) e agora deseja criar o seu próprio. Há várias maneiras diferentes de criar um dashboard de controle – de um relatório, desde o início, de um conjunto de dados, duplicando um dashboard existente e muito mais.  
 
 Pode parecer complicado quando você está começando, então vamos começar criando um painel rápido e fácil fixando visualizações de um relatório que já esteja criado. Depois de concluir este guia de início rápido, você terá um bom entendimento da relação entre painéis e relatórios, de como abrir o modo de exibição de edição no editor de relatórios, como fixar blocos e navegar entre um painel e um relatório. Em seguida, use os links no sumário à esquerda ou **Próximas etapas** na parte inferior para passar para os tópicos mais avançados.
@@ -25,7 +25,7 @@ Pode parecer complicado quando você está começando, então vamos começar cri
 ## <a name="who-can-create-a-dashboard"></a>Quem pode criar um painel?
 Criar um painel é um recurso do **criador** e requer permissões de edição para o relatório. As permissões de edição estão disponíveis para os criadores do relatório e os colegas aos quais o criador concede acesso. Por exemplo, se David criar um relatório no workspaceABC e, em seguida, o adicionar como membro desse espaço de trabalho, você e David terão permissão de edição. Por outro lado, se um relatório tiver sido compartilhado com você diretamente ou como parte de um [aplicativo do Power BI](service-install-use-apps.md) (você está **consumindo** o relatório), não será possível fixar blocos em um painel.
 
-> **OBSERVAÇÃO**: os dashboards são um recurso do serviço do Power BI, não do Power BI Desktop. Os dashboards não podem ser criados em dispositivos móveis Power BI, mas podem ser [exibidos e compartilhados](mobile-apps-view-dashboard.md).
+> **OBSERVAÇÃO**: os dashboards são um recurso do serviço do Power BI, não do Power BI Desktop. Os dashboards não podem ser criados em dispositivos móveis Power BI, mas podem ser [exibidos e compartilhados](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 

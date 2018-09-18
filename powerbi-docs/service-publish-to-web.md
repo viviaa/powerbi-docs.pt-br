@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/28/2018
+ms.date: 09/13/2018
 LocalizationGroup: Share your work
-ms.openlocfilehash: b305c684ccf0938cfa8f5d9a2aa06f27a8c8be12
-ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
+ms.openlocfilehash: 0ef3bd027c7fc14f88a569cab160f90044689784
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43380326"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558529"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicar na Web por meio do Power BI
 
@@ -61,7 +61,7 @@ As etapas a seguir descrevem como usar o recurso **Publicar na Web**.
 
 Quando você insere o conteúdo em uma postagem no blog, normalmente, é necessário ajustá-lo em um tamanho específico da tela.  Você também pode ajustar a altura e a largura na marca iFrame, conforme necessário, mas também precisa garantir que seu relatório se ajuste na área determinada do iFrame; por isso, é necessário definir um Modo de Exibição apropriado ao editar o relatório.
 
-A tabela a seguir fornece diretrizes sobre o Modo de Exibição e como ele aparecerá quando for inserido.
+A tabela a seguir fornece diretrizes sobre o Modo de Exibição e como ele aparecerá quando for inserido. 
 
 | Modo de Exibição | Sua aparência quando inserido |
 | --- | --- |

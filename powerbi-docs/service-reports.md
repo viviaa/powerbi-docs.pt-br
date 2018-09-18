@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: da9a4ffad948a43077d864e442af36b0db6bb617
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 80e5b31f4fd8e59333848da26995388874d1746c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136952"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728032"
 ---
 # <a name="reports-in-power-bi"></a>Relatórios no Power BI
 ## <a name="what-is-a-power-bi-report"></a>O que é um relatório do Power BI?
@@ -27,7 +27,7 @@ Esse relatório tem 3 páginas (ou guias) e estamos exibindo a página de Visão
 
 Se for novo no Power BI, você poderá obter uma boa base lendo o tópico [Conceitos básicos do Power BI](service-basic-concepts.md)
 
-Os relatórios são um recurso do serviço do Power BI e do Power BI Desktop. A experiência de trabalhar com relatórios é quase idêntica. No entanto, para dispositivos móveis, você não pode criar relatórios, mas você pode [exibir, compartilhar e fazer anotações em relatórios](mobile-reports-in-the-mobile-apps.md).
+Os relatórios são um recurso do serviço do Power BI e do Power BI Desktop. A experiência de trabalhar com relatórios é quase idêntica. No entanto, para dispositivos móveis, você não pode criar relatórios, mas você pode [exibir, compartilhar e fazer anotações em relatórios](consumer/mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Vantagens dos relatórios
 Os relatórios são baseados em um único conjunto de dados. Cada uma das visualizações em um relatório representa uma informação preciosa. E as visualizações não estáticas. Você pode adicionar e remover dados, alterar os tipos de visualização e aplicar filtros e segmentações de dados ao se aprofundar nos dados para descobrir informações e procurar respostas. Como um dashboard, mas mais do que isso, um relatório é altamente interativo e altamente personalizável e as visualizações são atualizadas conforme os dados subjacente se alteram.

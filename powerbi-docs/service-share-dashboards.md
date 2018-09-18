@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624381"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727296"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Compartilhe seus painéis e os relatórios do Power BI com colegas e outras pessoas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir painéis e relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -27,7 +27,7 @@ Com o compartilhamento, se você compartilhar o conteúdo dentro ou fora de sua 
 
 Você pode compartilhar painéis e relatórios da maioria dos lugares no serviço Power BI: seus Favoritos, Recentes, Compartilhado comigo (se o proprietário permite isso), Meu Espaço de Trabalho ou outros espaços de trabalho. Quando você compartilha um painel ou relatório, as pessoas com as quais você o compartilha poderão exibi-lo e interagir com ele, mas não poderão editá-lo. Elas veem os mesmos dados que você no painel ou relatório, a menos que a [RLS (segurança em nível de linha)](service-admin-rls.md) seja aplicada. Os colegas com quem você compartilha também podem compartilhá-lo com os colegas deles, se você permitir. As pessoas de fora de sua organização também podem exibir e interagir com o painel ou relatório, mas não podem compartilhá-lo. 
 
-Você também pode [compartilhar um dashboard de qualquer um dos aplicativos móveis do Power BI](mobile-share-dashboard-from-the-mobile-apps.md). Você pode compartilhar dashboards do serviço do Power BI e dos aplicativos móveis do Power BI, mas não do Power BI Desktop.
+Você também pode [compartilhar um dashboard de qualquer um dos aplicativos móveis do Power BI](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Você pode compartilhar dashboards do serviço do Power BI e dos aplicativos móveis do Power BI, mas não do Power BI Desktop.
 
 ## <a name="video-share-a-dashboard"></a>Vídeo: compartilhar um dashboard
 Veja Amanda compartilhando seu dashboard com os colegas dentro e fora da empresa. Em seguida, siga as instruções passo a passo abaixo do vídeo para testá-la por conta própria.

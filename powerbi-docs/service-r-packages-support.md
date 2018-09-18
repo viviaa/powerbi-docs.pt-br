@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2d8509c83ccce3d76926d926c64061ca78c100d
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: fc4d62134bccae1a1ac0fd10444dd47c84ecc945
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256160"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727020"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Pacotes do R no serviço do Power BI
 Você pode usar a [linguagem de programação R](https://www.r-project.org/) avançada para criar elementos visuais no serviço do Power BI. Muitos pacotes do R têm suporte no serviço do Power BI (e mais têm suporte o tempo todo), e alguns pacotes não têm.
 
-As seções a seguir fornecem uma tabela alfabética de quais pacotes do R têm suporte no Power BI e quais não têm. Para obter mais informações sobre o R no Power BI, consulte o artigo [Visuais do R](service-r-visuals.md).
+As seções a seguir fornecem uma tabela alfabética de quais pacotes do R têm suporte no Power BI e quais não têm. Para obter mais informações sobre o R no Power BI, consulte o artigo [Visuais do R](visuals/service-r-visuals.md).
 
 ## <a name="request-support-for-a-new-r-package"></a>Solicitar suporte para um novo pacote de R
 Os pacotes de R com suporte para o **serviço do Power BI** são encontrados na seção a seguir, intitulada **Pacotes com suporte**. Se você quiser solicitar o suporte de um pacote de R não encontrado nessa lista, será possível enviar um email com sua solicitação para a [Equipe de Comentários do R no Power BI](mailto:rinpbifb@microsoft.com).
@@ -940,7 +940,7 @@ A tabela a seguir mostra quais pacotes **não tem suporte** no serviço do Power
 ## <a name="next-steps"></a>Próximas etapas
 Para obter mais informações sobre o R no Power BI, confira os seguintes artigos:
 
-* [Criar visuais do R no serviço do Power BI](service-r-visuals.md)
+* [Criar visuais do R no serviço do Power BI](visuals/service-r-visuals.md)
 * [Criar elementos visuais do Power BI usando o R](desktop-r-visuals.md)
 * [Executar scripts do R no Power BI Desktop](desktop-r-scripts.md)
 * [Uso do R no Editor de Consultas](desktop-r-in-query-editor.md)

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
-ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
+ms.openlocfilehash: d540dd29214422dfc33dca2bf2fb1cb74ebe6de7
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241558"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558553"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Solucionando problemas do aplicativo inserido
 
@@ -36,7 +36,7 @@ A tecla F12 inicia a janela do desenvolvedor no navegador. Essa ferramenta forne
 
 ### <a name="extracting-error-details-from-power-bi-response"></a>Extração de detalhes do erro da resposta do Power BI
 
-Este trecho de código mostra como extrair os detalhes do erro da exceção HTTP:
+Este snippet de código mostra como extrair os detalhes do erro da exceção HTTP:
 
 ```csharp
 public static string GetExceptionText(this HttpOperationException exc)
@@ -105,13 +105,13 @@ O back-end do aplicativo pode precisar atualizar o token de autenticação antes
 
 Se você estiver usando o Power BI Embedded e utilizando a autenticação direta do Azure AD e está recebendo mensagens ao fazer logon, como ***error:unauthorized_client, error_description:AADSTS70002: erro ao validar as credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de Usuário ou senha incorreta***. Isso acontece porque a autenticação direta foi desativada por padrão em 14/06/2018.
 
-Há uma maneira de fazer a reativação usando uma [Política do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) que pode ser no escopo da organização ou uma [entidade de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+Há uma maneira de fazer a reativação usando uma [Política do Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) que pode ser no escopo da organização ou uma [entidade de serviço](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 É recomendável habilitar isso de acordo com o aplicativo.
 
 Para criar essa política, você precisa ser um **administrador global** do diretório em que está criando a política e a atribuição. Aqui está um script de exemplo para criar a política e atribuí-la ao SP para este aplicativo:
 
-1. Instale o [módulo do PowerShell de visualização do Azure AD](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Instale o [módulo do PowerShell de visualização do Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 2. Execute os seguintes comandos do PowerShell, linha por linha, (certificando-se de que a variável $sp não tem mais de um aplicativo como resultado).
 
@@ -274,7 +274,7 @@ Isso ocorre porque a URL de redirecionamento especificada para o aplicativo de s
 
 Se você quiser editar o aplicativo registrado, aprenda a editar o [aplicativo registrado no AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), assim, o aplicativo poderá fornecer acesso a APIs Web.
 
-Se você quiser editar o perfil do usuário do Power BI ou os dados, aprenda a editar os [dados do Power BI](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+Se você quiser editar o perfil do usuário do Power BI ou os dados, aprenda a editar os [dados do Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 Para saber mais, veja [Perguntas frequentes do Power BI Embedded](embedded-faq.md).
 
