@@ -2,33 +2,36 @@
 title: Adicionar parâmetros de relatório do Power BI usando a URL
 description: Filtre um relatório usando parâmetros da cadeia de caracteres de consulta de URL e filtre até mesmo em mais de um campo.
 author: mihart
+ms.author: mihart
 manager: annebe
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/09/2018
-ms.author: mihart
+ms.date: 09/14/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 99df72454fce76c648cf2f354f3a8ec225284c09
-ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
+ms.openlocfilehash: 1124163b985f575df08a9ba4f065c6a6b1abf54c
+ms.sourcegitcommit: cca21f8089e71b595d3aca30c95f12e4bbf767cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257333"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45626021"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrar relatórios usando parâmetros da cadeia de caracteres de consulta na URL
+
 Ao abrir um relatório no serviço do Power BI, cada página do relatório tem sua própria URL exclusiva. Para filtrar essa página do relatório, é possível usar o painel Filtros na tela de relatório.  Outra opção é adicionar os parâmetros de cadeia de consulta na URL para filtrar o relatório. Talvez você tenha um relatório que gostaria de mostrar aos colegas, mas antes deseja filtrá-lo previamente para enviar a eles. Uma maneira de fazer isso é iniciar com a URL padrão do relatório, adicionar os parâmetros de filtro à URL e, em seguida, enviá-los a nova URL inteira por email.
 
 ![Relatório do Power BI no serviço](media/service-url-filters/power-bi-report2.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Usos dos parâmetros de cadeia de consulta
+
 Digamos que você esteja trabalhando no Power BI Desktop e deseje criar um relatório que contenha links para outros relatórios do Power BI, mas deseje mostrar apenas algumas das informações nos outros relatórios. Primeiro, filtre os relatórios usando os parâmetros de cadeia consulta e salve as URLs. Em seguida, crie uma tabela no Desktop com essas novas URLs de relatório.  Em seguida, publique e compartilhe o relatório.
 
 Alguém que esteja criando uma solução avançada do Power BI também pode usar os parâmetros de cadeia de consulta.  Usando o DAX, ela cria um relatório que gera uma URL do relatório filtrado dinamicamente, com base na seleção que seu cliente faz no relatório atual. Quando os clientes selecionam a URL, eles veem apenas as informações pretendidas. 
 
 ## <a name="query-string-parameter-syntax-for-filtering"></a>Sintaxe dos parâmetros da cadeia de caracteres de consulta para filtragem
+
 Com parâmetros, você pode filtrar o relatório usando um ou mais valores, mesmo quando esses valores contêm espaços ou caracteres especiais. A sintaxe básica é razoavelmente simples. Comece com a URL do relatório, adicione um ponto de interrogação e, em seguida, adicione a sintaxe do filtro.
 
 URL?filter=***Table***/***Field*** eq '***value***'
@@ -39,6 +42,7 @@ URL?filter=***Table***/***Field*** eq '***value***'
 * Os campos ocultos na exibição de relatório ainda podem ser filtrados.
 
 ### <a name="field-types"></a>Tipos de campo
+
 O tipo de campo pode ser número, data/hora ou cadeia de caracteres. O tipo usado precisa corresponder ao tipo definido no conjunto de dados.  Por exemplo, a especificação de uma coluna de tabela do tipo "cadeia de caracteres" não funcionará se você estiver procurando um valor de data/hora ou numérico em uma coluna de conjunto de dados definida como data (por exemplo, Table/StringColumn eq 1).
 
 * As **cadeias de caracteres** precisam ser colocadas entre aspas simples, como ‘nome do gerenciador’.
@@ -48,6 +52,7 @@ O tipo de campo pode ser número, data/hora ou cadeia de caracteres. O tipo usad
 Se ainda estiver confuso, continue lendo e nós explicaremos detalhadamente.  
 
 ## <a name="filter-on-a-field"></a>Filtrar em um campo
+
 Suponhamos que a URL do nosso relatório seja a seguinte.
 
 ![URL de início](media/service-url-filters/power-bi-filter-urls6.png)
@@ -73,6 +78,7 @@ Nosso relatório é filtrado para Carolina do Norte; todas as visualizações na
 ![](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Filtrar em vários campos
+
 Também é possível filtrar em vários campos adicionando mais parâmetros à sua URL. Vamos voltar ao nosso parâmetro de filtro original.
 
 ```
@@ -88,6 +94,7 @@ Para filtrar por campos adicionais, adicione um **and** e outro campo no mesmo f
 <iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="operators"></a>Operadores
+
 O Power BI dá suporte a diversos operadores além do **and**. A tabela a seguir lista esses operadores, juntamente com o tipo de conteúdo compatível com eles.
 
 |operador  | definição | cadeia de caracteres  | número | Data |  Exemplo|
@@ -105,6 +112,7 @@ O Power BI dá suporte a diversos operadores além do **and**. A tabela a seguir
 \** Quando **in** é usado, os valores à direita de **in** podem ser uma lista separada por vírgulas entre parênteses ou uma única expressão que retorna uma coleção.
 
 ### <a name="numeric-data-types"></a>Tipos de dados numéricos
+
 Um filtro de URL do Power BI pode incluir números nos formatos a seguir.
 
 |Tipo de número  |Exemplo  |
@@ -116,11 +124,13 @@ Um filtro de URL do Power BI pode incluir números nos formatos a seguir.
 |**flutuante**     | 5F ou 5f ou 0.5e1F ou 0.5e-1d        |
 
 ### <a name="date-data-types"></a>Tipos de dados de data
+
 O Power BI dá suporte ao OData V3 e V4 para os tipos de dados **Data** e **DateTimeOffset**.  As datas são representadas usando o formato EDM (2019-02-12T00:00:00). Isso significa que quando você especifica uma data como AAAA-MM-DD, o Power BI interpreta como AAAA-MM-DDT00:00:00.
 
 Por que essa distinção é importante? Digamos que você crie o parâmetro de cadeia de consulta **Table/Date gt 2018-08-03**.  Os resultados incluirão 3 de agosto de 2018 ou começarão em 4 de agosto de 2018? Como o Power BI converte sua consulta em **Table/Date gt 2018-08-03T00:00:00**, os resultados incluirão todas as datas que tiverem uma parte de hora diferente de zero, pois essas datas serão maiores que **2018-08-03T00:00:00**.
 
 ## <a name="special-characters-in-url-filters"></a>Caracteres especiais em filtros de URL
+
 Caracteres especiais e espaços exigem uma formatação adicional. Quando a consulta contiver espaços, traços ou outros caracteres não ASCII, prefixe esses caracteres especiais com um *código de escape* (**_x**) e o **Unicode** de 4 dígitos. Se o Unicode tiver menos que 4 caracteres, será necessário preenchê-lo com zeros. Aqui estão alguns exemplos.
 
 |Identificador  |Unicode  | Codificação para o Power BI  |
@@ -136,6 +146,7 @@ Table_x0020_Name/Column_x002B_Plus eq 3 ![visual de tabela renderizando caracter
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]' ![visual de tabela renderizando caracteres especiais](media/service-url-filters/power-bi-special-characters2.png)
 
 ### <a name="use-dax-to-filter-on-multiple-values"></a>Usar o DAX para filtrar vários valores
+
 Outra maneira de filtrar em vários campos é criar uma coluna calculada que concatena dois campos em um único valor. A partir daí, é possível filtrar nesse valor.
 
 Suponhamos, por exemplo, que haja dois campos: Território e Cadeia. No Power BI Desktop, [crie uma nova coluna Calculada](desktop-tutorial-create-calculated-columns.md) (campo) chamada TerritoryChain. Lembre-se que o nome do **Campo** não pode conter espaços. Veja a seguir a fórmula DAX da coluna.
@@ -147,25 +158,23 @@ Publique o relatório no serviço do Power BI e, em seguida, use a cadeia de car
     https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fixar um bloco de um relatório filtrado
+
 Após filtrar o relatório usando parâmetros da cadeia de caracteres de consulta, é possível fixar as visualizações do relatório em questão no seu dashboard.  O bloco no dashboard exibirá os dados filtrados; a seleção desse bloco do dashboard abrirá o relatório usado para criá-lo.  No entanto, a filtragem executada usando a URL não é salva com o relatório, e, quando o bloco do dashboard é selecionado, o relatório abre no estado não filtrado.  Isso significa que os dados exibidos no bloco do dashboard não corresponderão aos dados exibidos na visualização de relatório.
 
 Isso é útil quando você deseja ver resultados diferentes, filtrados no dashboard e não filtrados no relatório.
 
-> [!NOTE]
-> Os blocos de [página de relatório em tempo real](service-dashboard-pin-live-tile-from-report.md) fixos ainda não dão suporte a filtros de URL. 
-
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
+
 Há alguns pontos a serem considerados ao usar os parâmetros da cadeia de caracteres de consulta.
 
 * Quando o operador *in* é usado, os valores à direita de *in* podem ser uma lista separada por vírgulas entre parênteses.    
-* No Servidor de Relatórios do Power BI, você pode [passar parâmetros de relatório](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) incluindo-os em uma URL de relatório. Esses parâmetros de URL não são prefixados, porque são passados diretamente para o mecanismo de processamento de relatório.    
+* No Servidor de Relatórios do Power BI, você pode [passar parâmetros de relatório](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) incluindo-os em uma URL de relatório. Esses parâmetros de URL não são prefixados, porque são passados diretamente para o mecanismo de processamento de relatório.
 * A filtragem da cadeia de caracteres de consulta não funciona com [Publicar na Web](service-publish-to-web.md) nem com o Power BI Embedded.   
 * O tipo de dados Long é (2^53-1) devido a limitações de Javascript.
-* Os blocos de *página de relatório em tempo real* fixos ainda não dão suporte a filtros de URL. 
- 
+
 ## <a name="next-steps"></a>Próximas etapas
+
 [Fixar uma visualização em um dashboard](service-dashboard-pin-tile-from-report.md)  
 [Inscrever-se em uma avaliação gratuita](https://powerbi.microsoft.com/get-started/)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-
