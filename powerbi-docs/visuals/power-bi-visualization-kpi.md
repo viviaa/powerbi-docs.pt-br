@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bb1ebf08c7ffb7a18cc0dd273c767c082f89f1aa
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d3afa24c68db5ffcaec1dddae09b0b9719bf2bb5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728403"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543533"
 ---
 # <a name="kpi-visuals"></a>Visuais de KPI
 Um KPI (Indicador Chave de Desempenho) é uma indicação visual que comunica a quantidade de progresso feito em relação a uma meta mensurável. Para obter mais informações sobre KPIs, veja [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -42,7 +42,7 @@ Ou veja Will mostrando como criar elementos visuais de métrica únicos: medidor
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Abra o relatório no [Modo de Exibição de Edição](../service-reading-view-and-editing-view.md) e [adicione uma nova página](../power-bi-report-add-page.md).    
+1. Abra o relatório no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md) e [adicione uma nova página](../power-bi-report-add-page.md).    
 2. Selecione **Vendas > Total de Unidades Deste Ano**.  Esse será o indicador.
 3. Adicionar **Hora > Mês**.  Isso representará a tendência.
 4. IMPORTANTE: classifique o gráfico por **Mês**. Depois de converter a visualização em um KPI, não haverá opção para classificar.

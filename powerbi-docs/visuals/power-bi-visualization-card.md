@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8532fff7bc522a0ad0e59bd17580549bd9e68a23
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18c9fe3d50245ff1d0745c0a3ae1e830b3f9be45
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728415"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548317"
 ---
 # <a name="card-visualizations"></a>Visualizações de cartão
 Às vezes, um único número é a coisa mais importante que você deseja acompanhar no seu painel ou relatório do Power BI, como as vendas totais, a fatia de mercado ano após ano ou o total de oportunidades. Esse tipo de visualização é chamado de *Cartão*. Assim como em quase todas as visualizações nativas do Power BI, os cartões podem ser criados usando o editor de relatório ou P e R.
@@ -51,13 +51,13 @@ Essas instruções usam o exemplo de análise de varejo. Para acompanhar, [baixe
 ## <a name="create-a-card-from-the-qa-question-box"></a>Criar um cartão a partir de uma caixa de perguntas de P e R
 A caixa pergunta de P e R é a maneira mais fácil de fazer um Cartão. A caixa de pergunta de P e R está disponível no serviço do Power BI (app.powerbi.com) de um painel ou relatório. As etapas abaixo descrevem como criar um Cartão a partir de um painel do serviço do Power BI. Se você deseja criar um cartão usando um P e R no Power BI Desktop, [siga estas instruções](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) para a versão prévia do P e R para relatórios do Desktop.
 
-1. Crie um [dashboard](../service-dashboards.md) e [obtenha dados](../service-get-data.md). Este exemplo usa a [amostra Análise de Oportunidade](../sample-opportunity-analysis.md).
+1. Crie um [dashboard](../consumer/end-user-dashboards.md) e [obtenha dados](../service-get-data.md). Este exemplo usa a [amostra Análise de Oportunidade](../sample-opportunity-analysis.md).
 
 1. Na parte superior do painel, comece a digitar o que você deseja saber sobre os dados na caixa de pergunta. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**DICA**: em um relatório de serviço do Power BI, no [Modo de Exibição de Edição](../service-reading-view-and-editing-view.md), selecione **Fazer uma pergunta** na barra de menus superior. Em um relatório do Power BI Desktop, encontre algum espaço aberto e clique duas vezes para abrir uma caixa de pergunta.
+>**DICA**: em um relatório de serviço do Power BI, no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md), selecione **Fazer uma pergunta** na barra de menus superior. Em um relatório do Power BI Desktop, encontre algum espaço aberto e clique duas vezes para abrir uma caixa de pergunta.
 
 3. Por exemplo, digite “número de oportunidades” na caixa de pergunta.
 
@@ -105,10 +105,10 @@ Você tem várias opções para alterar rótulos, texto, cor e muito mais. A mel
     ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Próximas etapas
-[Blocos de Dashboard no Power BI](../service-dashboard-tiles.md)
+[Blocos de Dashboard no Power BI](../consumer/end-user-tiles.md)
 
-[Dashboards no Power BI](../service-dashboards.md)
+[Dashboards no Power BI](../consumer/end-user-dashboards.md)
 
-[Power BI – conceitos básicos](../service-basic-concepts.md)
+[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

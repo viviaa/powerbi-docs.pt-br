@@ -11,25 +11,25 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3c6ae5351908bd71888040c3bc900323837935c2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726629"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546063"
 ---
 # <a name="the-report-editortake-a-tour"></a>O editor de relatório... Faça um tour
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Editar relatórios no serviço Power BI e Power BI Desktop
 O editor de relatório no serviço do Power BI e o editor de relatório no Power BI Desktop são muito semelhantes. O vídeo mostra o editor de relatório no Power BI Desktop e este artigo mostra o editor de relatório no serviço do Power BI. 
 
 ## <a name="the-difference-between-report-creators-and-report-consumers"></a>A diferença entre *criadores* de relatório e *consumidores* de relatório
-A capacidade de criar e editar um relatório está restrita a proprietários do relatório (também conhecidos como *criadores*). Se você estiver *consumindo* um relatório que foi compartilhado com você, ainda poderá abrir e interagir com o relatório no [modo de exibição somente leitura](service-reading-view-and-editing-view.md) do serviço Power BI, mas não terá todos os recursos robustos e abrangentes disponíveis para o criador do relatório.  
+A capacidade de criar e editar um relatório está restrita a proprietários do relatório (também conhecidos como *criadores*). Se você estiver *consumindo* um relatório que foi compartilhado com você, ainda poderá abrir e interagir com o relatório no [modo de exibição somente leitura](consumer/end-user-reading-view.md) do serviço Power BI, mas não terá todos os recursos robustos e abrangentes disponíveis para o criador do relatório.  
 
-Para saber mais sobre o modo de exibição de leitura do relatório, confira [Modo de exibição de leitura e modo de exibição de edição no serviço Power BI](service-reading-view-and-editing-view.md) 
+Para saber mais sobre o modo de exibição de leitura do relatório, confira [Modo de exibição de leitura e modo de exibição de edição no serviço Power BI](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-No serviço de Power BI, o *editor de relatório* só está disponível no [Modo de Exibição de Edição](service-reading-view-and-editing-view.md). Para abrir um relatório no Modo de Exibição de Edição, você deve ser o proprietário ou criador de um relatório.
+No serviço de Power BI, o *editor de relatório* só está disponível no [Modo de Exibição de Edição](consumer/end-user-reading-view.md). Para abrir um relatório no Modo de Exibição de Edição, você deve ser o proprietário ou criador de um relatório.
 
 O editor de relatório do Power BI é composto de 3 seções:  
 
@@ -126,9 +126,9 @@ A tela de relatório é o local em que seu trabalho é exibido. Quando você usa
 ## <a name="next-steps"></a>Próximas etapas:
 [Criar um relatório](service-report-create-new.md)
 
-Leia mais sobre relatórios no [serviço Power BI](service-reports.md), [Power BI Desktop](desktop-report-view.md) e [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
+Leia mais sobre relatórios no [serviço Power BI](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md) e [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

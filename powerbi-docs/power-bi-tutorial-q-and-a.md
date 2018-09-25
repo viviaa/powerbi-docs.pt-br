@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 320bcd80a6a258879568d323afdae60daacfee6c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c90db1c08ba1d172acc4d0e82d23409d835879a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727918"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543563"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Tutorial: Como usar P e R para criar visualizações e relatórios
-A [Visão geral de P e R](power-bi-q-and-a.md) apresentou você às P e R do Power BI e fez a distinção entre *consumidores* (que têm dashboards e relatórios compartilhados com eles) e *criadores* (proprietários de relatórios e conjuntos de dados subjacentes). A primeira parte deste tutorial é destinada principalmente a pessoas que consumem dashboards usando o serviço do Power BI. E a segunda parte é projetada para as pessoas que criam relatórios usando o serviço do Power BI ou Power BI Desktop. [A P e R e o Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) e [a P e R e o Power BI Embedded](developer/qanda.md) são abordados em artigos separados.
+A [Visão geral de P e R](consumer/end-user-q-and-a.md) apresentou você às P e R do Power BI e fez a distinção entre *consumidores* (que têm dashboards e relatórios compartilhados com eles) e *criadores* (proprietários de relatórios e conjuntos de dados subjacentes). A primeira parte deste tutorial é destinada principalmente a pessoas que consumem dashboards usando o serviço do Power BI. E a segunda parte é projetada para as pessoas que criam relatórios usando o serviço do Power BI ou Power BI Desktop. [A P e R e o Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) e [a P e R e o Power BI Embedded](developer/qanda.md) são abordados em artigos separados.
 
 P e R é interativo e até mesmo divertido e, mais frequentemente do que o contrário, uma pergunta levará a muitas outras conforme as visualizações revelam caminhos interessantes para buscar. Veja Amanda demonstrando o uso de P e R para criar visualizações, aprofundando-se nesses elementos visuais e fixando-os nos dashboards.
 
@@ -64,7 +64,7 @@ Use P e R para explorar o conjunto de dados e adicionar visualizações ao relat
 
 ![](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Para usar P e R em relatórios, você deverá ter permissões de edição para o relatório e para o conjunto de dados subjacente. No [tópico Visão geral de P e R](power-bi-q-and-a.md), nos referimos a isso como um cenário de *criador*. Portanto, se você estiver, em vez disso, *consumindo* um relatório compartilhado com você, a P e R não estará disponível.
+Para usar P e R em relatórios, você deverá ter permissões de edição para o relatório e para o conjunto de dados subjacente. No [tópico Visão geral de P e R](consumer/end-user-q-and-a.md), nos referimos a isso como um cenário de *criador*. Portanto, se você estiver, em vez disso, *consumindo* um relatório compartilhado com você, a P e R não estará disponível.
 
 1. Abra um relatório no modo de exibição de Edição (serviço do Power BI) ou de Relatório (Power BI Desktop) e selecione **Fazer uma pergunta** na barra de menus.
 
@@ -98,14 +98,14 @@ Para usar P e R em relatórios, você deverá ter permissões de edição para o
 Com P e R, você pode não apenas solicitar que seus dados falem por si próprios, mas também dizer ao Power BI como você deseja que a resposta seja exibida. Basta adicionar "como um <visualization type>" ao final da sua pergunta.  Por exemplo, "mostrar o volume de inventário pela fábrica como um mapa" e "mostrar inventário total como um cartão de crédito".  Experimente.
 
 ##  <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-- Se você tiver conectado a um conjunto de dados usando uma conexão dinâmica ou um gateway, será necessário [habilitar a P e R para esse conjunto de dados](service-q-and-a-direct-query.md).
+- Se você tiver conectado a um conjunto de dados usando uma conexão dinâmica ou um gateway, será necessário [habilitar a P e R para esse conjunto de dados](consumer/end-user-q-and-a-direct-query.md).
 
 - Você abriu um relatório e não viu a opção de P e R. Se você está usando o serviço do Power BI, certifique-se de abrir o relatório no modo de exibição de Edição. Se você não pode abrir o modo de exibição de Edição, isso significa que você não tem permissões de edição para esse relatório e não poderá usar P e R com esse relatório específico.
 
 ## <a name="next-steps"></a>Próximas etapas
-Voltar a [P e R no Power BI](power-bi-q-and-a.md)   
+Voltar a [P e R no Power BI](consumer/end-user-q-and-a.md)   
 [Tutorial: usar perguntas e respostas com o exemplo de Vendas de Varejo](power-bi-visualization-introduction-to-q-and-a.md)   
-[Dicas para fazer perguntas em P e R](service-q-and-a-tips.md)   
+[Dicas para fazer perguntas em P e R](consumer/end-user-q-and-a-tips.md)   
 [Preparar uma pasta de trabalho para Perguntas e respostas](service-prepare-data-for-q-and-a.md)  
-[Preparar um conjunto de dados local para P e R](service-q-and-a-direct-query.md)
+[Preparar um conjunto de dados local para P e R](consumer/end-user-q-and-a-direct-query.md)
 [Fixar um bloco ao dashboard de P e R](service-dashboard-pin-tile-from-q-and-a.md)

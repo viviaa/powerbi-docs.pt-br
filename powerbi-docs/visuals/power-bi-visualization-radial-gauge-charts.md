@@ -2,7 +2,7 @@
 title: Gráficos de medidor radial no Power BI
 description: Gráficos de medidor radial no Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097c7111e630b4c0c80e71d812be73cc232ea6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e090515514897dd4dcbc9962d0dadacae5611ff0
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728416"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565535"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Gráficos de medidor radial no Power BI
 Um gráfico de medidor radial tem um arco circular e exibe um único valor que acompanha o progresso em relação a um objetivo/KPI.  A meta, ou o valor de destino, é representada pela linha (agulha). Progresso em relação a esse objetivo é representado pelo sombreamento.  E o valor que representa o progresso é mostrado em negrito dentro do arco. Todos os valores possíveis são distribuídos uniformemente ao longo do arco, do mínimo (valor mais à esquerda) para o máximo (valor mais à direita).
@@ -92,7 +92,7 @@ Na Etapa 2, o Power BI usou o campo Valor para definir automaticamente o mínimo
 
 ### <a name="step-5-save-your-report"></a>Etapa 5: salvar o relatório
 1. [Salve o relatório](../service-report-save.md).
-2. [Adicione o gráfico de medidor como um bloco do dashboard](../service-dashboard-tiles.md). 
+2. [Adicione o gráfico de medidor como um bloco do dashboard](../consumer/end-user-tiles.md). 
 
 ## <a name="use-formatting-options-to-manually-set-minimum-maximum-and-target-values"></a>Use as opções de formatação para definir manualmente os valores Mínimo, Máximo e Destino
 1. Remova **Vendas Brutas Máx.** do **Valor máximo** também.
@@ -117,7 +117,7 @@ Na Etapa 2, o Power BI usou o campo Valor para definir automaticamente o mínimo
 
 [Fixar uma visualização em um dashboard](../service-dashboard-pin-tile-from-report.md)
 
-[ Power BI – conceitos básicos](../service-basic-concepts.md)
+[ Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 02c3998a95e7d481ee032513054933f1484ae7f9
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 8b4a0605df348957c4adb0d8e02975f4cd752307
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "36944596"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543765"
 ---
 # <a name="the-power-bi-samples"></a>Os exemplos do Power BI
 
@@ -79,7 +79,7 @@ Agora, explore o dashboard, o conjunto de dados e o relatório por conta própri
     ![página de relatório com visual correspondente realçado](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Se o bloco tivesse sido criado usando [P e R do Power BI](power-bi-q-and-a.md), a página de P e R teria sido aberta. Se o bloco estivesse [fixado do Excel](service-dashboard-pin-tile-from-excel.md), o Excel Online teria sido aberto dentro do Power BI.
+   > Se o bloco tivesse sido criado usando [P e R do Power BI](consumer/end-user-q-and-a.md), a página de P e R teria sido aberta. Se o bloco estivesse [fixado do Excel](service-dashboard-pin-tile-from-excel.md), o Excel Online teria sido aberto dentro do Power BI.
    > 
    > 
 1. De volta à guia **Conjuntos de dados**, você tem várias opções para explorar seu conjunto de dados.  Você não conseguirá abri-lo e ver todas as linhas e colunas (como no Power BI Desktop ou Excel).  Quando uma pessoa compartilha um pacote de conteúdo com os colegas, ela normalmente deseja compartilhar as ideias, e não fornecer acesso direto aos dados para seus colegas. Mas isso não significa que você não pode explorar o conjunto de dados.  
@@ -89,7 +89,7 @@ Agora, explore o dashboard, o conjunto de dados e o relatório por conta própri
    * Uma maneira de explorar o conjunto de dados é criar suas próprias visualizações e relatórios do zero.  Selecione o ícone de gráfico ![ícone de relatório](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) para abrir o conjunto de dados no modo de edição de relatório.
      
        ![relatório de nova marca](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Outra maneira de explorar o conjunto de dados é executar os [Insights Rápidos](service-insights.md). Selecione as reticências (...) e escolha **Obter insights**. Quando os insights estiverem prontos, selecione **Exibir insights**.
+   * Outra maneira de explorar o conjunto de dados é executar os [Insights Rápidos](consumer/end-user-insights.md). Selecione as reticências (...) e escolha **Obter insights**. Quando os insights estiverem prontos, selecione **Exibir insights**.
      
        ![Relatório de Insights](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -130,7 +130,7 @@ Agora, explore o conjunto de dados, as relações e o relatório por conta próp
 
 
 ## <a name="next-steps"></a>Próximas etapas
-[Conceitos básicos do Power BI](service-basic-concepts.md)
+[Conceitos básicos do Power BI](consumer/end-user-basic-concepts.md)
 
 [Exemplos para o serviço do Power BI](sample-datasets.md)
 

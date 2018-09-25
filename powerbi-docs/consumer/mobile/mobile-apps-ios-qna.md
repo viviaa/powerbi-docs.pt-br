@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 320ab8cef7ba2b36846550dcdb3171c7fb4b788a
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728422"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548088"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analista virtual de P e R nos aplicativos iOS – Power BI
 
@@ -137,11 +137,11 @@ Consulte a seção Reconhecimento de Fala de [Novidades no iOS](https://go.micro
 Melhore os resultados que você e seus clientes recebem ao usar o analista virtual da P e R em um conjunto de dados fazendo perguntas mais específicas ou aprimorando o conjunto de dados.
 
 ### <a name="how-to-ask-questions"></a>Como fazer perguntas
-* Siga estas [dicas para fazer perguntas na P e R](../../service-q-and-a-tips.md), no serviço do Power BI ou no analista virtual da P e R em seu aplicativo móvel iOS.
+* Siga estas [dicas para fazer perguntas na P e R](../end-user-q-and-a-tips.md), no serviço do Power BI ou no analista virtual da P e R em seu aplicativo móvel iOS.
 
 ### <a name="how-to-enhance-the-dataset"></a>Como aprimorar o conjunto de dados
 * Aprimore o conjunto de dados no Power BI Desktop ou no serviço do Power BI para [fazer com que seus dados funcionem bem com o analista virtual da P e R](../../service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Q&A no serviço do Power BI](../../power-bi-q-and-a.md)
+* [Q&A no serviço do Power BI](../end-user-q-and-a.md)
 * Dúvidas? Consulte a [seção Aplicativos móveis da comunidade do Power BI](https://go.microsoft.com/fwlink/?linkid=839277)

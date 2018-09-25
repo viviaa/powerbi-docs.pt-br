@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 04a385d67a8cc462b21c16cf7daaa5aa675436d9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728427"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549789"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorar blocos nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -23,7 +23,7 @@ Aplica-se a:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Telefones Android |Tablets Android |Dispositivos Windows 10 |
 
-Blocos são instantâneos dinâmicos dos seus dados, fixados a um painel. Os seus valores se alteram conforme os dados são alterados. **Você [adiciona blocos a um dashboard no serviço do Power BI](../../service-dashboard-tiles.md).** 
+Blocos são instantâneos dinâmicos dos seus dados, fixados a um painel. Os seus valores se alteram conforme os dados são alterados. **Você [adiciona blocos a um dashboard no serviço do Power BI](../end-user-tiles.md).** 
 
 Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco e interaja com eles. É possível abrir blocos com todos os tipos de visuais, incluindo blocos baseados no Bing e no R.
 

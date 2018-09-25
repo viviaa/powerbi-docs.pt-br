@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f070b6649d8d120a889961fffd6b9b923422293e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c42f484dc0f2515024a7fefe2edb1c81e286eb3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44729360"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548455"
 ---
 # <a name="funnel-charts"></a>Gráficos de funil
 Um gráfico de funil ajuda você a visualizar um processo linear com estágios conectados sequenciais. Por exemplo, um funil de vendas que acompanha os clientes por estágios: Cliente Potencial \> Cliente Potencial Qualificado \> Cliente Potencial \> Contrato \> Fechar.  Em um relance, a forma do funil transmite a integridade do processo que você está controlando.
@@ -70,7 +70,7 @@ Essas instruções usam o Exemplo de Análise de Oportunidade. Para acompanhar, 
    * Passo a passo (também conhecido como taxa de eliminação) que é % do estágio anterior (nesse caso, Estágio de Proposta/Estágio de Solução)
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Adicionar o Funil como um bloco do dashboard](../service-dashboard-tiles.md). 
+5. [Adicionar o Funil como um bloco do dashboard](../consumer/end-user-tiles.md). 
 6. [Salve o relatório](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Realce e filtragem cruzada
@@ -81,10 +81,10 @@ Realçar uma barra em um funil faz a filtragem cruzada das outras visualizaçõe
 1. No funil, selecione a barra **Proposta**. Isso destaca de forma cruzada as outras visualizações na página. Use CTRL para fazer uma seleção múltipla.
    
    ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. Para definir as preferências de como os visuais são realçados e filtrados de forma cruzada entre si, veja [Interações de visuais no Power BI](../service-reports-visual-interactions.md)
+2. Para definir as preferências de como os visuais são realçados e filtrados de forma cruzada entre si, veja [Interações de visuais no Power BI](../consumer/end-user-interactions.md)
 
 ## <a name="create-a-funnel-chart-in-qa"></a>Criar um gráfico de funil em P e R
-Abra o painel de Exemplo de Análise de Oportunidade ou qualquer outro painel que tenha pelo menos uma visualização fixada do conjunto de dados de Exemplo de Análise de Oportunidade.  Quando você digitar uma pergunta em P e R, o Power BI procura por respostas em todos os conjuntos de dados associados (blocos fixados) ao o painel selecionado. Para obter mais informações, veja [Power BI – Conceitos básicos](../service-basic-concepts.md).
+Abra o painel de Exemplo de Análise de Oportunidade ou qualquer outro painel que tenha pelo menos uma visualização fixada do conjunto de dados de Exemplo de Análise de Oportunidade.  Quando você digitar uma pergunta em P e R, o Power BI procura por respostas em todos os conjuntos de dados associados (blocos fixados) ao o painel selecionado. Para obter mais informações, veja [Power BI – Conceitos básicos](../consumer/end-user-basic-concepts.md).
 
 1. No painel de Exemplo de Análise de Oportunidade, comece a digitar sua pergunta na caixa de perguntas P e R.
    
@@ -97,7 +97,7 @@ Abra o painel de Exemplo de Análise de Oportunidade ou qualquer outro painel qu
 
 [Fixar uma visualização em um dashboard](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI – conceitos básicos](../service-basic-concepts.md)
+[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

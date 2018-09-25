@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aa73da576a64a3245a3e8a9deab124dcefbc79f8
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 946746b1c868ca5310edd929434cc852400b5bc3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44729317"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548064"
 ---
 # <a name="treemaps-in-power-bi"></a>Mapas de árvore no Power BI
 O treemaps exibe dados hierárquicos, como um conjunto de retângulos aninhados.  Cada nível da hierarquia é representado por um retângulo colorido (muitas vezes chamado uma "ramificação") que contém outros retângulos ("folhas").  O espaço dentro de cada retângulo é alocado com base no valor quantitativo que está sendo medido, os retângulos organizados em tamanho da parte superior esquerda (maior) para a parte inferior direita (menor).
@@ -62,7 +62,7 @@ Se preferir, crie seu próprio mapa de árvore. Essas instruções usam o exempl
    > 
 5. Focalize uma área **Rede** para revelar a dica de ferramenta para essa parte da **Categoria**.  Por exemplo, focalizando **Lindseys** no retângulo **Juniors-040** revela a dica de ferramenta para a parte de Lindsey da categoria Juniors.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Adicione o mapa de árvore como um bloco do dashboard (fixe o visual)](../service-dashboard-tiles.md). 
+6. [Adicione o mapa de árvore como um bloco do dashboard (fixe o visual)](../consumer/end-user-tiles.md). 
 7. [Salve o relatório](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Realce e filtragem cruzada
@@ -76,11 +76,11 @@ Realçar uma Categoria ou Detalhes em um mapa de árvore filtra e destaca de for
 2. No gráfico de pizza das **Últimas vendas do ano por cadeia**, selecionar a fatia **Fashions Direct** realiza a filtragem cruzada de um mapa de árvore.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. Para gerenciar como os gráficos são filtrados e realçados de forma cruzada entre si, veja [Interações de visualização em um relatório do Power BI](../service-reports-visual-interactions.md)
+3. Para gerenciar como os gráficos são filtrados e realçados de forma cruzada entre si, veja [Interações de visualização em um relatório do Power BI](../consumer/end-user-interactions.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 [ Fixar uma visualização em um dashboard](../service-dashboard-pin-tile-from-report.md)  
-[Power BI – conceitos básicos](../service-basic-concepts.md)  
+[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)  
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)  
 

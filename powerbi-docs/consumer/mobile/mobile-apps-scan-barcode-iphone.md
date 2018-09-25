@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 42ba9b042209dfd717c58042834e8d7966f97ecf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d221cfdc849a18ba934ebacaf58ef40999ac0117
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728389"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543303"
 ---
 # <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Digitalizar um código de barras com seu iPhone no aplicativo móvel do Power BI
 A digitalização de códigos de barras no mundo real o leva para as informações de BI filtradas no aplicativo móvel do Power BI.
@@ -67,6 +67,6 @@ O relatório que você escolher filtrar baseia-se em um modelo de dados que não
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Marcar um campo de código de barras no Power BI Desktop](../../desktop-mobile-barcodes.md)
-* [Blocos de Dashboard no Power BI](../../service-dashboard-tiles.md)
-* [Dashboards no Power BI](../../service-dashboards.md)
+* [Blocos de Dashboard no Power BI](../end-user-tiles.md)
+* [Dashboards no Power BI](../end-user-dashboards.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
-ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
+ms.openlocfilehash: 507cc25d324f47f00434430461d78013baa7210f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475719"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546906"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Usar P e R no Power BI Desktop para consultas de linguagem natural
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no **Power BI Desktop** permite que você faça.
@@ -198,5 +198,5 @@ O campo **Sinônimos** é exibido no lado direito do **Power BI Desktop**, em qu
 Para obter mais informações sobre os recursos no Power BI Desktop, confira os seguintes artigos:
 
 * [Usar o detalhamento no Power BI Desktop](desktop-drillthrough.md)
-* [Exibir um bloco do dashboard ou visual do relatório no modo de Foco](service-focus-mode.md)
+* [Exibir um bloco do dashboard ou visual do relatório no modo de Foco](consumer/end-user-focus.md)
 

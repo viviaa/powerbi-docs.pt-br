@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 8b7c46ad1e9ea9c4c79a8f5a1b48c73ab3336306
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 7253a340ce0852039a08d0ed17c488fc8fdbfa69
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157279"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545912"
 ---
 # <a name="author-template-content-packs-in-power-bi"></a>Criar pacotes de conteúdo de modelo no Power BI
 A criação de um pacote de conteúdo de modelo usa o Power BI Desktop e o PowerBI.com. Há quatro componentes para seu pacote de conteúdo:
@@ -22,7 +22,7 @@ A criação de um pacote de conteúdo de modelo usa o Power BI Desktop e o Power
 * As consultas permitem que você [conecte](desktop-connect-to-data.md) e [transforme](desktop-query-overview.md) os dados e defina [parâmetros](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 * O modelo de dados para criar [relações](desktop-create-and-manage-relationships.md), [medidas](desktop-measures.md), e melhorias de perguntas e respostas  
 * As [páginas](desktop-report-view.md) de relatório, que incluem visuais e filtros para fornecer informações sobre seus dados  
-* O [painel](service-dashboards.md) e os [blocos](service-dashboard-create.md) oferecem uma visão geral das informações incluídas  
+* O [painel](consumer/end-user-dashboards.md) e os [blocos](service-dashboard-create.md) oferecem uma visão geral das informações incluídas  
 
 Talvez você esteja familiarizado com cada uma das partes como recursos existentes no Power BI. Ao criar um pacote de conteúdo, há mais coisas a levar em consideração com relação a cada aspecto. Consulte cada seção abaixo para obter mais detalhes.
 

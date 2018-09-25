@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d059e8bb476f9862c372d9565581d58b336e81db
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 71b2f104ad5efb244c2b046cdd48a2e52cd045e3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623920"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543939"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Colaborar em seu espaço de trabalho de aplicativo do Power BI
 Os espaços de trabalho de aplicativo do Power BI são ótimos lugares para colaborar com seus colegas em dashboards, relatórios e conjuntos de dados para criar *aplicativos*. A colaboração não termina com os espaços de trabalho no Power BI. O Office 365 oferece outros serviços de grupo, como compartilhamento de arquivos no OneDrive for Business, conversas no Exchange, calendário e tarefas compartilhadas e assim por diante. Leia mais sobre os [grupos no Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -38,7 +38,7 @@ Depois de criar um arquivo do Power BI Desktop, se você o publicar em seu espa�
    
     ![Guia Relatórios](media/service-collaborate-power-bi-workspace/power-bi-workspace-report.png)
    
-    A partir daqui, é como qualquer outro relatório no Power BI. Você e outras pessoas no seu espaço de trabalho de aplicativo podem [modificar o relatório](service-reports.md) e salvar blocos em um dashboard à sua escolha.
+    A partir daqui, é como qualquer outro relatório no Power BI. Você e outras pessoas no seu espaço de trabalho de aplicativo podem [modificar o relatório](consumer/end-user-reports.md) e salvar blocos em um dashboard à sua escolha.
 
 ## <a name="collaborate-in-office-365"></a>Colaborar no Office 365
 A colaboração no Office 365 inicia-se no espaço de trabalho de aplicativo no Power BI.
@@ -77,7 +77,7 @@ A colaboração no Office 365 inicia-se no espaço de trabalho de aplicativo no 
 Se você é proprietário ou administrador de um espaço de trabalho de aplicativo, você também pode adicionar ou remover membros do espaço de trabalho. Leia mais sobre [como gerenciar seu espaço de trabalho de aplicativo do Power BI](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Criar aplicativos e espaços de trabalho de aplicativo no Power BI](service-create-distribute-apps.md)
+* [Criar aplicativos e espaços de trabalho de aplicativo no Power BI](consumer/end-user-create-apps.md)
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 * Comentários? Visite [Power BI Ideias](https://ideas.powerbi.com/forums/265200-power-bi) (Ideias do Power BI)
 

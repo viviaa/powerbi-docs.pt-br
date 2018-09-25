@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2f7133bb376cc04e181eed2d90a45e3361190d0b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722533"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547006"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportar um relatório do serviço do Power BI para o Desktop (visualização)
 No Power BI Desktop, você pode exportar (também conhecido como *baixar*) um relatório para o serviço do Power BI ao salvá-lo e selecionar **Publicar**. Também é possível exportar de volta e baixar um relatório do serviço do Power BI para o Desktop. A extensão para os arquivos exportados, em qualquer direção, é *.pbix*.
@@ -27,7 +27,7 @@ Há algumas limitações e considerações a serem feitas, que são abordadas ne
 ## <a name="download-the-report-as-a-pbix"></a>Baixar o relatório como um .pbix
 Para baixar o arquivo .pbix, siga estas etapas:
 
-1. No **serviço do Power BI**, abra o relatório que você deseja baixar no [modo de exibição de Edição](service-reading-view-and-editing-view.md).
+1. No **serviço do Power BI**, abra o relatório que você deseja baixar no [modo de exibição de Edição](consumer/end-user-reading-view.md).
 2. Na barra de menus, selecione **Arquivo > Baixar relatório**.
    
    > [!NOTE]
@@ -67,8 +67,8 @@ Assista ao vídeo de um minuto **Guy in a Cube** sobre esse recurso:
 
 Além disso, estes são alguns outros artigos que podem ajudá-lo a saber como usar o **serviço do Power BI**:
 
-* [Relatórios no Power BI](service-reports.md)
-* [Power BI – conceitos básicos](service-basic-concepts.md)
+* [Relatórios no Power BI](consumer/end-user-reports.md)
+* [Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 
 Depois que você instalar o **Power BI Desktop**, o conteúdo a seguir poderá ajudá-lo a colocar ele em funcionamento rapidamente:
 

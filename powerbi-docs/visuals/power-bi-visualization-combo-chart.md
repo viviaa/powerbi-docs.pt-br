@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 732f27a8272c780d156912da904bab82de03f326
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728452"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543993"
 ---
 # <a name="combo-chart-in-power-bi"></a>Gráfico de combinação no Power BI
 No Power BI, um gráfico de combinação é uma visualização única que combina um gráfico de linhas e um gráfico de colunas. Combinando os 2 gráficos em um permite você faça uma comparação rápida dos dados.
@@ -103,13 +103,13 @@ Nesta tarefa, vamos comparar as vendas e a margem bruta.
 
 Daqui, talvez você queira:
 
-* [Adicione o gráfico de combinação como um bloco do dashboard](../service-dashboard-tiles.md).
+* [Adicione o gráfico de combinação como um bloco do dashboard](../consumer/end-user-tiles.md).
 * [Salve o relatório](../service-report-save.md).
 * [Tornar o relatório mais acessível para pessoas com deficiências](../desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Realce cruzado e filtragem cruzada
 
-Realçar uma coluna ou uma linha em um gráfico de combinação realiza o realce cruzado e a filtragem cruzada das outras visualizações na página do relatório e vice-versa. Para alterar esse comportamento padrão, use [interações visuais](../service-reports-visual-interactions.md).
+Realçar uma coluna ou uma linha em um gráfico de combinação realiza o realce cruzado e a filtragem cruzada das outras visualizações na página do relatório e vice-versa. Para alterar esse comportamento padrão, use [interações visuais](../consumer/end-user-interactions.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -117,6 +117,6 @@ Realçar uma coluna ou uma linha em um gráfico de combinação realiza o realce
 
 [Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI – conceitos básicos](../service-basic-concepts.md)
+[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

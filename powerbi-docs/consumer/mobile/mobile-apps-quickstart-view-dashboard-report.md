@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: quickstart
 ms.date: 05/08/2018
 ms.author: maggies
-ms.openlocfilehash: 574c28fc3e921f2b0e245cf965e23bd6b264f037
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 89f45409607cbe8da6cb1b167b6e71238d6edde0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728463"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548800"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Início Rápido: Explorar dashboards e relatórios nos aplicativos móveis do Power BI
 Neste início rápido, você explora um dashboard e um relatório de exemplo no aplicativo móvel do Power BI em um telefone Android. Você também pode acompanhar em outros aplicativos móveis. 
@@ -153,5 +153,5 @@ Depois de concluir este início rápido, você poderá excluir o dashboard, o re
 Neste início rápido, você explorou um dashboard e um relatório de exemplo em seu dispositivo Android. Leia mais sobre como trabalhar no serviço do Power BI. 
 
 > [!div class="nextstepaction"]
-> [Início Rápido: Explorando o serviço do Power BI](../../service-the-new-power-bi-experience.md)
+> [Início Rápido: Explorando o serviço do Power BI](../end-user-experience.md)
 

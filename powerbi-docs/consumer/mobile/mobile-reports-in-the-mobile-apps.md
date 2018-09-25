@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5fe4212be55a42a6892a94e2a07da8af5c035b6d
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44729198"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547236"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorar relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -82,7 +82,7 @@ Quando você seleciona um valor em um visual, ele não filtra os outros visuais.
 * Para inverter a ordem de classificação, toque nas reticências (**...**) novamente e, depois, toque no mesmo nome de campo novamente.
 
 ## <a name="drill-down-and-up-in-a-visual"></a>Fazer drill down e up em um visual
-Se o autor de um relatório tiver adicionado a funcionalidade de drill down a um visual, você poderá fazer drill down no visual para ver os valores que compõem uma parte dele. Você [adiciona o drill down em um visual](../../power-bi-visualization-drill-down.md) no Power BI Desktop ou no serviço do Power BI. 
+Se o autor de um relatório tiver adicionado a funcionalidade de drill down a um visual, você poderá fazer drill down no visual para ver os valores que compõem uma parte dele. Você [adiciona o drill down em um visual](../end-user-drill.md) no Power BI Desktop ou no serviço do Power BI. 
 
 * Toque e segure uma barra ou um ponto específico em um visual para exibir sua dica de ferramenta. Se ele tiver drill down, a parte inferior da dica de ferramenta terá setas que podem ser tocadas. 
   

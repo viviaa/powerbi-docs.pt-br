@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ed882a339e1ee7d53302dc33a7cedb1a95709b8b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 656f32dd28796ec58b7cfcf774248ee30de0085a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249104"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545889"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fixar um bloco de um painel para outro painel
-Uma maneira de adicionar um novo [bloco de painel](service-dashboard-tiles.md) é copiando-o de outro painel. Ao clicar em cada um desses blocos, haverá um link para onde foi criado – em P e R ou em um relatório. 
+Uma maneira de adicionar um novo [bloco de painel](consumer/end-user-tiles.md) é copiando-o de outro painel. Ao clicar em cada um desses blocos, haverá um link para onde foi criado – em P e R ou em um relatório. 
 
 > [!NOTE]
 > Não é possível fixar blocos de painéis compartilhados.
 
 ## <a name="pin-a-tile-to-another-dashboard"></a>Fixar um bloco em outro dashboard
 1. [Obter dados](service-get-data.md). Este modelo usa o [Exemplo de Análise de Gastos de TI](sample-it-spend.md).
-2. Abrir um [painel](service-dashboards.md)
+2. Abrir um [painel](consumer/end-user-dashboards.md)
 3. Passe o mouse sobre o bloco que você deseja fixar, selecione as reticências (...) e escolha o **Bloco de pino**.  
    
    ![menu de reticências](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
@@ -42,7 +42,7 @@ Uma maneira de adicionar um novo [bloco de painel](service-dashboard-tiles.md) �
 6. Selecione **Ir para o dashboard** para ver o bloco fixado. Nele, você poderá [renomear, redimensionar, vincular e mover](service-dashboard-edit-tile.md) a visualização fixada.
 
 ## <a name="next-steps"></a>Próximas etapas
-[Blocos no Power BI](service-dashboard-tiles.md)  
-[Dashboards no Power BI](service-dashboards.md)  
+[Blocos no Power BI](consumer/end-user-tiles.md)  
+[Dashboards no Power BI](consumer/end-user-dashboards.md)  
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

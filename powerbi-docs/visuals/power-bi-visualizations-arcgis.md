@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 6a930342806eb32f22efe3d2974625c54c5377bf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a312a4311590d02d0fa8bd97726f9cf596cfe6a0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728437"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545764"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagindo com mapas do ArcGIS no Power BI
 Este tópico foi escrito do ponto de vista de uma pessoa que está *consumindo* um mapa do ArcGIS no serviço do Power BI, no Desktop ou em um dispositivo móvel. Depois que um criador compartilha um mapa do ArcGIS com você, há muitas formas de interagir com o mapa.  Para saber mais sobre como criar um mapa do ArcGIS, consulte [Tutorial de mapas do ArcGIS pelo ESRI](../power-bi-visualization-arcgis.md).
@@ -55,9 +55,9 @@ O ArcGIS Maps para Power BI permite três modos de seleção. No máximo, 250 po
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>Interagindo com um mapa do ArcGIS
-Os recursos disponíveis dependem se você é o *criador* (a pessoa que fez o mapa) ou o *consumidor* (alguém compartilhou um mapa do ArcGIS com você). Se você estiver interagindo com um mapa do ArcGIS como consumidor (também conhecido como [modo de exibição de Leitura](../service-reading-view-and-editing-view.md)), estas serão as ações disponíveis para você.
+Os recursos disponíveis dependem se você é o *criador* (a pessoa que fez o mapa) ou o *consumidor* (alguém compartilhou um mapa do ArcGIS com você). Se você estiver interagindo com um mapa do ArcGIS como consumidor (também conhecido como [modo de exibição de Leitura](../consumer/end-user-reading-view.md)), estas serão as ações disponíveis para você.
 
-* Assim como ocorre com outros tipos de visualização, você pode [fixar nos dashboards](../service-dashboard-pin-tile-from-report.md), [exibir](../service-reports-show-data.md) e/ou [exportar os dados subjacentes](../power-bi-visualization-export-data.md) e ver o mapa no [Modo de foco](../service-focus-mode.md) e em [Tela inteira](../service-fullscreen-mode.md).    
+* Assim como ocorre com outros tipos de visualização, você pode [fixar nos dashboards](../service-dashboard-pin-tile-from-report.md), [exibir](../consumer/end-user-show-data.md) e/ou [exportar os dados subjacentes](../consumer/end-user-export-data.md) e ver o mapa no [Modo de foco](../consumer/end-user-focus.md) e em [Tela inteira](../service-fullscreen-mode.md).    
 * Expanda o painel **Filtros** para explorar o mapa usando filtros. Quando você fecha o relatório, os filtros aplicados não são salvos.    
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Se o mapa tiver uma camada de referência, selecione as localizações para exibir os detalhes em uma dica de ferramenta. Aqui, selecionamos o Condado Adams e vemos os dados da camada de referência de renda familiar média que o criador adicionou ao mapa.

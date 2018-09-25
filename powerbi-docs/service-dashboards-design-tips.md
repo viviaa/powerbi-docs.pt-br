@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726031"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544918"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Dicas para criar um painel bom no Power BI
 Agora que você criou um painel e adicionou alguns blocos, pense em como tornar seu painel não apenas bonito, mas também funcional. Em geral, isso significa fazer destacar as informações mais importantes, e torná-las claras e organizadas.
@@ -65,7 +65,7 @@ Evite a variedade de visualização para fins diversos.  As visualizações deve
 * Não misture os níveis de precisão e tempo. Certifique-se de que períodos de tempo são bem compreendidos.  Não é necessário um gráfico que tem o mês passado ao lado de gráficos filtrados de um determinado mês do ano.
 * Não misture medidas grandes e pequenas na mesma escala, como em uma linha ou um gráfico de barras.  Por exemplo, uma medida pode ser em milhões e outras medidas em milhares.  Com grande escala, seria difícil ver as diferenças da medida que está em milhares.  Se você precisar combinar, escolha uma visualização que permite o uso de um segundo eixo.
 * Não sobrecarregue os gráficos com rótulos de dados que não são necessários. Os valores em gráficos de barras são normalmente bem compreendidos sem exibir o número real.
-* Preste atenção em como os [gráficos são classificados](power-bi-report-change-sort.md).  Se você deseja chamar a atenção para o número mais alto ou mais baixo, classifique pela medida.  Se você quiser que as pessoas possam localizar rapidamente uma categoria específica em muitas outras categorias, classifique pelo eixo.  
+* Preste atenção em como os [gráficos são classificados](consumer/end-user-change-sort.md).  Se você deseja chamar a atenção para o número mais alto ou mais baixo, classifique pela medida.  Se você quiser que as pessoas possam localizar rapidamente uma categoria específica em muitas outras categorias, classifique pelo eixo.  
 * Gráficos de pizza são recomendados se eles tiver menos de oito categorias. Porque você não pode comparar valores lado a lado, é mais difícil comparar valores em um gráfico de pizza do que em gráficos de barras e colunas. Os gráficos de pizza pode ser bons para exibir relações de parte de inteiro em vez de comparar as partes. E gráficos de medidor são ótimos para exibir o status atual no contexto de uma meta.
 
 Para obter diretrizes específicas da visualização, veja [Tipos de visualização no Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
@@ -81,5 +81,5 @@ Para dominar a arte do design do painel excelente, considere a possibilidade de 
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar um painel por meio de um relatório](service-dashboard-create.md)  
-[Power BI – conceitos básicos](service-basic-concepts.md)  
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)  
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

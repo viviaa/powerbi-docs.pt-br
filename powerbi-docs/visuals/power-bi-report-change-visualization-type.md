@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/20/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b1699d32bf96efa6a40baaac202b5f9db9ee3f8b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2b1e5c28bd705e064dc4e0e3283eb3941452647b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728406"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547007"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Alterar o tipo de visualização em um relatório do Power BI
 Tente diferentes tipos de visualizações no serviço do Power BI e do Power BI Desktop para ver qual demonstra melhor os seus dados. 
@@ -32,7 +32,7 @@ Se você alterar o tipo de visualização do relatório depois de tê-lo fixado 
 ### <a name="next-steps"></a>Próximas etapas
 Mais sobre [Visualizações nos relatórios do Power BI](power-bi-report-visualizations.md)
 
-[Power BI – conceitos básicos](../service-basic-concepts.md)
+[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

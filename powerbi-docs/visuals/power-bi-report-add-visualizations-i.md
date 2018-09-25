@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8095db86b8954b3f91a83f2e83c0108d1676cf76
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44729351"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545258"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Parte I: Adicionar visualizações a um relatório do Power BI
 Este artigo apresenta uma breve introdução à criação de uma visualização em um relatório usando o serviço do Power BI ou Power BI Desktop.  Para obter um conteúdo mais avançado, [veja a Parte II](power-bi-report-add-visualizations-ii.md). Assista à Amanda demonstrando algumas maneiras diferentes de criar, editar e formatar visuais na tela do relatório. Em seguida, experimente você mesmo, usando o [exemplo Vendas e Marketing](../sample-datasets.md) para criar seu próprio relatório.
@@ -25,7 +25,7 @@ Este artigo apresenta uma breve introdução à criação de uma visualização 
 
 
 ## <a name="open-a-report-and-add-a-new-page"></a>Abrir um relatório e adicionar uma nova página
-1. Abra um [relatório no Modo de Exibição de Edição](../service-reading-view-and-editing-view.md). Este tutorial use o [exemplo de Vendas e Marketing](../sample-datasets.md).
+1. Abra um [relatório no Modo de Exibição de Edição](../consumer/end-user-reading-view.md). Este tutorial use o [exemplo de Vendas e Marketing](../sample-datasets.md).
 2. Se o painel Campos não estiver visível, selecione o ícone de seta para abri-lo. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
@@ -59,7 +59,7 @@ Este artigo apresenta uma breve introdução à criação de uma visualização 
 ## <a name="next-steps"></a>Próximas etapas
  Continue na [Parte 2: Adicionar visualizações a um relatório do Power BI](power-bi-report-add-visualizations-ii.md)
    
-   [Interaja com as visualizações](../service-reading-view-and-editing-view.md) no relatório.
+   [Interaja com as visualizações](../consumer/end-user-reading-view.md) no relatório.
    
    [Faça ainda mais com as visualizações](power-bi-report-visualizations.md).
    

@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a6b4795be959cfc1842a07f1ba0a74dd81109e89
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 7640c9f49205de97556af9cfa51c641a93d9d69c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965586"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547420"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagir com um relatório no modo de exibição de Edição no serviço do Power BI
 Os relatórios podem ser criados e editados no serviço do Power BI e no Power BI Desktop. No serviço do Power BI, os relatórios podem ser criados e editados no **Modo de exibição de Edição**. E, no Power BI Desktop, os relatórios podem ser criados e editados no [**Modo de exibição de Relatório**](desktop-report-view.md). Este artigo aborda o modo de exibição de Edição no serviço do Power BI. 
 
-O serviço do Power BI tem dois modos diferentes de interação com relatórios – [modo de exibição de Leitura](service-reading-view-and-editing-view.md) para *consumidores* de relatórios e modo de exibição de Edição para proprietários e criadores de relatórios.  Uma licença do Power BI Pro é necessária para compartilhar relatórios, bem como para editar relatórios criados por outras pessoas. Se não tiver uma licença Pro, ainda poderá criar relatórios, mas não poderá usar o [compartilhamento](service-share-reports.md).    
+O serviço do Power BI tem dois modos diferentes de interação com relatórios – [modo de exibição de Leitura](consumer/end-user-reading-view.md) para *consumidores* de relatórios e modo de exibição de Edição para proprietários e criadores de relatórios.  Uma licença do Power BI Pro é necessária para compartilhar relatórios, bem como para editar relatórios criados por outras pessoas. Se não tiver uma licença Pro, ainda poderá criar relatórios, mas não poderá usar o [compartilhamento](service-share-reports.md).    
 
-No modo de exibição de Edição do relatório, você tem muita flexibilidade para explorar e criar um relatório. Todas as funcionalidades do [Modo de Exibição de Leitura](service-reading-view-and-editing-view.md) estão disponíveis – e muito mais. O Modo de Exibição de Edição só fica disponível para pessoas que criaram o relatório para colegas que são [coproprietários de um relatório por serem um membro ou administrador de um espaço de trabalho do aplicativo](service-create-distribute-apps.md).
+No modo de exibição de Edição do relatório, você tem muita flexibilidade para explorar e criar um relatório. Todas as funcionalidades do [Modo de Exibição de Leitura](consumer/end-user-reading-view.md) estão disponíveis – e muito mais. O Modo de Exibição de Edição só fica disponível para pessoas que criaram o relatório para colegas que são [coproprietários de um relatório por serem um membro ou administrador de um espaço de trabalho do aplicativo](consumer/end-user-create-apps.md).
 
 ## <a name="functionality-only-available-in-editing-view"></a>Funcionalidade disponível apenas no Modo de exibição de edição
 Examine a lista de tópicos no cabeçalho **Relatórios** no Sumário à esquerda. É uma longa lista e muitos dos tópicos abrangem as funcionalidades que estão *disponíveis somente se você tiver permissões de edição para um relatório*.  Para ajudá-lo a navegar pelo Sumário, o Modo de Exibição de Edição é necessário para o seguinte:
@@ -43,7 +43,7 @@ Uma licença do Power BI Pro é necessária para editar relatórios criados por 
 
 
 ## <a name="next-steps"></a>Próximas etapas
-Voltar ao [Modo de Exibição de Leitura e Modo de Exibição de Edição no serviço do Power BI](service-reading-view-and-editing-view.md)
+Voltar ao [Modo de Exibição de Leitura e Modo de Exibição de Edição no serviço do Power BI](consumer/end-user-reading-view.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

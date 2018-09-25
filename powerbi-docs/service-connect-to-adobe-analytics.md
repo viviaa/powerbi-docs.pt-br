@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "38924525"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544614"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Conectar-se ao Adobe Analytics com o Power BI
 A conexão ao Adobe Analytics por meio do Power BI começa pela conexão à sua conta do Adobe Analytics Marketing Cloud. Você obterá um aplicativo com um dashboard e um conjunto de relatórios do Power BI que fornecem insights sobre as dimensões de usuários e de tráfego do site. Os dados são atualizados automaticamente uma vez por dia. Você pode interagir com o dashboard e os relatórios, mas não pode salvar as alterações.
@@ -94,7 +94,7 @@ Caso veja um erro depois de fornecer suas credenciais, indicando que você não 
 Se você tiver acessado a tela de credenciais antes de receber um erro, isso significa que, provavelmente, os relatórios estão levando muito tempo para serem concluídos. Um erro comum está no formulário *"Falha ao obter dados do relatório do Adobe Analytics. O conteúdo incluiu &quot;referenciador, página&quot;; a duração aproximada foi xx segundos"*. Examine a seção "O que está incluído" e compare com o tamanho da instância do Adobe. Infelizmente, não existe uma maneira de resolver esse tempo limite hoje. No entanto, estamos considerando fazer atualizações para dar um melhor suporte a instâncias maiores. Forneça seus comentários para a equipe do Power BI em https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Próximas etapas
-* [O que são aplicativos no Power BI?](service-install-use-apps.md)
+* [O que são aplicativos no Power BI?](consumer/end-user-apps.md)
 * [Obter dados no Power BI](service-get-data.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

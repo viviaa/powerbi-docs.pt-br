@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 81a8b5454e39088b8b406e600707d1d5073e14dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1104c7f90f46252a74c4aa8e5ec573a159ef1c40
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330157"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550111"
 ---
 # <a name="using-directquery-in-power-bi"></a>Usando o DirectQuery no Power BI
 Você pode conectar-se a todos os tipos de fontes de dados diferentes ao usar o **Power BI Desktop** ou o **serviço do Power BI**, e você pode fazer essas conexões de dados de maneiras diferentes. Você pode *importar* dados ao Power BI, que é a maneira mais comum de se obter dados ou pode se conectar diretamente aos dados em seu repositório fonte original, o que é conhecido como **DirectQuery**. Este artigo descreve o **DirectQuery** e seus recursos, incluindo os seguintes tópicos:
@@ -277,7 +277,7 @@ Ao criar um relatório usando uma conexão do DirectQuery, observe as seguintes 
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  No DirectQuery, essas filtragens cruzadas e destaques cruzados exigem o envio de consultas à fonte subjacente, portanto a interação deverá ser desligada, se o tempo necessário para responder às seleções do usuário for exageradamente longo. No entanto, essa interação pode ser desligada para todo o relatório (conforme descrito acima para *Opções de redução de consulta*) ou caso a caso conforme descrito [neste artigo](service-reports-visual-interactions.md).
+  No DirectQuery, essas filtragens cruzadas e destaques cruzados exigem o envio de consultas à fonte subjacente, portanto a interação deverá ser desligada, se o tempo necessário para responder às seleções do usuário for exageradamente longo. No entanto, essa interação pode ser desligada para todo o relatório (conforme descrito acima para *Opções de redução de consulta*) ou caso a caso conforme descrito [neste artigo](consumer/end-user-interactions.md).
 
 Além da lista de sugestões acima, observe que cada uma das seguintes funcionalidades de relatório poderá causar problemas de desempenho:
 

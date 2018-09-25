@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4d43ffb1f4e005830fd36da4e80cf4d0c7d86fed
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727296"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549927"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Compartilhe seus painéis e os relatórios do Power BI com colegas e outras pessoas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir painéis e relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -110,7 +110,7 @@ Se você enviar um link em um aplicativo móvel do Power BI para pessoas fora de
 Coisas para se lembrar a respeito do compartilhamento de painéis e relatórios:
 
 * Em geral, você e seus colegas veem os mesmos dados no painel ou relatório. Portanto, se você tiver permissões para ver mais dados do que eles, eles poderão ver todos os seus dados no painel ou relatório. No entanto, se a [RLS (segurança em nível de linha)](service-admin-rls.md) for aplicada ao conjunto de dados subjacente a um painel ou relatório, as credenciais de cada pessoa serão usadas para determinar quais dados elas podem acessar.
-* Todas as pessoas com quem você compartilha o painel podem vê-lo e interagir com os relatórios relacionados no [Modo de Exibição de Leitura](service-reading-view-and-editing-view.md). Elas não podem criar relatórios nem salvar alterações nos relatórios existentes.
+* Todas as pessoas com quem você compartilha o painel podem vê-lo e interagir com os relatórios relacionados no [Modo de Exibição de Leitura](consumer/end-user-reading-view.md). Elas não podem criar relatórios nem salvar alterações nos relatórios existentes.
 * Ninguém pode ver ou baixar o conjunto de dados.
 * Qualquer pessoa pode [atualizar os dados](refresh-data.md) manualmente.
 * Se você usar o Office 365 para email, poderá compartilhar com os membros de um grupo de distribuição inserindo o endereço de email associado ao grupo de distribuição.

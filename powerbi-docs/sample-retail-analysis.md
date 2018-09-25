@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 44244bf746c1a11229d2041b4c2b43871fa7a199
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6955bc0c41e5a6a145d2101ab527d753f98d5c61
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944527"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550065"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: faça um tour
 
@@ -39,11 +39,11 @@ Este painel de exemplo do setor, juntamente com o relatório subjacente, analisa
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Selecione o **exemplo de Análise de Varejo** e escolha **Conectar**.  
   
-   ![Exemplo de Análise de Varejo](media/sample-retail-analysis/retail16.png)
+   ![Exemplo de análise de varejo](media/sample-retail-analysis/retail16.png)
    
 5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. 
    
-   ![Exemplo de Análise de Varejo](media/sample-retail-analysis/retail17.png)
+   ![Exemplo de análise de varejo](media/sample-retail-analysis/retail17.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Obter o arquivo. pbix para este exemplo
 
@@ -165,5 +165,5 @@ Esparamos que este tour tenha mostardo como os painéis, P e R e relatório do P
 * [Baixar um arquivo zip de todos os arquivos de exemplo](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Baixar a pasta de trabalho do Excel para esta amostra do Power BI](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Obter dados (para o Power BI)](service-get-data.md)    
-* [Power BI – conceitos básicos](service-basic-concepts.md)    
+* [Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)    
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

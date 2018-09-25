@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7a002bb99cb80d805298d29916d4eb56f692b479
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 617809e072a492fb9887930e58bafd89ca8201e8
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310281"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544914"
 ---
 # <a name="static-content-in-power-bi-reports"></a>Conteúdo estático nos relatórios do Power BI
 Formas e caixas de texto podem ser adicionadas a relatórios usando o serviço Power BI e o Power BI Desktop. Em ambos os casos, você deve ter permissões de edição para o relatório. Se um relatório tiver sido compartilhado com você no serviço do Power BI, você não terá permissões de edição. 
@@ -65,6 +65,6 @@ Veja como Pedro usa o Power BI Desktop para [adicionar imagens estáticas a um r
 ### <a name="next-steps"></a>Próximas etapas
 [Adicionar um hiperlink a uma caixa de texto](service-add-hyperlink-to-text-box.md)
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

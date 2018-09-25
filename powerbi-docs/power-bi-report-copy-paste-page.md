@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 03/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 8083e2aba9a2aa5b8bba27995e9fe261a76084c9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 380567441fafec92d1f5e9e6b135b797264df40f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728055"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543556"
 ---
 # <a name="duplicate-a-report-page-in-power-bi"></a>Duplicar uma página de relatório no Power BI
-Duplicar uma página de relatório no serviço do Power BI ou Power BI Desktop exige permissões de edição para o relatório. No serviço do Power BI, isso significa abrir o relatório no [Modo de exibição de edição](service-reading-view-and-editing-view.md). 
+Duplicar uma página de relatório no serviço do Power BI ou Power BI Desktop exige permissões de edição para o relatório. No serviço do Power BI, isso significa abrir o relatório no [Modo de exibição de edição](consumer/end-user-reading-view.md). 
 
 
 1. No Power BI, abra um relatório que tenha pelo menos uma página. 
@@ -36,7 +36,7 @@ Duplicar uma página de relatório no serviço do Power BI ou Power BI Desktop e
 ### <a name="next-steps"></a>Próximas etapas
 Mais sobre [Visualizações nos relatórios do Power BI](visuals/power-bi-report-visualizations.md)    
 [Adicionar uma nova página a um relatório](power-bi-report-add-page.md)    
-[Power BI – conceitos básicos](service-basic-concepts.md)    
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)    
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

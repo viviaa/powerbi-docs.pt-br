@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e71412febc5b8d8a9ee4ff20174496de0c7d51f2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9cf5855acc5efe773f8f06e6de9f769f75794bdb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251404"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548710"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fixar um bloco em um dashboard de P e R
 ## <a name="how-to-pin-a-tile-from-qa"></a>Como fixar um bloco de P e R
 P e R é a ferramenta de geração de relatórios ad hoc do Power BI. Precisa encontrar uma visão particular? Faça uma pergunta sobre os dados e receba uma resposta na forma de uma visualização.
 
-Nestas instruções, usaremos o serviço do Power BI (app.powerbi.com) para abrir um dashboard, fazer uma pergunta usando idioma natural para criar uma visualização e fixar essa visualização em um dashboard. Dashboards não estão disponíveis no Power BI Desktop. Para obter informações sobre como usar P e R com outras ferramentas e conteúdo do Power BI, consulte a [Visão geral de P e R do Power BI](power-bi-q-and-a.md). 
+Nestas instruções, usaremos o serviço do Power BI (app.powerbi.com) para abrir um dashboard, fazer uma pergunta usando idioma natural para criar uma visualização e fixar essa visualização em um dashboard. Dashboards não estão disponíveis no Power BI Desktop. Para obter informações sobre como usar P e R com outras ferramentas e conteúdo do Power BI, consulte a [Visão geral de P e R do Power BI](consumer/end-user-q-and-a.md). 
 
 Para acompanhar, abra o [painel de exemplo da Análise de Varejo](sample-retail-analysis.md).
 
 
-1. Abra um [dashboard](service-dashboards.md) que tenha pelo menos um bloco fixado de um relatório. Quando você faz uma pergunta, o Power BI procura a resposta em qualquer conjunto de dados que tenha um bloco fixado a esse dashboard.  Para saber mais, veja [obter dados](service-get-data.md).
+1. Abra um [dashboard](consumer/end-user-dashboards.md) que tenha pelo menos um bloco fixado de um relatório. Quando você faz uma pergunta, o Power BI procura a resposta em qualquer conjunto de dados que tenha um bloco fixado a esse dashboard.  Para saber mais, veja [obter dados](service-get-data.md).
 2. Na caixa de pergunta, na parte superior do painel, comece a digitar o que você deseja saber sobre os dados.  
    ![caixa de perguntas de P e R](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. Por exemplo, ao digitar “vendas do ano passado por mês e território”...  
@@ -62,6 +62,6 @@ Para acompanhar, abra o [painel de exemplo da Análise de Varejo](sample-retail-
 
 ## <a name="next-steps"></a>Próximas etapas
 [Renomear, redimensionar, adicionar um hiperlink, reposicionar o bloco e muito mais](service-dashboard-edit-tile.md)    
-[Exibir seu bloco do dashboard no Modo de foco](service-focus-mode.md)     
-[Voltar a P e R no Power BI](power-bi-q-and-a.md)  
+[Exibir seu bloco do dashboard no Modo de foco](consumer/end-user-focus.md)     
+[Voltar a P e R no Power BI](consumer/end-user-q-and-a.md)  
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

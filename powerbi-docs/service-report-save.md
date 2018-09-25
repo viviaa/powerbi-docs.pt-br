@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0e462fa6faf8d83bfcdb8658e2fcb852aeac5c3b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: deba4a654c1b43361f7c44c2f0717fb7e348cb98
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248897"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548662"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Salvar um relatório no serviço do Power BI e no Power BI Desktop
 Depois de fazer alterações em um relatório no Power BI, você poderá salvá-lo, salvá-lo com um novo nome ou apenas fechá-lo sem salvar as alterações. Digamos que você abra o relatório, cria uma visualização e fixa-o em seu painel. Se você fechá-lo agora sem salvar as alterações, o bloco permanece no painel, mas a visualização não será salva no relatório. Ao clicar nesse bloco no painel, o relatório é aberto, mas a visualização não existe mais no relatório.
@@ -29,7 +29,7 @@ Depois de fazer alterações em um relatório no Power BI, você poderá salvá-
 1. Se você tentar sair de um relatório e esse relatório tiver alterações, o Power BI exibirá um aviso.
    
    ![Salvar alterações](media/service-report-save/power-bi-unsaved.png)
-2. Outra maneira de salvar o relatório é selecionar **ARQUIVO** \> **Salvar** ou **Salvar Como**. Se você estiver no [Modo de exibição de leitura](service-reading-view-and-editing-view.md) você verá somente a opção Salvar Como. 
+2. Outra maneira de salvar o relatório é selecionar **ARQUIVO** \> **Salvar** ou **Salvar Como**. Se você estiver no [Modo de exibição de leitura](consumer/end-user-reading-view.md) você verá somente a opção Salvar Como. 
    
    ![Salvar relatório](media/service-report-save/power-bi-save-new.png)
 3. Se esse for um novo relatório (Salvar) ou uma nova versão de um relatório existente (Salvar como), dê a ele um nome descritivo.  **O relatório será adicionado ao espaço de trabalho ativo**.
@@ -37,9 +37,9 @@ Depois de fazer alterações em um relatório no Power BI, você poderá salvá-
     ![nomear o relatório](media/service-report-save/power-bi-save-dialog.png)
 
 ### <a name="next-steps"></a>Próximas etapas
-Leia mais sobre [relatórios no Power BI](service-reports.md)
+Leia mais sobre [relatórios no Power BI](consumer/end-user-reports.md)
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

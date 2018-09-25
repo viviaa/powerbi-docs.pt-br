@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 968cf7e573a298c2a82adaf2092a9d35ffa397e5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75543bfc381f0a8391fe4422d677913ab61ad363
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240200"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550042"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fixar um bloco em um painel do Power BI por meio de um relatório
 ## <a name="pinning-tiles-from-a-report"></a>Fixando blocos de um relatório
-Uma maneira de adicionar um novo [bloco do dashboard](service-dashboard-tiles.md) é por meio de um [relatório do Power BI](service-reports.md). Na verdade, você pode adicionar vários novos blocos de um relatório.  Cada um desses blocos, quando clicado, é um link de volta para o relatório.
+Uma maneira de adicionar um novo [bloco do dashboard](consumer/end-user-tiles.md) é por meio de um [relatório do Power BI](consumer/end-user-reports.md). Na verdade, você pode adicionar vários novos blocos de um relatório.  Cada um desses blocos, quando clicado, é um link de volta para o relatório.
 
 E páginas inteiras do relatório podem ser fixadas a um painel.  Isso também é conhecido como fixar um bloco *dinâmico* .  *Dinâmico* porque você pode interagir com o bloco no painel e porque, ao contrário de blocos de visualização individual, as alterações feitas no relatório são sincronizadas com o painel. Leia mais sobre isso a seguir.
 
@@ -58,15 +58,15 @@ Outra opção é fixar uma página inteira do relatório a um painel. Essa é um
 Para obter mais informações, veja [Fixar uma página inteira do relatório](service-dashboard-pin-live-tile-from-report.md)
 
 ## <a name="next-steps"></a>Próximas etapas
-[Dashboards no Power BI](service-dashboards.md)
+[Dashboards no Power BI](consumer/end-user-dashboards.md)
 
-[Blocos de Dashboard no Power BI](service-dashboard-tiles.md)
+[Blocos de Dashboard no Power BI](consumer/end-user-tiles.md)
 
-[Relatórios no Power BI](service-reports.md)
+[Relatórios no Power BI](consumer/end-user-reports.md)
 
 [Atualizar dados no Power BI](refresh-data.md)
 
-[Conceitos básicos do Power BI](service-basic-concepts.md)
+[Conceitos básicos do Power BI](consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

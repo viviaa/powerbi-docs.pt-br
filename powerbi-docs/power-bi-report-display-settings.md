@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: af90ba6bcf85c07d2d046ed21f733ca7c16e3856
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242121"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545442"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>A página exibe as configurações em um relatório do Power BI
 Compreendemos que é essencial manter o pixel de layout de relatório perfeito. Às vezes, isso pode ser desafiador, porque você e seus colegas exibem esses relatórios em telas com taxas de proporção diferentes e tamanhos. 
@@ -39,7 +39,7 @@ No serviço do Power BI, abra um relatório e selecione **Exibição** na barra 
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-As configurações de Exibição de Página estão disponíveis no [modo de exibição de Leitura e no modo de exibição de Edição](service-reading-view-and-editing-view.md). No Modo de Exibição de Edição, o proprietário de um relatório pode atribuir configurações de exibição de página para páginas de relatório individuais, e essas configurações são salvas com o relatório. Quando os colegas abrirem o relatório no Modo de Exibição de Leitura, verão a exibição das páginas do relatório usando as configurações do proprietário.  No Modo de Exibição de Leitura, colegas podem alterar *algumas* das Configurações de exibição de página, mas as alterações não são salvas ao sair do relatório.
+As configurações de Exibição de Página estão disponíveis no [modo de exibição de Leitura e no modo de exibição de Edição](consumer/end-user-reading-view.md). No Modo de Exibição de Edição, o proprietário de um relatório pode atribuir configurações de exibição de página para páginas de relatório individuais, e essas configurações são salvas com o relatório. Quando os colegas abrirem o relatório no Modo de Exibição de Leitura, verão a exibição das páginas do relatório usando as configurações do proprietário.  No Modo de Exibição de Leitura, colegas podem alterar *algumas* das Configurações de exibição de página, mas as alterações não são salvas ao sair do relatório.
 
 ##    <a name="page-view-settings"></a>Configurações de exibição de página
 O primeiro conjunto de configurações do *Modo de Exibição da Página* controla a exibição das páginas do relatório com base na janela do navegador.  Escolha entre:
@@ -62,7 +62,7 @@ O segundo conjunto de configurações do *Modo de Exibição de Página* control
 ## <a name="page-size-settings"></a>Configurações de tamanho de página
 ![](media/power-bi-report-display-settings/power-bi--page-size.png)
 
-As configurações de *Tamanho de Página* só ficam disponíveis para proprietários de relatório. No serviço do Power BI (app.powerbi.com), isso significa poder abrir o relatório no [Modo de Exibição de Edição](service-reading-view-and-editing-view.md). Essas configurações controlam a taxa de exibição e o tamanho real (em pixels) da tela do relatório.   
+As configurações de *Tamanho de Página* só ficam disponíveis para proprietários de relatório. No serviço do Power BI (app.powerbi.com), isso significa poder abrir o relatório no [Modo de Exibição de Edição](consumer/end-user-reading-view.md). Essas configurações controlam a taxa de exibição e o tamanho real (em pixels) da tela do relatório.   
 
 * proporção de 4:3
 * proporção de 16:9 (padrão)
@@ -71,11 +71,11 @@ As configurações de *Tamanho de Página* só ficam disponíveis para propriet�
 * Personalizado (altura e largura em pixels)
 
 ## <a name="next-steps"></a>Próximas etapas
-[Saiba como usar as configurações de Modo de Exibição de Página e Tamanho da Página em seus relatórios do Power BI](power-bi-change-report-display-settings.md).
+[Saiba como usar as configurações de Modo de Exibição de Página e Tamanho da Página em seus relatórios do Power BI](consumer/end-user-report-view.md).
 
-Leia mais sobre [relatórios no Power BI](service-reports.md)
+Leia mais sobre [relatórios no Power BI](consumer/end-user-reports.md)
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

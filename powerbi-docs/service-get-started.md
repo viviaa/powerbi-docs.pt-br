@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 51c3fdbef345a0d6020abe35ba7c71aaa67882e4
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c64a5e487725bdfedf03b496322a52e7664f5455
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726836"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545044"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutorial: Introdução ao serviço do Power BI (app.powerbi.com)
 Esse tutorial ajuda você a começar a usar o ***serviço do Power BI***. Para compreender como o serviço do Power BI se adapta às outras ofertas do Power BI, recomendamos que você comece lendo [O que o é Power BI](power-bi-overview.md).
@@ -53,9 +53,9 @@ Visite nossa [playlist no YouTube](https://www.youtube.com/playlist?list=PL1N57m
 > 
 
 ## <a name="what-is-power-bi-service"></a>O que é o serviço do Power BI?
-Às vezes, o serviço Microsoft Power BI é chamado de Power BI online ou app.powerbi.com. O Power BI lhe ajuda a manter-se atualizado com relação às informações importantes para você.  Os ***painéis*** do serviço do Power BI ajudam a controlar o ritmo de sua empresa com um clique.  Seus dashboards exibem ***blocos*** nos quais você pode clicar para abrir ***relatórios*** e explorar mais detalhadamente.  Conecte-se a vários ***conjuntos de dados*** para reunir todos os dados relevantes em um único lugar. Precisa de ajuda para compreender os blocos de construção que compõem o Power BI?  Veja [Power BI – Conceitos básicos](service-basic-concepts.md).
+Às vezes, o serviço Microsoft Power BI é chamado de Power BI online ou app.powerbi.com. O Power BI lhe ajuda a manter-se atualizado com relação às informações importantes para você.  Os ***painéis*** do serviço do Power BI ajudam a controlar o ritmo de sua empresa com um clique.  Seus dashboards exibem ***blocos*** nos quais você pode clicar para abrir ***relatórios*** e explorar mais detalhadamente.  Conecte-se a vários ***conjuntos de dados*** para reunir todos os dados relevantes em um único lugar. Precisa de ajuda para compreender os blocos de construção que compõem o Power BI?  Veja [Power BI – Conceitos básicos](consumer/end-user-basic-concepts.md).
 
-Se você tiver dados importantes em arquivos do Excel ou CSV, é possível criar um painel do Power BI para se manter informado em qualquer lugar e compartilhar informações com outras pessoas.  Você tem uma assinatura de um aplicativo SaaS como o Salesforce?  Comece conectando-se ao Salesforce para criar um dashboard automaticamente com base nesses dados ou [confira todos os outros aplicativos SaaS](service-get-data.md) aos quais você pode se conectar. Se você faz parte de uma organização, veja se algum [aplicativo](service-create-distribute-apps.md) foi publicado para você.
+Se você tiver dados importantes em arquivos do Excel ou CSV, é possível criar um painel do Power BI para se manter informado em qualquer lugar e compartilhar informações com outras pessoas.  Você tem uma assinatura de um aplicativo SaaS como o Salesforce?  Comece conectando-se ao Salesforce para criar um dashboard automaticamente com base nesses dados ou [confira todos os outros aplicativos SaaS](service-get-data.md) aos quais você pode se conectar. Se você faz parte de uma organização, veja se algum [aplicativo](consumer/end-user-create-apps.md) foi publicado para você.
 
 Leia sobre todas as outras maneiras de [obter dados para o Power BI](service-get-data.md).
 
@@ -87,7 +87,7 @@ Veja um exemplo de como obter dados de um arquivo CSV. Deseja acompanhar este tu
 
     ![Opção Modo de exibição de leitura](media/service-get-started/power-bi-editing-view.png)
 
-    Enquanto estiver no Modo de Exibição de Edição, você pode criar e modificar seus relatórios por ser *proprietário* do relatório; você está um *criador*. Quando você compartilha seu relatório com seus colegas, eles só conseguirão interagir com o relatório no Modo de Exibição de Leitura; eles são *consumidores*. Saiba mais sobre os [Modos de Exibição de Leitura e de Edição](service-reading-view-and-editing-view.md).
+    Enquanto estiver no Modo de Exibição de Edição, você pode criar e modificar seus relatórios por ser *proprietário* do relatório; você está um *criador*. Quando você compartilha seu relatório com seus colegas, eles só conseguirão interagir com o relatório no Modo de Exibição de Leitura; eles são *consumidores*. Saiba mais sobre os [Modos de Exibição de Leitura e de Edição](consumer/end-user-reading-view.md).
     
     Uma ótima maneira de se familiarizar com o editor de relatório é [fazer um tour](service-the-report-editor-take-a-tour.md)
    > 
@@ -158,5 +158,5 @@ Agora que você já concluiu o tutorial, é possível excluir o conjunto de dado
 Pronto para experimentar mais?  Aqui estão alguns modos excelentes de explorar o Power BI.
 
 > [!div class="nextstepaction"]
-> [Conectar aos serviços online que você usa](./service-connect-to-services.md)
+> [Conectar aos serviços online que você usa](consumer/end-user-connect-to-services.md)
 

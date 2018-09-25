@@ -10,20 +10,20 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a528c4a641dbdecce7d33f29e7afbe6118ee34b5
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 462e9b1d991690846c57a225552b271fca19499c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726468"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544385"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Criar um dashboard do Power BI de um relatório
-Você já leu [Dashboards no Power BI](service-dashboards.md) e agora deseja criar o seu próprio. Há várias maneiras diferentes de criar um dashboard de controle – de um relatório, desde o início, de um conjunto de dados, duplicando um dashboard existente e muito mais.  
+Você já leu [Dashboards no Power BI](consumer/end-user-dashboards.md) e agora deseja criar o seu próprio. Há várias maneiras diferentes de criar um dashboard de controle – de um relatório, desde o início, de um conjunto de dados, duplicando um dashboard existente e muito mais.  
 
 Pode parecer complicado quando você está começando, então vamos começar criando um painel rápido e fácil fixando visualizações de um relatório que já esteja criado. Depois de concluir este guia de início rápido, você terá um bom entendimento da relação entre painéis e relatórios, de como abrir o modo de exibição de edição no editor de relatórios, como fixar blocos e navegar entre um painel e um relatório. Em seguida, use os links no sumário à esquerda ou **Próximas etapas** na parte inferior para passar para os tópicos mais avançados.
 
 ## <a name="who-can-create-a-dashboard"></a>Quem pode criar um painel?
-Criar um painel é um recurso do **criador** e requer permissões de edição para o relatório. As permissões de edição estão disponíveis para os criadores do relatório e os colegas aos quais o criador concede acesso. Por exemplo, se David criar um relatório no workspaceABC e, em seguida, o adicionar como membro desse espaço de trabalho, você e David terão permissão de edição. Por outro lado, se um relatório tiver sido compartilhado com você diretamente ou como parte de um [aplicativo do Power BI](service-install-use-apps.md) (você está **consumindo** o relatório), não será possível fixar blocos em um painel.
+Criar um painel é um recurso do **criador** e requer permissões de edição para o relatório. As permissões de edição estão disponíveis para os criadores do relatório e os colegas aos quais o criador concede acesso. Por exemplo, se David criar um relatório no workspaceABC e, em seguida, o adicionar como membro desse espaço de trabalho, você e David terão permissão de edição. Por outro lado, se um relatório tiver sido compartilhado com você diretamente ou como parte de um [aplicativo do Power BI](consumer/end-user-apps.md) (você está **consumindo** o relatório), não será possível fixar blocos em um painel.
 
 > **OBSERVAÇÃO**: os dashboards são um recurso do serviço do Power BI, não do Power BI Desktop. Os dashboards não podem ser criados em dispositivos móveis Power BI, mas podem ser [exibidos e compartilhados](consumer/mobile/mobile-apps-view-dashboard.md).
 >
@@ -65,7 +65,7 @@ Vamos importar um dos conjuntos de dados de exemplo do Power BI e usá-lo para c
 1. Permanecendo no mesmo espaço de trabalho, selecione a guia **Relatórios**. O relatório importado recentemente é exibido com um asterisco amarelo. Selecione o nome do relatório para abri-lo.
 
     ![guia relatórios](media/service-dashboard-create/power-bi-reports.png)
-2. O relatório é aberto no [Modo de exibição de leitura](service-reading-view-and-editing-view.md). Observe que ele tem duas guias na parte inferior: Análise de desconto e Visão geral de gastos. Cada guia representa uma página do relatório.
+2. O relatório é aberto no [Modo de exibição de leitura](consumer/end-user-reading-view.md). Observe que ele tem duas guias na parte inferior: Análise de desconto e Visão geral de gastos. Cada guia representa uma página do relatório.
     Selecione **Editar relatório** para abrir o relatório no modo de exibição de Edição.
 
     ![relatório em modo de exibição de Leitura](media/service-dashboard-create/power-bi-reading-view.png)
@@ -108,9 +108,9 @@ Parabéns! Você criou seu primeiro dashboard! Agora que você tem um dashboard,
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Redimensionar e mover blocos](service-dashboard-edit-tile.md)
-* [Tudo sobre blocos de dashboard](service-dashboard-tiles.md)
-* [Compartilhar seu dashboard criando um aplicativo](service-create-distribute-apps.md)
-* [Power BI – conceitos básicos](service-basic-concepts.md)
+* [Tudo sobre blocos de dashboard](consumer/end-user-tiles.md)
+* [Compartilhar seu dashboard criando um aplicativo](consumer/end-user-create-apps.md)
+* [Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 * [Dicas para projetar um ótimo dashboard](service-dashboards-design-tips.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

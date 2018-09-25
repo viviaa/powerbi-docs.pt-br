@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0de070cc8661d4973d406ddf0749ef4852fc916c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598968"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546086"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Editar ou remover um bloco do dashboard
 
@@ -36,7 +36,7 @@ Este artigo aborda o seguinte.
 * [Excluir um bloco](#delete)
   
   > [!TIP]
-  > Para alterar a visualização mostrada no próprio bloco, exclua o bloco e adicione um novo [bloco de dashboard](service-dashboard-tiles.md).
+  > Para alterar a visualização mostrada no próprio bloco, exclua o bloco e adicione um novo [bloco de dashboard](consumer/end-user-tiles.md).
 
   
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -142,11 +142,11 @@ Por padrão, selecionar um bloco geralmente levará você ao relatório em que e
 
 - - -
 ## <a name="next-steps"></a>Próximas etapas
-[Blocos de Dashboard no Power BI](service-dashboard-tiles.md)
+[Blocos de Dashboard no Power BI](consumer/end-user-tiles.md)
 
-[Dashboards no Power BI](service-dashboards.md)
+[Dashboards no Power BI](consumer/end-user-dashboards.md)
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

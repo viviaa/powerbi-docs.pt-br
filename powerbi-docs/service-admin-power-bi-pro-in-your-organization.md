@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: da330e75642e243637f792cde706b6d34ce70062
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 8cf0a4de37f1bdc6e90a05799caebd2ce0e77046
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280721"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548294"
 ---
 # <a name="power-bi-pro-in-your-organization"></a>Power BI Pro em sua organização
 
@@ -35,7 +35,7 @@ Estes recursos exigem uma licença do Power BI Pro:
 
 Depois de se inscrever em sua conta gratuita, você pode optar por experimentar o Pro gratuitamente por 60 dias. Você terá acesso a todos os recursos do Pro durante o período da avaliação. O Power BI Pro tem todos os recursos da versão gratuita do Power BI, bem como recursos adicionais de colaboração e compartilhamento. Para obter mais informações, veja [Preços do Power BI](https://powerbi.microsoft.com/en-us/pricing/). Para experimentar uma avaliação gratuita de 60 dias do Power BI Pro, entre no Power BI e experimente um desses recursos do Power BI Pro.
 
-* [Criar um espaço de trabalho](service-create-distribute-apps.md)
+* [Criar um espaço de trabalho](consumer/end-user-create-apps.md)
 * [Compartilhar um dashboard](service-share-dashboards.md)
 
 Quando experimentar um desses recursos, você precisará iniciar sua avaliação gratuita. Você também pode optar por usá-lo indo até o ícone de engrenagem e selecionando Gerenciar armazenamento pessoal. Em seguida, selecione Experimentar o Pro gratuitamente à direita.

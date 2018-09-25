@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728239"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548018"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI
 Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](visuals/power-bi-visualizations-arcgis.md).
@@ -61,7 +61,7 @@ Este tutorial usa o exemplo de [Análise de Varejo](sample-retail-analysis.md). 
 2. Marque a caixa de seleção **ArcGIS Maps para Power BI**. Você precisará reiniciar o Power BI depois de fazer a seleção.
    
     ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Abra um relatório no [Modo de Exibição de Edição](service-reading-view-and-editing-view.md) e selecione o ícone do ArcGIS Maps para o Power BI no painel Visualizações.
+3. Abra um relatório no [Modo de Exibição de Edição](consumer/end-user-reading-view.md) e selecione o ícone do ArcGIS Maps para o Power BI no painel Visualizações.
    
     ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
 4. O Power BI adiciona um modelo de mapa do ArcGIS vazio na tela do relatório.

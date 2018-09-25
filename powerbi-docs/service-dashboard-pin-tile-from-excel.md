@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3bb151de24a984406aa6fd40a70977f2e9eaf1be
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599584"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548041"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fixar um bloco em um painel do Power BI a partir do Excel
 Antes de fixar um bloco da sua pasta de trabalho do Excel, conecte-a ao serviço do Power BI (app.powerbi.com). Essencialmente, conectar uma pasta de trabalho gera uma versão somente leitura vinculada dessa pasta de trabalho no serviço do Power BI e permite fixar intervalos aos dashboards. É possível até fixar uma planilha inteira em um dashboard.  
@@ -49,7 +49,7 @@ Não é possível editar a pasta de trabalho no Power BI. Mas se precisar fazer 
     ![Excel Online no Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Fixar um intervalo de células em um dashboard
-Uma maneira de adicionar um novo [bloco de dashboard](service-dashboard-tiles.md) é por meio de uma pasta de trabalho do Excel no Power BI. Os intervalos podem ser fixados de pastas de trabalho do Excel que foram salvas em seu OneDrive para Empresas ou em outra biblioteca de documentos compartilhados pelo grupo. Os intervalos podem conter dados, tabelas, gráficos, Tabelas Dinâmicas, Gráficos Dinâmicos e outras partes do Excel.
+Uma maneira de adicionar um novo [bloco de dashboard](consumer/end-user-tiles.md) é por meio de uma pasta de trabalho do Excel no Power BI. Os intervalos podem ser fixados de pastas de trabalho do Excel que foram salvas em seu OneDrive para Empresas ou em outra biblioteca de documentos compartilhados pelo grupo. Os intervalos podem conter dados, tabelas, gráficos, Tabelas Dinâmicas, Gráficos Dinâmicos e outras partes do Excel.
 
 1. Realce as células que você gostaria de fixar em um painel.
    
