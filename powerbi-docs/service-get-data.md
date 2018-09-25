@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: fba2ea948190a59039766ffc2b5fab6189896ab8
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 4b61ff56ea1aec64a3e88db46836f948c4190d60
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328478"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547443"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Fontes de dados do serviço do Power BI
 Dados são o coração do Power BI. Sempre que você está explorando dados, criando gráficos e dashboards, fazendo perguntas com P e R, todas essas visualizações e respostas que você vê estão, na verdade, extraindo dados subjacentes de um conjunto de dados. Mas de onde vem esse conjunto de dados? Bem, de uma fonte de dados.
@@ -44,7 +44,7 @@ O local onde você armazena seus arquivos também faz muita diferença. O OneDri
 
 Pacotes de conteúdo contêm todos os dados e relatórios de que você precisa já preparados para você. No Power BI, há dois tipos de pacotes de conteúdo; os de serviços, como Google Analytics, Marketo ou Salesforce, e os criados e compartilhados por outros usuários na sua organização.
 
-**Serviços** – há, literalmente, dezenas de serviços com pacotes de conteúdo para o Power BI, e mais são adicionados o tempo todo. A maioria dos serviços exige que você tenha uma conta. Para saber mais, veja [Conectar-se a serviços](service-connect-to-services.md).
+**Serviços** – há, literalmente, dezenas de serviços com pacotes de conteúdo para o Power BI, e mais são adicionados o tempo todo. A maioria dos serviços exige que você tenha uma conta. Para saber mais, veja [Conectar-se a serviços](consumer/end-user-connect-to-services.md).
 
 **Organizacional** – se você e outros usuários da sua organização tiverem uma conta do Power BI Pro, vocês podem criar, compartilhar e usar pacotes de conteúdo. Para saber mais, veja [Pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md).
 
