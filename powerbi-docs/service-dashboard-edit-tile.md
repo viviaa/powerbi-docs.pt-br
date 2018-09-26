@@ -1,7 +1,7 @@
 ---
 title: Editar um bloco do dashboard
 description: Este tutorial usa seu de criação de um bloco e anexando a um dashboard, para aprender como editar esse bloco do dashboard – redimensionar, mover, renomear, fixar, excluir, adicionar hiperlink.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0de070cc8661d4973d406ddf0749ef4852fc916c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 340f3d57c1ad860d4b0468085ff6a40c4013fa5c
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546086"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187595"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Editar ou remover um bloco do dashboard
 

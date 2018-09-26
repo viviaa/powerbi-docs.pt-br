@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: e7bd79b8d93bba4395922fb39faaf423109f7b02
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a67eb4d7970e45bd9b87dea058da8475b24e2e0f
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566109"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47186836"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Usar gráficos de faixa de opções no Power BI
 Use gráficos de faixa de opções no **Power BI** para visualizar dados e determinar rapidamente qual categoria de dados tem a classificação mais alta (maior valor). Gráficos de faixa de opções são eficazes para mostrar alterações na classificação, com o maior intervalo (valor) sempre exibido na parte superior de cada período. Os gráficos de faixa de opções estão disponíveis no **Power BI Desktop** a partir da versão de setembro de 2017 e nas atualizações posteriores do **serviço do Power BI**.

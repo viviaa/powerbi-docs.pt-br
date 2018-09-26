@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c50bcf656f967502e8bb01f7ca5184996170bed
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566316"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187227"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Otimizar um visual do Power BI para qualquer tamanho
 Por padrão, quando você cria um novo relatório, os visuais são *responsivos*: eles são alterados dinamicamente para exibir o máximo de dados e informações, independentemente do tamanho da tela. Para relatórios mais antigos, você também pode definir os elementos visuais para serem redimensionados dinamicamente.
 
 Como um visual muda de tamanho, o Power BI prioriza a exibição de dados, por exemplo, removendo o preenchimento e movendo a legenda para a parte superior do visual automaticamente, para que ele continue informativo mesmo quando fica menor. A capacidade de resposta é especialmente útil em visuais no aplicativo móvel do Power BI em telefones.
 
-![Redimensionamento do visual responsivo](./media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
+![Redimensionamento do visual responsivo](media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
 
 Qualquer visual com eixos X e Y e segmentações podem ser redimensionados de maneira responsiva.
 
 ## <a name="turn-on-responsiveness-in-power-bi-desktop"></a>Ativar a capacidade de resposta no Power BI Desktop
 1. Em um relatório mais antigo no Power BI Desktop, na guia **Exibir**, certifique-se de que você está no **Layout da área de trabalho**.
    
-    ![Ícone de Layout da Área de Trabalho](./media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
+    ![Ícone de Layout da Área de Trabalho](media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
 2. Selecione um visual e no painel **Visualizações**, selecione a seção **Formatar**.
 3. Expanda **Geral** > deslize a opção **Responsivo** para a posição **Ativo**.
    
-    ![Responsivo ativado](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Responsivo ativado](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Agora quando você [criar um relatório otimizado para o telefone](../desktop-create-phone-report.md) e adicionar esse visual, ele será redimensionado com sutileza.
 
@@ -44,7 +44,7 @@ Você pode ativar a capacidade de resposta de um visual em um relatório mais an
 2. Selecione um visual e no painel **Visualizações**, selecione a seção **Formatar**.
 3. Expanda **Geral** > deslize a opção **Responsivo** para a posição **Ativo**.
    
-    ![Responsivo ativado](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Responsivo ativado](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Agora quando você [criar uma exibição para telefone deste relatório](../desktop-create-phone-report.md) e adicionar esse visual, ele será redimensionado com sutileza.
 
