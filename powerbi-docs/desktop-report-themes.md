@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 4cc2c0ae14cf457c3a704b2891e070f4e4e00166
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657933"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512169"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Usar Temas de relatório no Power BI Desktop
 Com **Temas de Relatório** você pode aplicar um tema de cor ao relatório inteiro, como as cores da empresa, uma coloração sazonal ou qualquer outro tema de cor que você queira aplicar. Quando você aplicar um **Tema de Relatório**, todos os visuais no relatório passarão a usar as cores do tema selecionado (aplicam-se algumas exceções que serão descritas posteriormente neste artigo).
@@ -36,7 +36,17 @@ Se estiver usando uma versão anterior do **Power BI Desktop**, poderá habilit�
 É recomendável sempre atualizar para a versão mais recente do **Power BI Desktop**, que pode ser obtida de um link em [obter o Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Como os temas de relatório funcionam
-Para aplicar um Tema de Relatório em um relatório do Power BI Desktop, selecione o botão **Mudar Tema** na faixa de opções **Início** e selecione **Importar Tema** na lista suspensa.
+Para aplicar um tema de relatório a um relatório do Power BI Desktop, é possível selecionar dentre os temas de relatório internos disponíveis ou importar um tema personalizado.
+
+Para selecionar entre temas de relatório internos disponíveis, selecione o botão **Mudar tema** na faixa de opções **Página Inicial** e, em seguida, selecione um dos temas incluídos no menu suspenso.
+
+![selecionar um tema de relatório](media/desktop-report-themes/report-themes_2a.png)
+
+Seu tema de relatório é aplicado ao relatório, e você estará pronto para começar.
+
+### <a name="importing-report-themes"></a>Importando temas de relatório
+
+Para importar um tema de relatório personalizado, selecione o botão **Mudar tema** na faixa de opções **Página Inicial** e, em seguida, selecione **Importar tema** no menu suspenso.
 
 ![](media/desktop-report-themes/report-themes_3.png)
 

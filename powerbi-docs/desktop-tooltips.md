@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280744"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547098"
 ---
-# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop (versão prévia)
+# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop
 Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas que aparecem ao passar o mouse sobre visuais, com base nas páginas de relatório que você cria no **Power BI Desktop**. Ao criar uma página de relatório que sirva como dica de ferramenta, as dicas de ferramenta personalizadas poderão incluir elementos visuais, imagens e qualquer outra coleção de itens que você criar na página de relatório. 
 
 ![Dicas de ferramenta de relatório do Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -27,11 +27,15 @@ Você pode criar tantas páginas de dica de ferramenta quanto desejar. Cada pág
 Há inúmeras coisas interessantes que você pode fazer com dicas de ferramentas de relatório. Vamos ver como criar dicas de ferramenta e o que você deve fazer para configurá-las.
 
 ### <a name="enable-the-tooltips-preview"></a>Habilitar a versão prévia das dicas de ferramenta 
-Como as dicas de ferramentas de relatório estão atualmente em versão prévia, antes de criá-las é necessário habilitá-las. Para habilitar o recurso das dicas de ferramentas de relatório, que está em versão prévia, selecione **Arquivo > Opções e Configurações > Opções > Recursos de Visualização** no Power BI Desktop e, em seguida, marque a caixa de seleção ao lado de **Dicas de ferramenta de página de relatório**. 
+A partir da versão de setembro de 2018 do **Power BI Desktop**, as dicas de ferramentas estão disponíveis para o público geral e não precisam ser habilitadas. 
+
+Se estiver usando uma versão anterior do **Power BI Desktop**, poderá habilitá-la como uma versão prévia do recurso selecionando **Arquivo > Opções e Configurações > Opções > Recursos de visualização** no Power BI Desktop e, em seguida, marque a caixa de seleção ao lado de **Dicas de ferramentas da página de relatório**. 
 
 ![Habilitar o recurso em versão prévia das dicas de ferramentas de relatório](media/desktop-tooltips/desktop-tooltips_01.png)
 
 Você precisará reiniciar o **Power BI Desktop** depois de habilitar a versão prévia das dicas de ferramentas de relatório.
+
+É recomendável sempre atualizar para a versão mais recente do **Power BI Desktop**, que pode ser obtida de um link em [obter o Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="create-a-report-tooltip-page"></a>Criar uma página de dica de ferramenta de relatório
 Para começar, crie uma nova página de relatório clicando no botão **+**, que se encontra na parte inferior da tela do **Power BI Desktop**, na área de guias da página. O botão fica ao lado da última página no relatório. 
@@ -117,8 +121,9 @@ Quando se faz realce cruzado em um visual em um relatório, as dicas de ferramen
 
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
-Nesta versão prévia das **dicas de ferramenta** de relatório, há algumas limitações e considerações a serem lembradas.
+Há algumas limitações e considerações para **dicas de ferramentas** para se ter em mente.
 
+* A partir da versão de setembro de 2018 do **Power BI Desktop**, que marcou a disponibilidade geral de dicas de ferramentas, os visuais de cartão também são compatíveis com as dicas de ferramentas.
 * A partir da versão de julho de 2018 do **Power BI Desktop**, os elementos visuais da Tabela e da Matriz passam a ser compatíveis com as dicas de ferramentas. 
 * Não há suporte para dicas de ferramentas de relatório ao exibir relatórios em aplicativos móveis ou em ambientes inseridos, incluindo Publicar na Web. 
 * Dicas de ferramentas de relatório não são compatíveis com visuais personalizados. 
@@ -131,5 +136,5 @@ Nesta versão prévia das **dicas de ferramenta** de relatório, há algumas lim
 Para obter mais informações sobre os recursos que são semelhantes ou interagem com dicas de ferramentas de relatório, consulte os seguintes artigos:
 
 * [Usar o detalhamento no Power BI Desktop](desktop-drillthrough.md)
-* [Exibir um bloco do dashboard ou visual do relatório no modo de Foco](service-focus-mode.md)
+* [Exibir um bloco do dashboard ou visual do relatório no modo de Foco](consumer/end-user-focus.md)
 

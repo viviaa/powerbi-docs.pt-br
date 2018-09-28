@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fa812801eb01529c3e364d69f041b7efd193c3ae
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657864"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512054"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.
@@ -53,6 +53,7 @@ A categoria **Arquivo** fornece as seguintes conexões de dados:
 * XML
 * JSON
 * Pasta
+* PDF (beta)
 * Pasta do SharePoint
 
 A imagem a seguir mostra a janela **Obter Dados** para **Arquivo**.
@@ -79,7 +80,8 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Impala
 * Google BigQuery
 * Snowflake
-* Exasol
+* Exasol (beta)
+* Jethro (beta)
 
 > [!NOTE]
 > Alguns conectores de banco de dados exigem que você os habilite selecionando **Arquivo > Opções e configurações > Opções**, em seguida, **Recursos de Visualização** e habilitando o conector. Se você não vir alguns dos conectores mencionados acima e quiser usá-los, verifique suas configurações de **Recursos de Visualização**. Observe também que toda fonte de dados marcada como *Beta* ou *Visualização* tem suporte e funcionalidade limitados e não deve ser usada em ambientes de produção.
@@ -93,6 +95,7 @@ A imagem a seguir mostra a janela **Obter Dados** para **Banco de dados**.
 A categoria **Power BI** fornece as seguintes conexões de dados:
 
 * Conjuntos de dados do Power BI
+* Fluxos de dados do Power BI (beta)
 
 A imagem a seguir mostra a janela **Obter Dados** do **Power BI**.
 
@@ -108,7 +111,7 @@ A categoria **Azure** fornece as seguintes conexões de dados:
 * Azure Cosmos DB (Beta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
-* Azure HDInsight Spark (Beta)
+* Azure HDInsight Spark
 * Consulta Interativa do HDInsight (Beta)
 * Azure KustoDB (beta)
 
@@ -169,6 +172,7 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * HDFS (Arquivo do Hadoop)
 * Spark
 * Script do R
+* Script do Python
 * ODBC
 * OLE DB
 * Consulta em Branco
