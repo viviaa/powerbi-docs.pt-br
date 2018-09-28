@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dfb45be36516be9196fbdd4297209ce4bf15925c
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: 71894a801f0c993abaaedc92d4172da67b76f7a0
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512526"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974197"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Agregações no Power BI Desktop (versão prévia)
 
@@ -243,7 +243,7 @@ O modelo a seguir replica *Mês*, *Trimestre*, *Semestre* e *Ano* na tabela **Ag
 
 A tabela a seguir mostra as entradas definidas na caixa de diálogo **Gerenciar agregações** da tabela **Agregação de vendas**. As entradas GroupBy em que **Data** é a tabela de detalhes são obrigatórias para atingir agregações para consultas agrupadas pelos atributos de data. Como no exemplo anterior, as entradas GroupBy para CustomerKey e ProductSubcategoryKey não afetam as ocorrências de agregação devido à presença de relações (novamente com a exceção de DISTINCTCOUNT).
 
-![Tabela de agregações Agregação de vendas](media/desktop-aggregations/aggregations-table_03.jpg)
+![Tabela de agregações Agregação de vendas](media/desktop-aggregations/aggregations-table_04.jpg)
 
 > Observação: esse modelo requer que a tabela **Data** esteja no modo DirectQuery para preencher a caixa de diálogo Gerenciar agregações, porque ele é uma tabela de detalhes. Essa é uma limitação de versão prévia que pretendemos remover da Disponibilidade geral.
 
