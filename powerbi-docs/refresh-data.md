@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e75cc0f7ca31257ea46af20b63c29d0d870ef7a0
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329674"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417362"
 ---
 # <a name="data-refresh-in-power-bi"></a>Atualizar dados no Power BI
 Certificando-se de que sempre obterá os dados mais recentes que costumam ser fundamentais para tomar as decisões corretas. Você provavelmente já usou Obter Dados no Power BI para conectar e carregar alguns dados, criou alguns relatórios e um painel de controle. Agora, você deseja certificar-se de que seus dados são realmente mais recentes e maiores.
@@ -126,7 +126,7 @@ Para obter detalhes, veja [Atualizar um conjunto de dados criado com base em um 
 | Power Query* é usada para se conectar e consultar dados de qualquer fonte de dados online listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Não |
 | O Power Query* é usado para carregar dados no modelo de dados do Excel e para conectar-se a e consultar dados de qualquer fonte de dados listada local, exceto o arquivo do Hadoop (HDFS) e o Microsoft Exchange. |Não |Sim |Sim |
 | Power Pivot é usada para se conectar e consultar dados de qualquer fonte de dados online listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Não |
-| Power Pivot é usada para se conectar e consultar dados de qualquer fonte de dados no local listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Sim |
+| Power Pivot* é usada para se conectar e consultar dados de qualquer fonte de dados no local listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Sim |
 
 *\* Power Query é conhecida como Obter & transformar dados no Excel 2016.*
 
@@ -211,8 +211,6 @@ Os dashboards em tempo real usam a API REST do Microsoft Power BI ou o Microsoft
 | **Fonte de dados** | **Automático** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
 | --- | --- | --- | --- |
 | Aplicativos personalizados desenvolvidos com o API Rest do Power BI ou  Microsoft Stream Analytics |Sim, transmissão ao vivo |Não |Não |
-
-Para obter mais informações, veja [Criar um dashboard em tempo real no Power BI](https://msdn.microsoft.com/library/mt267603.aspx).
 
 ## <a name="configure-scheduled-refresh"></a>Configurar a atualização agendada
 Para saber como configurar a atualização agendada, veja [Configurar a atualização agendada](refresh-scheduled-refresh.md)
