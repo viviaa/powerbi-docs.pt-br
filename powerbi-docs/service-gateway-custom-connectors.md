@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c36034ad5e8175e08f1d16c2f5148c5dab0ebbd
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42702873"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799036"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Usar conectores de dados personalizados com o gateway de dados local
 
@@ -45,8 +45,6 @@ Quando essa opção estiver habilitada, você verá seus conectores personalizad
 
 * Certifique-se de que a pasta criada está acessível para o serviço de gateway de tela de fundo. Normalmente, as pastas na pasta Windows ou em pastas do sistema do seu usuário não estarão acessíveis. O configurador do gateway mostrará uma mensagem se a pasta não estiver acessível (isso não se aplica à versão pessoal do gateway)
 * Para os conectores personalizados funcionarem com o gateway de dados local, eles precisam implementar uma seção "TestConnection" no código do conector personalizado. Isso não é necessário ao usar conectores personalizados com o Power BI Desktop. Você pode ter um que funciona com a Área de trabalho, mas não com o gateway por esse motivo. Consulte [esta documentação](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) sobre como implementar uma seção TestConnection.
-* Não há suporte para conectores personalizados com a autenticação OAuth.
-* Não há suporte para conectores personalizados que usam a Consulta direta.
 
 ## <a name="next-steps"></a>Próximas etapas
 
