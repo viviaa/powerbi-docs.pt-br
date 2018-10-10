@@ -7,46 +7,39 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2018
+ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e01a62bc35edc736fd102d75e7049b42f97c8da5
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: add6a02d10c2dfe0e0fd93b9d12f03a10d057241
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566063"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908200"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Conectar-se aos serviços que você usa com o Power BI
-Conecte-se aos vários serviços que você usa para administrar sua empresa, como o Salesforce, Microsoft Dynamics e Google Analytics. O Power BI começa usando suas credenciais para se conectar ao serviço e, em seguida, cria um aplicativo do Power BI com um dashboard e um conjunto de relatórios do Power BI que mostram os dados automaticamente e fornecem insights visuais sobre sua empresa. 
-
-Faça logon no Power BI para exibir todos os [serviços aos quais você pode se conectar](https://app.powerbi.com/getdata/services). A equipe do Power BI adiciona novos serviços regularmente.
-
-![Aplicativos do AppSource](./media/end-user-connect-to-services/overview.png)
 
 Depois de instalar o aplicativo, exiba o dashboard e os relatórios no serviço do Power BI ([https://powerbi.com](https://powerbi.com)) e nos aplicativos móveis do Power BI. 
 
-![Aplicativo Google Analytics no aplicativo móvel do Power BI](./media/end-user-connect-to-services/power-bi-service-mobile-app-240.png)
+![Aplicativo Google Analytics no aplicativo móvel do Power BI](media/end-user-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## <a name="get-started"></a>Introdução
-[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](.././includes/powerbi-service-apps-get-more-apps.md)]
 
 ## <a name="view-the-dashboard-and-reports"></a>Exibir o dashboard e os relatórios
 Quando a importação for concluída, o novo aplicativo será exibido na página Aplicativos.
 
 1. Selecione **Aplicativos** no painel de navegação à esquerda > selecione o aplicativo.
    
-     ![Página Aplicativos](./media/end-user-connect-to-services/power-bi-service-apps-open-app.png)
+     ![Página Aplicativos](media/end-user-connect-to-services/power-bi-service-apps-open-app.png)
 2. Faça uma pergunta digitando na caixa de P e R ou clique em um bloco para abrir o relatório subjacente. 
    
-    ![Dashboard do Google Analytics](./media/end-user-connect-to-services/googleanalytics2.png)
+    ![Dashboard do Google Analytics](media/end-user-connect-to-services/googleanalytics2.png)
    
     Você pode filtrar e realçar os dados no relatório, mas não pode salvar as alterações.
 
 ## <a name="whats-included"></a>O que está incluído
 Depois de se conectar a um serviço, você verá um aplicativo recém-criado com um dashboard, relatórios e um conjunto de dados. Os dados do serviço são voltados para um cenário específico e podem não incluir todas as informações do serviço. Os dados são agendados para serem atualizados automaticamente uma vez por dia. Controle o agendamento selecionando o conjunto de dados.
-
-Também é possível usar o [Power BI Desktop](../desktop-get-the-desktop.md) para se conectar a alguns serviços, como o Google Analytics, e criar seus próprios relatórios e dashboards personalizados.  
 
 Para obter mais detalhes sobre como se conectar a serviços específicos, consulte as páginas de ajuda individuais.
 
@@ -56,7 +49,7 @@ Embora o Power BI esteja se conectando ao serviço pela primeira vez, você pode
 
 * Selecione o ícone de ponto de interrogação (**?**) no canto superior direito > **Obter ajuda**.
   
-    ![Ícone Obter ajuda](./media/end-user-connect-to-services/power-bi-service-get-help.png)
+    ![Ícone Obter ajuda](media/end-user-connect-to-services/power-bi-service-get-help.png)
 
 **Informações ausentes**  
 O dashboard e os relatórios incluem o conteúdo do serviço voltado para um cenário específico e não incluem todas as informações do serviço. Se houver uma métrica específica que você não esteja vendo no pacote de conteúdo, adicione uma ideia na página [Suporte do Power BI](https://support.powerbi.com/forums/265200-power-bi).
@@ -67,7 +60,7 @@ Você usa um serviço que gostaria de sugerir para um aplicativo do Power BI? V�
 Você tem um serviço para o qual gostaria de criar um aplicativo? [Envie sua nomeação](https://azure.microsoft.com/marketplace/programs/certified/apply/) e selecione “Publicar um Pacote de Conteúdo do Power BI” para começar.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [O que são aplicativos no Power BI?](end-user-apps.md)
+* [O que são aplicativos no Power BI?](../service-install-use-apps.md)
 * [Obter dados no Power BI](../service-get-data.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

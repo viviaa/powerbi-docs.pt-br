@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 08/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8e5e2211af7dc53dba20a8d43c1083517b51bf17
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: eac6a1b4f7a3f734aa22c715a4ef196193230283
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565971"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908844"
 ---
 # <a name="export-data-from-visualizations"></a>Exportar dados de uma visualização
 Se desejar ver os dados usados para criar uma visualização, você poderá [exibi-los no Power BI](end-user-show-data.md) ou exportá-los para o Excel como um arquivo .xlsx ou .csv.   
@@ -55,7 +55,7 @@ Para continuar, abra o [Relatório de exemplo de análise de aquisições](../sa
 4. Selecione as elipses no canto superior direito da visualização. Escolha  **Exportar dados**.
 
    ![](media/end-user-export-data/power-bi-export-data2.png)
-5. No Power BI online, se a sua visualização tem uma agregação (um exemplo seria se você alterou **Contagem** para *média*, **soma** ou *mínimo*), você terá duas opções: **Dados resumidos** e **Dados subjacentes**. No Power BI Desktop, você apenas terá a opção para **Dados resumidos**. Para ajuda para entender melhor as agregações, consulte [Agregações no Power BI](../service-aggregates.md).
+5. No Power BI online, se a sua visualização tem uma agregação (um exemplo seria se você alterou **Contagem** para *média*, *soma* ou *mínimo*), você terá duas opções: **Dados resumidos** e **Dados subjacentes**. No Power BI Desktop, você apenas terá a opção para **Dados resumidos**. Para ajuda para entender melhor as agregações, consulte [Agregações no Power BI](../service-aggregates.md).
 
     ![](media/end-user-export-data/power-bi-export-data5.png)
 6. Selecione **Dados resumidos** > **Exportar** e escolha .xlsx ou .csv. O Power BI exporta os dados.  Se você aplicou filtros à visualização, os dados serão exportados da maneira que foram filtrados. Ao selecionar **Exportar**, o navegador solicitará que você salve o arquivo. Após salvá-lo, abra o arquivo no Excel.

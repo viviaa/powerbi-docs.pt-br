@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1f9be0fa1953ceb86e00bbc85c13813858faa4b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: d00ad254e25f8806f6cf2bc944e849e32167b1f8
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547305"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908384"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gerenciar, atualizar e excluir pacotes de conteúdo organizacional
 > [!NOTE]
@@ -86,6 +86,6 @@ Você só poderá excluir um pacote de conteúdo do AppSource se o tiver criado.
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Introdução aos pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md)
-* [Criar e distribuir um aplicativo no Power BI](consumer/end-user-create-apps.md) 
+* [Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md) 
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

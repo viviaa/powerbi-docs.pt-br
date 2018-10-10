@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a00913ea326f472993553910a79e3cc208356499
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546707"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908890"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Conectar-se ao Microsoft Dynamics NAV com o Power BI
 É fácil obter insights sobre seus dados do Microsoft Dynamics NAV com o Power BI. O Power BI recupera seus dados de Vendas e Financeiros e, em seguida, cria um aplicativo com um dashboard e relatórios com base nesses dados. O Power BI precisa de suas permissões para as tabelas das quais os dados são recuperados, nesse caso, os dados de vendas e de finanças. Mais detalhes sobre os requisitos abaixo. Depois de instalar o aplicativo, exiba o dashboard e os relatórios no serviço do Power BI ([https://powerbi.com](https://powerbi.com)) e nos aplicativos móveis do Power BI. 
@@ -25,9 +25,9 @@ ms.locfileid: "46546707"
 ## <a name="how-to-connect"></a>Como se conectar
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Selecione **Microsoft Dynamics NAV** e, em seguida, **Obter**.  
+3. Selecione **Microsoft Dynamics NAV** e, em seguida, **Obter**.  
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
-2. Quando solicitado, digite sua URL do OData do Microsoft Dynamics NAV. A URL deve corresponder ao seguinte padrão:
+4. Quando solicitado, digite sua URL do OData do Microsoft Dynamics NAV. A URL deve corresponder ao seguinte padrão:
    
     `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
@@ -37,12 +37,12 @@ ms.locfileid: "46546707"
      
      Uma maneira fácil de obter essa URL é, no Dynamics NAV, ir até Serviços Web, localizar o serviço Web powerbifinance e copiar a URL do OData, mas omitindo “/powerbifinance” da cadeia de caracteres da URL.  
      ![](media/service-connect-to-microsoft-dynamics-nav/param.png)
-3. Selecione **Básica** e insira suas credenciais do Microsoft Dynamics NAV.
+5. Selecione **Básica** e insira suas credenciais do Microsoft Dynamics NAV.
    
     Você precisa de credenciais de administrador (ou, pelo menos, permissões para dados de vendas e financeiros) de sua conta do Microsoft Dynamics NAV.  No momento, há suporte apenas para a autenticação Básica (Nome de Usuário e Senha).
    
     ![](media/service-connect-to-microsoft-dynamics-nav/creds.png)
-4. O Power BI recuperará seus dados do Microsoft Dynamics NAV e criará para você um relatório e um painel prontos para o uso.   
+6. O Power BI recuperará seus dados do Microsoft Dynamics NAV e criará para você um relatório e um painel prontos para o uso.   
    ![](media/service-connect-to-microsoft-dynamics-nav/dashboard.png)
 
 ## <a name="view-the-dashboard-and-reports"></a>Exibir o dashboard e os relatórios
@@ -99,7 +99,7 @@ Se uma caixa de diálogo de erro “Ops!” for exibida depois que você passar 
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Próximas etapas
-* [O que são aplicativos no Power BI?](consumer/end-user-apps.md)
+* [O que são aplicativos no Power BI?](service-create-distribute-apps.md)
 * [Obter dados no Power BI](service-get-data.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 
