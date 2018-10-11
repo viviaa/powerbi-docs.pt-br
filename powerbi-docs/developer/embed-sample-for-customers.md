@@ -3,18 +3,18 @@ title: Inserir conteúdo do Power BI em um aplicativo para seus clientes
 description: Aprenda a integrar ou inserir um dashboard, um bloco ou um relatório em um aplicativo Web usando as APIs do Power BI para seus clientes.
 author: markingmyname
 ms.author: maghan
-ms.date: 06/20/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: 3cb33180c24022c1e328691ce3a776875d4c87a9
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 06/20/2018
+ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
+ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238113"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48827423"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para seus clientes
 
@@ -76,7 +76,7 @@ Você precisa habilitar permissões adicionais para seu aplicativo além do que 
     ![Permissões necessárias](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Selecione **Microsoft Azure Active Directory** e, em seguida, certifique-se de **Acessar o diretório como o usuário conectado** esteja selecionado. Selecione **Salvar**.
-   
+
     ![Permissões do Microsoft Azure AD](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
 
 4. Selecione **Adicionar**.
@@ -92,13 +92,13 @@ Você precisa habilitar permissões adicionais para seu aplicativo além do que 
     ![Selecione Serviços do PBI](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
 7. Selecione todas as permissões em **Permissões Delegadas**. É necessário selecionar uma a uma para salvar as seleções. Selecione **Salvar** quando terminar.
-   
+
     ![Selecione permissões delegadas](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
 8. Em **Permissões necessárias**, selecione **Conceder Permissões**.
-   
+
     A ação **Conceder permissões** é necessária para a *conta mestre*, a fim de evitar prompts de consentimento pelo Azure AD. Se a conta que executar essa ação for um administrador global, você precisará conceder permissões para todos os usuários da organização para esse aplicativo. Se a conta que executa essa ação é a *conta mestre* e não é um administrador global, você precisa conceder permissões apenas para a *conta mestre* para esse aplicativo.
-   
+
     ![Conceder permissões na caixa de diálogo Permissões necessárias](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurar seu ambiente do Power BI
@@ -171,7 +171,7 @@ Execute estas etapas para começar a incorporar o conteúdo usando um aplicativo
 
     ![Página principal do portal do Azure](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-    No painel de navegação esquerdo, escolha **Todos os Serviços** e selecione **Registros de Aplicativo**.
+    No painel de navegação esquerdo, escolha **Todos os Serviços** e selecione **Registros de aplicativo**.
 
     ![Pesquisa de registro de aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -277,6 +277,7 @@ var embedConfig = new EmbedConfig()
 Isso pressupõe que uma classe seja criada para **EmbedConfig** e **TileEmbedConfig**. Uma amostra deles está disponível nos arquivos **Modelos\EmbedConfig.cs** e **Modelos\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Carregar um item usando o JavaScript
+
 Use o JavaScript para carregar um relatório em um elemento div na página da Web.
 
 Para obter um exemplo completo de como usar a API JavaScript, use a [ferramenta de Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Trata-se de uma maneira rápida de experimentar diferentes tipos de exemplos do Power BI Embedded. Também é possível obter mais informações sobre a API de JavaScript, acessando a página da [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).

@@ -3,12 +3,13 @@ layout: HubPage
 hide_bc: true
 title: Documentação do Power BI
 description: Documentação do Power BI
-ms.openlocfilehash: ffd9761b235e962a37ec71d44a5e3550163dc8c6
-ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
+ms.service: powerbi
+ms.openlocfilehash: 7dbc0270fcfdd7dc83a41cbe45399dc05a2ccfe8
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48232847"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48798967"
 ---
 <div id="main" class="v2">
     <div class="container">
