@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599171"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238090"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gerenciar sua fonte de dados – Analysis Services
 Depois de instalar o gateway de dados local, será necessário adicionar fontes de dados que podem ser usadas com o gateway. Este artigo abordará como trabalhar com gateways e fontes de dados. Você pode usar a fonte de dados do Analysis Services para a atualização agendada ou para conexões em tempo real.
@@ -150,13 +150,38 @@ No gateway de dados local com o mapeamento de usuário personalizado configuráv
 Como configurar seu gateway para executar a Consulta do AD:
 
 1. Baixar e instalar o gateway mais recente
+
 2. No gateway, é necessário alterar o **serviço do gateway de dados local** para ser executado com uma conta de domínio (em vez de uma conta de serviço local, caso contrário, a consulta do AD não funcionará corretamente no tempo de execução). Será necessário reiniciar o serviço do gateway para que a alteração tenha efeito.  Acesse o aplicativo do gateway em seu computador (pesquise “gateway de dados local”). Para fazer isso, vá para **Configurações de Serviço > Alterar a Conta de Serviço**. Certifique-se de ter a chave de recuperação para esse gateway, uma vez que será preciso restaurá-lo no mesmo computador, a menos que você deseje criar um novo gateway em vez disso. 
-3. Navegue até a pasta de instalação do gateway, *C:\Arquivos de Programas\Gateway de dados locais* como um administrador para garantir que você tem permissões de gravação e edite o seguinte arquivo:
 
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Editar os dois valores de configuração a seguir de acordo com *suas* configurações de atributo do Active Directory dos seus usuários do AD. Os valores de configuração mostrados abaixo são apenas exemplos – é necessário especificá-los com base em sua configuração do Active Directory. 
+3. Navegue até a pasta de instalação do gateway, *C:\Program Files\On-premises data gateway* como administrador para garantir que você tenha permissões de gravação e edite o seguinte arquivo: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+4. Edite os dois valores de configuração a seguir de acordo com *suas* configurações de atributo do Active Directory para seus usuários do AD. Os valores de configuração mostrados abaixo são apenas exemplos – é necessário especificá-los com base em sua configuração do Active Directory. Essas configurações diferenciam maiúsculas de minúsculas, assim, garanta que elas correspondam aos valores no Active Directory.
+
+    ![Configurações do Azure Active Directory](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    Se nenhum valor for fornecido para a configuração do ADServerPath, o gateway usará o Catálogo Global padrão. Você também pode especificar vários valores para o ADServerPath. Cada valor deve ser separado por ponto e vírgula como no exemplo a seguir.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    O gateway analisa os valores para ADServerPath da esquerda para a direita até encontrar uma correspondência. Se nenhuma correspondência for encontrada, o UPN original será usado. Verifique se a conta que executa o serviço de gateway (PBIEgwService) tem permissões de consulta para todos os servidores do AD que você especifica no ADServerPath.
+
+    O gateway dá suporte a dois tipos de ADServerPath, como nos exemplos a seguir.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. Reinicie o serviço do **gateway de dados local** para que a alteração da configuração entre em vigor.
 
 ### <a name="working-with-mapping-rules"></a>Trabalhando com regras de mapeamento

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4264b10ac9ae42585ea8b814d0c15de7ea318752
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547098"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416787"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop
 Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas que aparecem ao passar o mouse sobre visuais, com base nas páginas de relatório que você cria no **Power BI Desktop**. Ao criar uma página de relatório que sirva como dica de ferramenta, as dicas de ferramenta personalizadas poderão incluir elementos visuais, imagens e qualquer outra coleção de itens que você criar na página de relatório. 
@@ -125,7 +125,7 @@ Há algumas limitações e considerações para **dicas de ferramentas** para se
 
 * A partir da versão de setembro de 2018 do **Power BI Desktop**, que marcou a disponibilidade geral de dicas de ferramentas, os visuais de cartão também são compatíveis com as dicas de ferramentas.
 * A partir da versão de julho de 2018 do **Power BI Desktop**, os elementos visuais da Tabela e da Matriz passam a ser compatíveis com as dicas de ferramentas. 
-* Não há suporte para dicas de ferramentas de relatório ao exibir relatórios em aplicativos móveis ou em ambientes inseridos, incluindo Publicar na Web. 
+* Não há suporte para dicas de ferramentas de relatório ao exibir relatórios em aplicativos móveis. 
 * Dicas de ferramentas de relatório não são compatíveis com visuais personalizados. 
 * Atualmente não há suporte para usar clusters como campos que podem ser mostrados nas dicas de ferramentas de relatório. 
 * Ao escolher um campo a ser mostrado como dicas de ferramentas de relatório, usando-o em vez de usar uma categoria, os visuais que contém esse campo só mostrarão a dica de ferramenta especificada quando houver correspondência entre os campos selecionados e o resumo. 

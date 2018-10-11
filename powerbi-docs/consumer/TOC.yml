@@ -1,0 +1,200 @@
+items:
+- name: Power BI para consumidores
+  href: power-bi-consumer-landing.md
+- name: Serviço do Power BI
+  items:
+  - name: Início rápido
+    items:
+    - name: Encontre seu caminho
+      href: end-user-experience.md
+    expanded: true
+  - name: Conceitos
+    items:
+    - name: Power BI - conceitos básicos
+      href: end-user-basic-concepts.md
+    - name: Pesquisa e classificação de conteúdo
+      href: end-user-search-filter-sort.md
+    - name: Conteúdo relacionado
+      href: end-user-related.md
+    - name: Conteúdo recente
+      href: end-user-recent.md
+    - name: Aceitar versão prévia dos recursos
+      href: end-user-preview-features.md
+    - name: Dashboards
+      href: end-user-dashboards.md
+    - name: Blocos de dashboard
+      href: end-user-tiles.md
+    - name: P e R no Power BI
+      href: end-user-q-and-a.md
+    - name: Relatórios
+      href: end-user-reports.md
+    - name: Abrir um relatório na exibição de Leitura
+      href: end-user-reading-view.md
+    - name: Compartilhado comigo
+      href: end-user-shared-with-me.md
+    - name: Perguntas frequentes
+      href: end-user-faq.md
+    - name: Insights rápidos
+      href: end-user-insights.md
+    - name: Tipos de Insights Rápidos
+      href: end-user-insight-types.md
+  - name: Como
+    items:
+    - name: Tarefas comuns
+      items:
+      - name: Exibir um bloco do painel no modo Em foco
+        href: end-user-focus.md
+      - name: Adicionar painéis, relatórios e aplicativos aos favoritos
+        href: end-user-favorite.md
+      - name: Remover conteúdo
+        href: end-user-delete.md
+      - name: Instalar e usar aplicativos
+        href: end-user-apps.md
+      - name: Conectar-se a um pacote de conteúdo organizacional
+        href: end-user-content-pack.md
+      - name: Conectar-se aos serviços que você usa
+        href: end-user-connect-to-services.md
+    - name: Dashboards
+      items:
+      - name: Dashboards em destaque
+        href: end-user-featured.md
+      - name: Centro de Notificações Unificado
+        href: end-user-notification-center.md
+    - name: Relatórios
+      items:
+      - name: Muitas maneiras de abrir um relatório
+        href: end-user-report-open.md
+      - name: Como usar filtros de relatório
+        href: end-user-report-filter.md
+      - name: Assinar um relatório ou um dashboard
+        href: end-user-subscribe.md
+      - name: Alterar como os visuais interagem em um relatório
+        href: end-user-interactions.md
+      - name: Alterar as configurações de exibição para uma página em um relatório
+        href: end-user-report-view.md
+    - name: Visualizações
+      items:
+      - name: Fazer drill down em uma visualização
+        href: end-user-drill.md
+      - name: Ver os dados usados para criar o visual
+        href: end-user-show-data.md
+      - name: Exportar dados de uma visualização
+        href: end-user-export-data.md
+      - name: Alterar como um gráfico é classificado em um relatório
+        href: end-user-change-sort.md
+    - name: Fazer perguntas sobre seus dados
+      items:
+      - name: Dicas para fazer perguntas com P e R
+        href: end-user-q-and-a-tips.md
+      - name: Usar P e R com um Gateway – dados corporativos (Versão Prévia)
+        href: end-user-q-and-a-direct-query.md
+    - name: Compartilhar seu trabalho
+      items:
+      - name: Publicar no PowerPoint
+        href: end-user-powerpoint.md
+      - name: Imprimir um dashboard, bloco ou página de relatório
+        href: end-user-print.md
+      - name: Publicar aplicativos com dashboards e relatórios
+        href: end-user-create-apps.md
+  - name: Recursos
+    items:
+    - name: Navegadores compatíveis
+      href: end-user-browsers.md
+- name: Aplicativos móveis do Power BI
+  items:
+  - name: Visão geral
+    items:
+    - name: Quais são os aplicativos móveis?
+      href: mobile/mobile-apps-for-mobile-devices.md
+  - name: Início rápido
+    items:
+    - name: Explorar painéis e relatórios
+      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+  - name: Tutoriais
+    items:
+    - name: Fazer perguntas nos aplicativos móveis do iOS
+      href: mobile/tutorial-mobile-apps-ios-qna.md
+  - name: Conceitos
+    items:
+    - name: Novidades em aplicativos móveis
+      href: mobile/mobile-whats-new-in-the-mobile-apps.md
+    - name: Obter dados reais usando os aplicativos móveis
+      href: mobile/mobile-apps-data-in-real-world-context.md
+    - name: Exibir os dados offline nos aplicativos móveis
+      href: mobile/mobile-apps-offline-data.md
+    - name: Aplicativo Power BI para Realidade Misturada (versão prévia)
+      href: mobile/mobile-mixed-reality-app.md
+  - name: Como
+    items:
+    - name: Todos os aplicativos móveis
+      items:
+      - name: Compartilhar um dashboard usando os aplicativos móveis
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+      - name: Interagir com blocos nos aplicativos móveis
+        href: mobile/mobile-tiles-in-the-mobile-apps.md
+      - name: Favoritos nos aplicativos móveis
+        href: mobile/mobile-apps-favorites.md
+      - name: Definir alertas de dados nos aplicativos móveis
+        href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+      - name: Obter notificações nos aplicativos móveis
+        href: mobile/mobile-apps-notification-center.md
+      - name: Criar um link profundo para um local específico
+        href: mobile/mobile-apps-deep-link-specific-location.md
+      - name: Filtrar um relatório por local nos aplicativos móveis
+        href: mobile/mobile-apps-geographic-filtering.md
+      - name: Dashboards para os aplicativos móveis
+        href: mobile/mobile-apps-view-dashboard.md
+      - name: Relatórios nos aplicativos móveis
+        href: mobile/mobile-reports-in-the-mobile-apps.md
+      - name: Usando o OAuth para conectar-se ao Reporting Services
+        href: mobile/mobile-oauth-ssrs.md
+    - name: Dispositivos Android
+      items:
+      - name: Introdução ao aplicativo Android
+        href: mobile/mobile-android-app-get-started.md
+      - name: Correção de “Seu certificado SSL corporativo não é confiável”
+        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+      - name: Correção de “É necessário atualizar o Android System Webview”
+        href: mobile/mobile-android-error-update-android-system-webview.md
+    - name: iOS
+      items:
+      - name: Introdução ao aplicativo do iOS
+        href: mobile/mobile-iphone-app-get-started.md
+      - name: Analista virtual de P e R nos aplicativos móveis para iOS
+        href: mobile/mobile-apps-ios-qna.md
+      - name: Aplicativo Power BI Apple Watch
+        href: mobile/mobile-apple-watch.md
+      - name: Digitalizar um código de barras do aplicativo no seu iPhone
+        href: mobile/mobile-apps-scan-barcode-iphone.md
+    - name: iOS e Android
+      items:
+      - name: Exibir relatórios locais nos aplicativos móveis
+        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: Exibir relatórios otimizados para seu telefone
+        href: mobile/mobile-apps-view-phone-report.md
+      - name: Escanear um código QR do Power BI usando seu telefone
+        href: mobile/mobile-apps-qr-code.md
+      - name: Anotar e compartilhar em aplicativos móveis
+        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+    - name: Aplicativo Power BI para dispositivos Windows 10
+      items:
+      - name: Introdução ao aplicativo Windows 10
+        href: mobile/mobile-windows-10-phone-app-get-started.md
+      - name: Fixar um painel na tela inicial
+        href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+      - name: Exibir KPIs e relatórios móveis do Reporting Services móveis
+        href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+      - name: Exibir o Power BI no Surface Hub
+        href: mobile/mobile-windows-10-app-presentation-mode.md
+      - name: Logon único no aplicativo do Windows
+        href: mobile/mobile-windows-10-app-single-sign-on-sso.md
+  - name: Recursos
+    items:
+    - name: Idiomas com suporte nos aplicativos móveis
+      href: mobile/mobile-apps-supported-languages.md
+ms.openlocfilehash: 02bcbbd99afb803f4f481f3281ac40f02ebeb9f3
+ms.sourcegitcommit: f391b645062f64ac3adc2ce7877318583b14b941
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48016413"

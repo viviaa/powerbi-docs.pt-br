@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4540c00e4956e87e1c012dc2a35c00e61e00b5a6
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328134"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973921"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Amostragem de linha de alta densidade no Power BI
 Começando com a versão de junho de 2017 do **Power BI Desktop** e as atualizações para o **serviço do Power BI**, um novo algoritmo de amostragem está disponível para melhorar os visuais com amostragem de dados de alta densidade. Por exemplo, é possível criar um gráfico de linhas dos resultados de vendas de suas lojas de varejo, com cada loja tendo mais de dez mil recibos de venda todo ano. Um gráfico de linhas dessas informações de vendas faria a amostragem (selecione uma representação significativa desses dados, para ilustrar como as vendas variam ao longo do tempo) dos dados de cada loja e criaria um gráfico de linhas multissérie para representar os dados subjacentes. Essa é uma prática comum na visualização de dados de alta densidade. O Power BI Desktop melhorou sua amostragem de dados de alta densidade, cujos detalhes estão descritos neste artigo.
@@ -24,8 +24,6 @@ Começando com a versão de junho de 2017 do **Power BI Desktop** e as atualiza�
 
 > [!NOTE]
 > O algoritmo de **Amostragem de Alta Densidade** descrito neste artigo está disponível tanto no **Power BI Desktop** quanto no **serviço do Power BI**.
-> 
-> 
 
 ## <a name="how-high-density-line-sampling-works"></a>Como a amostragem de linha de alta densidade funciona
 Anteriormente, o **Power BI** selecionava uma coleção de pontos de dados de amostra em toda a gama de dados subjacentes de uma maneira determinística. Por exemplo, para dados de alta densidade em um visual que abrangesse um ano civil, poderia haver 350 pontos de dados de amostra exibidos no visual, cada um deles selecionado para garantir que o intervalo completo de dados (a série geral de dados subjacentes) fosse representado no visual. Para ajudar a entender como isso acontece, imagine que estivéssemos plotando o preço de ações durante o período de um ano e selecionássemos 365 pontos de dados para criar um visual de gráfico de linhas (ou seja, um ponto de dados para cada dia).
@@ -42,17 +40,25 @@ Para um visual de alta densidade, o **Power BI** segmenta de forma inteligente s
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Valores mínimo e máximo dos visuais de linha de alta densidade
 Para qualquer visualização fornecida, aplicam-se as seguintes limitações de visual:
 
-* **3.500** é o número máximo de pontos de dados *exibidos* no visual, independentemente do número de séries ou pontos de dados subjacentes. Sendo assim, se você tiver 10 séries com 350 pontos de dados cada, o visual terá atingido seu limite máximo de pontos de dados gerais. Se você tiver uma série, ela poderá ter até 3.500 pontos de dados se o novo algoritmo considerá-la a melhor amostragem para os dados subjacentes.
+* **3.500** é o número máximo de pontos de dados *exibidos* na maioria dos visuais, não importa o número de série ou os pontos de dados subjacentes (veja *exceções* na lista com marcadores a seguir). Sendo assim, se você tiver 10 séries com 350 pontos de dados cada, o visual terá atingido seu limite máximo de pontos de dados gerais. Se você tiver uma série, ela poderá ter até 3.500 pontos de dados se o novo algoritmo considerá-la a melhor amostragem para os dados subjacentes.
+
 * Há um máximo de **60 séries** para qualquer visual. Se você tiver mais de 60 séries, divida os dados e crie vários visuais com 60 séries ou menos cada. É recomendável usar uma **segmentação de dados** para mostrar apenas os segmentos dos dados (apenas determinadas séries). Por exemplo, se você estiver exibindo todas as subcategorias na legenda, será possível usar uma segmentação de dados para filtrar pela categoria geral na mesma página de relatório.
+
+O número máximo de limites de dados é maior para os seguintes tipos visuais, que são *exceções* ao limite de 3.500 pontos de dados:
+
+* **150.000** pontos de dados no máximo para visuais R.
+* **30.000** pontos de dados para visuais personalizados.
+* **10.000** pontos de dados para gráficos de dispersão (o padrão de gráficos de dispersão é 3.500)
+* **3.500** para todos os outros visuais
 
 Esses parâmetros garantem que esses visuais no Power BI Desktop sejam renderizados com muita rapidez, sejam dinâmicos na interação com os usuários e não resultem em sobrecarga computacional indevida no computador que está renderizando o visual.
 
 ### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>Avaliando pontos de dados representativos para visuais de linha de alta densidade
-Quando o número de pontos de dados subjacentes exceder o máximo de pontos de dados que podem ser representados no visual (exceder 3.500), será iniciado um processo chamado *compartimentalização*, que particiona os dados subjacentes em grupos chamados *compartimentos* e, em seguida, refina esses compartimentos iterativamente.
+Quando o número de pontos de dados subjacentes exceder o máximo de pontos de dados que podem ser representados no visual, será iniciado um processo chamado *compartimentalização*, que particiona os dados subjacentes em grupos chamados *compartimentos* e, em seguida, refina esses compartimentos iterativamente.
 
 O algoritmo cria o máximo de compartimentos possível para criar a maior granularidade para o visual. Dentro de cada compartimento, o algoritmo localiza o valor mínimo e máximo de dados, para garantir que os valores importantes e significativos (por exemplo, exceções) sejam capturados e exibidos no visual. Com base nos resultados da compartimentalização e da avaliação subsequente dos dados realizada pelo Power BI, é determinada a resolução mínima do eixo x para o visual para garantir sua granularidade máxima.
 
-Conforme mencionado anteriormente, a granularidade mínima de cada série é de 350 pontos, a máxima é de 3.500.
+Conforme mencionado anteriormente, a granularidade mínima para cada série é de 350 pontos, o máximo é de 3.500 para a maioria dos visuais, com as *exceções* listadas nos parágrafos anteriores.
 
 Cada compartimento é representado por dois pontos de dados, que se tornam os pontos de dados representativos do compartimento no visual. Os pontos de dados são simplesmente o valor alto e baixo desse compartimento e ao selecionar a alta e a baixa, o processo de compartimentalização garante que qualquer valor alto importante, ou valor baixo significativo, seja capturado e renderizado no visual.
 

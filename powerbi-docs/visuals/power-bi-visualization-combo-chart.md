@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543993"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448950"
 ---
 # <a name="combo-chart-in-power-bi"></a>Gráfico de combinação no Power BI
 No Power BI, um gráfico de combinação é uma visualização única que combina um gráfico de linhas e um gráfico de colunas. Combinando os 2 gráficos em um permite você faça uma comparação rápida dos dados.
@@ -55,9 +55,9 @@ Veja Will criar um gráfico de combinação usando a amostra de Vendas e Marketi
     c.  Selecione **Hora** \> **FiscalMonth** para adicioná-la à seção **Eixo**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Selecione as reticências (...) no canto superior direito da visualização e escolha **Classificar por FiscalMonth**. Você precisará selecioná-lo duas vezes para classificar em ordem crescente ou decrescente.
+5. Selecione as reticências (…) no canto superior direito da visualização e escolha **Classificar por > FiscalMonth**. Para alterar a ordem de classificação, selecione as reticências novamente e escolha **Classificar em ordem crescente** ou **Classificar em ordem decrescente**.
 
-6. Converta o gráfico de colunas em um gráfico de combinação. Com o gráfico de coluna selecionado, no painel **Visualizações**, selecione o **Gráfico de colunas agrupadas e linha**.
+6. Converta o gráfico de colunas em um gráfico de combinação. Há dois gráficos de combinação disponíveis: **Colunas empilhadas e linhas** e **Colunas agrupadas e linhas**. Com o gráfico de coluna selecionado, no painel **Visualizações**, selecione o **Gráfico de colunas agrupadas e linha**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. No painel **Campos**, arraste **Vendas** \> **Vendas do Ano Passado** para o bucket **Valores de Linha**.
@@ -71,7 +71,8 @@ Veja Will criar um gráfico de combinação usando a amostra de Vendas e Marketi
 ## <a name="create-a-combo-chart-with-two-axes"></a>Criar um gráfico de combinação com dois eixos
 Nesta tarefa, vamos comparar as vendas e a margem bruta.
 
-1. Crie um novo gráfico de linhas que acompanha o **% de Margem Bruta do ano passado** por **Mês**.  Em janeiro, a % de Margem Bruta foi de 35%, chegando ao seu máximo em 45% em abril, caindo em julho e chegando ao seu máximo novamente em agosto. Será que vamos ver um padrão semelhante nas vendas do ano passado e deste ano?
+1. Crie um novo gráfico de linhas que acompanha o **% de Margem Bruta do ano passado** por **Mês**. Selecione as reticências para classificá-lo por **Mês** e **Crescente**.  
+Em janeiro, a % de Margem Bruta foi de 35%, chegando ao seu máximo em 45% em abril, caindo em julho e chegando ao seu máximo novamente em agosto. Será que vamos ver um padrão semelhante nas vendas do ano passado e deste ano?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Adicione **Vendas deste ano > Valor** e **Vendas do último ano** no gráfico de linhas. A escala de **% de Margem Bruta do Ano Passado** é muito menor do que a escala de **Vendas**, o que dificulta a comparação.      
@@ -80,7 +81,7 @@ Nesta tarefa, vamos comparar as vendas e a margem bruta.
 3. Para tornar o visual mais fácil de ler e interpretar, converta o gráfico de linhas em um gráfico de linha e coluna empilhada.
 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Arraste **% de Margem Bruta no Ano Passado** de **Valores de Coluna** para **Valores de Linha**. O Power BI cria dois eixos, permitindo que os conjuntos de dados sejam dimensionados de modo diferente: o eixo à esquerda calcula dólares de vendas e o eixo à direita calcula o percentual.
+4. Arraste **% de Margem Bruta no Ano Passado** de **Valores de Coluna** para **Valores de Linha**. O Power BI cria dois eixos, permitindo que os conjuntos de dados sejam dimensionados de modo diferente: o eixo à esquerda calcula dólares de vendas e o eixo à direita calcula o percentual. Podemos ver a resposta à nossa pergunta: sim, vemos um padrão semelhante.
 
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -103,20 +104,16 @@ Nesta tarefa, vamos comparar as vendas e a margem bruta.
 
 Daqui, talvez você queira:
 
-* [Adicione o gráfico de combinação como um bloco do dashboard](../consumer/end-user-tiles.md).
+* [Adicione o gráfico de combinação como um bloco do dashboard](../service-dashboard-tiles.md).
 * [Salve o relatório](../service-report-save.md).
-* [Tornar o relatório mais acessível para pessoas com deficiências](../desktop-accessibility.md)
+* [Torne o relatório mais acessível a pessoas com necessidades especiais](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Realce cruzado e filtragem cruzada
 
-Realçar uma coluna ou uma linha em um gráfico de combinação realiza o realce cruzado e a filtragem cruzada das outras visualizações na página do relatório e vice-versa. Para alterar esse comportamento padrão, use [interações visuais](../consumer/end-user-interactions.md).
+Realçar uma coluna ou uma linha em um gráfico de combinação realiza o realce cruzado e a filtragem cruzada das outras visualizações na página do relatório e vice-versa. Para alterar esse comportamento padrão, use [interações visuais](../service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Visão geral de visualizações nos relatórios do Power BI](power-bi-report-visualizations.md)
+[Gráficos de rosca no Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
-
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

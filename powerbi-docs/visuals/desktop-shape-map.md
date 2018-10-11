@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ad9a3e73a90ff69f5d56e1e5c1fc487c855df74d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566017"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417316"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Mapas de formas no Power BI Desktop (Preview)
-No Power BI Desktop, você cria um visual **Mapa de Formas** para mostrar comparações relativas de regiões em um mapa, aplicando cores diferentes a regiões diferentes. Ao contrário do visual **Mapa**, o **Mapa de Formas** não pode mostrar localizações geográficas precisas de pontos de dados em um mapa; em vez disso, sua finalidade principal é mostrar comparações relativas de regiões em um mapa aplicando a elas cores diferentes.
+Crie um visual de **Mapa de Formas** para comparar as regiões em um mapa usando cores. Ao contrário do visual **Mapa**, o **Mapa de Formas** não consegue mostrar localizações geográficas precisas de pontos de dados em um mapa. Em vez disso, sua finalidade principal é mostrar comparações relativas de regiões em um mapa colorindo-as de modo diferente.
 
-Os visuais **Mapa de Formas** baseiam-se nos mapas ESRI/TopoJSON, que têm a incrível capacidade de usar mapas personalizados que você pode criar, como mapas geográficos, distribuição de assentos, plantas baixas e outros. A capacidade de usar mapas personalizados não está disponível nesta versão prévia do **Mapa de Formas**.
+Visuais de **Mapa de Formas** são baseados nos mapas ESRI/TopoJSON, que têm a incrível capacidade de usar mapas personalizados que você pode criar. Exemplos de mapas personalizados são: disposições geográficas, plantas baixas e outros. A capacidade de usar mapas personalizados não está disponível nesta versão prévia do **Mapa de Formas**.
 
 ## <a name="creating-shape-maps"></a>Criando Mapas de Formas
 Você pode testar o controle de **Mapa de Formas** com os mapas que são fornecidos com esta versão de visualização ou pode usar seu próprio mapa personalizado, desde que ele atende aos requisitos descritos na seção a seguir, chamada **Usar mapas personalizados**.
@@ -68,7 +68,7 @@ Para usar seu arquivo de mapas **TopoJSON**, adicione um visual ShapeMap ao rela
 ![](media/desktop-shape-map/shape-map_6.png)
 
 ## <a name="sample-custom-map"></a>Amostra de mapa personalizado
-Os *escritórios de advogados os Estados Unidos* liberam um relatório fiscal anual em seus dados de casuística e litígio.  Todos os relatórios deles podem ser encontrados no link abaixo,
+Os *Escritórios de Advocacia dos Estados Unidos* liberam um relatório fiscal anual sobre seus dados de casuística e litígio.  Todos os relatórios deles podem ser encontrados no link abaixo,
 
 https://www.justice.gov/usao/resources/annual-statistical-reports
 
@@ -115,7 +115,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="australia-states"></a>Austrália: Estados
 
-| ID | Abr. | ISO | Nome | CEP |
+| `id` | `abbr` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Austrália Ocidental |WA |
 | au-vic |Vic |AU-VIC |Vitória |VIC |
@@ -128,7 +128,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="austria-states"></a>Áustria: Estados
 
-| ID | ISO | Nome | Nome (pt) | CEP |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Viena |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -142,7 +142,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="brazil-states"></a>Brasil: Estados
 
-| ID |
+| `id` |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -178,7 +178,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="canada-provinces"></a>Canadá: Províncias
 
-| ID | ISO | Nome | CEP |
+| `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Territórios do Norte |NT |
@@ -196,7 +196,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="france-regions"></a>França: Regiões
 
-| ID | Nome | Nome (pt) |
+| `id` | `name` | `name-en` |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Ródano-Alpes |
@@ -223,7 +223,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="germany-states"></a>Alemanha: Estados
 
-| ID | ISO | Nome | Nome (pt) | CEP |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlim |BE |
 | de-th |DE-TH |Thüringen |Turíngia |TH |
@@ -244,7 +244,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="ireland-counties"></a>Irlanda: Condados
 
-| ID |
+| `id` |
 | --- |
 | Wicklow |
 | Wexford |
@@ -275,7 +275,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="italy-regions"></a>Itália: Regiões
 
-| ID | ISO | Nome | Nome (pt) | CEP |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Vale de Aosta |VD |
@@ -300,7 +300,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="mexico-states"></a>México: Estados
 
-| ID | Abreviatura | ISO | Nome | Nome (pt) | CEP |
+| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -337,7 +337,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="netherlands-provinces"></a>Países Baixos: Províncias
 
-| ID | ISO | Nome | Nome (pt) |
+| `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Holanda do Sul |
 | nl-ze |NL-ZE |Zeeland |Zelândia |
@@ -354,7 +354,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="uk-countries"></a>Reino Unido: Países
 
-| ID | ISO | Nome |
+| `id` | `iso` | `name` |
 | --- | --- | --- |
 | gb-wls |GB-WLS |País de Gales |
 | gb-sct |GB-SCT |Escócia |
@@ -363,7 +363,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="usa-states"></a>EUA: Estados
 
-| ID | Nome | CEP |
+| `id` | `name` | `postal` |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alasca |AK |
@@ -417,3 +417,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | us-mt |Montana |MT |
 | us-wa |Washington |WA |
 
+## <a name="next-steps"></a>Próximas etapas
+[Matriz visual no Power BI](desktop-matrix-visual.md)
+
+[Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

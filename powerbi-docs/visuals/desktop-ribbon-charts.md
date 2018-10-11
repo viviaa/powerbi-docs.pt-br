@@ -9,18 +9,18 @@ ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
-LocalizationGroup: Create reports
-ms.openlocfilehash: a67eb4d7970e45bd9b87dea058da8475b24e2e0f
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 07afd733afae7965357fd46d28533e21c48a7e16
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186836"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416718"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Usar gráficos de faixa de opções no Power BI
-Use gráficos de faixa de opções no **Power BI** para visualizar dados e determinar rapidamente qual categoria de dados tem a classificação mais alta (maior valor). Gráficos de faixa de opções são eficazes para mostrar alterações na classificação, com o maior intervalo (valor) sempre exibido na parte superior de cada período. Os gráficos de faixa de opções estão disponíveis no **Power BI Desktop** a partir da versão de setembro de 2017 e nas atualizações posteriores do **serviço do Power BI**.
+Você pode usar gráficos de faixa de opções para visualizar dados e descobrir rapidamente qual categoria de dados tem a classificação mais alta (maior valor). Gráficos de faixa de opções são eficazes para mostrar alterações na classificação, com o maior intervalo (valor) sempre exibido na parte superior de cada período. 
 
-![](media/desktop-ribbon-charts/ribbon-charts_01.png)
+![gráfico de faixa de opções](media/desktop-ribbon-charts/ribbon-charts_01.png)
 
 ## <a name="create-a-ribbon-chart"></a>Criar um gráfico de faixa de opções
 Para criar um gráfico de faixa de opções, selecione **Gráfico de faixa de opções** no painel **Visualizações**.
@@ -32,22 +32,17 @@ Os gráficos de faixa de opções conectam uma categoria de dados no continuum d
 ## <a name="format-a-ribbon-chart"></a>Formatar um gráfico de faixa de opções
 Quando você cria um gráfico de faixa de opções, você tem opções de formatação disponíveis na seção **Formato** do painel **Visualizações**. As opções de formatação para gráficos de faixa de opções são semelhantes às de um gráfico de colunas empilhadas, com opções de formatação adicionais específicas às faixas de opções.
 
-![](media/desktop-ribbon-charts/ribbon-charts_03.png)
+![modelo de faixa de opções no painel de Visualização](media/desktop-ribbon-charts/ribbon-charts_03.png)
 
-Essas opções de formatação para gráficos de faixa de opções permitem ajustar o seguinte:
+Estas opções de formatação para gráficos de faixa de opções permitem que você faça ajustes.
 
 * A opção **Espaçamento** permite ajustar a quantidade de espaço exibida entre as faixas de opções. O número é o percentual da altura máxima da coluna.
-* A opção **Corresponder cor da série** permite fazer a correspondência da cor das faixas de opções com a cor da série. Quando estiver desativada, as faixas de opções ficarão cinza.
+* A opção **Corresponder cor da série** permite fazer a correspondência da cor das faixas de opções com a cor da série. Quando definidas como **desligado**, as faixas de opções ficam cinza.
 * A opção **Transparência** especifica o grau de transparência das faixas de opções, com o padrão definido como 30.
 * A opção **Borda** permite colocar uma borda escura na parte superior e inferior das faixas de opções. Por padrão, as bordas estão desativadas.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para obter mais informações sobre o **Power BI Desktop** e como começar, confira os artigos a seguir.
 
-* [O que é o Power BI Desktop?](../desktop-what-is-desktop.md)
-* [Visão geral de Consulta com o Power BI Desktop](../desktop-query-overview.md)
-* [Fontes de dados no Power BI Desktop](../desktop-data-sources.md)
-* [Conectar-se a dados no Power BI Desktop](../desktop-connect-to-data.md)
-* [Formatar e combinar dados com o Power BI Desktop](../desktop-shape-and-combine-data.md)
-* [Tarefas comuns de consulta no Power BI Desktop](../desktop-common-query-tasks.md)   
+[Gráficos de dispersão e gráficos de bolhas no Power BI](power-bi-visualization-scatter.md)
 
+[Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

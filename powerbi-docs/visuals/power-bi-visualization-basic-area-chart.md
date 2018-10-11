@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddf08edf7494cd8b918a93d41b384b4e89376d95
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: d6793c41cea8da251fd700800e1f11ca88bb0be4
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543328"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416948"
 ---
 # <a name="basic-area-chart"></a>Gráfico de área básico
 O gráfico de áreas básico (também conhecido como gráfico de áreas em camadas) baseia-se no gráfico de linhas. A área entre o eixo e a linha é preenchida com cores para indicar o volume. 
@@ -48,28 +48,36 @@ Para acompanhar, entre no Power BI e selecione **Obter Dados \> Exemplos \> Exem
 
    ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 
-   b.  Converta o gráfico em um gráfico de área básico, selecionando o ícone de Gráfico de área do painel VISUALIZAÇÕES.
+   b.  Converta o gráfico em um gráfico de área básico, selecionando o ícone de Gráfico de área do painel Visualizações.
 
    ![](media/power-bi-visualization-basic-area-chart/convertchart.png)
    
    c.  Selecione **Hora \> Mês** para adicionar ao **Eixo**.   
    ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
-   d.  Para exibir o gráfico por mês, selecione as reticências (canto superior direito do visual) e escolha **Classificar por mês**.
+   d.  Para exibir o gráfico por mês, selecione as reticências (canto superior direito do visual) e escolha **Classificar por mês**. Para alterar a ordem de classificação, selecione as reticências novamente e selecione **Classificar em ordem crescente** ou **Classificar em ordem decrescente**.
 
 ## <a name="highlighting-and-cross-filtering"></a>Realce e filtragem cruzada
-Para obter informações sobre como usar o painel FILTROS, veja [Adicionar um filtro a um relatório](../power-bi-report-add-filter.md).
+Para obter informações sobre como usar o painel Filtros, veja [Adicionar um filtro a um relatório](../power-bi-report-add-filter.md).
 
-Para destacar uma área específica em seu gráfico, selecione essa área ou a respectiva borda superior.  Ao contrário de outros tipos de visualização, se houver outras visualizações na mesma página, destacar um gráfico de área básico não aplicará filtro cruzado às outras visualizações na página do relatório. No entanto, os gráficos de áreas são um alvo de filtragem cruzada acionado por outras visualizações na página do relatório. Para obter mais informações, consulte [Interações visuais em relatórios](../consumer/end-user-interactions.md)
+Para destacar uma área específica em seu gráfico, selecione essa área ou a respectiva borda superior.  Ao contrário de outros tipos de visualização, se houver outras visualizações na mesma página, destacar um gráfico de área básico não aplicará filtro cruzado às outras visualizações na página do relatório. No entanto, os gráficos de áreas são um alvo de filtragem cruzada acionado por outras visualizações na página do relatório. 
+
+1. Teste-o selecionando seu gráfico de área e copiando-o para outra página de relatório (CTRL-C e CTRL-V).
+2. Selecione uma das áreas sombreadas e, em seguida, outra área sombreada. Você não observará nenhum impacto às outras visualizações na página.
+
+    ![Vendas neste ano selecionadas no gráfico de área](media/power-bi-visualization-basic-area-chart/power-bi-select-area.png)
+
+3. Agora selecione um elemento em uma das outras visualizações na página, como uma barra de gráfico de coluna ou um mês em um gráfico de linha. Observe o impacto sobre o gráfico de área – ele é filtrado.  
+
+    ![Barra FT Oglethorpe selecionada](media/power-bi-visualization-basic-area-chart/power-bi-filter.png) 
+
+Para obter mais informações, consulte [Interações visuais em relatórios](../service-reports-visual-interactions.md)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas   
 * [Tornar o relatório mais acessível para pessoas com deficiências](../desktop-accessibility.md)
 * Gráficos de áreas básicos não são eficazes para comparar os valores devido à oclusão nas áreas em camadas. O Power BI usa transparência para indicar a sobreposição das áreas. No entanto, ele só funciona bem com duas ou três áreas diferentes. Quando você precisa comparar tendência com mais de três medidas, tente usar os gráficos de linhas. Quando você precisa comparar volume com mais de três medidas, tente usar o mapa de árvore.
 
-## <a name="next-steps"></a>Próximas etapas
-[Relatórios no Power BI](../consumer/end-user-reports.md)  
-[Visualizações em relatórios do Power BI](power-bi-report-visualizations.md)  
-[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)  
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
+## <a name="next-step"></a>Próxima etapa
+[Relatórios no Power BI](power-bi-visualization-card.md)  
 

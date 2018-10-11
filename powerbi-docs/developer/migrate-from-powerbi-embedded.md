@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: 6de0efe3bad1662d1324488a7030894248056730
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 6b500acee862d8f16c186a9adc2fe0b194003e50
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388653"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973829"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Como migrar conteúdo da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded
 Saiba como migrar da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded e aproveite os avanços para inserir em aplicativos.
@@ -30,7 +30,7 @@ A Coleção de Espaços de Trabalho do Power BI atual continuará disponível po
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
-Antes de começar a migração para o novo Power BI Embedded, é possível seguir rapidamente um passo a passo que ajuda a configurar o novo ambiente do Power BI Embedded usando a [Ferramenta de experiência de integração](https://aka.ms/embedsetup).
+Antes de começar a migração para o novo Power BI Embedded, é possível seguir rapidamente um passo a passo que ajuda a configurar o novo ambiente do Power BI Embedded usando a [Ferramenta de configuração de integração](https://aka.ms/embedsetup).
 
 Escolha a solução certa para você:
 * **Inserir para clientes**: quando você estiver interessado em uma solução [app owns data](https://aka.ms/embedsetup/AppOwnsData). A [inserção para clientes](embedding.md#embedding-for-your-customers) fornece a capacidade de inserir os dashboards e relatórios para usuários que não têm uma conta do Power BI. 
@@ -104,7 +104,7 @@ A migração de conteúdo depende principalmente de duas APIs.
 1. Baixar PBIX – esta API pode baixar arquivos PBIX que foram carregados no Power BI depois de outubro de 2016.
 2. Importar PBIX – esta API carrega qualquer PBIX no Power BI.
 
-Para alguns trechos de código relacionados, consulte [Trechos de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI](migrate-code-snippets.md).
+Para alguns snippets de código relacionados, consulte [Snippets de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI](migrate-code-snippets.md).
 
 ### <a name="report-types"></a>Tipos de relatório
 Há vários tipos de relatórios, cada um requerendo um fluxo de migração um pouco diferente.
@@ -185,7 +185,7 @@ Você deve fazer uma limpeza no Azure.
 ## <a name="next-steps"></a>Próximas etapas
 [Inserindo com o Power BI](embedding.md)  
 [Ferramenta de migração da Coleção de Espaços de Trabalho do Power BI](migrate-tool.md)  
-[Trechos de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI](migrate-code-snippets.md)  
+[Snippets de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI](migrate-code-snippets.md)  
 [Como inserir seus dashboards, relatórios e blocos do Power BI](embedding-content.md)  
 [Power BI Premium – o que é?](../service-premium.md)  
 [Repositório Git de API do JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  

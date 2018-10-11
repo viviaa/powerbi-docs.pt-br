@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/26/2018
+ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18c9fe3d50245ff1d0745c0a3ae1e830b3f9be45
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 865e19f368b8e1915d0262ae6356e70a8dbc2781
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548317"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416879"
 ---
 # <a name="card-visualizations"></a>Visualizações de cartão
 Às vezes, um único número é a coisa mais importante que você deseja acompanhar no seu painel ou relatório do Power BI, como as vendas totais, a fatia de mercado ano após ano ou o total de oportunidades. Esse tipo de visualização é chamado de *Cartão*. Assim como em quase todas as visualizações nativas do Power BI, os cartões podem ser criados usando o editor de relatório ou P e R.
 
-![visualização de cartão](./media/power-bi-visualization-card/pbi_opptuntiescard.png)
+![visualização de cartão](media/power-bi-visualization-card/pbi_opptuntiescard.png)
 
 ## <a name="create-a-card-using-the-report-editor"></a>Criar um cartão usando o editor de relatório
 Essas instruções usam o exemplo de análise de varejo. Para acompanhar, [baixe o exemplo](../sample-datasets.md) do serviço do Power BI (app.powerbi.com) ou do Power BI Desktop.   
@@ -32,7 +32,7 @@ Essas instruções usam o exemplo de análise de varejo. Para acompanhar, [baixe
    ![](media/power-bi-visualization-card/pbi_rptnumbertilechart.png)
 2. No painel de Visualizações, selecione o ícone de cartão.
 
-   ![](media/power-bi-visualization-card/pbi_changechartcard.png)
+   ![](media/power-bi-visualization-card/power-bi-templates.png)
 6. Focalize sobre o cartão e selecione o ícone de pino ![](media/power-bi-visualization-card/pbi_pintile.png) para adicionar a visualização ao painel.
 
    ![](media/power-bi-visualization-card/power-bi-pin-icon.png)
@@ -44,20 +44,21 @@ Essas instruções usam o exemplo de análise de varejo. Para acompanhar, [baixe
 
    Uma mensagem de Êxito (perto do canto superior direito) informa que a visualização foi adicionada, como um bloco, ao painel.
 
-   ![](media/power-bi-visualization-card/power-bi-pin-success-message.png)
+   ![](media/power-bi-visualization-card/power-bi-success2.png)
 9. Selecione **Ir para o dashboard**. Nele, você pode [editar e mover](../service-dashboard-edit-tile.md) a visualização fixada.
 
 
 ## <a name="create-a-card-from-the-qa-question-box"></a>Criar um cartão a partir de uma caixa de perguntas de P e R
-A caixa pergunta de P e R é a maneira mais fácil de fazer um Cartão. A caixa de pergunta de P e R está disponível no serviço do Power BI (app.powerbi.com) de um painel ou relatório. As etapas abaixo descrevem como criar um Cartão a partir de um painel do serviço do Power BI. Se você deseja criar um cartão usando um P e R no Power BI Desktop, [siga estas instruções](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) para a versão prévia do P e R para relatórios do Desktop.
+A caixa pergunta de P e R é a maneira mais fácil de fazer um Cartão. A caixa de perguntas P e R está disponível no serviço do Power BI de um dashboard ou relatório e na exibição de relatório da Área de Trabalho. As etapas abaixo descrevem como criar um Cartão a partir de um painel do serviço do Power BI. Se você deseja criar um cartão usando um P e R no Power BI Desktop, [siga estas instruções](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) para a versão prévia do P e R para relatórios do Desktop.
 
-1. Crie um [dashboard](../consumer/end-user-dashboards.md) e [obtenha dados](../service-get-data.md). Este exemplo usa a [amostra Análise de Oportunidade](../sample-opportunity-analysis.md).
+1. Crie um [dashboard](../service-dashboards.md) e [obtenha dados](../service-get-data.md). Este exemplo usa a [amostra Análise de Oportunidade](../sample-opportunity-analysis.md).
 
 1. Na parte superior do painel, comece a digitar o que você deseja saber sobre os dados na caixa de pergunta. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**DICA**: em um relatório de serviço do Power BI, no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md), selecione **Fazer uma pergunta** na barra de menus superior. Em um relatório do Power BI Desktop, encontre algum espaço aberto e clique duas vezes para abrir uma caixa de pergunta.
+> [!TIP]
+> Em um relatório de serviço do Power BI, na [Exibição de edição](../service-reading-view-and-editing-view.md), selecione **Fazer uma pergunta** na barra de menus superior. Em um relatório do Power BI Desktop, encontre algum espaço aberto e clique duas vezes para abrir uma caixa de pergunta.
 
 3. Por exemplo, digite “número de oportunidades” na caixa de pergunta.
 
@@ -75,7 +76,7 @@ A caixa pergunta de P e R é a maneira mais fácil de fazer um Cartão. A caixa 
 
    Uma Mensagem de êxito (perto do canto superior direito) informa que a visualização foi adicionada, como um bloco, ao painel.  
 
-   ![](media/power-bi-visualization-card/power-bi-success.png)
+   ![](media/power-bi-visualization-card/power-bi-success2.png)
 7. Selecione **Ir para o dashboard** para ver o novo bloco. Nele, é possível [renomear, redimensionar, adicionar um hiperlink, reposicionar o bloco e muito mais](../service-dashboard-edit-tile.md) no dashboard.
 
    ![](media/power-bi-visualization-card/power-bi-pinned.png)
@@ -87,28 +88,24 @@ A caixa pergunta de P e R é a maneira mais fácil de fazer um Cartão. A caixa 
 ## <a name="format-a-card"></a>Formatar um cartão
 Você tem várias opções para alterar rótulos, texto, cor e muito mais. A melhor maneira de aprender é criar um cartão e, em seguida, explorar o painel de formatação. Aqui estão algumas das opções de formatação disponíveis. 
 
-1. Comece selecionando o ícone de pincel do painel de formatação. 
+1. Comece selecionando o ícone de rolo de tinta para abrir o painel Formatação. 
 
-    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+    ![cartão com rolo de tinta descrito](media/power-bi-visualization-card/power-bi-format-card.png)
 2. Expanda **Rótulo de dados** e altere a cor, o tamanho e a família de fontes. Se você tivesse milhares de repositórios, poderia usar **Exibir unidades** para mostrar o número de repositórios por milhares e controlar as casas decimais também. Por exemplo, 125,8K em vez de 125.832,00.
 
 3.  Expanda **Rótulo de categoria** e altere a cor e o tamanho.
 
-    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+    ![cor azul-escura selecionada](media/power-bi-visualization-card/power-bi-card-format.png)
 
 4. Expanda **Plano de fundo** e mova o controle deslizante para ligado.  Agora você pode alterar a cor da tela de fundo e a transparência.
 
-    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+    ![controle deslizante definido como LIGADO](media/power-bi-visualization-card/power-bi-format-color.png)
 
 5. Continue para explorar as opções de formatação até que seu cartão esteja exatamente como você deseja. 
 
-    ![](media/power-bi-visualization-card/power-bi-formatted.png)
+    ![Cartão depois de toda a formatação estar concluída](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Próximas etapas
-[Blocos de Dashboard no Power BI](../consumer/end-user-tiles.md)
+[Gráficos de combinação no Power BI](power-bi-visualization-combo-chart.md)
 
-[Dashboards no Power BI](../consumer/end-user-dashboards.md)
-
-[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
-
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
+[Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

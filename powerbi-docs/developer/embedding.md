@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
 ms.date: 07/31/2018
-ms.openlocfilehash: 2889345c5e4a5e93602c51baa27bf2c7e28e138f
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616018"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973760"
 ---
 # <a name="embedding-with-power-bi"></a>Inserção com o Power BI
 
-O serviço do Power BI (SaaS) e o serviço do Power BI Embedded no Azure (PaaS) têm APIs para inserir seus painéis e seus relatórios. Isso significa que você tem um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como painéis, gateways e espaços de trabalho de aplicativo, ao inserir seu conteúdo.
+O serviço do Power BI (SaaS) e o serviço do Power BI Embedded no Azure (PaaS) têm APIs para inserir seus painéis e seus relatórios. Esse recurso significa que você tem um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como dashboards, gateways e workspaces de aplicativo, ao inserir seu conteúdo.
 
-É possível acessar a [Ferramenta de experiência de integração](https://aka.ms/embedsetup) para começar rapidamente e baixar um aplicativo de exemplo.
+É possível acessar a [Ferramenta de configuração de inserção](https://aka.ms/embedsetup) para começar rapidamente e baixar um aplicativo de exemplo.
 
 Escolha a solução certa para você:
 
@@ -49,7 +49,7 @@ Para inserir para a organização, consulte o seguinte:
 
 Recursos de autoatendimento, como editar, salvar e muito mais, estão disponíveis por meio de [API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript) ao inserir para usuários do Power BI.
 
-Você pode examinar a [Ferramenta de experiência de integração para inserção para a organização](https://aka.ms/embedsetup/UserOwnsData) para iniciar rapidamente e baixar um aplicativo de exemplo que explica como integrar um relatório para a organização.
+Você pode examinar a [Ferramenta de experiência de inserção](https://aka.ms/embedsetup/UserOwnsData) para inserção para a sua organização para iniciar rapidamente e baixar um aplicativo de exemplo que explica como integrar um relatório para a organização.
 
 ## <a name="embedding-for-your-customers"></a>Inserção para os clientes
 

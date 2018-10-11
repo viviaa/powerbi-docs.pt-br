@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7fa3e2e63ef5f43206a398f58d9e8f13bdf8067a
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a664ff5aeab7de4f98c176dddc5063ef2cfef72e
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728124"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417040"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Novidades na atualização mais recente do Power BI Desktop
 
@@ -23,7 +23,7 @@ ms.locfileid: "44728124"
 
 Nossas atualizações de setembro são como ambientar-se em uma nova e empolgante sala de aula, mais coisas para aprender, desenvolver-se em experiências anteriores e, de alguma forma, mais capazes e maduras do que antes. Esperamos que você ache essas atualizações tão úteis quanto um punhado de lápis nº 2 recém-apontados. 
 
-Agora é possível [baixar a versão mais recente do Power BI Desktop](https://powerbi.microsoft.com/desktop). Se você estiver executando o Windows 10, obtenha também o **Power BI Desktop** do Windows Store. As versões mensais são as mesmas, independentemente de como você instala o **Power BI Desktop**. Consulte [este artigo](desktop-get-the-desktop.md) para obter mais informações. 
+Agora é possível [baixar a versão mais recente do Power BI Desktop](https://powerbi.microsoft.com/desktop). Se você estiver executando o Windows 10, obtenha também o **Power BI Desktop** do Windows Store. As versões mensais são as mesmas, embora a numeração de versão possa diferir entre elas, independentemente da maneira como você instala o **Power BI Desktop**. Consulte [este artigo](desktop-get-the-desktop.md) para obter mais informações. 
 
 Os links ao lado de cada atualização significam o seguinte:
 

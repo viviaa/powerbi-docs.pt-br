@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: e08eeed7b4adf1a392d2661613dd190cce1fb52f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565925"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416810"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Usar o visual Matriz no Power BI Desktop
 Com o recurso visual **Matriz**, você pode criar visuais de matriz (às vezes mencionados como *tabelas*) nos relatórios do **Power BI Desktop** e elementos de realce cruzado na matriz com outros visuais. Além disso, você pode selecionar linhas, colunas e até mesmo células individuais e realce cruzado. Por fim, para fazer melhor uso do espaço de layout, o visual de matriz dá suporte a um layout de nível.
@@ -25,7 +25,7 @@ Com o recurso visual **Matriz**, você pode criar visuais de matriz (às vezes m
 Há muitos recursos associados à matriz e vamos abordá-los nas próximas seções deste artigo.
 
 > [!NOTE]
-> A partir do lançamento de julho de 2017 do **Power BI Desktop**, visuais de matriz e tabela refletem o estilo (incluindo cores) do **Tema de Relatório** aplicado. Talvez essa não seja as cores que você espera para o seu visual de matriz, que você pode alterar em sua configuração **Tema de Relatório**. Consulte [**Usar Temas de Relatório no Power BI Desktop**](../desktop-report-themes.md) para obter informações sobre temas.
+> A partir do lançamento de julho de 2017 do **Power BI Desktop**, visuais de matriz e tabela refletem o estilo (incluindo cores) do **Tema de Relatório** aplicado. Talvez essa não seja as cores que você espera para o seu visual de matriz, que você pode alterar em sua configuração **Tema de Relatório**. Para obter mais informações, consulte [**Usar Temas de Relatório no Power BI Desktop**](../desktop-report-themes.md) para obter informações sobre temas.
 > 
 > 
 
@@ -56,7 +56,7 @@ Quando o visual tiver algum agrupamento criado na seção **Linhas**, o próprio
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-Semelhante ao comportamento de analisar e expandir nos outros visuais, selecionar esses botões permite fazer drill down (ou drill up) na hierarquia. Nesse caso, podemos fazer drill down de *Categoria* para *Subcategoria*, conforme é mostrado na imagem a seguir, em que o ícone de fazer drill down de um nível (a forquilha) foi selecionado.
+Semelhante ao comportamento de analisar e expandir nos outros visuais, selecionar esses botões permite fazer drill down (ou drill up) na hierarquia. Nesse caso, podemos fazer drill down de *Categoria* para *Subcategoria*, conforme mostra a imagem a seguir, em que o ícone de fazer drill down de um nível (a forquilha) foi selecionado.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
@@ -66,7 +66,7 @@ Além de usar esses ícones, você pode clicar com o botão direito do mouse em 
 
 Observe que há algumas opções no menu que aparece, que geram resultados diferentes:
 
-Selecionar **Drill Down** expande a matriz no nível *dessa* linha, *excluindo* todos os outros cabeçalhos de linha, exceto o cabeçalho de linha que foi clicado. Na imagem a seguir, *Computadores* foi clicado com o botão direito do mouse e **Drill Down** foi selecionado. Observe que as outras linhas de nível superior não aparecem mais na matriz. Esse é um recurso útil que fica ainda mais interessante quando chegamos à seção de **realce cruzado**.
+Selecionar **Drill Down** expande a matriz no nível *dessa* linha, *excluindo* todos os outros cabeçalhos de linha, exceto o cabeçalho de linha que foi clicado. Na imagem a seguir, *Computadores* foi clicado com o botão direito do mouse e **Drill Down** foi selecionado. Observe que as outras linhas de nível superior não aparecem mais na matriz. Essa maneira de analisar é um recurso útil que fica ainda mais interessante quando chegamos à seção de **realce cruzado**.
 
 ![](media/desktop-matrix-visual/matrix-visual_8.png)
 
@@ -74,7 +74,7 @@ Você pode clicar no ícone **Drill up** para voltar à exibição de nível sup
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-Ao clicar no ícone **Drill up** no canto superior esquerdo para que a matriz mostre todas as categorias de nível superior, clicar com botão direito do mouse novamente e selecionar **Expandir para o próximo nível**, você poderá ver o seguinte:
+Ao clicar no ícone **Drill up** no canto superior esquerdo para que a matriz mostre todas as categorias de nível superior, clicar com o botão direito do mouse novamente e selecionar **Expandir para o próximo nível**, você poderá ver o seguinte visual.
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
@@ -93,17 +93,17 @@ Ao selecionar **Drill Down**, o próximo nível da hierarquia de coluna para *De
 
 ![](media/desktop-matrix-visual/matrix-visual_12.png)
 
-O restante dos itens do menu acionado com um clique do botão direito do mouse funcionam nas Colunas da mesma maneira que nas linhas (Consulte a seção anterior, **Drill down nos cabeçalhos de linha**). Você pode **Mostrar Próximo Nível**, **Expandir para o próximo nível**, **Incluir** ou **Excluir** colunas, como faz com as linhas.
+O restante dos itens do menu acionados clicando com o botão direito do mouse funcionam nas Colunas da mesma maneira que nas linhas (Consulte a seção anterior, **Drill down nos cabeçalhos de linha**). Você pode **Mostrar Próximo Nível**, **Expandir para o próximo nível**, **Incluir** ou **Excluir** colunas, como faz com as linhas.
 
 > [!NOTE]
-> Os ícones de drill up e drill down no canto superior esquerdo do visual de matriz aplicam-se apenas a linhas. Para fazer drill down nas colunas, você deve usar o menu acionado com um clique do botão direito do mouse.
+> Os ícones de drill up e drill down no canto superior esquerdo do visual de matriz aplicam-se apenas a linhas. Para fazer drill down nas colunas, você deve usar o menu acionado com um clique com o botão direito do mouse.
 > 
 > 
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Layout de nível com visuais de matriz
 O visual **Matriz** recua automaticamente as subcategorias em uma hierarquia abaixo de cada pai, chamado de **Layout de nível**.
 
-Na versão *original* do visual de matriz, as subcategorias foram mostradas em uma coluna inteiramente diferente, ocupando muito mais espaço no visual. A imagem a seguir mostra a tabela no visual de **Matriz** original. Observe as subcategorias em uma coluna totalmente separada.
+Na versão *original* do visual de matriz, as subcategorias foram mostradas em uma coluna inteiramente diferente, ocupando muito mais espaço no visual. A imagem a seguir mostra a tabela no visual de **Matriz** original. Observe as subcategorias em uma coluna separada.
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
@@ -129,7 +129,7 @@ Na seção **Formato** do painel **Visualizações**, expanda o cartão **Subtot
 O mesmo processo se aplica aos subtotais da coluna.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Realce cruzado com visuais de matriz
-Com o visual **Matriz**, você pode selecionar os elementos na matriz como a base para o realce cruzado. Selecione uma coluna em uma **Matriz** e essa coluna será realçada, assim como quaisquer outros visuais na página do relatório. Isso era um recurso comum de outros visuais e seleções de ponto de dados, então agora o visual **Matriz** oferece a mesma função.
+Com o visual **Matriz**, você pode selecionar os elementos na matriz como a base para o realce cruzado. Selecione uma coluna em uma **Matriz** e essa coluna será realçada, assim como quaisquer outros visuais na página do relatório. Esse tipo de destaque cruzado era um recurso comum de outros visuais e seleções de ponto de dados, então agora o visual **Matriz** oferece a mesma função.
 
 Além disso, usar Ctrl + clique também funciona para o realce cruzado. Por exemplo, na imagem a seguir, uma coleção de subcategorias foi selecionada no visual **Matriz**. Observe como os itens que não foram selecionados no visual estão esmaecidos e como os outros visuais na página refletem as seleções feitas no visual **Matriz**.
 
@@ -153,10 +153,6 @@ Qualquer uma dessas abordagem atinge o mesmo resultado. A seleção de *Controle
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Você também pode estar interessado nos seguintes artigos:
+[Gráficos de dispersão e bolhas no Power BI](power-bi-visualization-scatter.md)
 
-* [Use linhas de grade e ajuste de grade em relatórios do Power BI Desktop](../desktop-gridlines-snap-to-grid.md)
-* [Fontes de dados no Power BI Desktop](../desktop-data-sources.md)
-* [Tipos de dados no Power BI Desktop](../desktop-data-types.md)
-
- 
+[Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

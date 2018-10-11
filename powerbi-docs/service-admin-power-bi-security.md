@@ -2,36 +2,36 @@
 title: Segurança do Power BI
 description: Segurança do Power BI. Como o Power BI está relacionado ao Azure Active Directory e a outros serviços do Azure. Este tópico também inclui um link para um white paper que fornece mais detalhes.
 author: davidiseminger
-manager: erikri
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598808"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417086"
 ---
 # <a name="power-bi-security"></a>Segurança do Power BI
 Para obter uma explicação detalhada sobre a segurança do Power BI, [baixe o white paper intitulado Segurança do Power BI](http://go.microsoft.com/fwlink/?LinkId=829185):
 
 [![](media/service-admin-power-bi-security/pbi_security_01.png)](http://go.microsoft.com/fwlink/?LinkId=829185)
 
-O serviço do Power BI se baseia no **Azure**, que é a plataforma e infraestrutura de computação em nuvem da Microsoft. A arquitetura do serviço do Power BI se baseia em dois clusters – o cluster da Web de Front-End (**WFE**) e o cluster de **Back-End** . O cluster WFE é responsável pela conexão inicial e autenticação do serviço do Power BI e, uma vez autenticado, o Back-End manipula todas as interações de usuário subsequentes. O Power BI usa o Azure Active Directory (AAD) para armazenar e gerenciar identidades de usuário e gerencia o armazenamento de dados e metadados pelo uso de BLOB do Azure e Banco de Dados SQL do Azure, respectivamente.
+O serviço do Power BI se baseia no **Azure**, que é a plataforma e infraestrutura de computação em nuvem da Microsoft. A arquitetura do serviço do Power BI se baseia em dois clusters – o cluster da Web de Front-End (**WFE**) e o cluster de **Back-End**. O cluster WFE gerencia a conexão inicial e a autenticação do serviço do Power BI; uma vez autenticado, o Back-End trata de todas as interações de usuário subsequentes. O Power BI usa o Azure Active Directory (AAD) para armazenar e gerenciar identidades de usuário e gerencia o armazenamento de dados e metadados pelo uso de BLOB do Azure e Banco de Dados SQL do Azure, respectivamente.
 
 ## <a name="power-bi-architecture"></a>Arquitetura do Power BI
-Cada implantação do Power BI consiste de dois clusters – um cluster da Web de Front-End (**WFE**) e um cluster de **Back-End** .
+Cada implantação do Power BI consiste de dois clusters – um cluster da Web de Front-End (**WFE**) e um cluster de **Back-End**.
 
 O cluster **WFE** gerencia o processo de conexão e autenticação inicial para o Power BI, usando AAD para autenticar clientes e fornecer tokens para conexões de cliente subsequentes ao serviço do Power BI. O Power BI também usa o ATM ( **Gerenciador de Tráfego do Azure** ) para direcionar o tráfego de usuário para o datacenter mais próximo, determinado pelo registro DNS do cliente buscando conectar-se, para o processo de autenticação e para baixar conteúdo estático e arquivos. O Power BI usa a CDN ( **Rede de Distribuição de Conteúdo** ) para distribuir de modo eficiente os arquivos e o conteúdo estático necessários aos usuários, com base na localidade geográfica.
 
 ![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
-O cluster de **Back-End** é como os clientes autenticados interagem com o serviço do Power BI. O cluster de **Back-End** gerencia visualizações, painéis do usuário, conjuntos de dados, relatórios, armazenamento de dados, conexões de dados, a atualização de dados e outros aspectos de interação com o serviço do Power BI. A **Função do Gateway** age como um gateway entre solicitações do usuário e o serviço do Power BI. Os usuários não interagem diretamente com nenhuma função, exceto a **Função do Gateway**. **Gerenciamento de API do Azure** eventualmente tratará da **Função do Gateway**.
+O cluster de **Back-End** é como os clientes autenticados interagem com o serviço do Power BI. O cluster de **Back-End** gerencia visualizações, dashboards do usuário, conjuntos de dados, relatórios, armazenamento de dados, conexões de dados, a atualização de dados e outros aspectos de interação com o serviço do Power BI. A **Função do Gateway** age como um gateway entre solicitações do usuário e o serviço do Power BI. Os usuários não interagem diretamente com nenhuma função, exceto a **Função do Gateway**. **Gerenciamento de API do Azure** eventualmente tratará da **Função do Gateway**.
 
 ![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
@@ -43,7 +43,7 @@ O cluster de **Back-End** é como os clientes autenticados interagem com o servi
 ## <a name="data-storage-security"></a>Segurança de Armazenamento de Dados
 O Power BI usa dois repositórios primários para armazenar e gerenciar dados: os dados carregados por usuários são enviados normalmente ao armazenamento de **BLOB do Azure** , enquanto todos os metadados e também os artefatos para o próprio sistema são armazenados no **Banco de Dados SQL do Azure**.
 
-A linha pontilhada na imagem do cluster de **Back-End** , representada acima, esclarece o limite entre apenas dois componentes que podem ser acessados por usuários (à esquerda da linha pontilhada) e funções que só podem ser acessadas pelo sistema. Quando um usuário autenticado se conecta ao Serviço do Power BI a conexão, assim como qualquer solicitação feita pelo cliente, é aceita e gerenciada pela **Função do Gateway** (para ser eventualmente tratada pelo **Gerenciamento de API do Azure**), que então interage em nome do usuário com o restante do Serviço do Power BI. Por exemplo, quando um cliente tenta exibir um painel, a **Função do Gateway** aceita a solicitação e envia separadamente uma solicitação para a **Função de Apresentação** para recuperar os dados necessários para que o navegador renderize o painel.
+A linha pontilhada na imagem do cluster de **Back-End**, representada acima, esclarece o limite entre apenas dois componentes que podem ser acessados por usuários (à esquerda da linha pontilhada) e funções que só podem ser acessadas pelo sistema. Quando um usuário autenticado se conecta ao Serviço do Power BI a conexão, assim como qualquer solicitação feita pelo cliente, é aceita e gerenciada pela **Função do Gateway** (para ser eventualmente tratada pelo **Gerenciamento de API do Azure**), que então interage em nome do usuário com o restante do Serviço do Power BI. Por exemplo, quando um cliente tenta exibir um painel, a **Função do Gateway** aceita a solicitação e envia separadamente uma solicitação para a **Função de Apresentação** para recuperar os dados necessários para que o navegador renderize o painel.
 
 ## <a name="user-authentication"></a>Autenticação de Usuário
 O Power BI usa o [AAD](http://azure.microsoft.com/services/active-directory/) (Azure Active Directory) para autenticar os usuários que fazem logon no serviço do Power BI e, em seguida, usa as credenciais de logon do Power BI sempre que um usuário tenta acessar recursos que exigem autenticação. Os usuários fazem logon no serviço do Power BI usando o endereço de email usado para estabelecer sua conta do Power BI; o Power BI usa esse email de logon como o *usuário efetivo*, que é passado para os recursos sempre que um usuário tenta se conectar a dados. O *nome de usuário efetivo* é então mapeado para um *UPN* ([Nome UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) e resolvido para a conta de domínio do Windows associada, na qual a autenticação é aplicada.
