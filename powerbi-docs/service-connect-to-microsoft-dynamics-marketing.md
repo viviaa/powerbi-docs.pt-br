@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c69b73be481408884cc4fbfc5ae4987714b10d9d
-ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
+ms.openlocfilehash: cfa25a28490a2254bd19bb431beea0ebc14d3c56
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43695100"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549721"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Conectar-se ao Microsoft Dynamics Marketing com o Power BI
 O pacote de conteúdo do Microsoft Dynamics Marketing para o Power BI permite que você acesse e analise seus dados com facilidade no Dynamics Marketing. O pacote de conteúdo usa um modelo descritivo no feed OData, com todas as entidades e as medidas necessárias, como Programas, Campanhas, Empresas e Contatos de Marketing, Clientes Potenciais, Interações de Cliente Potencial e Pontuação de Cliente Potencial, Sites e Mensagens de Marketing por Email, observações comportamentais, orçamentos, transações financeiras, KPIs de desempenho e muito mais. 
@@ -47,9 +47,9 @@ Conecte-se ao [pacote de conteúdo do Dynamics Marketing](https://app.powerbi.co
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements"></a>Requisitos de sistema

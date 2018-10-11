@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/19/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 3efd7da5ef320e08ab620da3c63a6d3ff327396a
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250374"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565902"
 ---
 # <a name="install-power-bi-report-server"></a>Instalar o Servidor de Relatório do Power BI
 
@@ -30,11 +30,11 @@ Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que vo
 ### <a name="power-bi-report-server-product-key"></a>Chave do produto (Product Key) do Servidor de Relatório do Power BI
 
 #### <a name="power-bi-premium"></a>Power BI Premium
-Se você tiver adquirido o Power BI Premium, dentro da guia **Configurações Premium** do portal do administrador do Power BI, você terá acesso à sua chave do produto (Product Key) do Servidor de Relatório do Power BI. Isso somente estará disponível para os administradores globais ou usuários atribuídos à função de administrador de serviços do Power BI.
+Se você adquiriu o Power BI Premium, dentro da guia **Configurações Premium** do portal do administrador do Power BI, você terá acesso à sua chave do produto (Product Key) do Servidor de Relatórios do Microsoft Power BI. Isso está disponível somente para os administradores globais ou usuários atribuídos à função de administrador de serviços do Power BI.
 
 ![](../media/service-admin-premium-manage/pbirs-product-key.png "Chave do Servidor de Relatórios do Power BI nas configurações Premium")
 
-Selecionar **chave do Servidor de Relatório do Power BI** exibirá uma caixa de diálogo que contém a chave do produto (Product Key). É possível copiá-la e usá-la com a instalação.
+Quando você seleciona **Chave do Servidor de Relatórios do Microsoft Power BI**, é exibida uma caixa de diálogo que contém a chave do produto (Product Key). É possível copiá-la e usá-la com a instalação.
 
 ![](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Chave do produto (Product Key) do Servidor de Relatórios do Power BI")
 
@@ -77,7 +77,7 @@ Não é necessário que um servidor do Mecanismo de Banco de Dados do SQL Server
 
 ## <a name="configuring-your-report-server"></a>Configurando o servidor de relatório
 
-Depois de selecionar **Configurar o Servidor de Relatório** na instalação, será exibido o Gerenciador de Configurações do Reporting Services. Para obter mais informações, consulte [Gerenciador de Configurações do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
+Depois de selecionar **Configurar o servidor de relatório** na instalação, será exibido o Gerenciador de Configurações do Reporting Services. Para obter mais informações, consulte [Gerenciador de Configurações do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
 É necessário [criar um banco de dados do servidor de relatório](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) para concluir a configuração inicial do Reporting Services. É necessário ter um servidor de Banco de Dados SQL Server para concluir esta etapa.
 

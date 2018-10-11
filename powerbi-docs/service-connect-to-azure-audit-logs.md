@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 903f2a345ba4d87cb217ececa459a3cca14d72fa
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134629"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548133"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Conectar-se aos Logs de Auditoria do Azure com o Power BI
 Com o pacote de conteúdo de Logs de Auditoria do Azure, você pode analisar e visualizar as informações armazenadas nos logs de auditoria. O Power BI recupera seus dados, cria um painel inicial e cria relatórios com base nesses dados.
@@ -47,9 +47,9 @@ Com o pacote de conteúdo de Logs de Auditoria do Azure, você pode analisar e v
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements"></a>Requisitos de sistema
@@ -70,5 +70,5 @@ Se você estiver vendo um erro de credenciais ou de tentativa de atualização d
 
 ## <a name="next-steps"></a>Próximas etapas
 [O que é o Power BI?](power-bi-overview.md)  
-[Power BI – conceitos básicos](service-basic-concepts.md)  
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)  
 

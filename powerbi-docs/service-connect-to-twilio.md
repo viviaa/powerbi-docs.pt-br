@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f81330ec331ae42dea994982369428e9f7eb23aa
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0bb592d508e959267df31e705aa833394aa4d19e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249426"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544867"
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Conectar-se ao Twilio com o Power BI
 O pacote de conteúdo do Microsoft Twilio para o Power BI permite que você efetue pull de seus dados para o Power BI e cria um [painel do Twilio](https://powerbi.microsoft.com/integrations/twilio) e um relatório prontos para uso que mostram informações sobre seus dados. Também é possível criar seus relatórios e painel personalizados com base no conjunto de dados criado pelo Power BI. Os dados serão atualizados uma vez por dia, para que você veja sempre os dados mais recentes.
@@ -41,9 +41,9 @@ Conecte-se ao [pacote de conteúdo do Twilio](https://app.powerbi.com/getdata/se
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="whats-included"></a>O que está incluído

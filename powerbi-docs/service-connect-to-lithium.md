@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6cbd67a9c35726830fc862326d9a015b96952b83
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5fe70f2ba213305c5307bb202cacbb1245cf970f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37136285"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548547"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Conectar-se ao Lithium com o Power BI
 O Lithium cria relações de confiança entre marcas melhor do mundo e seus clientes, ajudando as pessoas a obter respostas e compartilhar suas experiências. Conectando o pacote de conteúdo do Lithium para o Power BI, você pode medir métricas-chave sobre sua comunidade online para ajudar a estimular as vendas, reduzir os custos de serviço e aumentar a fidelidade. 
@@ -49,9 +49,9 @@ Conecte-se ao [pacote de conteúdo do Lithium](https://app.powerbi.com/getdata/s
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements"></a>Requisitos de sistema
@@ -60,5 +60,5 @@ O pacote de conteúdo do Lithium exige uma comunidade do Lithium v15.9 ou superi
 ## <a name="next-steps"></a>Próximas etapas
 [O que é o Power BI?](power-bi-overview.md)
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 

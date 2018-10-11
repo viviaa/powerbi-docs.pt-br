@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3c508044e9f21c09d3115fd745320be9ad0161bc
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599037"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548432"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Conectar-se ao tyGraph com o Power BI
 Visualize e explore seus dados do tyGraph no Power BI com o pacote de conteúdo para o Power BI. Comece conectando-se à sua conta do tyGraph e carregando o painel, relatórios e conjunto de dados. O conteúdo pronto para uso inclui informações, como a pontuação MAE (Medida de Envolvimento Ativo) e Principais Colaboradores. Personalize ainda mais para realçar as informações mais importantes para você.  Os dados serão atualizados automaticamente de acordo com um agendamento definido.
@@ -51,9 +51,9 @@ Conecte-se ao [tyGraph para o Power BI](https://app.powerbi.com/getdata/services
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 <a name="FindingParams"></a>

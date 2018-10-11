@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: d3b7ace4fe611cc55965f96f770caf7b4ebf21b1
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c65b945260357b0679f8fdb83c534aac53481126
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726376"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46564775"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI
 Saiba como instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI.
@@ -31,7 +31,7 @@ A maneira mais fácil de ter certeza que você tem a versão mais recente do Pow
 
     ![Baixe o Power BI Desktop no portal da Web](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Ou você pode ir diretamente para o [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (Otimizado para o Servidor de –Relatórios do Power BI – março de 2018) no Centro de Download da Microsoft.
+    Ou você pode acessar diretamente o [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (Otimizado para o Servidor de Relatórios do Microsoft Power BI – agosto de 2018) no Centro de Download da Microsoft.
 
 2. Na página do Centro de Download, selecione **Baixar**.
 
@@ -41,7 +41,8 @@ A maneira mais fácil de ter certeza que você tem a versão mais recente do Pow
 
     - **PBIDesktopRS_x64.msi** (a versão de 64 bits).
 
-1. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop (Outubro de 2017).
+1. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop (agosto de 2018).
+
 2. No final da instalação, marque **Iniciar o Power BI Desktop agora**.
    
     Ele é iniciado automaticamente e você está pronto para começar.
@@ -49,7 +50,7 @@ A maneira mais fácil de ter certeza que você tem a versão mais recente do Pow
 ## <a name="verify-you-are-using-the-correct-version"></a>Verifique se você está usando a versão correta
 É possível verificar se você está usando o Power BI Desktop correto examinando a tela de inicialização ou a barra de título no Power BI Desktop. A barra de título indica o mês de lançamento e o ano da versão.
 
-![Barra de título do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
+![Barra de título do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 
 A versão do Power BI Desktop para o serviço do Power BI não possui o mês nem o ano na barra de título.
 
@@ -63,7 +64,7 @@ Sempre é possível abrir a versão do Power BI Desktop que você deseja usar pr
 Editar um relatório do Power BI no Servidor de Relatório do Power BI ou criar um novo relatório do Power BI no portal da Web sempre abrirá a versão correta do Power BI Desktop.
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
-Os relatórios no Servidor de Relatórios do Power BI e no serviço do Power BI (http://powerbi.com)) agem praticamente da mesma maneira, mas alguns recursos são diferentes.
+Os relatórios do Power BI no Servidor de Relatórios do Microsoft Power BI e no serviço do Power BI (http://app.powerbi.com), assim como nos aplicativos móveis do Power BI) agem praticamente da mesma maneira, mas alguns recursos são diferentes.
 
 ### <a name="in-a-browser"></a>Em um navegador
 Os relatórios do Servidor de Relatório do Power BI dão suporte a todas as visualizações, inclusive:
@@ -80,9 +81,9 @@ Os relatórios do Servidor de Relatório do Power BI não dão suporte a:
 ### <a name="in-the-power-bi-mobile-apps"></a>Nos aplicativos móveis do Power BI
 Os relatórios do Servidor de Relatório do Power BI dão suporte a toda a funcionalidade básica nos [aplicativos móveis do Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md), incluindo:
 
-* [Layout de relatório de telefone](../desktop-create-phone-report.md): é possível otimizar um relatório para os aplicativos móveis do Power BI. Em seu telefone celular, os relatórios otimizados têm um ícone especial chamado ![Ícone de layout de relatório para telefone](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png) e um layout.
+* [Layout de relatório de telefone](../desktop-create-phone-report.md): é possível otimizar um relatório para os aplicativos móveis do Power BI. Em seu telefone celular, os relatórios otimizados têm um ícone especial chamado ![Ícone de layout de relatório para telefone](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) e um layout.
   
-    ![Relatórios otimizado para telefones](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![Relatórios otimizado para telefones](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
 Os relatórios do Servidor de Relatório do Power BI não dão suporte a estes recursos nos aplicativos móveis do Power BI:
 

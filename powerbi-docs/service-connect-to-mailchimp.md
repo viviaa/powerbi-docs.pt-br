@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f54841b77d79854334ddb6d93ccdc9b5926201ac
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: e6e09ceb6aa40f26e145b5ace7a3c9e94bfcb44d
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136679"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547742"
 ---
 # <a name="connect-to-mailchimp-with-power-bi"></a>Conectar-se ao MailChimp com o Power BI
 O pacote de conteúdo do Power BI extrai dados de sua conta do MailChimp e gera um painel, um conjunto de relatórios e um conjunto de dados para permitir que você explore seus dados. Use a análise dos [painéis do MailChimp](https://powerbi.microsoft.com/integrations/mailchimp) para identificar rapidamente as tendências existentes em suas campanhas, seus relatórios e seus assinantes individuais. Os dados são configurados para serem atualizados diariamente, garantindo que os dados que você está monitorando são atuais.
@@ -45,13 +45,13 @@ Conecte-se ao [pacote de conteúdo do MailChimp](https://app.powerbi.com/getdata
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="next-steps"></a>Próximas etapas
 [O que é o Power BI?](power-bi-overview.md)
 
-[Power BI – conceitos básicos](service-basic-concepts.md)
+[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
 

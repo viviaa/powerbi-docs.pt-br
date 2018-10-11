@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657956"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549904"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -132,7 +132,7 @@ Ao usar o recurso **Exibir** dos indicadores, o seguinte se aplica:
 
 * Se o indicador selecionado estiver em um grupo quando você selecionar **Exibir** nos indicadores, somente os indicadores *nesse grupo* serão mostrados na sessão de exibição. 
 
-* Se o indicador selecionado não for um grupo ou estiver no nível superior (como o nome de um grupo de indicadores), então todos os indicadores de todo o relatório serão reproduzidos, incluindo indicadores em qualquer grupo. 
+* Se o indicador selecionado não estiver em um grupo ou estiver no nível superior (como o nome de um grupo de indicadores), então todos os indicadores de todo o relatório serão reproduzidos, incluindo indicadores em qualquer grupo. 
 
 Para desagrupar indicadores, basta selecionar qualquer indicador em um grupo, clicar nas reticências e selecionar **Desagrupar** no menu exibido. 
 
@@ -182,5 +182,5 @@ Nesta versão dos **indicadores**, há algumas limitações e considerações a 
 Para obter mais informações sobre os recursos que são semelhantes ou interagem com indicadores, consulte os seguintes artigos:
 
 * [Usar o detalhamento no Power BI Desktop](desktop-drillthrough.md)
-* [Exibir um bloco do dashboard ou visual do relatório no modo de Foco](service-focus-mode.md)
+* [Exibir um bloco do dashboard ou visual do relatório no modo de Foco](consumer/end-user-focus.md)
 

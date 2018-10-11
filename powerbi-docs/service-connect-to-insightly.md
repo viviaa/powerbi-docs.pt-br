@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: fe5e061913713c76f64995876dda047f7cdc5fea
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6e2ca51f79173e065d0a780943eab2e834837820
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244446"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548616"
 ---
 # <a name="connect-to-insightly-with-power-bi"></a>Conectar-se ao Insightly com o Power BI
 Visualize e compartilhe seus dados do CRM Insightly no Power BI com o pacote de conteúdo do Insightly. Conecte-se ao Power BI usando sua chave de API do Insightly para exibir e criar relatórios e painéis de seus dados CRM. Com o Power BI, você pode analisar os dados de novas maneiras, criar gráficos poderosos e exibir contatos, clientes potenciais e organizações em um mapa.
@@ -41,9 +41,9 @@ Conecte-se ao [pacote de conteúdo do Insightly](https://app.powerbi.com/getdata
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="whats-included"></a>O que está incluído

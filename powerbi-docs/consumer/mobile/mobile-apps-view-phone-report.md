@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 6ea5814cdba7df6d7e7bb4bbb284f52110ca184c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728432"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547788"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Exibir relatórios do Power BI otimizados para seu telefone
 
@@ -24,7 +24,7 @@ Aplica-se a:
 |:--- |:--- |
 | iPhones |Telefones Android |
 
-Quando você cria um relatório do Power BI no Power BI Desktop, você também pode [criar uma versão desse relatório otimizada para exibição](../../desktop-create-phone-report.md) no aplicativo do Power BI em um telefone.
+Quando você cria um relatório do Power BI no Power BI Desktop ou no serviço do Power BI, também pode [criar uma versão desse relatório otimizada para exibição](../../desktop-create-phone-report.md) no aplicativo do Power BI em um telefone.
 
 Em seguida, quando você abrir um relatório do Power BI em um telefone, o Power BI detectará se o relatório foi otimizado para telefones e abrirá automaticamente o relatório otimizado no modo de exibição de retrato.
 
@@ -79,7 +79,7 @@ Algumas ações somente são possíveis no modo de foco, devido às restrições
     A reversão está disponível no nível do relatório; desmarque todas as explorações de todos os elementos visuais ou no visual nível, desmarcando toda a exploração do elemento visual específico selecionado.   
 
 ## <a name="drill-down-in-a-visual"></a>Fazer drill down em um visual
-Se os níveis hierárquicos forem definidos em um visual, você poderá fazer drill down nas informações detalhadas exibidas em um visual e, em seguida, fazer backup. [Adicione o drill-down em um visual](../../power-bi-visualization-drill-down.md) no serviço do Power BI ou no Power BI Desktop. O drill-down funciona apenas em relatórios do Power BI otimizados para telefone quando você os exibe em um telefone. 
+Se os níveis hierárquicos forem definidos em um visual, você poderá fazer drill down nas informações detalhadas exibidas em um visual e, em seguida, fazer backup. [Adicione o drill-down em um visual](../end-user-drill.md) no serviço do Power BI ou no Power BI Desktop. O drill-down funciona apenas em relatórios do Power BI otimizados para telefone quando você os exibe em um telefone. 
 
 1. Em um relatório em um telefone, toque no botão de reticências (**...** ) no canto superior direito > **Expandir para o modo de foco**.
    

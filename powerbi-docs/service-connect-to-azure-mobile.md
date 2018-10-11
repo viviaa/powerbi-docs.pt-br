@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2d2d983da6de5ec88574092289ed2958c7a98923
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 370613fb4436eb71ae0b6af6c0b5166e8bb7b434
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600402"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546684"
 ---
 # <a name="connect-to-azure-mobile-engagement-with-power-bi"></a>Conectar-se ao Azure Mobile Engagement com o Power BI
 O pacote de conteúdo do Engajamento Móvel do Azure para o Power BI permite que você obtenha informações rapidamente sobre os dados de seu aplicativo.
@@ -44,9 +44,9 @@ Conecte-se ao [pacote de conteúdo do Engajamento Móvel do Azure](https://app.p
 
 ## <a name="what-now"></a>O que vem em seguida?
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="next-steps"></a>Próximas etapas

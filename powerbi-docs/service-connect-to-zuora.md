@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 48246d61789a0b1e160109c1f2fb0e81838b3965
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280307"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546905"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Conectar-se ao Zuora com o Power BI
 O Zuora para Power BI permite visualizar dados importantes de receita, de cobrança e de assinatura. Use o painel e os relatórios padrão para analisar tendências de uso, rastrear cobranças e pagamentos e monitorar receitas recorrentes ou personalizá-las para atender às suas necessidades exclusivas de painel e relatório.
@@ -44,9 +44,9 @@ Conecte-se ao [Zuora](https://app.powerbi.com/getdata/services/Zuora) para o Pow
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="whats-included"></a>O que está incluído

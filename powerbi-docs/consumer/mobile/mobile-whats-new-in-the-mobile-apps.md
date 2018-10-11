@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 922352c0cdbacd57d3e6706d490b3cc7e65ab8f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44729370"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546891"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -22,6 +22,25 @@ Para informações sobre “Novidades” relacionadas, consulte:
 * [Blog da equipe do Power BI para os aplicativos móveis](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Novidades no Power BI Desktop](../../desktop-latest-update.md)  
 * [Novidades no serviço do Power BI](../../service-whats-new.md)  
+
+## <a name="september-2018"></a>Setembro de 2018
+
+### <a name="phone-report-editing-in-the-browser-all-devices"></a>Edição de relatório de telefone no navegador (todos os dispositivos)
+
+Agora, é possível criar um layout de relatório de telefone para um relatório que já está publicado no serviço do Power BI e não apenas no Power BI Desktop. Ele é criado no modo de edição em seu navegador.
+
+### <a name="dashboard-commenting-ios-and-android"></a>Comentários no dashboard (iOS e Android) 
+
+Você pode adicionar comentários diretamente aos dashboards e blocos específicos para discutir seus dados; qualquer pessoa que exibir o dashboard verá seus comentários. Também é possível trazer outras pessoas de sua organização para a conversa por meio de @mentioning. Aquelas que você @mentioned recebem uma notificação por push com sua mensagem no celular.
+
+Atualmente disponível para dispositivos iOS e Android. O suporte para Windows virá em breve.
+
+Leia a [postagem no blog do Power BI sobre comentários no dashboard](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
+
+### <a name="single-sign-on-windows"></a>Logon único (Windows)
+
+O SSO (logon único) é um dos recursos mais solicitados para o Power BI Mobile for Windows. Agora, você pode usar suas contas organizacionais primárias não apenas para entrar em seus dispositivos móveis com Windows ingressados no domínio, mas também para entrar sem interrupções no serviço do Power BI. Leia mais sobre [SSO e os aplicativos móveis com Windows](mobile-windows-10-app-single-sign-on-sso.md).
+
 
 ## <a name="july-2018"></a>Julho de 2018
 
@@ -177,7 +196,7 @@ Leia o [resumo de julho de 2017 sobre os recursos dos aplicativos móveis](https
 
 ### <a name="june-2107"></a>Junho de 2107
 #### <a name="all-devices"></a>Todos os dispositivos
-**Criar favoritos aplicativos** Já é possível tornar um dashboard em um favorito. Recentemente, o [Power BI adicionou aplicativos](../../service-install-use-apps.md) e agora você pode tornar aplicativos em favoritos também. 
+**Criar favoritos aplicativos** Já é possível tornar um dashboard em um favorito. Recentemente, o [Power BI adicionou aplicativos](../end-user-apps.md) e agora você pode tornar aplicativos em favoritos também. 
 
 ### <a name="may-2017"></a>Maio de 2017
 #### <a name="all-devices"></a>Todos os dispositivos
@@ -498,7 +517,7 @@ Todas as melhorias feitas em janeiro já estão incluídas no novo [aplicativo P
 
 **Blocos de R e widgets da Web** Exiba esses novos tipos de bloco no seu dispositivo móvel.
 
-**Dashboards do Bing** No serviço do Power BI, agora é possível criar [dashboards com os resultados da pesquisa do Bing](../../service-connect-to-services.md) e vê-los em seu dispositivo móvel.
+**Dashboards do Bing** No serviço do Power BI, agora é possível criar [dashboards com os resultados da pesquisa do Bing](../end-user-connect-to-services.md) e vê-los em seu dispositivo móvel.
 
 **Páginas de relatório fixadas como blocos em dashboards** Agora, você pode fixar uma página de relatório inteira em um dashboard no serviço do Power BI e exibir páginas de relatórios no aplicativo do Power BI no seu iPhone ou telefone Android.
 

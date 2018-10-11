@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 6aa5b5dbb22881b6bccaa2ed43352a8f22308675
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582628"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546638"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Conectar-se ao Acumatica com o Power BI
 O pacote de conteúdo do Acumatica para o BI Power permite que você obtenha informações rapidamente sobre os dados de sua oportunidade. O Power BI recupera seus dados, incluindo oportunidades, contas e clientes, e cria um painel padrão e relatórios relacionados com base nesses dados.
@@ -51,9 +51,9 @@ Conecte-se ao [pacote de conteúdo do Acumatica](https://app.powerbi.com/getdata
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements"></a>Requisitos de sistema

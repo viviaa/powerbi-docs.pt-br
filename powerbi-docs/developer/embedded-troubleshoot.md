@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.openlocfilehash: d540dd29214422dfc33dca2bf2fb1cb74ebe6de7
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 71cb40ef6f1346bd3d8486658b05427e66d1dbf3
+ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558553"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46474036"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Solucionando problemas do aplicativo inserido
 
@@ -84,18 +84,18 @@ Uma captura do fiddler pode ser necessária para uma investigação mais aprofun
 
 O back-end do aplicativo pode precisar atualizar o token de autenticação antes de chamar GenerateToken.
 
-```
+    ```
     GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
     Host: wabi-us-north-central-redirect.analysis.windows.net
     ...
     Authorization: Bearer eyJ0eXAiOi...
     ...
- 
+
     HTTP/1.1 403 Forbidden
     ...
-     
+
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
+    ```
 
 ## <a name="authentication"></a>Autenticação
 
@@ -229,13 +229,13 @@ Depois de adquirir o objeto IError, você deve examinar a tabela de erros comuns
 | OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um relatório visual intitulado: <visual title> | N/A | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/A | <li> Capacidade em pausa <li> Capacidade excluída |
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Ferramenta de experiência de integração para inserção
+## <a name="embedding-setup-tool"></a>Ferramenta de configuração de inserção
 
-É possível examinar a [Ferramenta de experiência de integração](https://aka.ms/embedsetup) e baixar um aplicativo de exemplo. Em seguida, você pode comparar o aplicativo com o exemplo.
+É possível acessar a [Ferramenta de configuração de inserção](https://aka.ms/embedsetup) para baixar um aplicativo de exemplo rapidamente. Em seguida, você pode comparar o aplicativo com o exemplo.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-Verifique se você tem todos os pré-requisitos apropriados antes de usar a Ferramenta de experiência de integração. Você precisará de uma conta do **Power BI Pro** e de uma assinatura do **Microsoft Azure**.
+Verifique se você tem todos os pré-requisitos apropriados antes de usar a ferramenta de configuração de inserção. Você precisará de uma conta do **Power BI Pro** e de uma assinatura do **Microsoft Azure**.
 
 * Se não estiver inscrito no **Power BI Pro**, [inscreva-se para uma avaliação gratuita](https://powerbi.microsoft.com/en-us/pricing/) antes de começar.
 * Caso você não tenha uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) antes de começar.
@@ -244,7 +244,7 @@ Verifique se você tem todos os pré-requisitos apropriados antes de usar a Ferr
 
 ### <a name="common-issues"></a>Problemas comuns
 
-Alguns problemas comuns que você pode encontrar ao testar com a Ferramenta de experiência de integração são:
+Alguns problemas comuns que você pode encontrar ao testar com a ferramenta de configuração de inserção são:
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Usando o aplicativo de exemplo Inserir para clientes
 
@@ -262,6 +262,10 @@ A seguinte mensagem de erro será exibida ao executar o aplicativo de exemplo:
 
 Esse erro ocorre porque o único valor que não está sendo inserido no aplicativo de exemplo é a senha do usuário. Abra o arquivo Web.config na solução e preencha o campo pbiPassword com a senha do usuário.
 
+Se você encontrar o erro – AADSTS50079: O usuário precisa usar autenticação multifator.
+
+    Need to use an AAD account that does not have MFA enabled.
+
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Usando o aplicativo de exemplo Inserir para a organização
 
 Se você estiver trabalhando com a experiência **Inserir para a organização**, salve e descompacte o arquivo *PowerBI-Developer-Samples.zip*. Abra a pasta *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* e execute o arquivo *pbi-saas-embed-report.sln*.
@@ -275,6 +279,10 @@ Isso ocorre porque a URL de redirecionamento especificada para o aplicativo de s
 Se você quiser editar o aplicativo registrado, aprenda a editar o [aplicativo registrado no AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), assim, o aplicativo poderá fornecer acesso a APIs Web.
 
 Se você quiser editar o perfil do usuário do Power BI ou os dados, aprenda a editar os [dados do Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts).
+
+Se você encontrar o erro – AADSTS50079: O usuário precisa usar autenticação multifator.
+
+    Need to use an AAD account that does not have MFA enabled.
 
 Para saber mais, veja [Perguntas frequentes do Power BI Embedded](embedded-faq.md).
 

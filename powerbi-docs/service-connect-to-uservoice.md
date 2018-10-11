@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e44d4bb48289b515797167fb3b91a9bbf0d2bcdd
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: ef35ef674ad8b0608c22b7b0d958b4844bb0d24e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37092151"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544436"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Conectar-se ao UserVoice com o Power BI
 É fácil acompanhar e explorar dados do UserVoice com o Power BI e o pacote de conteúdo do UserVoice. O Power BI recupera seus dados, incluindo tíquetes, sugestões e classificações de satisfação, e cria um painel e relatórios prontos para uso com base nesses dados.
@@ -53,9 +53,9 @@ Conecte-se ao [pacote de conteúdo do UserVoice](https://app.powerbi.com/getdata
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="troubleshooting"></a>Solução de problemas

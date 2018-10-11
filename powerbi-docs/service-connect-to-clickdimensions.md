@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9506ab48e48fe04e07de8dcb08ad5234d31045cf
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 709dd5d1b5203e9c5bb790d69cb0537c03a17916
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34242945"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543326"
 ---
 # <a name="connect-to-clickdimensions-with-power-bi"></a>Conectar-se ao ClickDimensions com o Power BI
 O pacote de conteúdo do ClickDimensions para o Power BI permite que os usuários utilizem os dados de marketing do ClickDimensions no Power BI, fornecendo às equipes de gerenciamento mais informações sobre o sucesso de seus esforços de vendas e marketing. Visualize e analise as interações de email, as visitas na Web e os envios de formulário nos relatórios e dashboards do Power BI.
@@ -44,9 +44,9 @@ Conecte-se ao [pacote de conteúdo do ClickDimensions](https://app.powerbi.com/g
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements"></a>Requisitos de sistema

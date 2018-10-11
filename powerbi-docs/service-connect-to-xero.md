@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d3074602af73d937e64a9155d3d197b91b1b1ae8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 98250e30d1ca944aa536e0d8a05e6ee6c227fc61
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34246899"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546731"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Conectar-se ao Xero com o Power BI
 O Xero é um software de contabilidade online fácil de usar, criado especificamente para pequenas empresas. Crie visualizações interessantes com base em seus dados financeiros do Xero com este pacote de conteúdo do Power BI. O dashboard padrão inclui várias métricas de pequenas empresas, como posição de caixa, receita versus despesas, tendência de perda de lucros, períodos médios de cobrança e retorno sobre o investimento.
@@ -46,9 +46,9 @@ Conecte-se ao [pacote de conteúdo do Xero](https://app.powerbi.com/getdata/serv
 
 **E agora?**
 
-* Tente [fazer uma pergunta na caixa de P e R](power-bi-q-and-a.md) na parte superior do dashboard
+* Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
 * [Altere os blocos](service-dashboard-edit-tile.md) no dashboard.
-* [Selecione um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente.
+* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente.
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="whats-included"></a>O que está incluído
