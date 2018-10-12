@@ -2,12 +2,13 @@
 title: Aprendizagem interativa do Microsoft Power BI
 description: Comece sua jornada de aprendizagem com esta coleção sequenciada de cursos e entenda os recursos extensos e poderosos do Microsoft Power BI.
 layout: LandingPage
-ms.openlocfilehash: edcc3a365d84edf53ace6c1ac63d341914155161
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.service: powerbi
+ms.openlocfilehash: 8e9c26e48f50eb5b95a23f98329dbaea578e01d3
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187342"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799059"
 ---
 <div id="main" class="v2">
     <div class="container">

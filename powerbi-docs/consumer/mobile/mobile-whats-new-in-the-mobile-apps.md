@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546891"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909235"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -196,7 +196,7 @@ Leia o [resumo de julho de 2017 sobre os recursos dos aplicativos móveis](https
 
 ### <a name="june-2107"></a>Junho de 2107
 #### <a name="all-devices"></a>Todos os dispositivos
-**Criar favoritos aplicativos** Já é possível tornar um dashboard em um favorito. Recentemente, o [Power BI adicionou aplicativos](../end-user-apps.md) e agora você pode tornar aplicativos em favoritos também. 
+**Criar favoritos aplicativos** Já é possível tornar um dashboard em um favorito. Recentemente, o [Power BI adicionou aplicativos](../../service-create-distribute-apps.md) e agora você pode tornar aplicativos em favoritos também. 
 
 ### <a name="may-2017"></a>Maio de 2017
 #### <a name="all-devices"></a>Todos os dispositivos
