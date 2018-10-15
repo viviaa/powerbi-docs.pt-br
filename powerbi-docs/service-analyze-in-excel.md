@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4e2ff9afcccc9bc32d47359fba386fcb0c704457
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: bbffe00507462c3a41ee07cb86c2376a072e5437
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327627"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271545"
 ---
 # <a name="analyze-in-excel"></a>Analisar no Excel
 Existem ocasiões em que você talvez queira usar o Excel para exibir e interagir com um conjunto de dados do Power BI. Com o recurso **Analisar no Excel**, você pode fazer isso e acessar recursos de Tabela Dinâmica, gráfico e segmentação no Excel com base no conjunto de dados existente no Power BI.
@@ -26,7 +26,7 @@ Há alguns requisitos para o uso do recurso **Analisar no Excel**:
 * Há suporte para o recurso **Analisar no Excel** no Microsoft Excel 2010 SP1 e posterior.
 * As Tabelas Dinâmicas do Excel não têm suporte para agregação do tipo "arrastar e soltar" dos campos numéricos. Seu conjunto de dados no Power BI *deve ter medidas predefinidas*.
 * Algumas empresas podem ter regras de Política de Grupo que impedem a instalação das atualizações necessárias do recurso **Analisar no Excel** no Excel. Se você não conseguir instalar as atualizações, verifique com seu administrador.
-* **Analisar no Excel** exige uma licença Pro. Para saber mais sobre as diferenças na funcionalidade entre licenças grátis e Pro, dê uma olhada em [Power BI Gratuito versus Pro](service-free-vs-pro.md). 
+* **Analisar no Excel** exige uma licença Pro. Para saber mais sobre as diferenças na funcionalidade entre os tipos de licença, leia sobre os [Recursos do Power BI por tipo de licença](service-features-license-type.md). 
 
 ## <a name="how-does-it-work"></a>Como funciona?
 Quando você seleciona **Analisar no Excel** no menu de reticências (...) associado a um conjunto de dados ou relatório no **Power BI**, o Power BI cria um arquivo .ODC e o baixa do navegador para o computador.

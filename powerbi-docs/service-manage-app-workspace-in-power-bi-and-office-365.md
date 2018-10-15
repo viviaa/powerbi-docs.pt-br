@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 516d78bd6158c714d5f4418771c5e8cb219ce512
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 25e7fe3e47cee2aed7781fff2a20621e3bd860ed
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547558"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908798"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gerenciar seu espaço de trabalho de aplicativo no Power BI e no Office 365
-Como criador ou administrador de um [espaço de trabalho de aplicativo no Power BI](consumer/end-user-apps.md) ou no Office 365, você gerencia alguns aspectos do seu espaço de trabalho no Power BI. Outros aspectos que você gerencia no Office 365. 
+Como criador ou administrador de um [espaço de trabalho de aplicativo no Power BI](service-create-distribute-apps.md) ou no Office 365, você gerencia alguns aspectos do seu espaço de trabalho no Power BI. Outros aspectos que você gerencia no Office 365. 
 
 > [!NOTE]
 > A nova versão prévia de experiência de espaço de trabalho mudará a relação entre os espaços de trabalho do Power BI e os grupos do Office 365. Você não criará automaticamente um grupo do Office 365 sempre que criar um dos novos espaços de trabalho. Leia sobre [criar os novos espaços de trabalho (versão prévia)](service-create-the-new-workspaces.md)
@@ -36,7 +36,7 @@ Como criador ou administrador de um [espaço de trabalho de aplicativo no Power 
 * Ver o endereço de email do grupo.
 * Excluir o grupo.
 
-Você precisa de uma licença do [Power BI Pro](service-free-vs-pro.md) para ser um administrador ou um membro de um espaço de trabalho do aplicativo. Os usuários de seu aplicativo também precisam de uma licença do Power BI Pro, a menos que seu espaço de trabalho do aplicativo esteja em uma capacidade do Power BI Premium. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
+Você precisa de uma [licença do Power BI Pro](service-features-license-type.md) para ser um administrador ou um membro de um workspace do aplicativo. Os usuários de seu aplicativo também precisam de uma licença do Power BI Pro, a menos que seu espaço de trabalho do aplicativo esteja em uma capacidade do Power BI Premium. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Editar seu espaço de trabalho de aplicativo no Power BI
 1. No serviço do Power BI, selecione a seta ao lado de **Espaços de trabalho** > selecione as reticências (**...**) ao lado do nome do espaço de trabalho > **Editar espaço de trabalho**. 
@@ -76,7 +76,6 @@ Quando você distribuir seu aplicativo do espaço de trabalho do aplicativo, a i
 3. Selecionar **Salvar** ou **Descartar**.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [O que são aplicativos no Power BI?](consumer/end-user-apps.md)
-* [Publicar aplicativos com dashboards e relatórios no Power BI](consumer/end-user-create-apps.md)
+* [Publicar aplicativos com dashboards e relatórios no Power BI](service-create-distribute-apps.md)
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

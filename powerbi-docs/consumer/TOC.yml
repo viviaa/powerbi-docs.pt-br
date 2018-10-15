@@ -3,103 +3,84 @@ items:
   href: power-bi-consumer-landing.md
 - name: Serviço do Power BI
   items:
+  - name: Visão geral
+    items:
+    - name: O que é um consumidor do Power BI?
+      href: end-user-consumer.md
+    - name: Conceitos básicos e a terminologia para os consumidores do Power BI
+      href: end-user-basic-concepts.md
   - name: Início rápido
     items:
-    - name: Encontre seu caminho
+    - name: Encontre seu caminho no Power BI
       href: end-user-experience.md
-    expanded: true
-  - name: Conceitos
+  - name: Tutoriais
     items:
-    - name: Power BI - conceitos básicos
-      href: end-user-basic-concepts.md
-    - name: Pesquisa e classificação de conteúdo
-      href: end-user-search-filter-sort.md
-    - name: Conteúdo relacionado
-      href: end-user-related.md
-    - name: Conteúdo recente
-      href: end-user-recent.md
-    - name: Aceitar versão prévia dos recursos
-      href: end-user-preview-features.md
-    - name: Dashboards
-      href: end-user-dashboards.md
-    - name: Blocos de dashboard
-      href: end-user-tiles.md
-    - name: P e R no Power BI
-      href: end-user-q-and-a.md
-    - name: Relatórios
-      href: end-user-reports.md
-    - name: Abrir um relatório na exibição de Leitura
-      href: end-user-reading-view.md
-    - name: Compartilhado comigo
-      href: end-user-shared-with-me.md
-    - name: Perguntas frequentes
-      href: end-user-faq.md
-    - name: Insights rápidos
-      href: end-user-insights.md
-    - name: Tipos de Insights Rápidos
-      href: end-user-insight-types.md
+    - name: Criar um alerta de dashboard
+      href: end-user-alerts.md
   - name: Como
     items:
-    - name: Tarefas comuns
-      items:
-      - name: Exibir um bloco do painel no modo Em foco
-        href: end-user-focus.md
-      - name: Adicionar painéis, relatórios e aplicativos aos favoritos
-        href: end-user-favorite.md
-      - name: Remover conteúdo
-        href: end-user-delete.md
-      - name: Instalar e usar aplicativos
-        href: end-user-apps.md
-      - name: Conectar-se a um pacote de conteúdo organizacional
-        href: end-user-content-pack.md
-      - name: Conectar-se aos serviços que você usa
-        href: end-user-connect-to-services.md
     - name: Dashboards
       items:
+      - name: Dashboards
+        href: end-user-dashboards.md
       - name: Dashboards em destaque
         href: end-user-featured.md
-      - name: Centro de Notificações Unificado
-        href: end-user-notification-center.md
+      - name: Blocos de dashboard
+        href: end-user-tiles.md
+      - name: Adicionar um comentário ou iniciar uma conversa
+        href: end-user-comment.md
     - name: Relatórios
       items:
-      - name: Muitas maneiras de abrir um relatório
-        href: end-user-report-open.md
-      - name: Como usar filtros de relatório
+      - name: Relatórios
+        href: end-user-reports.md
+      - name: Como usar filtros em relatórios
         href: end-user-report-filter.md
-      - name: Assinar um relatório ou um dashboard
-        href: end-user-subscribe.md
-      - name: Alterar como os visuais interagem em um relatório
-        href: end-user-interactions.md
-      - name: Alterar as configurações de exibição para uma página em um relatório
-        href: end-user-report-view.md
     - name: Visualizações
       items:
-      - name: Fazer drill down em uma visualização
+      - name: O que posso fazer com as visualizações?
+        href: end-user-visualizations.md
+      - name: Faça uma visualização no Power BI
         href: end-user-drill.md
-      - name: Ver os dados usados para criar o visual
-        href: end-user-show-data.md
       - name: Exportar dados de uma visualização
         href: end-user-export-data.md
-      - name: Alterar como um gráfico é classificado em um relatório
-        href: end-user-change-sort.md
+    - name: Tarefas comuns
+      items:
+      - name: Exibir no modo de foco e no modo de tela inteira
+        href: end-user-focus.md
+      - name: Adicione painéis, relatórios e aplicativos aos favoritos no Power BI
+        href: end-user-favorite.md
+      - name: Imprimir um dashboard, um bloco de dashboard, uma página de relatório
+        href: end-user-print.md
+      - name: Conteúdo relacionado
+        href: end-user-related.md
+      - name: Conteúdo recente
+        href: end-user-recent.md
+      - name: Assinar um relatório ou um dashboard
+        href: end-user-subscribe.md
+    - name: Obter dados
+      items:
+      - name: O que são aplicativos?
+        href: end-user-apps.md
+      - name: Compartilhado comigo
+        href: end-user-shared-with-me.md
+      - name: Conectar aos serviços
+        href: end-user-connect-to-services.md
+      - name: Localizar e conectar-se a pacotes de conteúdo organizacional
+        href: end-user-content-pack.md
     - name: Fazer perguntas sobre seus dados
       items:
-      - name: Dicas para fazer perguntas com P e R
+      - name: P e R no Power BI
+        href: end-user-q-and-a.md
+      - name: Dicas e truques para fazer perguntas com a P e R no Power BI
         href: end-user-q-and-a-tips.md
-      - name: Usar P e R com um Gateway – dados corporativos (Versão Prévia)
-        href: end-user-q-and-a-direct-query.md
-    - name: Compartilhar seu trabalho
-      items:
-      - name: Publicar no PowerPoint
-        href: end-user-powerpoint.md
-      - name: Imprimir um dashboard, bloco ou página de relatório
-        href: end-user-print.md
-      - name: Publicar aplicativos com dashboards e relatórios
-        href: end-user-create-apps.md
   - name: Recursos
     items:
+    - name: Glossário e terminologia
+      href: end-user-glossary.md
     - name: Navegadores compatíveis
       href: end-user-browsers.md
+    - name: Tipos de Quick Insights com suporte do Power BI
+      href: end-user-insight-types.md
 - name: Aplicativos móveis do Power BI
   items:
   - name: Visão geral
@@ -128,21 +109,21 @@ items:
     items:
     - name: Todos os aplicativos móveis
       items:
-      - name: Compartilhar um dashboard usando os aplicativos móveis
+      - name: Compartilhar um painel dos aplicativos móveis do Power BI
         href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: Interagir com blocos nos aplicativos móveis
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: Favoritos nos aplicativos móveis
         href: mobile/mobile-apps-favorites.md
-      - name: Definir alertas de dados nos aplicativos móveis
+      - name: Definir alertas de dados nos aplicativos móveis do Power BI
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-      - name: Obter notificações nos aplicativos móveis
+      - name: Obter notificações nos aplicativos móveis do Power BI
         href: mobile/mobile-apps-notification-center.md
-      - name: Criar um link profundo para um local específico
+      - name: Criar um link profundo que vai a determinada localização
         href: mobile/mobile-apps-deep-link-specific-location.md
-      - name: Filtrar um relatório por local nos aplicativos móveis
+      - name: Filtrar um relatório por local nos aplicativos móveis do Power BI
         href: mobile/mobile-apps-geographic-filtering.md
-      - name: Dashboards para os aplicativos móveis
+      - name: Painéis do Power BI móvel
         href: mobile/mobile-apps-view-dashboard.md
       - name: Relatórios nos aplicativos móveis
         href: mobile/mobile-reports-in-the-mobile-apps.md
@@ -192,9 +173,9 @@ items:
     items:
     - name: Idiomas com suporte nos aplicativos móveis
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: 02bcbbd99afb803f4f481f3281ac40f02ebeb9f3
-ms.sourcegitcommit: f391b645062f64ac3adc2ce7877318583b14b941
+ms.openlocfilehash: 060da3705f9c478ef49baf2e2a4d3dceabee31aa
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48016413"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908982"

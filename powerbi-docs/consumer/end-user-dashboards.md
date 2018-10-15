@@ -7,32 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ccfa947f83a5079cda3bfb173c0f83f6b811a9ff
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564729"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909120"
 ---
 # <a name="dashboards-in-power-bi-service"></a>Dashboards no serviço do Power BI
 
 Um ***dashboard*** do Power BI é uma página única, geralmente chamada de tela, que usa as visualizações para contar uma história. Como ele é limitado a uma página, um dashboard bem projetado contém apenas os elementos mais importantes da história.
 
-![dashboard](./media/end-user-dashboards/power-bi-dashboard2.png)
+![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
 
 As visualizações que você vê no dashboard são chamadas de *blocos* e são *fixadas* ao dashboard de relatórios. Se for novo no Power BI, você poderá obter uma boa base lendo [Conceitos básicos do Power BI](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Os dashboards são um recurso do serviço do Power BI e não estão disponíveis no Power BI Desktop. Os dashboards não podem ser criados em dispositivos móveis, mas podem ser [exibidos e compartilhados](mobile/mobile-apps-view-dashboard.md).
+> Os dashboards são um recurso do serviço do Power BI e não estão disponíveis no Power BI Desktop. Os dashboards não podem ser criados em dispositivos móveis, mas podem ser [exibidos e compartilhados](/mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 
 As visualizações em um dashboard vêm de relatórios e cada relatório é baseado em um conjunto de dados. Na verdade, uma maneira de pensar em um dashboard é como uma porta de entrada para os relatórios e os conjuntos de dados subjacentes. Selecionar uma visualização leva você para o relatório (e o conjunto de dados) que foi usado para criá-lo.
 
-![diagrama mostrando a relação entre dashboards, relatórios, conjuntos de dados](./media/end-user-dashboards/power-bi-diagram.png)
+![diagrama mostrando a relação entre dashboards, relatórios, conjuntos de dados](media/end-user-dashboards/power-bi-diagram.png)
 
 ## <a name="advantages-of-dashboards"></a>Vantagens dos dashboards
 Os dashboards são uma ótima maneira de monitorar seus negócios, procurar respostas e ver todas as métricas mais importantes rapidamente. As visualizações em um dashboard podem vir de um conjunto de dados subjacente, ou de muitos, e de um relatório subjacente, ou de muitos. Dashboards combinam dados locais e na nuvem, proporcionando uma exibição consolidada independentemente de onde os dados residem.
@@ -40,7 +40,7 @@ Os dashboards são uma ótima maneira de monitorar seus negócios, procurar resp
 Um dashboard não é apenas uma imagem bonita. Ele é altamente interativo e personalizável e os blocos são atualizados à medida que os dados subjacentes são alterados.
 
 ## <a name="dashboards-versus-reports"></a>Dashboards versus relatórios
-Os [relatórios](end-user-reports.md) costumam ser confundidos com dashboards, pois eles também são telas preenchidas com visualizações. Mas existem algumas diferenças importantes.
+Os relatórios geralmente são confundidos com os dashboards, já que eles também são telas preenchidas com visualizações. Mas existem algumas diferenças importantes.
 
 | **Funcionalidade** | **Dashboards** | **Relatórios** |
 | --- | --- | --- |
@@ -65,28 +65,16 @@ Aqui estão alguns tópicos, por função, para ajudá-lo a começar.
 
 O Power BI Pro é necessário para compartilhar dashboards e para exibir dashboards compartilhados.
 
-### <a name="if-you-will-be-creating-and-sharing-dashboards"></a>Se você for criar e compartilhar dashboards
-* Use um dos nossos exemplos para [criar um dashboard em um relatório](../service-dashboard-create.md).
-* Saiba mais sobre os [blocos de dashboard](end-user-tiles.md) e todas as diferentes maneiras para fixá-los em um dashboard.
-* Ajude seus consumidores de dashboard criando dashboards que [funcionem bem com consultas de linguagem natural de P e R](../service-prepare-data-for-q-and-a.md) e [Insights rápidos](../service-insights-optimize.md).
-* Descubra todas as diferentes maneiras que você pode [compartilhar um dashboard com colegas](../service-how-to-collaborate-distribute-dashboards-reports.md).
-
 ### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Se você for receber e consumir dashboards
 * Fique à vontade com os dashboards fazendo um tour em um dos nossos [dashboards de exemplo](../sample-tutorial-connect-to-the-samples.md).
 * Saiba mais sobre [blocos de dashboard](end-user-tiles.md) e o que acontece quando você seleciona um.
-* Não gosta da aparência de um dashboard?  Você pode [redimensionar, mover e renomear os blocos](../service-dashboard-edit-tile.md).
-* Deseja acompanhar um bloco de dashboard individual e receber um email quando ele alcançar um certo limite? [Criar alertas em blocos](../service-set-data-alerts.md).
-* Divirta-se fazendo perguntas ao seu dashboard. Aprenda como usar o [Power BI Q&A](../power-bi-tutorial-q-and-a.md) para fazer perguntas sobre os dados e receba uma resposta na forma de uma visualização.
+* Deseja acompanhar um bloco de dashboard individual e receber um email quando ele alcançar um certo limite? [Criar alertas em blocos](end-user-alerts.md).
+* Divirta-se fazendo perguntas ao seu dashboard. Aprenda como usar o [Power BI Q&A](end-user-q-and-a.md) para fazer perguntas sobre os dados e receba uma resposta na forma de uma visualização.
 
 > [!TIP]
 > Se você não encontrar o que está procurando aqui, use o Sumário à esquerda.
-> 
 > 
 
 ## <a name="next-steps"></a>Próximas etapas
 [O que é o Power BI?](../power-bi-overview.md)  
 [Power BI – conceitos básicos](end-user-basic-concepts.md)  
-[Power BI Premium – o que é?](../service-premium.md)  
-
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-

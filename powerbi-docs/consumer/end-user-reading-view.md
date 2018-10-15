@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: de7766176f5c25288912cf463dce79f487e7335d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f108ab3c924f6ff69bc6ee6aae5ed0539ce3f11d
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565097"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908058"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modo de Exibição de Leitura e Modo de Exibição de Edição em relatórios de serviço do Power BI
 No serviço do Power BI (não o Power BI Desktop), há dois modos para exibir e interagir com relatórios: Modo de Exibição de Leitura e Modo de Exibição de Edição. O modo de exibição de Leitura está disponível para todos os usuários e foi especialmente projetado para *consumidores de dados*, enquanto o modo de exibição de Edição só está disponível para *criadores* e proprietários de relatórios.
@@ -26,11 +26,12 @@ No serviço do Power BI (não o Power BI Desktop), há dois modos para exibir e 
 
  O modo de exibição de Leitura é a sua maneira de explorar e interagir com o relatório – é uma forma divertida e segura de experimentar e conhecer seus dados. O modo de exibição de Leitura foi criado para *consumidores* de relatórios, aqueles que abrem relatórios em Aplicativos ou com quem os relatórios são [compartilhados](../service-share-dashboards.md). O Modo de Exibição de Leitura garante que cada consumidor de um relatório específico esteja vendo o mesmo relatório, as mesmas visualizações e, opcionalmente, com os mesmos filtros aplicados.  Os consumidores podem interagir com os relatórios, podem alterar os filtros existentes (e essas alterações são salvas com o relatório), mas não podem adicionar novos filtros.
 
->**OBSERVAÇÃO**: há determinadas circunstâncias em que pode ser que os consumidores de relatório vejam dados diferentes devido ao nível de linha de segurança e a permissões de dados.
+> [!NOTE]
+> Há determinadas circunstâncias, os consumidores de relatório podem ver dados diferentes devido à segurança em nível de linha e a permissões de dados.
 
 ## <a name="report-editing-view"></a>Modo de exibição de Edição do relatório
 
-O modo de exibição de Edição só fica disponível para aqueles que criaram o relatório ou que são [coproprietários de um relatório, por serem um membro ou administrador de um espaço de trabalho do aplicativo](end-user-create-apps.md).
+O modo de exibição de Edição só fica disponível para aqueles que criaram o relatório ou que são [coproprietários de um relatório, por serem um membro ou administrador de um espaço de trabalho do aplicativo](../service-create-distribute-apps.md).
 
 O modo de exibição de Edição foi projetado para *criadores* de relatórios. É o lugar em que os criadores importam e conectam-se a conjuntos de dados, exploram os dados e criam relatórios e dashboards. No modo de exibição de Edição, os *criadores* podem se aprofundar ainda mais em seus dados adicionando e removendo campos, alterando o tipo de visualização, criando novas visualizações e adicionando e excluindo visualizações e páginas do relatório. Eles podem então compartilhar os relatórios criados com colegas.
 
@@ -53,11 +54,11 @@ Este gráfico não lista todos os recursos de relatórios do serviço do Power B
 | [Exibir Métricas de uso ](../service-usage-metrics.md) | Sim, na tela do relatório. | Sim, na lista do relatório (exibição de conteúdo) |
 | [Exibição relacionada](end-user-related.md) | Sim, na tela do relatório. | Sim, na lista do relatório (exibição de conteúdo) |
 | [Salvar um relatório](../service-report-save.md) | Sim, mas apenas com **Salvar como**. | Sim |
-| [Excluir um relatório](end-user-delete.md) | Não  | Sim |
+| [Excluir um relatório](../service-delete.md) | Não  | Sim |
 |**Páginas de relatório** |
 | [Adicionar ou renomear uma página de relatório](../power-bi-report-add-page.md)  | Não  | Sim  |
 | [Duplicar uma página de relatório](../power-bi-report-copy-paste-page.md) | Não  | Sim |
-| [Excluir página de relatório](end-user-delete.md) | não | sim |
+| [Excluir página de relatório](../service-delete.md) | não | sim |
 |**Trabalhando com visualizações de relatório**|
 | [Adicionar visualizações a um relatório](../visuals/power-bi-report-add-visualizations-i.md) | Não  | Sim |
 | [Adicionar caixas de texto e formas a um relatório](../power-bi-reports-add-text-and-shapes.md) | Não  | Sim |
@@ -66,7 +67,7 @@ Este gráfico não lista todos os recursos de relatórios do serviço do Power B
 | [Mostrar os dados usados para criar a visualização](end-user-show-data.md) | Não  | Sim |
 | [Configurar drilling](end-user-drill.md) | Não  | Sim |
 | [Alterar a visualização utilizada](../visuals/power-bi-report-change-visualization-type.md) | Não | Sim|
-| [Excluir uma visualização, caixa de texto ou forma](end-user-delete.md)| Não | Sim |
+| [Excluir uma visualização, caixa de texto ou forma](../service-delete.md)| Não | Sim |
 
 
 ## <a name="navigating-between-editing-view-and-reading-view"></a>Navegando entre o Modo de Exibição de Edição e o Modo de Exibição de Leitura
@@ -88,7 +89,6 @@ Lembre-se de que somente o criador e os proprietários do relatório poderão ab
 
 
 
-### <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 Há muitas maneiras de interagir com um relatório no Modo de Exibição de Leitura, segmentando e repartindo os dados para descobrir informações e obter respostas às perguntas.  O próximo tópico, [Interagir com um relatório no modo de exibição de Leitura](../service-interact-with-a-report-in-editing-view.md), descreve alguns desses aspectos detalhadamente.    
-Voltar para [relatórios no Power BI](end-user-reports.md)    
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
+Voltar para os [relatórios no Power BI](end-user-reports.md)    

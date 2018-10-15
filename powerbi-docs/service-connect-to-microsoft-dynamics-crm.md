@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 475f3ddf646ddc9c5f29409854f93128ce94dd51
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547052"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908821"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Conectar-se ao Microsoft Dynamics CRM com o Power BI
 O Microsoft Dynamics CRM Online para o Power BI permite que você acesse e analise seus dados com facilidade. O Power BI usa o feed OData para criar um modelo descritivo, com todas as entidades e medidas necessárias como Contas, Atividades, Oportunidades, Produtos, Clientes Potenciais, Usuários e muito mais. Depois de instalar o aplicativo, exiba o dashboard e os relatórios no serviço do Power BI ([https://powerbi.com](https://powerbi.com)) e nos aplicativos móveis do Power BI. 
@@ -26,17 +26,16 @@ Esta conexão exige o **Microsoft Dynamics CRM Online 2016 ou posterior**. Mais 
 
 ## <a name="how-to-connect"></a>Como se conectar
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
-
-1. Selecione **Gerente de Vendas do Microsoft Dynamics CRM** ou **Gerenciador de Serviço do Microsoft Dynamics CRM** e clique em **Conectar**.
+3. Selecione **Gerente de Vendas do Microsoft Dynamics CRM** ou **Gerenciador de Serviço do Microsoft Dynamics CRM** e clique em **Conectar**.
    
    ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
-2. Forneça a URL de serviço associada à sua conta.  Isso estará no formato `https://company.crm.dynamics.com`, veja mais detalhes [abaixo](#FindingParams).
+4. Forneça a URL de serviço associada à sua conta.  Isso estará no formato `https://company.crm.dynamics.com`, veja mais detalhes [abaixo](#FindingParams).
    
    ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
-3. Quando solicitado, forneça suas credenciais (essa etapa pode ser ignorada se você já tiver entrado com seu navegador). Como o Método de Autenticação, digite **oAuth2** e clique em **Entrar**:
+5. Quando solicitado, forneça suas credenciais (essa etapa poderá ser ignorada se você já tiver entrado com seu navegador). Como o Método de Autenticação, digite **oAuth2** e clique em **Entrar**:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
-4. Após a conexão, você verá um dashboard personalizado para um Gerente de Vendas ou Gerente de Serviços, preenchido com seus próprios dados:
+6. Após a conexão, você verá um dashboard personalizado para um Gerente de Vendas ou Gerente de Serviços, preenchido com seus próprios dados:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
@@ -48,9 +47,9 @@ Esta conexão exige o **Microsoft Dynamics CRM Online 2016 ou posterior**. Mais 
 ## <a name="whats-included"></a>O que está incluído
 As seções abaixo fornecem detalhes do que é incluído nas personas [Gerente de Vendas](#Sales) e [Gerente de Serviço](#Service).
 
-Observe que, além disso, os dados são limitados de acordo com a função de segurança atribuída ao usuário do Dynamics CRM Online.
+Os dados são limitados de acordo com a função de segurança atribuída ao usuário do Dynamics CRM Online.
 
-O dashboard e os relatórios destinam-se a fornecer relatórios operacionais sobre os dados de curto prazo com foco em uma equipe ou um grupo. Cada consulta é limitada a recuperar um máximo de 100 mil registros do Dynamics CRM Online. Se esse limite for excedido devido ao alto volume de dados em sua organização, o provisionamento falhará, pois a atualização de dados do Dynamics CRM Online será encerrada. Caso sua conta seja muito grande, considere a possibilidade de se conectar por meio do Power BI Desktop para criar uma solução personalizada.
+O dashboard e os relatórios destinam-se a fornecer relatórios operacionais sobre os dados de curto prazo com foco em uma equipe ou um grupo. Cada consulta é limitada a recuperar um máximo de 100 mil registros do Dynamics CRM Online. Se esse limite for excedido devido ao alto volume de dados na sua organização, o provisionamento falhará, pois a atualização de dados do Dynamics CRM Online será encerrada. Caso sua conta seja muito grande, considere a possibilidade de se conectar por meio do Power BI Desktop para criar uma solução personalizada.
 
 <a name="Sales"></a>
 
@@ -78,7 +77,7 @@ A tabela a seguir lista as entidades do CRM disponíveis para esse serviço e ta
 
 | Entidade do CRM | Filtros aplicados |
 | --- | --- |
-| Account |Todas as contas que têm oportunidades relacionadas que foram modificadas nos últimos 365 dias. |
+| Conta |Todas as contas que têm oportunidades relacionadas que foram modificadas nos últimos 365 dias. |
 | Atividade |Todas as atividades modificadas nos últimos 90 dias <br> [modifiedon] > hoje – 90 dias |
 | Unidade de Negócios |Todas as unidades de negócios que não estão desabilitadas <br> [isdisabled] = false |
 | Cliente Potencial |Todos os clientes potenciais modificados nos últimos 180 dias <br> [modifiedon] > hoje – 180 dias |
@@ -121,7 +120,7 @@ A tabela a seguir lista as entidades do CRM disponíveis para esse serviço, al�
 | Artigo de Conhecimento |Todas as versões mais recentes dos artigos de conhecimento  <br> [islatestversion] = true |
 | Incidente de Artigo de Conhecimento |Todos os incidentes de artigo de conhecimento modificados nos últimos 90 dias <br> [modifiedon] > hoje – 90 dias |
 | Fila |Todas as filas ativas  <br> [statecode] = 0 |
-| Item da Fila |Todos os itens da fila relacionados criados nos últimos 365 dias  <br> [createdon] > hoje – 365 dias e <br> [objecttypecode] = 112 |
+| Item da Fila |Todos os itens da fila relacionados ao caso criados nos últimos 365 dias  <br> [createdon] > hoje – 365 dias e <br> [objecttypecode] = 112 |
 | Usuário |Todos os usuários ativos <br>  [isdisabled] = false |
 
 <a name="Requirements"></a>
@@ -154,7 +153,7 @@ Se você não tiver o CRM Online 2016 ou posterior, use o Power BI Desktop para 
 Se você receber um erro “A atualização de dados falhou porque a consulta excedeu o limite máximo de 100.000 registros”, considere a possibilidade de se conectar diretamente por meio do Power BI Desktop ou utilizando o modelo de solução do CRM.
 
 ## <a name="next-steps"></a>Próximas etapas
-* [O que são aplicativos no Power BI?](consumer/end-user-apps.md)
+* [O que são aplicativos no Power BI?](service-create-distribute-apps.md)
 * [Obter dados no Power BI](service-get-data.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

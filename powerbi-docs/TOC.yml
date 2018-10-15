@@ -1,6 +1,4 @@
 items:
-- name: Power BI para designers de relatório
-  href: power-bi-creator-landing.md
 - name: Power BI Desktop
   items:
   - name: Visão geral
@@ -294,6 +292,8 @@ items:
         href: power-bi-hyperlinks-in-tables.md
       - name: Adicionar um hiperlink a uma Caixa de Texto em um relatório do Power BI
         href: service-add-hyperlink-to-text-box.md
+      - name: Alterar como os visuais interagem em um relatório
+        href: service-reports-visual-interactions.md
       - name: Histogramas
         href: visuals/service-histograms.md
       - name: Dicas e truques para visualizações de mapa do Power BI
@@ -376,6 +376,8 @@ items:
     items:
     - name: O que há de novo no serviço do Power BI
       href: service-whats-new.md
+    - name: Conceitos básicos
+      href: service-basic-concepts.md
     - name: Inscrição de autoatendimento
       href: service-self-service-signup-for-power-bi.md
     - name: Introdução ao Cortana para o Power BI
@@ -384,8 +386,8 @@ items:
       href: refresh-data.md
     - name: Power BI para o Governo dos EUA
       href: service-govus-overview.md
-    - name: Power BI Gratuito versus Pro
-      href: service-free-vs-pro.md
+    - name: Recursos por tipo de licença
+      href: service-features-license-type.md
     - name: 10 dicas para obter ajuda
       href: service-tips-for-finding-help.md
     - name: Sobre filtros e realce em relatórios do Power BI
@@ -424,6 +426,8 @@ items:
         href: service-set-data-alerts.md
       - name: Introdução à P e R do Power BI
         href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: Excluir quase tudo no Power BI
+        href: service-delete.md
     - name: Conectar aos serviços
       items:
       - name: Acumatica
@@ -580,6 +584,10 @@ items:
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
       items:
+      - name: Dashboard do Power BI
+        href: service-dashboards.md
+      - name: Blocos de dashboard
+        href: service-dashboard-tiles.md
       - name: Criar um dashboard por meio de um relatório
         href: service-dashboard-create.md
       - name: Criar uma cópia de um dashboard
@@ -670,6 +678,10 @@ items:
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: Compartilhar dashboards e relatórios
         href: service-share-dashboards.md
+      - name: Criar e compartilhar aplicativos
+        href: service-create-distribute-apps.md
+      - name: Instalar e usar aplicativos
+        href: service-install-use-apps.md
       - name: Criar espaços de trabalho do aplicativo
         href: service-create-workspaces.md
       - name: Criar os novos espaços de trabalho (visualização)
@@ -1100,14 +1112,6 @@ items:
     items:
     - name: O que é administração do Power BI?
       href: service-admin-administering-power-bi-in-your-organization.md
-  - name: Início rápido
-    items:
-    - name: Comprar o Power BI Pro
-      href: service-admin-purchasing-power-bi-pro.md
-    - name: Atribuir licenças do Power BI Pro – Office 365
-      href: service-admin-assigning-power-bi-pro-licenses.md
-    - name: Atribuir licenças do Power BI Pro – Azure
-      href: service-admin-assigning-power-bi-pro-licenses-azure.md
   - name: Conceitos
     items:
     - name: Power BI Premium
@@ -1132,16 +1136,24 @@ items:
         href: service-premium-faq.md
       - name: Notas de liberação do Power BI Premium
         href: service-premium-release-notes.md
-      - name: Função de administração no Office 365
-        href: service-admin-role.md
-      - name: Perguntas frequentes
-        href: service-admin-faq.md
+    - name: Função de administração no Office 365
+      href: service-admin-role.md
+    - name: Perguntas frequentes
+      href: service-admin-faq.md
   - name: Como
     items:
     - name: Portal de administração do Power BI
       href: service-admin-portal.md
-    - name: Inscrever-se no Power BI com uma nova versão de avaliação do Office 365
-      href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+    - name: Licenciamento e inscrição
+      items:
+      - name: Licenciamento para sua organização
+        href: service-admin-licensing-organization.md
+      - name: Comprar o Power BI Pro
+        href: service-admin-purchasing-power-bi-pro.md
+      - name: Inscrever-se com uma Avaliação do Office 365
+        href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      - name: Adicionar o Power BI com um parceiro do Office 365
+        href: service-admin-syndication-partner.md
     - name: Onde está localizado o meu locatário?
       href: service-admin-where-is-my-tenant-located.md
     - name: Encontrar usuários que se conectaram
@@ -1152,10 +1164,6 @@ items:
       href: service-admin-health.md
     - name: Fechamento da sua conta do Power BI
       href: service-admin-closing-your-account.md
-    - name: O Power BI Pro em sua organização
-      href: service-admin-power-bi-pro-in-your-organization.md
-    - name: Power BI (gratuito) em sua organização
-      href: service-admin-service-free-in-your-organization.md
     - name: Power BI e ExpressRoute
       href: service-admin-power-bi-expressroute.md
     - name: Uso do B2B do Azure AD
@@ -1164,8 +1172,6 @@ items:
       href: service-admin-rls.md
     - name: Espaço de trabalho arquivado do Power BI
       href: service-admin-power-bi-archived-workspace.md
-    - name: Não é possível adicionar o Power BI ao parceiro do O365
-      href: service-admin-syndication-partner.md
     - name: Configurar aplicativos móveis com o Intune
       href: service-admin-mobile-intune.md
   - name: Referência
@@ -1183,9 +1189,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: O Power BI para Office 365 foi transferido para o Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: 4a5ff881ac14b28fabfcd33e3f98ae4205bf977d
-ms.sourcegitcommit: f391b645062f64ac3adc2ce7877318583b14b941
+ms.openlocfilehash: ed3eb0ffd194bd5ba2705607c3e4c21ce381b3c5
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48016136"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909189"

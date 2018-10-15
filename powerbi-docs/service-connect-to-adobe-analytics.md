@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ef59d5f42ba913e4ecad79116dea635744534198
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544614"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908568"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Conectar-se ao Adobe Analytics com o Power BI
 A conexão ao Adobe Analytics por meio do Power BI começa pela conexão à sua conta do Adobe Analytics Marketing Cloud. Você obterá um aplicativo com um dashboard e um conjunto de relatórios do Power BI que fornecem insights sobre as dimensões de usuários e de tráfego do site. Os dados são atualizados automaticamente uma vez por dia. Você pode interagir com o dashboard e os relatórios, mas não pode salvar as alterações.
@@ -25,26 +25,26 @@ Conecte-se ao [Adobe Analytics](https://app.powerbi.com/getdata/services/adobe-a
 ## <a name="how-to-connect"></a>Como se conectar
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Selecione **Adobe Analytics** \>  **Obter**.
+3. Selecione **Adobe Analytics** \>  **Obter**.
    
    ![](media/service-connect-to-adobe-analytics/adobe.png)
-2. O Power BI se conecta a uma ID específica da Empresa e do Pacote de Relatórios do Adobe Analytics (não o nome do Pacote de Relatórios). Veja detalhes sobre como [encontrar esses parâmetros](#FindingParams) abaixo.
+4. O Power BI se conecta a uma ID específica da Empresa e do Pacote de Relatórios do Adobe Analytics (não o nome do Pacote de Relatórios). Veja detalhes sobre como [encontrar esses parâmetros](#FindingParams) abaixo.
    
    ![](media/service-connect-to-adobe-analytics/parameters.png)
-3. Para o **Método de Autenticação**, selecione **oAuth2** \> **Entrar**. Quando solicitado, insira suas credenciais do Adobe Analytics. 
+5. Para o **Método de Autenticação**, selecione **oAuth2** \> **Entrar**. Quando solicitado, insira suas credenciais do Adobe Analytics. 
    
     ![](media/service-connect-to-adobe-analytics/creds.png)
    
     ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
-4. Clique em **Aceitar** para permitir que o Power BI acesse os dados do Adobe Analytics.
+6. Clique em **Aceitar** para permitir que o Power BI acesse os dados do Adobe Analytics.
    
    ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
-5. Depois de sua aprovação, o processo de importação será iniciado automaticamente. 
+7. Depois de sua aprovação, o processo de importação será iniciado automaticamente. 
 
 ## <a name="view-the-adobe-analytics-dashboard-and-reports"></a>Exibir o dashboard e os relatórios do Adobe Analytics
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
+   ![Dashboard do Adobe Analytics](media/service-connect-to-adobe-analytics/dashboard.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
@@ -82,19 +82,19 @@ O valor de Empresa pode ser encontrado no canto superior direito de sua conta qu
 
 **ID do Pacote de Relatórios**
 
-A ID do Pacote é criada quando o Pacote de Relatórios é criado. Entre em contato com o administrador para identificar o valor de ID. É importante observar que esse não é o nome do Pacote de Relatórios.
+A ID do Pacote é criada quando o Pacote de Relatórios é criado. Entre em contato com o administrador para identificar o valor de ID. Esse não é o nome do Pacote de Relatórios.
 
 Da [documentação](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html) do Adobe:
 
 ![](media/service-connect-to-adobe-analytics/reportsuiteid.png)
 
 ## <a name="troubleshooting"></a>Solução de problemas
-Caso veja um erro depois de fornecer suas credenciais, indicando que você não tem permissões, confirme com o administrador se você tem acesso à API do Adobe Analytics. Além disso, confirme se a ID do Adobe fornecida está vinculada à sua ID organizacional do Marketing Cloud (associada a uma empresa do Adobe Analytics).
+Caso veja um erro depois de fornecer suas credenciais indicando que você não tem permissões, confirme com o administrador se você tem acesso à API do Adobe Analytics. Além disso, confirme se a ID do Adobe fornecida está vinculada à sua ID organizacional do Marketing Cloud (associada a uma empresa do Adobe Analytics).
 
-Se você tiver acessado a tela de credenciais antes de receber um erro, isso significa que, provavelmente, os relatórios estão levando muito tempo para serem concluídos. Um erro comum está no formulário *"Falha ao obter dados do relatório do Adobe Analytics. O conteúdo incluiu &quot;referenciador, página&quot;; a duração aproximada foi xx segundos"*. Examine a seção "O que está incluído" e compare com o tamanho da instância do Adobe. Infelizmente, não existe uma maneira de resolver esse tempo limite hoje. No entanto, estamos considerando fazer atualizações para dar um melhor suporte a instâncias maiores. Forneça seus comentários para a equipe do Power BI em https://ideas.powerbi.com
+Se você tiver acessado a tela de credenciais antes de receber um erro, isso significa que, provavelmente, os relatórios estão levando muito tempo para serem concluídos. Um erro comum está no formulário *"Falha ao obter dados do relatório do Adobe Analytics. O conteúdo incluiu &quot;referenciador, página&quot;; a duração aproximada foi xx segundos"*. Examine a seção “O que está incluído” e compare com o tamanho da instância do Adobe. Infelizmente, não existe uma maneira de resolver esse tempo limite hoje. No entanto, estamos considerando fazer atualizações para proporcionar melhor compatibilidade com instâncias maiores. Envie seus comentários para a equipe do Power BI em https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Próximas etapas
-* [O que são aplicativos no Power BI?](consumer/end-user-apps.md)
+* [O que são aplicativos no Power BI?](service-create-distribute-apps.md)
 * [Obter dados no Power BI](service-get-data.md)
 * Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 
