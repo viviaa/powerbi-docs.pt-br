@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/30/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7114c92834f1171c0b644eaa82a47ff38c2fb0ec
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 5a347771504dcf41796d8bd6673cab30043c416b
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799085"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112212"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Visualizações para **consumidores** do Power BI
 
@@ -46,7 +46,7 @@ Mas primeiro, algumas palavras sobre a P e R. P e R é a ferramenta de pesquisa 
 |Focalizar uma visualização para revelar detalhes adicionais e dicas de ferramentas.     |    sim     |   sim      | sim  |
 |Filtro e realce cruzado em outras visualizações na página.     |   não      |   sim      | N/A  |
 |[Mostrar os dados usados para criar a visualização](end-user-show-data.md).     |  não       |   sim      | sim  |
-| [Alterar como uma visualização é classificada](end-user-search-filter-sort.md). | não  | sim  | não  |
+| [Alterar como uma visualização é classificada](end-user-search-sort.md). | não  | sim  | não  |
 | Adicionar um destaque a uma visualização. | não  | sim  |  não |
 | Analisar (dependendo do tipo de visualização). | não  | sim  | não  |
 

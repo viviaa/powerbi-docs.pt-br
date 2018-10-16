@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: af469a8d2d2f884b632d75766a02ee3a6822cbef
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: e06f0157476207bfe50abba01bd31d7605236a95
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907867"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112166"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Exibir os dashboards e relatórios que foram compartilhados comigo
 ## <a name="shared-with-me"></a>Compartilhado comigo
@@ -37,7 +37,7 @@ Você terá várias opções para interagir com os dashboards e os relatórios, 
 * Selecionar o ícone de estrela para [Adicionar um dashboard ou relatório a Favoritos](end-user-favorite.md).
 * Remover um dashboard ou relatório  ![ícone de lixeira](./media/end-user-shared-with-me/power-bi-delete-icon.png)
 * Alguns dashboards e relatórios podem ser compartilhados novamente  ![ícone compartilhar](./media/end-user-shared-with-me/power-bi-share-icon-new.png)
-* Além disso, se suas listas se tornarem longas, [use o campo de pesquisa e a classificação para encontrar o que você precisa](end-user-search-filter-sort.md).
+* Além disso, se suas listas se tornarem longas, [use o campo de pesquisa e a classificação para encontrar o que você precisa](end-user-search-sort.md).
   
   > [!NOTE]
   > Para obter informações sobre classificações EGRC, selecione o botão de classificação ou [visite a Classificação de dados no dashboard](../service-data-classification.md).

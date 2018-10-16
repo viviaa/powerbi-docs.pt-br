@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 261d6fdb12a75fd1476c5f19ded034a3f85d1fb3
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48798921"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112143"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Guia de Início Rápido – Explorando o serviço do Power BI
 
@@ -125,7 +125,7 @@ Você também pode classificar o conteúdo por nome ou por proprietário.
 
 ![classificar conteúdo](./media/end-user-experience/power-bi-sort.png)
 
-Para saber mais, consulte [Navegação do Power BI: pesquisar, classificar e filtrar](end-user-search-filter-sort.md)
+Para saber mais, consulte [Navegação do Power BI: pesquisar, classificar e filtrar](end-user-search-sort.md)
 
 ## <a name="clean-up-resources"></a>Limpar recursos
 Depois de concluir este início rápido, você poderá excluir o dashboard, o relatório e o conjunto de dados de exemplo de Análise de Varejo, se desejar.
