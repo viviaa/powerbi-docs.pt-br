@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bcf012d94dedfd912479c3e51e0de388b177c294
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5051ed66b4214b7ef55ecf2a95d5ed4bc38653ce
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755014"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642001"
 ---
 # <a name="using-auditing-within-your-organization"></a>Usando a auditoria dentro da sua organização
 
@@ -122,9 +122,9 @@ A tabela a seguir fornece detalhes sobre o que você pode ver.
 | Editar Relatório |Essa atividade é registrada sempre que um relatório é editado. |Nome do relatório, nome do conjunto de dados |
 | Criar conjunto de dados |Essa atividade é registrada sempre que um conjunto de dados é criado. |Nome do conjunto de dados, DataConnectivityMode |
 | Excluir conjunto de dados |Essa atividade é registrada sempre que um conjunto de dados é excluído. |Nome do conjunto de dados, DataConnectivityMode |
-| Criar aplicativo do Power BI |Essa atividade é registrada sempre que um aplicativo do Power BI é criado |Nome do aplicativo, Permissões, Nome do Espaço de Trabalho |
+| Criar aplicativo do Power BI |Essa atividade é registrada sempre que um aplicativo do Power BI é criado |Nome do aplicativo, Permissões, Nome do Workspace |
 | Instalar o aplicativo Power BI |Essa atividade é registrada sempre que um aplicativo do Power BI é instalado |Nome do aplicativo |
-| Atualizar aplicativo do Power BI |Essa atividade é registrada sempre que um aplicativo do Power BI é atualizado |Nome do aplicativo, Permissões, Nome do Espaço de Trabalho |
+| Atualizar aplicativo do Power BI |Essa atividade é registrada sempre que um aplicativo do Power BI é atualizado |Nome do aplicativo, Permissões, Nome do Workspace |
 | Avaliação estendida do Power BI iniciada |Essa atividade é registrada sempre que um usuário aceita a avaliação Pro estendida, que será executada até 31 de maio de 2018 | |
 | Conjunto de dados do Power BI analisado |Essa atividade é registrada sempre que um conjunto de dados do Power BI é analisado no Excel. | |
 | Gateway do Power BI criado |Essa atividade é registrada sempre que um novo gateway é criado. |Nome do Gateway, Tipo de Gateway |
@@ -195,14 +195,14 @@ Para obter uma lista completa, consulte [Propriedades detalhadas no log de audit
 | DeleteDataset |Esse evento é registrado sempre que um conjunto de dados é excluído. |– Nome do conjunto de dados. |
 | CreateOrgApp |Essa atividade é registrada toda vez que um pacote de conteúdo organizacional é criado. |– Nome do Pacote de Conteúdo Organizacional.<br/>– Nomes de dashboard.<br/>– Nomes do relatório.<br/>– Nomes do conjunto de dados. |
 | CreateGroup |Essa atividade é acionada sempre que um grupo é criado. |– Nome do grupo. |
-| AddGroupMembers |Essa atividade é registrada toda vez que um membro é adicionado a um espaço de trabalho de grupo do Power BI. |– Nome do grupo.<br/>– Endereços de email. |
+| AddGroupMembers |Essa atividade é registrada toda vez que um membro é adicionado a um workspace de grupo do Power BI. |– Nome do grupo.<br/>– Endereços de email. |
 | UpdatedAdminFeatureSwitch |Esse evento é registrado sempre que um comutador de recurso de administração é alterado. |– Nome do comutador.<br/>– Novo estado do comutador. |
 | OptInForProTrial |Esse evento é registrado quando um usuário decide experimentar o Power BI Pro no serviço. |- endereço de email |
 
 ## <a name="next-steps"></a>Próximas etapas
 
 [Portal de administração do Power BI](service-admin-portal.md)  
-[Power BI Premium – o que é?](service-premium.md)  
+[O que é o Power BI Premium?](service-premium.md)  
 [Compra do Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Permissões no Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)  
 [Conectar-se ao Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  

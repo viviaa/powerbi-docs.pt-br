@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2018
+ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909166"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396740"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>O que há de novo no serviço do Power BI
@@ -132,7 +132,7 @@ Você também pode consultar os canais do YouTube para obter informações sobre
 * Use o Pacote de conteúdo do Azure AD para saber mais sobre como seus funcionários e parceiros estão usando o Azure AD.
 
 ### <a name="february-2017"></a>Fevereiro de 2017
-* [Aprimoramentos na versão prévia de navegação](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – alterne mais facilmente entre áreas de trabalho e atue com relação ao conteúdo no espaço de trabalho atual. 
+* [Aprimoramentos na versão prévia de navegação](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – alterne mais facilmente entre workspaces e atue com relação ao conteúdo no workspace atual. 
 * [Insira dashboards do Power BI](https://powerbi.microsoft.com/blog/embed-dashboard/) em seu aplicativo personalizado.
 * Versão prévia: [integre relatórios do Power BI no SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
 
@@ -202,7 +202,7 @@ Para obter todos os detalhes, [visite o blog da Equipe do Power BI](https://powe
 
 ***Dashboards***
 
-* Dashboards favoritos: para ajudá-lo a acessar os dashboards que você acessa com mais frequência, adicionamos uma maneira de adicioná-los a Favoritos e torná-los facilmente acessíveis em todos os seus espaços de trabalho.
+* Dashboards favoritos: para ajudá-lo a acessar os dashboards que você acessa com mais frequência, adicionamos uma maneira de adicioná-los a Favoritos e torná-los facilmente acessíveis em todos os seus workspaces.
 
 ***Analisar no Excel***
 
@@ -212,7 +212,7 @@ Para obter todos os detalhes, [visite o blog da Equipe do Power BI](https://powe
 
 Para obter todos os detalhes, [visite o blog da Equipe do Power BI](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Suporte à P e R do Power BI para modelos de tabela do SQL Server 2016 Analysis Services](consumer/end-user-q-and-a-direct-query.md): temos o prazer de anunciar melhorias na experiência de usuário com a P e R do Power BI e o início da preview pública da P e R do Power BI para fontes de dados conectadas ao gateway corporativo – a partir do suporte para modelos de tabela do SQL Server 2016 Analysis Services. Para obter todos os detalhes, [veja a postagem no blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Suporte à P e R do Power BI para modelos de tabela do SQL Server 2016 Analysis Services](service-q-and-a-direct-query.md): temos o prazer de anunciar melhorias na experiência de usuário com a P e R do Power BI e o início da preview pública da P e R do Power BI para fontes de dados conectadas ao gateway corporativo – a partir do suporte para modelos de tabela do SQL Server 2016 Analysis Services. Para obter todos os detalhes, [veja a postagem no blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Suporte de arquivo local para relatórios do Excel](service-excel-workbook-files.md#local-excel-workbooks): agora você pode carregar arquivos do Excel por meio de sua unidade local ou de outros serviços de armazenamento e usar esse Relatório do Excel da mesma forma como usaria no Excel Online com os benefícios extras do Power BI. Para obter todos os detalhes, [veja a postagem no blog](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28 de abril de 2016**
@@ -456,7 +456,7 @@ Para todos os detalhes, incluindo um vídeo demonstrando muitas dessas atualiza�
 * Modo de tela inteira sem cromo para relatórios e painéis
 * Saber onde os dados estão armazenados
 * Carregamento aprimorado de relatórios locais
-* Compartilhar painéis diretamente com o espaço de trabalho de outro usuário
+* Compartilhar painéis diretamente com o workspace de outro usuário
 * Experiência aprimorada do Conector do Google Analytics
 * Fechando sua conta do Power BI
 

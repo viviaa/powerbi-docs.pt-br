@@ -2,8 +2,6 @@ Bem-vindo à seção **Publicando e compartilhando** do curso **Aprendizagem int
 
 Agora que você aprendeu como o Excel e o Power BI funcionam perfeitamente em conjunto, e já sabe tudo sobre os visuais que podem ser criados em relatórios e dashboards, talvez você queira compartilhá-los com colegas e amigos. Com o Power BI, **a publicação e o compartilhamento** são tarefas fáceis.
 
-Esta seção mostra como é fácil inserir pastas de trabalho do Excel no Power BI e demonstra que o Power BI e o Excel fazem uma excelente parceria.
-
 ## <a name="share-and-collaborate-with-colleagues-in-power-bi"></a>Compartilhar e colaborar com colegas no Power BI
 *Conheça as ferramentas que facilitam o compartilhamento e a colaboração com o Power BI*
 

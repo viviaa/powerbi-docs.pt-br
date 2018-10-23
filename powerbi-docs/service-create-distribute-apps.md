@@ -1,73 +1,136 @@
 ---
-title: Instalar e usar aplicativos com dashboards e relatórios no Power BI
-description: No Power BI, os aplicativos reúnem os dashboards e os relatórios relacionados em um só local.
-author: maggies
-ms.author: maggiesMSFT
+title: Publicar aplicativos com dashboards e relatórios no Power BI
+description: Saiba como publicar aplicativos, que são coleções de dashboards e relatórios criados para fornecer métricas-chave à sua organização.
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 08/06/2018
+ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cf8ec98a45db6601e68b156d64ae6b73fd8ce2d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112074"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435432"
 ---
-# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Instalar e usar aplicativos com dashboards e relatórios no Power BI
+# <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicar aplicativos com dashboards e relatórios no Power BI
 
-No Power BI, os *aplicativos* reúnem os dashboards e os relatórios relacionados em um só local. As pessoas em sua organização podem criar e distribuir aplicativos com informações comerciais essenciais. Os [serviços externos](consumer/end-user-connect-to-services.md) que talvez você já usa, como o Google Analytics e o Microsoft Dynamics CRM, também oferecem aplicativos do Power BI. 
+No Power BI, é possível publicar *aplicativos* com coleções de dashboards e relatórios relacionados. Crie aplicativos nos *workspaces do aplicativo*, em que é possível colaborar no conteúdo do Power BI com seus colegas. Em seguida, é possível publicar os aplicativos concluídos em grandes grupos de pessoas em sua organização. Leia mais sobre [como criar workspaces do aplicativo](service-create-workspaces.md).
 
-![Aplicativos no Power BI](./media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Aplicativos do Power BI](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Os aplicativos são fáceis de encontrar e de instalar no serviço do Power BI ([https://powerbi.com](https://powerbi.com)) e no seu dispositivo móvel. Depois de instalar um aplicativo, não será necessário lembrar os nomes dos muitos dashboards diferentes, uma vez que eles são reunidos no aplicativo, no navegador ou no dispositivo móvel.
+Os usuários empresariais geralmente precisam de vários dashboards e relatórios do Power BI para administrar os negócios. Com os aplicativos do Power BI, crie coleções de dashboards e relatórios e publique esses aplicativos para toda a organização ou para pessoas ou grupos específicos. Para você, como administrador ou criador de relatórios, os aplicativos facilitam o gerenciamento de permissões nessas coleções.
 
-Com os aplicativos, sempre que o autor do aplicativo liberar atualizações, você verá automaticamente as alterações. O autor também controla a frequência com a qual os dados são atualizados, de forma que você não precisa se preocupar em manter-se atualizado. 
+Usuários de negócios obtêm seus aplicativos de algumas maneiras diferentes. Se o administrador do Power BI der permissão, você poderá instalar os aplicativos automaticamente nas contas do Power BI dos seus colegas. Caso contrário, eles podem instalar seus aplicativos no Microsoft AppSource, ou você pode enviar um link direto. Eles podem facilmente localizar e retornar ao seu conteúdo, porque ele estará em um só lugar. Eles não podem modificar o conteúdo do aplicativo, mas podem interagir com ele no serviço do Power BI ou em um dos aplicativos móveis, filtrando, realçando e classificando os dados. Eles recebem atualizações automaticamente e você pode controlar a frequência com que os dados são atualizados. Leia mais sobre a [experiência de aplicativo para usuários corporativos](consumer/end-user-apps.md).
 
-Planejando criar um aplicativo? Consulte [Create workspaces with your colleagues in Power BI](service-create-workspaces.md) (Criar espaços de trabalho com seus colegas no Power BI) para obter mais informações.
+**Você sabia?** O Power BI está com uma nova experiência de workspace em versão prévia. Leia [Criar os novos workspaces (versão prévia)](service-create-the-new-workspaces.md) para ver como os workspaces mudarão no futuro. 
 
-## <a name="get-a-new-app"></a>Obter um novo aplicativo
+## <a name="apps-and-organizational-content-packs"></a>Aplicativos e pacotes de conteúdo organizacional
+Os aplicativos são a evolução dos pacotes de conteúdo organizacional. Os pacotes de conteúdo não estão disponíveis na nova versão prévia de experiências de workspace. Após a nova experiência de workspace ficar disponível para o público geral, não será possível usar pacotes de conteúdo em workspaces recém-criados. Se você ainda não fez isso, comece a migrar seus pacotes de conteúdo para aplicativos.
 
-Você pode obter aplicativos de algumas maneiras diferentes. O autor do aplicativo pode instalá-lo automaticamente na conta do Power BI ou lhe enviar um link direto para um aplicativo, ou você pode pesquisar no AppSource, no qual você vê todos os aplicativos que pode acessar. No Power BI em seu dispositivo móvel, você só pode instalá-lo de um link direto e não do AppSource. Se o autor do aplicativo instalar o aplicativo automaticamente, você o verá na sua lista de aplicativos.
+## <a name="video-apps-and-app-workspaces"></a>Vídeo: Aplicativos e workspaces de aplicativo
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-### <a name="install-an-app-from-a-direct-link"></a>Instalar um aplicativo por meio de um link direto
+## <a name="licenses-for-apps"></a>Licenças para aplicativos
+Cada membro de um workspace de aplicativo precisa de uma licença do Power BI Pro. Para os usuários do aplicativo, há duas opções.
 
-A maneira mais fácil de instalar um novo aplicativo é obter um link direto do autor do aplicativo. O Power BI cria um link de instalação, que o autor pode enviar para você.
+* Opção 1: todos os usuários empresariais precisam de licenças do **Power BI Pro** para exibir seu aplicativo. 
+* Opção 2: se seu aplicativo residir em uma capacidade Premium do Power BI, os usuários gratuitos em sua organização poderão exibir o conteúdo do aplicativo. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
 
-**No computador** 
+## <a name="publish-your-app"></a>Publicar seu aplicativo
+Quando os dashboards e relatórios em seu workspace estiverem prontos, escolha quais dashboards e relatórios você deseja publicar e publique-os como um aplicativo. Você pode enviar um link direto para esse público mais amplo ou eles podem encontrar seu aplicativo na guia Aplicativos acessando **Baixar e explorar mais aplicativos no AppSource**. 
 
-Ao clicar no link no email, o serviço do Power BI ([https://powerbi.com](https://powerbi.com)) é aberto em um navegador. Você confirma que deseja instalar o aplicativo e ele é aberto na página inicial do aplicativo.
+1. Na exibição da lista no workspace, decida quais dashboards e relatórios você quer incluir no aplicativo.
 
-![Página de aterrissagem do aplicativo no serviço do Power BI](./media/service-create-distribute-apps/power-bi-app-landing-page-opportunity-480.png)
+     ![Selecionar o dashboard a ser publicado](media/service-create-distribute-apps/power-bi-apps-incude-dashboard.png)
 
-**No dispositivo móvel Android ou iOS** 
+     Se você optar por não publicar um relatório, verá um aviso ao lado do relatório e seu dashboard relacionado. Você ainda pode publicar o aplicativo, mas no dashboard relacionado faltarão blocos do relatório.
 
-Ao clicar no link no email no seu dispositivo móvel, o aplicativo é instalado automaticamente e a lista de conteúdo do aplicativo no aplicativo móvel é aberta. 
+     ![Aviso sobre dashboard relacionado](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
-![Lista de conteúdo do aplicativo no dispositivo móvel](./media/service-create-distribute-apps/power-bi-app-index-it-spend-360.png)
+2. Selecione o botão **Publicar aplicativo** no canto superior direito para iniciar o processo de compartilhamento de todo o conteúdo desse workspace.
+   
+     ![Publicar aplicativo](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Obter o aplicativo no Microsoft AppSource
+3. Em **Detalhes**, preencha a descrição para ajudar as pessoas a localizar o aplicativo. Você pode definir uma cor da tela de fundo para personalizá-la.
+   
+     ![Detalhes do aplicativo](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-Você também pode encontrar e instalar aplicativos aos quais você tenha acesso no Microsoft AppSource. 
+4. Em **Conteúdo**, você vê o conteúdo que será publicado como parte do aplicativo, ou seja, tudo o que você selecionou nesse workspace. Você também pode definir a página de aterrissagem do aplicativo – que é o dashboard ou relatório que as pessoas verão primeiro ao acessarem o aplicativo. Você pode escolher **Nenhuma**. Então, as pessoas entrarão em uma lista de todo o conteúdo do aplicativo. 
+   
+     ![Conteúdo do aplicativo](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-1. Selecione **Aplicativos** ![Aplicativos no painel de navegação à esquerda](./media/service-create-distribute-apps/power-bi-apps-bar.png) > **Obter aplicativos**. 
+5. Em **Acesso**, decida quem tem acesso ao aplicativo: todos em sua organização, pessoas específicas, grupos de segurança do Active Directory. Se você tiver permissões, instale o aplicativo automaticamente para os destinatários. É possível habilitar essa configuração no [Portal de Administração do Power BI](#how-to-enable-pushing-apps). É possível saber mais considerações para [enviar um aplicativo por push](#how-to-enable-pushing-apps).
 
-     ![O ícone Obter aplicativos](./media/service-create-distribute-apps/power-bi-service-apps-get-apps-oppty.png)
-2. No AppSource, em **Minha organização**, você pode pesquisar para restringir os resultados e localizar o aplicativo que está procurando.
+    ![Acesso ao aplicativo](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-     ![No AppSource, em Minha organização](./media/service-create-distribute-apps/power-bi-appsource-my-org.png)
-3. Selecione **Obter agora** para adicioná-lo à sua Página de aplicativos. 
+6. Ao selecionar **Concluir**, você verá uma mensagem confirmando que ele está pronto para publicar. Na caixa de diálogo de êxito, você pode copiar a URL, que é um link direto para esse aplicativo e enviá-la para as pessoas com as quais você compartilhou.
+   
+     ![Término do aplicativo](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagir com os dashboards e relatórios no aplicativo
+Leia mais sobre a [experiência de aplicativo para usuários corporativos](consumer/end-user-apps.md).
 
-Agora você pode explorar os dados nos dashboards e relatórios do aplicativo. Você tem acesso a todas as interações padrão do Power BI, como filtragem, realce, classificação e busca detalhada. Também é possível [exportar os dados para o Excel ](consumer/end-user-export-data.md) de uma tabela ou de outro visual em um relatório. 
+## <a name="change-your-published-app"></a>Alterar o aplicativo publicado
+Depois de publicar seu aplicativo, você talvez queira alterá-lo ou atualizá-lo. Será fácil atualizá-lo se você for administrador ou membro do workspace de aplicativo ou um colaborador em um novo workspace de aplicativo. 
 
-![Exportar dados de um visual do Power BI](./media/service-create-distribute-apps/power-bi-service-export-data-visual.png)
+1. Abra o workspace de aplicativo que corresponde ao aplicativo. 
+   
+     ![Abrir workspace](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
+2. Abra o dashboard ou o relatório. Você percebe que agora pode fazer as alterações que desejar.
+   
+     O workspace de aplicativo é sua área de preparo, portanto, suas alterações não entrarão em vigor no aplicativo até que você publique novamente. Isso permite que você faça alterações sem afetar os aplicativos publicados.  
+ 
+3. Volte para a lista de conteúdo do workspace do aplicativo e selecione **Atualizar aplicativo**.
+   
+     ![Botão Atualizar aplicativo](media/service-create-distribute-apps/power-bi-app-update-button.png)
+
+4. Atualize **Detalhes**, **Conteúdo** e **Acesso**, se necessário, e selecione **Atualizar aplicativo**.
+   
+     ![Botão Atualizar aplicativo](media/service-create-distribute-apps/power-bi-app-update-complete.png)
+
+As pessoas para as quais você publicou o aplicativo verão automaticamente a versão atualizada do aplicativo. 
+
+## <a name="automatically-install-apps-for-end-users"></a>Instalar aplicativos automaticamente para usuários finais
+Os aplicativos entregam dados de que seus usuários finais precisam para realizar seus trabalhos. Se um administrador der permissões, você poderá instalar automaticamente aplicativos para usuários finais, facilitando a distribuição dos aplicativos certos para as pessoas ou grupos certos. Seu aplicativo será exibido automaticamente na lista de conteúdo de aplicativos dos seus usuários finais. Eles não precisarão localizá-lo no Microsoft AppSource ne seguir um link de instalação. Isso torna mais fácil para você distribuir conteúdo padrão do Power BI para seus usuários.
+
+### <a name="how-to-install-an-app-automatically-for-end-users"></a>Como instalar um aplicativo automaticamente para usuários finais
+Depois que o administrador tiver atribuído permissões a você, você terá uma nova opção para **instalar o aplicativo automaticamente**. Quando você marcar a caixa e selecionar **Concluir** (ou **Atualizar aplicativo**, para aplicativos existentes), o aplicativo será enviado por push a todos os usuários ou grupos definidos na seção **Permissões** do aplicativo na guia **Acesso**.
+
+![Habilitar envio de aplicativos por push](media/service-create-distribute-apps//power-bi-apps-access.png)
+
+### <a name="how-users-get-the-apps-that-were-pushed-to-them"></a>Como os usuários obtêm os aplicativos que foram enviados por push a eles
+Depois de enviar um aplicativo por push, ele será exibido na Lista de aplicativos automaticamente. É possível coletar os aplicativos que usuários ou funções de trabalho específicos em sua organização precisam ter na ponta dos dedos.
+
+![Habilitar envio de aplicativos por push](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+
+### <a name="considerations-for-automatically-installing-apps"></a>Considerações para instalar aplicativos automaticamente
+Aqui estão algumas coisas para se ter em mente ao enviar aplicativos por push para usuários finais:
+
+* Instalar um aplicativo automaticamente para usuários pode levar tempo. A maioria dos aplicativos será instalada imediatamente para usuários, mas enviar aplicativos por push pode levar tempo.  Isso depende do número de itens no aplicativo e do número de pessoas que receberam acesso. É recomendável enviar aplicativos por push durante horas vagas em que haja muito tempo antes de os usuários precisarem deles. Verifique com vários usuários antes de enviar comunicação abrangentes sobre a disponibilidade de aplicativos.
+
+* Atualize seu navegador. Antes de ver o aplicativo enviado por push na Lista de aplicativos, talvez o usuário precise atualizar ou fechar e reabrir seu navegador.
+
+* Se o usuário não vir imediatamente o aplicativo na Lista de aplicativos, ele deverá atualizar ou fechar e reabrir seu navegador.
+
+* Tente não sobrecarregar os usuários. Tenha cuidado para não enviar muitos aplicativos por push para que seus usuários entendam que os aplicativos pré-instalados são úteis para eles. É melhor controlar quem pode enviar aplicativos por push para os usuários finais para coordenar o tempo. É possível estabelecer um ponto de contato para obter aplicativos em sua organização enviados por push para usuários finais.
+
+* Os aplicativos não serão instalados automaticamente para os usuários convidados que não aceitarem um convite.  
+
+## <a name="unpublish-an-app"></a>Cancelar a publicação de um aplicativo
+Qualquer membro de um workspace do aplicativo pode cancelar a publicação do aplicativo.
+
+* No workspace do aplicativo, selecione as reticências (**...**) no canto superior direito &gt; **Cancelar a publicação do aplicativo**.
+  
+     ![Cancelar a publicação do aplicativo](media/service-create-distribute-apps/power-bi-app-unpublish.png)
+
+Essa ação desinstala o aplicativo em todos para os quais você o distribuiu e eles não terão mais acesso ao aplicativo. Ela não exclui o workspace do aplicativo ou seu conteúdo.
 
 ## <a name="next-steps"></a>Próximas etapas
-
-* [Aplicativos do Power BI para serviços externos](consumer/end-user-connect-to-services.md)
+* [Criar um workspace de aplicativo](service-create-workspaces.md)
+* [Instalar e usar aplicativos no Power BI](consumer/end-user-apps.md)
+* [Aplicativos do Power BI para serviços externos](service-connect-to-services.md)
+* [Portal de administração do Power BI](https://docs.microsoft.com/power-bi/service-admin-portal)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

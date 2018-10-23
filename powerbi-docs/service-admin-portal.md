@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 334bffeabbf5342c21424fa5d9907eba7e71fd4e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2f10ead5d08efa12cae05aeb6f2e3d3068636f77
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909028"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396901"
 ---
 # <a name="power-bi-admin-portal"></a>Portal de administração do Power BI
 
@@ -56,7 +56,7 @@ Quando o painel for carregado, você verá duas seções de blocos. A primeira s
 
 Aqui está uma análise do que você verá em cada bloco:
 
-* Contagem distinta de todos os painéis, relatórios e conjuntos de dados no espaço de trabalho do usuário
+* Contagem distinta de todos os painéis, relatórios e conjuntos de dados no workspace do usuário
   
     ![](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
@@ -125,12 +125,12 @@ As configurações podem ter três estados:
 
 As próximas seções fornecem uma visão geral dos diferentes tipos de configurações de locatário.
 
-## <a name="workspace-settings"></a>Configurações de espaço de trabalho
+## <a name="workspace-settings"></a>Configurações de workspace
 
-### <a name="create-workspaces-preview"></a>Criar espaços de trabalho (versão prévia)
-Os usuários na organização podem criar espaços de trabalho de aplicativo para colaborar em dashboards, relatórios e outros tipos de conteúdo.
+### <a name="create-workspaces-preview"></a>Criar workspaces (versão prévia)
+Os usuários na organização podem criar workspaces de aplicativo para colaborar em dashboards, relatórios e outros tipos de conteúdo.
 
-Para obter mais informações, confira [Criar os novos espaços de trabalho](service-create-the-new-workspaces.md).
+Para obter mais informações, confira [Criar os novos workspaces](service-create-the-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Configurações de exportação e compartilhamento
 
@@ -161,7 +161,7 @@ Os usuários podem ver diferentes opções na interface do usuário, conforme a 
 
 ### <a name="export-data"></a>Exportar dados
 
-Os usuários na organização podem exportar dados de um bloco ou visualização. [Saiba mais](consumer/end-user-export-data.md)
+Os usuários na organização podem exportar dados de um bloco ou visualização. [Saiba mais](visuals/power-bi-visualization-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 

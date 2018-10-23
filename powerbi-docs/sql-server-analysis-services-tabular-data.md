@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 668db107087420ceeabbe68325ee6c67dc69e524
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 86dabdb84dd4ca949930c25213f554060135f10a
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547190"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396625"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Dados dinâmicos do SQL Server Analysis Services no Power BI
 No Power BI, há duas maneiras pelas quais você pode se conectar a um servidor do SQL Server Analysis Services dinâmico. Em **Obter dados**, você pode se conectar a um servidor do SQL Server Analysis Services ou se conectar [a um arquivo do Power BI Desktop](service-desktop-files.md) ou a uma [pasta de trabalho do Excel](service-excel-workbook-files.md) que já se conecta a um servidor do Analysis Services. Como uma prática recomendada, a Microsoft recomenda usar o Power BI Desktop devido à riqueza do conjunto de ferramentas e à capacidade de manter localmente uma cópia de backup do arquivo do Power BI Desktop.
@@ -23,10 +23,10 @@ No Power BI, há duas maneiras pelas quais você pode se conectar a um servidor 
  >[!IMPORTANT]
  >* Para conectar-se a um servidor do Analysis Services, um gateway de dados local deverá ser instalado e configurado por um administrador. Para obter mais informações, veja [Gateway de dados local](service-gateway-onprem.md).
  >* Ao usar o gateway, seus dados permanecem locais.  Os relatórios criados com base nesses dados são salvos no serviço do Power BI. 
- >* [A consulta em linguagem natural por perguntas e respostas](consumer/end-user-q-and-a-direct-query.md) está na visualização para conexões dinâmicas do Analysis Services.
+ >* [A consulta em linguagem natural por perguntas e respostas](service-q-and-a-direct-query.md) está na visualização para conexões dinâmicas do Analysis Services.
 
 ## <a name="to-connect-to-a-model-from-get-data"></a>Para conectar-se a um modelo em Obter dados
-1. Em **Meu Espaço de Trabalho**, selecione **Obter dados**. Você também pode alterar para um espaço de trabalho de grupo, se houver um disponível.
+1. Em **Meu Workspace**, selecione **Obter dados**. Você também poderá alterar para um workspace de grupo, se houver um disponível.
    
    ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 2. Selecione **Bancos de Dados e Mais**.
@@ -38,7 +38,7 @@ No Power BI, há duas maneiras pelas quais você pode se conectar a um servidor 
 4. Selecione um servidor. Se você não vir servidores listados aqui, isso significa que um gateway e uma fonte de dados não estão configurados, ou que sua conta não está listada na guia **Usuários** da fonte de dados no gateway. Verifique com o administrador.
 5. Selecione o modelo ao qual você deseja se conectar. Ele pode ser Tabela ou Multidimensional.
 
-Depois de se conectar ao modelo, ele será exibido no seu site do Power BI em **Meu Espaço de Trabalho/Conjuntos de Dados**. Se você fosse alternado para um espaço de trabalho de grupo, o conjunto de dados seria exibido dentro do grupo.
+Depois de se conectar ao modelo, ele será exibido no seu site do Power BI em **Meu Workspace/Conjuntos de Dados**. Se você fosse alternado para um workspace de grupo, o conjunto de dados seria exibido dentro do grupo.
 
 ![](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 

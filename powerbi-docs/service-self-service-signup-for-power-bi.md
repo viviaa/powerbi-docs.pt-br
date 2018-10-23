@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bfd3c1242ff5eb0d00078dbeb376dba8b0b6aa20
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909051"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641702"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Inscrever-se no Power BI como indivíduo
 Saiba como se inscrever no Power BI e comece a usá-lo para atender às suas necessidades pessoais de relatório e visualização.
@@ -142,7 +142,7 @@ Em muitos casos, o registro no Power BI pode ser obtido seguindo o processo simp
 ## <a name="next-steps"></a>Próximas etapas  
 [Compra do Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Contrato de Serviço do Power BI para usuários individuais](https://powerbi.microsoft.com/terms-of-service/)  
-[Power BI Premium – o que é?](service-premium.md)  
+[O que é o Power BI Premium?](service-premium.md)  
 [White paper do Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

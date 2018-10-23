@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f15bd3395ad9edc39589a0a5b1563cfcc00e2c3c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6cd667a81a743a0b074155e0e16a49178157bc6c
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547858"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396487"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Como fazer seus dados do Excel funcionarem bem com P e R no Power BI
 Se você for uma pessoa que cria modelos de dados ou cria pastas de trabalho do Excel que serão usadas com o Power BI, continue lendo...
@@ -45,7 +45,7 @@ Aqui estão algumas dicas para aproveitar ao máximo de perguntas e respostas em
 
 ## <a name="next-steps"></a>Próximas etapas
 Voltar a [P e R no Power BI](consumer/end-user-q-and-a.md)  
-[Preparar os conjuntos de dados locais para P e R](consumer/end-user-q-and-a-direct-query.md)   
+[Preparar os conjuntos de dados locais para P e R](service-q-and-a-direct-query.md)   
 [Início rápido de P e R](power-bi-visualization-introduction-to-q-and-a.md)  
 [Obter dados (para o Power BI)](service-get-data.md)  
 
