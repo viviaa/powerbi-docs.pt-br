@@ -62,7 +62,7 @@ Os relatórios do Power BI estão disponíveis para EA Direto, Parceiros e Clien
 
 **URL de ambiente do Azure**
 
-* Esse valor é normalmente https://ea.azure.com; no entanto, você poderá verificar a URL depois de entrar para confirmar.
+* Esse valor é normalmente [https://ea.azure.com](https://ea.azure.com) ; no entanto, você poderá verificar a URL depois de entrar para confirmar.
   
     ![](media/service-connect-to-azure-enterprise/params3.png)
 
