@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512054"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336888"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.
@@ -75,13 +75,15 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Banco de dados Teradata
 * Banco de dados do SAP HANA
 * Servidor de Aplicativos SAP Business Warehouse
-* Servidor de Mensagens SAP Business Warehouse (Beta)
+* Servidor de Mensagens SAP Business Warehouse
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (Beta)
 * Exasol (beta)
 * Jethro (beta)
+* Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Alguns conectores de banco de dados exigem que você os habilite selecionando **Arquivo > Opções e configurações > Opções**, em seguida, **Recursos de Visualização** e habilitando o conector. Se você não vir alguns dos conectores mencionados acima e quiser usá-los, verifique suas configurações de **Recursos de Visualização**. Observe também que toda fonte de dados marcada como *Beta* ou *Visualização* tem suporte e funcionalidade limitados e não deve ser usada em ambientes de produção.
@@ -112,7 +114,7 @@ A categoria **Azure** fornece as seguintes conexões de dados:
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* Consulta Interativa do HDInsight (Beta)
+* Consulta Interativa do HDInsight
 * Azure KustoDB (beta)
 
 A imagem a seguir mostra a janela **Obter Dados** para **Azure**.
@@ -124,10 +126,10 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * Lista do SharePoint Online
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (Beta)
+* Dynamics NAV
 * Dynamics 365 Business Central
+* Central do Microsoft Dynamics 365 Business (local)
 * Common Data Service para Aplicativos (Beta)
-* Common Data Service (Beta)
 * Microsoft Azure Consumption Insights (Beta)
 * Visual Studio Team Services (Beta)
 * Objetos do Salesforce
@@ -163,7 +165,7 @@ A imagem a seguir mostra a janela **Obter Dados** para **Online Services**.
 
 A categoria **Outros** fornece as seguintes conexões de dados:
 
-* Vertica (Beta)
+* Vertica
 * Web
 * Lista do SharePoint
 * Feed OData
@@ -175,6 +177,8 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * Script do Python
 * ODBC
 * OLE DB
+* Denado
+* Paxata (Beta)
 * Consulta em Branco
 
 A imagem a seguir mostra a janela **Obter Dados** para **Outros**.

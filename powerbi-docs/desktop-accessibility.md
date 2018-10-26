@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256022"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336865"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Acessibilidade dos relatórios do Power BI Desktop
 O Power BI tem recursos que permitem que pessoas com deficiências consumam e interajam mais facilmente com os relatórios do Power BI Desktop. Esses recursos incluem a capacidade de consumir um relatório usando o teclado ou um leitor de tela, usar a tabulação para focar em vários objetos em uma página e o uso cuidadoso de marcadores nas visualizações.
@@ -61,6 +61,8 @@ Essas adições de acessibilidade foram criadas para permitir que os usuários c
 ## <a name="tips-for-creating-accessible-reports"></a>Dicas para criar relatórios acessíveis
 As dicas a seguir podem ajudá-lo a criar relatórios do **Power BI Desktop** que são mais acessíveis.
 
+### <a name="general-tips-for-accessible-reports"></a>Dicas gerais para relatórios acessíveis
+
 * Para visuais de **Linha**, **Área** e **Combinação**, bem como para visuais de **Dispersão** e de **Bolha**, ative os marcadores e use uma *Forma de marcador* diferente para cada linha.
   
   * Para ativar os *Marcadores*, selecione a seção **Formato** no painel **Visualizações**, expanda a seção **Formas** e, em seguida, role para baixo até encontrar a tecla de alternância **Marcadores** e posicione-a em *Ativado*.
@@ -80,6 +82,13 @@ As dicas a seguir podem ajudá-lo a criar relatórios do **Power BI Desktop** qu
 * Inclua um título, rótulos de eixo e rótulos de dados em todos os visuais.
 * Use títulos significativos para todas as páginas de relatório.
 * Evite formas e imagens decorativas em seu relatório, se possível, pois elas são incluídas na ordem de tabulação do relatório. Se você precisar incluir objetos decorativos em seu relatório, atualize o texto Alt do objeto para informar aos usuários de leitores de tela que eles são decorativos.
+
+### <a name="arranging-items-in-field-buckets"></a>Organização de itens nos buckets de campo
+A partir da versão de outubro de 2018 do **Power BI Desktop**, também é possível navegar no espaço **Campos** com um teclado e interagir com os leitores de tela. 
+
+Para melhorar o processo de criação de relatórios com leitores de tela, um menu de contexto está disponível para permitir o deslocamento de campos no espaço para cima ou para baixo na lista **Campos**, ou mover o campo para outros espaços, como **Legenda** ou **Valor** ou outros.
+
+![O menu de contexto no espaço Campos também permite que você movimente os campos para cima, para baixo ou para outra área](media/desktop-accessibility/accessibility_09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Suporte para alto contraste em relatórios
 

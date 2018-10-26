@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2cc7691e81f5edab9d9f7a2a6d878420ca1c82f4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418033"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112249"
 ---
 # <a name="export-data-from-visualizations"></a>Exportar dados de uma visualização
 Se desejar ver os dados usados para criar uma visualização, você poderá exibi-los no Power BI ou exportá-los para o Excel como um arquivo .xlsx ou .csv.   
@@ -55,8 +55,7 @@ Para continuar, abra o [Relatório de exemplo de análise de aquisições](../sa
 4. Selecione as elipses no canto superior direito da visualização. Escolha  **Exportar dados**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. No Power BI online, se a sua visualização tem uma agregação (um exemplo seria se você alterou **Contagem** para *média*, *soma* ou *mínimo*), você terá duas opções: **Dados resumidos** e **Dados subjacentes**. No Power BI Desktop, você apenas terá a opção para **Dados resumidos**. Para ajuda para entender melhor as agregações, consulte [Agregações no Power BI](../service-aggregates.md).
-
+5. No Power BI online, se a sua visualização tem uma agregação (um exemplo seria se você alterou **Contagem** para *média*, *soma* ou *mínimo*), você terá duas opções: **Dados resumidos** e **Dados subjacentes**. No Power BI Desktop, você terá apenas a opção para **Dados resumidos**. Para entender melhor as agregações, consulte [Agregações no Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Selecione **Dados resumidos** > **Exportar** e escolha .xlsx ou .csv. O Power BI exporta os dados.  Se você aplicou filtros à visualização, os dados serão exportados da maneira que foram filtrados. Ao selecionar **Exportar**, o navegador solicitará que você salve o arquivo. Após salvá-lo, abra o arquivo no Excel.
 
@@ -90,6 +89,26 @@ O que você vê quando seleciona **Dados subjacentes** pode variar. Compreender 
 |    Medidas     |                                      Todos os dados de todas as tabelas que estão relacionadas à tabela (contendo as medidas por meio de uma cadeia de \*: 1 de 1:1)                                      |
 |  Somente medidas  |                                                   Todas as colunas não ocultas de todas as tabelas relacionadas (para expandir a medida)                                                   |
 |  Somente medidas  |                                                             Dados resumidos para quaisquer linhas duplicadas para medidas de modelo.                                                              |
+
+### <a name="set-the-export-options"></a>Definir as opções de exportação
+Designers de relatório do Power BI controlam os tipos de opções de exportação de dados que estão disponíveis para seus consumidores. As opções são:
+- Permitir a exportação somente de dados resumidos (esse é o padrão para relatórios) 
+- Permitir a exportação de dados resumidos e subjacentes  
+- Não permitir a exportação de nenhum dado  
+
+1. Para definir essas opções, comece no Power BI Desktop.
+
+2. No canto superior esquerdo, selecione **Arquivo** > **Opções e configurações** > **Opções**. 
+
+3. Em **Arquivo atual**, selecione **Configurações de relatório**.
+
+    ![configurações do relatório de área de trabalho](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
+4. Faça sua seleção no menu suspenso **Exportar dados**.
+
+Você também pode atualizar essa configuração no serviço do Power BI.  
+
+É importante observar que, se as configurações do portal de administração do Power BI entrarem em conflito com as do relatório para exportação de dados, as configurações de administração substituirão as de exportação de dados. 
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 * O número máximo de linhas que pode ser exportado do **Power BI Desktop** e do **serviço do Power BI** para .csv é 30.000.

@@ -286,6 +286,8 @@ items:
         href: visuals/service-tips-and-tricks-for-color-formatting.md
       - name: Copie e cole uma visualização no Power BI
         href: visuals/power-bi-visualization-copy-paste.md
+      - name: Exportar os dados usados para criar a visualização
+        href: visuals/power-bi-visualization-export-data.md
       - name: Mover, redimensionar e destacar uma visualização em um relatório do Power BI
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: Hiperlinks nas tabelas
@@ -344,6 +346,8 @@ items:
     items:
     - name: Tipos de dados no Power BI Desktop
       href: desktop-data-types.md
+    - name: Atalhos do editor de fórmulas do Power BI Desktop
+      href: desktop-formula-editor.md
     - name: Níveis de privacidade do Power BI Desktop
       href: desktop-privacy-levels.md
     - name: Extensibilidade do conector no Power BI
@@ -420,6 +424,8 @@ items:
         href: service-rename.md
       - name: Exibir painéis e relatórios no Modo de Tela Inteira (modo de TV)
         href: service-fullscreen-mode.md
+      - name: Quick Insights no Power BI
+        href: service-insights.md
       - name: Inscrever sua organização do Governo dos EUA
         href: service-govus-signup.md
       - name: Alertas de dados no serviço do Power BI
@@ -682,9 +688,9 @@ items:
         href: service-create-distribute-apps.md
       - name: Instalar e usar aplicativos
         href: service-install-use-apps.md
-      - name: Criar espaços de trabalho do aplicativo
+      - name: Criar workspaces do aplicativo
         href: service-create-workspaces.md
-      - name: Criar os novos espaços de trabalho (visualização)
+      - name: Criar os novos workspaces (visualização)
         href: service-create-the-new-workspaces.md
       - name: Compartilhar um relatório filtrado
         href: service-share-reports.md
@@ -694,7 +700,7 @@ items:
         href: service-embed-report-spo.md
       - name: Conectar-se a arquivos no OneDrive do seu grupo
         href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-      - name: Colaborar em seu espaço de trabalho de grupo
+      - name: Colaborar em seu workspace de grupo
         href: service-collaborate-power-bi-workspace.md
       - name: Gerenciar seu grupo no Power BI e no Office 365
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
@@ -820,9 +826,9 @@ items:
           href: developer/azure-pbie-scale-capacity.md
         - name: Pausar e iniciar uma capacidade no Azure
           href: developer/azure-pbie-pause-start.md
-      - name: Migrar de Coleções de Espaço de Trabalho
+      - name: Migrar de Coleções de Workspaces
         items:
-        - name: Como migrar de Coleções de Espaço de Trabalho do Power BI?
+        - name: Como migrar de Coleções de workspaces do Power BI?
           href: developer/migrate-from-powerbi-embedded.md
         - name: Ferramenta de migração
           href: developer/migrate-tool.md
@@ -1170,7 +1176,7 @@ items:
       href: service-admin-azure-ad-b2b.md
     - name: Segurança em nível de linha com o Power BI
       href: service-admin-rls.md
-    - name: Espaço de trabalho arquivado do Power BI
+    - name: Workspace arquivado do Power BI
       href: service-admin-power-bi-archived-workspace.md
     - name: Configurar aplicativos móveis com o Intune
       href: service-admin-mobile-intune.md
@@ -1189,9 +1195,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: O Power BI para Office 365 foi transferido para o Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: ed3eb0ffd194bd5ba2705607c3e4c21ce381b3c5
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 54eee0bb21c66fee9b2daf377140e016eee076a0
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909189"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49337003"

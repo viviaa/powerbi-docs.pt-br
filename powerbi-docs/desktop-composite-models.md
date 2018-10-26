@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 49540dd491d02c6a6b474ff80690a75eecfd27db
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974036"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336980"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modelos compostos no Power BI Desktop (prévia)
 
@@ -58,7 +58,7 @@ Ao se usar o DirectQuery, com **modelos compostos** é possível criar um modelo
 Por exemplo, com **modelos compostos**, é possível criar um modelo que combina dados de vendas de um data warehouse empresarial a dados sobre as metas de vendas que estão em um banco de dados SQL do departamento, juntamente com alguns dados importados de uma planilha. Um modelo que combina dados de mais de uma origem de DirectQuery ou combina o DirectQuery a dados importados é conhecido como um *modelo composto*.
 
 > [!NOTE]
-> Enquanto os modelos compostos estão em visualização, não é possível publicar modelos compostos para o serviço do Power BI. 
+> A partir da versão de outubro de 2018 do **Power BI Desktop**, você *pode* publicar modelos de composição no serviço do Power BI. Para atualização agendada e atualização do bloco do dashboard, os modelos de composição no serviço do Power BI se comportam da mesma forma que os modelos de importação. 
 
 Você pode criar relações entre tabelas, como de costume, mesmo quando essas tabelas são provenientes de fontes diferentes, com a seguinte restrição: quaisquer relações que são de origem cruzada devem ser definidas com a cardinalidade de **muitos para muitos**, independentemente de sua cardinalidade real. O comportamento dessas relações é o mesmo que o comportamento normal de relações**Muitos para Muitos**, conforme descrito em [Relações muitos para muitos no Power BI Desktop (prévia)](desktop-many-to-many-relationships.md). Observe que, no contexto de modelos compostos, todas as tabelas importadas efetivamente são uma única fonte, independentemente da fonte de dados subjacente real da qual são importadas de fato.   
 

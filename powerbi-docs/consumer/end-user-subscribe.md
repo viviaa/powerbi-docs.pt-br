@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 8a78441ffb7c4f57bca2d160817b339df2214343
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: a44630f8c5ad7f521ad7f3e8794486cd1b758358
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908936"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336773"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Assinar um relatório ou dashboard no serviço do Power BI 
 Nunca foi tão fácil manter-se atualizado sobre seus dashboards e relatórios mais importantes. Assine os dashboards e as páginas de relatório mais importantes para você e o Power BI enviará um email com um instantâneo para sua caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: de uma vez por dia a uma vez por semana. 
@@ -54,12 +54,9 @@ Se você estiver assinando um dashboard ou um relatório, o processo será muito
    
    ![instantâneo de email de dashboard](./media/end-user-subscribe/power-bi-dashboard-email-new.jpg)
    
-   > [!TIP]
-   > Deseja ver o email agora mesmo? Dispare um email ao atualizar um dos conjuntos de dados associados ao dashboard ou o conjunto de dados associado ao relatório. (Se não tiver permissões de edição para o conjunto de dados, peça para alguém que as tenha fazer isso para você.) Para descobrir quais conjuntos de dados estão sendo usados, selecione o ícone **Exibir relacionados** ![ícone de Exibir relacionados](./media/end-user-subscribe/power-bi-view-related.png) para abrir o **Conteúdo relacionado** e, em seguida, selecione o ícone de atualização ![ícone de atualização](./media/end-user-subscribe/power-bi-refresh.png). 
-   > 
-   > 
+Atualizar a página de relatório não atualiza o conjunto de dados. Somente o proprietário do conjunto de dados pode atualizá-lo manualmente. Para pesquisar o nome dos conjuntos de dados subjacentes, selecione **Exibir relacionados** na barra de menus superior.
    
-   ![Conjuntos de dados relacionados](./media/end-user-subscribe/power-bi-view-related-screen.png)
+![Conjuntos de dados relacionados](./media/end-user-subscribe/power-bi-view-related-screen.png)
 
 ## <a name="how-the-email-schedule-is-determined"></a>Como o cronograma de email é determinado
 A tabela a seguir descreve com que frequência você receberá um email. Tudo depende do método de conexão do conjunto de dados no qual se baseia o dashboard ou o relatório (DirectQuery, Conexão dinâmica, importado para o Power BI ou arquivo do Excel no OneDrive ou no SharePoint Online) e das opções de assinatura disponíveis e selecionadas (diária, semanal ou nenhuma).
@@ -79,6 +76,7 @@ Uma assinatura será encerrada se a licença Pro expirar, se o dashboard ou o re
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 * Para assinaturas de email do dashboard, se algum bloco tiver a RLS (Segurança em Nível de Linha) aplicada, esse bloco não será exibido.  Para assinaturas de email do relatório, se o conjunto de dados usar a RLS, não será possível criar uma assinatura.
 * As assinaturas da página de relatório são vinculadas ao nome da página de relatório. Se você assinar uma página de relatório e ela for renomeada, será preciso recriar sua assinatura
+* Determinadas configurações da sua organização podem ser definidas no Azure Active Directory que pode limitar a capacidade de usar assinaturas de email no Power BI.  Isso inclui, sem limitação, ter autenticação multifator ou restrições de intervalo de IP ao acessar recursos.
 * Para assinaturas de email em conjuntos de dados de conexão dinâmica, você só receberá emails quando os dados mudarem. Assim, se ocorrer uma atualização, mas os dados não mudarem, o Power BI não enviará um email.
 * Assinaturas de email não dão suporte à maioria dos [visuais personalizados](../power-bi-custom-visuals.md).  A única exceção é para os elementos visuais personalizados que foram [certificados](../power-bi-custom-visuals-certified.md).  
 * No momento, as assinaturas de email não dão suporte a visuais personalizados da plataforma R.  

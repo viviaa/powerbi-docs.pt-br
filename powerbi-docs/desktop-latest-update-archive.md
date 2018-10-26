@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c9e4769be12d3da96064a82661a739a94e8a7c6e
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: cda575c11be90c8e18a3a9f3b8325ccf674afffc
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417385"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49337072"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
@@ -33,6 +33,53 @@ Os links ao lado de cada atualização significam o seguinte:
 Você também pode assistir o vídeo das **Atualizações mais recentes** desde o início, diretamente deste artigo, clicando no ícone **reproduzir** na imagem de vídeo localizada abaixo da lista de atualizações.
 
 As seções a seguir descrevem atualizações de meses anteriores do **Power BI Desktop**.
+
+
+## <a name="september-2018-update-2625222582"></a>Atualização de setembro de 2018 (2.62.5222.582)
+
+Nossas atualizações de setembro foram como iniciar uma empolgante aula nova. Esperamos que você ache essas atualizações tão úteis quanto um punhado de lápis nº 2 recém-apontados. 
+
+As atualizações a seguir são novas para o **Power BI Desktop** este mês:
+
+### <a name="reporting"></a>Relatórios
+
+* Suporte a layout dot plot em gráficos de dispersão [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=30s)  [[artigo]](power-bi-visualization-scatter.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dotPlot) 
+* Copiar o valor e a seleção de visuais de tabela e de matriz [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=2m33s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#copy) 
+* Opções de tema de relatório interno [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=6m2s)   [[artigo]](desktop-report-themes.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Dicas de ferramenta de página de relatório disponíveis ao público geral, novo suporte a cartão [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=8m10s) [[artigo]](desktop-tooltips.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
+* Melhorias de acessibilidade para análise e suporte ao painel de formatação [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
+
+### <a name="analytics"></a>Análise
+
+* Agregações (versão prévia) [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[artigo]](desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
+
+### <a name="custom-visuals"></a>Visuais personalizados
+
+* Cinco novos visuais personalizados  [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=23m8s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#customVisuals) 
+
+### <a name="data-connectivity"></a>Conectividade de dados
+
+* Conector de arquivo PDF (versão prévia)  [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=29m26s)  [[artigo]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* Conector SAP BW – suporte para propriedades de medida [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=30m15s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#sapBW) 
+* Conector de fluxos de dados (beta) [[artigo]](desktop-connect-dataflows.md)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#dataflows) 
+
+### <a name="data-preparation"></a>Preparação de dados
+* Intellisense M [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=30m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#pdf) 
+* Adicionar coluna com base em exemplos – suporte para preenchimento de texto  [[vídeo]](https://youtu.be/Rzw2WyI09kY?t=32m27s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#addColumn) 
+
+
+> [!NOTE]
+> [Confira também todas as fontes de dados disponíveis para o Power BI Desktop](desktop-data-sources.md). Nossa lista sempre está aumentando, portanto, verifique com frequência.
+
+Deseja obter mais informações sobre essas atualizações? Confira a [postagem de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary), em que você pode obter informações mais detalhadas sobre cada um dos novos recursos (essa é a mesma postagem de blog referenciada na lista acima).
+
+
+O vídeo a seguir descreve e mostra cada uma dessas atualizações. Você também pode ver o vídeo na postagem no blog.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Saiba [o que há de novo no serviço do Power BI](service-whats-new.md) e confira as [novidades dos aplicativos móveis do Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="august-2018-update-2615192321"></a>Atualização de agosto de 2018 (2.61.5192.321)
 

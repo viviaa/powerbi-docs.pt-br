@@ -33,8 +33,12 @@ items:
       items:
       - name: Relatórios
         href: end-user-reports.md
-      - name: Como usar filtros em relatórios
+      - name: Exibir um relatório
+        href: end-user-report-open.md
+      - name: Usar filtros em um relatório
         href: end-user-report-filter.md
+      - name: Saiba como elementos visuais de relatório realizam filtragem cruzada entre si
+        href: end-user-interactions.md
     - name: Visualizações
       items:
       - name: O que posso fazer com as visualizações?
@@ -45,24 +49,28 @@ items:
         href: end-user-export-data.md
     - name: Tarefas comuns
       items:
-      - name: Exibir no modo de foco e no modo de tela inteira
+      - name: Diferentes maneiras de ampliar o conteúdo usando modos de Foco e de Tela inteira
         href: end-user-focus.md
       - name: Adicione painéis, relatórios e aplicativos aos favoritos no Power BI
         href: end-user-favorite.md
       - name: Imprimir um dashboard, um bloco de dashboard, uma página de relatório
         href: end-user-print.md
-      - name: Conteúdo relacionado
+      - name: Exibir conteúdo relacionado
         href: end-user-related.md
-      - name: Conteúdo recente
+      - name: Exibir conteúdo recente
         href: end-user-recent.md
+      - name: Exibir conteúdo no contêiner Compartilhado comigo
+        href: end-user-shared-with-me.md
       - name: Assinar um relatório ou um dashboard
         href: end-user-subscribe.md
+      - name: Pesquisar e classificar conteúdo no Power BI
+        href: end-user-search-sort.md
+      - name: Exibir insights automáticos para blocos de dashboard
+        href: end-user-insights.md
     - name: Obter dados
       items:
-      - name: O que são aplicativos?
+      - name: Instalar e usar aplicativos
         href: end-user-apps.md
-      - name: Compartilhado comigo
-        href: end-user-shared-with-me.md
       - name: Conectar aos serviços
         href: end-user-connect-to-services.md
       - name: Localizar e conectar-se a pacotes de conteúdo organizacional
@@ -173,9 +181,9 @@ items:
     items:
     - name: Idiomas com suporte nos aplicativos móveis
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: 060da3705f9c478ef49baf2e2a4d3dceabee31aa
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: ff348d2798d49a0f4ee73a28d9c82395caf12d80
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908982"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112120"

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71894a801f0c993abaaedc92d4172da67b76f7a0
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
+ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974197"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49359713"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Agregações no Power BI Desktop (versão prévia)
 
@@ -191,9 +191,9 @@ Em seguida, definimos os mapeamentos de agregação na caixa de diálogo **Geren
 
 ![Caixa de diálogo Gerenciar agregações para a tabela Agregação de atividade do driver](media/desktop-aggregations/aggregations_11.jpg)
 
-A tabela a seguir mostra as agregações para a tabela **Agregação de vendas**.
+A tabela a seguir mostra as agregações para a tabela **Agregação de atividade do driver**.
 
-![Tabela de agregações Agregação de vendas](media/desktop-aggregations/aggregations-table_02.jpg)
+![Tabela de agregações Agregação de atividade do driver](media/desktop-aggregations/aggregations-table_02.jpg)
 
 ### <a name="group-by-columns"></a>Agrupar por colunas
 
@@ -229,9 +229,9 @@ A tabela especificada na coluna **Tabela de detalhes** é **Atividade do driver*
 
 ![Gerenciar caixa de diálogo de agregações](media/desktop-aggregations/aggregations_14.jpg)
 
-A tabela a seguir mostra as agregações para a tabela **Agregação de vendas**.
+A tabela a seguir mostra as agregações para a tabela **Agregação de atividade do driver 2**.
 
-![Tabela de agregações Agregação de vendas](media/desktop-aggregations/aggregations-table_03.jpg)
+![Tabela de agregações Agregação de atividade do driver 2](media/desktop-aggregations/aggregations-table_03.jpg)
 
 ## <a name="aggregations-based-on-group-by-columns-combined-with-relationships"></a>Agregações baseadas nas colunas agrupar por combinadas com relações
 

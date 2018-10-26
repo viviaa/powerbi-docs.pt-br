@@ -1,5 +1,5 @@
 ---
-title: Extrair dados de uma página da Web por exemplo no Power BI Desktop (versão prévia)
+title: Extrair dados de uma página da Web, por exemplo, no Power BI Desktop
 description: Extraia dados de uma página da Web fornecendo um exemplo dos dados dos quais deseja efetuar pull
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290972"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336796"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Obtenha dados de uma página da Web fornecendo um exemplo (versão prévia)
+# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Obter dados de uma página da Web fornecendo um exemplo
 
 Obter dados de uma página da Web permite que os usuários extraiam facilmente dados de páginas da Web e importem esses dados para o **Power BI Desktop**. No entanto, normalmente os dados em páginas da Web não estão em tabelas organizadas fáceis de extrair, portanto, obter dados dessas páginas – mesmo que eles sejam estruturados e consistentes – pode ser um desafio. 
 
@@ -26,13 +26,6 @@ Há uma solução. Com o recurso **Obter dados da Web por exemplo**, você pode,
 ![Obter dados da Web por exemplo](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## <a name="enabling-the-preview-feature-get-data-from-web-by-example"></a>Habilitando o recurso de visualização Obter Dados da Web por exemplo
-
-O recurso **Obter dados da Web por exemplo** está em versão prévia e precisa ser habilitado no **Power BI Desktop**. Para habilitá-lo, selecione **Arquivo > Opções e Configurações > Opções > Recursos de Visualização** e marque a caixa de seleção **Experiência Novo da Web**. Você precisará reiniciar o Power BI Desktop depois de fazer a seleção.
-
-![Habilitar o recurso de visualização](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-Quando o recurso de visualização estiver habilitado, você poderá começar a usá-lo. 
 
 ## <a name="using-get-data-from-web-by-example"></a>Usando Obter dados da Web por exemplo
 
