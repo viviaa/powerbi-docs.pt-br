@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
-ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
+ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43151896"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49474016"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Solução de problemas do gateway de dados local
 
@@ -40,6 +40,25 @@ O gateway é executado como um serviço Windows para você poder iniciá-lo e pa
 * Para iniciar o serviço, execute este comando:
 
     '''   net start PBIEgwService   '''
+
+### <a name="log-file-configuration"></a>Configuração do arquivo de log
+
+Os logs de serviço de gateway são categorizados em três buckets: informações, erro e rede. Essa classificação proporciona uma experiência melhor de solução de problemas que permite que você se concentre em uma área específica, dependendo do problema ou do erro. Você pode ver as três categorias no seguinte snippet do arquivo de configuração de gateway: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
+
+```xml
+  <system.diagnostics>
+    <trace autoflush="true" indentsize="4">
+      <listeners>
+        <remove name="Default" />
+        <add name="ApplicationFileTraceListener"
+             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
+             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
+      </listeners>
+    </trace>
+  </system.diagnostics>
+```
+
+Esse arquivo está localizado por padrão em: *\Arquivos de Programas\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Para configurar o número de arquivos de log a serem retidos, altere o primeiro número (20 neste exemplo): `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
 
 ### <a name="error-failed-to-create-a-gateway-try-again"></a>Erro: falha ao criar um gateway. Tentar novamente
 

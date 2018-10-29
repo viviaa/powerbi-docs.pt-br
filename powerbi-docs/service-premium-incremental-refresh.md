@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/30/2018
+ms.date: 10/19/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 96756adc0c24992e99dee0236bb2eb0b81716e4b
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300128"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641771"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Atualização incremental no Power BI Premium
 
@@ -41,13 +41,13 @@ Os conjuntos de dados grandes, com possíveis bilhões de linhas, podem não cab
 
 #### <a name="rangestart-and-rangeend-parameters"></a>Parâmetros RangeStart e RangeEnd
 
-Para aproveitar a atualização incremental no serviço do Power BI, a filtragem precisa ser feita usando os parâmetros de data/hora do Power Query com os nomes reservados, que diferenciam maiúsculas de minúsculas **RangeStart** e **RangeEnd**.
+Para usar a atualização incremental no serviço do Power BI, a filtragem precisa ser feita usando os parâmetros de data/hora do Power Query com os nomes reservados, que diferenciam maiúsculas de minúsculas **RangeStart** e **RangeEnd**.
 
 Depois de publicado, os valores de parâmetro serão substituídos automaticamente pelo serviço do Power BI. Não é necessário defini-los nas configurações do conjunto de dados no serviço.
- 
-É importante que o filtro seja enviado por push para o sistema de origem quando as consultas forem enviadas para operações de atualização. Isso significa que a fonte de dados deve dar suporte a "partição de consulta". Considerando os vários níveis de suporte a dobra de consulta para cada fonte de dados, é recomendável que você verifique se a lógica do filtro está incluída nas consultas de origem. Se isso não ocorrer, cada consulta solicitará todos os dados de origem, o que anulará o objeto de atualização incremental.
- 
-O filtro será usado para particionar os dados em intervalos no serviço do Power BI. Isso não é projetado para dar suporte à atualização da coluna de data filtrada. Uma atualização será interpretada como uma inserção e uma exclusão (não uma atualização). Se a exclusão ocorrer no intervalo histórico e não no intervalo incremental, não será selecionada.
+
+É importante que o filtro seja enviado por push para o sistema de origem quando as consultas forem enviadas para operações de atualização. Aplicar a filtragem significa que a fonte de dados deve ser compatível com a "partição de consulta". A maioria das fontes de dados compatíveis com consultas SQL é compatível com a partição de consulta. Fontes de dados como blobs, arquivos simples, Web e feeds de OData geralmente não são. Considerando os vários níveis de compatibilidade com a partição de consulta para cada fonte de dados, é recomendável que você verifique se a lógica do filtro está incluída nas consultas de origem. Em casos em que o filtro não é compatível com o back-end da fonte de dados, ele não pode ser aplicado. Nesses casos, o mecanismo de mashup compensa e aplica o filtro localmente, o que pode exigir a recuperação do conjunto de dados completo da fonte de dados. Isso pode fazer com que a atualização incremental seja muito lenta e o processo pode ficar sem recursos no serviço do Power BI ou no gateway de dados local se usado.
+
+O filtro será usado para particionar os dados em intervalos no serviço do Power BI. Isso não é projetado para ser compatível com a atualização da coluna de data filtrada. Uma atualização será interpretada como uma inserção e uma exclusão (não uma atualização). Se a exclusão ocorrer no intervalo histórico e não no intervalo incremental, não será selecionada. Isso pode causar falhas de atualização de dados devido a conflitos de chave de partição.
 
 No Editor Power Query, selecione **Gerenciar Parâmetros** para definir os parâmetros com valores padrão.
 
@@ -85,21 +85,21 @@ A caixa de diálogo de atualização incremental é exibida. Use o botão de alt
 
 O texto do cabeçalho explica o seguinte:
 
--   A atualização incremental apenas é compatível com espaços de trabalho na capacidade Premium. As políticas de atualização são definidas no Power BI Desktop e são aplicadas por operações de atualização no serviço.
+- A atualização incremental apenas é compatível com workspaces na capacidade Premium. As políticas de atualização são definidas no Power BI Desktop e são aplicadas por operações de atualização no serviço.
 
--   Se o arquivo PBIX que contém uma política de atualização incremental ainda puder ser baixado do serviço do Power BI, ele não será aberto no Power BI Desktop. Em breve não será mais possível baixá-lo. Embora isso possa ter suporte futuramente, tenha em mente que esses conjuntos de dados podem ficar tão grandes a ponto de não poderem mais ser baixados e abertos em um computador desktop comum.
+- Se o arquivo PBIX que contém uma política de atualização incremental ainda puder ser baixado do serviço do Power BI, ele não será aberto no Power BI Desktop. Em breve não será mais possível baixá-lo. Embora isso possa ter suporte futuramente, tenha em mente que esses conjuntos de dados podem ficar tão grandes a ponto de não poderem mais ser baixados e abertos em um computador desktop comum.
 
 #### <a name="refresh-ranges"></a>Intervalos de atualização
 
-O exemplo a seguir define uma política de atualização para armazenar cinco anos de dados no total e atualizar incrementalmente 10 dias de dados. Se o conjunto de dados for atualizado diariamente, o seguinte será executado para cada operação de atualização.
+O exemplo a seguir define uma política de atualização para armazenar dados por cinco anos civis completos, mais dados para o ano atual até a data atual e atualizar incrementalmente 10 dias de dados. A primeira operação de atualização carregará os dados históricos. As atualizações subsequentes serão incrementais e (se agendadas para serem executadas diariamente) realizarão as seguintes operações.
 
--   Adicione um novo dia de dados.
+- Adicione um novo dia de dados.
 
--   Atualize 10 dias até a data atual.
+- Atualize 10 dias até a data atual.
 
--   Remova os anos civis com mais de cinco anos antes da data atual. Por exemplo, se a data atual for 1º de janeiro de 2019, o ano de 2013 será removido.
+- Remover os anos civis com mais de cinco anos antes da data atual. Por exemplo, se a data atual for 1º de janeiro de 2019, o ano de 2013 será removido.
 
-A primeira atualização no serviço do Power BI pode demorar mais para importar todos os cinco anos. As próximas atualizações podem ser concluídas em uma fração desse tempo.
+A primeira atualização no serviço do Power BI pode demorar mais para importar todos os cinco anos civis. As próximas atualizações podem ser concluídas em uma fração desse tempo.
 
 ![Intervalos de atualização](media/service-premium-incremental-refresh/refresh-ranges.png)
 
@@ -135,7 +135,7 @@ Outro exemplo é a atualização de dados de um sistema financeiro no qual os da
 
 ## <a name="publish-to-the-service"></a>Publicar no serviço
 
-Como a atualização incremental é um recurso somente Premium, a caixa de diálogo Publicar apenas permite a seleção de um espaço de trabalho na capacidade Premium.
+Como a atualização incremental é um recurso somente Premium, a caixa de diálogo Publicar apenas permite a seleção de um workspace na capacidade Premium.
 
 ![Publicar no serviço](media/service-premium-incremental-refresh/publish.png)
 

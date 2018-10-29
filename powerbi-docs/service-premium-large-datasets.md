@@ -7,50 +7,43 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/27/2018
+ms.date: 10/18/2018
 ms.author: jocaplan
 LocalizationGroup: Premium
-ms.openlocfilehash: fa05fd6808ebe78d5d17e2ad3d93fbcf22f7d3c9
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 416f022ee3c413c69650e6f1736cc94edcd58f13
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298586"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641242"
 ---
 # <a name="power-bi-premium-support-for-large-datasets"></a>Suporte ao Power BI Premium para grandes conjuntos de dados
 
-O Power BI Premium dá suporte a carregamentos de arquivos do Power BI Desktop (.pbix) até 10 GB de tamanho. Uma vez carregado, um conjunto de dados pode ser atualizado para até 12 GB de tamanho. Para usar um conjunto de dados grande, publique-o em um espaço de trabalho atribuído à capacidade Premium.
- 
-## <a name="best-practices"></a>Práticas recomendadas
+O Power BI Premium dá suporte a carregamentos de arquivos do Power BI Desktop (.pbix) até 10 GB de tamanho. Uma vez carregado, um conjunto de dados pode ser atualizado para até 12 GB de tamanho. Para usar um conjunto de dados grande, publique-o em um workspace atribuído à capacidade Premium. Este artigo descreve as considerações e práticas recomendadas para trabalhar com grandes conjuntos de dados.
 
-Esta seção descreve as práticas recomendadas para trabalhar com grandes conjuntos de dados.
-
-**Modelos grandes podem usar muitos recursos** na sua capacidade; é recomendável pelo menos um SKU de P1 para os modelos maiores que 1 GB. A tabela a seguir descreve os SKUs recomendados para vários tamanhos .pbix:
-
+**Modelos grandes podem usar muitos recursos** em sua capacidade. Recomendamos pelo menos uma SKU P1 para modelos maiores que 1 GB. A tabela a seguir descreve os SKUs recomendados para vários tamanhos .pbix:
 
    |SKU  |Tamanho de .pbix   |
    |---------|---------|
    |P1    | < 3 GB        |
    |P2    | < 6 GB        |
-   |P3    | até 10 GB   |
-
-
+   |P3, P4, P5    | até 10 GB |
 
 **Os arquivos .pbix representam dados em um estado altamente compactado**. Os dados provavelmente expandirão várias vezes quando carregados na memória e, a partir daí, eles podem expandir várias vezes mais durante a atualização de dados.
 
-**A atualização agendada de grandes conjuntos de dados pode demorar muito tempo** e usar muitos recursos. Da mesma forma, não agende muitas atualizações sobrepostas. Observe também que o tempo limite para trabalhos de atualização agendada foi duplicado para quatro horas para todos os conjuntos de dados nesta capacidade.
+**A atualização agendada de grandes conjuntos de dados pode demorar muito tempo** e usar muitos recursos. Da mesma forma, não agende muitas atualizações sobrepostas. Observe também que o tempo limite para trabalhos de atualização agendada foi duplicado para quatro horas para todos os conjuntos de dados nesta capacidade. Recomendamos [atualização incremental](service-premium-incremental-refresh.md), pois é mais rápida e confiável e consome menos recursos.
 
 **A carga inicial do relatório de grandes conjuntos de dados pode demorar muito tempo** se um período já transcorreu desde a última vez em que o conjunto de dados foi usado, porque o modelo foi carregado na memória da capacidade Premium. Uma barra de carregamento para relatórios demorados exibe o progresso do carregamento.
 
-**Se você remover o espaço de trabalho da capacidade Premium**, o modelo e todos os relatórios e painéis associados não funcionarão.
+**Se você remover o workspace da capacidade Premium**, o modelo e todos os relatórios e painéis associados não funcionarão.
 
-**Enquanto as restrições de tempo e memória por consulta são muito maiores na capacidade Premium**, é altamente recomendável usar filtros e segmentações de dados para limitar os visuais para exibir apenas o que é necessário.
+**Embora as restrições de tempo e memória por consulta sejam muito maiores na capacidade Premium**, é altamente recomendável usar filtros e segmentações de dados para limitar os visuais para exibir apenas o que é necessário.
 
-## <a name="next-steps"></a>Próximas etapas
-[Power BI Premium – o que é?](service-premium.md)  
-[Notas de versão do Power BI Premium](service-premium-release-notes.md)  
-[White paper do Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
-[Planejando um white paper de implantação do Power BI Enterprise](https://aka.ms/pbienterprisedeploy)  
-[Ativação da Avaliação Pro Estendida](service-extended-pro-trial.md)  
+**Próximas etapas**
+
+[O que é o Power BI Premium?](service-premium.md)
+[Notas de versão do Power BI Premium](service-premium-release-notes.md)
+[White paper do Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
+[White paper sobre como planejar uma implantação do Power BI Enterprise](https://aka.ms/pbienterprisedeploy)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 10/18/2018
 ms.author: maikelson
-ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137507"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473947"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -22,9 +22,7 @@ Registre-se para os próximos webinars ao vivo ou assista a nossas sessões grav
 
 ## <a name="upcoming-webinars"></a>Próximos webinars
 
-Nenhum webinar agendado ainda. Volte em breve para saber se há eventos futuros.
-
->[Participar dos próximos webinars na comunidade do Power BI](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[Próximos webinars na comunidade do Power BI](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Webinars em destaque
 
@@ -34,21 +32,29 @@ Tenha uma introdução com estes webinars populares sob demanda
 <br>por Miguel Martinez
 <br>[Registre-se e assista agora](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Truques, dicas e ferramentas do Power BI dos proprietários do PowerBI.Tips**
-<br>por Mike Carlo e Seth Bauer
-<br>[Assista agora](https://www.youtube.com/watch?v=fnj1_e3HXow)
-
 **Aprenda a navegar por um dashboard do Power BI em 20 minutos**
 <br>por Miguel Martinez
 <br>[Registre-se e assista agora](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Execuções da Microsoft em Power BI – análise e planejamento financeiro facilitados**
+<br>por Cory Hrncirik e Miguel Martinez
+<br>[Registre-se e assista agora](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Crie seu visual de dados do Power BI: principais tipos de gráfico e como usá-los**
+<br>por Miranda Li
+<br>[Registre-se e assista agora](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
+**Power BI, Excel e Office 365: otimizar seus dados empresariais**
+<br>por Olaf Hubel e Miguel Martinez
+<br>[Registre-se e assista agora](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
 **Simplesmente fascinante – dicas para melhorar o design de visualização**
 <br>por Miranda Li
 <br>[Registre-se e assista agora](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Better Together: 5 Benefits Excel Users Will Get From Using Power BI** (Melhor juntos: cinco benefícios que os usuários do Excel obterão ao usar o Power BI)
-<br>por Carlos Otero e Miguel Martinez
-<br>[Registre-se e assista agora](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
+**Truques, dicas e ferramentas do Power BI dos proprietários do PowerBI.Tips**
+<br>por Mike Carlo e Seth Bauer
+<br>[Assista agora](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 >[Navegue pela biblioteca de webinars do Power BI sob demanda de nossos especialistas da comunidade](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -61,6 +67,10 @@ Assista a sessões gravadas a qualquer momento
 **Como projetar visualmente relatórios impressionantes no Power BI**
 <br>por Charles Sterling
 <br>[Assista agora](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Better Together: 5 Benefits Excel Users Will Get From Using Power BI** (Melhor juntos: cinco benefícios que os usuários do Excel obterão ao usar o Power BI)
+<br>por Carlos Otero e Miguel Martinez
+<br>[Registre-se e assista agora](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 **Saiba sobre o Power BI Embedded em 20 minutos**
 <br>por Megan Asarrane e Colin Murphy

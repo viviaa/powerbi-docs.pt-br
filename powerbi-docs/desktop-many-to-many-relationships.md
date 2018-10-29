@@ -1,5 +1,5 @@
 ---
-title: Relações muitos para muitos no Power BI Desktop (prévia)
+title: Relações muitos para muitos no Power BI Desktop (versão prévia)
 description: Usar relações muitos para muitos no Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -10,155 +10,152 @@ ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 5c0c6fd619a2487f9c801200d732cda628a68055
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 379f80e1e87181ffdacdaab01d87ff435f2a9501
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973990"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473764"
 ---
-# <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Relações muitos para muitos no Power BI Desktop (prévia)
+# <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Relações muitos para muitos no Power BI Desktop (versão prévia)
 
-Com o recurso **relação muitos para muitos** no **Power BI Desktop**, você pode unir tabelas usando uma cardinalidade de **muitos para muitos** e criar modelos de dados que contêm várias fontes de dados de forma mais fácil e intuitiva. O recurso **relação muitos para muitos** faz parte dos recursos **modelos compostos** mais amplos no **Power BI Desktop**.
+Com o recurso *relações muitos para muitos* no Power BI Desktop, é possível unir tabelas que usam uma cardinalidade de *Muitos para muitos*. Você pode criar modelos de dados mais fáceis e intuitivos que contêm duas ou mais fontes de dados. O recurso *relações muitos para muitos* faz parte das funcionalidades mais amplas de *modelos compostos* no Power BI Desktop.
 
-![muitos para muitos no diálogo Editar relação](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![Uma relação muitos para muitos no painel “Editar relação”](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-O recurso **relações muitos para muitos** no **Power BI Desktop** faz parte de uma coleção de três recursos relacionados:
+A funcionalidade *relações muitos para muitos* no Power BI Desktop é uma de três recursos relacionados:
 
-* **Modelos compostos**: permite que um relatório tenha várias conexões de dados, incluindo conexões DirectQuery ou importação, em qualquer combinação.
-* **Relações muitos para muitos**: com **modelos compostos**, você pode estabelecer **relações muitos para muitos** entre tabelas, removendo os requisitos para valores exclusivos nas tabelas e removendo soluções alternativas anteriores, como introduzir novas tabelas apenas para estabelecer relações. 
-* **Modo de armazenamento**: agora é possível especificar que elementos visuais exigem uma consulta a fontes de dados de back-end. Os que não exigem são importados, mesmo que baseados no DirectQuery, melhorando o desempenho e reduzindo a carga de back-end. Antes, mesmo elementos visuais simples como as segmentações de dados iniciavam consultas sendo enviadas para fontes de back-end. 
+* **Modelos compostos**: permite que um relatório tenha duas ou mais conexões de dados, incluindo conexões DirectQuery ou importação, em qualquer combinação. Para ver mais informações, confira [Modelos compostos no Power BI Desktop (versão prévia)](desktop-composite-models.md).
 
-Esta coleção de três recursos relacionados para os **modelos compostos** é descrita em artigos separados:
+* **Relações muitos-para-muitos**: com *modelos compostos*, você pode estabelecer *relações muitos-para-muitos* entre as tabelas. Esta abordagem remove os requisitos de valores exclusivos nas tabelas. Ela também remove as soluções alternativas anteriores, como introduzir novas tabelas somente para estabelecer relações. O recurso é descrito em detalhes neste artigo.
 
-* **Modelos compostos** são descritos detalhadamente no artigo [Modelos compostos no Power BI Desktop (prévia)](desktop-composite-models.md).
-* **Relações muitos para muitos** são descritas neste artigo.
-* O **Modo de armazenamento** é descrito em seu próprio artigo, [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md).
+* **Modo de armazenamento**: agora você pode especificar quais visuais exigem uma consulta para fontes de dados de back-end. Visuais que não exigem uma consulta serão importados, mesmo se forem baseados no DirectQuery. Esse recurso ajuda a melhorar o desempenho e reduzir a carga de back-end. Antes, mesmo visuais simples como as segmentações iniciavam consultas enviadas para fontes de back-end. Para mais informações, confira [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md).
 
-## <a name="enabling-the-many-to-many-relationships-preview-feature"></a>Habilitando recurso de visualização de relações muitos para muitos
+## <a name="enable-the-many-to-many-relationships-preview-feature"></a>Habilitar a versão prévia do recurso *relações muitos para muitos*
 
-O recurso **relações muitos para muitos** faz parte dos recursos de **modelos compostos**, está em visualização e deve ser habilitado no **Power BI Desktop**. Para habilitar **modelos compostos**, selecione **Arquivo > Opções e Configurações > Opções > Recursos de Visualização** e marque a caixa de seleção **modelos compostos**.
+O recurso *relações muitos para muitos* precisa ser habilitado no Power BI Desktop. Para habilitar os modelos compostos, selecione **Arquivo** > **Opções e configurações** > **Opções** > **Versões prévias dos recursos** e marque a caixa de seleção **Modelos compostos**.
 
-![habilitando recursos de versão prévia](media/desktop-composite-models/composite-models_02.png)
+![O painel “Recursos em versão prévia”](media/desktop-composite-models/composite-models_02.png)
 
-Será preciso reiniciar o **Power BI Desktop** para que o recurso seja habilitado.
+Para habilitar o recurso, é preciso reiniciar o Power BI Desktop.
 
-![reinicialização necessária para que as alterações entrem em vigor](media/desktop-composite-models/composite-models_03.png)
+![A janela “O recurso exige uma reinicialização”](media/desktop-composite-models/composite-models_03.png)
 
+## <a name="what-many-to-many-relationships-solves"></a>O que as *relações muitos para muitos* resolvem
 
-## <a name="what-many-to-many-relationships-solves"></a>O que as relações muitos para muitos resolvem
+Antes do recurso *relações muitos para muitos* ficar disponível, a relação entre duas tabelas era definida no Power BI. Pelo menos uma das colunas da tabela envolvidas na relação precisava conter valores exclusivos. Muitas vezes, no entanto, não há colunas contendo valores exclusivos. 
 
-Antes da disponibilidade de **relações muitos para muitos**, ao ser definida uma relação entre duas tabelas no Power BI, pelo menos uma das colunas envolvidas na relação tinha que conter valores exclusivos. No entanto, em muitas circunstâncias, nenhuma coluna na tabela continha valores exclusivos. 
+Por exemplo, duas tabelas podem ter uma coluna com o rótulo *País*, mas os valores de *País* não eram exclusivos em nenhuma das tabelas. Para unir essas tabelas, era necessário criar uma solução alternativa. Essa solução poderia ser introduzir tabelas adicional no modelo com os valores exclusivos necessários. Com o recurso *relações muitos para muitos*, você pode unir essas tabelas diretamente usando uma relação com uma cardinalidade de **Muitos para muitos**.  
 
-Por exemplo, duas tabelas podem ter uma coluna que contém o *País*, mas os valores de *País* não eram exclusivos em cada tabela. Para a união entre essas tabelas, era necessário criar uma solução alternativa, como introduzir tabelas adicionais para o modelo que continha os valores exclusivos necessários. O recurso **relações muitos para muitos** fornece uma abordagem alternativa, permitindo que essas tabelas sejam unidas diretamente usando uma relação com uma cardinalidade de **muitos para muitos**.  
+## <a name="use-many-to-many-relationships"></a>Usar *relações muitos para muitos*
 
-## <a name="using-many-to-many-relationships"></a>Como usar relações muitos para muitos
+Ao definir uma relação entre duas tabelas no Power BI, é preciso definir a cardinalidade da relação. Por exemplo, a relação entre *ProductSales* e *Produto*&mdash;usando as colunas *ProductSales[ProductCode]* e *Product[ProductCode]*&mdash;seria definida como *Muitos para um*. Definimos a relação dessa forma porque há muitas vendas para cada produto e a coluna na tabela *Produto* *(ProductCode)* é exclusiva. Ao definir uma cardinalidade da relação como *Muitos para um*, *Um para muitos* ou *Um para um*, o Power BI a valida para ajudar a garantir que a cardinalidade selecionada corresponda aos dados reais.
 
-Ao definir uma relação entre duas tabelas no Power BI, você deve definir a cardinalidade da relação. Por exemplo, a relação entre *ProductSales* e *Produto* (usando as colunas *ProductSales [ProductCode]* e *Produto [ProductCode]*) seria definido como **Muitos-para-um**, pois há muitas vendas para cada produto, e a coluna na tabela *Produto* *(ProductCode)* é exclusiva. Ao definir uma cardinalidade da relação como **muitos-para-um**, **um-para-muitos** ou **um-para-um**, o Power BI realiza a validação para garantir que a cardinalidade selecionada corresponda aos dados reais.
+Por exemplo, confira o modelo simples na imagem a seguir:
 
-Por exemplo, confira o modelo simples na imagem a seguir.
+![Modo de Exibição de Relação](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
 
-![exibição de relação](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
+Agora, imagine que a tabela *Produto* exibe apenas duas linhas, conforme mostrado:
 
-Imagine que a tabela *Produto* contida apenas duas linhas.
+![Visual da tabela de Produto visual com duas linhas](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
 
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
+Imagine também que a tabela *Vendas* tem apenas quatro linhas, incluindo a linha para um produto C. Devido a um erro de integridade referencial, a linha de produto C não existe na tabela *Produto*.
 
-Imagine também que a tabela *Vendas* tenha apenas quatro linhas, incluindo *Vendas* de um produto **C** que não existe na tabela *Produto* (devido a um erro de integridade referencial).
+![Visual da tabela Vendas com quatro linhas](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
 
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
+O *ProductName* e o *Preço* (da tabela *Produto*), juntamente com a *Qtd* total para cada produto (da tabela *ProductSales*) seria exibido como mostrado a seguir: 
 
-Um visual que mostrasse *ProductName* e o *Preço* (da tabela *Produto*), juntamente com *Qty* total para cada produto (da tabela *ProductSales*) seria exibida como mostra a imagem a seguir: 
+![Visual exibindo o nome, preço e quantidade do produto](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
 
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
+Como podemos ver na imagem anterior, há uma linha *ProductName* em branco que está associada às vendas do produto C. Essa linha em branco é contabilizada da seguinte forma:
 
-Como você pode ver na imagem anterior, há uma linha no visual com um espaço em branco *ProductName* associado a vendas do produto *C*. Essa linha em branco refere-se ao seguinte:
+* Qualquer linha na tabela *ProductSales* sem nenhuma linha correspondente na tabela *Produto*. Há um problema de integridade referencial, como visto para o produto *C* neste exemplo.
 
-* Quaisquer linhas da tabela *ProductSales* para as quais não haja uma linha correspondente na tabela *Produto*: há um problema de integridade referencial, como podemos ver para o produto *C* neste exemplo.
+* Qualquer linha na tabela *ProductSales* para a qual a coluna de chave estrangeira é nula. 
 
-* Quaisquer linhas na tabela *ProductSales* para as quais a coluna de chave estrangeira for Null. 
+Por esses motivos, em ambos os casos, a linha em branco refere-se a vendas em que *ProductName* e *Price* são desconhecidos.
 
-Por esses motivos, em ambos os casos, a linha em branco refere-se a vendas em que *ProductName* e *Preço* são desconhecidos.
+No entanto, pode ocorrer que as tabelas sejam unidas por duas colunas, mas nenhuma coluna seja exclusiva. Por exemplo, considere as duas seguintes tabelas:
 
-No entanto, às vezes as tabelas são unidas por duas colunas, mas nenhuma coluna é exclusiva. Por exemplo, considere as duas seguintes tabelas:
+* A tabela *Vendas* exibe dados de vendas por *Estado*, com cada linha contendo o valor das vendas para o tipo de venda nesse estado. Os estados são CA, WA e TX. 
 
-* A tabela *Vendas* contém dados de vendas por *Estado*, com cada linha contendo o valor das vendas para o tipo de venda nesse estado (incluindo os estados de CA, WA e TX) 
+    ![Tabela de vendas exibindo as vendas por estado](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
 
-    ![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
+* A tabela *CityData* exibe dados nas cidades, incluindo a população e o estado (incluindo CA, WA e Nova York).
 
-* A tabela *CityData* contém dados de cidades, incluindo a população e o estado (incluindo os estados de CA, WA e Nova York)
+    ![Tabela de vendas exibindo a cidade, estado e população](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
 
-    ![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
+Embora não haja uma coluna para *Estado* em ambas as tabelas e seja razoável querer relatar o total de vendas por estado e a população total de cada estado, há um problema: a coluna *Estado* não é exclusiva em nenhuma das tabelas. 
 
-Embora não haja uma coluna para *Estado* em ambas as tabelas e seja razoável querer relatar o total de *Vendas* por *Estado*, juntamente com a população total de cada estado, existe um problema: a coluna *Estado* não é exclusiva em nenhuma das tabelas. 
+## <a name="the-previous-workaround"></a>A solução alternativa anterior
 
-## <a name="the-prior-workaround"></a>A solução alternativa anterior
+Em versões do Power BI Desktop anteriores à versão de julho de 2018, não era possível para os usuários criar uma relação direta entre essas tabelas. Uma solução alternativa comum para esse problema era fazer o seguinte:
 
-Nas versões do **Power BI Desktop** anteriores ao lançamento de julho de 2018, não era possível criar uma relação diretamente entre essas tabelas. Uma solução comum para esse problema era fazer o seguinte:
+* Crie uma terceira tabela que continha apenas as IDs de *Estado* exclusivas. A tabela poderia ser qualquer uma ou todas das seguintes:
+  * Uma tabela calculada (definida usando o [DAX] Data Analysis Expressions).
+  * Uma tabela baseada em uma consulta que é definida no Editor de Consultas, que pode exibir as IDs exclusivas extraídas de uma das tabelas.
+  * O conjunto completo combinado.
 
-* Crie uma terceira tabela que contenha apenas as ids de *Estado* exclusivas. Pode ser uma tabela calculada (definida usando DAX) ou uma tabela definida pelo uso de uma consulta definida no **Editor de Consultas** que pode conter as ids exclusivas obtidas de uma das tabelas ou o conjunto completo unido.
+* Relacione as duas tabelas originais à nova tabela, usando relações *Muitos para um* comuns.
 
-* Relacione as duas tabelas originais à nova tabela, usando relações **Muitos-para-um* comuns.
+Você pode deixar a tabela da solução alternativa visível ou ocultá-la para que ela não apareça na lista **Campos**. Se você omitir a tabela, as relações *Muitos para 1* normalmente serão definidas para filtrar em ambos os sentidos e você poderá usar o campo *Estado* de qualquer uma das tabelas. As filtragens cruzadas subsequentes seriam propagadas para a outra tabela. Essa abordagem é mostrada na imagem a seguir:
 
-Essa tabela de solução alternativa pode ser mantida visível ou oculta, de modo que não apareça na lista de campos. No último caso, as relações **muitos-para-um** normalmente são definidas para filtrar em ambas as direções, de modo que o campo *Estado* de qualquer tabela possa ser usado, com a filtragem cruzada subsequente propagada para a outra tabela. Essa abordagem de solução alternativa é mostrada na imagem a seguir da **Exibição de relações**.
+![Modo de Exibição de Relação](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
-![exibição de relação](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
+Um visual que exibe o *Estado* (da tabela *CityData*), juntamente com a *População* total e o total de *Vendas* apareceria desta forma:
 
-Um visual que mostrasse o *Estado* (da tabela *CityData*), juntamente com a *população* total e o total de *Vendas* seria como o exemplo a seguir.
-
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
-
-Observe que, dado o uso do estado da tabela *CityData* nessa solução alternativa, somente os *Estado*s na tabela são listados (e, assim, TX é excluído). Além disso, diferentemente do caso de relações**muitos-para-um**, embora a linha do total inclua todas as *Vendas* (incluindo as de TX), os detalhes não incluem uma linha em branco que abrange essas linhas não correspondentes. Da mesma forma, não havia linhas em branco, abrangendo quaisquer *Vendas* para as quais houvesse um valor nulo para o *Estado*.
-
-Se a *Cidade* também for adicionada a esse visual, embora a população por *Cidade* seja conhecida, as *Vendas* mostradas para a *Cidade* simplesmente repetirão as *Vendas* para o *Estado* correspondente (como é normalmente o caso no agrupamento em uma coluna que não está relacionada a alguma medida de agregação), conforme mostrado na imagem a seguir.
-
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
-
-Se a nova tabela *Vendas* tiver sido definida para ser a união de todos os *Estados* nessa solução alternativa e ficar visível na lista de campos, o mesmo visual que mostra *Estado* (na nova tabela), juntamente com a *População* total e o total de *Vendas* será como indicado a seguir.
-
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
-
-Nesse caso e conforme mostrado no visual, *TX* (com *Vendas*, mas com população desconhecida) e *Nova York* (com população conhecida, mas sem *Vendas*) podem ser incluídos. 
-
-Como você pode ver, essa solução alternativa não era ideal e tem vários problemas. Com a criação da **relação muitos para muitos**, esses problemas são resolvidos, conforme descrito na seção a seguir.
-
-## <a name="using-many-to-many-relationships-instead-of-the-workaround"></a>Usando relações muitos para muitos em vez da solução alternativa
-
-Nas versões do **Power BI Desktop** a partir de julho de 2018, você pode relacionar diretamente as tabelas descritas na seção anterior, sem a necessidade de recorrer a essas soluções alternativas. Agora é possível definir a cardinalidade de uma relação como **Muitos para Muitos**, indicando que nenhuma destas tabelas contém valores exclusivos. Para essas relações, você ainda pode controlar qual tabela filtra a outra tabela ou ter a filtragem bidirecional, em que ambas as tabelas se filtram entre si.  
+![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
-> A capacidade de criar relações **Muitos para Muitos** está em visualização e, enquanto isso, não é possível publicar modelos usando relações **Muitos para Muitos** para o serviço do Power BI. 
+> Como o estado da tabela *CityData* é usado nesta solução alternativa, somente os estados nessa tabela são listados e, portanto, TX é excluído. Além disso, diferentemente de relações *muitos para um*, embora a linha do total inclua todas as *Vendas* (incluindo as de TX), os detalhes não incluem uma linha em branco que abrange essas linhas não correspondentes. Da mesma forma, não haveria linhas em branco abrangendo *Vendas* para as quais houvesse um valor nulo para o *Estado*.
 
-No **Power BI Desktop**, a cardinalidade usa como padrão **Muitos para Muitos** quando é determinado que nenhuma destas tabelas contém valores exclusivos para as colunas na relação. Nesses casos, que um aviso é exibido, para confirmar que essa relação de configuração é o comportamento desejado, em vez de ser o efeito não intencional de um problema de dados. 
+Se você também adicionar *Cidade* ao visual, embora a população por *Cidade* seja conhecida, as *Vendas* mostradas para a *Cidade* simplesmente repetirão as *Vendas* para o *Estado* correspondente. Esse é normalmente o caso quando o agrupamento em uma coluna não está relacionado a nenhuma medida de agregação, conforme mostrado na imagem a seguir:
 
-Por exemplo, na criação de uma relação diretamente entre *CityData* e *Vendas*, em que os filtros devem fluir de *CityData* para *Vendas*, o diálogo de relação aparece como mostrado na imagem a seguir.
+![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
-![Diálogo Editar relação](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+Se definirmos a nova tabela *Vendas* como a combinação de todos os *Estados* nesta solução alternativa e torná-la visível na lista **Campos**, o mesmo visual exibirá tanto o *Estado* (na nova tabela) quanto a *População* total e o total *Vendas*, conforme mostrado na imagem a seguir:
 
-A **Exibição de Relações** resultante conteria a relação direta **Muitos para Muitos** entre as duas tabelas. A aparência na lista **Campos** e o comportamento subsequente quando elementos visuais são criados é igual ao uso da solução alternativa descrita na seção anterior, em que a tabela extra (com os *Estados* distintos nela) não fica visível. Por exemplo, como na seção anterior, que descreve a solução alternativa, uma visual que mostra *Estados* junto com a população total e vendas seria conforme a seguir.
+![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+Como podemos ver, os dados de *TX*&mdash;com *Vendas*, mas com os dados de *População* desconhecidos &mdash;e *Nova York*&mdash;com os dados de *População* conhecidos, mas não dados *Vendas*&mdash;seriam incluídos. Essa solução alternativa não é ideal, e tem vários problemas. Com a criação das relações muitos para muitos, os problemas resultantes são resolvidos conforme descrito na seção a seguir.
 
-Portanto, a principal diferença entre relações **Muitos para Muitos** e as relações mais comuns **muitos-para-um** é a seguinte.
+## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>Usar *relações muitos para muitos* em vez da solução alternativa
 
-* Os valores mostrados não incluem uma linha em branco referente a quaisquer linhas incompatíveis na outra tabela, nem para as linhas em que a coluna usada na relação na outra tabela é nula.
-* Não é possível usar a função *RELATED()* (pois mais de uma linha pode estar relacionada)
-* Usar a função *ALL()* em uma tabela não removerá os filtros aplicados a outras tabelas relacionadas a ela por uma relação **Muitos para Muitos**. Por exemplo, uma medida definida conforme a seguir no exemplo anterior não removeria filtros nas colunas na tabela *CityData* relacionada:
+A partir da versão de julho de 2018 do Power BI Desktop, é possível relacionar tabelas diretamente, como aquelas que descrevemos anteriormente, sem precisar recorrer a soluções alternativas semelhantes. Agora é possível definir a cardinalidade da relação para *Muitos para muitos*. Essa configuração indica que nenhuma tabela contém valores exclusivos. Para essas relações, você ainda pode controlar qual tabela filtra a outra tabela, ou aplicar filtragem bidirecional, em que ambas as tabelas se filtram entre si.  
 
-    ![exemplo de script](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+> [!NOTE]
+> A capacidade de criar *relações muitos para muitos* está em versão prévia. Enquanto ela estiver na versão prévia, não será possível publicar os modelos do serviço do Power BI que usam *relações muitos para muitos*. 
 
-    Assim, um visual que mostra *Estado*, *Vendas* e *Total de vendas* resulta no seguinte:
+No Power BI Desktop, a cardinalidade usa como padrão *Muitos para muitos* quando é determinado que nenhuma destas tabelas contém valores exclusivos para as colunas na relação. Nesses casos, um aviso é exibido, para confirmar se essa configuração de relação é o comportamento desejado, e não um efeito não intencional de um problema de dados. 
 
-    ![tabela visual](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+Por exemplo, ao criar uma relação diretamente entre *CityData* e *Vendas*&mdash;, em que os filtros fluem de *CityData* para *Vendas*&mdash;, o Power BI Desktop exibe a janela **Editar relação** como mostrado na imagem a seguir:
 
-Por isso, tome cuidado para garantir que cálculos que usam *TODOS(\<Tabela >)*, como *% do total geral*, retornem os resultados pretendidos. 
+![A janela “Editar relação”](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+
+O modo de exibição **Relação** resultante conteria a relação direta, muitos para muitos, entre as duas tabelas. A aparência das tabelas na lista **Campos**, e seu comportamento subsequente quando os visuais são criados, é semelhante a quando aplicamos a solução alternativa. Na solução alternativa, a tabela extra que exibe os dados de *Estado* distintos não estão visível. Por exemplo, conforme descrito na seção anterior, um visual mostrando os dados de *Estado*, *População* e *Vendas* seriam exibidos da seguinte maneira:
+
+![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+
+A principal diferença entre as *relações muitos para muitos* e as relações *muitos para um* mais comuns é a seguinte:
+
+* Os valores mostrados não incluem uma linha em branco que conta para as linhas incompatíveis na outra tabela. Nem esses valores consideram as linhas em que a coluna usada na relação na outra tabela é nula.
+* Não é possível usar a função `RELATED()`, pois mais de uma linha pode estar relacionada.
+* Usar a função `ALL()` em uma tabela não removerá os filtros aplicados a outras tabelas relacionadas a ela por uma relação muitos para muitos. No exemplo anterior, uma medida definida conforme mostrado no script a seguir não removeria os filtros nas colunas na tabela *CityData* relacionada:
+
+    ![Exemplo de script](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+
+    Um visual que mostra os dados de *Estado*, *Vendas* e *Total de vendas* resultaria no seguinte:
+
+    ![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+
+Com as diferenças anteriores em mente, verifique se os cálculos que usam `ALL(\<Table>)`, como *% do total geral*, estão retornando os resultados pretendidos. 
 
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 
-Há algumas limitações nesta versão de **relações muitos para muitos** e **modelos compostos**.
+Há algumas limitações nesta versão de *relações muitos para muitos* e modelos compostos.
 
-As seguintes fontes (multidimensionais) do Live Connect não podem ser usadas com os **modelos compostos**:
+As seguintes fontes (multidimensionais) do Live Connect não podem ser usadas com os modelos compostos:
 
 * SAP HANA
 * SAP Business Warehouse
@@ -166,19 +163,14 @@ As seguintes fontes (multidimensionais) do Live Connect não podem ser usadas co
 * Conjuntos de dados do Power BI
 * Azure Analysis Services
 
-Ao se conectar a essas fontes multidimensionais usando o DirectQuery, não é possível se conectar também a outra fonte de DirectQuery, nem combinar com dados importados.
+Ao se conectar a essas fontes multidimensionais usando o DirectQuery, não é possível se conectar também à outra fonte do DirectQuery, nem combiná-la com os dados importados.
 
-As limitações existentes no uso do DirectQuery ainda se aplicam ao serem usadas **relações muitos para muitos**. Muitas dessas limitações agora são por tabela, dependendo do **modo de armazenamento** da tabela. Por exemplo, uma coluna calculada em uma tabela importada pode se referir a outras tabelas, mas uma coluna calculada em uma tabela do DirectQuery ainda fica restrita para se referir apenas às colunas na mesma tabela. Outras limitações se aplicam ao modelo como um todo se quaisquer das tabelas no modelo forem DirectQuery. Por exemplo, os recursos **QuickInsights** e **P e R** não estão disponíveis em um modelo se qualquer uma das tabelas nele tiver um **modo de armazenamento** do DirectQuery. 
+As limitações existentes do uso do DirectQuery ainda se aplicam ao usar as *relações muitos para muitos*. Muitas dessas limitações agora são por tabela, dependendo do modo de armazenamento dela. Por exemplo, uma coluna calculada em uma tabela importada pode se referir a outras tabelas, mas uma coluna calculada em uma tabela do DirectQuery ainda se refere apenas às colunas na mesma tabela. Outras limitações serão aplicáveis ao modelo como um todo se quaisquer das tabelas no modelo forem DirectQuery. Por exemplo, os recursos QuickInsights e P e R não estarão disponíveis em um modelo se qualquer uma das tabelas nele tiver um modo de armazenamento do DirectQuery. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Os artigos a seguir tratam mais sobre os modelos compostos e também descrevem o DirectQuery em detalhes.
-
-* [Modelos compostos no Power BI Desktop (prévia)](desktop-composite-models.md)
-* [Modo de armazenamento no Power BI Desktop (prévia)](desktop-storage-mode.md)
-
-Artigos do DirectQuery:
-
-* [Usar o DirectQuery no Power BI](desktop-directquery-about.md)
-* [Fontes de dados com suporte do DirectQuery no Power BI](desktop-directquery-data-sources.md)
-
+Para obter mais informações sobre modelos compostos e DirectQuery, confira os seguintes artigos:
+* [Modelos compostos no Power BI Desktop (versão prévia)](desktop-composite-models.md)
+* [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md)
+* [Usar o DirectQuery no Power BI Desktop](desktop-directquery-about.md)
+* [Fontes de dados compatíveis com o DirectQuery no Power BI Desktop](desktop-directquery-data-sources.md)

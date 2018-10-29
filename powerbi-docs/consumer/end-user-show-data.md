@@ -1,55 +1,40 @@
 ---
 title: Mostrar os dados que foram usados para criar a visualização do Power BI
-description: Este documento explica como mostrar os dados usados para criar um visual no Power BI e como exportá-los para um arquivo .csv.
+description: Este documento explica como os consumidores do Power BI podem “ver” os dados usados para criar um visual.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 10/17/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ebf57d9e3e471793d62be6f08964c10a2a05b301
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 58251ffa31dcac17f83c8b4ab3962b7df4b87f84
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565373"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396372"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Mostrar dados que foram usados para criar a visualização
-## <a name="show-data"></a>Mostrar Dados
-Uma visualização do Power BI é construída usando dados dos conjuntos de dados. Se você estiver interessado em ver o que acontece nos bastidores, o Power BI permitirá *exibir* os dados usados para criar o visual. Ao selecionar **Mostrar Dados**, o Power BI exibirá os dados abaixo (ou ao lado) da visualização.
+## <a name="show-data"></a>Mostrar dados
+Uma visualização do Power BI é construída usando dados dos conjuntos de dados subjacentes. Se você estiver interessado em ver o que acontece nos bastidores, o Power BI permitirá *exibir* os dados usados para criar o visual. Ao selecionar **Mostrar Dados**, o Power BI exibirá os dados abaixo (ou ao lado) da visualização.
 
-Você também pode exportar os dados usados para criar a visualização como um arquivo .xlsx ou .csv e exibi-los no Excel. Para obter mais informações, consulte [Exportar dados de visualizações do Power BI](end-user-export-data.md).
-
-> [!NOTE]
-> As opções *Mostrar Dados* e *Exportar Dados* estão disponíveis no serviço do Power BI e no Power BI Desktop. No entanto, o Power BI Desktop fornece uma camada adicional de detalhes; [*Mostrar Registros* exibe as linhas reais do conjunto de dados](../desktop-see-data-see-records.md).
-> 
-> 
 
 ## <a name="using-show-data-in-power-bi-service"></a>Usando *Mostrar Dados* no serviço do Power BI
-1. No serviço do Power BI, abra um relatório no [modo de exibição de Leitura ou no modo de exibição de Edição](end-user-reading-view.md) e selecione um visual.  No Power BI Desktop, abra a Exibição de Relatório.
-2. Para exibir os dados por trás do visual, selecione **Explorar** > **Mostrar dados**.
+1. No serviço do Power BI, abra um relatório e selecione um visual.  
+2. Para exibir os dados por trás do visual, selecione as reticências (...) e escolha **Mostrar dados**.
    
-   ![selecionar Mostrar dados](./media/end-user-show-data/power-bi-show-data.png)
+   ![selecione Mostrar dados](./media/end-user-show-data/power-bi-show-data2.png)
 3. Por padrão, os dados são exibidos abaixo do visual.
    
-   ![exibição vertical do visual e de dados](./media/end-user-show-data/power-bi-explore-show-data.png)
+   ![exibição vertical do visual e de dados](./media/end-user-show-data/power-bi-explore-show-data-new.png)
+
 4. Para alterar a orientação, selecione o layout vertical ![](media/end-user-show-data/power-bi-vertical-icon-new.png) do canto superior direito da visualização.
    
-   ![exibição horizontal do visual e de dados](./media/end-user-show-data/power-bi-explore-show-data2.png)
-5. Para exportar os dados para um arquivo .csv, selecione as elipses e escolha **Exportar dados**.
-   
-    ![selecionar Exportar dados](./media/end-user-show-data/power-bi-export-data-new.png)
-   
-    Para obter mais informações sobre como exportar os dados para o Excel, consulte [Exportar dados de visualizações do Power BI](end-user-export-data.md).
-6. Para ocultar os dados, desmarque **Explorar** > **Mostrar dados**.
+   ![exibição horizontal do visual e de dados](./media/end-user-show-data/power-bi-explore-show-data2-new.png)
 
 ### <a name="next-steps"></a>Próximas etapas
-[Exportar dados de visualizações do Power BI](end-user-export-data.md)    
 [Visualizações em relatórios do Power BI](../visuals/power-bi-report-visualizations.md)    
 [Relatórios do Power BI](end-user-reports.md)    
-[Power BI – conceitos básicos](end-user-basic-concepts.md)    
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
-

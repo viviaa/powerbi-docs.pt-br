@@ -1,5 +1,5 @@
 ---
-title: Excluir um painel, um relatório, uma pasta de trabalho, um conjunto de dados ou um espaço de trabalho
+title: Excluir um painel, um relatório, uma pasta de trabalho, um conjunto de dados ou um workspace
 description: Saiba como excluir quase tudo do Power BI
 author: mihart
 manager: kfile
@@ -10,25 +10,25 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 770b2796eb8f29cadfe8371cb2baef12cec7c0e8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0d07953fb4f9474f929c108df5b76acb61c7df7c
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909456"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435327"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Excluir quase tudo no serviço do Power BI
-Este artigo ensina como excluir um dashboard, um relatório, uma pasta de trabalho, um conjunto de dados, um aplicativo, uma visualização e um espaço de trabalho no serviço do Power BI.
+Este artigo ensina como excluir um dashboard, um relatório, uma pasta de trabalho, um conjunto de dados, um aplicativo, uma visualização e um workspace no serviço do Power BI.
 
 ## <a name="delete-a-dashboard"></a>Excluir um painel
 Os painéis podem ser removidos. Remover o painel não exclui o conjunto de dados subjacente ou os relatórios associados a esse painel.
 
-* Se você for o proprietário do painel, poderá removê-lo. Se você compartilhou o painel com colegas, remover o painel de seu espaço de trabalho do Power BI removerá o painel do espaço de trabalho do Power BI de seus colegas.
-* Se um painel de controle for compartilhado com você e você não deseja vê-lo, é possível removê-lo.  Remover um painel não o remove do espaço de trabalho do Power BI de outra pessoa.
+* Se você for o proprietário do painel, poderá removê-lo. Se você compartilhou o painel com colegas, remover o painel de seu workspace do Power BI removerá o painel do workspace do Power BI de seus colegas.
+* Se um painel de controle for compartilhado com você e você não deseja vê-lo, é possível removê-lo.  Remover um painel não o remove do workspace do Power BI de outra pessoa.
 * Se um dashboard fizer parte de um [pacote de conteúdo organizacional](service-organizational-content-pack-disconnect.md), a única maneira de removê-lo é remover o conjunto de dados associado.
 
 ### <a name="to-delete-a-dashboard"></a>Excluir um painel
-1. Em seu espaço de trabalho, selecione a guia **Dashboards**.
+1. Em seu workspace, selecione a guia **Dashboards**.
 2. Localize o dashboard a ser excluído e selecione o ícone Excluir ![ícone excluir](media/service-delete/power-bi-delete-icon.png).
 
     ![vídeo](media/service-delete/power-bi-delete-dash.gif)
@@ -37,10 +37,10 @@ Os painéis podem ser removidos. Remover o painel não exclui o conjunto de dado
 Não se preocupe, excluir um relatório não exclui o conjunto de dados que o relatório está baseado.  E quaisquer visualizações que você tenha fixado por meio do relatório também estão seguras - permanecem no painel até você excluí-las individualmente.
 
 ### <a name="to-delete-a-report"></a>Para excluir um relatório
-1. Em seu espaço de trabalho, selecione a guia **Relatórios**.
+1. Em seu workspace, selecione a guia **Relatórios**.
 2. Localize o relatório a ser excluído e selecione o ícone Excluir   ![ícone excluir](media/service-delete/power-bi-delete-icon.png).   
 
-    ![guia relatórios do espaço de trabalho](media/service-delete/power-bi-delete-reportnew.png)
+    ![guia relatórios do workspace](media/service-delete/power-bi-delete-reportnew.png)
 3. Confirme a exclusão.
 
    ![Caixa de diálogo Excluir relatório](media/service-delete/power-bi-delete-report.png)
@@ -56,7 +56,7 @@ As pastas de trabalho podem ser removidas. No entanto, a remoção de uma pasta 
 Se a pasta de trabalho está armazenada no OneDrive for Business, excluí-la do Power BI não a exclui do OneDrive.
 
 ### <a name="to-delete-a-workbook"></a>Para excluir uma pasta de trabalho
-1. Em seu espaço de trabalho, selecione a guia **Pastas de trabalho**.
+1. Em seu workspace, selecione a guia **Pastas de trabalho**.
 2. Localize a pasta de trabalho a ser excluída e selecione o ícone ![ícone excluir](media/service-delete/power-bi-delete-report2.png) Excluir.
 
     ![Guia Pastas de trabalho](media/service-delete/power-bi-delete-workbooknew.png)
@@ -70,7 +70,7 @@ Os conjuntos de dados podem ser excluídos. No entanto, excluir um conjunto de d
 Se um conjunto de dados fizer parte de um ou mais [pacotes de conteúdo organizacional](service-organizational-content-pack-disconnect.md), a única maneira de exclui-lo é removê-lo dos pacotes de conteúdo em que ele está sendo usado, aguardar para que isso seja processado e tentar excluí-lo novamente.
 
 ### <a name="to-delete-a-dataset"></a>Para excluir um conjunto de dados
-1. Em seu espaço de trabalho, selecione a guia **Conjuntos de dados**.
+1. Em seu workspace, selecione a guia **Conjuntos de dados**.
 2. Localize o conjunto de dados para excluir e selecione as reticências (...).  
 
     ![Guia Conjuntos de dados](media/service-delete/power-bi-delete-datasetnew.png)
@@ -81,40 +81,40 @@ Se um conjunto de dados fizer parte de um ou mais [pacotes de conteúdo organiza
 
    ![Caixa de diálogo Excluir dashboard](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## <a name="delete-an-app-workspace"></a>Excluir um espaço de trabalho de aplicativo
+## <a name="delete-an-app-workspace"></a>Excluir um workspace de aplicativo
 > [!WARNING]
-> Quando você cria um espaço de trabalho do aplicativo, você cria um grupo do Office 365. E quando você exclui um espaço de trabalho do aplicativo, você exclui esse grupo do Office 365. Isso significa que o grupo também será excluído de outros produtos do O365 como o SharePoint e o Microsoft Teams.
+> Quando você cria um workspace do aplicativo, você cria um grupo do Office 365. E quando você exclui um workspace do aplicativo, você exclui esse grupo do Office 365. Isso significa que o grupo também será excluído de outros produtos do O365 como o SharePoint e o Microsoft Teams.
 >
 >
 
-Como autor do espaço de trabalho do aplicativo, você poderá excluí-lo. Ao excluí-lo, o aplicativo associado também é excluído de todos os membros do grupo e removido do seu AppSource, caso você tenha publicado o aplicativo para toda a sua organização. Excluir um espaço de trabalho de aplicativo é diferente de sair de um espaço de trabalho de aplicativo.
+Como autor do workspace do aplicativo, você poderá excluí-lo. Ao excluí-lo, o aplicativo associado também é excluído de todos os membros do grupo e removido do seu AppSource, caso você tenha publicado o aplicativo para toda a sua organização. Excluir um workspace de aplicativo é diferente de sair de um workspace de aplicativo.
 
-### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Para excluir um espaço de trabalho de aplicativo – caso você seja um Administrador
-1. No menu de navegação à esquerda, selecione **Espaços de trabalho**
+### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Para excluir um workspace de aplicativo – caso você seja um Administrador
+1. No menu de navegação à esquerda, selecione **Workspaces**
 
-    ![Espaços de trabalho de aplicativo](media/service-delete/power-bi-delete-workspace.png)
-2. Selecione as reticências (...) à direita do espaço de trabalho a ser excluída e escolha **Editar espaço de trabalho**.
+    ![Workspaces de aplicativo](media/service-delete/power-bi-delete-workspace.png)
+2. Selecione as reticências (...) à direita do workspace a ser excluída e escolha **Editar workspace**.
 
-   ![menu de reticências > Editar espaço de trabalho](media/service-delete/power-bi-edit-workspace.png)
-3. Na janela **Editar espaço de trabalho**, selecione **Excluir espaço de trabalho** > **Excluir**.
+   ![menu de reticências &gt; Editar workspace](media/service-delete/power-bi-edit-workspace.png)
+3. Na janela **Editar workspace**, selecione **Excluir workspace** > **Excluir**.
 
-    ![excluir espaço de trabalho](media/service-delete/power-bi-delete-workspace2.png)
+    ![excluir workspace](media/service-delete/power-bi-delete-workspace2.png)
 
-### <a name="to-remove-an-app-workspace-from-your-list"></a>Para remover um espaço de trabalho de aplicativo da sua lista
-Se você não deseja mais ser um membro de um espaço de trabalho de aplicativo, você pode ***sair*** dele e ele será removido da sua lista. Sair de um espaço de trabalho deixa-o no lugar para todos os outros membros do espaço de trabalho.  
+### <a name="to-remove-an-app-workspace-from-your-list"></a>Para remover um workspace de aplicativo da sua lista
+Se você não deseja mais ser um membro de um workspace de aplicativo, você pode ***sair*** dele e ele será removido da sua lista. Sair de um workspace deixa-o no lugar para todos os outros membros do workspace.  
 
 > [!IMPORTANT]
-> Se você for o único Administrador do espaço de trabalho do aplicativo, o Power BI não permitirá que você saia.
+> Se você for o único Administrador do workspace do aplicativo, o Power BI não permitirá que você saia.
 >
 >
 
-1. Inicie o espaço de trabalho de aplicativo que você deseja remover.
-2. No canto superior direito, selecione as reticências (...) e escolha **Sair do espaço de trabalho** > **Sair**.
+1. Inicie o workspace de aplicativo que você deseja remover.
+2. No canto superior direito, selecione as reticências (...) e escolha **Sair do workspace** > **Sair**.
 
-      ![sair do espaço de trabalho](media/service-delete/power-bi-leave-workspace.png)
+      ![sair do workspace](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > As opções exibidas na lista suspensa dependem se você é um Administrador ou um Membro desse espaço de trabalho do aplicativo.
+   > As opções exibidas na lista suspensa dependem se você é um Administrador ou um Membro desse workspace do aplicativo.
    >
    >
 
@@ -129,7 +129,7 @@ A exclusão de um aplicativo de sua página de lista de aplicativos não exclui 
 
    ![selecionar Aplicativos](media/service-delete/power-bi-delete-app.png)
 
-   Se você remover um aplicativo acidentalmente, você terá várias opções para obtê-lo novamente.  Você pode solicitar ao criador do aplicativo para enviá-lo novamente, pode encontrar o email original com o link para o aplicativo, pode verificar seu [Centro de Notificações](service-notification-center.md) para ver se a notificação desse aplicativo ainda está listada ou pode verificar o [AppSource](service-install-use-apps.md) da sua organização.
+   Se você remover um aplicativo acidentalmente, você terá várias opções para obtê-lo novamente.  Você pode solicitar ao criador do aplicativo para enviá-lo novamente, pode encontrar o email original com o link para o aplicativo, pode verificar seu [Centro de Notificações](service-notification-center.md) para ver se a notificação desse aplicativo ainda está listada ou pode verificar o [AppSource da sua organização](consumer/end-user-apps.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 Este artigo abordou como excluir os principais elementos básicos do serviço do Power BI. Mas há mais coisas que você pode excluir no Power BI.  

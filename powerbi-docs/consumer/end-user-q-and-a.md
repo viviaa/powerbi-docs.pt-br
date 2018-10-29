@@ -7,81 +7,76 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 23f7546ce77f9062809e65be24517f74b89fe8a2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565948"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396349"
 ---
-# <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>P e R no serviço do Power BI e Power BI Desktop
+# <a name="qa-for-power-bi-consumers"></a>P e R para **consumidores** do Power BI
 ## <a name="what-is-qa"></a>O que é P e R?
-Às vezes, a maneira mais rápida de obter uma resposta de seus dados é fazer uma pergunta usando o idioma natural. Por exemplo, "qual foi o total de vendas no ano passado".  Use P e R para explorar seus dados do Excel usando recursos intuitivos em idioma natural e receba as respostas na forma de quadros e gráficos. P e R é diferente de um mecanismo de pesquisa - P e R fornece apenas resultados sobre os dados no Power BI.
+Às vezes, a maneira mais rápida de obter uma resposta de seus dados é fazer uma pergunta usando o idioma natural. Por exemplo, "qual foi o total de vendas no ano passado".  
+Use P e R para explorar seus dados do Excel usando recursos intuitivos em idioma natural e receba as respostas na forma de quadros e gráficos. P e R é diferente de um mecanismo de pesquisa - P e R fornece apenas resultados sobre os dados no Power BI.
 
-Este artigo é ponto de partida para tudo que envolve P e R. Selecione um link abaixo para saber como a P e R funciona no serviço do Power BI (relatórios e dashboards), Power BI Desktop (relatórios), Power BI Embedded e Power BI Mobile.  
+A **P e R do Power BI** só dá suporte a responder consultas em linguagem natural perguntadas em inglês. Há uma versão prévia disponível para espanhol que pode ser habilitada pelo administrador do Power BI.
 
-> [!NOTE]
-> A **P e R do Power BI** só dá suporte a responder consultas em linguagem natural perguntadas em inglês. Você também pode testar um recurso em versão prévia para perguntas feitas em espanhol. Em **Power BI Desktop**, vá até **Arquivo**, **Opções e configurações**, **Opções** e procure a guia **Recursos em Versão Prévia**. Marque a caixa para **Suporte ao idioma espanhol para P e R**.  
+A **P e R do Power BI** está disponível com uma licença Pro ou Premium. 
 >
->
 
-![](media/end-user-q-and-a/pbi_qa_boxsalessqft.png)
+![mapa de árvore criado com P e R](media/end-user-q-and-a/power-bi-qna.png)
 
 A pergunta é apenas o começo.  Divirta-se viajando através de seus dados refinando ou expandindo sua pergunta, revelando informações novas de confiança, concentrando-se em detalhes e diminuindo o zoom para uma exibição mais ampla. Você vai se deliciar com as ideias e descobertas feitas.
 
 A experiência é verdadeiramente interativa... e rápida! Equipada com um armazenamento na memória, a resposta é quase instantânea.
 
-##  <a name="qa-for-consumers"></a>P e R para *consumidores*
-Quando um colega compartilhar um dashboard com você, você encontrará a caixa de perguntas no dashboard de P e R no serviço do Power BI (app.powerbi.com), na parte inferior do dashboard no Power BI Mobile e acima da visualização no Power BI Embedded. A menos que o proprietário tenha lhe concedido permissões de edição, você poderá usar P e R para explorar dados, mas não poderá salvar nenhuma visualização criada com a P e R.
+## <a name="where-can-i-use-qa"></a>Onde posso usar as P e R?
+Você encontrará as P e R em dashboards no serviço do Power BI, na parte inferior do dashboard no Power BI Mobile e acima da visualização no Power BI Embedded. A menos que o designer tenha lhe concedido permissões de edição, você poderá usar as P e R para explorar dados, mas não poderá salvar nenhuma visualização criada com as P e R.
 
-![](media/end-user-q-and-a/powerbi-qna.png)
-
-## <a name="qa-for-creators"></a>P e R para *criadores*
-Se você for um *criador* de relatórios do Power BI ou tiver permissões de edição para um conjunto de dados, você encontrará a caixa de perguntas de P e R no dashboard no serviço do Power BI e em cada página de relatório, no serviço do Power BI e no Power BI Desktop. Qualquer visualização que você criar usando P e R poderá ser salva em um dashboard e salva em um relatório.
-
-![](media/end-user-q-and-a/power-bi-desktop.png)
-
-Além de usar p e r para explorar seus dados, criadores e proprietários de conjuntos de dados podem melhorar a experiência de P e R para os consumidores [modificando seus conjuntos de dados](../service-prepare-data-for-q-and-a.md), adicionando [perguntas em destaque](../service-q-and-a-create-featured-questions.md) e [habilitando e desabilitando P e R](end-user-q-and-a-direct-query.md) para conjuntos de dados de conexão dinâmica locais. Em [Cenários inseridos](../developer/qanda.md), os desenvolvedores podem optar entre 2 modos: **interativo** e **apenas resultado**.
+![caixa de perguntas](media/end-user-q-and-a/powerbi-qna.png)
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Como o recurso de P e R sabe como responder a perguntas?
-### <a name="which-datasets-does-qa-use"></a>Quais conjuntos de dados P e R usa?
-Como o recurso de P e R sabe como responder a perguntas sobre dados específicos? Ele se baseia nos nomes das tabelas, colunas e campos calculados nos conjuntos subjacentes. Portanto, é importante que você (ou o proprietário do conjunto de dados) nomei as coisas!
+As P e R procuram respostas em todos os conjuntos de dados associados ao dashboard. Se um conjunto de dados tiver um bloco no dashboard, as P e R buscarão as respostas no conjunto de dados. 
 
-Por exemplo, suponha que você tenha uma tabela do Excel como o nome de "Vendas", com colunas intituladas "Produto", "Mês", "Unidades vendidas", "Vendas brutas" e "Lucro". Você pode fazer perguntas sobre qualquer uma dessas entidades.  Você poderia perguntar “mostrar as *vendas* ”, “*lucro* total por *mês* ”, “classificar *produtos* por *unidades vendidas* ” e muito mais.
+## <a name="how-do-i-start"></a>Por onde começo?
+Primeiro, familiarize-se com o conteúdo. Veja as visualizações no dashboard e no relatório. Tenha uma ideia do tipo e do intervalo de dados que estão disponíveis para você. Depois, volte para o dashboard e coloque o cursor na caixa de perguntas. Isso abrirá a tela de P e R.
 
-Q & R pode responder a perguntas com base em como o conjunto de dados é organizado. Como isso funciona para dados de vendas? Quando você se conectar à sua conta do salesforce.com, o Power BI gera automaticamente um painel de controle.  Antes de começar a fazer perguntas com o P e R, dê uma olhada em dados exibidos nas visualizações do painel de controle e também os dados exibidos no menu suspenso de perguntas e respostas.
+![Tela de P e R](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
 * Se os valores e os rótulos do eixo de visualizações incluírem “vendas”, “conta”, “mês” e “oportunidades”, será possível fazer perguntas como: “qual *conta* tem a *oportunidade* mais alta?” ou “mostrar *vendas* por mês como um gráfico de barras”.
-* Se a lista suspensa inclui "vendedor", "estado" e "ano", você poderá fazer perguntas como: "qual *vendedor* teve as vendas mais *baixas* na *Flórida* em *2013*."
 
-Se você tiver dados de desempenho do site na análise do Google, você pode perguntar ao P e R sobre o tempo gasto em uma página da Web, o número de visitas à página exclusivo e taxas de envolvimento do usuário. Ou, se você estiver consultando dados demográficos, você pode fazer perguntas sobre idade e renda doméstica por local.
+* Se você tiver dados de desempenho do site do Google Analytics, poderá perguntar às P e R sobre o tempo gasto em uma página da Web, o número de visitas únicas à página e as taxas de participação do usuário. Ou, se você estiver consultando dados demográficos, você pode fazer perguntas sobre idade e renda doméstica por local.
+
+Na parte inferior da tela, você verá outros itens úteis. Para cada conjunto de dados, as P e R mostram as palavras-chave e, às vezes, até mesmo alguns exemplos ou sugestões de perguntas. Selecione qualquer um desses para adicioná-los à caixa de perguntas. 
+
+Outra maneira que as P e R ajudam você a fazer perguntas é com prompts, preenchimento automático e dicas visuais. 
+
+![vídeo](media/end-user-q-and-a/qa.gif) 
+
 
 ### <a name="which-visualization-does-qa-use"></a>Qual visualização que faz perguntas e um uso?
 Perguntas e respostas escolhe a melhor visualização com base nos dados que estão sendo exibidos. Às vezes, os dados no conjunto de dados subjacente são definidos como um determinado tipo ou categoria e isso ajuda a P e R saber como exibi-los. Por exemplo, se os dados são definidos como um tipo de data, é mais provável que sejam exibidos como um gráfico de linhas. Dados que são categorizados como uma cidade são mais prováveis de ser exibidos como um mapa.
 
-Você também pode informar ao P e R a visualização que será usada, adicioná-la à sua pergunta. Mas tenha em mente que não será sempre possível exibir os dados no tipo de visualização que você solicitou.
+Você também pode informar ao P e R a visualização que será usada, adicioná-la à sua pergunta. Mas tenha em mente que não será sempre possível exibir os dados no tipo de visualização que você solicitou. As P e R mostrarão a você uma lista de tipos de visualização viáveis.
 
-Para obter informações sobre as palavras-chave reconhecidas pela P e R, confira [Dicas para fazer perguntas](end-user-q-and-a-tips.md).
+## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
+**Pergunta**: eu não vejo as P e R neste dashboard.    
+**Resposta 1**: se você não vir uma caixa de pergunta, verifique primeiro suas configurações. Para fazer isso, selecione o ícone de engrenagem no canto superior direito da barra de ferramentas do Power BI.   
+![ícone de engrenagem](media/end-user-q-and-a/power-bi-settings.png)
+
+Em seguida, escolha **Configurações** > **Dashboards**. Verifique se há uma marca de seleção ao lado de **Mostrar a caixa de pesquisa de P e R neste dashboard**.
+![Configurações de P e R para dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-## <a name="for-more-details-about-power-bi-qa"></a>Para obter mais detalhes sobre P e R do Power BI
-[Visão geral: como usar a P e R em relatórios e dashboards do Power BI](../power-bi-tutorial-q-and-a.md): instruções passo a passo para usar a P e R e uma visão geral de como tudo funciona.
+**Resposta 2**: pode ser o caso do *designer* do dashboard ou o administrador terem desativado as P e R. Verifique com eles se elas poderão ser reativadas.   
 
-[Aplicativo móvel do Microsoft Power BI](mobile/mobile-apps-ios-qna.md) para iOS em dispositivos iPod Touch, iPhones e iPads.
+**Pergunta**: não estou obtendo os resultados que gostaria de ver ao digitar uma pergunta.    
+**Resposta**: entre em contato com o *designer* do dashboard. Há muitas coisas que o designer pode fazer para melhorar os resultados de P e R. Por exemplo, o designer pode renomear as colunas no conjunto de dados usando termos que são facilmente compreendidos (`CustomerFirstName` em vez de `CustFN`). Já que o designer conhece muito bem o conjunto de dados, ele também pode elaborar perguntas úteis e adicioná-los à tela de P e R.
 
-[Microsoft Power BI Embedded](../developer/qanda.md) Incorporar P e R em um aplicativo.
+![pergunta em destaque contornada](media/end-user-q-and-a/power-bi-featured-q.png)
 
-[Dicas para fazer perguntas no P e R](end-user-q-and-a-tips.md): saiba como se comunicar com o P e R para obter os melhores resultados possíveis.
+## <a name="next-steps"></a>Próximas etapas
 
-[Adicione perguntas em destaque aos conjuntos de dados](../service-q-and-a-create-featured-questions.md) e P e R sugerirá essas perguntas para seus colegas.
-
-[Habilitar P e R para seus conjuntos de dados locais](end-user-q-and-a-direct-query.md) Se você precisar que um gateway se conecte ao conjunto de dados, use as configurações do Power BI para ativar e desativar P e R.
-
-[Tutorial: usar a P e R do Power BI com o exemplo de Vendas de Varejo no serviço do Power BI](../power-bi-visualization-introduction-to-q-and-a.md): use a P e R em um tutorial realístico do setor.
-
-[Faça seus dados funcionarem bem com o P e R](../service-prepare-data-for-q-and-a.md): você é a pessoa que cria conjuntos de dados e modelos de dados?  Então este tópico é para você.
-
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

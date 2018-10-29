@@ -194,9 +194,9 @@ items:
       items:
       - name: Categorização de dados no Power BI Desktop
         href: desktop-data-categorization.md
-      - name: Marque um campo do código de barras no Power BI Desktop para os aplicativos móveis do Power BI
+      - name: Marcar um campo de código de barras para os aplicativos móveis
         href: desktop-mobile-barcodes.md
-      - name: Defina filtragem geográfica no Power BI Desktop para os aplicativos móveis do Power BI
+      - name: Definir a filtragem geográfica para os aplicativos móveis
         href: desktop-mobile-geofiltering.md
       - name: Colunas calculadas no Power BI Desktop
         href: desktop-calculated-columns.md
@@ -204,6 +204,8 @@ items:
         href: desktop-calculated-tables.md
       - name: Medidas no Power BI Desktop
         href: desktop-measures.md
+      - name: Editar esquema linguístico de P e R
+        href: power-bi-q-and-a-linguistic-schema.md
       - name: Importar e exibir os KPIs (Visualização)
         href: desktop-import-and-display-kpis.md
     - name: Criar relatórios
@@ -496,8 +498,6 @@ items:
         href: service-connect-to-prevedere.md
       - name: Projeto Online
         href: service-connect-to-project-online.md
-      - name: Project Madeira
-        href: service-connect-to-project-madeira.md
       - name: Projectplace
         href: service-connect-to-projectplace.md
       - name: QuickBooks Online
@@ -572,6 +572,8 @@ items:
         href: sql-server-analysis-services-tabular-data.md
       - name: Azure e Power BI
         href: service-azure-and-power-bi.md
+      - name: Saída do Power BI e do Azure
+        href: service-azure-egress-power-bi.md
     - name: Atualização de dados
       items:
       - name: Configurar a atualização agendada
@@ -632,19 +634,19 @@ items:
       items:
       - name: Crie um novo relatório por meio de um relatório existente
         href: power-bi-report-copy.md
-      - name: Filtre uma página em um relatório do Power BI
+      - name: Adicionar uma página a um relatório
         href: power-bi-report-add-page.md
-      - name: Adicionar um filtro a um relatório no Power BI
+      - name: Adicionar um filtro a um relatório
         href: power-bi-report-add-filter.md
       - name: Salve um relatório no Power BI
         href: service-report-save.md
       - name: Criar um novo relatório por meio de um conjunto de dados
         href: service-report-create-new.md
-      - name: Interagir com um relatório na Exibição de Edição no Power BI
+      - name: Interagir com um relatório no Modo de Exibição de Edição
         href: service-interact-with-a-report-in-editing-view.md
       - name: Analisar no Excel
         href: service-analyze-in-excel.md
-      - name: Dicas e truques para criar relatórios no serviço do Power BI
+      - name: Dicas e truques para criar relatórios
         href: power-bi-reports-tips-and-tricks-for-creating.md
       - name: Painel de análise
         href: service-analytics-pane.md
@@ -652,32 +654,32 @@ items:
         href: service-usage-metrics.md
       - name: Criar um código QR para um relatório
         href: service-create-qr-code-for-report.md
-      - name: Reorganize as páginas em um relatório no Power BI
+      - name: Reordenar páginas em um relatório
         href: service-report-reorder-pages.md
-      - name: Duplicar uma página de relatório no Power BI
+      - name: Duplicar uma página de relatório
         href: power-bi-report-copy-paste-page.md
-      - name: Exportar um relatório do serviço do Power BI para o Desktop (visualização)
+      - name: Exportar um relatório do serviço para o Power BI Desktop (versão prévia)
         href: service-export-to-pbix.md
-      - name: Filtrar relatórios usando parâmetros da cadeia de caracteres de consulta na URL
+      - name: Filtrar um relatório usando parâmetros na URL
         href: service-url-filters.md
-      - name: Melhores práticas para a criação de relatórios rápidos e confiáveis no Power BI
+      - name: Melhores práticas para a criação de relatórios rápidos e confiáveis
         href: power-bi-reports-performance.md
-      - name: Interagir com mapas do ArcGIS no Power BI
+      - name: Interagir com ArcGIS maps
         href: visuals/power-bi-visualizations-arcgis.md
     - name: Fazer perguntas sobre seus dados
       items:
       - name: Usar P e R para criar visualizações e relatórios
         href: power-bi-tutorial-q-and-a.md
-      - name: Faça seus dados funcionarem bem com P e R no Power BI
+      - name: Fazer seus dados funcionarem bem com as P e R
         href: service-prepare-data-for-q-and-a.md
       - name: Habilitar o Cortana para o Power BI
         href: service-cortana-enable.md
-      - name: Criar perguntas em destaque para as P e R do Power BI
+      - name: Criar perguntas em destaque para as P e R
         href: service-q-and-a-create-featured-questions.md
       - name: Tipos de visualização no Power BI
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-      - name: Trabalhar com o esquema linguístico no Power BI Desktop
-        href: power-bi-q-and-a-linguistic-schema.md
+      - name: Usar as P e R com conexões dinâmicas
+        href: service-q-and-a-direct-query.md
     - name: Compartilhar seu trabalho
       items:
       - name: Como devo colaborar e compartilhar?
@@ -686,8 +688,6 @@ items:
         href: service-share-dashboards.md
       - name: Criar e compartilhar aplicativos
         href: service-create-distribute-apps.md
-      - name: Instalar e usar aplicativos
-        href: service-install-use-apps.md
       - name: Criar workspaces do aplicativo
         href: service-create-workspaces.md
       - name: Criar os novos workspaces (visualização)
@@ -790,7 +790,7 @@ items:
         href: developer/embed-sample-for-customers.md
       - name: Inserir o conteúdo para sua organização
         href: developer/embed-sample-for-your-organization.md
-      - name: Integrar conteúdo ao seu aplicativo para nuvens soberanas
+      - name: Inserir o conteúdo para nuvens soberanas
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Conceitos
       items:
@@ -1096,8 +1096,14 @@ items:
       href: service-gateway-enterprise-manage-scheduled-refresh.md
     - name: Mesclar fontes de dados locais e em nuvem
       href: service-gateway-mashup-on-premises-cloud.md
-    - name: Usar o Kerberos para logon único (SSO)
-      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
+    - name: Habilitar o logon único (SSO)
+      items:
+      - name: Logon único (SSO) – visão geral
+        href: service-gateway-sso-overview.md
+      - name: Logon único (SSO) – Kerberos
+        href: service-gateway-sso-kerberos.md
+      - name: Logon único (SSO) – SAML
+        href: service-gateway-sso-saml.md
     - name: Definindo as configurações de proxy
       href: service-gateway-proxy.md
     - name: Clusters de alta disponibilidade para gateway de dados locais
@@ -1130,7 +1136,7 @@ items:
         href: service-admin-premium-purchase.md
       - name: Gerenciar o Power BI Premium
         href: service-admin-premium-manage.md
-      - name: Relatório de capacidade de monitoramento do Power BI Premium
+      - name: Monitorar o Power BI Premium
         href: service-admin-premium-monitor-capacity.md
       - name: Suporte para grandes conjuntos de dados
         href: service-premium-large-datasets.md
@@ -1140,8 +1146,6 @@ items:
         href: service-admin-premium-multi-geo.md
       - name: Perguntas Frequentes do Power BI Premium
         href: service-premium-faq.md
-      - name: Notas de liberação do Power BI Premium
-        href: service-premium-release-notes.md
     - name: Função de administração no Office 365
       href: service-admin-role.md
     - name: Perguntas frequentes
@@ -1187,6 +1191,8 @@ items:
     - name: Cmdlets do Power BI para o PowerShell
       href: https://docs.microsoft.com/en-us/powershell/power-bi/
       maintainContext: true
+    - name: Referência de URL do serviço
+      href: power-bi-whitelist-urls.md
   - name: Recursos
     items:
     - name: Abordagens de implantação e governança do Power BI
@@ -1195,9 +1201,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: O Power BI para Office 365 foi transferido para o Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: 54eee0bb21c66fee9b2daf377140e016eee076a0
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 513c5a62b5436d157b1b22fbf1f06735a589dd3b
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49337003"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003054"

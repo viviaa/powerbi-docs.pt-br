@@ -8,19 +8,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/02/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112143"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473855"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Guia de Início Rápido – Explorando o serviço do Power BI
 
-Agora que você conhece os conceitos básicos do Power BI, vamos dar uma olhada no **serviço do Power BI**. Como já mencionado, alguém da sua equipe pode ficar o tempo todo no **Power BI Desktop**, combinando dados e criando relatórios para outras pessoas. Mas você, por outro lado, pode ficar o tempo todo no serviço do Power BI, exibindo e interagindo com o conteúdo criado por outras pessoas (experiência de **consumo**) ou obtendo dados e criando seus próprios relatórios e dashboards (experiência de **criação**). Neste guia de início rápido você importará dados de exemplo e os usará para aprender a explorar o serviço do Power BI. 
+Agora que você conhece os conceitos básicos do Power BI, vamos dar uma olhada no **serviço do Power BI**. Como já mencionado, alguém da sua equipe pode ficar o tempo todo no **Power BI Desktop**, combinando dados e criando relatórios para outras pessoas. Mas, por outro lado, você pode gastar todo o seu tempo no serviço do Power BI, exibindo e interagindo com o conteúdo criado por outros (**consumindo** experiência). Neste guia de início rápido você importará dados de exemplo e os usará para aprender a explorar o serviço do Power BI. 
  
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -47,18 +47,20 @@ Acompanhe Amanda em um tour sobre a experiência de navegação de serviço do P
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
-## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Exibir conteúdo (dashboards, relatórios, pastas de trabalho, conjuntos de dados, espaços de trabalho, aplicativos)
-Vamos começar observando como o conteúdo básico (dashboards, relatórios, conjuntos de dados e pastas de trabalho) está organizado. O conteúdo é exibido dentro do contexto de um espaço de trabalho. Neste ponto, há apenas um espaço de trabalho e ele se chama **Meu Espaço de Trabalho**. Meu Espaço de Trabalho armazena todo o conteúdo que você tem. Pense nele como sua área restrita pessoal ou como área de trabalho para seu próprio conteúdo. Você pode compartilhar o conteúdo do Meu Espaço de Trabalho com seus colegas. No Meu Espaço de Trabalho, seu conteúdo é organizado em 4 guias: Dashboards, Relatórios, Pastas de trabalho e Conjuntos de dados.
+## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Exibir conteúdo (dashboards, relatórios, pastas de trabalho, conjuntos de dados, workspaces, aplicativos)
+Vamos começar observando como o conteúdo básico (dashboards, relatórios, conjuntos de dados e pastas de trabalho) está organizado. O conteúdo é exibido dentro do contexto de um workspace. Neste ponto, há apenas um workspace e ele se chama **Meu Workspace**. Normalmente, os consumidores não precisamos nem usam outros workspaces. Meu Workspace armazena todo o conteúdo que você tem. Pense nele como sua área restrita pessoal ou como área de trabalho para seu próprio conteúdo. Meu workspace é o local em que a amostra de Análise de Varejo que você acaba de baixar é salva. 
 
-![Tela Meu espaço de trabalho](./media/end-user-experience/power-bi-my-workspace2.png)
+No Meu Workspace, seu conteúdo é organizado em 4 guias: Dashboards, Relatórios, Pastas de trabalho e Conjuntos de dados.
 
-Selecione um espaço de trabalho no painel de navegação à esquerda (painel nav. esq.) e as guias do conteúdo associado (painéis, relatórios, pastas de trabalho e conjuntos de dados) preencherão a tela do Power BI à direita.
+![Tela Meu workspace](./media/end-user-experience/power-bi-my-workspace.png)
 
-Se você for um novo usuário, haverá somente um espaço de trabalho – **Meu Espaço de Trabalho**.
+Selecione um workspace no painel de navegação à esquerda (painel nav. esq.) e as guias do conteúdo associado (painéis, relatórios, pastas de trabalho e conjuntos de dados) preencherão a tela do Power BI à direita.
 
-![vídeo curto do espaço de trabalho](./media/end-user-experience/nav.gif)
+Se você for um novo usuário, haverá somente um workspace – **Meu Workspace**.
 
-Dentro dessas guias (também conhecidas como *exibições de conteúdo*), você verá informações sobre o conteúdo, bem como as ações que podem ser executadas com esse conteúdo.  Por exemplo, na guia Dashboards você pode abrir um dashboard, compartilhar, excluir, pesquisar, criar um novo conteúdo, classificar e muito mais.
+![vídeo curto do workspace](./media/end-user-experience/nav.gif)
+
+Dentro dessas guias (também conhecidas como *exibições de conteúdo*), você verá informações sobre o conteúdo, bem como as ações que podem ser executadas com esse conteúdo.  Por exemplo, na guia Dashboards, você pode abrir um dashboard, pesquisar, classificar e muito mais.
 
 ![Guia Dashboards](./media/end-user-experience/power-bi-dashboard-tab.png)
 
@@ -83,7 +85,7 @@ Os **Favoritos** permitem acessar rapidamente o conteúdo que é mais importante
    
     Há somente um favorito até o momento. Os favoritos podem ser dashboards, relatórios ou aplicativos.  
 
-1. Outra maneira de marcar um painel ou um relatório como favorito é da guia do espaço de trabalho **Painéis** ou **Relatórios**.  Abra a guia **Relatórios** e selecione o ícone de estrela à esquerda do nome do relatório.
+1. Outra maneira de marcar um dashboard ou um relatório como favorito é da guia de exibição de conteúdo **Dashboards** ou **Relatórios**.  Abra a guia **Relatórios** e selecione o ícone de estrela à esquerda do nome do relatório.
    
    ![marcar como favorito](./media/end-user-experience/power-bi-report-favorite.png)
 
@@ -108,7 +110,7 @@ Para saber mais, consulte [Favoritos](end-user-favorite.md)
 
     No submenu, selecione o conteúdo a ser aberto.
 
-2. Às vezes, você não deseja abrir o conteúdo recente, mas deseja exibir informações ou executar outras ações, como compartilhar, executar o Insights ou exportar para o Excel. Em casos como esses, abra o painel **Recentes** selecionando **Recente** ou seu ícone no painel de navegação esquerdo. Se você tiver mais de um espaço de trabalho, essa lista incluirá o conteúdo de todos os seus espaços de trabalho.
+2. Às vezes, você não deseja simplesmente abrir o conteúdo recente, mas deseja exibir informações ou executar outras ações, como exibir Insights ou exportar para o Excel. Em casos como esses, abra o painel **Recentes** selecionando **Recente** ou seu ícone no painel de navegação esquerdo. Se você tiver mais de um workspace, essa lista incluirá o conteúdo de todos os seus workspaces.
 
    ![painel Recentes](./media/end-user-experience/power-bi-recent.png)
 
@@ -119,19 +121,21 @@ A exibição de conteúdo torna mais fácil pesquisar, filtrar e classificar seu
 
 Como há apenas uma amostra, não é necessário pesquisar e classificar.  Mas quando houver listas longas de dashboards, relatórios, pastas de trabalho e conjuntos de dados, a pesquisa e a classificação serão extremamente úteis.
 
-![pesquisar um dashboard](./media/end-user-experience/power-bi-search-sort.png)
+![pesquisar um relatório](./media/end-user-experience/power-bi-search.png)
 
-Você também pode classificar o conteúdo por nome ou por proprietário.  
+Você também pode classificar o conteúdo por nome ou por proprietário. Observe a seta para cima à direita de **Nome**. No momento, estamos classificando 83 itens em ordem alfabética por nome, em ordem crescente. Para alterar a ordem de classificação para decrescente, selecione **Nome**. A seta para cima muda para uma seta para baixo.
 
-![classificar conteúdo](./media/end-user-experience/power-bi-sort.png)
+![classificar conteúdo](./media/end-user-experience/power-bi-sort-new.png)
 
-Para saber mais, consulte [Navegação do Power BI: pesquisar, classificar e filtrar](end-user-search-sort.md)
+Nem todas as colunas podem ser classificadas. Passe o mouse sobre os cabeçalhos de coluna para descobrir quais podem ser classificados.
+
+Para saber mais, confira [Navegação do Power BI: pesquisar e classificar](end-user-search-sort.md)
 
 ## <a name="clean-up-resources"></a>Limpar recursos
 Depois de concluir este início rápido, você poderá excluir o dashboard, o relatório e o conjunto de dados de exemplo de Análise de Varejo, se desejar.
 
 1. Abra o serviço do Power BI (app.powerbi.com) e entre.    
-2. No painel de navegação esquerdo, selecione **Espaços de Trabalho > Meu Espaço de Trabalho**.  
+2. No painel de navegação esquerdo, selecione **Workspaces &gt; Meu Workspace**.  
     Está vendo a estrela amarela indicando que é um favorito?    
 3. Na guia **Dashboards**, selecione o ícone de lata de lixo para **Excluir** ao lado do dashboard Análise de Varejo.    
 
@@ -143,4 +147,4 @@ Depois de concluir este início rápido, você poderá excluir o dashboard, o re
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Modo de Exibição de Leitura e Modo de Exibição de Edição no serviço do Power BI](end-user-reading-view.md)
+> [Exibição de leitura no serviço do Power BI](end-user-reading-view.md)

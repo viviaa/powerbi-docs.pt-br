@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
-ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827446"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396855"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutorial: Inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para sua organização
 
@@ -100,19 +100,19 @@ Você deve habilitar permissões para seu aplicativo além do que é fornecido n
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurar seu ambiente do Power BI
 
-### <a name="create-an-app-workspace"></a>Criar um espaço de trabalho de aplicativo
+### <a name="create-an-app-workspace"></a>Criar um workspace de aplicativo
 
 Se você estiver inserindo relatórios, dashboards ou blocos para seus clientes, precisará colocar o conteúdo dentro de um workspace do aplicativo:
 
-1. Comece criando o espaço de trabalho. Selecione **Espaços de trabalho** > **Criar espaço de trabalho do aplicativo**. Esse é o workspace em que você coloca o conteúdo que seu aplicativo precisa acessar.
+1. Comece criando o workspace. Selecione **Workspaces** > **Criar workspace do aplicativo**. Esse é o workspace em que você coloca o conteúdo que seu aplicativo precisa acessar.
 
     ![Criar um workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-020.png)
 
-2. Nomeie o espaço de trabalho. Se a **ID do Espaço de Trabalho** correspondente não estiver disponível, edite-a para criar uma ID exclusiva. Esse nome também precisa ser o nome do aplicativo.
+2. Nomeie o workspace. Se a **ID do Workspace** correspondente não estiver disponível, edite-a para criar uma ID exclusiva. Esse nome também precisa ser o nome do aplicativo.
 
     ![Dar um nome a um workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-021.png)
 
-3. Você tem algumas opções para definir. Se você escolher **Público**, qualquer pessoa na sua organização poderá ver o que está no espaço de trabalho. **Privado** significa que somente os membros do workspace podem ver o conteúdo.
+3. Você tem algumas opções para definir. Se você escolher **Público**, qualquer pessoa na sua organização poderá ver o que está no workspace. **Privado** significa que somente os membros do workspace podem ver o conteúdo.
 
     ![Escolher Privado ou Público](media/embed-sample-for-your-organization/embed-sample-for-your-organization-022.png)
 
@@ -124,11 +124,11 @@ Se você estiver inserindo relatórios, dashboards ou blocos para seus clientes,
 
 5. Adicione os endereços de email das pessoas que você deseja que tenham acesso ao workspace e selecione **Adicionar**. Você não pode adicionar aliases de grupos, apenas indivíduos.
 
-6. Decida se cada pessoa será um membro ou um administrador. Os administradores podem editar o espaço de trabalho, incluindo a adição de outros membros. Os membros podem editar o conteúdo no espaço de trabalho, a menos que tenham acesso somente exibição. Os membros e os administradores podem publicar o aplicativo.
+6. Decida se cada pessoa será um membro ou um administrador. Os administradores podem editar o workspace, incluindo a adição de outros membros. Os membros podem editar o conteúdo no workspace, a menos que tenham acesso somente exibição. Os membros e os administradores podem publicar o aplicativo.
 
-    Agora, você pode exibir o novo espaço de trabalho. O Power BI cria o espaço de trabalho e o abre. Ele aparece na lista de workspaces dos quais você é membro. Como você é um administrador, você pode selecionar as reticências (...) para voltar e fazer alterações, adicionar novos membros ou alterar as permissões deles.
+    Agora, você pode exibir o novo workspace. O Power BI cria o workspace e o abre. Ele aparece na lista de workspaces dos quais você é membro. Como você é um administrador, você pode selecionar as reticências (...) para voltar e fazer alterações, adicionar novos membros ou alterar as permissões deles.
 
-    ![Criar espaço de trabalho do aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
+    ![Criar workspace do aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
 
 ### <a name="create-and-publish-your-reports"></a>Crie e publique seus relatórios
 
@@ -158,13 +158,13 @@ Para inserir seu conteúdo usando um aplicativo de exemplo, siga estas etapas:
 
     ![Amostra do aplicativo User Owns Data](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Abra o arquivo **Cloud.config** no aplicativo de exemplo. Há alguns campos que você precisa preencher para executar o aplicativo com êxito: **ClientID** e **ClientSecret**.
+2. Abra o arquivo **Cloud.config** no aplicativo de exemplo. Há alguns campos que você precisa preencher para executar o aplicativo com êxito: **ApplicationID** e **ApplicationSecret**.
 
     ![Cloud.config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Preencha a informação de **ClientID** com a **ID do Aplicativo** do Azure. A **ClientID** é usada pelo aplicativo para identificar-se aos usuários dos quais você está solicitando permissões.
+    Preencha as informações de **ApplicationID** com a **ID do Aplicativo** do Azure. A **ApplicationID** é usada pelo aplicativo para identificar-se aos usuários dos quais você está solicitando permissões.
 
-    Para obter a **ClientID**, siga estas etapas:
+    Para obter a **ApplicationID**, siga estas etapas:
 
     1. Entre no [portal do Azure](https://portal.azure.com).
 
@@ -174,17 +174,17 @@ Para inserir seu conteúdo usando um aplicativo de exemplo, siga estas etapas:
 
         ![Pesquisa de registro de aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Selecione o aplicativo que precisa usar a **ClientID**.
+    1. Selecione o aplicativo que precisa usar a **ApplicationID**.
 
         ![Escolha um aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Você deve ver uma **ID do Aplicativo** listada como GUID. Use essa **ID do aplicativo** como a **ClientID** do aplicativo.
+    1. Você deve ver uma **ID do Aplicativo** listada como GUID. Use essa **ID do aplicativo** como a **ApplicationID** do aplicativo.
 
-        ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Preencha a informação de **ClientSecret** da seção **Chaves**, na seção **Registros do aplicativo** no **Azure**.
+    1. Preencha as informações de **ApplicationSecret** da seção **Chaves** na seção **Registros de aplicativo** no **Azure**.
 
-    1. Para obter o **ClientSecret**, siga estas etapas:
+    1. Para obter o **ApplicationSecret**, siga estas etapas:
 
         1. Entre no [portal do Azure](https://portal.azure.com).
 
@@ -194,7 +194,7 @@ Para inserir seu conteúdo usando um aplicativo de exemplo, siga estas etapas:
 
             ![Pesquisa de registro de aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Selecione o aplicativo que precisa usar o **ClientSecret**.
+        1. Selecione o aplicativo que precisa usar o **ApplicationSecret**.
 
             ![Escolha um aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
@@ -424,7 +424,7 @@ Agora que você terminou o desenvolvimento do seu aplicativo, é hora de conferi
 
 ### <a name="create-a-dedicated-capacity"></a>Criar uma capacidade dedicada
 
-Ao criar uma capacidade dedicada, você pode usufruir de um recurso dedicado ao conteúdo no espaço de trabalho do aplicativo. Você pode criar uma capacidade dedicada usando o [Power BI Premium](../service-premium.md).
+Ao criar uma capacidade dedicada, você pode usufruir de um recurso dedicado ao conteúdo no workspace do aplicativo. Você pode criar uma capacidade dedicada usando o [Power BI Premium](../service-premium.md).
 
 A tabela a seguir lista os SKUs do Power BI Premium disponíveis no [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -443,11 +443,11 @@ A tabela a seguir lista os SKUs do Power BI Premium disponíveis no [Microsoft O
 > - Quando você está tentando inserir com aplicativos do Microsoft Office, pode usar SKUs de EM para acessar o conteúdo com uma licença gratuita do Power BI. Mas você não pode acessar o conteúdo com uma licença gratuita do Power BI quando você estiver usando o Powerbi.com ou o Power BI Mobile.
 > - Quando você está tentando inserir com aplicativos do Microsoft Office usando o Powerbi.com ou o Power BI Mobile, pode acessar o conteúdo com uma licença gratuita do Power BI.
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Atribua um espaço de trabalho de aplicativo a uma capacidade dedicada
+### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Atribua um workspace de aplicativo a uma capacidade dedicada
 
 Depois de criar uma capacidade dedicada, você pode atribuir o workspace do aplicativo a uma capacidade dedicada. Para concluir este processo, siga estas etapas:
 
-1. No serviço do Power BI, expanda os workspaces e selecione as reticências do workspace que você está usando para inserir seu conteúdo. Depois, selecione **Editar espaços de trabalho**.
+1. No serviço do Power BI, expanda os workspaces e selecione as reticências do workspace que você está usando para inserir seu conteúdo. Depois, selecione **Editar workspaces**.
 
     ![Editar um workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
 

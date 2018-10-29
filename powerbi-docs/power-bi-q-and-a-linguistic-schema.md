@@ -1,5 +1,5 @@
 ---
-title: Editando o esquema linguístico de P e R e adicionando frases
+title: Editar o esquema linguístico de P e R e adicionar frases – Power BI
 description: Como usar o Power BI Desktop para editar o esquema linguístico usado por P e R do Power BI.
 author: willthom
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 10/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 08a65e7d312b0f57ec2824431bd00456c06860be
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5d57ab76b97ea6b810169710553597e2e8a5d55f
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945194"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435409"
 ---
-# <a name="language-modeling-and-the-linguistic-schema"></a>Modelagem de linguagem e o esquema linguístico 
+# <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Editar o esquema linguístico de P e R e adicionar frases no Power BI Desktop 
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no Power BI Desktop permite que você faça. Quando você faz uma pergunta para P e R do Power BI, ele se esforça para responder corretamente. 
 
 Mas para melhorar ainda mais as interações de P e R, há maneiras de melhorar as respostas e uma delas é editar o esquema linguístico. 
@@ -27,11 +27,11 @@ Tudo começa com os dados empresariais.  Quanto melhor for o modelo de dados, 
 ## <a name="what-is-a-linguistic-schema"></a>O que é um esquema linguístico
 Um esquema linguístico descreve os termos e as frases que as P e R devem compreender para os objetos dentro de um conjunto de dados, incluindo classes gramaticais, sinônimos e frases em relação a esse conjunto de dados. Quando você importa um conjunto de dados ou se conectar a ele, o Power BI cria um esquema linguístico com base na estrutura do conjunto de dados. Quando você faz uma pergunta às P e R, elas buscam correspondências e relações nos dados para descobrir a intenção da pergunta. Por exemplo, elas procuram substantivos, verbos, adjetivos, frases e outros elementos. E elas também procuram relações, como quais colunas são objetos de um verbo. 
 
-Provavelmente você já conhece as classes gramaticais (caso contrário, veja abaixo), mas as frases podem ser um termo novo para você.  Uma frase é a maneira em que você fala (ou "fraseia") sobre as relações entre as coisas. Por exemplo, para descrever a relação entre produtos e clientes, você pode dizer "os clientes compram produtos". Ou para descrever a relação entre os clientes e as idades, você pode dizer "as idades indicam quantos anos os clientes têm". Ou, para descrever a relação entre os clientes e os números de telefone, você pode simplesmente dizer "os clientes têm números de telefone".
+Provavelmente você já conhece as classes gramaticais (caso contrário, confira abaixo), mas as frases podem ser um termo novo para você.  Uma frase é a maneira em que você fala (ou "fraseia") sobre as relações entre as coisas. Por exemplo, para descrever a relação entre produtos e clientes, você pode dizer "os clientes compram produtos". Ou para descrever a relação entre os clientes e as idades, você pode dizer "as idades indicam quantos anos os clientes têm". Ou, para descrever a relação entre os clientes e os números de telefone, você pode simplesmente dizer "os clientes têm números de telefone".
 
 Essas frases podem ter uma variedade de formas e tamanhos. Algumas correspondem diretamente às relações no modelo de dados. Algumas relacionam colunas com as tabelas que as contêm. Outras relacionam várias tabelas e colunas em relações complexas. Em todos os casos, elas descrevem como os elementos são relacionados, usando termos comuns.
 
-Os esquemas linguísticos são salvos no formato YAML. Esse formato está relacionado ao formato JSON muito popular, mas oferece uma sintaxe mais flexível e mais fácil de ler. Os esquemas linguísticos podem ser editados, exportados e importados para o Power BI Desktop.
+Os esquemas linguísticos são salvos no formato YAML. Esse formato está relacionado ao renomado formato JSON, mas oferece uma sintaxe mais flexível e mais fácil de ler. Os esquemas linguísticos podem ser editados, exportados e importados para o Power BI Desktop.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - Se você ainda não leu o artigo em [melhorando seu modelo de dados para P e R](desktop-qna-in-reports.md), talvez convenha lê-lo primeiro. Ele inclui diversas dicas para projetar e melhorar seu modelo de dados e uma seção importante sobre como adicionar sinônimos.  
@@ -62,23 +62,23 @@ Os esquemas linguísticos são salvos no formato YAML. Esse formato está relaci
 
 
 ## <a name="working-with-linguistic-schemas"></a>Trabalhando com esquemas linguísticos
-Os esquemas linguísticos podem ser editados, importados e exportados na [Exibição de relação](desktop-relationship-view.md) no Power BI Desktop. Uma maneira de editar um esquema linguístico é [adicionar sinônimos ao painel **Sinônimos**](desktop-qna-in-reports.md). Isso não envolve abrir o arquivo YAML.
+Os esquemas linguísticos podem ser editados, importados e exportados na [Exibição de relação](desktop-relationship-view.md) no Power BI Desktop. Uma maneira de editar um esquema linguístico é [adicionar sinônimos ao painel **Sinônimos**](desktop-qna-in-reports.md). Você não precisa abrir o arquivo YAML.
 
 ![Painel Sinônimos](media/power-bi-q-and-a-linguistic-schema/power-bi-synonyms-pane.png)
 
 
- A outra maneira de editar um esquema linguístico é exportar e editar o arquivo YAML diretamente.  Ao editar um arquivo YAML de esquema linguístico, você marca colunas na tabela como diferentes elementos gramaticais e define as palavras que algum colega poderá usar para preparar uma pergunta. Por exemplo, você indica as colunas que são o sujeito e o objeto do verbo e adiciona palavras alternativas que seus colegas poderão usar para se referirem às tabelas, colunas e medidas no modelo. 
+ A outra maneira de editar um esquema linguístico é exportar e editar o arquivo YAML diretamente.  Ao editar um arquivo YAML de esquema linguístico, você marca colunas na tabela como diferentes elementos gramaticais e define as palavras que algum colega poderá usar para enunciar uma pergunta. Por exemplo, você poderia declarar as colunas que são o sujeito e o objeto do verbo. Adicione palavras alternativas que seus colegas podem usar para se referir a tabelas, colunas e medidas no seu modelo. 
 
 ![arquivo yaml de esquema linguístico de exemplo](media/power-bi-q-and-a-linguistic-schema/power-bi-linguistic-schema.png)
 
-Para editar um esquema linguístico, você precisará abri-lo (exportá-lo) do Desktop. Quando você salvar o arquivo YAML novamente no mesmo local, isso será considerado uma importação.  Mas também será possível importar outros arquivos YAML,  se, por exemplo, você tiver um conjunto de dados semelhante e já tiver trabalhando bastante adicionando uma grande quantidade de classes gramaticais, identificando relações, criando frases e criando sinônimos. 
+Para editar um esquema linguístico, você precisará abri-lo (exportá-lo) do Power BI Desktop. Salvar o arquivo YAML novamente no mesmo local é considerado uma importação.  Mas também será possível importar outros arquivos YAML,  se, por exemplo, você tiver um conjunto de dados semelhante e já tiver trabalhando bastante adicionando uma grande quantidade de classes gramaticais, identificando relações, criando frases e criando sinônimos. 
 
 As P e R usam todas essas informações em conjunto com todos os aprimoramentos feitos por você para melhorar as respostas, o preenchimento automático e o resumo das perguntas.
 
 
 
 ## <a name="edit-a-linguistic-schema"></a>Editar um esquema linguístico
-Quando você exporta o esquema linguístico do Desktop primeiro, a maior parte do conteúdo do arquivo, ou todo ele, é gerado automaticamente pelo mecanismo de P e R. Essas entidades, palavras (sinônimos), relações e frases geradas recebem uma marca **Estado: Gerado** e são incluídas no arquivo principalmente para fins informativos, mas podem ser um ponto de partida útil para que você faça suas próprias alterações. 
+Quando você exporta o esquema linguístico do Power BI Desktop pela primeira vez, a maior parte do conteúdo do arquivo, ou todo ele, é gerada automaticamente pelo mecanismo de P e R. Essas entidades, palavras (sinônimos), relações e frases geradas recebem uma tag **Estado: Gerado** e são incluídas no arquivo principalmente para fins informativos, mas podem ser um ponto de partida útil para que você faça suas próprias alterações. 
 
 > [!NOTE]
 > O arquivo YAML de exemplo incluído neste tutorial não contém as marcas **Estado: Gerado** ou **Estado: Excluído** pois ele foi preparado especialmente para este tutorial. Para ver essas marcas, abra um arquivo .pbix não editado na exibição Relações e exporte o esquema linguístico.
@@ -86,41 +86,41 @@ Quando você exporta o esquema linguístico do Desktop primeiro, a maior parte d
 ![YAML mostrando Estado: Gerado](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-Quando você importar o arquivo de esquema linguístico novamente no Power BI Desktop, tudo que estiver marcado como **Estado: Gerado** será realmente ignorado (e regenerado mais tarde), portanto, se você desejar fazer uma alteração em algum conteúdo gerado, também remova a marca **Estado: Gerado** correspondente. Da mesma forma, se você quiser remover algum conteúdo gerado, será necessário alterar a marca **Estado: Gerado** para **Estado: Excluído** para que ele não seja regenerado quando você importar o arquivo de esquema linguístico.
+Quando você importar o arquivo de esquema linguístico novamente para o Power BI Desktop, tudo que estiver marcado como **Estado: Gerado** será ignorado (e regenerado mais tarde), portanto, se desejar fazer uma alteração em algum conteúdo gerado, lembre-se de remover também a tag **Estado: Gerado** correspondente. Da mesma forma, se você quiser remover algum conteúdo gerado, será necessário alterar a marca **Estado: Gerado** para **Estado: Excluído** para que ele não seja regenerado quando você importar o arquivo de esquema linguístico.
 
 1. Abra o conjunto de dados na *Exibição de Relações* do Power BI Desktop. 
 2. Selecione a guia **Modelagem** e escolha **Exportar esquema linguístico**.
 3. Selecione o Visual Code (ou outro editor).
 4. Faça as edições e salve o arquivo YAML.
-5. No Desktop, selecione **Exibição de Relações > guia Modelagem > Esquema Linguístico > Importar esquema linguístico**.
+5. No Power BI Desktop, selecione **Exibição de Relação > guia Modelagem > Esquema Linguístico > Importar esquema linguístico**.
 6. Navegue até o local em que você salvou o arquivo YAML editado e selecione-o. Uma mensagem de êxito informa que o arquivo YAML de esquema linguístico foi importado com êxito.
 
     ![Mensagem de êxito](media/power-bi-q-and-a-linguistic-schema/power-bi-success.png)
 
 ### <a name="add-phrasings-to-the-linguistic-schema"></a>Adicione frases ao esquema linguístico
-Uma frase é a maneira em que você fala (ou "fraseia") sobre as relações entre as coisas. Por exemplo, para descrever a relação entre produtos e clientes, você pode dizer "os clientes compram produtos". Ou para descrever a relação entre os clientes e as idades, você pode dizer "as idades indicam quantos anos os clientes têm". Ou, para descrever a relação entre os atletas e as medalhas, você pode simplesmente dizer "os atletas ganham medalhas".
+Uma frase é a maneira em que você fala (ou "fraseia") sobre as relações entre as coisas. Por exemplo, para descrever a relação entre produtos e clientes, você pode dizer "os clientes compram produtos". Ou para descrever a relação entre os clientes e as idades, você pode dizer "as idades indicam quantos anos os clientes têm". Ou, para descrever a relação entre os atletas e as medalhas, você pode simplesmente dizer “os atletas ganham medalhas”.
 
 Essas frases podem ter uma variedade de formas e tamanhos. Algumas correspondem diretamente às relações no modelo semântico. Algumas relacionam colunas com as tabelas que as contêm. Outras relacionam várias tabelas e colunas em relações complexas. Em todos os casos, elas descrevem como os elementos são relacionados, usando termos comuns.
 
 ## <a name="where-do-phrasings-come-from"></a>De onde vêm as frases?
-Muitas frases simples são adicionadas ao esquema linguístico automaticamente, com base na estrutura do modelo e em algumas suposições com base nos nomes das colunas. Por exemplo:
+O Power BI adiciona muitas frases simples ao esquema linguístico automaticamente, com base na estrutura do modelo e em algumas suposições com base nos nomes das colunas. Por exemplo:
 - A maioria das colunas estará relacionada à tabela que as contém com uma frase simples como "os produtos têm descrições".
 - As relações de modelo resultam em frases padrão para ambas as direções da relação, como "os pedidos têm produtos" e "os produtos têm pedidos".
 - Algumas relações de modelo podem ter uma frase padrão mais complexa, com base em seus nomes de coluna, como "os pedidos são enviados para cidades".
 
-No entanto, os usuários podem falar sobre coisas de diversas maneiras que as P e R não conseguem adivinhar. Nesse caso, convém adicionar suas próprias frases manualmente.
+No entanto, os usuários podem falar sobre coisas de diversas maneiras que as P e R não conseguem adivinhar. Para essas frases, convém adicionar suas próprias frases manualmente.
 
 
 ## <a name="why-should-i-add-phrasings"></a>Por que adicionar frases?
 O primeiro motivo para adicionar uma frase é definir um novo termo. Por exemplo, para poder solicitar uma "lista dos clientes mais velhos", primeiro você precisará ensinar às P e R qual o significado de "antigos". Isso poderá ser feito adicionando uma frase como "as idades indicam quantos anos os clientes têm".
 
-O segundo motivo para adicionar uma frase é resolver a ambiguidade. A pesquisa básica de palavra-chave só chega a esse ponto quando as palavras têm mais de um significado. Por exemplo, "voos para Chicago" significa algo bastante diferente de "voos de Chicago", mas as P e R apenas saberão qual você quer dizer, se você adicionar as frases "os voos são de cidades de saída" e "os voos são para cidades de chegada". Da mesma forma, a diferença entre "carros que Pedro vendeu Teresa" e "carros que Pedro comprou de Teresa" somente será compreendida se você adicionar as frases "clientes compram carros de funcionários" e "funcionários vendem carros a clientes".
+O segundo motivo para adicionar uma frase é resolver a ambiguidade. A pesquisa básica de palavra-chave só chega a esse ponto quando as palavras têm mais de um significado. Por exemplo, “voos para Chicago” não é igual a “voos de Chicago”. Mas as P e R apenas saberão qual delas você quer dizer se você adicionar as frases “os voos são das cidades de saída” e “os voos são para as cidades de chegada”. Da mesma forma, as P e R só entenderão a diferença entre “carros que Pedro vendeu para Teresa” e “carros que Pedro comprou de Teresa” se você adicionar as frases “clientes compram carros de funcionários” e “funcionários vendem carros para os clientes”.
 
-O motivo final para adicionar uma frase é melhorar as reformulações. Em vez das P e R retornarem "Mostrar os clientes e seus produtos", seria mais claro se elas retornassem "Mostrar os clientes e os produtos que eles compraram" ou "Mostrar os clientes e os produtos que eles examinaram", dependendo de como elas compreendessem a pergunta. Adicionar frases personalizadas permite que as reformulações sejam mais explícitas e não sejam ambíguas.
+O motivo final para adicionar uma frase é melhorar as reformulações. Em vez das P e R retornarem “Mostrar os clientes e seus produtos”, seria mais claro se elas retornassem “Mostrar os clientes e os produtos que eles compraram” ou “Mostrar os clientes e os produtos que eles examinaram”, dependendo de como elas compreenderem a pergunta. Adicionar frases personalizadas permite que as reformulações sejam mais explícitas e não sejam ambíguas.
 
 
 ## <a name="what-kinds-of-phrasings-are-there"></a>Que tipos de frases existem?
-Para entender os diferentes tipos de frases, primeiro você precisará se lembrar de alguns termos de gramática muito básicos:
+Para entender os diferentes tipos de frases, primeiro você precisará se lembrar de alguns termos de gramática básica:
 - Um *substantivo* é uma pessoa, um lugar ou uma coisa. 
     - Exemplos: carro, adolescente, Rita, capacitor de fluxo
 - Um *verbo* é uma ação ou um estado de ser. 
@@ -134,7 +134,7 @@ Para entender os diferentes tipos de frases, primeiro você precisará se lembra
 
 
 ## <a name="attribute-phrasings"></a>Frases de atributo
-As frases de atributo são o ponto forte de P e R, usadas quando algo está agindo como um atributo de algo. Elas são simples e diretas e executam a maior parte do trabalho pesado quando uma frase mais específica e detalhada não está definida. As frases de atributo são descritas usando o verbo básico "ter" ("produtos têm categorias" e "países host tem cidades host") e, automaticamente, também permitem que sejam feitas perguntas usando as preposições "de" e "para" ("categorias de produtos", "pedidos para produtos") e indicações de posse ("pedidos de Pedro"). As frases de atributo são usadas em perguntas como esta:
+As frases de atributo são o ponto forte de P e R, usadas quando algo está agindo como um atributo de algo. Elas são simples e diretas, e executam a maior parte do trabalho pesado quando uma frase mais específica e detalhada não foi definida. As frases de atributo são descritas usando o verbo básico “tem” (“produtos têm categorias” e “países-sede têm cidades-sede”). Elas também aceitam automaticamente perguntas com as preposições “de” e “para” (“categorias de produtos”, “pedidos de produtos”) e possessivos (“pedidos de João”). As frases de atributo são usadas em perguntas como esta:
 - Quais clientes têm pedidos?
 - Listar cidades host por país em ordem crescente
 - Mostrar pedidos que tenham chai
@@ -142,8 +142,8 @@ As frases de atributo são o ponto forte de P e R, usadas quando algo está agin
 - Qual é a categoria de cada produto?
 - Contar os pedidos de Vinicius Monte    
 
-A grande maioria de frases de atributo necessárias para o modelo será gerada automaticamente, com base no confinamento de tabelas/colunas e nas relações do modelo, portanto, geralmente não será necessário criá-las.
-Este é um exemplo de frases de atributo dentro do esquema linguístico:
+O Power BI gera a grande maioria das frases de atributo necessárias no seu modelo, com base na independência de tabela/coluna e relações de modelos. Normalmente, você não precisa criá-los.
+Este é um exemplo de como frases de atributo aparecem dentro do esquema linguístico:
 
 ```json
 product_has_category:
@@ -153,16 +153,16 @@ product_has_category:
 ```
  
 ## <a name="name-phrasings"></a>Frases de nome
-As frases de nome são úteis quando o modelo de dados tem uma tabela que contém objetos nomeados, como nomes de atleta e nomes de clientes. Por exemplo, uma frase "nomes para produto são nomes de produtos" é essencial para que você possa usar nomes para produtos em perguntas. Embora uma frase de nome também permita usar "chamado" como verbo (por exemplo, "Listar os clientes chamados Pedro Goncalves"), ela é mais importante quando usada em conjunto com outras frases, para permitir que um valor de nome seja usado para se referir a uma linha de tabela específica. Por exemplo, em "Clientes que compraram chai", as P e R podem deduzir que o valor "chai" se refere a toda a linha da tabela de produtos e não apenas a um valor na coluna de nome de produto. As frases de nome são usadas em perguntas como esta:    
+As frases de nome são úteis quando o modelo de dados tem uma tabela que contém objetos nomeados, como nomes de atleta e nomes de clientes. Por exemplo, uma frase "nomes para produto são nomes de produtos" é essencial para que você possa usar nomes para produtos em perguntas. Frases de nome também habilitam “chamado” como um verbo (por exemplo, “Listar clientes chamados Pedro Silva”). Contudo, elas são mais importantes quando usadas junto com outras frases, para permitir que um valor de nome seja usado para se referir a uma linha de tabela específica. Por exemplo, em “Clientes que compraram chai”, as P e R podem deduzir que o valor “chai” se refere a toda a linha da tabela de produtos e não apenas a um valor na coluna de nome de produto. As frases de nome são usadas em perguntas como esta:    
 - Quais funcionários chamam Vinicius Monte
 - Quem chama Tiago Ribeiro
 - Esportes de Samuel Costa
 - Contagem de atletas chamadas Teresa
 - O que Vinicius Monte comprou?
 
-Considerando que você tenha usado uma convenção de nomenclatura compreensível para as colunas de nome no modelo (por exemplo, "Nome" ou "NomeDeProduto" em vez de "NmdPro"), a maioria das frases de nome necessárias para o modelo será gerada automaticamente, portanto, geralmente não será necessário criá-las.
+Supondo que você usou uma convenção de nomenclatura sensata para colunas de nome no seu modelo (por exemplo, “Nome” ou “ProductName” em vez de “PrdNm”), o Power BI gera a maioria das frases de nome necessárias no seu modelo automaticamente, por isso normalmente você não precisa criá-los por conta própria.
 
-Este é um exemplo de frases de nome dentro do esquema linguístico:
+Este é um exemplo de como as frases de nome aparecem dentro do esquema linguístico:
 
 ```json
 employee_has_name:
@@ -183,7 +183,7 @@ As *frases adjetivas simples* definem um adjetivo novo com base em uma condiçã
 - Listar os medalhistas de ouro
 - Produtos que estão pendentes
 
-Este é um exemplo de uma frase adjetiva simples dentro do esquema linguístico: o_produto_foi_preterido:
+Este é um exemplo de como uma frase adjetiva simples aparece dentro do esquema linguístico: o_produto_foi_preterido:
 
 ```json
 Binding: {Table: Products}
@@ -203,7 +203,7 @@ As *frases adjetivas de medida* definem um adjetivo novo com base em um valor nu
 - Listar as menores regiões do país vencedoras de ouro no basquete
 - Qual o comprimento do Rio Grande?
 
-Este é um exemplo de uma frase adjetiva de medida dentro do esquema linguístico: o_rio_tem_comprimento:
+Este é um exemplo de como uma frase adjetiva de medida aparece dentro do esquema linguístico: o_rio_tem_comprimento:
 
  ```json
 Binding: {Table: Rivers}
@@ -232,7 +232,7 @@ Binding: {Table: Products}
 
  
 ## <a name="noun-phrasings"></a>Frases nominais
-As frases nominais definem nomes novos que descrevem subconjuntos de coisas no modelo. Elas geralmente incluem algum tipo de medida ou de condição específica do modelo. Por exemplo, para nosso modelo Olimpíadas, é possível adicionar frases que distinguem campeões de medalhistas, esportes com bola de esportes aquáticos, equipes e indivíduos, categorias de idade dos atletas (adolescentes, adultos, seniores), etc. Para nosso banco de dados de filme, é possível adicionar frases nominais como "flops são filmes em que o lucro líquido é menor que 0" para fazer perguntas como "contar os flops por ano". Há dois formatos de frases nominais para serem usados em situações diferentes.
+As frases nominais definem nomes novos que descrevem subconjuntos de coisas no modelo. Elas geralmente incluem algum tipo de medida ou de condição específica do modelo. Por exemplo, para nosso modelo Olimpíadas, é possível adicionar frases que distinguem campeões de medalhistas, esportes com bola de esportes aquáticos, equipes e indivíduos, categorias de idade dos atletas (adolescentes, adultos, seniores), etc. Para nosso banco de dados de filmes, é possível adicionar frases nominais para “fracassos são filmes com lucro líquido < 0” para fazer perguntas como “contar os fracassos por ano”. Há dois formatos de frases nominais para serem usados em situações diferentes.
 
 As *frases nominais simples* definem um substantivo novo com base em uma condição, como "prestadores de serviço são funcionários em que tempo total é igual a false" e "campeão é um atleta para o qual a contagem de medalhas é maior que cinco". As frases nominais simples são usadas em perguntas como esta:
 
@@ -240,7 +240,7 @@ As *frases nominais simples* definem um substantivo novo com base em uma condiç
 - Contar os prestadores de serviço em Portland
 - Quantos campeões houve em 2016
 
-Este é um exemplo de uma frase nominal simples dentro do esquema linguístico: o_funcionário_é_prestador de serviço:
+Este é um exemplo de como uma frase nominal simples aparece dentro do esquema linguístico: o_funcionário_é_prestador_de_serviço:
 
 ```json
 Binding: {Table: Employees}
@@ -260,7 +260,7 @@ As *frases nominais dinâmicas* definem um conjunto de substantivos novos com ba
 - Quais funcionários são baristas?
 - Listar os árbitros em 1992
 
-Este é um exemplo de uma frase nominal dinâmica dentro do esquema linguístico: o_funcionário_tem_trabalho:
+Este é um exemplo de como uma frase nominal dinâmica aparece dentro do esquema linguístico: o_funcionário_tem_trabalho:
 
  ```json
 Binding: {Table: Employees}
@@ -278,7 +278,7 @@ As frases prepositivas são usadas para descrever como as coisas no modelo são 
 - Em qual cidade Filipe Oliveira está?
 - Há quantos livros de Stephen Pinker?
  
-Este é um exemplo de uma frase prepositiva dentro do esquema linguístico: os_clientes_estão_em_cidades:
+Este é um exemplo de como uma frase prepositiva aparece dentro do esquema linguístico: os_clientes_estão_em_cidades:
 
  ```json
 Binding: {Table: Customers}
@@ -299,7 +299,7 @@ As frases verbais são usadas para descrever como as coisas no modelo são relac
 - Listar os produtos que Teresa vendeu a Pedro.
 - Quais produtos preteridos foram vendidos para clientes de Chicago por funcionários de Boston?
 
-As frases verbais também podem conter frases prepositivas, que aumentam a flexibilidade, como em "os atletas ganham medalhas em competições" ou "os clientes recebem reembolsos de produtos". As frases verbais com frases prepositivas são usadas em perguntas como esta:
+As frases verbais também podem conter frases prepositivas, que aumentam a flexibilidade, como em "os atletas ganham medalhas em competições" ou "os clientes recebem reembolsos de produtos". As frases verbais com frases prepositivas são usadas nesses tipos de perguntas:
 
 - Quantos atletas ganharam uma medalha de ouro no campeonato Visa?
 - Quais cientes receberam reembolso para queijo?
@@ -307,7 +307,7 @@ As frases verbais também podem conter frases prepositivas, que aumentam a flexi
 
 Algumas frases verbais são criadas automaticamente quando uma coluna é reconhecida por conter um verbo e uma preposição.
 
-Este é um exemplo de uma frase verbal dentro do esquema linguístico: os_clientes_compram_produtos_de_vendedores:
+Este é um exemplo de como uma frase verbal aparece dentro do esquema linguístico: os_clientes_compram_produtos_de_vendedores:
 
 ```json
 Binding: {Table: Orders}
@@ -322,9 +322,9 @@ Binding: {Table: Orders}
 ```
 
 ## <a name="relationships-with-multiple-phrasings"></a>Relações com várias frases
-Frequentemente, uma única relação pode ser descrita de mais de uma maneira. Nesse caso, uma única relação pode ter mais de uma frase. É muito comum que uma relação entre uma entidade de tabela e uma entidade de coluna tenha uma frase de atributo e outra frase. Por exemplo, na relação entre o cliente e o nome do cliente, será interessante que haja tanto uma frase de atributo (por exemplo, "os clientes têm nomes") quanto uma frase de nome (por exemplo, "os nomes dos clientes são os nomes de clientes") para que seja possível fazer os dois tipos de perguntas.
+Frequentemente, uma única relação pode ser descrita de mais de uma maneira. Nesse caso, uma única relação pode ter mais de uma frase. É comum que uma relação entre uma entidade de tabela e uma entidade de coluna tenha uma frase de atributo e outra frase. Por exemplo, na relação entre o cliente e o nome do cliente, é recomendável ter tanto uma frase de atributo (por exemplo, “clientes têm nomes”) quanto uma frase de nome (por exemplo, “nomes de clientes são os nomes dos clientes”) para que seja possível fazer os dois tipos de perguntas.
 
-Este é um exemplo de uma relação com duas frases dentro do esquema linguístico: o_cliente_tem_nome:
+Este é um exemplo de como uma relação com duas frases aparece dentro do esquema linguístico: o_cliente_tem_nome:
 
   ```json
 Binding: {Table: Customers}
@@ -338,7 +338,7 @@ Binding: {Table: Customers}
 Outro exemplo seria adicionar a frase alternativa "os funcionários vendem produtos para clientes" à relação "os clientes compram produtos de funcionários". Observe que não é necessário adicionar variações, como "funcionários vendem produtos **para clientes**" ou "produtos são vendidos para clientes **pelos funcionários**", pois as variações de "de" e "para" do sujeito e do objeto indireto são inferidas automaticamente pelas P e R.
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-Agora, quando você faz uma alteração em um arquivo .lsdl.yaml que não está em conformidade com o formato do esquema linguístico, é exibido um erro como este para indicar problemas: 
+Agora, quando você faz uma alteração em um arquivo .lsdl.yaml que não está em conformidade com o formato do esquema linguístico, é exibido um erro para indicar problemas: 
 
 ![arquivo yaml mostrando os erros](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 

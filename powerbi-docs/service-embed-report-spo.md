@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/16/2018
-ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.date: 10/01/2018
+ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908361"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641196"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Inserir com Web Part de Relatório no SharePoint Online
 
@@ -85,9 +85,9 @@ Incorporar um relatório ao SharePoint Online automaticamente não dá aos usuá
 > [!IMPORTANT]
 > Certifique-se de examinar quem pode ver o relatório dentro do serviço do Power BI e de conceder acesso aos que não aparecem na lista.
 
-Há duas maneiras de conceder acesso ao relatório dentro do serviço do Power BI. Se você estiver usando um grupo do Office 365 para criar seu site de equipe do SharePoint Online, liste o usuário como membro do **espaço de trabalho do aplicativo no serviço do Power BI** e da **página do SharePoint**. Isso garante que os usuários possam exibir o conteúdo desse grupo. Para obter mais informações, consulte [Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md).
+Há duas maneiras de conceder acesso ao relatório dentro do serviço do Power BI. Se você estiver usando um grupo do Office 365 para criar seu site de equipe do SharePoint Online, liste o usuário como membro do **workspace do aplicativo no serviço do Power BI** e da **página do SharePoint**. Isso garante que os usuários possam exibir o conteúdo desse grupo. Para obter mais informações, consulte [Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md).
 
-Como alternativa, você pode conceder acesso ao seu relatório aos usuários fazendo o seguinte.
+Como alternativa, você pode conceder acesso ao seu relatório aos usuários seguindo estas etapas.
 
 1. Adicione um bloco de seu relatório a um painel.
 
@@ -108,7 +108,7 @@ Abaixo, temos uma descrição das configurações que podem ser ajustadas para a
 
 ## <a name="multi-factor-authentication"></a>Autenticação multifator
 
-Se seu ambiente do Power BI requer que você entre usando a autenticação multifator, pode ser solicitado que você entre com um dispositivo de segurança para verificar sua identidade. Isso ocorre quando você não entra no SharePoint Online usando a autenticação multifator, mas o ambiente do Power BI requer uma conta validada por um dispositivo de segurança.
+Se o ambiente do Power BI exigir que você entre usando a autenticação multifator, talvez será necessário entrar com um dispositivo de segurança para verificar sua identidade. Isso ocorre quando você não entra no SharePoint Online usando a autenticação multifator, mas o ambiente do Power BI requer uma conta validada por um dispositivo de segurança.
 
 > [!NOTE]
 > O Azure Active Directory 2.0 ainda não dá suporte para autenticação multifator. Os usuários recebem uma mensagem indicando *erro*. Se o usuário entrar novamente no SharePoint Online usando o dispositivo de segurança, o relatório poderá ser exibido.
@@ -126,7 +126,7 @@ Há duas razões comuns para essa mensagem.
 1. Você não tem acesso a este relatório.
 2. O relatório foi excluído.
 
-Entre em contato com o proprietário da página do SharePoint Online para ajudá-lo a resolver o problema.
+Contate o proprietário da página do SharePoint Online para ajudá-lo a resolver o problema.
 
 ## <a name="known-issues-and-limitations"></a>Limitações e problemas conhecidos
 
@@ -148,11 +148,13 @@ Entre em contato com o proprietário da página do SharePoint Online para ajudá
 
 * O servidor clássico do SharePoint não é compatível com essa web part.
 
+* [Filtros de URL](service-url-filters.md) não são compatíveis com a Web part do SPO.
+
 ## <a name="next-steps"></a>Próximas etapas
 
 [Permitir ou impedir a criação de páginas de sites modernas pelos usuários finais](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md)  
 [Compartilhar um painel com seus colegas e com outras pessoas](service-share-dashboards.md)  
-[Power BI Premium – o que é?](service-premium.md)  
+[O que é o Power BI Premium?](service-premium.md)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
