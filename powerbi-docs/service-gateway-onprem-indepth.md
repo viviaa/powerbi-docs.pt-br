@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 30ac2c0620607d680874e423c841c381fc273904
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38921497"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101498"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Detalhes sobre o gateway de dados local
 É possível que os usuários na sua organização acessem dados locais (para os quais eles já têm autorização de acesso), mas antes que eles possam se conectar à fonte de dados local, um gateway de dados local precisa ser instalado e configurado. O gateway facilita a comunicação nos bastidores, de maneira rápida e segura, de um usuário na nuvem para a fonte de dados local, retornando à nuvem em seguida.
@@ -52,7 +52,7 @@ A capacidade de um usuário de consultar e ver dados de modelo é determinada, p
 A implementação de segurança dinâmica em nível de linha e a segurança baseada em função em modelos está além do escopo deste artigo.  Saiba mais em [Funções (SSAS de tabela)](https://msdn.microsoft.com/library/hh213165.aspx) e [Funções de segurança (Analysis Services – dados multidimensionais)](https://msdn.microsoft.com/library/ms174840.aspx) no MSDN. Além disso, para obter uma compreensão mais profunda sobre a segurança do modelo de tabela, baixe e leia o [white paper Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/library/jj127437.aspx) (Protegendo o modelo semântico de BI de tabela).
 
 ## <a name="what-about-azure-active-directory"></a>E quanto ao Azure Active Directory?
-Os serviços em nuvem da Microsoft usam o [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) para cuidar da autenticação de usuários. O Azure Active Directory é o locatário que contém nomes de usuário e grupos de segurança. Normalmente, um endereço de email usado para a entrada de um usuário é o mesmo que o UPN da conta.
+Os serviços em nuvem da Microsoft usam o [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) para cuidar da autenticação de usuários. O Azure Active Directory é o locatário que contém nomes de usuário e grupos de segurança. Normalmente, um endereço de email usado para a entrada de um usuário é o mesmo que o UPN da conta.
 
 Qual é a função do meu Active Directory local?
 
@@ -78,7 +78,7 @@ Os serviços de nuvem conhecem apenas as contas no Azure Active Directory. Não 
 1. É possível adicionar contas manualmente ao Azure Active Directory.
    
    É possível criar uma conta no portal do Azure ou no Portal de Administração do Office 365, e o nome da conta corresponderá ao UPN da conta do Active Directory local.
-2. Você pode usar a ferramenta [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) para sincronizar contas locais ao seu locatário do Azure Active Directory.
+2. Você pode usar a ferramenta [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) para sincronizar contas locais ao seu locatário do Azure Active Directory.
    
    A ferramenta Azure AD Connect fornece opções para sincronização de diretório e a configuração de autenticação, incluindo a sincronização de hash de senha, autenticação de pass-through e federação. Se você não for um administrador de locatários nem um administrador de domínio local, precisará entrar em contato com seu administrador de TI para obter essa configuração.
 
@@ -90,7 +90,7 @@ O uso do Azure AD Connect garante que o UPN corresponderá entre o AAD e o Activ
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Agora, é aqui que entra o gateway
-O gateway atua como uma ponte entre a nuvem e o servidor local. A transferência de dados entre a nuvem e o gateway é protegida pelo [Barramento de Serviço do Azure](https://azure.microsoft.com/documentation/services/service-bus/). O Barramento de Serviço cria um canal seguro entre a nuvem e o servidor local por meio de uma conexão de saída no gateway.  Não é necessário abrir nenhuma conexão de entrada no firewall local.
+O gateway atua como uma ponte entre a nuvem e o servidor local. A transferência de dados entre a nuvem e o gateway é protegida pelo [Barramento de Serviço do Azure](/azure/service-bus-messaging/service-bus-messaging-overview). O Barramento de Serviço cria um canal seguro entre a nuvem e o servidor local por meio de uma conexão de saída no gateway.  Não é necessário abrir nenhuma conexão de entrada no firewall local.
 
 Se você tiver uma fonte de dados do Analysis Services, você precisará instalar o gateway em um computador associado ao mesmo domínio/floresta que o servidor do Analysis Services.
 
@@ -116,8 +116,10 @@ Em vez de explorar a solução de problemas do gateway aqui, apresentamos uma s�
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [Solução de problemas do gateway de dados local](service-gateway-onprem-tshoot.md)  
-[Barramento de serviço do Azure](https://azure.microsoft.com/documentation/services/service-bus/)  
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+[Barramento de serviço do Azure](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

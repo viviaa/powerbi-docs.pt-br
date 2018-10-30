@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474016"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101636"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Solução de problemas do gateway de dados local
 
@@ -446,7 +446,7 @@ Os resultados de teste listam todos os servidores, portas e endereços IP exigid
 
 ## <a name="kerberos"></a>Kerberos
 
-Se o servidor de banco de dados subjacente e o gateway de dados local não estiverem devidamente configurados para [Delegação Restrita de Kerberos](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), habilite o [log detalhado](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) no gateway e investigue com base nos erros/rastreamentos em arquivos de log do gateway como um ponto de partida para solução de problemas.
+Se o servidor de banco de dados subjacente e o gateway de dados local não estiverem devidamente configurados para [Delegação Restrita de Kerberos](service-gateway-sso-kerberos.md), habilite o [log detalhado](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) no gateway e investigue com base nos erros/rastreamentos em arquivos de log do gateway como um ponto de partida para solução de problemas.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 
