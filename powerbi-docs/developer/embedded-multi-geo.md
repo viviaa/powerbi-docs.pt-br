@@ -6,16 +6,16 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
 LocalizationGroup: Embedded
-ms.openlocfilehash: c65ce0a8d2a815f726714c1f1f500f48391db91f
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 5dbbd8b14dcd473335e2ad5293e66ab6a16b73e7
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43303439"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252343"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Suporte Multi-Geo para o Power BI Embedded (versão prévia)
 
@@ -56,7 +56,7 @@ Não é possível alterar um local de recursos do Power BI Embedded depois de cr
 Para mover o conteúdo do Power BI para uma região diferente, siga estas etapas:
 
 1. [Criar uma nova capacidade](azure-pbie-create-capacity.md) em uma região diferente.
-2. Atribua todos os espaços de trabalho da capacidade existente à nova capacidade.
+2. Atribua todos os workspaces da capacidade existente à nova capacidade.
 3. Excluir ou pausar a capacidade antiga.
 
 É importante observar que, se você decidir excluir uma capacidade sem reatribuindo seu conteúdo, todo o conteúdo da capacidade será movido para uma capacidade compartilhada, que está em sua região de residência.
@@ -66,7 +66,7 @@ Para mover o conteúdo do Power BI para uma região diferente, siga estas etapas
 Para dar suporte ao gerenciamento de capacidades com Multi-Geo por meio da API, fizemos algumas alterações em APIs existentes:
 
 1. **[Obter Capacidades](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** – a API retorna uma lista de capacidades com acesso ao usuário. A resposta agora inclui uma propriedade adicional chamada 'region', que especifica o local da capacidade.
-2. **[Atribuir à Capacidade](https://docs.microsoft.com/rest/api/power-bi/capacities)** – a API permite a atribuição de determinado espaço de trabalho a uma capacidade. Essa operação não permite que você atribua espaços de trabalho a uma capacidade fora de sua região de residência ou mova os espaços de trabalho entre as capacidades em regiões diferentes. Para executar essa operação, o usuário ainda precisa de permissões de administrador no espaço de trabalho e deve administrar ou atribuir permissões na capacidade de destino.
+2. **[Atribuir à Capacidade](https://docs.microsoft.com/rest/api/power-bi/capacities)** – a API permite a atribuição de determinado workspace a uma capacidade. Essa operação não permite que você atribua workspaces a uma capacidade fora de sua região de residência ou mova os workspaces entre as capacidades em regiões diferentes. Para executar essa operação, o usuário ainda precisa de permissões de administrador no workspace e deve administrar ou atribuir permissões na capacidade de destino.
 3. **[API do Azure Resource Manager](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – todas as operações da API do Azure Resource Manager, incluindo *Criar* e *Excluir*, dão suporte a Multi-Geo.
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações

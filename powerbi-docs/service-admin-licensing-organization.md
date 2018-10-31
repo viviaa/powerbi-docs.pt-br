@@ -5,23 +5,23 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4fa28e828df2765bb128ad5fb6e8eee73b6eb2a2
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: bdd43c820f87bb9308478b4e2100514349644d11
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48272291"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252366"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Licenciamento do Power BI na sua organização
 
 No serviço do Power BI, os usuários têm capacidades definidas conforme os dois tipos de licença:
 
-* **Por usuário** - *licenciamento gratuito e do Power BI Pro*. Uma licença gratuita habilita o acesso a alguns dos recursos do serviço do Power BI. O Pro é uma licença que habilita o acesso a todo o conteúdo e funcionalidades do serviço do Power BI, incluindo a capacidade de compartilhar conteúdo e colaborar com outros usuários do Pro. Somente usuários Pro podem publicar e consumir conteúdo de espaços de trabalho do aplicativo, compartilhar painéis e se inscrever para obter painéis e relatórios. Para obter mais informações, consulte [Recursos do serviço do Power BI por tipo de licença](service-features-license-type.md).
+* **Por usuário** - *licenciamento gratuito e do Power BI Pro*. Uma licença gratuita habilita o acesso a alguns dos recursos do serviço do Power BI. O Pro é uma licença que habilita o acesso a todo o conteúdo e funcionalidades do serviço do Power BI, incluindo a capacidade de compartilhar conteúdo e colaborar com outros usuários do Pro. Somente usuários Pro podem publicar e consumir conteúdo de workspaces do aplicativo, compartilhar dashboards e assinar dashboards e relatórios. Para obter mais informações, consulte [Recursos do serviço do Power BI por tipo de licença](service-features-license-type.md).
 
 * **Com base em capacidade** - *Licenciamento do Power BI Premium*. O Premium oferece capacidade dedicada para entregar um desempenho mais consistente e dar suporte a volumes maiores de dados no Power BI. Para usuários individuais, o Premium também possibilita a distribuição difundida de conteúdo por usuários do Pro, sem precisar de licenças do Pro para os destinatários exibirem o conteúdo. Para obter mais informações, consulte [O que é Power BI Premium?](service-premium.md).
 
