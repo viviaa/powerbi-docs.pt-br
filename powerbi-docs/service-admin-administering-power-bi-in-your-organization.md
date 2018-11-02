@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fcc7563ef1c1196a7e00e107bb1dadd6b10075d3
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944297"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252458"
 ---
 # <a name="what-is-power-bi-administration"></a>O que é administração do Power BI?
 
@@ -30,7 +30,6 @@ O Power BI foi projetado para business intelligence de autoatendimento e o admin
 - Aumentar a adoção e o retorno sobre o investimento de uma implantação do Power BI.
 
 O trabalho é tornar os usuários empresariais produtivos e garantir a segurança e a conformidade com as leis e os regulamentos. As responsabilidades podem incluir a ajuda e o suporte e, em muitos casos, ajudar os usuários corporativos a fazerem a coisa certa.
-
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Funções de administrador relacionadas ao Power BI
 
@@ -50,7 +49,6 @@ Os administradores de serviços do Power BI têm acesso ao portal de administra�
 
 A função de administrador de serviços do Power BI não concede a capacidade de atribuir licenças a usuários ou exibir logs de auditoria no Office 365. Portanto, a tarefa de administrar o Power BI atualmente não pode ser executada por usuários que são somente membros da função de administrador de serviços do Power BI.
 
-
 ## <a name="administrative-tasks"></a>Tarefas administrativas
 
 Os administradores realizam várias tarefas para oferecer suporte ao locatário do Power BI para sua organização, que são abordadas na tabela a seguir.
@@ -62,10 +60,9 @@ Os administradores realizam várias tarefas para oferecer suporte ao locatário 
 | Gerenciar a capacidade Premium |<ul><li>Adquirir e trabalhar com a capacidade Premium<br><li>Garantir a qualidade do serviço|
 | Gerenciar a capacidade Embedded |<ul><li>Adquirir a capacidade Embedded para simplificar como os ISVs e os desenvolvedores usam recursos do Power BI</ul>|
 | Garantir a conformidade com políticas internas, leis e regulamentos | <ul><li>Gerenciar a classificação de dados de negócios<br><li>Ajudar a impor políticas de publicação e compartilhamento de conteúdo</ul>|
-| Gerenciar recursos do Power BI |<ul><li>Gerenciar espaços de trabalho<br><li>Publicar visuais personalizados<br><li>Verificar os códigos usados para inserir o Power BI em outros aplicativos|
+| Gerenciar recursos do Power BI |<ul><li>Gerenciar workspaces<br><li>Publicar visuais personalizados<br><li>Verificar os códigos usados para inserir o Power BI em outros aplicativos|
 | Fornecer ajuda e suporte para usuários de locatário |<ul><li>Solucionar problemas de acesso a dados e outros problemas</ul>|
 | Outras tarefas |<ul><li>Implantar o Power BI Desktop, por exemplo, usando o System Center Configuration Manager<br><li>Gerenciar a implantação de aplicativos móveis do Power BI com o Intune<br><li>Gerenciar a privacidade e a segurança dos dados, como segurança de dados de origem</ul>|
-
 
 ## <a name="administrative-tools"></a>Ferramentas administrativas
 
@@ -73,20 +70,21 @@ Há várias ferramentas relacionadas à administração do Power BI, que são ab
 
 | **Ferramenta** | **Tarefas comuns** |
 | --- | --- |
-| Portal de administração do Power BI |<ul><li>Adquirir e trabalhar com a capacidade Premium</li><li>Garantir a qualidade do serviço</li><li>Gerenciar a classificação de dados de negócios</li><li>Ajudar a impor políticas de publicação e compartilhamento de conteúdo</li><li>Gerenciar espaços de trabalho<br><li>Publicar visuais personalizados</li><li>Verificar os códigos usados para inserir o Power BI em outros aplicativos</li><li>Solucionar problemas de acesso a dados e outros problemas</li></ul>|
-| Centro de administração do Office 365 |<ul><li>Gerenciar a inscrição do usuário</li><li>Comprar e atribuir licenças Pro</li><li>Impedir que os usuários acessem o Power BI</li></ul>|
+| Portal de administração do Power BI |<ul><li>Adquirir e trabalhar com a capacidade Premium</li><li>Garantir a qualidade do serviço</li><li>Gerenciar a classificação de dados de negócios</li><li>Ajudar a impor políticas de publicação e compartilhamento de conteúdo</li><li>Gerenciar workspaces<br><li>Publicar visuais personalizados</li><li>Verificar os códigos usados para inserir o Power BI em outros aplicativos</li><li>Solucionar problemas de acesso a dados e outros problemas</li></ul>|
+| Centro de Administração do Office 365 |<ul><li>Gerenciar a inscrição do usuário</li><li>Comprar e atribuir licenças Pro</li><li>Impedir que os usuários acessem o Power BI</li></ul>|
 | Central de Segurança e Conformidade do Office 365 |<ul><li>Analisar e gerenciar a auditoria de eventos</li></ul>|
 | Azure Active Directory (AAD) no portal do Azure |<ul><li>Configurar o acesso condicional a recursos do Power BI por meio do AAD</li><li>Provisionar a capacidade do Power BI Embedded</li></ul>|
-| Cmdlets do PowerShell |<ul><li>Gerenciar espaços de trabalho e outros aspectos do Power BI por meio de scripts</li></ul>|
+| Cmdlets do PowerShell |<ul><li>Gerenciar workspaces e outros aspectos do Power BI por meio de scripts</li></ul>|
 | APIs administrativas e SDK |<ul><li>Criar ferramentas administrativas personalizadas para facilitar o trabalho de um administrador do Power BI. Por exemplo, o Power BI Desktop pode usar essas APIs para criar relatórios com base nos dados relacionados à administração</li></ul>|
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Esperamos que este artigo tenha dado a você algumas ideias práticas sobre o trabalho e as funções do administrador do Power BI, as tarefas e as ferramentas específicas que estão envolvidas. Recomendamos os dois tópicos abaixo para aprofundar o seu conhecimento.
+Esperamos que este artigo tenha dado a você algumas ideias práticas sobre o trabalho e as funções do administrador do Power BI, as tarefas e as ferramentas específicas que estão envolvidas. Recomendamos os seguintes tópicos de artigos para aprofundar seu entendimento.
 
 [Usar o portal de administração do Power BI](service-admin-portal.md)
+
+[Usar cmdlets do PowerShell](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
 
 [Perguntas frequentes de administração do Power BI](service-admin-faq.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-
