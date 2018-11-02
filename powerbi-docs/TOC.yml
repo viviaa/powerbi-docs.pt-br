@@ -250,8 +250,6 @@ items:
         href: desktop-r-powered-custom-visuals.md
       - name: Usar linhas de grade e ajustar à grade
         href: desktop-gridlines-snap-to-grid.md
-      - name: Amostragem da linha de alta densidade
-        href: desktop-high-density-sampling.md
       - name: Adicionar uma coluna de um exemplo
         href: desktop-add-column-from-example.md
       - name: Adicionar uma coluna personalizada
@@ -322,6 +320,8 @@ items:
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: Gráficos de funil no Power BI
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: Amostragem da linha de alta densidade
+        href: desktop-high-density-sampling.md
       - name: Visuais de KPI
         href: visuals/power-bi-visualization-kpi.md
       - name: Criar visualizações e análise avançadas usando scripts do R no Power BI
@@ -964,7 +964,7 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: Download do SDK do .NET
         href: https://go.microsoft.com/fwlink/?linkid=848274
-- name: Servidor de Relatório do Power BI
+- name: Servidor de Relatórios do Power BI
   items:
   - name: Visão geral
     items:
@@ -1203,9 +1203,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: dbefae36f3a51d7494130593a4c7009f3cbc10b4
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: fffb456fe7ad9648b27a1106e9a4cb6401b5f56b
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252504"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909699"
