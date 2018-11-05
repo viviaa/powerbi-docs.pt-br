@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/09/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b2627950ea51239acb19972fde3244f3bd158255
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909212"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003192"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Monitorar as capacidades do Power BI Premium e do Power BI Embedded
 
@@ -61,38 +61,44 @@ A guia **Filtros aplicados a todas as páginas** permite que você selecione uma
 
 ### <a name="datasets-tab"></a>Guia Conjuntos de dados
 
-A guia **Conjuntos de Dados** fornece a maior parte das métricas no aplicativo. Use os quatro botões na parte superior da guia para navegar para diferentes áreas: **Resumo**, **Atualizações**, **Consultas** e **Conjuntos de Dados**.
+A guia **Conjuntos de Dados** fornece a maior parte das métricas no aplicativo. Use os botões na parte superior da guia para navegar para diferentes áreas: **Resumo**, **Atualizações**, **Durações de Consulta**, **Esperas de Consulta** e **Conjuntos de Dados**.
 
 ![Guia Conjuntos de dados](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Área de Resumo
 
-![Botão de Resumo](media/service-admin-premium-monitor-capacity/summary-button.png)
-
 A área **Resumo** mostra uma exibição de suas capacidades com base em entidades, recursos do sistema e cargas de trabalho do conjunto de dados.
 
 | | **Métricas** |
 | --- | --- |
-| **Entidades** | * O número das capacidades que você possui<br> * O número distinto de conjuntos de dados em sua capacidade<br> * O número distinto de espaços de trabalho em sua capacidade |
+| **Entidades** | * O número das capacidades que você possui<br> * O número distinto de conjuntos de dados em sua capacidade<br> * O número distinto de workspaces em sua capacidade |
 | **Sistema** | * O uso médio da memória em GB nos últimos sete dias<br> * Mais alto consumo de memória em GB nos últimos sete dias e a hora local em que ele ocorreu<br> * O número de vezes que a CPU excedeu 80% dos limites nos últimos sete dias, divididas em buckets de três minutos<br> * A maioria das vezes em que a CPU excedeu 80% nos últimos sete dias, divididas em buckets de uma hora e a hora local em que isso ocorreu<br> * O número de vezes que as conexões de Consulta direta/dinâmica excederam 80% dos limites nos últimos sete dias, divididas em buckets três minutos<br> * A maioria das vezes em que as conexões de Consulta direta/dinâmicas excederam 80% nos últimos sete dias, divididas em buckets de uma hora, e a hora local em que isso ocorreu |
 | **Cargas de trabalho do conjunto de dados** | * Número total de atualizações nos últimos sete dias<br> * Número total de atualizações com êxito nos últimos sete dias<br> * Número total de atualizações com falha nos últimos sete dias<br> * Número total de atualizações com falha devido à falta de memória<br> * A duração média da atualização é medida em minutos, o tempo necessário para concluir a operação<br> * O tempo de espera médio da atualização é medido em minutos, a latência média entre o horário agendado e o início da operação<br> * Número total de consultas executadas nos últimos sete dias<br> * Número total de consultas com êxito nos últimos sete dias<br> * Número total de consultas com falha nos últimos sete dias<br> * A duração média da consulta é medida em minutos, o tempo necessário para concluir a operação<br> * Número total de modelos removidos devido à pressão da memória |
 |  |  |
 
 #### <a name="refreshes-area"></a>Área de Atualizações
 
-![Botão de Atualizações](media/service-admin-premium-monitor-capacity/refreshes-button.png)
-
 A área **Atualizações** lista as atualizações completas, as medidas de sucesso, o tempo de espera em média/máx. de atualização e a duração média/máx. de atualização dividida por conjuntos de dados nos últimos sete dias. Os dois gráficos na parte inferior mostram as atualizações versus o consumo de memória em GB e os tempos de espera médios divididos em buckets de uma hora, relatados no horário local. Os gráficos da barra superior listam os cinco principais conjuntos de dados pelo tempo médio que leva para o conjunto de dados concluir a atualização (duração da atualização) e o tempo médio de espera da atualização. Vários picos elevados de tempo de espera de atualização são uma indicação de que a capacidade de execução está sobrecarregada.
 
-#### <a name="queries-area"></a>Área de Consultas
+#### <a name="query-durations-area"></a>Área Durações de Consulta
 
-![Botão de Consultas](media/service-admin-premium-monitor-capacity/queries-button.png)
+A área **Durações de Consulta** lista o número total de consultas executadas e a duração média/máxima em milissegundos. Esses dados são divididos por conjuntos de dados, espaço de trabalho e intervalos por hora nos últimos sete dias. Os gráficos inferiores mostram as contagens de consultas e a duração média (em milissegundos) vs. consumo de memória em GB divididos em buckets de uma hora relatados no horário local.
 
-A área **Consultas** lista o número total de número de execução, o número total de consultas de contagem de espera para consultas Ao Vivo/consultas Diretas, duração média/máxima, tempo de espera médio/máximo relatado em milissegundos dividido por conjuntos de dados, workspace e buckets por hora nos últimos sete dias. Os gráficos inferiores mostram as contagens de consultas, a duração média (em milissegundos) e o tempo de espera médio (em milissegundos) vs. consumo de memória em GB divididos em buckets de uma hora relatados no horário local. Os dois gráficos superiores direitos listam os cinco principais conjuntos de dados pela duração média da consulta e o tempo de espera necessário para concluir as consultas. Longas durações de consulta e longos tempos de espera indicam que a capacidade está se aproximando do limite. Também pode indicar que um único conjunto de dados está causando problemas e mais investigação é necessária.
+O gráfico superior direito mostra o histograma de distribuição da duração da consulta. O histograma é dividido em intervalos de consulta em milissegundos nas seguintes categorias: <= 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 s, 1-3 s, 3-10 s, 10-30 s e > 30 segundos.
+
+O gráfico superior direito lista os cinco principais conjuntos de dados pela duração média da consulta necessária para concluir as consultas.
+
+Longas durações de consulta e longos tempos de espera indicam que a capacidade está se aproximando do limite. Também pode indicar que um único conjunto de dados está causando problemas e mais investigação é necessária.
+
+#### <a name="query-waits-area"></a>Área Esperas de Consulta
+
+A área **Esperas de Consulta** lista o número total de consultas executadas, o número total de esperas de consulta para Consulta ao vivo/Consulta direta e o tempo médio/máximo de espera relatado em milissegundos. Esses dados são divididos por conjuntos de dados, espaço de trabalho e intervalos por hora nos últimos sete dias. Os gráficos inferiores mostram as contagens de esperas de consultas e o tempo de espera médio (em milissegundos) vs. consumo de memória em GB divididos em buckets de uma hora relatados no horário local.
+
+O gráfico superior direito mostra o histograma de distribuição do tempo de espera da consulta. O histograma é dividido em intervalos de consulta em milissegundos nas seguintes categorias: <= 50 ms , 50-100 ms , 100-200 ms , 200-400 ms 400 ms-1 s, 1-5 s e > 5 segundos.
+
+O gráfico superior direito lista os cinco principais conjuntos de dados pelo tempo de espera médio necessário para iniciar as consultas.
 
 #### <a name="datasets-area"></a>Área de Conjuntos de Dados
-
-![Botão de Conjuntos de Dados](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 A área **Conjuntos de dados** mostra os conjuntos de dados completos removidos devido à pressão de memória por hora.
 

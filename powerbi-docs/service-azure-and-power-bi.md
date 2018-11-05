@@ -2,41 +2,44 @@
 title: Azure e Power BI
 description: Azure e Power BI
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
-ms.author: davidi
+ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 596d399e7c304d40be5b7839c5c16060eb9e8155
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 3eca6d1ae7aaef507d1ee51889c0c617ff33f9e9
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39255959"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101176"
 ---
 # <a name="azure-and-power-bi"></a>Azure e Power BI
+
 Com os serviços do **Azure** e o **Power BI**, você pode transformar seus esforços de processamento de dados em análises e relatórios que fornecem informações em tempo real sobre a sua empresa. Se o processamento de dados é baseado em nuvem ou local, simples ou complexo, de única fonte ou altamente escalonado, armazenado ou em tempo real, o Azure e o Power BI têm a conectividade interna e a integração para dar vida aos seus esforços de business intelligence.
 
-![](media/service-azure-and-power-bi/azure_1.png)
+![Azure](media/service-azure-and-power-bi/azure_1.png)
 
 O Power BI tem uma grande quantidade de conexões do Azure disponíveis, e as soluções de business intelligence que você pode criar com esses serviços são tão exclusivas quanto a sua empresa. Você pode conectar apenas uma ou várias fontes de dados do Azure e formatar e refinar seus dados para criar relatórios personalizados.
 
-### <a name="azure-sql-database-and-power-bi"></a>Banco de Dados SQL do Azure e Power BI
+## <a name="azure-sql-database-and-power-bi"></a>Banco de Dados SQL do Azure e Power BI
+
 Você pode iniciar uma conexão simples com um Banco de Dados SQL do Azure e criar relatórios para monitorar o progresso de sua empresa. Com o [Power BI Desktop](desktop-getting-started.md), é possível criar relatórios que identificam tendências e indicadores chave de desempenho que promovem a sua empresa.
 
-![](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
+![SQL para PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
 Há muito mais informações para descobrir sobre o [Banco de Dados SQL do Azure](http://azure.microsoft.com/services/sql-database/).
 
-### <a name="transform-shape-and-merge-your-cloud-data"></a>Transforme, formate e mescle seus dados na nuvem
+## <a name="transform-shape-and-merge-your-cloud-data"></a>Transforme, formate e mescle seus dados na nuvem
+
 Você tem dados mais complexos e todos os tipos de fontes? Sem problemas. Com o **Power BI Desktop** e os serviços do Azure, as conexões podem ser acessadas no diálogo **Obter Dados** com apenas um toque. Na mesma Consulta, você pode se conectar ao seu **Banco de Dados SQL do Azure**, sua fonte de dados do **Azure HDInsight** e seu **Armazenamento de Blob do Azure** (ou **Armazenamento de Tabela do Azure**) e selecionar apenas os subconjuntos dentro de cada um deles de que você precisa e refiná-los daí.
 
 É possível criar relatórios diferentes para públicos-alvo diferentes usando as mesmas conexões de dados e até mesmo a mesma Consulta. Apenas crie uma nova página de relatório, refine suas visualizações para cada público-alvo e acompanhe-as para que sua empresa fique bem informada.
 
-![](media/service-azure-and-power-bi/azure_3_multipletopbi.png)
+![Múltiplo para PBI](media/service-azure-and-power-bi/azure_3_multipletopbi.png)
 
 Para obter mais informações, veja os seguintes recursos:
 
@@ -44,16 +47,24 @@ Para obter mais informações, veja os seguintes recursos:
 * [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
 * [Armazenamento do Azure](http://azure.microsoft.com/services/storage/) (Armazenamento de blob e Armazenamento de tabela)
 
-### <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Aprofunde-se (e fique à frente) usando os Serviços do Azure e o Power BI
+## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Aprofunde-se (e fique à frente) usando os Serviços do Azure e o Power BI
+
 Você pode expandir conforme as suas necessidades com o Azure e o Power BI. Aproveite o processamento de dados de várias fontes, use grandes sistemas em tempo real, use o [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/)e os [Hubs de Eventos](http://azure.microsoft.com/services/event-hubs/) e reúna seus diversos serviços de SaaS em relatórios de business intelligence que oferecem à sua empresa uma excelente vantagem.
 
-![](media/service-azure-and-power-bi/azure_4_complex.png)
+![Complexo do Azure](media/service-azure-and-power-bi/azure_4_complex.png)
 
-### <a name="connect-your-app-data-using-power-bi-apis"></a>Conecte os dados de seu aplicativo usando as APIs do Power BI
-Você também pode usar o Power BI para aprofundar seus conhecimentos sobre seus aplicativos existentes. Com a API do Power BI, os desenvolvedores de aplicativos podem enviar conjuntos de dados inteiros para o Power BI de forma programática. Precisa de atualizações contínuas? Com as APIs do Power BI, os desenvolvedores podem enviar atualizações de dados em tempo real para começar rapidamente e, em seguida, expandir para o uso do Azure Stream Analytics de acordo com os requisitos de escala.
+## <a name="context-insights-with-power-bi-embedded-analytics"></a>Insights de contexto com análises do Power BI Embedded
 
-Há várias informações sobre as APIs do Power BI no [Portal do Desenvolvedor do Power BI](http://dev.powerbi.com). 
+Insira visualizações de dados interativas e incríveis em aplicativos, em sites, em portais e muito mais para aproveitar seus dados corporativos. Com o [Power BI Embedded como um recurso no Azure](https://azure.microsoft.com/services/power-bi-embedded/), você pode facilmente inserir relatórios e painéis para que seus usuários possam aproveitar experiências consistentes de alta fidelidade em diversos dispositivos.  O Power BI usado com a incorporação de análises é para ajudá-lo em sua jornada desde Dados -> Conhecimento -> Insights -> Ações.  Além disso, você pode estender o valor do Power BI e Azure inserindo análise nos [portais e aplicativos internos da sua organização](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
 
-### <a name="what-could-you-do-with-azure-and-power-bi"></a>O que você pode fazer com o Azure e o Power BI?
-Existem todos os tipos de cenários em que o **Azure** e o **Power BI** podem ser combinados - as possibilidades e oportunidades são tão exclusivas quanto a sua empresa. Para obter mais informações sobre os **serviços do Azure**, confira esta [página de visão geral](http://go.microsoft.com/fwlink/?LinkId=535031&clcid=0x409), que descreve os **Cenários de análise de dados com o Azure**, e saiba como transformar suas fontes de dados em inteligência que conduz sua empresa para o sucesso.
+Há várias informações sobre as APIs do Power BI no [Portal do Desenvolvedor do Power BI](http://dev.powerbi.com).
 
+Para saber mais, confira [O que os desenvolvedores podem fazer com o Power BI?](developer/what-can-you-do.md).
+
+## <a name="embed-your-power-bi-data-within-your-app"></a>Inserir seus dados do Power BI no seu aplicativo
+
+Insira visualizações de dados interativas e incríveis em aplicativos, em sites, em portais e muito mais para demonstrar seus dados corporativos no contexto. Usando o [Power BI Embedded no Azure](https://azure.microsoft.com/services/power-bi-embedded/) você pode facilmente inserir relatórios e painéis para que seus usuários possam aproveitar experiências consistentes de alta fidelidade em diversos dispositivos.
+
+## <a name="what-could-you-do-with-azure-and-power-bi"></a>O que você pode fazer com o Azure e o Power BI?
+
+Existem todos os tipos de cenários em que o **Azure** e o **Power BI** podem ser combinados - as possibilidades e oportunidades são tão exclusivas quanto a sua empresa. Para obter mais informações sobre os **serviços do Azure**, confira esta [página de visão geral](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment), que descreve os **Cenários de análise de dados com o Azure**, e saiba como transformar suas fontes de dados em inteligência que conduz sua empresa para o sucesso.

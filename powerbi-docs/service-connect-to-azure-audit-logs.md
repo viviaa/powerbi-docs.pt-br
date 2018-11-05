@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4faaa63a3845125b4df1ec634d22b084b5ae25f2
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548133"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101199"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Conectar-se aos Logs de Auditoria do Azure com o Power BI
 Com o pacote de conteúdo de Logs de Auditoria do Azure, você pode analisar e visualizar as informações armazenadas nos logs de auditoria. O Power BI recupera seus dados, cria um painel inicial e cria relatórios com base nesses dados.
@@ -38,7 +38,7 @@ Com o pacote de conteúdo de Logs de Auditoria do Azure, você pode analisar e v
 5. Para o **Método de Autenticação**, selecione **oAuth2** \> **Entrar**.
    
     ![](media/service-connect-to-azure-audit-logs/creds.png)
-6. Insira suas credenciais de conta para concluir o processo de entrada.
+6. Insira as credenciais da conta para concluir o processo de entrada.
    
     ![](media/service-connect-to-azure-audit-logs/login.png)
 7. O Power BI recuperará seus dados do Log de Auditoria do Azure e criará um relatório e painel prontos para uso. 
@@ -53,7 +53,7 @@ Com o pacote de conteúdo de Logs de Auditoria do Azure, você pode analisar e v
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements"></a>Requisitos de sistema
-O pacote de conteúdo de logs de Auditoria do Azure requer acesso aos Logs de Auditoria no Portal do Azure. Mais detalhes [aqui](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
+O pacote de conteúdo de logs de Auditoria do Azure requer acesso aos Logs de Auditoria no portal do Azure. Mais detalhes [aqui](/azure/azure-resource-manager/resource-group-audit/).
 
 <a name="FindingParams"></a>
 
@@ -63,7 +63,7 @@ Há duas maneiras fáceis de localizar sua ID da Assinatura.
 1. De https://portal.azure.com -&gt; Procurar -&gt; Assinaturas -&gt; ID da Assinatura
 2. De https://manage.windowsazure.com -&gt; Configurações -&gt; ID da Assinatura
 
-Sua ID da assinatura será um conjunto longo de números e caracteres, semelhantes ao exemplo da Etapa \#4 acima. 
+A ID da assinatura será um conjunto longo de números e caracteres, semelhantes ao exemplo da Etapa \#4 acima. 
 
 ## <a name="troubleshooting"></a>Solução de problemas
 Se você estiver vendo um erro de credenciais ou de tentativa de atualização devido às credenciais inválidas, tente excluir todas as instâncias do pacote de conteúdo dos logs de Auditoria do Azure e reconectar.

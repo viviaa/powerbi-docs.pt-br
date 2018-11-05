@@ -7,27 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 10/25/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 96b2fb3cb1558f862c792b3bed77c9f0c2bc61a5
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416810"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101360"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Usar o visual Matriz no Power BI Desktop
-Com o recurso visual **Matriz**, você pode criar visuais de matriz (às vezes mencionados como *tabelas*) nos relatórios do **Power BI Desktop** e elementos de realce cruzado na matriz com outros visuais. Além disso, você pode selecionar linhas, colunas e até mesmo células individuais e realce cruzado. Por fim, para fazer melhor uso do espaço de layout, o visual de matriz dá suporte a um layout de nível.
+Com o recurso visual **Matriz**, você pode criar visuais de matriz (às vezes mencionados como *tabelas*) nos relatórios do **Power BI Desktop** e **serviço do Power BI** e elementos de realce cruzado na matriz com outros visuais. Além disso, você pode selecionar linhas, colunas e até mesmo células individuais e realce cruzado. As células individuais e várias seleções de célula podem ser copiadas e coladas em outros aplicativos. Por fim, para fazer melhor uso do espaço de layout, o visual de matriz dá suporte a um layout de nível.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 Há muitos recursos associados à matriz e vamos abordá-los nas próximas seções deste artigo.
 
-> [!NOTE]
-> A partir do lançamento de julho de 2017 do **Power BI Desktop**, visuais de matriz e tabela refletem o estilo (incluindo cores) do **Tema de Relatório** aplicado. Talvez essa não seja as cores que você espera para o seu visual de matriz, que você pode alterar em sua configuração **Tema de Relatório**. Para obter mais informações, consulte [**Usar Temas de Relatório no Power BI Desktop**](../desktop-report-themes.md) para obter informações sobre temas.
-> 
-> 
+## <a name="report-themes"></a>Temas de relatórios
+Os visuais de matriz e de tabela refletem o estilo (incluindo cores) do **Tema de Relatório** aplicado. Talvez essa não seja as cores que você espera para o seu visual de matriz, que você pode alterar em sua configuração **Tema de Relatório**. Para obter mais informações, consulte [**Usar Temas de Relatório no Power BI Desktop**](../desktop-report-themes.md) para obter informações sobre temas.
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Noções básicas sobre como o Power BI calcula totais
 
@@ -134,6 +132,20 @@ Com o visual **Matriz**, você pode selecionar os elementos na matriz como a bas
 Além disso, usar Ctrl + clique também funciona para o realce cruzado. Por exemplo, na imagem a seguir, uma coleção de subcategorias foi selecionada no visual **Matriz**. Observe como os itens que não foram selecionados no visual estão esmaecidos e como os outros visuais na página refletem as seleções feitas no visual **Matriz**.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
+
+## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Copiar valores do Power BI para uso em outros aplicativos
+
+Sua matriz ou tabela pode ter conteúdo que você gostaria de usar em outros aplicativos, como Dynamics CRM, Excel e até mesmo outros relatórios do Power BI. Clicando com o botão direito do mouse no Power BI, é possível copiar uma única célula ou uma seleção de células em sua área de transferência e colar em outro aplicativo.
+
+![opções de cópia](media/desktop-matrix-visual/power-bi-cell-copy.png)
+
+* Para copiar o valor de uma única célula, selecione-a, clique com o botão direito do mouse e escolha **Copiar valor**. Com o valor de célula não formatado em sua área de transferência, agora é possível colá-lo em outro aplicativo.
+
+    ![opções de cópia](media/desktop-matrix-visual/power-bi-copy.png)
+
+* Para copiar mais de uma única célula, selecione uma variedade de células ou use CTRL para selecionar uma ou mais células. A cópia incluirá os cabeçalhos da coluna e da linha.
+
+    ![colar no Excel](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Sombreamento e cores da fonte com visuais de matriz
 Com o visual **Matriz**, você pode aplicar a **formatação condicional** (cores e sombreamento) à tela de fundo das células dentro da matriz e aplicar a formatação condicional ao próprio texto e aos valores.

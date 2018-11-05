@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112249"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396788"
 ---
 # <a name="export-data-from-visualizations"></a>Exportar dados de uma visualização
-Se desejar ver os dados usados para criar uma visualização, você poderá exibi-los no Power BI ou exportá-los para o Excel como um arquivo .xlsx ou .csv.   
+Se desejar ver os dados usados para criar uma visualização, você poderá exibi-los no Power BI ou exportá-los para o Excel como um arquivo .xlsx ou .csv. A opção de exportação de dados requer uma licença Pro ou Premium e a edição de permissões para o conjunto de dados e o relatório. 
 
 Assista a Will exportar os dados de uma das visualizações de seu relatório, salvá-los como um arquivo .xlsx e abri-los no Excel. Em seguida, siga as instruções passo a passo abaixo do vídeo para testá-la por conta própria.
 
@@ -92,9 +92,12 @@ O que você vê quando seleciona **Dados subjacentes** pode variar. Compreender 
 
 ### <a name="set-the-export-options"></a>Definir as opções de exportação
 Designers de relatório do Power BI controlam os tipos de opções de exportação de dados que estão disponíveis para seus consumidores. As opções são:
-- Permitir a exportação somente de dados resumidos (esse é o padrão para relatórios) 
-- Permitir a exportação de dados resumidos e subjacentes  
+- Permitir a exportação apenas de dados resumidos (esse é o padrão para novos relatórios) 
+- Permitir a exportação de dados resumidos e subjacentes (esse era o padrão antes de outubro de 2018) 
 - Não permitir a exportação de nenhum dado  
+
+    > [!IMPORTANT]
+    > É recomendável que os designers de relatório examinem novamente relatórios antigos e redefinam manualmente a opção de exportação, conforme necessário.
 
 1. Para definir essas opções, comece no Power BI Desktop.
 
