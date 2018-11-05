@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546905"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003215"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Conectar-se ao Zuora com o Power BI
 O Zuora para Power BI permite visualizar dados importantes de receita, de cobrança e de assinatura. Use o painel e os relatórios padrão para analisar tendências de uso, rastrear cobranças e pagamentos e monitorar receitas recorrentes ou personalizá-las para atender às suas necessidades exclusivas de painel e relatório.
@@ -32,13 +32,13 @@ Conecte-se ao [Zuora](https://app.powerbi.com/getdata/services/Zuora) para o Pow
 3. Selecione **Zuora** \>  **Obter**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Especifique a URL do Zuora. Isso normalmente é "<https://www.zuora.com>", veja detalhes sobre [como encontrar esses parâmetros](#FindingParams) abaixo.
+4. Especifique a URL do Zuora. A URL normalmente é "<https://www.zuora.com>", confira detalhes sobre [como encontrar esses parâmetros](#FindingParams) abaixo.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Para o **Método de Autenticação**, selecione **Básico** e forneça seu nome de usuário e sua senha (diferencia maiúsculas de minúsculas) e selecione **Entrar**.
 
     ![](media/service-connect-to-zuora/creds.png)
-6. Após a aprovação, o processo de importação será iniciado automaticamente. Quando concluído, um novo painel, relatório e modelo aparecerão no Painel de Navegação. Selecione o painel para exibir os dados importados por você.
+6. Após a aprovação, o processo de importação será iniciado automaticamente. Quando concluído, um painel, um relatório e um modelo novos aparecerão no Painel de Navegação. Selecione o painel para exibir os dados importados por você.
 
      ![](media/service-connect-to-zuora/dashboard.png)
 
@@ -95,11 +95,10 @@ Ela também inclui as medidas calculadas abaixo:
 Forneça a URL com a qual você normalmente se conecta para acessar seus dados do Zuora. As opções válidas são:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
-* A URL correspondente à instância do serviço  
+* O URL correspondente à sua instância de serviço  
 
 ## <a name="troubleshooting"></a>Solução de problemas
-O pacote de conteúdo do Zuora mantém vários aspectos diferentes da sua conta do Zuora. Se você não usar determinados recursos, você poderá ver os blocos/relatórios correspondentes vazios. Se você tiver problemas ao carregar, entre em contato com o suporte do Power BI.
+O pacote de conteúdo do Zuora mantém vários aspectos diferentes da sua conta do Zuora. Se você não usar determinados recursos, poderá ver blocos/relatórios correspondentes vazios. Entre em contato com o suporte do Power BI se você tiver problemas ao carregar.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Introdução ao Power BI](service-get-started.md)
