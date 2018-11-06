@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.openlocfilehash: b50f3d5a3b01e32dcbaf80db5e25bd046c5e27a2
-ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
+ms.openlocfilehash: 56b6c954aa49f8adf0aa479f143fb11b932c107e
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506789"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736954"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Perguntas frequentes sobre o Power BI Embedded
 
@@ -66,7 +66,7 @@ Veja aqui uma lista parcial das diferenças que você pode usar com cada um dele
 | Recurso | Power BI Embedded | Capacidade do Power BI Premium | Capacidade do Power BI Premium |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | (SKUs A) | (SKUs EM) | (SKUs P) |
-| Inserir artefatos de um espaço de trabalho do aplicativo do Power BI | Capacidade do Azure | Capacidade do Office 365 | Capacidade do Office 365 |
+| Inserir artefatos de um workspace do aplicativo do Power BI | Capacidade do Azure | Capacidade do Office 365 | Capacidade do Office 365 |
 | Consumir relatórios do Power BI em um aplicativo inserido | Sim | Sim | Sim |
 | Consumir relatórios do Power BI no SharePoint | Não | Sim | Sim |
 | Consumir relatórios do Power BI no Dynamics | Não | Sim | Sim |
@@ -92,7 +92,7 @@ Veja aqui uma lista parcial das diferenças que você pode usar com cada um dele
 
 ### <a name="how-can-i-monitor-power-bi-embedded-capacity-consumption"></a>Como posso monitorar o consumo de capacidade do Power BI Embedded?
 
-* Usando o [portal do administrador do Power BI](../service-admin-portal.md#power-bi-embedded-settings).
+* Usando o [portal do administrador do Power BI](../service-admin-portal.md#power-bi-embedded).
 
 * Fazendo o download do [aplicativo de métricas](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) no Power BI.
 
@@ -137,7 +137,7 @@ Sim, há cmdlets do Powershell e APIs ARM (Azure Resource Manager) que você pod
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>O que é a função de capacidade dedicada do PBI Incorporado em uma solução de PBI Incorporado?
 
-Para [promover sua solução para produção](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), você precisa do conteúdo do Power BI (espaço de trabalho do aplicativo que você está usando em seus aplicativos para atribuir a uma capacidade do Power BI Embedded (uma SKU).
+Para [promover sua solução para produção](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), você precisa do conteúdo do Power BI (workspace do aplicativo que você está usando em seus aplicativos para atribuir a uma capacidade do Power BI Embedded (uma SKU).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Quais são as regiões do Azure que o PBI Incorporado está disponível?
 
@@ -183,7 +183,7 @@ O ISV/desenvolvedor deve ter uma conta do Power BI antes de comprar o Power BI E
 * Adicionar administradores de capacidade
 * Pausar/retomar o serviço
 
-Use o PowerBI.com para atribuir/cancelar a atribuição de espaços de trabalho à capacidade do Power BI Embedded.
+Use o PowerBI.com para atribuir/cancelar a atribuição de workspaces à capacidade do Power BI Embedded.
 
 ### <a name="what-deploy-regions-are-supported"></a>Quais regiões de implantação são compatíveis?
 
@@ -217,7 +217,7 @@ O Power BI Embedded é cobrado em uma taxa por hora previsível com base nos tip
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Quem precisa de uma licença do Power BI Pro para o Power BI Embedded e por quê?
 
-A licença do Power BI Pro é necessária para analistas que precisam adicionar relatórios a um Espaço de Trabalho do Power BI, para desenvolvedores que precisam usar as APIs REST e para administradores de locatários que precisam gerenciar o locatário e a capacidade do Power BI.
+A licença do Power BI Pro é necessária para analistas que precisam adicionar relatórios a um workspace do Power BI, para desenvolvedores que precisam usar as APIs REST e para administradores de locatários que precisam gerenciar o locatário e a capacidade do Power BI.
 
 Uma vez que o Power BI Embedded permite o uso do portal do Power BI para gerenciar e validar o conteúdo inserido, a licença do Power BI Pro é necessária para autenticar o aplicativo no PowerBI.com para a obtenção do acesso aos relatórios nos repositórios corretos.
 
@@ -239,44 +239,44 @@ O Power BI Embedded está disponível para algumas [nuvens soberanas](embed-samp
 
 As entidades sem fins lucrativos e educacionais podem comprar o Azure. Não há nenhum preço especial para esses tipos de clientes no Azure.
 
-## <a name="power-bi-workspace-collection"></a>Coleção de Espaços de Trabalho do Power BI
+## <a name="power-bi-workspace-collection"></a>Coleção de workspaces do Power BI
 
-### <a name="what-is-power-bi-workspace-collection"></a>O que é a Coleção de Espaços de Trabalho do Power BI?
+### <a name="what-is-power-bi-workspace-collection"></a>O que é a Coleção de workspaces do Power BI?
 
-A **Coleção de Espaços de Trabalho do Power BI** (**Power BI Embedded** versão 1) é uma solução baseada no recurso de **Coleção de Espaços de Trabalho do Power BI** do Azure. Essa solução permite criar aplicativos do **Power BI Embedded** para seus clientes usando conteúdo do Power BI na solução **Coleção de Espaços de Trabalho do Power BI**, APIs dedicadas e chaves de coleção de espaço de trabalho para autenticar o aplicativo no Power BI.
+A **Coleção de workspaces do Power BI** (**Power BI Embedded** versão 1) é uma solução baseada no recurso de **Coleção de workspaces do Power BI** do Azure. Essa solução permite criar aplicativos do **Power BI Embedded** para seus clientes usando conteúdo do Power BI na solução **Coleção de workspaces do Power BI**, APIs dedicadas e chaves de coleção de workspaces para autenticar o aplicativo no Power BI.
 
-### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Posso migrar da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded?
+### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Posso migrar da Coleção de workspaces do Power BI para o Power BI Embedded?
 
-1. Você pode usar a ferramenta de migração para clonar o conteúdo da **Coleção de Espaços de Trabalho do Power BI** no Power BI – https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+1. Você pode usar a ferramenta de migração para clonar o conteúdo da **Coleção de workspaces do Power BI** no Power BI – https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
 
 2. Comece com o POC do aplicativo **Power BI Embedded** que usa conteúdo do Power BI.
 
-3. Quando estiver pronto para a produção, compre uma capacidade dedicada do **Power BI Embedded** e atribua seu conteúdo do Power BI (espaço de trabalho) a essa capacidade.
+3. Quando estiver pronto para a produção, compre uma capacidade dedicada do **Power BI Embedded** e atribua seu conteúdo do Power BI (workspace) a essa capacidade.
 
 > [!Note]
-> Você pode continuar usando a **Coleção de Espaços de Trabalho do Power BI** enquanto compila em paralelo com uma solução **Power BI Embedded**. Quando estiver pronto, você poderá mover o cliente para a nova solução **Power BI Embedded** e desativar a solução **Coleção de Espaços de Trabalho do Power BI**.
+> Você pode continuar usando a **Coleção de workspaces do Power BI** enquanto compila em paralelo com uma solução **Power BI Embedded**. Quando estiver pronto, você poderá mover o cliente para a nova solução **Power BI Embedded** e desativar a solução **Coleção de workspaces do Power BI**.
 
-Para obter mais informações, confira [Como migrar o conteúdo da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
+Para obter mais informações, confira [Como migrar o conteúdo da Coleção de workspaces do Power BI para o Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
 
-### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>A Coleção de Espaços de Trabalho do Power BI está a caminho de ser preterida?
+### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>A Coleção de workspaces do Power BI está a caminho de ser preterida?
 
-Sim, mas os clientes que já estão usando a solução **Coleção de Espaços de Trabalho do Power BI** podem continuar usando-a até que seja preterida. Os clientes também podem criar novas coleções de espaço de trabalho e qualquer aplicativo do **Power BI Embedded** que ainda usa a **Coleção de Espaços de Trabalho do Power BI**.
+Sim, mas os clientes que já estão usando a solução **Coleção de workspaces do Power BI** podem continuar usando-a até que seja preterida. Os clientes também podem criar novas coleções de workspaces e qualquer aplicativo do **Power BI Embedded** que ainda usa a **Coleção de workspaces do Power BI**.
 
-No entanto, isso também significa que novos recursos não serão adicionados a nenhuma solução da **Coleção de Espaços de Trabalho do Power BI** e que os clientes são incentivados a planejar sua migração para a nova solução **Power BI Embedded**.
-### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Quando o suporte para a Coleção de Espaços de Trabalho do Power BI será descontinuado?
+No entanto, isso também significa que novos recursos não serão adicionados a nenhuma solução da **Coleção de workspaces do Power BI** e que os clientes são incentivados a planejar sua migração para a nova solução **Power BI Embedded**.
+### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Quando o suporte para a Coleção de workspaces do Power BI será descontinuado?
 
-Os clientes que já usam a solução **Coleções de Espaços de Trabalho do Power BI** podem continuar usando-a até o final de junho de 2018 ou até o término do contrato de suporte.
+Os clientes que já usam a solução **Coleções de workspace do Power BI** podem continuar usando-a até o final de junho de 2018 ou até o término do contrato de suporte.
 
-### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>Em quais regiões a Coleção de Espaços de Trabalho do PBI pode ser criada?
+### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>Em quais regiões a Coleção de Workspaces do PBI pode ser criada?
 
 As regiões disponíveis são Sudeste da Austrália, Sul do Brasil, Canadá Central, Leste dos EUA 2, Leste do Japão, Centro-Norte dos EUA, Europa Setentrional, Centro-Sul dos EUA, Sudeste Asiático, Sul do Reino Unido, Europa Ocidental, Índia Ocidental e Oeste dos EUA.
 
-### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Por que migrar da Coleção de Espaços de Trabalho do PBI para o Power BI Embedded?
+### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Por que migrar da Coleção de Workspaces do PBI para o Power BI Embedded?
 
-Há novos recursos e funcionalidades que foram introduzidos na solução **Power BI Embedded** que você não pode fazer com a **Coleção de Espaços de Trabalho do Power BI**.
+Há novos recursos e funcionalidades que foram introduzidos na solução **Power BI Embedded** que você não pode fazer com a **Coleção de workspaces do Power BI**.
 
 Alguns deles são:
-* Todas as fontes de dados do PBI têm suporte, em contraste com as 2 fontes de dados da **Coleção de Espaços de Trabalho do Power BI**. 
+* Todas as fontes de dados do PBI têm suporte, em contraste com as 2 fontes de dados da **Coleção de workspaces do Power BI**. 
 * Os novos recursos como P e R, atualizar, indicadores, inserção de painéis e blocos, menu personalizado etc. só têm suporte na solução **Power BI Embedded**.
 * Modelo de cobrança por capacidade.
 
