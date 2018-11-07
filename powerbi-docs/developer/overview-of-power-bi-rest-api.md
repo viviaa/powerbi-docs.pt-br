@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3b19740616e7b9a390a883fde2fd96320de7b94a
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: a1492a98825ad26b2dde359cf9cec96cc4623e04
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973576"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223158"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>O que os desenvolvedores podem fazer com a API do Power BI?
 
@@ -29,10 +29,10 @@ Aqui estão algumas das coisas que você pode fazer com as APIs do Power BI.
 | Inserir dashboards, relatórios e blocos para usuários do Power BI e usuários que não têm o Power BI (o aplicativo detém dados) |[Como inserir seus dashboards, relatórios e blocos do Power BI](embedding-content.md) |
 | Estender um fluxo de trabalho de negócios existente para enviar por push dados de chave a um painel do Power BI. |[Enviar dados por push a um dashboard](walkthrough-push-data.md) |
 | Autentique-se no Power BI. |[Autenticar-se no Power BI](get-azuread-access-token.md) |
-| Criar um visual personalizado. |[Usar ferramentas de desenvolvedor para criar visuais personalizados](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Criar um visual personalizado. |[Desenvolvimento de um visual personalizado do Power BI](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
-> As APIs do Power BI ainda se referem aos espaços de trabalho do aplicativo como grupos. As referências a grupos significam que você está trabalhando com espaços de trabalho do aplicativo.
+> As APIs do Power BI ainda se referem aos workspaces do aplicativo como grupos. As referências a grupos significam que você está trabalhando com workspaces do aplicativo.
 
 ## <a name="power-bi-developer-samples"></a>Exemplos para Desenvolvedores do Power BI
 
@@ -72,7 +72,7 @@ Você pode usar a API do Power BI para enviar dados por push a um conjunto de da
 ## <a name="next-steps"></a>Próximas etapas
 
 [Enviar dados por push a um conjunto de dados](walkthrough-push-data.md)  
-[Introdução às ferramentas de desenvolvedor de visuais personalizados](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Desenvolvimento de um visual personalizado do Power BI](custom-visual-develop-tutorial.md)  
 [Referência da API REST do Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

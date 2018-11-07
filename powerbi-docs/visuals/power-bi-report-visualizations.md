@@ -2,6 +2,7 @@
 title: Visão geral de visualizações de relatório no serviço do Power BI e Power BI Desktop
 description: Visão geral de visualizações (visuais) de relatório no Microsoft Power BI.
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
@@ -9,16 +10,16 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6cfd4cf1ae090351a710b00ee82600ddcbc71632
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: fedfbd8da9b0582c84224ef846cd0ba1c14d0683
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546155"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223227"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualizações em relatórios do Power BI
+
 Visualizações (também conhecidas como visuais) exibem informações que foram descobertas nos dados. Um relatório do Power BI pode ter uma única página com um visual ou então páginas repletas de visuais. No serviço do Power BI, os visuais podem ser [fixados de relatórios em dashboards](../service-dashboard-pin-tile-from-report.md). 
 
 É importante fazer a distinção entre *criadores* e *consumidores* de relatórios. Se você está criando ou modificando o relatório, você é um criador.  Criadores têm permissões de edição para o relatório e para o respectivo conjunto de dados subjacente. No Power BI Desktop, isso significa que você pode abrir o conjunto de dados no modo de exibição de dados e criar elementos visuais no modo de exibição de Relatório. No serviço do Power BI, isso significa que você pode abrir o relatório ou conjunto de dados no editor de relatório no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md). Se um relatório ou dashboard foi [compartilhado com você](../consumer/end-user-shared-with-me.md), você é um **consumidor** de relatório. Você poderá exibir e interagir com o relatório e os respectivos visuais, mas você não poderá salvar as alterações.
@@ -35,16 +36,21 @@ E para ainda mais opções, visite o [site da comunidade do Microsoft AppSource]
   Se você não estiver familiarizado com o Power BI ou precisar de um lembrete, use os links abaixo para aprender os fundamentos de visualizações de Power BI.  Como alternativa, use o Sumário (no lado esquerdo deste artigo) para encontrar informações ainda mais úteis.
 
 ## <a name="add-a-visualization-in-power-bi"></a>Adicionar uma visualização no Power BI
+
 [Crie visualizações](power-bi-report-add-visualizations-i.md) nas páginas de seus relatórios. Navegue na [lista de visualizações e tutoriais de visualização disponíveis.](power-bi-visualization-types-for-reports-and-q-and-a.md) 
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Carregar uma visualização personalizada e usá-la no Power BI
-Adicione uma visualização personalizada que você criou ou que encontrou no [site da comunidade do Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Se sentindo criativo? Aprofunde-se em nosso código-fonte e use nossas [ferramentas para desenvolvedores](../service-custom-visuals-getting-started-with-developer-tools.md) para criar um novo tipo de visualização e [compartilhá-la com a comunidade](../developer/office-store.md).
+
+Adicione uma visualização personalizada que você criou ou que encontrou no [site da comunidade do Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Se sentindo criativo? Aprofunde-se em nosso código-fonte e use nossas [ferramentas para desenvolvedores](../developer/custom-visual-develop-tutorial.md) para criar um novo tipo de visualização e [compartilhá-la com a comunidade](../developer/office-store.md).
 
 ## <a name="change-the-visualization-type"></a>Altere o tipo de visualização
+
 Tente [alterar o tipo de visualização](power-bi-report-change-visualization-type.md) para ver o que funciona melhor com seus dados.
 
 ## <a name="pin-the-visualization"></a>Fixe a visualização
+
 No serviço do Power BI, quando a visualização estiver da forma que deseja, é possível [fixá-la em um dashboard](../service-dashboard-pin-tile-from-report.md) como um bloco. Se você alterar a visualização usada no relatório depois de fixá-lo, o bloco no dashboard não será alterado – se fosse um gráfico de linhas, ele permaneceria um gráfico de linhas, mesmo que você o alterasse para um gráfico de rosca no relatório.
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
