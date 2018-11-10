@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/26/2018
-ms.openlocfilehash: dcefa427290fd804a0b2c79dc357e5f5bfbe7296
-ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
+ms.date: 11/06/2018
+ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50159734"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223250"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Tutorial: Adicionar opções de formatação a um visual personalizado do Power BI
 
@@ -254,6 +254,10 @@ Agora você pode abrir o relatório do Power BI Desktop e importar o visual pers
 
 8. Passe o mouse sobre o ícone **Circle Card** e observe a dica de ferramenta que aparece.
 
+## <a name="debugging"></a>Depuração
+
+Para obter dicas de como depurar seu visual personalizado, veja o [guia depuração](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
+
 ## <a name="next-steps"></a>Próximas etapas
 
-Se você gostaria de saber mais sobre como publicar seu visual personalizado recém-desenvolvido para ser usado por outros, consulte [Publicar visuais personalizados no AppSource](office-store.md).
+É possível listar seu visual desenvolvido recentemente para outras pessoas usarem enviando-o para o **AppSource**. Para saber mais sobre esse processo, consulte [Publicar visuais personalizados no AppSource](office-store.md).

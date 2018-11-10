@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/26/2018
-ms.openlocfilehash: 813d65844fee21a6c10d4c95bd15fb18cf4c75c2
-ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
+ms.date: 11/06/2018
+ms.openlocfilehash: ed3a7a7c9f649f5ce834594572e3ab87b91181f5
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50159736"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223411"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Tutorial: Desenvolvendo um visual personalizado do Power BI
 
@@ -39,6 +39,7 @@ Neste tutorial, você aprenderá a:
 
 * Se não estiver inscrito no **Power BI Pro**, [inscreva-se para uma avaliação gratuita](https://powerbi.microsoft.com/en-us/pricing/) antes de começar.
 * É necessário ter o [Visual Studio Code](https://www.visualstudio.com/) instalado.
+* Usuários do Windows precisam ter a versão 4 ou posterior do [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6). Usuários do OSX precisam do [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
 
 ## <a name="setting-up-the-developer-environment"></a>Configurando o ambiente de desenvolvedor
 
@@ -69,6 +70,8 @@ Agora, é necessário instalar o pacote **pbiviz**.
     ```
 
 ### <a name="creating-and-installing-a-certificate"></a>Criando e instalando um certificado
+
+#### <a name="windows"></a>Windows
 
 1. Para criar um certificado, digite o seguinte comando.
 
@@ -117,13 +120,32 @@ Agora, é necessário instalar o pacote **pbiviz**.
 > [!Important]
 > Não feche a sessão do Windows PowerShell.
 
+#### <a name="osx"></a>OSX
+
+1. Se o bloqueio na parte superior esquerda estiver bloqueado, selecione-o para desbloquear. Pesquise *localhost* e clique duas vezes no certificado.
+
+    ![Instalar o certificado SSL 1 no OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
+
+2. Selecione **Sempre Confiar** e feche a janela.
+
+    ![Instalar o certificado SSL 2 no OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
+
+3. Insira seu nome de usuário e sua senha. Selecione **Atualizar Configurações**.
+
+    ![Instalar o certificado SSL 3 no OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
+
+4. Feche todos os navegadores que estiverem abertos.
+
+> [!NOTE]
+> Se o certificado não for reconhecido, poderá ser necessário reiniciar o computador.
+
 ## <a name="creating-a-custom-visual"></a>Criando um visual personalizado
 
 Agora que você configurou seu ambiente, é hora de criar seu visual personalizado.
 
 É possível [baixar](https://github.com/Microsoft/PowerBI-visuals-circlecard) o código-fonte completo para este tutorial.
 
-1. No Windows PowerShell, verifique se o pacote de Ferramentas de Visual do Power BI foi instalado.
+1. Verifique se o pacote de Ferramentas de Visual do Power BI foi instalado.
 
     ```powershell
     pbiviz
@@ -555,6 +577,10 @@ Modifique o arquivo **capabilities.json** para definir a função e os mapeament
 Agora você configurou as funções de dados e associou o visual à exibição de dados.
 
 No próximo tutorial, você aprenderá como adicionar opções de formatação ao visual personalizado.
+
+## <a name="debugging"></a>Depuração
+
+Para obter dicas de como depurar seu visual personalizado, veja o [guia depuração](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
 
 ## <a name="next-steps"></a>Próximas etapas
 

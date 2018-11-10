@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336865"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223365"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Acessibilidade dos relatórios do Power BI Desktop
 O Power BI tem recursos que permitem que pessoas com deficiências consumam e interajam mais facilmente com os relatórios do Power BI Desktop. Esses recursos incluem a capacidade de consumir um relatório usando o teclado ou um leitor de tela, usar a tabulação para focar em vários objetos em uma página e o uso cuidadoso de marcadores nas visualizações.
@@ -34,6 +34,8 @@ A partir da versão de setembro de 2017 do **Power BI Desktop**, você pode pres
 
 Com as melhorias de acessibilidade, você pode consumir um relatório do Power BI usando um teclado ou um leitor de tela com as seguintes técnicas:
 
+Ao exibir um relatório, geralmente você precisa desativar o modo de verificação.
+
 Você pode alternar o foco entre as guias de páginas do relatório ou entre objetos em uma determinada página do relatório usando **Ctrl+F6**.
 
 * Quando o foco estiver nas *guias de páginas do relatório*, use as teclas *Tab* ou de *Seta* para mover o foco de uma página de relatório para a próxima. O título da página do relatório e se ele está selecionada, é lida pelo leitor de tela. Para carregar a página do relatório que está em foco, use a tecla *Enter* ou *Espaço*.
@@ -48,7 +50,7 @@ Você pode pressionar **Alt + Shift + F11** para apresentar uma versão acessív
 ![Pressione Alt+Shift+F11 no Power BI Desktop para exibir uma janela acessível Ver Dados para um visual](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> O recurso Mostrar dados somente pode ser acessado em um leitor de tela com esse atalho de teclado. Se você abrir Mostrar dados por meio da opção no cabeçalho do visual, ele não poderá ser acessado em um leitor de tela.
+> O recurso Mostrar dados somente pode ser acessado em um leitor de tela com esse atalho de teclado. Se você abrir Mostrar dados por meio da opção no cabeçalho do visual, ele não poderá ser acessado em um leitor de tela. Ao usar Mostrar dados, ative o modo de verificação para aproveitar todas as teclas de acesso fornecidas pelo leitor de tela.
 
 A partir da versão de julho de 2018 do **Power BI Desktop**, as segmentações de dados também passam a ter a funcionalidade de acessibilidade interna. Para ajustar o valor de uma segmentação de dados quando esta estiver selecionada, use Ctrl+Seta para a direita (tecla Control e seta para a direita) para percorrer os vários controles na segmentação de dados. Por exemplo, ao pressionar inicialmente Ctrl+Seta para a direita, o foco ficará na borracha. Pressionar a Barra de espaços equivale a clicar no botão da borracha, que apaga todos os valores na segmentação de dados. 
 
@@ -112,6 +114,55 @@ Há alguns problemas conhecidos e algumas limitações com os recursos de acessi
 
 * Ao usar leitores de tela com o **Power BI Desktop**, a experiência será melhor se você abrir o leitor de tela de sua preferência antes de abrir um arquivo no Power BI Desktop.
 * Se você estiver usando o Narrator, haverá algumas limitações ao navegar em Mostrar dados como uma tabela HTML.
+
+## <a name="keyboard-shortcuts"></a>Atalhos do teclado
+### <a name="frequently-used-shortcuts"></a>Atalhos usados com frequência
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Mover o foco entre as seções  | Ctrl + F6 |
+| Mover o foco para frente na seção | Tab         |
+| Mover o foco para trás na seção | Shift + Tab |
+
+### <a name="on-visual"></a>No visual
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Mover o foco para o menu visual | Alt + Shift + F10 |
+| Mostrar dados | Alt + Shift + F11  |
+
+### <a name="pane-navigation"></a>Navegação no painel
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Abrir um menu de contexto | <ul><li>Teclado do Windows: tecla de contexto do Windows + F10.  A tecla de contexto do Windows fica entre a tecla Alt esquerda e a tecla de direção para a esquerda</li><li>Outro teclado: Shift + F10</li></ul> |
+
+### <a name="slicer"></a>Segmentação de Dados
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Interagir com uma segmentação | Ctrl + tecla de direção para a direita |
+
+### <a name="selection-pane"></a>Painel de Seleção
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Ativar o painel de seleção | F6 |
+| Mover um objeto para cima na disposição em camadas | Ctrl + Shift + F |
+| Mover um objeto para baixo na disposição em camadas | Ctrl + Shift + B |
+| Ocultar/mostrar (ativar/desativar) um objeto | Ctrl + Shift + S |
+
+### <a name="dax-editor"></a>Editor do DAX
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Mover linha para cima/para baixo | Alt + tecla de direção para cima/tecla de direção para baixo |
+| Copiar linha acima/abaixo | Shift + Alt + tecla de direção para cima/tecla de direção para baixo |
+| Inserir linha abaixo | Ctrl + Enter |
+| Inserir linha acima | Ctrl + Shift + Enter |
+| Ir para o colchete correspondente | Ctrl + Shift + \ |
+| Recuar linha para a direita/esquerda | Ctrl + ] / [ |
+| Inserir o cursor | Alt + clique |
+| Selecionar a linha atual | Ctrl + I |
+| Selecionar todas as ocorrências da seleção atual | Ctrl + Shift + L |
+| Selecionar todas as ocorrências da palavra atual | Ctrl + F2 |
+
+
+
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Usar Temas de Relatório no Power BI Desktop (Versão prévia)](desktop-report-themes.md)

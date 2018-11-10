@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
-ms.openlocfilehash: 34f34fd0a83367e306f8d84b4f9ebdf3cf30af93
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396763"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223043"
 ---
 # <a name="whitepapers-for-power-bi"></a>White papers para o Power BI
 
@@ -36,7 +36,7 @@ White papers permitem que você explore os tópicos do Power BI em um nível mai
 | [Power BI e SAP BW](https://aka.ms/powerbiandsapbw)| Este documento descreve como os clientes da SAP podem se beneficiar conectando o Power BI aos sistemas SAP BW (Business Warehouse) existentes deles.| Fevereiro de 2018 |
 | [Abordagens de implantação e governança do Power BI](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) | Fornece conceitos, opções e sugestões para governança no ecossistema do Power BI. | Março de 2016 |
 | [Protegendo o modelo semântico de BI tabular](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Este documento apresenta o modelo de segurança para a semântica de BI tabular e Power BI. Você aprenderá como criar funções, implementar a segurança dinâmica, definir configurações de representação, gerenciar funções e escolher um método para se conectar a modelos que funciona no contexto da segurança de rede. | Abril de 2016 |
-| [Power BI e GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Este link leva você até a lista de white papers no Portal de Confiança do Serviço, incluindo o white paper de RGPD do Microsoft Power BI. | Abril de 2018 |
+| [Power BI e GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Este link leva você até a lista de white papers no Portal de Confiança do Serviço, incluindo o white paper sobre o RGPD do Microsoft Power BI. | Abril de 2018 |
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
