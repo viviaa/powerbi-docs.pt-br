@@ -10,24 +10,24 @@ ms.topic: conceptual
 ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 0f2c3649a2c6e0582fe7536473f7a6ee9067ee1d
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 347a56f75fa7ea9008539e3d75d094d0c22c69d1
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137435"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101291"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>SQL Data Warehouse do Azure com DirectQuery
-O SQL Data Warehouse do Azure com o DirectQuery permite criar relatórios dinâmicos com base nos dados e nas métricas que você já tem no SQL Data Warehouse do Azure. Com o DirectQuery, as consultas são enviadas de volta para o SQL Data Warehouse do Azure em tempo real conforme você explora os dados. Isso, combinado com a escala do SQL Data Warehouse, permite aos usuários criar, em minutos, relatórios dinâmicos referentes a terabytes de dados. Além disso, a introdução do botão **Abrir no Power BI** permite que os usuários conectem diretamente o Power BI ao seu SQL Data Warehouse sem precisar especificar manualmente as informações.
+O SQL Data Warehouse do Azure com o DirectQuery permite criar relatórios dinâmicos com base nos dados e nas métricas que você já tem no SQL Data Warehouse do Azure. Com o DirectQuery, as consultas são enviadas de volta para o SQL Data Warehouse do Azure em tempo real conforme você explora os dados. As consultas em tempo real, aliadas à escala do SQL Data Warehouse, permitem aos usuários criar, em minutos, relatórios dinâmicos referentes a terabytes de dados. Além disso, a introdução do botão **Abrir no Power BI** permite que os usuários conectem diretamente o Power BI ao seu SQL Data Warehouse sem precisar especificar manualmente as informações.
 
 Ao usar o conector do SQL Data Warehouse:
 
 * Especifique o nome do servidor totalmente qualificado ao estabelecer a conexão (veja abaixo para obter mais detalhes)
 * Assegure que as regras de firewall para o servidor estão configuradas para “Permitir acesso aos serviços do Azure”
 * Toda ação, como selecionar uma coluna ou adicionar um filtro, consultará diretamente o data warehouse
-* Os blocos são configurados para atualizar aproximadamente a cada 15 minutos e a atualização não precisa ser agendada.  Isso pode ser ajustado nas Configurações avançadas quando você se conectar.
-* P e R não estão disponíveis para conjuntos de dados do DirectQuery
-* alterações de esquema não são aplicadas automaticamente
+* Os blocos são configurados para atualizar aproximadamente a cada 15 minutos e a atualização não precisa ser agendada.  A atualização poderá ser ajustada nas Configurações avançadas quando você se conectar.
+* As P e R não estão disponíveis para conjuntos de dados do DirectQuery
+* As alterações de esquema não são aplicadas automaticamente
 
 Essas restrições e observações podem mudar conforme continuamos a aprimorar as experiências. As etapas para conectar são detalhadas abaixo.
 
@@ -37,9 +37,9 @@ Essas restrições e observações podem mudar conforme continuamos a aprimorar 
 > Estamos aperfeiçoando nossa conectividade com o SQL Data Warehouse do Azure.  Para obter a melhor experiência para se conectar à fonte de dados do SQL Data Warehouse do Azure, use o Power BI Desktop.  Depois de criar seu modelo e relatório, você poderá publicá-los no serviço do Power BI.  O conector direto para o SQL Data Warehouse do Azure no serviço do Power BI foi preterido.
 >
 
-A maneira mais fácil de mover entre o SQL Data Warehouse e o Power BI é com o botão **Abrir no Power BI** na Versão Prévia do Portal do Azure. Esse botão permite que você comece diretamente a criar novos painéis no Power BI.
+A maneira mais fácil de alternar entre o SQL Data Warehouse e o Power BI é com o botão **Abrir no Power BI** no Portal do Azure. Esse botão permite que você comece diretamente a criar novos painéis no Power BI.
 
-1. Para começar, navegue até sua instância do SQL Data Warehouse na Versão Prévia do Portal do Azure. Observe que o SQL Data Warehouse tem apenas uma presença no portal de Visualização do Azure no momento.
+1. Para começar, navegue até sua instância do SQL Data Warehouse no Portal do Azure. No momento, o SQL Data Warehouse tem apenas uma presença na Versão Prévia do Portal do Azure.
 2. Clique no botão **Abrir no Power BI**
    
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
@@ -78,7 +78,7 @@ O SQL Data Warehouse também está listado na página Obter Dados do Power BI.
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Localizando Valores de Parâmetro
-Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados na Versão Prévia do Portal do Azure. Observe que o SQL Data Warehouse tem apenas uma presença no portal de Visualização do Azure no momento.
+Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados no Portal do Azure. No momento, o SQL Data Warehouse tem apenas uma presença na Versão Prévia do Portal do Azure.
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
@@ -89,6 +89,6 @@ Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser
 ## <a name="next-steps"></a>Próximas etapas
 [O que é o Power BI?](power-bi-overview.md)  
 [Obter dados para o Power BI](service-get-data.md)  
-[SQL Data Warehouse do Azure](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
+[SQL Data Warehouse do Azure](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
