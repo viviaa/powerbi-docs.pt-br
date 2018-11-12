@@ -7,23 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/28/2017
+ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b77d20b8c9705e4b4cd811ea8dfa3008908a4438
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 1ec687e4751c6003fe558f2088825eae0bf4be11
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641662"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973386"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
 Este artigo aborda perguntas frequentes sobre a administração do Power BI. Para obter uma visão geral da administração do Power BI, confira [O que é administração do Power BI?](service-admin-administering-power-bi-in-your-organization.md).
 
 ## <a name="whats-in-this-article"></a>O que você encontrará neste artigo
-**Inscrever-se no Power BI**
 
+### <a name="sign-up-for-power-bi-section"></a>Inscrever-se no serviço do Power BI
+
+* [Usar o PowerShell](#using-powershell)
 * [Como os usuários podem se inscrever no Power BI?](#how-do-users-sign-up-for-power-bi)
 * [Como usuários individuais em minha organização podem se inscrever?](#how-do-individual-users-in-my-organization-sign-up)
 * [Como impedir que os usuários ingressem em meu locatário existente do Office 365?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
@@ -32,7 +34,7 @@ Este artigo aborda perguntas frequentes sobre a administração do Power BI. Par
 * [Como impedir que meus usuários existentes comecem a usar o Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Como posso permitir que meus usuários existentes se inscrevam no Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
 
-**Administração do Power BI**
+### <a name="administration-of-power-bi-section"></a>Seção Administração do Power BI
 
 * [Como isso mudará minha maneira de gerenciar identidades dos usuários em minha organização hoje?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Como podemos gerenciar o Power BI?](#how-do-we-manage-power-bi)
@@ -44,216 +46,218 @@ Este artigo aborda perguntas frequentes sobre a administração do Power BI. Par
 * [Onde está localizado meu locatário do Power BI?](#where-is-my-power-bi-tenant-located)
 * [O que é o SLA (Contrato de Nível de Serviço) do Power BI?](#what-is-the-power-bi-sla)
 
-**Segurança no Power BI**
+### <a name="security-in-power-bi-section"></a>Seção Segurança no Power BI
 
 * [O Power BI atende aos requisitos de conformidade regional, nacional e específicos do setor?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
 * [Como funciona a segurança no Power BI?](#how-does-security-work-in-power-bi)
 
 ## <a name="sign-up-for-power-bi"></a>Inscrever-se no Power BI
-### <a name="how-do-users-sign-up-for-power-bi"></a>Como os usuários podem se inscrever para obter o Power BI?
-Você pode se inscrever para o Power BI pelo [site do Power BI](https://powerbi.microsoft.com). Você também pode se inscrever na página de serviços de compra no centro de administração do Office 365. Quando um administrador se inscreve para o Power BI, ele pode atribuir licenças de usuário para usuários que devem ter acesso.
 
-Além disso, usuários individuais em sua organização poderão se inscrever no Power BI por meio do [site do Power BI](https://powerbi.microsoft.com). Quando um usuário de sua organização se inscreve para o Power BI, ele recebe automaticamente uma licença do Power BI. [Saiba mais](service-self-service-signup-for-power-bi.md)
+### <a name="using-powershell"></a>Usar o PowerShell
+
+Alguns dos procedimentos nesta seção exigem scripts do Windows PowerShell. Se você não estiver familiarizado com o PowerShell, recomendamos o [guia de Introdução ao PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=286814). Para executar os scripts, primeiro instale a versão mais recente de 64 bits do [Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/).
+
+### <a name="how-do-users-sign-up-for-power-bi"></a>Como os usuários podem se inscrever para obter o Power BI?
+
+Como administrador, você pode se inscrever no Power BI no [site do Power BI](https://powerbi.microsoft.com) ou na página [Comprar serviços](https://admin.microsoft.com/AdminPortal/Home#/catalog) do Centro de administração do Office 365. Quando um administrador se inscreve para o Power BI, ele pode atribuir licenças de usuário para usuários que devem ter acesso.
+
+Além disso, usuários individuais em sua organização poderão se inscrever no Power BI por meio do [site do Power BI](https://powerbi.microsoft.com). Quando um usuário de sua organização se inscreve para o Power BI, ele recebe automaticamente uma licença do Power BI. Para saber mais, confira [Inscrever-se no Power BI como um indivíduo](service-self-service-signup-for-power-bi.md) e [licenciamento do Power BI em sua organização](service-admin-licensing-organization.md).
 
 ### <a name="how-do-individual-users-in-my-organization-sign-up"></a>Como usuários individuais em minha organização podem se inscrever?
+
 Há três cenários que podem se aplicar aos usuários em sua organização:
 
-Cenário 1: sua organização já tem um ambiente existente do Office 365 e o usuário que está se inscrevendo no Power BI já tem uma conta do Office 365.
-Neste cenário, se um usuário já tiver uma conta do trabalho ou da escola no locatário (por exemplo, contoso.com), mas ainda não tiver o Power BI, a Microsoft simplesmente ativará o plano para essa conta e o usuário será notificado automaticamente sobre como usar o serviço do Power BI.
+* **Cenário 1**: sua organização já tem um ambiente existente do Office 365 e o usuário que está se inscrevendo no Power BI já tem uma conta do Office 365.
+    Neste cenário, se um usuário já tiver uma conta corporativa ou de estudante no locatário (por exemplo, contoso.com), mas ainda não tiver o Power BI, a Microsoft simplesmente ativará o plano para essa conta, e o usuário receberá uma notificação automática sobre como usar o serviço do Power BI.
 
-Cenário 2: sua organização tem um ambiente existente do Office 365 e o usuário que está se inscrevendo no Power BI não tem uma conta do Office 365.
-Nesse cenário, o usuário tem um endereço de email no domínio da sua organização (por exemplo, contoso.com), mas ainda não tem uma conta do Office 365. Nesse caso, o usuário pode se inscrever para o Power BI e receberá automaticamente uma conta. Isso permite o acesso do usuário ao serviço do Power BI. Por exemplo, se uma funcionária chamada Nancy usar seu endereço de email de trabalho (por exemplo, Nancy@contoso.com) para se inscrever, a Microsoft adicionará a Nancy automaticamente como um usuário no ambiente do Office 365 do Contoso e ativará o Power BI para essa conta.
+* **Cenário 2**: sua organização tem um ambiente existente do Office 365, mas o usuário que está se inscrevendo no Power BI não tem uma conta do Office 365.
+    Nesse cenário, o usuário tem um endereço de email no domínio da sua organização (por exemplo, contoso.com), mas ainda não tem uma conta do Office 365. Nesse caso, o usuário pode se inscrever no Power BI e receber automaticamente uma conta. Isso permite o acesso do usuário ao serviço do Power BI. Por exemplo, se uma funcionária chamada Nancy usar seu email de trabalho (por exemplo, nancy@contoso.com) para se inscrever, a Microsoft adicionará automaticamente a Nancy como usuário no ambiente do Office 365 do Contoso e ativará o Power BI para essa conta.
 
-Cenário 3: sua organização não tem um ambiente do Office 365 conectado a seu domínio de email.
-Sua organização não precisa tomar ações administrativas para tirar proveito do Power BI. Usuários serão adicionados a um novo diretório de usuário somente em nuvem e você terá a opção de assumir o controle como administrador do locatário e gerenciá-los.
+* **Cenário 3**: sua organização não tem um ambiente do Office 365 conectado ao seu domínio de email.
+    Sua organização não precisa tomar ações administrativas para tirar proveito do Power BI. Os usuários são adicionados a um novo diretório de usuário somente na nuvem, e você tem a opção de assumir o controle como administrador do locatário e gerenciá-los.
 
 > [!IMPORTANT]
-> Se sua organização tiver vários domínios de email e você preferir que todas as extensões de endereço de email estejam no mesmo locatário, adicione todos os domínios de endereço de email a um locatário do Azure Active Directory antes de todos os usuários se inscreverem. Não há nenhum mecanismo automatizado para mover os usuários entre locatários depois que eles foram criados. Para obter mais informações sobre esse processo, consulte [Se eu tiver vários domínios, posso controlar o locatário do Office 365 ao qual os usuários são adicionados?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) posteriormente neste artigo e [Adicionar seu domínio ao Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611) online.
-> 
-> 
+> Se sua organização tiver vários domínios de email e você preferir que todas as extensões de endereço de email estejam no mesmo locatário, adicione todos os domínios de endereço de email a um locatário do Azure Active Directory antes de todos os usuários se inscreverem. Não há nenhum mecanismo automatizado para mover os usuários entre locatários depois que eles foram criados. Para saber mais sobre esse processo, confira [Se eu tiver vários domínios, posso controlar o locatário do Office 365 ao qual os usuários são adicionados?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) posteriormente neste artigo, e [Adicionar um domínio ao Office 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>Como impedir que os usuários ingressem em meu locatário existente do Office 365?
-Há etapas que você pode tomar, como administrador, para impedir que os usuários ingressem em seu locatário existente do Office 365. Se você fizer esse bloqueio, as tentativas de usuários para se inscrever falharão e eles serão direcionados a entrar em contato com o administrador da organização. Você não precisa repetir esse processo se você já tiver desabilitado a distribuição automática de licenças (por exemplo, Office 365 Education para Estudantes, Docentes e Funcionários).
 
-Estas etapas exigem o uso do Windows PowerShell. Para começar com o Windows PowerShell, consulte o [Guia de introdução ao PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=286814).
+Há etapas que você pode tomar, como administrador, para impedir que os usuários ingressem em seu locatário existente do Office 365. Se você bloquear o acesso, as tentativas de inscrição dos usuários falharão e eles serão orientados a entrar em contato com o administrador da organização. Você não precisa repetir esse processo se já tiver desabilitado a distribuição automática de licenças (por exemplo, pelo Office 365 educacional para estudantes, docentes e funcionários).
 
-Para executar as etapas a seguir, você deverá instalar a última versão de 64 bits do [Módulo do Azure Active Directory para Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+Use o seguinte script do PowerShell para impedir que novos usuários ingressem em um locatário gerenciado. [Saiba mais sobre o PowerShell](#basic-powershell-information)
 
-Após clicar no link, selecione **Executar** para executar o pacote de instalação.
+```powershell
+$msolcred = get-credential
+connect-msolservice -credential $msolcred
 
-**Desabilitar o ingresso automático do locatário**: use este comando do Windows PowerShell para impedir que novos usuários ingressem em um locatário gerenciado:
-
-* Para desabilitar o ingresso automático no locatário para novos usuários:
-  
-    $msolcred = get-credential   connect-msolservice -credential $msolcred
-  
-    Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
-* Para habilitar o ingresso automático no locatário para novos usuários:
-  
-    $msolcred = get-credential   connect-msolservice -credential $msolcred
-  
-    Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
+Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
+```
 
 > [!NOTE]
-> Esse bloqueio impede que novos usuários na sua organização inscrevam no Power BI. Os usuários que se inscrevem para o Power BI antes da desabilitação de novas inscrições para sua organização ainda manterão suas licenças. Consulte a seção [Como é Possível Remover Licenças?] para obter instruções sobre como remover o acesso ao Power BI para usuários que se inscreveram anteriormente no serviço.
-> 
-> 
+> O bloqueio de acesso impede que novos usuários em sua organização se inscrevam no Power BI. Os usuários que se inscreverem no Power BI antes da desabilitação de novas inscrições para sua organização ainda manterão suas licenças. Para remover um usuário, confira [Como faço para remover o Power BI para usuários que já se inscreveram?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) mais adiante neste artigo.
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Como permitir que usuários ingressem em meu locatário existente do Office 365?
-Para permitir que os usuários ingressem no locatário, execute o comando oposto, conforme descrito na pergunta acima.
 
-Para executar as etapas a seguir, você deverá instalar a última versão de 64 bits do [Módulo do Azure Active Directory para Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+Use o script do PowerShell a seguir para permitir que novos usuários ingressem em um locatário gerenciado. [Saiba mais sobre o PowerShell](#basic-powershell-information)
 
-    $msolcred = get-credential
-    connect-msolservice -credential $msolcred
+```powershell
+$msolcred = get-credential
+connect-msolservice -credential $msolcred
 
-    Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
+Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
+```
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Como posso verificar se tenho o bloqueio ativado em meu locatário?
-Use o seguinte script do PowerShell.
 
-Para executar as etapas a seguir, você deverá instalar a última versão de 64 bits do [Módulo do Azure Active Directory para Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+Use o seguinte script do PowerShell para verificar as configurações. *AllowEmailVerifiedUsers* deve ser false. [Saiba mais sobre o PowerShell](#basic-powershell-information)
 
-    $msolcred = get-credential
-    connect-msolservice -credential $msolcred
+```powershell
+$msolcred = get-credential
+connect-msolservice -credential $msolcred
 
-    Get-MsolCompanyInformation | fl allow*
+Get-MsolCompanyInformation | fl allow*
+```
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Como impedir que meus usuários existentes comecem a usar o Power BI?
-Há etapas que você pode tomar, como administrador, para impedir que os usuários se inscrevam no Power BI. Se você fizer esse bloqueio, as tentativas de usuários para se inscrever falharão e eles serão direcionados a entrar em contato com o administrador da organização. Você não precisa repetir esse processo se você já tiver desabilitado a distribuição automática de licenças (por exemplo, Office 365 Education para Estudantes, Docentes e Funcionários). [Saiba mais](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory)
 
-A configuração do AAD que controla isso é **AllowAdHocSubscriptions**. A maioria dos locatários terá essa configuração definida como true, o que significa que ela está habilitada. Se você adquiriu o Power BI por meio de um parceiro, ela pode estar definida como false por padrão, o que significa que ela está desabilitada.
+A configuração do Azure AD que controla isso é **AllowAdHocSubscriptions**. Essa configuração está definida como true para a maioria dos locatários, o que significa que ela está habilitada. Se você adquiriu o Power BI por meio de um parceiro, ela pode estar definida como false, o que significa que ela está desabilitada.
 
-Para executar as etapas a seguir, você deverá instalar a última versão de 64 bits do [Módulo do Azure Active Directory para Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
+Use o seguinte script do PowerShell para desabilitar assinaturas ad hoc. [Saiba mais sobre o PowerShell](#basic-powershell-information)
 
-1. Você precisa entrar primeiro no Azure Active Directory usando sua credencial do Office 365. Na primeira linha, serão solicitadas suas credenciais. Na segunda linha, você será conectado ao Azure Active Directory.
-   
-     $msolcred = get-credential   connect-msolservice -credential $msolcred
-2. Quando você estiver conectado, pode emitir o comando a seguir para ver para que seu locatário está configurado atualmente.
-   
+1. Entre no Azure Active Directory usando suas credenciais do Office 365. A primeira linha do script do PowerShell a seguir solicita suas credenciais. Na segunda linha, você será conectado ao Azure Active Directory.
+
+    ```powershell
+     $msolcred = get-credential
+     connect-msolservice -credential $msolcred
+    ```
+
+   ![Entrada do Azure Active Directory](media/service-admin-licensing-organization/aad-signin.png)
+
+1. Depois de entrar, execute o comando a seguir para ver para como seu locatário está configurado atualmente.
+
+    ```powershell
      Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
-3. Você pode usar esse comando para habilitar ($true) ou desabilitar ($false) o AllowAdHocSubscriptions.
-   
-     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
+    ```
+1. Execute o comando a seguir para habilitar ($true) ou desabilitar ($false) o **AllowAdHocSubscriptions**.
+
+    ```powershell
+     Set-MsolCompanySettings -AllowAdHocSubscriptions $false
+    ```
 
 > [!NOTE]
 > O sinalizador AllowAdHocSubscriptions é usado para controlar vários recursos de usuários em sua organização, inclusive a capacidade de inscrição dos usuários no Serviço do Rights Management. Alterar esse sinalizador afetará todos esses recursos.
-> 
-> 
 
-### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Como posso permitir que meus usuários existentes se inscrevem no Power BI?
-Para permitir que os usuários existentes se inscrevam no Power BI, execute o comando listado para a pergunta anterior, mas em vez de false, passe true.
+### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Como posso permitir que meus usuários existentes se inscrevam no Power BI?
 
-Para executar as etapas a seguir, você deverá instalar a última versão de 64 bits do [Módulo do Azure Active Directory para Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=236297).
-
-1. Você precisa entrar primeiro no Azure Active Directory usando sua credencial do Office 365. Na primeira linha, serão solicitadas suas credenciais. Na segunda linha, você será conectado ao Azure Active Directory.
-   
-     $msolcred = get-credential   connect-msolservice -credential $msolcred
-2. Quando você estiver conectado, pode emitir o comando a seguir para ver para que seu locatário está configurado atualmente.
-   
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
-3. Você pode usar esse comando para habilitar ($true) ou desabilitar ($false) o AllowAdHocSubscriptions.
-   
-     Set-MsolCompanySettings -AllowAdHocSubscriptions $true
-
-> [!NOTE]
-> O sinalizador AllowAdHocSubscriptions é usado para controlar vários recursos de usuários em sua organização, inclusive a capacidade de inscrição dos usuários no Serviço do Rights Management. Alterar esse sinalizador afetará todos esses recursos.
-> 
-> 
+Para permitir que os usuários existentes se inscrevam no Power BI, execute o comando listado para a pergunta anterior, mas em vez de false, passe true na última etapa.
 
 ## <a name="administration-of-power-bi"></a>Administração do Power BI
+
 ### <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Como isso mudará minha maneira de gerenciar identidades dos usuários em minha organização hoje?
-Se sua organização já tiver um ambiente existente do Office 365, e todos os usuários na organização tiverem contas do Office 365, o gerenciamento de identidades não mudará.
 
-Se sua organização já tiver um ambiente existente do Office 365, mas nem todos os usuários na organização tiverem contas do Office 365, criaremos um usuário no locatário e atribuiremos licenças com base no endereço de email do trabalho ou da escola do usuário. Isso significa que o número de usuários que você está gerenciando em qualquer momento específico crescerá conforme os usuários em sua organização se inscreverem no serviço.
+Há três cenários que podem se aplicar aos usuários em sua organização:
 
-Se sua organização não tiver um ambiente do Office 365 conectado a seu domínio de email, não haverá modificações em como você gerencia identidades. Usuários serão adicionados a um novo diretório de usuário somente em nuvem e você terá a opção de assumir o controle como administrador do locatário e gerenciá-los.
+* **Cenário 1**: se a sua organização já tiver um ambiente existente do Office 365, e todos os usuários na organização tiverem contas do Office 365, o gerenciamento de identidades não mudará.
+
+* **Cenário 2**: se a sua organização já tiver um ambiente existente do Office 365, mas nem todos os usuários na organização tiverem contas do Office 365, criaremos um usuário no locatário e atribuiremos licenças com base no endereço de email corporativo ou de estudante do usuário.
+
+    Isso significa que o número de usuários que você está gerenciando em qualquer momento específico crescerá conforme os usuários em sua organização se inscreverem no serviço.
+
+* **Cenário 3**: se a sua organização não tiver um ambiente do Office 365 conectado ao seu domínio de email, não haverá alteração na forma de gerenciamento de identidades.
+
+    Os usuários são adicionados a um novo diretório de usuário somente na nuvem, e você tem a opção de assumir o controle como administrador do locatário e gerenciá-los.
 
 ### <a name="how-do-we-manage-power-bi"></a>Como podemos gerenciar o Power BI?
-O Power BI fornece um portal de administração que permite que você exiba estatísticas de uso, fornece um link para o centro de administração do Office 365 para gerenciar usuários e grupos e a capacidade de controlar configurações de locatário. 
 
-> [!NOTE]
-> Sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI, para obter acesso ao portal de administração do Power BI. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
-> 
-> 
+O Power BI fornece um portal de administração que permite que você exiba estatísticas de uso, fornece um link para o Centro de administração do Office 365 para gerenciar usuários e grupos e fornece a capacidade de controlar configurações de locatário.
 
-Para obter mais informações, confira [Portal de Administração do Power BI](service-admin-portal.md).
+Para acessar o Portal de administração do Power BI, sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI. Para saber mais, confira [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md) e [Portal de administração do Power BI](service-admin-portal.md).
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Qual é o processo para gerenciar um locatário criado pela Microsoft para meus usuários?
+
 Se um locatário for criado pela Microsoft, você poderá solicitá-lo e gerenciá-lo seguindo estas etapas:
 
-1. Ingresse no locatário, inscrevendo-se para o Power BI e usando um domínio de endereço de email que corresponda ao domínio de locatário que você deseja gerenciar. Por exemplo, se a Microsoft criar o locatário contoso.com, você precisará ingressar no locatário com um endereço de email que termine com @contoso.com.
-2. Solicite o controle de administração, verificando a propriedade do domínio: quando estiver no locatário, você poderá se autopromover à função de *Administrador Global*, verificando a propriedade de domínio. Para se conectar, siga essas etapas:
-   
-   1. Vá para [https://portal.office.com](https://portal.office.com).
-   2. Selecione o ícone do aplicativo iniciador no canto superior esquerdo e escolha **Admin**.
-   3. Leia as instruções na página **Tornar-se o administrador** e escolha **Sim, quero ser o administrador**.
-      
-      > [!NOTE]
-      > Se esta opção não for exibida, já existirá um administrador do Office 365 em vigor.
-      > 
-      > 
+1. Ingresse no locatário se inscrevendo no Power BI usando um domínio de endereço de email que corresponda ao domínio de locatário que você deseja gerenciar. Por exemplo, se a Microsoft criar o locatário contoso.com, você precisará ingressar no locatário com um endereço de email que termine com @contoso.com.
+
+1. Solicite o controle de administração, verificando a propriedade do domínio: quando estiver no locatário, você poderá se autopromover à função de *Administrador Global*, verificando a propriedade de domínio. Para fazer isso, execute as etapas na [documentação do Office 365](/office365/admin/misc/become-the-admin).
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Se eu tiver vários domínios, poderei controlar o locatário do Office 365 ao qual os usuários serão adicionados?
-Se você não fizer nada, será criado um locatário para cada domínio e subdomínio de email de usuários.
 
-Se você quiser que todos os usuários estejam no mesmo locatário independentemente de suas extensões de endereço de email:
-
-* Crie um locatário de destino antecipadamente ou use um locatário existente e adicione todos os domínios e subdomínios existentes que você quer que sejam consolidados nesse locatário. Em seguida, todos os usuários com endereços de email terminados nesses domínios e subdomínios ingressarão automaticamente no locatário de destino ao se inscreverem.
+Se você não fizer nada, um locatário será criado para cada domínio de email de usuário e subdomínio. Se você quiser que todos os usuários estejam no mesmo locatário, independentemente das extensões de endereço de email: crie um locatário de destino antecipadamente ou use um locatário existente e adicione todos os domínios e subdomínios existentes que você quer que sejam consolidados nesse locatário. Em seguida, todos os usuários com endereços de email que terminam com esses domínios e subdomínios ingressam automaticamente no locatário de destino ao se inscreverem.
 
 > [!IMPORTANT]
-> Não há nenhum mecanismo automatizado com suporte para mover os usuários entre locatários depois que eles foram criados. Para saber mais sobre a adição de domínios a um único locatário do Office 365, consulte [Adicionar usuários e domínio ao Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
-> 
-> 
+> Não há nenhum mecanismo automatizado com suporte para mover os usuários entre locatários depois que eles foram criados. Para saber mais sobre a adição de domínios a um único locatário do Office 365, consulte [Adicionar usuários e domínio ao Office 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Como remover o Power BI para usuários que já se inscreveram?
-Se um usuário se inscrever no Power BI, mas você não quiser mais que ele tenha acesso ao Power BI, será possível remover a licença do Power BI para esse usuário.
 
-1. Navegue até o centro de administração do Office 365
-2. Na barra de navegação à esquerda, selecione **Usuários** > **Usuários ativos**.
-3. Localize o usuário cuja licença você deseja remover, selecione seu nome > **Editar**.
-4. Na página de detalhes do usuário, clique em **Licenças** na barra de navegação à esquerda.
-5. Desmarque **Power BI (gratuito)** ou **Power BI Pro**, dependendo de qual licença é aplicada à sua conta.
-6. Selecione **Salvar**.
+Se um usuário se inscrever no Power BI, mas você não quiser mais que ele tenha acesso ao Power BI, remova a licença do Power BI desse usuário.
 
-> [!NOTE]
-> Você também pode executar o gerenciamento de licenças em massa a usuários. Para fazer isso, selecione vários usuários e selecione **Editar**.
-> 
-> 
+1. Navegue até o [Centro de administração do Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+
+1. Na barra de navegação à esquerda, selecione **Usuários** > **Usuários ativos**.
+
+1. Localize o usuário cuja licença você quer remover e selecione o nome dele.
+
+    Você também pode executar o gerenciamento de licenças em massa a usuários. Para fazer isso, selecione vários usuários e selecione **Editar licenças de produto**.
+
+1. Na página de detalhes do usuário, ao lado de **Licenças de produto**, selecione **Editar**.
+
+1. Defina **Power BI (Gratuito)** ou **Power BI Pro** como **Desativado**, dependendo de qual licença é aplicada à conta.
+
+1. Selecione **Salvar**.
 
 ### <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Como posso saber se novos usuários ingressaram em meu locatário?
-Os usuários que ingressarem em seu locatário como parte desse programa receberão uma licença exclusiva, que você poderá filtrar dentro no painel do usuário ativo, no painel do administrador.
 
-Para criar esse novo modo de exibição no centro de administração do Office 365, vá para **Usuários** > **Usuários Ativos** e no menu **Selecionar uma Exibição**, selecione **Nova Exibição**. Nomeie o novo modo de exibição e, em **Licença atribuída**, selecione **Power BI (gratuito)** ou **Power BI Pro**. Você só pode ter uma licença por exibição. Se você tiver licenças **Power BI (gratuito)** e **Power BI Pro** em sua organização, você precisa criar dois modos de exibição. Depois que o novo modo de exibição tiver sido criado, você poderá ver todos os usuários em seu locatário que registraram no programa.
+Os usuários que ingressarem em seu locatário como parte desse programa receberão uma licença exclusiva, que você poderá filtrar dentro no painel do usuário ativo, no painel do administrador. Para criar essa nova exibição, execute estas etapas.
+
+1. Navegue até o [Centro de administração do Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+
+1. Na barra de navegação à esquerda, selecione **Usuários** > **Usuários ativos**.
+
+1. No menu **Modos de exibição**, selecione **Adicionar modo de exibição personalizado**.
+
+1. Nomeie o novo modo de exibição e, em **Licença de produto atribuída**, selecione **Power BI (Gratuito)** ou **Power BI Pro**.
+
+    Você só pode ter uma licença por exibição. Se você tiver as licenças **Power BI (Gratuito)** e **Power BI Pro** em sua organização, poderá criar dois modos de exibição.
+
+1. Insira quaisquer outras condições desejadas e selecione **Adicionar**.
+
+1. Após a criação do novo modo de exibição, ele estará disponível no menu **Modos de exibição**.
 
 ### <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>Devo estar preparado para outras questões?
-Você pode perceber um aumento nas solicitações de redefinição de senha. Para obter informações sobre esse processo, consulte [Redefinir a senha do usuário](https://support.office.com/article/Reset-a-users-password-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c).
+
+Você pode perceber um aumento nas solicitações de redefinição de senha. Para obter informações sobre esse processo, consulte [Redefinir a senha do usuário](/office365/admin/add-users/reset-passwords).
 
 Você pode remover um usuário do seu locatário pelo processo padrão no centro de administração do Office 365. No entanto, se o usuário ainda tiver um endereço de email ativo de sua organização, ele poderá reingressar, a menos que você bloqueie o ingresso de todos os usuários.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado meu locatário do Power BI?
-Para aprender a descobrir onde o locatário do Power BI está localizado, também conhecida como uma região de dados, veja [Onde está localizado meu locatário do Power BI?](service-admin-where-is-my-tenant-located.md)
+
+Para saber em qual região de dados seu locatário do Power BI está, consulte [Onde está localizado meu locatário do Power BI?](service-admin-where-is-my-tenant-located.md).
 
 ### <a name="what-is-the-power-bi-sla"></a>O que é o SLA do Power BI?
-Para obter informações sobre o SLA (Contrato de Nível de Serviço) do Power BI, consulte o artigo sobre os [Termos de licenciamento e Documentação](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) na seção **Licenciamento** do site de Licenciamento da Microsoft.
+
+Para saber mais sobre o SLA (Contrato de Nível de Serviço) do Power BI, consulte o artigo [Termos de licenciamento e documentação](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) na seção **Licenciamento** do site de Licenciamento da Microsoft.
 
 ## <a name="security-in-power-bi"></a>Segurança no Power BI
+
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>O Power BI atende aos requisitos de conformidade regional, nacional e específicos do setor?
+
 Para saber mais sobre a conformidade do Power BI, consulte o [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
 
 ### <a name="how-does-security-work-in-power-bi"></a>Como funciona a segurança no Power BI?
-O Power BI foi criado de acordo com a base do Office 365, que por sua vez baseia-se nos serviços do Azure, como o Azure Active Directory. Para obter uma visão geral da arquitetura do Power BI, consulte [Segurança do Power BI](service-admin-power-bi-security.md). 
+
+O Power BI foi criado de acordo com a base do Office 365, que por sua vez baseia-se nos serviços do Azure, como o Azure Active Directory. Para obter uma visão geral da arquitetura do Power BI, consulte [Segurança do Power BI](service-admin-power-bi-security.md).
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [Portal de administração do Power BI](service-admin-portal.md)  
 [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md)  
 [Inscrição de autoatendimento no Power BI](service-self-service-signup-for-power-bi.md)  
 [Compra do Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [O que é o Power BI Premium?](service-premium.md)  
 [Como comprar o Power BI Premium](service-admin-premium-purchase.md)  
-[Gerenciamento de contas de usuário do Office 365](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
-[Gerenciamento de grupo do Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  
-[Gerenciar seu grupo no Power BI e no Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md)  
 [White paper do Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
+[Gerenciar seu grupo no Power BI e no Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Gerenciamento de contas de usuário do Office 365](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
+[Gerenciamento de grupo do Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

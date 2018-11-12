@@ -1,7 +1,7 @@
 items:
 - name: Power BI Desktop
   items:
-  - name: Visão geral
+  - name: Visão Geral
     items:
     - name: O que é o Power BI Desktop?
       href: desktop-what-is-desktop.md
@@ -372,7 +372,7 @@ items:
       href: desktop-admin-sign-in-form.md
 - name: Serviço do Power BI
   items:
-  - name: Visão geral
+  - name: Visão Geral
     items:
     - name: O que é Power BI?
       href: power-bi-overview.md
@@ -766,6 +766,24 @@ items:
         href: refresh-troubleshooting-tile-errors.md
       - name: Como atualizar suas credenciais do pacote de conteúdo Xero se a atualização tiver falhado
         href: service-refresh-xero-credentials.md
+    - name: Preparação de dados de autoatendimento
+      items:
+      - name: Preparação de dados de autoatendimento com fluxos de dados (versão prévia)
+        href: service-dataflows-overview.md
+      - name: Criar e usar fluxos de dados
+        href: service-dataflows-create-use.md
+      - name: Entidades computadas com o Power BI Premium
+        href: service-dataflows-computed-entities-premium.md
+      - name: Usar fluxos de dados com fontes de dados locais
+        href: service-dataflows-on-premises-gateways.md
+      - name: Vincular entidades entre fluxos de dados (versão prévia)
+        href: service-dataflows-linked-entities.md
+      - name: Usar a atualização incremental com fluxos de dados (versão prévia)
+        href: service-dataflows-incremental-refresh.md
+      - name: Recursos de desenvolvedor para fluxos de dados
+        href: service-dataflows-developer-resources.md
+      - name: Conectar-se aos fluxos de dados no Power BI Desktop
+        href: desktop-connect-dataflows.md
   - name: Recursos
     items:
     - name: Vídeos
@@ -776,13 +794,43 @@ items:
       href: supported-languages-countries-regions.md
     - name: White papers
       href: whitepapers.md
+- name: Relatórios paginados no Power BI
+  items:
+  - name: Visão Geral
+    items:
+    - name: O que são relatórios paginados? (Versão prévia)
+      href: paginated-reports-report-builder-power-bi.md
+  - name: Tutoriais
+    items:
+    - name: Criar e carregar um relatório paginado
+      href: paginated-reports-quickstart-aw.md
+  - name: Conceitos
+    items:
+    - name: Como explorar o modo Design do Relatório
+      href: paginated-reports-report-design-view.md
+    - name: Perguntas frequentes sobre relatórios paginados
+      href: paginated-reports-faq.md
+  - name: Como
+    items:
+    - name: Criar uma fonte de dados incorporados
+      href: paginated-reports-embedded-data-source.md
+    - name: Criar um conjunto de dados incorporados
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Criar parâmetros
+      href: paginated-reports-parameters.md
+    - name: Publicar um relatório paginado
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: Exibir um relatório paginado
+      href: paginated-reports-view-power-bi-service.md
+    - name: Interagir com parâmetros
+      href: paginated-reports-view-parameters.md
 - name: Power BI para desenvolvedores
   items:
   - name: O que os desenvolvedores podem fazer com o Power BI
     href: developer/what-can-you-do.md
   - name: Análise integrada
     items:
-    - name: Visão geral
+    - name: Visão Geral
       items:
       - name: O que é a incorporação com o Power BI?
         href: developer/embedding.md
@@ -874,7 +922,7 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848281
   - name: Desenvolvimento de Visuais Personalizados
     items:
-    - name: Visão geral
+    - name: Visão Geral
       items:
       - name: Como adicionar visuais personalizados no Power BI
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
@@ -916,7 +964,7 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848277
   - name: Automação
     items:
-    - name: Visão geral
+    - name: Visão Geral
       items:
       - name: O que posso fazer com a API do Power BI?
         href: developer/overview-of-power-bi-rest-api.md
@@ -966,7 +1014,7 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848274
 - name: Servidor de Relatórios do Power BI
   items:
-  - name: Visão geral
+  - name: Visão Geral
     items:
     - name: O que é o Servidor de Relatórios do Power BI?
       href: report-server/get-started.md
@@ -1068,7 +1116,7 @@ items:
       href: report-server/capacity-planning.md
 - name: Gateways
   items:
-  - name: Visão geral
+  - name: Visão Geral
     items:
     - name: O que é um Power BI Gateway?
       href: service-gateway-getting-started.md
@@ -1124,7 +1172,7 @@ items:
       href: service-gateway-onprem-tshoot.md
 - name: Administração
   items:
-  - name: Visão geral
+  - name: Visão Geral
     items:
     - name: O que é administração do Power BI?
       href: service-admin-administering-power-bi-in-your-organization.md
@@ -1203,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a0d2f9e2fcf26f3eca516a1204c9d25a9225010f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 8640762b152c996d21cefe8663cf6bf8e78f718a
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223181"
+ms.locfileid: "51266129"

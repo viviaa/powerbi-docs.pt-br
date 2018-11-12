@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/20/2018
-ms.openlocfilehash: e336323863dfacc8c74f2dc1f721231d58d03834
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.date: 11/01/2018
+ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100762"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973317"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Inserir com Web Part de Relatório no SharePoint Online
 
@@ -82,14 +82,34 @@ Incorporar um relatório ao SharePoint Online automaticamente não dá aos usuá
 > [!IMPORTANT]
 > Certifique-se de examinar quem pode ver o relatório dentro do serviço do Power BI e de conceder acesso aos que não aparecem na lista.
 
-Há duas maneiras de conceder acesso ao relatório dentro do serviço do Power BI. Se você estiver usando um grupo do Office 365 para criar seu site de equipe do SharePoint Online, liste o usuário como membro do **workspace do aplicativo no serviço do Power BI** e da **página do SharePoint**. Isso garante que os usuários possam exibir o conteúdo desse grupo. Para obter mais informações, consulte [Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md).
+Há duas maneiras de conceder acesso ao relatório dentro do serviço do Power BI. Se você estiver usando um grupo do Office 365 para criar seu site de equipe do SharePoint Online, liste o usuário como membro do **workspace do aplicativo no serviço do Power BI** e da **página do SharePoint**. Para obter mais informações, consulte como [gerenciar um espaço de trabalho de aplicativo](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Como alternativa, você pode compartilhar um relatório diretamente com os usuários, incorporando o relatório a um aplicativo. O aplicativo deve estar pré-instalado para que o relatório seja incorporado. Você pode configurar o aplicativo para ser pré-instalado usando o recurso **Instalar aplicativo automaticamente**.
+Como alternativa, você pode compartilhar um relatório diretamente com os usuários, incorporando o relatório a um aplicativo. Há algumas etapas a seguir para inserir um relatório dentro de um aplicativo.  
+
+1. O autor do aplicativo é um usuário Pro.
+
+2. O autor cria um relatório em um espaço de trabalho de aplicativo. *Para compartilhar com **usuários gratuitos do Power BI**, o espaço de trabalho do aplicativo precisa ser definido como um **Workspace Premium**.*
+
+3. O autor publica o aplicativo e, em seguida, instala-o. *O autor precisa instalar o aplicativo para ter acesso à URL de relatório que é usada para inserir no SharePoint Online.*
+
+4. Agora todos os usuários finais também precisam instalar o aplicativo. No entanto, você pode definir o aplicativo para ser pré-instalado para usuários finais usando o recurso **Instalar o aplicativo automaticamente**, que pode ser habilitado no [portal de administração do Power BI](service-admin-portal.md).
 
    ![Instalar o aplicativo automaticamente](media/service-embed-report-spo/install-app-automatically.png)
 
-> [!NOTE]
-> **O usuário precisa acessar a página do SharePoint e o relatório para ver o relatório na página do SharePoint.**
+5. O autor abre o aplicativo e vai para o relatório.
+
+6. O autor copia a URL do relatório de inserção do relatório instalado pelo aplicativo. *Não use a URL do relatório original do espaço de trabalho do aplicativo.*
+
+7. Crie um novo site de equipe no SharePoint Online.
+
+8. Adicione a URL do relatório copiada na etapa 6 à web part do Power BI.
+
+9. Adicione todos os usuários finais e/ou grupos que consumirão os dados na página do SharePoint Online e no aplicativo do Power BI que você criou.
+
+    > [!NOTE]
+    > **Os usuários ou grupos precisam acessar a página do SharePoint Online e o relatório no aplicativo do Power BI para ver o relatório na página do SharePoint.**
+
+10. Agora o usuário final pode ir para o site de equipe no SharePoint Online e exibir os relatórios na página.
 
 ## <a name="multi-factor-authentication"></a>Autenticação multifator
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bdd43c820f87bb9308478b4e2100514349644d11
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 11ad100bce2e13d5622676f43573dee411a93221
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252366"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973294"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Licenciamento do Power BI na sua organização
 
@@ -31,7 +31,7 @@ Este artigo se concentra no licenciamento por usuário de uma perspectiva do adm
 
 Como administrador, você pode comprar e atribuir licenças do Power BI Pro e inscrever-se para uma avaliação do Power BI Pro para sua organização. Indivíduos também podem se inscrever para uma avaliação do Power BI Pro.
 
-### <a name="purchasing-power-bi-pro"></a>Comprando o Power BI Pro
+### <a name="purchasing-power-bi-pro"></a>Compra do Power BI Pro
 
 Licenças do Power BI Pro são adquiridas por meio do Microsoft Office 365 ou de um parceiro certificado da Microsoft. Depois de comprar as licenças, você pode atribuí-las a cada usuário. Para obter mais informações, consulte [Comprar e atribuir licenças do Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
@@ -150,6 +150,9 @@ A configuração do AAD que controla a inscrição é **AllowAdHocSubscriptions*
     ```powershell
      Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
+
+> [!NOTE]
+> O sinalizador AllowAdHocSubscriptions é usado para controlar vários recursos de usuários em sua organização, inclusive a capacidade de inscrição dos usuários no Serviço do Rights Management. Alterar esse sinalizador afetará todos esses recursos.
 
 ## <a name="next-steps"></a>Próximas etapas
 

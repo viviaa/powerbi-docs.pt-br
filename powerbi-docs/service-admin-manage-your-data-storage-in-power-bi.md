@@ -1,31 +1,31 @@
 ---
 title: Gerenciar o armazenamento de dados
-description: Saiba como você pode gerenciar seu armazenamento de dados ou seu espaço de trabalho do aplicativo individual para garantir que você pode continuar publicando relatórios e conjuntos de dados.
-author: mgblythe
+description: Saiba como você pode gerenciar seu armazenamento de dados ou seu workspace do aplicativo individual para garantir que você pode continuar publicando relatórios e conjuntos de dados.
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: mblythe
+ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: a30c90b1c180277a584a152f26c7f92549284c7d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 864d50d8850a8ceed964f128cea71b0daf5d8322
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944734"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736862"
 ---
 # <a name="manage-your-data-storage"></a>Gerenciar o armazenamento de dados
-Saiba como você pode gerenciar seu armazenamento de dados ou seu espaço de trabalho do aplicativo individual para garantir que você pode continuar publicando relatórios e conjuntos de dados.
+Saiba como você pode gerenciar seu armazenamento de dados ou seu workspace do aplicativo individual para garantir que você pode continuar publicando relatórios e conjuntos de dados.
 
-Os usuários e os espaços de trabalho do aplicativo têm suas próprias capacidades de dados
+Os usuários e os workspaces do aplicativo têm suas próprias capacidades de dados
 
 * Todos os usuários têm um armazenamento de dados máximo de 10 GB.
 * Os usuários com uma licença do Power BI Pro podem criar espaços de trabalho do aplicativo, com um armazenamento de dados máximo de 10 GB cada um.
 
-No nível do locatário, o uso total não pode exceder 10 GB por usuário Pro em todos os usuários Pro e espaços de trabalho do aplicativo no locatário.
+No nível do locatário, o uso total não pode exceder 10 GB por usuário do Pro em todos os usuários do Pro e espaços de trabalho do aplicativo no locatário.
 
 Leia sobre outros recursos do [modelo de preços do Power BI](https://powerbi.microsoft.com/pricing).
 
@@ -42,7 +42,7 @@ O tamanho de um dashboard que você compartilhar varia dependendo do que é fixa
 ## <a name="manage-items-owned-by-you"></a>Gerenciar itens pertencentes a você
 Veja a quantidade de armazenamento de dados que você está usando em sua conta do Power BI e gerencie sua conta.
 
-1. Para gerenciar seu próprio armazenamento, acesse **Meu Espaço de Trabalho** no painel de navegação à esquerda.
+1. Para gerenciar seu próprio armazenamento, acesse **Meu Workspace** no painel de navegação à esquerda.
    
     ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Selecione o ícone de engrenagem ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) no canto superior direito \> **Gerenciar armazenamento pessoal**.
@@ -59,8 +59,8 @@ Veja a quantidade de armazenamento de dados que você está usando em sua conta 
 
 Tenha em mente que você ou outra pessoa pode ter relatórios e painéis com base em um conjunto de dados. Se você excluir o conjunto de dados, os relatórios e painéis de controle não funcionarão mais.
 
-## <a name="manage-your-app-workspace"></a>Gerenciar o espaço de trabalho do aplicativo
-1. Selecione a seta ao lado de **Espaços de Trabalho** \> selecione o nome do espaço de trabalho do aplicativo.
+## <a name="manage-your-app-workspace"></a>Gerenciar o workspace do aplicativo
+1. Selecione a seta ao lado de **Workspaces**\> selecione o nome do workspace do aplicativo.
    
     ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Selecione o ícone de engrenagem ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) no canto superior direito \> **Gerenciar armazenamento de grupo**.
@@ -76,7 +76,7 @@ Tenha em mente que você ou outra pessoa pode ter relatórios e painéis com bas
 3. Para excluir um conjunto de dados ou um relatório, selecione o ícone de lixeira ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Qualquer membro, com permissões de edição, de um espaço de trabalho do aplicativo tem permissões para excluir conjuntos de dados e relatórios do espaço de trabalho do aplicativo.
+   > Qualquer membro, com permissões de edição, de um workspace do aplicativo tem permissões para excluir conjuntos de dados e relatórios do workspace do aplicativo.
    > 
    > 
 

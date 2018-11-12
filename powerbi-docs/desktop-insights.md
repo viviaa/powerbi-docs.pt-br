@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a4c73cc81a09a3747ff34e6a20508b4ff19eafa8
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280284"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909607"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Usar insights no Power BI Desktop para explicar os aumentos e as diminuições exibidos nos visuais (versão prévia)
 
@@ -113,7 +113,6 @@ A lista a seguir é a coleção de cenários sem suporte no momento para **expli
 * Filtros TopN
 * Filtros Incluir/excluir
 * Filtros de medida
-* Medidas e agregações não aditivas
 * Medidas não numéricas
 * Uso de "Mostrar valor como"
 * Medidas filtradas – são cálculos no nível do visual com um filtro específico aplicado (por exemplo, *Total de Vendas da França*) e são usados em alguns dos visuais criados pelo recurso de insights

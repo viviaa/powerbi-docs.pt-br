@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6bc8eea6138f2961457d03eaf5ef88d0327a058d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549904"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909561"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -44,13 +44,12 @@ Quando você cria um indicador, os seguintes elementos são salvos com o indicad
 
 * A página atual
 * Filtros
-* Segmentações
+* A segmentação de dados, incluindo o tipo de segmentação de dados (por exemplo, menu suspenso ou lista) e o estado de segmentação de dados
+* Estado de seleção visual (como filtros de realce cruzado)
 * Ordem de classificação
 * Local de análise
 * Visibilidade (de um objeto, usando o painel **Seleção**)
 * Os modos de foco ou de **Destaque** de qualquer objeto visível
-
-Os indicadores atualmente não salvam o estado de realce cruzado. 
 
 Configure uma página de relatório da maneira que você deseja que ela seja exibida no indicador. Depois que a página de relatório e os visuais forem organizados como você deseja, selecione **Adicionar** no painel **Indicadores** para adicionar um indicador. 
 

@@ -1,106 +1,107 @@
 ---
-title: Adicionar um filtro de visualização, de página, de detalhamento ou de relatório a um relatório
-description: Adicionar um filtro de página, um filtro de visualização ou um filtro de relatório a um relatório no Power BI
+title: Adicionar um filtro a um visual, página, detalhamento ou relatório no Power BI
+description: Adicionar um filtro de página, um filtro de visualização, um filtro de relatório ou um filtro de detalhamento a um relatório no Power BI
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/26/2018
+ms.date: 09/28/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3758415dc41a5f94419193240d4ce71aa4aca1d8
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: c70e29bf7dcd5a307cbcb4762595716595dfa523
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187204"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973271"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Adicionar um filtro a um relatório do serviço do Power BI (na exibição Edição)
-> [!TIP]
-> Recomendamos que você leia primeiro [Sobre filtros e realces nos relatórios do Power BI](power-bi-reports-filters-and-highlighting.md).
 
-Estes exemplos neste artigo mostram o serviço do Power BI. No entanto, as etapas são quase idênticas no Power BI Desktop.
-> 
-> 
+Este artigo explica como adicionar um filtro de página, um filtro de visualização, um filtro de relatório ou um filtro de detalhamento a um relatório no Power BI. Os exemplos neste artigo estão no serviço do Power BI. As etapas são quase idênticas no Power BI Desktop.
 
-## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Qual é a diferença entre os filtros de relatório no Modo de exibição de edição e no	Modo de exibição de leitura
-Há dois modos de exibir relatórios e interagir com eles: [Exibição de Leitura](consumer/end-user-reading-view.md) e [Exibição de Edição](service-interact-with-a-report-in-editing-view.md).  E os recursos de filtragem disponíveis para você dependem do modo no qual você está.
+## <a name="filters-in-editing-view-or-reading-view"></a>Filtros no modo de exibição de Edição ou no modo de exibição de Leitura
+Você pode interagir com relatórios em dois modos de exibição diferentes: Leitura e Edição. Os recursos de filtragem disponíveis dependem de qual modo você está. Leia tudo [sobre filtros e realce em relatórios do Power BI](power-bi-reports-filters-and-highlighting.md) para obter detalhes.
 
-* No Modo de exibição de edição é possível adicionar relatório, página e filtros visuais. Ao salvar o relatório, os filtros são salvos com ele. Pessoas olhando para o relatório no Modo de Exibição de Leitura podem interagir com os filtros que você adicionou.
-* Na Modo de Exibição de Leitura, é possível interagir qualquer relatório, detalhamento, página e filtros visuais que já existem no relatório, mas você não pode adicionar novos filtros. No entanto, as alterações feitas no painel Filtros serão salvas com o relatório – mesmo se você exibir o relatório em um aplicativo móvel e sair do relatório e retornar depois.  
+Este artigo descreve como criar filtros no **modo de exibição de Edição** de relatório.  Para saber mais sobre filtros no modo de exibição de Leitura, confira [Interagir com filtros no modo de exibição de Leitura de relatórios](consumer/end-user-reading-view.md).
 
-> [!NOTE]
-> Este artigo descreve como criar filtros no **Modo de Exibição de Edição** de relatório.  Para obter mais informações sobre filtros, consulte [Interagindo com filtros em Modo de Exibição de Leitura de relatórios](consumer/end-user-reading-view.md).
-
-
-## <a name="filters-available-in-the-power-bi-filters-pane"></a>Filtros disponíveis no painel *Filtros* do Power BI
+## <a name="filter-types-in-the-filters-pane"></a>Tipos de filtro no painel Filtros
 Independentemente de você estar usando o Power BI Desktop ou o serviço do Power BI, o painel Filtros é exibido no lado direito da tela do relatório. Caso não veja o painel Filtros, selecione o ícone ">" no canto superior direito para expandi-lo.
 
-Há quatro tipos de filtros.
+Há quatro tipos de filtros: **filtro de página**, **filtro de visual**, **filtro de detalhamento** e **filtro de relatório**.
 
-- Um **filtro de página** se aplica a todos os visuais da página do relatório     
-- Um **filtro de visual** se aplica a um único visual da página do relatório    
-- Um **filtro de detalhamento** se aplica a uma única entidade em um relatório    
-- Um **filtro de relatório** se aplica a todas as páginas no relatório    
+![Painel Filtros no Modo de exibição de leitura](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
-    ![Painel Filtros no Modo de exibição de leitura](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
-
-Como os filtros *persistem*, quando você sai do relatório, o Power BI retém o filtro, a divisão e outras alteração de exibição de dados que você realizou. Portanto, você poderá continuar onde parou quando retornar ao relatório. Se você não quiser que as alterações do filtro persistam, selecione **Redefinir para padrão** na barra de menus superior.
+Como os filtros *persistem*, quando você sai do relatório, o Power BI mantém o filtro, a segmentação e outras alteração de exibição de dados que você realizou. Portanto, você pode continuar onde parou quando retornar ao relatório. Se não quiser que as alterações do filtro persistam, selecione **Redefinir para padrão** na barra de menus superior.
 
 ![botão de filtro persistente](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
-## <a name="add-a-filter-to-a-specific-visualization-aka-visual-filter"></a>Adicionar um filtro a uma visualização específica (também conhecido como filtro visual)
-Há duas maneiras para fazer isso: 
+## <a name="add-a-filter-to-a-visual"></a>Adicionar um filtro a um visual
+Você pode adicionar um filtro a um visual específico de duas maneiras diferentes (também conhecido como um "filtro de visual"). 
 
-* filtrando um campo que já esteja sendo usado pela visualização
-* identificando um campo que ainda não esteja sendo usado pela visualização e adicionando esse campo diretamente ao bucket **Filtros de nível visual**.
+* Filtre um campo que já está sendo usado pela visualização.
+* Identifique um campo que ainda não esteja sendo usado pela visualização e adicione esse campo diretamente ao bucket **Filtros no nível do visual**.
 
-### <a name="by-filtering-the-fields-already-in-the-visualization"></a>Filtrando os campos que já estão na visualização
-1. Abra um [relatório no modo de Exibição de Edição](consumer/end-user-reading-view.md).
+A propósito, esse procedimento usa o exemplo de Análise de Varejo, caso você queira baixá-lo para acompanhar. Faça o download do [Exemplo de Análise de Varejo](sample-retail-analysis.md).
+
+### <a name="filter-the-fields-in-the-visual"></a>Filtrar os campos no visual
+
+
+1. Abra seu [relatório no modo de exibição de Edição](service-the-report-editor-take-a-tour.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Abra o painel de visualizações e filtros e o painel Campos (se ainda não estiverem abertos).
    
    ![](media/power-bi-report-add-filter/power-bi-display-panes.png)
-3. Selecione um visual para ativá-lo. Todos os campos que estão sendo usados pelo visual são identificados no painel **Campos** e também listados no painel **Filtros**, sob o cabeçalho **Filtros de nível visual**.
+3. Selecione um visual para ativá-lo. Todos os campos que estiverem sendo usados pelo visual serão identificados no painel **Campos** e também listados no painel **Filtros**, sob o cabeçalho **Filtros no nível do visual**.
    
    ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
 4. Agora vamos adicionar um filtro a um campo que já está sendo usado pela visualização. 
    
-   * Role para baixo até a área de **Filtros de nível visual** e selecione a seta para expandir o campo que você deseja filtrar. Neste exemplo, vamos filtrar **StoreNumberName**
+    Role para baixo até a área de **Filtros de nível visual** e selecione a seta para expandir o campo que você deseja filtrar. Neste exemplo, vamos filtrar **StoreNumberName**.
      
-      ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
-   * Defina os controles de filtro **Básico**, **Avançado** ou **N superior** (consulte [Como usar filtros de relatório](consumer/end-user-report-filter.md)). Neste exemplo, selecionaremos a filtragem Básica e colocaremos marcas de seleção ao lado dos números 10, 11, 15 e 18.
+    ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
+    
+    Defina os controles de filtro **Básico**, **Avançado** ou **N superior**. Neste exemplo, pesquisaremos na filtragem Básica por **cha** e selecionaremos esses cinco armazenamentos.
      
-      ![](media/power-bi-report-add-filter/power-bi-basic-filters.png) 
-   * O visual é alterado para refletir o novo filtro. Se você salvar o relatório com o filtro, os leitores do relatório poderão interagir com o filtro no modo de exibição de leitura, marcando ou desmarcando valores.
-     
-      ![](media/power-bi-report-add-filter/power-bi-filter-effect.png)
-5. Agora vamos adicionar um campo totalmente novo, como um Filtro de nível visual, à nossa visualização.
+    ![](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
-   * No painel de Campos, selecione o campo que você deseja adicionar como um novo filtro de nível visual e arraste-o para a **área de Filtros de nível visual**.  Neste exemplo arrastaremos **Gerente regional** para o bucket **Filtros de nível visual** e selecionaremos apenas Andrew Ma. 
+    O visual é alterado para refletir o novo filtro. Se você salvar o relatório com o filtro, os leitores do relatório verão o visual filtrado a princípio, e poderão interagir com o filtro no modo de exibição de Leitura, marcando ou desmarcando valores.
      
-      ![](media/power-bi-report-add-filter/power-bi-andrew.png)
-   * Observe que o **Gerente regional** *não* é adicionado à visualização em si. A visualização ainda é composta por **StoreNumberName** como o eixo e **Vendas Deste Ano** como o valor.  
-     
-      ![](media/power-bi-report-add-filter/power-bi-visualization.png)
-   * Assim, a própria visualização agora é filtrada para mostrar apenas as vendas de Andrew neste ano para as lojas especificadas.
-     
-     ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
+    ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
 
-## <a name="add-a-filter-to-an-entire-page-aka-page-view-filter"></a>Adicionar um filtro a uma página inteira (também conhecido como filtro de modo de exibição de página)
-1. Abra um [relatório no modo de Exibição de Edição](consumer/end-user-reading-view.md).
+### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrar com um campo que não está no visual
+
+Agora, vamos adicionar um campo novo à nossa visualização como um filtro no nível do visual.
+   
+1. No painel Campos, selecione o campo que você deseja adicionar como um novo filtro no nível do visual e arraste-o até a **área de Filtros no nível do visual**.  Neste exemplo, arrastaremos **Gerente Regional** para o bucket **Filtros no nível do visual**, pesquisaremos por **an** e selecionaremos os três gerentes. 
+     
+    ![](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
+
+    Observe que o **Gerente Regional** *não* é adicionado à visualização em si. A visualização ainda é composta por **StoreNumberName** como o eixo e **Vendas Deste Ano** como o valor.  
+     
+    ![](media/power-bi-report-add-filter/power-bi-visualization.png)
+
+    E a própria visualização agora é filtrada para mostrar apenas as vendas desses gerentes neste ano para as lojas especificadas.
+     
+    ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
+
+    Se você salvar o relatório com o filtro, os leitores do relatório poderão interagir com o filtro **Gerente regional** no modo de exibição de Leitura, marcando ou desmarcando valores.
+
+## <a name="add-a-filter-to-an-entire-page"></a>Adicionar um filtro a uma página inteira
+
+Também é possível adicionar um filtro a uma página inteira (também conhecido como filtro no modo de exibição de página)
+1. Abra seu [relatório no modo de exibição de Edição](service-the-report-editor-take-a-tour.md).
 2. Abra o painel de visualizações e filtros e o painel Campos (se ainda não estiverem abertos).
-3. No painel Campos, selecione o campo que você deseja adicionar como um novo filtro de nível de página e arraste-o para a área **Filtros de nível de página**.  
-4. Selecione os valores que você deseja filtrar e defina os controles de filtragem **Básico** ou **Avançado** (veja [Como usar filtros de relatório](consumer/end-user-report-filter.md)).
+3. No painel Campos, selecione o campo que você deseja adicionar como um novo filtro de nível de página e arraste-o para a área **Filtros no nível da página**.  
+4. Selecione os valores que você deseja filtrar e defina os controles de filtragem **Básico** ou **Avançado**.
    
    Todas as visualizações na página, afetadas por esse filtro, serão redesenhadas para refletir a alteração. 
    
    ![](media/power-bi-report-add-filter/filterpage.gif)
 
-Se você salvar o relatório com o filtro, os leitores do relatório poderão interagir com o filtro no modo de exibição de leitura, marcando ou desmarcando valores.
+    Se você salvar o relatório com o filtro, os leitores do relatório poderão interagir com o filtro no modo de exibição de Leitura, marcando ou desmarcando valores.
 
 ## <a name="add-a-drillthrough-filter"></a>Adicionar um filtro de detalhamento
 Com o detalhamento no serviço do Power BI Desktop e do Power BI Desktop, você pode criar uma página de relatório de *destino* que tem como foco uma entidade específica, como um fornecedor, cliente ou fabricante. Agora, de outras páginas de relatório, os usuários podem clicar com o botão direito do mouse em um ponto de dados da entidade em questão e executar uma consulta drill-through na página focalizada.
@@ -130,30 +131,30 @@ Vejamos como funciona o filtro de detalhamento.
     ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## <a name="add-a-filter-to-an-entire-report-aka-report-filter"></a>Adicione um filtro a um relatório inteiro (também conhecido como filtro de relatório)
-1. Abra um [relatório no modo de Exibição de Edição](consumer/end-user-reading-view.md).
+1. Abra seu [relatório no modo de exibição de Edição](service-the-report-editor-take-a-tour.md).
 2. Abra o painel de visualizações e filtros e o painel Campos (se ainda não estiverem abertos).
-3. No painel Campos, selecione o campo que você deseja adicionar como um novo filtro de nível de relatório e arraste-o para a área de **Filtros de nível de relatório**.  
-4. Selecione os valores que você deseja filtrar (consulte [Como usar filtros de relatório](consumer/end-user-report-filter.md).
+3. No painel Campos, selecione o campo que você deseja adicionar como um novo filtro no nível do relatório e arraste-o para a área **Filtros no nível do relatório**.  
+4. Selecione os valores que você deseja filtrar.
 
-    Os visuais na página ativa e em todas as páginas do relatório são alterados para refletir o novo filtro. Se você salvar o relatório com o filtro, os leitores do relatório poderão interagir com o filtro no modo de exibição de leitura, marcando ou desmarcando valores.
+    Os visuais na página ativa e em todas as páginas do relatório são alterados para refletir o novo filtro. Se você salvar o relatório com o filtro, os leitores do relatório poderão interagir com o filtro no modo de exibição de Leitura, marcando ou desmarcando valores.
 
 1. Selecione a seta para voltar para retornar à página do relatório anterior.
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 
-- Existem situações em que o filtro de nível de visual e o filtro de nível de página podem retornar resultados diferentes.  Por exemplo, quando você adiciona um filtro de nível de visual, o Power BI filtra nos resultados agregados.  A agregação padrão é Soma, mas você pode [alterar o tipo de agregação](service-aggregates.md).  
+- Há situações nas quais o filtro no nível do visual e o filtro no nível da página podem retornar resultados diferentes.  Por exemplo, quando você adiciona um filtro no nível do visual, o Power BI filtra nos resultados agregados.  A agregação padrão é Soma, mas você pode [alterar o tipo de agregação](service-aggregates.md).  
 
-    Quando você adiciona um filtro de nível de página, o Power BI filtra sem agregação.  Ele faz isso, pois uma página pode ter vários visuais, que, individualmente, podem utilizar diferentes tipos de agregação.  Portanto, o filtro é aplicado em cada linha de dados.
+    Depois, ao adicionar um filtro no nível da página, o Power BI filtra sem agregação.  Ele faz isso, pois uma página pode ter vários visuais, que, individualmente, podem utilizar diferentes tipos de agregação.  Portanto, o filtro é aplicado em cada linha de dados.
 
 - Se você não vir o painel Campos, verifique se você está no [Modo de Exibição de Edição](service-interact-with-a-report-in-editing-view.md) do relatório    
 - Se você tiver feito muitas alterações nos filtros e quiser retornar para as configurações padrão do autor do relatório, selecione **Redefinir para padrão** na barra de menus superior.
 
 ## <a name="next-steps"></a>Próximas etapas
- [Como usar filtros de relatório](consumer/end-user-report-filter.md)
+[Faça um tour pelo painel Filtros do relatório](consumer/end-user-report-filter.md)
 
-  [Filtros e realce em relatórios](power-bi-reports-filters-and-highlighting.md)
+[Filtros e realce em relatórios](power-bi-reports-filters-and-highlighting.md)
 
-[Interação com os filtros e realce no relatório de exibição de leitura](consumer/end-user-reading-view.md)
+[Interação com os filtros e realce no modo de exibição de Leitura de relatório](consumer/end-user-reading-view.md)
 
 [Alterar como elementos visuais de relatórios executam filtro cruzado e realce cruzado entre si](consumer/end-user-interactions.md)
 
