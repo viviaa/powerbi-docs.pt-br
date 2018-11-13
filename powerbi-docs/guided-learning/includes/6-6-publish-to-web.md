@@ -29,7 +29,7 @@ Deseja excluir um código de inserção que você criou? Sem problemas. No Power
 
 ![](media/6-6-publish-to-web/6-6_5.png)
 
-O espaço de trabalho do Power BI mostra os códigos de inserção que você criou (na imagem abaixo, há apenas um). Ao clicar nas reticências, você poderá selecionar que deseja obter o código de inserção ou excluí-lo inteiramente.
+O workspace do Power BI mostra os códigos de inserção que você criou (na imagem abaixo, há apenas um). Ao clicar nas reticências, você poderá selecionar que deseja obter o código de inserção ou excluí-lo inteiramente.
 
 ![](media/6-6-publish-to-web/6-6_6.png)
 

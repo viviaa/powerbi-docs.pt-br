@@ -4,11 +4,11 @@ Os grupos do Power BI são baseados nos grupos do Office 365 e, portanto, se voc
 
 Este módulo usa o cenário de configuração de um novo grupo de finanças. Vamos mostrar como configurar o grupo, compartilhar dashboards, relatórios e conjuntos de dados no grupo, bem como adicionar membros que terão acesso aos itens no grupo.
 
-Começo aqui em Meu Espaço de Trabalho. Esses são os dashboards, relatórios e conjuntos de dados que criei ou que alguém compartilhou comigo.
+Começo aqui em Meu Workspace. Esses são os dashboards, relatórios e conjuntos de dados que criei ou que alguém compartilhou comigo.
 
 ![Compartilhar e colaborar no Power BI](./media/6-1-create-groups/pbi_learn06_01myworkspace.png)
 
-Se eu expandir Meu Espaço de Trabalho, poderei selecionar **Criar um grupo**.
+Se eu expandir Meu Workspace, poderei selecionar **Criar um grupo**.
 
 ![Compartilhar e colaborar no Power BI](./media/6-1-create-groups/pbi_learn06_01expandmywkspace.png)
 

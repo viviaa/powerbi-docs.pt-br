@@ -1,6 +1,6 @@
 Nas lições anteriores, já criamos um pacote de conteúdo e um grupo. Nesta lição, vamos criar uma instância do pacote de conteúdo para todos no grupo.
 
-Vou começar em Meu Espaço de Trabalho...
+Vou começar em Meu Workspace...
 
 ![Compartilhar e colaborar no Power BI](./media/6-3-use-content-packs/pbi_learn06_03myworkspace.png)
 

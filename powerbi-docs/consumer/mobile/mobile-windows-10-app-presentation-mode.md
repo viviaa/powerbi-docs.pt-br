@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 4bc9a0fe6dd3becd67c2b6dd8ffeb9d7922705a6
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973622"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507923"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Exiba relatórios no modo de apresentação no Surface Hub e no Windows 10 – Power BI
 Você pode exibir relatórios no modo de apresentação no Surface Hub, além de dashboards, relatórios e blocos no modo de tela inteira em dispositivos com o Windows 10. 
@@ -27,7 +27,7 @@ No modo de tela inteira do aplicativo móvel do Power BI, todos os "cromos", com
 
 Ao exibir um relatório no modo de apresentação no Surface Hub, você pode desenhar nas páginas com diferentes cores de tinta e navegar entre as páginas do relatório.
 
-Você também pode [exibir dashboards e relatórios no modo de tela inteira do serviço do Power BI](../../service-fullscreen-mode.md) na Web.
+Você também pode [exibir dashboards e relatórios no modo de tela inteira do serviço do Power BI](../end-user-focus.md) na Web.
 
 > [!NOTE]
 > O modo de apresentação é diferente do [modo de foco para blocos](mobile-tiles-in-the-mobile-apps.md).
@@ -74,6 +74,6 @@ O modo de apresentação é ativado por padrão no Surface Hub, mas se estiver d
 7. Para sair do modo de tela inteira, passe o dedo de cima para baixo e toque nas duas setas voltadas para dentro ![](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Exibir painéis e relatórios no modo de tela inteira do serviço do Power BI](../../service-fullscreen-mode.md)
+* [Exibir painéis e relatórios no modo de tela inteira do serviço do Power BI](../end-user-focus.md)
 * Dúvidas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

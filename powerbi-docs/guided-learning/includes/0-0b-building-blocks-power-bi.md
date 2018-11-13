@@ -46,7 +46,7 @@ Você poderia ter um relatório sobre as vendas do trimestre, um relatório sobr
 ## <a name="dashboards"></a>Painéis
 Quando você está pronto para compartilhar uma única página de um relatório ou compartilhar uma coleção de visualizações, você cria um **dashboard**. Assim como o painel de um carro, um **dashboard** do Power BI é uma coleção de visuais de uma única página que você pode compartilhar com outras pessoas. Geralmente, é um grupo selecionado de visuais que fornecem uma análise rápida dos dados ou da história que você está tentando apresentar.
 
-Um dashboard deve se ajustar à uma única página, geralmente chamada uma tela (a tela é o pano de fundo em branco no Power BI Desktop, ou no serviço, na qual você coloca visualizações). Pense nisso como a tela que um artista ou um pintor usa – um espaço de trabalho no qual você cria, combina e retrabalha visuais interessantes e atraentes.
+Um dashboard deve se ajustar à uma única página, geralmente chamada uma tela (a tela é o pano de fundo em branco no Power BI Desktop, ou no serviço, na qual você coloca visualizações). Pense nisso como a tela que um artista ou um pintor usa – um workspace no qual você cria, combina e retrabalha visuais interessantes e atraentes.
 Você pode compartilhar dashboards com outros usuários ou grupos, que, por sua vez, podem interagir com seu dashboard quando estiverem no serviço do Power BI ou em seus dispositivos móveis.
 
 ## <a name="tiles"></a>Blocos

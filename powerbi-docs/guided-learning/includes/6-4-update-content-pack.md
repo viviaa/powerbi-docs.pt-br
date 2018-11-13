@@ -1,6 +1,6 @@
 Nesta lição, vamos editar o pacote de conteúdo original que criamos anteriormente e ver como ele mantém atualizadas as outras pessoas que se conectaram a ele.
 
-Estou de volta ao Meu Espaço de Trabalho, editando meu dashboard original.
+Estou de volta ao Meu Workspace, editando meu dashboard original.
 
 ![Compartilhar e colaborar no Power BI](./media/6-4-update-content-pack/pbi_learn06_04myworkspace.png)
 

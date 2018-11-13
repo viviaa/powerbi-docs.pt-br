@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 2758ef661b70c53a37104c67c4012be79725990e
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101475"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297126"
 ---
 # <a name="on-premises-data-gateway"></a>Gateway de dados local
 
@@ -118,7 +118,7 @@ Caso ache que está tendo problemas de proxy com o gateway, veja [Definindo as c
 [Gerenciar sua fonte de dados – Oracle](service-gateway-onprem-manage-oracle.md)  
 [Gerenciar sua fonte de dados – Importar/Atualização agendada](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [Detalhes sobre o gateway de dados local](service-gateway-onprem-indepth.md)  
-[Gateway de dados local (modo pessoal) – a nova versão do gateway pessoal](service-gateway-personal-mode.md)
-[Definindo as configurações de proxy do gateway de dados local](service-gateway-proxy.md)  
+[Gateway de dados local (modo pessoal) – a nova versão do gateway pessoal](service-gateway-personal-mode.md)  
+[Definindo as configurações de proxy do gateway de dados locais](service-gateway-proxy.md)  
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

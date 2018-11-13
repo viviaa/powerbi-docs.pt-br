@@ -28,7 +28,7 @@ Você também pode omitir por completo o nome da tabela e usar apenas o nome da 
 ## <a name="creating-calculated-columns"></a>Criando colunas calculadas
 **Colunas calculadas** serão úteis quando você desejar segmentar ou filtrar o valor ou se quiser um cálculo para cada linha na tabela.
 
-Você pode criar colunas calculadas no Power BI Desktop selecionando **Nova Coluna** na guia **Modelagem**. É melhor estar na exibição **Dados** (em vez da exibição **Relatório** ou **Relações**), já que você pode ver a nova coluna criada e a **Barra de Fórmulas** é populada e está pronta para a fórmula DAX.
+Você pode criar colunas calculadas no Power BI Desktop selecionando **Nova Coluna** na guia **Modelagem**. É melhor estar na exibição Dados (em vez da exibição Relatório ou **Relações**), já que você pode ver a nova coluna criada e a **Barra de Fórmulas** é populada e está pronta para a fórmula DAX.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_2a.png)
 

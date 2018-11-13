@@ -428,8 +428,6 @@ items:
       items:
       - name: Renomear conteúdo no Power BI
         href: service-rename.md
-      - name: Exibir painéis e relatórios no Modo de Tela Inteira (modo de TV)
-        href: service-fullscreen-mode.md
       - name: Quick Insights no Power BI
         href: service-insights.md
       - name: Inscrever sua organização do Governo dos EUA
@@ -1251,9 +1249,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 8640762b152c996d21cefe8663cf6bf8e78f718a
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 7c2025a2dd23ce58937cd9987bec8d28b8ffb04c
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266129"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508050"

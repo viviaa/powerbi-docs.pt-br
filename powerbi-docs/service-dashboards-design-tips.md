@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 082d0ba1e638e8eaf6ae16fa8d5ed63c128c8ad5
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544918"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507843"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Dicas para criar um painel bom no Power BI
 Agora que você criou um painel e adicionou alguns blocos, pense em como tornar seu painel não apenas bonito, mas também funcional. Em geral, isso significa fazer destacar as informações mais importantes, e torná-las claras e organizadas.
@@ -43,7 +43,7 @@ Porque os painéis devem mostrar informações importantes em um relance, é mel
 O painel está muito cheio?  Remova informações que não são essenciais que podem ser facilmente lidas e interpretadas.
 
 ## <a name="make-use-of-full-screen-mode"></a>Fazer uso do modo de tela inteira
-Exiba o dashboard em [tela inteira](service-fullscreen-mode.md) sem distrações.
+Exiba o dashboard em [tela inteira](consumer/end-user-focus.md) sem distrações.
 
 ## <a name="make-the-most-important-information-biggest"></a>Adicione as informações mais importantes ao seu painel
 Se o texto e visualizações no painel são do mesmo tamanho, os leitores terão dificuldade para se concentrar no que é mais importante. Por exemplo, as visualizações de cartão são uma boa maneira de exibir um número importante em destaque:  

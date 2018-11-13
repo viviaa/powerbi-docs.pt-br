@@ -8,15 +8,15 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c547cd83d879cd81fe12c02f5418f5bf44ca1483
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 62a8ae907b01c8309aee101aa074e9bfb72b207d
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545935"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265899"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personalizar as propriedades dos eixos x e y
 Neste tutorial, você aprenderá várias maneiras diferentes de personalizar os eixos X e Y das suas visualizações. Nem todas as visualizações têm eixos ou podem ser personalizadas; gráficos de pizza, por exemplo, não têm eixos. E opções de personalização variam de visualização para visualização, são muitas opções serem abordadas em um único artigo. Então vamos dar uma olhada em algumas das personalizações de eixos mais usadas e torná-lo familiarizado com a guia de formatação de visualização na tela de relatório do Power BI.  
@@ -86,30 +86,33 @@ Primeiro, você criará um gráfico de combinação que examina o impacto da con
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-> [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
-> 1. Em janeiro, a % de Margem Bruta foi de 35%, chegando ao seu máximo em 45% em abril, caindo em julho e chegando ao seu máximo novamente em agosto. Será que vamos ver um padrão semelhante nas vendas do ano passado e deste ano?
-> 2. Adicione **Vendas deste ano > Valor** e **Vendas do último ano** no gráfico de linhas. A escala de **% de Margem Bruta do Ano Passado** (a linha azul acompanhando a linha de grade 0M%) é muito menor do que a escala de **Vendas**, o que dificulta a comparação. Além disso, os percentuais de rótulo do eixo Y são absurdas.      
+    > [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+    Em janeiro, a % de Margem Bruta foi de 35%, chegando ao seu máximo em 45% em abril, caindo em julho e chegando ao seu máximo novamente em agosto. Será que vamos ver um padrão semelhante nas vendas do ano passado e deste ano?
+     
+3. Adicione **Vendas deste ano > Valor** e **Vendas do último ano** no gráfico de linhas. A escala de **% de Margem Bruta do Ano Passado** (a linha azul acompanhando a linha de grade 0M%) é muito menor do que a escala de **Vendas**, o que dificulta a comparação. Além disso, os percentuais de rótulo do eixo Y são absurdas.      
+
+    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+
 5. Para tornar o visual mais fácil de ler e interpretar, converta o gráfico de linhas em um gráfico de linha e coluna empilhada.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
 
 6. Arraste **% de Margem Bruta no Ano Passado** de **Valores de Coluna** para **Valores de Linha**. O que temos agora é o gráfico de colunas empilhadas que criamos acima ***mais*** um gráfico de linhas.  (Opcionalmente, use o que você aprendeu acima para formatar a cor e o tamanho da fonte dos eixos.)
    
-
    O Power BI cria dois eixos, permitindo que os conjuntos de dados sejam escalonados de modo diferente: o eixo à esquerda calcula dólares e o eixo à direita calcula o percentual.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
 
 ### <a name="format-the-secondary-y-axis"></a>Formate o eixo Y secundário
-1. No painel **Visualizações**, selecione o ícone de rolo de tinta para exibir as opções de formatação.
-2. Expanda as opções de eixo Y selecionando a seta para baixo.
-3. Percorra a lista até encontrar as opções para **Mostrar Secundário**. Alterne **Mostrar Secundário** de **Desativado** para **Ativado**.
+1. No painel **Visualizações**, selecione o ícone de rolo de tinta para exibir as opções de formatação.    
+2. Expanda as opções de eixo Y selecionando a seta para baixo.    
+3. Percorra a lista até encontrar as opções para **Mostrar Secundário**. Alterne **Mostrar Secundário** de **Desativado** para **Ativado**.    
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+
 4. (Opcional) Personalize os dois eixos. Se você mudar a **Posição** para o eixo da coluna ou o eixo de linha, os dois eixos trocarão de lado.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axes-options.png)
@@ -120,7 +123,7 @@ Com uma visualização complicada, convém adicionar títulos de eixos.  Os tít
 1. Alterne **Título** para **Ativado** para o **Eixo Y (Coluna)** e o **Eixo Y (Linha)**.
 2. Defina o **Estilo** para **Mostrar somente o título**.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
+   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    
 3. Seu gráfico de combinação agora exibe eixos duplos, ambos com títulos.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)

@@ -1,5 +1,5 @@
 ---
-title: Localizar e conectar-se a um pacote de conteúdo organizacional – Power BI
+title: Localizar e conectar-se a pacotes de conteúdo organizacional
 description: Encontrar e abrir um pacote de conteúdo organizacional no Power BI
 author: mihart
 manager: kvivek
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4648d09e6ef58d84b85690062428f0515fa7ddae
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908057"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507705"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Localizar e se conectar a um pacote de conteúdo organizacional
 
@@ -24,7 +24,7 @@ Quando alguém publica um pacote de conteúdo organizacional em sua organizaçã
 Criar pacotes de conteúdo é diferente de compartilhar dashboards ou colaborar neles em um grupo. Leia [Como devo colaborar e compartilhar relatórios e dashboards?](../service-how-to-collaborate-distribute-dashboards-reports.md) para decidir sobre a melhor opção para sua situação.
 
 > [!NOTE]
-> Não é possível criar ou instalar pacotes de conteúdo organizacional na nova versão prévia de experiências de espaço de trabalho. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de espaço de trabalho](../service-create-the-new-workspaces.md).
+> Não é possível criar ou instalar pacotes de conteúdo organizacional na nova versão prévia de experiências de workspace. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de workspace](../service-create-the-new-workspaces.md).
 > 
 
 ## <a name="find-an-organizational-content-pack"></a>Localizar um pacote de conteúdo organizacional
@@ -36,7 +36,7 @@ Todos os usuários do [Power BI Pro](https://powerbi.microsoft.com/pricing) pode
 3. Selecione um pacote de conteúdo para revelar detalhes adicionais.
 
 ## <a name="connect-to-an-organizational-content-pack"></a>Conectar-se a um pacote de conteúdo organizacional
-* Selecione **Obter agora** para conectar-se ao pacote de conteúdo e adicioná-lo ao espaço de trabalho ativo. Novos painéis, relatórios, pastas de trabalho do Excel e conjuntos de dados contêm um asterisco amarelo.
+* Selecione **Obter agora** para conectar-se ao pacote de conteúdo e adicioná-lo ao workspace ativo. Novos painéis, relatórios, pastas de trabalho do Excel e conjuntos de dados contêm um asterisco amarelo.
 
 Se o pacote de conteúdo tiver uma pasta de trabalho do Excel, você poderá ver um aviso informando que você não tem permissões para exibir a pasta de trabalho. Nesse caso, peça ao proprietário do pacote de conteúdo para [compartilhar a pasta de trabalho com você no OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
