@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 3c3295483112ae0b5475e15c2073faba86dfff30
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c19bc774ebffa2e781512e793abbefd1bd9fb5e2
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561806"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679282"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Diretrizes de planejamento de capacidade do Servidor de Relatórios do Power BI
 O Servidor de Relatórios do Power BI é uma solução de relatórios corporativos e de BI de autoatendimento que os clientes podem implantar em suas instalações, protegida pelo firewall. Ele combina a funcionalidade de relatório interativo do Power BI Desktop com a plataforma de servidor local do SQL Server Reporting Services. Com o uso intenso e cada vez maior de análises e relatórios nas empresas, a inclusão no orçamento da infraestrutura de hardware e das licenças de software necessárias para dimensionar para uma base de usuários corporativos pode ser um desafio. Este documento tem como objetivo oferecer diretrizes de planejamento de capacidade do Servidor de Relatórios do Power BI, com o compartilhamento de resultados de diversas execuções de teste de carga de várias cargas de trabalho em um servidor de relatório. Embora os relatórios, as consultas e os padrões de uso das organizações variem muito, os resultados apresentados neste documento, juntamente com os testes reais usados e uma descrição detalhada de como eles foram executados, servem como um ponto de referência para qualquer pessoa que está no processo de planejamento do estágio inicial da implantação do Servidor de Relatórios do Power BI.
@@ -114,7 +114,7 @@ Os resultados apresentados neste documento foram obtidos com a execução de um 
 ### <a name="1-topology"></a>1 Topologia
 **1.1 Topologia do Servidor de Relatórios do Power BI**
 
-Para se concentrar apenas no comportamento do Servidor de Relatórios do Power BI em configurações diferentes, a configuração de VM de cada tipo de computador (com exceção do computador que hospeda o Servidor de Relatórios do Power BI) foi corrigida. Cada computador foi provisionado de acordo com os computadores da Série D de segunda geração (v2) com Discos de Armazenamento Premium. Você pode encontrar informações detalhadas sobre cada tamanho da VM na seção "Propósito geral" em https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Para se concentrar apenas no comportamento do Servidor de Relatórios do Power BI em configurações diferentes, a configuração de VM de cada tipo de computador (com exceção do computador que hospeda o Servidor de Relatórios do Power BI) foi corrigida. Cada computador foi provisionado de acordo com os computadores da Série D de segunda geração (v2) com Discos de Armazenamento Premium. Você pode encontrar informações detalhadas sobre cada tamanho da VM na seção "Propósito geral" em https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Tipo de máquina virtual | Processador | Memória | Tamanho de VM do Azure |
 | --- | --- | --- | --- |
@@ -124,7 +124,7 @@ Para se concentrar apenas no comportamento do Servidor de Relatórios do Power B
 
 **1.2 Configuração de máquina virtual do Servidor de Relatórios do Power BI** 
 
-Foram usadas configurações diferentes de processador e memória para a Máquina Virtual que hospeda o Servidor de Relatórios do Power BI. Ao contrário das outras VMs, esse computador foi provisionado de acordo com os Computadores da Série D de terceira geração (v3) máquinas com Discos de Armazenamento Premium. Você pode encontrar informações detalhadas sobre este tamanho da VM na seção "Propósito geral" em https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Foram usadas configurações diferentes de processador e memória para a Máquina Virtual que hospeda o Servidor de Relatórios do Power BI. Ao contrário das outras VMs, esse computador foi provisionado de acordo com os Computadores da Série D de terceira geração (v3) máquinas com Discos de Armazenamento Premium. Você pode encontrar informações detalhadas sobre este tamanho da VM na seção "Propósito geral" em https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Máquina virtual | Processador | Memória | Tamanho de VM do Azure |
 | --- | --- | --- | --- |

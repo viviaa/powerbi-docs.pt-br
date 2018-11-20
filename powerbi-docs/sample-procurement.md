@@ -1,21 +1,21 @@
 ---
 title: 'Exemplo de Análise de compras: faça um tour'
 description: 'Exemplo de Análise de Varejo para o Power BI: faça um tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: a43ffab1ff30dd624fadb7dacb3cebc989ba3128
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944665"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717138"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: faça um tour
 
@@ -47,7 +47,7 @@ Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pod
   
    ![Obter Dados](media/sample-procurement/procurement1a.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
    
    ![Asterisco](media/sample-procurement/procurement1b.png)
   
@@ -64,7 +64,7 @@ Também é possível [baixar apenas o conjunto de dados (pasta de trabalho do Ex
 ## <a name="spending-trends"></a>Tendências de gastos
 Primeiro, vamos analisar as tendências em gastos por categoria e local.  
 
-1. Em seu espaço de trabalho, abra a guia **Dashboards** e selecione o dashboard de Análise de Compras.
+1. Em seu workspace, abra a guia **Dashboards** e selecione o dashboard de Análise de Compras.
 2. Selecione o bloco do painel **Total da fatura por país/região**. Abre a página "Visão Geral de Gasto" do relatório "Exemplo de análise de compras".
 
     ![](media/sample-procurement/procurement2.png)
@@ -95,7 +95,7 @@ Vamos explorar as áreas de gastos no México.
       ![](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Selecione a seta para cima no canto superior esquerdo do gráfico para fazer drill up.
 4. Selecione a seta novamente para desativar os detalhes.  
-5. Selecione **Power BI** na barra de navegação superior para retornar ao seu espaço de trabalho.
+5. Selecione **Power BI** na barra de navegação superior para retornar ao seu workspace.
 
 ## <a name="evaluate-different-cities"></a>Avaliar cidades diferentes
 Podemos usar o realce para avaliar cidades diferentes.

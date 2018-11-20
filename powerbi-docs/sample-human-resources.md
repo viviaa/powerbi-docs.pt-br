@@ -1,21 +1,21 @@
 ---
 title: 'Exemplo de Recursos Humanos: faça um tour'
 description: 'Exemplo de Recursos Humanos para o Power BI: faça um tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/26/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3c73476351671d9c37bea824b2ade0f7e79dd274
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c0f1df47501c297e65e7dc3ccdb8d745c84b2e55
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37067231"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717862"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exemplo de Recursos Humanos para o Power BI: faça um tour
 
@@ -46,7 +46,7 @@ Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pod
 4. Selecione o **Exemplo de Recursos Humanos** e, em seguida, escolha **Conectar**.  
    
    ![Obter Dados](media/sample-human-resources/pbi_hr_sample_connect.png)
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
    
    ![Asterisco](media/sample-human-resources/human-resources-sample-asterisk.png)
   
@@ -62,7 +62,7 @@ Também é possível [baixar apenas o conjunto de dados (pasta de trabalho do Ex
 ## <a name="new-hires"></a>Novas contratações
 Primeiro, vamos explorar as novas contratações.
 
-1. No seu espaço de trabalho, selecione a guia **Dashboards** e abra o dashboard Recursos Humanos.
+1. No seu workspace, selecione a guia **Dashboards** e abra o dashboard Recursos Humanos.
 2. No dashboard, selecione o bloco **Contagem de novas contratações, Novas contratações no mesmo período do ano passado, Alteração de % de YoY de funcionários ativos** **Por mês**.  
    ![](media/sample-human-resources/hr2.png)  
 

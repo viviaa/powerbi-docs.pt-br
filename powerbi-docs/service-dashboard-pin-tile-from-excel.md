@@ -1,7 +1,7 @@
 ---
 title: Como fixar um bloco em um painel do Power BI no Excel
 description: Fixe um bloco em um painel do Power BI do Excel no OneDrive para Empresas. Ficar intervalos, gráficos e tabelas
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3bb151de24a984406aa6fd40a70977f2e9eaf1be
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1ef0ecdfaea51a9ca50e0f105b51b8239ebc4fa1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548041"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717529"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fixar um bloco em um painel do Power BI a partir do Excel
 Antes de fixar um bloco da sua pasta de trabalho do Excel, conecte-a ao serviço do Power BI (app.powerbi.com). Essencialmente, conectar uma pasta de trabalho gera uma versão somente leitura vinculada dessa pasta de trabalho no serviço do Power BI e permite fixar intervalos aos dashboards. É possível até fixar uma planilha inteira em um dashboard.  
@@ -31,7 +31,7 @@ Assista a Will demonstrar várias maneiras de importar dados e de conectar-se a 
 ## <a name="connect-your-excel-workbook-from-onedrive-for-business-to-power-bi"></a>Conectar sua pasta de trabalho do Excel ao Power BI a partir do OneDrive para Empresas
 Ao escolher **Conectar**, sua pasta de trabalho será exibida no Power BI, exatamente como apareceria no Excel Online. Mas, ao contrário do Excel Online, você terá alguns ótimos recursos para ajudá-lo a fixar elementos de suas planilhas diretamente nos dashboards.
 
-Não é possível editar a pasta de trabalho no Power BI. Mas se precisar fazer algumas alterações, você poderá selecionar o ícone de lápis na guia **Pastas de trabalho** do seu espaço de trabalho e, em seguida, escolher para editar a pasta de trabalho no Excel Online ou abri-la no Excel do seu computador. Todas as alterações feitas são salvas na pasta de trabalho no OneDrive.
+Não é possível editar a pasta de trabalho no Power BI. Mas se precisar fazer algumas alterações, você poderá selecionar o ícone de lápis na guia **Pastas de trabalho** do seu workspace e, em seguida, escolher para editar a pasta de trabalho no Excel Online ou abri-la no Excel do seu computador. Todas as alterações feitas são salvas na pasta de trabalho no OneDrive.
 
 1. Carregue sua pasta de trabalho no OneDrive para Empresas.
 
@@ -39,7 +39,7 @@ Não é possível editar a pasta de trabalho no Power BI. Mas se precisar fazer 
 
     ![Caixa de diálogo OneDrive para Empresas](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
-3. No Power BI, a pasta de trabalho é adicionada à guia **Pastas de trabalho** do seu espaço de trabalho.  O ícone ![ícone de pasta de trabalho](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) indica que esta é uma pasta de trabalho do Excel, e um asterisco amarelo indica que ela é nova.
+3. No Power BI, a pasta de trabalho é adicionada à guia **Pastas de trabalho** do seu workspace.  O ícone ![ícone de pasta de trabalho](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) indica que esta é uma pasta de trabalho do Excel, e um asterisco amarelo indica que ela é nova.
     
     ![guia pastas de trabalho](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Abra a pasta de trabalho no Power BI selecionando o nome dela.

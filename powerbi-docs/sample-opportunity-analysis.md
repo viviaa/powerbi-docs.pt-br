@@ -1,21 +1,21 @@
 ---
 title: 'Oportunidade de Análise de Varejo para o Power BI: faça um tour'
 description: 'Oportunidade de Análise de Varejo para o Power BI: faça um tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/20/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 2a7bc3ae08d46ccc9340295a1a6bc9f8303382f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 12bc6039f7b6580782d3dfac181443caa6557447
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945079"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717483"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Oportunidade de Análise de Varejo para o Power BI: faça um tour
 
@@ -53,7 +53,7 @@ Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pod
   
    ![Obter Dados](media/sample-opportunity-analysis/opportunity-connect.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
    
    ![Asterisco](media/sample-opportunity-analysis/opportunity-asterisk.png)
   

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4854f05e3394d7b4eed2c67de8bbca5266a12ae3
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909308"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157392"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Não é possível adicionar o Power BI a uma assinatura de parceiro do Office 365
 
@@ -23,7 +23,7 @@ O Office 365 permite que as empresas o revendam acompanhado e integrado às suas
 
 Se estiver interessado em adquirir o Power BI, juntamente com sua assinatura do Office 365, recomendamos que entre em contato com seu parceiro. Se o seu parceiro não oferecer o Power BI, há opções diferentes que você pode considerar.
 
-# <a name="work-with-your-partner-to-purchase-power-bi"></a>Trabalhe com seu parceiro para comprar o Power BI
+## <a name="work-with-your-partner-to-purchase-power-bi"></a>Trabalhe com seu parceiro para comprar o Power BI
 
 Se quiser comprar uma assinatura do Power BI Pro ou do Power BI Premium, fale com seu parceiro para considerar as opções disponíveis:
 
@@ -31,7 +31,7 @@ Se quiser comprar uma assinatura do Power BI Pro ou do Power BI Premium, fale co
 
 * Seu parceiro consegue fazer sua transição para um modelo de onde você poderá comprar o Power BI diretamente da Microsoft ou de outro parceiro que ofereça o Power BI.
 
-# <a name="purchase-from-microsoft-or-another-channel"></a>Comprar da Microsoft ou de outro canal
+## <a name="purchase-from-microsoft-or-another-channel"></a>Comprar da Microsoft ou de outro canal
 
 Dependendo da relação com seu parceiro, talvez você possa comprar o Power BI diretamente da Microsoft ou de outro parceiro. Verifique se é possível adicionar assinaturas do Power BI no Portal de administração do Office 365 (exige associação na função Administrador Global ou Administrador de Cobrança).
 

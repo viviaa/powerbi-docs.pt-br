@@ -1,21 +1,21 @@
 ---
 title: 'Exemplo de vendas e marketing para o Power BI: faça um tour'
 description: 'Exemplo de vendas e marketing para o Power BI: faça um tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5e69f9416f1de84cd4e2268964620b6a114d4016
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 717db64d30a12d41dc293db11f6f942e4615a1db
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944481"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717575"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemplo de vendas e marketing para o Power BI: faça um tour
 
@@ -24,7 +24,7 @@ O **exemplo de Marketing e Vendas** contém um painel de controle e um relatóri
 
 A VanArsdel tem muitos concorrentes, mas é líder do mercado em seu setor. O CMO quer aumentar a participação no mercado e descobrir as oportunidades de crescimento. Mas, por algum motivo, a participação no mercado do VanArsdel começou a cair, com uma queda significativa em junho.
 
-Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Os exemplos são dados reais de obviEnce (www.obvience.com) que foram mantidos anônimos.
+Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Os exemplos são dados reais da obviEnce (www.obvience.com) que foram transformados em anônimos.
 
 ![](media/sample-sales-and-marketing/sales1.png)
 
@@ -45,7 +45,7 @@ Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pod
   
    ![Exemplo de Vendas e Marketing](media/sample-sales-and-marketing/sales9.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
    
    ![Asterisco](media/sample-sales-and-marketing/sales10.png)
   

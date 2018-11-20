@@ -1,21 +1,21 @@
 ---
 title: Como fixar um bloco em um dashboard de P e R
 description: Documentação sobre como fixar um bloco em um dashboard do Power BI por meio da caixa de P e R
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9cf5855acc5efe773f8f06e6de9f769f75794bdb
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 32099bb5ab5cb3784bd237234344783be8ca5a9a
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548710"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717184"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fixar um bloco em um dashboard de P e R
 ## <a name="how-to-pin-a-tile-from-qa"></a>Como fixar um bloco de P e R
@@ -39,8 +39,8 @@ Para acompanhar, abra o [painel de exemplo da Análise de Varejo](sample-retail-
 
    ![Caixa de diálogo Fixar no dashboard](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
 
-   * Painel existente: selecione o nome do painel no menu suspenso. Suas opções serão limitadas apenas aos painéis no espaço de trabalho atual.
-   * Novo dashboard: digite o nome do novo dashboard e ele será adicionado ao seu espaço de trabalho atual.
+   * Painel existente: selecione o nome do painel no menu suspenso. Suas opções serão limitadas apenas aos painéis no workspace atual.
+   * Novo dashboard: digite o nome do novo dashboard e ele será adicionado ao seu workspace atual.
 
 6. Selecione **Fixar**.
 
@@ -52,7 +52,7 @@ Para acompanhar, abra o [painel de exemplo da Análise de Varejo](sample-retail-
    ![painel com blocos](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-* Quando você começa a digitar uma pergunta, o P e R imediatamente começa a procurar a melhor resposta de todos os conjuntos de dados associados com o painel atual.  O “dashboard atual” é o dashboard listado na barra de navegação superior. Por exemplo, essa pergunta está sendo feita no dashboard de **exemplo Análise de Varejo**, que faz parte do espaço de trabalho de aplicativo **mihart**.
+* Quando você começa a digitar uma pergunta, o P e R imediatamente começa a procurar a melhor resposta de todos os conjuntos de dados associados com o painel atual.  O “dashboard atual” é o dashboard listado na barra de navegação superior. Por exemplo, essa pergunta está sendo feita no dashboard de **exemplo Análise de Varejo**, que faz parte do workspace de aplicativo **mihart**.
 
   ![trilhas](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Como a P e R sabe quais conjuntos de dados deverão ser usados**?  A P e R tem acesso a todos os conjuntos de dados que têm pelo menos uma visualização fixada nesse dashboard.

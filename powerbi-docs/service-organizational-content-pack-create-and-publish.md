@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 46cd5e2730d1b0e90fe37a93bbd4340ffb708348
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 4638842217127c1d80ec115e05f8db1a6d3eb36c
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908453"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679031"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Criar e publicar um pacote de conteúdo organizacional do Power BI (tutorial)
 
@@ -26,7 +26,7 @@ Criar pacotes de conteúdo é diferente de compartilhar dashboards ou colaborar 
 A criação de um pacote de conteúdo organizacional requer uma [conta Power BI Pro](https://powerbi.microsoft.com/pricing) para você e seus colegas. 
 
 > [!NOTE]
-> Não é possível criar ou instalar pacotes de conteúdo organizacional na nova versão prévia de experiências de espaço de trabalho. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de espaço de trabalho](service-create-the-new-workspaces.md).
+> Não é possível criar ou instalar pacotes de conteúdo organizacional na nova versão prévia de experiências de workspace. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de workspace](service-create-the-new-workspaces.md).
 > 
 
 Imagine que você é o Gerente de Versão da Contoso e está se preparando para o lançamento de um novo produto.  Você criou um painel com relatórios que você gostaria de compartilhar com outros funcionários que estão gerenciando o lançamento. Você quer uma maneira de empacotar o dashboard e os relatórios como uma solução para uso de seus colegas. 
@@ -71,7 +71,7 @@ Quer me acompanhar? Em [Serviço do Power BI](https://powerbi.com), acesse **Obt
       ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
-      > Se os membros do grupo não conseguirem exibir a pasta de trabalho do Excel, [compartilhe a pasta de trabalho com eles no OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
+      > Se os membros do grupo não conseguirem exibir a pasta de trabalho do Excel, [compartilhe a pasta de trabalho com eles no OneDrive for Business](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).
       > 
       > 
 4. Selecione **Publicar** para adicionar o pacote de conteúdo à biblioteca de pacote de conteúdo organizacional do grupo.  
@@ -93,6 +93,6 @@ Quer me acompanhar? Em [Serviço do Power BI](https://powerbi.com), acesse **Obt
 * [Introdução aos pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md)  
 * [Gerenciar, atualizar e excluir pacotes de conteúdo organizacional](service-organizational-content-pack-manage-update-delete.md)  
 * [Criar um grupo no Power BI](service-create-distribute-apps.md)  
-* [O que é o OneDrive for Business?](https://support.office.com/en-us/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
+* [O que é o OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

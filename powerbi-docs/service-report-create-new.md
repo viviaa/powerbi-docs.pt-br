@@ -1,21 +1,21 @@
 ---
 title: 'Criar um novo relatório por meio de um conjunto de dados '
 description: Criar um novo relatório do Power BI com base em um conjunto de dados.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 7647cba750ea7369e84022f77f46299ae15c6554
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545833"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718035"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Criar um novo relatório no serviço do Power BI importando um conjunto de dados
 Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora deseja criar o seu próprio relatório. Há muitas maneiras diferentes para criar um relatório e, neste artigo, vamos começar criando um relatório muito básico com base em um conjunto de dados do Excel usando o serviço do Power BI. Depois de compreender os fundamentos da criação de um relatório, as **Próximas etapas** no final vão direcioná-lo para tópicos mais avançados sobre relatórios.  
@@ -29,9 +29,9 @@ Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora de
 ## <a name="import-the-dataset"></a>Importar o conjunto de dados
 Esse método para a criação de um relatório começa com um conjunto de dados e uma tela de relatório em branco. Para acompanhar, [baixe o conjunto de dados de exemplo do Excel, Análise de Varejo](http://go.microsoft.com/fwlink/?LinkId=529778) e salve-o no OneDrive for Business (de preferência) ou localmente.
 
-1. Criaremos o relatório em um espaço de trabalho do serviço do Power BI, portanto, selecione um espaço de trabalho existente ou crie um novo.
+1. Criaremos o relatório em um workspace do serviço do Power BI, portanto, selecione um workspace existente ou crie um novo.
    
-   ![lista de espaços de trabalho do aplicativo](media/service-report-create-new/power-bi-workspaces2.png)
+   ![lista de workspaces do aplicativo](media/service-report-create-new/power-bi-workspaces2.png)
 2. Na parte inferior do painel de navegação à esquerda, selecione **Obter dados**.
    
    ![Obter dados](media/service-report-create-new/power-bi-get-data3.png)

@@ -1,7 +1,7 @@
 ---
 title: Adicionar imagem, texto, vídeo, dados de streaming ao seu dashboard
 description: Documentação de como usar o widget Adicionar bloco para adicionar uma imagem, um vídeo, uma caixa de texto, um código da Web e um bloco de dados de streaming em um dashboard.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 68195883f2aad0f3131ec14c508334ac41cd918b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 01af6707cf53f1a5be3f1e7446e967b2306e993b
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545856"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717913"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Adicionar imagem, texto, vídeo e muito mais no seu dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -56,7 +56,7 @@ Digamos que você deseja o logotipo de sua empresa em seu painel, ou alguma outr
    
    * para exibir um título acima da caixa de texto, selecione **Exibir título e subtítulo** e digite um título e/ou subtítulo.
    * insira e formate o conteúdo da caixa de texto.  
-   * Opcionalmente, defina um link personalizado para o título. Um link personalizado pode ser um site externo ou um painel ou relatório no espaço de trabalho. No entanto, nesse exemplo, adicionamos hiperlinks na própria caixa de texto e deixaremos a opção **Definir link personalizado** desmarcada.
+   * Opcionalmente, defina um link personalizado para o título. Um link personalizado pode ser um site externo ou um painel ou relatório no workspace. No entanto, nesse exemplo, adicionamos hiperlinks na própria caixa de texto e deixaremos a opção **Definir link personalizado** desmarcada.
 
      ![Janela Adicionar bloco de caixa de texto](media/service-dashboard-add-widget/power-bi-add-textbox.png)
    

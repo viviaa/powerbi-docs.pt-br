@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 432e38ffdcb92ee1d2cf1d62f7f34863d748885b
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507705"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679100"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Localizar e se conectar a um pacote de conteúdo organizacional
 
@@ -38,7 +38,7 @@ Todos os usuários do [Power BI Pro](https://powerbi.microsoft.com/pricing) pode
 ## <a name="connect-to-an-organizational-content-pack"></a>Conectar-se a um pacote de conteúdo organizacional
 * Selecione **Obter agora** para conectar-se ao pacote de conteúdo e adicioná-lo ao workspace ativo. Novos painéis, relatórios, pastas de trabalho do Excel e conjuntos de dados contêm um asterisco amarelo.
 
-Se o pacote de conteúdo tiver uma pasta de trabalho do Excel, você poderá ver um aviso informando que você não tem permissões para exibir a pasta de trabalho. Nesse caso, peça ao proprietário do pacote de conteúdo para [compartilhar a pasta de trabalho com você no OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+Se o pacote de conteúdo tiver uma pasta de trabalho do Excel, você poderá ver um aviso informando que você não tem permissões para exibir a pasta de trabalho. Nesse caso, peça ao proprietário do pacote de conteúdo para [compartilhar a pasta de trabalho com você no OneDrive for Business](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 O pacote de conteúdo está bloqueado. Você pode [salvar sua própria cópia do dashboard e dos relatórios](../service-organizational-content-pack-copy-refresh-access.md). 
 

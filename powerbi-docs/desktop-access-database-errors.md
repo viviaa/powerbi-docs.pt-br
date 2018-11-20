@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04e95ade5d7c7d0e2b9a6d9690873437e2ec1b6d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 47bcfabddfeb5bfec828c7b14fef4798350939da
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329720"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678985"
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Resolver problemas de importação de arquivos do Access e .XLS no Power BI Desktop
 No **Power BI Desktop**, os **bancos de dados do Access** e as versões anteriores de **pastas de trabalho do Excel** (arquivos XLS do tipo Excel 97-2003) usam o *mecanismo de banco de dados do Access*. Há três situações comuns que podem impedir que o Mecanismo de Banco de Dados do Access funcione corretamente:
 
 ### <a name="situation-1-no-access-database-engine-installed"></a>Situação 1: nenhum Mecanismo de Banco de Dados do Access instalado
-Quando a mensagem de erro do Power BI Desktop indica que o Mecanismo de Banco de Dados do Access não está instalado, você deve instalar a versão de 32 ou 64 bits do Mecanismo de Banco de Dados do Access que corresponde à sua versão do Power BI Desktop. Instale o Mecanismo de Banco de Dados do Access na [página de downloads](http://www.microsoft.com/en-us/download/details.aspx?id=13255).
+Quando a mensagem de erro do Power BI Desktop indica que o Mecanismo de Banco de Dados do Access não está instalado, você deve instalar a versão de 32 ou 64 bits do Mecanismo de Banco de Dados do Access que corresponde à sua versão do Power BI Desktop. Instale o Mecanismo de Banco de Dados do Access na [página de downloads](http://www.microsoft.com/download/details.aspx?id=13255).
 
 >[!NOTE]
 >Se a versão de bits instalada do Mecanismo de Banco de Dados do Access for diferente da versão de bits de instalação do Microsoft Office, os aplicativos do Office não poderão usar o Mecanismo de Banco de Dados do Access.
@@ -41,7 +41,7 @@ Essa situação geralmente ocorre quando a versão instalada do Microsoft Office
    >Ao usar a versão de 32 bits do Power BI Desktop, ao criar modelos de dados muito grandes, você poderá ter problemas de memória insuficiente.
 2. Altere a versão do Microsoft Office para corresponder à versão de bits da instalação do Power BI Desktop. Para alterar a versão de bits do Microsoft Office, desinstale o Office e, em seguida, instale a versão do Office que corresponde à sua instalação do Power BI Desktop.
 3. Se o erro ocorreu ao tentar abrir um arquivo .XLS (uma pasta de trabalho do Excel 97-2003), você pode evitar o uso do Mecanismo de Banco de Dados do Access abrindo o arquivo .XLS no Excel e salvando-o como um arquivo XLSX.
-4. Se as três soluções anteriores não forem viáveis, é possível instalar as duas versões do Mecanismo de Banco de Dados do Access, mas essa *não* é uma solução alternativa recomendada. Instalar ambas as versões resolverá esse problema para o Power Query para Excel e o Power BI Desktop, mas apresentará erros e problemas de qualquer aplicativo que usa automaticamente (por padrão) a versão de bits do Mecanismo de Banco de Dados do Access que foi instalado pela primeira vez. Para instalar as duas versões de bits do Mecanismo de Banco de Dados do Access, [baixe](http://www.microsoft.com/en-us/download/details.aspx?id=13255) ambas as versões e execute cada uma delas usando a opção */passive*. Por exemplo:
+4. Se as três soluções anteriores não forem viáveis, é possível instalar as duas versões do Mecanismo de Banco de Dados do Access, mas essa *não* é uma solução alternativa recomendada. Instalar ambas as versões resolverá esse problema para o Power Query para Excel e o Power BI Desktop, mas apresentará erros e problemas de qualquer aplicativo que usa automaticamente (por padrão) a versão de bits do Mecanismo de Banco de Dados do Access que foi instalado pela primeira vez. Para instalar as duas versões de bits do Mecanismo de Banco de Dados do Access, [baixe](http://www.microsoft.com/download/details.aspx?id=13255) ambas as versões e execute cada uma delas usando a opção */passive*. Por exemplo:
    
        c:\users\joe\downloads\AccessDatabaseEngine.exe /passive
    
@@ -50,7 +50,7 @@ Essa situação geralmente ocorre quando a versão instalada do Microsoft Office
 ### <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situação 3: Problemas para utilizar o Access ou arquivos XLS com uma assinatura do Office 365
 Se você estiver usando uma assinatura do Office 365, seja o **Office 2013** ou o **Office 2016**, o provedor do mecanismo de banco de dados do Access é registrado em uma localização do Registro virtual que poderá ser acessada *somente* pelos processos do Office. Como resultado, o mecanismo Mashup (que é responsável por executar o Excel fora do Office 365 e o Power BI Desktop), que não é um processo do Office, não pode usar o provedor do mecanismo de banco de dados do Access.
 
-Para corrigir essa situação, você pode [baixar e instalar o mecanismo de banco de dados do Access redistribuível](http://www.microsoft.com/en-us/download/details.aspx?id=13255) que corresponde à versão de bits da instalação do seu Power BI Desktop (veja as seções anteriores para saber mais sobre as versões de bits).
+Para corrigir essa situação, você pode [baixar e instalar o mecanismo de banco de dados do Access redistribuível](http://www.microsoft.com/download/details.aspx?id=13255) que corresponde à versão de bits da instalação do seu Power BI Desktop (veja as seções anteriores para saber mais sobre as versões de bits).
 
 ### <a name="other-situations-that-cause-import-issues"></a>Outras situações que causam problemas de importação
 Nos esforçamos para abordar o máximo possível de problemas que ocorrem com o Access ou com arquivos XLS. Se você encontrar um problema que não foi abordado neste artigo, envie uma pergunta sobre o problema para o [suporte do Power BI](https://powerbi.microsoft.com/support/). Examinamos regularmente os problemas que podem estar afetando muitos clientes, posteriormente incluindo-os em nossos artigos.

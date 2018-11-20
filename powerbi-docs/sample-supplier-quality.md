@@ -1,21 +1,21 @@
 ---
 title: 'Análise de Varejo de fornecedor para o Power BI: faça um tour'
 description: 'Análise de Varejo de fornecedor para o Power BI: faça um tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3d89b34199decf6b27bda49bfac085688dd2e14b
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 0b214e2c08e6a39e4b09643c02bccedb56d5b9f4
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582652"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717644"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Análise de Varejo de fornecedor para o Power BI: faça um tour
 
@@ -46,9 +46,9 @@ Os exemplos são dados reais de obviEnce ([www.obvience.com](http://www.obvience
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Selecione o **exemplo de Análise da Qualidade do Fornecedor** e, em seguida, escolha **Conectar**.  
   
-   ![Exemplo de análise de qualidade do fornecedor](media/sample-supplier-quality/supplier16.png)
+   ![Exemplo de Análise de Qualidade do Fornecedor](media/sample-supplier-quality/supplier16.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
    
    ![Asterisco](media/sample-supplier-quality/supplier17.png)
   
@@ -107,7 +107,7 @@ Agora vamos explorar quais fábricas fazem um trabalho de melhor gerenciamento d
 3. Selecione a bolha de Logística no gráfico de bolhas e observa as fábricas em Springfield, IL e Naperville, IL. Naperville parece fazer um trabalho melhor de gerenciamento de fornecimentos com defeitos, uma vez tem um número alto de rejeição e alguns impactos, em comparação com o grande número de impactos de Springfield.  
 
    ![](media/sample-supplier-quality/supplier8.png)  
-4. Selecione **Exemplo de Análise de Qualidade do Fornecedor** na barra de navegação superior para retornar ao espaço de trabalho ativo.
+4. Selecione **Exemplo de Análise de Qualidade do Fornecedor** na barra de navegação superior para retornar ao workspace ativo.
 
 ## <a name="which-material-type-is-best-managed"></a>Que tipo de material é melhor gerenciado?
 O melhor tipo material gerenciado é aquele com o menor tempo de inatividade ou nenhum impacto, independentemente da quantidade de defeito.

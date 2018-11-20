@@ -1,21 +1,21 @@
 ---
 title: Faça um tour nos exemplos disponíveis com o Power BI
 description: Pacotes de conteúdo de exemplo, arquivos PBIX e conjuntos de dados do Excel para o Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 91c08ab428852cc0fa8a721278e232400ed19bfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: fa6c6094e4fdfefebd0c7bb1f9ec8fa87d41766b
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546477"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717782"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Quais dados de exemplo estão disponíveis para uso com o Power BI?
 Digamos que você é novo no Power BI e queira experimentá-lo, mas não tem todos os dados.  Ou talvez você tenha um conjunto de dados, mas visto que você não entende (ainda) como o Power BI funciona, você se preocupa que de alguma forma, poderá danificar seu conjunto de dados?
@@ -107,7 +107,7 @@ Os pacotes de conteúdo são o único formato de exemplo que está disponível n
 4. Selecione um dos exemplos para abrir uma descrição do exemplo. Em seguida, escolha **Conectar**.  
 
    ![](media/sample-datasets/power-bi-connect.png)
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual. O novo conteúdo é marcado com um asterisco amarelo. Use os exemplos para realizar uma execução de teste no Power BI.  
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. Use os exemplos para realizar uma execução de teste no Power BI.  
 
    ![](media/sample-datasets/power-bi-asterisk.png)
 

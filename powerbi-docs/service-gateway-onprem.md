@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 9a739efdba84279e938fd8e13d6521cf975d0b9d
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297126"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679008"
 ---
 # <a name="on-premises-data-gateway"></a>Gateway de dados local
 
@@ -100,7 +100,7 @@ Não há no momento nenhum único local em que os administradores de locatários
 ## <a name="enabling-outbound-azure-connections"></a>Habilitando as conexões de saída do Azure
 
 O gateway de dados local se baseia no Barramento de Serviço do Azure para conectividade de nuvem e, de forma correspondente, estabelece conexões de saída com a região do Azure associada. Por padrão, esse é o local do seu locatário do Power BI. Confira [Onde está localizado meu locatário do Power BI?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-Se um firewall estiver bloqueando as conexões de saída, será necessário configurá-lo para permitir conexões de saída do gateway de dados local com a região do Azure associada. Confira [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653) para obter detalhes sobre os intervalos de endereço IP de cada data center do Azure.
+Se um firewall estiver bloqueando as conexões de saída, será necessário configurá-lo para permitir conexões de saída do gateway de dados local com a região do Azure associada. Confira [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653) para obter detalhes sobre os intervalos de endereço IP de cada data center do Azure.
 > [!NOTE]
 > Os intervalos de endereço IP podem mudar ao longo do tempo, portanto, baixe as informações mais recentes regularmente. 
 

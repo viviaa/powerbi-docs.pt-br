@@ -1,21 +1,21 @@
 ---
 title: Fixar um bloco de um painel para outro painel
 description: Fixar um bloco de um painel para outro painel
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 656f32dd28796ec58b7cfcf774248ee30de0085a
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: d8a241a810cc41e908fd99df08f8eae53bac7f47
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545889"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717115"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fixar um bloco de um painel para outro painel
 Uma maneira de adicionar um novo [bloco de painel](consumer/end-user-tiles.md) é copiando-o de outro painel. Ao clicar em cada um desses blocos, haverá um link para onde foi criado – em P e R ou em um relatório. 

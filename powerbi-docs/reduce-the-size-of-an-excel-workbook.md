@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12ff54b1aa44edaead98b1fab6942acbd76216c7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5d21dff56620e4b2eb05ed3bbf123ff1d1805075
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329421"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679330"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Reduza o tamanho de uma pasta de trabalho do Excel para exibi-lo no Power BI
 Você pode carregar qualquer pasta de trabalho do Excel menor do que 1 GB no Power BI. Uma pasta de trabalho do Excel pode ter duas partes: um modelo de dados e o restante do relatório — conteúdo da planilha principal. Se o relatório atender os seguintes limites de tamanho, você pode salvá-lo no **OneDrive for Business**, conecte-o do Power BI e exiba-o no Excel Online:
@@ -28,7 +28,7 @@ Aqui estão alguns elementos que podem tornar os núcleo de conteúdos da planil
 
 * Imagens.
 * Células sombreadas. [Remova um formato de sombreamento de célula](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
-* Planilhas coloridas. [Remova uma tela de fundo de folha](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
+* Planilhas coloridas. [Remova uma tela de fundo de folha](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 * Caixas de texto.
 * Clip-art.
 
@@ -55,7 +55,7 @@ Quando você importar dados para o Excel, siga estas dicas:
 * **Guia de dados na guia do Excel**: não verificar a **tabela** na caixa **Importar dados** .
 
 ## <a name="workbook-size-optimizer"></a>Otimizador de tamanho da pasta de trabalho
-Se a sua pasta de trabalho contiver um modelo de dados, você poderá executar o otimizador de tamanho da pasta de trabalho para reduzir o tamanho da pasta de trabalho. [Baixe o Otimizador de Tamanho da Pasta de Trabalho](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+Se a sua pasta de trabalho contiver um modelo de dados, você poderá executar o otimizador de tamanho da pasta de trabalho para reduzir o tamanho da pasta de trabalho. [Baixe o Otimizador de Tamanho da Pasta de Trabalho](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## <a name="related-info"></a>Informações relacionadas
 [Criar um Modelo de dados eficiente em memória](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
