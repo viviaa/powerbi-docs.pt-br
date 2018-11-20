@@ -1,27 +1,27 @@
 ---
-title: Como migrar conteúdo da Coleção de Espaços de Trabalho do Power BI para o Power BI
-description: Saiba como migrar da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded e aproveitar os avanços para inserir em aplicativos.
+title: Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI
+description: Saiba como migrar da Coleção de workspaces do Power BI para o Power BI Embedded e aproveitar os avanços para inserir em aplicativos.
 author: markingmyname
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: f53b7e02ac3f744a7eb0fa7dd74b7144a434a42f
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: ff9218a84ba9c0055e965f4b000b73a490d250a5
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271844"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297150"
 ---
-# <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Como migrar conteúdo da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded
-Saiba como migrar da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded e aproveite os avanços para inserir em aplicativos.
+# <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI Embedded
+Saiba como migrar da Coleção de workspaces do Power BI para o Power BI Embedded e aproveite os avanços para inserir em aplicativos.
 
 A Microsoft recentemente [anunciou o Power BI Embedded](https://powerbi.microsoft.com/en-us/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), um novo modelo de licenciamento com base em capacidade que aumenta a flexibilidade de como os usuários acessam, compartilham e distribuem conteúdo. A oferta também oferece desempenho e escalabilidade adicionais.
 
-Com o Power BI Embedded, você terá uma superfície de API, um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como dashboards, gateways e espaços de trabalho de aplicativo, ao inserir seu conteúdo. A seguir, você poderá começar a usar o Power BI Desktop e seguir para a implantação com o Power BI Embedded.
+Com o Power BI Embedded, você terá uma superfície de API, um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como dashboards, gateways e workspaces de aplicativo, ao inserir seu conteúdo. A seguir, você poderá começar a usar o Power BI Desktop e seguir para a implantação com o Power BI Embedded.
 
-A Coleção de Espaços de Trabalho do Power BI atual continuará disponível por um período limitado. Os clientes com um Contrato Enterprise terão acesso por meio da expiração de seus contratos existentes; os clientes que adquiriram a Coleção de Espaços de Trabalho do Power BI por meio de canais Direct ou CSP manterão o acesso por um ano após a versão de disponibilidade geral do Power BI Embedded.  Este artigo fornecerá algumas diretrizes para a migração da Coleção de Espaços de Trabalho do Power BI para a nova experiência do Power BI Embedded e também o preparará a respeito do que esperar em relação às alterações em seu aplicativo.
+A Coleção de workspaces do Power BI atual continuará disponível por um período limitado. Os clientes com um Contrato Enterprise terão acesso por meio da expiração de seus contratos existentes; os clientes que adquiriram a Coleção de workspaces do Power BI por meio de canais Direct ou CSP manterão o acesso por um ano após a versão de disponibilidade geral do Power BI Embedded.  Este artigo fornecerá algumas diretrizes para a migração da Coleção de workspaces do Power BI para a nova experiência do Power BI Embedded e também o preparará a respeito do que esperar em relação às alterações em seu aplicativo.
 
 > [!IMPORTANT]
 > Embora a migração receba uma dependência do Power BI Embedded, não há uma dependência no Power BI para os usuários do seu aplicativo ao usarem um **token de inserção**. Eles não precisa inscrever-se no Power BI para exibir o conteúdo inserido em seu aplicativo. É possível usar essa abordagem de inserção para inserir usuários que não são do Power BI.
@@ -36,7 +36,7 @@ Escolha a solução certa para você:
 * **Inserir para a organização**: quando você estiver interessado em uma solução [user owns data](https://aka.ms/embedsetup/UserOwnsData). A [inserção para a organização](embedding.md#embedding-for-your-organization) permite que você estenda o serviço do Power BI.
 
 ## <a name="prepare-for-the-migration"></a>Preparar para a migração
-Há algumas coisas que você precisa fazer para se preparar para migrar da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded. Você precisará de um locatário disponível, junto com um usuário que tenha uma licença do Power BI Pro.
+Há algumas coisas que você precisa fazer para se preparar para migrar da Coleção de workspaces do Power BI para o Power BI Embedded. Você precisará de um locatário disponível, junto com um usuário que tenha uma licença do Power BI Pro.
 
 1. Verifique se que você tem acesso a um locatário do Azure Active Directory (Azure AD).
    
@@ -53,18 +53,18 @@ Há algumas coisas que você precisa fazer para se preparar para migrar da Cole�
 As seguintes contas precisarão existir no seu locatário.
 
 > [!NOTE]
-> Essas contas precisarão ter as licenças Power BI Pro para usar os espaços de trabalho do aplicativo.
+> Essas contas precisarão ter as licenças Power BI Pro para usar os workspaces do aplicativo.
 >
 
 1. Um usuário administrador de locatário.
    
-    É recomendável que esse usuário seja um membro de todos os Espaços de trabalho de aplicativo criados com a finalidade de inserção.
+    É recomendável que esse usuário seja um membro de todos os Workspaces de aplicativo criados com a finalidade de inserção.
 2. Contas para analistas que criarão conteúdo.
    
-    Esses usuários devem ser atribuídos aos Espaços de trabalho de aplicativo, conforme necessário.
+    Esses usuários devem ser atribuídos aos Workspaces de aplicativo, conforme necessário.
 3. Uma conta de usuário *mestre* de aplicativo ou uma conta do Embedded.
    
-    O back-end de aplicativos armazenará as credenciais dessa conta e a usará para adquirir um token do Azure AD para utilizar com as APIs REST do Power BI. Essa conta será usada para gerar o token de inserção para o aplicativo. Essa conta também precisa ser administrador dos Espaços de trabalho do aplicativo criados para a inserção.
+    O back-end de aplicativos armazenará as credenciais dessa conta e a usará para adquirir um token do Azure AD para utilizar com as APIs REST do Power BI. Essa conta será usada para gerar o token de inserção para o aplicativo. Essa conta também precisa ser administrador dos Workspaces do aplicativo criados para a inserção.
    
 > [!NOTE]
 > Essa é apenas uma conta de usuário regular na sua organização que será usada para fins de inserção.
@@ -78,32 +78,32 @@ Você precisará registrar seu aplicativo no Azure AD para fazer chamadas à API
 
 Você deve registrar o aplicativo usando a conta **mestre** do aplicativo.
 
-## <a name="create-app-workspaces-required"></a>Criar Espaços de trabalho de aplicativo (necessário)
-Você pode aproveitar os Espaços de trabalho de aplicativo para fornecer melhor isolamento, caso seu aplicativo esteja atendendo a vários clientes. Os dashboards e relatórios ficariam isolados entre seus clientes. Você poderia usar uma conta do Power BI por Espaço de trabalho de aplicativo para isolar ainda mais as experiências de aplicativos entre seus clientes.
+## <a name="create-app-workspaces-required"></a>Criar Workspaces de aplicativo (necessário)
+Tire proveito dos espaços de trabalho de aplicativo para oferecer um melhor isolamento, caso seu aplicativo esteja atendendo a vários clientes. Os dashboards e relatórios ficariam isolados entre seus clientes. Você poderia usar uma conta do Power BI por Workspace de aplicativo para isolar ainda mais as experiências de aplicativos entre seus clientes.
 
 > [!IMPORTANT]
-> Não é possível usar um espaço de trabalho pessoal para tirar proveito da inserção para usuários que não são do Power BI.
+> Não é possível usar um workspace pessoal para tirar proveito da inserção para usuários que não são do Power BI.
 > 
 > 
 
-Será necessário um usuário que tenha uma licença Pro para criar um Espaço de trabalho do aplicativo no Power BI. O usuário do Power BI que criar o Espaço de trabalho de aplicativo será um administrador desse espaço de trabalho por padrão.
+Será necessário um usuário que tenha uma licença Pro para criar um Workspace do aplicativo no Power BI. O usuário do Power BI que criar o Workspace de aplicativo será um administrador desse workspace por padrão.
 
 > [!NOTE]
-> A conta *mestre* do aplicativo precisa ser um administrador do espaço de trabalho.
+> A conta *mestre* do aplicativo precisa ser um administrador do workspace.
 > 
 > 
 
 ## <a name="content-migration"></a>Migração de conteúdo
-A migração do conteúdo de suas coleções de espaços de trabalho para o Power BI Embedded pode ser feita paralelamente à sua solução atual e não requer nenhum tempo de inatividade.
+A migração do conteúdo de suas coleções de workspaces para o Power BI Embedded pode ser feita paralelamente à sua solução atual e não requer nenhum tempo de inatividade.
 
-Há uma **ferramenta de migração** disponível para ajudá-lo a copiar o conteúdo da Coleção de Espaços de Trabalho do Power BI para o Power BI Embedded. Principalmente se você tiver muito conteúdo. Para obter mais informações, consulte [Power BI Embedded migration tool (Ferramenta de migração do Power BI Embedded)](migrate-tool.md).
+Há uma **ferramenta de migração** disponível para ajudá-lo a copiar o conteúdo da Coleção de workspaces do Power BI para o Power BI Embedded. Principalmente se você tiver muito conteúdo. Para obter mais informações, consulte [Power BI Embedded migration tool (Ferramenta de migração do Power BI Embedded)](migrate-tool.md).
 
 A migração de conteúdo depende principalmente de duas APIs.
 
 1. Baixar PBIX – esta API pode baixar arquivos PBIX que foram carregados no Power BI depois de outubro de 2016.
 2. Importar PBIX – esta API carrega qualquer PBIX no Power BI.
 
-Para alguns snippets de código relacionados, consulte [Snippets de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI](migrate-code-snippets.md).
+Para alguns snippets de código relacionados, consulte [Snippets de código para migrar conteúdo da Coleção de workspaces do Power BI](migrate-code-snippets.md).
 
 ### <a name="report-types"></a>Tipos de relatório
 Há vários tipos de relatórios, cada um requerendo um fluxo de migração um pouco diferente.
@@ -113,17 +113,17 @@ Conjuntos de dados armazenados em cache referem-se a arquivos PBIX que tinham im
 
 **Fluxo**
 
-1. Chame Baixar API de PBIX no espaço de trabalho PaaS.
+1. Chame Baixar API de PBIX no workspace PaaS.
 2. Salve o PBIX.
-3. Chame Importar PBIX para o espaço de trabalho SaaS.
+3. Chame Importar PBIX para o workspace SaaS.
 
 #### <a name="directquery-dataset--report"></a>Relatório e conjunto de dados do DirectQuery
 **Fluxo**
 
 1. Chame GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources e salve a cadeia de conexão recebida.
-2. Chame Baixar API de PBIX no espaço de trabalho PaaS.
+2. Chame Baixar API de PBIX no workspace PaaS.
 3. Salve o PBIX.
-4. Chame Importar PBIX para o espaço de trabalho SaaS.
+4. Chame Importar PBIX para o workspace SaaS.
 5. Atualizar a cadeia de conexão chamando - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
 6. Obter id de GW e id de fonte de dados chamando - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Atualizar credenciais do usuário chamando - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
@@ -134,27 +134,27 @@ Esses são os conjuntos de dados/relatórios criados antes de outubro de 2016. B
 **Fluxo**
 
 1. Obtenha o PBIX do seu ambiente de desenvolvimento (seu controle do código-fonte interno).
-2. Chame Importar PBIX para o espaço de trabalho SaaS.
+2. Chame Importar PBIX para o workspace SaaS.
 
 #### <a name="push-dataset--report"></a>Enviar relatório e conjunto de dados por push
 Baixar PBIX não dá suporte a conjuntos de dados *API Push*. O conjunto de dados de API por push não podem ser portados do PaaS para o SaaS.
 
 **Fluxo**
 
-1. Chame a API “Criar conjunto de dados” com o Json do conjunto de dados para criar conjunto de dados no espaço de trabalho do SaaS.
+1. Chame a API “Criar conjunto de dados” com o Json do conjunto de dados para criar conjunto de dados no workspace do SaaS.
 2. Recrie o relatório para o conjunto de dados criado *.
 
 Ao usar algumas soluções alternativas, é possível tentar migrar o relatório de API por push de PaaS para SaaS fazendo o seguinte.
 
-1. Carregando o PBIX fictício para o espaço de trabalho do PaaS.
+1. Carregando o PBIX fictício para o workspace do PaaS.
 2. Clone o relatório de api por push e associe-o ao PBIX fictício da etapa 1.
 3. Baixe o relatório de API por push com o PBIX fictício.
-4. Carregue o PBIX fictício para seu espaço de trabalho do SaaS.
-5. Crie um conjunto de dados por push em seu espaço de trabalho do SaaS.
+4. Carregue o PBIX fictício para seu workspace do SaaS.
+5. Crie um conjunto de dados por push em seu workspace do SaaS.
 6. Associe novamente o relatório ao conjunto de dados de api por push.
 
 ## <a name="create-and-upload-new-reports"></a>Criar e carregar novos relatórios
-Além do conteúdo que você migrou da Coleção de Espaços de Trabalho do Power BI, é possível criar relatórios e conjuntos de dados usando o Power BI Desktop e, em seguida, publicar esses relatórios em um espaço de trabalho de aplicativo. O usuário final que publicar os relatórios precisará ter uma licença Power BI Pro para publicar em um espaço de trabalho do aplicativo.
+Além do conteúdo que você migrou da Coleção de workspaces do Power BI, é possível criar relatórios e conjuntos de dados usando o Power BI Desktop e, em seguida, publicar esses relatórios em um workspace de aplicativo. O usuário final que publicar os relatórios precisará ter uma licença Power BI Pro para publicar em um workspace do aplicativo.
 
 ## <a name="rebuild-your-application"></a>Recriar seu aplicativo
 1. Você precisará modificar seu aplicativo para usar as APIs REST do Power BI e o local do relatório em powerbi.com.
@@ -167,9 +167,9 @@ No aplicativo, você mapeará os usuários que gerencia dentro do aplicativo par
 ## <a name="what-to-do-when-you-are-ready-for-production"></a>O que fazer quando você estiver pronto para a produção
 Quando estiver pronto para passar para a produção, você precisará fazer o seguinte.
 
-* Se você estiver usando um locatário separado para desenvolvimento, então será preciso certificar-se de que seus espaços de trabalho do aplicativo, juntamente com dashboards e relatórios, estão disponíveis em seu ambiente de produção. Também será preciso certificar-se de ter criado o aplicativo no Azure AD para seu locatário de produção e ter atribuído as permissões de aplicativo adequadas conforme indicado na Etapa 1.
+* Se você estiver usando um locatário separado para desenvolvimento, então será preciso certificar-se de que seus workspaces do aplicativo, juntamente com dashboards e relatórios, estão disponíveis em seu ambiente de produção. Também será preciso certificar-se de ter criado o aplicativo no Azure AD para seu locatário de produção e ter atribuído as permissões de aplicativo adequadas conforme indicado na Etapa 1.
 * Adquira uma capacidade que atenda às suas necessidades. Para entender melhor a quantidade e o tipo de capacidade necessários, confira o [White paper de planejamento de capacidade de análise do Power BI Embedded](https://aka.ms/pbiewhitepaper). Você pode [adquirir capacidade](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) no Azure.
-* Edite o espaço de trabalho do aplicativo e atribua-o a uma capacidade Premium em avançado.
+* Edite o workspace do aplicativo e atribua-o a uma capacidade Premium em avançado.
  
     ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
     
@@ -178,19 +178,19 @@ Quando estiver pronto para passar para a produção, você precisará fazer o se
 ## <a name="after-migration"></a>Após a migração
 Você deve fazer uma limpeza no Azure.
 
-* Remova todos os espaços de trabalho da solução implantada no Azure Embedded da Coleção de Espaços de Trabalho do Power BI.
-* Exclua todas as Coleções de Espaço de trabalho que existam no Azure.
+* Remova todos os workspaces da solução implantada no Azure Embedded da Coleção de workspaces do Power BI.
+* Exclua todas as Coleções de workspaces que existam no Azure.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Inserindo com o Power BI](embedding.md)  
-[Ferramenta de migração da Coleção de Espaços de Trabalho do Power BI](migrate-tool.md)  
-[Snippets de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI](migrate-code-snippets.md)  
+[Ferramenta de migração da Coleção de workspaces do Power BI](migrate-tool.md)  
+[Snippets de código para migrar conteúdo da Coleção de workspaces do Power BI](migrate-code-snippets.md)  
 [Como inserir seus dashboards, relatórios e blocos do Power BI](embedding-content.md)  
 [Power BI Premium – o que é?](../service-premium.md)  
 [Repositório Git de API do JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Repositório Git de C# do Power BI](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemplo inserido do JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[White paper de planejamento de capacidade de análise da Coleção de Espaços de Trabalho](https://aka.ms/pbiewhitepaper)  
+[White paper de planejamento de capacidade de análise da Coleção de Workspaces](https://aka.ms/pbiewhitepaper)  
 [White paper do Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)

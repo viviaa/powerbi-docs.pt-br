@@ -4,19 +4,18 @@ description: Usar o mapa do ArcGis no modo de exibição de leitura como um cons
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-tags: power bi, service, desktop, mobile
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.author: mihart
-ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 0454d2ea0e69a77482d9ba9587497679819daf06
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003261"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266014"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagindo com mapas do ArcGIS no Power BI
 Este tópico foi escrito do ponto de vista de uma pessoa que está *consumindo* um mapa do ArcGIS no serviço do Power BI, no Desktop ou em um dispositivo móvel. Depois que um criador compartilha um mapa do ArcGIS com você, há muitas formas de interagir com o mapa.  Para saber mais sobre como criar um mapa do ArcGIS, consulte [Tutorial de mapas do ArcGIS pelo ESRI](../power-bi-visualization-arcgis.md).
@@ -24,7 +23,7 @@ Este tópico foi escrito do ponto de vista de uma pessoa que está *consumindo* 
 A combinação de mapas do ArcGIS e do Power BI leva o mapeamento para além da apresentação de pontos em um mapa, para um nível totalmente novo. As opções disponíveis para mapas base, tipos de localização, temas, estilos de símbolo e camadas de referência criam visualizações de mapa informativas e impressionantes. A combinação de camadas de dados autoritativas (como dados de censo) em um mapa com análise espacial transmite uma compreensão mais profunda dos dados na visualização.
 
 > [!TIP]
-> GIS significa Geographic Information Science (Ciência de Informações Geográficas).
+> GIS significa Geographic Information System (Sistema de Informações Geográficas).
 > 
 
 O exemplo que estamos usando é o mesmo mapa do ArcGIS criado no [tutorial de mapas do ArcGIS pelo ESRI](../power-bi-visualization-arcgis.md). Ele analisa as vendas do ano passado por cidade e usa um mapa base de ruas, símbolos de bolha para representar o tamanho e uma camada de referência para a renda familiar média. O mapa contém 3 marcadores e um raio do tempo de viagem (em roxo).
@@ -42,7 +41,7 @@ O exemplo que estamos usando é o mesmo mapa do ArcGIS criado no [tutorial de ma
 Na primeira vez que um colega compartilhar um mapa do ArcGIS com você, o Power BI exibirá um prompt. O ArcGIS Maps for Power BI é fornecido pela ESRI (www.esri.com) e o uso do ArcGIS Maps for Power BI está sujeito aos termos e à política de privacidade da Esri. Os usuários do Power BI que desejam usar os visuais dos Mapas do ArcGIS para o Power BI precisarão aceitar a caixa de diálogo de consentimento.
 
 ## <a name="selection-tools"></a>Ferramentas de seleção
-O ArcGIS Maps para Power BI permite três modos de seleção. No máximo, 250 pontos de dados podem ser selecionados por vez.
+O ArcGIS Maps for Power BI permite três modos de seleção. No máximo, 250 pontos de dados podem ser selecionados por vez.
 
 ![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
 
@@ -133,7 +132,7 @@ Em serviços ou aplicativos em que os Mapas do ArcGIS para o Power BI não estiv
 **Não consigo ver todas as minhas informações no mapa**    
 Ao geocodificar a latitude/longitude no mapa, são exibidos até 30.000 pontos de dados. Ao geocodificar os pontos de dados, como CEPs ou endereços de ruas, apenas os primeiros 15 mil pontos de dados são geocodificados. Codificações geográficas de nomes de locais ou países não estarão sujeitas ao limite de 1500 endereços.
 
-**O uso do ArcGIS Maps para Power BI é cobrado?**
+**O uso do ArcGIS Maps for Power BI é cobrado?**
 
 O Mapa do ArcGIS para o Power BI está disponível para todos os usuários do Power BI sem custo adicional. Ele é um componente fornecido pela **Esri** e seu uso está sujeito aos termos e à política de privacidade fornecidos pela **Esri**, conforme mencionado anteriormente neste artigo. Se você se inscrever no ArcGIS **Plus**, haverá uma cobrança.
 
@@ -152,4 +151,4 @@ Você pode fazer perguntas, encontrar as informações mais recentes, reportar p
 
 Se você tiver alguma sugestão de melhoria, envie-a para a [Lista de ideias do Power BI](https://ideas.powerbi.com).
 
-[Página do produto ArcGIS Maps para Power BI](https://www.esri.com/powerbi)
+[Página do produto ArcGIS Maps for Power BI](https://www.esri.com/powerbi)

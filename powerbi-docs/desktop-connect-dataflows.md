@@ -1,5 +1,5 @@
 ---
-title: Conectar-se aos dados criados por fluxos de dados do Power BI no Power BI Desktop (versão prévia)
+title: Conectar-se aos dados criados por fluxos de dados do Power BI no Power BI Desktop (Beta)
 description: Conecte-se facilmente e use fluxos de dados no Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,58 +7,46 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3964b96f8f282772f6d511c9c412e0caabd1d00
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: f87db1f715118f346e3b8069897e92fd157f881c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512497"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265922"
 ---
-# <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-preview"></a>Conectar-se aos dados criados por fluxos de dados do Power BI no Power BI Desktop (versão prévia)
+# <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Conectar-se aos dados criados por fluxos de dados do Power BI no Power BI Desktop (Beta)
 No **Power BI Desktop**, é possível conectar-se a dados criados por **fluxos de dados do Power BI** como qualquer outra fonte de dados no Power BI Desktop.
 
 ![Conectar-se a fluxos de dados](media/desktop-connect-dataflows/connect-dataflows_01.png)
 
-O conector **fluxos de dados do Power BI (versão prévia)** permite que você se conecte a entidades criadas por fluxos de dados no serviço do Power BI. Como os fluxos de dados estão em versão prévia, há algumas etapas que devem ser seguidas para tornar o conector de fluxos de dados disponível em seu sistema. 
-
-
-## <a name="download-and-enable-the-power-bi-dataflows-connector-preview"></a>Baixar e habilitar o conector de fluxos de dados do Power BI (versão prévia)
-
-É necessário baixar uma cópia do conector dos **fluxos de dados do Power BI** e, em seguida, copiá-la para um local específico em seu computador. Em uma atualização mensal futura no Power BI Desktop, o conector será incluído automaticamente na lista de conectores de dados, momento em que essas etapas não serão necessárias.
-
-É possível baixar o **conector de fluxos de dados do Power BI** neste local: [conector de fluxos de dados do Power BI](https://visuals.azureedge.net/cds-analytics/PublicPreview/CDSA.mez)
-
-Siga estas etapas para tornar o conector de **fluxos de dados do Power BI** (versão prévia) disponível em seu computador:
-
-1. Baixe uma cópia do arquivo .MEZ (o arquivo de conector de dados). Os clientes da versão prévia privada receberão informações sobre o download do arquivo .MEZ diretamente da Microsoft.
-
-2. Coloque o arquivo do conector de dados baixado na seguinte pasta em seu computador: **Documentos > Power BI Desktop > Pasta Conectores personalizados**
-
-3. No Power BI Desktop, selecione **Arquivo > Opções e configurações > Opções** e, em seguida, selecione **Versão prévia dos recursos** no painel esquerdo.
-
-    ![Habilitar conectores personalizados](media/desktop-connect-dataflows/connect-dataflows_02.png)
-
-4. Selecione a caixa **Conectores de dados personalizados**, se ela não estiver selecionada. 
-
-5. Reinicie o **Power BI Desktop** para que o conector seja exibido.
-
-## <a name="use-the-power-bi-dataflows-connector-preview"></a>Usar o conector de fluxos de dados do Power BI (versão prévia)
-Após o **Power BI Desktop** ser reiniciado, o conector aparecerá como uma fonte de dados disponíveis. Para conectar-se a um pool de dados, selecione **Obter dados > Serviços Online > Fluxos de dados do Power BI (beta)**, conforme mostrado na imagem a seguir:
-
-![Conectar-se a fluxos de dados](media/desktop-connect-dataflows/connect-dataflows_01.png)
+O conector de **fluxos de dados do Power BI (Beta)** permite a conexão a entidades criadas por fluxos de dados no serviço do Power BI. 
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
-Para usar esta versão prévia do **conector de fluxos de dados do Power BI**, é necessário estar executando a versão mais recente do **Power BI Desktop**. Sempre é possível [baixar o Power BI Desktop](desktop-get-the-desktop.md) e instalá-lo em seu computador para garantir que você tem a versão mais recente.  
+Para usar esta versão beta do **conector de fluxos de dados do Power BI**, é necessário estar executando a versão mais recente do **Power BI Desktop**. Sempre é possível [baixar o Power BI Desktop](desktop-get-the-desktop.md) e instalá-lo em seu computador para garantir que você tem a versão mais recente.  
 
-Observação: quando o conector de fluxos de dados do Power BI for exibido em uma atualização mensal futura no **Power BI Desktop**, será *necessário* excluir este arquivo .MEZ baixado na sua pasta **Documentos > Power BI Desktop > Conectores personalizados** para evitar conflitos. 
+> [!NOTE]
+> A versão anterior do conector de fluxos de dados do Power BI exigia que você fizesse o download de um arquivo .MEZ e o colocasse em uma pasta. As versões atuais do **Power BI Desktop** incluem o conector de fluxos de dados do Power BI, por isso esse arquivo não é mais necessário e pode causar conflitos com a versão incluída do conector. Caso tenha colocado o arquivo .MEZ manualmente na pasta, você *deve* exclui-lo da pasta **Documentos > Power BI Desktop > Conectores personalizados** para evitar conflitos. 
+
+## <a name="desktop-performance"></a>Desempenho do desktop
+O **Power BI Desktop** é executado localmente no computador em que se encontra instalado. Uma série de fatores determina o desempenho da ingestão de fluxos de dados. Entre eles estão o tamanho dos dados, a CPU e a memória RAM do seu computador, a largura de banda de rede, a distância do data center, além de outros fatores.
+
+É possível melhorar o desempenho da ingestão de dados dos fluxos de dados. Por exemplo, se o tamanho dos dados ingeridos for muito grande para o **Power BI Desktop** gerenciar no seu computador, você pode usar as entidades vinculadas e computadas em fluxos de dados para agregar os dados (dentro de fluxos de dados) e ingerir apenas os dados agregados preparados previamente. Dessa forma, o processamento de dados grandes é executado online em fluxos de dados, em vez de ser executados localmente na instância em execução do **Power BI Desktop**. Essa abordagem permite ao Power BI Desktop ingerir menores quantidades de dados, além de manter a experiência com os fluxos de dados rápida e responsiva.
 
 
 ## <a name="next-steps"></a>Próximas etapas
-Há inúmeras coisas interessantes que podem ser feitas com conexões de dados do Power BI, assim como artigos sobre o **Power BI Desktop** que podem ser úteis:
+Há inúmeras coisas interessantes que você pode fazer com os fluxos de dados do Power BI. Confira mais informações nos recursos a seguir:
+
+* [Preparação de dados de autoatendimento com fluxos de dados](service-dataflows-overview.md)
+* [Criação e uso de fluxos de dados no Power BI](service-dataflows-create-use.md)
+* [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
+* [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
+* [Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)](service-dataflows-developer-resources.md)
+
+Também há artigos sobre o **Power BI Desktop** que podem ser úteis:
 
 * [Fontes de dados no Power BI Desktop](desktop-data-sources.md)
 * [Formatar e combinar dados com o Power BI Desktop](desktop-shape-and-combine-data.md)

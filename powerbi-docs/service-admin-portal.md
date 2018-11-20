@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: 3e125061766d6ade0daeaacb208d3070d8e9bd9b
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973248"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266106"
 ---
 # <a name="power-bi-admin-portal"></a>Portal de administração do Power BI
 
@@ -201,7 +201,7 @@ A imagem a seguir mostra a opção **Minha organização inteira** durante a cri
 
 ![Publicar o pacote de conteúdo na organização](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Criar modelos de aplicativos e pacotes de conteúdo organizacional
+### <a name="create-template-organizational-content-packs-and-apps"></a>Criar aplicativos e pacotes de conteúdo organizacional de modelo
 
 Os usuários na organização podem criar pacotes de conteúdo de modelo que usam conjuntos de dados criados no Power BI Desktop. [Saiba mais](template-content-pack-authoring.md)
 
@@ -297,7 +297,16 @@ Os usuários da organização podem acessar espaços de trabalho para conectar-s
 
 Os usuários da organização podem importar dados no serviço, como publicação de relatórios do Power BI Desktop, upload de arquivos de relatório do Power BI Desktop e conexão com os dados diretamente pelo serviço. [Saiba mais](desktop-upload-desktop-files.md)
 
-## <a name="capacity-settings"></a>Configurações de Capacidade
+## <a name="dataflow-settings-preview"></a>Configurações de fluxo de dados (versão prévia)
+
+### <a name="create-and-use-dataflows-preview"></a>Criar e usar fluxos de dados (versão prévia)
+
+Os usuários na organização podem criar e usar fluxos de dados. [Saiba mais](service-dataflows-overview.md)
+
+> [!NOTE]
+> Essa configuração se aplica a toda a organização e não pode ser limitada a grupos específicos.
+
+## <a name="capacity-settings"></a>Configurações de capacidade
 
 ### <a name="power-bi-premium"></a>Power BI Premium
 

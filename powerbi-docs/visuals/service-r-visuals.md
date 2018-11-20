@@ -1,5 +1,5 @@
 ---
-title: Criar visualizações e análise avançadas usando scripts do R no Power BI
+title: Criar visualizações e análises avançadas usando scripts do R
 description: Usar scripts do R no Power BI para criar visualizações e análise avançadas
 author: mihart
 manager: kvivek
@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3407458cfe6e395a5a209e136af1d4c9a7aa6a6
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 409a2ee486d0153e0dec2f715ff0e2ea19e236d7
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566339"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297103"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Criar visuais do R no serviço do Power BI
 O serviço do Power BI dá suporte à exibição e interação com visuais criados com scripts do R. Os visuais criados com scripts do R, normalmente chamados de *visuais do R*, podem apresentar formatação e análise de dados avançadas, como previsão, usando o poder da análise e da visualização avançadas do R.
 
 > [!NOTE]
-> A [linguagem de programação R](https://www.r-project.org/) está entre as linguagens de programação mais amplamente usadas por estatísticos, cientistas de dados e analistas de negócios. A linguagem R tem uma comunidade de software livre que oferece mais de 7.000 pacotes complementares, como bem como os amplamente utilizados [Grupos de Usuários do R](http://msdsug.microsoft.com/). A versão do R implantada no serviço do Power BI é a *Revolution R Open 3.2.2.*
+> A [linguagem de programação R](https://www.r-project.org/) está entre as linguagens de programação mais amplamente usadas por estatísticos, cientistas de dados e analistas de negócios. A linguagem R conta com uma comunidade de software livre que oferece mais de 7.000 pacotes de complementos, além de Grupos de Usuários do R amplamente utilizados. A versão do R implantada no serviço do Power BI é a *Revolution R Open 3.2.2.*
 > 
 > 
 

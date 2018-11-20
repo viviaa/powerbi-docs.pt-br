@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909235"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297218"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -22,6 +22,26 @@ Para informações sobre “Novidades” relacionadas, consulte:
 * [Blog da equipe do Power BI para os aplicativos móveis](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Novidades no Power BI Desktop](../../desktop-latest-update.md)  
 * [Novidades no serviço do Power BI](../../service-whats-new.md)  
+
+## <a name="october-2018"></a>Outubro de 2018
+
+### <a name="paginated-report-preview-all-devices"></a>Versão prévia de relatórios paginados (todos os dispositivos)
+
+Os relatórios paginados já estão disponíveis no serviço do Power BI. Os usuários com acesso aos relatórios paginados no serviço do Power BI também podem acessá-los no próprio aplicativo móvel. 
+
+Leia a [postagem do blog do Power BI sobre os relatórios paginados no ambiente móvel](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+
+### <a name="shared-credentials-ios"></a>Credenciais compartilhadas (iOS)
+
+Entrar no Power BI pelo aplicativo móvel nunca foi tão fácil. Graças às credenciais compartilhadas, simplificamos o processo de entrada por meio do uso de outras credenciais de aplicativo do Office 365 no dispositivo para autenticar você no serviço do Power BI.
+
+### <a name="in-app-urls-ios"></a>URLs no aplicativo (iOS) 
+
+Os links nos relatórios que apontarem para outros artefatos do Power BI agora abrirão diretamente no aplicativo. Isso permitirá que você crie fluxos personalizados de navegação, por exemplo, vinculando um relatório a um painel.
+
+### <a name="ios12-and-watchos-5-support"></a>Suporte para iOS12 e watchOS 5 
+
+Atualizamos o aplicativo Power BI para iOS para um funcionamento perfeito com o novo sistema operacional no relógio e em dispositivos móveis.
 
 ## <a name="september-2018"></a>Setembro de 2018
 
@@ -41,10 +61,11 @@ Leia a [postagem no blog do Power BI sobre comentários no dashboard](https://po
 
 O SSO (logon único) é um dos recursos mais solicitados para o Power BI Mobile for Windows. Agora, você pode usar suas contas organizacionais primárias não apenas para entrar em seus dispositivos móveis com Windows ingressados no domínio, mas também para entrar sem interrupções no serviço do Power BI. Leia mais sobre [SSO e os aplicativos móveis com Windows](mobile-windows-10-app-single-sign-on-sso.md).
 
+## <a name="previous-months"></a>Meses anteriores
 
-## <a name="july-2018"></a>Julho de 2018
+### <a name="july-2018"></a>Julho de 2018
 
-### <a name="ios-and-android-only"></a>Apenas iOS e Android
+#### <a name="ios-and-android-only"></a>Apenas iOS e Android
 
 **Filtros compartilhados**
 
@@ -55,127 +76,125 @@ Agora você pode receber relatórios com segmentações e filtros compartilhados
 Quando você exibe um relatório no modo paisagem em seu dispositivo móvel, vê as mesmas imagens em segundo plano que vê no Power BI na Web.
 
 
-## <a name="june-2018"></a>Junho de 2018
+### <a name="june-2018"></a>Junho de 2018
 
-### <a name="full-canvas-reports"></a>Relatórios de tela inteira
+#### <a name="full-canvas-reports"></a>Relatórios de tela inteira
 
 Barras de ação superiores e inferiores agora desaparecerão logo após o relatório carregar, para que você veja mais do seu relatório de uma vez.
 
-### <a name="increased-phone-report-canvas-size"></a>Tamanho maior da tela do relatório do telefone
+#### <a name="increased-phone-report-canvas-size"></a>Tamanho maior da tela do relatório do telefone
 
 Aumentamos o tamanho da tela do relatório do telefone para ter espaço para mais elementos visuais.
 
-## <a name="may-2018"></a>Mai 2018
+### <a name="may-2018"></a>Mai 2018
 
-### <a name="mobile-drill-through-all-mobile-apps"></a>Detalhamento móvel: todos os aplicativos móveis
+#### <a name="mobile-drill-through-all-mobile-apps"></a>Detalhamento móvel: todos os aplicativos móveis
 
 Você poderá detalhar de um ponto de dados selecionado para outra página de relatório nos aplicativos móveis, se o autor do relatório tiver definido essa ação. 
 
-### <a name="back-button-all-mobile-apps"></a>Botão Voltar: todos os aplicativos móveis
+#### <a name="back-button-all-mobile-apps"></a>Botão Voltar: todos os aplicativos móveis
 
 Agora quando você navega em um relatório passando o dedo, escolhendo uma página de relatório na barra de ação ou usando o detalhamento, o botão Voltar retorna à página anterior que você estava olhando. 
 
-### <a name="dashboard-themes-all-mobile-apps"></a>Temas do dashboard: todos os aplicativos móveis
+#### <a name="dashboard-themes-all-mobile-apps"></a>Temas do dashboard: todos os aplicativos móveis
 
 Quando os autores de relatório personalizam os temas do dashboard no serviço do Power BI, a aparência do dashboard também é alterada no aplicativo móvel. No entanto, você não verá as imagens da tela de fundo.
 
-### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: configurar o acesso ao aplicativo móvel Power BI do iOS para um servidor de relatório remotamente
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: configurar o acesso ao aplicativo móvel Power BI do iOS para um servidor de relatório remotamente
 
 Seu administrador de TI agora pode usar uma ferramenta MDM para configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório. Confira [Configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório remotamente](../../report-server/configure-powerbi-mobile-apps-remote.md) para obter detalhes.
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Aplicativo Power BI para Realidade Misturada (versão prévia)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Aplicativo Power BI para Realidade Misturada (versão prévia)
 
 O aplicativo Power BI para Realidade Misturada agora está na Microsoft Store. Veja seus dashboards e relatórios imerso no mundo virtual, ou posicione-os e veja-os em locais específicos no seu ambiente. Assista ao novo vídeo [Apresentando o Power BI no Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) para entender o contexto ou leia o artigo sobre o novo [aplicativo Power BI para Realidade Misturada](mobile-mixed-reality-app.md).
 
 
-## <a name="april-2018"></a>Abril de 2018
+### <a name="april-2018"></a>Abril de 2018
 
-### <a name="mobile-drill-down-and-drill-up"></a>Fazer drill down e fazer drill up móvel
+#### <a name="mobile-drill-down-and-drill-up"></a>Fazer drill down e fazer drill up móvel
 
 Agora você pode fazer drill down e drill up para se aprofundar em elementos visuais de relatório em seu dispositivo móvel. Para acessar esse novo recurso, toque e segure para abrir o menu de dica de ferramenta em um visual do relatório e toque nos botões de análise para explorar seus dados em profundidade. Saiba mais sobre [fazer drill up e drill drown nos aplicativos móveis](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
-### <a name="persistent-filters"></a>Filtros persistentes
+#### <a name="persistent-filters"></a>Filtros persistentes
 
 Recentemente atualizamos filtros de relatórios e segmentações de dados, para que eles fossem salvos automaticamente no Power BI na Web para o aplicativo móvel do Power BI. Agora filtros e segmentações de dados que você definir no aplicativo móvel são salvos automaticamente no Power BI na Web.
 
 
-## <a name="march-2018"></a>Março de 2018
+### <a name="march-2018"></a>Março de 2018
 
-### <a name="power-bi-for-mixed-reality-app-preview"></a>Aplicativo Power BI para Realidade Misturada (versão prévia)
+#### <a name="power-bi-for-mixed-reality-app-preview"></a>Aplicativo Power BI para Realidade Misturada (versão prévia)
 
 Na mudança mais recente para levar os dados até você, criamos o aplicativo Power BI para Realidade Misturada. Veja seus dashboards e relatórios imerso no mundo virtual, ou posicione-os e veja-os em locais específicos no seu ambiente. Leia mais sobre o novo [aplicativo Power BI para Realidade Misturada](mobile-mixed-reality-app.md).
 
-### <a name="share-reports-and-dashboards-externally"></a>Compartilhar relatórios e dashboards externamente
+#### <a name="share-reports-and-dashboards-externally"></a>Compartilhar relatórios e dashboards externamente
 
 Compartilhe dashboards e relatórios com usuários fora da sua organização, diretamente do aplicativo. O compartilhamento externo é ativado para contas organizacionais e sociais. 
 
-### <a name="persistent-filters"></a>Filtros persistentes
+#### <a name="persistent-filters"></a>Filtros persistentes
 
 Quando você define filtros e segmentações no Power BI na Web, suas opções de filtro também são salvas em seu aplicativo para dispositivos móveis, para que você possa continuar de onde parou.
 
-### <a name="refresh-reports-on-the-ipad"></a>Atualizar relatórios no iPad
+#### <a name="refresh-reports-on-the-ipad"></a>Atualizar relatórios no iPad
 
 Os relatórios do Power BI agora têm um botão de atualização no aplicativo do iPad.
 
-## <a name="february-2018"></a>Fevereiro de 2018
+### <a name="february-2018"></a>Fevereiro de 2018
 
-### <a name="share-reports"></a>Compartilhar relatórios
+#### <a name="share-reports"></a>Compartilhar relatórios
 
 Agora é possível compartilhar um relatório diretamente dos aplicativos móveis. Leia mais sobre [como compartilhar dashboards e relatórios dos aplicativos móveis](mobile-share-dashboard-from-the-mobile-apps.md)
 
-### <a name="improved-tooltips"></a>Dicas de ferramentas aprimoradas
+#### <a name="improved-tooltips"></a>Dicas de ferramentas aprimoradas
 
 Quando você toca e segura em um visual de relatório para acessar as dicas de ferramentas, agora você pode arrastar o dedo pelo visual para explorar os detalhes de cada ponto de dados pelo caminho.
 
-## <a name="january-2018"></a>Janeiro de 2018
+### <a name="january-2018"></a>Janeiro de 2018
 
-### <a name="report-favorites"></a>Relatórios favoritos
+#### <a name="report-favorites"></a>Relatórios favoritos
 
 Marque relatórios como favoritos para que eles apareçam na página **Favoritos**. Leia mais sobre [favoritos nos aplicativos móveis do Power BI](mobile-apps-favorites.md).
 
-### <a name="view-shared-reports"></a>Exibir relatórios compartilhados
+#### <a name="view-shared-reports"></a>Exibir relatórios compartilhados
 
 Agora quando alguém compartilhar um relatório com você, ele é listado na página **Compartilhado comigo** junto com os painéis.
 
-### <a name="improved-hyperlink-support"></a>Suporte de hiperlink aprimorado
+#### <a name="improved-hyperlink-support"></a>Suporte de hiperlink aprimorado
 
 Agora você pode tocar em links em elementos visuais personalizados para abri-los em seu navegador móvel.
 
-### <a name="intune-integration-android"></a>Integração do Intune (Android)
+#### <a name="intune-integration-android"></a>Integração do Intune (Android)
 
 Suporte para acesso condicional usando o gerenciamento de dispositivos móveis do Intune.
 
-## <a name="december-2017"></a>Dezembro de 2017
+### <a name="december-2017"></a>Dezembro de 2017
 
-### <a name="improved-security-management"></a>Gerenciamento de segurança melhorado 
+#### <a name="improved-security-management"></a>Gerenciamento de segurança melhorado 
 
 Adicionamos suporte para CA (acesso condicional) e MDM (gerenciamento de dispositivo móvel) do Microsoft Intune em dispositivos Android para melhorar a segurança dos dados da organização. Já está disponível no iOS.
 
-### <a name="improved-permission-management"></a>Gerenciamento de permissões aprimorado
+#### <a name="improved-permission-management"></a>Gerenciamento de permissões aprimorado
 
 Foram feitas algumas alterações que permitem um gerenciamento mais preciso das permissões do usuário para relatórios, dashboards e conjuntos de dados.
 
-### <a name="auto-installed-apps"></a>Aplicativos instalados automaticamente
+#### <a name="auto-installed-apps"></a>Aplicativos instalados automaticamente
 
 Não é necessário instalar alguns dos aplicativos no Power BI. Os criadores de aplicativos do Power BI em sua organização podem criar *aplicativos* que contêm uma coleção de dashboards e relatórios. Em seguida, eles podem publicar o aplicativo e defini-lo para ser instalado automaticamente no serviço do Power BI e nos aplicativos móveis do Power BI. Quando um aplicativo é definido para ser instalado para você, ele é exibido automaticamente no menu **Aplicativos**:
 
 ![Aplicativos nos aplicativos móveis do Power BI](./media/mobile-whats-new-in-the-mobile-apps/power-bi-apps-mobile-apps.png)
 
-## <a name="november-2017"></a>Novembro de 2017
-### <a name="iphone-x-optimization"></a>Otimização do iPhone X
+### <a name="november-2017"></a>Novembro de 2017
+#### <a name="iphone-x-optimization"></a>Otimização do iPhone X
 
 Otimizamos o layout do aplicativo para o iPhone X, para que você possa explorar os dados em estilo em cada dispositivo.
 
-## <a name="october-2017"></a>Outubro de 2017
-### <a name="filters-for-phone-reports-in-android"></a>Filtros para relatórios para telefone no Android
+### <a name="october-2017"></a>Outubro de 2017
+#### <a name="filters-for-phone-reports-in-android"></a>Filtros para relatórios para telefone no Android
 
 Se você criar um relatório com páginas otimizadas para telefone no Power BI Desktop e o relatório tiver filtros, agora você poderá aplicar esses filtros ao relatório para telefone em seu Android. Leia mais sobre filtros para relatórios do Power BI no Android.
 
-### <a name="show-data-in-reports"></a>Mostrar dados em relatórios
+#### <a name="show-data-in-reports"></a>Mostrar dados em relatórios
 
 Agora você pode alternar visuais em seus relatórios para uma exibição de tabela para ver os números por trás dos dados. Para acessar esse recurso, toque em “Mostrar dados” no menu … do visual no relatório ou no novo ícone no menu de ação do visual expandido.
-
-## <a name="previous-months"></a>Meses anteriores
 
 ### <a name="september-2017"></a>Setembro de 2017
 #### <a name="filters-for-phone-reports-in-iphones"></a>Filtros para relatórios para telefone em iPhones
@@ -189,7 +208,7 @@ Agora você pode definir as configurações de proxy no aplicativo móvel iOS do
 Leia o [resumo de julho de 2017 sobre os recursos dos aplicativos móveis](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
 
 #### <a name="ios-devices"></a>Dispositivos iOS
-**Nova experiência de P e R no iOS (Versão prévia)** Em vez de apenas receber uma mensagem para sua pergunta, agora você pode usar linguagem natural para obter insights com escopo definido. Mesmo se você não tiver certeza do que está procurando, a P e R proativamente traz à tona os insights relevantes para seus dados. A nova experiência de P e R em dispositivos móveis, desenvolvida em colaboração com a equipe da Microsoft Research, apresenta tecnologias poderosas em nosso produto. Experimente o tutorial [Faça perguntas sobre seus dados nos aplicativos móveis do iOS](mobile-apps-ios-qna.md).
+**Nova experiência de P e R no iOS (versão prévia)** Em vez de apenas receber uma mensagem para sua pergunta, agora você pode usar linguagem natural para obter insights com escopo definido. Mesmo se você não tiver certeza do que está procurando, a P e R proativamente traz à tona os insights relevantes para seus dados. A nova experiência de P e R em dispositivos móveis, desenvolvida em colaboração com a equipe da Microsoft Research, apresenta tecnologias poderosas em nosso produto. Experimente o tutorial [Faça perguntas sobre seus dados nos aplicativos móveis do iOS](mobile-apps-ios-qna.md).
 
 ### <a name="responsive-visuals"></a>Visuais responsivos
 **Visual responsivo para dashboards e relatórios do telefone** Você pode definir os visuais em seu dashboard ou relatório para serem *responsivos*, para mudarem dinamicamente para exibir o máximo de dados e insight, independentemente do tamanho da tela. Leia o [blog sobre visuais responsivos](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
@@ -581,14 +600,14 @@ Leia a [postagem no blog móvel do Power BI publicada em meados de outubro](http
 Aprimoramentos nos aplicativos móveis do Power BI, Android, iOS (iPhone e iPad) e Windows. Leia a [postagem no blog móvel do Power BI publicada em meados de setembro](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 #### <a name="android"></a>Android
-* Suporte para espaços de trabalho do grupo: colaborar com colegas em espaços de trabalho do grupo. 
+* Suporte para workspaces do grupo: colaborar com colegas em workspaces do grupo. 
 * Suporte para usuários não autenticados: para alguns cenários em que os usuários não puderem entrar no aplicativo, adicionamos uma maneira rápida e conveniente de entrar em contato com o suporte e enviar comentários.
 * Melhor experiência de usuário ao acessar painéis usando a segurança baseada em função.          
 * Formatação de dados aprimorados de gráficos e alinhamento de todos os blocos do painel. 
 
 #### <a name="ios-iphone-and-ipad"></a>iOS (iPhone e iPad)
 * Navegação nova e aprimorada: a nova navegação de gaveta aumenta a propriedade da tela e melhora a navegação através do aplicativo. 
-* Espaços de trabalho do grupo: colaborar com colegas em espaços de trabalho do grupo. 
+* Workspaces do grupo: colaborar com colegas em workspaces do grupo. 
 * O processo de autenticação atualiza a qualidade, desempenho e melhorias de funcionalidade aprimoram o processo de autenticação, incluindo o suporte para SSO (Logon único). 
 * Representação de dados melhorada dos blocos do gráfico de linha para comprimir melhor o eixo x.
 * Experiência aprimorada do usuário ao usar com segurança baseada em função.

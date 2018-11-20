@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: a36b0524006144bfa9fbd24d9ff88b42a1acb3d4
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 39429d0f09431da3f860bf0454843c65ce07a524
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641633"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265991"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gerenciar capacidades no Power BI Premium e no Power BI Embedded
 
@@ -53,6 +53,44 @@ Quando você compra SKUs do Power BI Premium ou Embedded, seu locatário recebe 
 Para a maior parte, os usuários nem não precisam saber que estão em uma capacidade Premium. Seus dashboards e relatórios apenas funcionam. Como uma dica visual, há um ícone de losango ao lado dos workspaces que estão em uma capacidade Premium.
 
 ![O losango que mostra o workspace se baseia na capacidade Premium](media/service-admin-premium-manage/premium-workspace.png)
+
+## <a name="configure-workloads"></a>Configurar cargas de trabalho
+
+Considere uma carga de trabalho no Power BI como um dos muitos serviços que você pode expor aos usuários. Por padrão, as capacidades para o **Power BI Premium** e o **Power BI Embedded** são compatíveis apenas com a carga de trabalho associada à execução de consultas no Power BI na nuvem.
+
+Agora oferecemos compatibilidade em versão prévia para duas cargas de trabalho adicionais: **Relatórios paginados** e **Fluxos de dados**. Habilite essas cargas de trabalho no Portal de Administração do Power BI ou por meio da API REST do Power BI. Você também definir a memória máxima que cada carga de trabalho pode consumir, a fim de controlar como as diferentes cargas de trabalho afetam umas às outras.
+
+### <a name="enable-workloads-in-the-power-bi-admin-portal"></a>Habilitar cargas de trabalho no Portal de Administração do Power BI
+
+Para habilitar cargas de trabalho, execute estas etapas.
+
+1. Em **Configurações de capacidade**, selecione uma capacidade.
+
+1. Em **MAIS OPÇÕES**, expanda **Cargas de trabalho**.
+
+1. Habilite uma ou mais cargas de trabalho e defina um valor para **Memória Máxima**.
+
+    ![Configurar cargas de trabalho no Portal de Administração](media/service-admin-premium-manage/admin-portal-workloads.png)
+
+1. Selecione **Aplicar**.
+
+### <a name="default-memory-settings"></a>Configurações de memória padrão
+
+A tabela a seguir mostra os valores de memória padrão e mínimo, com base em diferentes [nós de capacidade](service-premium.md#premium-capacity-nodes) disponíveis. A memória é dinamicamente alocada para fluxos de dados, mas é alocada estaticamente para relatórios paginados. Confira mais informações na próxima seção [Considerações para relatórios paginados](#considerations-for-paginated-reports).
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Relatórios paginados | Não aplicável | Padrão de 20%; mínimo de 10% | Padrão de 20%; mínimo de 5% | Padrão de 20%; mínimo de 2,5% |
+| Fluxos de dados | Padrão de 15%; mínimo de 8%  | Padrão de 15%; mínimo de 4%  | Padrão de 15%; mínimo de 2% | Padrão de 15%; mínimo de 1%  |
+| | | | | |
+
+### <a name="considerations-for-paginated-reports"></a>Considerações para relatórios paginados
+
+Se você usa a carga de trabalho de relatórios paginados, tenha os seguintes pontos em mente.
+
+* **Alocação de memória em relatórios paginados**: os relatórios paginados permitem que você execute seu próprio código ao renderizar um relatório (como alterar dinamicamente a cor do texto com base no conteúdo). Considerando esse fato, protegemos capacidade do Power BI Premium executando relatórios paginados em um espaço definido dentro da capacidade. Atribuímos a esse espaço a memória máxima que você especifica, esteja a carga de trabalho ativa ou não. Se você usar relatórios ou fluxos de dados do Power BI na mesma capacidade, defina uma memória baixa o suficiente para relatórios paginados de modo que ela não afete negativamente outras cargas de trabalho.
+
+* **Relatórios paginados indisponíveis**: em circunstâncias raras, a carga de trabalho de relatórios paginados pode se tornar indisponível. Nesse caso, a carga de trabalho mostra o estado de erro no Portal de Administração, e os usuários veem tempos limite para renderização de relatório. Para atenuar esse problema, desabilite a carga de trabalho e habilite-a novamente.
 
 ## <a name="monitor-capacity-usage"></a>Monitorar o uso de capacidade
 

@@ -1,23 +1,23 @@
 ---
-title: Requisitos de hardware e de software para a instalação do Servidor de Relatório do Power BI
-description: Aqui você encontrará os requisitos mínimos de hardware e de software para instalar e executar o Servidor de Relatório do Power BI.
+title: Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI
+description: Este artigo detalha os requisitos mínimos de hardware e software para a instalação e execução do Servidor de Relatórios do Power BI.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: 397bc6f1582ff49f665f25559925d5b7e19e0fd5
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101314"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507896"
 ---
-# <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Requisitos de hardware e de software para a instalação do Servidor de Relatório do Power BI
-Aqui você encontrará os requisitos mínimos de hardware e de software para instalar e executar o Servidor de Relatório do Power BI.
+# <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI
+Este artigo detalha os requisitos mínimos de hardware e software para a instalação e execução do Servidor de Relatórios do Power BI.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Requisitos de processador, de memória e de sistema operacional
 
@@ -43,18 +43,19 @@ O SQL Server é usado para hospedar os bancos de dados do servidor de relatório
 * SQL Server 2014
 * SQL Server 2012
 
-A criação do banco de dados do servidor de relatório em um computador remoto requer que você configure a conexão para usar uma conta de usuário de domínio ou uma conta de serviço com acesso à rede. Se você decidir usar uma instância remota do SQL Server, considere cuidadosamente quais credenciais o servidor de relatório deverá usar para se conectar à instância do SQL Server. Para obter mais informações, consulte [Configure a Report Server Database Connection (Configurar uma conexão de banco de dados do servidor de relatório)](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
+Ao criar o banco de dados do servidor de relatório em um computador remoto, será preciso configurar a conexão para usar uma conta de usuário de domínio ou uma conta de serviço com acesso à rede. Se você decidir usar uma instância remota do SQL Server, considere cuidadosamente quais credenciais o servidor de relatório deverá usar para se conectar à instância do SQL Server. Para obter mais informações, consulte [Configure a Report Server Database Connection (Configurar uma conexão de banco de dados do servidor de relatório)](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## <a name="considerations"></a>Considerações
 O Servidor de Relatório do Power BI instalará valores padrão para definir as configurações básicas necessárias para tornar operacional um servidor de relatório. Ele tem os seguintes requisitos:
 
 * Um Mecanismo de Banco de Dados do SQL Server deverá estar disponível após a instalação e antes de configurar o banco de dados para o servidor de relatório. A instância do Mecanismo de Banco de Dados hospeda o banco de dados do servidor de relatório que o Gerenciador de Configurações do Reporting Services criará. O Mecanismo de Banco de Dados não é necessário para a experiência de instalação real.
-* A conta de usuário usada para executar a Instalação deve ser um membro do grupo local de Administradores.
-* A conta de usuário usada para o Gerenciador de Configurações do Reporting Services deve ter permissão para acessar e criar bancos de dados na instância do Mecanismo de Banco de Dados que hospeda os bancos de dados do servidor de relatório.
+- Os [Recursos do Reporting Services compatíveis com as edições do SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) descrevem as diferenças entre as edições do SQL Server.
+* A conta de usuário que executa a Instalação deve ser membro do grupo local de Administradores.
+* A conta de usuário que executa o Gerenciador de Configurações do Reporting Services deve ter permissão para acessar e criar bancos de dados na instância do Mecanismo de Banco de Dados que hospeda os bancos de dados do servidor de relatório.
 * A instalação deve poder usar os valores padrão para reservar as URLs que fornecem acesso ao servidor de relatório e o portal da Web. Esses valores são a porta 80, um curinga forte e os nomes de diretório virtual no formato **ReportServer** e **Reports**.
 
 ## <a name="read-only-domain-controller-rodc"></a>RODC (Controlador de domínio somente leitura)
- Embora o servidor de relatório possa ser instalado em um ambiente que tenha um RODC (Controlador de domínio somente leitura), o Reporting Services precisa acessar um Controlador de Domínio Leitura-Gravação para funcionar adequadamente. Se o Reporting Services só tiver acesso a um RODC, talvez ocorram erros ao tentar administrar o serviço.
+ É possível instalar o servidor de relatório em um ambiente que tenha um Controlador de Domínio Somente Leitura (RODC). No entanto, o Reporting Services precisa de acesso a um Controlador de Domínio Leitura-Gravação para um funcionamento correto. Se o Reporting Services só tiver acesso a um RODC, talvez ocorram erros ao tentar administrar o serviço.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Relatórios do Power BI e conexões dinâmicas do Analysis Services
 Você pode usar uma conexão dinâmica em instâncias de tabela ou multidimensionais. Seu servidor do Analysis Services deve ter a versão e a edição corretas para funcionar adequadamente.
