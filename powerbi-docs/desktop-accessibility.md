@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223365"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619622"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Acessibilidade dos relatórios do Power BI Desktop
 O Power BI tem recursos que permitem que pessoas com deficiências consumam e interajam mais facilmente com os relatórios do Power BI Desktop. Esses recursos incluem a capacidade de consumir um relatório usando o teclado ou um leitor de tela, usar a tabulação para focar em vários objetos em uma página e o uso cuidadoso de marcadores nas visualizações.
 
 ![Usar diferentes marcadores para gráficos de linhas e de área para melhorar a acessibilidade](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> Esses recursos de acessibilidade estão disponíveis com a versão de junho de 2017 do **Power BI Desktop** e com versões posteriores. Funcionalidades de acessibilidade adicionais também estão planejadas para versões futuras.
-> 
-> 
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Consumir um relatório do Power BI Desktop com um leitor de tela ou um teclado
 A partir da versão de setembro de 2017 do **Power BI Desktop**, você pode pressionar a tecla **?** para mostrar uma janela que descreve os atalhos de teclado de acessibilidade disponíveis no **Power BI Desktop**.
@@ -116,12 +111,26 @@ Há alguns problemas conhecidos e algumas limitações com os recursos de acessi
 * Se você estiver usando o Narrator, haverá algumas limitações ao navegar em Mostrar dados como uma tabela HTML.
 
 ## <a name="keyboard-shortcuts"></a>Atalhos do teclado
+Os atalhos de teclado são úteis para se movimentar pelos relatórios do Power BI usando o teclado. As tabelas a seguir descrevem os atalhos disponíveis em um relatório do Power BI. Além de usar estes atalhos de teclado no Power BI Desktop, eles também funcionam nas seguintes experiências:
+
+* Caixa de diálogo Explorador de Perguntas e Respostas
+* Caixa de diálogo Introdução
+* Menu Arquivo e caixa de diálogo Sobre
+* Barra de aviso
+* Caixa de diálogo Restaurar Arquivo
+* Caixa de diálogo Rostos tristes
+
+Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de experiências também dá suporte a leitores de tela e configurações de alto contraste.
+
+
 ### <a name="frequently-used-shortcuts"></a>Atalhos usados com frequência
 | Para fazer isso           | Pressione                |
 | :------------------- | :------------------- |
 | Mover o foco entre as seções  | Ctrl + F6 |
 | Mover o foco para frente na seção | Tab         |
 | Mover o foco para trás na seção | Shift + Tab |
+| Selecionar ou cancelar a seleção de um objeto | Enter ou Espaço |
+| Selecionar vários objetos | CTRL + Espaço |
 
 ### <a name="on-visual"></a>No visual
 | Para fazer isso           | Pressione                |

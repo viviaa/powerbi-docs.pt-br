@@ -1,25 +1,27 @@
 ---
-title: Adicionar um filtro a um visual, página, detalhamento ou relatório no Power BI
-description: Adicionar um filtro de página, um filtro de visualização, um filtro de relatório ou um filtro de detalhamento a um relatório no Power BI
+title: Adicionar um filtro a um relatório do Power BI
+description: Adicionar um filtro de página, um filtro de visualização ou um filtro de relatório a um relatório no Power BI
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 11/08/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c70e29bf7dcd5a307cbcb4762595716595dfa523
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
+ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973271"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611142"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Adicionar um filtro a um relatório do serviço do Power BI (na exibição Edição)
 
 Este artigo explica como adicionar um filtro de página, um filtro de visualização, um filtro de relatório ou um filtro de detalhamento a um relatório no Power BI. Os exemplos neste artigo estão no serviço do Power BI. As etapas são quase idênticas no Power BI Desktop.
+
+**Você sabia?** O Power BI tem uma nova experiência de filtro, atualmente em versão prévia. Leia mais sobre [a nova experiência de filtro em relatórios do Power BI](power-bi-report-filter-preview.md).
 
 ## <a name="filters-in-editing-view-or-reading-view"></a>Filtros no modo de exibição de Edição ou no modo de exibição de Leitura
 Você pode interagir com relatórios em dois modos de exibição diferentes: Leitura e Edição. Os recursos de filtragem disponíveis dependem de qual modo você está. Leia tudo [sobre filtros e realce em relatórios do Power BI](power-bi-reports-filters-and-highlighting.md) para obter detalhes.
@@ -57,7 +59,7 @@ A propósito, esse procedimento usa o exemplo de Análise de Varejo, caso você 
 3. Selecione um visual para ativá-lo. Todos os campos que estiverem sendo usados pelo visual serão identificados no painel **Campos** e também listados no painel **Filtros**, sob o cabeçalho **Filtros no nível do visual**.
    
    ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
-4. Agora vamos adicionar um filtro a um campo que já está sendo usado pela visualização. 
+4. Agora, vamos adicionar um filtro a um campo que já está sendo usado pela visualização. 
    
     Role para baixo até a área de **Filtros de nível visual** e selecione a seta para expandir o campo que você deseja filtrar. Neste exemplo, vamos filtrar **StoreNumberName**.
      
@@ -144,7 +146,7 @@ Vejamos como funciona o filtro de detalhamento.
 
 - Há situações nas quais o filtro no nível do visual e o filtro no nível da página podem retornar resultados diferentes.  Por exemplo, quando você adiciona um filtro no nível do visual, o Power BI filtra nos resultados agregados.  A agregação padrão é Soma, mas você pode [alterar o tipo de agregação](service-aggregates.md).  
 
-    Depois, ao adicionar um filtro no nível da página, o Power BI filtra sem agregação.  Ele faz isso, pois uma página pode ter vários visuais, que, individualmente, podem utilizar diferentes tipos de agregação.  Portanto, o filtro é aplicado em cada linha de dados.
+    Depois, ao adicionar um filtro no nível da página, o Power BI filtra sem agregação.  Ele não agrega porque uma página pode ter vários visuais, que, individualmente, podem utilizar diferentes tipos de agregação.  Portanto, o filtro é aplicado em cada linha de dados.
 
 - Se você não vir o painel Campos, verifique se você está no [Modo de Exibição de Edição](service-interact-with-a-report-in-editing-view.md) do relatório    
 - Se você tiver feito muitas alterações nos filtros e quiser retornar para as configurações padrão do autor do relatório, selecione **Redefinir para padrão** na barra de menus superior.

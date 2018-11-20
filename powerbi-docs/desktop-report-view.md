@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8239c271bff5dff6dc068b1c547b8ab2d7731da5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c4b4114d21d7afc6652d8706235dab4ad0ba0c37
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327719"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619762"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Exibição de Relatório no Power BI Desktop
 Se você já trabalhou com o Power BI, você sabe como é fácil criar relatórios que fornecem ideias e perspectivas dinâmicas sobre seus dados. O Power BI também conta com recursos mais avançados no Power BI Desktop. Com o Power BI Desktop, você pode criar consultas avançadas, efetuar mashup de dados provenientes de várias fontes, criar relações entre tabelas e muito mais.
@@ -27,35 +27,46 @@ A diferença entre eles é que ao usar o Power BI Desktop, você pode trabalhar 
 ## <a name="lets-take-a-look"></a>Vamos dar uma olhada!
 Quando carregar dados pela primeira vez no Power BI Desktop, você verá o **Modo de Exibição de Relatório** com uma tela em branco.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
 Você pode alternar entre o **Modo de Exibição de Relatório**, o **Modo de Exibição de Dados** e o **Modo de Exibição de Relação** selecionando os ícones na barra de navegação à esquerda:
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
+![Ícone de Exibição de Relatório](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
 Depois de adicionar alguns dados, você pode adicionar campos a uma nova visualização na tela.
 
-![](media/desktop-report-view/pbid_reportview_addvis.gif)
+![Adicionar um elemento visual arrastando-o do painel Campos](media/desktop-report-view/pbid_reportview_addvis.gif)
 
 Para alterar o tipo da visualização, você poderá selecioná-la no grupo **Visualizar** na faixa de opções, ou então você pode clicar com o botão direito do mouse e selecionar um tipo diferente no ícone **Alterar tipo de visualização**.
 
-![](media/desktop-report-view/pbid_reportview_changevis.gif)
+![Alterar um elemento visual selecionando um novo](media/desktop-report-view/pbid_reportview_changevis.gif)
 
 > [!TIP]
 > Certifique-se de experimentar os diferentes tipos de visualização. É importante que sua visualização transmita com clareza as informações presentes em seus dados.
-> 
-> 
 
 Um relatório terá pelo menos uma página em branco para ser iniciado. As páginas são exibidas no painel de navegação à esquerda da tela. Você pode adicionar todos os tipos de visualizações a uma página, mas é importante não exagerar. Um excesso de visualizações em uma página dará a ela uma aparência congestionada e tornará difícil encontrar as informações corretas. Você pode adicionar novas páginas ao seu relatório. Basta clicar em **Nova Página** na faixa de opções.
 
-![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
+![Ícone de Nova Página](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
 Para excluir uma página, clique no **X** na guia da página na parte inferior do Modo de Exibição de Relatório.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
+![Adicionar uma página a um relatório](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
 > Visualizações e relatórios não podem ser anexados a um dashboard por meio do Power BI Desktop. Para fazer isso, você precisará [Publicar por meio do Power BI Desktop](desktop-upload-desktop-files.md) para o seu site do Power BI.
+
+## <a name="copy-and-paste-between-reports"></a>Copiar e colar entre relatórios
+
+Você pode usar um elemento visual de um relatório do Power BI Desktop em outro, simplesmente copiando e colando-o em outro relatório. Basta usar o atalho de teclado **Ctrl+C** para copiar o visual do seu relatório e, depois, no outro relatório do Power BI Desktop, use **Ctrl+V** para colar o elemento visual. Selecione para copiar um elemento visual por vez ou todos de uma página, e cole no relatório de destino do Power BI Desktop. 
+
+A capacidade de copiar e colar elementos visuais é útil para pessoas que criam e atualizam vários relatórios frequentemente. Ao copiar entre arquivos, as configurações e formatação definidas explicitamente no painel de formatação serão utilizadas, enquanto os elementos visuais que dependem do tema ou das configurações padrão são atualizados automaticamente de acordo com o tema do relatório de destino. Portanto, quando você consegue deixar a formatação do visual exatamente como quer, pode copiar e colar esse visual em novos relatórios e preservar todo o trabalho de formatação.
+
+![Erro ao copiar/colar o visual – nenhum campo de dados](media/desktop-report-view/report-view_05.png)
+
+Se os campos do modelo forem diferentes, você verá um erro no visual e um aviso sobre quais campos não existem. O erro é semelhante à experiência exibida ao excluir um campo no modelo usado por um visual. Para corrigir o erro, basta substituir os campos inválidos pelos campos que você deseja usar do modelo do relatório no qual você colou o visual. Se você estiver usando um visual personalizado, também deverá importar esse visual personalizado para o relatório de destino.
+
+
+
 
 ## <a name="hide-report-pages"></a>Ocultar páginas de relatório
 
@@ -63,13 +74,13 @@ Quando você cria um relatório, também poderá ocultar as páginas de um relat
 
 Ocultar uma página de relatório é fácil. Basta clicar na guia da página de relatório e selecionar **Ocultar** no menu que é exibido.
 
-![](media/desktop-report-view/report-view_05.png)
+![Opção Ocultar Página](media/desktop-report-view/report-view_05.png)
 
 Há algumas considerações para ter em mente ao ocultar uma página de relatório:
 
 * Você ainda pode ver um relatório oculto quando estiver no **Power BI Desktop**, embora o título da página esteja esmaecido. Na imagem a seguir, a página 4 estará oculta.
 
-    ![](media/desktop-report-view/report-view_06.png)
+    ![página esmaecida que está oculta](media/desktop-report-view/report-view_06.png)
 
 * Você *não pode* ver uma página de relatório oculta ao exibir o relatório no **serviço do Power BI**.
 

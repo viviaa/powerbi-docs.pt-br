@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c10a0ffdf11829d8faa15ea14be136922c86382
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545007"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619829"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Métricas de uso de dashboards e relatórios
 
@@ -25,7 +25,7 @@ Se você cria dashboards e relatórios, as métricas de uso ajudam a compreender
 > [!NOTE]
 > As métricas de uso acompanharão o uso de relatórios que são inseridos no SharePoint Online. No entanto, as métricas de uso não acompanharão a inserção de dashboards e relatórios por meio do fluxo das "próprias credenciais do usuário" ou das "próprias credenciais do aplicativo". As métricas de uso também não acompanharão o uso de relatórios inseridos por meio de [publicação na Web](service-publish-to-web.md).
 
-Esses relatórios de métricas de uso são somente leitura. No entanto, você pode personalizar um relatório de métricas de uso usando "Salvar como". Isso cria um novo conjunto de dados e converte o relatório somente leitura em um relatório completo do Power BI que você pode editar. O relatório personalizado contém não apenas as métricas do dashboard ou relatório selecionado mas, removendo o filtro padrão, agora você tem acesso às métricas de uso de todos os dashboards ou todos os relatórios no espaço de trabalho selecionado. E você ainda pode ver os nomes dos usuários finais.
+Esses relatórios de métricas de uso são somente leitura. No entanto, você pode personalizar um relatório de métricas de uso usando "Salvar como". Isso cria um novo conjunto de dados e converte o relatório somente leitura em um relatório completo do Power BI que você pode editar. O relatório personalizado contém não apenas as métricas do dashboard ou relatório selecionado mas, removendo o filtro padrão, agora você tem acesso às métricas de uso de todos os dashboards ou todos os relatórios no workspace selecionado. E você ainda pode ver os nomes dos usuários finais.
 
 ![relatório de métricas de uso](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
@@ -38,21 +38,21 @@ A execução de relatórios de métricas de uso só está disponível no serviç
 ### <a name="prerequisites"></a>Pré-requisitos
 
 - O recurso de métricas de uso captura informações de uso de todos os usuários, independentemente da licença. No entanto, é necessária uma licença do Power BI Pro para executar e acessar os dados de métricas de uso.
-- As métricas de uso são fornecidas em dashboards ou relatórios no espaço de trabalho selecionado. Para acesso a métricas de uso de um relatório ou dashboard específico, você precisa:    
+- As métricas de uso são fornecidas em dashboards ou relatórios no workspace selecionado. Para acesso a métricas de uso de um relatório ou dashboard específico, você precisa:    
     • Ter acesso de edição a esse dashboard ou relatório • Ter uma licença Pro
 
 ## <a name="about-the-usage-metrics-report"></a>Sobre o relatório de métrica de uso
 
 Quando você seleciona **Métrica de uso** ou o ícone ![ícone de métricas de uso](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png), o Power BI gera um relatório predefinido com métrica de uso para esse conteúdo nos últimos 90 dias.  O relatório é semelhante aos relatórios do Power BI que você já conhece, mas foi criado para ser informativo, não interativo. Você poderá fatiar com base em como seus usuários finais tiveram acesso – se eles acessaram pela Web, por um aplicativo móvel etc. Conforme seus dashboards e relatórios evoluírem, o relatório de métricas de uso também evoluirá e será atualizado todos os dias com novos dados.  
 
-Os relatórios de métricas de uso não serão exibidos em **Recente**, **Espaços de trabalho**, **Favoritos** ou em outras listas de conteúdo. Eles não pode ser adicionados a um aplicativo. Se você fixar um bloco de um relatório de métricas de uso em um dashboard, o dashboard não poderá ser adicionado a um aplicativo ou a um pacote de conteúdo.
+Os relatórios de métricas de uso não serão exibidos em **Recente**, **Workspaces**, **Favoritos** ou em outras listas de conteúdo. Eles não pode ser adicionados a um aplicativo. Se você fixar um bloco de um relatório de métricas de uso em um dashboard, o dashboard não poderá ser adicionado a um aplicativo ou a um pacote de conteúdo.
 
 Para se aprofundar quanto aos dados do relatório ou para criar seus próprios relatórios relativos ao conjunto de dados, use **Salvar como** (consulte [Salvar o relatório de métrica de uso como um relatório completo do Power BI](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
 
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Abrir um relatório de métrica de uso para um dashboard ou relatório
 
-1. Inicie no espaço de trabalho que contém o dashboard ou o relatório.
-2. Na lista de conteúdo do espaço de trabalho ou no dashboard ou relatório em si, selecione o ícone de **Métricas de uso**  ![ícone de métricas de uso](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
+1. Inicie no workspace que contém o dashboard ou o relatório.
+2. Na lista de conteúdo do workspace ou no dashboard ou relatório em si, selecione o ícone de **Métricas de uso**![ícone de métricas de uso](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
 
     ![Guia Dashboards](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
 
@@ -69,11 +69,11 @@ Para se aprofundar quanto aos dados do relatório ou para criar seus próprios r
     > [!NOTE]
     > Se você fixar um bloco de um relatório de métricas de uso em um dashboard, o dashboard não poderá ser adicionado a um aplicativo ou a um pacote de conteúdo.
 
-## <a name="what-metrics-are-reported"></a>Quais as métricas relatadas?
+## <a name="which-metrics-are-reported"></a>Quais métricas são relatadas?
 
 | Métrica | Painel | Relatório | Descrição |
 | --- | --- | --- | --- |
-| Segmentação do método de distribuição |sim |sim |Como os usuários têm acesso ao conteúdo. Há três métodos possíveis: os usuários podem acessar o dashboard ou o relatório sendo membros de um [espaço de trabalho do aplicativo](consumer/end-user-experience.md), fazendo com que o conteúdo seja [compartilhado com eles](service-share-dashboards.md) ou instalando um aplicativo/pacote de conteúdo.  Observe que as exibições por meio de um aplicativo são contadas como um "pacote de conteúdo". |
+| Segmentação do método de distribuição |sim |sim |Como os usuários têm acesso ao conteúdo. Há três métodos possíveis: os usuários podem acessar o dashboard ou o relatório sendo membros de um [workspace do aplicativo](consumer/end-user-experience.md), fazendo com que o conteúdo seja [compartilhado com eles](service-share-dashboards.md) ou instalando um aplicativo/pacote de conteúdo.  Observe que as exibições por meio de um aplicativo são contadas como um "pacote de conteúdo". |
 | Segmentação de plataformas |sim |sim |O dashboard ou o relatório foi acessado pelo serviço do Power BI (powerbi.com) ou por um dispositivo móvel? O dispositivo móvel inclui todos os nossos aplicativos iOS, Android e Windows. |
 | Segmentação da página de relatório |não |sim |Se o relatório tiver mais de uma página, segmente o relatório por página(s) que foi exibido. Se você vir uma opção de lista "Em Branco", isso significa que uma página de relatório foi adicionada recentemente (dentro de 24 horas, o nome real da nova página será exibido na lista de segmentação) e/ou que páginas do relatório foram excluídas. "Em branco" captura esses tipos de situações. |
 | Exibições por dia |sim |sim |Número total de exibições por dia – uma exibição é definida como um usuário que carrega uma página ou dasbhoard de relatório. |
@@ -101,17 +101,17 @@ Para se aprofundar quanto aos dados do relatório ou para criar seus próprios r
 
 Use **Salvar como** para converter o relatório de métrica de uso em um relatório completo do Power BI que pode ser personalizado e compartilhado. Após ter criado uma cópia personalizada, você terá acesso completo ao conjunto de dados subjacente, permitindo personalizar o relatório de métricas de uso de acordo com suas necessidades específicas. Você pode até mesmo usar o Power BI Desktop para criar relatórios de métricas de uso personalizados usando a [conexão dinâmica com o recurso de serviço do Power BI](https://powerbi.microsoft.com/blog/connecting-to-datasets-in-the-power-bi-service-from-desktop).
 
-Ainda melhor, o conjunto de dados subjacente inclui os detalhes de uso de todos os dashboards ou relatórios no espaço de trabalho. Isso abre outro mundo de possibilidades. Você pode, por exemplo, criar um relatório que compara todos os dashboards em seu espaço de trabalho com base no uso. Ou você pode criar um dashboard de métricas de uso para seu aplicativo do Power BI agregando o uso em todo o conteúdo distribuído nesse aplicativo.  Consulte [Remover o filtro de nível de página](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) abaixo.
+Ainda melhor, o conjunto de dados subjacente inclui os detalhes de uso de todos os dashboards ou relatórios no workspace. Isso abre outro mundo de possibilidades. Você pode, por exemplo, criar um relatório que compara todos os dashboards em seu workspace com base no uso. Ou você pode criar um dashboard de métricas de uso para seu aplicativo do Power BI agregando o uso em todo o conteúdo distribuído nesse aplicativo.  Consulte [Remover o filtro de nível de página](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) abaixo.
 
 ### <a name="what-is-created-when-using-save-as"></a>O que é criado usando "Salvar como"?
 
-Quando o Power BI cria o relatório completo, ele também cria um novo conjunto de dados **composto por todos os dashboards ou todos os relatórios contidos no espaço de trabalho atual** que foram acessados nos últimos 90 dias. Por exemplo, digamos que você tem um espaço de trabalho chamado "Vendas" e que ele contém três dashboards e dois relatórios, e você cria um relatório de métricas de uso no dashboard "Nordeste". Em seguida, você usa **Salvar como** para personalizar e convertê-lo em um relatório completo. O conjunto de dados para esse novo relatório contém as métricas de uso *não apenas desse dashboard chamado "Nordeste"*, mas de todos os três dashboards no espaço de trabalho "Vendas". Por padrão, o relatório exibirá dados do dashboard "Nordeste" e você precisará [remover um filtro](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (único clique) para exibir os dados de todos os três dashboards.
+Quando o Power BI cria o relatório completo, ele também cria um novo conjunto de dados **composto por todos os dashboards ou todos os relatórios contidos no workspace atual** que foram acessados nos últimos 90 dias. Por exemplo, digamos que você tem um workspace chamado "Vendas" e que ele contém três dashboards e dois relatórios, e você cria um relatório de métricas de uso no dashboard "Nordeste". Em seguida, você usa **Salvar como** para personalizar e convertê-lo em um relatório completo. O conjunto de dados para esse novo relatório contém as métricas de uso *não apenas desse dashboard chamado "Nordeste"*, mas de todos os três dashboards no workspace "Vendas". Por padrão, o relatório exibirá dados do dashboard "Nordeste" e você precisará [remover um filtro](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (único clique) para exibir os dados de todos os três dashboards.
 
 ### <a name="create-a-copy-of-the-usage-report-using-save-as"></a>Criar uma cópia do relatório de uso usando "Salvar como"
 
-Quando você cria uma cópia usando "Salvar como" (personalizar), o Power BI converte o relatório pré-criado somente leitura em um relatório completo.  À primeira vista, ele parece ser exatamente o mesmo relatório. No entanto, agora você pode abrir o relatório no modo de exibição de Edição, adicionar novas visualizações, filtros e páginas, modificar ou excluir visualizações existentes e muito mais. O Power BI salva o novo relatório e conjunto de dados no espaço de trabalho atual. No exemplo a seguir, o espaço de trabalho atual é **mihart**.
+Quando você cria uma cópia usando "Salvar como" (personalizar), o Power BI converte o relatório pré-criado somente leitura em um relatório completo.  À primeira vista, ele parece ser exatamente o mesmo relatório. No entanto, agora você pode abrir o relatório no modo de exibição de Edição, adicionar novas visualizações, filtros e páginas, modificar ou excluir visualizações existentes e muito mais. O Power BI salva o novo relatório e conjunto de dados no workspace atual. No exemplo a seguir, o workspace atual é **mihart**.
 
-1. No relatório de métricas de uso pré-criado, selecione **Arquivo > Salvar como**. O Power BI converte o relatório de métrica de uso em um relatório completo do Power BI. Ele é chamado de relatório de métricas de uso *personalizado*. O relatório de uso personalizado e o conjunto de dados são salvos no espaço de trabalho atual, que é chamado **mihart*.
+1. No relatório de métricas de uso pré-criado, selecione **Arquivo > Salvar como**. O Power BI converte o relatório de métrica de uso em um relatório completo do Power BI. Ele é chamado de relatório de métricas de uso *personalizado*. O relatório de uso personalizado e o conjunto de dados são salvos no workspace atual, que é chamado **mihart*.
 
     ![Salvar como](media/service-usage-metrics/power-bi-save-as.png)
 2. Abra o relatório no modo de edição e [interaja com ele como você faria com qualquer outro relatório do Power BI](service-interact-with-a-report-in-editing-view.md). Por exemplo, adicione novas páginas e crie novas visualizações, adicione filtros, formate as fontes e cores, etc.
@@ -120,15 +120,15 @@ Quando você cria uma cópia usando "Salvar como" (personalizar), o Power BI con
 3. Como alternativa, comece com o novo conjunto de dados e crie um relatório do zero.
 
     ![Guia Conjuntos de dados](media/service-usage-metrics/power-bi-new-dataset.png)
-4. O novo relatório é salvo no espaço de trabalho atual (mihart) e também adicionado à lista de conteúdo **Recente**.
+4. O novo relatório é salvo no workspace atual (mihart) e também adicionado à lista de conteúdo **Recente**.
 
     ![Guia Relatórios](media/service-usage-metrics/power-bi-new-report.png)
 
-### <a name="remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace"></a>Remover o filtro para ver ***todos*** os dados de métricas de uso do espaço de trabalho
+### <a name="remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace"></a>Remover o filtro para ver ***todos*** os dados de métricas de uso do workspace
 
-Para ver as métricas de todos os dashboards ou de todos os relatórios no espaço de trabalho, você precisará remover um filtro. Por padrão, o relatório personalizado é filtrado para exibir métricas somente para o dashboard ou relatório que foi usado para criá-lo.
+Para ver as métricas de todos os dashboards ou de todos os relatórios no workspace, você precisará remover um filtro. Por padrão, o relatório personalizado é filtrado para exibir métricas somente para o dashboard ou relatório que foi usado para criá-lo.
 
-Se, por exemplo, você usou o dashboard chamado "Vendas na Europa"para criar esse novo relatório personalizado, somente dados de uso do dashboard "Vendas na Europa" serão exibidos. Para remover o filtro e habilitar dados de todos os dashboards no espaço de trabalho:
+Se, por exemplo, você usou o dashboard chamado "Vendas na Europa"para criar esse novo relatório personalizado, somente dados de uso do dashboard "Vendas na Europa" serão exibidos. Para remover o filtro e habilitar dados de todos os dashboards no workspace:
 
 1. Abra o relatório personalizado no modo de exibição de Edição.
 
@@ -137,7 +137,7 @@ Se, por exemplo, você usou o dashboard chamado "Vendas na Europa"para criar ess
 
     ![remover o filtro](media/service-usage-metrics/power-bi-report-level-filter2.png)
 
-    Agora, seu relatório personalizado exibe as métricas de todo o espaço de trabalho.
+    Agora, seu relatório personalizado exibe as métricas de todo o workspace.
 
 ## <a name="admin-controls-for-usage-metrics---for-power-bi-administrators"></a>Controles de administração para métricas de uso – para administradores do Power BI
 
@@ -163,6 +163,15 @@ O Power BI está disponível em nuvens nacionais separadas. Essas nuvens oferece
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
+É importante entender as diferenças que podem ocorrer ao comparar as métricas de uso e os logs de auditoria, e por quê. Os *Logs de auditoria* são coletados usando dados do serviço do Power BI, e as *Métricas de uso* são coletadas no cliente. Por essa diferença, talvez as contagens de agregação das atividades nos logs de auditoria nem sempre correspondam às métricas de uso, por estes motivos:
+
+* Às vezes, as métricas de uso podem apresentar uma contagem inferior de atividades devido a conexões de rede inconsistentes, bloqueadores de anúncios ou outros problemas que podem interromper o envio de eventos do cliente.
+* Certos tipos de modos de exibição não são incluídos em métricas de uso, conforme descrito anteriormente neste artigo.
+* Às vezes, as métricas de uso podem apresentar uma contagem superior de atividades, em situações nas quais o cliente é atualizado sem a necessidade de envio de uma solicitação de volta ao serviço do Power BI.
+
+
+Além das possíveis diferenças entre métricas de uso e logs de auditoria, as perguntas e respostas sobre as métricas de uso a seguir podem ser úteis para usuários e administradores:
+
 P: Não consigo executar as métricas de uso em um dashboard ou relatório R: Você só pode ver as métricas de uso para o conteúdo que você possui ou tem permissões para editar.
 
 P: As métricas de uso capturam as exibições de dashboards e relatórios inseridos?
@@ -174,7 +183,7 @@ A2: As métricas de uso são um recurso do Power BI Pro.
 
 P: Os dados não parecem atualizados. Por exemplo, os métodos de distribuição não são exibidos, as páginas do relatório estão ausentes, etc. R: Pode levar até 24 horas para que os dados sejam atualizados.
 
-P: Há quatro relatórios no espaço de trabalho, mas o relatório de métricas de uso exibe apenas três.
+P: Há quatro relatórios no workspace, mas o relatório de métricas de uso exibe apenas três.
 R: O relatório de métricas de uso inclui somente os relatórios (ou dashboards) que foram acessados nos últimos 90 dias.  Se um relatório (ou dashboard) não aparecer, provavelmente ele não foi usado em mais de 90 dias.
 
 ## <a name="next-steps"></a>Próximas etapas

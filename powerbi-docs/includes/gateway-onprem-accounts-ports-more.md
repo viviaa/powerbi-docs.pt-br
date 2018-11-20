@@ -61,14 +61,14 @@ Para referência futura, você pode reiniciar o *gateway do serviço Windows* na
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
-## <a name="support-for-tls-1112"></a>Suporte para TLS 1.1/1.2
+## <a name="support-for-tls-12"></a>Suporte para TLS 1.2
 
-O gateway de dados local usa o protocolo TLS 1.1 ou 1.2 para comunicar-se com o **serviço do Power BI** por padrão. As versões anteriores do gateway de dados local usavam o TLS 1.0 por padrão. Em 15 de março de 2018, o suporte ao TLS 1.0 será encerrado, incluindo a capacidade do gateway de interagir com o **serviço do Power BI** usando o TLS 1.0. É necessário atualizar as instalações do gateway de dados local para garantir que os gateways continuem funcionando.
+Por padrão, o gateway de dados local usa o protocolo TLS 1.2 para se comunicar com o serviço do Power BI. Para garantir que todo o tráfego de gateway use o TLS 1.2, pode ser preciso adicionar ou modificar as seguintes chaves do Registro no computador que esteja executando o serviço de gateway:
 
-É importante observar que o TLS 1.0 ainda é compatível com o gateway de dados local antes de 1º de novembro e é usado pelo gateway como um mecanismo de fallback. Para garantir que todo o tráfego de gateway use o TLS 1.1 ou 1.2 (e evite o uso do TLS 1.0 no gateway), você deverá adicionar ou modificar as seguintes chaves do registro no computador que executa o serviço de gateway:
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > A adição ou modificação dessas chaves do Registro aplica a alteração a todos os aplicativos .NET. Para obter informações sobre as alterações no registro que afetam o TLS em outros aplicativos, consulte [Transport Layer Security (TLS) registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) (Configurações de registro do protocolo TLS).

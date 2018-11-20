@@ -7,33 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359713"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619714"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Agregações no Power BI Desktop (versão prévia)
 
-O uso de **agregações** no Power BI permite a análise interativa em Big Data de formas que anteriormente não eram possíveis. As **agregações** podem reduzir drasticamente o custo de usar grandes conjuntos de dados para a tomada de decisão.
+O uso de **agregações** no Power BI permite a análise interativa em Big Data de maneiras que anteriormente não eram possíveis. As **agregações** podem reduzir drasticamente o custo de usar grandes conjuntos de dados para a tomada de decisão.
 
 ![agregações no Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
 
 A lista a seguir oferece as vantagens de usar **agregações**:
 
-* **Desempenho de consulta em grandes conjuntos de dados** – conforme os usuários interagem com visuais nos relatórios do Power BI, as consultas DAX são enviadas ao conjunto de dados. Impulsione velocidades de consulta armazenando os dados em cache no nível agregado, usando uma fração dos recursos necessários no nível de detalhe. Use Big Data de uma forma que não seria possível de outra maneira.
+* **Desempenho de consulta em Big Data** – conforme os usuários interagem com elementos visuais nos relatórios do Power BI, as consultas DAX são enviadas ao conjunto de dados. Impulsione velocidades de consulta armazenando os dados em cache no nível agregado, usando uma fração dos recursos necessários no nível de detalhe. Use Big Data de uma forma que não seria possível de outra maneira.
 * **Otimização da atualização de dados** – reduza os tamanhos de cache e tempos de atualização armazenando os dados em cache no nível agregado. Acelere o tempo para disponibilizar dados para os usuários.
 * **Obter arquiteturas equilibradas** – permita que o cache na memória do Power BI lide com consultas agregadas, o que ele faz com eficiência. Limite as consultas enviadas à fonte de dados no modo DirectQuery, ajudando a ficar dentro dos limites de simultaneidade. As consultas que passam tendem a ser filtradas, consultas de nível da transação, com as quais os data warehouses e sistemas de Big Data normalmente lidam bem.
 
 ### <a name="table-level-storage"></a>Armazenamento em nível de tabela
-Normalmente, o armazenamento em nível de tabela é usado com o recurso de agregações. Consulte o artigo [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md) para obter mais informações.
+Normalmente, o armazenamento em nível de tabela é usado com o recurso de agregações. Confira o artigo [Modo de armazenamento no Power BI Desktop](desktop-storage-mode.md) para saber mais.
 
 ### <a name="data-source-types"></a>Tipos de fontes de dados
-As agregações são usadas com fontes de dados que representam modelos dimensionais, como data warehouses e data marts, assim como fontes de Big Data baseadas no Hadoop. Este artigo descreve as diferenças de modelagem típicas no Power BI para cada tipo de fonte de dados.
+As agregações são usadas com fontes de dados que representam modelos dimensionais, como data warehouses, data marts e fontes de Big Data baseadas no Hadoop. Este artigo descreve as diferenças de modelagem típicas no Power BI para cada tipo de fonte de dados.
 
 Todas as fontes DirectQuery e de Importação do Power BI (não multidimensionais) trabalham com agregações.
 
@@ -57,7 +57,7 @@ Considere o seguinte modelo, proveniente de uma única fonte de dados. Digamos q
 
 Em vez disso, criamos a tabela **Agregação de vendas** como uma tabela de agregação. Ela está em uma granularidade maior do que **Vendas** e, portanto, conterá muito menos linhas. O número de linhas deve ser igual à soma de **SalesAmount** agrupada por **CustomerKey**, **DateKey** e **ProductSubcategoryKey**. Em vez de bilhões, poderiam ser milhões de linhas, o que é muito mais fácil de gerenciar.
 
-Vamos supor que as seguintes tabelas de dimensões são mais comumente usadas para as consultas com alto valor de negócios. Elas são as tabelas que podem filtrar **Agregação de vendas** usando relações *um-para-muitos* (ou *muitos-para-um*). Outros tipos de relação como *muitos-para-muitos* ou *várias fontes* não são considerados para agregações.
+Vamos supor que as seguintes tabelas de dimensões são mais comumente usadas para as consultas com alto valor de negócios. Elas são as tabelas que podem filtrar **Agregação de vendas** usando relações *um-para-muitos* (ou *muitos-para-um*).
 
 * Geografia
 * Cliente
@@ -77,7 +77,7 @@ Vamos continuar com o exemplo que estamos usando. Podemos definir o modo de arma
 
 ![configurando o modo de armazenamento](media/desktop-aggregations/aggregations_04.jpg)
 
-Quando fazemos isso, a seguinte caixa de diálogo é exibida, informando que as tabelas de dimensões relacionadas serão definidas como modo de armazenamento **Dual**. 
+Quando fazemos isso, a seguinte caixa de diálogo é exibida, informando que as tabelas de dimensões relacionadas podem ser definidas como modo de armazenamento **Duplo**. 
 
 ![caixa de diálogo do modo de armazenamento](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -88,7 +88,23 @@ Defini-las como **Dual** permite que as tabelas de dimensões relacionadas atuem
 
 Para obter mais informações sobre o modo de armazenamento **Dual**, consulte o artigo [modo de armazenamento](desktop-storage-mode.md).
 
-> Observação: a tabela **Agregação de vendas** está oculta. As tabelas de agregação devem ficar ocultas dos consumidores do conjunto de dados. Os consumidores e as consultas referem-se à tabela de detalhes, não à tabela de agregação; eles nem mesmo precisam saber que a tabela de agregação existe.
+### <a name="strong-vs-weak-relationships"></a>Relações fortes versus fracas
+As ocorrências de agregações baseadas em relações exigem relações fortes.
+
+As relações fortes incluem as seguintes combinações, em que as duas tabelas são provenientes de uma *única fonte*.
+
+| Tabela do lado *muitos | Tabela do lado *um* |
+| ------------- |----------------------| 
+| Dupla          | Dupla                 | 
+| Importar        | Importar ou Dupla       | 
+| DirectQuery   | DirectQuery ou Dupla  | 
+
+O único caso no qual uma relação de *origem cruzada* é considerada forte é quando as duas tabelas são de Importação. Relações muitos para muitos são sempre consideradas fracas.
+
+Para ocorrências de agregação de *origem cruzada* que não dependem de relações, confira a seção abaixo sobre agregações com base em colunas "Agrupar por".
+
+### <a name="aggregation-table-is-hidden"></a>Tabela de agregação oculta
+A tabela **Agregação de Vendas** está oculta. As tabelas de agregação devem ficar sempre ocultas dos consumidores do conjunto de dados. Os consumidores e as consultas referem-se à tabela de detalhes, não à tabela de agregação; eles nem mesmo precisam saber que a tabela de agregação existe.
 
 ### <a name="manage-aggregations-dialog"></a>Gerenciar caixa de diálogo de agregações
 Em seguida, definiremos as agregações. Selecione o menu de contexto **Gerenciar agregações** para a tabela **Agregação de vendas** clicando com o botão direito do mouse na tabela.
@@ -155,23 +171,23 @@ A seguinte consulta atinge a agregação, porque as colunas na tabela *Data* est
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_02.jpg)
 
-A consulta a seguir não atingirá a agregação. Apesar de solicitar a soma de **SalesAmount**, ela está executando uma operação agrupar por em uma coluna na tabela **Produto**, que não está na granularidade que pode atingir a agregação. Se você observar as relações no modelo, uma subcategoria de produto poderá ter várias linhas **Produto**; a consulta não seria capaz de determinar a qual produto agregar. Nesse caso, a consulta é revertida para DirectQuery e envia uma consulta SQL à fonte de dados.
+A consulta a seguir não atinge a agregação. Apesar de solicitar a soma de **SalesAmount**, ela está executando uma operação "Agrupar por" em uma coluna na tabela **Produto**, que não está na granularidade que pode atingir a agregação. Se você observar as relações no modelo, uma subcategoria de produto poderá ter várias linhas **Produto**. A consulta não poderia determinar a qual produto agregar. Nesse caso, a consulta é revertida para DirectQuery e envia uma consulta SQL à fonte de dados.
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_03.jpg)
 
-As agregações não são apenas para cálculos simples que executam uma soma simples. Cálculos completos também podem se beneficiar. Conceitualmente, um cálculo complexo é dividido em subconsultas para cada SUM, MIN, MAX e COUNT, e cada subconsulta é avaliada para determinar se a agregação pode ser atingida. Esta lógica não se mantém verdadeira em todos os casos devido à otimização do plano de consulta, mas em geral ela deve ser aplicada. O exemplo a seguir atingirá a agregação:
+As agregações não são apenas para cálculos simples que executam uma soma simples. Cálculos completos também podem se beneficiar. Conceitualmente, um cálculo complexo é dividido em subconsultas para cada SUM, MIN, MAX e COUNT, e cada subconsulta é avaliada para determinar se a agregação pode ser atingida. Esta lógica não se aplica a todos os casos devido à otimização do plano de consulta, mas em geral ela deve ser aplicada. O exemplo a seguir atinge a agregação:
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_04.jpg)
 
-A função COUNTROWS pode se beneficiar das agregações. A seguinte consulta atingirá a agregação, porque há uma agregação **Contar** linhas da tabela definida para a tabela **Vendas**.
+A função COUNTROWS pode se beneficiar das agregações. A seguinte consulta atinge a agregação, porque há uma agregação **Contar** linhas da tabela definida para a tabela **Vendas**.
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_05.jpg)
 
-A função AVERAGE pode se beneficiar das agregações. A consulta a seguir atingirá a agregação, porque AVERAGE torna-se internamente um SUM dividido por um COUNT. Como a coluna **UnitPrice** tem agregações definidas para SUM e COUNT, a agregação é atingida.
+A função AVERAGE pode se beneficiar das agregações. A consulta a seguir atinge a agregação, porque AVERAGE torna-se internamente um SUM dividido por um COUNT. Como a coluna **UnitPrice** tem agregações definidas para SUM e COUNT, a agregação é atingida.
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_06.jpg)
 
-Em alguns casos, a função DISTINCTCOUNT pode se beneficiar de agregações. A consulta a seguir atingirá a agregação, porque há uma entrada GroupBy para **CustomerKey**, que mantém a distinção de **CustomerKey** na tabela de agregação. Esta técnica ainda está sujeita ao limite de desempenho em que mais de aproximadamente de dois a cinco milhões de valores diferentes podem afetar o desempenho da consulta. No entanto, ela pode ser útil em cenários em que há bilhões de linhas da tabela de detalhes e de dois a cinco milhões de valores distintos na coluna. Nesse caso, a contagem distinta poderá ser executada mais rapidamente do que examinar a tabela com bilhões de linhas, mesmo se ela tiver sido armazenada na memória.
+Em alguns casos, a função DISTINCTCOUNT pode se beneficiar de agregações. A consulta a seguir atinge a agregação, porque há uma entrada GroupBy para **CustomerKey**, que mantém a distinção de **CustomerKey** na tabela de agregação. Esta técnica ainda está sujeita ao limite de desempenho em que mais de aproximadamente de dois a cinco milhões de valores diferentes podem afetar o desempenho da consulta. No entanto, ela pode ser útil em cenários em que há bilhões de linhas da tabela de detalhes e de dois a cinco milhões de valores distintos na coluna. Nesse caso, a contagem distinta poderá ser executada mais rapidamente do que examinar a tabela com bilhões de linhas, mesmo se ela tiver sido armazenada na memória.
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_07.jpg)
 
@@ -197,11 +213,11 @@ A tabela a seguir mostra as agregações para a tabela **Agregação de atividad
 
 ### <a name="group-by-columns"></a>Agrupar por colunas
 
-Neste exemplo, as entradas **GroupBy** **não são opcionais**; sem elas, as agregações não seriam atingidas. Esse é um comportamento diferente para usar agregações com base em relações, que é abrangido pelo exemplo de modelo dimensional fornecido anteriormente neste artigo.
+Neste exemplo, as entradas **GroupBy** **não são opcionais**. Sem elas, as agregações não seriam atingidas. Esse é um comportamento diferente para usar agregações com base em relações, que é abrangido pelo exemplo de modelo dimensional fornecido anteriormente neste artigo.
 
 ### <a name="query-examples"></a>Exemplos de consulta
 
-A consulta a seguir atingirá a agregação, porque a coluna **Data da atividade** é abrangida pela tabela de agregação. A agregação Contar linhas da tabela é usada pela função COUNTROWS.
+A consulta a seguir atinge a agregação, porque a coluna **Data da atividade** é abrangida pela tabela de agregação. A agregação Contar linhas da tabela é usada pela função COUNTROWS.
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_08.jpg)
 
@@ -253,7 +269,7 @@ A consulta a seguir atinge a agregação, porque CalendarMonth é abrangido pela
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_09.jpg)
 
-A consulta a seguir não atingirá a agregação, porque CalendarDay não é abrangido pela tabela de agregação.
+A consulta a seguir não atinge a agregação, porque CalendarDay não é abrangido pela tabela de agregação.
 
 ![exemplo de consulta](media/desktop-aggregations/aggregations-code_10.jpg)
 
@@ -263,7 +279,7 @@ A seguinte consulta de inteligência de tempo não atingirá a agregação porqu
 
 ## <a name="caches-should-be-kept-in-sync"></a>Os caches devem ser mantidos em sincronia
 
-**Agregações** que combinam o modo de armazenamento DirectQuery e Importação e/ou Dual poderão retornar dados diferentes se o cache na memória não for mantido sincronizado com os dados de origem. A execução da consulta não tentará ocultar os problemas de dados, filtrando, por exemplo, os resultados de DirectQuery para coincidir com os valores armazenados em cache. Esses recursos são otimizações de desempenho e devem ser usados apenas de maneiras que não comprometam sua capacidade de atender aos requisitos de negócios. É sua responsabilidade conhecer seus fluxos de dados; portanto projete de acordo com isso. Há técnicas estabelecidas para lidar com esses problemas na origem, se necessário.
+**Agregações** que combinam o modo de armazenamento DirectQuery e Importação e/ou Dual poderão retornar dados diferentes se o cache na memória não for mantido sincronizado com os dados de origem. A execução da consulta não tenta ocultar os problemas de dados, filtrando, por exemplo, os resultados de DirectQuery para coincidir com os valores armazenados em cache. Esses recursos são otimizações de desempenho e devem ser usados apenas de maneiras que não comprometam sua capacidade de atender aos requisitos de negócios. É sua responsabilidade conhecer seus fluxos de dados; portanto projete de acordo com isso. Há técnicas estabelecidas para lidar com esses problemas na origem, se necessário.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -277,4 +293,3 @@ Artigos do DirectQuery:
 
 * [Usar o DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery no Power BI](desktop-directquery-data-sources.md)
-

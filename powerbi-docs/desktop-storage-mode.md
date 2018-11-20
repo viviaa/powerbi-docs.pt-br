@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: df61b9c68407ef0d00d1d5981c57021e7659cfff
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359736"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619484"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Modo de armazenamento no Power BI Desktop (versão prévia)
 
@@ -43,16 +43,6 @@ A definição do modo de armazenamento no Power BI Desktop é um dos três recur
 
 * **Modo de armazenamento**: agora você pode especificar quais visuais exigem uma consulta para fontes de dados de back-end. Visuais que não exigem uma consulta serão importados, mesmo se forem baseados no DirectQuery. Esse recurso ajuda a melhorar o desempenho e reduzir a carga de back-end. Antes, mesmo visuais simples como as segmentações iniciavam consultas enviadas para fontes de back-end. O modo de armazenamento é descrito em detalhes neste artigo.
 
-## <a name="enable-the-storage-mode-preview-feature"></a>Habilitar a versão prévia do recurso do modo de armazenamento
-
-O recurso do modo de armazenamento está em versão prévia e precisa ser habilitado no Power BI Desktop. Para habilitar o modo de armazenamento, selecione **Arquivo** > **Opções e configurações** > **Opções** > **Versões prévias dos recursos** e marque a caixa de seleção **Modelos compostos**. 
-
-![O painel “Versões prévias dos recursos”](media/desktop-composite-models/composite-models_02.png)
-
-Para habilitar o recurso, reinicie o Power BI Desktop.
-
-![A janela “O recurso exige uma reinicialização”](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="use-the-storage-mode-property"></a>Usar a propriedade de modo de armazenamento
 
 O modo de armazenamento é uma propriedade que pode ser definida em cada tabela do modelo. Para definir o modo de armazenamento, no painel **Campos**, clique com o botão direito do mouse na tabela cujas propriedades você deseja definir e selecione **Propriedades**.
@@ -75,19 +65,7 @@ Alterar uma tabela para **Importação** é um operação *irreversível*. Essa 
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Restrições em tabelas duplas e do DirectQuery
 
-As tabelas duplas têm as mesmas restrições que as DirectQuery. Essas restrições incluem transformações em M limitadas e as funções restritas do DAX em colunas calculadas. Para mais informações, confira [Implicações do uso do DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
-
-## <a name="relationship-rules-on-tables-with-different-storage-modes"></a>Regras de relação em tabelas com diferentes modos de armazenamento
-
-As relações precisam atender às regras baseadas no modo de armazenamento das tabelas relacionadas. Esta seção fornece exemplos de combinações válidas. Para mais informações, confira [Relações muitos para muitos no Power BI Desktop (versão prévia)](desktop-many-to-many-relationships.md).
-
-Em um conjunto de dados com uma única fonte de dados, são válidas as seguintes combinações de relações *um para muitos*:
-
-| Tabela do lado *muitos* | Tabela do lado *um* |
-| ------------- |----------------------| 
-| Dupla          | Dupla                 | 
-| Importar        | Importar ou Dupla       | 
-| DirectQuery   | DirectQuery ou Dupla  | 
+As tabelas duplas têm as mesmas restrições de função que as tabelas DirectQuery. Essas restrições incluem transformações em M limitadas e as funções restritas do DAX em colunas calculadas. Para mais informações, confira [Implicações do uso do DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## <a name="propagation-of-dual"></a>Propagação de Dupla
 Considere o seguinte modelo simples, em que todas as tabelas são de uma única fonte que dá suporte à Importação e DirectQuery.
@@ -98,14 +76,11 @@ Digamos que, de início, todas as tabelas nesse modelo sejam do tipo DirectQuery
 
 ![Janela de aviso do modo de armazenamento](media/desktop-storage-mode/storage-mode_05.png)
 
-As tabelas de dimensões (*Cliente*, *Data* e *Geografia*) precisam ser definidas como **Dupla** em conformidade com as regras de relação descritas anteriormente. Em vez de precisar definir essas tabelas como **Dupla** antecipadamente, você pode defini-las em uma única operação.
+As tabelas de dimensão (*Customer*, *Geography* e *Date*) podem ser definidas como **Dupla** para reduzir o número de relações fracas no conjunto de dados e melhorar o desempenho. Normalmente, as relações fracas envolvem pelo menos uma tabela do DirectQuery, na qual a lógica de associação não pode ser enviada para os sistemas de origem. O fato de que as tabelas **Duplas** podem agir como DirectQuery ou Importação ajuda a evitar isso.
 
 A lógica de propagação é projetada para ajudar com os modelos que contêm muitas tabelas. Digamos que você tenha um modelo com 50 tabelas e que apenas determinadas tabelas de fatos (transacionais) precisem ser armazenadas em cache. A lógica no Power BI Desktop descobre o conjunto mínimo de tabelas de dimensões que precisa ser definido como **Duplo** para que você não precise fazer isso.
 
 A lógica de propagação percorre somente em direção a um dos lados das relações **um para muitos**.
-
-* Não é permitido alterar a tabela *Cliente* para **Importação** – em vez de alterar *SurveyResponse* – por causa de suas relações com as tabelas DirectQuery *Vendas* e *SurveyResponse*.
-* É permitido alterar a tabela *Cliente* para **Dupla** – em vez de alterar *SurveyResponse*. A lógica de propagação define a tabela *Geografia* para **Dupla**.
 
 ## <a name="storage-mode-usage-example"></a>Exemplo de uso do modo de armazenamento
 Continuemos com o exemplo da seção anterior e imaginemos a aplicação das seguintes configurações de propriedade do modo de armazenamento:
@@ -191,4 +166,3 @@ Para obter mais informações sobre modelos compostos e DirectQuery, confira os 
 * [Relações muitos para muitos no Power BI Desktop (versão prévia)](desktop-many-to-many-relationships.md)
 * [Usar DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery no Power BI](desktop-directquery-data-sources.md)
-

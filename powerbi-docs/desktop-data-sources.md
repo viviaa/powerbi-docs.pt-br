@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336888"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619806"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.
@@ -30,15 +30,13 @@ Selecionar **Mais...** no menu **Mais Comuns** exibe a janela **Obter Dados**. V
 
 > [!NOTE]
 > A equipe do Power BI está sempre expandindo as fontes de dados disponíveis para o **Power BI Desktop** e o **serviço do Power BI**. Assim, você verá com frequência as versões anteriores das fontes de dados de trabalho em andamento marcadas como *Beta* ou *Visualização*. Toda fonte de dados marcada como *Beta* ou *Visualização* tem suporte e funcionalidade limitados e não deve ser usada em ambientes de produção.
-> 
-> 
 
 ## <a name="data-sources"></a>Fontes de Dados
 Tipos de dados são organizados nas categorias a seguir:
 
 * Todos
 * Arquivo
-* Banco de dados
+* Banco de Dados
 * Power BI
 * Azure
 * Serviços online
@@ -80,15 +78,14 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Impala
 * Google BigQuery
 * Snowflake
+* Conector do BI
+* Exasol
 * Dremio (Beta)
-* Exasol (beta)
-* Jethro (beta)
+* Jethro (Beta)
 * Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Alguns conectores de banco de dados exigem que você os habilite selecionando **Arquivo > Opções e configurações > Opções**, em seguida, **Recursos de Visualização** e habilitando o conector. Se você não vir alguns dos conectores mencionados acima e quiser usá-los, verifique suas configurações de **Recursos de Visualização**. Observe também que toda fonte de dados marcada como *Beta* ou *Visualização* tem suporte e funcionalidade limitados e não deve ser usada em ambientes de produção.
-> 
-> 
 
 A imagem a seguir mostra a janela **Obter Dados** para **Banco de dados**.
 
@@ -111,11 +108,11 @@ A categoria **Azure** fornece as seguintes conexões de dados:
 * Armazenamento de Blobs do Azure
 * Armazenamento de Tabelas do Azure
 * Azure Cosmos DB (Beta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * Consulta Interativa do HDInsight
-* Azure KustoDB (beta)
+* Azure Data Explorer (Beta)
 
 A imagem a seguir mostra a janela **Obter Dados** para **Azure**.
 
@@ -131,7 +128,8 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * Central do Microsoft Dynamics 365 Business (local)
 * Common Data Service para Aplicativos (Beta)
 * Microsoft Azure Consumption Insights (Beta)
-* Visual Studio Team Services (Beta)
+* Azure DevOps (Beta)
+* Azure DevOps Server (Beta)
 * Objetos do Salesforce
 * Relatórios do Salesforce
 * Google Analytics
@@ -187,8 +185,6 @@ A imagem a seguir mostra a janela **Obter Dados** para **Outros**.
 
 > [!NOTE]
 > Neste momento, não é possível se conectar a fontes de dados personalizadas protegidas usando o Azure Active Directory.
-> 
-> 
 
 ## <a name="connecting-to-a-data-source"></a>Conectando a uma Fonte de Dados
 Para se conectar a uma fonte de dados, selecione a fonte de dados na janela **Obter Dados** e selecione **Conectar**. Na imagem a seguir, a opção **Web** é selecionada na categoria de conexão de dados **Outros** .
