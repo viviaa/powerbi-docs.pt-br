@@ -1,5 +1,5 @@
 ---
-title: 'Início Rápido: Explorar dashboards e relatórios nos aplicativos móveis do Power BI'
+title: 'Início Rápido: Explorar dashboards e relatórios nos aplicativos móveis'
 description: Neste início rápido, você explora um dashboard e um relatório de exemplo nos aplicativos móveis do Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: quickstart
-ms.date: 05/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
-ms.openlocfilehash: 89f45409607cbe8da6cb1b167b6e71238d6edde0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548800"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157254"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Início Rápido: Explorar dashboards e relatórios nos aplicativos móveis do Power BI
 Neste início rápido, você explora um dashboard e um relatório de exemplo no aplicativo móvel do Power BI em um telefone Android. Você também pode acompanhar em outros aplicativos móveis. 
@@ -48,9 +48,9 @@ A primeira etapa do início rápido é baixar a amostra de Análise de Varejo no
 
     ![Ícone de navegação global](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. No painel de navegação esquerdo, selecione **Espaços de Trabalho** > **Meu Espaço de Trabalho**.
+2. No painel de navegação esquerdo, selecione **Workspaces** > **Meu Workspace**.
 
-    ![Meu espaço de trabalho](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
+    ![Meu Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
 3. No canto inferior esquerdo, selecione **Obter Dados**.
    
@@ -62,13 +62,13 @@ A primeira etapa do início rápido é baixar a amostra de Análise de Varejo no
 
 4. Selecione **Exemplo de Análise de Varejo**.
  
-    ![Exemplo de análise de varejo](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
+    ![Exemplo de Análise de Varejo](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
  
 8. Selecione **Conectar**.  
   
    ![Exemplo de Análise de Varejo – Conectar](./media/mobile-apps-quickstart-view-dashboard-report/retail16.png)
    
-5. O Power BI importa a amostra, adicionando um novo dashboard, relatório e conjunto de dados a Meu Espaço de Trabalho.
+5. O Power BI importa a amostra, adicionando um novo dashboard, relatório e conjunto de dados a Meu Workspace.
    
    ![Dashboard de Exemplo de Análise de Varejo](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-service-opportunity-sample.png)
 
@@ -79,13 +79,13 @@ OK, você está pronto para exibir o exemplo em seu dispositivo Android.
 
 1.  Toque no botão de navegação global ![Botão de navegação global](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-iphone-global-nav-button.png).
 
-2.  Toque em **Espaços de Trabalho** > **Meu Espaço de Trabalho**
+2.  Toque em **Workspaces** > **Meu Workspace**
 
-    ![Meu espaço de trabalho](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
+    ![Meu Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
 
 3. Toque no dashboard Exemplo de Análise de Varejo para abri-lo.
  
-    ![Dashboards em Meu Espaço de Trabalho](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
+    ![Dashboards em Meu Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
    
     Uma notação embaixo de cada nome de dashboard (neste exemplo, a letra “C”) mostra como os dados em cada dashboard são classificados. Leia mais sobre [classificação de dados no Power BI](../../service-data-classification.md).
 
@@ -135,7 +135,7 @@ Depois de concluir este início rápido, você poderá excluir o dashboard, o re
 
 1. Abra o serviço do Power BI (app.powerbi.com) e entre.
 
-2. No painel de navegação esquerdo, selecione **Espaços de Trabalho** > **Meu Espaço de Trabalho**.
+2. No painel de navegação esquerdo, selecione **Workspaces** > **Meu Workspace**.
 
     Está vendo a estrela amarela indicando que é um favorito?
 

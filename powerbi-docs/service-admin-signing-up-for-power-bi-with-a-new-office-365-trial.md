@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5089be0cb8bd96573a0d1b3e25c742c1f559253b
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736839"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850374"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Inscrever-se no Power BI com uma nova versão de avaliação do Office 365
 
@@ -27,7 +27,7 @@ Este artigo descreve uma maneira alternativa de se inscrever no Power BI, usando
 
 1. Quando concluir esse processo de inscrição, receberá um novo nome de entrada parecido com you@yourcompany.onmicrosoft.com. Essa é a entrada que você usará com o Power BI.
 
-1. Inscreva-se no Power BI [usando este link](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1). Ao receber a solicitação, entre usando o nome de entrada e a senha que você selecionou para o Office 365 na etapa anterior.
+1. Inscreva-se no Power BI [usando este link](https://app.powerbi.com/signupredirect?pbi_source=web). Ao receber a solicitação, entre usando o nome de entrada e a senha que você selecionou para o Office 365 na etapa anterior.
 
 1. E isso é tudo! Quando terminar, você será redirecionado para o Power BI. Se você tiver problemas para entrar na nova conta, tente usar uma sessão privada do navegador.
 

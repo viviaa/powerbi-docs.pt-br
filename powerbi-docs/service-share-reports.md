@@ -11,19 +11,19 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9fed01feb86530dbee10e446d41799a3e2ccd9e3
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: 38a735a6cc258f3285787202b832ade9c6525994
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271499"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678962"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Compartilhar um relatório do Power BI filtrado com seus colegas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir seus relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Com o compartilhamento, você e os destinatários precisarão de uma [licença do Power BI Pro](service-features-license-type.md) ou então o conteúdo precisará estar em uma [capacidade Premium](service-premium.md). Sugestões? A equipe do Power BI sempre está interessada em seus comentários. Portanto, acesse o [site da Comunidade do Power BI](https://community.powerbi.com/).
 
-Você pode compartilhar um relatório com colegas de trabalho no mesmo domínio de email, da maioria dos lugares no serviço Power BI: seus Favoritos, Recentes, Compartilhado comigo (se o proprietário permite isso), Meu Espaço de Trabalho ou outros espaços de trabalho. Quando você compartilha um relatório, as pessoas com quem você o compartilha podem exibi-lo e interagir com ele, mas não podem editá-lo. Elas veem os mesmos dados que você no relatório, a menos que a [RLS (segurança em nível de linha)](service-admin-rls.md) seja aplicada. 
+Você pode compartilhar um relatório com colegas de trabalho no mesmo domínio de email, da maioria dos lugares no serviço Power BI: seus Favoritos, Recentes, Compartilhado comigo (se o proprietário permite isso), Meu Workspace ou outros workspaces. Quando você compartilha um relatório, as pessoas com quem você o compartilha podem exibi-lo e interagir com ele, mas não podem editá-lo. Elas veem os mesmos dados que você no relatório, a menos que a [RLS (segurança em nível de linha)](service-admin-rls.md) seja aplicada. 
 
 ## <a name="filter-and-share-a-report"></a>Filtrar e compartilhar um relatório
 Se você deseja compartilhar uma versão filtrada de um relatório? Talvez um relatório que mostre apenas os dados para uma cidade específica, vendedor ou ano. Faça isso criando uma URL personalizada.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 0ffcec94d015223df596aa6ac941f7400a89e747
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396740"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51718058"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>O que há de novo no serviço do Power BI
@@ -655,7 +655,7 @@ Confira o [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-ser
 
 **23 de abril de 2015**
 
-* Você pode visualizar e explorar os seus dados do **Microsoft Dynamics Marketing** com nosso novo pacote de conteúdo! Você pode ler a [postagem do nosso blog](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) e [documentação](service-connect-to-microsoft-dynamics-marketing.md) para obter mais informações.
+* Você pode visualizar e explorar os seus dados do **Microsoft Dynamics Marketing** com nosso novo pacote de conteúdo! Você pode ler a nossa [postagem do blog](http://blogs.msdn.com/b/powerbi/archive/2015/04/23/monitor-and-explore-your-microsoft-dynamics-marketing-data-with-power-bi.aspx) para obter mais informações.
 
 **15 de abril de 2015**
 

@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973363"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850581"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrar relatórios usando parâmetros da cadeia de caracteres de consulta na URL
 
@@ -47,7 +47,7 @@ O tipo de campo pode ser número, data/hora ou cadeia de caracteres. O tipo usad
 
 * As **cadeias de caracteres** precisam ser colocadas entre aspas simples, como ‘nome do gerenciador’.
 * Os **números** não exigem nenhuma formatação especial
-* **Datas e horas** precisam estar entre aspas únicas e ser precedidas pela palavra **DateTime**.
+* **Datas e horas** devem estar entre aspas simples. No OData v3, elas devem ser precedidas pela palavra datetime, que não é necessária no OData v4.
 
 Se ainda estiver confuso, continue lendo e nós explicaremos detalhadamente.  
 
@@ -167,7 +167,7 @@ Essa discrepância é útil quando você deseja ver resultados diferentes: filtr
 
 Há alguns pontos a serem considerados ao usar os parâmetros da cadeia de caracteres de consulta.
 
-* Quando o operador *in* é usado, os valores à direita de *in* podem ser uma lista separada por vírgulas entre parênteses.    
+* Quando o operador *in* é usado, os valores à direita de *in* devem ser uma lista separada por vírgulas entre parênteses.    
 * No Servidor de Relatórios do Power BI, você pode [passar parâmetros de relatório](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) incluindo-os em uma URL de relatório. Esses parâmetros de URL não são prefixados, porque são passados diretamente para o mecanismo de processamento de relatório.
 * A filtragem da cadeia de caracteres de consulta não funciona com [Publicar na Web](service-publish-to-web.md).
 * [Inserir com Web Part de Relatório no SharePoint Online](service-embed-report-spo.md) não é compatível com filtros de URL.

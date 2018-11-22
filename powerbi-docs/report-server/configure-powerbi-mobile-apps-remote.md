@@ -1,5 +1,5 @@
 ---
-title: Configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório remotamente
+title: Configurar o acesso do aplicativo móvel do iOS a um servidor de relatório remotamente
 description: Saiba como configurar aplicativos móveis iOS remotamente para o seu servidor de relatório.
 author: maggiesMSFT
 manager: kfile
@@ -7,25 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: bbade67c9510b8d316364d991c09444712309514
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 538bb802998003dba63b6c63cca2068b2d7b69fa
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722168"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157415"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório remotamente
 
-Neste artigo, você aprenderá a usar a ferramenta MDM da sua organização para configurar o acesso de aplicativo móvel do Power BI iOS a um servidor de relatório. Para fazer isso, os administradores de TI criam uma política de configuração do aplicativo com as informações necessárias a serem enviadas por push ao aplicativo. 
+Neste artigo, você aprenderá a usar a ferramenta MDM da sua organização para configurar o acesso de aplicativo móvel do Power BI iOS a um servidor de relatório. Para configurar o acesso, os administradores de TI criam uma política de configuração do aplicativo com as informações necessárias a serem enviadas por push ao aplicativo. 
 
- Em seguida, os usuários do aplicativo móvel do Power BI iOS podem se conectar com o servidor de relatório da organização mais facilmente, porque a conexão do servidor de relatório já está configurada. 
-
+ Com a conexão do servidor de relatório já configurada, os usuários do aplicativo móvel do Power BI iOS podem se conectar com o servidor de relatório da organização mais facilmente. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Criar a política de configuração do aplicativo na ferramenta MDM 
 
-Como administrador, essas são as etapas a que seguir no Microsoft Intune para criar a política de configuração do aplicativo. As etapas e a experiência de criação da política de configuração de aplicativo podem ser diferentes em outras ferramentas MDM. 
+Como administrador, veja as etapas a serem seguidas no Microsoft Intune para criar a política de configuração do aplicativo. As etapas e a experiência de criação da política de configuração de aplicativo podem ser diferentes em outras ferramentas MDM. 
 
 1. Conecte a ferramenta MDM. 
 2. Crie e nomeie uma nova política de configuração do aplicativo. 
@@ -39,7 +38,7 @@ A tabela a seguir indica os pares.
 | com.microsoft.powerbi.mobile.ServerURL | Cadeia de caracteres | URL do Servidor de Relatório </br> Deve começar com http/https |
 | com.microsoft.powerbi.mobile.ServerUsername | Cadeia de caracteres | [opcional] </br> O nome de usuário a ser usado para conectar o servidor. </br> Se não existir, o aplicativo solicitará ao usuário que digite o nome de usuário para a conexão.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Cadeia de caracteres | [opcional] </br> O valor padrão é "Servidor de relatório" </br> Um nome amigável usado no aplicativo para representar o servidor | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | O valor padrão é True </br> Se definido como "True", em seguida, isso substituirá qualquer definição de Servidor de Relatório que já esteja no dispositivo móvel (servidores existentes já configurados serão excluídos). </br> Substituir a definição para True também evita que o usuário remova essa configuração. </br> Se definido como "False", adicionará os valores enviados por push, mantendo as configurações atuais. </br> Se a mesma URL de servidor já estiver configurada no aplicativo móvel, o aplicativo manterá a configuração e não solicitará ao usuário uma nova autenticação para o mesmo servidor. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | O valor padrão é True </br>Quando definido como "True", substituirá qualquer definição do Servidor de Relatório que já estiver no dispositivo móvel. Os servidores existentes que já estão configurados serão excluídos. </br> Substituir a definição para True também evita que o usuário remova essa configuração. </br> Se definido como "False", adicionará os valores enviados por push, mantendo as configurações atuais. </br> Se a mesma URL do servidor já estiver configurada no aplicativo móvel, o aplicativo deixará essa configuração como está. O aplicativo não solicita ao usuário para se autenticar novamente no mesmo servidor. |
 
 Veja um exemplo de definição de política de configuração usando o Intune.
 
@@ -47,7 +46,7 @@ Veja um exemplo de definição de política de configuração usando o Intune.
 
 ## <a name="end-users-connecting-to-a-report-server"></a>Conexão dos usuários finais com um servidor de relatório
 
-Depois de publicar a política de configuração do aplicativo, usuários e dispositivos que pertencem à lista de distribuição definida para essa política terão a seguinte experiência quando iniciarem o aplicativo móvel do Power BI iOS. 
+ Digamos que você publica a política de configuração de aplicativo de uma lista de distribuição. Quando os usuários e dispositivos dessa lista de distribuição iniciarem o aplicativo móvel do iOS, eles terão a seguinte experiência. 
 
 1. Uma mensagem informará que o aplicativo móvel está configurado com um servidor de relatório. Toque em **Entrar**.
 

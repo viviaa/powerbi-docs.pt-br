@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.openlocfilehash: 56b6c954aa49f8adf0aa479f143fb11b932c107e
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: 8cdeed0c5575a8405ae5db6d1eaca522ab0597cb
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736954"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679422"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Perguntas frequentes sobre o Power BI Embedded
 
@@ -119,10 +119,10 @@ https://app.powerbi.com/ > ? > Sobre o Power BI
 ![Sobre o Power BI](media/embedded-faq/about-01.png)
 ![Região do locatário](media/embedded-faq/tenant-location-01.png)
 
-### <a name="what-is-supported-with-the-communicating-sequential-processes-csp-channel"></a>O que é compatível com o canal de CSP (Processos Sequenciais de Comunicação)?
+### <a name="what-is-supported-with-the-cloud-solution-provider-csp-channel"></a>O que é compatível com o canal CSP (Provedor de Solução de Nuvem)?
 
 * É possível criar o PBIE para seu locatário com o tipo de assinatura CSP
-* A conta de parceiro pode ser conectada ao locatário do cliente e adquirir o PBIE para o locatário do cliente, especificando o usuário do locatário do cliente como administrador de capacidade do Power BI
+* A conta de parceiro pode ser conectada ao locatário do cliente e comprar o PBIE para o locatário do cliente, especificando o usuário do locatário do cliente como administrador de capacidade do Power BI
 
 ### <a name="why-do-i-get-an-unsupported-account-message"></a>Por que recebo uma mensagem de conta sem suporte?
 
