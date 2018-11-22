@@ -10,18 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 4fc036bf9191d0ed56be11e69152e579cfc5102d
+ms.sourcegitcommit: 883d7e76816f2696e88ae391744ac6c7b1cb59c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266198"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51688386"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Monitorar as capacidades do Power BI Premium e do Power BI Embedded
 
 Este artigo fornece uma visão geral do monitoramento de métricas para suas capacidades do Power BI Premium. O monitoramento do uso da capacidade permite que você adote uma abordagem embasada para gerenciar suas capacidades.
 
-Você pode monitorar a capacidade com o aplicativo de Métricas de Capacidade do Power BI Premium ou no portal de administração. É recomendável usar o aplicativo, pois ele fornece muito mais detalhes, mas este artigo aborda as duas opções. **A versão atual do aplicativo é 1.8 (lançada em 7 de novembro de 2018).**
+Você pode monitorar a capacidade com o aplicativo de Métricas de Capacidade do Power BI Premium ou no portal de administração. É recomendável usar o aplicativo, pois ele fornece muito mais detalhes, mas este artigo aborda as duas opções.
+
+**A versão atual do aplicativo é 1.9 (lançada em 14 de novembro de 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -87,7 +91,7 @@ A área **Resumo** mostra uma exibição de suas capacidades com base em entidad
 | --- | --- |
 | **Entidades** | * O número das capacidades que você possui<br> * O número distinto de conjuntos de dados em sua capacidade<br> * O número distinto de workspaces em sua capacidade |
 | **Sistema** | * O uso médio da memória em GB nos últimos sete dias<br> * Mais alto consumo de memória em GB nos últimos sete dias e a hora local em que ele ocorreu<br> * O número de vezes que a CPU excedeu 80% dos limites nos últimos sete dias, divididas em buckets de três minutos<br> * A maioria das vezes em que a CPU excedeu 80% nos últimos sete dias, divididas em buckets de uma hora e a hora local em que isso ocorreu<br> * O número de vezes que as conexões de Consulta direta/dinâmica excederam 80% dos limites nos últimos sete dias, divididas em buckets três minutos<br> * A maioria das vezes em que as conexões de Consulta direta/dinâmicas excederam 80% nos últimos sete dias, divididas em buckets de uma hora, e a hora local em que isso ocorreu |
-| **Cargas de trabalho do conjunto de dados** | * Número total de atualizações nos últimos sete dias<br> * Número total de atualizações com êxito nos últimos sete dias<br> * Número total de atualizações com falha nos últimos sete dias<br> * Número total de atualizações com falha devido à falta de memória<br> * A duração média da atualização é o tempo necessário para concluir a operação, em minutos<br> * O tempo de espera médio da atualização é a latência média entre o horário agendado e o início da operação, em minutos<br> * Número total de consultas executadas nos últimos sete dias<br> * Número total de consultas com êxito nos últimos sete dias<br> * Número total de consultas com falha nos últimos sete dias<br> * A duração média da consulta é o tempo necessário para concluir a operação, em minutos<br> * Número total de modelos removidos devido à pressão da memória |
+| **Cargas de trabalho do conjunto de dados** | * Número total de atualizações nos últimos sete dias<br> * Número total de atualizações com êxito nos últimos sete dias<br> * Número total de atualizações com falha nos últimos sete dias<br> * Número total de atualizações com falha devido à falta de memória<br> * A duração média da atualização é o tempo necessário para concluir a operação, em minutos<br> * O tempo de espera médio da atualização é a latência média entre o horário agendado e o início da operação, em minutos<br> * Número total de consultas executadas nos últimos sete dias<br> * Número total de consultas com êxito nos últimos sete dias<br> * Número total de consultas com falha nos últimos sete dias<br> * A duração média da consulta é o tempo necessário para concluir a operação, em minutos<br> * Número total de modelos removidos devido à pressão da memória<br> * Tamanho médio dos conjuntos de dados <br> * Contagem média de conjuntos de dados carregados na memória |
 |  |  |
 
 #### <a name="refreshes-area"></a>Área de Atualizações
@@ -136,6 +140,8 @@ A área **Conjuntos de Dados** contém as métricas a seguir.
 | --- | --- |
 | **Contagens de remoção do conjunto de dados** | * Total: o número total de *remoções* de conjunto de dados para cada capacidade. Quando uma capacidade enfrenta a pressão de memória, o nó remove um ou mais conjuntos de dados da memória. Conjuntos de dados que estão inativos (sem nenhuma operação de atualização/consulta em execução no momento) são removidos primeiro. Em seguida, a ordem de remoção se baseia em uma medida de LRU (“menos utilizado recentemente”).|
 | **Remoções de conjunto de dados e consumo de memória por hora** | * Remoções de conjunto de dados versus consumo de memória em GB, dividido em buckets de uma hora, relatado em hora local |
+| **Contagens de conjunto de dados carregados por hora** | * Número de conjuntos de dados carregados na memória versus o consumo de memória em GB, dividido em buckets de uma hora, relatados na hora local |
+| **Tamanhos de dados**  | * Tamanho máximo: o tamanho máximo do conjunto de dados em MB para o período exibido |
 |  |  |
 
 ### <a name="paginated-reports-tab"></a>Guia Relatórios paginados
