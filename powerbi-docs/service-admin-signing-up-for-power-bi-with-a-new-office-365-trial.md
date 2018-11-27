@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 26fa709eee00607911b2bee2e8bf3f5f1cba732f
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850374"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289095"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Inscrever-se no Power BI com uma nova versão de avaliação do Office 365
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Este artigo descreve uma maneira alternativa de se inscrever no Power BI, usando uma versão de avaliação do Office 365. Se você tiver problemas durante a inscrição no Power BI com seu email de trabalho, verifique se é um [endereço de email que pode ser usado com o Power BI](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi). Se não der certo, tente se inscrever para uma versão de avaliação do Office 365 primeiro e, depois, se inscrever no Power BI. Você poderá usar o Power BI mesmo após o vencimento da avaliação do Office 365.
+Este artigo descreve uma maneira alternativa de se inscrever no Power BI, usando uma versão de avaliação do Office 365. Se você tiver problemas durante a inscrição no Power BI com seu email de trabalho, verifique se é um [endereço de email que pode ser usado com o Power BI](service-self-service-signup-for-power-bi.md#supported-email-addresses). Se não der certo, tente se inscrever para uma versão de avaliação do Office 365 primeiro e, depois, se inscrever no Power BI. Você poderá usar o Power BI mesmo após o vencimento da avaliação do Office 365.
 
 1. Inscreva-se para uma [versão de avaliação do Office 365 no site do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
