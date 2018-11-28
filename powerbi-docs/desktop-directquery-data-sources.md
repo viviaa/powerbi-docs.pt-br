@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 098447f4d0c0b1dc9534c91e84827c4cefb8850c
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223388"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452535"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Fontes de dados com suporte do DirectQuery no Power BI
 O **Power BI Desktop** e o **serviço do Power BI** têm várias fontes de dados às quais você pode se conectar para obter acesso aos dados. Este artigo descreve quais fontes de dados do Power BI dão suporte ao método de conexão conhecido como **DirectQuery**. Para obter mais informações sobre o DirectQuery, consulte [**DirectQuery no Power BI**](desktop-directquery-about.md).
@@ -62,7 +62,7 @@ A tabela a seguir especifica se um **Gateway de dados local** é necessário par
 | Amazon Redshift |Não |
 | Impala (versão 2.x) |Sim |
 | Snowflake |Sim |
-| Spark (beta), versão 0.9 e posterior |Ainda não tem suporte no **serviço do Power BI** |
+| Spark (beta), versão 0.9 e posterior |Sim |
 | Azure HDInsight Spark (Beta) |Não |
 | IBM Netezza |Sim |
 | Servidor de Aplicativos SAP Business Warehouse |Sim |
