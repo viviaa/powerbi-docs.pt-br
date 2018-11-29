@@ -1,31 +1,31 @@
 ---
-title: Blocos de dashboard no serviço do Power BI
-description: Tudo sobre blocos de dashboard no Power BI. Isso inclui blocos que são criados no SSRS (SQL Server Reporting Services).
+title: Introdução aos blocos de dashboard para designers do Power BI
+description: Tudo sobre blocos de dashboard no Power BI. Isso inclui blocos que são criados nos relatórios do SSRS (SQL Server Reporting Services).
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/3/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 76b8eaff949ee56d57511eabea913363e6cdc3f6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: de99c04077a58f1c0c060561674fefa9041fa144
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717391"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331955"
 ---
-# <a name="dashboard-tiles-in-power-bi"></a>Blocos de painel no Power BI
-Os dashboards e blocos de dashboard são um recurso do serviço do Power BI e não do Power BI Desktop. Os blocos de dashboards não podem ser criados ou fixados no Power BI Mobile, mas [podem ser exibidos e compartilhados](mobile-tiles-in-the-mobile-apps.md). E, no Power BI Mobile, você pode [adicionar imagens ao seu dashboard com seu aplicativo de iPhone](mobile-iphone-app-get-started.md).
+# <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introdução aos blocos de dashboard para designers do Power BI
 
-## <a name="dashboard-tiles"></a>Blocos de dashboard
+Um bloco é um instantâneo dos dados fixados no painel. Um bloco pode ser criado de relatórios, conjuntos de dados, dashboards, caixas de P e R, relatórios do SSRS (SQL Server Reporting Services) e muito mais.  Essa captura de tela mostra vários blocos diferentes fixados a um dashboard.
+
 ![Dashboard do Power BI](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Um bloco é um instantâneo dos dados fixados no painel. Um bloco pode ser criado de um relatório, conjunto de dados, painel, da caixa de P e R e do SSRS (SQL Server Reporting Services) e muito mais.  Essa captura de tela mostra vários blocos diferentes fixados a um dashboard.
+Os dashboards e blocos de dashboard são um recurso do serviço do Power BI e não do Power BI Desktop. Você não pode criar dashboards em dispositivos móveis, mas pode [exibir e compartilhar](mobile-apps-view-dashboard.md) os dashboards lá.
 
-Além da anexação, blocos autônomos podem ser criados diretamente no dashboard usando a opção [Adicionar bloco](service-dashboard-add-widget.md). Os blocos autônomos incluem: caixas de texto, imagens, vídeos, dados de streaming e conteúdo da Web.
+Além da anexação, você pode criar blocos autônomos diretamente no dashboard usando a opção [Adicionar bloco](service-dashboard-add-widget.md). Os blocos autônomos incluem: caixas de texto, imagens, vídeos, dados de streaming e conteúdo da Web.
 
 Precisa de ajuda para compreender os blocos de construção que compõem o Power BI?  Veja [Power BI – Conceitos básicos](service-basic-concepts.md).
 
@@ -43,7 +43,7 @@ Há diversas maneiras de adicionar (fixar) um bloco em um dashboard. Os blocos p
 * [uma pasta de trabalho do Excel no OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher para Excel](publisher-for-excel.md)
 * [Insights Rápidos](service-insights.md)
-* [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+* [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Além disso, blocos autônomos para imagens, caixas de texto, vídeos, dados de streaming e o conteúdo da Web podem ser criados diretamente no dashboard usando a opção [Adicionar bloco](service-dashboard-add-widget.md).
 
@@ -78,7 +78,7 @@ Pegue um bloco e [mova-o no dashboard](service-dashboard-edit-tile.md). Passe o 
 3. Para fechar o menu de ação, selecione uma área em branco na tela.
 
 ### <a name="select-click-a-tile"></a>Selecionar (clicar em) um bloco
-Ao selecionar um bloco, o que ocorre em seguida depende de como o bloco foi criado e se ele tem um [link personalizado](service-dashboard-edit-tile.md). Se ele tiver um link personalizado, a seleção do bloco levará você para esse link. Caso contrário, selecionar o bloco leva você para o relatório, pasta de trabalho do Excel Online, relatório SSRS local ou P & R que foi usada para criar o bloco.
+Quando você seleciona um bloco, o que acontece em seguida depende de como você o criou. Ainda, se ele tiver um [link personalizado](service-dashboard-edit-tile.md), a seleção do bloco levará você para esse link. Caso contrário, selecionar o bloco leva você para o relatório, pasta de trabalho do Excel Online, relatório do Reporting Services local ou pergunta de P & R usada para criar o bloco.
 
 > [!NOTE]
 > Os blocos de vídeo criados diretamente no dashboard usando **Adicionar bloco** são a exceção. Selecionar um bloco de vídeo (que foi criado dessa forma) faz com que o vídeo seja reproduzido diretamente no dashboard.   
@@ -86,12 +86,13 @@ Ao selecionar um bloco, o que ocorre em seguida depende de como o bloco foi cria
 > 
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
+
 * Se o relatório usado para criar a visualização não tiver sido salvo, então selecionar um bloco não produzirá nenhuma ação.
-* Se o bloco tiver sido criado de uma pasta de trabalho em Excel Online e se você não tiver permissões pelo menos de Leitura para a pasta de trabalho, selecionar o bloco de dados não abrirá a pasta de trabalho no Excel Online.
-* Para os blocos criados diretamente no dashboard usando a opção **Adicionar bloco**, se um hiperlink personalizado tiver sido definido, a seleção do título, subtítulo e/ou bloco abrirá essa URL.  Caso contrário, por padrão, a seleção de um desses blocos criados diretamente no dashboard de uma imagem, um código da Web ou uma caixa de texto não produz nenhuma ação.
-* Se você não tiver permissão para o relatório no SSRS, selecionar um bloco criado do SSRS gerará uma página indicando que você não tem acesso (rsAccessDenied).
-* Se você não tiver acesso à rede em que se encontra o servidor do SSRS, selecionar um bloco criado do SSRS produzirá uma página que indicará que ele não pode localizar o servidor (HTTP 404). O dispositivo deve ter acesso à rede para o servidor de relatório exibir o relatório.
-* Se a visualização original usada para criar o bloco for alterada, o bloco não será alterado.  Por exemplo, se você fixou um gráfico de linhas de um relatório e, em seguida, você alterar o gráfico de linhas para um gráfico de barras, o bloco do painel continuará mostrando um gráfico de linhas. Os dados são atualizados, mas o tipo de visualização não.
+* Se o bloco tiver sido criado de uma pasta de trabalho no Excel Online, você precisará de pelo menos permissões de Leitura para essa pasta de trabalho. Caso contrário, a seleção do bloco não abrirá a pasta de trabalho no Excel Online.
+* Digamos que você crie um bloco diretamente no dashboard usando **Adicionar bloco** e defina um hiperlink personalizado para ele. Se for o caso, quando você selecionar o título, o subtítulo ou o bloco abrirá essa URL. Caso contrário, por padrão, quando você seleciona um bloco criado diretamente no dashboard para uma imagem, um código da Web ou uma caixa de texto, nada acontece.
+* Se você não tem permissão para o relatório no Reporting Services, a seleção de um bloco criado por um relatório do Reporting Services leva você até uma página indicando que você não tem acesso (rsAccessDenied).
+* Se você não tiver acesso à rede na qual o servidor do Reporting Services, a seleção de um bloco criado do Reporting Services levará você até uma página que indica que não é possível localizar o servidor (HTTP 404). O dispositivo precisa ter acesso à rede para o servidor de relatório exibir o relatório.
+* Se a visualização original usada para criar o bloco for alterada, o bloco não será alterado.  Por exemplo, se você fixar um gráfico de linhas de um relatório e, em seguida, alterar o gráfico de linhas para um gráfico de barras, o bloco do painel continuará mostrando um gráfico de linhas. Os dados são atualizados, mas o tipo de visualização não.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar um cartão (bloco de número grande) para seu painel](power-bi-visualization-card.md)

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/08/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 15ec21a0b86977173c16071980d7527f27db74ef
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297034"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289210"
 ---
-# <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>O que são os relatórios paginados no Power BI Premium? (versão prévia)
-Os relatórios paginados, o formato longo de relatório padrão no SQL Server Reporting Services, agora estão disponíveis no serviço do Power BI. Relatórios paginados são relatórios designados para serem impressos ou compartilhados. Eles são chamados de "paginados" porque são formatados para se ajustarem a uma página e exibir todos os dados em uma tabela, por exemplo, mesmo se a tabela abranger várias páginas. Às vezes são chamados de "pixel perfeito" porque você pode controlar o layout de página do relatório de maneira exata. Os relatórios paginados são baseados na tecnologia de relatório RDL no SQL Server Reporting Services. O Construtor de Relatórios é a ferramenta autônoma para a criação de relatórios paginados. 
+# <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>O que são os relatórios paginados no Power BI Premium? (Versão prévia)
+Os relatórios paginados, o formato longo de relatório padrão no SQL Server Reporting Services, agora estão disponíveis no serviço do Power BI. Relatórios paginados são relatórios designados para serem impressos ou compartilhados. Eles são chamados de "paginados" porque são formatados de modo a se adaptarem bem a uma página. Eles exibem todos os dados em uma tabela, mesmo que a tabela abranja várias páginas. Às vezes são chamados de "pixel perfeito" porque você pode controlar o layout de página do relatório de maneira exata. Os relatórios paginados são baseados na tecnologia de relatório RDL no SQL Server Reporting Services. O Construtor de Relatórios é a ferramenta autônoma para a criação de relatórios paginados. 
 
-Os relatórios paginados podem ter muitas páginas. O relatório no exemplo a seguir tem 563 páginas, cada uma disposto exatamente, com uma página para cada fatura e cabeçalhos e rodapés repetidos.
+Os relatórios paginados podem ter muitas páginas. Por exemplo, esse relatório tem 563 páginas. Cada página é disposta exatamente, com uma página por fatura e cabeçalhos e rodapés repetidos.
 
 ![Relatório paginado no serviço do Power BI](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
@@ -27,11 +27,11 @@ Você pode visualizar o relatório no Construtor de Relatórios e publicá-lo no
 
 ## <a name="create-reports-in-report-builder"></a>Criar relatórios no Construtor de Relatórios
 
-Os relatórios paginados têm sua própria ferramenta de design, o Construtor de Relatórios. Se você tiver criado relatórios paginados para o Servidor de Relatórios do Microsoft Power BI ou Microsoft SQL Server Reporting Services (SSRS), poderá usar a mesma ferramenta e a mesma versão. Na verdade, os relatórios paginados criados para SSRS 2016 e 2017 ou para o Servidor de Relatórios do Power BI local são compatíveis com o serviço do Power BI. O serviço do Power BI mantém compatibilidade com versões anteriores para que você possa encaminhar seus relatórios e atualizar qualquer relatório paginado de versões anteriores. Nem todos os recursos de relatório estão disponíveis no lançamento; confira mais detalhes em [Limitações e considerações](#limitations-and-considerations) neste artigo.
+Os relatórios paginados têm sua própria ferramenta de design, o Construtor de Relatórios. É a mesma ferramenta e a mesma versão que você usaria para criar relatórios paginados para o Servidor de Relatórios do Power BI ou o SSRS (SQL Server Reporting Services). Na verdade, os relatórios paginados criados para SSRS 2016 e 2017 ou para o Servidor de Relatórios do Power BI local são compatíveis com o serviço do Power BI. O serviço do Power BI mantém compatibilidade com versões anteriores para que você possa encaminhar seus relatórios e atualizar qualquer relatório paginado de versões anteriores. Nem todos os recursos de relatório estão disponíveis no lançamento. Veja [Limitações e considerações](#limitations-and-considerations) neste artigo para obter detalhes.
      
 ## <a name="report-from-a-variety-of-data-sources"></a>Relatório de uma variedade de fontes de dados
 
-Um único relatório paginado pode ter várias fontes de dados diferentes. Ele não tem um modelo de dados subjacente, ao contrário dos relatórios do Power BI. Para obter a versão inicial dos relatórios paginados no serviço do Power BI, você poderá criar fontes de dados inseridas e conjuntos de dados no próprio relatório, em vez de se conectar a fontes de dados compartilhadas ou conjuntos de dados em um servidor. Você pode criar relatórios no Construtor de Relatórios no computador local. Se um relatório se conectar a dados locais, depois de carregar o relatório no serviço do Power BI, você precisará criar um gateway e redirecionar a conexão de dados. Aqui estão as fontes de dados às quais você pode se conectar para a versão inicial:
+Um único relatório paginado pode ter várias fontes de dados diferentes. Ele não tem um modelo de dados subjacente, ao contrário dos relatórios do Power BI. Para a versão inicial de relatórios paginados no serviço do Power BI, você cria fontes de dados inseridas e conjuntos de dados no próprio relatório. Por enquanto, não é possível usar fontes de dados compartilhadas ou conjuntos de dados compartilhados. Você pode criar relatórios no Construtor de Relatórios no computador local. Se um relatório se conectar a dados locais, depois de carregar o relatório no serviço do Power BI, você precisará criar um gateway e redirecionar a conexão de dados. Aqui estão as fontes de dados às quais você pode se conectar para a versão inicial:
 
 - Banco de Dados SQL do Azure e SQL Data Warehouse do Azure
 - SQL Server por meio de um gateway
@@ -60,7 +60,7 @@ Tudo em um relatório paginado, do relatório em si até cada caixa de texto, im
 Quando você cria um relatório paginado, realmente está criando uma *definição de relatório*. Ele não contém os dados. Especifica onde obter os dados, quais dados devem ser obtidos e como exibir os dados. Quando você executa o relatório, o processador de relatório usa a definição de relatório que você especificou, recupera os dados e combina-os com o layout do relatório para gerar o relatório. Carregue a definição de relatório para o serviço do Power BI, http://app.powerbi.com, para Meu espaço de trabalho ou um espaço de trabalho compartilhado com seus colegas. Se a fonte de dados de relatório está no local, depois de carregar o relatório, redirecione a conexão de fonte de dados para passar por um gateway. 
 
 ## <a name="view-your-paginated-report"></a>Exibir o relatório paginado
-Você pode exibir seu relatório paginado no serviço do Power BI em um navegador e também nos aplicativos móveis do Power BI. No serviço do Power BI, você pode exportar o relatório para vários formatos voltados para a Web, orientados por página e aplicativos da área de trabalho, como HTML, MHTML, PDF, XML, CSV, TIFF, Word e Excel. Você também pode compartilhá-lo com outras pessoas.  
+Você exibe seu relatório paginado no serviço do Power BI em um navegador e também nos aplicativos móveis do Power BI. Do serviço do Power BI, você pode exportar o relatório para vários formatos, como HTML, MHTML, PDF, XML, CSV, TIFF, Word e Excel. Você também pode compartilhá-lo com outras pessoas.  
   
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 
@@ -78,7 +78,8 @@ Aqui estão alguns outros recursos que não têm suporte na versão inicial:
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Instalar o Construtor de Relatórios no Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=734968)
-
 - [Tutorial: Criar um relatório paginado](paginated-reports-quickstart-aw.md)
+- [Inserir dados diretamente em um relatório paginado](paginated-reports-enter-data.md)
+
   
 

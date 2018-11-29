@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 4a5d124ffd213c54d628ff15e32ece18e56913eb
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157278"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289187"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Visão geral do programa de pacote de conteúdo do serviço do Power BI
 Um pacote de conteúdo é um conjunto de conteúdos prontos que permite que os usuários obtenham informações sobre uma fonte imediatamente. Um pacote de conteúdo normalmente se concentra em um cenário de negócios específico, fornecendo informações sobre uma função, domínio ou fluxo de trabalho.
@@ -23,7 +23,7 @@ Os ISVs podem criar pacotes de conteúdo de modelo que permitem que os clientes 
 
 Esses pacotes de conteúdo de modelo criados pelo ISV podem ser enviados para a equipe do Power BI para ficarem publicamente disponíveis na galeria de pacotes de conteúdo do Power BI (app.powerbi.com/getdata/services) e no Microsoft AppSource (appsource.microsoft.com). Um exemplo da experiência de pacote de conteúdo público pode ser encontrada [aqui](template-content-pack-experience.md).
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 O processo geral para desenvolver e enviar um pacote de conteúdo de modelo envolve várias etapas.
 
  ![Processo](media/service-content-pack-overview/developer-content-pack-overview.png)
@@ -48,7 +48,7 @@ Para criar e enviar um pacote de conteúdo a ser publicado no serviço do PowerB
 Examine a seção sobre [criação](template-content-pack-authoring.md) para obter mais detalhes sobre os requisitos técnicos.
 
 ## <a name="business-scenario"></a>Cenário de negócios
-Os pacotes de conteúdo fornecem informações e métricas voltadas para um cenário comercial específico. Compreender seu público-alvo e os benefícios que ele receberá com o pacote de conteúdo ajudará a garantir que seus usuários tenham êxito com o conteúdo que você fornece.
+Os pacotes de conteúdo fornecem informações e métricas voltadas para um cenário comercial específico. Compreender seu público-alvo e os benefícios que eles receberão com o pacote de conteúdo ajudará a garantir que seus usuários tenham êxito com o conteúdo que você fornece.
 
 ### <a name="tips"></a>Dicas
 * Identifique seu público-alvo e a tarefa que ele está tentando realizar  
@@ -78,7 +78,7 @@ Os pacotes de conteúdo publicados podem ser atualizados uma vez por mês. Solic
 Fique à vontade para enviar suas perguntas por email para [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Suporte
-Para obter suporte durante o desenvolvimento, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Ele é monitorado e gerenciado ativamente. Os incidentes com clientes chegam rapidamente à equipe apropriada.
+Para obter suporte durante o desenvolvimento, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Os incidentes com clientes chegam rapidamente à equipe apropriada.
 
 ## <a name="next-step"></a>Próxima etapa
 [Criação](template-content-pack-authoring.md)

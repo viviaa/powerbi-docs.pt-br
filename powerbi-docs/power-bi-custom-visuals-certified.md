@@ -1,56 +1,73 @@
 ---
-title: Visualizações personalizadas no Power BI certificado
+title: Visuais personalizadas no Power BI certificados
 description: Requisitos e processos para enviar um visual personalizado para certificação. E uma lista de visuais personalizados já certificados.
-author: mihart
-ms.author: mihart
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/30/2018
-ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: fd352cd78225e647acf53c2af899e4d2fc662376
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223434"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289256"
 ---
-# <a name="getting-a-custom-visual-certified"></a>*Certificando* um visual personalizado
+# <a name="certified-custom-visuals"></a>Visuais personalizados certificados
 
-## <a name="what-is-meant-by-certified"></a>O que significa *certificado*?
+## <a name="what-are-certified-custom-visuals"></a>O que são visuais personalizados **_certificados_**?
 
-Um *visual personalizado certificado* é aquele que atendeu um conjunto de requisitos de código e foi aprovado em testes de segurança rígidos.  Depois que um visual personalizado tiver sido certificado, ele poderá ser [exportado para o PowerPoint](consumer/end-user-powerpoint.md) e será exibido nos emails recebidos quando um usuário [assinar as páginas de relatório](consumer/end-user-subscribe.md). Obviamente, também pode ser usado como [elementos visuais personalizados padrão](power-bi-custom-visuals.md), adicionado ao serviço do Power BI e a relatórios do Power BI Desktop e exibido no Power BI móvel e integrado.
+Visuais personalizados certificados são visuais nos **Marketplace** que cumprem determinados requisitos de **código especificado** que a **equipe do Microsoft Power BI** testou e aprovou. Depois que um visual personalizado é certificado, ele oferece mais recursos. Assim, você pode [exportar para o PowerPoint](consumer/end-user-powerpoint.md) e pode exibir o visual em emails recebidos quando um usuário [assina páginas do relatório](consumer/end-user-subscribe.md).
 
-Você é um desenvolvedor da Web e está interessado em criar suas próprias visualizações e adicioná-las ao [Microsoft AppSource](https://appsource.microsoft.com)? Confira [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) (Desenvolvimento de um visual personalizado do Power BI) para saber mais.
+**Visuais personalizados certificados** são usados como [visuais personalizados padrão](power-bi-custom-visuals.md). Visuais personalizados certificados podem ser adicionados ao **serviço do Power BI**, a um **relatório do Power BI Desktop** e exibidos com o **Power BI mobile** e o **Power BI Embedded**.
 
-## <a name="certification-requirements"></a>Requisitos de certificação
+Os testes executados foram projetados para verificar se o visual não acessa serviços ou recursos externos. A **Microsoft** *não* é a autora de visuais personalizados de terceiros e recomenda aos clientes contatar o autor diretamente para verificar a funcionalidade do visual em questão.
 
-* Microsoft AppSource aprovado
-* O visual personalizado é escrito com a API com versão 1.2 ou superior
-* Repositório de código disponível para análise (por exemplo, Código do visual disponível para nós por meio do GitHub)
-* Usa somente componentes OSS públicos analisáveis
-* Não acessa serviços ou recursos externos
+O processo de certificação é opcional e fica a critério dos desenvolvedores decidir se desejam que seus visuais no marketplace sejam certificados.  
 
-> **DICA**: recomendamos que você use o EsLint com o conjunto de regras de segurança padrão para validar previamente seu código antes do envio.
+**Visuais personalizados não certificados** não necessariamente significam visuais não seguros. Alguns visuais não são certificados, pois não são compatíveis com um ou mais dos [requisitos de certificação](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Por exemplo, conectar-se a um serviço externo, como o mapa de visuais, ou usar bibliotecas comerciais ou visuais.
+
+Você é um desenvolvedor da Web e está interessado em criar suas próprias visualizações e adicioná-las ao  **[Microsoft AppSource](https://appsource.microsoft.com)**? Veja  **[Desenvolvimento de um visual personalizado do Power BI](developer/custom-visual-develop-tutorial.md)** para saber mais.
+
+## <a name="removal-of-power-bi-certified-custom-visuals"></a>Remoção dos Visuais personalizados certificados do Power BI
+
+A Microsoft pode remover um elemento visual da [lista de certificados](#list-of-custom-visuals-that-have-been-certified) a seu critério.
+
+## <a name="getting-a-custom-visualcertified"></a>Certificando um visual personalizado
+
+### <a name="certification-requirements"></a>Requisitos de certificação
+
+Para [certificar](#certified-custom-visuals) seu visual personalizado, verifique se ele cumpre o seguinte:  
+
+* Aprovado pelo Microsoft AppSource. Seu visual personalizado deve estar no nosso [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* O visual personalizado é escrito com a API com controle de versão 1.2 ou superior.
+* Repositório de código disponível para análise pela equipe do Power BI (por exemplo, código-fonte [JavaSCriptS ou TypeScript] em formato legível disponível para nós, por meio do GitHub).
+
+    >[!Note]
+    > Você não precisa compartilhar publicamente seu código no Github.
+
+* Usa somente componentes OSS analisáveis públicos (bibliotecas JS ou TypeScript públicos. O código-fonte está disponível para revisão e não tem vulnerabilidades conhecidas). Não podemos verificar um visual personalizado usando um componente comercial.
+
+* Não acessa serviços ou recursos externos, incluindo, entre outros, nenhuma solicitação HTTP/S ou WebSocket sai do Power BI para nenhum serviço. 
+
+> [!TIP]
+> Recomendamos que você use o EsLint com o conjunto de regras de segurança padrão para validar previamente seu código antes do envio.
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Processo para enviar um visual personalizado para certificação
 
 Para enviar um visual personalizado para certificação:
 
-1. Envie um email para o suporte de visuais personalizados do Power BI (pbicvsupport@microsoft.com). No email, inclua as seguintes informações:    
+1. Envie um email para a equipe de Suporte de Visuais Personalizados do Power BI (pbicvsupport@microsoft.com). No email, inclua as seguintes informações:
+    * Título: solicitação de certificação do visual
+    * Link para o repositório do GitHub em que o código-fonte legível por humanos está hospedado
+    * [Cumprir os requisitos](#certification-requirements)
+    * Passar a revisão de código
 
-   * Título: solicitação de certificação do visual
-   * Vincular ao repositório GitHub em que o código-fonte do visual está hospedado
-   * Seguir os requisitos (veja acima)
-   * Passar a análise do código e de segurança
-
-2. A equipe de Visuais personalizados na Microsoft notificará você quando seu visual personalizado for certificado e adicionado à lista Certificado (abaixo) ou rejeitado com um relatório dos problemas que precisam ser corrigidos. É responsabilidade do desenvolvedor manter uma linha aberta de comunicação com a Microsoft e atualizar os Visuais certificados como necessário.
-
-## <a name="removal-of-power-bi-certified-custom-visuals"></a>Remoção dos Visuais personalizados certificados do Power BI
-
-A Microsoft, a seu critério, poderá remover um visual da lista Certificado.  
+2. A equipe de Visuais Personalizados da Microsoft notifica você quando seu visual personalizado é certificado e adicionado à [lista de certificados](#list-of-custom-visuals-that-have-been-certified) ou rejeitado com um relatório dos problemas que precisam ser corrigidos. É responsabilidade do desenvolvedor manter uma linha aberta de comunicação com a Microsoft e atualizar os visuais certificados como necessário.
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Lista de visuais personalizados que foram certificados
 
