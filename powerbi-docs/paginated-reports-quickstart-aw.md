@@ -9,12 +9,12 @@ ms.component: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 91cf4e2115b2eaae3178b2fb25e487e0501e3a6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b057fd14083cdabff96d9821d1399da07b93556b
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266515"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452814"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI
 
@@ -130,13 +130,13 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
 1. Na página **Organizar campos**, arraste esses campos da caixa **Campos disponíveis** para a caixa **Grupos de linhas**:
 
     - CompanyName
-    - SalesOrderNumber
+    - NúmeroDaOrdemDeVendas
     - Product_Name
 
 1. Arraste estes campos da caixa **Campos disponíveis** para a caixa **Valores**:
 
     - OrderQty
-    - Preço da unidade
+    - UnitPrice
     - LineTotal
 
     O Construtor de Relatórios automaticamente fez a soma dos campos na caixa **Valores**.
@@ -165,7 +165,7 @@ Façamos uma pausa por um momento para examinar os resultados do assistente.
 
 5. No painel Agrupamento, você verá os três grupos de linhas que você criou no assistente: 
 
-    - CompanyName
+    - Nomedaempresa
     - Ordem de Venda
     - Nome do Produto
 

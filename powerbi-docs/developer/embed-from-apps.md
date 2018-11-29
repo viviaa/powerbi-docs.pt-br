@@ -1,20 +1,20 @@
 ---
 title: Inserir relatórios ou dashboards de aplicativos
-description: Aprenda como integrar, ou inserir, um relatório ou dashboard de um aplicativo do Power BI e não de um espaço de trabalho do aplicativo.
+description: Aprenda como integrar, ou inserir, um relatório ou dashboard de um aplicativo do Power BI e não de um workspace do aplicativo.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/13/2018
 ms.topic: how-to
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 53803c77dec8eb35c10db7f19a82f58144f88414
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 11/27/2018
+ms.openlocfilehash: 8073696907ceff67664a0802a2b7775eea693e37
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237975"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452512"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Inserir relatórios ou dashboards de aplicativos
 
@@ -26,11 +26,11 @@ No Power BI, você pode criar aplicativos para reunir relatórios e dashboards r
 
 2. Abra o relatório desejado no serviço do Power BI.
 
-3. Acesse **Arquivo** > **Inserir no SharePoint Online** e pegue embedURL do relatório de lá. Ele é mostrado no seguinte instantâneo. Outra opção é chamar a API REST GetReports/GetReport e extrair o campo embedURL do relatório correspondente da resposta. A chamada REST não deve ter um identificador de workspace como parte da URL, uma vez que o aplicativo foi instanciado no workspace do usuário.
-
-4. Use o embedURL recuperado na etapa 3 com o SDK do JavaScript.
+3. Vá para **Arquivo** > **Inserir no SharePoint Online** e capture a embedURL do relatório. Veja um exemplo de embedURL no instantâneo abaixo. Como alternativa, você pode chamar a API REST GetReports/GetReport e extrair o campo da embedURL do relatório correspondente da resposta. A chamada REST não deve ter um identificador de workspace como parte da URL, uma vez que o aplicativo foi instanciado no espaço de workspace.
 
     ![Inserir de aplicativos](media/embed-from-apps/embed-from-app.png)
+
+4. Use o embedURL recuperado na etapa 3 com o SDK do JavaScript.
 
 ## <a name="grab-a-dashboard-embedurl-for-embedding"></a>Pegar uma embedURL de dashboard para inserção
 

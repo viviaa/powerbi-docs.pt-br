@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 ms.date: 10/17/2018
-ms.openlocfilehash: 49ea393af6e98ab0f081d95f5be6451064347ed4
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: cb517d62e64e8ef17be07315112faac331b534d3
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332001"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452696"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para seus clientes
 
@@ -44,7 +44,7 @@ No entanto, se você optar por configurar o ambiente manualmente, você poderá 
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrar um aplicativo no Azure AD (Azure Active Directory)
 
-Registre seu aplicativo no Azure Active Directory para permitir que ele tenha acesso às APIs REST do Power BI. Registrar seu aplicativo permitir que você estabeleça uma identidade para seu aplicativo e especifique permissões para recursos REST do Power BI.
+Registre seu aplicativo no Azure Active Directory para permitir que ele tenha acesso às APIs REST do Power BI. Registrando o aplicativo, você pode estabelecer uma identidade para ele e especificar permissões para recursos REST do Power BI.
 
 1. Aceite os [Termos da API do Microsoft Power BI](https://powerbi.microsoft.com/api-terms).
 

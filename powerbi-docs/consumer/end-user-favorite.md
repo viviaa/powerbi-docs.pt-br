@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7fcf7411e7785f4403e08d1e3094a60bd93bcf57
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 46b943b9de7e8bae29c20617f957c81de2d49f94
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565051"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452489"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Adicione painéis, relatórios e aplicativos aos favoritos no serviço do Power BI
-Quando você adicionar um conteúdo a *Favoritos*, poderá acessá-lo de todos os espaços de trabalho.  Os favoritos normalmente são o conteúdo que você visita com mais frequência.
+Quando você adicionar um conteúdo a *Favoritos*, poderá acessá-lo de todos os workspaces.  Os favoritos normalmente são o conteúdo que você visita com mais frequência.
 
 > [!NOTE]
 > Este tópico se aplica ao serviço do Power BI, e não ao Power BI Desktop.
@@ -29,7 +29,7 @@ Quando você adicionar um conteúdo a *Favoritos*, poderá acessá-lo de todos o
 Você também pode selecionar um único painel como um [painel em destaque](end-user-featured.md) no serviço do Power BI.
 
 ## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Adicionar um painel ou relatório como um *favorito*
-Assista à Amanda adicionar favoritos ao seu espaço de trabalho e, em seguida, siga as instruções passo a passo abaixo do vídeo para testar por conta própria.
+Assista à Amanda adicionar favoritos ao seu workspace e, em seguida, siga as instruções passo a passo abaixo do vídeo para testar por conta própria.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
@@ -39,7 +39,7 @@ Assista à Amanda adicionar favoritos ao seu espaço de trabalho e, em seguida, 
    
    ![Ícone de Favorito](./media/end-user-favorite/powerbi-dashboard-favorite.png)
    
-   Também é possível adicionar um painel ou relatório como favorito da guia de exibição de conteúdo de **Painéis** ou **Relatórios** do seu espaço de trabalho.
+   Também é possível adicionar um painel ou relatório como favorito da guia de exibição de conteúdo de **Painéis** ou **Relatórios** do seu workspace.
    
    ![Guia Dashboard com estrela amarela](./media/end-user-favorite/power-bi-dashboard-favorite.png)
 
@@ -54,7 +54,7 @@ Assista à Amanda adicionar favoritos ao seu espaço de trabalho e, em seguida, 
    ![passe o mouse sobre o aplicativo](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## <a name="working-with-favorites"></a>Trabalhando com *favoritos*
-1. Para acessar seus favoritos, em qualquer espaço de trabalho, selecione a seta do submenu à direita de **Favoritos**.  Deste local, você pode selecionar um favorito para abri-lo. Apenas cinco favoritos são listados (em ordem alfabética). Se você tiver mais de cinco, selecione **Ver todos** para abrir a tela Favoritos (consulte o item 2 abaixo). 
+1. Para acessar os favoritos, em qualquer espaço de trabalho, selecione a seta do submenu à direita de **Favoritos**.  Deste local, você pode selecionar um favorito para abri-lo. Apenas cinco favoritos são listados (em ordem alfabética). Se você tiver mais de cinco, selecione **Ver todos** para abrir a tela Favoritos (consulte o item 2 abaixo). 
    
    ![Submenu Favoritos](./media/end-user-favorite/power-bi-favorite-flyout-new.png)
 2. Para ver **todo** o conteúdo que você adicionou como favoritos, no painel de navegação esquerdo, selecione **Favoritos** ou o ícone de Favoritos ![ícone de estrela](./media/end-user-favorite/power-bi-favorites-icon.png).  

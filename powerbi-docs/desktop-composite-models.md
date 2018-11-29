@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619691"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452765"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Usar modelos compostos no Power BI Desktop
 
@@ -146,7 +146,7 @@ Consequentemente, as informações armazenadas na planilha agora estão incluíd
 
 * As configurações de criptografia para cada fonte devem ser consideradas. Convém evitar a recuperação de informações de uma fonte por meio de uma conexão criptografada e sua inclusão acidental em uma consulta que é enviada a outra fonte por meio de uma conexão não criptografada. 
 
-Para permitir a confirmação de que você considerou quaisquer implicações de segurança, o Power BI Desktop exibe um mensagem de aviso quando você cria um modelo composto.  
+Para confirmar que você considerou todas as implicações de segurança, o Power BI Desktop exibe uma mensagem de aviso quando você cria um modelo composto.  
 
 Por motivos semelhantes, tenha cuidado ao abrir um arquivo do Power BI Desktop enviado de uma fonte não confiável. Se o arquivo contém modelos compostos, as informações que alguém recupera de uma fonte usando as credenciais do usuário que abre o arquivo são enviadas para outra fonte de dados como parte da consulta. As informações podem ser exibidas pelo autor mal-intencionado do arquivo do Power BI Desktop. Portanto, quando você abre inicialmente um arquivo do Power BI Desktop que contém várias fontes, o Power BI Desktop exibe um aviso. O aviso é semelhante ao que é exibido quando você abre um arquivo que contém consultas SQL nativas.  
 

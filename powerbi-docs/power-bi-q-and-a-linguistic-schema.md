@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: ea11394c8b559b38f3c01fe339afac4ce3b0d863
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717943"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452719"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Editar o esquema linguístico de P e R e adicionar frases no Power BI Desktop 
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no Power BI Desktop permite que você faça. Quando você faz uma pergunta para P e R do Power BI, ele se esforça para responder corretamente. 
@@ -197,7 +197,7 @@ Binding: {Table: Products}
       Adjectives: [discontinued]
 ```
 
-As *frases adjetivas de medida* definem um adjetivo novo com base em um valor numérico que indica até que ponto o adjetivo se aplica, como "comprimentos indicam a extensão dos rios" e "pequenas regiões do país tem áreas pequenas". As frases adjetivas de medida são usadas em perguntas como esta:
+As *frases adjetivas de medida* definem um adjetivo novo com base em um valor numérico que indica até que ponto o adjetivo se aplica, como "comprimentos indicam a extensão dos rios" e "pequenas regiões do país tem áreas pequenas". As frases adjetivas de medida são usadas em perguntas destes tipos:
 - Listar os rios longos
 - Quais rios são os mais longos?
 - Listar as menores regiões do país vencedoras de ouro no basquete

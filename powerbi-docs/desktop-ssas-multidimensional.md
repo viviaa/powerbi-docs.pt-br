@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c9a8144ba9b8f465f4e607be60d075ea6ccb5fa
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813332"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452788"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Conectar-se a modelos multidimensionais do SSAS no Power BI Desktop
 Com o Power BI Desktop, você pode acessar **modelos Multidimensionais do SSAS**, normalmente chamados de **SSAS MD**.
@@ -81,6 +81,7 @@ Há algumas limitações no uso do **SSAS MD**:
 * Os servidores devem executar o SQL Server 2012 SP1 CU4 ou versões posteriores do Analysis Services para que o conector do SSAS MD do Power BI Desktop funcione corretamente
 * *Ações* e *Conjuntos Nomeados* não são expostos no Power BI, mas você ainda pode se conectar a cubos que também contêm *Ações* ou *Conjuntos Nomeados* e criar elementos visuais e relatórios.
 * Pode ocorrer um problema em que o Power BI exibe os metadados de um modelo SSAS, mas não é possível recuperar os dados do modelo. Isso pode ocorrer quando você tem a versão de 32 bits do provedor MSOLAP instalada no sistema e não tem a versão de 64 bits. Instalar a versão de 64 bits pode resolver o problema.
+* Não é possível criar medidas no "nível de relatório" ao criar um relatório que esteja conectado em tempo real a um modelo multidimensional SSAS. As únicas medidas disponíveis são aquelas definidas no modelo multidimensional.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Recursos com Suporte do SSAS MD no Power BI Desktop
 Os seguintes recursos do SSAS MD têm suporte no Power BI Desktop:
