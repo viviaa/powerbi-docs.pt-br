@@ -7,18 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/02/2018
 ms.author: mblythe
+ms.date: 01/02/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: b99f346102ae8b5f31db8101e499fb6915d870de
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850397"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578418"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>RLS (segurança em nível de linha) com o Power BI
-A RLS (segurança em nível de linha) com o Power BI pode ser usada para restringir o acesso a dados para determinados usuários. Os filtros restringem o acesso a dados no nível da linha e você pode definir filtros nas funções. Lembre-se de que, no serviço do Power BI, os membros de um workspace têm acesso a conjuntos de dados no workspace. A RLS não restringe esse acesso a dados. 
+
+A RLS (segurança em nível de linha) com o Power BI pode ser usada para restringir o acesso a dados para determinados usuários. Os filtros restringem o acesso a dados no nível da linha e você pode definir filtros nas funções. Lembre-se de que, no serviço do Power BI, os membros de um workspace têm acesso a conjuntos de dados no workspace. A RLS não restringe esse acesso a dados.
 
 É possível configurar a RLS de modelos de dados importados para o Power BI com o Power BI Desktop. Você também pode configurar RLS em conjuntos de dados que estão usando DirectQuery, como o SQL Server. Anteriormente, você conseguia apenas implementar a RLS nos modelos do Analysis Services local fora do Power BI. Para as conexões dinâmicas do Analysis Services, configure a Segurança em nível de linha no modelo local. A opção de segurança não será exibida para conjuntos de dados com conexão dinâmica.
 
@@ -34,6 +35,7 @@ Para obter mais informações, consulte [Filtragem cruzada bidirecional usando o
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
 ## <a name="manage-security-on-your-model"></a>Gerenciar a segurança no modelo
+
 Para gerenciar a segurança no modelo de dados, é necessário fazer o seguinte.
 
 1. Selecione as **reticências (...)** para um conjunto de dados.
@@ -46,7 +48,9 @@ Você será levado à página da RLS para adicionar membros a uma função criad
 Você só pode criar ou modificar funções no Power BI Desktop.
 
 ## <a name="working-with-members"></a>Trabalhando com membros
+
 ### <a name="add-members"></a>Adicionar membros
+
 É possível adicionar um membro à função digitando o endereço de email, o nome do usuário, o grupo de segurança ou a lista de distribuição que você deseja adicionar. Esse membro deve estar em sua organização. Não é possível adicionar Grupos criados no Power BI.
 
 ![](media/service-admin-rls/rls-add-member.png)
@@ -56,11 +60,13 @@ Você também pode ver quantos membros fazem parte da função pelo número entr
 ![](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Remover membros
+
 É possível remover membros selecionando o X ao lado do nome. 
 
 ![](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validando a função no serviço do Power BI
+
 Você pode validar que a função definida está funcionando corretamente ao testar a função. 
 
 1. Selecione as **reticências (...)** ao lado da função.
@@ -83,12 +89,11 @@ Para retornar à exibição normal, selecione **Voltar à Segurança de Nível d
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
 ## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Usando RLS com workspaces do aplicativo no Power BI
+
 Se você publicar seu relatório do Power BI Desktop em um workspace do aplicativo no serviço do Power BI, as funções serão aplicadas aos membros somente leitura. Será necessário indicar que os membros só podem exibir o conteúdo do Power BI nas configurações de workspace do aplicativo.
 
 > [!WARNING]
 > Se você tiver configurado o workspace do aplicativo para que os membros tenham permissões de edição, as funções RLS não serão aplicadas a eles. Os usuários poderão ver todos os dados.
-> 
-> 
 
 ![](media/service-admin-rls/rls-group-settings.png)
 
@@ -100,4 +105,3 @@ Se você publicar seu relatório do Power BI Desktop em um workspace do aplicati
 [RLS (segurança em nível de linha) com o Power BI Desktop](desktop-rls.md)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-

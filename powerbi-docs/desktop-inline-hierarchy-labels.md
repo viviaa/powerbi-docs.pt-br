@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4c41665bd1b9476816dcbb5739a36ecd6d95852b
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c698d3abc7931437c0bd2b15385714c9c8282dc7
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328271"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670269"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Usar rótulos de hierarquia embutida no Power BI Desktop
 O **Power BI Desktop** dá suporte para o uso de **rótulos de hierarquia embutida**, que são o primeiro de dois recursos para melhorar a análise hierárquica. O segundo recurso, que atualmente está em desenvolvimento, é a capacidade de usar rótulos de hierarquia aninhados (fique atento – nossas atualizações ocorrem com frequência).   

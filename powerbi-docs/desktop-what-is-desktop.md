@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: overview
-ms.date: 07/10/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 57d5158098f6ba7b2754ae25afaca524723255f5
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: a083512a1d280044b30f07c46d201def33fa66fa
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39031892"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578510"
 ---
 # <a name="what-is-power-bi-desktop"></a>O que é o Power BI Desktop?
 
@@ -82,7 +82,7 @@ Quando um relatório estiver pronto para compartilhar com outras pessoas, você 
 
 ![Publicar um relatório por meio do Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_06.png)
 
-Depois de selecionar **Publicar**, o Power BI Desktop conecta-se ao **serviço do Power BI** usando sua conta do Power BI e, em seguida, solicita que você selecione onde no serviço do Power BI você deseja compartilhar o relatório, como seu espaço de trabalho, um espaço de trabalho de equipe ou algum outro local no serviço do Power BI. Você deve ter uma licença do Power BI para compartilhar relatórios para o serviço do Power BI.
+Depois de selecionar **Publicar**, o Power BI Desktop conecta-se ao **serviço do Power BI** usando sua conta do Power BI e, em seguida, solicita que você selecione onde no serviço do Power BI você deseja compartilhar o relatório, como seu workspace, um workspace de equipe ou algum outro local no serviço do Power BI. Você deve ter uma licença do Power BI para compartilhar relatórios para o serviço do Power BI.
 
 
 ## <a name="next-steps"></a>Próximas etapas

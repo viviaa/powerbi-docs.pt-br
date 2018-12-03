@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 239fe074593b40ebe57d052bbe05f934e4d26725
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c3b8d11176992cb9e6ce114d2c0a7a310ca5d9fc
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328225"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670959"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Usar medidas rápidas para facilmente executar cálculos comuns e avançados
 Você pode usar **Medidas rápidas** para executar cálculos comuns e avançados com rapidez e praticidade. Uma **Medida rápida** executa um conjunto de comandos DAX nos bastidores (não é necessário compilar o DAX; isso já foi feito para você) com base nos dados fornecidos em uma caixa de diálogo e, em seguida, apresenta os resultados para você usar em seu relatório. O melhor de tudo é poder visualizar o DAX executado pela Medida rápida e estimular ou expandir seu próprio conhecimento do DAX.
@@ -66,7 +66,7 @@ Há cinco diferentes grupos de tipos de cálculo de Medidas rápidas, cada qual 
   * Total acumulado no mês
   * Alteração ano a ano
   * Alteração em relação ao trimestre anterior
-  * Alteração em relação ao mês anterior
+  * Alteração de mês a mês
   * Média móvel
 * **Totais**
   * Total acumulado

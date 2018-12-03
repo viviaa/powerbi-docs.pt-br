@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: c3ef18bf05c6a979e9fd0440b271afd5d8545a54
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452650"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670407"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -22,13 +22,7 @@ Registre-se para os próximos webinars ao vivo ou assista a nossas sessões grav
 
 ## <a name="upcoming-webinars"></a>Próximos webinars
 
-**Soluções de serviços de saúde comprovadas para melhorar a rentabilidade e os resultados dos pacientes**
-<br>por Stephen Cracknell e Stuart Macanliss do US Medical IT
-<br>*28 de novembro de 2018, das 11:00 às 12:00 PST*
-
-As empresas de serviços de saúde enfrentam o desafio de transformar grandes quantidades de dados em informações sobre pacientes, e de transformar essas informações em ação. Registre-se neste webinar para aprender a criar relatórios de saúde significativos que ajudarão sua organização a converter dados em informações úteis sobre pacientes. Confira estratégias e orientações especializadas do fundador e CEO da US Medical IT, Stephen Cracknell, do diretor de TI clínica, Stuart Macanliss, e do reumatologista do Texas, Dr. John P. Lavery.
-
-[Registre-se para assistir em 28 de novembro](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
+Nenhum webinar agendado ainda. Volte em breve para saber se há eventos futuros.
 
 >[Próximos webinars na comunidade do Power BI](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -105,6 +99,10 @@ Assista a sessões gravadas a qualquer momento
 <br>[Assista agora](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### <a name="partners"></a>Parceiros ###
+
+**Soluções de serviços de saúde comprovadas para melhorar a rentabilidade e os resultados dos pacientes**
+<br>por Stephen Cracknell e Stuart Macanliss do US Medical IT
+<br>[Registre-se e assista agora](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 **Impulsione seu BI com inteligência de localização**
 <br>por Scott Ball da Esri e Enrique Plaza da Microsoft

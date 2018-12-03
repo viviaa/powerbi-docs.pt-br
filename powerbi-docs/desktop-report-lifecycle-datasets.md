@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c4fbb5ea019ca439ecf063c91a69348ef33bbc2
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 3679a2f3ab98e1f54ead364e4ef4bf65d382a9d5
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623989"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578579"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Conectar-se a conjuntos de dados no serviço do Power BI no Power BI Desktop
 Você pode estabelecer uma conexão dinâmica a um conjunto de dados compartilhado no serviço do Power BI e criar vários relatórios diferentes com base no mesmo conjunto de dados. Isso significa que você pode criar seu modelo de dados perfeito no Power BI Desktop, publicá-lo no serviço do Power BI e, junto com outros usuários, criar vários relatórios diferentes (em arquivos .pbix distintos) utilizando o mesmo common data service. Esse recurso é chamado de **conexão dinâmica do serviço do Power BI**.
@@ -32,26 +32,26 @@ Digamos que Anna (uma analista de negócios) pertence à sua equipe e é ótima 
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
-Todos adoram seus relatórios e conjuntos de dados, e é aí que o problema começa: cada membro do grupo tentará criar *sua própria versão* do conjunto de dados e depois compartilhar seus próprios relatórios com a equipe. De repente, surge uma infinidade de relatórios (de diferentes conjuntos de dados) no espaço de trabalho da equipe no **serviço do Power BI**. Qual deles é o mais recente? Os conjuntos de dados eram os mesmos ou quase os mesmos? Quais eram as diferenças? Com o recurso de **conexão dinâmica ao serviço do Power BI**, tudo isso pode mudar para melhor. Na próxima seção, veremos como os demais membros da equipe podem usar o conjunto de dados publicado de Anna em seus próprios relatórios e usar o mesmo conjunto de dados consistente, verificado e publicado para criar seus próprios relatórios exclusivos.
+Todos adoram seus relatórios e conjuntos de dados, e é aí que o problema começa: cada membro do grupo tentará criar *sua própria versão* do conjunto de dados e depois compartilhar seus próprios relatórios com a equipe. De repente, surge uma infinidade de relatórios (de diferentes conjuntos de dados) no workspace da equipe no **serviço do Power BI**. Qual deles é o mais recente? Os conjuntos de dados eram os mesmos ou quase os mesmos? Quais eram as diferenças? Com o recurso de **conexão dinâmica ao serviço do Power BI**, tudo isso pode mudar para melhor. Na próxima seção, veremos como os demais membros da equipe podem usar o conjunto de dados publicado de Anna em seus próprios relatórios e usar o mesmo conjunto de dados consistente, verificado e publicado para criar seus próprios relatórios exclusivos.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Conectar-se a um conjunto de dados do serviço do Power BI usando uma conexão dinâmica
-Depois de criar o relatório (e o conjunto de dados no qual se baseou), Anna o publica no **serviço do Power BI**, que será exibido no espaço de trabalho da sua equipe no serviço do Power BI. Agora o relatório está disponível para consulta e uso por qualquer pessoa no espaço de trabalho.
+Depois de criar o relatório (e o conjunto de dados no qual se baseou), Anna o publica no **serviço do Power BI**, que será exibido no workspace da sua equipe no serviço do Power BI. Agora o relatório está disponível para consulta e uso por qualquer pessoa no workspace.
 
-Para saber mais sobre espaços de trabalho, confira [Espaços de trabalho de aplicativo](service-create-workspaces.md).
+Para saber mais sobre workspaces, confira [Workspaces de aplicativo](service-create-workspaces.md).
 
-Outros membros do espaço de trabalho podem agora estabelecer uma conexão dinâmica com o modelo de dados compartilhado de Anna (usando o recurso de **conexão dinâmica ao serviço do Power BI**) e criar seus próprios relatórios exclusivos a partir do *conjunto de dados original*.
+Outros membros do workspace podem agora estabelecer uma conexão dinâmica com o modelo de dados compartilhado de Anna (usando o recurso de **conexão dinâmica ao serviço do Power BI**) e criar seus próprios relatórios exclusivos a partir do *conjunto de dados original*.
 
-Na imagem a seguir, veja como Anna cria relatórios no **Power BI Desktop** e os publica (inclui o modelo de dados correspondente) no **serviço do Power BI**. A partir daí, os demais membros do espaço de trabalho poderão se conectar com o seu modelo de dados usando a **conexão dinâmica ao serviço do Power BI** e criar seus próprios relatórios exclusivos com base no conjunto de dados de Anna.
+Na imagem a seguir, veja como Anna cria relatórios no **Power BI Desktop** e os publica (inclui o modelo de dados correspondente) no **serviço do Power BI**. A partir daí, os demais membros do workspace poderão se conectar com o seu modelo de dados usando a **conexão dinâmica ao serviço do Power BI** e criar seus próprios relatórios exclusivos com base no conjunto de dados de Anna.
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
 > [!NOTE]
-> Conjuntos de dados são compartilhados apenas em um espaço de trabalho. Para estabelecer uma conexão dinâmica ao serviço do Power BI, o conjunto de dados ao qual você se conecta deve estar em um espaço de trabalho compartilhado em que você é membro.
+> Conjuntos de dados são compartilhados apenas em um workspace. Para estabelecer uma conexão dinâmica ao serviço do Power BI, o conjunto de dados ao qual você se conecta deve estar em um workspace compartilhado em que você é membro.
 > 
 > 
 
 ## <a name="step-by-step-for-using-the-power-bi-service-live-connection"></a>Passo a passo sobre como usar a conexão dinâmica ao serviço do Power BI
-Agora que sabemos o quanto a **conexão dinâmica ao serviço do Power BI** é útil e como você pode usá-la como abordagem para práticas recomendadas de gerenciamento do ciclo de vida do relatório, vejamos as etapas necessárias para transformar os magníficos relatórios de Anna (e o conjunto de dados) em um conjunto de dados compartilhado que os seus colegas de espaço de trabalho do Power BI poderão usar.
+Agora que sabemos o quanto a **conexão dinâmica ao serviço do Power BI** é útil e como você pode usá-la como abordagem para práticas recomendadas de gerenciamento do ciclo de vida do relatório, vejamos as etapas necessárias para transformar os magníficos relatórios de Anna (e o conjunto de dados) em um conjunto de dados compartilhado que os seus colegas de workspace do Power BI poderão usar.
 
 ### <a name="publish-a-power-bi-report-and-dataset"></a>Publicar um relatório do Power BI e o conjunto de dados
 A primeira etapa do gerenciamento do ciclo de vida de relatórios usando uma **conexão dinâmica ao serviço do Power BI** é ter um relatório (e um conjunto de dados) que os colegas de equipe queiram usar. Sendo assim, Anna deve primeiro **publicar** o relatório dela do **Power BI Desktop**. Para fazer isso, ela deve selecionar **Publicar** na faixa de opções **Início** no Power BI Desktop.
@@ -62,7 +62,7 @@ Se Anna não estiver conectada à sua conta de serviço do Power BI, ela será s
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_04.png)
 
-Após conectar-se, ela poderá escolher o destino no espaço de trabalho no qual o relatório e o conjunto de dados serão publicados. Lembre-se que somente membros com acesso ao espaço de trabalho no qual há relatórios publicados podem acessar seu conjunto de dados usando uma **conexão dinâmica ao serviço do Power BI**.
+Após conectar-se, ela poderá escolher o destino no workspace no qual o relatório e o conjunto de dados serão publicados. Lembre-se que somente membros com acesso ao workspace no qual há relatórios publicados podem acessar seu conjunto de dados usando uma **conexão dinâmica ao serviço do Power BI**.
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 
@@ -74,23 +74,23 @@ Concluído o processo, o **Power BI Desktop** mostrará o sucesso da publicaçã
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-Em seguida, vejamos como os outros colegas de equipe com acesso ao espaço de trabalho onde o relatório (e o conjunto de dados) foi publicado podem se conectar ao conjunto de dados e criar seus próprios relatórios.
+Em seguida, vejamos como os outros colegas de equipe com acesso ao workspace onde o relatório (e o conjunto de dados) foi publicado podem se conectar ao conjunto de dados e criar seus próprios relatórios.
 
 ### <a name="establish-a-power-bi-service-live-connection-to-the-published-dataset"></a>Estabelecer uma conexão dinâmica ao serviço do Power BI com o conjunto de dados publicado
 Para estabelecer uma conexão com o relatório publicado e criar seu próprio relatório com base no conjunto de dados publicado, selecione **Obter dados** na faixa de opções **Início** no **Power BI Desktop** e selecione **Serviço do Power BI**. É possível também selecioná-lo em **Obter dados > Serviços online > Serviço do Power BI**.
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
-Caso não tenha acessado ainda o Power BI, você será solicitado a fazê-lo. Após fazer logon, uma janela mostrará os espaços de trabalho dos quais você é membro, permitindo selecionar o espaço de trabalho que contém o conjunto de dados com o qual você deseja estabelecer uma **conexão dinâmica ao serviço do Power BI**.
+Caso não tenha acessado ainda o Power BI, você será solicitado a fazê-lo. Após fazer logon, uma janela mostrará os workspaces dos quais você é membro, permitindo selecionar o workspace que contém o conjunto de dados com o qual você deseja estabelecer uma **conexão dinâmica ao serviço do Power BI**.
 
-O número entre colchetes ao lado do espaço de trabalho mostra quantos conjuntos de dados compartilhados estão disponíveis nesse grupo de trabalho; a seleção do triângulo à esquerda expande o espaço de trabalho, permitindo selecionar o conjunto de dados compartilhado.
+O número entre colchetes ao lado do workspace mostra quantos conjuntos de dados compartilhados estão disponíveis nesse grupo de trabalho; a seleção do triângulo à esquerda expande o workspace, permitindo selecionar o conjunto de dados compartilhado.
 
 ![](media/desktop-report-lifecycle-datasets/report-lifecycle_09a.png)
 
 Alguns itens existentes na janela anterior da conexão dinâmica ao **serviço do Power BI** merecem atenção:
 
-* É possível pesquisar um conjunto de dados compartilhado, mas os resultados da pesquisa serão limitados aos itens expandidos e não incluirão nenhum espaço de trabalho ainda não expandido.
-* Você pode expandir mais de um espaço de trabalho para expandir sua pesquisa.
+* É possível pesquisar um conjunto de dados compartilhado, mas os resultados da pesquisa serão limitados aos itens expandidos e não incluirão nenhum workspace ainda não expandido.
+* Você pode expandir mais de um workspace para expandir sua pesquisa.
 
 Ao selecionar **Carregar** na janela, é estabelecida uma conexão dinâmica ao conjunto de dados selecionado, isto é, os dados visualizados (os campos e seus valores) são carregados no **Power BI Desktop** em tempo real.
 
@@ -99,23 +99,23 @@ Ao selecionar **Carregar** na janela, é estabelecida uma conexão dinâmica ao 
 Agora, você (e outras pessoas) podem criar e compartilhar relatórios personalizados com base no mesmo conjunto de dados. Essa é uma excelente maneira de poder contar com uma pessoa experiente para criar um conjunto de dados bem estruturado (assim como Anna faz) e permitir que vários colegas de equipe utilizem o conjunto de dados compartilhado para criar seus próprios relatórios.
 
 > [!NOTE]
-> Quando você cria relatórios com base no conjunto de dados usando uma conexão dinâmica com o **serviço do Power BI**, só pode publicar o relatório no mesmo espaço de trabalho de serviço do Power BI que contém o conjunto de dados que está sendo usado.
+> Quando você cria relatórios com base no conjunto de dados usando uma conexão dinâmica com o **serviço do Power BI**, só pode publicar o relatório no mesmo workspace de serviço do Power BI que contém o conjunto de dados que está sendo usado.
 > 
 > 
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 Ao usar a **conexão dinâmica ao serviço do Power BI**, há algumas limitações e considerações a serem observadas.
 
-* Os membros somente leitura de um espaço de trabalho não podem se conectar a conjuntos de dados no **Power BI Desktop**.
-* Somente os usuários pertencentes ao mesmo espaço de trabalho do **serviço do Power BI** podem se conectar ao conjunto de dados publicado usando a **conexão dinâmica ao serviço do Power BI**. Os usuários podem pertencer (e geralmente pertencem) a mais de um espaço de trabalho.
+* Os membros somente leitura de um workspace não podem se conectar a conjuntos de dados no **Power BI Desktop**.
+* Somente os usuários pertencentes ao mesmo workspace do **serviço do Power BI** podem se conectar ao conjunto de dados publicado usando a **conexão dinâmica ao serviço do Power BI**. Os usuários podem pertencer (e geralmente pertencem) a mais de um workspace.
 * Como essa é uma conexão dinâmica, a navegação à esquerda e a modelagem são desabilitadas; esse comportamento é semelhante a quando conectado ao **SQL Server Analysis Services**.
 * Por se tratar de uma conexão dinâmica, a RLS (segurança em nível de linha e de função), o OneDrive for Business e outros comportamentos de conexão semelhantes são executados da mesma forma como quando conectado ao **SQL Server Analysis Services**.
-* Ao selecionar a qual conjunto de dados se conectar no **serviço do Power BI**, a caixa de pesquisa é aplicável apenas a espaços de trabalho que foram expandidos.
+* Ao selecionar a qual conjunto de dados se conectar no **serviço do Power BI**, a caixa de pesquisa é aplicável apenas a workspaces que foram expandidos.
 * Se o proprietário modifica o arquivo .pbix original compartilhado, o conjunto de dados e o relatório compartilhado no **serviço do Power BI** são substituídos.
-* Membros de um espaço de trabalho não podem substituir o relatório originalmente compartilhado. Tentar fazer isso resulta em um aviso solicitando que você renomeie o arquivo e o publique.
+* Membros de um workspace não podem substituir o relatório originalmente compartilhado. Tentar fazer isso resulta em um aviso solicitando que você renomeie o arquivo e o publique.
 * Se você excluir o conjunto de dados compartilhado no **serviço do Power BI**, outros arquivos .pbix do **Power BI Desktop** não funcionarão corretamente nem exibirão seus elementos visuais.
 * Para Pacotes de conteúdo, é necessário primeiro criar uma cópia do pacote de conteúdo antes de usá-lo como base para o compartilhamento de relatórios e conjuntos de dados .pbix no **serviço do Power BI**.
 * Para pacotes de conteúdo da *Minha Organização*, uma vez copiados, não é possível substituir o relatório criado no serviço e/ou um relatório criado como parte da cópia de um pacote de conteúdo com uma conexão dinâmica. Tentar fazer isso resulta em um aviso solicitando que você renomeie o arquivo e o publique. Nessa situação, você pode substituir apenas relatórios conectados publicados dinamicamente.
-* Quando você cria um relatório com base no conjunto de dados usando uma conexão dinâmica com o **serviço do Power BI**, só pode publicar o relatório no mesmo espaço de trabalho de serviço do Power BI que contém o conjunto de dados que está sendo usado.
+* Quando você cria um relatório com base no conjunto de dados usando uma conexão dinâmica com o **serviço do Power BI**, só pode publicar o relatório no mesmo workspace de serviço do Power BI que contém o conjunto de dados que está sendo usado.
 * A exclusão de um conjunto de dados compartilhado no **serviço do Power BI** significa que você não pode mais acessar o conjunto de dados do **Power BI Desktop**.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2168328ec2ed030c9a744a315c81f4a7d0b39404
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 73d9d84552d49ca507fe4b6f9ec022bb7fb98866
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327903"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670844"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Solucionar problemas de atualização
 Aqui você pode encontrar informações sobre cenários diferentes que você pode encontrar ao atualizar dados no serviço Power BI.
@@ -56,7 +56,7 @@ Observe também que, para a atualização funcionar corretamente, ao conectar-se
 O tamanho máximo de conjuntos de dados importados para o **serviço do Power BI** é de 1 GB. Esses conjuntos de dados são altamente compactados para garantir o alto desempenho. Além disso, na capacidade compartilhada, o serviço impõe um limite de 10 GB para a quantidade de dados descompactados que são processados durante a atualização. Esse limite leva em consideração a compactação e, portanto, é muito maior que 1 GB. Conjuntos de dados no Power BI Premium não estão sujeitos a esse limite. Se a atualização no serviço do Power BI falhar por esse motivo, reduza a quantidade de dados que estão sendo importados para o Power BI e tente novamente.
 
 ## <a name="scheduled-refresh-timeout"></a>Tempo limite de atualização agendada
-A atualização agendada para os conjuntos de dados importados atinge o tempo limite após duas horas. Esse tempo limite é aumentado para cinco horas em conjuntos de dados em espaços de trabalho **Premium**. Se estiver recebendo esse limite, considere a possibilidade de reduzir o tamanho ou a complexidade do conjunto de dados ou dividir o conjunto de dados em partes menores.
+A atualização agendada para os conjuntos de dados importados atinge o tempo limite após duas horas. Esse tempo limite é aumentado para cinco horas em conjuntos de dados em workspaces **Premium**. Se estiver recebendo esse limite, considere a possibilidade de reduzir o tamanho ou a complexidade do conjunto de dados ou dividir o conjunto de dados em partes menores.
 
 ## <a name="access-to-the-resource-is-forbidden"></a>O acesso ao recurso é proibido  
 Esse erro pode ocorrer devido a credenciais armazenadas em cache expiradas. Limpe o cache do navegador de Internet entrando no Power BI e acessando https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Isso força uma atualização de suas credenciais. 

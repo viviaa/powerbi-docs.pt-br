@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 964d9dfcc9a22d13b071fd59533821ebf907c7e1
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 5e330c54969b0dd866c4b80afd71a765976f658d
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328455"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52669671"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publicar no Power BI por meio do Excel 2016
 Com o Excel 2016, é possível publicar suas pastas de trabalho do Excel diretamente para o site do [Power BI](https://powerbi.microsoft.com), em que é possível criar relatórios e dashboards altamente interativos com base nos dados da pasta de trabalho. Em seguida, você pode compartilhar suas ideias com outras pessoas em sua organização.
@@ -39,7 +39,7 @@ A partir da atualização de Fevereiro de 2017, o Excel 2016 dá suporte à publ
 > 
 > 
 
-Ao selecionar **Publicar**, você poderá selecionar o espaço de trabalho em que deseja publicar. Poderá ser o espaço de trabalho pessoal ou de grupo ao qual você tem acesso.
+Ao selecionar **Publicar**, você poderá selecionar o workspace em que deseja publicar. Poderá ser o workspace pessoal ou de grupo ao qual você tem acesso.
 
 ![](media/service-publish-from-excel/pbi_choose_workspace.png)
 
@@ -63,7 +63,7 @@ Ao escolher essa opção, sua pasta de trabalho será exibida no Power BI, exata
 
 Você não pode editar a pasta de trabalho aberta no Power BI, mas se precisar fazer algumas alterações, você poderá selecionar **Editar** e, em seguida, escolher editar a pasta de trabalho no Excel Online ou abri-la no Excel do computador. Todas as alterações feitas são salvas na pasta de trabalho no OneDrive.
 
-Assim que carregar, nenhum conjunto de dados será criado no Power BI. A pasta de trabalho será exibida em Relatórios, no painel de navegação do espaço de trabalho do Power BI. As pastas de trabalho carregadas no Power BI têm um ícone especial do Excel, que as identifica como pastas de trabalho do Excel carregadas.
+Assim que carregar, nenhum conjunto de dados será criado no Power BI. A pasta de trabalho será exibida em Relatórios, no painel de navegação do workspace do Power BI. As pastas de trabalho carregadas no Power BI têm um ícone especial do Excel, que as identifica como pastas de trabalho do Excel carregadas.
 
 Escolha esta opção se tiver apenas dados em planilhas ou se desejar ver Tabelas Dinâmicas e Gráficos no Power BI.
 No Excel, usar Carregar do recurso Publicar no Power BI é praticamente o mesmo que usar Obter Dados > Arquivo > OneDrive for Business > Conectar, Gerenciar e Exibir o Excel no Power BI, do Power BI no navegador.

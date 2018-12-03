@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6796de2b32061629e8f4fbcbc9b3311b5a95042d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 25fbcbeba8be2148269fa8eb6d2ac632eb8efb0f
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327282"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670039"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Executar scripts do R no Power BI Desktop
 É possível executar scripts do R diretamente no **Power BI Desktop** e importar os conjuntos de dados resultantes para um modelo de dados do Power BI Desktop.
@@ -29,7 +29,7 @@ Com apenas algumas etapas no Power BI Desktop, é possível executar scripts do 
 ### <a name="prepare-an-r-script"></a>Preparar um script do R
 Para executar um script do R no Power BI Desktop, crie o script em seu ambiente de desenvolvimento local do R e certifique-se de que ele é executado com êxito.
 
-Para executar o script no Power BI Desktop, verifique se o script é executado com êxito em um espaço de trabalho novo e modificado. Isso significa que todos os pacotes e dependências devem ser explicitamente carregados e executados. Você pode usar *source()* para executar scripts dependentes.
+Para executar o script no Power BI Desktop, verifique se o script é executado com êxito em um workspace novo e modificado. Isso significa que todos os pacotes e dependências devem ser explicitamente carregados e executados. Você pode usar *source()* para executar scripts dependentes.
 
 Ao preparar e executar um script R no Power BI Desktop, existem algumas limitações:
 

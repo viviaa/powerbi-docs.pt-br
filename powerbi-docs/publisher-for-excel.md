@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b3d2f19b27270bd5d824a859bc1a2d24545ed1c
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 2b8cc8f32ae85d4ba06860972c415b91ede223c5
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330180"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670706"
 ---
 # <a name="power-bi-publisher-for-excel"></a>Editor do Power BI para Excel
 Com o Microsoft **Power BI Publisher para Excel**, você pode tirar instantâneos de suas ideias mais importantes no Excel, como Tabelas Dinâmicas, gráficos e intervalos e fixá-los nos dashboards do Power BI.
@@ -55,10 +55,10 @@ Depois de se conectar, siga estas etapas para fixar um intervalo em um dashboard
 
 1. No Excel, selecione a guia de faixa de opções **Power BI** para ver o botão da faixa de opções **Fixar**.
 2. Selecione um intervalo em sua pasta de trabalho do Excel.
-3. Clique no botão **Fixar** da faixa de opções do **Power BI** para mostrar a **caixa de diálogo Fixar no dashboard**. Se você ainda não tiver entrado no Power BI, será solicitado a fazer isso. Selecione um espaço de trabalho na lista suspensa **Espaço de trabalho**. Se você desejar fixá-lo em seu próprio dashboard, verifique se a opção **Meu Espaço de Trabalho** está marcada. Se você deseja fixar um painel em um espaço de trabalho de grupo, selecione o grupo na lista suspensa.
+3. Clique no botão **Fixar** da faixa de opções do **Power BI** para mostrar a **caixa de diálogo Fixar no dashboard**. Se você ainda não tiver entrado no Power BI, será solicitado a fazer isso. Selecione um workspace na lista suspensa **Workspace**. Se você desejar fixá-lo em seu próprio dashboard, verifique se a opção **Meu Workspace** está marcada. Se você deseja fixar um painel em um workspace de grupo, selecione o grupo na lista suspensa.
 4. Escolha se deseja fixar em um *dashboard existente* ou criar um *novo dashboard*.
 5. Clique em **OK** para fixar a seleção no dashboard.
-6. Em **Fixar no dashboard**, selecione um dashboard existente no espaço de trabalho ou crie um novo e clique no botão **OK**.
+6. Em **Fixar no dashboard**, selecione um dashboard existente no workspace ou crie um novo e clique no botão **OK**.
    
    ![](media/publisher-for-excel/xl-publish.gif)
 
@@ -95,7 +95,7 @@ Para se conectar aos dados do Power BI usando o **Power BI Publisher para Excel*
 2. Quando você estiver conectado ao Power BI com a conta que você deseja usar, selecione **Conectar-se a Dados** na guia de faixa de opções **Power BI** no Excel.
    
    ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_1.png)
-3. O Excel se conecta ao Power BI usando uma conexão HTTPS e apresenta a caixa de diálogo **Conectar-se a dados no Power BI**, na qual você pode selecionar o *espaço de trabalho* em que você deseja selecionar seus dados (1, na imagem abaixo), a qual *tipo de dados* deseja se conectar, seja ou um **relatório** ou um **conjunto de dados** (2), e uma lista suspensa (3) que permite selecionar os *relatórios ou conjuntos de dados disponíveis* ao qual você pode se conectar.
+3. O Excel se conecta ao Power BI usando uma conexão HTTPS e apresenta a caixa de diálogo **Conectar-se a dados no Power BI**, na qual você pode selecionar o *workspace* em que você deseja selecionar seus dados (1, na imagem abaixo), a qual *tipo de dados* deseja se conectar, seja ou um **relatório** ou um **conjunto de dados** (2), e uma lista suspensa (3) que permite selecionar os *relatórios ou conjuntos de dados disponíveis* ao qual você pode se conectar.
    
    ![](media/publisher-for-excel/pbi_excel_publish_connect-to-data_2.png)
 4. Quando você faz suas escolhas e seleciona **Conectar** na caixa de diálogo **Conectar-se a dados no Power BI**, o Excel prepara uma Tabela Dinâmica e exibe o painel **Campos da Tabela Dinâmica**, no qual você pode selecionar campos de seus dados do Power BI conectados e criar tabelas ou gráficos que o ajudam a analisar os dados.
@@ -113,7 +113,7 @@ Há são alguns pontos a serem considerados nesta versão do **Power BI Publishe
 * **Drivers necessários** - **O Power BI Publisher para Excel** instala todos os drivers necessários para o funcionamento deste recurso e faz isso automaticamente. Entre esses drivers instalados automaticamente está o driver do Banco de Dados OLE do Excel para o Analysis Services; se esse driver for removido pelo usuário (ou por qualquer outro motivo), a conexão com os dados do Power BI não funcionará.
 * **O conjunto de dados deve incluir medidas** – O conjunto de dados deve incluir medidas de modelo definidas para que o Excel as considere como valores em PivotTables e analise os dados corretamente. Saiba mais sobre [Medidas](desktop-measures.md).
 * **Suporte para Grupos** - Não há suporte para os conjuntos de dados compartilhados com pessoas de fora do grupo especificado; portanto, não é possível se conectar a eles.
-* **Assinaturas gratuitas versus Pro** - Não há suporte para atividades associadas a grupos para usuários gratuitos do Power BI; consequentemente, eles não verão conjuntos de dados ou relatórios compartilhados com um grupo em seu próprio espaço de trabalho.
+* **Assinaturas gratuitas versus Pro** - Não há suporte para atividades associadas a grupos para usuários gratuitos do Power BI; consequentemente, eles não verão conjuntos de dados ou relatórios compartilhados com um grupo em seu próprio workspace.
 * **Relatórios ou conjuntos de dados compartilhados** - Não é possível se conectar aos relatórios ou conjuntos de dados que foram compartilhados com você.
 * **Usando tabelas em vez de modelos de dados** - No momento, não há suporte para conjuntos de dados e tabelas que são criados mediante a importação somente de tabelas do Excel (sem modelo de dados); portanto, não é possível se conectar a eles.
 

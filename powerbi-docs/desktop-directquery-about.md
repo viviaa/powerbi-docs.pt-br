@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1104c7f90f46252a74c4aa8e5ec573a159ef1c40
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 755864d4588122680f4005a02a9d1a1746e55b98
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550111"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670920"
 ---
 # <a name="using-directquery-in-power-bi"></a>Usando o DirectQuery no Power BI
 Você pode conectar-se a todos os tipos de fontes de dados diferentes ao usar o **Power BI Desktop** ou o **serviço do Power BI**, e você pode fazer essas conexões de dados de maneiras diferentes. Você pode *importar* dados ao Power BI, que é a maneira mais comum de se obter dados ou pode se conectar diretamente aos dados em seu repositório fonte original, o que é conhecido como **DirectQuery**. Este artigo descreve o **DirectQuery** e seus recursos, incluindo os seguintes tópicos:
@@ -333,9 +333,9 @@ Ao selecionar o link *Abrir pastas de rastreamento* em **Opções de Diagnóstic
 
     \<User>\AppData\Local\Microsoft\Power BI Desktop\Traces
 
-Ao navegar até a pasta pai, o conteúdo da pasta pai exibirá a pasta contendo *AnalysisServicesWorkspaces*, com uma subpasta do espaço de trabalho para cada instância aberta do **Power BI Desktop**. Essas subpastas são nomeadas com um sufixo de inteiro, como *AnalysisServicesWorkspace2058279583*.
+Ao navegar até a pasta pai, o conteúdo da pasta pai exibirá a pasta contendo *AnalysisServicesWorkspaces*, com uma subpasta do workspace para cada instância aberta do **Power BI Desktop**. Essas subpastas são nomeadas com um sufixo de inteiro, como *AnalysisServicesWorkspace2058279583*.
 
-Dentro dessa pasta há uma subpasta *\\Data* que contém o arquivo de rastreamento FlightRecorderCurrent.trc da sessão atual do Power BI. A pasta de espaço de trabalho correspondente é excluída quando a sessão associada do Power BI Desktop é encerrada.
+Dentro dessa pasta há uma subpasta *\\Data* que contém o arquivo de rastreamento FlightRecorderCurrent.trc da sessão atual do Power BI. A pasta de workspace correspondente é excluída quando a sessão associada do Power BI Desktop é encerrada.
 
 Os arquivos de rastreamento podem ser lidos usando a ferramenta **SQL Server Profiler**, que está disponível como um download gratuito como parte do **SQL Server Management Studio**. Você pode obtê-la [neste local](https://msdn.microsoft.com/library/mt238290.aspx).
 
@@ -371,7 +371,7 @@ Observe que, na imagem acima, algumas das colunas menos interessantes foram estr
 
 A abordagem recomendada para capturar um rastreamento para ajudar a diagnosticar um problema de desempenho potencial é a seguinte:
 
-* Abra uma única sessão do **Power BI Desktop** (para evitar confusão de várias pastas de espaço de trabalho)
+* Abra uma única sessão do **Power BI Desktop** (para evitar confusão de várias pastas de workspace)
 * Realize o conjunto de ações desejadas no **Power BI Desktop**. Inclua algumas ações adicionais, para garantir que os eventos desejados sejam liberados no arquivo de rastreamento.
 * Abra o **SQL Server Profiler** e examine o rastreamento, conforme descrito anteriormente. Lembre-se de que o arquivo de rastreamento será excluído com o fechamento do **Power BI Desktop**. Além disso, as ações adicionais no Power BI Desktop não aparecerão imediatamente – o arquivo de rastreamento deve ser fechado e aberto novamente para que os novos eventos sejam vistos.
 * Mantenha as sessões individuais razoavelmente pequenas (dez segundos de ações e não centenas) para facilitar a interpretação do arquivo de rastreamento (e porque há um limite no tamanho do arquivo de rastreamento, portanto, para sessões muito longas, há uma possibilidade de que eventos recentes sejam descartados).
