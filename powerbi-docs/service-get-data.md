@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b61ff56ea1aec64a3e88db46836f948c4190d60
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 2a23a725ecad5641c3f82fa4c57ee1a0bc951e28
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547443"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670315"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Fontes de dados do serviço do Power BI
 Dados são o coração do Power BI. Sempre que você está explorando dados, criando gráficos e dashboards, fazendo perguntas com P e R, todas essas visualizações e respostas que você vê estão, na verdade, extraindo dados subjacentes de um conjunto de dados. Mas de onde vem esse conjunto de dados? Bem, de uma fonte de dados.
 
 Neste artigo, vamos abordar os diferentes tipos de fontes de dados aos quais você pode se conectar usando o serviço do Power BI. Tenha em mente que há muitos outros tipos de fontes de dados dos quais você pode obter dados. Mas eles podem exigir que você primeiro use o Power BI Desktop ou a consulta avançada de dados e recursos de modelagem do Excel. Veremos mais detalhes posteriormente. Por enquanto, vamos examinar os diferentes tipos de fontes de dados aos quais você pode se conectar diretamente do site do serviço do Power BI.
 
-Você pode obter dados de qualquer uma dessas fontes de dados no Power BI clicando em **Meu Espaço de Trabalho** > **Obter Dados**.
+Você pode obter dados de qualquer uma dessas fontes de dados no Power BI clicando em **Meu Workspace** > **Obter Dados**.
 
 ![](media/service-get-data/pbi_getdata_startscreen.png)
 
@@ -48,7 +48,7 @@ Pacotes de conteúdo contêm todos os dados e relatórios de que você precisa j
 
 **Organizacional** – se você e outros usuários da sua organização tiverem uma conta do Power BI Pro, vocês podem criar, compartilhar e usar pacotes de conteúdo. Para saber mais, veja [Pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md).
 
-## <a name="databases"></a>Bancos de dados
+## <a name="databases"></a>Bancos de Dados
 ![](media/service-get-data/pbi_getdata_databases.png)
 
 **Bancos de dados na nuvem** – a partir do serviço do Power BI, você pode se conectar em tempo real ao Banco de Dados SQL do Azure, SQL Data Warehouse do Azure, Spark no Azure HD Insight e SQL Server Analysis Services usando DirectQuery. As conexões do Power BI com esses bancos de dados ocorrem em tempo real, ou seja, quando você se conecta, digamos, a um Banco de Dados SQL do Azure e começa a explorar os dados criando relatórios no Power BI, quando você fatia os dados ou adiciona outro campo a uma visualização, é feita uma consulta diretamente ao banco de dados. Para saber mais, veja [Azure e Power BI](service-azure-and-power-bi.md).
