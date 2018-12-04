@@ -1,21 +1,21 @@
 ---
 title: Da pasta de trabalho do Excel para um relatório incrível em um instante
 description: Da pasta de trabalho do Excel para um relatório incrível em um instante
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ebbca73f781946f989b2f3afa65aa0a940f7a680
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545120"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829977"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Da pasta de trabalho do Excel para um relatório incrível em um instante
 Sua gerente deseja ver um relatório sobre os números de vendas mais recentes combinado com as impressões da última campanha no final do dia. Porém, os dados mais recentes residem em vários sistemas de terceiros e em arquivos em seu laptop. Anteriormente, levava várias horas para criar visuais e formatar um relatório. Você está começando a ficar ansioso.
@@ -36,7 +36,7 @@ Em seguida, formate os dados como uma tabela. No Excel, na guia Página Inicial,
 ## <a name="upload-your-excel-file-into-power-bi"></a>Carregar seu arquivo do Excel no Power BI
 O Power BI se conecta a várias fontes de dados, incluindo arquivos do Excel que residem em seu computador. Para começar, entre no serviço do Power BI. Se você ainda não se inscreveu, [poderá fazê-lo gratuitamente](https://powerbi.com).
 
-Você deseja criar um novo painel. Abra **Meu espaço de trabalho** e selecione o ícone **+ Criar**.
+Você deseja criar um novo painel. Abra **Meu workspace** e selecione o ícone **+ Criar**.
 
 ![Ícone Criar](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
 

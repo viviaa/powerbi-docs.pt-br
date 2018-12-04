@@ -10,19 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718035"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830161"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Criar um novo relatório no serviço do Power BI importando um conjunto de dados
 Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora deseja criar o seu próprio relatório. Há muitas maneiras diferentes para criar um relatório e, neste artigo, vamos começar criando um relatório muito básico com base em um conjunto de dados do Excel usando o serviço do Power BI. Depois de compreender os fundamentos da criação de um relatório, as **Próximas etapas** no final vão direcioná-lo para tópicos mais avançados sobre relatórios.  
 
-> **DICA**: para criar um relatório copiando um relatório existente, consulte [Copiar um relatório](power-bi-report-copy.md)
-> 
-> ### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 > - Serviço do Power BI (para criar relatórios usando o Power BI Desktop, confira [Exibição de relatório do Desktop](desktop-report-view.md))  
 > - Conjunto de dados Exemplo de Análise de Varejo
 
@@ -93,7 +91,7 @@ Nossa CMO tem algumas perguntas adicionais para respondermos. Ela gostaria de ve
 Continue explorando seus dados e adicionando visualizações. Quando você encontrar insights especialmente interessantes, [fixe-os em um painel](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Próximas etapas
-* [Adicionar uma nova página ao relatório](power-bi-report-add-page.md)  
+
 * Saiba como [fixar visualizações em um dashboard](service-dashboard-pin-tile-from-report.md)   
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 5d2a33b8dc50a4a30bb79406462f1342953528d9
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448950"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830368"
 ---
 # <a name="combo-chart-in-power-bi"></a>Gráfico de combinação no Power BI
 No Power BI, um gráfico de combinação é uma visualização única que combina um gráfico de linhas e um gráfico de colunas. Combinando os 2 gráficos em um permite você faça uma comparação rápida dos dados.
@@ -45,7 +45,7 @@ Veja Will criar um gráfico de combinação usando a amostra de Vendas e Marketi
 
 1. No painel "Exemplo de análise de varejo", selecione o bloco **Armazenamentos Totais** para abrir o relatório “Exemplo de Análise de Varejo”.
 2. Selecione **Editar relatório** para abrir o relatório no modo de Exibição de Edição.
-3. [Adicione uma nova página do relatório](../power-bi-report-add-page.md).
+3. Adicione uma nova página de relatório.
 4. Crie um gráfico de coluna que exibe as vendas deste e margem bruta por mês.
 
     a.  No painel Campos, selecione **Vendas** \> **Vendas do Deste Ano** > **Valor**.
