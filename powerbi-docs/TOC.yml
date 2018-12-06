@@ -282,6 +282,8 @@ items:
         href: desktop-create-phone-report.md
       - name: Usar Ver dados e Ver relatórios
         href: desktop-see-data-see-records.md
+      - name: Dicas para criação de relatórios
+        href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualizações
       items:
       - name: Melhores práticas de visualização
@@ -312,7 +314,7 @@ items:
         href: power-bi-reports-add-text-and-shapes.md
       - name: Personalizar as propriedades dos eixos x e y
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: ArcGIS no Power BI
+      - name: ArcGIS Maps no Power BI
         href: power-bi-visualization-arcgis.md
       - name: Gráfico de área básico
         href: visuals/power-bi-visualization-basic-area-chart.md
@@ -346,6 +348,8 @@ items:
         href: visuals/power-bi-visualization-treemaps.md
       - name: Gráficos de cascata no Power BI
         href: visuals/power-bi-visualization-waterfall-charts.md
+      - name: Criar linhas de referência dinâmica
+        href: service-analytics-pane.md
     - name: Solução de problemas
       items:
       - name: Solucionar problemas de importação de bancos de dados do Access e planilhas do Excel no Power BI Desktop e no Power Query
@@ -382,10 +386,10 @@ items:
       href: power-bi-overview.md
   - name: Tutoriais
     items:
-    - name: Conecte-se a um exemplo do GitHub
-      href: service-tutorial-connect-to-github.md
     - name: Introdução ao Power BI
       href: service-get-started.md
+    - name: Conecte-se a um exemplo do GitHub
+      href: service-tutorial-connect-to-github.md
   - name: Conceitos
     items:
     - name: O que há de novo no serviço do Power BI
@@ -440,22 +444,10 @@ items:
         href: service-power-bi-get-started-third-party-apps.md
   - name: Como
     items:
-    - name: Tarefas comuns
-      items:
-      - name: Renomear conteúdo no Power BI
-        href: service-rename.md
-      - name: Quick Insights no Power BI
-        href: service-insights.md
-      - name: Inscrever sua organização do Governo dos EUA
-        href: service-govus-signup.md
-      - name: Alertas de dados no serviço do Power BI
-        href: service-set-data-alerts.md
-      - name: Introdução à P e R do Power BI
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: Excluir quase tudo no Power BI
-        href: service-delete.md
     - name: Conectar aos serviços
       items:
+      - name: Conectar aos serviços
+        href: service-connect-to-services.md
       - name: Acumatica
         href: service-connect-to-acumatica.md
       - name: Adobe Analytics
@@ -570,7 +562,7 @@ items:
         href: service-parameters.md
       - name: Obter dados de arquivos .csv (valores separados por vírgula)
         href: service-comma-separated-value-files.md
-      - name: Streaming em tempo real no Power BI (visualização)
+      - name: Streaming em tempo real no Power BI
         href: service-real-time-streaming.md
       - name: Publicar no Power BI por meio do Excel 2016
         href: service-publish-from-excel.md
@@ -622,6 +614,8 @@ items:
         href: service-dashboard-pin-tile-from-q-and-a.md
       - name: Fixar uma página inteira do relatório em um painel
         href: service-dashboard-pin-live-tile-from-report.md
+      - name: Alertas de dados no serviço do Power BI
+        href: service-set-data-alerts.md
       - name: Métrica de uso para painéis
         href: service-usage-metrics.md
       - name: Adicionar uma imagem, uma caixa de texto, um vídeo ou um código a um dashboard
@@ -630,8 +624,6 @@ items:
         href: service-dashboard-edit-tile.md
       - name: Dicas para projetar um ótimo painel
         href: service-dashboards-design-tips.md
-      - name: Otimizar seus dados para Insights Rápidos
-        href: service-insights-optimize.md
       - name: Criar uma exibição de telefone de um dashboard
         href: service-create-dashboard-mobile-phone-view.md
       - name: Criar um código QR para um bloco
@@ -644,54 +636,48 @@ items:
         href: service-dashboard-themes.md
     - name: Relatórios
       items:
-      - name: Crie um novo relatório por meio de um relatório existente
-        href: power-bi-report-copy.md
-      - name: Adicionar uma página a um relatório
-        href: power-bi-report-add-page.md
+      - name: Criar um relatório com base em um conjunto de dados
+        href: service-report-create-new.md
       - name: Adicionar um filtro a um relatório
         href: power-bi-report-add-filter.md
       - name: Salve um relatório no Power BI
         href: service-report-save.md
-      - name: Criar um novo relatório por meio de um conjunto de dados
-        href: service-report-create-new.md
       - name: Interagir com um relatório no Modo de Exibição de Edição
         href: service-interact-with-a-report-in-editing-view.md
       - name: Analisar no Excel
         href: service-analyze-in-excel.md
       - name: Dicas e truques para criar relatórios
         href: power-bi-reports-tips-and-tricks-for-creating.md
-      - name: Painel de análise
-        href: service-analytics-pane.md
       - name: Métrica de uso para relatórios
         href: service-usage-metrics.md
       - name: Criar um código QR para um relatório
         href: service-create-qr-code-for-report.md
-      - name: Reordenar páginas em um relatório
-        href: service-report-reorder-pages.md
-      - name: Duplicar uma página de relatório
-        href: power-bi-report-copy-paste-page.md
-      - name: Exportar um relatório do serviço para o Power BI Desktop (versão prévia)
+      - name: Exportar um relatório para o Power BI Desktop (Versão prévia)
         href: service-export-to-pbix.md
       - name: Filtrar um relatório usando parâmetros na URL
         href: service-url-filters.md
       - name: Melhores práticas para a criação de relatórios rápidos e confiáveis
         href: power-bi-reports-performance.md
-      - name: Interagir com ArcGIS maps
-        href: visuals/power-bi-visualizations-arcgis.md
     - name: Fazer perguntas sobre seus dados
       items:
+      - name: Introdução à P e R do Power BI
+        href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Usar P e R para criar visualizações e relatórios
         href: power-bi-tutorial-q-and-a.md
       - name: Fazer seus dados funcionarem bem com as P e R
         href: service-prepare-data-for-q-and-a.md
-      - name: Habilitar o Cortana para o Power BI
-        href: service-cortana-enable.md
       - name: Criar perguntas em destaque para as P e R
         href: service-q-and-a-create-featured-questions.md
-      - name: Tipos de visualização no Power BI
+      - name: Tipos de visualização em P e R
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: Usar as P e R com conexões dinâmicas
         href: service-q-and-a-direct-query.md
+      - name: Habilitar o Cortana para o Power BI
+        href: service-cortana-enable.md
+      - name: Quick Insights no Power BI
+        href: service-insights.md
+      - name: Otimizar seus dados para Insights Rápidos
+        href: service-insights-optimize.md
     - name: Compartilhar seu trabalho
       items:
       - name: Como devo colaborar e compartilhar?
@@ -718,28 +704,6 @@ items:
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
       - name: Compartilhar um dashboard que é vinculado a uma pasta de trabalho do Excel no OneDrive
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Pacotes de conteúdo
-      items:
-      - name: Gerenciar, atualizar e excluir pacotes de conteúdo organizacional
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: 'Pacotes de conteúdo organizacional: copiar, atualizar e obter acesso'
-        href: service-organizational-content-pack-copy-refresh-access.md
-      - name: 'Pacotes de conteúdo organizacional: introdução'
-        href: service-organizational-content-pack-introduction.md
-      - name: Criar e publicar um pacote de conteúdo organizacional
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: Remover a conexão com um pacote de conteúdo organizacional
-        href: service-organizational-content-pack-disconnect.md
-      - name: Certificação
-        items:
-        - name: Programa de certificação do pacote de conteúdo
-          href: service-content-pack-overview.md
-        - name: Criação do pacote de conteúdo de modelo
-          href: template-content-pack-authoring.md
-        - name: Teste do pacote de conteúdo de modelo
-          href: template-content-pack-testing.md
-        - name: Experiências do pacote de conteúdo de modelo
-          href: template-content-pack-experience.md
     - name: Publicar
       items:
       - name: Power BI Publisher para Excel
@@ -792,6 +756,60 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Conectar-se aos fluxos de dados no Power BI Desktop
         href: desktop-connect-dataflows.md
+    - name: Relatórios paginados no Power BI
+      items:
+      - name: O que são relatórios paginados? (Versão prévia)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Perguntas frequentes sobre relatórios paginados (Versão prévia)
+        href: paginated-reports-faq.md
+      - name: Criar e carregar um relatório paginado (Versão prévia)
+        href: paginated-reports-quickstart-aw.md
+      - name: Explorar o modo de exibição de Design do Relatório (Versão prévia)
+        href: paginated-reports-report-design-view.md
+      - name: Inserir dados diretamente em um relatório paginado (Versão prévia)
+        href: paginated-reports-enter-data.md
+      - name: Criar uma fonte de dados incorporados (Versão prévia)
+        href: paginated-reports-embedded-data-source.md
+      - name: Criar um conjunto de dados incorporados (Versão prévia)
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Criar parâmetros (Versão prévia)
+        href: paginated-reports-parameters.md
+      - name: Publicar um relatório paginado (Versão prévia)
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: Exibir um relatório paginado (Versão prévia)
+        href: paginated-reports-view-power-bi-service.md
+      - name: Interagir com parâmetros (Versão prévia)
+        href: paginated-reports-view-parameters.md
+    - name: Outras tarefas
+      items:
+      - name: Renomear conteúdo no Power BI
+        href: service-rename.md
+      - name: Inscrever sua organização do Governo dos EUA
+        href: service-govus-signup.md
+      - name: Excluir quase tudo no Power BI
+        href: service-delete.md
+      - name: Pacotes de conteúdo
+        items:
+        - name: Gerenciar, atualizar e excluir pacotes de conteúdo organizacional
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: 'Pacotes de conteúdo organizacional: copiar, atualizar e obter acesso'
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: 'Pacotes de conteúdo organizacional: introdução'
+          href: service-organizational-content-pack-introduction.md
+        - name: Criar e publicar um pacote de conteúdo organizacional
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: Remover a conexão com um pacote de conteúdo organizacional
+          href: service-organizational-content-pack-disconnect.md
+        - name: Certificação
+          items:
+          - name: Programa de certificação do pacote de conteúdo
+            href: service-content-pack-overview.md
+          - name: Criação do pacote de conteúdo de modelo
+            href: template-content-pack-authoring.md
+          - name: Teste do pacote de conteúdo de modelo
+            href: template-content-pack-testing.md
+          - name: Experiências do pacote de conteúdo de modelo
+            href: template-content-pack-experience.md
   - name: Recursos
     items:
     - name: Vídeos
@@ -802,38 +820,6 @@ items:
       href: supported-languages-countries-regions.md
     - name: White papers
       href: whitepapers.md
-- name: Relatórios paginados no Power BI
-  items:
-  - name: Visão geral
-    items:
-    - name: O que são relatórios paginados? (Versão prévia)
-      href: paginated-reports-report-builder-power-bi.md
-  - name: Tutoriais
-    items:
-    - name: Criar e carregar um relatório paginado
-      href: paginated-reports-quickstart-aw.md
-  - name: Conceitos
-    items:
-    - name: Como explorar o modo Design do Relatório
-      href: paginated-reports-report-design-view.md
-    - name: Perguntas frequentes sobre relatórios paginados
-      href: paginated-reports-faq.md
-  - name: Como
-    items:
-    - name: Inserir dados diretamente em um relatório paginado
-      href: paginated-reports-enter-data.md
-    - name: Criar uma fonte de dados incorporados
-      href: paginated-reports-embedded-data-source.md
-    - name: Criar um conjunto de dados incorporados
-      href: paginated-reports-create-embedded-dataset.md
-    - name: Criar parâmetros
-      href: paginated-reports-parameters.md
-    - name: Publicar um relatório paginado
-      href: paginated-reports-save-to-power-bi-service.md
-    - name: Exibir um relatório paginado
-      href: paginated-reports-view-power-bi-service.md
-    - name: Interagir com parâmetros
-      href: paginated-reports-view-parameters.md
 - name: Power BI para desenvolvedores
   items:
   - name: O que os desenvolvedores podem fazer com o Power BI
@@ -1002,7 +988,7 @@ items:
         href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: Obter um token de acesso de autenticação
         href: developer/walkthrough-push-data-get-token.md
-      - name: Criar um conjunto de dados
+      - name: Crie um conjunto de dados
         href: developer/walkthrough-push-data-create-dataset.md
       - name: Obter um conjunto de dados para adicionar linhas
         href: developer/walkthrough-push-data-get-datasets.md
@@ -1265,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 83446170e1ee29cdf2e2d2f1298a37c58e255f1b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331840"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900372"
