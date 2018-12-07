@@ -1,5 +1,5 @@
 ---
-title: Inserir dados diretamente em um relatório paginado no Construtor de Relatórios
+title: Inserir dados diretamente em um relatório paginado no Construtor de Relatórios (versão prévia)
 description: Neste artigo, você verá como inserir dados diretamente em um relatório paginado no Construtor de Relatórios.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
 ms.author: maggies
-ms.openlocfilehash: 201a81eaef81015c73d70b54e8e862c2ccc29b1d
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: c3b003ee600df010aa07aad78ee2350704734dd4
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289904"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900395"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Inserir dados diretamente em um relatório paginado no Construtor de Relatórios – Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Inserir dados diretamente em um relatório paginado no Construtor de Relatórios (versão prévia) – Power BI
 
 Neste artigo, você aprenderá sobre um recurso na nova versão do SQL Server 2016 do Construtor de Relatórios que permite inserir dados diretamente em um relatório de RDL como um conjunto de dados inserido.  Esse recurso é semelhante ao Power BI Desktop. Você pode digitar os dados diretamente em um conjunto de dados em seu relatório ou colá-los de outro programa, como o Microsoft Excel. Depois de criar um conjunto de dados inserindo dados, você pode usá-lo exatamente como faria com qualquer outro conjunto de dados inserido que você criou. Além disso, você pode adicionar mais de uma tabela e usá-la como um filtro para as outras. Esse recurso é especialmente útil para conjuntos de dados de pequenos e estáticos que talvez você precise usar em seu relatório, como parâmetros de relatório.
  

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI | Microsoft Docs'
+title: 'Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)'
 description: Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: b057fd14083cdabff96d9821d1399da07b93556b
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: fbeb617207c13459fe88487547609323391487e2
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452814"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900602"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)
 
 Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado com uma tabela que encapsula para várias páginas. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI. Os relatórios paginados no serviço do Power BI estão no momento em versão prévia.
 
@@ -108,7 +108,7 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
 
     - Endereço
     - Cliente
-    - Produto
+    - Product
     - ProductCategory
     - SalesOrderDetail
     - SalesOrderHeader

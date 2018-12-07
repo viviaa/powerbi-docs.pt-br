@@ -1,5 +1,5 @@
 ---
-title: Criar um conjunto de dados inseridos para um relatório paginado do Power BI | Microsoft Docs
+title: Criar um conjunto de dados inseridos para um relatório paginado do Power BI (versão prévia)
 description: Neste artigo, você aprenderá como criar um conjunto de dados inserido, com base em uma fonte de dados inseridos para um relatório paginado no serviço do Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
 ms.author: maggies
-ms.openlocfilehash: 4362633f705d412749e1146417a48cd61d47743c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 827a7acd24ead0c4948a09f2e67b53c3966769bb
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266497"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900418"
 ---
-# <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service"></a>Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI
+# <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI (versão prévia)
 Neste artigo, você aprenderá como criar um conjunto de dados inserido, com base em uma fonte de dados inseridos para um relatório paginado no serviço do Power BI. Os conjuntos de dados inseridos estão contidos em um único relatório paginado, para uso nesse relatório. Atualmente, os relatórios paginados publicados no serviço do Power BI precisam de conjuntos de dados e fontes de dados inseridos. Você cria a fonte de dados inserida e o conjunto de dados no Construtor de Relatórios, enquanto você estiver criando o relatório. 
 
 Antes de criar o conjunto de dados, você precisará criar uma fonte de dados. Confira [Fontes de dados inseridos para relatórios paginados no serviço do Power BI](paginated-reports-embedded-data-source.md) para saber mais.

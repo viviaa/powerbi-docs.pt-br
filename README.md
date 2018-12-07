@@ -1,8 +1,13 @@
-# powerbi-content-pr
-You've found the GitHub repository for the technical documentation that is published to the Power BI Documentation Center at [http://powerbi.microsoft.com/documentation](http://powerbi.microsoft.com/documentation).
+# <a name="microsoft-power-bi-documentation"></a>Documentação do Microsoft Power BI
 
-This repository also contains guidance to help you contribute to our technical documentation. For a list of the articles in the contributors' guide, see [the index](contributor-guide/contributor-guide-index.md).
+Este é o repositório no GitHub da documentação técnica de produto do **Power BI**. Esta documentação foi publicada em [https://docs.microsoft.com/power-bi](https://docs.microsoft.com/power-bi).
 
-## Code of conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## <a name="how-to-contribute"></a>Como colaborar
 
+Agradecemos o seu interesse em colaborar com o [Docs.microsoft.com](https://docs.microsoft.com/) – plataforma de conteúdo técnico de produtos e serviços da Microsoft.
+
+Para saber como colaborar com o conteúdo deste repositório, comece lendo o nosso [Guia do colaborador do Microsoft Docs](https://docs.microsoft.com/contribute). Se você é um funcionário da Microsoft, visite a [versão interna](https://aka.ms/docsguidescontribute) deste guia.
+
+## <a name="code-of-conduct"></a>Código de conduta
+
+Este projeto adota o [Código de Conduta de Software Livre da Microsoft](https://opensource.microsoft.com/codeofconduct/). Para saber mais, confira [Perguntas frequentes sobre o código de conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou entre em contato com [opencode@microsoft.com](mailto:opencode@microsoft.com), para fazer comentários ou sanar quaisquer dúvidas adicionais.

@@ -1,5 +1,5 @@
 ---
-title: Conheça o modo de exibição Design de Relatório para relatórios paginados – Power BI | Microsoft Docs
+title: Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
 description: O modo de exibição Design de Relatório no Construtor de Relatórios é o espaço de design para a criação de relatórios paginados que podem ser publicados no serviço do Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: de3919903a3df4fdc5b0e167069b3035204761ff
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266522"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900441"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados
+# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
 
 O modo de exibição Design de Relatório no Construtor de Relatórios é o espaço de design para a criação de relatórios paginados que podem ser publicados no serviço do Power BI. A superfície de design fica no centro do Construtor de Relatórios, com a faixa de opções e os painéis em torno dela. A superfície de design é onde você pode adicionar e organizar os itens do seu relatório. Este artigo explica os painéis usados para adicionar, selecionar e organizar os recursos de relatório e alterar as propriedades de itens de relatório.  
 
@@ -109,7 +109,7 @@ A barra de status do relatório atual mostra o nome do servidor a que de relató
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[O que são os relatórios paginados no Power BI Premium? (Versão prévia)](paginated-reports-report-builder-power-bi.md) 
+[O que são os relatórios paginados no Power BI Premium? (versão prévia)](paginated-reports-report-builder-power-bi.md) 
 
   
   
