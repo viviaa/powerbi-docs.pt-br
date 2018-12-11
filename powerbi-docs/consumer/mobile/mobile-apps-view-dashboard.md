@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 1b5f62e965a5a5df97a16c20f60043db534b8f77
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9738660ced6b8dbe32e7308b86f671f21c8c312c
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547581"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979480"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Exibir painéis e relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -31,7 +31,7 @@ Painéis são um portal para o ciclo de vida e processos de sua empresa. Um pain
 Para ver painéis e relatórios em seu dispositivo móvel, é necessário criar ou se conectar a eles em um navegador da Web. 
 
 1. Vá até o serviço do Power BI ([https://www.powerbi.com](https://www.powerbi.com)) e [inscreva-se para ter uma conta](../../service-self-service-signup-for-power-bi.md).
-2. [Crie seus próprios dashboards e relatórios do Power BI](../../service-get-started.md) ou conecte-se a [aplicativos do Power BI](../end-user-connect-to-services.md) existentes para usar uma variedade de serviços, como o [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) e o [Adobe Analytics](../../service-connect-to-adobe-analytics.md).
+2. [Crie seus próprios dashboards e relatórios do Power BI](../../service-get-started.md) ou conecte-se a [aplicativos do Power BI](../../service-connect-to-services.md) existentes para usar uma variedade de serviços, como o [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) e o [Adobe Analytics](../../service-connect-to-adobe-analytics.md).
 
 Este é um dashboard do Power BI no serviço do Power BI:
 
@@ -66,7 +66,7 @@ Este é um dashboard do Power BI no serviço do Power BI:
    * Toque na estrela ![Estrela de Favorito](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) para [torná-lo um favorito](mobile-apps-favorites.md).
    * Toque em **Convidar** ![ícone Convidar](./media/mobile-apps-view-dashboard/pbi_ipad_shareiconblk.png) para [convidar um colega](mobile-share-dashboard-from-the-mobile-apps.md) para exibir o seu dashboard.
    * [Sincronize o dashboard com o Apple Watch](mobile-apple-watch.md).
-4. Para voltar à lista de dashboards, toque na seta ao lado do título do dashboard e, em seguida, toque em **Meu Espaço de Trabalho**.
+4. Para voltar à lista de dashboards, toque na seta ao lado do título do dashboard e, em seguida, toque em **Meu Workspace**.
    
    ![Navegação estrutural](./media/mobile-apps-view-dashboard/power-bi-iphone-breadcrumb.png)
 
@@ -87,7 +87,7 @@ Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do s
    
    * As estrelas amarelas ![Estrela de Favorito](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) mostram quais dashboards são favoritos. 
    * A notação embaixo de cada nome de dashboard (neste caso, "MBI") ![Classificação de dados](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) mostra como os dados em cada dashboard são classificados. Leia mais sobre [classificação de dados no Power BI](../../service-data-classification.md).
-3. Você pode compartilhar um dashboard em seu espaço de trabalho. Toque nas reticências (**...**) no canto inferior direito do bloco do dashboard e toque em **Convidar Outras Pessoas**.
+3. Você pode compartilhar um dashboard em seu workspace. Toque nas reticências (**...**) no canto inferior direito do bloco do dashboard e toque em **Convidar Outras Pessoas**.
    
    ![Ícone Convidar](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Você também pode tocar em um dashboard para abri-lo e ver os blocos. No dashboard, é possível interagir com:
@@ -96,7 +96,7 @@ Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do s
    * [Abrir os relatórios](mobile-reports-in-the-mobile-apps.md) subjacentes aos blocos.
    * [Convidar outras pessoas para exibir o dashboard](mobile-share-dashboard-from-the-mobile-apps.md).
    * [Anotar e compartilhar um instantâneo](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) de um bloco.
-5. Para voltar ao Meu Espaço de Trabalho, toque no nome do dashboard no canto superior esquerdo e, em seguida, toque em **Meu Espaço de Trabalho**.
+5. Para voltar ao Meu Workspace, toque no nome do dashboard no canto superior esquerdo e, em seguida, toque em **Meu Workspace**.
    
    ![Navegação estrutural](./media/mobile-apps-view-dashboard/power-bi-dashboard-breadcrumb.png)
 
@@ -122,7 +122,7 @@ Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do s
    
    ![Menu de reticências](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Passe o dedo para cima e para baixo para ver todos os [blocos no dashboard](mobile-tiles-in-the-mobile-apps.md). 
-3. Para voltar para a página inicial de dashboards, toque no nome do dashboard para abrir a trilha de localização. Em seguida, toque em **Meu Espaço de Trabalho**.   
+3. Para voltar para a página inicial de dashboards, toque no nome do dashboard para abrir a trilha de localização. Em seguida, toque em **Meu Workspace**.   
 
 ## <a name="view-dashboards-on-your-android-tablet"></a>Exibir dashboards em seu tablet Android
 1. Abra o aplicativo do Power BI em seu tablet Android e entre.
@@ -140,7 +140,7 @@ Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do s
 4. Passe o dedo para cima e para baixo para ver todos os [blocos no dashboard](mobile-tiles-in-the-mobile-apps.md). 
    
    Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do seu painel e o movimento panorâmico para navegar por ele. Além disso, também é possível [tocar em um bloco](mobile-tiles-in-the-mobile-apps.md) para abri-lo no modo foco e interagir com os dados.
-5. Para voltar para a página inicial dos dashboards, toque no nome do dashboard para abrir a trilha de navegação estrutural e, em seguida, toque em **Meu Espaço de Trabalho**:
+5. Para voltar para a página inicial dos dashboards, toque no nome do dashboard para abrir a trilha de navegação estrutural e, em seguida, toque em **Meu Workspace**:
    
     ![Navegação estrutural](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
@@ -174,7 +174,7 @@ Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do s
    * Toque no ícone **Convidar** ![ícone Convidar](./media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) para [compartilhar seu dashboard](mobile-share-dashboard-from-the-mobile-apps.md) com um colega.
    * Toque na estrela ![estrela de Favorito](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) para [tornar o dashboard um favorito](mobile-apps-favorites.md).
    * Toque no ícone **Fixar na Tela Inicial** para [fixar o dashboard na Tela Inicial do Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
-4. Para voltar para a página inicial dos dashboards, toque no nome do dashboard para abrir a trilha de navegação estrutural e, em seguida, toque em **Meu Espaço de Trabalho**:
+4. Para voltar para a página inicial dos dashboards, toque no nome do dashboard para abrir a trilha de navegação estrutural e, em seguida, toque em **Meu Workspace**:
    
     ![Navegação estrutural](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
 

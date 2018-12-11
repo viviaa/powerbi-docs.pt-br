@@ -7,18 +7,18 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/09/2018
+ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9c9a99e2bfe0ae90607da4f27d77cb0a2a78a7c8
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: cba5f971e81a425de661e03ac66c5c6d5fe82049
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507636"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979365"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Instalar e usar aplicativos com dashboards e relatórios no Power BI
-No Power BI, os *aplicativos* reúnem os dashboards e os relatórios relacionados em um só local. As pessoas em sua organização criam e distribuem aplicativos com informações comerciais essenciais. Os [serviços externos](end-user-connect-to-services.md) que talvez você já usa, como o Google Analytics e o Microsoft Dynamics CRM, também oferecem aplicativos do Power BI. 
+No Power BI, os *aplicativos* reúnem os dashboards e os relatórios relacionados em um só local. As pessoas em sua organização criam e distribuem aplicativos com informações comerciais essenciais. Os [serviços externos](../service-connect-to-services.md) que talvez você já usa, como o Google Analytics e o Microsoft Dynamics CRM, também oferecem aplicativos do Power BI. 
 
 ![Aplicativos no Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
@@ -63,5 +63,5 @@ Agora você pode explorar os dados nos dashboards e relatórios do aplicativo. V
 
 
 ## <a name="next-steps"></a>Próximas etapas
-[Aplicativos do Power BI para serviços externos](end-user-connect-to-services.md)
+[Aplicativos do Power BI para serviços externos](../service-connect-to-services.md)
 

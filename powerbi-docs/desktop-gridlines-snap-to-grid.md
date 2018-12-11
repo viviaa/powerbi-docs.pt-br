@@ -4,18 +4,19 @@ description: Usar linhas de grade, ajustar à grade, ordem z, alinhamento e dist
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a798cbb5012933bb01264aa3db9fa9e06b1f334a
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 37416ab15a638ccd8c8e7b1066ffc01f1ba6c944
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669303"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025849"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Use linhas de grade e ajuste de grade em relatórios do Power BI Desktop
 A tela de relatório do **Power BI Desktop** fornece linhas de grade que permitem que você alinhe adequadamente visuais em uma página de relatório e use a funcionalidade de ajustar à grade para que os visuais em seus relatórios fiquem limpos, alinhados e com espaçamento uniforme.
@@ -24,24 +25,22 @@ No **Power BI Desktop**, também é possível ajustar a ordem z (avançar, recua
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
-### <a name="enabling-gridlines-and-snap-to-grid"></a>Habilitando linhas de grade e ajuste de grade
+## <a name="enabling-gridlines-and-snap-to-grid"></a>Habilitando linhas de grade e ajuste de grade
 Para habilitar as linhas de grade e o ajuste à grade, selecione a faixa de opções **Modo de Exibição**, habilite as caixas de seleção para **Mostrar linhas de grade** e **Ajustar objetos à grade.** Você pode selecionar uma ou ambas as caixas. Elas operam independentemente.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
 > [!NOTE]
 > Se **Mostrar linhas de grade** e **Ajustar objetos na grade** estiverem desabilitadas, conecte-se a qualquer fonte de dados e elas serão habilitadas.
-> 
-> 
 
-### <a name="using-gridlines"></a>Uso de linhas de grade
+## <a name="using-gridlines"></a>Uso de linhas de grade
 As linhas de grade são guias visíveis que ajudam a alinhar os visuais. Quando você estiver tentando determinar se dois (ou mais) visuais estão alinhados horizontalmente ou verticalmente, use as linhas de grade para determinar visualmente se suas bordas estão alinhadas.
 
 Use Ctrl + clique para selecionar mais de um visual de uma vez, o que exibe as bordas de todos os visuais selecionados e mostra se os visuais estão alinhados corretamente.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
-#### <a name="using-gridlines-inside-visuals"></a>Usando linhas de grade dentro de visuais
+### <a name="using-gridlines-inside-visuals"></a>Usando linhas de grade dentro de visuais
 No Power BI também há linhas de grade dentro dos visuais que fornecem as guias visíveis para comparar valores e pontos de dados. A partir da versão de setembro de 2017 do **Power BI Desktop**, agora você pode gerenciar as linhas de grade nos visuais usando o cartão **Eixo X** ou **Eixo Y** (conforme apropriado, com base no tipo de visual), encontrado na seção **Formato** do painel **Visualizações**. Gerencie os seguintes elementos de linhas de grade dentro de um visual:
 
 * Ativar ou desativar linhas de grade
@@ -53,14 +52,14 @@ A modificação de alguns elementos das linhas de grade pode ser especialmente �
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
-### <a name="using-snap-to-grid"></a>Uso da grade de ajuste
+## <a name="using-snap-to-grid"></a>Uso da grade de ajuste
 Quando você habilita **Ajustar objetos à grade**, todos os elementos visuais na tela do **Power BI Desktop** que você move (ou redimensiona) são alinhados automaticamente para o eixo de grade mais próximo, tornando muito mais fácil garantir que dois ou mais elementos visuais estejam alinhados à mesma localização horizontal ou vertical ou o tamanho.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
 E isso é tudo para usar **linhas de grade** e **ajustar à grade** para garantir que os visuais em seus relatórios fiquem alinhados adequadamente.
 
-### <a name="using-z-order-align-and-distribute"></a>Usando a ordem z, alinhar e distribuir
+## <a name="using-z-order-align-and-distribute"></a>Usando a ordem z, alinhar e distribuir
 Você pode gerenciar a ordem de frente para trás dos visuais em um relatório, conhecida como *ordem z* de elementos. Este recurso permite sobrepor visuais da maneira que desejar e, em seguida, ajustar a ordem de frente para trás de cada um deles. É possível definir a ordem dos visuais usando os botões **Avançar** e **Recuar**, encontrado na seção **Organizar** da faixa de opções **Formato**. A faixa de opções **Formato** é exibida assim que você seleciona um ou mais visuais na página.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)
