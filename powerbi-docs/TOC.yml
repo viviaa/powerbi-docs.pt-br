@@ -32,21 +32,21 @@ items:
       href: sample-datasets.md
     - name: Usando os pacotes de conteúdo de exemplo
       href: sample-tutorial-connect-to-the-samples.md
-    - name: 'Exemplo de Rentabilidade do Cliente: faça um tour'
+    - name: 'Exemplo de lucratividade do cliente: Faça um tour'
       href: sample-customer-profitability.md
-    - name: 'Exemplo de Análise de Gastos com TI: faça um tour'
+    - name: 'Exemplo de análise de gastos de TI: Faça um tour'
       href: sample-it-spend.md
-    - name: 'Exemplo de Recursos Humanos: faça um tour'
+    - name: 'Exemplo de recursos humanos: Faça um tour'
       href: sample-human-resources.md
-    - name: 'Exemplo de Análise de Oportunidade: faça um tour'
+    - name: 'Exemplo de análise de oportunidade: Faça um tour'
       href: sample-opportunity-analysis.md
-    - name: 'Exemplo de Análise de compras: faça um tour'
+    - name: 'Exemplo de análise de compras: Faça um tour'
       href: sample-procurement.md
-    - name: 'Exemplo de Análise de Varejo: faça um tour'
+    - name: 'Exemplo de análise de varejo: Faça um tour'
       href: sample-retail-analysis.md
-    - name: 'Exemplo de Vendas e Marketing: faça um tour'
+    - name: 'Exemplo de vendas e marketing: Faça um tour'
       href: sample-sales-and-marketing.md
-    - name: 'Exemplo de Análise de Qualidade do Fornecedor: faça um tour'
+    - name: 'Exemplo de análise de qualidade do fornecedor: Faça um tour'
       href: sample-supplier-quality.md
     - name: Baixar a pasta de trabalho de Exemplo Financeiro
       href: sample-financial-download.md
@@ -184,9 +184,9 @@ items:
         href: desktop-sap-bw-connector.md
       - name: Usar os links do OneDrive for Business no Power BI Desktop
         href: desktop-use-onedrive-business-links.md
-      - name: 'Serviço terceirizados: conector do Facebook para o Power BI Desktop'
+      - name: 'Serviço de terceiros: Conector do Facebook para Power BI Desktop'
         href: service-facebook-connector.md
-      - name: 'Serviço terceirizados: conector do Google Analytics para Power BI Desktop'
+      - name: 'Serviço de terceiros: Conector do Google Analytics para Power BI Desktop'
         href: service-google-analytics-connector.md
       - name: 'Project Online: conectar-se aos dados por meio do Power BI Desktop'
         href: desktop-project-online-connect-to-data.md
@@ -734,7 +734,7 @@ items:
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: Solucionando problemas da atualização agendada para Bancos de Dados SQL do Azure
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-      - name: 'Erro: não foi possível encontrar nenhum dado em sua pasta de trabalho do Excel'
+      - name: 'Erro: Não foi possível localizar nenhum dado na sua pasta de trabalho do Excel'
         href: service-admin-troubleshoot-excel-workbook-data.md
       - name: Solucionando problemas de erros de bloco
         href: refresh-troubleshooting-tile-errors.md
@@ -758,6 +758,14 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Conectar-se aos fluxos de dados no Power BI Desktop
         href: desktop-connect-dataflows.md
+      - name: Integração entre fluxos de dados e o Azure Data Lake (versão prévia)
+        href: service-dataflows-azure-data-lake-integration.md
+      - name: Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+      - name: Definir configurações de fluxo de dados de workspace (versão prévia)
+        href: service-dataflows-configure-workspace-storage-settings.md
+      - name: Adicionar uma pasta do CDM ao Power BI como um fluxo de dados (versão prévia)
+        href: service-dataflows-add-cdm-folder.md
     - name: Relatórios paginados no Power BI
       items:
       - name: O que são relatórios paginados? (Versão prévia)
@@ -794,9 +802,9 @@ items:
         items:
         - name: Gerenciar, atualizar e excluir pacotes de conteúdo organizacional
           href: service-organizational-content-pack-manage-update-delete.md
-        - name: 'Pacotes de conteúdo organizacional: copiar, atualizar e obter acesso'
+        - name: 'Pacotes de conteúdo organizacional: Copiar, atualizar e obter acesso'
           href: service-organizational-content-pack-copy-refresh-access.md
-        - name: 'Pacotes de conteúdo organizacional: introdução'
+        - name: 'Pacotes de conteúdo organizacional: Introdução'
           href: service-organizational-content-pack-introduction.md
         - name: Criar e publicar um pacote de conteúdo organizacional
           href: service-organizational-content-pack-create-and-publish.md
@@ -1253,9 +1261,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 066aa4a3b87375e29e14d1611e7e67ab58dfd482
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979664"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181003"
