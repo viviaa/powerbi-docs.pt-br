@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 6f595a2d6423b1e79e927ee2d229363632022d58
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396993"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830000"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Tutorial: Como usar P e R para criar visualizações e relatórios
 A [Visão geral de P e R](consumer/end-user-q-and-a.md) apresentou você às P e R do Power BI e fez a distinção entre *consumidores* (que têm dashboards e relatórios compartilhados com eles) e *criadores* (proprietários de relatórios e conjuntos de dados subjacentes). A primeira parte deste tutorial é destinada principalmente a pessoas que consumem dashboards usando o serviço do Power BI. E a segunda parte é projetada para as pessoas que criam relatórios usando o serviço do Power BI ou Power BI Desktop. [A P e R e o Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) e [a P e R e o Power BI Embedded](developer/qanda.md) são abordados em artigos separados.
@@ -74,7 +74,7 @@ Para usar P e R em relatórios, você deverá ter permissões de edição para o
     **Serviço**    
     ![](media/power-bi-tutorial-q-and-a/power-bi-service.png)
 
-2. Uma caixa de perguntas de P e R é exibida na tela do relatório. No exemplo a seguir, a caixa de perguntas é exibida na parte superior de outra visualização. Isso é bom, mas pode ser melhor [adicionar uma página em branco ao relatório](power-bi-report-add-page.md) antes de fazer uma pergunta.
+2. Uma caixa de perguntas de P e R é exibida na tela do relatório. No exemplo a seguir, a caixa de perguntas é exibida na parte superior de outra visualização. Isso é bom, mas pode ser melhor adicionar uma página em branco ao relatório antes de fazer uma pergunta.
 
     ![](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 

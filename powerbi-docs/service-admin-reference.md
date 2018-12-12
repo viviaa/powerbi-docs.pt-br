@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 06/25/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ed4298e4ed4cddcdf965bd427c654cab6adf1e6
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: 216451874fcc66b14286ea4ed3aeb1845483bfb7
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157001"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578349"
 ---
 # <a name="powershell-cmdlets-rest-apis-and-net-sdk-for-power-bi-administration"></a>Cmdlets do PowerShell, APIs REST e SDK do .NET para a administração do Power BI
 O Power BI permite aos administradores fazer scripts de tarefas comuns com os cmdlets do PowerShell. Ele também expõe as APIs REST e fornece um SDK do .NET para desenvolver soluções administrativas. Este tópico mostra uma lista de cmdlets e o método do SDK correspondente, bem como o ponto de extremidade da API REST. Para obter mais informações, veja:
@@ -23,6 +23,8 @@ O Power BI permite aos administradores fazer scripts de tarefas comuns com os cm
 - [Download](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt/) e [documentação](https://docs.microsoft.com/powershell/power-bi/overview?view=powerbi-ps) do PowerShell
 - [Documentação](https://docs.microsoft.com/rest/api/power-bi/admin) da API REST
 - [Download](https://www.nuget.org/packages/Microsoft.PowerBI.Api/) do SDK do .NET
+
+> Os cmdlets abaixo devem ser chamados com `-Scope Organization` para operar no locatário para administração.
 
 | **Nome do cmdlet** | **Aliases** | **Método do SDK** | **Ponto de extremidade da API REST** | **Descrição** |
 | --- | --- | --- | --- | --- |
@@ -34,10 +36,9 @@ O Power BI permite aos administradores fazer scripts de tarefas comuns com os cm
 | **Restore-PowerBIWorkspace** |**Restore-PowerBIGroup** | Grupos\_RestoreDeletedGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId}/restore | Restaura um workspace excluído. |
 | **Set-PowerBIWorkspace** |**Set-PowerBIGroup** | Grupos\_UpdateGroupAsAdmin | /v1.0/myorg/admin/groups/{groupId} | Atualiza as propriedades de um determinado workspace. |
 | **Get-PowerBIDataset -WorkspaceId** | Não aplicável | Grupos\_GetDatasetsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/datasets | Obtém os conjuntos de dados dentro de um determinado workspace. |
-| **Export-PowerBIReport** | Não aplicável | Relatórios\_ExportReportAsAdmin | Não aplicável | Exporta um determinado relatório a um arquivo local. |
 | **Get-PowerBIReport** | Não aplicável | Relatórios\_GetReportsAsAdmin | /v1.0/myorg/admin/reports | Obtém a lista completa de relatórios em um locatário do Power BI. |
 | **Get-PowerBIDashboard** | Não aplicável | Dashboards\_GetDashboardsAsAdmin | /v1.0/myorg/admin/dashboards | Obtém a lista completa de dashboards em um locatário do Power BI. |
-| **Get-PowerBIDashboard** | Não aplicável | Grupos\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Obtém os dashboards dentro de um determinado workspace. |
+| **Get-PowerBIDashboard -WorkspaceId** | Não aplicável | Grupos\_GetDashboardsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/dashboards | Obtém os dashboards dentro de um determinado workspace. |
 | **Get-PowerBITile** | **Get-PowerBIDashboardTile** | Dashboards\_GetTilesAsAdmin | /v1.0/myorg/admin/dashboards/{dashboard\_id}/tiles | Obtém os blocos de um determinado dashboard. |
 | **Get-PowerBIReport** | Não aplicável | Grupos\_GetReportsAsAdmin | /v1.0/myorg/admin/groups/{group\_id}/reports | Obtém os relatórios dentro de um determinado workspace. |
 | **Get-PowerBIImport** | Não aplicável | Importações\_GetImportsAsAdmin | /v1.0/myorg/admin/imports | Obtém a lista completa de importações em um locatário do Power BI. |

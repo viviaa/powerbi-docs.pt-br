@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 554e9f3bbea5a1da6ac43f21f72b054a26849f23
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908729"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900517"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutorial: Introdução ao serviço do Power BI (app.powerbi.com)
 Esse tutorial ajuda você a começar a usar o ***serviço do Power BI***. Para compreender como o serviço do Power BI se adapta às outras ofertas do Power BI, recomendamos que você comece lendo [O que o é Power BI](power-bi-overview.md).
@@ -145,7 +145,7 @@ Agora que você se conectou aos dados, comece a explorar.  Quando encontrar algo
 ## <a name="clean-up-resources"></a>Limpar recursos
 Agora que você já concluiu o tutorial, é possível excluir o conjunto de dados, o relatório e o dashboard. 
 
-1. Na barra de navegação esquerda, selecione **Meu espaço de trabalho**.
+1. Na barra de navegação esquerda, selecione **Meu workspace**.
 2. Selecione a guia **Conjuntos de dados** e localize o conjunto de dados importado para este tutorial.  
 3. Selecione as reticências (...) > **Excluir**.
 
@@ -158,5 +158,5 @@ Agora que você já concluiu o tutorial, é possível excluir o conjunto de dado
 Pronto para experimentar mais?  Aqui estão alguns modos excelentes de explorar o Power BI.
 
 > [!div class="nextstepaction"]
-> [Conectar aos serviços online que você usa](consumer/end-user-connect-to-services.md)
+> [Conectar aos serviços online que você usa](service-connect-to-services.md)
 

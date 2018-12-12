@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157070"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830299"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
@@ -174,11 +174,15 @@ Para acessar o Portal de administração do Power BI, sua conta deve ser marcada
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Qual é o processo para gerenciar um locatário criado pela Microsoft para meus usuários?
 
-Se um locatário for criado pela Microsoft, você poderá solicitá-lo e gerenciá-lo seguindo estas etapas:
+Quando um usuário de autoatendimento se inscreve para um serviço de nuvem que usa o Azure AD, ele é adicionado a um diretório não gerenciado do Azure AD com base no domínio de email. É possível declarar e gerenciar o locatário que foi criado usando um processo conhecido como *tomada de controle do administrador*. O tipo de tomada de controle que você realiza depende da existência de um locatário gerenciado associado com seu domínio:
 
-1. Ingresse no locatário se inscrevendo no Power BI usando um domínio de endereço de email que corresponda ao domínio de locatário que você deseja gerenciar. Por exemplo, se a Microsoft criar o locatário contoso.com, você precisará ingressar no locatário com um endereço de email que termine com @contoso.com.
+* Use uma *tomada de controle interna* para criar um novo locatário gerenciado para o domínio.
 
-1. Solicite o controle de administração, verificando a propriedade do domínio: quando estiver no locatário, você poderá se autopromover à função de *Administrador Global*, verificando a propriedade de domínio. Para fazer isso, execute as etapas na [documentação do Office 365](/office365/admin/misc/become-the-admin).
+* Use uma *tomada de controle externa* para mover o domínio para um locatário gerenciado existente.
+
+Para saber mais, veja [Tomar o controle em um diretório não gerenciado como administrador no Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+Quando você executa uma tomada de controle externa, o conteúdo do Power BI que foi criado antes da tomada de controle é colocado em um [Espaço de trabalho arquivado do Power BI](service-admin-power-bi-archived-workspace.md). Você deve migrar manualmente todo conteúdo que deseja usar no novo locatário.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Se eu tiver vários domínios, poderei controlar o locatário do Office 365 ao qual os usuários serão adicionados?
 

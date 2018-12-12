@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f2e3ad8528108e63a5573a3df502f90fee6d4c55
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a27e192c5ccc1fb3a7af9bafbc9c4fd14ccabf4c
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670154"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900096"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI para clientes do Governo dos EUA
 O **serviço do Power BI** tem uma versão disponível para clientes do Governo dos Estados Unidos como parte das assinaturas da **Comunidade do Governo dos EUA do Office 365**. A versão do **serviço do Power BI** discutida neste artigo é desenvolvida especificamente para clientes do Governo dos EUA e é separada e diferente da versão comercial do **serviço do Power BI**.
@@ -37,7 +37,7 @@ Os seguintes recursos estão disponíveis para clientes do **Power BI do Governo
 * [Importar dados](service-get-data.md) e relatórios de arquivos do Excel, CSV e Power BI Desktop
 * Gateway de Gerenciamento de Dados
 * Todos os dados são criptografados no SQL Azure e no Armazenamento de Blobs para o Power BI
-* Conectar serviços a [pacotes de conteúdo](consumer/end-user-connect-to-services.md)
+* Conectar serviços a [pacotes de conteúdo](service-connect-to-services.md)
 
 ## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Conectividade entre os Serviços de Nuvem Públicos e Governamentais do Azure 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a23a725ecad5641c3f82fa4c57ee1a0bc951e28
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: e0721efaaca879ffb2915315af9aea4dbafca3ca
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670315"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900234"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Fontes de dados do serviço do Power BI
 Dados são o coração do Power BI. Sempre que você está explorando dados, criando gráficos e dashboards, fazendo perguntas com P e R, todas essas visualizações e respostas que você vê estão, na verdade, extraindo dados subjacentes de um conjunto de dados. Mas de onde vem esse conjunto de dados? Bem, de uma fonte de dados.
@@ -44,11 +44,11 @@ O local onde você armazena seus arquivos também faz muita diferença. O OneDri
 
 Pacotes de conteúdo contêm todos os dados e relatórios de que você precisa já preparados para você. No Power BI, há dois tipos de pacotes de conteúdo; os de serviços, como Google Analytics, Marketo ou Salesforce, e os criados e compartilhados por outros usuários na sua organização.
 
-**Serviços** – há, literalmente, dezenas de serviços com pacotes de conteúdo para o Power BI, e mais são adicionados o tempo todo. A maioria dos serviços exige que você tenha uma conta. Para saber mais, veja [Conectar-se a serviços](consumer/end-user-connect-to-services.md).
+**Serviços** – há, literalmente, dezenas de serviços com pacotes de conteúdo para o Power BI, e mais são adicionados o tempo todo. A maioria dos serviços exige que você tenha uma conta. Para saber mais, veja [Conectar-se a serviços](service-connect-to-services.md).
 
 **Organizacional** – se você e outros usuários da sua organização tiverem uma conta do Power BI Pro, vocês podem criar, compartilhar e usar pacotes de conteúdo. Para saber mais, veja [Pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md).
 
-## <a name="databases"></a>Bancos de Dados
+## <a name="databases"></a>Bancos de dados
 ![](media/service-get-data/pbi_getdata_databases.png)
 
 **Bancos de dados na nuvem** – a partir do serviço do Power BI, você pode se conectar em tempo real ao Banco de Dados SQL do Azure, SQL Data Warehouse do Azure, Spark no Azure HD Insight e SQL Server Analysis Services usando DirectQuery. As conexões do Power BI com esses bancos de dados ocorrem em tempo real, ou seja, quando você se conecta, digamos, a um Banco de Dados SQL do Azure e começa a explorar os dados criando relatórios no Power BI, quando você fatia os dados ou adiciona outro campo a uma visualização, é feita uma consulta diretamente ao banco de dados. Para saber mais, veja [Azure e Power BI](service-azure-and-power-bi.md).

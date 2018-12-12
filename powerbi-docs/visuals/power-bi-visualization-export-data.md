@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396788"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830092"
 ---
 # <a name="export-data-from-visualizations"></a>Exportar dados de uma visualização
 Se desejar ver os dados usados para criar uma visualização, você poderá exibi-los no Power BI ou exportá-los para o Excel como um arquivo .xlsx ou .csv. A opção de exportação de dados requer uma licença Pro ou Premium e a edição de permissões para o conjunto de dados e o relatório. 
@@ -38,7 +38,7 @@ Assista a Will exportar os dados de uma das visualizações de seu relatório, s
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>De uma visualização em um relatório
-Para continuar, abra o [Relatório de exemplo de análise de aquisições](../sample-procurement.md) no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md). [Adicionar uma nova página de relatório em branco](../power-bi-report-add-page.md). Em seguida, siga as etapas abaixo para adicionar uma agregação e um filtro de nível de visualização.
+Para continuar, abra o [Relatório de exemplo de análise de aquisições](../sample-procurement.md) no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md). Adicionar uma nova página de relatório em branco. Em seguida, siga as etapas abaixo para adicionar uma agregação e um filtro de nível de visualização.
 
 1. Criar um novo gráfico de coluna.  No painel Campos, selecione **Localização > Cidade** e **Fatura > Porcentagem de Desconto**.  Talvez você precise mover a **Porcentagem de desconto** para o valor também. 
 

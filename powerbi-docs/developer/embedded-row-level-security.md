@@ -8,21 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/18/2018
-ms.openlocfilehash: 60061d781542f8b5a3ef67a75e61d902459d4963
-ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
+ms.date: 11/28/2018
+ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506766"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578763"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Usar segurança em nível de linha com conteúdo inserido do Power BI
 
-Segurança em nível de linha (RLS) pode ser usada para restringir o acesso do usuário aos dados dentro de painéis, blocos, relatórios e conjuntos de dados. Vários usuários diferentes podem trabalhar com esses mesmos artefatos durante a visualização de dados diferentes. Inserir dá suporte a RLS.
+A **Segurança em Nível de Linha (RLS)** pode ser usada para restringir o acesso do usuário aos dados dentro de painéis, blocos, relatórios e conjuntos de dados. Usuários diferentes podem trabalhar com esses mesmos artefatos durante a visualização de dados distintos. Inserir dá suporte a RLS.
 
-Se você está fazendo uma inserção para usuários que não têm o Power BI (o aplicativo possui dados), o que normalmente é um cenário de ISV, este artigo é ideal para você! Você precisa configurar o token de inserção da conta para o usuário e a função. Continue lendo para saber como fazer isso.
+Se você está fazendo uma inserção para usuários que não têm o Power BI (o aplicativo possui dados), o que normalmente é um cenário de ISV, este artigo é ideal para você! Configure o token de inserção da conta para o usuário e a função.
 
-Se você está fazendo uma inserção para usuários do Power BI (o usuário possui dados), em sua organização, a RLS funciona da mesma maneira que no serviço do Power BI diretamente. Não há nada mais a ser feito no aplicativo. Para obter mais informações, consulte [RLS (segurança em nível de linha) com o Power BI](../service-admin-rls.md).
+Se estiver fazendo uma inserção para usuários do Power BI (o usuário possui os dados), em sua organização, a RLS funciona da mesma maneira que no serviço do Power BI diretamente. Não há nada mais que precise ser feito no aplicativo. Para obter mais informações, consulte [RLS (segurança em nível de linha) com o Power BI](../service-admin-rls.md).
 
 ![Itens envolvidos com a Segurança em Nível de Linha.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -32,14 +32,14 @@ Para aproveitar a RLS, é importante entender os três conceitos principais: Usu
 
 **Funções** – os usuários pertencem a funções. Uma função é um contêiner de regras e pode ser nomeada como algo parecido com *Gerente de Vendas* ou *Representante de Vendas*. As funções são criadas no Power BI Desktop. Para obter mais informações, consulte [RLS (segurança em nível de linha) com o Power BI Desktop](../desktop-rls.md).
 
-**Regras** – as funções têm regras e essas regras são os filtros reais que serão aplicados aos dados. Isso pode ser tão simples como “País = EUA” ou algo muito mais dinâmico.
+**Regras** – as funções têm regras e essas regras são os filtros reais que serão aplicados aos dados. As regras podem ser tão simples como “País = EUA” ou algo muito mais dinâmico.
 No restante deste artigo, há um exemplo de como criar a RLS e, em seguida, como consumir isso em um aplicativo inserido. Nosso exemplo usa o arquivo PBIX da [Amostra de Análise de Varejo](http://go.microsoft.com/fwlink/?LinkID=780547).
 
 ![Exemplo de relatório](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## <a name="adding-roles-with-power-bi-desktop"></a>Adicionando funções com o Power BI Desktop
 
-Nossa amostra de Análise de Varejo mostra as vendas de todas as lojas de uma cadeia de varejo. Sem a RLS, não importa qual gerente regional se conecta e exibe o relatório: eles verão os mesmos dados. A gerência sênior determinou que cada gerente regional deve ver apenas as vendas das lojas que eles gerenciam e, para fazer isso, podemos usar a RLS.
+Nossa **amostra de Análise de Varejo** mostra as vendas de todas as lojas de uma cadeia de varejo. Sem a RLS, não importa que gerente regional se conecte e visualize o relatório: todos verão os mesmos dados. A gerência sênior determinou que cada gerente regional deve ver apenas as vendas das lojas que eles gerenciam. O uso de RLS permite ao gerenciamento sênior restringir os dados com base em um gerente regional.
 
 A RLS é criada no Power BI Desktop. Quando o conjunto de dados e o relatório são abertos, é possível alternar para a exibição de diagrama para ver o esquema:
 
@@ -54,7 +54,7 @@ A seguir, veja alguns itens a serem observados com esse esquema:
   
     ![Linhas dentro da tabela Distrito](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-Com base nesse esquema, se aplicarmos um filtro à coluna **Gerente Regional** da tabela **Distrito** e se o filtro corresponder ao usuário que exibe o relatório, esse filtro filtrará as tabelas **Loja** e **Vendas** para apenas mostrar dados desse gerente regional.
+Com base nesse esquema, se aplicarmos um filtro à coluna **Gerente Regional** da tabela **Distrito** e se o filtro corresponder ao usuário que exibe o relatório, ele filtrará as tabelas **Loja** e **Vendas** para mostrar apenas os dados desse gerente regional.
 
 Aqui está como:
 
@@ -64,28 +64,28 @@ Aqui está como:
 2. Crie uma nova função chamada **Gerente**.
 
     ![Criar nova função](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. Na tabela **Distrito**, insira a seguinte expressão DAX: **[Gerente Regional] = USERNAME()**.
+3. Na tabela **Distrito**, insira a expressão DAX: **[Gerente Regional] = USERNAME()**.
 
     ![Instrução DAX para a regra de RLS](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Para verificar se as regras estão funcionando, na guia **Modelagem**, selecione **Exibir como funções** e, depois, selecione a função **Gerente** que você acabou de criar, juntamente com **Outros usuários**. Insira **AndrewMa** como o usuário.
+4. Para verificar se as regras estão funcionando, na guia **Modelagem**, selecione **Exibir como funções**, depois selecione a função **Gerente** que você criou, juntamente com **Outros usuários**. Insira **AndrewMa** como o usuário.
 
     ![Exibir como uma caixa de diálogo de função](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
-    Os relatórios mostram dados como se você tivesse entrado como **AndrewMa**.
+    Os relatórios apresentam os dados como se você tivesse entrado como **AndrewMa**.
 
-A aplicação do filtro, da maneira como fizemos aqui, filtra todos os registros nas tabelas **Distrito**, **Loja** e **Vendas**. No entanto, devido à direção do filtro nos relacionamentos entre **Vendas** e **Hora**, as tabelas **Vendas** e **Item** e **Item** e **Hora** não são filtradas. Para saber mais sobre a filtragem cruzada bidirecional, baixe o white paper [Filtragem cruzada bidirecional no SQL Server Analysis Services 2016 e no Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+A aplicação do filtro, da maneira como fizemos aqui, filtra todos os registros nas tabelas **Distrito**, **Loja** e **Vendas**. No entanto, devido à direção do filtro nos relacionamentos entre **Vendas** e **Hora**, as tabelas **Vendas** e **Item** e **Item** e **Hora** as tabelas não são filtradas. Para saber mais sobre a filtragem cruzada bidirecional, baixe o white paper [Filtragem cruzada bidirecional no SQL Server Analysis Services 2016 e no Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Aplicando o usuário e a função a um token de inserção
 
-Agora que você tem as funções do Power BI Desktop configuradas, é necessário trabalhar um pouco no aplicativo para aproveitar as funções.
+Agora que você já configurou as funções do Power BI Desktop, é necessário trabalhar um pouco no aplicativo para aproveitar as funções.
 
-Os usuários são autenticados e autorizados pelo aplicativo e os tokens de inserção são usados para conceder o acesso de usuário a um relatório específico do Power BI Embedded. O Power BI Embedded não tem nenhuma informação específica sobre quem é o usuário. Para que a RLS funcione, você precisará passar algum contexto adicional como parte do token de inserção na forma de identidades. Isso é feito usando a API [Inserir Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Os usuários são autenticados e autorizados pelo aplicativo e os tokens de inserção são usados para conceder o acesso de usuário a um relatório específico do Power BI Embedded. O Power BI Embedded não tem nenhuma informação específica sobre quem é o usuário. Para que a RLS funcione, você precisará passar algum contexto adicional como parte do token de inserção na forma de identidades. Você pode passar as identidades usando a API do [Token de inserção](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
-A API aceita uma lista de identidades com a indicação dos conjuntos de dados relevantes. Para que a RLS funcione, você precisa passar os itens a seguir como parte da identidade.
+A API aceita uma lista de identidades com a indicação dos conjuntos de dados relevantes. Para que a RLS funcione, você precisa passar os itens abaixo como parte da identidade.
 
-* **nome de usuário (obrigatório)** – isso é uma cadeia de caracteres que pode ser usada para ajudar a identificar o usuário ao aplicar as regras de RLS. Apenas um usuário pode ser listado. Seu nome de usuário pode ser criado com caracteres *ASCII*.
+* **nome de usuário (obrigatório)** – uma cadeia de caracteres que pode ser usada para ajudar a identificar o usuário ao aplicar as regras de RLS. Apenas um usuário pode ser listado. Seu nome de usuário pode ser criado com caracteres *ASCII*.
 * **funções (obrigatório)** – uma cadeia de caracteres que contém as funções a serem selecionadas ao aplicar as regras de Segurança em Nível de Linha. Se você estiver passando mais de uma função, elas deverão ser passadas como uma matriz de cadeia de caracteres.
-* **Conjunto de dados (obrigatório)** – o conjunto de dados aplicável ao artefato que está sendo inserido.
+* **conjunto de dados (obrigatório)** – o conjunto de dados aplicável ao artefato que está sendo inserido.
 
 Crie o token de inserção usando o método **GenerateTokenInGroup** em **PowerBIClient.Reports**.
 
@@ -106,7 +106,9 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-Se você estiver chamando a API REST, a API atualizada agora aceitará uma matriz JSON adicional, chamada **identidades**, que contém um nome de usuário, a lista de funções de cadeia de caracteres e a lista de conjuntos de dados de cadeia de caracteres, por exemplo:
+Se você estiver chamando a API REST, a API atualizada agora aceitará uma matriz JSON adicional, chamada **identidades**, que contém um nome de usuário, a lista de funções de cadeia de caracteres e a lista de conjuntos de dados de cadeia de caracteres. 
+
+Use o código a seguir como exemplo:
 
 ```json
 {
@@ -121,7 +123,7 @@ Se você estiver chamando a API REST, a API atualizada agora aceitará uma matri
 }
 ```
 
-Agora, com todas as informações juntas, quando alguém fizer logon no aplicativo para exibir este artefato, ele só poderá ver os dados que têm permissão para ver, conforme definido por nossa segurança em nível de linha.
+Agora, com todas as informações juntas, quando alguém fizer logon no aplicativo para exibir este artefato, verá apenas os dados que tiver permissão de ver, conforme definido por nossa segurança em nível de linha.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Trabalhando com conexões dinâmicas do Analysis Services
 
@@ -129,36 +131,43 @@ A segurança em nível de linha pode ser usada com conexões dinâmicas do Analy
 
 A identidade efetiva fornecida para a propriedade de nome de usuário deve ser um usuário do Windows com permissões no servidor do Analysis Services.
 
-**Configuração do gateway de dados local**
+### <a name="on-premises-data-gateway-configuration"></a>Configuração do gateway de dados local
 
-Um [Gateway de dados local](../service-gateway-onprem.md) é usado ao trabalhar com as conexões dinâmicas do Analysis Services. Ao gerar um token de inserção, com uma identidade listada, a conta mestra precisa estar listada como um administrador do gateway. Se a conta mestra não estiver listada, a segurança em nível de linha não será aplicada à propriedade aos dados. Um não administrador do gateway pode fornecer funções, mas deve especificar seu próprio nome de usuário para a identidade efetiva.
+Um [Gateway de dados local](../service-gateway-onprem.md) é usado ao trabalhar com as conexões dinâmicas do Analysis Services. Ao gerar um token de inserção, com uma identidade listada, a conta mestra precisa estar listada como um administrador do gateway. Se a conta mestra não estiver listada, a segurança em nível de linha não será aplicada à propriedade dos dados. Um não administrador do gateway pode fornecer funções, mas deve especificar seu próprio nome de usuário para a identidade efetiva.
 
-**Uso de funções**
+### <a name="use-of-roles"></a>Uso de funções
 
 As funções podem ser fornecidas com a identidade em um token de inserção. Se nenhuma função for fornecida, o nome de usuário fornecido poderá ser usado para resolver as funções associadas.
 
-**Usando o recurso CustomData**
+### <a name="using-the-customdata-feature"></a>Usando o recurso CustomData
 
-O recurso CustomData permite passar texto livre (cadeia de caracteres) usando a propriedade de cadeia de conexão CustomData, um valor a ser usado pelo AS (por meio da função CUSTOMDATA ()).
-É possível usá-lo como uma maneira alternativa de personalizar consumo de dados.
+O recurso CustomData funciona apenas para os modelos que residem no **Azure Analysis Services** e funciona apenas no modo **Conectar em tempo real**. Ao contrário dos usuários e das funções, o recurso Customdata não pode ser definido dentro de um arquivo .pbix. Ao gerar um token com o recurso Customdata, é preciso ter um nome de usuário.
+
+O recurso CustomData permite adicionar um filtro de linha ao exibir dados do Power BI em seu aplicativo ao usar o **Azure Analysis Services** como sua fonte de dados (exibição de dados do Power BI conectados ao Azure Analysis Services em seu aplicativo).
+
+O recurso CustomData permite passar texto livre (cadeia de caracteres) usando a propriedade de cadeia de caracteres de conexão CustomData. O Analysis Services usa este valor por meio da função *CUSTOMDATA()*.
+
+A única maneira de ter RLS dinâmica (que usa valores dinâmicos para a avaliação de filtro) no **Azure Analysis Services** é usando a função *CUSTOMDATA()*.
+
 É possível usá-lo dentro da consulta DAX de função e usá-lo sem qualquer função em uma consulta DAX de medida.
 O recurso CustomData faz parte de nossa funcionalidade de geração de token para os seguintes artefatos: dashboard, relatório e bloco. Dashboards podem ter várias identidades CustomData (um por bloco/modelo).
 
-> [!NOTE]
-> O recurso CustomData funcionará apenas para modelos que residem no Azure Analysis Services e funciona apenas em modo dinâmico. Ao contrário dos usuários e das funções, o recurso de dados personalizado não pode ser definido dentro de um arquivo .pbix. Ao gerar um token com o recurso de dados personalizado, é necessário ter um nome de usuário.
-
-**Adições do SDK CustomData**
+#### <a name="customdata-sdk-additions"></a>Adições do SDK CustomData
 
 A propriedade de cadeia de caracteres CustomData foi adicionada à nossa identidade efetiva no cenário de geração de tokens.
 
-        [JsonProperty(PropertyName = "customData")]
-        public string CustomData { get; set; }
+```json
+[JsonProperty(PropertyName = "customData")]
+public string CustomData { get; set; }
+```
 
 A identidade pode ser criada tendo dados personalizados usando a chamada a seguir:
 
-        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```csharp
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```
 
-**Uso do SDK CustomData**
+#### <a name="customdata-sdk-usage"></a>Uso do SDK CustomData
 
 Se você estiver chamando a API REST, será possível adicionar dados personalizados dentro de cada identidade, por exemplo:
 
@@ -176,14 +185,68 @@ Se você estiver chamando a API REST, será possível adicionar dados personaliz
 }
 ```
 
+Aqui estão as etapas para começar a configurar o recurso CustomData() com seu aplicativo do Power BI Embedded.
+
+1. Crie seu banco de dados do Azure Analysis Services. Depois, entre em seu servidor do Azure Analysis Services por meio do [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+
+    ![Crie um banco de dados do Azure Analysis Services](media/embedded-row-level-security/azure-analysis-services-database-create.png)
+
+    ![Banco de dados do Analysis Services](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Crie uma Função no servidor do Analysis Services.
+
+    ![Criar Função](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
+
+3. Defina suas configurações**Gerais**.  Aqui você concede o **Nome da Função** e define as permissões de banco de dados para somente **Leitura**.
+
+    ![Criar Função – definir configurações gerais](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
+
+4. Defina as configurações de **Associação**. Aqui você adiciona os usuários afetados por essa função.
+
+    ![Criar Função – definir configurações de associação](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
+
+5. Defina sua consulta DAX de **Filtros de linha** usando a função *CUSTOMDATA()*.
+
+    ![Criar Função - definir filtros de linha](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
+
+6. Crie um relatório PBI e publique-o em um espaço de trabalho com capacidade dedicada.
+
+    ![Relatório PBI de exemplo](media/embedded-row-level-security/rls-sample-pbi-report.png)
+
+7. Use as APIs do Power BI para usar o recurso CustomData em seu aplicativo.  Ao gerar um token com o recurso Customdata, é preciso ter um nome de usuário. O nome de usuário deve ser igual ao UPN do usuário mestre. O usuário mestre deve ser membro da(s) função(ões) criadas por você. Se nenhuma função for especificada, todas as funções de que usuário mestre for membro serão usadas para avaliação de RLS.
+
+    > [!Note]
+    > Quando estiver pronto para implantar o aplicativo para produção, a opção ou o campo de conta de usuário mestre não deverá ficar visível para o usuário final.
+
+    Exiba o [código](#customdata-sdk-additions) para adicionar o recurso CustomData.
+
+8. Agora você pode exibir o relatório em seu aplicativo antes de aplicar o(s) valor(es) de Customdata para ver todos os dados que o relatório contém.
+
+    ![Antes do Custom Data ser aplicado](media/embedded-row-level-security/customdata-before.png)
+
+    Em seguida, aplique o(s) valor(es) de Customdata para ver como o relatório exibe um conjunto de dados diferente.
+    ![Após o CustomData ser aplicado](media/embedded-row-level-security/customdata-after.png)
+
+## <a name="using-rls-vs-javascript-filters"></a>Uso dos filtros RLS em vez de JavaScript
+
+Ao decidir sobre a filtragem dos dados em um relatório, é possível usar os **filtros de Segurança em Nível de Linha (RLS)** ou **JavaScript**.
+
+A [Segurança em Nível de Linha](../service-admin-rls.md) é um recurso que filtra os dados no nível do modelo de dados. Sua fonte de dados de back-end controla as configurações de RLS. A geração de token de inserção define o nome de usuário e as funções para a sessão com base em seu modelo de dados. Ela não pode ser substituída, removida ou controlada pelo código do lado do cliente e por isso é considerada segura. É recomendável usar a RLS para filtrar dados com segurança. Filtre os dados com a RLS usando uma das opções a seguir.
+
+* [Configurar funções em um relatório do Power BI](../desktop-rls.md).
+* Configuração de funções no nível da fonte de dados (apenas conexão dinâmica do Analysis Services).
+* Por meio de programação com um [Token de Inserção](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) usando `EffectiveIdentity`. Ao usar um token de inserção, o filtro real passa pelo token de inserção durante uma sessão específica.
+
+Os [filtros JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) são usados para permitir que o usuário consuma uma exibição de dados reduzida, com escopo ou filtrada. No entanto, o usuário ainda mantém o acesso a tabelas, colunas e medidas do esquema de modelo e pode, potencialmente, acessar todos os dados lá. O acesso restrito aos dados só pode ser aplicado com RLS e não por meio de APIs de filtragem do lado do cliente.
+
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
 * A atribuição de usuários a funções no serviço do Power BI não afeta a RLS ao usar um token de inserção.
-* Embora o serviço do Power BI não aplicará a configuração de RLS a administradores ou membros com permissões de edição, ao fornecer uma identidade com um token de inserção, ela será aplicada aos dados.
+* Embora o serviço do Power BI não aplique a configuração de RLS a administradores ou membros com permissões de edição, ao fornecer uma identidade com um token de inserção, ela será aplicada aos dados.
 * Para servidores locais, há suporte para conexões dinâmicas do Analysis Services.
 * As conexões ao vivo do Azure Analysis Services dão suporte à filtragem por funções. A filtragem dinâmica pode ser realizada usando CustomData.
 * Se o conjunto de dados subjacente não exigir a RLS, a solicitação de GenerateToken **não** deverá conter uma identidade efetiva.
-* Se o conjunto de dados subjacente for um modelo de nuvem (modelo armazenado em cache ou DirectQuery), a identidade efetiva deverá incluir, pelo menos, uma função. Caso contrário, a atribuição de função não ocorrerá.
+* Se o conjunto de dados subjacente for um modelo de nuvem (modelo armazenado em cache ou DirectQuery), a identidade efetiva deverá incluir pelo menos uma função. Caso contrário, a atribuição de função não ocorrerá.
 * Uma lista de identidades permite vários tokens de identidade para a inserção de painéis. Para todos os outros artefatos, a lista contém uma única identidade.
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

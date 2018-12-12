@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: b15d285774f0b6735fbc5df0ca2d00a81b944012
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874565"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829931"
 ---
 # <a name="card-visualizations"></a>Visualizações de cartão
 Às vezes, um único número é a coisa mais importante que você deseja acompanhar no seu painel ou relatório do Power BI, como as vendas totais, a fatia de mercado ano após ano ou o total de oportunidades. Esse tipo de visualização é chamado de *Cartão*. Assim como em quase todas as visualizações nativas do Power BI, os cartões podem ser criados usando o editor de relatório ou P e R.
@@ -25,7 +25,7 @@ ms.locfileid: "48874565"
 ## <a name="create-a-card-using-the-report-editor"></a>Criar um cartão usando o editor de relatório
 Essas instruções usam o exemplo de análise de varejo. Para acompanhar, [baixe o exemplo](../sample-datasets.md) do serviço do Power BI (app.powerbi.com) ou do Power BI Desktop.   
 
-1. Inicie uma [página de relatório em branco](../power-bi-report-add-page.md) e selecione o campo **Armazenar** \> **Contagem de armazenamento aberto**. Caso esteja usando o serviço do Power BI, você precisará abrir o relatório no [Modo de Exibição de Edição](../service-interact-with-a-report-in-editing-view.md).
+1. Comece em uma página de relatório em branco e selecione **Armazenar** \> campo **Contagem de armazenamento aberto**. Caso esteja usando o serviço do Power BI, você precisará abrir o relatório no [Modo de Exibição de Edição](../service-interact-with-a-report-in-editing-view.md).
 
     O Power BI cria um gráfico de colunas com um número.
 
@@ -70,8 +70,8 @@ A caixa pergunta de P e R é a maneira mais fácil de fazer um Cartão. A caixa 
    ![](media/power-bi-visualization-card/power-bi-pin.png)
 5. Fixe o cartão, com um bloco, em um painel existente ou novo.
 
-   * Painel existente: selecione o nome do painel no menu suspenso. Suas opções serão limitadas apenas aos dashboards no espaço de trabalho atual.
-   * Novo dashboard: digite o nome do novo dashboard e ele será adicionado ao seu espaço de trabalho atual.
+   * Painel existente: selecione o nome do painel no menu suspenso. Suas opções serão limitadas apenas aos dashboards no workspace atual.
+   * Novo dashboard: digite o nome do novo dashboard e ele será adicionado ao seu workspace atual.
 6. Selecione **Fixar**.
 
    Uma Mensagem de êxito (perto do canto superior direito) informa que a visualização foi adicionada, como um bloco, ao painel.  

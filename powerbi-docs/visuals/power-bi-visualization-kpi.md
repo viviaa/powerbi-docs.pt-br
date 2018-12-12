@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aec8bc2d7faa8d3c4b9c7b4eb69ed9a930cfbcd1
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 0492390ae47c8d5aa0930a063370712c80d61de2
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417224"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829632"
 ---
 # <a name="kpi-visuals"></a>Visuais de KPI
 Um KPI (Indicador Chave de Desempenho) é uma indicação visual que comunica a quantidade de progresso feito em relação a uma meta mensurável. Para obter mais informações sobre KPIs, veja [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -46,7 +46,7 @@ Ou veja Will mostrando como criar elementos visuais de métrica únicos: medidor
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Abra o relatório no modo de exibição de relatório e [selecione a guia amarela para adicionar uma nova página](../power-bi-report-add-page.md).    
+1. Abra o relatório no modo de exibição de Relatório e selecione a guia amarela para adicionar uma nova página.    
 2. No painel campos, selecione **Vendas > Total de Unidades neste Ano**.  Esse será o indicador.
 3. Adicione **Hora > FiscalMonth**.  Isso representará a tendência.
 4. IMPORTANTE: classifique o gráfico por **FiscalMonth**. Depois de converter a visualização em um KPI, não haverá opção para classificar.

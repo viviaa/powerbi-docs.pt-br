@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab292964bb1b6b1f4218d41c46eb2c28c82a034c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 5720e52b61332aeca82d0b23b776f590634e622f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416741"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829609"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Gráficos de rosca no Power BI
 Um gráfico de rosca é semelhante a um gráfico de pizza que mostra a relação das partes com um todo. A única diferença é que o centro está em branco e permite o espaço para um rótulo ou ícone.
@@ -23,7 +23,7 @@ Um gráfico de rosca é semelhante a um gráfico de pizza que mostra a relação
 ## <a name="create-a-doughnut-chart"></a>Crie um gráfico de rosca
 Essas instruções usam o Exemplo de Análise de Varejo para criar um gráfico de rosca que exibe as vendas deste ano por categoria. Para acompanhar, [baixe o exemplo](../sample-datasets.md) para o serviço do Power BI ou o Power BI Desktop.
 
-1. Inicie em uma [página de relatório em branco](../power-bi-report-add-page.md). Caso esteja usando o serviço do Power BI, certifique-se de abrir o relatório no [Modo de Exibição de Edição](../service-interact-with-a-report-in-editing-view.md).
+1. Comece em uma página de relatório em branco. Caso esteja usando o serviço do Power BI, certifique-se de abrir o relatório no [Modo de Exibição de Edição](../service-interact-with-a-report-in-editing-view.md).
 
 2. No painel Campos, selecione **Vendas** \> **Vendas do Ano Passado**.  
    
