@@ -3,19 +3,20 @@ title: Perguntas frequentes para consumidores do Power BI
 description: Perguntas frequentes do Power BI
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/06/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: cf085529d940b8eb3457bcf60cc702f7838a27a8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: e329b40c0be55ce164ab487b7eb1d3006062b15a
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908591"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280663"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Perguntas frequentes sobre o Power BI
 * Se você tiver outras dúvidas, [experimente perguntar à comunidade do Power BI](http://community.powerbi.com/).
@@ -25,7 +26,7 @@ ms.locfileid: "48908591"
 O serviço do Power BI é um serviço de análise de negócios baseado em nuvem que permite que qualquer pessoa visualize e analise dados com maior velocidade, eficiência e compreensão. Ele conecta os usuários a uma ampla variedade de dados locais e na nuvem por meio de dashboards fáceis de usar, relatórios interativos e visualizações atraentes para dar vida aos dados. Leia mais sobre [o que é o Power BI](../power-bi-overview.md).
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Qual é a diferença entre o Power BI Pro e o Power BI Premium?
-O Power BI Pro é uma licença individual que permite acesso a todo o conteúdo e a todas as funcionalidades no serviço do Power BI, incluindo a capacidade de compartilhar conteúdo e colaborar com outros usuários do Pro. Somente usuários Pro podem publicar e consumir conteúdo de espaços de trabalho do aplicativo, compartilhar painéis e se inscrever para obter painéis e relatórios. 
+O Power BI Pro é uma licença individual que permite acesso a todo o conteúdo e a todas as funcionalidades no serviço do Power BI, incluindo a capacidade de compartilhar conteúdo e colaborar com outros usuários do Pro. Somente usuários Pro podem publicar e consumir conteúdo de workspaces do aplicativo, compartilhar dashboards e assinar dashboards e relatórios. 
 
 O Premium oferece capacidade dedicada para entregar um desempenho mais consistente e dar suporte a volumes maiores de dados no Power BI. Para usuários individuais, o Premium também possibilita a distribuição difundida de conteúdo por usuários Pro, sem a necessidade de licenças por usuário para os destinatários exibirem o conteúdo.
 
