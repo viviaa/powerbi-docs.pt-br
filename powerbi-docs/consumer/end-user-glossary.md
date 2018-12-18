@@ -2,17 +2,18 @@
 title: Glossário para consumidores do Power BI
 description: O Power BI apresenta muitos novos termos e novos usos para termos familiares. Use nosso glossário para se familiarizar com a terminologia do Power BI.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026329"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280778"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossário do serviço do Power BI
 O serviço do Power BI pode apresentar terminologia confusa ou desconhecida. O glossário é um ótimo lugar para pesquisar sobre a terminologia, por isso pode ser útil até mesmo salvá-lo como favorito. Outro excelente recurso para aprender sobre os blocos de construção que compõem o serviço do Power BI são os [Conceitos básicos](end-user-basic-concepts.md). O artigo com Conceitos básicos fornece uma visão geral de alto nível das *partes* do Power BI e como elas estão conectadas.
@@ -42,7 +43,7 @@ Este glossário é um esforço conjunto da comunidade.  Não encontrou uma palav
 
 **AppSource** Repositório online centralizado em que você pode navegar e descobrir painéis, relatórios, conjuntos de dados e aplicativos para download.
 
-**ArcGIS Maps for Power BI** O ArcGIS é uma plataforma de mapeamento e análise criada pela empresa ESRI. O nome do visual incluído na biblioteca de visuais do Power BI é chamado ArcGIS Maps for Power BI.
+**ArcGIS for Power BI** O ArcGIS é uma plataforma de mapeamento e análise criada pela empresa ESRI. O nome do visual incluído na biblioteca de visuais do Power BI é chamado ArcGIS for Power BI.
 
 **atribuir** [Power BI Premium] Verbo usado para mover um workspace para uma capacidade dedicada ou para fora dela. Não use promover para mover um workspace para a capacidade dedicada, porque isso traz a conotação de que a capacidade dedicada é superior à compartilhada.  
 
