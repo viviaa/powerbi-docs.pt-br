@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d2d8bef9689fd2e9db99c0a521a5ee326845b1de
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026237"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>A nova experiência de filtro em relatórios do Power BI (versão prévia)
 
-Este artigo esclarece a nova experiência de filtros: os filtros no Power BI estão recebendo novas funcionalidades e um novo design. Ao criar relatórios no Power BI Desktop ou no serviço do Power BI, você pode fazer o painel Filtros parecer e agir igual a todo o relatório. Na nova experiência, o painel Filtros antigo age como um painel de edição de filtro, e o novo painel Filtro é o único visto pelos consumidores do seu relatório. 
+Este artigo explica a nova experiência de filtro: Os filtros no Power BI estão recebendo novas funcionalidades e um novo design. Ao criar relatórios no Power BI Desktop ou no serviço do Power BI, você pode fazer o painel Filtros parecer e agir igual a todo o relatório. Na nova experiência, o painel Filtros antigo age como um painel de edição de filtro, e o novo painel Filtro é o único visto pelos consumidores do seu relatório. 
  
 ![Modo de exibição padrão (sem personalização adicional aplicada)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
@@ -98,7 +98,7 @@ Você também pode formatar esses elementos para cartões de filtro, dependendo 
 
     ![Selecionar o ícone Formato](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Expanda o **painel Filtro** para definir a cor do plano de fundo, a fonte, o ícone e a borda esquerda, a fim de complementar a página do relatório.
+1. Expanda o **painel Filtro** para definir a cor do plano de fundo, o ícone e a borda esquerda, a fim de complementar a página do relatório.
 
     ![Expandir o painel Filtro](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 

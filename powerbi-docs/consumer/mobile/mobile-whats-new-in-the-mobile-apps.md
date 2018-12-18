@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297218"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979527"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -100,7 +100,7 @@ Agora quando você navega em um relatório passando o dedo, escolhendo uma pági
 
 Quando os autores de relatório personalizam os temas do dashboard no serviço do Power BI, a aparência do dashboard também é alterada no aplicativo móvel. No entanto, você não verá as imagens da tela de fundo.
 
-#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: configurar o acesso ao aplicativo móvel Power BI do iOS para um servidor de relatório remotamente
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório remotamente
 
 Seu administrador de TI agora pode usar uma ferramenta MDM para configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório. Confira [Configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório remotamente](../../report-server/configure-powerbi-mobile-apps-remote.md) para obter detalhes.
 
@@ -208,7 +208,7 @@ Agora você pode definir as configurações de proxy no aplicativo móvel iOS do
 Leia o [resumo de julho de 2017 sobre os recursos dos aplicativos móveis](https://powerbi.microsoft.com/blog/power-bi-service-and-mobile-july-feature-summary/#ios-preview)
 
 #### <a name="ios-devices"></a>Dispositivos iOS
-**Nova experiência de P e R no iOS (versão prévia)** Em vez de apenas receber uma mensagem para sua pergunta, agora você pode usar linguagem natural para obter insights com escopo definido. Mesmo se você não tiver certeza do que está procurando, a P e R proativamente traz à tona os insights relevantes para seus dados. A nova experiência de P e R em dispositivos móveis, desenvolvida em colaboração com a equipe da Microsoft Research, apresenta tecnologias poderosas em nosso produto. Experimente o tutorial [Faça perguntas sobre seus dados nos aplicativos móveis do iOS](mobile-apps-ios-qna.md).
+**Nova experiência de P e R no iOS (Versão prévia)** Em vez de apenas receber uma mensagem para sua pergunta, agora você pode usar linguagem natural para obter insights com escopo definido. Mesmo se você não tiver certeza do que está procurando, a P e R proativamente traz à tona os insights relevantes para seus dados. A nova experiência de P e R em dispositivos móveis, desenvolvida em colaboração com a equipe da Microsoft Research, apresenta tecnologias poderosas em nosso produto. Experimente o tutorial [Faça perguntas sobre seus dados nos aplicativos móveis do iOS](mobile-apps-ios-qna.md).
 
 ### <a name="responsive-visuals"></a>Visuais responsivos
 **Visual responsivo para dashboards e relatórios do telefone** Você pode definir os visuais em seu dashboard ou relatório para serem *responsivos*, para mudarem dinamicamente para exibir o máximo de dados e insight, independentemente do tamanho da tela. Leia o [blog sobre visuais responsivos](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
@@ -221,7 +221,7 @@ Leia o [resumo de julho de 2017 sobre os recursos dos aplicativos móveis](https
 #### <a name="all-devices"></a>Todos os dispositivos
 **Novo menu: Compartilhado comigo** Acesse Compartilhado comigo no menu do aplicativo móvel para ver todo o conteúdo que foi compartilhado com você.
 
-**Novo menu: Aplicativos** Um aplicativo é uma coleção de dashboards e relatórios desenvolvidos pela sua organização para fornecer métricas-chave para tomar decisões mais rápidas e fáceis, orientadas por dados.
+**Novo menu: Aplicativos** Um aplicativo é uma coleção de painéis e relatórios desenvolvidos pela sua organização para fornecer métricas-chave para tomar decisões mais rápidas e fáceis, orientadas por dados.
 
 Leia mais sobre [how your Power BI content is organized](mobile-apps-quickstart-view-dashboard-report.md) (como o conteúdo do Power BI é organizado).
 
@@ -300,7 +300,7 @@ Leia o [resumo dos recursos do blog de aplicativos móveis de janeiro de 2017](h
 #### <a name="android"></a>Android
 **Autenticação do SSRS usando a visualização dos Serviços de Federação do Active Directory (ADFS)** Agora você pode entrar nos servidores locais do SQL Server Reporting Services do seu dispositivo móvel com a sua conta corporativa. Leia mais sobre [usar o OAuth para se conectar aos servidores do SSRS](mobile-oauth-ssrs.md).
 
-**Novos e aprimorados: anote e compartilhe ideias rapidamente** O compartilhamento e as anotações já estão funcionando nos dispositivos Android. O menu aprimorado torna mais fácil e rápido fazer anotações e compartilhar informações, e você também pode compartilhar um relatório anotado ou diretamente do aplicativo do Power BI.
+**Novos e aprimorados: Anote e compartilhe ideias rapidamente** O compartilhamento e as anotações já estão funcionando nos dispositivos Android. O menu aprimorado torna mais fácil e rápido fazer anotações e compartilhar informações, e você também pode compartilhar um relatório anotado ou diretamente do aplicativo do Power BI.
 
 ### <a name="december-2016"></a>Dezembro de 2016
 Leia o [resumo dos recursos do blog de aplicativos móveis de dezembro de 2016](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-december-2016).
@@ -458,9 +458,9 @@ A central de notificações no aplicativo móvel do Power BI mostra novos dados 
 ### <a name="may-2016"></a>Maio de 2016
 #### <a name="ios-devices-and-android-phones"></a>dispositivos iOS e telefones Android
 * Os **códigos de barras QR** agora estão disponíveis **para relatórios** também. Digitalize o código com seu aplicativo do Power BI para ir diretamente para um relatório relacionado, sem a necessidade navegação nem de pesquisa.
-* **Melhor gerenciamento de dados** para o SQL Server 2016 Reporting Services: redução dos tempos de carregamento e do consumo de dados em seu dispositivo.
-* **Relatórios móveis com tema do SQL Server 2016**: confira os temas para relatórios móveis em seu dispositivo.
-* **Filtragem geográfica**: filtre relatórios por sua localização atual.
+* **Gerenciamento de dados aprimorado** para o SQL Server 2016 Reporting Services: Tempos de carga e consumo de dados reduzidos no seu dispositivo.
+* **Relatórios móveis com temas do SQL Server 2016**: Confira os temas para relatórios móveis em seu dispositivo.
+* **Filtragem geográfica**: Filtre relatórios por sua localização atual.
 
 ### <a name="april-2016"></a>Abril de 2016
 Consulte o [blog de Aplicativos Móveis do Power BI de abril](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) para obter mais detalhes.
@@ -523,7 +523,7 @@ Veja dashboards no [modo paisagem em telefones Windows 10](mobile-apps-view-dash
 
 Veja [relatórios em seu telefone Windows 10](mobile-reports-in-the-mobile-apps.md).
 
-Maior rapidez para [informações em seus dashboards móveis do Windows 10](mobile-tiles-in-the-mobile-apps.md): compartilhe um instantâneo de bloco ou abra um relatório diretamente por meio do dashboard.
+Tempo mais rápido para [insights em seus painéis do Windows 10 para dispositivos móveis](mobile-tiles-in-the-mobile-apps.md): Compartilhar um instantâneo de bloco ou abrir um relatório diretamente no painel.
 
 ### <a name="january-2016"></a>Janeiro de 2016
 Todas as melhorias feitas em janeiro já estão incluídas no novo [aplicativo Power BI para telefones Windows 10](mobile-windows-10-phone-app-get-started.md), lançado em dezembro de 2015. Agora, eles serão distribuídos a outros aplicativos do Power BI para dispositivos móveis. Leia a postagem no blog sobre esses aprimoramentos.
@@ -536,7 +536,7 @@ Todas as melhorias feitas em janeiro já estão incluídas no novo [aplicativo P
 
 **Blocos de R e widgets da Web** Exiba esses novos tipos de bloco no seu dispositivo móvel.
 
-**Dashboards do Bing** No serviço do Power BI, agora é possível criar [dashboards com os resultados da pesquisa do Bing](../end-user-connect-to-services.md) e vê-los em seu dispositivo móvel.
+**Dashboards do Bing** No serviço do Power BI, agora é possível criar [dashboards com os resultados da pesquisa do Bing](../../service-connect-to-services.md) e vê-los em seu dispositivo móvel.
 
 **Páginas de relatório fixadas como blocos em dashboards** Agora, você pode fixar uma página de relatório inteira em um dashboard no serviço do Power BI e exibir páginas de relatórios no aplicativo do Power BI no seu iPhone ou telefone Android.
 
@@ -600,21 +600,21 @@ Leia a [postagem no blog móvel do Power BI publicada em meados de outubro](http
 Aprimoramentos nos aplicativos móveis do Power BI, Android, iOS (iPhone e iPad) e Windows. Leia a [postagem no blog móvel do Power BI publicada em meados de setembro](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
 #### <a name="android"></a>Android
-* Suporte para workspaces do grupo: colaborar com colegas em workspaces do grupo. 
-* Suporte para usuários não autenticados: para alguns cenários em que os usuários não puderem entrar no aplicativo, adicionamos uma maneira rápida e conveniente de entrar em contato com o suporte e enviar comentários.
+* Suporte para espaços de trabalho de grupo: colabore com colegas em espaço de trabalhos do grupo. 
+* Suporte para usuários não autenticados:  para alguns cenários em que os usuários não puderem entrar no aplicativo, adicionamos uma maneira rápida e conveniente de entrar em contato com o suporte e enviar comentários.
 * Melhor experiência de usuário ao acessar painéis usando a segurança baseada em função.          
 * Formatação de dados aprimorados de gráficos e alinhamento de todos os blocos do painel. 
 
 #### <a name="ios-iphone-and-ipad"></a>iOS (iPhone e iPad)
 * Navegação nova e aprimorada: a nova navegação de gaveta aumenta a propriedade da tela e melhora a navegação através do aplicativo. 
-* Workspaces do grupo: colaborar com colegas em workspaces do grupo. 
+* Espaços de trabalho do grupo: colabore com colegas em espaço de trabalhos do grupo. 
 * O processo de autenticação atualiza a qualidade, desempenho e melhorias de funcionalidade aprimoram o processo de autenticação, incluindo o suporte para SSO (Logon único). 
 * Representação de dados melhorada dos blocos do gráfico de linha para comprimir melhor o eixo x.
 * Experiência aprimorada do usuário ao usar com segurança baseada em função.
 * Melhorias otimizadas de toque para os blocos do gráfico matriz: agora você pode percorrer facilmente através dos dados de matriz e visualizar todos os dados facilmente e de forma intuitiva.
 * Formatação de dados aprimorados de gráficos e alinhamentos de todos os blocos do painel. 
 * Remoção do suporte do iOS 7: manter os mais altos padrões de segurança para o Power BI, não daremos mais suporte aos dispositivos iOS 7 instalados. É necessário iOS 8 e superior. 
-* Envie comentários e classificação adicionado no aplicativo: adicionado na capacidade do aplicativo de enviar feedback e fornecer classificações para que seja possível aumentar a influência da comunidade em nosso roteiro e promover os problemas facilmente e diretamente no aplicativo.
+* Envie comentários e classificação adicionados ao aplicativo: capacidade adicionada do aplicativo de enviar comentários e fornecer classificações para que seja possível aumentar a influência da comunidade em nosso roteiro e promover os problemas facilmente e diretamente no aplicativo.
 
 #### <a name="windows"></a>Windows
 * Bloco de mapa aprimorada de renderização no modo em foco para aumentar o espaço na tela.

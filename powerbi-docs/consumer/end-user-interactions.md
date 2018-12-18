@@ -1,23 +1,24 @@
 ---
-title: Entender como os visuais interagem em um relatório (para os consumidores do relatório)
+title: Como os visuais realizam filtragem cruzada entre si em um relatório (para os consumidores do relatório)
 description: Documentação para os usuários finais do Power BI que explica como os visuais interagem em uma página de relatório.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c87f99b768f52fe7f6b565c47ed7e434b167a046
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 838b881622dd19eb881aa53ac895f223cf9bc460
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112051"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180497"
 ---
-# <a name="visualization-interactions-in-a-power-bi-report"></a>Interações de visualização em um relatório do Power BI
+# <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Como os visuais realizam filtragem cruzada entre si em um relatório do Power BI
 Um dos melhores recursos do Power BI é a maneira com que todos os elementos visuais na página de um relatório são interconectados. Se você selecionar um ponto de dados em um dos elementos visuais, todos os outros visuais na página que contêm esses dados serão alterados, com base nessa seleção. 
 
 ![vídeo de interação de visuais](media/end-user-interactions/interactions.gif)

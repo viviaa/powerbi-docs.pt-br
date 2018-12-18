@@ -9,15 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268356"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026697"
 ---
-# <a name="power-bi-admin-portal"></a>Portal de administração do Power BI
+# <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
 O portal de administração permite que você gerencie um *locatário* do Power BI para sua organização. O portal inclui itens como métricas de uso, acesso ao centro de administração do Office 365 e configurações.
 
@@ -105,11 +106,11 @@ A imagem a seguir mostra as duas primeiras seções da guia **Configurações de
 
 As configurações podem ter três estados:
 
-* **Desabilitado para toda a organização**: ninguém na organização pode usar o recurso.
+* **Desabilitado para toda a organização**: ninguém na sua organização pode usar esse recurso.
 
     ![Configuração desabilitado para todos](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Habilitado para toda a organização**: todos na organização podem usar o recurso.
+* **Habilitado para toda a organização**: todos em sua organização podem usar esse recurso.
 
     ![Configuração habilitado para todos](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
@@ -193,7 +194,7 @@ A imagem a seguir mostra o menu **Arquivo** de um relatório quando a configura�
 
 ## <a name="content-pack-and-app-settings"></a>Configurações de aplicativo e pacote de conteúdo
 
-### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicar pacotes de conteúdo e aplicativos em toda a organização
+### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicar aplicativos e pacotes de conteúdo em toda a organização
 
 Os usuários na organização podem publicar pacotes de conteúdo e aplicativos para toda a organização, em vez de apenas grupos específicos. [Saiba mais](service-organizational-content-pack-manage-update-delete.md)
 

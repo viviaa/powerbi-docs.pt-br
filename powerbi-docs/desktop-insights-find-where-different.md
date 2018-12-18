@@ -1,21 +1,22 @@
 ---
-title: Usar insights no Power BI Desktop para localizar onde a distribuição está diferente (versão prévia)
+title: Usar insights para localizar onde a distribuição está diferente (versão prévia)
 description: Obtenha insights facilmente para localizar onde uma distribuição vista em um gráfico está diferente no Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a355e3d19a781def54a1dcf747f404ed7852444
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 1966c39fef818d6df84b9b47039b1d762374ce28
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670867"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026767"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Usar insights no Power BI Desktop para localizar onde uma distribuição está diferente (versão prévia)
 

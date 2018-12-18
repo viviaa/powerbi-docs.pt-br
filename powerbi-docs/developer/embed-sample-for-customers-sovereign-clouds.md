@@ -1,23 +1,25 @@
 ---
-title: Inserir conteúdo do Power BI em um aplicativo para seus clientes das nuvens soberanas e governamentais
-description: Aprenda a integrar ou inserir um dashboard, bloco ou relatório em um aplicativo Web usando APIs do Power BI para seus clientes.
+title: Análise integrada para inserir o conteúdo do Power BI em seu aplicativo para nuvens soberanas e governamentais
+description: Aprenda a integrar ou inserir um painel, um bloco ou um relatório em um aplicativo usando as APIs do Power BI para análise integrada para seus clientes. Saiba como integrar o Power BI ao seu aplicativo usando o software de análise integrada, ferramentas de análise integrada ou ferramentas de business intelligence integrada.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
-ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: aabf472e236f545fe51d4007dcd8fbdf36632931
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003146"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180612"
 ---
 # <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Tutorial: Inserir um dashboard, bloco ou relatório do Power BI em seu aplicativo para nuvens soberanas
 
-Saiba como inserir um dashboard, um bloco ou relatório em aplicativos Web usando o SDK do .NET do Power BI, junto com a API JavaScript do Power BI ao integrar dados para seus clientes.
+Saiba como incorporar conteúdo analítico dentro de seus aplicativos de processos de negócios para a nuvem soberana. Você pode usar o SDK do .NET do Power BI com a API do JavaScript do Power BI para inserir um relatório, painel ou bloco, em seus aplicativos Web.
 
 O Power BI também dá suporte a nuvens soberanas (privadas).
 
@@ -132,7 +134,7 @@ Registre o aplicativo no Azure AD para fazer chamadas à API REST. Para obter ma
 
 * Power BI para a nuvem da China – https://app.powerbi.cn/apps
 
-Se você tiver baixado o [Exemplo Inserindo para seu cliente](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), use a **applicationId** obtida, após o registro, para que o exemplo possa ser autenticado no Azure AD. Para configurar o exemplo, altere a **applicationId** no arquivo *web.config*.
+Se você tiver baixado o [Exemplo Inserindo para seu cliente](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), use a **applicationId** obtida, para que o exemplo possa ser autenticado no Azure AD. Para configurar o exemplo, altere a **applicationId** no arquivo *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Etapa 2 – Obter um token de acesso do Azure AD
 
@@ -227,7 +229,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Criar o token de inserção
 
-Usando a API JavaScript, é possível gerar um token inserido. O token de inserção é específico ao item que está sendo inserido. Sempre que você inserir uma parte do conteúdo do Power BI, precisará criar um novo token de inserção para ele. Para obter mais informações, incluindo qual **accessLevel** deve ser usado, confira [Inserir Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Usando a API JavaScript, é possível gerar um token inserido. O token de inserção é específico do item que está sendo inserido. Sempre que você inserir uma parte do conteúdo do Power BI, precisará criar um novo token de inserção para ele. Para obter mais informações, incluindo qual **accessLevel** deve ser usado, confira [Inserir Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Como os tokens inseridos destinam-se apenas para teste de desenvolvimento, o número de tokens inseridos que uma conta mestre do Power BI pode gerar é limitado. Uma [capacidade deve ser adquirida](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) para cenários de integração de produção. Não há nenhum limite para a geração de tokens inseridos quando uma capacidade é adquirida.

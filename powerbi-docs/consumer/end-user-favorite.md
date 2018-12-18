@@ -3,20 +3,21 @@ title: Favoritos no serviço do Power BI (painéis, relatórios, aplicativos)
 description: Documentação sobre como definir painéis, relatórios e aplicativos como favoritos no serviço do Power BI
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 46b943b9de7e8bae29c20617f957c81de2d49f94
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: cc94f352c550d7fba96f71f894e8d81ba5bc487a
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452489"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280162"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Adicione painéis, relatórios e aplicativos aos favoritos no serviço do Power BI
 Quando você adicionar um conteúdo a *Favoritos*, poderá acessá-lo de todos os workspaces.  Os favoritos normalmente são o conteúdo que você visita com mais frequência.
@@ -61,7 +62,7 @@ Assista à Amanda adicionar favoritos ao seu workspace e, em seguida, siga as in
    
     ![janela de favorito](./media/end-user-favorite/power-bi-favorites-screen.png)
    
-   Aqui, você pode tomar uma ação: abrir, identificar os proprietários e até compartilhar com seus colegas.
+   Aqui, você pode executar uma ação: abrir, identificar os proprietários e, até, compartilhar com seus colegas.
 
 ## <a name="unfavorite-content"></a>Remover conteúdo dos favoritos
 Você não usa mais um relatório com tanta frequência como costumava?  É possível removê-los de Favoritos. Quando você remove um conteúdo dos favoritos, ele é removido de sua lista de Favoritos, mas não do Power BI.
@@ -71,7 +72,7 @@ Você não usa mais um relatório com tanta frequência como costumava?  É poss
    ![tela Favoritos](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. Selecione a estrela amarela ao lado do conteúdo para removê-lo dos favoritos.
 
-> **OBSERVAÇÃO**: você pode também remover um painel, um relatório ou o próprio aplicativo dos favoritos. Basta abrir e desmarcar o ícone amarelo.   
+> **OBSERVAÇÃO**: Também pode remover um painel, um relatório ou o próprio aplicativo dos favoritos. Basta abrir e desmarcar o ícone amarelo.   
 > 
 > 
 

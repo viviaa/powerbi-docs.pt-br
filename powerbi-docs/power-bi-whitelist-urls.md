@@ -1,5 +1,5 @@
 ---
-title: URLs do Power BI
+title: URLs do Power BI para a lista de permissões
 description: Este artigo descreve os pontos de extremidade que devem ser acessíveis para clientes que usam o Power BI.
 author: mgblythe
 ms.author: mblythe
@@ -9,14 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: 47fb90ba0f73bba2b210a9003b782a477dbf8214
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.custom: seodec18
+ms.openlocfilehash: dcf51f26aac018acdd58e4244f21e41a1b6f1bc6
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578717"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026606"
 ---
-# <a name="power-bi-urls"></a>URLs do Power BI
+# <a name="power-bi-urls-for-whitelisting"></a>URLs do Power BI para a lista de permissões
 
 **O serviço online do Power BI**, também conhecido como aplicativo SaaS (Software como serviço) do Power BI, requer conectividade com a Internet. Os pontos de extremidade abaixo devem ser acessíveis para clientes que usam o serviço online do Power BI.
 
@@ -26,7 +27,7 @@ Os pontos de extremidade marcados como **opcionais** também podem ser adicionad
 
 O serviço online do Power BI requer apenas que a porta TCP 443 seja aberta para os pontos de extremidade listados.
 
-Caracteres curinga (*) representam todos os níveis sob o domínio raiz, e usaremos N/D quando as informações não estiverem disponíveis. A coluna **Destino(s)** é uma lista com domínios/FQDN e links para sites externos, que contêm mais informações sobre o ponto de extremidade.
+Caracteres curinga (*) representam todos os níveis sob o domínio raiz, e usaremos N/A quando as informações não estiverem disponíveis. A coluna **Destino(s)** é uma lista com domínios/FQDN e links para sites externos, que contêm mais informações sobre o ponto de extremidade.
 
 >[!Important]
 >As informações nas tabelas abaixo não representam a **nuvem do Governo dos EUA**, **a nuvem da Alemanha** ou a **nuvem da China**.
@@ -37,7 +38,7 @@ O Power BI depende dos pontos de extremidade necessários nas seções de identi
 
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
-| 1 | **Obrigatório:** autenticação e identidade | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | Não aplicável |
+| 1 | **Obrigatório:** Autenticação e identidade | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | N/A |
 
 ## <a name="general-site-usage"></a>Uso geral do site
 
@@ -46,10 +47,10 @@ Para o uso geral do Power BI, conecte-se aos pontos de extremidade na tabela e n
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
 | 1 | **Obrigatório:** APIs de back-end | *.analysis.windows.net | TCP 443 |
-| 2 | **Obrigatório:** integração do Office 365 | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Não aplicável |
+| 2 | **Obrigatório:** integração do Office 365 | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | 3 | **Obrigatório:** Portal | app.powerbi.com | TCP 443 |
-| 4 | **Obrigatório:** telemetria de serviço | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Opcional:** mensagens informativas | dynmsg.modpim.com | TCP 443 |
+| 4 | **Obrigatório:** Telemetria do serviço | dc.services.visualstudio.com | TCP 443 |
+| 5 | **Opcional:** Mensagens informativas | dynmsg.modpim.com | TCP 443 |
 | 6 | **Opcional:** pesquisas NPS | nps.onyx.azure.net | TCP 443 |
 | | | |
 
@@ -59,7 +60,7 @@ Para executar funções administrativas dentro do Power BI, conecte-se aos ponto
 
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
-| 1 | **Obrigatório:** para gerenciar usuários e exibir logs de auditoria | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Não aplicável |
+| 1 | **Obrigatório:** Para gerenciar usuários e exibir logs de auditoria | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | | | |
 
 ## <a name="getting-data"></a>Obtendo dados
@@ -69,10 +70,10 @@ Para obter dados de fontes de dados específicas, como o OneDrive, você deve se
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
 | 1 | **Obrigatório:** AppSource (aplicativos internos ou externos no Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Opcional:** entrar e obter dados para os pacotes de conteúdo | Depende dos pacotes de conteúdo usados | Depende dos pacotes de conteúdo usados |
-| 3 | **Opcional:** importar arquivos do OneDrive pessoal | Consulte o site [URLs e portas necessárias para o OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports) | Não aplicável |
+| 2 | **Opcional:** Entrar e obter dados para os pacotes de conteúdo | Depende dos pacotes de conteúdo usados | Depende dos pacotes de conteúdo usados |
+| 3 | **Opcional:** Importar arquivos do OneDrive pessoal | Consulte o site [URLs e portas necessárias para o OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Opcional:** vídeo de tutorial do Power BI em 60 segundos | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
-| 5 | **Opcional:** fontes de dados de streaming do PubNub | Consulte a [documentação do PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | Não aplicável |
+| 5 | **Opcional:** fontes de dados de streaming do PubNub | Consulte a [documentação do PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
 | | | |
 
 ## <a name="dashboard-and-report-integration"></a>Integração do dashboard e do relatório
@@ -81,7 +82,7 @@ O Power BI depende de determinados pontos de extremidade para poder dar suporte 
 
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
-| 1 | **Obrigatório:** integração do Excel | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | Não aplicável |
+| 1 | **Obrigatório:** integração do Excel | Confira a documentação do Office 365 do [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | | | |
 
 ## <a name="custom-visuals"></a>Visuais personalizados
@@ -90,10 +91,10 @@ O Power BI depende de determinados pontos de extremidade para poder exibir e ace
 
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
-| 1 | **Obrigatório:** importar um visual personalizado da interface do Marketplace ou de um arquivo | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
+| 1 | **Obrigatório:** Importar um visual personalizado da interface do Marketplace ou de um arquivo | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
 | 2 | **Opcional:** Bing Mapas | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
-| 3 | **Opcional:** PowerApps | Consulte a [seção Serviços necessários](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) no site de requisitos de sistema do PowerApps | Não aplicável |
-| 4 | **Opcional:** Visio | Confira a documentação do Office 365 para [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), bem como [SharePoint Online e OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | Não aplicável |
+| 3 | **Opcional:** PowerApps | Consulte a [seção Serviços necessários](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) no site de requisitos de sistema do PowerApps | N/A |
+| 4 | **Opcional:** Visio | Confira a documentação do Office 365 para [Office Online e URLs comuns](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), bem como [SharePoint Online e OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 
 ## <a name="related-external-sites"></a>Sites externos relacionados
@@ -102,12 +103,12 @@ O Power BI contém links para outros sites relacionados. Esses sites incluem os 
 
 | Linha | Finalidade | Destino(s) | Porta(s) |
 | --- | --- | --- | --- |
-| 1 | **Opcional:** site da comunidade | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Opcional:** site da documentação | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
-| 3 | **Opcional:** site de Download (para o Power BI Desktop etc.) | download.microsoft.com | TCP 443 |
-| 4 | **Opcional:** redirecionamentos externos | aka.ms </br> go.microsoft.com | TCP 443 |
-| 5 | **Opcional:** site de feedback de ideias| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
+| 1 | **Opcional:** Site da comunidade | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
+| 2 | **Opcional:** Site de documentação | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
+| 3 | **Opcional:** Site de download (para o Power BI Desktop etc.) | download.microsoft.com | TCP 443 |
+| 4 | **Opcional:** Redirecionamentos externos | aka.ms </br> go.microsoft.com | TCP 443 |
+| 5 | **Opcional:** Site de comentários sobre ideias| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
 | 6 | **Opcional:** site do Power BI – página de aterrissagem, links para saber mais, site de suporte, links de download, demonstração do parceiro etc. | powerbi.microsoft.com | TCP 443 |
-| 7 | **Opcional:** Central de Desenvolvedores do Power BI | dev.powerbi.com | TCP 443 |
+| 7 | **Opcional:** Central de desenvolvedores do Power BI | dev.powerbi.com | TCP 443 |
 | 8 | **Opcional:** Site de suporte | support.powerbi.com </br> s3.amazonaws.com </br> *.olark.com </br> logx.optimizely.com </br> mscom.demdex.net </br> tags.tiqcdn.com | TCP 443 |
 | | | |

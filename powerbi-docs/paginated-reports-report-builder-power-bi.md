@@ -1,23 +1,23 @@
 ---
 title: O que são os relatórios paginados no Power BI Premium? (Versão prévia)
-description: Relatórios paginados são relatórios que podem ser impressos ou compartilhados. Você pode controlar o layout do relatório de maneira exata. Eles exibem todos os dados em uma tabela, por exemplo, mesmo se a tabela abranger várias páginas.
+description: Os relatórios paginados, o formato longo de relatório padrão no SQL Server Reporting Services, agora estão disponíveis no serviço do Power BI. Esses relatórios podem ser impressos ou compartilhados. Você pode controlar o layout do relatório de maneira exata. Eles exibem todos os dados em uma tabela, por exemplo, mesmo se a tabela abranger várias páginas.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289210"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026107"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>O que são os relatórios paginados no Power BI Premium? (Versão prévia)
-Os relatórios paginados, o formato longo de relatório padrão no SQL Server Reporting Services, agora estão disponíveis no serviço do Power BI. Relatórios paginados são relatórios designados para serem impressos ou compartilhados. Eles são chamados de "paginados" porque são formatados de modo a se adaptarem bem a uma página. Eles exibem todos os dados em uma tabela, mesmo que a tabela abranja várias páginas. Às vezes são chamados de "pixel perfeito" porque você pode controlar o layout de página do relatório de maneira exata. Os relatórios paginados são baseados na tecnologia de relatório RDL no SQL Server Reporting Services. O Construtor de Relatórios é a ferramenta autônoma para a criação de relatórios paginados. 
+Os relatórios paginados, o formato longo de relatório padrão no SQL Server Reporting Services, agora estão disponíveis no serviço do Power BI. Esses relatórios podem ser impressos ou compartilhados. Eles são chamados de "paginados" porque são formatados de modo a se adaptarem bem a uma página. Eles exibem todos os dados em uma tabela, mesmo que a tabela abranja várias páginas. Às vezes são chamados de "pixel perfeito" porque você pode controlar o layout de página do relatório de maneira exata. Os relatórios paginados são baseados na tecnologia de relatório RDL no SQL Server Reporting Services. O Construtor de Relatórios é a ferramenta autônoma para a criação de relatórios paginados. 
 
 Os relatórios paginados podem ter muitas páginas. Por exemplo, esse relatório tem 563 páginas. Cada página é disposta exatamente, com uma página por fatura e cabeçalhos e rodapés repetidos.
 
@@ -43,7 +43,7 @@ Mais fontes de dados estarão disponíveis durante o período de versão prévia
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Crie relatórios paginados com matriz, gráfico e layouts de forma livre
 
-Crie relatórios de tabela para dados baseados em colunas, relatórios de matriz (como referência cruzada ou relatórios de tabela dinâmica) para dados resumidos, relatórios de gráfico para dados gráficos e relatórios de *lista* de forma livre para qualquer outra coisa, como faturas. 
+Os relatórios de tabela funcionam bem para dados baseados em colunas. Os relatórios de matriz, como relatórios de tabela cruzada ou Tabela Dinâmica, são bons para dados resumidos. Os relatórios de gráficos apresentam dados em um formato gráfico e os relatórios de *lista* de forma livre podem apresentar quase qualquer outro item, como faturas. 
   
 Você pode começar com um dos assistentes do Construtor de Relatórios. Os assistentes de Tabela, Matriz e Gráfico orientam você durante a criação da conexão de fonte de dados inseridos e o conjunto de dados inseridos. Em seguida, você pode arrastar e soltar campos para criar uma consulta de conjunto de dados, selecionar um layout e estilo e personalizar seu relatório.  
   
@@ -66,7 +66,7 @@ Você exibe seu relatório paginado no serviço do Power BI em um navegador e ta
 
 Aqui estão alguns outros recursos que não têm suporte na versão inicial:
 
-- Fixar páginas de relatório ou visuais em painéis do Power BI.
+- Fixar páginas de relatório ou visuais em painéis do Power BI. Você ainda pode fixar visualizações a um painel do Power BI de um relatório paginado local em um Servidor de Relatórios do Microsoft Power BI ou em um Servidor de Relatórios do Reporting Services. Confira [Fixar itens do Reporting Services em painéis do Power BI](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) para obter mais informações.
 - Recursos interativos, como mapas de documento e botões de mostrar/ocultar.
 - Sub-relatórios e relatórios detalhados.
 - Assinaturas.

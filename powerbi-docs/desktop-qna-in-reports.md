@@ -1,21 +1,21 @@
 ---
 title: Usando P e R no Power BI Desktop
 description: Já é possível usar consultas de linguagem natural no Power BI Desktop, usando P e R
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c0736728d1dfce5a571eb1950670bc9fc9fa1c1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 4a9ab6173422ec2f897050b2f456847b342e9fa2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670752"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026720"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Usar P e R no Power BI Desktop para consultas de linguagem natural
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no **Power BI Desktop** permite que você faça.
@@ -25,9 +25,6 @@ Para habilitar P e R para interpretar com êxito a coleção de perguntas a qual
 > [!NOTE]
 > As P e R estarão disponíveis apenas ao trabalhar com um modelo que contenha dados **importados**. Não há suporte para conexões dinâmicas com modelos SSAS e DirectQuery.
 >
->
-
-> [!NOTE]
 > P e R exigem a seguinte atualização do tempo de execução do C, quando você está usando uma versão do Windows anterior ao Windows 10. Você pode tentar instalar atualizações importantes do Windows Update ou instalar o componente necessário da Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
@@ -49,11 +46,11 @@ Se o seu modelo tem relacionamentos ausentes entre tabelas, nem os relatórios d
 
 ## <a name="rename-tables-and-columns"></a>Renomear tabelas e colunas
 
-A escolha de tabelas e colunas é muito importante para P e R. Por exemplo, se você tiver uma tabela chamada *CustomerSummary* que contém uma lista de seus clientes, faça perguntas como "Listar os resumos de clientes em Chicago" em vez de "Listar os clientes em Chicago". 
+A escolha de tabelas e colunas é importante para P e R. Por exemplo, digamos que você tenha uma tabela chamada *ResumoClientes* que contenha uma lista de seus clientes. Você precisaria fazer perguntas como "Liste os resumos de clientes em Chicago" em vez de "Listar os clientes em Chicago". 
 
 Embora P e R possa fazer alguma quebra de palavras básica e detecção de plurais, P e R pressupõe que os nomes da tabela e da coluna reflitam com precisão o conteúdo.
 
-Considere outro exemplo. Imagine uma tabela chamada *Contagem de Funcionários* que contém nomes e sobrenomes e os números de funcionários, e outra tabela chamada *Funcionários* que contém os números de funcionários, datas de início e de números de trabalho. Embora isso possa ser compreendido por pessoas que estão familiarizadas com o modelo, outra pessoa que solicita "contagem de funcionários” obterá uma contagem das linhas da tabela "Funcionários", que provavelmente não é o que ela tinha em mente, já que é uma contagem de todos os trabalhos de cada funcionário. Seria muito melhor renomear essas tabelas para refletir realmente o que elas contêm.
+Considere outro exemplo. Imagine que você tenha uma tabela chamada *Efetivo* que contenha nome e sobrenome e números de funcionários. Você tem outra tabela chamada *Funcionários* que contém números de funcionários, números de trabalho e datas de início. Pessoas familiarizadas com o modelo talvez entendam essa estrutura. Alguém que pergunta "contagem dos funcionários" vai ter uma contagem das linhas da tabela "Funcionários". Provavelmente, esse resultado não é o que a pessoa tinha em mente, pois é uma contagem de todos os trabalhos dos quais cada funcionário já participou. Seria melhor renomear essas tabelas para refletir realmente o que elas contêm.
 
 **Precisa de trabalho**
 
@@ -65,7 +62,7 @@ Considere outro exemplo. Imagine uma tabela chamada *Contagem de Funcionários* 
 
 ## <a name="fix-incorrect-data-types"></a>Corrigir os tipos de dados incorretos
 
-Dados importados podem ter tipos de dados incorretos. Em particular, as colunas *data* e *número* que são importadas como *cadeias de caracteres* não serão interpretadas por P e R como datas e números. Verifique se você selecionou o tipo de dados correto em seu modelo do Power BI.
+Dados importados podem ter tipos de dados incorretos. Em particular, as colunas *data* e *número* que são importadas como *cadeias de caracteres* não são interpretadas por P e R como datas e números. Certifique-se de selecionar o tipo de dados correto em seu modelo do Power BI.
 
 ![Escolha o tipo de dados correto para garantir que ele está disponível para P e R](media/desktop-qna-in-reports/desktop-qna_05.png)
 
@@ -77,7 +74,7 @@ O Power BI agrega agressivamente colunas numéricas por padrão, portanto pergun
 
 ## <a name="choose-a-data-category-for-each-date-and-geography-column"></a>Escolher uma categoria de dados para cada coluna de data e geografia
 
-A **Categoria de Dados** fornece conhecimento semântico adicional sobre o conteúdo de uma coluna além de seu tipo de dados. Por exemplo, uma coluna de inteiro pode ser marcada como um CEP, uma coluna de cadeia de caracteres pode ser marcada como cidade, país, região e assim por diante. Essas informações são usadas por P e R de duas maneiras importantes: para seleção de visualização e tendências de idioma.
+A **Categoria de Dados** fornece conhecimento semântico adicional sobre o conteúdo de uma coluna além de seu tipo de dados. Por exemplo, uma coluna de inteiro pode ser marcada como um CEP, uma coluna de cadeia de caracteres pode ser marcada como cidade, país, região e assim por diante. Essas informações são usadas por P e R de duas maneiras importantes: Para seleção de visualização e para desvios de idioma.
 
 Em primeiro lugar, P e R usa as informações de **Categoria de Dados** para ajudar a tomar decisões sobre qual tipo de exibição visual será usado. Por exemplo, ela reconhece que colunas com **Categorias de Dados** de data ou hora geralmente são uma boa escolha para o eixo horizontal do gráfico de linhas ou o eixo de reprodução de um gráfico de bolhas. E pressupõe que os resultados que contém colunas com **Categorias de Dados** geográficos podem ter uma boa aparência em um mapa.
 
@@ -90,19 +87,19 @@ Em segundo lugar, P e R faz algumas suposições informadas sobre como os usuár
 
 A propriedade **Classificar por Coluna** permite classificar em uma coluna para classificar automaticamente por uma coluna diferente. Por exemplo, quando pedir "classificar clientes por tamanho de camisa", você provavelmente desejará que a coluna de tamanho de camisa classifique pelo número de tamanho subjacente (XS, S, M, L, XL) em vez de em ordem alfabética (L, M, S, XL, XS).
 
-![Escolher uma classificação por coluna adequadamente para P e R](media/desktop-qna-in-reports/desktop-qna_08.png)
+![Escolher Classificar por Coluna adequadamente para P e R](media/desktop-qna-in-reports/desktop-qna_08.png)
 
 ## <a name="normalize-your-model"></a>Normalizar seu modelo
 
-Tenha certeza de que não estamos sugerindo que você precisa alterar a forma do modelo inteiro. No entanto, há determinadas estruturas que são simplesmente tão difíceis que P e R não vai lidar bem com elas. Se você executar alguma normalização básica da estrutura do seu modelo, o uso de relatórios do Power BI aumentará significativamente, assim como a precisão dos resultados de P e R.
+Tenha certeza de que não estamos sugerindo que você precisa alterar a forma do modelo inteiro. No entanto, certas estruturas são tão difíceis que as P e R não as manipula bem. Se você executar alguma normalização básica da estrutura do seu modelo, o uso de relatórios do Power BI aumentará significativamente, assim como a precisão dos resultados de P e R.
 
-A regra geral é: cada "item" exclusivo abordado pelo usuário deve ser representado por exatamente um objeto do modelo (tabela ou coluna). Portanto, se seus usuários falam sobre clientes, deve haver um objeto *cliente*. Se os usuários falam sobre vendas, deve haver um objeto *vendas*. Bem simples, não é? Dependendo da forma dos dados com os quais você está iniciando, pode ser. Há recursos avançados de modelagem de dados disponíveis no **Editor de Consultas** se você precisar, embora muitas das transformações mais simples possam ocorrer simplesmente usando cálculos no modelo do Power BI.
+Siga esta regra geral: cada "item" exclusivo abordado pelo usuário deve ser representado por exatamente um objeto do modelo (tabela ou coluna). Portanto, se seus usuários falam sobre clientes, deve haver um objeto *cliente*. Se os usuários falam sobre vendas, deve haver um objeto *vendas*. Bem simples, não é? Dependendo da forma dos dados com os quais você está iniciando, pode ser. Há recursos avançados de modelagem de dados disponíveis no **Editor de Consultas** se você precisar, embora muitas das transformações mais simples possam ocorrer simplesmente usando cálculos no modelo do Power BI.
 
 As seções a seguir contêm algumas transformações comuns que talvez você precise executar.
 
 ### <a name="create-new-tables-for-multi-column-entities"></a>Criar novas tabelas para entidades de várias colunas
 
-Se você tiver várias colunas que atuam como uma única unidade distinta dentro de uma tabela maior, essas colunas deverão ser divididas em sua própria tabela. Por exemplo, se você tiver colunas Nome de Contato, Cargo do Contato e Telefone de Contato dentro da tabela *Empresas*, um design melhor seria ter uma tabela *Contatos* separada com Nome, Cargo e Telefone e um link de volta para a tabela *Empresas*. Isso facilita muito para fazer perguntas sobre contatos independentemente de perguntas sobre empresas para as quais eles são o contato e aumenta a flexibilidade de exibição.
+Se você tiver várias colunas que atuam como uma única unidade distinta dentro de uma tabela maior, essas colunas deverão ser divididas em sua própria tabela. Por exemplo, digamos que você tenha uma coluna Nome do contato, Cargo do contato e Telefone do contato na tabela *Empresas*. Um design melhor seria ter uma tabela *Contatos* separada para conter o Nome, o Cargo e o Telefone, e um link para a tabela *Empresas*. Isso facilita muito para fazer perguntas sobre contatos independentemente de perguntas sobre empresas para as quais eles são o contato e aumenta a flexibilidade de exibição.
 
 **Precisa de trabalho**
 
@@ -128,9 +125,9 @@ Por exemplo, considere uma tabela *CustomerDemographics* com colunas CustomerID,
 
 ### <a name="union-to-eliminate-partitioning"></a>União para eliminar o particionamento
 
-Se você particionou seus dados em várias tabelas ou dinamizou valores em várias colunas, será difícil ou impossível para seus usuários executar diversas operações comuns. Considere primeiro uma tabela típica de particionamento: uma tabela *Sales2000-2010* e uma tabela *Sales2011-2020*. Se todos os relatórios importantes forem restritos a uma década específica, provavelmente você poderia deixar desta forma para relatórios do Power BI. Porém, a flexibilidade de P e R levará os usuários a esperar respostas a perguntas como "total de vendas por ano". Para que isso funcione, você precisará unir os dados em uma única tabela de modelo do Power BI.
+Se você particionou seus dados em várias tabelas ou dinamizou valores em várias colunas, será difícil ou impossível para seus usuários executar diversas operações comuns. Considere primeiro uma tabela típica de particionamento: uma tabela *Sales2000-2010* e uma tabela *Sales2011-2020*. Se todos os relatórios importantes forem restritos a uma década específica, provavelmente você poderia deixar desta forma para relatórios do Power BI. Porém, a flexibilidade de P e R levará os usuários a esperar respostas a perguntas como "total de vendas por ano". Para que essa consulta funcione, você precisará unir os dados em uma única tabela de modelo do Power BI.
 
-Da mesma forma, considere a possibilidade de uma coluna de valor dinâmico típico: uma tabela *BookTour* contendo as colunas Autor, Livro, Cidade1, Cidade2 e Cidade3. Com uma estrutura semelhante a essa, até mesmo perguntas simples como "contagem de livros por cidade" não podem ser interpretadas corretamente. Para que isso funcione, crie uma tabela *BookTourCities* separada, que une os valores de cidade em uma única coluna.
+Da mesma forma, considere a possibilidade de uma coluna de valor dinâmico típico: uma tabela *BookTour* contendo as colunas Autor, Livro, Cidade1, Cidade2 e Cidade3. Com uma estrutura semelhante a essa, até mesmo perguntas simples como "contagem de livros por cidade" não podem ser interpretadas corretamente. Para que essa consulta funcione, crie uma tabela *BookTourCities* separada, que une os valores de cidade em uma única coluna.
 
 **Precisa de trabalho**
 
@@ -169,7 +166,7 @@ Em uma situação semelhante, se a origem da qual você está importando dados c
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Desnormalizar para eliminar relacionamentos inativos
 
-Uma exceção à regra de "normalização é melhor" ocorre quando há mais de um caminho para ir de uma tabela a outra. Por exemplo, se você tiver uma tabela *Voos* com colunas SourceCityID e DestinationCityID, cada uma delas estará relacionada à tabela *Cidades* e um desses relacionamentos precisará ser marcado como inativo. P e R só pode usar relacionamentos ativos, por isso você não poderá fazer perguntas sobre origem ou destino, dependendo do que você escolher. Se você desnormalizar as colunas de nome de cidade na tabela *Voos*, poderá fazer perguntas como: "listar os voos de amanhã tendo Seattle como cidade de origem e São Francisco como cidade de destino".
+Uma exceção à regra de "normalização é melhor" ocorre quando há mais de um caminho para ir de uma tabela a outra. Por exemplo, se você tiver uma tabela *Voos* com colunas SourceCityID e DestinationCityID, cada uma delas estará relacionada à tabela *Cidades*. Um desses relacionamentos terá que ser marcado como inativo. P e R só podem usar relacionamentos ativos, você não pode fazer perguntas sobre origem ou destino, dependendo do que você escolher. Se você desnormalizar as colunas de nome de cidade na tabela *Voos*, pode fazer perguntas como: "listar os voos de amanhã tendo Seattle como cidade de origem e São Francisco como cidade de destino".
 
 **Precisa de trabalho**
 
@@ -183,7 +180,7 @@ Uma exceção à regra de "normalização é melhor" ocorre quando há mais de u
 
 Esta etapa aplica-se especificamente a P e R (e não a relatórios do Power BI em geral). Os usuários geralmente têm uma variedade de termos que eles usam para se referir à mesma coisa, como total de vendas, vendas líquidas, total de vendas líquidas. O modelo do Power BI permite que esses sinônimos sejam adicionados a tabelas e colunas dentro do modelo. 
 
-Isso pode ser uma etapa muito importante. Mesmo com nomes de coluna e tabela simples, os usuários de P e R fazem perguntas usando o vocabulário mais comum a eles e não escolhendo em uma lista predefinida de colunas. Quanto mais sensíveis os sinônimos adicionados, melhor será experiência dos usuários com seu relatório. Para adicionar sinônimos, na exibição **Relacionamentos**, selecione o botão Sinônimos na faixa de opções, conforme mostrado na imagem a seguir.
+Esta etapa pode ser importante. Mesmo com nomes de coluna e tabela simples, os usuários de P e R fazem perguntas usando o vocabulário mais comum a eles e não escolhendo em uma lista predefinida de colunas. Quanto mais sensíveis os sinônimos adicionados, melhor será experiência dos usuários com seu relatório. Para adicionar sinônimos, na exibição **Relacionamentos**, selecione o botão Sinônimos na faixa de opções, conforme mostrado na imagem a seguir.
 
 ![Adicionar sinônimos para P e R](media/desktop-qna-in-reports/desktop-qna_21.png)
 

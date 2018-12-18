@@ -1,21 +1,22 @@
 ---
-title: Deseja exibir um dashboard do Power BI?
-description: Os dashboards são um recurso chave do serviço do Power BI.
+title: Exibir um painel do Power BI
+description: Painéis são um recurso importante do serviço do Power BI. Saiba como abrir e exibir um painel.
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53575f657c2d58f9d6b1908fb42bbb9267c3a3b8
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 2fa614683ecfebc0693829c834dcfa4f160d22b1
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396671"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279743"
 ---
 # <a name="view-a-dashboard"></a>Exibir um dashboard
 Os consumidores do Power BI gastam muito tempo para exibir dashboards. Os dashboards são projetados para realçar as informações específicas de relatórios e conjuntos de dados subjacentes. E os consumidores de Power BI usam essas informações para acompanhamento, monitoramento, responder perguntas, testes e muito mais para tomar decisões de negócios controladas por dados.

@@ -1,21 +1,22 @@
 ---
-title: Atualizar um conjunto de dados criado por meio de um arquivo .csv (valor separado por vírgulas) no OneDrive
+title: Atualizar um conjunto de dados criado com base em um arquivo .CSV no OneDrive
 description: Atualizar um conjunto de dados criado por meio de um arquivo .csv (valor separado por vírgulas) no OneDrive
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 6e6ce7a80e810ac8c05f6a4ab70c2d19f2201262
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: c06d9c56051ccb02d17d695561bc6caa462e99c3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025524"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Atualizar um conjunto de dados criado com base em um arquivo .CSV no OneDrive ou SharePoint Online
 ## <a name="what-are-the-advantages"></a>Quais são as vantagens?
@@ -29,7 +30,7 @@ Muitas organizações executam processos que consultam automaticamente nos banco
 Arquivos de valores separados por vírgulas são arquivos de texto simples; portanto, não há suporte para conexões a relatórios e fontes de dados externas. Não é possível agendar uma atualização em um conjunto de dados criado por meio de um arquivo delimitado por vírgulas. No entanto, quando o arquivo estiver no OneDrive ou SharePoint Online, o Power BI sincronizará todas as alterações no arquivo com o conjunto de dados automaticamente em intervalos aproximados de sessenta minutos.
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive ou OneDrive for Business. Qual é a diferença?
-Se você tiver um OneDrive Pessoal e um OneDrive para Empresas, é recomendável manter todos os arquivos aos quais deseja se conectar no Power BI no OneDrive para Empresas. Eis o porquê: você provavelmente usa duas contas diferentes para entrar neles.
+Se você tiver um OneDrive Pessoal e um OneDrive para Empresas, é recomendável manter todos os arquivos aos quais deseja se conectar no Power BI no OneDrive para Empresas. Eis o porquê: Você provavelmente usa duas contas diferentes para entrar neles.
 
 A conexão ao OneDrive para Empresas no Power BI é normalmente contínua, porque a mesma conta com a qual você usa para entrar no Power BI é geralmente a mesma conta usada para entrar no OneDrive para Empresas. Mas, com o OneDrive pessoal, você provavelmente entrará com outra [conta da Microsoft](https://account.microsoft.com).
 

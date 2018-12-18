@@ -1,21 +1,22 @@
 ---
-title: Conectar-se aos dados do Azure Consumption Insights no Power BI Desktop (Beta)
+title: Conectar-se aos dados do Azure Consumption Insights (Beta)
 description: Conectar-se com facilidade ao Azure e obter insights sobre consumo e uso usando o Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619599"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026766"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Conectar-se ao Azure Consumption Insights no Power BI Desktop (Beta)
 Com o conector do **Azure Consumption Insights**, você pode usar o **Power BI Desktop** para se conectar ao Azure e obter dados e informações detalhadas sobre o uso de serviços do Azure por sua organização. Você também pode criar medidas, colunas personalizadas e visuais para relatar e compartilhar sobre o uso do Azure por sua organização. Esta versão do conector do **Azure Consumption and Insights** está na versão Beta e está sujeita a alterações.
@@ -55,7 +56,7 @@ Depois de fornecer sua *Chave de acesso* e selecionar **Conectar**, uma janela *
 * **PriceSheets**: fornece as taxas aplicáveis por medidor para um registro.
 * **RICharges**: fornece os encargos associados às suas Instâncias Reservadas nos últimos 24 meses.
 * **RIRecommendations_Single**: fornece recomendações de compra de Instância Reservada fornece com base em suas tendências de uso em uma única assinatura nos últimos 7, 30 ou 60 dias.
-* **RIRecommendations_Shared**: fornece recomendações de compra de Instância Reservada fornece com base em suas tendências de uso em todas as suas assinaturas nos últimos 7, 30 ou 60 dias.
+* **RIRecommendations_Shared**: fornece recomendações de compra de Instância Reservada com base nas suas tendências de uso em todas as suas assinaturas nos últimos 7, 30 ou 60 dias.
 * **RIUsage**: fornece detalhes de consumo para suas Instâncias Reservadas existentes no último mês.
 * **Summaries**: fornece um resumo mensal dos saldos, novas compras, encargos de serviço do Azure Marketplace, ajustes e encargos de excedente.
 * **UsageDetails**: fornece uma divisão das quantidades consumidas e estimativas de encargos para um registro.

@@ -1,5 +1,5 @@
 ---
-title: Gerenciar um gateway para o Power BI
+title: Gerenciar um gateway local do Power BI
 description: Saiba como gerenciar um gateway para se conectar a dados locais no Power BI.
 author: mgblythe
 manager: kfile
@@ -9,15 +9,16 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 21eaca02502ae67ba5ecddff8e1b8890e0a049af
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755152"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026375"
 ---
-# <a name="manage-a-power-bi-gateway"></a>Gerenciar um Power BI Gateway
+# <a name="manage-a-power-bi-on-premises-gateway"></a>Gerenciar um gateway local do Power BI
 
 Depois de [instalar um gateway de dados do Power BI](service-gateway-install.md), você poderá gerenciá-lo com base em seus requisitos. Neste tópico, você aprenderá como adicionar e remover fontes de dados e usuários, reiniciar um gateway e também migrar, restaurar, assumir e remover um gateway. 
 

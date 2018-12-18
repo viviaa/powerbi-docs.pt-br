@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: bb3ecb8a343d2ed3f3693dd136b11b7543cabc70
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507659"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280716"
 ---
 # <a name="printing-from-power-bi-service"></a>Imprimir usando o serviço do Power BI
 Imprima um dashboard inteiro, um bloco do dashboard, uma página de relatório ou um visual de relatório no serviço do Power BI. Relatórios podem ser impressos somente com uma página por vez – não é possível imprimir o relatório inteiro ao mesmo tempo.
@@ -78,15 +79,15 @@ Somente uma página de relatório pode ser impressa por vez.
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 * P: Não consigo encontrar o botão **Imprimir**.    
-* R: Se você estiver usando o Power BI Desktop, não haverá suporte para impressão.  A impressão só funciona no serviço do Power BI.
+* R: Se você está usando o Power BI Desktop, não há suporte para impressão.  A impressão só funciona no serviço do Power BI.
 * P: Não consigo imprimir todas as páginas do relatório de uma vez.    
 * R: Isso está correto. As páginas do relatório só podem ser impressas uma página por vez.
 * P: Não consigo imprimir em PDF.    
 * R: Você só verá essa opção se já tiver configurado o driver de PDF em seu navegador.    
 * P: O que vejo quando seleciono **Imprimir** não corresponde ao que é mostrado aqui.    
-* R: As telas de Impressão variam de acordo com o navegador e a versão do software.
-* P: Minha cópia impressa não está escalada corretamente.  Meu dashboard não se ajusta à página. Outras perguntas sobre escala e orientação.    
-* R: não é possível assegurar que a cópia impressa seja exatamente a mesma exibida no serviço do Power BI. Itens como escala, margens, detalhes visuais, orientação e tamanho não são controlados pelo Power BI. Para obter ajuda com problemas como esse, consulte a documentação de seu navegador específico.      
+* R: As telas Imprimir variam de acordo com o navegador e a versão do software.
+* P: Minha cópia impressa não está dimensionada corretamente.  Meu dashboard não se ajusta à página. Outras perguntas sobre escala e orientação.    
+* R: Não é possível assegurar que a cópia impressa seja exatamente a mesma que é exibida no serviço do Power BI. Itens como escala, margens, detalhes visuais, orientação e tamanho não são controlados pelo Power BI. Para obter ajuda com problemas como esse, consulte a documentação de seu navegador específico.      
 
 ## <a name="next-steps"></a>Próximas etapas
 [Compartilhar relatórios e dashboards com seus colegas e outras pessoas](../service-share-dashboards.md)

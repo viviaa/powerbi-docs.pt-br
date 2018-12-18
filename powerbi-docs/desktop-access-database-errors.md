@@ -4,29 +4,30 @@ description: Solucionar problemas de importação de bancos de dados do Access e
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 76423f26203da23658b621d7d01565c04ca21709
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a1a350a8348dce5ba2553873077a0dfb102a187c
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578165"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024719"
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Resolver problemas de importação de arquivos do Access e .XLS no Power BI Desktop
 No **Power BI Desktop**, os **bancos de dados do Access** e as versões anteriores de **pastas de trabalho do Excel** (arquivos XLS do tipo Excel 97-2003) usam o *mecanismo de banco de dados do Access*. Há três situações comuns que podem impedir que o Mecanismo de Banco de Dados do Access funcione corretamente:
 
-### <a name="situation-1-no-access-database-engine-installed"></a>Situação 1: nenhum Mecanismo de Banco de Dados do Access instalado
+## <a name="situation-1-no-access-database-engine-installed"></a>Situação 1: Nenhum Mecanismo de Banco de Dados do Access instalado
 Quando a mensagem de erro do Power BI Desktop indica que o Mecanismo de Banco de Dados do Access não está instalado, você deve instalar a versão de 32 ou 64 bits do Mecanismo de Banco de Dados do Access que corresponde à sua versão do Power BI Desktop. Instale o Mecanismo de Banco de Dados do Access na [página de downloads](http://www.microsoft.com/download/details.aspx?id=13255).
 
 >[!NOTE]
 >Se a versão de bits instalada do Mecanismo de Banco de Dados do Access for diferente da versão de bits de instalação do Microsoft Office, os aplicativos do Office não poderão usar o Mecanismo de Banco de Dados do Access.
 
-### <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situação 2: a versão de bits do Mecanismo de Banco de Dados do Access (32 ou 64 bits) é diferente da versão de bits do Power BI Desktop
+## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situação 2: A versão de bits do Mecanismo de Banco de Dados do Access (32 ou 64 bits) é diferente da versão de bits do Power BI Desktop
 Essa situação geralmente ocorre quando a versão instalada do Microsoft Office é de 32 bits e a versão do Power BI Desktop instalada é de 64 bits. O contrário também pode ocorrer, com ocorrência de incompatibilidade de versão de bits em ambos os casos (se você estiver usando uma assinatura do Office 365, consulte **Situação 3** para problemas diferentes e soluções). Qualquer uma das seguintes soluções pode corrigir esse erro de incompatibilidade de versão de bits:
 
 1. Altere a versão do Power BI Desktop para corresponder à versão de bits de instalação do Microsoft Office. Para alterar a versão de bits do Power BI Desktop, desinstale o Power BI Desktop e, em seguida, instale a versão do Power BI Desktop que corresponde à sua instalação do Office. Para selecionar uma versão do Power BI Desktop, na página de download para a área de trabalho, selecione **Opções de download avançadas**.
@@ -47,11 +48,11 @@ Essa situação geralmente ocorre quando a versão instalada do Microsoft Office
    
        c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
 
-### <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situação 3: Problemas para utilizar o Access ou arquivos XLS com uma assinatura do Office 365
+## <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situação 3: Problemas para utilizar o Access ou arquivos .XLS com uma assinatura do Office 365
 Se você estiver usando uma assinatura do Office 365, seja o **Office 2013** ou o **Office 2016**, o provedor do mecanismo de banco de dados do Access é registrado em uma localização do Registro virtual que poderá ser acessada *somente* pelos processos do Office. Como resultado, o mecanismo Mashup (que é responsável por executar o Excel fora do Office 365 e o Power BI Desktop), que não é um processo do Office, não pode usar o provedor do mecanismo de banco de dados do Access.
 
 Para corrigir essa situação, você pode [baixar e instalar o mecanismo de banco de dados do Access redistribuível](http://www.microsoft.com/download/details.aspx?id=13255) que corresponde à versão de bits da instalação do seu Power BI Desktop (veja as seções anteriores para saber mais sobre as versões de bits).
 
-### <a name="other-situations-that-cause-import-issues"></a>Outras situações que causam problemas de importação
+## <a name="other-situations-that-cause-import-issues"></a>Outras situações que causam problemas de importação
 Nos esforçamos para abordar o máximo possível de problemas que ocorrem com o Access ou com arquivos XLS. Se você encontrar um problema que não foi abordado neste artigo, envie uma pergunta sobre o problema para o [suporte do Power BI](https://powerbi.microsoft.com/support/). Examinamos regularmente os problemas que podem estar afetando muitos clientes, posteriormente incluindo-os em nossos artigos.
 

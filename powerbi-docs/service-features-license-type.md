@@ -1,44 +1,42 @@
 ---
-title: Power BI Gratuito versus Pro
-description: Qualquer usuário no Power BI é Gratuito ou Pro. É útil entender as diferenças entre esses dois tipos de usuários.
+title: Recursos do serviço do Power BI por tipo de licença
+description: 'No serviço do Power BI, os usuários têm capacidades definidas conforme os dois tipos de licença: por usuário (gratuita e Pro) e com base em capacidade.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 12/06/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 62d6a274b7cfb784f4f61b0973bad22ea6194698
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: fab6181997fd57448a152fe315efcadf076e4fbb
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641288"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025846"
 ---
-# <a name="power-bi-free-vs-pro"></a>Power BI Gratuito versus Pro
+# <a name="power-bi-service-features-by-license-type"></a>Recursos do serviço do Power BI por tipo de licença
 
-Qualquer usuário no Power BI é Gratuito ou Pro. É útil entender as diferenças entre esses dois tipos de usuários.
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
-*Todos os usuários* no serviço são Gratuitos ou Pro. A principal diferença entre um usuário Gratuito ou Pro é relacionada a colaboração e compartilhamento. Somente usuários profissionais podem publicar conteúdo em workspaces do aplicativo, consumir aplicativos sem capacidade premium, compartilhar painéis e se inscrever para obter painéis e relatórios. Agora os usuários gratuitos podem se conectar a todas as fontes de dados por meio de todas as opções de conectividade como o DirectQuery, conexão dinâmica e o uso do gateway de dados.
+## <a name="per-user-license-type-comparison"></a>Comparação de tipo de licença por usuário
 
-Se um aplicativo for publicado e o seu workspace do aplicativo for atribuído à capacidade Premium, os usuários Gratuitos poderão consumir esses aplicativos.
-
-## <a name="free-vs-pro-comparison"></a>Comparação do Gratuito vs. Pro
-Aqui está uma lista de recursos com suporte por tipo de usuário.
+Aqui está uma lista de recursos com suporte pelo tipo de licença por usuário.
 
 |  | Gratuito | Pro |
 | --- | --- | --- |
 | **Conectar-se a mais de 70 fontes de dados** |![Recurso disponível](media/features-license-type/available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | **Publicar na Web** |![Recurso disponível](media/features-license-type/available.png) |![Recurso disponível](media/features-license-type/available.png) |
-| **Compartilhamento ponto a ponto** |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | **Exportar para PowerPoint, Excel, CSV** |![Recurso disponível](media/features-license-type/available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | **Distribuição do Enterprise** | | |
 | Aplicativos |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | Assinaturas de email |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | Inserir controles e APIs |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | **Colaboração** | | |
+| Compartilhamento ponto a ponto |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | Workspaces de aplicativo |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 | Analisar no Excel, analisar no Power BI Desktop |![Recurso não disponível](media/features-license-type/not-available.png) |![Recurso disponível](media/features-license-type/available.png) |
 

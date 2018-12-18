@@ -1,21 +1,22 @@
 ---
-title: Visão geral de P e R no serviço do Power BI e Power BI Desktop
+title: Visão geral de P e R no serviço do Power BI
 description: Tópico de visão geral da documentação para consultas de linguagem naturais de P e R do Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 3548041be39705c3013d09740040afc3e7f1c9e7
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396349"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279568"
 ---
 # <a name="qa-for-power-bi-consumers"></a>P e R para **consumidores** do Power BI
 ## <a name="what-is-qa"></a>O que é P e R?
@@ -46,7 +47,7 @@ Primeiro, familiarize-se com o conteúdo. Veja as visualizações no dashboard e
 
 ![Tela de P e R](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
-* Se os valores e os rótulos do eixo de visualizações incluírem “vendas”, “conta”, “mês” e “oportunidades”, será possível fazer perguntas como: “qual *conta* tem a *oportunidade* mais alta?” ou “mostrar *vendas* por mês como um gráfico de barras”.
+* Se os valores e os rótulos do eixo de visualizações incluem “vendas”, “conta”, “mês” e “oportunidades”, é possível fazer perguntas como: "qual *conta* tem a melhor *oportunidade*” ou “mostre as *vendas* por mês como um gráfico de barras".
 
 * Se você tiver dados de desempenho do site do Google Analytics, poderá perguntar às P e R sobre o tempo gasto em uma página da Web, o número de visitas únicas à página e as taxas de participação do usuário. Ou, se você estiver consultando dados demográficos, você pode fazer perguntas sobre idade e renda doméstica por local.
 
@@ -63,18 +64,18 @@ Perguntas e respostas escolhe a melhor visualização com base nos dados que est
 Você também pode informar ao P e R a visualização que será usada, adicioná-la à sua pergunta. Mas tenha em mente que não será sempre possível exibir os dados no tipo de visualização que você solicitou. As P e R mostrarão a você uma lista de tipos de visualização viáveis.
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-**Pergunta**: eu não vejo as P e R neste dashboard.    
-**Resposta 1**: se você não vir uma caixa de pergunta, verifique primeiro suas configurações. Para fazer isso, selecione o ícone de engrenagem no canto superior direito da barra de ferramentas do Power BI.   
+**Pergunta**: Eu não vejo as P e R neste painel.    
+**Resposta 1**: se você não vê uma caixa de pergunta, verifique primeiro suas configurações. Para fazer isso, selecione o ícone de engrenagem no canto superior direito da barra de ferramentas do Power BI.   
 ![ícone de engrenagem](media/end-user-q-and-a/power-bi-settings.png)
 
 Em seguida, escolha **Configurações** > **Dashboards**. Verifique se há uma marca de seleção ao lado de **Mostrar a caixa de pesquisa de P e R neste dashboard**.
 ![Configurações de P e R para dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-**Resposta 2**: pode ser o caso do *designer* do dashboard ou o administrador terem desativado as P e R. Verifique com eles se elas poderão ser reativadas.   
+**Resposta 2**: às vezes, o *designer* do painel ou o administrador desativam as P e R. Verifique com eles se elas poderão ser reativadas.   
 
-**Pergunta**: não estou obtendo os resultados que gostaria de ver ao digitar uma pergunta.    
-**Resposta**: entre em contato com o *designer* do dashboard. Há muitas coisas que o designer pode fazer para melhorar os resultados de P e R. Por exemplo, o designer pode renomear as colunas no conjunto de dados usando termos que são facilmente compreendidos (`CustomerFirstName` em vez de `CustFN`). Já que o designer conhece muito bem o conjunto de dados, ele também pode elaborar perguntas úteis e adicioná-los à tela de P e R.
+**Pergunta**: Não estou obtendo os resultados que gostaria de ver ao digitar uma pergunta.    
+**Resposta**: entre em contato com o *designer* do painel. Há muitas coisas que o designer pode fazer para melhorar os resultados de P e R. Por exemplo, o designer pode renomear as colunas no conjunto de dados usando termos que são facilmente compreendidos (`CustomerFirstName` em vez de `CustFN`). Já que o designer conhece muito bem o conjunto de dados, ele também pode elaborar perguntas úteis e adicioná-los à tela de P e R.
 
 ![pergunta em destaque contornada](media/end-user-q-and-a/power-bi-featured-q.png)
 

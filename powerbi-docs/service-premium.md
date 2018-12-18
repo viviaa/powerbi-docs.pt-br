@@ -9,13 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717621"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025432"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>O que é o Microsoft Power BI Premium?
 
@@ -45,11 +46,11 @@ A tabela a seguir fornece um resumo das diferenças entre capacidade compartilha
 |  | Capacidade compartilhada | Capacidade do Power BI Premium |
 | --- | --- | --- |
 | **Taxa de atualização** |8/dia |48/dia |
-| **Isolamento com hardware dedicado** |![](media/service-premium/not-available.png "Não disponível") |![](media/service-premium/available.png "Disponível") |
+| **Isolamento com hardware dedicado** |![Não disponível](media/service-premium/not-available.png) |![Disponível](media/service-premium/available.png) |
 | **Distribuição do Enterprise para** _**todos os usuários**_ | | |
-| Compartilhamento e aplicativos |![](media/service-premium/not-available.png "Não disponível") |![](media/service-premium/available.png "Disponível")<sup>1</sup> |
-| API e controles inseridos |![](media/service-premium/not-available.png "Não disponível") |![](media/service-premium/available.png "Disponível")<sup>2</sup> |
-| **Publicar relatórios locais do Power BI** |![](media/service-premium/not-available.png "Não disponível") |![](media/service-premium/available.png "Disponível") |
+| Compartilhamento e aplicativos |![Não disponível](media/service-premium/not-available.png) |![Disponível](media/service-premium/available.png) |
+| API e controles inseridos |![Não disponível](media/service-premium/not-available.png) |![Disponível](media/service-premium/available.png)<sup>2</sup> |
+| **Publicar relatórios locais do Power BI** |![Não disponível](media/service-premium/not-available.png) |![Disponível](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> Para obter mais informações, consulte [Recursos por tipo de licença](service-features-license-type.md).*  
@@ -98,7 +99,7 @@ As tabelas a seguir mostram os valores de memória padrão e mínimo, com base e
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Relatórios paginados | Não aplicável | Padrão de 20%; mínimo de 10% | Padrão de 20%; mínimo de 5% | Padrão de 20%; mínimo de 2,5% |
+| Relatórios paginados | N/A | Padrão de 20%; mínimo de 10% | Padrão de 20%; mínimo de 5% | Padrão de 20%; mínimo de 2,5% |
 | Fluxos de dados | Padrão de 20%; mínimo de 8%  | Padrão de 20%; mínimo de 4%  | Padrão de 20%; mínimo de 2% | Padrão de 20%; mínimo de 1%  |
 | | | | | |
 
@@ -106,7 +107,7 @@ As tabelas a seguir mostram os valores de memória padrão e mínimo, com base e
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Relatórios paginados | Não aplicável                      | Não aplicável                      | Não aplicável                     | Padrão de 20%; mínimo de 10% | Padrão de 20%; mínimo de 5% | Padrão de 20%; mínimo de 2,5% |
+| Relatórios paginados | N/A                      | N/A                      | N/A                     | Padrão de 20%; mínimo de 10% | Padrão de 20%; mínimo de 5% | Padrão de 20%; mínimo de 2,5% |
 | Fluxos de dados         | Padrão de 27%; mínimo de 27% | Padrão de 20%; mínimo de 16% | Padrão de 20%; mínimo de 8% | Padrão de 20%; mínimo de 4%  | Padrão de 20%; mínimo de 2% | Padrão de 20%; mínimo de 1%   |
 
 ### <a name="considerations-for-paginated-reports"></a>Considerações sobre relatórios paginados

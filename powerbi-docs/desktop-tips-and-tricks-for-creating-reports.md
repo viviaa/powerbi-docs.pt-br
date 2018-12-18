@@ -1,20 +1,21 @@
 ---
 title: Dicas e truques para criar relatórios no Power BI
-description: Dicas e truques para criar relatórios no serviço do Power BI e no Power BI Desktop
+description: Conheça as práticas recomendadas para criação de relatórios no serviço do Power BI e no Power BI Desktop
 author: davidi
 manager: kfile
 ms.reviewer: willthom
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: ae1c54ee0c5c5de54fc5069f7215c39175cedf8d
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c68c29449873e22c7e338279e80f049d522ba347
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830276"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026333"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Dicas e truques para criar relatórios no Power BI Desktop
 Para aproveitar ao máximo seus dados, às vezes você precisa de uma ajuda extra. Reunimos algumas dicas e truques que você pode usar ao criar relatórios no Microsoft Power BI Desktop *e* nas edições Pro-Plus do Microsoft Excel 2013 ou 2016 com o suplemento do Power Pivot habilitado e o Power Query instalado e habilitado. 
@@ -27,7 +28,7 @@ Você pode obter mais informações no [Centro de Recursos do Power Query](https
 É possível também exibir a [Referência de Fórmula](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Tipos de dados no Editor de Consultas
-Ao usar o Editor de Consultas no Power BI Desktop para carregar dados, fazemos a melhor estimativa sobre a detecção do tipo de dados.  Ao usar fórmulas, às vezes, as configurações de tipo de dados nas colunas não são preservadas. Você deve verificar se o tipo de dados das colunas está correto depois de fazer as seguintes operações: carregar dados inicialmente na guia de consulta, Primeira Linha como Título, Adicionar coluna, Agrupar por, Mesclar, Acrescentar e antes de pressionar para carregar os dados pela primeira vez.
+Ao usar o Editor de Consultas no Power BI Desktop para carregar dados, fazemos a melhor estimativa sobre a detecção do tipo de dados.  Ao usar fórmulas, às vezes, as configurações de tipo de dados nas colunas não são preservadas. Verifique se o tipo de dados das colunas está correto depois de realizar as seguintes operações:  Carregar dados inicialmente na guia de consulta, Primeira Linha como Cabeçalho, Adicionar coluna, Agrupar por, Mesclar, Acrescentar e antes de pressionar para carregar os dados pela primeira vez.
 
 Um item importante a ser lembrado: itálico na grade de dados não significa que o tipo de dados está configurado corretamente, apenas que os dados não são considerados um Texto.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 360ffdd61525244bd75e57c8c9c9aad25131a13d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266500"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180819"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Preparação de dados de autoatendimento no Power BI (versão prévia)
 
@@ -25,7 +25,7 @@ Conforme o volume de dados continua a crescer, aumenta o desafio de estruturar e
 
 O Power BI apresenta **fluxos de dados** para ajudar as organizações a unificar dados de diferentes fontes e prepará-los para serem modelados. Os analistas podem criar fluxos de dados facilmente, usando ferramentas conhecidas de autoatendimento. Os fluxos de dados são usados para ingerir, transformar, integrar e enriquecer Big Data definindo conexões de fonte de dados, lógica ETL, cronogramas de atualização e muito mais. Além disso, o novo mecanismo de cálculo controlado por modelos que faz parte dos fluxos de dados torna o processo de preparação de dados mais gerenciável, mais determinista e menos incômodo para analistas de dados e criadores de relatório. Do mesmo modo que as planilhas lidam com recálculos em todas as fórmulas afetadas, os fluxos de dados gerenciam as alterações de uma entidade ou elemento de dados em seu nome, automatizando atualizações e atenuando o que costumava incluir verificações de lógica tediosas e demoradas até mesmo em uma atualização básica de dados. Com os fluxos de dados, as tarefas que antes exigiam a supervisão de cientistas de dados (e muitas horas ou dias para serem concluídas) agora podem ser tratadas com alguns cliques por analistas e criadores de relatório. 
 
-Os dados são armazenados como entidades [no **Common Data Service**](https://docs.microsoft.com/powerapps/common-data-model/overview) no Azure Data Lake Storage Gen2. Os fluxos de dados são criados e gerenciados em espaços de trabalho do aplicativo usando o serviço do Power BI.  
+Os dados são armazenados como entidades no [**Common Data Service**](https://docs.microsoft.com/powerapps/common-data-model/overview) no Azure Data Lake Storage Gen2. Os fluxos de dados são criados e gerenciados em espaços de trabalho do aplicativo usando o serviço do Power BI.  
 
 > [!NOTE]
 > A funcionalidade de fluxo de dados está em versão prévia e está sujeita a alterações e atualizações antes da disponibilidade geral.
@@ -68,6 +68,7 @@ O Power BI pode ser configurado para armazenar dados de fluxo de dados na conta 
 
 O Power BI também pode se conectar a pastas com dados esquematizados no formato Common Data Service, que são armazenados na conta do Azure Data Lake Storage da sua organização. Essas pastas podem ser criadas por serviços como os serviços de dados do Azure. Ao se conectarem a essas pastas, os analistas podem trabalhar perfeitamente com esses dados no Power BI. 
 
+Para obter mais informações sobre Azure Data Lake Storage Gen2 e integração de fluxos de dados, incluindo como criar fluxos de dados que residem no Azure Data Lake de sua organização, confira [fluxos de dados e a integração do Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md).
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Capacidades de fluxo de dados no Power BI Premium
 
@@ -105,9 +106,6 @@ Ao armazenarem dados comerciais no formato padronizado do **Common Data Service*
 * Introdução aos fluxos de dados para desenvolvedores
 
 
-
-
-
 ## <a name="next-steps"></a>Próximas etapas
 
 Este artigo ofereceu uma visão geral da preparação de dados de autoatendimento para big data no Power BI e muitas maneiras de utilizá-la. Os artigos a seguir oferecem mais detalhes sobre cenários de uso comuns para fluxos de dados. 
@@ -116,6 +114,7 @@ Este artigo ofereceu uma visão geral da preparação de dados de autoatendiment
 * [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
 * [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
 * [Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)](service-dataflows-developer-resources.md)
+* [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md)
 
 Confira mais informações sobre o Power Query e a atualização agendada nestes artigos:
 * [Visão geral da Consulta no Power BI Desktop](desktop-query-overview.md)

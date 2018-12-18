@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 694ae2cd6f77fbcf898a984b135fb65b9163a43b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547236"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180980"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorar relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -30,7 +30,7 @@ Um relatório do Power BI é uma exibição interativa de seus dados, com visuai
 3. Em seguida, interagir com esses relatórios nos aplicativos móveis do Power BI.
 
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Abrir um relatório do Power BI no aplicativo móvel
-Os relatórios do Power BI são armazenados em locais diferentes no aplicativo móvel, dependendo de onde eles foram obtidos. Eles podem estar em Aplicativos, Compartilhado comigo, Espaços de Trabalho (incluindo Meu Espaço de Trabalho) ou em um servidor de relatório. Às vezes, você percorre um dashboard relacionado para obter um relatório e, às vezes, ele é listado.
+Os relatórios do Power BI são armazenados em locais diferentes no aplicativo móvel, dependendo de onde eles foram obtidos. Eles podem estar em Aplicativos, Compartilhado comigo, Workspaces (incluindo Meu Workspace) ou em um servidor de relatório. Às vezes, você percorre um dashboard relacionado para obter um relatório e, às vezes, ele é listado.
 
 * Em um dashboard, toque nas reticências (...) no canto superior direito de um bloco > **Abrir relatório**.
   
@@ -105,6 +105,16 @@ Com o *detalhamento*, quando você toca em uma parte específica de um visual, o
 Quando você faz o detalhamento, o botão Voltar retorna à página anterior do relatório.
 
 Veja como [Adicionar o detalhamento no Power BI Desktop](../../desktop-drillthrough.md).
+
+## <a name="show-data-and-copy-values"></a>Mostrar valores de dados e cópia
+
+Ao selecionar as reticências das opções de menu (**...**) no canto superior direito de uma visualização em um relatório de telefone, depois selecionar **Mostrar dados**, você pode ver os dados subjacentes a uma visualização.
+
+![Opção de menu Mostrar dados, do Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Um toque longo em uma célula na tabela exibida mostra o menu nativo de seleção e cópia, assim você poderá escolher copiar alguns dados da tabela (ou a tabela inteira).
+
+![Relatório detalhado do Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Exibir e interagir com relatórios do Power BI otimizados para seu telefone](mobile-apps-view-phone-report.md)

@@ -8,15 +8,15 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/24/2018
+ms.date: 11/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0492390ae47c8d5aa0930a063370712c80d61de2
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c726ba8d50f077a640879f666fd441e27b19d3c7
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829632"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979320"
 ---
 # <a name="kpi-visuals"></a>Visuais de KPI
 Um KPI (Indicador Chave de Desempenho) é uma indicação visual que comunica a quantidade de progresso feito em relação a uma meta mensurável. Para obter mais informações sobre KPIs, veja [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -49,7 +49,7 @@ Ou veja Will mostrando como criar elementos visuais de métrica únicos: medidor
 1. Abra o relatório no modo de exibição de Relatório e selecione a guia amarela para adicionar uma nova página.    
 2. No painel campos, selecione **Vendas > Total de Unidades neste Ano**.  Esse será o indicador.
 3. Adicione **Hora > FiscalMonth**.  Isso representará a tendência.
-4. IMPORTANTE: classifique o gráfico por **FiscalMonth**. Depois de converter a visualização em um KPI, não haverá opção para classificar.
+4. IMPORTANTE: Classifique o gráfico por **FiscalMonth**. Depois de converter a visualização em um KPI, não haverá opção para classificar.
 
     ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Converta o visual para um KPI selecionando o ícone do KPI do painel Visualização.

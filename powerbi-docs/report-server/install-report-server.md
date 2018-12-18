@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 12/07/2018
 ms.author: maggies
-ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a4914bf0fb6945bc5ee45bdf6559ca75bbd7c2b5
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565902"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180934"
 ---
 # <a name="install-power-bi-report-server"></a>Instalar o Servidor de Relatório do Power BI
 
@@ -26,6 +26,10 @@ Para baixar o Servidor de Relatório do Power BI, acesse [Relatórios locais com
 
 ## <a name="before-you-begin"></a>Antes de começar
 Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que você examine os [Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI](system-requirements.md).
+
+ > [!IMPORTANT]
+ > Embora você possa instalar o Servidor de Relatórios do Microsoft Power BI em um ambiente que tenha um RODC (Controlador de domínio somente leitura), o Servidor de Relatórios do Microsoft Power BI precisa acessar um Controlador de Domínio Leitura-Gravação para funcionar adequadamente. Se o Servidor de Relatórios do Power BI só tiver acesso a um RODC, talvez ocorram erros ao tentar administrar o serviço.
+
 
 ### <a name="power-bi-report-server-product-key"></a>Chave do produto (Product Key) do Servidor de Relatório do Power BI
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 4ac828baa4f6080ab50008aa4ffb570ff016246f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: a5bf8a82fde84537394af4a37f33f674dbf3615b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223113"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180320"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicar visuais personalizados no AppSource
 
@@ -38,8 +38,8 @@ Depois que você terminar de codificar e testar seu visual personalizado e empac
 | Arquivo de relatório .pbix de exemplo |Sim |Para demonstrar seu visual, você deverá ajudar os usuários a se familiarizarem com ele. Você deve enfatizar o valor que o visual traz para o usuário e dar exemplos de uso, opções de formatação, etc. Você também pode adicionar uma página de *"dicas"* no final com algumas dicas e truques, coisas a serem evitadas e assim por diante.<br>O arquivo de relatório .pbix de exemplo deve trabalhar offline, sem nenhuma conexão externa |
 | Ícone |Sim |Você deve incluir o logotipo visual personalizado que será exibido na frente da loja. O formato pode ser .png, .jpg, .jpeg ou .gif. Ele deve ter exatamente 300 px (largura) x 300 px (altura). **Importante!** Examine o [guia curto](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) com atenção antes de enviar o ícone. |
 | Capturas de tela |Sim |Você deve fornecer, pelo menos, uma captura de tela. O formato pode ser .png, .jpg, .jpeg ou .gif. Ele deve ter exatamente 1.366 px (largura) x 768 px (altura). Não pode ser maior do que 1.024 KB para o tamanho do arquivo. *Para melhor utilização, adicione bolhas de texto para articular a proposição de valores dos principais recursos mostrados em cada captura de tela.* |
-| Link de download de suporte |Sim |Forneça a URL para dar suporte a clientes que têm problemas com seu visual. O formato da URL deve incluir https:// ou http://. |
-| Link do documento de privacidade |Sim |Forneça um link para a política de privacidade para clientes que usam o visual. O formato do link deve incluir https:// ou http://. |
+| Link de download de suporte |Sim |Forneça a URL para dar suporte a clientes que têm problemas com seu visual. Esse link é inserido como parte de sua listagem SellerDashboard e fica visível para os usuários quando eles acessam a listagem do seu visual no AppSource. O formato da URL deve incluir https:// ou http://. |
+| Link do documento de privacidade |Sim |Forneça um link para a política de privacidade para clientes que usam o visual. Esse link é inserido como parte de sua listagem SellerDashboard e fica visível para os usuários quando eles acessam a listagem do seu visual no AppSource. O formato do link deve incluir https:// ou http://. |
 | EULA (Contrato de licença de usuário final) |Sim |Você deve fazer upload de um arquivo EULA. Você pode usar seu próprio EULA ou o EULA padrão na Office Store para visuais personalizados do Power BI. Para usar o EULA padrão, cole a seguinte URL na caixa de diálogo de upload de arquivo do "Contrato de licença de usuário final" do painel do vendedor: [https://visuals.azureedge.net/app-store/Power BI – Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Link do vídeo |Não |Para aumentar o interesse dos usuários pelo seu visual personalizado, é recomendável fornecer um link para um vídeo sobre o visual. O formato da URL deve incluir https:// ou http://. |
 | Repositório GitHub |Não |É preferível ter um link válido e público para um repositório [GitHub](https://www.github.com) com as fontes do seu visual e dos dados de exemplo nele para permitir que outros desenvolvedores façam comentários e proponham melhorias ao seu código. |
@@ -86,10 +86,10 @@ Siga as etapas abaixo para concluir o envio.
 
 5. Preencha os detalhes das **Informações gerais**.
 
-   * *Título do envio:* como seu envio será nomeado na central de desenvolvedores
-   * *Versão:* seu número de versão é preenchido automaticamente no pacote do aplicativo do suplemento.
-   * *Data de lançamento (UTC):* selecione uma data para seu aplicativo ser lançado na loja. Se uma data futura for escolhida, seu aplicativo não estará disponível na loja até essa data.
-   * *Categoria:* a primeira categoria será automaticamente preenchida como "Visualização de dados + BI". Esta é a forma como todos os visuais personalizados do Power BI serão marcados. Você pode fornecer até duas categorias adicionais para ajudar os usuários a pesquisarem facilmente seu visual
+   * *Título do envio:* Como seu envio será nomeado na central de desenvolvedores
+   * *Versão:* Seu número de versão é preenchido automaticamente no pacote do aplicativo do suplemento.
+   * *Data de lançamento (UTC):* Selecione uma data para seu aplicativo ser lançado na loja. Se uma data futura for escolhida, seu aplicativo não estará disponível na loja até essa data.
+   * *Categoria:* A primeira categoria será automaticamente preenchida como "Visualização de dados + BI". Esta é a forma como todos os visuais personalizados do Power BI serão marcados. Você pode fornecer até duas categorias adicionais para ajudar os usuários a pesquisarem facilmente seu visual
    * *Notas de teste:* opcionais, se você quiser fornecer algumas instruções para os testadores da Microsoft
    * *Meu aplicativo chama, dá suporte para, contém ou usa criptografias:* deixe desmarcado
    * *Tornar este suplemento disponível no catálogo de suplemento do Office no iPad:* deixe desmarcado
@@ -114,9 +114,9 @@ Siga as etapas abaixo para concluir o envio.
 
 10. Preencha os detalhes da "Descrição".
 
-    * *Nome do aplicativo (para esse idioma):* insira o título do seu aplicativo, como deve aparecer na vitrine.
-    * *Descrição resumida:* insira uma descrição resumida do seu aplicativo, com até 100 caracteres, como deve aparecer na vitrine. Essa descrição será exibida nas páginas de nível superior, juntamente com o logotipo. Você pode usar a descrição do pacote pbiviz.
-    * *Descrição longa:* forneça uma descrição mais detalhada de seu aplicativo que os clientes verão na sua página de detalhes do aplicativo. Se desejar transformar seu elemento visual em software livre para a comunidade aprimorá-lo, forneça aqui o link para o repositório público, como o GitHub.
+    * *Nome do aplicativo (para esse idioma):* Insira o título do seu aplicativo, como deve aparecer na vitrine.
+    * *Descrição resumida:* Insira uma descrição resumida do seu aplicativo, com até 100 caracteres, como deve aparecer na vitrine. Essa descrição será exibida nas páginas de nível superior, juntamente com o logotipo. Você pode usar a descrição do pacote pbiviz.
+    * *Descrição longa:* Forneça uma descrição mais detalhada de seu aplicativo que os clientes verão na sua página de detalhes do aplicativo. Se desejar transformar seu elemento visual em software livre para a comunidade aprimorá-lo, forneça aqui o link para o repositório público, como o GitHub.
 
 11. Faça upload de, pelo menos, uma captura de tela. O formato pode ser .png, .jpg, .jpeg ou .gif. Ele deve ter exatamente 1.366 px (largura) x 768 px (altura). Não pode ser maior do que 1.024 KB para o tamanho do arquivo. *Para melhor utilização, adicione bolhas de texto para articular a proposição de valores dos principais recursos mostrados em cada captura de tela.*
 

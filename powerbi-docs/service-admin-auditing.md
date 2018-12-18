@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850466"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026812"
 ---
 # <a name="using-auditing-within-your-organization"></a>Usando a auditoria dentro da sua organização
 
@@ -73,13 +74,13 @@ Você pode pesquisar os logs por intervalo de datas usando os campos **Data de i
 
 Um erro será exibido se o intervalo de datas selecionado for maior que 90 dias. Se você estiver usando o intervalo de datas máximo de 90 dias, selecione a hora atual para a **Data de início**. Caso contrário, você receberá uma mensagem de erro informando que a data de início é anterior à data de término. Se você ativou a auditoria nos últimos 90 dias, o intervalo de datas não poderá começar antes da data na qual a auditoria foi ativada.
 
-![](media/service-admin-auditing/search-audit-log-by-date.png)
+![Pesquisar por data](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Pesquisar os logs de auditoria por usuários
 
 Você pode procurar por entradas de log de auditoria de atividades executadas por usuários específicos. Para fazer isso, insira um ou mais nomes de usuário no campo **Usuários**. O nome de usuário se parece com um endereço de email; é a conta com a qual os usuários fazem logon no Power BI. Deixe esta caixa em branco para retornar as entradas para todos os usuários (e contas de serviço) em sua organização.
 
-![Pesquisar por data](media/service-admin-auditing/search-audit-log-by-user.png)
+![Pesquisar por usuários](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Exibir resultados da pesquisa
 

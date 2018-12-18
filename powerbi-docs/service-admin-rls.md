@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.author: mblythe
 ms.date: 01/02/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 466e91786dcb75f09db808306ba7d9d9f486718b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578418"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025110"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>RLS (segurança em nível de linha) com o Power BI
 
@@ -41,7 +42,7 @@ Para gerenciar a segurança no modelo de dados, é necessário fazer o seguinte.
 1. Selecione as **reticências (...)** para um conjunto de dados.
 2. Selecione **Segurança**.
    
-   ![](media/service-admin-rls/rls-security.png)
+   ![Aplicar filtro de segurança em ambos os sentidos](media/service-admin-rls/rls-security.png)
 
 Você será levado à página da RLS para adicionar membros a uma função criada no Power BI Desktop. Somente os proprietários do conjunto de dados verão a opção Segurança disponível. Se o conjunto de dados está em um Grupo, somente os Administradores do grupo encontrarão a opção de segurança. 
 
@@ -53,17 +54,17 @@ Você só pode criar ou modificar funções no Power BI Desktop.
 
 É possível adicionar um membro à função digitando o endereço de email, o nome do usuário, o grupo de segurança ou a lista de distribuição que você deseja adicionar. Esse membro deve estar em sua organização. Não é possível adicionar Grupos criados no Power BI.
 
-![](media/service-admin-rls/rls-add-member.png)
+![Adicionar um membro](media/service-admin-rls/rls-add-member.png)
 
 Você também pode ver quantos membros fazem parte da função pelo número entre parênteses ao lado do nome da função ou ao lado de Membros.
 
-![](media/service-admin-rls/rls-member-count.png)
+![Membros na função](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Remover membros
 
 É possível remover membros selecionando o X ao lado do nome. 
 
-![](media/service-admin-rls/rls-remove-member.png)
+![Remover membro](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validando a função no serviço do Power BI
 
@@ -72,15 +73,15 @@ Você pode validar que a função definida está funcionando corretamente ao tes
 1. Selecione as **reticências (...)** ao lado da função.
 2. Selecione **Testar dados como função**
 
-![](media/service-admin-rls/rls-test-role.png)
+![Testar como função](media/service-admin-rls/rls-test-role.png)
 
 Então, você verá os relatórios que estão disponíveis para essa função. Os painéis de controle não são apresentados nessa exibição. Na barra azul acima, você verá o que está sendo aplicado.
 
-![](media/service-admin-rls/rls-test-role2.png)
+![Exibindo agora como <função>](media/service-admin-rls/rls-test-role2.png)
 
 Você pode testar outras funções ou uma combinação de funções, selecionando **Exibindo agora como**.
 
-![](media/service-admin-rls/rls-test-role3.png)
+![Testar outras funções](media/service-admin-rls/rls-test-role3.png)
 
 Você pode optar por exibir dados como uma pessoa específica ou pode selecionar uma combinação de funções disponíveis para validar que estão funcionando. 
 
@@ -95,7 +96,7 @@ Se você publicar seu relatório do Power BI Desktop em um workspace do aplicati
 > [!WARNING]
 > Se você tiver configurado o workspace do aplicativo para que os membros tenham permissões de edição, as funções RLS não serão aplicadas a eles. Os usuários poderão ver todos os dados.
 
-![](media/service-admin-rls/rls-group-settings.png)
+![Configurações de grupo](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 

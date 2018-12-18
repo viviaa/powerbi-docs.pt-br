@@ -1,30 +1,30 @@
 ---
-title: Criar relatórios otimizados para os aplicativos de telefone do Power BI
-description: Aprenda a otimizar as páginas de relatório para aplicativos de telefone do Power BI criando uma versão do relatório especificamente para o telefone.
+title: Criar relatórios otimizados para aplicativos móveis
+description: Aprenda a otimizar as páginas de relatório para aplicativos móveis do Power BI criando uma versão de retrato do relatório, especificamente para telefones e tablets.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 22f4d6bf3c715c390c9760593ba5afdc72ce3bf7
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 64d3faf9fd720d1e50fa69b5ccd914e6b3ac1294
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973944"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280893"
 ---
-# <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Criar relatórios otimizados para os aplicativos de telefone do Power BI
-Você pode melhorar a experiência de exibição de seus relatórios em um telefone nos aplicativos móveis com a criação de uma versão do relatório especificamente para o telefone. No Power BI Desktop e no serviço do Power BI, você pode adaptar seu relatório para o telefone reorganizando e redimensionando os visuais, talvez não incluindo todos eles, para uma experiência ideal. Além disso, você pode criar [*visuais* responsivos](#optimize-a-visual-for-any-size) e [segmentação responsiva](#enhance-slicers-to-to-work-well-in-phone-reports) que são bem redimensionados para a visualização em um telefone. Você também pode adicionar filtros ao relatório, os quais aparecerão automaticamente no relatório do telefone. Os leitores do relatório poderão vê-los e filtrar o relatório com eles.
+# <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Criar relatórios otimizados para os aplicativos móveis do Power BI
+Você pode melhorar a experiência de exibição de seus relatórios nos aplicativos móveis em um telefone ou tablet. Crie um layout de retrato de um relatório, especificamente para telefones e tablets. No Power BI Desktop e no serviço do Power BI, adapte seu relatório reorganizando e redimensionando os elementos visuais em um layout de retrato para ter uma experiência ideal. Você não precisa incluir todos. Além disso, você pode criar [*visuais* responsivos](#optimize-a-visual-for-any-size) e [segmentação responsiva](#enhance-slicers-to-to-work-well-in-phone-reports) que são bem redimensionados para a visualização em um telefone. Você também pode adicionar filtros ao relatório, que aparecerão automaticamente no relatório otimizado. Os leitores do relatório poderão vê-los e filtrar o relatório com eles.
 
 ![Relatório otimizado em um telefone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-## <a name="lay-out-a-report-page-for-the-phone"></a>Definir o layout de uma página de relatório para o telefone
+## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Criar uma versão de retrato de uma página de relatório
 
-Depois de criar um relatório, você pode otimizá-lo para telefones.
+Após criar um relatório, é possível otimizá-lo para telefones e tablets.
 
 1. Na Exibição de Relatório no Power BI Desktop, na guia **Exibição**, selecione **Layout do Telefone**.  
    
@@ -32,7 +32,7 @@ Depois de criar um relatório, você pode otimizá-lo para telefones.
    
     No serviço do Power BI, selecione **Editar Relatório** > **Layout Móvel**.
 
-    Você verá uma tela com telefone em branco. Todos os elementos visuais na página do relatório original são listados no painel Visualizações à direita.
+    Você verá uma tela em branco em forma de telefone. Todos os elementos visuais na página do relatório original são listados no painel Visualizações à direita.
 
 3. Para adicionar um elemento visual ao layout do telefone, arraste-o do painel Visualizações para a tela do telefone.
    
@@ -44,14 +44,14 @@ Depois de criar um relatório, você pode otimizá-lo para telefones.
 
 4. Você pode redimensionar os elementos visuais na grade, como você faria para blocos em dashboards e dashboards móveis.
    
-   A grade do relatório do telefone é dimensionada em telefones de tamanhos diferentes para que o relatório fique bom em telefones com tela pequena e grande.
+   A grade do relatório para telefone é dimensionada em telefones de tamanhos diferentes para que o relatório fique bom em telefones com telas pequenas e grandes.
    
    ![Redimensionar um visual](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 
 ## <a name="optimize-a-visual-for-any-size"></a>Otimizar um visual para qualquer tamanho
-Você pode definir os visuais em seu dashboard ou relatório para serem *responsivos*, para mudarem dinamicamente para exibir o máximo de dados e insight, independentemente do tamanho da tela. 
+É possível definir os elementos visuais em seu painel ou relatório como *dinâmico*. Eles podem mudar dinamicamente para exibir o máximo de dados e insight, independentemente do tamanho da tela. 
 
-Como um visual muda de tamanho, o Power BI prioriza a exibição de dados, por exemplo, removendo o preenchimento e movendo a legenda para a parte superior do visual automaticamente, para que ele continue informativo mesmo quando fica menor.
+À medida que o tamanho de um elemento visual muda, o Power BI prioriza a exibição de dados. Por exemplo, é possível remover automaticamente o preenchimento e mover a legenda para a parte superior do visual, de modo que ele continue informativo, mesmo quando fica menor.
 
 ![Redimensionamento do visual responsivo](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
@@ -89,7 +89,7 @@ Leia mais sobre a [criação de segmentações responsivas](power-bi-slicer-filt
   
     Leia mais sobre [compartilhamento e permissões no Power BI](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-## <a name="view-optimized-and-unoptimized-reports-on-a-phone"></a>Exibir relatórios otimizados e não otimizados em um telefone
+## <a name="view-optimized-and-unoptimized-reports-on-a-phone-or-tablet"></a>Exibir relatórios otimizados e não otimizados em um telefone ou tablet
 Nos aplicativos móveis em telefones, o Power BI detecta automaticamente relatórios de telefone otimizados e não otimizados. Se houver um relatório otimizado para telefone, o aplicativo de telefone do Power BI abrirá automaticamente o relatório no modo de relatório do telefone.
 
 Se um relatório otimizado para telefone não existir, o relatório será aberto na exibição de paisagem não otimizada.  
@@ -100,7 +100,7 @@ Se você otimizar apenas algumas páginas, os leitores encontrarão uma mensagem
 
 ![Página do telefone não otimizada](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
-Leitores de relatório podem virar seus telefones para o lado para ver a página em modo paisagem. Leia mais sobre a [interação com relatórios do Power BI otimizados para seu telefone](consumer/mobile/mobile-apps-view-phone-report.md).
+Leitores de relatórios podem girar seus telefones ou tablets para o lado para ver a página em modo paisagem. Leia mais sobre a [interação com relatórios do Power BI otimizados para o modo retrato](consumer/mobile/mobile-apps-view-phone-report.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Criar uma exibição de telefone de um dashboard no Power BI](service-create-dashboard-mobile-phone-view.md)

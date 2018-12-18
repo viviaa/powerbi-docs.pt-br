@@ -1,25 +1,26 @@
 ---
-title: O que é o Azure Power BI Embedded | Microsoft Docs
-description: O Power BI Embedded tem como objetivo simplificar a maneira em que os ISVs e desenvolvedores usam as funcionalidades do Power BI, ajudando-os a adicionar rapidamente visuais, relatórios e dashboards impressionantes aos aplicativos.
+title: O que é o Azure Power BI Embedded e a análise integrada| Microsoft Docs
+description: O Power BI Embedded tem o objetivo de ser uma ferramenta de análise integrada para simplificar a maneira em que os ISVs e desenvolvedores usam as funcionalidades do Power BI, ajudando-os a adicionar rapidamente visuais, relatórios e painéis impressionantes aos aplicativos. Saiba como usar o software de análise integrada, ferramentas de análise integrada ou ferramentas de business intelligence integrada com o Power BI Embedded.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.component: ''
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: b46508aeca35769fb27324fb20f502ac66cb55ab
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 70cb8f72e5749f7eed70d4476f3af87e272813f4
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360124"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180681"
 ---
-# <a name="what-is-power-bi-embedded-in-azure"></a>O que é o Power BI Embedded no Azure? 
+# <a name="what-is-power-bi-embedded-in-azure"></a>O que é o Power BI Embedded no Azure?
 
-O Power BI Embedded tem como objetivo simplificar a maneira em que os ISVs e desenvolvedores usam as funcionalidades do Power BI. O Power BI Embedded simplifica as funcionalidades do Power BI, ajudando você a adicionar rapidamente visuais, relatórios e dashboards impressionantes aos aplicativos. Como nos aplicativos criados no Microsoft Azure, é possível usar serviços como Machine Learning e IoT. Habilitando a exploração de dados fácil de navegar em seus aplicativos, os ISVs permitem que seus clientes tomem decisões rápidas e informadas no contexto.
+O Power BI Embedded tem como objetivo simplificar a maneira como os ISVs e desenvolvedores usam as funcionalidades do Power BI com a análise integrada. O Power BI Embedded simplifica as funcionalidades do Power BI, ajudando você a adicionar rapidamente visuais, relatórios e dashboards impressionantes aos aplicativos. Como nos aplicativos criados no Microsoft Azure, é possível usar serviços como Machine Learning e IoT. Habilitando a exploração de dados fácil de navegar em seus aplicativos, os ISVs permitem que seus clientes tomem decisões rápidas e informadas no contexto.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
@@ -27,7 +28,7 @@ Em maio de 2017, anunciamos a convergência dos serviços do Power BI e do Power
 
 Com o Power BI Embedded, os ISVs e desenvolvedores têm maior flexibilidade para inserir inteligência em seus aplicativos usando as APIs do Power BI. Os ISVs e desenvolvedores podem aproveitar a minimização dos esforços de desenvolvimento para chegar ao mercado com mais rapidez e diferenciar-se por inserir um mecanismo de análise de classe mundial da Microsoft em seu aplicativo. Da mesma forma, os desenvolvedores podem dedicar seu tempo à solução para atender às demandas do cliente, em vez de desenvolver recursos de análise visual. Além disso, o Power BI Embedded permite que você trabalhe em ambientes de desenvolvimento familiares, como o Visual Studio e o Azure, que você já usa.
 
-Você tem um aplicativo existente com conteúdo inserido do Power BI usando o Power BI Premium? Se você é um ISV ou um desenvolvedor que fornece aplicativos ou uma organização que os usa, não é necessário realizar nenhuma ação. Você e seus clientes podem continuar usando esses aplicativos sem interrupções. Se você tem um aplicativo existente criado nas Coleções de Espaços de Trabalho do Power BI e está interessado em aproveitar a superfície de API convergida e os novos SKUs do Azure com base em capacidade, acesse a documentação para obter diretrizes de migração.
+Você tem um aplicativo existente com conteúdo inserido do Power BI usando o Power BI Premium? Se você é um ISV ou um desenvolvedor que fornece aplicativos ou uma organização que os usa, não é necessário realizar nenhuma ação. Você e seus clientes podem continuar usando esses aplicativos sem interrupções. Se você tem um aplicativo existente criado nas Coleções de workspace do Power BI e está interessado em aproveitar a superfície de API convergida e os novos SKUs do Azure com base em capacidade, acesse a documentação para obter diretrizes de migração.
 
 ## <a name="comparing-power-bi-embedded-with-power-bi-premium"></a>Comparando o Power BI Embedded com o Power BI Premium
 
@@ -47,9 +48,9 @@ Usando a API REST, o Power BI Embedded permite desenvolver com qualquer linguage
 
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Acione a equipe de engenharia do Power BI
 
-* [Comunidades](https://community.powerbi.com/): faça perguntas sobre o Power BI
-* [Power BI Ideas](https://ideas.powerbi.com): solicite recursos e vote neles
-* [Reddit](https://www.reddit.com/r/PowerBI/): discuta sobre o Power BI
+* [Comunidades](https://community.powerbi.com/): Faça perguntas sobre o Power BI
+* [Power BI Ideas](https://ideas.powerbi.com): Solicite recursos e vote neles
+* [Reddit](https://www.reddit.com/r/PowerBI/): Discuta sobre o Power BI
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -57,4 +58,4 @@ Confira a [página de preços](https://azure.microsoft.com/pricing/details/power
 
 Para criar uma capacidade do Power BI Embedded, confira [Criar uma capacidade do Power BI Embedded no portal do Azure](azure-pbie-create-capacity.md)
 
-Para começar a inserir conteúdo do Power BI, confira [Como inserir dashboards, relatórios e blocos do Power BI](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+Para começar a inserir conteúdo do Power BI, confira [Como inserir painéis, relatórios e blocos do Power BI](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).

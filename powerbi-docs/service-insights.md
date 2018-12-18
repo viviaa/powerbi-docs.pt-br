@@ -1,24 +1,25 @@
 ---
-title: Gerar automaticamente as informações sobre os dados com o Power BI
+title: Gerar informações sobre os dados automaticamente com o Power BI
 description: Saiba como obter informações sobre seus conjuntos de dados e blocos de painéis.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/25/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b58b0b88ed0417f88784824a67ab294dda7343e
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 386f4fb24488df3856f8e731fcd6c95043c86d74
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850420"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180911"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Gerar automaticamente as informações sobre os dados com o Power BI
+# <a name="generate-data-insights-automatically-with-power-bi"></a>Gerar informações sobre os dados automaticamente com o Power BI
 Tem um novo conjunto de dados e não sabe exatamente por onde começar?  Você precisa criar um painel rapidamente?  Deseja procurar informações que você pode ter perdido?
 
 Execute insights rápidos para gerar visualizações interativas e interessantes com base em seus dados. Os Insights Rápidos podem ser executados em um conjunto de dados inteiro (insights rápidos) ou em um bloco de painéis específico (insights com escopo). Você pode até mesmo executar insights em um insight!

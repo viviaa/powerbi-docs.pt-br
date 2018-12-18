@@ -1,30 +1,31 @@
 ---
-title: Pesquisa e classificação de seu conteúdo no serviço do Power BI
+title: Pesquisar e classificar seu conteúdo no serviço do Power BI
 description: documentação para pesquisar e classificar conteúdo nos workspaces do Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 3c66a428fabadaf53e2b1f7745b6de9668a9e532
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 7f56cb4ec9859750c218975d25f3b8e2dd8a0469
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112639"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280456"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navegação: pesquisando, buscando e classificando seu conteúdo no serviço do Power BI
-Há muitas maneiras de navegar pelo seu conteúdo no serviço do Power BI. O conteúdo é organizado em entre pastas de trabalho por tipo: painéis, relatórios, pastas de trabalho e conjuntos de dados.  E o conteúdo também é organizado por uso: favoritos, recentes, aplicativos, compartilhado comigo e em destaque. Para uma parada de navegação, a Home page organiza o conteúdo todo em uma única página. Esses caminhos diferentes em seu conteúdo permitem que você localize rapidamente aquilo de que precisa no serviço do Power BI.  
+Há muitas maneiras de navegar pelo seu conteúdo no serviço do Power BI. O conteúdo é organizado em entre workspaces por tipo: painéis, relatórios, pastas de trabalho e conjuntos de dados.  E o conteúdo também é organizado por uso: favoritos, recentes, aplicativos, compartilhado comigo e em destaque. Para uma parada de navegação, a Home page organiza o conteúdo todo em uma única página. Esses caminhos diferentes em seu conteúdo permitem que você localize rapidamente aquilo de que precisa no serviço do Power BI.  
 
-## <a name="navigation-within-workspaces"></a>Navegação em espaços de trabalho
+## <a name="navigation-within-workspaces"></a>Navegação em workspaces
 
-*Consumidores* do Power BI normalmente têm apenas um workspace: o **Meu workspace**. O **Meu workspace** somente terá conteúdo se você tiver baixado os exemplos da Microsoft ou criado ou baixado conteúdo próprio.  
+*Consumidores* do Power BI normalmente têm apenas um espaço de trabalho: **Meu Espaço de Trabalho**. O **Meu workspace** somente terá conteúdo se você tiver baixado os exemplos da Microsoft ou criado ou baixado conteúdo próprio.  
 
-No **Meu workspace**, o serviço do Power BI separa seu conteúdo por tipo: dashboards, relatórios, pastas de trabalho e conjuntos de dados. Você verá essa organização quando selecionar um espaço de trabalho. Neste exemplo, o **Meu workspace** contém um dashboard, dois relatórios, nenhuma pasta de trabalho e dois conjuntos de dados.
+No **Meu workspace**, o serviço do Power BI separa seu conteúdo por tipo: dashboards, relatórios, pastas de trabalho e conjuntos de dados. Você verá essa organização quando selecionar um workspace. Neste exemplo, o **Meu workspace** contém um dashboard, dois relatórios, nenhuma pasta de trabalho e dois conjuntos de dados.
 
 ![vídeo](./media/end-user-search-sort/nav.gif)
 

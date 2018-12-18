@@ -4,26 +4,25 @@ description: Tudo sobre blocos de dashboard no Power BI para consumidores. Isso 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/05/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1e86403dbdb2972cc83b379efff8bbc17173a4e1
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: c8c39e2fbc4aeca4aeb9cc5f906cca8bb063a2e6
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331886"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280088"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Blocos de painel no Power BI
-Os dashboards e blocos de dashboard são um recurso do serviço do Power BI e não do Power BI Desktop. Os blocos de dashboards não podem ser criados ou fixados no Power BI Mobile, mas [podem ser exibidos e compartilhados](mobile/mobile-tiles-in-the-mobile-apps.md). 
+Um bloco é um instantâneo dos dados fixados no dashboard por um *designer*. Um bloco pode ser criado de relatórios, conjuntos de dados, dashboards, caixas de P e R, SSRS (SQL Server Reporting Services) e muito mais.  Essa captura de tela mostra vários blocos diferentes fixados a um dashboard.
 
-## <a name="dashboard-tiles"></a>Blocos de dashboard
 ![Dashboard do Power BI](./media/end-user-tiles/power-bi-dashboard.png)
 
-Um bloco é um instantâneo dos dados fixados no dashboard por um *designer*. Um bloco pode ser criado de relatórios, conjuntos de dados, dashboards, caixas de P e R, SSRS (SQL Server Reporting Services) e muito mais.  Essa captura de tela mostra vários blocos diferentes fixados a um dashboard.
 
 Além dos blocos fixados de relatórios, os *designers* podem adicionar blocos autônomos diretamente no dashboard usando **Adicionar bloco**. Os blocos autônomos incluem: caixas de texto, imagens, vídeos, dados de streaming e conteúdo da Web.
 
@@ -32,7 +31,6 @@ Precisa de ajuda para compreender os blocos de construção que compõem o Power
 
 ## <a name="interacting-with-tiles-on-a-dashboard"></a>Interagir com blocos em um painel
 
-### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Passe o mouse sobre um bloco para alterar a aparência e o comportamento
 1. Passe o mouse sobre o bloco para exibir as reticências.
    
     ![reticências do bloco](./media/end-user-tiles/ellipses_new.png)
@@ -68,7 +66,7 @@ Precisa de ajuda para compreender os blocos de construção que compõem o Power
 Ao selecionar um bloco, o que ocorre em seguida depende de como o bloco foi criado e se ele tem um [link personalizado](../service-dashboard-edit-tile.md). Se ele tiver um link personalizado, a seleção do bloco levará você para esse link. Caso contrário, selecionar o bloco leva você para o relatório, pasta de trabalho do Excel Online, relatório SSRS local ou P & R que foi usada para criar o bloco.
 
 > [!NOTE]
-> Os blocos de vídeo criados diretamente no dashboard usando **Adicionar bloco** são a exceção. Selecionar um bloco de vídeo (que foi criado dessa forma) faz com que o vídeo seja reproduzido diretamente no dashboard.   
+> Os blocos de vídeo criados diretamente no painel usando **Adicionar bloco** são a exceção. Selecionar um bloco de vídeo (que foi criado dessa forma) faz com que o vídeo seja reproduzido diretamente no dashboard.   
 > 
 > 
 

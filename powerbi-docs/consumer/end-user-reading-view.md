@@ -5,21 +5,21 @@ services: powerbi
 documentationcenter: ''
 author: mihart
 manager: kvivek
-backup: ''
+ms.custom: seodec18
 editor: ''
 tags: ''
 ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: 1da43fb6bc0604cfa356f19aa212256612350c65
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396510"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280111"
 ---
 <!-- once the sample aps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Início Rápido: saiba mais sobre as funcionalidades do Power BI para ***consumidores***
@@ -30,7 +30,7 @@ Se você não estiver inscrito no Power BI, [inscreva-se para uma avaliação gr
 ## <a name="prerequisites"></a>Pré-requisitos
 - Serviço do Power BI (app.powerbi.com) <!-- app from AppSource -->
 
-## <a name="reading-view"></a>Modo de exibição de leitura
+## <a name="reading-view"></a>Exibição de leitura
 O Modo de Exibição de Leitura está disponível no serviço do Power BI para *consumidores* de relatório. Quando um colega compartilhar um relatório com você, o Modo de Exibição de Leitura será sua maneira de explorar e interagir com o relatório. 
 
 O outro modo de relatório do serviço do Power BI é o [Modo de Exibição de Edição](../service-interact-with-a-report-in-editing-view.md), que está disponível para *designers* de relatório.  
@@ -175,7 +175,7 @@ Focalize um visual e selecione o ícone do **modo Foco**![](media/end-user-readi
 
 ![modo de foco](media/end-user-reading-view/powerbi-focus-mode.png)
 
-Para exibir a mesma visualização sem a distração das barras de menu, do painel de filtro e de outros detalhes, selecione o ícone de **Tela Inteira** no menu de barras superior ![](media/end-user-reading-view/power-bi-focus-icon.png).
+Para exibir a mesma visualização sem a distração das barras de menu, do painel de filtros e de outros detalhes, selecione o ícone **Tela Inteira** na barra de menus superior ![ícone de tela inteira](media/end-user-reading-view/power-bi-focus-icon.png).
 
 ![modo de tela inteira](media/end-user-reading-view/power-bi-full-screen.png)
 

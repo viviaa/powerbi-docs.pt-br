@@ -1,22 +1,22 @@
 ---
 title: Tutorial – Segmentação de Dados no Power BI
 description: Segmentação de Dados no Power BI
-author: mihart
+author: v-thepet
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/25/2018
-ms.author: v-thepet
+ms.date: 10/25/2018
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e42504c2c320e4f102cab5e2272e6123bf580cf5
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: e6b738060875685a7de8e07a55d28afaf071b32e
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448973"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979641"
 ---
 # <a name="slicers-in-power-bi"></a>Segmentação de Dados no Power BI
 Seus leitores de relatório devem poder examinar as métricas gerais de vendas, mas também realçar o desempenho de cada gerente regional individual e em diferentes períodos. Você poderia criar relatórios separados ou gráficos comparativos, ou então usar segmentação. Uma segmentação é uma forma alternativa de filtragem que restringe a parte do conjunto de dados que é mostrada em outras visualizações em um relatório. 
@@ -177,10 +177,10 @@ O **Cabeçalho** fica **Ativado** por padrão, mostrando o nome do campo de dado
 
 ### <a name="other-formatting-options"></a>Outras opções de formatação
 As outras opções de formatação ficam desativadas por padrão. Quando **Ativadas**: 
-- **Título:** adiciona e formata um título (além do cabeçalho e independente dele) na parte superior da segmentação. 
-- **Tela de fundo:** adiciona uma cor da tela de fundo para a segmentação geral e define a transparência.
-- **Fixar proporção:** retém a forma da segmentação se ela for redimensionada.
-- **Borda:** adiciona uma borda de 1 pixel em torno da segmentação e define sua cor. (Essa borda da segmentação é separada e não é afetada pelas configurações do Contorno Geral). 
+- **Título:** Adiciona e formata um título (além do cabeçalho e independente dele) na parte superior da segmentação. 
+- **Tela de fundo:** Adiciona uma cor da tela de fundo para a segmentação geral e define a transparência.
+- **Fixar proporção:** Retém a forma da segmentação se ela for redimensionada.
+- **Borda:** Adiciona uma borda de 1 pixel em torno da segmentação e define sua cor. (Essa borda da segmentação é separada e não é afetada pelas configurações do Contorno Geral). 
 
 ## <a name="next-steps"></a>Próximas etapas
 [Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

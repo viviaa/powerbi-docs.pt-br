@@ -1,21 +1,22 @@
 ---
-title: Analisar no Excel
+title: Analisar no Excel para o Power BI
 description: Saiba mais sobre como analisar conjuntos de dados do Power BI no Excel
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d1ddb1eabb45fa0c93b04419524d7f4f194189bb
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: b33fafee2ef1f217a99b870e77c3823c6783a11d
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669119"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025938"
 ---
 # <a name="analyze-in-excel"></a>Analisar no Excel
 Existem ocasiões em que você talvez queira usar o Excel para exibir e interagir com um conjunto de dados do Power BI. Com o recurso **Analisar no Excel**, você pode fazer isso e acessar recursos de Tabela Dinâmica, gráfico e segmentação no Excel com base no conjunto de dados existente no Power BI.

@@ -1,22 +1,23 @@
 ---
-title: Modo de foco e modo de tela inteira — como ampliar para ver mais detalhes.
+title: 'Modo em Foco e modo de tela inteira: como ampliar para ver mais detalhes'
 description: Documentação para exibir um painel do Power BI, bloco do painel, relatório ou visualização de relatório no modo de foco ou no modo de tela inteira
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 70e7fcb9f38c6dbf52adf58f8477f671156c9da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 13032e011446fad765961dacdb83fbb8bd5a2f6e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507951"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279950"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Exibir o conteúdo em mais detalhes: modo de foco e modo de tela inteira
 
@@ -83,7 +84,7 @@ Menu de páginas de relatório
     Em relatórios em tela inteira, use essas setas para se mover entre as páginas do relatório.    
   * Para sair do modo de tela inteira, selecione o ícone **Sair da tela inteira**.
 
-      ![](media/end-user-focus/exit-fullscreen-new.png)
+      ![ícone sair da tela inteira](media/end-user-focus/exit-fullscreen-new.png)
 
 ## <a name="working-in-focus-mode"></a>Trabalhar no modo de foco
 Há duas formas de abrir o modo de foco; uma de criar painéis e outra de visualizar relatórios.
@@ -130,7 +131,7 @@ Há duas formas de abrir o modo de foco; uma de criar painéis e outra de visual
     ![sair do modo de foco](media/end-user-focus/power-bi-exit-focus-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-* Ao usar o modo de foco com uma visualização em um relatório, será possível exibir e interagir com todos os filtros: de nível de visual, de nível de página, detalhamento e de nível de relatório.    
+* Ao usar o modo em foco com uma visualização em um relatório, é possível exibir e interagir com todos os filtros: nível de Visual, nível de Página, Detalhamento e nível de Relatório.    
 * Ao usar o modo de foco com uma visualização em um painel, será possível exibir e interagir apenas com o filtro nível de visual.
 
 ## <a name="next-steps"></a>Próximas etapas

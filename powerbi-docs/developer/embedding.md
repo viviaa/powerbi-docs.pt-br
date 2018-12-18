@@ -1,6 +1,6 @@
 ---
-title: Inserção com o Power BI
-description: O Power BI oferece APIs para inserir seus dashboards e relatórios em aplicativos.
+title: Análise integrada com o Power BI
+description: O Power BI oferece APIs para usar análises integradas para seus painéis e relatórios nos aplicativos. Saiba mais sobre a integração com o Power BI em ambientes de PaaS e SaaS usando software de análise integrada, ferramentas de análise incorporadas ou ferramentas de business intelligence incorporadas.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,17 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
-ms.date: 07/31/2018
-ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: a4c0a66fb70797cc8b42094c65b23c71944b67a2
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973760"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180313"
 ---
-# <a name="embedding-with-power-bi"></a>Inserção com o Power BI
+# <a name="embedded-analytics-with-power-bi"></a>Análise integrada com o Power BI
 
-O serviço do Power BI (SaaS) e o serviço do Power BI Embedded no Azure (PaaS) têm APIs para inserir seus painéis e seus relatórios. Esse recurso significa que você tem um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como dashboards, gateways e workspaces de aplicativo, ao inserir seu conteúdo.
+O serviço do Power BI (SaaS) e o serviço do Power BI Embedded no Azure (PaaS) têm APIs para inserir seus painéis e seus relatórios. Esse recurso significa que você tem um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como painéis, gateways e espaço de trabalhos de aplicativo, ao inserir seu conteúdo.
 
 É possível acessar a [Ferramenta de configuração de inserção](https://aka.ms/embedsetup) para começar rapidamente e baixar um aplicativo de exemplo.
 
@@ -61,7 +62,7 @@ O [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) é um serviço do
 
 O Power BI Embedded fornece benefícios para um ISV, seus desenvolvedores e clientes. Por exemplo, um ISV pode começar a criar elementos visuais gratuitamente com o Power BI Desktop. Os ISVs podem obter tempo de lançamento mais rápido minimizando os esforços de desenvolvimento de análise visual e se destacando em relação à concorrência com experiências de dados diferenciadas. Os ISVs também podem optar por cobrar uma taxa para o valor adicional criado com a análise integrada.
 
-Com o Power BI Embedded, seus clientes não precisam saber nada sobre o Power BI. É necessária pelo menos uma conta do Power BI Pro para criar um aplicativo inserido. A conta do Power BI Pro funciona como uma conta mestre do seu aplicativo (pense nisso como uma conta de proxy). A conta do Power BI Pro também permite a geração de tokens de inserção que fornecem acesso a painéis e relatórios no serviço do Power BI que são de propriedade/gerenciados pelo seu aplicativo.
+Com o Power BI Embedded, seus clientes não precisam saber nada sobre o Power BI. É necessária pelo menos uma conta do Power BI Pro para criar um aplicativo inserido. A conta do Power BI Pro funciona como uma conta mestre do seu aplicativo (pense nessa conta mestre como uma conta de proxy). A conta do Power BI Pro também permite a geração de tokens de inserção que fornecem acesso a painéis e relatórios no serviço do Power BI que são de propriedade/gerenciados pelo seu aplicativo.
 
 Os desenvolvedores que usam o Power BI Embedded podem passar o tempo concentrados na criação da competência principal do seu aplicativo, em vez de gastar tempo desenvolvendo visuais e análise. Os desenvolvedores podem atender rapidamente as demandas de dashboard e relatório do cliente e podem inserir facilmente com APIs e SDKs totalmente documentadas. Ao habilitar a exploração de dados fácil de navegar em aplicativos, os ISVs permitem que seus clientes tomem decisões rápidas e direcionadas a dados no contexto em qualquer dispositivo.
 
@@ -70,7 +71,7 @@ Os desenvolvedores que usam o Power BI Embedded podem passar o tempo concentrado
 
 Quando você estiver pronto para passar para a produção, seu espaço de trabalho do aplicativo deverá ser atribuído a uma capacidade dedicada. O Power BI Embedded no Microsoft Azure oferece [capacidades dedicadas](azure-pbie-create-capacity.md) a serem usadas com seus aplicativos.
 
-Para obter detalhes sobre como inserir, consulte [Como inserir seus dashboards, relatórios e blocos do Power BI](embed-sample-for-customers.md).
+Para obter detalhes sobre como inserir, consulte [Como inserir seus painéis, relatórios e blocos do Power BI](embed-sample-for-customers.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d2b2449985a4380d78e7055ecf87f99a65a9a67e
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: a56dbb713f3d853094c2612a19edecb8bf4d7b24
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266504"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180589"
 ---
 # <a name="developer-resources-for-power-bi-dataflows-preview"></a>Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)
 
@@ -29,7 +29,7 @@ Os seguintes recursos de desenvolvedor estão disponíveis para o trabalho com f
 
 | Recurso de fluxo de dados | Descrição |
 | --- | --- |
-| [Referência da API REST do fluxo de dados do Power BI](http://download.microsoft.com/download/5/4/0/540DAA5B-6760-4BDF-A089-8C3DBA8BB4DD/Power%20BI%20dataflow%20REST%20API%20reference.docx)    | Um guia de referência completo para a API REST do fluxo de dados.|
+| [Referência da API REST do fluxo de dados do Power BI](https://go.microsoft.com/fwlink/?linkid=2047629)    | Um guia de referência completo para a API REST do fluxo de dados.|
 
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -41,10 +41,15 @@ Este artigo forneceu informações sobre os recursos de desenvolvedor para fluxo
 * [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
 * [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
 
+Para saber mais sobre o desenvolvimento do CDM e recursos do tutorial, confira o seguinte:
+* [Common Data Service - visão geral ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Pastas do CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
+* [Definição de arquivo de modelo do CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+
+
 Confira mais informações sobre o Power Query e a atualização agendada nestes artigos:
 * [Visão geral da Consulta no Power BI Desktop](desktop-query-overview.md)
 * [Configuração de atualização agendada](refresh-scheduled-refresh.md)
 
-Leia este artigo de visão geral para saber mais sobre o Common Data Service:
-* [Common Data Service - visão geral ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+
 

@@ -1,29 +1,30 @@
 ---
-title: Inserir conteúdo do Power BI em um aplicativo para seus clientes
-description: Aprenda a integrar ou inserir um dashboard, um bloco ou um relatório em um aplicativo Web usando as APIs do Power BI para seus clientes.
+title: Análise integrada para inserir conteúdo do Power BI em seu aplicativo para seus clientes
+description: Aprenda a integrar ou inserir um painel, um bloco ou um relatório em um aplicativo usando as APIs do Power BI para análise integrada para seus clientes. Saiba como integrar o Power BI ao seu aplicativo usando o software de análise integrada, ferramentas de análise integrada ou ferramentas de business intelligence integrada.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
-ms.openlocfilehash: cb517d62e64e8ef17be07315112faac331b534d3
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: e396f46987ef14aac9361e8f7ef41e90b2d8383e
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452696"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180865"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: inserir um relatório, um dashboard ou um bloco do Power BI em um aplicativo para seus clientes
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: Inserir um relatório, um painel ou um bloco do Power BI em um aplicativo para seus clientes
 
-Com o **Power BI Embedded no Azure**, você pode inserir relatórios, painéis ou blocos em um aplicativo usando **app owns data**. **App owns data** representa um aplicativo que usa o Power BI como sua plataforma de análise incorporada. O uso de **app owns data** é normalmente um cenário de **desenvolvedor ISV**. Como **desenvolvedor ISV**, é possível criar conteúdo do **Power BI** que exibe relatórios, dashboards ou blocos em um aplicativo totalmente integrado e interativo, sem precisar que os usuários do aplicativo tenham uma licença do Power BI. Este tutorial demonstra como integrar um relatório em um aplicativo usando o SDK do .NET do **Power BI** com a API JavaScript do **Power BI** ao usar o **Power BI Embedded no Azure** para clientes com **app owns data**.
+Com o **Power BI Embedded no Azure**, você pode inserir relatórios, painéis ou blocos em um aplicativo usando app owns data. **App owns data** representa um aplicativo que usa o Power BI como sua plataforma de análise incorporada. Como **desenvolvedor ISV**, é possível criar conteúdo do Power BI que exibe relatórios, painéis ou blocos em um aplicativo totalmente integrado e interativo, sem precisar que os usuários tenham uma licença do Power BI. Este tutorial demonstra como integrar um relatório em um aplicativo usando o SDK do .NET do Power BI com a API JavaScript do Power BI ao usar o **Power BI Embedded no Azure** para clientes.
 
 Neste tutorial, você aprenderá a:
->[!div class="checklist"]
->* Registrar um aplicativo no Azure.
->* Insira um relatório do Power BI em um aplicativo.
+> [!div class="checklist"]
+> * Registrar um aplicativo no Azure.
+> * Insira um relatório do Power BI em um aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -38,7 +39,7 @@ Para começar, é necessária uma conta do **Power BI Pro** (essa conta é sua *
 
 Antes de começar a inserir relatórios, dashboard ou blocos no seu aplicativo, você precisará verificar se o ambiente permite inserção com o Power BI.
 
-Você pode examinar a [Ferramenta de configuração de integração](https://aka.ms/embedsetup/AppOwnsData) para iniciar rapidamente e baixar um aplicativo de exemplo que ajuda a criar um ambiente e a inserir um relatório.
+Você pode examinar a [Ferramenta de configuração de integração](https://aka.ms/embedsetup/AppOwnsData) para que possa iniciar rapidamente e baixar um aplicativo de exemplo que ajuda a criar um ambiente e a inserir um relatório.
 
 No entanto, se você optar por configurar o ambiente manualmente, você poderá continuar abaixo.
 
@@ -63,11 +64,11 @@ Registre seu aplicativo no Azure Active Directory para permitir que ele tenha ac
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Aplique permissões ao seu aplicativo no Azure Active Directory
 
-Habilite as permissões adicionais para seu aplicativo, além das que foram concedidas na página de registro do aplicativo. Entre com a conta *mestre* que você está usando para inserção. A conta mestre precisa ser a conta do administrador global.
+Habilite permissões adicionais para seu aplicativo, incluindo as que foram concedidas na página de registro do aplicativo. Entre com a conta *mestre* que você está usando para inserção. A conta mestre precisa ser a conta do administrador global.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Use o portal do Azure Active Directory
 
-1. Navegue até [Registros de aplicativo](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) no Portal do Azure e selecione o aplicativo que você está usando para inserção.
+1. Navegue até [Registros de aplicativo](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) no portal do Azure e selecione o aplicativo que você está usando para inserção.
 
     ![Escolhendo o aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -103,9 +104,9 @@ Habilite as permissões adicionais para seu aplicativo, além das que foram conc
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurar seu ambiente do Power BI
 
-### <a name="create-an-app-workspace"></a>Criar um workspace de aplicativo
+### <a name="create-an-app-workspace"></a>Criar workspace do aplicativo
 
-Se estiver inserindo relatórios, dashboards ou blocos para seus clientes, você precisará colocar o conteúdo dentro de um workspace do aplicativo. A conta *mestre* precisa ser um administrador do workspace do aplicativo.
+Se você estiver inserindo relatórios, painéis ou blocos para seus clientes, precisará colocar o conteúdo dentro de um espaço de trabalho do aplicativo. A conta *mestre* precisa ser um administrador do workspace do aplicativo.
 
 1. Comece criando o workspace. Selecione **Workspaces** > **Criar workspace do aplicativo**. No workspace Criar aplicativo, coloque o conteúdo que seu aplicativo precisa acessar.
 
@@ -115,7 +116,7 @@ Se estiver inserindo relatórios, dashboards ou blocos para seus clientes, você
 
     ![Nomeie o workspace](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
-3. Você tem algumas opções para definir. Se você escolher **Público**, qualquer pessoa na sua organização poderá ver o que está no workspace. **Particular**, por outro lado, significará que somente os membros do workspace poderão ver o conteúdo.
+3. Você tem algumas opções para definir. Se você escolher **Público**, qualquer pessoa na sua organização poderá ver o que está no workspace. Se você escolher **Privado**, somente os membros do espaço de trabalho poderão ver o conteúdo.
 
     ![Particular/Público](media/embed-sample-for-customers/embed-sample-for-customers-022.png)
 
@@ -214,7 +215,7 @@ Embora as etapas para inserir seu conteúdo possam ser feitas com as [APIs REST 
 
 A inserção para seus clientes dentro de seu aplicativo exige que você obtenha um **token de acesso** para sua conta mestre do **Azure AD**. É necessário obter um [token de acesso do Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) para o seu aplicativo do Power BI usando **app owns data** antes de pode fazer chamadas às [APIs REST do Power BI](https://docs.microsoft.com/rest/api/power-bi/).
 
-Para criar o cliente do Power BI com o **token de acesso**, crie o objeto de cliente do Power BI que permitirá interagir com as [APIs REST do Power BI](https://docs.microsoft.com/rest/api/power-bi/). Faça isso encapsulando **AccessToken** com um objeto ***Microsoft.Rest.TokenCredentials***.
+Para criar o cliente do Power BI com o **token de acesso**, crie o objeto de cliente do Power BI que permitirá interagir com as [APIs REST do Power BI](https://docs.microsoft.com/rest/api/power-bi/). Crie o objeto do cliente do Power BI encapsulando o **AccessToken** com um objeto ***Microsoft.Rest.TokenCredentials***.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -223,7 +224,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It is used to call Power BI APIs.
+// Create a Power BI Client object. it's used to call Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -236,7 +237,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Veja um exemplo de código de como recuperar o primeiro relatório de um workspace específico.
 
-*Um exemplo de obtenção de um item de conteúdo, seja um bloco, um relatório ou um dashboard que você deseja inserir, está disponível no arquivo Controladores\HomeController.cs no [aplicativo de exemplo](#embed-your-content-within-a-sample-application).*
+*Um exemplo de obtenção de um item de conteúdo, seja um bloco, um relatório ou um painel que você deseja inserir, está disponível no arquivo Controladores\HomeController.cs no [aplicativo de exemplo](#embed-your-content-within-a-sample-application).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -251,7 +252,7 @@ Report report = reports.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Criar o token de inserção
 
-Um token de inserção precisa ser gerado, o qual pode ser usado por meio da API JavaScript. O token de inserção é específico ao item que está sendo inserido. Sempre que você inserir uma parte do conteúdo do Power BI, precisará criar um novo token de inserção para ele. Para obter mais informações, incluindo qual **accessLevel** usar, consulte [API GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
+Gerou um token de inserção, que pode ser usado a partir da API do JavaScript. O token de inserção é específico ao item que está sendo inserido. Sempre que você inserir uma parte do conteúdo do Power BI, precisará criar um novo token de inserção para ele. Para obter mais informações, incluindo qual **accessLevel** usar, consulte [API GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
 Aqui está um exemplo da adição de um token de inserção para um relatório ao seu aplicativo.
 
@@ -274,13 +275,13 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-Isso pressupõe que uma classe seja criada para **EmbedConfig** e **TileEmbedConfig**. Uma amostra deles está disponível nos arquivos **Modelos\EmbedConfig.cs** e **Modelos\TileEmbedConfig.cs**.
+Uma classe é criada para **EmbedConfig** e **TileEmbedConfig**. Uma amostra está disponível nos arquivos **Modelos\EmbedConfig.cs** e **Modelos\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Carregar um item usando o JavaScript
 
 Use o JavaScript para carregar um relatório em um elemento div na página da Web.
 
-Para obter um exemplo completo de como usar a API JavaScript, use a [ferramenta de Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Trata-se de uma maneira rápida de experimentar diferentes tipos de exemplos do Power BI Embedded. Também é possível obter mais informações sobre a API de JavaScript, acessando a página da [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
+Para obter um exemplo completo de como usar a API JavaScript, use a [ferramenta de Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). A ferramenta de Playground é uma maneira rápida de experimentar diferentes tipos de exemplos do Power BI Embedded. Também é possível obter mais informações sobre a API de JavaScript, acessando a página da [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
 
 Aqui está uma amostra que usa um modelo de **EmbedConfig** e de **TileEmbedConfig**, juntamente com as exibições de um relatório.
 
@@ -346,15 +347,15 @@ Use a tabela a seguir para determinar qual capacidade do Power BI Embedded melho
 | A5 |16 núcleos virtuais |8 núcleos, 50 GB de RAM |8 núcleos |60 por segundo |2.401-4.800 |
 | A6 |32 núcleos virtuais |16 núcleos, 100 GB de RAM |16 núcleos |120 por segundo |4.801-9.600 |
 
-**_Com os SKUs A, você não pode acessar o conteúdo do Power BI com uma licença do Power BI GRATUITA._**
+**_Com os SKUs A, não é possível acessar o conteúdo do Power BI com uma licença do Power BI GRATUITA._**
 
-Os tokens inseridos com licenças PRO destinam-se a teste de desenvolvimento, portanto, o número de tokens inseridos que uma conta mestre do Power BI pode gerar é limitado. Você deve adquirir uma capacidade dedicada para incorporar em um ambiente de produção. Não há limite para a quantidade de tokens inseridos que você pode gerar com uma capacidade dedicada. Acesse [Recursos Disponíveis](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) para verificar o valor de uso que indica o uso inserido atual, em percentual. A quantidade de uso é por conta mestre.
+Os tokens inseridos com licenças PRO destinam-se a teste de desenvolvimento, portanto, o número de tokens inseridos que uma conta mestre do Power BI pode gerar é limitado. É preciso adquirir uma capacidade dedicada para incorporar em um ambiente de produção. Não há limite para a quantidade de tokens inseridos que você pode gerar com uma capacidade dedicada. Acesse [Recursos Disponíveis](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) para verificar o valor de uso que indica o uso inserido atual, em percentual. A quantidade de uso é por conta mestre.
 
-Para obter mais detalhes, consulte [Embedded analytics capacity planning whitepaper (White paper de planejamento de capacidade de análise inserida)](https://aka.ms/pbiewhitepaper).
+Para obter mais informações, consulte [Artigo sobre planejamento de capacidade de análise integrada](https://aka.ms/pbiewhitepaper).
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Atribua um workspace de aplicativo a uma capacidade dedicada
 
-Depois de criar uma capacidade dedicada, você pode atribuir o workspace do aplicativo a uma capacidade dedicada. Para concluir isso, execute estas etapas.
+Depois de criar uma capacidade dedicada, você pode atribuir o workspace do aplicativo a uma capacidade dedicada. Para atribuir uma capacidade dedicada a um espaço de trabalho, siga estas etapas.
 
 1. No **serviço do Power BI**, expanda os workspaces e selecione as reticências do workspace que você está usando para inserir seu conteúdo. Depois, selecione **Editar workspaces**.
 

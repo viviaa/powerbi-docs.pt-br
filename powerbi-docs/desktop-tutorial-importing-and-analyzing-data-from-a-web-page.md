@@ -1,23 +1,24 @@
 ---
-title: 'Tutorial: importar e analisar dados de uma página da Web sando o Power BI Desktop'
-description: 'Tutorial: importar e analisar dados de uma página da Web sando o Power BI Desktop'
+title: 'Tutorial: Importar e analisar dados de uma página da Web'
+description: 'Tutorial: Importar e analisar dados de uma página da Web com o Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d0c37ff2a48315b72c699ab53238416eeb0f04b5
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 0c712807ad5fd855986c3929a760c2542b33f01f
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578832"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026605"
 ---
-# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutorial: analisar dados de página da Web usando o Power BI Desktop
+# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutorial: Analisar dados de página da Web usando o Power BI Desktop
 
 Como fã de futebol de longa data, você deseja criar um relatório dos vencedores da relatar os vencedores Campeonato Europeu da UEFA (Eurocopa) ao longo dos anos. Com o Power BI Desktop, você pode importar esses dados de uma página da Web para um relatório e criar visualizações que mostram os dados. Neste tutorial, você aprenderá a usar o Power BI Desktop para:
 
@@ -58,7 +59,7 @@ Para importar os dados:
    
    Uma visualização da tabela é aberta no **Power Query Editor**, no qual é possível aplicar transformações para limpar os dados. 
    
-   ![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   ![Editor do Power Query](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
    
 ## <a name="shape-data-in-power-query-editor"></a>Formatar dados no Power Query Editor
 

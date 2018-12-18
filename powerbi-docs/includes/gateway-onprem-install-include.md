@@ -11,7 +11,7 @@ Para o Power BI, a primeira opção que você precisa fazer é o modo do gateway
 * **Gateway de dados local:** vários usuários podem compartilhar e reutilizar um gateway nesse modo. Este gateway pode ser usado pelo Power BI, PowerApps, Flow ou pelos Aplicativos Lógicos. Para o Power BI, isso inclui suporte para atualização de agendamento e o DirectQuery
 * **Pessoal:** destina-se apenas ao Power BI e pode ser usado como um indivíduo sem nenhuma configuração do administrador. Isso pode ser usado apenas para a atualização sob demanda e a atualização de agendamento. Essa seleção inicia a instalação do gateway pessoal.
 
-Há alguns detalhes a serem observados na instalação dos modos do gateway:
+Há alguns detalhes a observar durante a instalação dos modos do gateway:
 
 * ambos os gateways exigem sistemas operacionais Windows de 64 bits
 * gateways não podem ser instalados em um controlador de domínio

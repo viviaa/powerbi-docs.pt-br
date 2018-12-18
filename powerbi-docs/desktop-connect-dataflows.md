@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f87db1f715118f346e3b8069897e92fd157f881c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 6d602b19141c6277fe7ec6a7627749f57f6e25a6
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265922"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180704"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Conectar-se aos dados criados por fluxos de dados do Power BI no Power BI Desktop (Beta)
 No **Power BI Desktop**, é possível conectar-se a dados criados por **fluxos de dados do Power BI** como qualquer outra fonte de dados no Power BI Desktop.
@@ -36,6 +36,20 @@ O **Power BI Desktop** é executado localmente no computador em que se encontra 
 
 É possível melhorar o desempenho da ingestão de dados dos fluxos de dados. Por exemplo, se o tamanho dos dados ingeridos for muito grande para o **Power BI Desktop** gerenciar no seu computador, você pode usar as entidades vinculadas e computadas em fluxos de dados para agregar os dados (dentro de fluxos de dados) e ingerir apenas os dados agregados preparados previamente. Dessa forma, o processamento de dados grandes é executado online em fluxos de dados, em vez de ser executados localmente na instância em execução do **Power BI Desktop**. Essa abordagem permite ao Power BI Desktop ingerir menores quantidades de dados, além de manter a experiência com os fluxos de dados rápida e responsiva.
 
+## <a name="considerations-and-limitations"></a>Considerações e limitações
+
+A maioria dos fluxos de dados residem no locatário do serviço do Power BI. No entanto, os usuários do **Power BI Desktop** não podem acessar os fluxos de dados armazenados na conta do Azure Data Lake Storage Gen2, a menos que sejam os proprietários do fluxo de dados ou tenham sido explicitamente autorizados na pasta do CDM do fluxo de dados. Considere a seguinte situação:
+
+1.  Brenda cria um novo espaço de trabalho do aplicativo e o configura para armazenar fluxos de dados no data lake da organização.
+2.  Davi, que também é membro do espaço de trabalho criado por Brenda, deseja usar o Power BI Desktop e o conector de fluxo de dados para obter dados do fluxo de dados criado por Brenda.
+3.  Davi recebe um erro porque não foi adicionado como usuário autorizado à pasta do CDM do fluxo de dados no data lake.
+
+    ![Erro ao tentar usar o fluxo de dados](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+
+Para resolver esse problema, o Davi deve receber permissões de leitura para a pasta do CDM e seus arquivos. Você pode saber mais sobre como conceder acesso à pasta do CDM [neste artigo](https://go.microsoft.com/fwlink/?linkid=2029121).
+
+
+
 
 ## <a name="next-steps"></a>Próximas etapas
 Há inúmeras coisas interessantes que você pode fazer com os fluxos de dados do Power BI. Confira mais informações nos recursos a seguir:
@@ -45,6 +59,13 @@ Há inúmeras coisas interessantes que você pode fazer com os fluxos de dados d
 * [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
 * [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
 * [Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)](service-dataflows-developer-resources.md)
+
+Para obter mais informações sobre a integração com o Azure Data Lake Storage Gen2, confira os artigos a seguir:
+
+* [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md)
+* [Definir configurações de fluxo de dados de espaço de trabalho (versão prévia)](service-dataflows-configure-workspace-storage-settings.md)
+* [Adicionar uma pasta do CDM ao Power BI como um fluxo de dados (versão prévia)](service-dataflows-add-cdm-folder.md)
+* [Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Também há artigos sobre o **Power BI Desktop** que podem ser úteis:
 

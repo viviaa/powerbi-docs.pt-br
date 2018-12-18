@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: abddbf3e4ae0b51dbb46f949e6d4f287d084f873
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271753"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280956"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Compartilhe seus painéis e os relatórios do Power BI com colegas e outras pessoas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir painéis e relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -25,11 +25,11 @@ O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos
 
 Com o compartilhamento, se você compartilhar o conteúdo dentro ou fora de sua organização, você precisará de uma [licença do Power BI Pro](service-features-license-type.md). Você e os destinatários também precisarão de licenças do Power BI Pro ou então o conteúdo precisará estar em uma [capacidade Premium](service-premium.md). 
 
-Você pode compartilhar painéis e relatórios da maioria dos lugares no serviço Power BI: seus Favoritos, Recentes, Compartilhado comigo (se o proprietário permite isso), Meu Espaço de Trabalho ou outros espaços de trabalho. Quando você compartilha um painel ou relatório, as pessoas com as quais você o compartilha poderão exibi-lo e interagir com ele, mas não poderão editá-lo. Elas veem os mesmos dados que você no painel ou relatório, a menos que a [RLS (segurança em nível de linha)](service-admin-rls.md) seja aplicada. Os colegas com quem você compartilha também podem compartilhá-lo com os colegas deles, se você permitir. As pessoas de fora de sua organização também podem exibir e interagir com o painel ou relatório, mas não podem compartilhá-lo. 
+Você pode compartilhar painéis e relatórios da maioria dos lugares no serviço Power BI: seus Favoritos, Recentes, Compartilhado comigo (se o proprietário permite isso), Meu Workspace ou outros workspaces. Quando você compartilha um painel ou relatório, as pessoas com as quais você o compartilha poderão exibi-lo e interagir com ele, mas não poderão editá-lo. Elas veem os mesmos dados que você no painel ou relatório, a menos que a [RLS (segurança em nível de linha)](service-admin-rls.md) seja aplicada. Os colegas com quem você compartilha também podem compartilhá-lo com os colegas deles, se você permitir. As pessoas de fora de sua organização também podem exibir e interagir com o painel ou relatório, mas não podem compartilhá-lo. 
 
 Você também pode [compartilhar um dashboard de qualquer um dos aplicativos móveis do Power BI](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Você pode compartilhar dashboards do serviço do Power BI e dos aplicativos móveis do Power BI, mas não do Power BI Desktop.
 
-## <a name="video-share-a-dashboard"></a>Vídeo: compartilhar um dashboard
+## <a name="video-share-a-dashboard"></a>Vídeo: Compartilhar um painel
 Veja Amanda compartilhando seu dashboard com os colegas dentro e fora da empresa. Em seguida, siga as instruções passo a passo abaixo do vídeo para testá-la por conta própria.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
@@ -96,7 +96,7 @@ Somente o proprietário do painel ou relatório pode ativar e desativar o novo c
 ## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Compartilhar um painel ou relatório com pessoas fora de sua organização
 Quando você compartilha um painel com pessoas fora de sua organização, elas recebem um email com um link para o painel ou relatório compartilhado e precisam entrar no Power BI para vê-lo. Se não tiverem uma licença do Power BI Pro, elas poderão inscrever-se para receber uma depois de clicar no link.
 
-Depois de entrar, elas poderão ver o painel ou relatório compartilhado em sua própria janela do navegador sem o painel de navegação à esquerda, e não no portal do Power BI normal. Elas precisam do indicador no link para acessar esse painel ou relatório no futuro.
+Depois de entrar, elas poderão ver o painel ou relatório compartilhado em sua própria janela do navegador sem o painel de navegação à esquerda, e não no portal do Power BI normal. Elas precisam marcar o link para acessar esse painel ou relatório no futuro.
 
 Elas não podem editar nenhum conteúdo nesse painel ou relatório. Eles podem interagir com os gráficos e alterar filtros ou segmentações no relatório, mas não podem salvar suas alterações.
 
@@ -111,7 +111,7 @@ Coisas para se lembrar a respeito do compartilhamento de painéis e relatórios:
 
 * Em geral, você e seus colegas veem os mesmos dados no painel ou relatório. Portanto, se você tiver permissões para ver mais dados do que eles, eles poderão ver todos os seus dados no painel ou relatório. No entanto, se a [RLS (segurança em nível de linha)](service-admin-rls.md) for aplicada ao conjunto de dados subjacente a um painel ou relatório, as credenciais de cada pessoa serão usadas para determinar quais dados elas podem acessar.
 * Todas as pessoas com quem você compartilha o painel podem vê-lo e interagir com os relatórios relacionados no [Modo de Exibição de Leitura](consumer/end-user-reading-view.md). Elas não podem criar relatórios nem salvar alterações nos relatórios existentes.
-* Ninguém pode ver ou baixar o conjunto de dados.
+* Ninguém pode ver nem baixar o conjunto de dados, mas é possível acessá-lo diretamente usando o recurso Analisar no Excel. Um administrador pode restringir a capacidade de usar o Analisar no Excel restringindo a capacidade de todos em um grupo. No entanto, a restrição é para todos nesse grupo, para cada espaço de trabalho ao qual ele pertence.
 * Qualquer pessoa pode [atualizar os dados](refresh-data.md) manualmente.
 * Se você usar o Office 365 para email, poderá compartilhar com os membros de um grupo de distribuição inserindo o endereço de email associado ao grupo de distribuição.
 * Os colegas que têm o mesmo domínio de email que você e os colegas cujos domínios são diferentes, mas que estão registrados no mesmo locatário, podem compartilhar o dashboard com outras pessoas. Por exemplo, digamos que os domínios contoso.com e contoso2.com estejam registrados no mesmo locatário. Se seu endereço de email for konrads@contoso.com, ravali@contoso.com e gustav@contoso2.com poderão compartilhar, desde que você tenha dado a eles permissão para compartilhar.

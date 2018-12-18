@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 1c6c0a803e77ead6d43c23ac2b12b305d5960ef7
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830322"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111532"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Métricas de uso de dashboards e relatórios
 
@@ -84,8 +84,8 @@ Para se aprofundar quanto aos dados do relatório ou para criar seus próprios r
 | Total de visualizadores |sim |sim |Número de visualizadores únicos nos últimos 90 dias. |
 | Total de compartilhamentos |sim |não |Número de vezes que o dashboard ou o relatório foi compartilhado nos últimos 90 dias. |
 | Total na organização |sim |sim |Contagem de todos os dashboards ou relatórios em toda a organização que tiveram pelo menos uma exibição nos últimos 90 dias.  Usado para calcular a classificação. |
-| Classificação: total de exibições |sim |sim |Para o total de exibições de todos os dashboards ou relatórios na organização durante os últimos 90 dias, no qual este dashboard ou relatório é classificado. |
-| Classificação: total de compartilhamentos |sim |não |Para o total de compartilhamentos de todos os dashboards na organização durante os últimos 90 dias, no qual este dashboard ou relatório é classificado. |
+| Classificação: Total de exibições |sim |sim |Para o total de exibições de todos os dashboards ou relatórios na organização durante os últimos 90 dias, no qual este dashboard ou relatório é classificado. |
+| Classificação: Total de compartilhamentos |sim |não |Para o total de compartilhamentos de todos os dashboards na organização durante os últimos 90 dias, no qual este dashboard ou relatório é classificado. |
 
 ### <a name="dashboard-usage-metrics-report"></a>Relatório de Métrica de uso do Dashboard
 
@@ -172,19 +172,19 @@ O Power BI está disponível em nuvens nacionais separadas. Essas nuvens oferece
 
 Além das possíveis diferenças entre métricas de uso e logs de auditoria, as perguntas e respostas sobre as métricas de uso a seguir podem ser úteis para usuários e administradores:
 
-P: Não consigo executar as métricas de uso em um dashboard ou relatório R: Você só pode ver as métricas de uso para o conteúdo que você possui ou tem permissões para editar.
+P:    Não consigo executar as métricas de uso em um painel ou relatório R:    Você só pode ver métricas de uso para o conteúdo que você possui ou que tem permissões para editar.
 
-P: As métricas de uso capturam as exibições de dashboards e relatórios inseridos?
-R: Atualmente, as métricas de uso não oferecem suporte ao uso de captura para dashboards e relatórios inseridos, nem para o fluxo de [publicar na Web](service-publish-to-web.md).          Nesses casos, recomendamos o uso das plataformas de análise da Web existentes para controlar o uso do aplicativo de hospedagem ou portal.
+P:    As métricas de uso capturam as exibições de painéis e relatórios inseridos?
+R:    Atualmente, as métricas de uso não oferecem suporte ao uso de captura para painéis e relatórios inseridos, nem para o fluxo de [publicar na Web](service-publish-to-web.md).          Nesses casos, recomendamos o uso das plataformas de análise da Web existentes para controlar o uso do aplicativo de hospedagem ou portal.
 
-P: Não consigo executar a métrica de uso em nenhum conteúdo.
-R1: Os administradores podem desligar esse recurso em sua organização.  Contate seu administrador para ver se é esse o caso.
-A2: As métricas de uso são um recurso do Power BI Pro.
+P:    Não consigo executar a métrica de uso em nenhum conteúdo.
+R1:    Os administradores podem desligar esse recurso em sua organização.  Contate seu administrador para ver se é esse o caso.
+R2:    As métricas de uso são um recurso do Power BI Pro.
 
-P: Os dados não parecem atualizados. Por exemplo, os métodos de distribuição não são exibidos, as páginas do relatório estão ausentes, etc. R: Pode levar até 24 horas para que os dados sejam atualizados.
+P:    Os dados não parecem atualizados. Por exemplo, os métodos de distribuição não são exibidos, as páginas do relatório estão ausentes, etc. R:    Pode levar até 24 horas para que os dados sejam atualizados.
 
-P: Há quatro relatórios no workspace, mas o relatório de métricas de uso exibe apenas três.
-R: O relatório de métricas de uso inclui somente os relatórios (ou dashboards) que foram acessados nos últimos 90 dias.  Se um relatório (ou dashboard) não aparecer, provavelmente ele não foi usado em mais de 90 dias.
+P:    Há quatro relatórios no espaço de trabalho, mas o relatório de métricas de uso exibe apenas três.
+R:    O relatório de métricas de uso inclui somente os relatórios (ou painéis) que foram acessados nos últimos 90 dias.  Se um relatório (ou dashboard) não aparecer, provavelmente ele não foi usado em mais de 90 dias.
 
 ## <a name="next-steps"></a>Próximas etapas
 

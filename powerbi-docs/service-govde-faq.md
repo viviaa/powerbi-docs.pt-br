@@ -1,26 +1,29 @@
 ---
-title: Perguntas frequentes sobre o Power BI de clientes do governo alemão
+title: Perguntas frequentes de clientes do governo alemão
 description: Para clientes do governo alemão, respostas às perguntas comuns sobre o serviço do Power BI do governo alemão
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4a602a8494261705d61c70679d9511993afe69af
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dfc240e50f2fa88fc40b5f6f8d80b1106c388cd5
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670062"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026444"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Perguntas frequentes de clientes do Power BI para Germany Cloud
 O **serviço do Power BI** tem uma versão disponível para clientes da UE/EFTA (União Europeia/Associação Europeia de Livre Comércio), geralmente mencionada como MCD (Microsoft Cloud Deutschland). A versão de **serviço do Power BI** discutida neste artigo é específica a clientes da UE/EFTA e separada e diferente da versão comercial do **serviço do Power BI**, ou serviços do Power BI fornecidos a clientes do governo.
 
 ![](media/service-govde-faq/govde-faq_01.png)
+
+## <a name="questions-and-answers"></a>Perguntas e respostas
 
 As perguntas e respostas a seguir oferecem informações importantes para o serviço do Power BI Pro em MCD (Microsoft Cloud Deutschland), que é a nuvem do serviço do Power BI fornecida especificamente para os clientes da UE/EFTA.
 
@@ -68,7 +71,7 @@ As perguntas e respostas a seguir oferecem informações importantes para o serv
 | Portal do Azure (para incorporado) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Comunidade |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
-### <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximas etapas
 Você pode fazer muito com o Power BI. Para obter mais informações e aprendizado, incluindo um artigo que mostra como se inscrever para o serviço, confira os seguintes recursos:
 
 * [Aprendizagem Orientada para o Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)

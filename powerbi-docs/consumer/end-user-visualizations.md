@@ -1,21 +1,22 @@
 ---
-title: Visão geral de visualizações para *consumidores* do Power BI
+title: Trabalhar com visualizações
 description: Conceitos e terminologia do Power BI – visualizações e visuais. O que é uma visualização ou um visual do Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/30/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5a347771504dcf41796d8bd6673cab30043c416b
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 5ac7f8a09b39065b4ea9cfd274c0341bf905826b
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112212"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280318"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Visualizações para **consumidores** do Power BI
 
