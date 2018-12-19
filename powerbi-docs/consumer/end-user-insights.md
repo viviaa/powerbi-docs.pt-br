@@ -1,24 +1,25 @@
 ---
-title: Gerar automaticamente as informações sobre os dados com o Power BI
-description: Saiba como obter informações sobre seus conjuntos de dados e blocos de painéis.
+title: Executar e exibir insights em blocos do painel
+description: Como usuário final do Power BI, saiba como obter insights sobre seus blocos de painel.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f68e962eacf04005d83ec0def10cf8e0e24f6e10
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: dd59f572da6bb3b62fa142ea7b7eab4aef5a3466
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112028"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180520"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Gerar automaticamente as informações sobre os dados com o Power BI
+# <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Exibir insights de dados em blocos do painel com o Power BI
 Cada bloco de visualização em seu dashboard é uma porta de entrada para exploração de dados. Quando você seleciona um bloco, ele abre um relatório em que você pode filtrar, classificar e examinar o conjunto de dados do relatório. E quando você executa insights, o Power BI faz a exploração de dados para você.
 
 Execute insights rápidos para gerar visualizações interativas e interessantes com base em seus dados. Insights rápidos podem ser executados em um bloco de dashboard específico, e você pode até mesmo executar insights em um insight!
@@ -40,7 +41,9 @@ Quando você executar insights em um bloco do dashboard, o Power BI pesquisa ape
 4. Algum insight desperta seu interesse? Selecione esse cartão de insights para se aprofundar ainda mais. O insight selecionado aparece à esquerda e novos insights, com base apenas nos dados daquele único insight, são exibidos à direita.    
 
  ## <a name="interact-with-the-insight-cards"></a>Interagir com os cartões de insights
-   * Filtrar as visualizações.  Para exibir os filtros, no canto superior direito, selecione a seta para expandir o painel Filtros.
+Depois que você tiver um insight aberto, continue a explorar.
+
+   * Filtre esse visual na tela.  Para exibir os filtros, no canto superior direito, selecione a seta para expandir o painel Filtros.
 
      ![análise de um menu Filtros expandido](./media/end-user-insights/power-bi-insights-on-insights.png)
    
