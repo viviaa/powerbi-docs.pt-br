@@ -15,7 +15,7 @@ Caso encontre problemas de autenticação com seu servidor proxy, experimente al
 
 O gateway cria uma conexão de saída para o Barramento de Serviço do Azure. Ele se comunica com as portas de saída: TCP 443 (padrão), 5671, 5672, 9350 a 9354.  O gateway não requer portas de entrada.
 
-É recomendável colocar os endereços IP no seu firewall, para sua região de dados, na lista branca. É possível baixar a [lista de IPs de data centers do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653), que é atualizada semanalmente. O gateway se comunicará com o Barramento de Serviço do Azure usando o endereço IP junto com o nome de domínio totalmente qualificado (FQDN). Se você estiver forçando o gateway a se comunicar usando HTTPS, ele usará apenas o FQDN de forma exclusiva e nenhuma comunicação acontecerá usando endereços IP.
+É recomendável colocar os endereços IP no seu firewall, para sua região de dados, na lista de permissões. É possível baixar a [lista de IPs de data centers do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653), que é atualizada semanalmente. O gateway se comunicará com o Barramento de Serviço do Azure usando o endereço IP junto com o nome de domínio totalmente qualificado (FQDN). Se você estiver forçando o gateway a se comunicar usando HTTPS, ele usará apenas o FQDN de forma exclusiva e nenhuma comunicação acontecerá usando endereços IP.
 
 > [!NOTE]
 > Os Endereços IP listados na lista de IP do Data Center do Azure estão na notação CIDR. Por exemplo, 10.0.0.0/24 não significa 10.0.0.0 até 10.0.0.24. Saiba mais sobre a [notação CIDR](http://whatismyipaddress.com/cidr).
