@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 706fe9f3014ef14ff34100ff336fbf04b44e709c
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026766"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280948"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Conectar-se ao Azure Consumption Insights no Power BI Desktop (Beta)
 Com o conector do **Azure Consumption Insights**, você pode usar o **Power BI Desktop** para se conectar ao Azure e obter dados e informações detalhadas sobre o uso de serviços do Azure por sua organização. Você também pode criar medidas, colunas personalizadas e visuais para relatar e compartilhar sobre o uso do Azure por sua organização. Esta versão do conector do **Azure Consumption and Insights** está na versão Beta e está sujeita a alterações.
@@ -26,7 +26,7 @@ Com o conector do **Azure Consumption Insights**, você pode usar o **Power BI D
 Neste artigo, você saberá como se conectar usando o conector do **Azure Consumption Insights** e obter os dados necessários, como migrar do uso do Conector do Azure Enterprise, além de encontrar um mapeamento das *colunas de detalhes de uso* disponíveis na API do **ACI** (Azure Consumption Insights).
 
 ## <a name="connect-to-azure-consumption-insights"></a>Conectar-se ao Azure Consumption Insights
-Para se conectar com êxito usando o conector do **Azure Consumption Insights**, é necessário ter acesso aos recursos do Enterprise no portal do Azure.
+Para se conectar com êxito usando o conector do **Azure Consumption Insights**, é necessário ter acesso aos recursos do Enterprise no Portal do Azure.
 
 Para se conectar usando o conector do **Azure Consumption Insights**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**. Selecione **Serviços Online** nas categorias à esquerda e você verá **Microsoft Azure Consumption Insights (Beta)**. Selecione **Conectar**.
 
@@ -70,7 +70,7 @@ Selecione uma caixa de seleção ao lado de qualquer tabela para ver uma visuali
 > 
 > 
 
-Quando você seleciona **Carregar**, os dados são carregados no **Power BI Desktop**.
+Quando você seleciona **Carregar**, os dados são carregados no **Power BI Desktop**.  O conector carregará os dados de acordo com o período de tempo padrão da tabela.  Caso precise personalizar o período de tempo, [é possível configurar uma consulta personalizada](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
@@ -79,7 +79,7 @@ Depois que os dados selecionados forem carregados, as tabelas e os campos seleci
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## <a name="using-azure-consumption-insights"></a>Usando o Azure Consumption Insights
-Para usar o conector do **Azure Consumption Insights**, é necessário ter acesso aos recursos do Enterprise no portal do Azure.
+Para usar o conector do **Azure Consumption Insights**, é necessário ter acesso aos recursos do Enterprise no Portal do Azure.
 
 Depois de carregar os dados com êxito usando o conector do **Azure Consumption Insights**, você pode criar suas próprias medidas e colunas personalizadas usando o **Editor de Consultas** e criar visuais, relatórios e dashboards que você pode compartilhar no **serviço do Power BI**.
 
