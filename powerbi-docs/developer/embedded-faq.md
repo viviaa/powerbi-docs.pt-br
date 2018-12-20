@@ -114,7 +114,7 @@ Você só pode criar as capacidades PBIE para sua região de locatário do PBI.
 
 Você pode usar o portal do PBI para entender qual é a sua região de locatário do PBI.
 
-https://app.powerbi.com/ > ? > Sobre o Power BI
+[https://app.powerbi.com/](https://app.powerbi.com/) > ? > Sobre o Power BI
 
 ![Sobre o Power BI](media/embedded-faq/about-01.png)
 ![Região do locatário](media/embedded-faq/tenant-location-01.png)
