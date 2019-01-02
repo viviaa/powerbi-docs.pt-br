@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/20/2018
 ms.author: maggies
 ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289187"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451342"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Visão geral do programa de pacote de conteúdo do serviço do Power BI
 Um pacote de conteúdo é um conjunto de conteúdos prontos que permite que os usuários obtenham informações sobre uma fonte imediatamente. Um pacote de conteúdo normalmente se concentra em um cenário de negócios específico, fornecendo informações sobre uma função, domínio ou fluxo de trabalho.

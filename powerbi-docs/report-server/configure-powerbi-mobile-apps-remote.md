@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/15/2018
 ms.author: maggies
 ms.openlocfilehash: 740c012d83f9ca70f6e909b8cf62714f67c123d4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268310"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451365"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Configurar o acesso do aplicativo móvel do Power BI iOS a um servidor de relatório remotamente
 
@@ -33,12 +33,12 @@ Como administrador, veja as etapas a serem seguidas no Microsoft Intune para cri
 
 A tabela a seguir indica os pares.
 
-|Chave  |Tipo  |Descrição  |
+|Key  |Tipo  |Descrição  |
 |---------|---------|---------|
 | com.microsoft.powerbi.mobile.ServerURL | Cadeia de caracteres | URL do Servidor de Relatório </br> Deve começar com http/https |
 | com.microsoft.powerbi.mobile.ServerUsername | Cadeia de caracteres | [opcional] </br> O nome de usuário a ser usado para conectar o servidor. </br> Se não existir, o aplicativo solicitará ao usuário que digite o nome de usuário para a conexão.| 
 | com.microsoft.powerbi.mobile.ServerDisplayName | Cadeia de caracteres | [opcional] </br> O valor padrão é "Servidor de relatório" </br> Um nome amigável usado no aplicativo para representar o servidor | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | O valor padrão é True </br>Quando definido como "True", substituirá qualquer definição do Servidor de Relatório que já estiver no dispositivo móvel. Os servidores existentes que já estão configurados serão excluídos. </br> Substituir a definição para True também evita que o usuário remova essa configuração. </br> Se definido como "False", adicionará os valores enviados por push, mantendo as configurações atuais. </br> Se a mesma URL do servidor já estiver configurada no aplicativo móvel, o aplicativo deixará essa configuração como está. O aplicativo não solicita ao usuário para se autenticar novamente no mesmo servidor. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Booliano | O valor padrão é True </br>Quando definido como "True", substituirá qualquer definição do Servidor de Relatório que já estiver no dispositivo móvel. Os servidores existentes que já estão configurados serão excluídos. </br> Substituir a definição para True também evita que o usuário remova essa configuração. </br> Se definido como "False", adicionará os valores enviados por push, mantendo as configurações atuais. </br> Se a mesma URL do servidor já estiver configurada no aplicativo móvel, o aplicativo deixará essa configuração como está. O aplicativo não solicita ao usuário para se autenticar novamente no mesmo servidor. |
 
 Veja um exemplo de definição de política de configuração usando o Intune.
 
