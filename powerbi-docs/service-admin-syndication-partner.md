@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.sourcegitcommit: 13fdc8d62960f20c6d9ca1ab292f98992b47083b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
+ms.lasthandoff: 12/18/2018
 ms.locfileid: "52157392"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Não é possível adicionar o Power BI a uma assinatura de parceiro do Office 365
@@ -53,7 +53,7 @@ Inscreva-se para uma avaliação gratuita do Power BI Pro. Se você não comprar
 
 ### <a name="enable-ad-hoc-subscriptions"></a>Habilitar assinaturas ad-hoc
 
-Por padrão, inscrições individuais (também conhecidas como assinaturas ad hoc) estão desabilitadas. Nesse caso, você verá a seguinte mensagem quando tentar se inscrever: *Seu departamento de TI desativou a inscrição para o Microsoft Power BI*.
+Por padrão, inscrições individuais (também conhecidas como assinaturas ad hoc) estão desabilitadas. Nesse caso, você vê a seguinte mensagem quando tentar se inscrever: *O departamento de TI desativou a inscrição no Microsoft Power BI*.
 
 ![Imagem de "sinto muito"](media/service-admin-syndication-partner/sorry.png)
 

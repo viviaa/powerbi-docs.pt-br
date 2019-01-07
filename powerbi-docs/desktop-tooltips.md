@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ec638eefa95ef70ab04606881bee421f82b7f11
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 0b5693dfa53feba35acb559bf8606b1d03f97fdb
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223297"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329776"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop
 Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas que aparecem ao passar o mouse sobre visuais, com base nas páginas de relatório que você cria no **Power BI Desktop**. Ao criar uma página de relatório que sirva como dica de ferramenta, as dicas de ferramenta personalizadas poderão incluir elementos visuais, imagens e qualquer outra coleção de itens que você criar na página de relatório. 
@@ -25,17 +25,6 @@ Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas
 Você pode criar tantas páginas de dica de ferramenta quanto desejar. Cada página de dica de ferramenta pode ser associada a um ou mais campos do seu relatório, para que, ao passar o mouse sobre um visual que inclua o campo selecionado, a dica de ferramenta criada em sua página de dica de ferramenta é exibida, filtrada com base no ponto de dados sobre o qual o mouse está passando. 
 
 Há inúmeras coisas interessantes que você pode fazer com dicas de ferramentas de relatório. Vamos ver como criar dicas de ferramenta e o que você deve fazer para configurá-las.
-
-### <a name="enable-the-tooltips-preview"></a>Habilitar a versão prévia das dicas de ferramenta 
-A partir da versão de setembro de 2018 do **Power BI Desktop**, as dicas de ferramentas estão disponíveis para o público geral e não precisam ser habilitadas. 
-
-Se estiver usando uma versão anterior do **Power BI Desktop**, poderá habilitá-la como uma versão prévia do recurso selecionando **Arquivo > Opções e Configurações > Opções > Recursos de visualização** no Power BI Desktop e, em seguida, marque a caixa de seleção ao lado de **Dicas de ferramentas da página de relatório**. 
-
-![Habilitar o recurso em versão prévia das dicas de ferramentas de relatório](media/desktop-tooltips/desktop-tooltips_01.png)
-
-Você precisará reiniciar o **Power BI Desktop** depois de habilitar a versão prévia das dicas de ferramentas de relatório.
-
-É recomendável sempre atualizar para a versão mais recente do **Power BI Desktop**, que pode ser obtida de um link em [obter o Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="create-a-report-tooltip-page"></a>Criar uma página de dica de ferramenta de relatório
 Para começar, crie uma nova página de relatório clicando no botão **+**, que se encontra na parte inferior da tela do **Power BI Desktop**, na área de guias da página. O botão fica ao lado da última página no relatório. 
@@ -123,8 +112,7 @@ Quando se faz realce cruzado em um visual em um relatório, as dicas de ferramen
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 Há algumas limitações e considerações para **dicas de ferramentas** para se ter em mente.
 
-* A partir da versão de setembro de 2018 do **Power BI Desktop**, que marcou a disponibilidade geral de dicas de ferramentas, os visuais de cartão também são compatíveis com as dicas de ferramentas.
-* A partir da versão de julho de 2018 do **Power BI Desktop**, os elementos visuais da Tabela e da Matriz passam a ser compatíveis com as dicas de ferramentas. 
+* Começando com a versão de dezembro de 2018 do **Power BI Desktop**, os visuais de botão também dão suporte a dicas de ferramenta.
 * Não há suporte para dicas de ferramentas de relatório ao exibir relatórios em aplicativos móveis. 
 * Dicas de ferramentas de relatório não são compatíveis com visuais personalizados. 
 * Atualmente não há suporte para usar clusters como campos que podem ser mostrados nas dicas de ferramentas de relatório. 

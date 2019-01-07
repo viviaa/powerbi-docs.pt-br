@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: e09c08780011ffaac7d37468e6018b079c41c669
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619806"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329730"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.
@@ -36,7 +36,7 @@ Tipos de dados são organizados nas categorias a seguir:
 
 * Todos
 * Arquivo
-* Banco de Dados
+* Banco de dados
 * Power BI
 * Azure
 * Serviços online
@@ -78,6 +78,7 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Impala
 * Google BigQuery
 * Snowflake
+* Essbase (Beta)
 * Conector do BI
 * Exasol
 * Dremio (Beta)
@@ -104,7 +105,7 @@ A categoria **Azure** fornece as seguintes conexões de dados:
 
 * Banco de dados SQL do Azure
 * SQL Data Warehouse do Azure
-* Banco de dados do Azure Analysis Services
+* Banco de Dados do Azure Analysis Services
 * Armazenamento de Blobs do Azure
 * Armazenamento de Tabelas do Azure
 * Azure Cosmos DB (Beta)
@@ -136,7 +137,7 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * Adobe Analytics
 * appFigures (Beta)
 * comScore Digital Analytix (Beta)
-* Dynamics 365 para Customer Insights (Beta)
+* Dynamics 365 for Customer Insights (Beta)
 * Data.World – Obter Conjunto de Dados (Beta)
 * Facebook
 * GitHub (Beta)
@@ -172,7 +173,7 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * HDFS (Arquivo do Hadoop)
 * Spark
 * Script do R
-* Script do Python
+* Script Python
 * ODBC
 * OLE DB
 * Denado

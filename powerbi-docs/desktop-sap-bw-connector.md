@@ -11,11 +11,11 @@ ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452857"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451434"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Usar o Conector SAP BW no Power BI Desktop
 Com o Power BI Desktop, você pode acessar os dados do **SAP BW (Business Warehouse)**.
@@ -66,7 +66,7 @@ Para estabelecer a conexão, você deve especificar um *Servidor*, um *Número d
 
 ![Configurações de conexão do servidor SAP](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
-Você também pode especificar duas **Opções avançadas** adicionais: Código de idioma e uma instrução MDX personalizada a ser executada em relação ao servidor especificado.
+Também é possível especificar duas **Opções avançadas** adicionais: Código da linguagem e uma instrução MDX personalizada a ser executada no servidor especificado.
 
 ![informações de conexão adicionais](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
@@ -78,8 +78,8 @@ Ao selecionar um ou mais itens do servidor, uma visualização da tabela de saí
 
 A janela do **Navegador** também fornece algumas **Opções de Exibição** que permitem fazer o seguinte:
 
-* **Exibir *Somente Itens Selecionados* versus *Todos os Itens* (exibição padrão):** essa opção é útil para verificar o conjunto final de itens selecionados. Uma abordagem alternativa para exibir isso é selecionar os *Nomes de Coluna* na área *Visualização*.
-* **Habilitar Visualizações de Dados (comportamento padrão):** também é possível controlar se as visualizações de dados devem ser exibidas neste diálogo. A desabilitação das visualizações de dados reduz a quantidade de chamadas do servidor, pois ele não solicita dados para as visualizações.
+* **Exibir *Somente os itens selecionados* versus *Todos os itens* (exibição padrão):** essa opção é útil para verificar o conjunto final de itens selecionados. Uma abordagem alternativa para exibir isso é selecionar os *Nomes de Coluna* na área *Visualização*.
+* **Habilitar visualizações de dados (comportamento padrão):** também é possível controlar se as visualizações de dados devem ser exibidas nesta caixa de diálogo. A desabilitação das visualizações de dados reduz a quantidade de chamadas do servidor, pois ele não solicita dados para as visualizações.
 * **Nomes técnicos:** o SAP BW dá suporte ao conceito de *nomes técnicos* para objetos em um cubo. Os nomes técnicos permitem que um proprietário de cubo exponha nomes *amigáveis* para objetos do cubo, em vez de apenas expor os *nomes físicos* desses objetos no cubo.
 
 ![a janela Navegador](media/desktop-sap-bw-connector/sap_bw_6.png)

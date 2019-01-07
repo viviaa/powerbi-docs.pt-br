@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: db6ed98f246eebba55b87fe383ffcab95c22f6dc
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: c4601ea54d2e55e55f0b94f4bd4c69673bb00e53
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180842"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649116"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introdução aos blocos de dashboard para designers do Power BI
 
@@ -90,7 +90,7 @@ Quando você seleciona um bloco, o que acontece em seguida depende de como você
 
 * Se o relatório usado para criar a visualização não tiver sido salvo, então selecionar um bloco não produzirá nenhuma ação.
 * Se o bloco tiver sido criado de uma pasta de trabalho no Excel Online, você precisará de pelo menos permissões de Leitura para essa pasta de trabalho. Caso contrário, a seleção do bloco não abrirá a pasta de trabalho no Excel Online.
-* Digamos que você crie um bloco diretamente no dashboard usando **Adicionar bloco** e defina um hiperlink personalizado para ele. Se for o caso, quando você selecionar o título, o subtítulo ou o bloco abrirá essa URL. Caso contrário, por padrão, quando você seleciona um bloco criado diretamente no dashboard para uma imagem, um código da Web ou uma caixa de texto, nada acontece.
+* Digamos que você crie um bloco diretamente no dashboard usando **Adicionar bloco** e defina um hiperlink personalizado para ele. Se for o caso, quando você seleciona o título, o subtítulo ou o bloco abre essa URL. Caso contrário, por padrão, quando você seleciona um bloco criado diretamente no dashboard para uma imagem, um código da Web ou uma caixa de texto, nada acontece.
 * Se você não tem permissão para o relatório no Reporting Services, a seleção de um bloco criado por um relatório do Reporting Services leva você até uma página indicando que você não tem acesso (rsAccessDenied).
 * Se você não tiver acesso à rede na qual o servidor do Reporting Services, a seleção de um bloco criado do Reporting Services levará você até uma página que indica que não é possível localizar o servidor (HTTP 404). O dispositivo precisa ter acesso à rede para o servidor de relatório exibir o relatório.
 * Se a visualização original usada para criar o bloco for alterada, o bloco não será alterado.  Por exemplo, se você fixar um gráfico de linhas de um relatório e, em seguida, alterar o gráfico de linhas para um gráfico de barras, o bloco do painel continuará mostrando um gráfico de linhas. Os dados são atualizados, mas o tipo de visualização não.

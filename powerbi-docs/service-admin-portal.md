@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 6fff11d37b0f099effeafb6b88dbfa68af88f3d6
+ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026697"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53735559"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
@@ -386,6 +386,18 @@ Após qualquer alteração de atualização ou de administrador, os usuários do
 Para atualizar o visual do repositório organizacional, selecione o ícone de engrenagem. Procure e carregue uma nova versão do elemento visual.
 
 Verifique se a ID do Visual permanece inalterada. O novo arquivo substitui o arquivo anterior em todos os relatórios de toda a organização. No entanto, se a nova versão do visual prejudicar qualquer estrutura de dados de uso da versão anterior do visual, não substitua a versão anterior. Em vez disso, crie uma nova lista para a nova versão do visual. Por exemplo, adicione um novo número de versão (versão X.X) ao título do novo visual listado. Desse modo, fica claro que é o mesmo visual, apenas com um número de versão atualizada, assim os relatórios existentes não prejudicam a funcionalidade. Novamente, verifique se a ID do Visual permanece inalterada. Assim, na próxima vez que os usuários inserirem o repositório da organização do Power BI Desktop, poderão importar a nova versão, que pedirá que substituam a versão atual que têm no relatório.
+
+Para saber mais, acesse [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals) (Perguntas frequentes sobre os visuais personalizados de organização)
+
+## <a name="dataflow-storage-preview"></a>Armazenamento de fluxo de dados (versão prévia)
+
+Por padrão, os dados usados com o Power BI são armazenados no armazenamento interno fornecido pelo Power BI. Com a integração de fluxos de dados e o Azure Data Lake Storage Gen2 (ADLS Gen2), você pode armazenar seus fluxos de dados na conta do Azure Data Lake Storage Gen2 da sua organização. Para saber mais, confira [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md).
+
+## <a name="workspaces-preview"></a>Workspaces (versão prévia)
+
+Como administrador, você pode exibir os workspaces que existem em seu locatário. É possível classificar e filtrar a lista de workspaces e exibir os detalhes de cada um deles. Observe que as colunas da tabela correspondem às propriedades retornadas pela [API REST do administrador do Power BI](/rest/api/power-bi/admin) para workspaces. Workspaces pessoais são do tipo **PersonalGroup**, workspaces herdados são do tipo **Group** e workspaces modernos são do tipo **Workspace**. Para saber mais, confira [Create the new workspaces (preview) in Power BI](service-create-the-new-workspaces.md) (Criar os novos workspaces (versão prévia) no Power BI).
+
+![Lista de workspaces](media/service-admin-portal/workspaces-list.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 

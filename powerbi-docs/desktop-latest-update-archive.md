@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3e8e8359742a422049751a348bce6a5d4015bd72
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 129649367efa3a2b23fbf3be181e14df158eba02
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619852"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329845"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
@@ -33,6 +33,57 @@ Os links ao lado de cada atualização significam o seguinte:
 Você também pode assistir o vídeo das **Atualizações mais recentes** desde o início, diretamente deste artigo, clicando no ícone **reproduzir** na imagem de vídeo localizada abaixo da lista de atualizações.
 
 As seções a seguir descrevem atualizações de meses anteriores do **Power BI Desktop**.
+
+## <a name="november-2018-update-2645285461"></a>Atualização de novembro de 2018 (2.64.5285.461)
+
+Nossas atualizações de novembro apresentam vários recursos e funcionalidades novas. Por isso, você pode se sentar com sua família de aficionados por dados e análises, passar o purê e aproveitar nosso banquete de atualizações. 
+
+As seguintes atualizações são novas no **Power BI Desktop** em novembro:
+
+### <a name="reporting"></a>Relatórios
+
+* Expanda e recolha os cabeçalhos de linha de matriz [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=16) [[artigo]](power-bi-reports-filters-and-highlighting.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
+* Copiar e colar entre os arquivos da Área de Trabalho [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=199) [[artigo]](desktop-report-view.md#copy-and-paste-between-reports) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23copyPaste)
+* Atualizar a experiência de filtragem (versão prévia) [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=410) [[artigo]](power-bi-reports-filters-and-highlighting.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
+* Aprimoramentos de acessibilidade do relatório [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=1036) [[artigo]](desktop-accessibility.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+
+### <a name="analytics"></a>Análise
+
+* Saturação de cores em visuais aprimorada para usar a formatação condicional [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=1224) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
+* Perguntas de acompanhamento no explorador de perguntas e respostas [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=1429) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
+
+
+### <a name="modeling"></a>Modelagem
+
+* Nova exibição de modelagem (versão prévia) [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=1642) [[artigo]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
+* Os modelos compostos já estão disponíveis para uso geral [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=1941) [[artigo]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
+* Aprimoramentos de acessibilidade de modelagem [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=2023) [[artigo]](desktop-accessibility.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
+* Novas funções do DAX  [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=2066) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
+
+### <a name="custom-visuals"></a>Visuais personalizados
+
+* Cinco novos visuais personalizados  [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+
+### <a name="data-connectivity"></a>Conectividade de dados
+
+* Conector do Azure DevOps Server [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=2641) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Suporte para Conector de PDF para os parâmetros Página Inicial e Página Final [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=2667) [[artigo]](desktop-connect-pdf.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
+* Conector aprimorado do Azure Consumption Insights [[vídeo]](https://youtu.be/1xsXXoyTxfk?t=2704) [[artigo]](desktop-connect-azure-consumption-insights.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
+
+
+> [!NOTE]
+> [Confira também todas as fontes de dados disponíveis para o Power BI Desktop](desktop-data-sources.md). Nossa lista sempre está aumentando, portanto, verifique com frequência.
+
+Deseja obter mais informações sobre essas atualizações? Confira a [postagem de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary), em que você pode obter informações mais detalhadas sobre cada um dos novos recursos (essa é a mesma postagem de blog referenciada na lista acima).
+
+
+O canal de vídeo a seguir descreve e mostra cada uma dessas atualizações. Você também pode ver os vídeos na postagem no blog.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Saiba [o que há de novo no serviço do Power BI](service-whats-new.md) e confira as [novidades dos aplicativos móveis do Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## <a name="october-2018-update-263327240262"></a>Atualização de outubro de 2018 (2.63.3272.40262)
 
@@ -373,7 +424,7 @@ Foram feitas as seguintes novas atualizações do **Power BI Desktop** em abril:
 ### <a name="data-connectivity"></a>Conectividade de dados
 
 * Agora o conector do Adobe Analytics está disponível [[vídeo]](https://youtu.be/kuI6MMzDh34?t=32m) [[artigo]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
-* Aperfeiçoamento do conector do SAP HANA: seleção de porta [[vídeo]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artigo]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Aperfeiçoamento do conector do SAP HANA: Seleção de porta [[vídeo]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artigo]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
 * Conector do Dynamics 365 Business Central [[vídeo]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artigo]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
 
 
@@ -1612,8 +1663,8 @@ Estamos saindo na frente com mais atualizações este mês! Fevereiro traz 29 di
 -   Consulte os dados por trás de um visual (incluindo *exportar dados para CSV*)
 -   Mapear melhorias – plotar o mapa somente com latitude/longitude
 -   Suporte de versão de consumo de KPI (incluindo suporte à hierarquia de navegação e a tendência do KPI para SSAS MD)
--   Modo de exploração do SSAS: suporte para pastas **Exibição** no painel **Campos**
--   Aprimoramentos do layout de faixa de opções: guia de faixa de opções contextuais para **Ferramentas de Relatório**
+-   Modo de exploração do SSAS: Suporte para pastas de **Exibição** no painel **Campos**
+-   Aprimoramentos do layout da faixa de opções: guia de faixa de opções contextual para **Ferramentas de relatório**
 -   Novo visual de KPI
 -   Abra os relatórios na mesma página que estava visível quando eles foram salvos
 -   Opção **Editar Consulta** no menu de contexto da tabela no painel Campos (exibições de **Relatório** & **Dados**)
@@ -1623,7 +1674,7 @@ Estamos saindo na frente com mais atualizações este mês! Fevereiro traz 29 di
 ### <a name="data-modeling"></a>Modelagem de dados:
 
 -   Capacidade de definir hierarquias
--   Aperfeiçoamento de desempenho: otimizações de renomeação de tabela e coluna
+-   Aprimoramento de desempenho: otimizações de renomeação de tabela e coluna
 
 ### <a name="data-connectivity"></a>Conectividade de dados:
 
@@ -1711,7 +1762,7 @@ Dezembro é um mês de prover e a equipe do Power BI está seguindo com mais atu
 
 -   Aprimoramentos em Visualizações:
     - Indicação visual para o estado de classificação no visual **Tabela**
-    - Novo visual: gráfico de **Área Empilhada**
+    - Novo visual: gráfico **Área empilhada**
     - Dicas inteligentes para gráficos **Área** e **Linha** em foco
     - Capacidade de criar a região/linha de referência para um visual **Cartesiano**
     - Rótulos de dados aprimorados para gráficos de **Pizza** e **Dispersão**
@@ -1888,7 +1939,7 @@ A seguinte coleção massiva de 44 recursos foi adicionada a esta atualização:
     - Copie o conteúdo da tabela na área de transferência.
 - Resumo de campo:
     - Suporte para operações adicionais no painel campos: média, desvio padrão e variância
-    - Resumo do padrão: os usuários agora podem personalizar a operação de resumo padrão para qualquer campo determinado em seu modelo
+    - Resumo padrão: os usuários agora podem personalizar a operação de resumo padrão para qualquer campo determinado em seu modelo
 
 ### <a name="data-connectivity"></a>Conectividade de dados
 
@@ -1913,7 +1964,7 @@ A seguinte coleção massiva de 44 recursos foi adicionada a esta atualização:
 - "Atualizar Todas as Visualizações" para atualizar todas as visualizações do Editor de Consultas com um único clique
 - Aprimoramentos de desempenho:
     - Escolher caixa de diálogo Colunas: experiência do usuário mais rápida para lidar com tabelas largas
-    - Filtro automático & Expandir/Agregar pop-ups: mais rápido para um grande número de campos/valores
+    - Pop-ups Filtrar automaticamente e expandir/agregar: mais rápido para o grande número de campos/valores
 
 O vídeo a seguir aborda esses recursos mais detalhadamente.
 
@@ -1969,13 +2020,13 @@ Os seguintes recursos foram adicionados nesta atualização:
 
 -   **Novos Conectores de Dados**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio e SweetIQ.
 
--   **Novas Transformações**: extração da Primeira/Última/Intervalo de caracteres de uma Coluna de Texto; opção para especificar o Tipo de Junção no diálogo Mesclar Consultas; capacidade de personalizar o Estilo de Citação na Coluna de Divisão por diálogo Delimitador.
+-   **Novas transformações**: extração da Primeira/Última/Intervalo de caracteres de uma Coluna de Texto; opção para especificar o Tipo de Junção no diálogo Mesclar Consultas; capacidade de personalizar o Estilo de Citação na Coluna de Divisão por diálogo Delimitador.
 
 -   **Melhorias à Criação de Relatório**: novas visualizações (Gráfico de Área, Cascata, Rosca e Matriz); novas opções de formatação e personalização de visuais (rótulos, títulos, tela de fundo, legenda, cores, etc.); Inserção de Caixa de Texto e Imagem em seu relatório; Suporte a hiperlinks em relatórios e tabelas de relatório; Desfazer/Refazer ações.
 
 -   **Exploração Direta do Relatório** nos modelos de tabela do Analysis Services.
 
--   **Modelagem de Dados:** novas exibições de Dados e Relações.
+-   **Modelagem de dados:** novas exibições de Dados e de Relações.
 
 -   Publicação de relatórios no PowerBI.com, diretamente do Power BI Desktop.
 
@@ -2001,7 +2052,7 @@ Os seguintes recursos foram adicionados nesta atualização:
 
 -   Classificar por outra coluna
 
--   Editor de fórmula DAX aprimorado: funções de ajuda e protótipo
+-   Editor de fórmula DAX aprimorado: protótipo e ajuda de função
 
 **Obter dados e consulta**
 
@@ -2102,7 +2153,7 @@ Os seguintes recursos foram adicionados ou aprimorados nesta atualização:
     -   Recursos de Pesquisa aprimorados na árvore do Navegador
 - Novas Transformações
   -   Operações de Duração e Subtração para colunas de Data/Hora
-  -   Colunas de Agregação: opção de desabilitar o prefixo das novas colunas
+  -   Colunas de agregação: opção de desabilitar o prefixo das novas colunas
 - Aprimoramentos da Lista de Campos
   -   Expandir/Recolher tabelas
   -   Ocultar/Reexibir campos
