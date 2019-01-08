@@ -8,14 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 15f8716a42372cb0a02f88ea37531963e9a0557a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 4d38cf108a4c2e863811cfee68fc2d0b95c1990e
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223296"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056031"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Visuais personalizados no Power BI
 
@@ -149,7 +150,7 @@ Você tem duas opções para baixar e importar os visuais personalizados; de den
 
 5. Selecione o link para baixar o visual personalizado.
 
-    ![Baixar](media/power-bi-custom-visuals/powerbi-custom-download.png)
+    ![Fazer o download](media/power-bi-custom-visuals/powerbi-custom-download.png)
 
     A página de download também inclui instruções sobre como importar o visual personalizado para o Power BI Desktop e para o serviço do Power BI.
 

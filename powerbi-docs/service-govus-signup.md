@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2800eb5b01e8203632ae60c9b304a5ed9ce28b69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670182"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056054"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Registrar sua organização do Governo dos EUA no serviço do Power BI
 O **serviço do Power BI** tem uma versão disponível para clientes do Governo dos Estados Unidos como parte das assinaturas da **Comunidade do Governo dos EUA do Office 365**. A versão do **serviço do Power BI** discutida neste artigo é desenvolvida especificamente para clientes do Governo dos EUA e é separada e diferente da versão comercial do **serviço do Power BI**.
@@ -102,7 +102,7 @@ Se você tiver tanto a licença Gratuita quanto a licença Pro do Governo dos EU
 
 Ao usar uma combinação de licenças Gratuitas e Pro em um locatário do Governo dos EUA e passar pelo processo de *Lista de Permissões*, o seguinte poderá ocorrer:
 
-**Antes do *processo de lista de permissões***:
+**Antes do processo de _lista de permissões_**:
 
 * Os usuários com licenças Gratuitas estão em execução na nuvem comercial
 * As licenças Pro do Governo dos EUA aparecem no portal e o administrador pode atribuir essas licenças aos usuários. Usuários da Pro do Governo dos EUA não perderão dados de suas licenças Gratuitas depois que o administrador atribuir uma licença Pro do Governo dos EUA. Os usuários atribuídos terão acesso aos recursos do Power BI Pro para clientes do Governo dos EUA, mas a seguinte lista de falhas de funcionalidade existirá até que o locatário seja adicionado à *lista de permissões* com êxito:
@@ -112,7 +112,7 @@ Ao usar uma combinação de licenças Gratuitas e Pro em um locatário do Govern
   * Arquivos PBIX devem ser carregados manualmente do serviço do Power BI comercial
   * Os aplicativos móveis do Power BI não estão disponíveis
 
-**Depois do *processo de lista de permissões***:
+**Depois do processo de _lista de permissões_**:
 
 * Usuários gratuitos em execução no serviço do Power BI comercial podem continuar em execução, mas eles deixarão de autenticar conforme o esperado.
 * Os usuários Pro em execução na nuvem do Governo dos EUA podem usar o serviço do **Power BI para clientes do Governo dos EUA** conforme o esperado.

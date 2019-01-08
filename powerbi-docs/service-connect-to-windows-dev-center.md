@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ccb878da983aad493efb2cfdfb0d09366964a157
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 81498dff9c70deaf8135faf244db96509b1cf18d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545419"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008823"
 ---
 # <a name="connect-to-windows-dev-center-with-power-bi"></a>Conectar-se ao Centro de Desenvolvimento do Windows com o Power BI
 Explore e monitore seus dados de análise de aplicativo do Centro de Desenvolvimento do Windows no Power BI com o pacote de conteúdo do Power BI. Os dados serão atualizados automaticamente uma vez por dia.
