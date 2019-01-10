@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 3ad4335cabac159aee38d54fbfff0f689009fd68
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973317"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136589"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Inserir com Web Part de Relatório no SharePoint Online
 
@@ -75,7 +75,7 @@ Para inserir seu relatório no SharePoint Online, primeiro você precisa obter a
 
     ![Relatório do SP carregado](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## <a name="granting-access-to-reports"></a>Conceder acesso aos relatórios
+## <a name="grant-access-to-reports"></a>Conceder acesso aos relatórios
 
 Incorporar um relatório ao SharePoint Online automaticamente não dá aos usuários permissão para exibir o relatório. As permissões para exibir o relatório são definidas dentro do serviço do Power BI.
 
@@ -152,7 +152,7 @@ Os usuários que exibem um relatório no SharePoint precisam de uma **licença d
 
 ## <a name="known-issues-and-limitations"></a>Limitações e problemas conhecidos
 
-* Erro: "Ocorreu um erro, tente sair e entrar e, em seguida, visite esta página novamente. ID de correlação: status de resposta HTTP indefinido: 400, código 10001 de erro servidor, mensagem: token de atualização ausente"
+* Erro: "Ocorreu um erro, tente sair, entrar outra vez e visitar esta página novamente. ID da correlação: indefinido, status de resposta http: 400, código de erro do servidor 10001, mensagem: Atualização de token ausente"
   
   Se você receber esse erro, tente uma das etapas de solução de problemas abaixo.
   
@@ -174,9 +174,10 @@ Os usuários que exibem um relatório no SharePoint precisam de uma **licença d
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Permitir ou impedir a criação de páginas de sites modernas pelos usuários finais](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md)  
-[Compartilhar um painel com seus colegas e com outras pessoas](service-share-dashboards.md)  
-[O que é o Power BI Premium?](service-premium.md)  
+* [Permitir ou impedir a criação de páginas de sites modernas pelos usuários finais](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Criar e distribuir um aplicativo no Power BI](service-create-distribute-apps.md)  
+* [Compartilhar um painel com seus colegas e com outras pessoas](service-share-dashboards.md)  
+* [O que é o Power BI Premium?](service-premium.md)
+* [Inserir o relatório em um site ou portal seguro](service-embed-secure.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
