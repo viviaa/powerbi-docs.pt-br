@@ -11,30 +11,32 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: d9cf6255cfa57790c13ee1fc9d3201860552863b
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026812"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072349"
 ---
 # <a name="using-auditing-within-your-organization"></a>Usando a auditoria dentro da sua organização
 
 Saber quem está executando uma ação em qual item em seu locatário do Power BI pode ser essencial para ajudar a organização a atender seus requisitos, como gerenciamento de registros e conformidade regulamentar. Use a auditoria do Power BI para auditar as ações executadas pelos usuários, como "Exibir Relatório" e "Exibir Dashboard". Você não pode usar a auditoria para auditar permissões.
 
-Trabalhe com a auditoria no Centro de Conformidade e Segurança do Office 365 ou use o PowerShell. Abordaremos as duas opções neste artigo. Você pode filtrar os dados de auditoria por intervalo de datas, usuário, dashboard, tipo de relatório, conjunto de dados e tipo de atividade. Você também pode baixar as atividades em um arquivo csv (valores separados por vírgula) para analisar offline.
+Trabalhe com a auditoria no Centro de Conformidade e Segurança do Office 365 ou use o PowerShell. A auditoria conta com a funcionalidade no Exchange Online, que é provisionado automaticamente para dar suporte ao Power BI.
+
+Você pode filtrar os dados de auditoria por intervalo de datas, usuário, dashboard, tipo de relatório, conjunto de dados e tipo de atividade. Você também pode baixar as atividades em um arquivo csv (valores separados por vírgula) para analisar offline.
 
 ## <a name="requirements"></a>Requisitos
 
 Você deve atender a esses requisitos para acessar logs de auditoria:
 
-- Para acessar a seção de auditoria do Centro de Conformidade e Segurança do Office 365, você deve ter uma licença do Exchange Online (incluída nas assinaturas do Office 365 Enterprise E3 e E5).
+* Você deve ser um administrador global ou ser atribuído à função de Logs de Auditoria ou Logs de Auditoria Somente para Exibição no Exchange Online para acessar o log de auditoria. Por padrão, essas funções são atribuídas a grupos de funções de Gerenciamento de Conformidade e Gerenciamento de Organização na página **Permissões**, no centro de administração do Exchange.
 
-- Você deve ser um administrador global ou ter uma função de administrador do Exchange que fornece acesso ao log de auditoria. As funções de administrador do Exchange são controladas por meio do centro de administração do Exchange. Para obter mais informações, veja [Permissões no Exchange Online](/exchange/permissions-exo/permissions-exo/).
+    Para fornecer contas não pertencentes ao administrador com acesso ao log de auditoria, você deve adicionar o usuário como um membro de um desses grupos de função. Como alternativa, crie um grupo de função personalizada no centro de administração do Exchange, atribua a função de Logs de Auditoria ou Logs de Auditoria Somente para Exibição a esse grupo e, em seguida, adicione a conta de não administrador para o novo grupo de função. Para obter mais informações, veja [Gerenciar grupos de função no Exchange Online](/Exchange/permissions-exo/role-groups).
 
-- Se você tiver acesso ao log de auditoria, mas não for um administrador global ou administrador de serviço do Power BI, você não terá acesso ao portal de administração do Power BI. Nesse caso, você deve obter um link direto para o [Centro de Conformidade e Segurança do Office 365](https://sip.protection.office.com/#/unifiedauditlog).
+    Se você não conseguir acessar o centro de administração do Exchange no centro de administração do Office 365, vá para https://outlook.office365.com/ecp e entre usando suas credenciais.
 
-- Para exibir logs de auditoria para o Power BI em seu locatário, você precisará de pelo menos uma licença de caixa de correio do Exchange em seu locatário.
+* Se você tiver acesso ao log de auditoria, mas não for um administrador global ou administrador de serviço do Power BI, você não terá acesso ao portal de administração do Power BI. Nesse caso, você deve usar um link direto para o [Centro de Conformidade e Segurança do Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
 ## <a name="accessing-your-audit-logs"></a>Acesso a logs de auditoria
 
@@ -51,8 +53,6 @@ Os logs de auditoria do Power BI estão disponíveis diretamente no [Centro de C
 1. Selecione **Ir para o Centro de Administração do O365**.
 
    ![Acessar o Centro de Administração do O365](media/service-admin-auditing/audit-log-o365-admin-center.png)
-
-Para fornecer acesso ao log de auditoria a contas que não são de administrador, atribua permissões no Centro de Administração do Exchange Online. Por exemplo, você pode atribuir um usuário a um grupo de função existente, como o gerenciamento de organização, ou você pode criar um novo grupo de função com a função de Logs de Auditoria. Para obter mais informações, veja [Permissões no Exchange Online](/exchange/permissions-exo/permissions-exo/).
 
 ## <a name="search-only-power-bi-activities"></a>Pesquisar somente as atividades do Power BI
 
@@ -119,9 +119,7 @@ Para exportar o log de auditoria do Power BI para um arquivo csv, execute estas 
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Usar o PowerShell para pesquisar logs de auditoria
 
-Você também pode usar o PowerShell para acessar os logs de auditoria com base em seu logon. O exemplo a seguir mostra como usar o comando [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) para efetuar o pull de entradas de log de auditoria do Power BI.
-
-Para usar o comando [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession/), sua conta precisa ter uma licença do Exchange Online atribuída, e você precisa ter acesso ao log de auditoria do seu locatário. Para obter mais informações sobre como se conectar ao Exchange Online, consulte [Conectar ao Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/).
+Você também pode usar o PowerShell para acessar os logs de auditoria com base em seu logon. O exemplo a seguir mostra como conectar-se ao Exchange Online PowerShell e então usar o comando [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) para efetuar o pull de entradas de log de auditoria do Power BI. Para executar o script, você precisa ter as permissões apropriadas, conforme descrito na seção [Requisitos](#requirements).
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -134,7 +132,7 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-Para ver outro exemplo de como usar o PowerShell com os logs de auditoria, confira [Usar o log de auditoria do Power BI e o PowerShell para atribuir licenças do Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
+Para obter mais informações sobre como se conectar ao Exchange Online, confira [Conectar ao Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Para ver outro exemplo de como usar o PowerShell com os logs de auditoria, confira [Usar o log de auditoria do Power BI e o PowerShell para atribuir licenças do Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## <a name="activities-audited-by-power-bi"></a>Atividades auditadas pelo Power BI
 

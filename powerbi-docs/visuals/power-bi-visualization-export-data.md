@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 8d79d92577da25a316eba8e789a1b7b004a9967a
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983751"
 ---
 # <a name="export-data-from-visualizations"></a>Exportar dados de uma visualização
-Se desejar ver os dados usados para criar uma visualização, você poderá exibi-los no Power BI ou exportá-los para o Excel como um arquivo .xlsx ou .csv. A opção de exportação de dados requer uma licença Pro ou Premium e a edição de permissões para o conjunto de dados e o relatório. 
+Se desejar ver os dados usados para criar uma visualização, [você poderá exibi-los no Power BI](service-reports-show-data.md) ou exportá-los para o Excel como um arquivo .xlsx ou .csv. A opção de exportação de dados requer uma licença Pro ou Premium e a edição de permissões para o conjunto de dados e o relatório. 
 
 Assista a Will exportar os dados de uma das visualizações de seu relatório, salvá-los como um arquivo .xlsx e abri-los no Excel. Em seguida, siga as instruções passo a passo abaixo do vídeo para testá-la por conta própria.
 
@@ -38,7 +38,7 @@ Assista a Will exportar os dados de uma das visualizações de seu relatório, s
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>De uma visualização em um relatório
-Para continuar, abra o [Relatório de exemplo de análise de aquisições](../sample-procurement.md) no [Modo de Exibição de Edição](../consumer/end-user-reading-view.md). Adicionar uma nova página de relatório em branco. Em seguida, siga as etapas abaixo para adicionar uma agregação e um filtro de nível de visualização.
+Para continuar, abra o [Relatório de exemplo de análise de compras](../sample-procurement.md) no Modo de Exibição de Edição. Adicionar uma nova página de relatório em branco. Em seguida, siga as etapas abaixo para adicionar uma agregação e um filtro de nível de visualização.
 
 1. Criar um novo gráfico de coluna.  No painel Campos, selecione **Localização > Cidade** e **Fatura > Porcentagem de Desconto**.  Talvez você precise mover a **Porcentagem de desconto** para o valor também. 
 
@@ -55,7 +55,7 @@ Para continuar, abra o [Relatório de exemplo de análise de aquisições](../sa
 4. Selecione as elipses no canto superior direito da visualização. Escolha  **Exportar dados**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. No Power BI online, se a sua visualização tem uma agregação (um exemplo seria se você alterou **Contagem** para *média*, *soma* ou *mínimo*), você terá duas opções: **Dados resumidos** e **Dados subjacentes**. No Power BI Desktop, você terá apenas a opção para **Dados resumidos**. Para entender melhor as agregações, consulte [Agregações no Power BI](../service-aggregates.md).
+5. No Power BI online, se a visualização tiver uma agregação (um exemplo seria a alteração de **Contagem** para *média*, *soma* ou *mínimo*), haverá duas opções: **Dados resumidos** e **Dados subjacentes**. No Power BI Desktop, você terá apenas a opção para **Dados resumidos**. Para entender melhor as agregações, consulte [Agregações no Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Selecione **Dados resumidos** > **Exportar** e escolha .xlsx ou .csv. O Power BI exporta os dados.  Se você aplicou filtros à visualização, os dados serão exportados da maneira que foram filtrados. Ao selecionar **Exportar**, o navegador solicitará que você salve o arquivo. Após salvá-lo, abra o arquivo no Excel.
 
@@ -129,9 +129,6 @@ Você também pode atualizar essa configuração no serviço do Power BI. 
   2. Na guia **Dados**, selecione **Obter dados externos** > **De texto**.
 * Administradores do Power BI têm a capacidade de desabilitar a exportação de dados.
 
-## <a name="next-steps"></a>Próximas etapas
-[Dashboards no Power BI](../consumer/end-user-dashboards.md)  
-[Power BI – conceitos básicos](../consumer/end-user-basic-concepts.md)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

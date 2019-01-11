@@ -7,25 +7,25 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: 55f592101954ae5c0724fb5b48fb2571a1bdfc51
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983682"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Criar workspaces com seus colegas no Power BI
 
-No Power BI, é possível criar *workspaces*, lugares para colaborar com colegas para criar e refinar coleções de dashboards e de relatórios. Em seguida, agrupe-os em *aplicativos* que podem ser distribuídos para toda a sua organização ou para pessoas ou grupos específicos. 
+No Power BI, é possível criar *workspaces*, lugares para colaborar com colegas para criar e refinar coleções de dashboards e de relatórios. Em seguida, você agrupa a coleção em *aplicativos* que podem ser distribuídos para toda a organização ou para pessoas ou grupos específicos. 
 
 ![Aplicativos do Power BI](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
-Quando você cria um workspace, você está criando um grupo do Office 365 associado e subjacente. Toda a administração do espaço de trabalho é feita no Office 365. Você pode adicionar colegas a esses workspaces como membros ou administradores. No workspace, todos podem colaborar em dashboards, relatórios e outros artigos que queiram distribuir para um público maior. Todos que você adicionar a um workspace de aplicativo precisam de uma licença do Power BI Pro. 
+Quando você cria um workspace, você está criando um grupo do Office 365 associado e subjacente. Toda a administração do espaço de trabalho é feita no Office 365. Você pode adicionar colegas a esses workspaces como membros ou administradores. No workspace, todos podem colaborar em dashboards, relatórios e outros artigos que você planeja distribuir para um público-alvo maior. Todos que você adicionar a um workspace de aplicativo precisam de uma licença do Power BI Pro. 
 
-**Você sabia?** O Power BI está com uma nova experiência de workspace em versão prévia. Leia [Criar os novos workspaces (versão prévia)](service-create-the-new-workspaces.md) para ver como os workspaces mudarão no futuro. 
+**Você sabia?** O Power BI está com uma nova experiência de workspace em versão prévia. Leia [Organizar o trabalho em novos workspaces (versão prévia)](service-new-workspaces.md) para obter detalhes sobre os novos workspaces. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Vídeo: Aplicativos e workspaces de aplicativo
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -73,7 +73,7 @@ Após criar um workspace de aplicativo, será hora de adicionar conteúdo a ele.
 
 Os aplicativos são fornecidos para todos os serviços de terceiros com os quais o Power BI é compatível, tornando fácil para você obter dados dos serviços usados, como o Microsoft Dynamics CRM, Salesforce ou Google Analytics. É possível publicar aplicativos organizacionais para dar aos seus usuários os dados de que precisam.
 
-Nos workspaces atuais, também é possível conectar usando pacotes de conteúdo organizacional e pacotes de conteúdo de terceiros, como o Microsoft Dynamics CRM, Salesforce ou Google Analytics. Considere migrar seus pacotes de conteúdo organizacional para aplicativos.
+Nos workspaces atuais, também é possível conectar usando pacotes de conteúdo organizacional e pacotes de conteúdo de terceiros, como o Microsoft Dynamics CRM, o Salesforce ou o Google Analytics. Considere migrar seus pacotes de conteúdo organizacional para aplicativos.
 
 ## <a name="distribute-an-app"></a>Distribuir um aplicativo
 
@@ -84,12 +84,12 @@ Quando o conteúdo estiver pronto, escolha quais dashboards e relatórios você 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Qual a diferença entre os aplicativos e os pacotes de conteúdo organizacional?
 Os aplicativos são a evolução dos pacotes de conteúdo organizacional. Se você já tem pacotes de conteúdo organizacional, eles continuarão a funcionar lado a lado com os aplicativos. Aplicativos e pacotes de conteúdo têm poucas diferenças importantes. 
 
-* Depois que os usuários corporativos instalam um pacote de conteúdo, ele perde sua identidade agrupada: transforma-se apenas em uma lista de dashboards e relatórios intercalados com outros dashboards e relatórios. Os aplicativos, por outro lado, mantêm o agrupamento e a identidade, mesmo após a instalação. Isso facilita para que os usuários corporativos continuem a acessá-los ao longo do tempo.
+* Depois que os usuários corporativos instalam um pacote de conteúdo, ele perde sua identidade agrupada: transforma-se apenas em uma lista de dashboards e relatórios intercalados com outros dashboards e relatórios. Os aplicativos, por outro lado, mantêm o agrupamento e a identidade, mesmo após a instalação. Esse agrupamento facilita o acesso a eles ao longo do tempo para os usuários empresariais.
 * Você pode criar vários pacotes de conteúdo de qualquer workspace, mas um aplicativo tem uma relação de 1:1 com seu workspace. 
 * Ao longo do tempo, pretendemos descontinuar os pacotes de conteúdo organizacional, portanto, é recomendável que você crie aplicativos de agora em diante.  
-* Com a nova versão prévia de experiência de workspace, seguiremos as primeiras etapas para preterir os pacotes de conteúdo organizacional. Não é possível consumi-los ou criá-los nos workspaces de versão prévia.
+* Com a versão prévia da nova experiência de workspace, estamos dando os primeiros passos para preterir os pacotes de conteúdo organizacional. Não é possível consumi-los ou criá-los nos workspaces de versão prévia.
 
-Consulte [How are the new app workspaces different from existing app workspaces?](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) (Como os novos workspaces de aplicativo são diferentes dos workspaces de aplicativo existentes?) para comparar os workspaces de aplicativo atuais e novos. 
+Confira [Em que aspectos os novos workspaces de aplicativo são diferentes dos workspaces existentes?](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces) para comparar os dois. 
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Instalar e usar aplicativos no Power BI](service-create-distribute-apps.md)

@@ -8,13 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/26/2018
-ms.openlocfilehash: 9ef7890c6f80845a9e6d1bd02e35778ed866ff54
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 2b7a71baafd8ec2ef839aaca95529221c642357f
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332059"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072165"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Diretrizes para visuais do Power BI com compras adicionais
 
@@ -59,6 +60,10 @@ Use a página de aterrissagem para esclarecer aos usuários como eles podem usar
 ### <a name="license-key-and-token"></a>Token e a chave de licença
 
 Para conveniência do usuário, adicione campos relacionados de chave de licença ou token na parte superior do painel de formato para que eles estejam melhor localizados para os usuários.
+
+## <a name="faq"></a>PERGUNTAS FREQUENTES
+
+Para saber mais e solucionar suas dúvidas, acesse [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases) (Perguntas frequentes sobre os visuais com compras adicionais).
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: ae0126c6242508a551e094d3e40a57e7e6868ab3
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983866"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
@@ -39,7 +39,7 @@ Agora, quando existe um layout de relatório de telefone, ele é usado para exib
 
 ### <a name="supporting-report-query-string"></a>Suporte a cadeia de caracteres de consulta de relatório 
 
-O link de abertura do relatório que inclui a cadeia de caracteres de consulta agora será aberto no aplicativo móvel e será filtrado previamente com base nas condições definidas na cadeia de caracteres de consulta. Saiba mais sobre [como criar a URL de relatório com a cadeia de caracteres de consulta](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+O link de abertura do relatório que inclui a cadeia de consulta agora será aberto no aplicativo móvel e será filtrado previamente com base nas condições definidas na cadeia de consulta. Saiba mais sobre [como criar a URL de relatório com a cadeia de caracteres de consulta](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Credenciais compartilhadas (agora no Android)
 

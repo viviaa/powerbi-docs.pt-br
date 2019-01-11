@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 909e15fa843df3f87e1cdfa25b45f60996b3dca0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4ad7ce28c512f69e144af98098ab9f13a15b6023
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545672"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008616"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Conectar-se ao Marketo com o Power BI
 O pacote de conteúdo do Power BI para o Marketo permite que você obtenha informações sobre sua conta do Marketo com dados sobre clientes potenciais e suas atividades. A criação dessa conexão recupera seus dados e fornece automaticamente um painel e relatórios relacionados com base nesses dados.
@@ -59,7 +59,7 @@ Os dados a seguir estão disponíveis no Marketo no Power BI em que a atividade 
 | Nome da tabela | Descrição |
 | --- | --- |
 | EmailActivities |Dados de email enviados aos clientes potenciais/contatos, com detalhes sobre dispositivos, categorias, contagem e percentual retornados, contagem e percentual clicados, contagem e percentual abertos e nome do programa. As Atividades de Email, como mostrado no Power BI, tratam-se de um relatório absoluto de entrega de emails, que não aplica nenhuma lógica adicional aos dados. Por conta disso, você pode ver alguns resultados diferentes entre o cliente do Marketo e o Power BI. |
-| ProgramActivites |Dados em programas que tiveram uma alteração de Status. Isso inclui detalhes como: Razão, Sucesso, Percentual e contagem de aquisição de programa, Percentual e contagem de êxito do programa. |
+| ProgramActivites |Dados em programas que tiveram uma alteração de Status. Isso inclui detalhes como: Motivo, Sucesso, Contagem e percentual de compra de programa e Contagem e percentual de êxitos do programa. |
 | WebPageActivities |Dados de visitas do usuário a páginas da Web, incluindo agente de pesquisa, agente do Usuário, página da Web e hora do dia. |
 | Datetable |Datas do ano passado e atuais.  Permite que você analise seus dados do Marketo por data. |
 | Clientes potenciais |Informações de clientes potenciais como empresa, tamanho da receita, número de funcionários, país, setor, pontuação e status de Cliente Potencial. Os clientes potenciais são coletados com base na sua presença nos dados de atividades de email, programas e páginas da Web. |
@@ -90,5 +90,5 @@ A quantidade de chamadas de API que o Power BI realiza para o Marketo depende da
 
 [Obter dados para o Power BI](service-get-data.md)
 
-[Blog do Power BI: Monitore e analise os dados do Marketo com o Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/19/monitor-and-analyze-your-marketo-data-with-power-bi.aspx)
+[Blog do Power BI: Monitor and analyze your Marketo data with Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/03/19/monitor-and-analyze-your-marketo-data-with-power-bi.aspx) (Monitorar e analisar os dados da Marketo com o Power BI)
 

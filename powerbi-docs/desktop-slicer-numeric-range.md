@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f997ee7574c5dd9dc6b4d28767d599a97bf297ed
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a2402872744b3029e37bf49eaaeae27a3ad95734
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983613"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Usar a segmentação de intervalo numérico no Power BI Desktop
 Com a **segmentação de intervalo numérico**, você pode aplicar todos os tipos de filtros a qualquer coluna numérica no modelo de dados. Você pode optar por filtrar como **entre** números, **menor ou igual** a um número ou **maior ou igual** a um número. Embora possa parecer simples, essa é uma maneira muito eficiente de filtrar os dados.
@@ -54,6 +54,14 @@ Por fim, se selecionarmos **maior ou igual a**, a alça da barra de controle des
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Ajustar para números inteiros com a segmentação de intervalo numérico
 
 Uma segmentação de intervalo numérico será ajustada para números inteiros se o tipo de dados do campo subjacente for um **Número Inteiro**. Isso permite que a segmentação se alinhe corretamente com números inteiros. Os campos de tipo **Número Decimal** permitem que você insira ou selecione frações de um número. A formatação aplicada na caixa de texto corresponde ao conjunto de formatação no campo, mesmo que seja possível digitar ou selecionar números mais precisos.
+
+## <a name="display-formatting-with-the-date-range-slicer"></a>Exibir a formatação com a segmentação de intervalo de datas
+
+Ao usar uma segmentação para exibir ou definir um intervalo de datas, o formato da data será sempre exibido usando o formato **Data Abreviada**, com base na localidade do navegador ou do sistema operacional do usuário. Este é o formato de exibição, independentemente das configurações de tipo de dados do modelo ou dos dados subjacentes. 
+
+Por exemplo, é possível usar um formato de data por extenso para o tipo de dados subjacente (como *dddd, MMMM d, aaaa* que formataria uma data em outros visuais ou circunstâncias como *Quarta-feira, 14 de março de 2001*), mas na segmentação de intervalo de datas essa data seria exibida na segmentação como *14/03/2001*.
+
+A exibição do formato **Data Abreviada** na segmentação garante que o comprimento da cadeia de caracteres permaneça consistente e compacto na segmentação. 
 
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações

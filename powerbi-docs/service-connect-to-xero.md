@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 98250e30d1ca944aa536e0d8a05e6ee6c227fc61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87e2ff9bf8e4eb87b4b915492bf8cfa4a97a9150
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546731"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008846"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Conectar-se ao Xero com o Power BI
 O Xero é um software de contabilidade online fácil de usar, criado especificamente para pequenas empresas. Crie visualizações interessantes com base em seus dados financeiros do Xero com este pacote de conteúdo do Power BI. O dashboard padrão inclui várias métricas de pequenas empresas, como posição de caixa, receita versus despesas, tendência de perda de lucros, períodos médios de cobrança e retorno sobre o investimento.
@@ -81,7 +81,7 @@ O conjunto de dados também inclui as seguintes tabelas para personalizar seus r
 * Contas do Xero
 
 ## <a name="system-requirements"></a>Requisitos de sistema
-As seguintes funções são necessárias para acessar o pacote de conteúdo do Xero: “Padrão + Relatórios” ou “Supervisor”.
+As funções a seguir são necessárias para acessar o pacote de conteúdo do Xero: "Padrão + Relatórios" ou "Supervisor".
 
 <a name="FindingParams"></a>
 
@@ -89,7 +89,7 @@ As seguintes funções são necessárias para acessar o pacote de conteúdo do X
 Forneça um nome para sua organização para acompanhá-la no Power BI. Isso permite que você se conecte a várias organizações diferentes. Observe que não é possível se conectar à mesma empresa várias vezes, pois isso afeta a atualização agendada.   
 
 ## <a name="troubleshooting"></a>Solução de problemas
-* Os usuários do Xero devem ter as funções a seguir para acessar o pacote de conteúdo do Xero para o Power BI: “Padrão + Relatórios” ou “Supervisor”. O pacote de conteúdo depende das permissões baseadas no usuário para acessar os dados de relatórios por meio do Power BI.  
+* Os usuários do Xero precisam ter as seguintes funções para acessar o pacote de conteúdo do Xero para o Power BI: "Padrão + Relatórios" ou "Supervisor". O pacote de conteúdo depende das permissões baseadas no usuário para acessar os dados de relatórios por meio do Power BI.  
 * Se você receber uma falha após o carregamento por algum tempo, verifique quanto tempo demorou para ver a mensagem de erro. Observe que o token de acesso fornecido pelo Xero só é válido por 30 minutos. Portanto, as contas com mais dados do que pode ser carregado no período de tempo apresentarão falha. Estamos trabalhando ativamente para resolver esse problema.
 * Durante o carregamento, os blocos no dashboard estarão em um estado de carregamento genérico. Isso não deve alterar até que o carregamento completo seja concluído. Se você receber uma notificação de que o carregamento foi concluído, mas os blocos ainda estão carregando, tente atualizar os blocos do dashboard usando ... na parte superior direita do dashboard.
 * Caso seu pacote de conteúdo não seja atualizado, verifique se você se conectou à mesma organização mais de uma vez no Power BI. O Xero permite apenas uma única conexão ativa a uma organização e você pode ver um erro indicando que suas credenciais serão inválidas se você se conectar à mesma organização mais de uma vez.  

@@ -1,5 +1,5 @@
 ---
-title: Visualizações personalizadas no Power BI
+title: Visuais personalizados no Power BI
 description: Visualizações personalizadas no Power BI
 author: markingmyname
 ms.author: maghan
@@ -8,30 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4d38cf108a4c2e863811cfee68fc2d0b95c1990e
-ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
+ms.openlocfilehash: 0d634d7fc7753f7aaaf7d7118cfad1ab90b6e82a
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54056031"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072234"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Visuais personalizados no Power BI
 
-Ao criar ou editar um relatório do Power BI, há muitos tipos diferentes de visuais disponíveis para uso. Esses visuais são exibidos no painel **Visualizações**. Quando você baixar o Power BI Desktop ou abrir o serviço do Power BI (app.powerbi.com), esse conjunto de visuais é "predefinido".
+Ao criar ou editar um relatório do Power BI, há muitos tipos diferentes de visuais disponíveis para uso. Esses visuais são exibidos no painel **Visualizações**. Quando você baixar o [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) ou abrir o [serviço do Power BI](https://app.powerbi.com), esse conjunto de visuais será "predefinido".
 
 ![visualizações](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Mas você não está limitado a esse conjunto de visuais, selecionar reticências abre outra origem de visuais do relatório: *visuais personalizados*.
+Mas você não está limitado a esse conjunto de visuais, selecionar reticências abre outra fonte de visuais do relatório: *visuais personalizados*.
 
 Os elementos visuais personalizados são criados por desenvolvedores usando os SDK personalizados a fim de permitir que os usuários vejam os dados de maneira que melhor se adapte ao seu negócio. Os autores do relatório podem, em seguida, importar os arquivos visuais personalizados para seus relatórios e usá-los como quaisquer outros elementos visuais do Power BI. Os visuais personalizados têm uma importância especial no Power BI e podem ser filtrados, realçados, editados, compartilhados etc.
 
 Os visuais personalizados podem estar na forma de três canais de implantação:
 
 * Arquivos de elementos visuais personalizados
-* Elementos visuais da organização
+* Elementos visuais organizacionais
 * Elementos visuais do Marketplace
 
 ## <a name="custom-visual-files"></a>Arquivos de elementos visuais personalizados
@@ -41,7 +40,7 @@ Os elementos visuais personalizados são pacotes que incluem o código para rend
 > [!WARNING]
 > Um visual personalizado pode conter código com riscos de segurança ou privacidade; verifique se você confia no autor e a fonte do visual personalizado antes de importá-lo em seu relatório.
 
-## <a name="organization-visuals"></a>Visuais da organização
+## <a name="organizational-visuals"></a>Elementos visuais organizacionais
 
 Os administradores do Power BI podem implantar visuais personalizados em sua organização, para que os autores do relatório possam descobrir e usar com facilidade os elementos visuais personalizados que o administrador aprovou para usar dentro da organização. Dessa maneira, o administrador terá o controle para escolher os visuais personalizados específicos para implantar na organização, bem como um modo fácil de gerenciar (por exemplo, atualizar versão, habilitar/desabilitar) os visuais. Para o autor do relatório, é uma maneira fácil de descobrir elementos visuais que são exclusivos para a organização, bem como um suporte contínuo para atualizar esses elementos.
 
@@ -74,7 +73,7 @@ Você é um desenvolvedor da Web e está interessado em criar suas próprias vis
 
     ![currículo importado](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### <a name="import-organization-visuals"></a>Importar elementos visuais da organização
+### <a name="import-organizational-visuals"></a>Importar elementos visuais organizacionais
 
 1. Selecione as reticências na parte inferior do painel de Visualizações.
 
@@ -132,7 +131,7 @@ Você tem duas opções para baixar e importar os visuais personalizados; de den
 
 ### <a name="download-and-import-custom-visuals-from-microsoft-appsource"></a>Baixar e importar visuais personalizados do Microsoft AppSource
 
-1. Inicie em [Microsoft AppSource](https://appsource.microsoft.com) e selecione a guia para **Aplicativos**. 
+1. Inicie em [Microsoft AppSource](https://appsource.microsoft.com) e selecione a guia para **Aplicativos**.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
@@ -175,5 +174,9 @@ Para saber mais sobre a solução de problemas, acesse [Troubleshooting your Pow
 ## <a name="faq"></a>PERGUNTAS FREQUENTES
 
 Para saber mais e solucionar suas dúvidas, acesse [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals) (Perguntas frequentes sobre os visuais personalizados do Power BI).
+
+## <a name="next-steps"></a>Próximas etapas
+
+* [Visualizações no Power BI](visuals/power-bi-report-visualizations.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/).

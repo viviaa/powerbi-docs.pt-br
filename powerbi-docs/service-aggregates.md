@@ -1,24 +1,24 @@
 ---
-title: Agregações (soma, média, máximo, etc.) em visualizações
-description: Alterar a agregação em um gráfico (soma, média, máximo, etc.) no Power BI
+title: Trabalhar com agregações (soma, média etc.) no serviço do Power BI
+description: Saiba como alterar a agregação em um gráfico (soma, média, máximo etc.) no serviço do Power BI.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983705"
 ---
-# <a name="aggregates-in-power-bi-visualizations"></a>Agregações em visualizações do Power BI
+# <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Trabalhar com agregações (soma, média etc.) no serviço do Power BI
 ## <a name="what-is-an-aggregate"></a>O que é uma agregação?
 Às vezes, você deseja combinar matematicamente valores nos dados. A operação matemática pode ser soma, média, máximo, contagem etc. Quando você combina valores nos dados, isso é chamado de *agregação*. O resultado dessa operação matemática é um *agregado*. 
 
@@ -70,16 +70,16 @@ Digamos que você tenha um gráfico que soma as unidades vendidas para produtos 
 
 Algumas das opções que podem estar disponíveis para um campo de agregação:
 
-* **Não resumir**. Com essa opção escolhida, cada valor nesse campo é tratada separadamente e não resumida. Isso geralmente é usado se você tiver uma coluna de ID numérica que não deve ser somada.
-* **Soma**. Isso adiciona todos os valores nesse campo para cima.
+* **Não resumir**. Com essa opção escolhida, cada valor nesse campo é tratada separadamente e não resumida. Use essa opção se você tiver uma coluna de ID numérica que não deva ser somada.
+* **Soma**. Adiciona todos os valores nesse campo.
 * **Média**. Usa uma média aritmética dos valores.
 * **Mínimo**. Mostra o menor valor.
 * **Máximo**. Mostra o maior valor.
-* **Contagem (Não em branco).** Isso conta o número de valores no campo que não está em branco.
-* **Contagem (Distinto).** Isso conta o número de valores diferentes no campo.
+* **Contagem (Não em branco).** Conta o número de valores nesse campo que não estão em branco.
+* **Contagem (Distinto).** Conta o número de valores diferentes nesse campo.
 * **Desvio padrão.**
 * **Variação**.
-* **Mediana**.  Mostra o valor mediano (meio). Esse é o valor que tem o mesmo número de itens acima e abaixo.  Se houver duas medianas, o Power BI obterá suas médias.
+* **Mediana**.  Mostra o valor mediano (meio). Esse valor tem o mesmo número de itens acima e abaixo.  Se houver duas medianas, o Power BI obterá suas médias.
 
 Por exemplo, esses dados:
 
@@ -109,7 +109,7 @@ Daria os seguintes resultados:
 ## <a name="create-an-aggregate-using-a-category-text-field"></a>Criar uma agregação usando um campo de categoria (texto)
 Você também pode agregar um campo não numérico. Por exemplo, se tiver um campo de nome do produto, poderá adicioná-lo como um valor e, em seguida, defini-lo como **Contagem**, **Contagem distinta**, **Primeiro** ou **Último**. 
 
-1. Neste exemplo, arrastamos o campo **Produto** para o contêiner Valores. O contêiner Valores normalmente é usado para campos numéricos. O Power BI reconhece que isso é um campo de texto, define a agregação como **Não resumir** e apresenta uma tabela de coluna única.
+1. Neste exemplo, arrastamos o campo **Produto** para o contêiner Valores. O contêiner Valores normalmente é usado para campos numéricos. O Power BI reconhece que esse campo é um campo de texto, define a agregação como **Não resumir** e apresenta uma tabela de coluna única.
    
    ![Campo Produto no contêiner Valores](media/service-aggregates/power-bi-aggregate-value.png)
 2. Se alterarmos a agregação do padrão **Não resumir** para **Contagem (Distinta)**, o Power BI contará o número de diferentes produtos. Nesse caso, há 4.
@@ -141,11 +141,11 @@ R4:  E uma terceira possibilidade é que você está usando o campo para um eixo
 >[!NOTE]
 >A exceção a essa regra são os gráficos de dispersão, que *exigem* valores agregados para os eixos X e Y.
 
-P:  Por que não é possível agregar campos de texto para fontes de dados SSAS?
+P:  Por que não é possível agregar campos de texto de fontes de dados do SSAS (SQL Server Analysis Services)?
 
-R:  As conexões dinâmicas para SSAS MD não permitem nenhuma agregação do lado do cliente. Isso inclui primeiro, último, méd., mín., máx. e soma.
+R:  As conexões dinâmicas com modelos multidimensionais do SSAS não permitem nenhuma agregação do lado do cliente, incluindo primeiro, último, média, mínimo, máximo e soma.
 
-P:  Tenho um gráfico de dispersão e *não* quero que meu campo seja agregado.  Como faço isso?
+P:  Tenho um gráfico de dispersão e *não* quero que meu campo seja agregado.  Como posso fazer isso?
 
 R:  Adicione o campo ao bucket **Detalhes** e não aos buckets dos eixos X ou Y.
 

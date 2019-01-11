@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548248"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008570"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Conectar-se ao Salesforce com o Power BI
 Com o Power BI, você pode se conectar facilmente à sua conta do Salesforce.com. A criação dessa conexão recupera os dados, além de fornecer automaticamente um painel e relatórios relacionados com base nesses dados.
@@ -80,7 +80,7 @@ Se você encontrar algum erro, examine os requisitos acima. Observe também que 
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>Mensagem "Não é possível conectar ao servidor remoto"
 
-Se você receber uma mensagem "Não é possível conectar ao servidor remoto" ao tentar se conectar à sua conta do Salesforce, confira esta solução no Fórum do Outsystems: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&) (Mensagem de erro ao fazer logon no Salesforce Connector: Não é possível conectar ao servidor remoto)
+Se você receber uma mensagem "Não é possível se conectar ao servidor remoto" ao tentar se conectar à sua conta do Salesforce, confira esta solução no fórum do Outsystems: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&) (Mensagem de erro de entrada no conector do Salesforce: Não é possível se conectar ao servidor remoto)
 
 
 ## <a name="next-steps"></a>Próximas etapas
