@@ -25,7 +25,7 @@ Para habilitar P e R para interpretar com êxito a coleção de perguntas a qual
 > [!NOTE]
 > As P e R estarão disponíveis apenas ao trabalhar com um modelo que contenha dados **importados**. Não há suporte para conexões dinâmicas com modelos SSAS e DirectQuery.
 >
-> P e R exigem a seguinte atualização do tempo de execução do C, quando você está usando uma versão do Windows anterior ao Windows 10. Você pode tentar instalar atualizações importantes do Windows Update ou instalar o componente necessário da Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+> P e R exigem a seguinte atualização do tempo de execução do C, quando você está usando uma versão do Windows anterior ao Windows 10. Você pode tentar instalar atualizações importantes do Windows Update ou instalar o componente necessário da Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 >
 >
 
