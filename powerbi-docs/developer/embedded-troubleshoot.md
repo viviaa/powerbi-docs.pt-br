@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 5ee6758093969a2db1d932a88f21c965380bab5c
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: db782cea1d47dc31abf2908b82a756404fda513d
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008432"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136520"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Solucione problemas do aplicativo inserido
 
@@ -219,6 +219,10 @@ Depois de adquirir o objeto IError, você deve examinar a tabela de erros comuns
 
 ## <a name="content-rendering"></a>Renderização de conteúdo
 
+### <a name="performance"></a>Desempenho
+
+[Desempenho do Power BI Embedded](embedded-performance-best-practices.md)
+
 ### <a name="rendering-or-consumption-of-embedded-content-fails-or-times-out"></a>A renderização ou o consumo de conteúdo inserido falha ou atinge o tempo limite
 
 Verifique se o token de inserção não expirou. Não se esqueça de verificar a expiração do token de inserção e atualizá-lo. Para obter mais informações, veja [Refresh token using JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example) (Atualizar token usando o SDK do JavaScript).
@@ -292,6 +296,8 @@ Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.
 
 Se você precisar de assistência adicional [contate o suporte](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) ou [crie um tíquete de suporte por meio do portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) e forneça as mensagens de erro que encontrar.
 
-## <a name="performance"></a>Desempenho
+## <a name="next-steps"></a>Próximas etapas
 
-[Desempenho do Power BI Embedded](embedded-performance-best-practices.md)
+Para saber mais, veja [Perguntas frequentes](embedded-faq.md).
+
+Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

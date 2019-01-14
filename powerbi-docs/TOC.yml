@@ -584,12 +584,12 @@ items:
         href: service-insights-optimize.md
     - name: Colaborar no Power BI
       items:
-      - name: Criar e compartilhar aplicativos
-        href: service-create-distribute-apps.md
       - name: Criar workspaces do aplicativo
         href: service-create-workspaces.md
       - name: Criar os novos workspaces (visualização)
         href: service-create-the-new-workspaces.md
+      - name: Criar e compartilhar aplicativos
+        href: service-create-distribute-apps.md
       - name: Gerenciar o armazenamento de dados em workspaces
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Conectar-se a arquivos no OneDrive do seu grupo
@@ -750,8 +750,6 @@ items:
           href: service-connect-to-mandrill.md
         - name: Marketo
           href: service-connect-to-marketo.md
-        - name: Microsoft Azure Enterprise
-          href: service-connect-to-azure-enterprise.md
         - name: Microsoft Dynamics AX
           href: service-connect-to-microsoft-dynamics-ax.md
         - name: Microsoft Dynamics CRM
@@ -1190,6 +1188,8 @@ items:
         href: service-gateway-sso-overview.md
       - name: Logon único (SSO) – Kerberos
         href: service-gateway-sso-kerberos.md
+      - name: Logon único (SSO) – Kerberos – baseado em recurso
+        href: service-gateway-sso-kerberos-resource.md
       - name: Logon único (SSO) – SAML
         href: service-gateway-sso-saml.md
     - name: Definindo as configurações de proxy
@@ -1287,9 +1287,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: ba984e4e4f948f0cc2772dbe632c450bd77eb6b2
-ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
+ms.openlocfilehash: cf29eebc31ef8a62b20b08606e97b4fd035b3fec
+ms.sourcegitcommit: c4455dcb6d9a091ac80f4a5135433b162fcaba58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54136566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54211357"
