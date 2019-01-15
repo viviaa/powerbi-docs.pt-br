@@ -1,29 +1,29 @@
 ---
-title: Trechos de código para migrar conteúdo do Power BI Embedded
-description: Veja alguns trechos de código das operações básicas necessárias para a migração de conteúdo
+title: Snippets de código para migrar conteúdo do Power BI Embedded
+description: Veja alguns snippets de código das operações básicas necessárias para a migração de conteúdo
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: ba3829d54572c9d8166342d381f3850f0fc8a909
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: e1c608279bd725870e52348b2f36fd729a0e9d13
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388722"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292903"
 ---
-# <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Trechos de código para migrar conteúdo da Coleção de Espaços de Trabalho do Power BI
-Veja alguns trechos de código das operações básicas necessárias para a migração de conteúdo. Para ver fluxos relacionados de determinados tipos de relatório, consulte [Como migrar o conteúdo da coleção de espaços de trabalho do Power BI para o Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
+# <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Snippets de código para migrar conteúdo da Coleção de workspaces do Power BI
+Veja alguns snippets de código das operações básicas necessárias para a migração de conteúdo. Para ver fluxos relacionados de determinados tipos de relatório, consulte [Como migrar o conteúdo da coleção de workspaces do Power BI para o Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 Uma **ferramenta de migração** está disponível para uso a fim de ajudá-lo a copiar o conteúdo do Power BI Embedded (PaaS) para o serviço do Power BI (SaaS). Principalmente se você tiver muito conteúdo. Para obter mais informações, consulte [Power BI Embedded migration tool (Ferramenta de migração do Power BI Embedded)](migrate-tool.md).
 
 No código a seguir, temos exemplos usando C# e o [SDK do .NET do Power BI](https://www.nuget.org/profiles/powerbi).
 
-Certifique-se de usar os namespaces a seguir para executar os trechos de código a seguir.
+Certifique-se de usar os namespaces a seguir para executar os snippets de código a seguir.
 
 ```
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -47,7 +47,7 @@ using System.Threading.Tasks;
 ```
 
 
-## <a name="export-report-from-paas-workspace"></a>Exportar relatório do espaço de trabalho de PaaS
+## <a name="export-report-from-paas-workspace"></a>Exportar relatório do workspace de PaaS
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -71,7 +71,7 @@ using System.Threading.Tasks;
     }
 ```
 
-## <a name="import-report-to-saas-workspace"></a>Importar relatório do espaço de trabalho de SaaS
+## <a name="import-report-to-saas-workspace"></a>Importar relatório do workspace de SaaS
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -104,7 +104,7 @@ Isso serve para atualizar o PBIX após migrar para SaaS.
     var datasource = client.Datasets.GetDatasources(<myWorkspaceCollectionName>, <myWorkspaceId>, report.DatasetId);
 ```
 
-## <a name="update-directquery-connection-string-is-saas-workspace"></a>Atualizar a cadeia de conexão do DirectQuery no espaço de trabalho de SaaS
+## <a name="update-directquery-connection-string-is-saas-workspace"></a>Atualizar a cadeia de conexão do DirectQuery no workspace de SaaS
 ```
     public class ConnectionString
     {
@@ -122,8 +122,8 @@ Isso serve para atualizar o PBIX após migrar para SaaS.
     client.Datasets.SetAllConnectionsInGroup(<myWorkspaceId>, <dataset_id>, connection);
 ```
 
-## <a name="set-directquery-credentials-in-saas-workspace"></a>Definir credenciais do DirectQuery no espaço de trabalho de SaaS
-Neste trecho de código, estamos usando credenciais sem criptografia para fins de simplicidade, também há suporte para enviar credenciais criptografadas.
+## <a name="set-directquery-credentials-in-saas-workspace"></a>Definir credenciais do DirectQuery no workspace de SaaS
+Neste snippet, estamos usando credenciais sem criptografia para fins de simplicidade, também há suporte para enviar credenciais criptografadas.
 
 ```
     public class ConnectionString
@@ -161,7 +161,7 @@ Neste trecho de código, estamos usando credenciais sem criptografia para fins d
 ## <a name="push-dataset--report"></a>Enviar relatório e conjunto de dados por push
 Você precisará recriar o relatório para o conjunto de dados criado.
 
-Neste trecho de código, presumimos que o conjunto de dados que pode ser enviado por push já esteja em um espaço de trabalho do aplicativo no ambiente de SaaS. Para obter informações sobre a API de envio por push, consulte [Enviar dados por push a um conjunto de dados do Power BI](walkthrough-push-data.md).
+Neste snippet, presumimos que o conjunto de dados que pode ser enviado por push já esteja em um workspace do aplicativo no ambiente de SaaS. Para obter informações sobre a API de envio por push, consulte [Enviar dados por push a um conjunto de dados do Power BI](walkthrough-push-data.md).
 
 ```
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
@@ -225,7 +225,7 @@ Neste trecho de código, presumimos que o conjunto de dados que pode ser enviado
 ## <a name="next-steps"></a>Próximas etapas
 [Ferramenta de migração do Power BI Embedded](migrate-tool.md)  
 [Inserindo com o Power BI](embedding.md)  
-[Como migrar o conteúdo da coleção do espaço de trabalho do Power BI Embedded para o Power BI](migrate-from-powerbi-embedded.md)  
+[Como migrar o conteúdo da coleção de workspaces do Power BI Embedded para o Power BI](migrate-from-powerbi-embedded.md)  
 [Como inserir seus dashboards, relatórios e blocos do Power BI](embedding-content.md)  
 [Power BI Premium – o que é?](../service-premium.md)  
 [Repositório Git de API do JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0cc06b87d48f54678743d4364c085e96f658c296
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 58ed43768d563adfe3012e030d2c8bb795909380
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578395"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292420"
 ---
 # <a name="using-buttons-in-power-bi"></a>Usando os botões no Power BI
 Usar **botões** no Power BI permite que você crie relatórios e painéis que se comportam de modo semelhante a aplicativos e, assim, cria um ambiente envolvente para que os usuários possam focalizar, clicar em e interagir ainda mais com conteúdo do Power BI. Você pode adicionar botões a relatórios no **Power BI Desktop** e compartilhar ou publicar esses relatórios no serviço do Power BI para criar painéis que fornecem um comportamento de aplicativo para usuários.
@@ -42,7 +42,7 @@ Os seguintes cartões no painel **Visualizações** permitem que você ajuste a 
 * Texto do botão
 * Ícone
 * Contorno
-* Preenchimento
+* Preencher
 
 Para selecionar como o botão deve ser exibido para cada estado, expanda um dos cartões e selecione na lista suspensa que aparece na parte superior do cartão. Na imagem a seguir, você vê o cartão **Contorno** expandido, com a lista suspensa selecionada para mostrar os três estados:
 

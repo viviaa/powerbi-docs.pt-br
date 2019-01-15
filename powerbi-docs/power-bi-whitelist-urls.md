@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: dcf51f26aac018acdd58e4244f21e41a1b6f1bc6
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 39a62950260789b50be034c2f55808e6991764db
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026606"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293988"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URLs do Power BI para a lista de permissões
 
@@ -27,7 +27,7 @@ Os pontos de extremidade marcados como **opcionais** também podem ser adicionad
 
 O serviço online do Power BI requer apenas que a porta TCP 443 seja aberta para os pontos de extremidade listados.
 
-Caracteres curinga (*) representam todos os níveis sob o domínio raiz, e usaremos N/A quando as informações não estiverem disponíveis. A coluna **Destino(s)** é uma lista com domínios/FQDN e links para sites externos, que contêm mais informações sobre o ponto de extremidade.
+Caracteres curinga (*) representam todos os níveis sob o domínio raiz, e usaremos N/D quando as informações não estiverem disponíveis. A coluna **Destino(s)** é uma lista com domínios/FQDN e links para sites externos, que contêm mais informações sobre o ponto de extremidade.
 
 >[!Important]
 >As informações nas tabelas abaixo não representam a **nuvem do Governo dos EUA**, **a nuvem da Alemanha** ou a **nuvem da China**.

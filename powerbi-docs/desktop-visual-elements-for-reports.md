@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a3e39e6326eb5b32cd72e2aefec74c07804b4639
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: bef307678c471303fde7382e3c1be1648d49f0db
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657887"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280299"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Usar elementos visuais para aprimorar os relatórios do Power BI
 
@@ -87,7 +87,7 @@ Todo elemento visual também tem um cartão na seção de **Formatação** do pa
 > [!NOTE]
 > A exibição dos botões de alternância não afetam o relatório durante a criação ou edição. É necessário publicar o relatório e exibi-lo no modo de leitura para ver o efeito. Esse comportamento garante que as várias opções fornecidas nos cabeçalhos visuais sejam importantes durante a edição, especialmente os ícones de aviso que alertam quanto a problemas durante a edição.
 
-Para os relatórios que aparecem apenas no **Serviço do Power BI**, é possível ajustar o uso de cabeçalhos visuais acessando **Meu espaço de trabalho > Relatórios** e selecionando o ícone **Configurações**. Lá você verá as definições do relatório para o qual selecionou **Configurações** e pode ajustá-las a partir daí, conforme mostrado na imagem a seguir.
+Para os relatórios que aparecem apenas no **Serviço do Power BI**, é possível ajustar o uso de cabeçalhos visuais acessando **Meu workspace &gt; Relatórios** e selecionando o ícone **Configurações**. Lá você verá as definições do relatório para o qual selecionou **Configurações** e pode ajustá-las a partir daí, conforme mostrado na imagem a seguir.
 
 ![Configurações no serviço do Power BI para uso de cabeçalhos visuais aprimorados](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
 

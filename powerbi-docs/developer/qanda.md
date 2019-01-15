@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.author: maghan
-ms.openlocfilehash: d1fd42f059f8050662adc80018748d11c1e73e2b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813746"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277958"
 ---
 # <a name="qa-in-power-bi-embedded"></a>P e R no Power BI Embedded
 O Power BI Embedded oferece uma maneira de incorporar P e R em um aplicativo e permitir que os usuários façam perguntas usando um idioma natural e recebam respostas imediatas na forma de visuais como gráficos ou grafos.
@@ -51,7 +51,7 @@ Se você usou o **modo de resultados** com uma pergunta de conjunto, é possíve
 
 Um exemplo dessa utilização seria uma lista de perguntas frequentes. O usuário poderia percorrer as perguntas e receber as respostas delas dentro da mesma parte inserida.
 
-**Trecho de código para uso do SDK do JS:**  
+**Snippet de código para uso do SDK do JS:**  
 
 ```        
 // Get a reference to the embedded Q&A HTML element
@@ -74,7 +74,7 @@ Para o modo **interativo**, o aplicativo pode ser notificado com um evento de al
 
 Escutar o evento *visualRendered* permite salvar perguntas para uso posterior. 
 
-**Trecho de código para uso do SDK do JS:**  
+**Snippet de código para uso do SDK do JS:**  
 
 ```
 // Get a reference to the embedded Q&A HTML element

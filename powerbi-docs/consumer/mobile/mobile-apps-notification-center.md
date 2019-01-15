@@ -1,20 +1,20 @@
 ---
 title: Obter notificações nos aplicativos móveis do Power BI
 description: A Central de Notificações leva diretamente a você informações relacionadas à sua experiência com o Power BI, em seu dispositivo móvel.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
-ms.author: maggies
-ms.openlocfilehash: fb5dd23e3b452de6b22d6f67e992bffca9c4bd7f
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: 378e81207cb9b0f09e094ddbdced99defedde1ff
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728396"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280023"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Obter notificações nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -23,7 +23,7 @@ Aplica-se a:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Telefones Android |Tablets Android |Dispositivos Windows 10 |
 
-As notificações levam diretamente a você informações relacionadas à sua experiência com o Power BI, no serviço do Power BI ou em seu dispositivo móvel. Quando você abre as Notificações, é exibido um feed sequencial de mensagens sobre [alertas definidos](mobile-set-data-alerts-in-the-mobile-apps.md), novos dashboards que foram compartilhados com você, as alterações no espaço de trabalho do grupo, informações sobre eventos e reuniões do Power BI e muito mais.
+As notificações levam diretamente a você informações relacionadas à sua experiência com o Power BI, no serviço do Power BI ou em seu dispositivo móvel. Quando você abre as Notificações, é exibido um feed sequencial de mensagens sobre [alertas definidos](mobile-set-data-alerts-in-the-mobile-apps.md), novos dashboards que foram compartilhados com você, as alterações no workspace do grupo, informações sobre eventos e reuniões do Power BI e muito mais.
 
 > [!NOTE]
 > Em um dispositivo iOS, em sua primeira conexão à [versão atualizada dos aplicativos do Power BI](https://powerbi.microsoft.com/mobile/), você verá uma mensagem perguntando se quer receber notificações do Power BI. Você também pode configurar o modo como o Power BI envia notificações a você em **Configurações** de seu dispositivo. 

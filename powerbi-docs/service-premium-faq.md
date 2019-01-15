@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: da529c860037afe0d83f42209bda86d49222b83f
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: c854f57dc418f7ac5bbd291f04b011b99a74b41b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252435"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292719"
 ---
 # <a name="power-bi-premium-faq"></a>Perguntas Frequentes do Power BI Premium
 
@@ -36,24 +36,24 @@ O Power BI Premium é uma nova oferta baseada em capacidade que inclui:
 O Power BI Premium consiste em capacidade no serviço do Power BI alocada exclusivamente para cada organização. A capacidade tem suporte de hardware dedicado totalmente gerenciado pela Microsoft. As organizações podem optar por aplicar sua capacidade dedicada de forma ampla ou por alocá-la a workspaces atribuídos com base no número de usuários, nas necessidades de cargas de trabalho ou em outros fatores — e aumentar ou reduzir verticalmente de acordo com as necessidades.
 
 **Qual é a diferença entre o Power BI Pro e o Power BI Premium?**  
-O Power BI Premium é uma licença baseada em capacidade, enquanto o Power BI Pro é uma licença baseada nos usuários. O Power BI Pro é voltado para usuários que publicam relatórios, compartilham painéis, colaboram com colegas em espaços de trabalho e participam de outras atividades relacionadas. Por exemplo, ele possibilita:
+O Power BI Premium é uma licença baseada em capacidade, enquanto o Power BI Pro é uma licença baseada nos usuários. O Power BI Pro é voltado para usuários que publicam relatórios, compartilham dashboards, colaboram com colegas em workspaces e participam de outras atividades relacionadas. Por exemplo, ele possibilita:
 
 * editar e salvar modos de exibição personalizados
-* criar painéis pessoais (fixar ao novo painel)
+* criar dashboards pessoais (fixar ao novo dashboard)
 * analisar dados no Excel ou no Power BI Desktop
 * suporte para compartilhar o aplicativo Web do Excel
-* compartilhar painéis e colaborar com grupos do Office 365
+* compartilhar dashboards e colaborar com grupos do Office 365
 * integrar conteúdo com o Microsoft Teams
 
 **É necessário ter o Power BI Pro para usar o Power BI Premium?**  
-Sim. O Power BI Pro é necessário para publicar relatórios, compartilhar painéis, colaborar com colegas em espaços de trabalho e participar de outras atividades relacionadas. O Power BI Pro não é necessário para consumir o conteúdo na capacidade Premium.
+Sim. O Power BI Pro é necessário para publicar relatórios, compartilhar dashboards, colaborar com colegas em workspaces e participar de outras atividades relacionadas. O Power BI Pro não é necessário para consumir o conteúdo na capacidade Premium.
 
 **Vocês podem descrever um cenário de como o Power BI Pro e o Power BI Premium funcionarão para atender às necessidades de BI moderna de uma organização?**  
 Os exemplos a seguir descrevem como os clientes podem atender às próprias necessidades de BI usando uma combinação do Power BI Pro com Power BI Premium.
 
 | Cenário 1 | Cenário 2 | Cenário 3 | Cenário 4 |
 | --- | --- | --- | --- |
-| Uma organização ou departamento quer que todos os funcionários tenham BI por autoatendimento e colaborem uns com os outros – compartilhando painéis, executando análises ad hoc e publicando relatórios. | Uma organização ou departamento tem uma combinação de usuários que precisam de BI por autoatendimento e colaboração, bem como usuários que precisam apenas consumir conteúdo de BI. | Uma organização ou departamento tem usuários que precisam de BI por autoatendimento e colaboração, bem como o requisito de manter relatórios localmente. | Um departamento financeiro está trabalhando ativamente para analisar vários conjuntos de dados grandes antes de um comunicado de divulgação de ganhos e precisa de capacidade isolada e sem limitação para gerenciar as cargas de trabalho. |
+| Uma organização ou departamento quer que todos os funcionários tenham BI por autoatendimento e colaborem uns com os outros – compartilhando dashboards, executando análises ad hoc e publicando relatórios. | Uma organização ou departamento tem uma combinação de usuários que precisam de BI por autoatendimento e colaboração, bem como usuários que precisam apenas consumir conteúdo de BI. | Uma organização ou departamento tem usuários que precisam de BI por autoatendimento e colaboração, bem como o requisito de manter relatórios localmente. | Um departamento financeiro está trabalhando ativamente para analisar vários conjuntos de dados grandes antes de um comunicado de divulgação de ganhos e precisa de capacidade isolada e sem limitação para gerenciar as cargas de trabalho. |
 | **Solução:**<br/><br/>1. Power BI Pro para todos os usuários<br/><br/>2. Buscar expandir a oportunidade adicionando o Power BI Premium – veja os cenários adicionais |**Solução:**<br/><br/>1. Power BI Pro para usuários que precisam de colaboração e BI por autoatendimento<br/><br/>2. Adicionar o Power BI Premium para distribuir o conteúdo de BI para os usuários que precisam apenas consumi-lo |**Solução:**<br/><br/>1. Power BI Pro para usuários que precisam de colaboração e BI por autoatendimento<br/><br/>2. Adicionar o Power BI Premium para publicar relatórios localmente – e passar para a nuvem conforme adequado |**Solução:**<br/><br/>1. Power BI Pro para todos os usuários do departamento financeiro<br/><br/>2. Adicionar o Power BI Premium para os recursos dedicados – na nuvem – serem usados exclusivamente pela equipe de finanças, fornecendo maior escala e melhor desempenho |
 
 **Quanto custa o Power BI Premium? Quantos SKUs serão disponibilizados?**  

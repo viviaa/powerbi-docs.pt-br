@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 99acb51369d805e907bf77752239320cb9236465
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7d087e8d6b643d836be865a48b9570066af1af6f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53025975"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274733"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Usar um IDE R externo com o Power BI
 Com o **Power BI Desktop**, você pode usar um IDE R externo (ambiente de desenvolvimento integrado) para criar e refinar scripts R e então usar esses scripts no Power BI.

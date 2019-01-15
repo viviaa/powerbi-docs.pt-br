@@ -5,17 +5,17 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Get started
-ms.openlocfilehash: 7ac6cee3331333b40119d6f5ab014b2e39d2ef23
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9e2c37c6518f3484aa0350203e4e93711a7543ec
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251739"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289982"
 ---
 # <a name="get-started-with-third-party-apps"></a>Introdução a aplicativos de terceiros
 Com o Power BI, você pode usar um aplicativo criado por uma empresa ou indivíduo diferente da Microsoft. Por exemplo, você pode usar um aplicativo de terceiros que integra blocos Power BI em um aplicativo Web interno personalizado. Quando você usa um aplicativo de terceiros, será solicitado que você conceda a esse aplicativo determinadas permissões para sua conta e recursos do Power BI. É importante que você somente conceda permissões para aplicativos que você conhece e confia. Permissões para um aplicativo podem ser revogadas em qualquer momento. Veja [Revogar permissões de aplicativos de terceiros](#revoke).
