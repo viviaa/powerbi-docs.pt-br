@@ -1,20 +1,20 @@
 ---
 title: O logon único no aplicativo móvel do Windows do Power BI
 description: Leia sobre SSO (Logon Único) no aplicativo móvel do Windows do Power BI. SSO significa que você acessa todos os aplicativos e recursos necessários para fazer negócios entrando apenas uma vez com uma única conta de usuário.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.author: maggies
-ms.openlocfilehash: f13b6e0a6583bcb66da0fb0a27188c83c4bf6806
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.author: mshenhav
+ms.openlocfilehash: fdbdebacc2ae41cdfa8296eb6b0c06e52f149cac
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975025"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290948"
 ---
 # <a name="single-sign-on-in-the-power-bi-mobile-windows-app"></a>O logon único no aplicativo móvel do Windows do Power BI
 
