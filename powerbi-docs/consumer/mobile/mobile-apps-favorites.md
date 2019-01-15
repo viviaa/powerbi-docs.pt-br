@@ -1,20 +1,20 @@
 ---
 title: Favoritos nos aplicativos móveis do Power BI
 description: Leia sobre como criar e exibir seus dashboards do Power BI, relatórios e aplicativos, além de KPIs e relatórios do Servidor de Relatórios do Microsoft Power BI e do Reporting Services favoritos nos aplicativos móveis.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
-ms.author: maggies
-ms.openlocfilehash: a689a3b04ca3b48c0b924ae62a52315dc3535faf
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 433bfc6298632eb9b999a23fe4b54417add507a3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544913"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278667"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Tornar favoritos e exibi-los nos aplicativos móveis do Power BI
 Aplica-se a:

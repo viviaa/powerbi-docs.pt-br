@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 37eaa9e26a6386379dd165e15cffab3e42dc9546
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266516"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293688"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Usar a atualização incremental com os fluxos de dados do Power BI (versão prévia)
 
@@ -51,9 +51,9 @@ A lista a seguir explica as configurações na janela **configurações de atual
 
     Para este exemplo, definimos uma política de atualização para armazenar cinco anos de dados no total e atualizar incrementalmente 10 dias de dados. Se a entidade for atualizada diariamente, será realizado o seguinte para cada operação de atualização:
 
-    * Adição de um novo dia de dados.
-    * Atualização de 10 dias até a data atual.
-    * Remoção de anos civis com mais de cinco anos antes da data atual. Por exemplo, se a data atual for 1º de janeiro de 2019, o ano de 2013 será removido.
+    * Adicione um novo dia de dados.
+    * Atualize 10 dias até a data atual.
+    * Remover os anos civis com mais de cinco anos antes da data atual. Por exemplo, se a data atual for 1º de janeiro de 2019, o ano de 2013 será removido.
 
     A primeira atualização de fluxo de dados pode demorar um pouco para importar todos os cinco anos, mas as atualizações subsequentes provavelmente serão concluídas em uma pequena fração do tempo de atualização inicial.
 

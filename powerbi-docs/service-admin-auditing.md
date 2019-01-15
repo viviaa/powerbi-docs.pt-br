@@ -5,18 +5,18 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d9cf6255cfa57790c13ee1fc9d3201860552863b
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: 24701392b6cfa3400ed96be8a496791d250204d5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072349"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291155"
 ---
 # <a name="using-auditing-within-your-organization"></a>Usando a auditoria dentro da sua organização
 
@@ -132,7 +132,7 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-Para obter mais informações sobre como se conectar ao Exchange Online, confira [Conectar ao Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Para ver outro exemplo de como usar o PowerShell com os logs de auditoria, confira [Usar o log de auditoria do Power BI e o PowerShell para atribuir licenças do Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
+Para obter mais informações sobre como se conectar ao Exchange Online, consulte [Conectar ao Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Para ver outro exemplo de como usar o PowerShell com os logs de auditoria, confira [Usar o log de auditoria do Power BI e o PowerShell para atribuir licenças do Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## <a name="activities-audited-by-power-bi"></a>Atividades auditadas pelo Power BI
 

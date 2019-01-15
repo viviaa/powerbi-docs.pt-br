@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e9b48b79b30250c442140929045132fe1c4b10e8
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: c219a7ac9ce88d3dca9d01a09868835062fe93ce
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448904"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291891"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Gráficos de cascata no Power BI
 O gráfico de cascata mostram uma duração total conforme os valores são adicionados ou subtraídos. É útil para entender como um valor inicial (por exemplo, a receita líquida) é afetado por uma série de alterações positivas e negativas.

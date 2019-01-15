@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 112/06/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7e67431f46da5e8076e6b436971e09bada4d7990
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 4a1ffa112420fd061655747c0d86760626705145
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026260"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285405"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Atualizar um conjunto de dados armazenado no OneDrive ou no SharePoint Online
 Importar arquivos do OneDrive ou SharePoint Online, para o serviço Power BI é uma ótima maneira de garantir que o trabalho que você está fazendo no **Power BI Desktop** permaneça em sincronia com o serviço do Power BI.
@@ -48,7 +48,7 @@ No Power BI, há suporte para os recursos Atualizar Agora e Agendar Atualizaçã
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive ou OneDrive for Business. Qual é a diferença?
-Se você tiver um OneDrive Pessoal e um OneDrive para Empresas, é recomendável manter todos os arquivos que deseja importar no Power BI no OneDrive para Empresas. Eis o porquê: você provavelmente usa duas contas diferentes para entrar neles.
+Se você tiver um OneDrive Pessoal e um OneDrive para Empresas, é recomendável manter todos os arquivos que deseja importar no Power BI no OneDrive para Empresas. Eis o porquê: Você provavelmente usa duas contas diferentes para entrar neles.
 
 A conexão ao OneDrive para Empresas no Power BI é normalmente contínua, porque a mesma conta com a qual você usa para entrar no Power BI é geralmente a mesma conta usada para entrar no OneDrive para Empresas. Mas, com o OneDrive pessoal, você provavelmente entrará com outra [conta da Microsoft](https://account.microsoft.com).
 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e256da8530681d8eea6f41746e7a0c0885e4b91b
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 57aa5afe32b8f65805ef4be71ded176f34aefd6e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670184"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296008"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Atualizar um conjunto de dados criado com base em uma pasta de trabalho do Excel no OneDrive ou SharePoint Online
 Você pode importar pastas de trabalho do Excel armazenadas no computador local ou no armazenamento em nuvem, como o OneDrive for Business ou o SharePoint Online. Vamos examinar as vantagens de usar o armazenamento em nuvem para os arquivos do Excel. Para obter mais informações sobre como importar arquivos do Excel no Power BI, consulte [Obter dados de arquivos de pasta de trabalho do Excel](service-excel-workbook-files.md).
@@ -43,7 +43,7 @@ No Power BI, há suporte para os recursos Atualizar Agora e Agendar Atualizaçã
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive ou OneDrive for Business. Qual é a diferença?
-Se você tiver um OneDrive Pessoal e um OneDrive para Empresas, é recomendável manter todos os arquivos que deseja importar no Power BI no OneDrive para Empresas. Eis o porquê: você provavelmente usa duas contas diferentes para entrar neles.
+Se você tiver um OneDrive Pessoal e um OneDrive para Empresas, é recomendável manter todos os arquivos que deseja importar no Power BI no OneDrive para Empresas. Eis o porquê: Você provavelmente usa duas contas diferentes para entrar neles.
 
 A conexão ao OneDrive para Empresas no Power BI é normalmente contínua, porque a mesma conta com a qual você usa para entrar no Power BI é geralmente a mesma conta usada para entrar no OneDrive para Empresas. Mas, com o OneDrive pessoal, você provavelmente entrará com outra [conta da Microsoft](https://account.microsoft.com).
 

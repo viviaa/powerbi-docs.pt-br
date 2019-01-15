@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7f56cb4ec9859750c218975d25f3b8e2dd8a0469
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: ef8d7c61d35f15517db4fdbbea347a525a130f31
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280456"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288211"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navegação: pesquisando, buscando e classificando seu conteúdo no serviço do Power BI
 Há muitas maneiras de navegar pelo seu conteúdo no serviço do Power BI. O conteúdo é organizado em entre workspaces por tipo: painéis, relatórios, pastas de trabalho e conjuntos de dados.  E o conteúdo também é organizado por uso: favoritos, recentes, aplicativos, compartilhado comigo e em destaque. Para uma parada de navegação, a Home page organiza o conteúdo todo em uma única página. Esses caminhos diferentes em seu conteúdo permitem que você localize rapidamente aquilo de que precisa no serviço do Power BI.  

@@ -5,17 +5,17 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 86dabdb84dd4ca949930c25213f554060135f10a
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 6e29e750a22bbd6843e203a5cd93b5c0628b1d05
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396625"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288763"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Dados dinâmicos do SQL Server Analysis Services no Power BI
 No Power BI, há duas maneiras pelas quais você pode se conectar a um servidor do SQL Server Analysis Services dinâmico. Em **Obter dados**, você pode se conectar a um servidor do SQL Server Analysis Services ou se conectar [a um arquivo do Power BI Desktop](service-desktop-files.md) ou a uma [pasta de trabalho do Excel](service-excel-workbook-files.md) que já se conecta a um servidor do Analysis Services. Como uma prática recomendada, a Microsoft recomenda usar o Power BI Desktop devido à riqueza do conjunto de ferramentas e à capacidade de manter localmente uma cópia de backup do arquivo do Power BI Desktop.

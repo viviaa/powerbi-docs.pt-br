@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e09c08780011ffaac7d37468e6018b079c41c669
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329730"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281150"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.

@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maghan
-ms.openlocfilehash: 0f06d5c3742ea5187ff41f6f8974c8a81e5d1d33
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: de16c10a03654802e4c65bfa92e60259e2f9510d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310442"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291735"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI
 Os relatórios do Power BI podem se conectar a diversas fontes de dados. Dependendo de como os dados são usados, fontes de dados diferentes estão disponíveis. Os dados podem ser importados ou consultados diretamente usando o DirectQuery ou uma conexão dinâmica ao SQL Server Analysis Services.
@@ -76,12 +76,12 @@ Outras fontes de dados podem funcionar mesmo que não estejam na lista de compat
 | Web |Sim |Sim |Não |
 | XML |Sim |Sim |Não |
 | appFigures (Beta) |Sim |Não |Não |
-| Banco de dados do Azure Analysis Services |Sim |Não |Sim |
+| Banco de Dados do Azure Analysis Services |Sim |Não |Sim |
 | Azure Cosmos DB (Beta) |Sim |Não |Não |
 | Azure HDInsight Spark (Beta) |Sim |Não |Não |
 | Common Data Service (Beta) |Sim |Não |Não |
 | comScore Digital Analytix (Beta) |Sim |Não |Não |
-| Dynamics 365 para Customer Insights (Beta) |Sim |Não |Não |
+| Dynamics 365 for Customer Insights (Beta) |Sim |Não |Não |
 | Dynamics 365 for Financials (Beta) |Sim |Não |Não |
 | GitHub (Beta) |Sim |Não |Não |
 | Google BigQuery (Beta) |Sim |Não |Não |
@@ -164,7 +164,7 @@ O Servidor de Relatórios do Power BI não é compatível com a autenticação c
 | Azure HDInsight Spark (Beta) |Não |Não |Não |Não |
 | Common Data Service (Beta) |Não |Não |Não |Não |
 | comScore Digital Analytix (Beta) |Não |Não |Não |Não |
-| Dynamics 365 para Customer Insights (Beta) |Não |Não |Não |Não |
+| Dynamics 365 for Customer Insights (Beta) |Não |Não |Não |Não |
 | Dynamics 365 for Financials (Beta) |Não |Não |Não |Não |
 | GitHub (Beta) |Não |Não |Não |Não |
 | Google BigQuery (Beta) |Não |Não |Não |Não |

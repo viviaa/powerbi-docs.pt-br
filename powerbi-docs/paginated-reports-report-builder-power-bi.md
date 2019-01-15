@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7ce0e90e3166ce6f84c5e53e05d56e9fcc4e790d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026107"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282829"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>O que são os relatórios paginados no Power BI Premium? (Versão prévia)
 Os relatórios paginados, o formato longo de relatório padrão no SQL Server Reporting Services, agora estão disponíveis no serviço do Power BI. Esses relatórios podem ser impressos ou compartilhados. Eles são chamados de "paginados" porque são formatados de modo a se adaptarem bem a uma página. Eles exibem todos os dados em uma tabela, mesmo que a tabela abranja várias páginas. Às vezes são chamados de "pixel perfeito" porque você pode controlar o layout de página do relatório de maneira exata. Os relatórios paginados são baseados na tecnologia de relatório RDL no SQL Server Reporting Services. O Construtor de Relatórios é a ferramenta autônoma para a criação de relatórios paginados. 

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ff770320e0e6cd3f591e3318637a04977152e488
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 5bd1ee87d540fc4d4c212313483c78d168d7e104
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101389"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277608"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Gerenciar sua fonte de dados – SQL Server
 Depois de instalar o gateway de dados local, é necessário adicionar fontes de dados que podem ser usadas com o gateway. Este artigo abordará como trabalhar com gateways e fontes de dados. Você pode usar a fonte de dados do SQL Server para a atualização agendada ou para o DirectQuery.

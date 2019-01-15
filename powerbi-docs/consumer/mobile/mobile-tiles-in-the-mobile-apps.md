@@ -1,20 +1,20 @@
 ---
 title: Explorar blocos nos aplicativos móveis do Power BI
 description: Blocos são instantâneos dinâmicos dos seus dados, fixados a um painel. Saiba mais sobre como interagir com blocos nos aplicativos móveis do Power BI.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
-ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549789"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286394"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorar blocos nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -56,7 +56,7 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
    
     Depois de abrir o link no aplicativo do Power BI, você poderá copiar o link e abri-lo em uma janela do navegador.
 7. [Abra o relatório](mobile-reports-in-the-mobile-apps.md)![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) no qual o bloco se baseia.
-8. Para sair do modo de foco do bloco, toque no nome do bloco e, em seguida, toque no nome do dashboard ou em **Meu Espaço de Trabalho**.
+8. Para sair do modo de foco do bloco, toque no nome do bloco e, em seguida, toque no nome do dashboard ou em **Meu Workspace**.
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
 

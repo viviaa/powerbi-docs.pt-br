@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: cb4a0f81766aa030b1981cb67a26c296dab2ba2a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973921"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277190"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Amostragem de linha de alta densidade no Power BI
 Começando com a versão de junho de 2017 do **Power BI Desktop** e as atualizações para o **serviço do Power BI**, um novo algoritmo de amostragem está disponível para melhorar os visuais com amostragem de dados de alta densidade. Por exemplo, é possível criar um gráfico de linhas dos resultados de vendas de suas lojas de varejo, com cada loja tendo mais de dez mil recibos de venda todo ano. Um gráfico de linhas dessas informações de vendas faria a amostragem (selecione uma representação significativa desses dados, para ilustrar como as vendas variam ao longo do tempo) dos dados de cada loja e criaria um gráfico de linhas multissérie para representar os dados subjacentes. Essa é uma prática comum na visualização de dados de alta densidade. O Power BI Desktop melhorou sua amostragem de dados de alta densidade, cujos detalhes estão descritos neste artigo.

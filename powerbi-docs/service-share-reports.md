@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d5e05775d310af37b2c96c6e9e255de25fe5effe
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: 05bdb9ccca7715b74cb18462f215f7d1bf640526
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983429"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279726"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Compartilhar um relatório do Power BI filtrado com seus colegas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir seus relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).

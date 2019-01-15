@@ -1,20 +1,20 @@
 ---
 title: Introdução ao aplicativo móvel do Power BI em dispositivos Android
 description: Saiba como o aplicativo móvel Android para Microsoft Power BI leva o Power BI para o seu bolso, com acesso móvel a informações comerciais locais e na nuvem.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
-ms.openlocfilehash: 4c11b65d8d9dcb4a0b07db6dcf0d264350f351bf
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.author: mshenhav
+ms.openlocfilehash: c5d6549c449c77cea709783b1634318e12fc2e52
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908731"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289255"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos Android
 O aplicativo Android para Microsoft Power BI oferece a experiência móvel do BI para Power BI, Servidor de Relatório do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. 

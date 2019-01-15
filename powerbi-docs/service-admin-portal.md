@@ -6,27 +6,27 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e83c853ac1c3fc7c7d4d5e79c9f6be965d880361
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: d26de4b093af31ab4d8730193a501dc0d6eac2c3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072280"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285847"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
 O portal de administração permite que você gerencie um *locatário* do Power BI para sua organização. O portal inclui itens como métricas de uso, acesso ao centro de administração do Office 365 e configurações.
 
-O portal de administração completo é acessível a todos os usuários que sejam administradores globais no Office 365 ou que detenham a função de administrador de serviços do Power BI. Se você não estiver em uma dessas funções, verá apenas **Configurações de capacidade** no portal. Para obter mais informações sobre a função de administrador de serviços do Power BI, confira [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
+O portal de administração completo é acessível a todos os usuários que sejam administradores globais no Office 365 ou que detenham a função de administrador de serviços do Power BI. Se você não estiver em uma dessas funções, verá apenas **Configurações de capacidade** no portal. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Como obter o portal de administração
 
-Sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI, para obter acesso ao portal de administração do Power BI. Para obter mais informações sobre a função de administrador de serviços do Power BI, confira [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md). Para acessar o portal de administração do Power BI, faça o seguinte:
+Sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI, para obter acesso ao portal de administração do Power BI. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md). Para acessar o portal de administração do Power BI, faça o seguinte:
 
 1. Selecione a engrenagem de configurações na parte superior direita do serviço do Power BI.
 

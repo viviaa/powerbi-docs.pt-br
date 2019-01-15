@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c7214d67cba58cdcd2e63b194e6c648e614943af
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: d098b55367e4d8ff13dc2fd22593af00dffe611f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975002"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286923"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Executar scripts do Python no Power BI Desktop
 É possível executar scripts do Python diretamente no **Power BI Desktop** e importar os conjuntos de dados resultantes para um modelo de dados do Power BI Desktop.
@@ -29,7 +29,7 @@ Com apenas algumas etapas no Power BI Desktop, é possível executar scripts do 
 ### <a name="prepare-a-python-script"></a>Preparar um script do Python
 Para executar um script do Python no Power BI Desktop, crie o script em seu ambiente de desenvolvimento local do Python e certifique-se de que ele é executado com êxito.
 
-Para executar o script no Power BI Desktop, verifique se o script é executado com êxito em um espaço de trabalho novo e modificado. Isso significa que todos os pacotes e dependências devem ser explicitamente carregados e executados.
+Para executar o script no Power BI Desktop, verifique se o script é executado com êxito em um workspace novo e modificado. Isso significa que todos os pacotes e dependências devem ser explicitamente carregados e executados.
 
 Ao preparar e executar um script Python no Power BI Desktop, existem algumas limitações:
 

@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 19fdadb6476dab9eda0fa5c76f17680cbd7b4cfe
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 5a436a276a68b2cade6a1622a54590bc379cebd8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026398"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283450"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Usar medidas rápidas para facilmente executar cálculos comuns e avançados
 Você pode usar **Medidas rápidas** para executar cálculos comuns e avançados com rapidez e praticidade. Uma **Medida rápida** executa um conjunto de comandos DAX nos bastidores (não é necessário compilar o DAX; isso já foi feito para você) com base nos dados fornecidos em uma caixa de diálogo e, em seguida, apresenta os resultados para você usar em seu relatório. O melhor de tudo é poder visualizar o DAX executado pela Medida rápida e estimular ou expandir seu próprio conhecimento do DAX.

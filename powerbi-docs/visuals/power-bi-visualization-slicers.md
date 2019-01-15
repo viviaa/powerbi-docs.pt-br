@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 10/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e6b738060875685a7de8e07a55d28afaf071b32e
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979641"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295920"
 ---
 # <a name="slicers-in-power-bi"></a>Segmentação de Dados no Power BI
 Seus leitores de relatório devem poder examinar as métricas gerais de vendas, mas também realçar o desempenho de cada gerente regional individual e em diferentes períodos. Você poderia criar relatórios separados ou gráficos comparativos, ou então usar segmentação. Uma segmentação é uma forma alternativa de filtragem que restringe a parte do conjunto de dados que é mostrada em outras visualizações em um relatório. 

@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 43d15529353f17733923d2b2a73b336d7d4ee6e0
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f813822b269a51e55947d73c5107675cbe428d96
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52981504"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293800"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Assinar um relatório ou dashboard no serviço do Power BI
 Nunca foi tão fácil manter-se atualizado sobre seus dashboards e relatórios mais importantes. Assine as páginas de relatórios e os dashboards mais importantes para você e seus colegas e o Power BI enviará um instantâneo por email para sua caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: de uma vez por dia a uma vez por semana. 

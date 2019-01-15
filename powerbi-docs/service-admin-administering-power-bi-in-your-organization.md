@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fcc7563ef1c1196a7e00e107bb1dadd6b10075d3
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 5115abd45d8eafe68b6e6ab0b97a05be51463af4
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252458"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294230"
 ---
 # <a name="what-is-power-bi-administration"></a>O que é administração do Power BI?
 
@@ -71,7 +71,7 @@ Há várias ferramentas relacionadas à administração do Power BI, que são ab
 | **Ferramenta** | **Tarefas comuns** |
 | --- | --- |
 | Portal de administração do Power BI |<ul><li>Adquirir e trabalhar com a capacidade Premium</li><li>Garantir a qualidade do serviço</li><li>Gerenciar a classificação de dados de negócios</li><li>Ajudar a impor políticas de publicação e compartilhamento de conteúdo</li><li>Gerenciar workspaces<br><li>Publicar visuais personalizados</li><li>Verificar os códigos usados para inserir o Power BI em outros aplicativos</li><li>Solucionar problemas de acesso a dados e outros problemas</li></ul>|
-| Centro de Administração do Office 365 |<ul><li>Gerenciar a inscrição do usuário</li><li>Comprar e atribuir licenças Pro</li><li>Impedir que os usuários acessem o Power BI</li></ul>|
+| Centro de administração do Office 365 |<ul><li>Gerenciar a inscrição do usuário</li><li>Comprar e atribuir licenças Pro</li><li>Impedir que os usuários acessem o Power BI</li></ul>|
 | Central de Segurança e Conformidade do Office 365 |<ul><li>Analisar e gerenciar a auditoria de eventos</li></ul>|
 | Azure Active Directory (AAD) no portal do Azure |<ul><li>Configurar o acesso condicional a recursos do Power BI por meio do AAD</li><li>Provisionar a capacidade do Power BI Embedded</li></ul>|
 | Cmdlets do PowerShell |<ul><li>Gerenciar workspaces e outros aspectos do Power BI por meio de scripts</li></ul>|
