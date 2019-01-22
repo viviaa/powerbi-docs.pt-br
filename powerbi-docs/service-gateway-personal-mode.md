@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273323"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295735"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Gateway de dados local (modo pessoal)
 É possível usar fontes de dados locais e criar relatórios e dashboards do Power BI usando um gateway. Um **gateway** é um software que facilita o acesso a dados armazenados em uma rede privada local e permite que você use esses dados em serviços online, como o **Serviço do Power BI**. O **Gateway de dados local (modo pessoal)** é uma atualização lançada recentemente do Gateway do Power BI, que permite que os usuários instalem um gateway em seu próprio computador e tenham acesso a dados locais.
@@ -117,22 +117,22 @@ O suporte para Spark está planejado para o segundo semestre do ano civil de 201
   * **Resposta**: Sim, com a nova versão, ambos podem ser executados simultaneamente.
 * É possível executar o **Gateway de dados local (modo pessoal)** como um serviço?
   
-  * **Resposta:** Não. O **Gateway de dados local (modo pessoal)** só pode ser executado como um aplicativo. Se precisar executar o gateway como um serviço e/ou no modo admin, você precisará considerar o [**Gateway de dados local**](service-gateway-onprem.md) (anteriormente conhecido como gateway Enterprise).
+  * **Resposta**: Não. O **Gateway de dados local (modo pessoal)** só pode ser executado como um aplicativo. Se precisar executar o gateway como um serviço e/ou no modo admin, você precisará considerar o [**Gateway de dados local**](service-gateway-onprem.md) (anteriormente conhecido como gateway Enterprise).
 * Com que frequência o **Gateway de dados local (modo pessoal)** é atualizado?
   
   * **Resposta**: Planejamos atualizar o gateway pessoal mensalmente.
 * Por que estou solicitado a atualizar minhas credenciais?
   
-  * **Resposta**: Muitas situações podem levar a uma solicitação de credenciais. A mais comum é você ter reinstalado o **Gateway de dados local (modo pessoal)** em um computador diferente de seu gateway do **Power BI – pessoal**. Também pode haver um problema na fonte de dados e o Power BI não conseguiu realizar uma conexão de teste ou ocorreu um erro de tempo limite ou do sistema. Você pode atualizar suas credenciais no **serviço do Power BI** indo até o **ícone de engrenagem**, selecionando **Configurações** e, em seguida, **Conjuntos de Dados** e localizando o conjunto de dados em questão e clicando em *atualizar credenciais*.
+  * **Resposta**: Muitas situações podem acionar uma solicitação de credenciais. A mais comum é você ter reinstalado o **Gateway de dados local (modo pessoal)** em um computador diferente de seu gateway do **Power BI – pessoal**. Também pode haver um problema na fonte de dados e o Power BI não conseguiu realizar uma conexão de teste ou ocorreu um erro de tempo limite ou do sistema. Você pode atualizar suas credenciais no **serviço do Power BI** indo até o **ícone de engrenagem**, selecionando **Configurações** e, em seguida, **Conjuntos de Dados** e localizando o conjunto de dados em questão e clicando em *atualizar credenciais*.
 * Quanto tempo meu gateway pessoal anterior ficará offline durante a atualização?
   
   * **Resposta**: Atualizar o gateway pessoal para a nova versão deve levar apenas alguns minutos. 
 * O que acontece se eu não migrar para o novo gateway pessoal até 31 de julho de 2017?
   
-  * **Resposta**: Se você estiver atualizando seus relatórios com o gateway atual, suas atualizações pararão. A única maneira de configurar uma nova agenda de atualização será instalando e configurando o novo gateway.
+  * **Resposta**: Se você estiver atualizando seus relatórios com o gateway atual, as atualizações serão interrompidas. A única maneira de configurar uma nova agenda de atualização será instalando e configurando o novo gateway.
 * Estou usando o script do R. Ele tem suporte?
   
-  * **Resposta**: Os scripts do R têm suporte para o modo pessoal.
+  * **Resposta**: Os scripts R têm suporte para o modo pessoal.
 * Por que não estou vendo a mensagem para atualizar meu gateway no **serviço do Power BI**?
   
   * **Resposta**: Provavelmente, isso está acontecendo porque você tem um ou mais conjuntos de dados que incluem uma fonte de dados que ainda não tem suporte.

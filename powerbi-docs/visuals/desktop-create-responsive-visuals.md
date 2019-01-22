@@ -5,20 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 4372f37cf6afc8fe51d6650ddd888bd41d3ea678
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187227"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280115"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Otimizar um visual do Power BI para qualquer tamanho
-Por padrão, quando você cria um novo relatório, os visuais são *responsivos*: eles são alterados dinamicamente para exibir o máximo de dados e informações, independentemente do tamanho da tela. Para relatórios mais antigos, você também pode definir os elementos visuais para serem redimensionados dinamicamente.
+Por padrão, quando você cria um novo relatório, os visuais são *responsivos*, isto é, eles podem mudar dinamicamente para exibir o máximo de dados e insights, independentemente do tamanho da tela. Para relatórios mais antigos, você também pode definir os elementos visuais para serem redimensionados dinamicamente.
 
 Como um visual muda de tamanho, o Power BI prioriza a exibição de dados, por exemplo, removendo o preenchimento e movendo a legenda para a parte superior do visual automaticamente, para que ele continue informativo mesmo quando fica menor. A capacidade de resposta é especialmente útil em visuais no aplicativo móvel do Power BI em telefones.
 

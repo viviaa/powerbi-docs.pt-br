@@ -1,22 +1,22 @@
 ---
-title: 'Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)'
+title: 'Tutorial: criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)'
 description: Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: fbeb617207c13459fe88487547609323391487e2
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 05805ea7b30f0ab0bd14265caecbb04a4e975300
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900602"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296411"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutorial: Criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutorial: criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)
 
 Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado com uma tabela que encapsula para várias páginas. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI. Os relatórios paginados no serviço do Power BI estão no momento em versão prévia.
 
@@ -58,7 +58,7 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
   
 4.  Na página **Escolher um conjunto de dados**, selecione **Criar um conjunto de dados** > **Avançar**.  
 
-    ![Criar um conjunto de dados](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
+    ![Crie um conjunto de dados](media/paginated-reports-quickstart-aw/power-bi-paginated-create-dataset.png)
   
 5.  Na página **Escolha uma conexão com uma fonte de dados**, selecione **Nova**. 
 
@@ -74,7 +74,7 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
 
     ![Propriedades da fonte de dados - Compilar](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png)
 
-9. **No Azure:** volte para o portal do Azure e selecione **bancos de dados SQL**.
+9. **No Azure:** volte ao portal do Azure e selecione **Bancos de dados SQL**.
 
 1. Selecione o banco de dados SQL do Azure criado no início rápido "Criar um exemplo de banco de dados SQL do Azure no portal do Azure" na seção **Pré-requisitos** deste artigo.
 
@@ -108,7 +108,7 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
 
     - Endereço
     - Cliente
-    - Product
+    - Produto
     - ProductCategory
     - SalesOrderDetail
     - SalesOrderHeader

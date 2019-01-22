@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619484"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279172"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Modo de armazenamento no Power BI Desktop (versão prévia)
 
@@ -27,9 +27,9 @@ Definir o modo de armazenamento oferece muitas vantagens. Você pode definir o m
 
 * **Desempenho de consulta**: conforme os usuários interagem com os visuais nos relatórios do Power BI, as consultas DAX (Data Analysis Expressions) são enviadas para o conjunto de dados. O armazenamento de dados em cache na memória com a configuração adequada do modo de armazenamento pode melhorar o desempenho da consulta e a interatividade dos relatórios.
 
-* **Grandes conjuntos de dados**: tabelas que não são armazenados em cache não consomem memória para fins de cache. Você pode habilitar a análise interativa de amplos conjuntos de dados que são muito grandes ou caros para armazenar completamente em cache na memória. É possível escolher quais tabelas valem a pena ser armazenadas em cache e quais não valem.
+* **Grandes conjuntos de dados**: tabelas que não estejam armazenadas em cache não consomem memória para fins de cache. Você pode habilitar a análise interativa de amplos conjuntos de dados que são muito grandes ou caros para armazenar completamente em cache na memória. É possível escolher quais tabelas valem a pena ser armazenadas em cache e quais não valem.
 
-* **Otimização de atualização de dados**: as tabelas que não são armazenadas em cache não precisam ser atualizadas. É possível reduzir os períodos de atualização armazenando em cache apenas os dados necessários para atender aos contratos de nível de serviço e os requisitos empresariais.
+* **Otimização de atualização de dados**: tabelas que não estejam armazenadas em cache não precisam ser atualizadas. É possível reduzir os períodos de atualização armazenando em cache apenas os dados necessários para atender aos contratos de nível de serviço e os requisitos empresariais.
 
 * **Requisitos quase em tempo real**: as tabelas com requisitos quase em tempo real podem se beneficiar de não serem armazenadas em cache, para reduzir a latência de dados.
 

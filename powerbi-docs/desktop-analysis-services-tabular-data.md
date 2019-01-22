@@ -5,20 +5,20 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 102198c4524903098ad0c6b0b9fd7e231c3f1fdc
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 703ccbc0c1c541fe161f409480701788d0cd12af
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578280"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280231"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Usando dados de tabela do Analysis Services no Power BI Desktop
-Com o Power BI Desktop, há duas maneiras de se conectar a seus Modelos de tabela dos SQL Server Analysis Services e obter dados deles: Explorar usando uma conexão dinâmica ou Selecionar itens e importá-los para o Power BI Desktop.
+Com o Power BI Desktop, há duas maneiras de obter e se conectar aos dados de seus Modelos de tabela do SQL Server Analysis Services: explore usando uma conexão dinâmica ou selecione itens e importe no Power BI Desktop.
 
 Vamos ver isso mais de perto.
 
@@ -52,31 +52,31 @@ Quando você tiver criado relatórios dinâmicos na Área de Trabalho do Power B
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-**Pergunta:** preciso de um Gateway de dados local?
+**Pergunta:** Preciso de um gateway de dados local?
 
-**Resposta:** depende. Se você usar o Power BI Desktop para se conectar dinamicamente a um modelo de Tabela, mas não tem intenção de publicar no site do Power BI, não será necessário ter um gateway. Por outro lado, se pretende publicar em seu site do Power BI, é necessário ter um gateway de dados para garantir a comunicação segura entre o serviço do Power BI e o servidor local do Analysis Services. Certifique-se de falar com o administrador do servidor do Analysis Services antes de instalar um gateway de dados.
+**Resposta:** Depende. Se você usar o Power BI Desktop para se conectar dinamicamente a um modelo de Tabela, mas não tem intenção de publicar no site do Power BI, não será necessário ter um gateway. Por outro lado, se pretende publicar em seu site do Power BI, é necessário ter um gateway de dados para garantir a comunicação segura entre o serviço do Power BI e o servidor local do Analysis Services. Certifique-se de falar com o administrador do servidor do Analysis Services antes de instalar um gateway de dados.
 
 Se escolher selecionar itens e obter dados, você importará dados do modelo de Tabela diretamente para seu arquivo do Power BI Desktop; portanto, não será necessário ter um gateway.
 
-**Pergunta:** qual é a diferença entre a conexão dinâmica com um Modelo de tabela do serviço do Power BI e a conexão dinâmica no Power BI Desktop?
+**Pergunta:** Qual é a diferença entre a conexão dinâmica com um Modelo de tabela do serviço do Power BI e a conexão dinâmica no Power BI Desktop?
 
-**Resposta:** durante a conexão dinâmica com um modelo de Tabela de seu site no serviço do Power BI com um banco de dados local do Analysis Services em sua organização, é necessário ter um Gateway de dados local para proteger a comunicação entre eles. Durante a conexão dinâmica com um modelo de Tabela do Power BI Desktop, não é necessário ter um gateway, pois tanto o Power BI Desktop quanto o servidor do Analysis Services ao qual você está se conectando estão sendo executados localmente em sua organização. No entanto, se o arquivo do Power BI Desktop for publicado no seu site do Power BI, será necessário um gateway.
+**Resposta:** Durante a conexão dinâmica com um Modelo de tabela de seu site no serviço do Power BI com um banco de dados local do Analysis Services em sua organização, é necessário ter um Gateway de dados local para proteger a comunicação entre eles. Durante a conexão dinâmica com um modelo de Tabela do Power BI Desktop, não é necessário ter um gateway, pois tanto o Power BI Desktop quanto o servidor do Analysis Services ao qual você está se conectando estão sendo executados localmente em sua organização. No entanto, se o arquivo do Power BI Desktop for publicado no seu site do Power BI, será necessário um gateway.
 
-**Pergunta:** se eu criei uma conexão dinâmica, posso me conectar a uma outra fonte de dados no mesmo arquivo do Power BI Desktop?
+**Pergunta:** Se eu criei uma conexão dinâmica, posso me conectar a uma outra fonte de dados no mesmo arquivo do Power BI Desktop?
 
-**Resposta:** não. Você não pode explorar dados dinâmicos e conectar-se a outro tipo de fonte de dados no mesmo arquivo. Se você já importou dados ou conectou-se a uma fonte de dados diferente em um arquivo do Power BI Desktop, você precisará criar um novo arquivo para explorar dinamicamente.
+**Resposta:** Não. Você não pode explorar dados dinâmicos e conectar-se a outro tipo de fonte de dados no mesmo arquivo. Se você já importou dados ou conectou-se a uma fonte de dados diferente em um arquivo do Power BI Desktop, você precisará criar um novo arquivo para explorar dinamicamente.
 
-**Pergunta:** se eu criei uma conexão dinâmica, posso editar o modelo ou a consulta no Power BI Desktop?
+**Pergunta:** Se eu criei uma conexão dinâmica, posso editar o modelo ou a consulta no Power BI Desktop?
 
-**Resposta:** é possível criar medidas de nível de relatório no Power BI Desktop, mas todos os outros recursos de consulta e de modelagem ficam desabilitados ao explorar dados dinâmicos.
+**Resposta:** É possível criar medidas de nível de relatório no Power BI Desktop, mas todos os outros recursos de consulta e de modelagem ficam desabilitados ao explorar dados dinâmicos.
 
-**Pergunta:** se eu criei uma conexão dinâmica, ela é segura?
+**Pergunta:** Se eu criei uma conexão dinâmica, ela é segura?
 
 **Resposta:** Sim. Suas credenciais atuais do Windows são usadas para se conectar ao servidor do Analysis Services. Não é possível usar credenciais Básicas ou armazenadas no serviço do Power BI ou Power BI Desktop ao explorar dinamicamente.
 
-**Pergunta:** no Navegador, vejo um modelo e uma perspectiva. Qual é a diferença?
+**Pergunta:** No Navegador, vejo um modelo e uma perspectiva. Qual é a diferença?
 
-**Resposta:** uma perspectiva é uma exibição específica de um Modelo de tabela. Ela pode incluir somente determinadas tabelas, colunas ou medidas dependendo de uma necessidade de análise de dados exclusiva. Um Modelo de tabela sempre contém pelo menos uma perspectiva, que pode incluir tudo no modelo. Se você não tiver certeza de qual(is) você deve selecionar, verifique com seu administrador.
+**Resposta:** Uma perspectiva é uma exibição específica de um Modelo de tabela. Ela pode incluir somente determinadas tabelas, colunas ou medidas dependendo de uma necessidade de análise de dados exclusiva. Um Modelo de tabela sempre contém pelo menos uma perspectiva, que pode incluir tudo no modelo. Se você não tiver certeza de qual(is) você deve selecionar, verifique com seu administrador.
 
 ## <a name="to-change-the-server-name-after-initial-connection"></a>Para alterar o nome do servidor após a conexão inicial
 Depois de criar um arquivo do Power BI Desktop com uma conexão dinâmica de exploração, pode haver alguns casos em que você deseja alternar a conexão para um servidor diferente. Por exemplo, se você criou o arquivo do Power BI Desktop ao se conectar a um servidor de desenvolvimento e, antes da publicação para o serviço do Power BI, você deseja alternar a conexão para o servidor de produção.
@@ -92,5 +92,5 @@ Depois de criar um arquivo do Power BI Desktop com uma conexão dinâmica de exp
 ## <a name="troubleshooting"></a>Solução de problemas 
 A lista a seguir descreve todos os problemas conhecidos de conexão com o SSAS (SQL Server Analysis Services) ou o Azure Analysis Services. 
 
-* **Erro: não foi possível carregar o esquema de modelo** – esse erro normalmente ocorre quando o usuário que se conecta ao Analysis Services não tem acesso ao banco de dados/modelo.
+* **Erro: não foi possível carregar o esquema de modelo**: esse erro normalmente ocorre quando o usuário que se conecta ao Analysis Services não tem acesso ao banco de dados/modelo.
 

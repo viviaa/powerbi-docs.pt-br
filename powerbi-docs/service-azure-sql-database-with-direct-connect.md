@@ -5,17 +5,17 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a1ae30097e0af90d5da8acd0d41b11f513756f88
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 3bee2d5a4bbb470ed85d2ec0ae501d3dcc875e7f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135894"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286279"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Banco de Dados SQL do Azure com DirectQuery
 Saiba como você pode se conectar diretamente ao banco de dados SQL e criar relatórios que usam dados dinâmicos. Você pode manter os dados na fonte e não no Power BI.
@@ -51,6 +51,10 @@ Para habilitar o SSO, acesse as configurações para o conjunto de dados, abra a
 Quando a opção de SSO está habilitada e os usuários acessam relatórios construídos sobre a fonte de dados, o Power BI envia suas credenciais autenticadas do Azure AD às consultas no banco de dados do SQL do Azure. Isso permite que o Power BI respeite as configurações de segurança que são configuradas no nível da fonte de dados.
 
 A opção de SSO entra em vigor em todos os conjuntos de dados que usam essa fonte de dados. Isso não afeta o método de autenticação usado para cenários de importação.
+
+> [!Note]
+> Não há suporte para Autenticação Multifator do Microsoft Azure (MFA). Os usuários que quiserem usar o SSO com o DirectQuery para SQL do Microsoft Azure devem ser isentos de MFA.
+>
 
 ## <a name="finding-parameter-values"></a>Localizando Valores de Parâmetro
 Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados no Portal do Azure.

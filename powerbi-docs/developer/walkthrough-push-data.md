@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 0990f6ddaf458d5723cd04fedf0b34f497de16cb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974174"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278483"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Enviar dados por push a um conjunto de dados do Power BI
 
@@ -24,7 +24,7 @@ Antes de começar a enviar dados por push a um conjunto de dados, é necessário
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Etapas para enviar dados por push a um conjunto de dados
 
-* Etapa 1: [Registrar um aplicativo no Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
+* Etapa 1: [Registrar um aplicativo com o Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
 * Etapa 2: [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md)
 * Etapa 3: [Criar um conjunto de dados no Power BI](walkthrough-push-data-create-dataset.md)
 * Etapa 4: [Obter um conjunto de dados para adicionar linhas em uma tabela do Power BI](walkthrough-push-data-get-datasets.md)
@@ -59,7 +59,7 @@ A cadeia de caracteres JSON para um conjunto de dados tem o seguinte formato:
         ]
     }
 
-Assim, em nosso exemplo de conjunto de dados de Marketing de vendas, você passaria uma cadeia de caracteres JSON como o exemplo a seguir. Neste exemplo, **SalesMarketing** é o nome do conjunto de dados, e **Product** é o nome da tabela. Depois de definir a tabela, você pode definir o esquema da tabela. Para o conjunto de dados **SalesMarketing** , o esquema da tabela tem as seguintes colunas: ProductID, Manufacturer, Category, Segment, Product e IsCompete.
+Assim, em nosso exemplo de conjunto de dados de Marketing de vendas, você passaria uma cadeia de caracteres JSON como o exemplo a seguir. Neste exemplo, **SalesMarketing** é o nome do conjunto de dados, e **Product** é o nome da tabela. Depois de definir a tabela, você pode definir o esquema da tabela. Para o conjunto de dados **SalesMarketing**, o esquema da tabela tem estas colunas: ProductID, Manufacturer, Category, Segment, Product e IsCompete.
 
 **JSON de objeto de conjunto de dados de exemplo**
 
@@ -112,7 +112,7 @@ Para um esquema de tabela do Power BI, você pode usar os seguintes tipos de dad
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Saiba mais sobre como enviar dados por push ao Power BI
 
-Para começar a enviar dados por push a um conjunto de dados, veja [Etapa 1: registrar um aplicativo no Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) no painel de navegação esquerdo.
+Para começar a enviar dados por push a um conjunto de dados, consulte [Etapa 1: Registrar um aplicativo com o Azure Active Directory](walkthrough-push-data-register-app-with-azure-ad.md) no painel de navegação à esquerda.
 
 [Próxima etapa >](walkthrough-push-data-register-app-with-azure-ad.md)
 

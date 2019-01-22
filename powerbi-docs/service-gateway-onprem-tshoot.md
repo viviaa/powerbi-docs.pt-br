@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
-ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
+ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51580530"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296560"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Solução de problemas do gateway de dados local
 
@@ -60,17 +60,17 @@ Os logs de serviço de gateway são categorizados em três buckets: informaçõe
 
 Esse arquivo está localizado por padrão em: *\Arquivos de Programas\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Para configurar o número de arquivos de log a serem retidos, altere o primeiro número (20 neste exemplo): `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
 
-### <a name="error-failed-to-create-a-gateway-try-again"></a>Erro: falha ao criar um gateway. Tentar novamente
+### <a name="error-failed-to-create-a-gateway-try-again"></a>Erro: Falha ao criar um gateway. Tentar novamente
 
 Todos os detalhes estão disponíveis, mas a chamada para o serviço do Power BI retornou um erro. São exibidos o erro e uma ID de atividade. Isso pode acontecer por diferentes motivos. Você pode coletar e examinar os logs da maneira descrita abaixo para obter mais detalhes.
 
 Isso também pode ser devido a problemas de configuração de proxy. A interface do usuário agora permite a configuração de proxy. Saiba mais sobre como fazer [alterações da configuração de proxy](service-gateway-proxy.md)
 
-### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Erro: falha ao atualizar detalhes do gateway. Tente novamente
+### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Erro: Falha ao atualizar detalhes do gateway. Tente novamente
 
 As informações foram recebidas do serviço do Power BI para o gateway. As informações foram transmitidas para o serviço do Windows local, mas houve uma falha ao retornar. Ou então houve uma falha de geração de chave simétrica. A exceção interna é exibida em **Mostrar detalhes**. Para obter mais detalhes, colete e analise os logs mencionados abaixo.
 
-### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Erro: o serviço do Power BI relatou o gateway local como inacessível. Reinicie o gateway e tente novamente
+### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Erro: O serviço do Power BI relatou o gateway local como inacessível. Reinicie o gateway e tente novamente
 
 No final da configuração, o serviço do Power BI é chamado novamente para validar o gateway. O serviço do Power BI não relata o gateway como *dinâmico*. Reiniciar o serviço do Windows pode permitir que a comunicação seja bem-sucedida. Você pode coletar e examinar os logs da maneira descrita abaixo para obter mais detalhes.
 
@@ -78,7 +78,7 @@ No final da configuração, o serviço do Power BI é chamado novamente para val
 
 Você pode receber um erro de script ao entrar no Power BI como parte da configuração de gateway de dados local. A instalação da seguinte atualização de segurança resolve o problema. Isso pode ser instalado por meio do Windows Update.
 
-[MS16-051: atualização de segurança do Internet Explorer: 10 de maio de 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
+[MS16-051: Atualização de segurança do Internet Explorer: 10 de maio de 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
 ### <a name="gateway-configuration-failed-with-a-null-reference-exception"></a>Falha de configuração do gateway com uma exceção de referência nula
 
@@ -117,7 +117,7 @@ Por padrão, o gateway de dados local usa o protocolo TLS 1.2 para se comunicar 
 
 ## <a name="data-sources"></a>Fontes de dados
 
-### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Erro: impossível conectar. Detalhes: "Credenciais de conexão inválidas"
+### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Erro: Não é possível estabelecer conexão. Detalhes: "Credenciais de conexão inválidas"
 
 Em **Mostrar detalhes**, a mensagem de erro recebida da fonte de dados é exibida. Para o SQL Server, você verá algo semelhante ao seguinte.
 
@@ -125,7 +125,7 @@ Em **Mostrar detalhes**, a mensagem de erro recebida da fonte de dados é exibid
 
 Verifique se você tem o nome de usuário correto e a senha. Além disso, verifique se essas credenciais podem se conectar à fonte de dados com êxito. Verifique se a conta que está sendo usada corresponde ao **Método de Autenticação**.
 
-### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Erro: impossível conectar. Detalhes: "Não é possível se conectar ao banco de dados"
+### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Erro: Não é possível estabelecer conexão. Detalhes: "Não é possível se conectar ao banco de dados"
 
 Conseguimos nos conectar ao servidor, mas não ao banco de dados fornecido. Verifique o nome do banco de dados e se as credenciais do usuário têm a permissão apropriada para acessar esse banco de dados.
 
@@ -133,7 +133,7 @@ Em **Mostrar detalhes**, a mensagem de erro recebida da fonte de dados é exibid
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Erro: impossível conectar. Detalhes: "Erro desconhecido no gateway de dados"
+### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Erro: Não é possível estabelecer conexão. Detalhes: "Erro desconhecido no gateway de dados"
 
 Esse erro pode ocorrer por diferentes motivos. Não se esqueça de validar que você pode se conectar à fonte de dados do computador que hospeda o gateway. Isso pode ocorrer devido ao fato de o servidor não estar acessível.
 
@@ -141,7 +141,7 @@ Em **Mostrar detalhes**, é possível ver um código de erro **DM_GWPipeline_Unk
 
 Você também pode examinar os Logs de Eventos > **Logs de Aplicativos e Serviços** > **Serviço do gateway de dados local** para obter mais detalhes.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erro: encontramos um erro ao tentar conectar-se com <server>. Detalhes: "Alcançamos o gateway de dados, mas o gateway não consegue acessar a fonte de dados local".
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erro: Encontramos um erro ao tentar conectar ao <server>. Detalhes: "Acessamos o gateway de dados, mas o gateway não pode acessar a fonte de dados local."
 
 Não é possível se conectar à fonte de dados especificada. Certifique-se de validar as informações fornecidas para essa fonte de dados.
 
@@ -182,17 +182,17 @@ Esse erro também poderá ser causado se o servidor do Analysis Services estiver
 
 Confira se sua conta está listada na guia **Usuários** da fonte de dados na configuração do gateway. Se não tiver acesso ao gateway, verifique com o administrador do gateway e solicite a verificação. Somente as contas na lista **Usuários** podem ver a fonte de dados relacionada na lista do Analysis Services.
 
-### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Erro: você não tem nenhum gateway instalado ou configurado para as fontes de dados neste conjunto de dados
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Erro: Você não tem nenhum gateway instalado ou configurado para as fontes de dados neste conjunto de dados
 
 Verifique se você adicionou uma ou mais fontes de dados para o gateway, conforme está descrito em [Adicionar uma fonte de dados](service-gateway-manage.md#add-a-data-source). Se o gateway não aparecer no portal de administração em **Gerenciar gateways**, tente limpar o cache do navegador ou sair do serviço e entrar novamente.
 
-## <a name="datasets"></a>Conjuntos de Dados
+## <a name="datasets"></a>Conjuntos de dados
 
-### <a name="error-there-is-not-enough-space-for-this-row"></a>Erro: não há espaço suficiente para esta linha
+### <a name="error-there-is-not-enough-space-for-this-row"></a>Erro: Não há espaço suficiente para esta linha
 
 Isso ocorrerá se você tiver uma única linha com um tamanho maior que 4 MB. É necessário determinar qual linha é proveniente da fonte de dados e tentar filtrá-la ou reduzir seu tamanho.
 
-### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Erro: o nome do servidor fornecido não corresponde ao nome do servidor no certificado SSL do SQL Server
+### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Erro: O nome do servidor fornecido não corresponde ao nome do servidor no certificado SSL do SQL Server
 
 Isso pode ocorrer quando o certificado CN é para o FQDN (nome de domínio totalmente qualificado) do servidor, mas você somente forneceu o nome NetBIOS do servidor. Isso causa uma incompatibilidade para o certificado. Para resolver esse problema, é necessário criar o nome do servidor na fonte de dados do gateway e no arquivo PBIX para usar o FQDN do servidor.
 
@@ -204,7 +204,7 @@ Isso pode ser devido a alguns cenários diferentes.
 2. Sua conta não está listada na guia **Usuários** da fonte de dados na configuração do gateway. É necessário solicitar ao administrador do gateway para ser adicionado à lista.
 3. O arquivo do Power BI Desktop contém dados de várias fontes e nem todas as fontes de dados estão configuradas com o gateway. É necessário ter cada fonte de dados definida com o gateway para que ele seja exibido na Atualização agendada.
 
-### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Erro: os dados descompactados recebidos no cliente de gateway excederam o limite
+### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Erro: Os dados descompactados recebidos no cliente de gateway excederam o limite
 
 A limitação exata é de 10 GB de dados descompactados por tabela. Se você estiver tendo esse problema, há boas opções para otimizá-lo e evitá-lo. Especificamente, será útil reduzir o uso de valores de cadeias de caracteres longas e altamente repetitivas e, em vez disso, usar uma chave normalizada ou remover a coluna (se ela não estiver em uso).
 
@@ -217,7 +217,7 @@ Isso geralmente é causado por um dos motivos a seguir.
 1. As informações da fonte de dados não correspondem as que estão no conjunto de dados subjacente. O servidor e o nome do banco de dados precisam corresponder à fonte de dados definida para o gateway de dados local e às informações fornecidas no Power BI Desktop. Se você usar um Endereço IP no Power BI Desktop, a fonte de dados do gateway de dados local também precisará usar um Endereço IP.
 2. Não há uma fonte de dados disponível em nenhum gateway de sua organização. É possível configurar a fonte de dados em um gateway de dados local novo ou existente.
 
-### <a name="error-data-source-access-error-please-contact-the-gateway-administrator"></a>Detalhes: erro de acesso à fonte de dados. Contate o administrador do gateway
+### <a name="error-data-source-access-error-please-contact-the-gateway-administrator"></a>Erro: Erro de acesso à fonte de dados. Contate o administrador do gateway
 
 Se este relatório estiver usando uma conexão dinâmica do Analysis Services, talvez você tenha problemas ao passar um valor para EffectiveUserName que não seja válido ou que não tenha permissões no computador do Analysis Services. Normalmente, um problema de autenticação ocorre devido ao fato de que o valor passado para EffectiveUserName não corresponde a um nome UPN local.
 
@@ -459,7 +459,7 @@ Execute estas etapas para resolver o problema:
 1. Configurar um SPN para o gateway local
 2. Configurar a delegação restrita em seu Active Directory (AD)
 
-### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: falha ao criar a identidade do Windows para a userid do usuário
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: falha ao criar a identidade do Windows para a ID do usuário
 
 O FailedToImpersonateUserException ocorrerá se você não puder representar em nome de outro usuário. Isso também pode ocorrer se a conta que você está tentando representar for de um domínio diferente do domínio no qual o domínio do serviço de gateway está (isso é uma limitação).
 
@@ -500,7 +500,7 @@ Você receberá o erro 1033 quando sua ID externa configurada no SAP HANA não e
         <value>AADEmail</value>
 ```
 
-### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG] [LIBODBCHDB DLL] [HDBODBC] Falha do link de comunicação; –10709 Falha de conexão (RTE:[-1] erro de Kerberos. Principal: "Falha diversa [851968]", secundária: "Nenhuma credencial disponível no pacote de segurança
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG] [LIBODBCHDB DLL] [HDBODBC] Falha do link de comunicação; –10709 Falha de conexão (RTE:[-1] erro de Kerberos. Principal: "Falhas diversas [851968]", secundária: "Nenhuma credencial disponível no pacote de segurança
 
 Você receberá a mensagem de erro –10709 Falha na conexão se sua delegação não estiver configurada corretamente no AD.
 

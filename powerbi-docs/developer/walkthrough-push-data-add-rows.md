@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/01/2018
-ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
-ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
+ms.openlocfilehash: 0337e35a67a852e1bb82209e095df4945c5de84a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475650"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275285"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Etapa 5: Adicionar linhas a uma tabela do Power BI
 Este artigo faz parte do passo a passo para [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
@@ -33,7 +33,7 @@ Veja como adicionar linhas a um conjunto de dados usando a API do Power BI.
 > 
 > 
 
-1. No projeto de Aplicativo de Console que você criou na Etapa 2: Passo a passo para enviar dados por push, [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md), adicione o código abaixo.
+1. No projeto de Aplicativo de Console que você criou na Etapa 2: o passo a passo para enviar dados por push, [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md), adicione o código abaixo.
 2. Execute o Aplicativo de Console e faça logon na sua conta do Power BI. Você deve ver **Linhas Adicionadas** na janela do Console. Você também pode fazer logon no Power BI para ver as linhas adicionadas ao conjunto de dados.
 
 **Exemplo de envio dados por push a um conjunto de dados**

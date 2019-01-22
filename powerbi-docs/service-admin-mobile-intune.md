@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 428ea77de2151f4ec3417f62819b3d6481c17ae2
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 65c2de2d505866b3b00a88eaaa309d7c61a7625d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909676"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296215"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Configurar aplicativos móveis com o Microsoft Intune
 
@@ -30,7 +30,7 @@ O Microsoft Intune pode coexistir com o MDM (Gerenciamento de Dispositivo Móvel
 > [!NOTE]
 > Após a configuração do Intune, a atualização de dados em segundo plano é desativada para o aplicativo móvel do Power BI em seu dispositivo Android ou iOS. O Power BI atualiza os dados do serviço do Power BI na Web quando você entra no aplicativo.
 
-## <a name="step-1-get-the-url-for-the-application"></a>Etapa 1: Obter a URL do aplicativo
+## <a name="step-1-get-the-url-for-the-application"></a>Etapa 1: obter a URL do aplicativo
 
 Antes de criar o aplicativo no Intune, precisamos obter as URLs para os aplicativos. Para iOS, elas serão obtidas pelo iTunes. Para o Android, você pode obtê-las no página móvel do Power BI.
 
@@ -96,7 +96,7 @@ Você pode criar o aplicativo ou a política primeiro. Não importa a ordem que 
 
 1. Selecione **Carregar**.
 
-1. Se você não vir o aplicativo na lista, atualize a página: acesse **Visão geral**, depois volte para **Aplicativos**.
+1. Se o aplicativo não estiver na lista, atualize a página: acesse **Visão geral** e volte para **Aplicativos**.
 
     ![Guia Aplicativos](media/service-admin-mobile-intune/intune-add-software-ios2.png)
 
@@ -112,7 +112,7 @@ Você pode criar o aplicativo ou a política primeiro. Não importa a ordem que 
 
 1. Selecione **Carregar**.
 
-1. Se você não vir o aplicativo na lista, atualize a página: acesse **Visão geral**, depois volte para **Aplicativos**.
+1. Se o aplicativo não estiver na lista, atualize a página: acesse **Visão geral** e volte para **Aplicativos**.
 
     ![Guia Aplicativos](media/service-admin-mobile-intune/intune-add-software-android2.png)
 

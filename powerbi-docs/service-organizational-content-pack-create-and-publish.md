@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4638842217127c1d80ec115e05f8db1a6d3eb36c
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 3a434c418e8a385db921dd910f354bda04ad8edd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679031"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289315"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Criar e publicar um pacote de conteúdo organizacional do Power BI (tutorial)
 
@@ -53,7 +53,7 @@ Quer me acompanhar? Em [Serviço do Power BI](https://powerbi.com), acesse **Obt
       > 
       > 
    
-   3. Recomendável: adicionar uma **descrição**. Isso ajuda os colegas de trabalho a localizar mais facilmente os pacotes de conteúdo que eles precisam. Além de uma descrição, adicione palavras-chave que nossos colegas de trabalho possam usar para pesquisar neste pacote de conteúdo. Inclua informações de contato, caso seus colegas de trabalho tenham alguma dúvida ou precisem de ajuda.
+   3. Recomendado: Adicionar uma **descrição**. Isso ajuda os colegas de trabalho a localizar mais facilmente os pacotes de conteúdo que eles precisam. Além de uma descrição, adicione palavras-chave que nossos colegas de trabalho possam usar para pesquisar neste pacote de conteúdo. Inclua informações de contato, caso seus colegas de trabalho tenham alguma dúvida ou precisem de ajuda.
    
    4. **Carregue uma imagem ou um logotipo** para facilitar a localização do pacote de conteúdo pelos membros do grupo &#151; é mais rápido verificar se há uma imagem do que encontrar um texto. Usamos uma imagem do bloco de gráfico de coluna 100% de Contagem de Oportunidade na captura de tela abaixo.
    

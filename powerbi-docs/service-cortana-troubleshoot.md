@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d15dfa17280a8c289f223719961cd48a97cb92bc
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187526"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296307"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Solucionar problemas da Cortana para o Power BI
 Este artigo faz parte de uma série. Recomendamos que você confira os seguintes artigos, se ainda não os tiver lido.
@@ -42,12 +42,12 @@ Se ainda estiver com problemas para integrar a Cortana com o Power BI, você vei
    * “mostrar vendas” *não* retornará um resultado do Power BI.   
    * “mostrar vendas do AF16”, “vendas AF16”, “mostrar vendas AF16” e “mostrar vendas f” *retornarão* um resultado do Power BI.    
    * Adicionar a palavra “powerbi” conta como uma das duas palavras necessárias, portanto “vendas do Power BI” *retornará* resultado do Power BI.
-5. Você tem acesso ou permissões para editar os relatórios ou dashboards? Para os relatórios, verifique se o conteúdo que você está tentando pesquisar tem um [cartão de respostas](service-cortana-answer-cards.md).  Para os dashboards, verifique se o conteúdo que você está tentando pesquisar está em **Compartilhado comigo**, um espaço de trabalho do aplicativo ou em **Meu espaço de trabalho**. [Use a ferramenta de solução de problemas](#try-the-cortana-troubleshooting-tool) para ajudar a identificar o problema.
+5. Você tem acesso ou permissões para editar os relatórios ou dashboards? Para os relatórios, verifique se o conteúdo que você está tentando pesquisar tem um [cartão de respostas](service-cortana-answer-cards.md).  Para os dashboards, verifique se o conteúdo que você está tentando pesquisar está em **Compartilhado comigo**, um workspace do aplicativo ou em **Meu workspace**. [Use a ferramenta de solução de problemas](#try-the-cortana-troubleshooting-tool) para ajudar a identificar o problema.
 6. Você está usando um dispositivo móvel?  No momento, só há suporte para a integração do Power BI e da Cortana em dispositivos móveis do Windows.
 7. A Cortana está configurada para o idioma Inglês?  A integração atual do Power BI com a Cortana tem suporte apenas em inglês. Abra a Cortana e selecione o ícone de engrenagem para exibir as Configurações. Role para baixo até **Idioma da Cortana** e confirme se ela está configurada para uma das opções em Inglês.
 
    ![Definir o idioma da Cortana](media/service-cortana-troubleshoot/power-bi-cortana-language.png)
-8. Você tem mais de 100 relatórios habilitados para a Cortana?  A Cortana pesquisa somente até 100 no total.  Para garantir que seu relatório seja incluído, mova ou copie-o para a área **Meu Espaço de Trabalho**, uma vez que a Cortana pesquisará nela primeiro.
+8. Você tem mais de 100 relatórios habilitados para a Cortana?  A Cortana pesquisa somente até 100 no total.  Para garantir que seu relatório seja incluído, mova ou copie-o para a área **Meu Workspace**, uma vez que a Cortana pesquisará nela primeiro.
 9. Talvez você precise esperar um pouco. Na primeira vez que digitar uma consulta, o modelo poderá ficar *inativo*. Aguarde alguns segundos para que os dados possam ser carregado na memória e, então, tente novamente.
 10. Para os dashboards, pode levar até 24 horas para que eles se tornem acessíveis à Cortana.    
 11. Para os relatórios, quando um novo conjunto de dados ou um cartão de respostas personalizado for adicionado ao Power BI e habilitado para a Cortana, poderá levar até 30 minutos para que os resultados comecem a aparecer na Cortana. Fazer logon e logoff do Windows 10 ou reiniciar o processo da Cortana no Windows 10, permitirá que o novo conteúdo de relatório seja exibido imediatamente.  

@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 71cde810f98a81ab5670b3ab04bc1cd502277c1c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 079494a47452ca0ca043032f78fa35c7d1755d11
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416856"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282553"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Gráficos de medidor radial no Power BI
 Um gráfico de medidor radial tem um arco circular e exibe um único valor que acompanha o progresso em relação a um objetivo/KPI.  A meta, ou o valor de destino, é representada pela linha (agulha). Progresso em relação a esse objetivo é representado pelo sombreamento.  E o valor que representa o progresso é mostrado em negrito dentro do arco. Todos os valores possíveis são distribuídos uniformemente ao longo do arco, do mínimo (valor mais à esquerda) para o máximo (valor mais à direita).
@@ -47,7 +47,7 @@ Ou veja Will mostrando como criar elementos visuais de métrica únicos: medidor
 ### <a name="step-1-open-the-financial-sample-excel-file"></a>Etapa 1: abrir o arquivo do Excel de Exemplo Financeiro
 1. [Baixe o arquivo do Excel de exemplo Financeiro](../sample-financial-download.md) se ainda não tiver feito isso. Lembre-se do local em que você o salvou.
 
-2. Abra o arquivo no ***serviço do Power BI*** selecionando **Obter dados \> Arquivos** e navegando até o local em que você salvou o arquivo. Selecione **Importar**. A Amostra Financeira é adicionada a seu espaço de trabalho como um conjunto de dados.
+2. Abra o arquivo no ***serviço do Power BI*** selecionando **Obter dados \> Arquivos** e navegando até o local em que você salvou o arquivo. Selecione **Importar**. A Amostra Financeira é adicionada a seu workspace como um conjunto de dados.
 
 3. Da lista de conteúdo **Conjunto de dados**, selecione **Exemplo Financeiro** para abri-lo no modo de Explorar.
 
@@ -90,7 +90,7 @@ Na Etapa 2, o Power BI usou o campo Valor para definir automaticamente o mínimo
    
    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-final-gauge.png)
 
-### <a name="step-5-save-your-report"></a>Etapa 5: salvar o relatório
+### <a name="step-5-save-your-report"></a>Etapa 5: Salvar seu relatório
 1. [Salve o relatório](../service-report-save.md).
 2. [Adicione o gráfico de medidor como um bloco do dashboard](../service-dashboard-pin-tile-from-report.md). 
 

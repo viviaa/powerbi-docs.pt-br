@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e23182b1e607498c5187882740b556455657ba1d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f39f5ae569c757072a55647becb5697c881abbe2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670883"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285659"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutorial: Formatar e combinar dados no Power BI Desktop
 
@@ -81,7 +81,7 @@ Para remover a coluna **Custo de vida**, basta selecionar a coluna e escolher a 
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Observe que os valores de _Nova Classificação_ não foram alterados; isso ocorre devido à ordem das etapas. Já que o Editor de Consultas registra as etapas sequencialmente, porém de modo independente uma da outra, você pode mover cada **Etapa Aplicada** na sequência, para cima ou para baixo. Basta clicar com o botão direito do mouse em qualquer etapa para que o Editor de Consultas exiba um menu que permite que você faça o seguinte: **Renomear**, **Excluir**, **Excluir** **Até o Final** (remover a etapa atual e todas as etapas subsequentes também) **Mover para Cima**ou **Mover para Baixo**. Vá em frente e mova a última etapa, _Colunas Removidas_ para cima da etapa _Personalização Adicionada_.
+Observe que os valores de _Nova Classificação_ não foram alterados; isso ocorre devido à ordem das etapas. Já que o Editor de Consultas registra as etapas sequencialmente, porém de modo independente uma da outra, você pode mover cada **Etapa Aplicada** na sequência, para cima ou para baixo. Apenas clique com botão direito em qualquer etapa, e o Editor de Consultas fornecerá um menu que permite o seguinte: **Renomear**, **Excluir**, **Excluir** **Até o Fim** (remove a etapa atual e todas as etapas subsequentes), **Mover para Cima** ou **Mover para Baixo**. Vá em frente e mova a última etapa, _Colunas Removidas_ para cima da etapa _Personalização Adicionada_.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
 
@@ -179,7 +179,7 @@ A janela **Remover Primeiras Linhas** é exibida, permitindo que você especifiq
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Remova algumas colunas desnecessárias – precisamos apenas do mapeamento do estado para sua abreviação oficial de duas letras, para que possamos remover as seguintes colunas: **Column1**, **Column3**, **Column4** e **Column6** até **Column11**. Primeiro, selecione **Column1**, mantenha pressionada a tecla **CTRL** e selecione as outras colunas a serem removidas (isso permite que você selecione várias colunas não contíguas). Na guia Página Inicial da faixa de opções, selecione **Remover Colunas \> Remover Colunas**.
+* Remover algumas colunas desnecessárias, precisamos apenas do mapeamento do estado para a sua abreviação oficial de duas letras para que possamos remover as seguintes colunas: **Coluna1**, **Column3**, **Coluna4** e **Coluna6** a**Coluna11**. Primeiro, selecione **Column1**, mantenha pressionada a tecla **CTRL** e selecione as outras colunas a serem removidas (isso permite que você selecione várias colunas não contíguas). Na guia Página Inicial da faixa de opções, selecione **Remover Colunas \> Remover Colunas**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 

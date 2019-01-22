@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 3ef719f85690297cd523a6fefb7f0ba5f77c9199
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 0ad902fc08592addb234517af99faedf1851503a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717598"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280893"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gerenciar capacidades no Power BI Premium e no Power BI Embedded
 
@@ -44,7 +44,7 @@ Para aproveitar a capacidade dedicada, você deve comprar o Power BI Premium no 
 
 * **Power BI Premium:** [Como comprar o Power BI Premium](service-admin-premium-purchase.md)
 
-* **Power BI Embedded:** [Criar capacidade do Power BI Embedded no portal do Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
+* **Power BI Embedded:** [Criar uma capacidade do Power BI Embedded no portal do Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
 
 Quando você compra SKUs do Power BI Premium ou Embedded, seu locatário recebe o número de núcleos virtuais correspondentes para uso nas capacidades em execução. Por exemplo, a compra de um SKU P3 do Power BI Premium fornece ao locatário 32 núcleos virtuais. Para obter mais informações sobre SKUs, confira [Nós de capacidade Premium](service-premium.md#premium-capacity-nodes).
 
@@ -170,7 +170,7 @@ Os administradores de capacidade, juntamente com os administradores do Power BI 
 
     ![Atribuir workspaces](media/service-admin-premium-manage/assign-workspaces.png)
 
-   | Selection | Descrição |
+   | Seleção | Descrição |
    | --- | --- |
    | **Workspaces por usuários** | Quando você atribui workspaces por usuário ou grupo, todos os workspaces pertencentes a esses usuários são atribuídos à capacidade Premium, incluindo o workspace pessoal do usuário. Tais usuários obtêm permissões de atribuição de workspace automaticamente.<br>Isso inclui workspaces já atribuídos a uma capacidade diferente. |
    | **Workspaces específicos** | Insira o nome do workspace específico para atribuir à capacidade selecionada. |

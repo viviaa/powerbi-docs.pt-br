@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4b503b7282377b112aebe237cc9a8d132502f0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298333"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275906"
 ---
 # <a name="manage-your-data-source---oracle"></a>Gerenciar sua fonte de dados – Oracle
 Depois de instalar o gateway de dados local, será necessário adicionar fontes de dados que podem ser usadas com o gateway. Este artigo abordará como trabalhar com gateways e fontes de dados. Você pode usar a fonte de dados do Oracle para uma atualização agendada ou para o DirectQuery.
@@ -39,7 +39,7 @@ Para versões de **64 bits** do Power BI Desktop ou para o gateway de dados loca
 
 * [ODAC de 64 bits, 12.2c versão 1 (12.2.0.1.0) para Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-Após a instalação, você precisará configurar o arquivo tnsnames.ora com as informações apropriadas para seu banco de dados. O Power BI Desktop e o gateway sairão do net_service_name definido no arquivo tnsnames.ora. Se não estiver configurado, você não poderá se conectar. O caminho padrão de tnsnames.ora é o seguinte: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Para obter mais informações sobre como configurar arquivos tnsnames.ora, consulte [Oracle: parâmetros de nomeação Local (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
+Após a instalação, você precisará configurar o arquivo tnsnames.ora com as informações apropriadas para seu banco de dados. O Power BI Desktop e o gateway sairão do net_service_name definido no arquivo tnsnames.ora. Se não estiver configurado, você não poderá se conectar. O caminho padrão de tnsnames.ora é o seguinte: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Para saber mais sobre como configurar arquivos tnsnames.ora, consulte [Oracle: Parâmetros de Nomenclatura Local (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
 ### <a name="example-tnsnamesora-file-entry"></a>Exemplo de entrada de arquivo tnsnames.ora
 O formato básico de uma entrada em tnsname.ora é o seguinte.
@@ -158,10 +158,10 @@ Se você estiver listado na guia **Usuários** da fonte de dados configurada no 
 Você pode encontrar vários erros do Oracle quando a sintaxe de nomenclatura estiver incorreta ou não configurada corretamente.
 
 * ORA-12154: TNS: não foi possível resolver o identificador de conexão especificado  
-* ORA-12514: ouvinte TNS não sabe, no momento, de serviço solicitado no descritor de conexão  
+* ORA-12514: O ouvinte TNS no momento não sabe sobre o serviço solicitado no descritor de conexão  
 * ORA-12541: TNS: nenhum ouvinte  
 * ORA-12170: TNS: ocorrência de tempo limite de conexão  
-* ORA-12504: SERVICE_NAME em CONNECT_DATA não foi atribuído ao ouvinte TNS  
+* ORA-12504: O ouvinte TNS não recebeu SERVICE_NAME em CONNECT_DATA  
 
 Esses erros poderão ocorrer se o cliente Oracle não estiver instalado ou não estiver configurado corretamente. Se ele estiver instalado, verifique se o arquivo tnsnames.ora está configurado corretamente e se você está usando o net_service_name adequado. Você também precisará garantir que o net_service_name seja o mesmo entre o computador que está usando o Power BI Desktop e o computador que está executando o gateway. Para obter mais informações, consulte [Instalando o cliente Oracle](#installing-the-oracle-client).
 

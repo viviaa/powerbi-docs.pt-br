@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619622"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280046"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Acessibilidade dos relatórios do Power BI Desktop
 O Power BI tem recursos que permitem que pessoas com deficiências consumam e interajam mais facilmente com os relatórios do Power BI Desktop. Esses recursos incluem a capacidade de consumir um relatório usando o teclado ou um leitor de tela, usar a tabulação para focar em vários objetos em uma página e o uso cuidadoso de marcadores nas visualizações.
@@ -33,23 +33,23 @@ Ao exibir um relatório, geralmente você precisa desativar o modo de verificaç
 
 Você pode alternar o foco entre as guias de páginas do relatório ou entre objetos em uma determinada página do relatório usando **Ctrl+F6**.
 
-* Quando o foco estiver nas *guias de páginas do relatório*, use as teclas *Tab* ou de *Seta* para mover o foco de uma página de relatório para a próxima. O título da página do relatório e se ele está selecionada, é lida pelo leitor de tela. Para carregar a página do relatório que está em foco, use a tecla *Enter* ou *Espaço*.
-* Quando o foco estiver em uma *página de relatório* carregada, use a tecla *Tab* para alternar o foco para cada objeto em uma página, o que inclui todas as caixas de texto, imagens, formas e gráficos. O leitor de tela lê o tipo de objeto, o título do objeto, quando há, e uma descrição desse objeto, quando o autor do relatório fornece. 
+* Quando o foco estiver nas *guias de páginas do relatório*, use as teclas *Tab* ou de *Seta* para mover o foco de uma página de relatório para a próxima. O título da página do relatório, e o fato de ele estar selecionado no momento, é lido pelo leitor de tela. Para carregar a página do relatório que está em foco, use a tecla *Enter* ou *Espaço*.
+* Quando o foco estiver em uma *página de relatório* carregada, use a tecla *Tab* para alternar o foco para cada objeto em uma página, o que inclui todas as caixas de texto, imagens, formas e gráficos. O leitor de tela lê o tipo de objeto, o título do objeto (quando há um) e uma descrição desse objeto (se foi fornecida pelo autor). 
 
-Ao navegar entre os visuais, se você quiser interagir mais com eles, pressione **Alt + Shift + F10** para mover o foco para o cabeçalho do visual, que contém várias opções, incluindo classificação, exportação dos dados por trás do gráfico e modo de foco. 
+Ao navegar entre os visuais, pressione **Alt+Shift+F10** para mover o destaque para o cabeçalho do visual, que contém várias opções, incluindo classificação, exportação dos dados por trás do gráfico e modo de foco. 
 
 ![Pressione Alt + Shift + F10 no Power BI Desktop para mover o foco para o cabeçalho do visual](media/desktop-accessibility/accessibility_08.png)
 
-Você pode pressionar **Alt + Shift + F11** para apresentar uma versão acessível da janela *Mostrar dados*. Isso permitirá que você explore os dados usados no Visual em uma tabela HTML, usando os mesmos atalhos de teclado que normalmente são usados com o leitor de tela. 
+Você pode pressionar **Alt + Shift + F11** para apresentar uma versão acessível da janela *Mostrar dados*. Isso permite que você explore os dados usados no visual em uma tabela HTML, usando os mesmos atalhos de teclado que normalmente são usados com o leitor de tela. 
 
 ![Pressione Alt+Shift+F11 no Power BI Desktop para exibir uma janela acessível Ver Dados para um visual](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
 > O recurso Mostrar dados somente pode ser acessado em um leitor de tela com esse atalho de teclado. Se você abrir Mostrar dados por meio da opção no cabeçalho do visual, ele não poderá ser acessado em um leitor de tela. Ao usar Mostrar dados, ative o modo de verificação para aproveitar todas as teclas de acesso fornecidas pelo leitor de tela.
 
-A partir da versão de julho de 2018 do **Power BI Desktop**, as segmentações de dados também passam a ter a funcionalidade de acessibilidade interna. Para ajustar o valor de uma segmentação de dados quando esta estiver selecionada, use Ctrl+Seta para a direita (tecla Control e seta para a direita) para percorrer os vários controles na segmentação de dados. Por exemplo, ao pressionar inicialmente Ctrl+Seta para a direita, o foco ficará na borracha. Pressionar a Barra de espaços equivale a clicar no botão da borracha, que apaga todos os valores na segmentação de dados. 
+A partir da versão de julho de 2018 do **Power BI Desktop**, as segmentações de dados também passam a ter a funcionalidade de acessibilidade interna. Para ajustar o valor de uma segmentação de dados quando esta estiver selecionada, use Ctrl+Seta para a direita (tecla Control e seta para a direita) para percorrer os vários controles na segmentação de dados. Por exemplo, ao pressionar inicialmente CTRL+Seta para a direita, o foco ficará na borracha. Pressionar a Barra de espaços equivale a clicar no botão da borracha, que apaga todos os valores na segmentação de dados. 
 
-Você pode percorrer os controles em uma segmentação de dados pressionando a tecla Tab. Pressionar a tecla Tab estando na borracha move para o botão suspenso; pressionar Tab outra vez move para o primeiro valor de segmentação de dados (se houver vários valores para a segmentação de dados, como um intervalo). 
+Você pode percorrer os controles em uma segmentação de dados pressionando a tecla Tab. Pressionar a tecla TAB na borracha muda para o botão suspenso. Pressionar TAB outra vez move para o primeiro valor da segmentação de dados (se houver vários valores para a segmentação de dados, como um intervalo). 
 
 ![Pressione Ctrl+(tecla da seta para a direita) no Power BI Desktop para ajustar um elemento ou os valores em uma segmentação de dados; pressione a Barra de espaços para selecionar o elemento e ajustar seu valor](media/desktop-accessibility/accessibility_07.png)
 
@@ -69,7 +69,7 @@ As dicas a seguir podem ajudá-lo a criar relatórios do **Power BI Desktop** qu
   
   * Usar uma *Forma de marcador* diferente para cada linha torna mais fácil para os consumidores do relatório diferenciar as linhas (ou áreas) umas das outras.
 * Como um lembrete do marcador anterior, não confie na cor para transmitir informações. Além de usar formas em gráficos de dispersão e de linha, não confie na formatação condicional para fornecer insights em tabelas e matrizes. 
-* Escolha uma ordem de classificação intencional para cada visual em seu relatório. Quando os usuários de leitores de tela navegarem nos dados por trás do gráfico, ele selecionará a mesma ordem de classificação que o visual.
+* Escolha uma ordem de classificação intencional para cada visual em seu relatório. Quando os usuários de leitores de tela navegam nos dados por trás do gráfico, ele seleciona a mesma ordem de classificação que o visual.
 * Selecione um *tema* que tenha alto contraste e que seja amigável para pessoas daltônicas na Galeria de temas e importe-o usando o recurso de versão prévia [**Temas**](desktop-report-themes.md).
 * Para cada objeto em um relatório, forneça um *Texto Alt*. Isso garante que os consumidores de seu relatório entendam o que você está tentando comunicar com um visual, mesmo que eles não possam ver o visual, imagem, forma ou caixa de texto. Você pode fornecer um *Texto Alt* para qualquer objeto em um relatório do **Power BI Desktop** selecionando o objeto (como um visual, forma e assim por diante) e, no painel **Visualizações**, selecionando a seção **Formato**, expandindo **Geral** e rolando para baixo e preenchendo a caixa de texto **Texto Alt**.
   
@@ -93,7 +93,7 @@ Quando você usa os modos de alto contraste no Windows, essas configurações e 
 
 ![Configurações de alto contraste do Windows](media/desktop-accessibility/accessibility_05.png)
 
-O **Power BI Desktop** detecta automaticamente qual tema de alto contraste está sendo usado no Windows e aplica essas configurações em seus relatórios. Essas cores de alto contraste continuam no relatório quando ele é publicado no serviço do Power BI ou em outro lugar.
+O **Power BI Desktop** detecta automaticamente qual tema de alto contraste está sendo usado no Windows e aplica essas configurações em seus relatórios. Essas cores em alto contraste continuam no relatório quando ele é publicado no serviço do Power BI ou em outro lugar.
 
 ![Configurações de alto contraste do Windows](media/desktop-accessibility/accessibility_05b.png)
 
@@ -126,22 +126,22 @@ Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de 
 ### <a name="frequently-used-shortcuts"></a>Atalhos usados com frequência
 | Para fazer isso           | Pressione                |
 | :------------------- | :------------------- |
-| Mover o foco entre as seções  | Ctrl + F6 |
+| Mover o foco entre as seções  | Ctrl+F6 |
 | Mover o foco para frente na seção | Tab         |
-| Mover o foco para trás na seção | Shift + Tab |
+| Mover o foco para trás na seção | Shift+Tab |
 | Selecionar ou cancelar a seleção de um objeto | Enter ou Espaço |
 | Selecionar vários objetos | CTRL + Espaço |
 
 ### <a name="on-visual"></a>No visual
 | Para fazer isso           | Pressione                |
 | :------------------- | :------------------- |
-| Mover o foco para o menu visual | Alt + Shift + F10 |
+| Mover o foco para o menu visual | Alt+Shift+F10 |
 | Mostrar dados | Alt + Shift + F11  |
 
 ### <a name="pane-navigation"></a>Navegação no painel
 | Para fazer isso           | Pressione                |
 | :------------------- | :------------------- |
-| Abrir um menu de contexto | <ul><li>Teclado do Windows: tecla de contexto do Windows + F10.  A tecla de contexto do Windows fica entre a tecla Alt esquerda e a tecla de direção para a esquerda</li><li>Outro teclado: Shift + F10</li></ul> |
+| Abrir um menu de contexto | <ul><li>Teclados Windows: tecla do menu de contexto do Windows+F10.  A tecla de contexto do Windows fica entre a tecla Alt esquerda e a tecla de direção para a esquerda</li><li>Outros teclados: Shift+F10</li></ul> |
 
 ### <a name="slicer"></a>Segmentação de Dados
 | Para fazer isso           | Pressione                |
@@ -170,7 +170,10 @@ Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de 
 | Selecionar todas as ocorrências da seleção atual | Ctrl + Shift + L |
 | Selecionar todas as ocorrências da palavra atual | Ctrl + F2 |
 
-
+### <a name="enter-data"></a>Inserir Dados
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Sair da grade editável | Ctrl+Tab |
 
 
 ## <a name="next-steps"></a>Próximas etapas

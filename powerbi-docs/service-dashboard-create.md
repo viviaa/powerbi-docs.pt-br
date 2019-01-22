@@ -6,16 +6,16 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: maggies
-ms.openlocfilehash: 28a282ff6a35061422995c46fbbcd34c21b533a7
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: c42aa07fd78430c5692067ae8476b22288470c8c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717414"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294237"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Criar um dashboard do Power BI de um relatório
 Você já leu [Dashboards no Power BI](service-dashboards.md) e agora deseja criar o seu próprio. Há várias maneiras diferentes de criar um dashboard de controle – de um relatório, desde o início, de um conjunto de dados, duplicando um dashboard existente e muito mais.  
@@ -31,7 +31,7 @@ Criar um painel é um recurso do **criador** e requer permissões de edição pa
 
 ![dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
-## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Vídeo: criar um dashboard fixando visuais e imagens de um relatório
+## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Vídeo: Criar um dashboard fixando visuais e imagens de um relatório
 Veja a Amanda criar um novo dashboard fixando visualizações de um relatório. Em seguida, siga as etapas abaixo do vídeo para tentar você mesmo, usando o exemplo de análise de compras.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>

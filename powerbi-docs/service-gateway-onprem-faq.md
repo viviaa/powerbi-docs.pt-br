@@ -5,24 +5,24 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: b1c74968365db59d51f7c0a7bdb356552cc75596
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273300"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283772"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Perguntas frequentes sobre o gateway de dados local
 <!-- Shared FAQ shared Include -->
 [!INCLUDE [gateway-onprem-faq-shared-include](./includes/gateway-onprem-faq-shared-include.md)]
 
 ## <a name="analysis-services"></a>Analysis Services
-**Pergunta:** Posso usar msdmpump.dll para criar mapeamentos personalizados de nome de usuário efetivo para o Analysis Services?  
+**Pergunta:** Posso usar msdmpump.dll para criar mapeamentos de nome de usuário efetivo personalizados para o Analysis Services?  
 **Resposta:** Não. Não há suporte para isso no momento.
 
 **Pergunta:** Posso usar o gateway para me conectar a uma instância multidimensional (OLAP)?  
@@ -51,26 +51,26 @@ ms.locfileid: "51273300"
 **Resposta:** Não. Esse recurso já está em nossos planos, mas não temos previsão de quando será liberado.
 
 ## <a name="power-bi"></a>Power BI
-**Pergunta:** Preciso fazer upgrade do gateway pessoal?
+**Pergunta:** Preciso atualizar o gateway pessoal?
 **Resposta:** Não, você pode continuar usando o gateway pessoal do Power BI.
 
-**Pergunta:** Com que frequência os blocos em um dashboard no Power BI são atualizados quando conectados por meio do gateway de dados local?  
+**Pergunta:** Com que frequência os blocos em um painel no Power BI são atualizados quando conectados por meio do gateway de dados local?  
 **Resposta:** Cerca de dez minutos. As conexões do DirectQuery são exatamente assim. Isso não significa que um bloco emite uma consulta ao servidor local e mostra novos dados a cada dez minutos.
 
-**Pergunta:** Posso carregar pastas de trabalho do Excel com modelos de dados do Power Pivot que se conectem a fontes de dados locais? Preciso ter um gateway para este cenário?  
+**Pergunta:** Posso carregar pastas de trabalho do Excel com modelos de dados do PowerPivot que se conectam a fontes de dados locais? Preciso ter um gateway para este cenário?  
 **Resposta:** Sim, você pode carregar a pasta de trabalho. Não, não é necessário ter um gateway. Mas, como os dados residem no modelo de dados do Excel, os relatórios do Power BI baseados na pasta de trabalho do Excel não serão dinâmicos. Você precisaria carregar novamente uma pasta de trabalho atualizada cada vez que desejasse atualizar os relatórios no Power BI. Se preferir, use o gateway com a atualização agendada.
 
-**Pergunta:** Se os usuários compartilharem dashboards que têm uma conexão do DirectQuery, os outros usuários poderão ver os dados mesmo que não tenham as mesmas permissões?  
-**Resposta:** Para um painel conectado aos Serviços de Análise, os usuários verão apenas os dados que eles tiverem acesso. Se os usuários não tiverem as mesmas permissões, não poderão ver os dados. Para outras fontes de dados, todos os usuários compartilharão as credenciais inseridas pelo administrador para aquela fonte de dados.
+**Pergunta:** Se os usuários compartilharem painéis que tenham uma conexão do DirectQuery, os outros usuários poderão ver os dados mesmo que não tenham as mesmas permissões?  
+**Resposta:** Para um painel conectado ao Analysis Services, os usuários verão apenas os dados aos quais tiverem acesso. Se os usuários não tiverem as mesmas permissões, não poderão ver os dados. Para outras fontes de dados, todos os usuários compartilharão as credenciais inseridas pelo administrador para aquela fonte de dados.
 
 **Pergunta:** Por que não consigo me conectar ao servidor do Oracle?  
-**Resposta:** Talvez seja necessário instalar o cliente Oracle e configurar o arquivo tnsnames.ora com as informações de servidor apropriadas para se conectar ao servidor Oracle. Essa é uma instalação separada fora do gateway. Para obter mais informações, consulte [Instalando o cliente Oracle](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Resposta:** Talvez seja necessário instalar o cliente Oracle e configurar o arquivo tnsnames.ora com as informações de servidor apropriadas para se conectar ao servidor do Oracle. Essa é uma instalação separada fora do gateway. Para obter mais informações, consulte [Instalando o cliente Oracle](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
 **Pergunta:** O gateway funcionará com o ExpressRoute?  
 **Resposta:** Sim. Para obter mais informações sobre o ExpressRoute e o Power BI, consulte [Power BI e ExpressRoute](service-admin-power-bi-expressroute.md).
 
-**Pergunta:** Estou usando scripts do R. Ele tem suporte?
-**Resposta**: Os scripts do R têm suporte apenas para o modo pessoal.
+**Pergunta:** Estou usando scripts R. Ele tem suporte?
+**Resposta**: Os scripts R têm suporte apenas para o modo pessoal.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Gateway de dados local](service-gateway-onprem.md)  

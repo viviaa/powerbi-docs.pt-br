@@ -1,23 +1,23 @@
 ---
-title: 'Oportunidade de Análise de Varejo para o Power BI: faça um tour'
-description: 'Oportunidade de Análise de Varejo para o Power BI: faça um tour'
+title: 'Exemplo de Análise de Oportunidade para o Power BI: Faça um tour'
+description: 'Exemplo de Análise de Oportunidade para o Power BI: Faça um tour'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/20/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 12bc6039f7b6580782d3dfac181443caa6557447
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 7f7b9d09b3761a5a02bdf4f706c6470b7d8cf2b6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717483"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275497"
 ---
-# <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Oportunidade de Análise de Varejo para o Power BI: faça um tour
+# <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Oportunidade para o Power BI: Faça um tour
 
 ## <a name="overview-of-the-opportunity-analysis-sample"></a>Visão geral do exemplo de Análise de Oportunidade
 O **Exemplo de Análise de Oportunidade** contém um dashboard (e um relatório associado) de uma empresa de software que tem dois canais de vendas: *direta* e de *parceiro*. O gerente de vendas criado neste dashboard para acompanhar oportunidades e receita por região, trabalha com o tamanho do negócio e o canal.
@@ -121,7 +121,7 @@ Nosso CFO usa esta página para gerenciar a carga de trabalho. Ao examinar as op
 
 Este é um ambiente seguro para experimentar. Você pode optar por não salvar as alterações. Mas se você salvá-las, sempre é possível acessar **Obter Dados** para ter uma nova cópia deste exemplo.
 
-## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: conectar-se aos seus dados
+## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: Conecte-se aos seus dados
 Esperamos que este tour tenha mostrado como os painéis, P e R e relatórios do Power BI podem fornecer informações sobre os dados de controle de oportunidade. Agora é sua vez - conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Saiba mais sobre como [começar a usar o Power BI](service-get-started.md)
 
 [Baixar exemplos](sample-datasets.md)  

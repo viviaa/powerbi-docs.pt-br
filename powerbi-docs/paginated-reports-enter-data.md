@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
 ms.author: maggies
-ms.openlocfilehash: c3b003ee600df010aa07aad78ee2350704734dd4
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 9556a501832502a8d5653967408b9fac8d0704a5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900395"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295548"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Inserir dados diretamente em um relatório paginado no Construtor de Relatórios (versão prévia) – Power BI
 
@@ -26,9 +26,9 @@ Neste artigo, você aprenderá sobre um recurso na nova versão do SQL Server 20
 - Para salvar seu relatório paginado no serviço do Power BI, você precisa de uma [conta do Power BI Pro](service-self-service-signup-for-power-bi.md) e acesso de gravação a um workspace em uma [capacidade do Power BI Premium](service-premium.md).
 - Para salvar seu relatório paginado em um servidor de relatório, você precisa de permissões para [editar o arquivo RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
-## <a name="get-started"></a>Introdução
+## <a name="get-started"></a>Começar
 
-Depois de baixar e instalar o Construtor de Relatórios, siga o mesmo fluxo de trabalho que você usa para adicionar uma fonte de dados inserida e o conjunto de dados ao seu relatório. No procedimento a seguir, em **Fontes de Dados**, você verá uma nova opção: **Inserir Dados**.  Você precisa configurar essa fonte de dados apenas uma vez em um relatório. Depois disso, você pode criar várias tabelas de dados inseridos como conjuntos de dados separados, tudo usando essa fonte de dados única.
+Depois de baixar e instalar o Construtor de Relatórios, siga o mesmo fluxo de trabalho que você usa para adicionar uma fonte de dados inserida e o conjunto de dados ao seu relatório. No procedimento a seguir, em **Fontes de Dados**, há uma nova opção: **Inserir Dados**.  Você precisa configurar essa fonte de dados apenas uma vez em um relatório. Depois disso, você pode criar várias tabelas de dados inseridos como conjuntos de dados separados, tudo usando essa fonte de dados única.
 
 1. No painel **Dados do Relatório**, selecione **Novo** > **Conjunto de Dados**.
 

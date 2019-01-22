@@ -1,20 +1,20 @@
 ---
 title: Exibir relatórios do Power BI otimizados para seu telefone
 description: Leia sobre a interação com páginas de relatório otimizadas para exibição em aplicativos do Power BI.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
-ms.author: maggies
-ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547788"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276896"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Exibir relatórios do Power BI otimizados para seu telefone
 
@@ -48,7 +48,7 @@ Se um relatório otimizado para telefone tiver filtros definidos, quando ele for
     ![Filtro avançado do relatório de telefone do BI do telefone](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Elementos visuais com realce cruzado
-Elementos visuais com realce cruzado em relatórios de telefone funcionam da mesma forma que no serviço do Power BI e nos relatórios em telefones no modo paisagem: ao selecionar seus dados em um elemento visual, dados relacionados são realçados em outros elementos visuais nessa página.
+Os visuais com realce cruzado nos relatórios de telefone funcionam do mesmo modo que no serviço do Power BI e nos relatórios de telefones no modo de exibição de paisagem: quando você seleciona dados em um visual, dados relacionados são realçados em outros visuais nessa página.
 
 Leia mais sobre [filtragem e realce no Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -70,7 +70,7 @@ Algumas ações somente são possíveis no modo de foco, devido às restrições
 
 * **Detalhar** as informações exibidas em um visual. Leia mais sobre como [fazer drill-down e up](mobile-apps-view-phone-report.md#drill-down-in-a-visual) em um relatório de telefone abaixo.
 * **Classifique** os valores no elemento visual.
-* **Reverter**: desmarque as etapas de exploração que você efetuou em um elemento visual e reverter para a definição estabelecida quando o relatório foi criado.
+* **Reverter**: desmarque as etapas de exploração que você efetuou em um visual e reverta para a definição estabelecida quando o relatório foi criado.
   
     Para limpar toda a exploração de um visual, toque no botão de reticências (**...** ) > **Reverter**.
   

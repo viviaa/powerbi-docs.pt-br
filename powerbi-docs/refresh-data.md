@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417362"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277654"
 ---
 # <a name="data-refresh-in-power-bi"></a>Atualizar dados no Power BI
 Certificando-se de que sempre obterá os dados mais recentes que costumam ser fundamentais para tomar as decisões corretas. Você provavelmente já usou Obter Dados no Power BI para conectar e carregar alguns dados, criou alguns relatórios e um painel de controle. Agora, você deseja certificar-se de que seus dados são realmente mais recentes e maiores.
@@ -31,7 +31,7 @@ Uma *fonte de dados* é onde os dados que você explora em seus relatórios e pa
 
 Um *conjunto de dados* é criado automaticamente no Power BI, quando você usa Obter Dados para se conectar ao e carregar dados de um pacote de conteúdo, arquivo ou se conectar a uma fonte de dados ao vivo. No Power BI Desktop e Excel 2016, também é possível publicar seu arquivo direitamente no serviço do Power BI, que é semelhante ao uso do recurso Obter Dados.
 
-Em cada caso, um conjunto de dados é criado e exibido nos contêineres Meu Espaço de Trabalho ou Grupo do serviço do Power BI. Ao selecionar as **reticências (...)**, é possível explorar os dados em um relatório, editar as configurações e configurar a atualização.
+Em cada caso, um conjunto de dados é criado e exibido nos contêineres Meu Workspace ou Grupo do serviço do Power BI. Ao selecionar as **reticências (...)**, é possível explorar os dados em um relatório, editar as configurações e configurar a atualização.
 
 ![](media/refresh-data/dataset-menu.png)
 
@@ -221,7 +221,7 @@ Para saber como configurar a atualização agendada, veja [Configurar a atualiza
 ### <a name="excel-workbook-with-tables-of-data"></a>Pasta de trabalho do Excel com tabelas de dados
 Você tem uma pasta de trabalho do Excel com várias tabelas de dados, mas nenhuma delas são carregadas no modelo de dados do Excel. Use Obter Dados para carregar o arquivo de pasta de trabalho de sua unidade local no Power BI e criar um painel de controle. Mas, agora você fez algumas alterações em algumas tabelas da pasta de trabalho em sua unidade local, e você deseja atualizar o painel no Power BI com os novos dados.
 
-Infelizmente, a atualização não é suportada neste cenário. Para atualizar o conjunto de dados para o seu painel, você precisará carregar novamente a pasta de trabalho. No entanto, há uma excelente solução: colocar o arquivo de pasta de trabalho no OneDrive ou SharePoint Online!
+Infelizmente, a atualização não é suportada neste cenário. Para atualizar o conjunto de dados para o seu painel, você precisará carregar novamente a pasta de trabalho. No entanto, há uma excelente solução: coloque o arquivo de pasta de trabalho no OneDrive ou SharePoint Online!
 
 Quando você se conectar a um arquivo no OneDrive ou SharePoint Online, os relatórios e dashboards mostrarão os dados como estão no arquivo. Neste caso, sua pasta do Excel. O Power BI verifica automaticamente se há atualizações ao arquivo em intervalos aproximados de sessenta minutos. Se você fizer alterações à pasta de trabalho (armazenada no OneDrive ou SharePoint Online), essas alterações serão refletidas no dashboard e os relatórios em menos uma hora. Você não precisa de instalação de atualização. No entanto, se você precisar ver suas atualizações no Power BI imediatamente, você pode atualizar manualmente o conjunto de dados usando Atualizar Agora.
 

@@ -1,29 +1,29 @@
 ---
-title: 'Tutorial: criar suas próprias medidas no Power BI Desktop'
-description: 'Tutorial: criar suas próprias medidas no Power BI Desktop'
+title: 'Tutorial: Criar suas próprias medidas no Power BI Desktop'
+description: 'Tutorial: Criar suas próprias medidas no Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ba9cc81c966ebadb2aaff8c339b8a151aef7b6fd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578625"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287551"
 ---
-# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutorial: criar suas próprias medidas no Power BI Desktop
+# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutorial: Criar suas próprias medidas no Power BI Desktop
 Você pode criar algumas das soluções de análise de dados mais poderosas no Power BI Desktop usando medidas. As medidas ajudam você a executar cálculos em seus dados conforme você interage com os relatórios. Este tutorial serve como guia para que você compreenda as medidas e crie suas próprias medidas básicas no Power BI Desktop.
 
 ### <a name="prerequisites"></a>Pré-requisitos
 - Este tutorial destina-se aos usuários do Power BI já familiarizados com o uso do Power BI Desktop para criar modelos mais avançados. Você já deve estar familiarizado com o uso dos recursos Obter Dados e Editor de Consultas para importar dados, trabalho com várias tabelas relacionadas e adição de campos à Tela Relatório. Se ainda não estiver familiarizado com o Power BI Desktop, não deixe de conferir a [Introdução ao Power BI Desktop](desktop-getting-started.md).
   
-- Baixe o arquivo [Exemplo de vendas da Contoso para o Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), que já inclui dados de vendas online da empresa fictícia Contoso, Inc. Esses dados foram importados de um banco de dados, portanto você não conseguirá se conectar à fonte de dados ou exibi-los no Editor de Consultas. Extraia o arquivo em seu próprio computador, e abra-o no Power BI Desktop.
+- Baixe o arquivo [Amostra de Vendas da Contoso para o Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), que inclui dados de vendas online da empresa fictícia Contoso, Inc. Esses dados foram importados de um banco de dados, portanto, você não pode se conectar à fonte de dados nem exibi-la no Editor de Consulta. Extraia o arquivo em seu próprio computador, e abra-o no Power BI Desktop.
 
 ## <a name="understand-measures"></a>Compreender medidas
 
@@ -128,7 +128,7 @@ Para ver a diferença entre o valor total de vendas e o de vendas líquidas, sel
 
 ![Valor de vendas e Vendas líquidas por país](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
-Agora, o gráfico usa duas medidas: SalesAmount, que foi somada automaticamente, e medida Net Sales que você criou. Cada medida foi calculada no contexto de outro campo, RegionCountryName.
+Agora, o gráfico usa duas medidas: SalesAmount, que foi somada automaticamente, e Net Sales, que você criou. Cada medida foi calculada no contexto de outro campo, RegionCountryName.
     
 ### <a name="use-your-measure-with-a-slicer"></a>Usar sua medida com uma segmentação de dados
 

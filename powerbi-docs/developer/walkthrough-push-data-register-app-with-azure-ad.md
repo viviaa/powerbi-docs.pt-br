@@ -5,18 +5,18 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: db3184f7bc3c181b685c22d0bcad27206b4a0f8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34285958"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296353"
 ---
-# <a name="step-1-register-an-app-with-azure-ad"></a>Etapa 1: Registrar um aplicativo no Azure AD
+# <a name="step-1-register-an-app-with-azure-ad"></a>Etapa 1: Registrar um aplicativo com o Azure AD
 Este artigo faz parte do passo a passo para [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
 
 A primeira etapa para enviar dados por push a um conjunto de dados do Power BI é registrar seu aplicativo no Azure AD. Você precisa fazer isso primeiro para que tenha uma **ID do Cliente** que identifique seu aplicativo no Azure AD. Sem uma **ID do Cliente**, o Azure AD não pode autenticar seu aplicativo.
@@ -47,7 +47,7 @@ A próxima etapa mostra como [obter um token de acesso de autenticação](walkth
 ## <a name="next-steps"></a>Próximas etapas
 [Inscrever-se no Power BI](create-an-azure-active-directory-tenant.md)  
 [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md)  
-[Passo a passo: enviar dados por push a um conjunto de dados](walkthrough-push-data.md)  
+[Instruções passo a passo: enviar dados por push a um conjunto de dados](walkthrough-push-data.md)  
 [Registrar um aplicativo](register-app.md)  
 [Visão geral da API REST do Power BI](overview-of-power-bi-rest-api.md)  
 

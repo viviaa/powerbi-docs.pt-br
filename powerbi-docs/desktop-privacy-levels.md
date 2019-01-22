@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d3ccba3e68400a5a4c5fbf486aa8ef4b00c51729
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: b3815e6783b612ff52aeb015fdd3b3669b6a2a51
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578326"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282963"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Níveis de privacidade do Power BI Desktop
 No **Power BI Desktop**, os níveis de privacidade especificam um nível de isolamento que define o grau que uma fonte de dados será isolada de outras fontes de dados. Apesar de o nível de isolamento restrito bloquear a troca de informações entre as fontes de dados, ele poderá reduzir a funcionalidade e causar um impacto no desempenho.
@@ -68,7 +68,7 @@ a. Quando **Combinar dados de acordo com as configurações de Nível de privaci
 
 b. Quando **Ignorar os Níveis de privacidade e potencialmente melhorar o desempenho** estiver selecionado, os dados serão combinados, ignorando os Níveis de Privacidade que poderiam revelar dados confidenciais para um usuário não autorizado. A configuração pode melhorar o desempenho e a funcionalidade
 
-> **Observação de segurança:** selecionar **Ignorar os Níveis de privacidade e potencialmente melhorar o desempenho** pode melhorar o desempenho; no entanto, o Power BI Desktop não pode garantir a privacidade dos dados mesclados para o arquivo do Power BI Desktop.
+> **Observação de segurança:** selecionar **Ignore os Níveis de Privacidade e melhore potencialmente o desempenho** pode melhorar o desempenho; no entanto, o Power BI Desktop não pode garantir a privacidade dos dados mesclados para o arquivo do Power BI Desktop.
 > 
 > 
 

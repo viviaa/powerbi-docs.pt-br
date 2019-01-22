@@ -6,17 +6,17 @@ ms.author: maghan
 ms.date: 05/04/2018
 ms.topic: quickstart
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 802107ce9c12075ffc51461375ca3e9a313f2be1
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: a0224188a0205cf134f2b2ee123bf5a3ac7ef0d0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558414"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288487"
 ---
-# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Início Rápido: Inserir um relatório do Servidor de Relatórios do Power BI usando um iFrame no SharePoint Server
+# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Início Rápido: inserir um relatório do Servidor de Relatórios do Power BI usando um iFrame no SharePoint Server
 
 Neste início rápido, você aprenderá a inserir um relatório do Servidor de Relatórios do Power BI usando um iFrame em uma página do SharePoint. Se você estiver trabalhando com o SharePoint Online, o Servidor de Relatórios do Power BI precisará estar acessível publicamente. No SharePoint Online, o Web Part do Power BI que funciona com o serviço do Power BI não funciona com o Servidor de Relatórios do Power BI. 
 
@@ -101,7 +101,7 @@ Quando tiver sua URL, você poderá criar um iFrame em uma página do SharePoint
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Início rápido: criar um relatório do Power BI para o Servidor de Relatório do Power BI](quickstart-create-powerbi-report.md)  
-[Início rápido: criar um relatório paginado para o Servidor de Relatório do Power BI](quickstart-create-paginated-report.md)  
+[Início Rápido: criar um relatório do Power BI para o Servidor de Relatórios do Power BI](quickstart-create-powerbi-report.md)  
+[Início Rápido: criar um relatório paginado para o Servidor de Relatórios do Power BI](quickstart-create-paginated-report.md)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/) 

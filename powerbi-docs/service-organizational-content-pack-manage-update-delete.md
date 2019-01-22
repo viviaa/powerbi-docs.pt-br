@@ -1,25 +1,25 @@
 ---
-title: 'Pacotes de conteúdo organizacional: gerenciar e atualizar'
+title: 'Pacotes de conteúdo organizacional: Gerenciar e atualizar'
 description: Leia sobre gerenciamento, atualização e exclusão de pacotes de conteúdo organizacional no Power BI.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d00ad254e25f8806f6cf2bc944e849e32167b1f8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: cbca162348092d9d03bef03199c63113ec487165
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908384"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274526"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gerenciar, atualizar e excluir pacotes de conteúdo organizacional
 > [!NOTE]
-> Não é possível criar pacotes de conteúdo organizacional nem os instalalar na nova versão prévia de experiências de espaço de trabalho. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de espaço de trabalho](service-create-the-new-workspaces.md).
+> Não é possível criar pacotes de conteúdo organizacional nem os instalar na nova versão prévia de experiências de workspace. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de workspace](service-create-the-new-workspaces.md).
 > 
 
 Você pode empacotar e compartilhar seus painéis, relatórios, pastas de trabalho do Excel e conjuntos de dados com seus colegas em [pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md). Seus colegas podem usá-los como estiverem ou podem criar suas próprias cópias.
@@ -71,14 +71,14 @@ Outra modificação para criadores de pacote de conteúdo está expandindo e res
 Como o criador do pacote de conteúdo, você pode [agendar a atualização dos conjuntos de dados](refresh-data.md).  Quando você cria e carregar o pacote de conteúdo, essa agenda de atualização é carregada com os conjuntos de dados. Se você alterar o agendamento de atualização, você precisará publicar novamente o pacote de conteúdo (veja acima).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Excluir um pacote de conteúdo organizacional do AppSource
-Você só poderá excluir um pacote de conteúdo do AppSource se o tiver criado. Se você criar um pacote de conteúdo organizacional em um espaço de trabalho do aplicativo e, depois, decidir excluir esse espaço de trabalho, lembre-se de excluir o pacote de conteúdo primeiro. Se você excluir o espaço de trabalho sem excluir o pacote de conteúdo primeiro, você perderá todo o acesso a esses pacotes de conteúdo e terá que entrar em contato com o Suporte da Microsoft para obter ajuda. 
+Você só poderá excluir um pacote de conteúdo do AppSource se o tiver criado. Se você criar um pacote de conteúdo organizacional em um workspace do aplicativo e, depois, decidir excluir esse workspace, lembre-se de excluir o pacote de conteúdo primeiro. Se você excluir o workspace sem excluir o pacote de conteúdo primeiro, você perderá todo o acesso a esses pacotes de conteúdo e terá que entrar em contato com o Suporte da Microsoft para obter ajuda. 
 
 > [!TIP]
 > É possível [excluir a conexão com um pacote de conteúdo](service-organizational-content-pack-disconnect.md) que você não criou. Isso não exclui o pacote de conteúdo do AppSource.
 > 
 > 
 
-1. Para excluir um pacote de conteúdo do AppSource, acesse o espaço de trabalho de aplicativo em que você criou o pacote de conteúdo, selecione o ícone de engrenagem ![](media/service-organizational-content-pack-manage-update-delete/cog.png) e escolha **Exibir Pacotes de Conteúdo**.
+1. Para excluir um pacote de conteúdo do AppSource, acesse o workspace de aplicativo em que você criou o pacote de conteúdo, selecione o ícone de engrenagem ![](media/service-organizational-content-pack-manage-update-delete/cog.png) e escolha **Exibir Pacotes de Conteúdo**.
 2. Selecione **Excluir \> Excluir**. 
    
    * Para os membros do grupo que não personalizaram o pacote de conteúdo, o painel e os relatórios associados a esse pacote de conteúdo serão removidos automaticamente. Eles não estarão disponíveis, e o pacote de conteúdo não aparecerá no Painel de Navegação.

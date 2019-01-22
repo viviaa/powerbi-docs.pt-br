@@ -1,20 +1,20 @@
 ---
 title: Compartilhar um dashboard ou relatório dos aplicativos móveis do Power BI
 description: Convide outras pessoas para exibir seus dashboards e relatórios compartilhando links nos aplicativos móveis do Power BI. Saiba como.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
-ms.author: maggies
-ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.author: mshenhav
+ms.openlocfilehash: 69532ea9ad98edc7655fb77aec13b69eec6566bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271637"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283657"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Compartilhar um dashboard ou relatório dos aplicativos móveis do Power BI
 Aplica-se a:
@@ -94,7 +94,7 @@ Só será possível descompartilhar se você for o proprietário.
     Se for o proprietário do dashboard, você verá a lista de colegas com os quais você compartilhou esse dashboard ou relatório, com estas observações:
 
     -   **Pode exibir**: eles podem exibir, mas não podem compartilhar.
-    -   **Pode exibir e recompartilhar**: eles podem exibir e compartilhar com outros colegas.
+    -   **Pode exibir e compartilhar novamente**: eles podem exibir e compartilhar com outros colegas.
 
 1. Digite os endereços de email e uma mensagem para acompanhar o seu convite de painel. Caso contrário, o Power BI envia uma mensagem padrão.
 2. Para permitir o recompartilhamento, deixe selecionada a opção **Permitir que os destinatários compartilhem este painel** .
@@ -128,7 +128,7 @@ Só será possível descompartilhar se você for o proprietário.
    
    **Pode exibir**: eles podem exibir, mas não podem compartilhar.
    
-   **Pode exibir e recompartilhar**: eles podem exibir e compartilhar com outros colegas.
+   **Pode exibir e compartilhar novamente**: eles podem exibir e compartilhar com outros colegas.
 2. Digite endereços de email e uma mensagem para acompanhar seu convite. Caso contrário, o Power BI envia uma mensagem padrão.
    
    ![Caixa de diálogo Convidar](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)

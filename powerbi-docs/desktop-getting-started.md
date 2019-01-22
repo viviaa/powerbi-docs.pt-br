@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5f202597fa641bf68b8e49c461ed5c25ea987c3e
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 019ee7985c27c72ca41a09c8d13754316fd60232
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670913"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291638"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Introdução ao Power BI Desktop
 Bem-vindo ao **Guia de Introdução ao Power BI Desktop**. Esse breve tour do Power BI Desktop apresentará como ele funciona, demonstrará o que ele pode fazer e acelerará sua capacidade de criar modelos de dados robustos – juntamente com relatórios incríveis – que potencializam seus esforços de business intelligence. 
@@ -69,9 +69,9 @@ Você pode **Obter Dados**, ver as **Fontes Recentes**ou **Abrir Outros** **Rela
 
 ![](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Há três exibições no Power BI Desktop: **Relatório** , **Dados** e **Relações** . O Power BI Desktop também inclui o **Editor de Consultas**, que é aberto em uma janela separada. No **Editor de Consultas**, é possível criar consultas e transformar dados e, em seguida, carregar esse modelo de dados refinado no Power BI Desktop, além de criar relatórios.
+Há três modos de exibição no Power BI Desktop: **Relatório**, **Dados** e **Relações**. O Power BI Desktop também inclui o **Editor de Consultas**, que é aberto em uma janela separada. No **Editor de Consultas**, é possível criar consultas e transformar dados e, em seguida, carregar esse modelo de dados refinado no Power BI Desktop, além de criar relatórios.
 
-A tela a seguir mostra os três ícones de exibições à esquerda do Power BI Desktop: **Relatório**, **Dados**e **Relações**, de cima para baixo. A exibição atualmente exibida é indicada pela barra amarela à esquerda. Nesse caso, a exibição **Relatório** é atualmente exibida. Você pode alterar as exibições clicando em qualquer um desses três ícones.
+A seguinte tela mostra os três ícones de exibição à esquerda no Power BI Desktop: **Relatório**, **Dados**e **Relações**, de cima para baixo. A exibição atualmente exibida é indicada pela barra amarela à esquerda. Nesse caso, a exibição **Relatório** é atualmente exibida. Você pode alterar as exibições clicando em qualquer um desses três ícones.
 
 ![](media/desktop-getting-started/designer_gsg_viewtypes.png)
 

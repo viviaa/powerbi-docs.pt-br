@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 85f7dd131806cd808c28c23cb70230a0c719e0a1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670177"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285612"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obter dados de arquivos de pasta de trabalho do Excel
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -43,7 +43,7 @@ Se você usar o Excel para se conectar a uma fonte de dados externa, depois de i
 A forma como as planilhas do Power View, as Tabelas Dinâmicas e os gráficos são exibidos ou não no Power BI dependerá do local em que o arquivo de pasta de trabalho é salvo e de como você optar por inseri-los no Power BI. Vamos examinar esse aspecto mais detalhadamente abaixo.
 
 ## <a name="data-types"></a>Tipo de dados
-O Power BI dá suporte aos seguintes tipos de dados: Número Inteiro, Número Decimal, Moeda, Data, Verdadeiro/Falso e Texto. Marcar os dados no Excel como tipos de dados específicos melhora a experiência do Power BI.
+O Power BI oferece suporte aos seguintes tipos de dados: Número Inteiro, Número Decimal, Moeda, Data, Verdadeiro/Falso, Texto. Marcar os dados no Excel como tipos de dados específicos melhora a experiência do Power BI.
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Preparar sua pasta de trabalho para o Power BI
 Assista a este vídeo bastante útil para saber mais sobre como garantir que suas pastas de trabalho do Excel estão prontas para o Power BI.
@@ -119,7 +119,7 @@ O uso do recurso **Publicar no Power BI no Excel 2016** é praticamente o mesmo 
 ## <a name="troubleshooting"></a>Solução de problemas
 O arquivo de pasta de trabalho é muito grande? Confira [Reduzir o tamanho de uma pasta de trabalho do Excel para exibi-la no Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-Atualmente, ao escolher a opção Importar, o Power BI importa somente os dados que fazem parte de uma tabela ou de um modelo de dados nomeado. Como resultado, se a pasta de trabalho não contiver nenhuma tabela nomeada, planilhas do Power View ou modelos de dados do Excel, você poderá ver esse erro: **“Não foi possível encontrar nenhum dado em sua pasta de trabalho do Excel”**. [Este artigo](service-admin-troubleshoot-excel-workbook-data.md) explica como corrigir a pasta de trabalho e importá-la novamente.
+Atualmente, ao escolher a opção Importar, o Power BI importa somente os dados que fazem parte de uma tabela ou de um modelo de dados nomeado. Consequentemente, se a pasta de trabalho não contém tabelas nomeadas, planilhas do Power View ou modelos de dados do Excel, você pode ver este erro: **"Não foi possível encontrar nenhum dado em sua pasta de trabalho do Excel"**. [Este artigo](service-admin-troubleshoot-excel-workbook-data.md) explica como corrigir a pasta de trabalho e importá-la novamente.
 
 ## <a name="next-steps"></a>Próximas etapas
 **Explore os dados** – Depois de obter dados e relatórios de seu arquivo no Power BI, é hora de explorá-los. Basta clicar com o botão direito do mouse no novo conjunto de dados e clicar em Explorar. Caso você tenha decidido se conectar a um arquivo de pasta de trabalho no OneDrive na etapa 4, a pasta de trabalho será exibida em Relatórios. Ao clicar nela, ela será aberta no Power BI, da mesma forma como seria aberta se estivesse no Excel Online.

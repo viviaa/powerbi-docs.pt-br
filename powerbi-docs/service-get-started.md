@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900517"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291961"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutorial: Introdução ao serviço do Power BI (app.powerbi.com)
 Esse tutorial ajuda você a começar a usar o ***serviço do Power BI***. Para compreender como o serviço do Power BI se adapta às outras ofertas do Power BI, recomendamos que você comece lendo [O que o é Power BI](power-bi-overview.md).
@@ -93,7 +93,7 @@ Veja um exemplo de como obter dados de um arquivo CSV. Deseja acompanhar este tu
    > 
  
 
-## <a name="step-2-start-exploring-your-dataset"></a>Etapa 2: começar a explorar seu conjunto de dados
+## <a name="step-2-start-exploring-your-dataset"></a>Etapa 2: Começar a explorar o seu conjunto de dados
 Agora que você se conectou aos dados, comece a explorar.  Quando encontrar algo interessante, você pode criar um dashboard para monitorá-lo e ver como ele é alterado ao longo do tempo. Vamos ver como isso funciona.
     
 1. No editor de relatórios, usaremos o painel **Campos** no lado direito da página para criar uma visualização.  Selecione a caixa de seleção ao lado de **Vendas Brutas** e **Data**.
@@ -128,7 +128,7 @@ Agora que você se conectou aos dados, comece a explorar.  Quando encontrar algo
    
    Selecione o novo bloco em seu dashboard para retornar ao relatório a qualquer momento. O Power BI o leva de volta para o editor de relatório no Modo de Exibição de Leitura. Para voltar ao Modo de Exibição de Edição, selecione **Editar relatório** na barra de menus superior. Uma vez no Modo de Exibição de Edição, continue explorando e fixando blocos. 
 
-## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Etapa 3: Continuar explorando com P e R (consulta em linguagem natural)
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Etapa 3:  Continuar a exploração com P e R (consulta em linguagem natural)
 1. Para explorar seus dados rapidamente, tente fazer uma pergunta na caixa P e R. A caixa de pergunta de P e R está localizada na parte superior do painel (**Fazer uma pergunta sobre seus dados**) e na barra de menus superior do seu relatório (**Fazer uma pergunta**). Por exemplo, tente digitar “qual segmento tinha a maior receita”.
    
    ![Telas de P e R](media/service-get-started/powerbi-qna.png)

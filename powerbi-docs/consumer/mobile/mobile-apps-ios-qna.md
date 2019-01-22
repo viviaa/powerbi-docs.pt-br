@@ -1,20 +1,20 @@
 ---
 title: Analista virtual de P e R nos aplicativos iOS – Power BI
 description: Faça perguntas sobre dados de exemplo com suas próprias palavras com o analista virtual de P e R no aplicativo móvel do Power BI em seu dispositivo iOS.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
-ms.author: maggies
-ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548088"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278690"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analista virtual de P e R nos aplicativos iOS – Power BI
 
@@ -49,7 +49,7 @@ A primeira etapa é baixar as amostras de Análise de Varejo e Análise de Oport
 
 1. Abra o serviço do Power BI (app.powerbi.com) e entre.
 
-2. No painel de navegação à esquerda, selecione **Espaços de trabalho**, **Meu espaço de trabalho**.
+2. No painel de navegação à esquerda, selecione **Workspaces**, **Meu workspace**.
 
 3. No canto inferior esquerdo, selecione **Obter Dados**.
    
@@ -61,26 +61,26 @@ A primeira etapa é baixar as amostras de Análise de Varejo e Análise de Oport
 
 4. Selecione **Exemplo de Análise de Varejo**.
  
-    ![Exemplo de análise de varejo](./media/mobile-apps-ios-qna/power-bi-rs.png)
+    ![Exemplo de Análise de Varejo](./media/mobile-apps-ios-qna/power-bi-rs.png)
  
 8. Selecione **Conectar**.  
   
-   ![Exemplo de análise de varejo](./media/mobile-apps-ios-qna/retail16.png)
+   ![Exemplo de Análise de Varejo](./media/mobile-apps-ios-qna/retail16.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu espaço de trabalho atual.
+5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual.
    
-   ![Exemplo de análise de varejo](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
+   ![Exemplo de Análise de Varejo](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
 
 **Obter o exemplo de análise de oportunidades**
 
 - Percorra as mesmas etapas acima descritas para o exemplo de Análise de Varejo, mas na etapa 4, selecione o **Exemplo de Análise de Oportunidade**.
 
-    ![Exemplo de análise de varejo](./media/mobile-apps-ios-qna/power-bi-oa.png)
+    ![Exemplo de Análise de Varejo](./media/mobile-apps-ios-qna/power-bi-oa.png)
   
 OK, você está pronto para exibir os exemplos em seu dispositivo iOS.
 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Tente fazer perguntas sobre seu iPhone ou iPad
-1. No seu iPhone ou iPad, toque no botão de navegação global ![Botão de navegação global](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png)  >  **Espaços de trabalho**  >  **Meu espaço de trabalho** e abra o painel Exemplo de Análise de Varejo.
+1. No seu iPhone ou iPad, toque no botão de navegação global ![Botão de navegação global](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Workspaces** > **Meu workspace** e abra o painel Exemplo de Análise de Varejo.
 
 2. Toque no ícone do analista virtual da P e R ![Q&A virtual analyst icon](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) no menu de ação na parte inferior da página (na parte superior da página em um iPad).
      O analista virtual da P e R oferece algumas sugestões para começar.
@@ -100,7 +100,7 @@ OK, você está pronto para exibir os exemplos em seu dispositivo iOS.
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Toque na seta no canto superior esquerdo para voltar para a janela de chat do analista virtual da P e R.
 8. Toque no X à direita da caixa de texto para excluir o texto e começar novamente.
-9. Tente uma nova pergunta: toque em **Topo** nas palavras-chave, toque em **Venda por $ médio/unidade**  > **Enviar** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Tente uma nova pergunta: Toque em **Topo** nas palavras-chave, toque em **venda por $ médio/unidade**  > **Enviar** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 10. Selecione **Por** nas palavras-chave, toque em **Tempo** na lista de sugestões na parte superior > **Enviar** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).

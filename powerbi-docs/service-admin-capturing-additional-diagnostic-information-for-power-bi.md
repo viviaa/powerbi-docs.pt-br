@@ -30,7 +30,7 @@ Estas instruções fornecem duas opções possíveis para coletar manualmente as
    ![Ferramentas de desenvolvedor](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 4. Mude para a guia Rede. Ele listará o tráfego que já foi capturado. 
    
-   ![Guia de rede do Edge](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Guia de rede do Microsoft Edge](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 5. É possível navegar na janela e reproduzir qualquer problema que talvez você esteja enfrentando. Você pode ocultar e mostrar a janela de ferramentas de desenvolvedor a qualquer momento durante a sessão, pressionando F12.
 6. Para interromper a captura, é possível selecionar o quadrado vermelho na guia Rede da área de ferramentas de desenvolvedor.
    

@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/28/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e364d2ceac3d1a30b0742ceac2bd56e2bc66d9ba
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: ace392570dbabc65d128941fc735231622f2c008
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973225"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285313"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Sobre filtros e realce em relatórios do Power BI
  Este artigo apresenta a você a filtragem e o realce no serviço do Power BI. A experiência é quase exatamente igual no Power BI Desktop. Os ***Filtros*** removem tudo, menos os dados que você deseja se concentrar. ***Realce*** não é filtragem. Ele não remove dados, mas realça um subconjunto dos dados visíveis; os dados não realçados permanecem visíveis, mas esmaecidos.
@@ -48,7 +48,7 @@ Você pode pesquisar na página, no elemento visual e nos filtros de relatório,
 Se o filtro tiver a palavra **All** ao lado, isso significará que todos os valores no campo serão incluídos no filtro.  Por exemplo, **Chain(All)** na captura de tela abaixo informa que essa página de relatório inclui dados sobre cadeias de armazenamento.  Por outro lado, o filtro de nível de relatório ou **FiscalYear é 2013 ou 2014** informa que o relatório inclui somente dados para os anos fiscais de 2013 e 2014.
 
 ## <a name="filters-in-reading-or-editing-view"></a>Filtros no Modo de Exibição de Leitura ou de Edição
-Há dois modos de interagir com relatórios: [Modo de Exibição de Leitura e Modo de Exibição de Edição](consumer/end-user-reading-view.md). Os recursos de filtragem disponíveis para você dependem do modo no qual você está.
+Há dois modos de interagir com relatórios: [Modo de Exibição de Leitura](consumer/end-user-reading-view.md) e Modo de Exibição de Edição. Os recursos de filtragem disponíveis para você dependem do modo no qual você está.
 
 * No Modo de Exibição de Edição é possível adicionar filtros de relatório, de página, de detalhamento e de visual. Quando você salvar o relatório, os filtros serão salvos com o relatório, mesmo se você os abrir em um aplicativo móvel. Pessoas olhando para o relatório no Modo de Exibição de Leitura podem interagir com os filtros que você adicionou, mas não podem adicionar novos filtros.
 * No Modo de Exibição de Leitura, você pode interagir com todos os filtros já existentes no relatório e salvar a seleção feita por você. Você não pode adicionar novos filtros.

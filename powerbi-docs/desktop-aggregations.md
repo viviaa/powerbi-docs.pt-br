@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: cd9a68d10e0da0aaa883dae1a3979eff6a6b4ce6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619714"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290718"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Agregações no Power BI Desktop (versão prévia)
 
@@ -62,7 +62,7 @@ Vamos supor que as seguintes tabelas de dimensões são mais comumente usadas pa
 * Geografia
 * Cliente
 * Data
-* Subcategoria de produto
+* Subcategoria de Produto
 * Categoria de produto
 
 A imagem a seguir mostra este modelo.
@@ -124,8 +124,8 @@ A tabela a seguir mostra as agregações para a tabela **Agregação de vendas**
 O menu suspenso Resumo oferece os seguintes valores para seleção.
 * Contagem
 * GroupBy
-* Máx.
-* Mín.
+* Máx
+* Mín
 * Soma
 * Contar linhas da tabela
 
@@ -261,7 +261,7 @@ A tabela a seguir mostra as entradas definidas na caixa de diálogo **Gerenciar 
 
 ![Tabela de agregações Agregação de vendas](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Observação: esse modelo requer que a tabela **Data** esteja no modo DirectQuery para preencher a caixa de diálogo Gerenciar agregações, porque ele é uma tabela de detalhes. Essa é uma limitação de versão prévia que pretendemos remover da Disponibilidade geral.
+> Observação: esse modelo requer que a tabela **Data** esteja no modo DirectQuery para preenchimento da caixa de diálogo Gerenciar agregações, pois trata-se de uma tabela de detalhes. Essa é uma limitação de versão prévia que pretendemos remover da Disponibilidade geral.
 
 ### <a name="query-examples"></a>Exemplos de consulta
 

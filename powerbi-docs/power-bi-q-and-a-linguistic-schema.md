@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452719"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289913"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Editar o esquema linguístico de P e R e adicionar frases no Power BI Desktop 
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no Power BI Desktop permite que você faça. Quando você faz uma pergunta para P e R do Power BI, ele se esforça para responder corretamente. 
@@ -49,7 +49,7 @@ Os esquemas linguísticos são salvos no formato YAML. Esse formato está relaci
 É recomendável usar o Visual Studio Code para editar os arquivos YAML de esquema linguístico. O Visual Studio Code inclui suporte integrado para arquivos YAML e pode ser estendido para validar especificamente o formato do esquema linguístico do Power BI.
 1. Instale o [Visual Studio Code](https://code.visualstudio.com/).    
 
-2. Selecione o esquema linguístico de exemplo que você já salvou: [arquivo YAML](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
+2. Selecione o esquema linguístico do exemplo que você salvou anteriormente: [Arquivo YAML](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
 4. Selecione **Visual Studio Code** e **Sempre usar este aplicativo para abrir arquivos .yaml**.
 
     ![Como você deseja abrir este arquivo](media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
@@ -78,7 +78,7 @@ As P e R usam todas essas informações em conjunto com todos os aprimoramentos 
 
 
 ## <a name="edit-a-linguistic-schema"></a>Editar um esquema linguístico
-Quando você exporta o esquema linguístico do Power BI Desktop pela primeira vez, a maior parte do conteúdo do arquivo, ou todo ele, é gerada automaticamente pelo mecanismo de P e R. Essas entidades, palavras (sinônimos), relações e frases geradas recebem uma tag **Estado: Gerado** e são incluídas no arquivo principalmente para fins informativos, mas podem ser um ponto de partida útil para que você faça suas próprias alterações. 
+Quando você exporta o esquema linguístico do Power BI Desktop pela primeira vez, a maior parte do conteúdo do arquivo, ou todo ele, é gerada automaticamente pelo mecanismo de P e R. Estas entidades, palavras (sinônimos), relações e frases geradas são designadas com uma marca **Estado: Gerado** e são incluídas no arquivo principalmente para fins informativos, mas podem ser um ponto de partida útil para suas próprias alterações. 
 
 > [!NOTE]
 > O arquivo YAML de exemplo incluído neste tutorial não contém as marcas **Estado: Gerado** ou **Estado: Excluído** pois ele foi preparado especialmente para este tutorial. Para ver essas marcas, abra um arquivo .pbix não editado na exibição Relações e exporte o esquema linguístico.
@@ -86,7 +86,7 @@ Quando você exporta o esquema linguístico do Power BI Desktop pela primeira ve
 ![YAML mostrando Estado: Gerado](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-Quando você importar o arquivo de esquema linguístico novamente para o Power BI Desktop, tudo que estiver marcado como **Estado: Gerado** será ignorado (e regenerado mais tarde), portanto, se desejar fazer uma alteração em algum conteúdo gerado, lembre-se de remover também a tag **Estado: Gerado** correspondente. Da mesma forma, se você quiser remover algum conteúdo gerado, será necessário alterar a marca **Estado: Gerado** para **Estado: Excluído** para que ele não seja regenerado quando você importar o arquivo de esquema linguístico.
+Ao importar o arquivo de esquema linguístico novamente no Power BI Desktop, tudo o que estiver marcado como **Estado: Gerado** será ignorado (e mais tarde regenerado), então se você quiser fazer uma alteração em algum conteúdo gerado, certifique-se de remover também a marca correspondente **Estado: Gerado**. Da mesma forma, se você quiser remover algum conteúdo gerado, precisará alterar a marca de **Estado: Gerado** para o **Estado: Excluído** para que ele não seja regenerado ao importar o arquivo de esquema linguístico.
 
 1. Abra o conjunto de dados na *Exibição de Relações* do Power BI Desktop. 
 2. Selecione a guia **Modelagem** e escolha **Exportar esquema linguístico**.

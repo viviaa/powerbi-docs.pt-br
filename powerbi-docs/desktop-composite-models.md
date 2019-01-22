@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 734af04ae515b1cae19b5afc99166619a85ab828
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452765"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290432"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Usar modelos compostos no Power BI Desktop
 
@@ -25,7 +25,7 @@ Anteriormente no Power BI Desktop, quando você usava um DirectQuery em um relat
 
 O recurso de modelos compostos no Power BI Desktop consiste em três recursos relacionados:
 
-* **Modelos compostos**: permite que um relatório tenha várias conexões de dados, incluindo conexões DirectQuery ou importação, em qualquer combinação. Este artigo descreve os modelos compostos em detalhes.
+* **Modelos compostos**: permite que um relatório tenha várias conexões de dados, incluindo conexões DirectQuery ou Importação, em qualquer combinação. Este artigo descreve os modelos compostos em detalhes.
 
 * **Relações muitos-para-muitos**: com *modelos compostos*, você pode estabelecer *relações muitos-para-muitos* entre as tabelas. Esta abordagem remove os requisitos de valores exclusivos nas tabelas. Ela também remove as soluções alternativas anteriores, como introduzir novas tabelas somente para estabelecer relações. Para mais informações, confira [Relações muitos para muitos no Power BI Desktop (versão prévia)](desktop-many-to-many-relationships.md).
 
@@ -156,11 +156,11 @@ Ao usar o DirectQuery, você deve sempre considerar desempenho, principalmente p
 
 O uso de modelos compostos gera considerações de desempenho adicionais. Um único visual pode resultar no envio de consultas a várias fontes, o que geralmente passa os resultados de uma consulta para uma segunda fonte. Essa situação pode resultar nas seguintes formas de execução:
 
-* **Uma consulta SQL que inclui um grande número de valores literais**: por exemplo, um visual que solicitar o total de *Valor de Vendas* para um conjunto de *Gerentes de Produto* selecionado primeiro precisará saber quais *Produtos* eram gerenciadas pelos gerentes de produto. Essa sequência deve ocorrer antes que o visual envie uma consulta SQL que inclui todas as IDs de produto em uma cláusula *WHERE*.
+* **Uma consulta SQL que inclui um grande número de valores literais**: por exemplo, um visual que solicita o total de *Valor de Vendas* para um conjunto de *Gerentes de Produto* selecionados, primeiro precisará saber quais *Produtos* eram gerenciados pelos gerentes de produto. Essa sequência deve ocorrer antes que o visual envie uma consulta SQL que inclui todas as IDs de produto em uma cláusula *WHERE*.
 
-* **Uma consulta SQL que consulta em um nível mais baixo de granularidade, com os dados agregados localmente**: à medida que o número de *Produtos* que atendem aos critérios de filtro de *Gerente de Produto* aumenta, pode se tornar ineficiente ou inviável incluir todos os produtos em uma cláusula *WHERE*. Em vez disso, você pode consultar a origem relacional em um nível inferior de *Produto* e agregar os resultados localmente. Se a cardinalidade de *Produtos* exceder um limite de um milhão, a consulta falhará.
+* **Uma consulta SQL que consulta em um nível mais baixo de granularidade, com os dados agregados localmente**: à medida que o número de *Produtos* que atende aos critérios de filtro de *Gerente de produto* aumenta, pode se tornar ineficiente ou inviável incluir todos os produtos em uma cláusula *WHERE*. Em vez disso, você pode consultar a origem relacional em um nível inferior de *Produto* e agregar os resultados localmente. Se a cardinalidade de *Produtos* exceder um limite de um milhão, a consulta falhará.
 
-* **Várias consultas SQL, uma por grupo por valor**: quando a agregação usa **DistinctCount**, agrupado por alguma coluna de outra origem se a fonte externa não dá suporte à passagem eficiente de vários valores literais que definem o agrupamento, é necessário enviar uma consulta SQL por grupo por valor. 
+* **Várias consultas SQL, uma por grupo por valor**: quando a agregação usa **DistinctCount** e é agrupada por alguma coluna de outra fonte, e se a fonte externa não oferece suporte à passagem eficiente de vários valores literais que definem o agrupamento, é necessário enviar uma consulta SQL por grupo por valor. 
 
    Por exemplo, um visual que solicita uma contagem distinta de *CustomerAccountNumber* (de tabela do SQL Server) por *Gerente de Produto* (importada de uma planilha) precisa passar os detalhes da tabela *Gerentes de Produto* na consulta enviada ao SQL Server. Em outras fontes (por exemplo, Redshift), essa ação é impraticável. Em vez disso, deve haver uma consulta SQL enviada por *Gerente de Vendas*&mdash;até um limite prático e, nesse ponto, a consulta falha. 
 

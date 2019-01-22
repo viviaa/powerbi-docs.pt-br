@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: reference
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b7387f633f0a53db840653a648ba9750b33c180f
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: f153ea866404066ce2ada6ab509de2aa8259d6a5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578602"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293041"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Tipos de dados no Power BI Desktop
 Este artigo descreve os tipos de dados com suporte no Power BI Desktop e DAX (Data Analysis Expressions). 
@@ -35,7 +35,7 @@ Na área de trabalho do Power BI, você pode determinar e especificar o tipo de 
 
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-O drop-down Tipo de Dados no Editor de Consultas tem dois tipos de dados que não estão presentes atualmente na Exibição de Dados ou de Relatório: **Data/Hora/Fuso horário** e **Duração**. Quando uma coluna com esses tipos de dados for carregada no modelo e exibida no modo de exibição Dados ou Relatório, uma coluna com o tipo de dados Data/Hora/Fuso Horário será convertida em Data/Hora e uma coluna com o tipo de dados Duração será convertida em um Número Decimal.
+A lista suspensa Tipo de Dados no Editor de Consultas tem dois tipos de dados que não estão presentes atualmente nos Modos de Exibição de Dados ou de Relatório: **Data/Hora/Fuso horário** e **Duração**. Quando uma coluna com esses tipos de dados for carregada no modelo e exibida no modo de exibição Dados ou Relatório, uma coluna com o tipo de dados Data/Hora/Fuso Horário será convertida em Data/Hora e uma coluna com o tipo de dados Duração será convertida em um Número Decimal.
 
 ### <a name="number-types"></a>Tipos de número
 O Power BI Desktop dá suporte a três tipos de número:

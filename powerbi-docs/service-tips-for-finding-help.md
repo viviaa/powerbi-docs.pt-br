@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f4d16a5694dde63b66dcb001f1a5375ed92d978c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 2cb8e7b6c2744f80891c5424f620b9812eee1acb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37137159"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285359"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>Dez dicas para obter ajuda com suas perguntas do Power BI
 Alguma vez você já ficou frustrado ao usar o Power BI ou sentiu dificuldades ao não obter respostas para suas perguntas sobre ele quando precisou, ou seja, não encontrou ajuda a tempo (Just-In-Time)? 

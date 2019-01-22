@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 01af6707cf53f1a5be3f1e7446e967b2306e993b
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 4dec423e991b695097134d575de8c687b518a66c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717913"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287061"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Adicionar imagem, texto, vídeo e muito mais no seu dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -28,7 +28,7 @@ O controle **Adicionar bloco** permite que você adicione diretamente uma imagem
 1. Selecione **Adicionar bloco** na barra de menus superior. Dependendo das limitações de espaço, você poderá ver apenas o sinal de adição ![sinal de adição](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png).
    
     ![Ícone Adicionar bloco](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
-2. Selecione qual tipo de bloco adicionar: **Imagem**, **Caixa de texto**, **Vídeo** ou **Conteúdo da Web** ou **Dados de streaming personalizados**.
+2. Selecione o tipo de bloco para adicionar: **Imagem**, **Caixa de texto**, **Vídeo**, **Conteúdo da Web** ou **Dados de streaming personalizados**.
    
     ![janela adicionar bloco](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
@@ -50,7 +50,7 @@ Digamos que você deseja o logotipo de sua empresa em seu painel, ou alguma outr
 ## <a name="add-a-text-box-or-dashboard-heading"></a>Adicionar um título de painel ou caixa de texto
 1. Selecione **Caixa de texto > Avançar**.
    
-   > **OBESERVAÇÃO**: para adicionar um título do painel, digite o título na caixa de texto e aumentar a fonte.
+   > **OBSERVAÇÃO**: Para adicionar um título de dashboard, digite o título na caixa de texto e aumente a fonte.
    > 
 2. Formate a caixa de texto:
    

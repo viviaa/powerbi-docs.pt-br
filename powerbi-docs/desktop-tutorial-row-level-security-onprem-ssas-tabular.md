@@ -6,17 +6,17 @@ manager: amitaro
 ms.reviewer: davidi
 editor: davidi
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 546ae48aac10ae6c72a062665c7d8f448432a194
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452742"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292627"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Segurança em nível de linha dinâmica com o modelo de tabela do Analysis Services
 Este tutorial apresenta as etapas necessárias para implementar a **segurança em nível de linha** no **Modelo de Tabela do Analysis Services** e mostra como usá-la em um relatório do Power BI. As etapas deste tutorial foram projetadas para permitir que você acompanhe e conheça as etapas necessárias preenchendo um conjunto de dados de exemplo.
@@ -34,7 +34,7 @@ Durante este tutorial, as seguintes etapas são descritas detalhadamente, ajudan
 
 Para seguir as etapas deste tutorial, você precisa do banco de dados **AdventureworksDW2012**, que pode ser baixado no **[repositório](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)**.
 
-## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tarefa 1: Criar a tabela de segurança de usuário e definir a relação de dados
+## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tarefa 1: criar a tabela de segurança de usuário e definir a relação de dados
 Há vários artigos publicados que descrevem como definir a segurança dinâmica em nível de linha com o modelo de **tabela do SSAS (SQL Server Analysis Services)**. Para nossa amostra, seguimos o artigo [Implementar a segurança dinâmica usando filtros de linha](https://msdn.microsoft.com/library/hh479759.aspx). As etapas a seguir mostrarão a primeira tarefa deste tutorial:
 
 1. No nosso exemplo, usaremos o banco de dados relacional **AdventureworksDW2012**. Nesse banco de dados, crie a tabela **DimUserSecurity**, conforme mostrado na imagem a seguir. Para esta amostra, estamos usando o SSMS (SQL Server Management Studio) para criar a tabela.
@@ -55,7 +55,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Observe que a imagem acima mostra informações, como qual usuário é responsável por qual região de vendas. Esses dados são exibidos devido à relação que criamos na **Etapa 2**. Além disso, observe que o usuário **Carlos Silva faz parte da região de vendas Austrália**. Voltaremos a Carlos Silva em tarefas e etapas futuras.
 
-## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Tarefa 2: Criar o modelo de tabela com tabelas de fatos e dimensão
+## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Tarefa 2: criar o modelo de tabela com tabelas de fatos e dimensão
 1. Depois de implementar o data warehouse relacional, é hora de definir o modelo de tabela. O modelo pode ser criado usando o **SSDT (SQL Server Data Tools)**. Para obter mais informações sobre como definir um modelo de tabela, consulte [Criar um novo projeto de modelo de tabela](https://msdn.microsoft.com/library/hh231689.aspx).
 2. Importe todas as tabelas necessárias no modelo, conforme mostrado abaixo.
    
@@ -83,7 +83,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
     Esta fórmula especifica que todas as colunas são resolvidas para a condição booliana false; portanto, nenhuma coluna da tabela **DimUserSecurity** pode ser consultada.
 1. Agora, precisamos processar e implantar o modelo. Confira o [artigo Implantar](https://msdn.microsoft.com/library/hh231693.aspx) para obter assistência na implantação do modelo.
 
-## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Tarefa 3: adicionando fontes de dados ao Gateway de dados local
+## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Tarefa 3: adicionar fontes de dados ao Gateway de dados local
 1. Depois que o modelo de tabela for implantado e estiver pronto para consumo, você precisará adicionar uma conexão de fonte de dados ao servidor de tabela do Analysis Services local no portal do Power BI.
 2. Para permitir que o **serviço do Power BI** acesse o serviço de análise local, é necessário ter um **[Gateway de dados local](service-gateway-onprem.md)** instalado e configurado no seu ambiente.
 3. Depois de configurar o gateway corretamente, é necessário criar uma conexão de fonte de dados à instância de tabela do **Analysis Services**. Este artigo o ajudará a [adicionar uma fonte de dados no portal do Power BI](service-gateway-enterprise-manage-ssas.md).
@@ -91,7 +91,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)
 4. Após a conclusão da etapa anterior, o gateway está configurado e pronto para interagir com sua fonte de dados do **Analysis Services** local.
 
-## <a name="task-4-creating-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Tarefa 4: Criando relatórios baseados no modelo de tabela do Analysis Services usando o Power BI Desktop
+## <a name="task-4-creating-report-based-on-analysis-services-tabular-model-using-power-bi-desktop"></a>Tarefa 4: criar relatórios baseados no modelo de tabela do Analysis Services usando o Power BI Desktop
 1. Inicie o **Power BI Desktop** e selecione **Obter Dados > Banco de Dados**.
 2. Na lista de fontes de dados, selecione o **Banco de Dados do SQL Server Analysis Services** e selecione **Conectar**.
    
@@ -109,7 +109,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart.png)
 8. Quando o relatório estiver pronto, você poderá publicá-lo diretamente no portal do Power BI. Na faixa de opções **Página Inicial** do **Power BI Desktop**, selecione **Publicar**.
 
-## <a name="task-5-creating-and-sharing-a-dashboard"></a>Tarefa 5: Criando e compartilhando um dashboard
+## <a name="task-5-creating-and-sharing-a-dashboard"></a>Tarefa 5: criar e compartilhar um dashboard
 1. Você criou o relatório e clicou em **Publicar** no **Power BI Desktop**; portanto, o relatório foi publicado no serviço do **Power BI**. Agora que ele está no serviço, nosso cenário de segurança do modelo pode ser demonstrado com o exemplo criado nas etapas anteriores.
    
    Em sua função, o **Gerente de vendas – Pedro** pode ver os dados de todas as diferentes regiões de vendas. Portanto, ele cria esse relatório (o relatório criado nas etapas da tarefa anterior) e o publica no serviço do Power BI.
@@ -127,7 +127,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 4. Parabéns! A segurança dinâmica em nível de linha definida no modelo de tabela do **Analysis Services** local foi refletida com êxito e observada no serviço do **Power BI**. O Power BI usa a propriedade **effectiveusername** para enviar as atuais credenciais de usuário do Power BI à fonte de dados local para executar as consultas.
 
-## <a name="task-6-understanding-what-happens-behind-the-scenes"></a>Tarefa 6: Entendendo o que acontece nos bastidores
+## <a name="task-6-understanding-what-happens-behind-the-scenes"></a>Tarefa 6: entender o que acontece nos bastidores
 1. Esta tarefa pressupõe que você esteja familiarizado com o SQL Profiler, já que você precisa capturar um rastreamento do criador de perfil do SQL Server na instância de tabela do SSAS local.
 2. A sessão é inicializada assim que o usuário (Carlos Silva, neste caso) acessa o dashboard no serviço do Power BI. Você pode ver que a função **salesterritoryusers** funciona imediatamente com o nome de usuário efetivo **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
    

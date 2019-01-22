@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 31a7221d3b284e6342b192384f92616a52e12631
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830161"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280230"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Criar um novo relatório no serviço do Power BI importando um conjunto de dados
 Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora deseja criar o seu próprio relatório. Há muitas maneiras diferentes para criar um relatório e, neste artigo, vamos começar criando um relatório muito básico com base em um conjunto de dados do Excel usando o serviço do Power BI. Depois de compreender os fundamentos da criação de um relatório, as **Próximas etapas** no final vão direcioná-lo para tópicos mais avançados sobre relatórios.  
@@ -46,7 +46,7 @@ Esse método para a criação de um relatório começa com um conjunto de dados 
    
    ![editor de relatório](media/service-report-create-new/power-bi-blank-report.png)
 
-> **DICA**: se você não estiver familiarizado com a tela de edição de relatório ou precisar de um lembrete, [Faça um tour pelo editor de relatório ](service-the-report-editor-take-a-tour.md) antes de continuar.
+> **DICA:** se você não está familiarizado com a tela de edição de relatório ou precisa de um lembrete, [faça um tour pelo editor de relatório ](service-the-report-editor-take-a-tour.md) antes de continuar.
 > 
 > 
 

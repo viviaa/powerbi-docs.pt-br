@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d5f2fa0abe6f0503ce5f41387f66db928ae0267e
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 642bd39cb9348bae2a1f30dbc9ee026e11ff7401
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145400"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284508"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Solucionando problemas do Power BI Gateway - Personal
 O exemplo a seguir mostra alguns problemas comuns que você poderá ter ao usar o Power BI Gateway - Personal.
@@ -45,37 +45,37 @@ Muitos problemas podem surgir quando a versão de gateway estiver desatualizada.
  **Configuração de proxy** Você poderá ter problemas com a configuração do gateway pessoal se o seu ambiente precisar usar um proxy. Para saber mais sobre como configurar informações de proxy, consulte [Definindo as configurações de proxy para Gateways do Power BI](service-gateway-proxy.md)
 
 ## <a name="schedule-refresh"></a>Agendar atualização
-**Erro: as credenciais armazenadas na nuvem estão ausentes.**
+**Erro: As credenciais armazenadas na nuvem estão ausentes.**
 
 Você pode obter esse erro nas configurações de \<conjunto de dados\> se tiver uma atualização agendada e desinstalado e reinstalando o gateway pessoal. Ao desinstalar um gateway pessoal, as credenciais de fonte de dados de um conjunto de dados que foram configuradas para atualização serão removidas do serviço do Power BI.
 
-**Solução:** no Power BI, vá para as configurações de atualização de um conjunto de dados. Em Gerenciar Fontes de Dados, para qualquer fonte de dados com um erro, clique em Editar credenciais e entre novamente na fonte de dados.
+**Solução:** No Power BI, vá para as configurações de atualização de um conjunto de dados. Em Gerenciar Fontes de Dados, para qualquer fonte de dados com um erro, clique em Editar credenciais e entre novamente na fonte de dados.
 
-**Erro: as credenciais fornecidas para o conjunto de dados são inválidas. Atualize as credenciais por meio de uma atualização ou no diálogo Configurações de Fonte de Dados para continuar.**
+**Erro: As credenciais fornecidas para o conjunto de dados são inválidas. Atualize as credenciais por meio de uma atualização ou no diálogo Configurações de Fonte de Dados para continuar.**
 
-**Solução**: se você receber uma mensagem de credenciais, isso poderia significar:
+**Solução**: Se você receber uma mensagem de credenciais, isso pode significar:
 
 * Verifique se os nomes de usuário e as senhas usados para entrar nas fontes de dados estão atualizados. No Power BI, vá para as configurações de atualização do conjunto de dados. Em Gerenciar Fontes de Dados, clique em Editar credenciais para atualizar as credenciais da fonte de dados.
 * Os mashups entre uma fonte de nuvem e uma fonte local, em uma única consulta, não conseguirão ser atualizados no gateway pessoal se uma das fontes estiver usando o OAuth para autenticação. Um exemplo disso é um mashup entre o CRM Online e um SQL Server local. Isso irá falhar porque o CRM Online exige o OAuth.
   
   Esse é um problema conhecido e está sendo analisado. Para resolver o problema, tenha uma consulta separada para a fonte de nuvem e a fonte local e use uma consulta mesclagem ou acréscimo para combiná-las.
 
-**Erro: fonte de dados sem suporte.**
+**Erro: Fonte de dados sem suporte.**
 
-**Solução:** se você receber uma mensagem informando que não há suporte para a fonte de dados nas configurações de Agendar Atualização, isso poderá significar que: 
+**Solução:** Se você receber uma mensagem informando que não há suporte para a fonte de dados nas configurações Agendar Atualização, isso pode significar que: 
 
 * Atualmente, não há suporte para a atualização da fonte de dados no Power BI. 
 * A pasta de trabalho do Excel não contém um modelo de dados, somente os dados de planilha. O Power BI atualmente dá suporte apenas à atualização se a pasta de trabalho do Excel carregada contiver um modelo de dados. Quando você importa dados usando o Power Query no Excel, lembre-se de escolher a opção de Carregar os dados para o modelo de dados. Isso garante que os dados sejam importados em um modelo de dados. 
 
 **Erro: [não é possível combinar dados] &lt;A parte da consulta&gt;/&lt;…&gt;/&lt;…&gt; está acessando fontes de dados com níveis de privacidade que não podem ser usados em conjunto. Recompile esta combinação de dados.**
 
-**Solução**: este erro ocorre devido a restrições no nível de privacidade e aos tipos de fontes de dados que estão sendo usados.
+**Solução**: este erro ocorre devido a restrições no nível de privacidade e aos tipos de fonte de dados que estão sendo usados.
 
-**Erro: erro na fonte de dados: não é possível converter o valor "\[Tabela\]" para o tipo de tabela.**
+**Erro: Erro na fonte de dados: não é possível converter o valor "\[Table\]" no tipo Tabela.**
 
-**Solução**: este erro ocorre devido a restrições no nível de privacidade e aos tipos de fontes de dados que estão sendo usados.
+**Solução**: este erro ocorre devido a restrições no nível de privacidade e aos tipos de fonte de dados que estão sendo usados.
 
-**Erro: não há espaço suficiente para esta linha.**
+**Erro: Não há espaço suficiente para esta linha.**
 
 Isso ocorrerá se você tiver uma única linha com um tamanho maior que 4 MB. Você precisará determinar qual linha é proveniente da fonte de dados e tentar filtrá-la ou reduzir o tamanho desta linha.
 
@@ -91,13 +91,13 @@ Isso ocorrerá se você tiver uma única linha com um tamanho maior que 4 MB. Vo
 
   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
 
-**Erro: erro de conexão ao selecionar a autenticação do Windows para uma fonte de dados usando o ACE OLEDB** - se você receber o seguinte erro ao inserir as credenciais da fonte de dados para uma fonte de dados usando o provedor ACE OLEDB:
+**Erro: Erro de início de sessão ao selecionar a autenticação do Windows para uma fonte de dados usando o ACE OLEDB**; se você receber o seguinte erro ao inserir as credenciais para uma fonte de dados usando o provedor ACE OLEDB:
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
 O Power BI atualmente não dá suporte à autenticação do Windows para uma fonte de dados usando o provedor ACE OLEDB.
 
-**Solução:** para solucionar esse erro, selecione a autenticação Anônima. Para o provedor ACE OLEDB herdado, as credenciais Anônimas são equivalentes às credenciais do Windows.
+**Solução:** Para solucionar esse erro, você pode selecionar a autenticação Anônima. Para o provedor ACE OLEDB herdado, as credenciais Anônimas são equivalentes às credenciais do Windows.
 
 ## <a name="tile-refresh"></a>Atualização de bloco
 Se você estiver recebendo um erro com a atualização de blocos do painel, veja o artigo a seguir.

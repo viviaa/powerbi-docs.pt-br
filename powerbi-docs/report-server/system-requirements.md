@@ -1,22 +1,22 @@
 ---
-title: Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI
+title: Requisitos de hardware e de software para a instalação do Servidor de Relatório do Power BI
 description: Este artigo detalha os requisitos mínimos de hardware e software para a instalação e execução do Servidor de Relatórios do Power BI.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507896"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292949"
 ---
-# <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI
+# <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Requisitos de hardware e de software para a instalação do Servidor de Relatório do Power BI
 Este artigo detalha os requisitos mínimos de hardware e software para a instalação e execução do Servidor de Relatórios do Power BI.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Requisitos de processador, de memória e de sistema operacional
@@ -25,9 +25,9 @@ Este artigo detalha os requisitos mínimos de hardware e software para a instala
 | --- | --- |
 | .NET Framework |4.6<br><br>É possível instalar manualmente o .NET Framework no [Microsoft .NET Framework 4.6 (instalador da Web) para Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Para obter mais informações, recomendações e diretrizes sobre o .NET Framework 4.6, consulte [Guia de implantação do .NET Framework para desenvolvedores](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>O Windows 8.1 e o Windows Server 2012 R2 requerem [KB2919355](http://support.microsoft.com/kb/2919355) antes da instalação do .NET Framework 4.6. |
 | Disco rígido |O Servidor de Relatório do Power BI requer 1 GB, no mínimo, de espaço em disco disponível.<br><br>Será necessário ter espaço adicional no servidor de banco de dados que está hospedando o banco de dados do servidor de relatório. |
-| Memória |**Mínimo:** 1 GB<br/><br/> **Recomendado:** pelo menos 4 GB |
-| Velocidade do processador |**Mínimo:** x64 Processador: 1.4 GHz<br/><br/> **Recomendado:** 2.0 GHz ou mais rápido |
-| Tipo de processador |x64 Processador: AMD Opteron, AMD Athlon 64, Intel Xeon com suporte a Intel EM64T, Intel Pentium IV com suporte a EM64T |
+| Memória |**Mínimos:** 1 GB<br/><br/> **Recomendado:** no mínimo 4 GB |
+| Velocidade do processador |**Mínimo:** Processador x64: 1,4 GHz<br/><br/> **Recomendado:** 2,0 GHz ou mais rápido |
+| Tipo de processador |Processador x64: AMD Opteron, AMD Athlon 64, Intel Xeon com suporte a Intel EM64T, Intel Pentium IV com suporte a EM64T |
 | Sistema Operacional |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d4b0ad34d200e3d94c60c7e3a3f524a3f3ed09cf
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4cdd4cf3f8a21b2e97b936ed4e6d4efe2df9a0e8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549996"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290580"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Medidas no Power BI Desktop
 
@@ -66,7 +66,7 @@ Entre outras coisas, isso permite que você use medidas para criar URLs dinamica
 É possível criar tabelas que exibem as medidas como URLs da Web e clicar na URL criada com base em sua seleção. Isso será especialmente útil quando você desejar vincular a outros relatórios do Power BI com [parâmetros de filtro de URL](service-url-filters.md).
 
 ## <a name="learn-more"></a>Saiba mais
-Fornecemos aqui apenas uma rápida introdução às medidas, mas há muito mais conteúdo para lhe ajudar a criá-las por conta própria. Não deixe de conferir [Tutorial: Create calculated columns in Power BI Desktop](desktop-tutorial-create-measures.md) (Tutorial: criar suas próprias medidas no Power BI Desktop), em que você pode baixar um arquivo de exemplo e obter lições passo a passo sobre como criar mais medidas.  
+Fornecemos aqui apenas uma rápida introdução às medidas, mas há muito mais conteúdo para lhe ajudar a criá-las por conta própria. Não deixe de conferir o [Tutorial: Criar suas próprias medidas no Power BI Desktop](desktop-tutorial-create-measures.md), em que você pode baixar um arquivo de exemplo e obter lições passo a passo sobre como criar mais medidas.  
 
 Para se aprofundar mais no DAX, não deixe de conferir [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md) (Noções básicas do DAX no Power BI Desktop). A [Referência de Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) fornece artigos detalhados sobre cada uma das funções, sintaxe, operadores e convenções de nomenclatura. O DAX já existe há muitos anos no Power Pivot no Excel e no SQL Server Analysis Services; portanto, há muitos outros recursos excelentes disponíveis também. Não deixe de conferir o [Wiki do Centro de Recursos do DAX](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), no qual membros influentes da comunidade de BI compartilham seus conhecimentos sobre o DAX.
 

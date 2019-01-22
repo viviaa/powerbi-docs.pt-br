@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8856a8641b38b7a8256b199acccd54e030bdce40
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: dd4ee055501974345c819f7604ff30174cd4c5ba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53984231"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278973"
 ---
 # <a name="organize-work-in-the-new-workspaces-preview-in-power-bi"></a>Organizar o trabalho em novos workspaces (versão prévia) no Power BI
 
@@ -43,7 +43,7 @@ Durante o período de versão prévia, workspaces antigos e novos podem coexisti
 
 ## <a name="roles-in-the-new-workspaces"></a>Funções nos novos workspaces
 
-Adicione grupos de usuários ou indivíduos aos novos workspaces como membros, colaboradores ou administradores. Todos em um grupo de usuários obtêm a função que você definiu. Se um indivíduo estiver em vários grupos de usuários, ele terá o nível mais alto de permissão fornecido pela função.  Consulte [Roles in the new workspaces](#roles-in-the-new-workspaces) (Funções nos novos workspaces) posteriormente neste artigo para obter uma explicação das diferentes funções.
+Adicione grupos de usuários ou indivíduos aos novos workspaces como membros, colaboradores ou administradores. Todos em um grupo de usuários obtêm a função que você definiu. Se um indivíduo estiver em vários grupos de usuários, ele terá o nível mais alto de permissão fornecido pela função.
 
 Todas as pessoas que você adiciona a um workspace precisam de uma licença do Power BI Pro. No workspace, esses usuários podem colaborar nos dashboards e relatórios que você planeja publicar para um público-alvo maior ou até mesmo para toda a organização. Para distribuir conteúdo a outras pessoas da sua organização, atribua licenças do Power BI Pro a esses usuários ou coloque o workspace em uma capacidade do Power BI Premium.
 
@@ -83,9 +83,7 @@ Durante o período de versão prévia, não é possível converter automaticamen
 
 Quando os novos workspaces estiverem disponíveis para o público geral (GA), será possível aceitar migrar os antigos automaticamente. Em algum momento após a disponibilidade geral, será necessário migrá-los.
 
-## <a name="power-bi-apps-faq"></a>Perguntas frequentes sobre os aplicativos do Power BI
-
-### <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Em que aspectos os novos workspaces são diferentes dos workspaces atuais?
+## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Em que aspectos os novos workspaces são diferentes dos workspaces atuais?
 
 Com os novos workspaces, estamos reformulando alguns recursos. Aqui estão as alterações que serão permanentes juntamente com a versão prévia. 
 
@@ -94,6 +92,13 @@ Com os novos workspaces, estamos reformulando alguns recursos. Aqui estão as al
 - É possível criar um pacote de conteúdo organizacional de um workspace atual. Não é possível criar um dos novos workspaces.
 - É possível consumir um pacote de conteúdo organizacional de um workspace atual. Não é possível consumir um dos novos workspaces.
 - Durante o período de versão prévia, alguns recursos ainda não estão habilitados para os novos workspaces. Confira a próxima seção, [Novos recursos de workspace planejados](service-new-workspaces.md#planned-new-workspace-preview-features), para obter detalhes.
+
+## <a name="limitations-and-considerations"></a>Limitações e considerações
+
+Limitações a serem consideradas:
+
+- Os workspaces podem conter um máximo de mil conjuntos de dados ou mil relatórios por conjunto de dados. 
+- Uma pessoa com uma licença do Power BI Pro pode ser membro de um máximo de 250 workspaces.
 
 ## <a name="planned-new-workspace-preview-features"></a>Novas versões prévias planejadas dos recursos do workspace
 

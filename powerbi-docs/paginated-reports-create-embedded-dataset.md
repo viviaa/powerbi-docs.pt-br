@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
 ms.author: maggies
-ms.openlocfilehash: 827a7acd24ead0c4948a09f2e67b53c3966769bb
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 1689d7382c0f3bf7406a4a44ffeab53e6bc59197
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900418"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281058"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI (versão prévia)
 Neste artigo, você aprenderá como criar um conjunto de dados inserido, com base em uma fonte de dados inseridos para um relatório paginado no serviço do Power BI. Os conjuntos de dados inseridos estão contidos em um único relatório paginado, para uso nesse relatório. Atualmente, os relatórios paginados publicados no serviço do Power BI precisam de conjuntos de dados e fontes de dados inseridos. Você cria a fonte de dados inserida e o conjunto de dados no Construtor de Relatórios, enquanto você estiver criando o relatório. 

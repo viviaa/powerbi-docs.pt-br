@@ -1,23 +1,23 @@
 ---
-title: 'Exemplo de vendas e marketing para o Power BI: faça um tour'
-description: 'Exemplo de vendas e marketing para o Power BI: faça um tour'
+title: 'Exemplo de Vendas e Marketing para o Power BI: Faça um tour'
+description: 'Exemplo de Vendas e Marketing para o Power BI: Faça um tour'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 717db64d30a12d41dc293db11f6f942e4615a1db
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 58c5063796a575498ab1c402f0be6aa2492e9060
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717575"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289223"
 ---
-# <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemplo de vendas e marketing para o Power BI: faça um tour
+# <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemplo de Vendas e Marketing para o Power BI: Faça um tour
 
 ## <a name="overview-of-the-sales-and-marketing-sample"></a>Visão geral do exemplo de Vendas e Marketing
 O **exemplo de Marketing e Vendas** contém um painel de controle e um relatório para uma empresa de fabricação fictícia chamada VanArsdel Ltd. Esse painel foi criado pelo Presidente de Marketing (CMO) da VanArsdel para ficar atento ao setor e sua participação de mercado da empresa, volume de produto, vendas e sensibilidade.
@@ -134,5 +134,5 @@ Filtrando as visualizações por VanArsdel, por segmento, por mês e por região
 
 Este é um ambiente seguro para experimentar. Você pode optar por não salvar as alterações. Mas se você salvá-las, sempre é possível acessar **Obter Dados** para ter uma nova cópia deste exemplo.
 
-## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: conectar-se aos seus dados
+## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: Conecte-se aos seus dados
 Esperamos que este tour tenha mostrado como os painéis, P e R e relatórios do Power BI podem fornecer informações sobre os dados de vendas e marketing. Agora é sua vez - conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Saiba mais sobre como [começar a usar o Power BI](service-get-started.md)  

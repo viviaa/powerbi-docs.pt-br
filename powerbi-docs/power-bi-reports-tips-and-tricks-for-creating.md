@@ -5,17 +5,17 @@ author: davidi
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 2093800f10484a24eb4db9f77f45468ae4b9b4c3
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829816"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290488"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Dicas e truques para criar relatórios no Power BI Desktop e no serviço do Power BI
 Para aproveitar ao máximo seus dados, às vezes você precisa de uma ajuda extra. Reunimos algumas dicas e truques que você pode usar ao criar relatórios no Microsoft Power BI Desktop, serviço do Power BI *e* nas edições Pro-Plus do Microsoft Excel 2013 ou 2016 com o suplemento do Power Pivot habilitado e o Power Query instalado e habilitado.
@@ -30,7 +30,7 @@ Você pode obter mais informações no [Centro de Recursos do Power Query](https
 É possível também exibir a [Referência de Fórmula](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ### <a name="data-types-in-query-editor"></a>Tipos de dados no Editor de Consultas
-Ao usar o Editor de Consultas no Power BI Desktop para carregar dados, fazemos a melhor estimativa sobre a detecção do tipo de dados.  Ao usar fórmulas, às vezes, as configurações de tipo de dados nas colunas não são preservadas. Você deve verificar se o tipo de dados das colunas está correto depois de fazer as seguintes operações: carregar dados inicialmente na guia de consulta, Primeira Linha como Título, Adicionar coluna, Agrupar por, Mesclar, Acrescentar e antes de pressionar para carregar os dados pela primeira vez.
+Ao usar o Editor de Consultas no Power BI Desktop para carregar dados, fazemos a melhor estimativa sobre a detecção do tipo de dados.  Ao usar fórmulas, às vezes, as configurações de tipo de dados nas colunas não são preservadas. Verifique se o tipo de dados das colunas está correto depois de realizar as seguintes operações:  Carregar dados inicialmente na guia de consulta, Primeira Linha como Cabeçalho, Adicionar coluna, Agrupar por, Mesclar, Acrescentar e antes de pressionar para carregar os dados pela primeira vez.
 
 Um item importante a ser lembrado: itálico na grade de dados não significa que o tipo de dados está configurado corretamente, apenas que os dados não são considerados um Texto.
 
@@ -167,7 +167,7 @@ DAX é a linguagem de fórmula de cálculo no Power BI Desktop.  Ele é otimizad
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Serviço do Power BI *e* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Leia o white paper: [Principles for designing Power BI reports](visuals/power-bi-visualization-best-practices.md) (Princípios para a criação de relatórios do Power BI)
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Leia o White Paper: [princípios para a criação de relatórios do Power BI](visuals/power-bi-visualization-best-practices.md)
 Este documento fornece as práticas recomendadas para a criação de relatórios no Power BI. Começando com o planejamento, ele aborda os princípios de design que podem ser aplicados aos relatórios e às páginas, bem como os visuais individuais que compõem esse relatório. Muitas dessas práticas recomendadas também se aplicam ao design de dashboard.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Leia e/ou assista a “How to design visually stunning reports (and dashboards) in Power BI” (Como criar relatórios [e dashboards] visualmente impressionantes no Power BI)

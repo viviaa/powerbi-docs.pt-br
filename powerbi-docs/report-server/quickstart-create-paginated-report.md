@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.author: maggies
-ms.openlocfilehash: 475221981181e4ddfac18e7023259fac9bbc35ed
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 9e3a45e7648fd38413c2d45582981bac5e91cd2a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289118"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284394"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Criar um relatório paginado para o Servidor de Relatórios do Power BI
 Como o nome sugere, relatórios paginados podem ser executados em muitas páginas. Eles são dispostos em um formato fixo e oferecem personalização precisa. Relatórios paginados são arquivos .rdl.
@@ -63,10 +63,10 @@ Na primeira página do Assistente de gráfico, **Escolha um conjunto de dados**,
     ![Assistente de Gráfico: Tipo de gráfico](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
 3. Organize os campos arrastando-os para as caixas **Categorias**, **Série** e **Valores**.
    
-    ![Assistente de gráfico: Organizar campos](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
+    ![Assistente de Gráfico: Organizar campos](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
 4. Selecione **Avançar** > **Concluir**.
 
-## <a name="step-3-design-your-report"></a>Etapa 3: criar seu relatório
+## <a name="step-3-design-your-report"></a>Etapa 3: Projetar seu relatório
 Agora você está no modo de exibição de Design de Relatório. Observe que os dados são dados de espaço reservado, não os seus dados.
 
 ![Modo de exibição de Design de Relatório](media/quickstart-create-paginated-report/reportserver-paginated-preview-report.png)
@@ -82,7 +82,7 @@ E é possível adicionar todos os tipos de outras visualizações: medidores, ta
 
 ![Modo de exibição de Design do Construtor de Relatórios](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
-## <a name="step-4-save-your-report-to-the-report-server"></a>Etapa 4: salvar seu relatório no servidor de relatório
+## <a name="step-4-save-your-report-to-the-report-server"></a>Etapa 4: Salvar o seu relatório no servidor de relatórios
 Quando seu relatório estiver pronto, salve-o no Servidor de Relatórios do Power BI.
 
 1. No menu **Arquivo**, selecione **Salvar como** e salve-o no servidor de relatório. 

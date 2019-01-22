@@ -5,22 +5,22 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5b5dc41ee3f4d41f2e38053470054a8f453e4fb3
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: dc26d6de5ca22fdabfd80bd7ba1d9830e274f808
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670272"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284485"
 ---
 # <a name="connect-to-an-oracle-database"></a>Conectar-se a um banco de dados Oracle
 Para se conectar a um banco de dados Oracle com o **Power BI Desktop**, o software cliente Oracle correto deve estar instalado no computador que executa o Power BI Desktop. O software cliente Oracle que você usa depende de qual versão do Power BI Desktop está instalada – a versão de **32 bits** ou a de **64 bits**.
 
-**Versões com suporte**: Oracle 9 e versões posteriores, software cliente Oracle 8.1.7 e versões posteriores.
+**Versões compatíveis**: Oracle 9 e versões posteriores, software cliente Oracle 8.1.7 e versões posteriores.
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Determinando qual versão do Power BI Desktop está instalada
 Para determinar qual versão do Power BI Desktop está instalada, selecione **Arquivo > Ajuda > Sobre** e, em seguida, verifique a linha **Versão:**. Na imagem a seguir, uma versão de 64 bits do Power BI Desktop está é instalada:
@@ -42,7 +42,7 @@ Depois de instalar o driver de cliente Oracle correspondente, você pode se cone
 1. Na janela Obter Dados, selecione **Banco de Dados > Banco de Dados Oracle**
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. Na caixa de diálogo **Banco de Dados Oracle** que aparece, forneça o nome do servidor e selecione **Conectar**. Se um SID for necessário, você poderá especificá-lo usando o formato: *ServerName/SID*, em que SID é o nome exclusivo do banco de dados. Se o formato *ServerName/SID* não funcionar, tente usar *ServerName/ServiceName*, em que ServiceName é o alias usado na conexão.
+2. Na caixa de diálogo **Banco de Dados Oracle** que aparece, forneça o nome do servidor e selecione **Conectar**. Se for necessário um SID, você pode especificá-lo usando o formato: *ServerName/SID*, em que o SID é o nome exclusivo do banco de dados. Se o formato *ServerName/SID* não funcionar, tente usar *ServerName/ServiceName*, em que ServiceName é o alias usado na conexão.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 3. Se desejar importar dados usando uma consulta de banco de dados nativo, você pode colocar sua consulta na caixa **Instrução SQL**, disponível ao expandir a seção **Opções avançadas** da caixa de diálogo **Banco de Dados Oracle**.

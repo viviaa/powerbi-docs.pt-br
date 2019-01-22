@@ -5,28 +5,28 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3f8a5075290620d9d1ed1829008002ff71d25c82
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908149"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286371"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introdução aos pacotes de conteúdo organizacional no Power BI
 > [!NOTE]
-> Não é possível criar pacotes de conteúdo organizacional nem os instalalar na nova versão prévia de experiências de espaço de trabalho. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de espaço de trabalho](service-create-the-new-workspaces.md).
+> Não é possível criar pacotes de conteúdo organizacional nem os instalar na nova versão prévia de experiências de workspace. Agora é um bom momento para atualizar seu pacote de conteúdo para aplicativos, caso você ainda não tenha começado. Saiba [mais sobre a nova experiência de workspace](service-create-the-new-workspaces.md).
 > 
 
 Você distribui regularmente relatórios por email para a sua equipe? Tente o seguinte: junte seus dashboards, relatórios, pastas de trabalho do Excel e conjuntos de dados em pacotes e publique-os em sua equipe como um *pacote de conteúdo organizacional*. Os pacotes de conteúdo que você criar são fáceis de serem encontrados por sua equipe &#151; todos eles estão no AppSource. Por fazerem parte do Power BI, eles usam todos os recursos do Power BI, incluindo a exploração interativa de dados, novas visualizações, P e R, integração com outras fontes de dados, atualização de dados e muito mais.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-A criação de pacotes de conteúdo é diferente do compartilhamento de dashboards ou da colaboração neles em um espaço de trabalho de aplicativo. Leia [Como devo colaborar e compartilhar relatórios e dashboards?](service-how-to-collaborate-distribute-dashboards-reports.md) para decidir sobre a melhor opção para sua situação. 
+A criação de pacotes de conteúdo é diferente do compartilhamento de dashboards ou da colaboração neles em um workspace de aplicativo. Leia [Como devo colaborar e compartilhar relatórios e dashboards?](service-how-to-collaborate-distribute-dashboards-reports.md) para decidir sobre a melhor opção para sua situação. 
 
 No AppSource, procure ou pesquise os pacotes de conteúdo publicados em toda a organização, em grupos de distribuição ou de segurança e nos [grupos do Office 365 dos quais você faz parte](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Se você não é um membro de um grupo específico, não verá os pacotes de conteúdo compartilhados com esse grupo. Todos os membros do grupo têm o mesmo acesso somente leitura aos dados do pacote de conteúdo, relatórios, pastas de trabalho e painéis (a menos que eles sejam uma fonte de dados do SSAS (SQL Server Analysis Services); nesse caso, os privilégios são herdados com a fonte de dados).
 
@@ -52,7 +52,7 @@ O ciclo de vida é parecido com este:
 1. No Power BI Pro, João cria um pacote de conteúdo e o publica no grupo de distribuição Marketing. As configurações de atualização são herdadas com o conjunto de dados e só podem ser alteradas por João.
    
    > [!NOTE]
-   > Se João criar o pacote de conteúdo em um [espaço de trabalho de aplicativo do Power BI](service-create-distribute-apps.md) do qual ele faz parte, mesmo se ele sair do espaço de trabalho, os outros usuários que estiverem no espaço de trabalho do Power BI poderão assumir a propriedade.
+   > Se João criar o pacote de conteúdo em um [workspace de aplicativo do Power BI](service-create-distribute-apps.md) do qual ele faz parte, mesmo se ele sair do workspace, os outros usuários que estiverem no workspace do Power BI poderão assumir a propriedade.
    > 
    > 
 2. João envia um email ao grupo de distribuição, informando-os sobre o novo pacote de conteúdo.

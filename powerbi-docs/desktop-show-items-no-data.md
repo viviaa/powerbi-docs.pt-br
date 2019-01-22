@@ -5,21 +5,21 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f4c9fec65f9c006095470a8983f889d44f3ce460
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072878"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279977"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Mostrar itens sem dados no Power BI
 
-O Power BI permite visualizar todos os tipos de dados de várias fontes. Quando cria um visual, o Power BI mostra apenas dados relevantes ao criar um visual para gerenciar corretamente como os dados são apresentados e exibidos. O Power BI determina quais dados são relevantes com base na configuração do visual e o modelo de dados subjacente. Este artigo descreve como o Power BI se comporta ao determinar dados relevantes, com exemplos que ilustram como são feitas as determinações.
+O Power BI permite visualizar todos os tipos de dados de várias fontes. Na criação de um visual, o Power BI mostra apenas dados relevantes para gerenciar corretamente como os dados são apresentados e exibidos. O Power BI determina quais dados são relevantes com base na configuração do visual e o modelo de dados subjacente. Este artigo descreve como o Power BI se comporta ao determinar dados relevantes, com exemplos que ilustram como são feitas as determinações.
 
 ![Como habilitar Mostrar itens sem recursos de dados](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -65,7 +65,7 @@ Dessa forma, o Power BI exibe as combinações que têm entradas na tabela Produ
 
 **4. Grupos de tabelas diferentes e não relacionadas**
 
-O modelo de exemplo não tem essa combinação, mas se houvesse grupos de tabelas não relacionadas e diferentes, o Power BI não conseguiria relacionar duas colunas, e o resultado seria uma junção cruzada de todos os valores de cada coluna. Nessa situação, o Power BI emite um erro do tipo *junção irrestrita* porque essas junções cruzadas são custosas de calcular no banco de dados e não fornecem muitas informações a um usuário. 
+O modelo de exemplo não tem essa combinação, mas se houvesse grupos de tabelas não relacionados e diferentes, o Power BI não conseguiria relacionar duas colunas. O resultado seria uma união cruzada de todos os valores de cada coluna. Nessa situação, o Power BI emite um erro do tipo *junção irrestrita* porque essas junções cruzadas são custosas de calcular no banco de dados e não fornecem muitas informações a um usuário. 
 
 ![Erro mostrado para uma junção irrestrita](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -76,7 +76,7 @@ A seção anterior descreveu como o Power BI determina quais dados são relevant
 
 O recurso **Show items with no data** (Mostrar itens sem dados) permite fazer exatamente isso: incluir linhas e colunas de dados que não contêm dados de medida (valores de medida em branco).
 
-Para habilitar o recurso **Show items with no data** (Mostrar itens sem dados) para selecionar um elemento visual, na seção **Fields** (Campos), clique com o botão direito do mouse no campo e selecione **Show items with no data** (Mostrar itens sem dados) no menu que é exibido, conforme mostrado na imagem a seguir.
+Para habilitar o recurso **Mostrar itens sem dados**, selecione um visual e, no contêiner **Campos**, clique com o botão direito do mouse no campo e selecione **Mostrar itens sem dados** no menu que é exibido, como mostrado na seguinte imagem:
 
 ![Como habilitar Mostrar itens sem recursos de dados](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -139,7 +139,7 @@ Observe como *(Brilho-Vermelho)* e *(Nenhum, em branco)* aparecem como combinaç
 
 É importante observar que o mecanismo de seleção de valores para as colunas é dependente da ordem e pode ser pensado como uma operação de *junção externa esquerda* entre tabelas. Se a ordem das colunas for alterada, os resultados serão alterados também.
 
-Vamos dar uma olhada em um exemplo de como alterar a ordem, e como ela afeta os resultados. É igual ao item **2** desta seção, mas com a ordem alterada.
+Vamos ver um exemplo de como alterar a ordem e como isso afeta os resultados. É igual ao item **2** desta seção, mas com a ordem alterada.
 
 **Product[Color] – ProductStyle[Finish] – Sum(Sales[Quantity])**
 
@@ -193,6 +193,6 @@ Esta seção mostra o exemplo de modelo de dados usado nos exemplos neste artigo
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Este artigo descreveu como você pode habilitar o recurso **Show items with no data** (Mostrar itens sem dados) no Power BI. Você também pode estar interessado nos artigos a seguir. 
+Este artigo descreveu como você pode habilitar o recurso **Show items with no data** (Mostrar itens sem dados) no Power BI. Você também pode estar interessado nos seguintes artigos: 
 
-* [Fontes de dados no Power BI Desktop](desktop-data-sources.md)
+* [Membro padrão em modelos multidimensionais no Power BI](desktop-default-member-multidimensional-models.md)

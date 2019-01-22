@@ -5,20 +5,20 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f8ceeddea7a8a9b7a63043cc7e91269da570790b
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a07f266ccdc0b02cd6a18f84b48b5e2b3564b642
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670964"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278981"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Solucionar problemas de entrada no Power BI Desktop
-Às vezes, você tenta entrar no **Power BI Desktop**, mas recebe erros. Há dois motivos principais para os problemas de entrada: **Erros de Autenticação de Proxy** e **Erros de Redirecionamento de URL sem HTTPS**. 
+Às vezes, você tenta entrar no **Power BI Desktop**, mas recebe erros. Há dois motivos principais para problemas de conexão: **erros de autenticação de proxy** e **erros de redirecionamento de URL sem HTTPS**. 
 
 Para determinar qual problema está causando o problema de entrada, a primeira etapa é entrar em contato com seu administrador e fornecer informações de diagnóstico para que eles possam determinar a causa do problema. Ao rastrear problemas associados ao seu problema de entrada, os administradores podem determinar qual dos erros a seguir se aplica a você. 
 
@@ -56,7 +56,7 @@ As versões atuais do **Power BI Desktop** usam a versão atual da autenticaçã
 
 As exceções a seguir em arquivos de rastreamento do *Power BI Desktop* são associadas este erro:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: não há suporte para o redirecionamento sem HTTPS no modo de exibição da Web*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: redirecionamento de URL sem HTTPS não tem suporte no modo de exibição da Web*
 * *ErrorCode: non_https_redirect_failed*
 
 Se *ErrorCode: non_https_redirect_failed* ocorrer, significa que uma ou mais páginas de redirecionamento ou provedores da cadeia de redirecionamento não é um ponto de extremidade HTTPS protegido, ou que um emissor de certificado de um ou mais redirecionamentos não está entre as raízes confiáveis do dispositivo. Todos os provedores em qualquer cadeia de redirecionamento de entrada deve usar uma URL com HTTPS. Para resolver esse problema, contate o administrador e solicite o uso de URLs protegidas em seus sites de autenticação. 

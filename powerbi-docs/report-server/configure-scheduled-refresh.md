@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d8283f1abf05ab788336413bd18582ea71d4e43f
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 4ca6d7c5ed47433614dc194db7d09162d5e96eae
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "34296247"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285704"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Como configurar a atualização agendada de relatório do Power BI
 Para atualizar dados em um relatório do Power BI, um plano de atualização agendado deverá ser criado. Isso é feito na área *Gerenciar* de um relatório do Power BI.
@@ -79,7 +79,7 @@ Exiba o status de um plano de agendamento de atualização no portal da Web.
    | Atualizando dados |Atualizando os dados no modelo. |
    | Removendo credenciais do modelo |Remoção das credenciais usadas para conectar-se à fonte de dados do modelo. |
    | Salvando modelo no catálogo |A atualização de dados está concluída e o modelo atualizado é salvo no banco de dados de catálogo de servidor de relatório. |
-   | Concluída: Atualização de Dados |A atualização está concluída feita. |
+   | Concluído: Atualização de Dados |A atualização está concluída feita. |
    | Erro: |Ocorreu um erro durante a atualização e ele é exibido. |
 
 Para ver o status atual, a página da Web deverá ser atualizada. O status não será alterado automaticamente.

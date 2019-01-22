@@ -6,16 +6,16 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
-ms.openlocfilehash: 0454d2ea0e69a77482d9ba9587497679819daf06
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 37e3e16a17e163d1acfeb43e1a1ede9fba1eca1e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266014"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279356"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interagindo com mapas do ArcGIS no Power BI
 Este tópico foi escrito do ponto de vista de uma pessoa que está *consumindo* um mapa do ArcGIS no serviço do Power BI, no Desktop ou em um dispositivo móvel. Depois que um criador compartilha um mapa do ArcGIS com você, há muitas formas de interagir com o mapa.  Para saber mais sobre como criar um mapa do ArcGIS, consulte [Tutorial de mapas do ArcGIS pelo ESRI](../power-bi-visualization-arcgis.md).
@@ -41,7 +41,7 @@ O exemplo que estamos usando é o mesmo mapa do ArcGIS criado no [tutorial de ma
 Na primeira vez que um colega compartilhar um mapa do ArcGIS com você, o Power BI exibirá um prompt. O ArcGIS Maps for Power BI é fornecido pela ESRI (www.esri.com) e o uso do ArcGIS Maps for Power BI está sujeito aos termos e à política de privacidade da Esri. Os usuários do Power BI que desejam usar os visuais dos Mapas do ArcGIS para o Power BI precisarão aceitar a caixa de diálogo de consentimento.
 
 ## <a name="selection-tools"></a>Ferramentas de seleção
-O ArcGIS Maps for Power BI permite três modos de seleção. No máximo, 250 pontos de dados podem ser selecionados por vez.
+O ArcGIS Maps para Power BI permite três modos de seleção. No máximo, 250 pontos de dados podem ser selecionados por vez.
 
 ![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
 
@@ -132,7 +132,7 @@ Em serviços ou aplicativos em que os Mapas do ArcGIS para o Power BI não estiv
 **Não consigo ver todas as minhas informações no mapa**    
 Ao geocodificar a latitude/longitude no mapa, são exibidos até 30.000 pontos de dados. Ao geocodificar os pontos de dados, como CEPs ou endereços de ruas, apenas os primeiros 15 mil pontos de dados são geocodificados. Codificações geográficas de nomes de locais ou países não estarão sujeitas ao limite de 1500 endereços.
 
-**O uso do ArcGIS Maps for Power BI é cobrado?**
+**O uso do ArcGIS Maps para Power BI é cobrado?**
 
 O Mapa do ArcGIS para o Power BI está disponível para todos os usuários do Power BI sem custo adicional. Ele é um componente fornecido pela **Esri** e seu uso está sujeito aos termos e à política de privacidade fornecidos pela **Esri**, conforme mencionado anteriormente neste artigo. Se você se inscrever no ArcGIS **Plus**, haverá uma cobrança.
 
@@ -145,10 +145,10 @@ Esse é um bug que está sendo resolvido.  Enquanto isso, selecione o link exibi
 Não, o Power BI precisa de conectividade de rede para exibir os mapas.
 
 ## <a name="next-steps"></a>Próximas etapas
-Obtendo ajuda: o **ESRI** fornece uma [documentação abrangente](https://go.microsoft.com/fwlink/?LinkID=828772) sobre o conjunto de recursos dos **Mapas do ArcGIS para o Power BI**.
+Obter ajuda: A **Esri** oferece uma [documentação abrangente](https://go.microsoft.com/fwlink/?LinkID=828772) sobre o conjunto de recursos do **ArcGIS Maps para Power BI**.
 
 Você pode fazer perguntas, encontrar as informações mais recentes, reportar problemas e encontrar respostas no [thread da comunidade do Power BI relacionado ao **ArcGIS Maps para o Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
 
 Se você tiver alguma sugestão de melhoria, envie-a para a [Lista de ideias do Power BI](https://ideas.powerbi.com).
 
-[Página do produto ArcGIS Maps for Power BI](https://www.esri.com/powerbi)
+[Página do produto ArcGIS Maps para Power BI](https://www.esri.com/powerbi)

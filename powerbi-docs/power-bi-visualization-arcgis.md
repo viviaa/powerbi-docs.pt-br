@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: e559cb3ed460c8d81406ae8c8b01fe33eceaf461
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266037"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293894"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI
 Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](visuals/power-bi-visualizations-arcgis.md).
@@ -37,7 +37,7 @@ O exemplo a seguir usa uma tela cinza escura para mostrar as vendas regionais co
 > Visite a [página do ESRI no Power BI](https://www.esri.com/powerbi) para ver vários exemplos e ler depoimentos. E, em seguida, consulte a [Página de Introdução do ArcGIS Maps para o Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm) no ESRI.
 
 ## <a name="user-consent"></a>Consentimento do usuário
-O ArcGIS Maps for Power BI é fornecido pela Esri (www.esri.com). O uso do ArcGIS Maps for Power BI está sujeito aos termos e à política de privacidade da Esri. Os usuários do Power BI que queiram usar o ArcGIS Maps para o Power BI deverão aceitar a caixa de diálogo de consentimento.
+O ArcGIS Maps for Power BI é fornecido pela Esri (www.esri.com). O uso do ArcGIS Maps para Power BI está sujeito aos termos e à política de privacidade da Esri. Os usuários do Power BI que queiram usar o ArcGIS Maps para o Power BI deverão aceitar a caixa de diálogo de consentimento.
 
 **Recursos**
 
@@ -45,7 +45,7 @@ O ArcGIS Maps for Power BI é fornecido pela Esri (www.esri.com). O uso do ArcGI
 
 [Política de privacidade](https://go.microsoft.com/fwlink/?LinkID=826323)
 
-[Página do produto ArcGIS Maps for Power BI](https://www.esri.com/powerbi)
+[Página do produto ArcGIS Maps para Power BI](https://www.esri.com/powerbi)
 
 <br/>
 
@@ -58,7 +58,7 @@ Este tutorial usa o exemplo de [Análise de Varejo](sample-retail-analysis.md). 
 1. Na seção superior direita da barra de menu, selecione o ícone de engrenagem e abra as **Configurações**
    
     ![](media/power-bi-visualization-arcgis/power-bi-settings.png)
-2. Marque a caixa de seleção **ArcGIS Maps for Power BI**. Você precisará reiniciar o Power BI depois de fazer a seleção.
+2. Marque a caixa de seleção **ArcGIS Maps para Power BI**. Você precisará reiniciar o Power BI depois de fazer a seleção.
    
     ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
 3. Abra um relatório no [Modo de Exibição de Edição](consumer/end-user-reading-view.md) e selecione o ícone do ArcGIS Maps para o Power BI no painel Visualizações.
@@ -89,7 +89,7 @@ Assista ao Will criando algumas visualizações diferentes dos mapas do ArcGIS. 
     ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>Configurações e formatação de mapas do ArcGIS
-Para acessar os recursos de formatação do **ArcGIS Maps for Power BI**:
+Para acessar os recursos de formatação do **ArcGIS Maps para Power BI**:
 
 1. Acesse recursos adicionais, selecionando as elipses no canto superior direito da visualização e escolhendo **Editar**.
    
@@ -108,11 +108,11 @@ Para acessar os recursos de formatação do **ArcGIS Maps for Power BI**:
 <br/>
 
 ## <a name="detailed-documentation"></a>Documentação detalhada
-A **Esri** oferece uma [documentação abrangente](https://go.microsoft.com/fwlink/?LinkID=828772) sobre o conjunto de recursos do **ArcGIS Maps for Power BI**.
+A **Esri** oferece uma [documentação abrangente](https://go.microsoft.com/fwlink/?LinkID=828772) sobre o conjunto de recursos do **ArcGIS Maps para Power BI**.
 
 ## <a name="features-overview"></a>Visão geral dos recursos
 ### <a name="base-maps"></a>Mapas base
-Quatro mapas base são fornecidos: Telas Cinza Escuro, Telas Cinza Claro, OpenStreetMap e Ruas.  Ruas é o mapa base padrão do ArcGIS.
+São fornecido quatro mapas básicos: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap e Streets.  Ruas é o mapa base padrão do ArcGIS.
 
 Para aplicar um mapa base selecione-o no painel de tarefas.
 
@@ -190,7 +190,7 @@ O painel Tempo de viagem permite selecionar uma localização e, em seguida, det
 
 ### <a name="reference-layer"></a>Camada de Referência
 #### <a name="reference-layer---demographics"></a>Camada de Referência – dados demográficos
-O ArcGIS Maps for Power BI oferece uma seleção de camadas demográficas que ajudam a contextualizar os dados do Power BI.
+O ArcGIS Maps para Power BI oferece uma seleção de camadas demográficas que ajudam a contextualizar os dados do Power BI.
 
 1. Selecione a guia **Camada de Referência** e escolha **Dados demográficos**.
 2. Cada camada listada tem uma caixa de seleção. Adicione uma marca de seleção para adicionar essa camada ao mapa.  Neste exemplo, adicionamos a receita média da casa.<br/>
@@ -207,12 +207,12 @@ O ArcGIS Online oferece às organizações a capacidade de publicar mapas públi
 2. Insira os termos de pesquisa e selecione uma camada do mapa. Neste exemplo, escolhemos Distritos congressionais dos Estados Unidos.
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
-3. Para ver os detalhes, selecione uma área sombreada para abrir *Selecionar na camada de referência*: e use a ferramenta de seleção de camada de referência para selecionar limites ou objetos na camada de referência.
+3. Para ver os detalhes, selecione uma área sombreada para abrir *Selecione na camada de referência*: use a ferramenta de seleção de camada de referência para escolher os limites ou objetos na camada de referência.
 
 <br/>
 
 ## <a name="selecting-data-points"></a>Selecionando pontos de dados
-O ArcGIS Maps for Power BI permite três modos de seleção.
+O ArcGIS Maps para Power BI permite três modos de seleção.
 
 Altere o modo de seleção usando as opções:
 
@@ -232,7 +232,7 @@ Altere o modo de seleção usando as opções:
 <br/>
 
 ## <a name="getting-help"></a>Obtendo ajuda
-A **Esri** oferece uma [documentação abrangente](https://go.microsoft.com/fwlink/?LinkID=828772) sobre o conjunto de recursos do **ArcGIS Maps for Power BI**.
+A **Esri** oferece uma [documentação abrangente](https://go.microsoft.com/fwlink/?LinkID=828772) sobre o conjunto de recursos do **ArcGIS Maps para Power BI**.
 
 Você pode fazer perguntas, encontrar as informações mais recentes, reportar problemas e encontrar respostas no [thread da comunidade do Power BI relacionado ao **ArcGIS Maps para o Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
 
@@ -240,8 +240,8 @@ Se você tiver alguma sugestão de melhoria, envie-a para a [Lista de ideias do 
 
 <br/>
 
-## <a name="managing-use-of-arcgis-maps-for-power-bi-within-your-organization"></a>Gerenciando o uso do ArcGIS Maps for Power BI em sua organização
-O Power BI oferece aos usuários, administradores de locatários e administradores de TI a capacidade de decidir se desejam usar o ArcGIS Maps for Power BI.
+## <a name="managing-use-of-arcgis-maps-for-power-bi-within-your-organization"></a>Gerenciando o uso do ArcGIS Maps para Power BI em sua organização
+O Power BI oferece aos usuários, administradores de locatários e administradores de TI a capacidade de decidir se desejam usar o ArcGIS Maps para Power BI.
 
 **Opções do Usuário** No Power BI Desktop, os usuários podem parar de usar o ArcGIS Maps para o Power BI ao desabilitá-lo na guia de segurança em **Opções**. Quando desabilitado, o ArcGIS Maps não será carregado por padrão.
 
@@ -251,11 +251,11 @@ No serviço do Power BI, os usuários podem parar de usar os Mapas do ArcGIS par
 
 ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
 
-**Opções do administrador de locatários** No PowerBI.com, os administradores de locatários podem impedir que todos os usuários locatários usem o ArcGIS Maps for Power BI desabilitando-o. Quando isso acontece, o Power BI deixa de exibir o ícone do ArcGIS Maps for Power BI no painel de visualizações.
+**Opções do administrador de locatários** No PowerBI.com, os administradores de locatários podem impedir que todos os usuários locatários usem o ArcGIS Maps para Power BI desabilitando-o. Quando isso acontece, o Power BI deixa de exibir o ícone do ArcGIS Maps para Power BI no painel de visualizações.
 
 ![](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
 
-**Opções do administrador de TI** O Power BI Desktop dá suporte ao uso de **Política de Grupo** para desabilitar o ArcGIS Maps for Power BI entre os computadores implantados em toda a organização.
+**Opções do administrador de TI** O Power BI Desktop dá suporte ao uso de **Política de Grupo** para desabilitar o ArcGIS Maps para Power BI entre os computadores implantados em toda a organização.
 
 <table>
 <tr><th>Atributo</th><th>Valor</th>
@@ -270,9 +270,9 @@ No serviço do Power BI, os usuários podem parar de usar os Mapas do ArcGIS par
 </tr>
 </table>
 
-O valor 1 (decimal) habilita o ArcGIS Maps for Power BI.
+O valor 1 (decimal) habilita o ArcGIS Maps para Power BI.
 
-O valor 0 (decimal) desabilita o ArcGIS Maps for Power BI.
+O valor 0 (decimal) desabilita o ArcGIS Maps para Power BI.
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 Os Mapas do ArcGIS para o Power BI estão disponíveis nos seguintes serviços e aplicativos:
@@ -319,17 +319,17 @@ Quando um usuário se inscreve para uma assinatura Plus oferecida pela Esfri por
 Para obter perguntas técnicas detalhadas sobre como o ArcGIS Maps for Power BI da Esri funciona, contate a Esri por meio do site de suporte.
 
 
-**O uso do ArcGIS Maps for Power BI é cobrado?**
+**O uso do ArcGIS Maps para Power BI é cobrado?**
 
 O Mapa do ArcGIS para o Power BI está disponível para todos os usuários do Power BI sem custo adicional. Ele é um componente fornecido pela **Esri** e seu uso está sujeito aos termos e à política de privacidade fornecidos pela **Esri**, conforme mencionado anteriormente neste artigo.
 
 **Estou recebendo uma mensagem de erro no Power BI Desktop informando que meu cache está cheio**
 
-Esse é um bug que está sendo resolvido.  Enquanto isso, para limpar o cache, tente excluir os arquivos neste local: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF e, depois, reinicie o Power BI.
+Esse é um bug que está sendo resolvido.  Enquanto isso, para limpar o cache, tente excluir os arquivos neste local: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF e reinicie o Power BI.
 
-**O ArcGIS Maps for Power BI dá suporte aos shapefiles da Esri?**
+**O ArcGIS Maps para Power BI dá suporte aos shapefiles da Esri?**
 
-O ArcGIS Maps for Power BI detecta automaticamente os limites padrão como países/regiões, estados/províncias e CEP. Se você precisar fornecer suas próprias formas, faça isso usando o [Shape Maps para Power BI Desktop (versão prévia)](visuals/desktop-shape-map.md).
+O ArcGIS Maps para Power BI detecta automaticamente os limites padrão como países/regiões, estados/províncias e CEP. Se você precisar fornecer suas próprias formas, faça isso usando o [Shape Maps para Power BI Desktop (Preview)](visuals/desktop-shape-map.md).
 
 **Posso exibir meus mapas do ArcGIS offline?**
 

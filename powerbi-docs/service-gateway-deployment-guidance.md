@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e07575658ed25e3f4933a7840ef4bc970264b23
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296010"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279839"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Diretrizes para implantar um gateway de dados para o Power BI
 
@@ -40,7 +40,7 @@ Se todos os usuários estiverem acessando um determinado relatório ao mesmo tem
 Há uma restrição no **Power BI** que permite apenas *um* gateway por *relatório*. Portanto, mesmo se um relatório basear-se em várias fontes de dados, todas essas fontes de dados devem passar por um único gateway. No entanto, se um dashboard basear-se em *vários* relatórios, será possível usar um gateway dedicado para cada relatório de contribuição e, assim, distribuir o carregamento do gateway entre esses vários relatórios que contribuem para um único dashboard.
 
 ### <a name="connection-type"></a>Tipo de conexão
-O **Power BI** oferece dois tipos de conexões, **DirectQuery** e **Importação**. Nem todas as fontes de dados dão suporte aos dois tipos de conexão e muitos motivos podem contribuir para escolher um em vez do outro, como requisitos de segurança, desempenho, limites de dados e tamanhos de modelo de dados. Você pode saber mais sobre o tipo de conexão e as fontes de dados com suporte na seção *lista de tipos de fontes de dados disponíveis* do [artigo Gateway de dados local](service-gateway-onprem.md).
+O **Power BI** oferece dois tipos de conexão: **DirectQuery** e **Importação**. Nem todas as fontes de dados dão suporte aos dois tipos de conexão e muitos motivos podem contribuir para escolher um em vez do outro, como requisitos de segurança, desempenho, limites de dados e tamanhos de modelo de dados. Você pode saber mais sobre o tipo de conexão e as fontes de dados com suporte na seção *lista de tipos de fontes de dados disponíveis* do [artigo Gateway de dados local](service-gateway-onprem.md).
 
 Dependendo de qual tipo de conexão for usado, o uso do gateway poderá ser diferente. Por exemplo, você deve tentar experimentar separar as fontes de dados do **DirectQuery** das fontes de dados de **Atualização agendada** sempre que possível (supondo que eles estejam em relatórios diferentes e possam ser separadas). Fazer isso impede que o gateway tenha milhares de solicitações do DirectQuery em fila no mesmo tempo que a atualização agendada da manhã de um modelo de dados de tamanho grande usada para o dashboard principal da empresa. Veja o que considerar para cada uma:
 
@@ -87,7 +87,7 @@ Os logs de configuração e de serviço fornecem outra dimensão sobre o que est
 
 Uma maneira fácil de exibir todos os arquivos de log no computador local será usar o botão *Exportar Logs* no **gateway de dados local** ao reabrir o gateway depois que a instalação inicial for concluída e, em seguida, selecionar **Diagnóstico > Exportar Logs**.
 
-#### <a name="additional-logging"></a>Log adicional
+#### <a name="additional-logging"></a>Registro em log adicional
 Por padrão, o gateway realiza log básico. Se você estiver investigando problemas de gateway e precisar de mais informações sobre detalhes de conexão de consulta, será possível habilitar temporariamente o *log detalhado* para coletar outras informações de log. Para fazer isso, no gateway instalado, selecione **Diagnóstico > Log adicional**.
 
 Habilitar essa configuração provavelmente aumentará o tamanho do log de maneira significativa, com base no uso do gateway. É recomendável que, quando você terminar a revisão dos logs, você desabilite o **Log adicional**. Não é recomendável deixar esta configuração habilitada durante o uso normal do gateway.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: 83961f3ad469a4a7a76ceb6e1e4dba846a6edb04
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072211"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287614"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Preparação de dados de autoatendimento no Power BI (versão prévia)
 
@@ -92,7 +92,7 @@ A tabela a seguir descreve os recursos de fluxo de dados e suas capacidades ao u
 |Entidades vinculadas de fluxo de dados| |        +|
 |Esquema padronizado / Suporte interno para o Common Data Service|  +|  +|
 
-Para mais informações sobre como habilitar fluxos de trabalho dos fluxos de dados na capacidade premium, confira o artigo sobre [como configurar fluxos de trabalho](service-admin-premium-manage.md#configure-workloads) para o Power BI Premium.
+Para mais informações sobre como habilitar fluxos de trabalho dos fluxos de dados na capacidade premium, confira o artigo sobre [como configurar fluxos de trabalho](service-admin-premium-manage.md#configure-workloads) para o Power BI Premium. As cargas de trabalho do fluxo de dados não estão disponíveis no momento em capacidades com várias regiões.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Resumo da preparação de dados de autoatendimento para Big Data no Power BI
 Conforme mencionado anteriormente neste artigo, há vários cenários e exemplos em que os **fluxos de dados** permitem que você tenha um melhor controle – e insights mais rápidos – de seus dados comerciais. Com um modelo de dados padrão (esquema) definido pelo Common Data Service, os fluxos de dados podem importar seus dados comerciais valiosos e preparar os dados para modelagem e criação de insights de BI em um período muito curto... o que costumava demorar meses ou até mais. 

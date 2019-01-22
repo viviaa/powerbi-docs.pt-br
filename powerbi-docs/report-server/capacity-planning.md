@@ -5,16 +5,16 @@ author: parthsha
 manager: kfile
 ms.reviewer: maghan
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c19bc774ebffa2e781512e793abbefd1bd9fb5e2
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679282"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296652"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Diretrizes de planejamento de capacidade do Servidor de Relatórios do Power BI
 O Servidor de Relatórios do Power BI é uma solução de relatórios corporativos e de BI de autoatendimento que os clientes podem implantar em suas instalações, protegida pelo firewall. Ele combina a funcionalidade de relatório interativo do Power BI Desktop com a plataforma de servidor local do SQL Server Reporting Services. Com o uso intenso e cada vez maior de análises e relatórios nas empresas, a inclusão no orçamento da infraestrutura de hardware e das licenças de software necessárias para dimensionar para uma base de usuários corporativos pode ser um desafio. Este documento tem como objetivo oferecer diretrizes de planejamento de capacidade do Servidor de Relatórios do Power BI, com o compartilhamento de resultados de diversas execuções de teste de carga de várias cargas de trabalho em um servidor de relatório. Embora os relatórios, as consultas e os padrões de uso das organizações variem muito, os resultados apresentados neste documento, juntamente com os testes reais usados e uma descrição detalhada de como eles foram executados, servem como um ponto de referência para qualquer pessoa que está no processo de planejamento do estágio inicial da implantação do Servidor de Relatórios do Power BI.
@@ -60,7 +60,7 @@ Os testes usados nas execuções de teste de carga estão disponíveis publicame
 Todos os testes foram escritos para executar uma operação de ponta a ponta (como renderização de um relatório, criação de uma nova fonte de dados, etc.). Eles realizam isso fazendo uma ou mais solicitações da Web para o servidor de relatório (por meio de APIs). No mundo real, um usuário pode precisar executar algumas operações intermediárias para concluir uma dessas operações de ponta a ponta. Por exemplo, para renderizar um relatório, um usuário precisará acessar o portal da Web, navegar para a pasta em que o relatório está localizado e, depois, clicar no relatório para renderizá-lo. Embora os testes não executem todas as operações necessárias para realizar uma tarefa de ponta a ponta, eles ainda impõem a maior parte da carga que o Servidor de Relatórios do Power BI experimentará. Saiba mais sobre os diferentes tipos de relatórios usados, bem como a variedade de operações executadas explorando o projeto do GitHub.
 
 ### <a name="workloads"></a>Cargas de trabalho
-Há dois perfis de carga de trabalho usados no teste: Intensa de Relatório do Power BI e Intensa de Relatório Paginado. A tabela abaixo descreve a distribuição de solicitações executadas no Servidor de Relatórios.
+Existem dois perfis de carga de trabalho usados no teste: Intensa de Relatório do Power BI e Intensa de Relatório Paginado. A tabela abaixo descreve a distribuição de solicitações executadas no Servidor de Relatórios.
 
 | Atividade | Intensa de Relatório do Power BI, Frequência de ocorrência | Intensa de Relatório Paginado, Frequência de ocorrência |
 | --- | --- | --- |

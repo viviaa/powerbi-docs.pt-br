@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830299"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296813"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
@@ -156,13 +156,13 @@ Para permitir que os usuários existentes se inscrevam no Power BI, execute o co
 
 Há três cenários que podem se aplicar aos usuários em sua organização:
 
-* **Cenário 1**: se a sua organização já tiver um ambiente existente do Office 365, e todos os usuários na organização tiverem contas do Office 365, o gerenciamento de identidades não mudará.
+* **Cenário 1**: se a sua organização já tem um ambiente existente do Office 365, e todos os usuários na organização têm contas do Office 365, o gerenciamento de identidades não muda.
 
-* **Cenário 2**: se a sua organização já tiver um ambiente existente do Office 365, mas nem todos os usuários na organização tiverem contas do Office 365, criaremos um usuário no locatário e atribuiremos licenças com base no endereço de email corporativo ou de estudante do usuário.
+* **Cenário 2**: se a sua organização já tem um ambiente existente do Office 365, mas nem todos os usuários na organização têm contas do Office 365, criaremos um usuário no locatário e atribuiremos licenças com base no endereço de email corporativo ou de estudante do usuário.
 
     Isso significa que o número de usuários que você está gerenciando em qualquer momento específico crescerá conforme os usuários em sua organização se inscreverem no serviço.
 
-* **Cenário 3**: se a sua organização não tiver um ambiente do Office 365 conectado ao seu domínio de email, não haverá alteração na forma de gerenciamento de identidades.
+* **Cenário 3**: se sua organização não tem um ambiente do Office 365 conectado ao domínio de email, não há alteração na forma de gerenciar identidades.
 
     Os usuários são adicionados a um novo diretório de usuário somente na nuvem, e você tem a opção de assumir o controle como administrador do locatário e gerenciá-los.
 
@@ -186,7 +186,7 @@ Quando você executa uma tomada de controle externa, o conteúdo do Power BI que
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Se eu tiver vários domínios, poderei controlar o locatário do Office 365 ao qual os usuários serão adicionados?
 
-Se você não fizer nada, um locatário será criado para cada domínio de email de usuário e subdomínio. Se você quiser que todos os usuários estejam no mesmo locatário, independentemente das extensões de endereço de email: crie um locatário de destino antecipadamente ou use um locatário existente e adicione todos os domínios e subdomínios existentes que você quer que sejam consolidados nesse locatário. Em seguida, todos os usuários com endereços de email que terminam com esses domínios e subdomínios ingressam automaticamente no locatário de destino ao se inscreverem.
+Se você não fizer nada, um locatário será criado para cada domínio de email de usuário e subdomínio. Se você quiser que todos os usuários estejam no mesmo locatário independentemente de suas extensões de endereço de email: Crie um locatário de destino antecipadamente ou use um locatário existente e adicione todos os domínios e subdomínios existentes que você quer que sejam consolidados nesse locatário. Em seguida, todos os usuários com endereços de email que terminam com esses domínios e subdomínios ingressam automaticamente no locatário de destino ao se inscreverem.
 
 > [!IMPORTANT]
 > Não há nenhum mecanismo automatizado com suporte para mover os usuários entre locatários depois que eles foram criados. Para saber mais sobre a adição de domínios a um único locatário do Office 365, consulte [Adicionar usuários e domínio ao Office 365](/office365/admin/setup/add-domain/).

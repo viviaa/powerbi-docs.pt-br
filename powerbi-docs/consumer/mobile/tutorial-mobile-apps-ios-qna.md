@@ -1,22 +1,22 @@
 ---
-title: 'Tutorial: Faça perguntas com o analista virtual de P e R nos aplicativos iOS'
+title: 'Tutorial: Fazer perguntas com o analista virtual de P e R nos aplicativos iOS'
 description: Neste tutorial, faça perguntas sobre dados de exemplo com suas próprias palavras com o analista virtual da P e R no aplicativo móvel do Power BI em seu dispositivo iOS.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/16/2018
-ms.author: maggies
-ms.openlocfilehash: 9fd0d06b186d84412ec36749270d261ddd01fb2f
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.author: mshenhav
+ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157139"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282922"
 ---
-# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutorial: Faça perguntas sobre seus dados com o analista virtual de P e R nos aplicativos Power BI iOS
+# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutorial: Faça perguntas sobre seus dados com o analista virtual de P e R nos aplicativos Power BI para iOS
 
 A maneira mais fácil de saber mais sobre os dados é fazer perguntas sobre eles com suas próprias palavras. Neste tutorial, você faz perguntas e exibe informações em destaque sobre dados de exemplo com o analista virtual de P e R no aplicativo móvel do Microsoft Power BI no iPad, no iPhone e no iPod Touch. 
 
@@ -105,7 +105,7 @@ OK, você está pronto para exibir o exemplo em seu dispositivo iOS.
 
      O analista virtual da P e R exibe o Insight 2.
 
-    ![Informação 2](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
+    ![Insight 2](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
 5. Toque no gráfico para abri-lo no modo de foco.
 
     ![Gráfico de Informação 2 no modo de foco](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)

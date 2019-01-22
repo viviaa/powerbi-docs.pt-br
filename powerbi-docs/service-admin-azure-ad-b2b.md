@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: dee5c14d2ee714872409352b5e42d646e561c271
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7e76f03a3795976aebd1480dc77a579c9245ed9e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507751"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282047"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure AD B2B
 
@@ -101,6 +101,6 @@ O usuário convidado já tem uma licença do Power BI Pro atribuída em seu loca
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para saber mais, incluindo como funciona a segurança no nível da linha, confira o white paper: [Distribuir conteúdo do Power BI para usuários externos convidados usando o Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
+Para obter mais informações, incluindo sobre como funciona a segurança de linha, confira o white paper: [Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
 
 Para saber mais sobre o Azure AD B2B, confira [O que é a colaboração do Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).

@@ -4,17 +4,17 @@ description: Saiba como publicar aplicativos, que são coleções de dashboards 
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100808"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293989"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicar aplicativos com dashboards e relatórios no Power BI
 
@@ -38,7 +38,7 @@ Os aplicativos são a evolução dos pacotes de conteúdo organizacional. Os pac
 Cada membro de um workspace de aplicativo precisa de uma licença do Power BI Pro. Para os usuários do aplicativo, há duas opções.
 
 * Opção 1: todos os usuários empresariais precisam de licenças do **Power BI Pro** para exibir seu aplicativo. 
-* Opção 2: se seu aplicativo residir em uma capacidade Premium do Power BI, os usuários gratuitos em sua organização poderão exibir o conteúdo do aplicativo. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
+* Opção 2: se seu aplicativo reside em uma capacidade do Power BI Premium, os usuários gratuitos em sua organização podem exibir o conteúdo do aplicativo. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
 
 ## <a name="publish-your-app"></a>Publicar seu aplicativo
 Quando os dashboards e relatórios em seu workspace estiverem prontos, escolha quais dashboards e relatórios você deseja publicar e publique-os como um aplicativo. Você pode enviar um link direto para esse público mais amplo ou eles podem encontrar seu aplicativo na guia Aplicativos acessando **Baixar e explorar mais aplicativos no AppSource**. 

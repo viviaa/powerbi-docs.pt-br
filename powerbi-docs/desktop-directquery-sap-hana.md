@@ -5,24 +5,24 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8024756159b4974ef4a23ab60a055d57b0dfa590
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 1b587edb82f60ac8a9ff22716e42bcf941e0c794
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670591"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276527"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery e SAP HANA
 Você pode se conectar a fontes de dados do **SAP HANA** diretamente usando o **DirectQuery**. Há duas opções ao se conectar ao SAP HANA:
 
-* **Tratar o SAP HANA como uma origem multidimensional (padrão):** nesse caso, o comportamento será semelhante a quando o Power BI conecta-se a outras fontes multidimensionais, como SAP Business Warehouse ou Analysis Services. Ao se conectar ao SAP HANA usando essa configuração, uma única exibição de cálculo ou análise é selecionada, e todas as medidas, hierarquias e atributos dessa exibição estarão disponíveis na lista de campos. Conforme os visuais são criados, os dados de agregação serão sempre recuperados do SAP HANA. Essa é a abordagem recomendada e é o padrão para novos relatórios DirectQuery no SAP HANA.
+* **Tratar o SAP HANA como uma fonte de dados multidimensional (padrão):**  Nesse caso, o comportamento será semelhante a quando o Power BI conecta-se a outras fontes multidimensionais, como SAP Business Warehouse ou Analysis Services. Ao se conectar ao SAP HANA usando essa configuração, uma única exibição de cálculo ou análise é selecionada, e todas as medidas, hierarquias e atributos dessa exibição estarão disponíveis na lista de campos. Conforme os visuais são criados, os dados de agregação serão sempre recuperados do SAP HANA. Essa é a abordagem recomendada e é o padrão para novos relatórios DirectQuery no SAP HANA.
 
-* **Tratar o SAP HANA como uma origem de dados relacional:** nesse caso, o Power BI trata o SAP HANA como uma origem de dados relacional. Isso oferece maior flexibilidade, mas é importante ter cuidado para garantir que as medidas sejam agregadas conforme o esperado e para evitar problemas de desempenho.
+* **Tratar o SAP HANA como uma fonte de dados relacional:** nesse caso, o Power BI trata o SAP HANA como uma fonte de dados relacional. Isso oferece maior flexibilidade, mas é importante ter cuidado para garantir que as medidas sejam agregadas conforme o esperado e para evitar problemas de desempenho.
 
 A abordagem usada para conectar é determinada por uma opção de ferramenta global, que é configurada selecionando **Arquivo > Opções e configurações** e **Opções > DirectQuery**, em seguida, selecionando a opção **Tratar SAP HANA como uma origem de dados relacional**, conforme mostrado na imagem a seguir. 
 
@@ -66,9 +66,9 @@ As principais restrições de modelagem adicionais ao se conectar ao SAP HANA us
 
 * **Não há suporte para colunas calculadas:** a capacidade de criar colunas calculadas fica desabilitada. Isso também significa que o Agrupamento e o Clustering, que criam colunas calculadas, não estão disponíveis.
 * **Limitações adicionais para medidas:** há limitações adicionais impostas sobre as expressões DAX que podem ser usadas em medidas para refletir o nível de suporte oferecido pelo SAP HANA.
-* **Sem suporte para definição de relações:** apenas uma única exibição pode ser consultada dentro de um relatório e, dessa forma, não há suporte para definição de relações.
-* **Não há Exibição de Dados:** a **Exibição de Dados** normalmente exibe dados com nível de detalhe nas tabelas. Dada a natureza das fontes de OLAP como o SAP HANA, essa exibição não está disponível com o SAP HANA.
-* **Os detalhes das colunas e das medidas são fixos:** a lista de colunas e medidas vistas na lista de campos são fixas segundo a fonte subjacente e não podem ser modificadas. Por exemplo, não é possível excluir uma coluna ou alterar seu tipo de dados (no entanto, é possível renomeá-la).
+* **Não há suporte para definição de relações:** apenas uma única exibição pode ser consultada dentro de um relatório e, dessa forma, não há suporte para definição de relações.
+* **Não há Modo de Exibição de Dados:** o **Modo de Exibição de Dados** normalmente exibe dados detalhados nas tabelas. Dada a natureza das fontes de OLAP como o SAP HANA, essa exibição não está disponível com o SAP HANA.
+* **Detalhes de coluna e medidas são fixos:** a lista de colunas e medidas vista na lista de campos é fixa segundo a fonte subjacente e não pode ser modificada. Por exemplo, não é possível excluir uma coluna ou alterar seu tipo de dados (no entanto, é possível renomeá-la).
 * **Limitações adicionais no DAX:** há limitações adicionais no DAX que podem ser usadas em definições de medida para refletir as limitações na fonte. Por exemplo, não é possível usar uma função de agregação em uma tabela.
 
 ### <a name="additional-visualization-restrictions"></a>Restrições de visualização adicionais

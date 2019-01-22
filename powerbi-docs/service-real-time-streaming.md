@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 196d2ef3eb0d8ed8b7f008eef1b247d9e7f1cd18
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417155"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296450"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming em tempo real no Power BI
 Com o streaming em tempo real do Power BI, você pode transmitir dados e atualizar painéis em tempo real. Qualquer visual ou painel que possa ser criado no Power BI também pode ser criado para exibir e atualizar dados e visuais em tempo real. Os dispositivos e fontes de fluxo de dados podem ser sensores de fábrica, fontes de mídia social, métricas de uso do serviço e tudo o mais de que dados sensíveis ao tempo possam ser coletados ou transmitidos.
@@ -44,7 +44,7 @@ Há duas considerações a serem observadas a respeito de blocos fixados de um c
 * Quando um visual é fixado em um dashboard, você pode usar **P e R** para fazer perguntas sobre o conjunto de dados de push em idioma natural. Depois de fazer uma consulta de **P e R**, você pode fixar o visual resultante de volta no dashboard e ele *também* será atualizado em tempo real.
 
 ### <a name="streaming-dataset"></a>Conjunto de dados de streaming
-Com um **conjunto de dados de streaming**, os dados também são enviados por push ao serviço do Power BI, com uma diferença importante: o Power BI só armazena os dados em um cache temporário, que expira rapidamente. O cache temporário só é usado para exibir visuais que tenham algum sentido de histórico transitório, como um gráfico de linhas que tem uma janela de tempo de uma hora.
+Com um **conjunto de dados de streaming**, os dados também são enviados para o serviço do Power BI com uma diferença importante: o Power BI só armazena os dados em um cache temporário, que expira rapidamente. O cache temporário só é usado para exibir visuais que tenham algum sentido de histórico transitório, como um gráfico de linhas que tem uma janela de tempo de uma hora.
 
 Com um **conjunto de dados de streaming**, *não* há banco de dados subjacente, portanto você *não pode* criar visuais de relatório usando os dados que fluem do fluxo. Assim, você não pode fazer uso de funcionalidades de relatório como filtragem, visuais personalizados e outras funções de relatório.
 
@@ -197,7 +197,7 @@ Neste exemplo, usamos um fluxo disponível publicamente do **PubNub**. Aqui est�
 4. Na janela seguinte, apenas selecione os padrões (que são preenchidos automaticamente) e depois selecione **Criar**.
    
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
-5. De volta ao seu espaço de trabalho no Power BI, crie um novo painel e, em seguida, adicione um bloco (consulte acima para ver as etapas, se necessário). Dessa vez, quando você criar um bloco e selecionar **Fluxo de Dados Personalizado**, terá um conjunto de fluxos de dados para trabalhar. Vá em frente e brinque com ele. Ao adicionar os campos *número* para os gráficos de linhas e, em seguida, adicionar outros blocos, você poderá obter um painel em tempo real que é semelhante ao seguinte:
+5. De volta ao seu workspace do Power BI, crie um novo painel e, em seguida, adicione um bloco (consulte acima para ver as etapas, se necessário). Dessa vez, quando você criar um bloco e selecionar **Fluxo de Dados Personalizado**, terá um conjunto de fluxos de dados para trabalhar. Vá em frente e brinque com ele. Ao adicionar os campos *número* para os gráficos de linhas e, em seguida, adicionar outros blocos, você poderá obter um painel em tempo real que é semelhante ao seguinte:
    
    ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
 
@@ -231,7 +231,7 @@ Aqui está uma lista de verificação que você pode usar para solucionar o prob
 
 1. Reinicie o trabalho do Stream Analytics do Azure (trabalhos criados antes da versão GA do streaming necessitarão reiniciar)
 2. Tente autorizar novamente a conexão do Power BI no Azure Stream Analytics
-3. Qual espaço de trabalho você especificou na saída do Stream Analytics do Azure? Você verificando nesse (mesmo) espaço de trabalho no serviço do Power BI?
+3. Qual workspace você especificou na saída do Stream Analytics do Azure? Você verificando nesse (mesmo) workspace no serviço do Power BI?
 4. A consulta do Stream Analytics do Azure gera saída explicitamente na saída do Power BI? (usando a palavra-chave INTO)
 5. O trabalho do Stream Analytics do Azure tem dados fluindo através dele? O conjunto de dados será criado somente quando houver dados sendo transmitidos.
 6. Você pode verificar os logs do Stream Analytics do Azure para ver se há erros ou avisos?

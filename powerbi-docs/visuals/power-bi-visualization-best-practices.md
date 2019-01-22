@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77802d2db59ddff94123991e209441b4c491f98b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548593"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296703"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Práticas recomendadas de design para relatórios e visuais
 <!-- Shared newnav Include -->
@@ -65,7 +65,7 @@ Neste artigo, vamos começar com um exemplo de relatório que precisa de muito t
 
 ![](media/power-bi-visualization-best-practices/power-bi-example1newa.png)
 
-**Figura 1: esta página de relatório desagradável precisa de muito trabalho**
+**Figura 1:    esta página de relatório bagunçada precisa de muito trabalho**
 
 O exemplo acima apresenta vários problemas de design (layout) relacionados ao espaço que abordaremos abaixo:
 
@@ -95,19 +95,19 @@ Podemos ver em nosso relatório atualizado abaixo que os componentes do relatór
 
 ![](media/power-bi-visualization-best-practices/power-bi-example2new.png)
 
-**Figura 2: nosso exemplo de relatório desagradável aprimorado com as edições de layout**
+**Figura 2:    nosso exemplo de relatório bagunçado aprimorado com as edições de layout**
 
 O Power BI inclui ferramentas para ajudá-lo a alinhar os visuais. No Power BI Desktop, com vários visuais selecionados, use as opções **Alinhar e Distribuir** na guia de faixa de opções **Visuais** para fazer a correspondência da posição dos visuais.
 
 ![](media/power-bi-visualization-best-practices/power-bi-visualization.png)
 
-**Figura 3: alinhar visuais no Power BI Desktop**
+**Figure 3:    alinhar visuais no Power BI Desktop**
 
 No Power BI online e no Power BI Desktop, você também tem um controle preciso sobre o tamanho e a posição dos visuais por meio da guia **Geral** no painel de formatação de todos os visuais:
 
 ![](media/power-bi-visualization-best-practices/power-bi-align-vizs.png)
 
-**Figura 4: definir a posição exata do visual**
+**Figura 4:    definir a posição exata do visual**
 
 Em nossa página de relatório de exemplo (Figura 2), os dois cartões e a borda grande estão alinhados na **Posição X** em 200.
 
@@ -121,11 +121,11 @@ Esta é uma página de relatório usando um tamanho de página 4:3 e, em seguida
 
 ![](media/power-bi-visualization-best-practices/power-bi-page-view-before.png)
 
-**Figura 5a: O relatório no tamanho de página 4:3**
+**Figura 5a:    o relatório na proporção de tamanho de página 4:3**
 
 ![](media/power-bi-visualization-best-practices/power-bi-page-view-after.png)
 
-**Figura 5b: O relatório na proporção de tamanho de página 16:9**
+**Figura 5b:    o relatório na proporção de tamanho de página 16:9**
 
 O relatório será exibido na proporção 4:3, 16:9 ou em outra? Em telas pequenas ou enormes? Ou em todos os tamanhos e proporções de tela possíveis?  Crie o relatório com isso em mente.
 
@@ -133,7 +133,7 @@ Nossa página de relatório de exemplo parece um pouco “espremida”. Sem nenh
 
 ![](media/power-bi-visualization-best-practices/power-bi-page-size.png)
 
-**Figura 6: aumentar a altura da página**
+**Figure 6:    aumentar a altura da página**
 
 #### <a name="reduce-clutter"></a>Reduzir a desordem
 Uma página de relatório cheia será difícil de ser compreendida em uma visão rápida e poderá ser tão complicada que os leitores nem mesmo vão tentar entendê-la.  Elimine todos os elementos do relatório desnecessários. Não adicione elementos extra que não ajudam na compreensão ou na navegação. A página de relatório precisa transmitir as informações da forma mais clara, rápida e coesa possíveis.
@@ -146,7 +146,7 @@ Aqui, nosso exemplo já está com uma aparência bem melhor. Removemos muitos el
 
 ![](media/power-bi-visualization-best-practices/power-bi-example3newer.png)
 
-**Figura 7: nosso exemplo de relatório desagradável sem a desordem inicial**
+**Figura 7:    nosso exemplo de relatório bagunçado agora arrumado**
 
 ### <a name="tell-a-story-at-a-glance"></a>Contar uma história em uma visão rápida
 O teste geral deverá ser uma pessoa sem nenhum conhecimento prévio conseguir entender rapidamente o relatório sem a explicação de ninguém. Em uma visão rápida, os leitores devem conseguir ver rapidamente do que trata a página e cada gráfico e tabela.   
@@ -160,13 +160,13 @@ No serviço do Power BI, na barra de menus superior, selecione **Caixa de Texto*
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-boxes.png)
 
-**Figura 8: adicionar uma caixa de texto**
+**Figura 8:    adicionar uma caixa de texto**
 
 Digite na caixa vazia e, em seguida, use os controles na parte inferior para definir a face da fonte, o tamanho, o alinhamento e muito mais. Use as alças para redimensionar a caixa.
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
-**Figura 9: formatar a caixa de texto**
+**Figura 9:    formatar a caixa de texto**
 
 Mas não exagere! O excesso de texto em um relatório causa distração e desvia a atenção dos visuais. Se você achar que sua página de relatório precisa de “uma tonelada” de texto para torná-la mais compreensível, comece novamente.  É possível escolher um visual diferente que conta uma história melhor por conta própria? É possível ajustar os títulos nativos do visual para torná-los mais inteligíveis?   
 
@@ -178,23 +178,23 @@ As formas também podem ajudar na navegação e na compreensão. Use formas para
 
 ![](media/power-bi-visualization-best-practices/shapes.png)
 
-**Figura 10a: formas no serviço do Power BI**
+**Figura 10a:    formas no serviço do Power BI**
 
 ![](media/power-bi-visualization-best-practices/power-bi-desktop-shapes2new.png)
 
-**Figura 10b: formas no Power BI Desktop**
+**Figura 10b:    formas no Power BI Desktop**
 
 Qual é a aparência de nossa página de exemplo agora?  A Figura 11 mostra uma página mais limpa e menos cheia com um uso consistente de faces de texto, fontes e cores.  O título da página no canto superior esquerdo nos informa do que trata a página.
 
 ![](media/power-bi-visualization-best-practices/power-bi-example4new.png)
 
-**Figura 11: Nosso exemplo de relatório com a aplicação das diretrizes de texto e adição do título**
+**Figura 11:    nosso exemplo de relatório com a aplicação das diretrizes de texto e adição do título**
 
 Em nosso exemplo, o título de uma página de relatório foi adicionado no canto superior esquerdo: no primeiro lugar que os leitores olham. O tamanho da fonte é 28 e a fonte é Segoe Bold para ajudar a destacá-lo do restante da página.  Nosso guia de estilo de texto recomenda que não seja colocada nenhuma tela de fundo, que os títulos sejam pretos, além de legendas e rótulos. Tudo isso foi aplicado a todos os visuais da página, sempre que possível (os rótulos e os eixos do gráfico de Combinação não são editáveis).  Além disso:
 
 * Cartões: **Rótulo de categoria** definido como Desativado, **Título** Ativado e definido como 12 pt preto centralizado.
 * Títulos dos visuais: se estiverem Ativados, definidos como 12 pt e alinhados à esquerda.
-* Segmentações: **Cabeçalho** definido como Desativado e **Título** Ativado. Mantenha os **Itens** > **Texto** cinza e com 10 pt.
+* Segmentações de dados: **Cabeçalho** definido como Desativado e **Título** Ativado. Mantenha os **Itens** > **Texto** cinza e com 10 pt.
 * Gráficos de dispersão e de coluna: fonte preta para os eixos X e Y e os títulos, se forem usados.
 
 #### <a name="color"></a>Cores
@@ -205,7 +205,7 @@ Ao definir telas de fundo para páginas de relatório, escolha cores que não ob
 
 ![](media/power-bi-visualization-best-practices/power-bi-page-background.png)
 
-**Figura 12: Definir a tela de fundo do relatório**
+**Figura 12: definir o plano de fundo do relatório**
 
 Você não está criando uma obra de arte, mas um relatório funcional. Escolha uma cor que melhore a legibilidade e a projeção dos elementos do relatório.  
 
@@ -221,7 +221,7 @@ Quando alteramos a tela de fundo para preto, nosso título desapareceu porque o 
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-box-title.png)
 
-**Figura 13: Adicionar um título de página**
+**Figure 13: adicionar um título de página**
 
 **Cartões**
 
@@ -233,25 +233,25 @@ Até este ponto as duas segmentações tinham uma formatação diferente, o que 
 
 ![](media/power-bi-visualization-best-practices/power-bi-slicer-background.png)
 
-**Figura 14: Alterar a cor da tela de fundo da segmentação**
+**Figura 14: alterar a cor do plano de fundo da segmentação de dados**
 
 Adicione uma borda branca fina.
 
 ![](media/power-bi-visualization-best-practices/power-bi-slicer-outline.png)
 
-**Figura 15: Adicionar uma borda à segmentação**
+**Figure 15: adicionar uma borda à segmentação de dados**
 
 A fonte cinza é difícil de ser vista em cima do azul-piscina; portanto, altere a cor de **Itens** para branco.
 
 ![](media/power-bi-visualization-best-practices/power-bi-slicer-items.png)
 
-**Figura 16: Alterar a cor da fonte da segmentação**
+**Figura 16: alterar a cor da fonte da segmentação de dados**
 
 E, finalmente, em **Título**, altere a **Cor da fonte** para branco e adicione preto como a **Cor da tela de fundo**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-card-formatting.png)
 
-**Figura 17: Formatar o título da segmentação**
+**Figura 17: formatar o título da segmentação de dados**
 
 **Forma de retângulo**
 
@@ -259,7 +259,7 @@ O retângulo também desapareceu na tela de fundo preta.  Para corrigir isso, se
 
 ![](media/power-bi-visualization-best-practices/power-bi-shape-format.png)
 
-**Figura 18: Formatar a forma**
+**Figura 18: formatar a forma**
 
 **Gráficos de colunas, gráfico de bolhas, mapa coroplético e mapa de árvore**
 
@@ -267,15 +267,15 @@ Adicione uma tela de fundo branca aos visuais restantes na página de relatório
 
 ![](media/power-bi-visualization-best-practices/power-bi-background.png)
 
-**Figura 19: Adicionar uma tela de fundo branca às visualizações restantes**
+**Figura 19: adicionar um plano de fundo branco às visualizações restantes**
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5a.png)
 
-**Figura 20: Exemplo de relatório com a aplicação das práticas recomendadas de cores (tela de fundo preta)**
+**Figura 20: exemplo de relatório com a aplicação das práticas recomendadas de cores (plano de fundo preto)**
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5b.png)
 
-**Figura 21: Exemplo de relatório com a aplicação das práticas recomendadas de cores (tela de fundo branca)**
+**Figura 21:    exemplo de relatório com a aplicação das práticas recomendadas de cores (plano de fundo branco)**
  
 
 ### <a name="aesthetics"></a>Estética
@@ -319,13 +319,13 @@ Portanto, crie visuais que intencionalmente não distorcem a realidade e que nã
 
 ![](media/power-bi-visualization-best-practices/corp-success-distorted.png)
 
-**Figura 22: Gráfico de realidade distorcida**
+**Figura 22:    gráfico de realidade distorcida**
 
 Neste exemplo, parece que há uma grande diferença entre as quatro empresas, e que CorpB é muito mais bem-sucedida do que as outras três.  Mas observe que o eixo X não começa no zero e que as diferenças entre as empresas, provavelmente, estão dentro da margem de erro.  Aqui estão os mesmos dados com um eixo X que começa no zero.
 
 ![](media/power-bi-visualization-best-practices/corp-success.png)
 
-**Figura 23: Gráfico realista**
+**Figura 23:    gráfico realista**
 
 Os leitores esperam e costumam pressupor que o eixo X começa no zero. Se você decidir não começar no zero, faça isso de uma maneira que não distorça os resultados e considere a adição de uma indicação visual ou caixa de texto para apontar o desvio da regra.  
 
@@ -347,11 +347,11 @@ Se, em algum momento específico, você desejar destacar algo, poderá desenhar 
 
 ![](media/power-bi-visualization-best-practices/power-bi-multiples-before.png)
 
-**Figura 24: Antes**
+**Figura 24:    antes**
 
 ![](media/power-bi-visualization-best-practices/power-bi-multiples-after.png)
 
-**Figura 25: Depois**
+**Figura 25:    depois**
 
 **Para ativar e desativar os títulos dos eixos**
 
@@ -359,7 +359,7 @@ Selecione visual para torná-lo ativo e abra o painel Formatação. Expanda as o
 
 ![](media/power-bi-visualization-best-practices/power-bi-axis-titles.png)
 
-**Figura 26: Ativar e desativar os títulos dos eixos**
+**Figura 26:    ativar e desativar os títulos dos eixos**
 
 **Para ativar e desativar os rótulos de eixo**
 
@@ -367,7 +367,7 @@ Selecione visual para torná-lo ativo e abra o painel Formatação. Ao lado do *
 
 ![](media/power-bi-visualization-best-practices/power-bi-axis-labels.png)
 
-**Figura 27: Ativar e desativar os rótulos de eixo**
+**Figura 27: ativar e desativar os rótulos dos eixos**
 
 > [!TIP]
 > Um dos cenários em que você poderia desativar os rótulos do eixo Y seria se você tivesse ativado os **Rótulos de dados**.
@@ -380,7 +380,7 @@ Selecione visual para torná-lo ativo e abra o painel Formatação. Defina o con
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-off.png)
 
-**Figura 28: Remover os títulos de visuais**
+**Figura 28:    remover os títulos de visuais**
 
 Considere como os leitores exibirão o relatório e verifique se os visuais e o texto são grandes e escuros o suficiente para serem lidos. Se você tiver um visual proporcionalmente maior na página, os leitores poderão pressupor que ele é o mais importante. Coloque espaço suficiente entre os visuais para que o relatório não pareça cheio e confuso.  Alinhe os visuais para ajudar a direcionar os olhos dos leitores.
 
@@ -390,7 +390,7 @@ Selecione o visual para torná-lo ativo. Capte e arraste uma das alças para aju
 
 ![](media/power-bi-visualization-best-practices/power-bi-drag-handles.png)
 
-**Figura 29: Redimensionar o visual**
+**Figura 29: redimensionar visual**
 
 **Para mover um visual**
 
@@ -398,7 +398,7 @@ Selecione o visual para torná-lo ativo. Selecione e mantenha a barra de garra n
 
 ![](media/power-bi-visualization-best-practices/power-bi-move.png)
 
-**Figura 30: Mover um visual**
+**Figura 30: mover um visual**
 
 #### <a name="titles-and-labels-that-are-part-of-the-visualizations"></a>Títulos e rótulos que fazem parte das visualizações
 Verifique se os títulos e rótulos são legíveis e autoexplicativos. O texto dos títulos e rótulos deve estar em um tamanho ideal com cores que se destacam (como preto, em vez do cinza padrão). Lembra-se de nosso guia de estilo (consulte “Texto” acima)? Limite o número de cores e tamanhos – o excesso de tamanhos de fonte e cores diferentes faz com que a aparência da página fique carregada e confusa.  Considere o uso da mesma cor de fonte e tamanho para o título de todos os visuais de uma página de relatório e escolha o mesmo alinhamento para todos os títulos de uma página de relatório.  
@@ -409,13 +409,13 @@ Para cada um dos ajustes de formatação listados abaixo, selecione o ícone de 
 
 ![](media/power-bi-visualization-best-practices/power-bi-paintbrush.png)
 
-**Figura 31: Abrir o painel Formatação**
+**Figura 31: abrir o painel Formatação**
 
-Em seguida, selecione o elemento visual a ser ajustado e verifique se ele está definido como Ativado. Exemplos de elementos visuais são: **Eixo x**, **Eixo y**, **Título**, **Rótulos de dados** e **Legenda**. O exemplo abaixo mostra o elemento **Título**.
+Em seguida, selecione o elemento visual a ser ajustado e verifique se ele está definido como Ativado. Os exemplos de elementos visuais são: **Eixo X**, **Eixo Y**, **Título**, **Rótulos de dados** e **Legenda**. O exemplo abaixo mostra o elemento **Título**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
-**Figura 32: Formatar um título de visual**
+**Figura 32: formatar um título de visual**
 
 **Definir o tamanho do texto**
 
@@ -443,7 +443,7 @@ Para evitar que a página de relatório fique muito confusa ou carregada, seja c
 
 ![](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
-**Figura 33: Formatar a fonte usada em uma caixa de texto**
+**Figura 33: formatar a fonte usada em uma caixa de texto**
 
 #### <a name="sorting"></a>Classificação
 Uma oportunidade realmente simples para fornecer análises mais rápidas é definir a classificação dos visuais. Por exemplo, classificar os gráficos de barras em ordem crescente ou decrescente com base no valor das barras permite que você mostre informações incrementais significativas rapidamente sem usar mais espaço.
@@ -455,7 +455,7 @@ Um dos recursos mais interessantes do Power BI é a capacidade de editar o modo 
 
 ![](media/power-bi-visualization-best-practices/power-bi-visual-interactions.png)
 
-**Figura 34: Interações entre visuais**
+**Figura 34: interações de visual**
 
 Em seguida, para cada visual da página, decida se deseja que o visual selecionado seja filtrado, realçado ou não tenha nenhuma ação. Nem todos os visuais podem ser realçados e, para eles, o controle de realce não estará disponível. Para obter mais informações, consulte [Interações entre visuais no Power BI](../consumer/end-user-interactions.md).
 
@@ -485,13 +485,13 @@ A maneira mais simples de usar as cores é alterar uma ou mais cores do ponto de
 
 ![](media/power-bi-visualization-best-practices/power-bi-data-color.png)
 
-**Figura 35: Usar as cores para contar uma história**
+**Figura 35:    usar as cores para contar uma história**
 
 Você pode alterar as cores de ponto de dados na guia **Cores de dados** do painel de formatação. Para personalizar cada ponto de dados individualmente, verifique se a opção **Mostrar tudo** está definida como Ativada.
 
 ![](media/power-bi-visualization-best-practices/power-bi-colors.png)
 
-**Figura 36: Definir as cores de ponto de dados**
+**Figura 36: definir as cores do ponto de dados**
 
 > [!NOTE]
 > O Power BI aplica um tema padrão aos visuais de relatório.  As cores de tema foram escolhidas para fornecer variedade e contraste. Para desviar da paleta de temas padrão, selecione **Cor personalizada**.
@@ -500,13 +500,13 @@ Você pode alterar as cores de ponto de dados na guia **Cores de dados** do pain
 
 ![](media/power-bi-visualization-best-practices/power-bi-custom-color.png)
 
-**Figura 37: Escolher uma cor personalizada**
+**Figura 37: escolher uma cor personalizada**
 
 No Power BI Desktop, você pode até mesmo realçar exceções ou uma seção de uma linha usando uma segunda série:
 
 ![](media/power-bi-visualization-best-practices/power-bi-outliers.png)
 
-**Figura 38: Usando o Desktop para plotar exceções**
+**Figura 38:    usar o Desktop para plotar exceções**
 
 Aqui, os valores da série “Exceções” só existem nos casos em que a temperatura média de agosto cai abaixo de 60. Isso foi feito com a criação de uma coluna calculada DAX usando esta fórmula:
 
@@ -524,13 +524,13 @@ Normalmente, gráficos com uma série têm um valor categórico na legenda. Por 
 
 ![](media/power-bi-visualization-best-practices/power-bi-bubble-color.png)
 
-**Figura 39: Cores padrão aplicadas**
+**Figura 39: cores padrão aplicadas**
 
 Por padrão, as cores que o Power BI usa foram escolhidas para fornecer uma boa separação de cores entre os valores categóricos, para que eles sejam fáceis de serem distinguidos. Às vezes, as pessoas alteram essas cores de acordo com seu esquema corporativo, etc., mas isso pode causar problemas.
 
 ![](media/power-bi-visualization-best-practices/power-bi-bubble-color2.png)
 
-**Figura 40: Cores aplicadas como matizes de uma única cor**
+**Figura 40: cores aplicadas como matizes de uma única cor**
 
 Ao manter um único matiz e variar a intensidade da cor, este visual introduziu uma falsa sensação de ordenação entre as categorias. Isso implica que as bolhas mais escuras ficam mais altas ou mais baixas em alguma escala do que os matizes mais claros. Com exceção da ordem alfabética, normalmente, não existe uma ordem inerente a essa classificação de valor categórico.
 Para alterar as cores padrão, abra o painel Formatação e selecione **Cores de dados**.
@@ -541,23 +541,23 @@ Para campos que têm alguma ordem inerente e valores numéricos, você também p
 
 ![](media/power-bi-visualization-best-practices/power-bi-saturation.png)
 
-**Figura 41: Colorir pontos de dados pelo valor**
+**Figura 41: colorir pontos de dados pelo valor**
 
 Para criar este gráfico, adicione um valor ao campo Saturação da cor e, em seguida, ajuste as cores no painel Formatação.
 
 ![](media/power-bi-visualization-best-practices/power-bi-saturation2.png)
 
-**Figura 42: Adicionar um campo de saturação da cor**
+**Figura 42: adicionar um campo de saturação da cor**
 
 ![](media/power-bi-visualization-best-practices/power-bi-color-controls.png)
 
-**Figura 43: Ajustar as cores usadas para saturação**
+**Figura 43: ajustar as cores usadas para saturação**
 
 As cores também podem ser usadas para enfatizar a variação em torno de um valor central. Por exemplo, colorir valores positivos com verde e valores negativos com vermelho. Fique atento às diferenças culturais ao atribuir cores a valores positivos ou negativos; nem todas as culturas usam vermelho para coisas ruins e verde para boas!
 
 ![](media/power-bi-visualization-best-practices/power-bi-color.png)
 
-**Figura 44: Cores para enfatizar a variação em torno de um valor central**
+**Figura 44:    cor para enfatizar a variação em torno de um valor central**
  
 
 ### <a name="principles-of-visual-design--applied-to-example-report-page"></a>Princípios de design de visuais – aplicados à página de relatório de exemplo
@@ -567,13 +567,13 @@ Antes
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5a.png)
 
-**Figura 45: Nosso relatório de exemplo (antes)**
+**Figura 45:    nosso relatório de exemplo (antes)**
 
 Depois
 
 ![](media/power-bi-visualization-best-practices/power-bi-example6anew.png)
 
-**Figura 46: Nosso relatório de exemplo (depois)**
+**Figura 46: nosso relatório de exemplo (depois)**
 
 #### <a name="what-did-we-do"></a>O que fizemos?
 1. Segmentação: removemos os espaços em branco das segmentações adicionando um filtro de nível de página e selecionando somente ouro, prata ou bronze. Alteramos **Controles de Seleção** para Desativado em **Seleção Única** e **Selecionar Tudo**.
@@ -595,7 +595,7 @@ O exemplo abaixo mostra as tendências no número de medalhas entregues e de atl
 
 ![](media/power-bi-visualization-best-practices/power-bi-line-chart.png)
 
-**Figura 47: Gráficos de linhas**
+**Figura 47:    gráficos de linhas**
 
 #### <a name="best-practices"></a>Práticas recomendadas
 * Quando as pessoas olham os gráficos de linhas, a primeira coisa que veem é a forma da curva.  Isso significa que você precisa ter um eixo X que torna a curva significativa nesse momento ou ter categorias de distribuição.  Se você colocar campos categóricos como produto ou geografia no eixo X, o gráfico de linhas não será interessante, pois a forma da curva não fornecerá nenhuma informação significativa.
@@ -604,7 +604,7 @@ O exemplo abaixo mostra as tendências no número de medalhas entregues e de atl
   
   ![](media/power-bi-visualization-best-practices/power-bi-start-end.png)
   
-  **Figura 48: Definir os pontos inicial e final**
+  **Figura 48: definir os pontos inicial e final**
 * Outro motivo para definir explicitamente os pontos Inicial e Final é se você está comparando dois ou mais gráficos na mesma página usando o mesmo campo do eixo Y.  Por exemplo, se você estiver examinando as contagens totais de eventos e o Reino Unido tiver contagens que variam de 1 a 70 e a Austrália tiver contagens que variam de 1 a 12, os dois gráficos de linhas exibirão eixos Y muito diferentes (Figura x). Isso dificulta a comparação em uma visão rápida. Em vez disso, defina os gráficos para que eles usem o mesmo intervalo de eixo Y (Figura x).
   
   ![](media/power-bi-visualization-best-practices/power-bi-line-chart2.png)
@@ -628,14 +628,14 @@ Se os gráficos de linhas são o padrão para examinar dados ao longo do tempo, 
 
 ![](media/power-bi-visualization-best-practices/power-bi-horizontal-scroll.png)
 
-**Figura 51: Gráfico de barras horizontais**
+**Figura 51: gráfico de barras horizontais**
 
 #### <a name="best-practices"></a>Práticas recomendadas
 * Exiba os rótulos de dados para obter os valores.  Isso facilita a identificação de valores específicos. Para fazer isso, abra o painel Formatação e defina **Rótulos de dados** como Ativado.
   
   ![](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
   
-  **Figura 52: Ativar rótulos de dados**
+  **Figura 52: ativar rótulos de dados**
 * O gráfico de barras acima é realmente útil para comparar uma medida com várias outras **em um único ponto no tempo**.  Embora o gráfico de linhas acima tenha nos mostrado a tendência ao longo do tempo, o gráfico de barras nos mostra a tendência de uma única categoria em um ponto específico no tempo.  Em uma visão rápida, nosso gráfico de barras mostra que a Espanha tem uma das piores taxas de desemprego do mundo, 25%.
 * Quando um gráfico de Barras/Colunas inteiro não se ajusta ao espaço alocado, o Power BI adiciona barras de rolagem. Quando possível, e se fizer sentido, estruture o visual e o relatório para mostrar o gráfico inteiro, para que o leitor obtenha uma visão geral de toda a distribuição.  Infelizmente, isso não é possível em nosso exemplo, dado o número significativo de países em todo o mundo.
   
@@ -644,13 +644,13 @@ Se os gráficos de linhas são o padrão para examinar dados ao longo do tempo, 
   
   ![](media/power-bi-visualization-best-practices/power-bi-drill.png)
   
-  **Figura 53: Fazer uma busca detalhada**
+  **Figura 53: fazer drill down**
 
 Para obter mais detalhes sobre gráficos de Barras e Colunas:
 
 * [Introdução aos gráficos de barras](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Catálogo de visualização de dados: gráfico de barras](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
-* [Catálogo de visualização de dados: Gráfico de barras de conjunto múltiplo](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
+* [Catálogo de visualização de dados: gráfico de barras de vários conjuntos](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### <a name="stacked-barcolumn-charts"></a>Gráficos de barras/colunas empilhadas
 ![](media/power-bi-visualization-best-practices/power-bi-stacked.png)
@@ -659,13 +659,13 @@ Adicione outra dimensão aos gráficos de barras/colunas empilhando categorias d
 
 ![](media/power-bi-visualization-best-practices/power-bi-deloite.png)
 
-**Figura 54: Gráfico de colunas empilhadas**
+**Figura 54: gráfico de colunas empilhadas**
 
 Este gráfico de colunas empilhadas mostra que a receita total está crescendo ao longo do tempo e que as categorias Comercial e Difusão estão crescendo de forma contínua ao longo do tempo – contribuindo para o aumento da receita geral.  Mas esse gráfico não facilita a comparação do impacto que cada uma das três categorias causa sobre as outras. Por exemplo, como o crescimento da categoria Comercial é comparado ao crescimento da categoria Difusão ou Dia de jogo?  Uma opção melhor para esses dados, ou um visual complementar para esses dados, seria um gráfico de linhas.  
 
 ![](media/power-bi-visualization-best-practices/power-bi-deloite2.png)
 
-**Figura 55: Converter em um gráfico de linhas**
+**Figura 55: converter em um gráfico de linhas**
 
 Neste gráfico de linhas, é mais fácil ver como a receita comercial foi a que mais cresceu, seguido por difusão e dia de jogo.
 
@@ -678,11 +678,11 @@ Neste gráfico de linhas, é mais fácil ver como a receita comercial foi a que 
   
   ![](media/power-bi-visualization-best-practices/power-bi-deloite3.png)
   
-  **Figura 56: Gráfico empilhado horizontal**
+  **Figura 56: gráfico empilhado horizontal**
 
 Para obter mais informações sobre gráficos empilhados:
 
-* [Catálogo de visualização de dados: Gráficos de barras empilhadas](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
+* [Catálogo de visualização de dados: gráficos de barras empilhadas](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 * [Quando os gráficos de barras 100% empilhadas são úteis?](http://www.perceptualedge.com/blog/?p=2239)
 
 ### <a name="combo-barcolumn-charts"></a>Gráficos de combinação de barras/colunas
@@ -696,11 +696,11 @@ A nova página de relatório tem um único visual: um gráfico de linhas e um gr
 
 ![](media/power-bi-visualization-best-practices/power-bi-spain-line.png)
 
- **Figura 57: Como dois gráficos separados**
+ **Figura 57: como dois gráficos separados**
 
 ![](media/power-bi-visualization-best-practices/power-bi-spain-combo.png)
 
- **Figura 58: Como um único gráfico de combinação**
+ **Figura 58: como um único gráfico de combinação**
 
 #### <a name="best-practices"></a>Práticas recomendadas
 Os gráficos de combinação funcionam melhor quando ambos os visuais têm, pelo menos, um eixo em comum.
@@ -709,7 +709,7 @@ Fique de olho nos eixos! O gráfico de Combinação é fácil de ser lido e inte
 
    ![](media/power-bi-visualization-best-practices/power-bi-dual-line.png)
 
-   **Figura 59: Um gráfico de linhas que não deu certo**
+   **Figura 59: um gráfico de linhas que não deu certo**
 
 Portanto, o gráfico de combinação também não será significativo se o gráfico de colunas e o gráfico de linhas usarem duas medidas diferentes e você não criar eixos duplos.  Por exemplo, dólares versus por cento. Lembre-se de incluir os dois eixos para ajudar o leitor a compreender o gráfico e considere também a adição de rótulos de eixo.
 
@@ -717,11 +717,11 @@ Para fazer isso, abra o painel Formatação, expanda **Eixo Y** e defina **Mostr
 
 ![](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 
-**Figura 60: Mostrar o eixo secundário**
+**Figura 60: mostrar eixo secundário**
 
 ![](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
 
-**Figura 61: Preferencialmente, criar um gráfico de combinação**
+**Figura 61: preferencialmente criar um gráfico de combinação**
 
 * Aproveite os eixos duplos. É uma ótima maneira de comparar várias medidas com intervalos de valores diferentes. E é uma excelente maneira de ilustrar a correlação entre duas medidas em um visual.
 
@@ -766,7 +766,7 @@ Por exemplo, o primeiro mapa de árvore fornece uma indicação ampla da ordem d
 
 ![](media/power-bi-visualization-best-practices/power-bi-treemap3.png)
 
-**Figura 63: Comparação do PIB da América do Sul como um mapa de árvore**
+**Figura 63: comparação dos PIB da América do Sul como um mapa de árvore**
 
 Aqui, adicionamos outro nível de dados, região e podemos ver a contribuição geral para o PIB por regiões, bem como o impacto relativo nas regiões. Lembre-se de que fazer isso com medidas não aditivas (como médias) poderá fazer com que a soma dos detalhes não represente o valor real no nível de agregação.
 
@@ -809,7 +809,7 @@ Para obter mais informações, veja:
 Agora é hora de colocar essas práticas recomendadas em ação.  Mantenha contato e compartilhe suas próprias práticas recomendadas. Não concorda com nossas recomendações ou descobriu um bom motivo para “quebrar as regras”?  Também gostaríamos muito de saber sua opinião.  
 
 ### <a name="book-recommendations"></a>Recomendações de literatura
-Há muitos livros excelentes disponíveis hoje para ajudar as equipes a estudarem muito sobre as técnicas de design de visuais. O livro *Information Dashboard Design* (Design de dashboards de informações), de Stephen Few, é uma leitura obrigatória. Ele se aprofunda em mais detalhes em dois outros livros, *Show Me the Numbers* (Mostre-me os números) e *Now You See It* (Agora você pode ver). Few e outros autores se inspiraram de Edward R. Tufte, cujo livro *The Visual Display of Quantitative Information* (A exibição visual de informações quantitativas) é considerado um clássico na área. Tufte também escreveu *Visual Explanations* (Explicações visuais), *Envisioning Information* (Vislumbrando informações) e *Beautiful Evidence* (Linda evidência). O novo livro de Andy Kirk *Data Visualization: A Handbook for Data Driven Design* (Visualização de dados: um manual para o design controlado por dados) é outra excelente opção. Alguns outros autores recomendados são: Lachlan James, William McKnight e Boris Evelson (Forrester) da Darkhorse Analytics.
+Há muitos livros excelentes disponíveis hoje para ajudar as equipes a estudarem muito sobre as técnicas de design de visuais. O livro *Information Dashboard Design* (Design de dashboards de informações), de Stephen Few, é uma leitura obrigatória. Ele se aprofunda em mais detalhes em dois outros livros, *Show Me the Numbers* (Mostre-me os números) e *Now You See It* (Agora você pode ver). Few e outros autores se inspiraram de Edward R. Tufte, cujo livro *The Visual Display of Quantitative Information* (A exibição visual de informações quantitativas) é considerado um clássico na área. Tufte também escreveu *Visual Explanations* (Explicações visuais), *Envisioning Information* (Vislumbrando informações) e *Beautiful Evidence* (Linda evidência). Novo livro de Andy Kirk *Data Visualization: A Handbook for Data Driven Design* (Visualização de dados: um guia de design orientado a dados) é outra excelente opção. Outros autores recomendados são: Lachlan James, William McKnight e Boris Evelson (Forrester), Darkhorse Analytics.
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

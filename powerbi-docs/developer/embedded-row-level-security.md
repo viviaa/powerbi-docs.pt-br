@@ -4,17 +4,17 @@ description: Saiba mais sobre as etapas necessárias para inserir o conteúdo do
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578763"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284163"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Usar segurança em nível de linha com conteúdo inserido do Power BI
 
@@ -48,13 +48,13 @@ A RLS é criada no Power BI Desktop. Quando o conjunto de dados e o relatório s
 A seguir, veja alguns itens a serem observados com esse esquema:
 
 * Todas as medidas, como **Total de Vendas**, são armazenadas na tabela de fatos **Vendas**.
-* Há mais quatro tabelas de dimensões relacionadas: **Item**, **Hora**, **Loja** e **Distrito**.
-* As setas nas linhas de relacionamento indicam em que direção os filtros podem fluir de uma tabela para outra. Por exemplo, se um filtro for colocado em **Hora[Data]**, no esquema atual, ele apenas filtrará valores da tabela **Vendas**. Nenhuma outra tabela será afetada por esse filtro, pois todas as setas nas linhas de relacionamento apontam para a tabela de vendas e não para outra.
+* Há quatro tabelas de dimensões relacionadas adicionais: **Item**, **Hora**, **Loja** e **Distrito**.
+* As setas nas linhas de relacionamento indicam em que direção os filtros podem fluir de uma tabela para outra. Por exemplo, se um filtro for colocado em **Hora[Data]**, no esquema atual, ele apenas filtrará valores da tabela **Vendas**. Nenhuma outra tabela é afetada por esse filtro, pois todas as setas nas linhas de relacionamento apontam para a tabela de vendas e não para outra.
 * A tabela **Distrito** indica quem é o gerente de cada distrito:
   
     ![Linhas dentro da tabela Distrito](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-Com base nesse esquema, se aplicarmos um filtro à coluna **Gerente Regional** da tabela **Distrito** e se o filtro corresponder ao usuário que exibe o relatório, ele filtrará as tabelas **Loja** e **Vendas** para mostrar apenas os dados desse gerente regional.
+Com base nesse esquema, se aplicarmos um filtro à coluna **Gerente Regional** da tabela **Distrito** e se o filtro corresponder ao usuário que exibe o relatório, ele filtrará as tabelas **Loja** e **Vendas** para mostrar os dados desse gerente regional.
 
 Aqui está como:
 
@@ -141,7 +141,7 @@ As funções podem ser fornecidas com a identidade em um token de inserção. Se
 
 ### <a name="using-the-customdata-feature"></a>Usando o recurso CustomData
 
-O recurso CustomData funciona apenas para os modelos que residem no **Azure Analysis Services** e funciona apenas no modo **Conectar em tempo real**. Ao contrário dos usuários e das funções, o recurso Customdata não pode ser definido dentro de um arquivo .pbix. Ao gerar um token com o recurso Customdata, é preciso ter um nome de usuário.
+O recurso CustomData funciona apenas para os modelos que residem no **Azure Analysis Services** e funciona apenas no modo **Conectar em tempo real**. Ao contrário dos usuários e das funções, o recurso Custom Data não pode ser definido dentro de um arquivo .pbix. Ao gerar um token com o recurso Custom Data, é preciso ter um nome de usuário.
 
 O recurso CustomData permite adicionar um filtro de linha ao exibir dados do Power BI em seu aplicativo ao usar o **Azure Analysis Services** como sua fonte de dados (exibição de dados do Power BI conectados ao Azure Analysis Services em seu aplicativo).
 
@@ -213,18 +213,18 @@ Aqui estão as etapas para começar a configurar o recurso CustomData() com seu 
 
     ![Relatório PBI de exemplo](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
-7. Use as APIs do Power BI para usar o recurso CustomData em seu aplicativo.  Ao gerar um token com o recurso Customdata, é preciso ter um nome de usuário. O nome de usuário deve ser igual ao UPN do usuário mestre. O usuário mestre deve ser membro da(s) função(ões) criadas por você. Se nenhuma função for especificada, todas as funções de que usuário mestre for membro serão usadas para avaliação de RLS.
+7. Use as APIs do Power BI para usar o recurso CustomData em seu aplicativo.  Ao gerar um token com o recurso Custom Data, é preciso ter um nome de usuário. O nome de usuário deve ser igual ao UPN do usuário mestre. O usuário mestre deve ser membro da(s) função(ões) criadas por você. Se nenhuma função for especificada, todas as funções de que usuário mestre for membro serão usadas para avaliação de RLS.
 
     > [!Note]
     > Quando estiver pronto para implantar o aplicativo para produção, a opção ou o campo de conta de usuário mestre não deverá ficar visível para o usuário final.
 
     Exiba o [código](#customdata-sdk-additions) para adicionar o recurso CustomData.
 
-8. Agora você pode exibir o relatório em seu aplicativo antes de aplicar o(s) valor(es) de Customdata para ver todos os dados que o relatório contém.
+8. Agora você pode exibir o relatório em seu aplicativo antes de aplicar o(s) valor(es) de Custom Data para ver todos os dados que o relatório contém.
 
     ![Antes do Custom Data ser aplicado](media/embedded-row-level-security/customdata-before.png)
 
-    Em seguida, aplique o(s) valor(es) de Customdata para ver como o relatório exibe um conjunto de dados diferente.
+    Em seguida, aplique o(s) valor(es) de Custom Data para ver como o relatório exibe um conjunto de dados diferente.
     ![Após o CustomData ser aplicado](media/embedded-row-level-security/customdata-after.png)
 
 ## <a name="using-rls-vs-javascript-filters"></a>Uso dos filtros RLS em vez de JavaScript
@@ -239,14 +239,89 @@ A [Segurança em Nível de Linha](../service-admin-rls.md) é um recurso que fil
 
 Os [filtros JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) são usados para permitir que o usuário consuma uma exibição de dados reduzida, com escopo ou filtrada. No entanto, o usuário ainda mantém o acesso a tabelas, colunas e medidas do esquema de modelo e pode, potencialmente, acessar todos os dados lá. O acesso restrito aos dados só pode ser aplicado com RLS e não por meio de APIs de filtragem do lado do cliente.
 
+## <a name="token-based-identity-with-azure-sql-database-preview"></a>Identidade baseada em token com o Banco de Dados SQL do Azure (versão prévia)
+
+A **identidade baseada em token** permite que você especifique a identidade efetiva para um token de inserção usando o token de acesso do **Azure Active Directory (AAD)** para um **Banco de Dados SQL**.
+
+Os clientes que mantêm seus dados no **Banco de Dados SQL**, agora podem aproveitar uma nova funcionalidade para gerenciar usuários e seu acesso aos dados no Azure SQL ao integrarem com o **Power BI Embedded**.
+
+Ao gerar o token de inserção, você pode especificar a identidade efetiva de um usuário no Azure SQL. Você pode especificar a identidade efetiva de um usuário passando o token de acesso do AAD para o servidor. O token de acesso é usado para extrair somente os dados relevantes daquele usuário do SQL Azure para uma sessão específica.
+
+Ele pode ser usado para gerenciar o modo de exibição de cada usuário no Azure SQL ou entrar Azure SQL como um cliente específico em um banco de dados de multilocatários. Ele também pode ser usado para aplicar segurança em nível de linha nesta sessão no Azure SQL e recuperar somente os dados relevantes para a sessão, eliminando a necessidade de gerenciar a RLS no Power BI.
+
+Esses problemas de identidade em vigor se aplicam às regras da RLS diretamente no Azure SQL Server. O Power BI Embedded usa o token de acesso fornecido ao consultar os dados do Azure SQL Server. O UPN do usuário (para o qual o token de acesso foi fornecido) pode ser acessado como resultado da função SQL USER_NAME().
+
+A identidade baseada em token só funciona para modelos DirectQuery em capacidade dedicada – conectada a um Banco de Dados SQL do Azure, que é configurado para permitir a autenticação do AAD ([saiba mais sobre a autenticação do AAD no Banco de Dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). Para usar a identidade baseada em token, a fonte de dados do conjunto de dados deve ser configurada para usar as credenciais OAuth2 dos usuários finais.
+
+   ![Configurar o Azure SQL Server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
+
+### <a name="token-based-identity-sdk-additions"></a>Adições do SDK de identidade baseada em token
+
+A propriedade de blob de identidade foi adicionada à nossa identidade efetiva no cenário de geração de tokens.
+
+```JSON
+[JsonProperty(PropertyName = "identityBlob")]
+public IdentityBlob IdentityBlob { get; set; }
+```
+
+O tipo de IdentityBlob é uma estrutura JSON simples que contém uma propriedade de cadeia de caracteres de valor
+
+```JSON
+[JsonProperty(PropertyName = "value")]
+public string value { get; set; }
+```
+
+O EffectiveIdentity pode ser criado com o blob de identidade usando a seguinte chamada:
+
+```C#
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
+```
+
+O blob de identidade pode ser criado usando a chamada a seguir.
+
+```C#
+public IdentityBlob(string value);
+```
+
+### <a name="token-based-identity-rest-api-usage"></a>Uso da API REST de identidade baseada em token
+
+Se você estiver chamando a [API REST](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), é possível adicionar o blob de identidade dentro de cada identidade.
+
+```JSON
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
+        “identityBlob”: {
+            “value”: “eyJ0eXAiOiJKV1QiLCJh….”
+         }
+        }
+    ]
+}
+```
+
+O valor fornecido no blob de identidade deve ser um token de acesso válido para o Azure SQL Server (com uma URL de recurso de (<https://database.windows.net/>).
+
+   > [!Note]
+   > Para poder criar um token de acesso para o Azure SQL, o aplicativo deve ter permissão delegada de **acesso do Azure SQL DB e do Data Warehouse** para a API do **Banco de Dados SQL do Azure** na configuração de registro de aplicativo do AAD no portal do Azure.
+
+   ![Registro de aplicativo](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
 * A atribuição de usuários a funções no serviço do Power BI não afeta a RLS ao usar um token de inserção.
-* Embora o serviço do Power BI não aplique a configuração de RLS a administradores ou membros com permissões de edição, ao fornecer uma identidade com um token de inserção, ela será aplicada aos dados.
+* Embora o serviço do Power BI não aplique a configuração de RLS a administradores ou membros com permissões de edição, ao fornecer uma identidade com um token de inserção, ela é aplicada aos dados.
 * Para servidores locais, há suporte para conexões dinâmicas do Analysis Services.
 * As conexões ao vivo do Azure Analysis Services dão suporte à filtragem por funções. A filtragem dinâmica pode ser realizada usando CustomData.
 * Se o conjunto de dados subjacente não exigir a RLS, a solicitação de GenerateToken **não** deverá conter uma identidade efetiva.
 * Se o conjunto de dados subjacente for um modelo de nuvem (modelo armazenado em cache ou DirectQuery), a identidade efetiva deverá incluir pelo menos uma função. Caso contrário, a atribuição de função não ocorrerá.
 * Uma lista de identidades permite vários tokens de identidade para a inserção de painéis. Para todos os outros artefatos, a lista contém uma única identidade.
+
+### <a name="token-based-identity-limitations-preview"></a>Limitações de identidade baseada em token (versão prévia)
+
+* Esse recurso restringe o uso somente com o Power BI Premium.
+* Esse recurso não funciona com o SQL Server local.
+* Esse recurso não funciona com multi-geo.
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

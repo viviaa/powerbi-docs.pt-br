@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900441"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283519"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
 
@@ -88,14 +88,14 @@ O tamanho da superfície de design pode ser diferente da área de impressão do 
  Dependendo da propriedade, você pode definir um valor de propriedade em uma lista suspensa, digitar o valor ou selecionar `<Expression>` para criar uma expressão.  
   
 ### <a name="changing-the-properties-pane-view"></a>Alterar o modo de exibição do painel de Propriedades  
- Por padrão, as propriedades exibidas no painel de Propriedades são organizadas em categorias amplas, como a Ação, Borda, Preenchimento, Fonte e Geral. Cada categoria tem um conjunto de propriedades associado a ela. Por exemplo, as seguinte propriedades são listadas na categoria Fonte: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight e TextDecoration. Se você preferir, você pode classificar em ordem alfabética todas as propriedades listadas no painel. Isso remove as categorias e lista todas as propriedades em ordem alfabética, independentemente da categoria.  
+ Por padrão, as propriedades exibidas no painel de Propriedades são organizadas em categorias amplas, como a Ação, Borda, Preenchimento, Fonte e Geral. Cada categoria tem um conjunto de propriedades associado a ela. Por exemplo, as seguintes propriedades são listadas na categoria Font: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight e TextDecoration. Se você preferir, você pode classificar em ordem alfabética todas as propriedades listadas no painel. Isso remove as categorias e lista todas as propriedades em ordem alfabética, independentemente da categoria.  
   
- O painel de Propriedades tem três botões na parte superior: **Categoria**, **Ordem Alfabética** e **Página de Propriedades**. Selecione os botões Categoria e Ordem Alfabética para alternar entre os modos de exibição do painel de Propriedades. Selecione o botão **Páginas de Propriedade** para abrir a caixa de diálogo de propriedades para um item de relatório selecionado.  
+ O painel Propriedades tem três botões na parte superior: **Categoria**, **Alfabetizar** e **Página de propriedades**. Selecione os botões Categoria e Ordem Alfabética para alternar entre os modos de exibição do painel de Propriedades. Selecione o botão **Páginas de Propriedade** para abrir a caixa de diálogo de propriedades para um item de relatório selecionado.  
   
   
 ## <a name="5-grouping-pane"></a>5 Painel de Agrupamento
 
- Os grupos são usados para organizar os dados do relatório em uma hierarquia visual e para calcular totais. É possível exibir os grupos de linhas e colunas dentro de uma região de dados na superfície de design e também no painel de Agrupamento. O painel de Agrupamento possui dois painéis: Grupos de Linhas e Grupos de Colunas. Quando você seleciona uma região de dados, o painel de Agrupamento exibe todos os grupos dentro dessa região de dados em uma lista hierárquica: os grupos filho aparecem recuados abaixo dos grupos pai.  
+ Os grupos são usados para organizar os dados do relatório em uma hierarquia visual e para calcular totais. É possível exibir os grupos de linhas e colunas dentro de uma região de dados na superfície de design e também no painel de Agrupamento. O painel Agrupamento tem dois painéis: Grupos de Linhas e Grupos de Colunas. Quando você seleciona uma região de dados, o painel Agrupamento exibe todos os grupos dentro dessa região de dados como uma lista hierárquica: os grupos filho aparecem recuados abaixo dos grupos pai.  
   
  Para criar grupos, arraste campos do painel de dados do relatório e solte-os na superfície de design ou no painel de Agrupamento. No painel de Agrupamento, você pode adicionar grupos pai, adjacentes e filho, alterar as propriedades do grupo e excluir grupos.  
   

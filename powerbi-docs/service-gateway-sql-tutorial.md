@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 33b88c728a5a79f2b1edf6e1728850723ce76fec
-ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
+ms.openlocfilehash: 96ea117ff0ba28a158eb9f0eaf748d66b25f90d5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40256290"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278919"
 ---
 # <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Tutorial: Conectar-se a dados locais no SQL Server
 
@@ -119,7 +119,7 @@ Agora que tem dados de exemplo com que trabalhar, você se conecta ao SQL Server
 
 7. Salve o relatório com o nome "TestGatewayDocs.pbix".
 
-8. Na guia **Início**, selecione **Publicar** > **Meu espaço de trabalho** > **Selecionar**. Entre no serviço do Power BI se for solicitado que você faça isso. 
+8. Na guia **Início**, selecione **Publicar** > **Meu workspace** > **Selecionar**. Entre no serviço do Power BI se for solicitado que você faça isso. 
 
     ![Publicar relatório](media/service-gateway-sql-tutorial/publish-report.png)
 
@@ -174,17 +174,17 @@ Você tem um relatório publicado no serviço do Power BI e a fonte de dados do 
 
     ```
 
-2. No serviço do Power BI, no painel de navegação esquerdo, selecione **Meu espaço de trabalho**.
+2. No serviço do Power BI, no painel de navegação esquerdo, selecione **Meu workspace**.
 
 3. Em **Conjuntos de dados**, para o conjunto de dados **TestGatewayDocs**, selecione **mais** (**...** ) > **Atualizar agora**.
 
     ![Atualizar agora](media/service-gateway-sql-tutorial/refresh-now.png)
 
-4. Selecione **Meu espaço de trabalho** > **Relatórios** > **TestGatewayDocs**. Veja como a atualização fluiu e o líder de vendas agora é **Compact Digital**. 
+4. Selecione **Meu workspace** > **Relatórios** > **TestGatewayDocs**. Veja como a atualização fluiu e o líder de vendas agora é **Compact Digital**. 
 
     ![Dados atualizados](media/service-gateway-sql-tutorial/updated-data.png)
 
-5. Selecione **Meu espaço de trabalho** > **Relatórios** > **TestGatewayDocs**. Selecione **mais** (**. . .**) > **Agendar atualização**.
+5. Selecione **Meu workspace** > **Relatórios** > **TestGatewayDocs**. Selecione **mais** (**. . .**) > **Agendar atualização**.
 
 6. Em **Agendar atualização**, defina a atualização como **Ativado** e, em seguida, selecione **Aplicar**. O conjunto de dados é atualizado diariamente por padrão.
 

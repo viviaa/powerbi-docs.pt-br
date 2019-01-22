@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417316"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290879"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Mapas de formas no Power BI Desktop (Preview)
 Crie um visual de **Mapa de Formas** para comparar as regiões em um mapa usando cores. Ao contrário do visual **Mapa**, o **Mapa de Formas** não consegue mostrar localizações geográficas precisas de pontos de dados em um mapa. Em vez disso, sua finalidade principal é mostrar comparações relativas de regiões em um mapa colorindo-as de modo diferente.
@@ -113,7 +113,7 @@ Há algumas considerações e requisitos para essa versão de Preview do **Mapa 
 ## <a name="region-keys"></a>Chaves de região
 Use as **Chaves de região** a seguir nesta versão de Preview para testar o **Mapa de Formas**.
 
-### <a name="australia-states"></a>Austrália: Estados
+### <a name="australia-states"></a>Austrália: estados
 
 | `id` | `abbr` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | au-nsw |NSW |AU-NSW |Nova Gales do Sul |NSW |
 | au-act |ACT |AU-ACT |Território da Capital Australiana |ACT |
 
-### <a name="austria-states"></a>Áustria: Estados
+### <a name="austria-states"></a>Áustria: estados
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -140,7 +140,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | at-ka |AT-2 |Kärnten |Caríntia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasil: Estados
+### <a name="brazil-states"></a>Brasil: estados
 
 | `id` |
 | --- |
@@ -176,7 +176,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | Zona em disputa 3 |
 | Zona em disputa 4 |
 
-### <a name="canada-provinces"></a>Canadá: Províncias
+### <a name="canada-provinces"></a>Canadá: províncias
 
 | `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | ca-bc |CA-BC |Colúmbia Britânica |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>França: Regiões
+### <a name="france-regions"></a>França: regiões
 
 | `id` | `name` | `name-en` |
 | --- | --- | --- |
@@ -219,9 +219,9 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | Bourgogne |Bourgogne |Borgonha |
 | Basse-Normandie |Basse-Normandie |Baixa Normandia |
 | Auvergne |Auvergne |Auvérnia |
-| Aquitaine |Aquitaine |Aquitânia |
+| Aquitaine |Aquitaine |Aquitaine |
 
-### <a name="germany-states"></a>Alemanha: Estados
+### <a name="germany-states"></a>Alemanha: estados
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -242,7 +242,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | de-by |DE-BY |Bayern |Baviera |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Irlanda: Condados
+### <a name="ireland-counties"></a>Irlanda: municípios
 
 | `id` |
 | --- |
@@ -273,7 +273,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Itália: Regiões
+### <a name="italy-regions"></a>Itália: regiões
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -298,7 +298,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | it-pu |IT-75 |Apulia |Apúlia |PU |
 | it-ab |IT-65 |Abruzzo |Abruzos |AB |
 
-### <a name="mexico-states"></a>México: Estados
+### <a name="mexico-states"></a>México: estados
 
 | `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- | --- |
@@ -335,7 +335,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | mx-bcn |B.C. |MX-BCN |Baja California |Baixa Califórnia |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Países Baixos: Províncias
+### <a name="netherlands-provinces"></a>Países Baixos: províncias
 
 | `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
@@ -352,7 +352,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | nl-fl |NL-FL |Flevoland |Flevolândia |
 | nl-dr |NL-DR |Drenthe |Drente |
 
-### <a name="uk-countries"></a>Reino Unido: Países
+### <a name="uk-countries"></a>Reino unido: Países
 
 | `id` | `iso` | `name` |
 | --- | --- | --- |
@@ -361,7 +361,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | gb-nir |GB-NIR |Irlanda do Norte |
 | gb-eng |GB-ENG |Inglaterra |
 
-### <a name="usa-states"></a>EUA: Estados
+### <a name="usa-states"></a>EUA: estados
 
 | `id` | `name` | `postal` |
 | --- | --- | --- |

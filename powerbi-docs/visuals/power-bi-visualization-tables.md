@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c94fd3ce58cefdb9e3cc7749b6486ab9bb0577cb
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 2c909f1f7d2c1b500d37de0e4617e10c79977c96
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101452"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284761"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabelas em relatórios e dashboards do Power BI
 Uma tabela é uma grade que contém dados relacionados em uma série de lógica de linhas e colunas. Ela também pode conter cabeçalhos e linhas de totais. As tabelas funcionam bem com comparações quantitativas em que você observa muitos valores de uma única categoria. Por exemplo, esta tabela exibe 5 medidas diferentes para a **Categoria**.
 
 ![](media/power-bi-visualization-tables/table.png)
 
-Crie tabelas em relatórios e elementos com realce cruzado dentro da tabela com outros visuais na mesma página de relatório.  Além disso, você pode selecionar linhas, colunas e até mesmo células individuais e realce cruzado. Células individuais e várias seleções de célula podem ser copiadas e coladas em outros aplicativos.
+Crie tabelas em relatórios e elementos com realce cruzado dentro da tabela com outros visuais na mesma página de relatório.  Além disso, você pode selecionar linhas, colunas e até mesmo células individuais e realce cruzado. As células individuais e várias seleções de célula podem ser copiadas e coladas em outros aplicativos.
 
 ## <a name="when-to-use-a-table"></a>Quando usar uma tabela
 As tabelas são uma ótima opção:
@@ -135,7 +135,7 @@ Sua tabela ou matriz pode ter conteúdo que você gostaria de usar em outros apl
 ![close-up de vídeo do redimensionamento da coluna](media/power-bi-visualization-tables/resizetable.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-* Ao aplicar a formatação de coluna, só é possível escolher uma opção de alinhamento por coluna: Auto, Esquerda, Centro, Direita. Normalmente, uma coluna contém todo o texto ou todos os números, e não uma combinação. Nos casos em que uma coluna contiver números e texto, **Auto** será alinhado à esquerda para texto e à direita para números. Esse comportamento é compatível com idiomas que a leitura ocorre da esquerda para a direita.   
+* Ao aplicar a formatação de coluna, só é possível escolher uma opção de alinhamento por coluna: Automático, Esquerda, Centro, Direita. Normalmente, uma coluna contém todo o texto ou todos os números, e não uma combinação. Nos casos em que uma coluna contiver números e texto, **Auto** será alinhado à esquerda para texto e à direita para números. Esse comportamento é compatível com idiomas que a leitura ocorre da esquerda para a direita.   
 
 ## <a name="next-steps"></a>Próximas etapas
 

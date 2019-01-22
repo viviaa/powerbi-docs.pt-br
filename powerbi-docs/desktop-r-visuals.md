@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0a739e963039e61aa66e398d27fa82982eb26bb0
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: c1a4ba0a89f84cb0fce205373f1d0f00cc1479ac
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670499"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278556"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Criar visuais do Power BI usando o R
 Com o **Power BI Desktop**, é possível usar o **R** para visualizar seus dados.
@@ -107,7 +107,7 @@ Depois de especificar a instalação do R, você estará pronto para começar a 
 
     ![](media/desktop-r-visuals/r-visuals-9.png)
 
-    > **Segurança de scripts R:** visuais R são criados a partir de scripts R, que podem conter códigos com riscos de segurança ou privacidade. Ao tentar exibir ou interagir com um visual R pela primeira vez, o usuário recebe uma mensagem de aviso de segurança. Habilite visuais R somente se você confiar no autor e na fonte ou após examinar e compreender o script R.
+    > **Segurança de scripts R:** Os visuais R são criados com base nos scripts R, que podem conter código com riscos de segurança ou privacidade. Ao tentar exibir ou interagir com um visual R pela primeira vez, o usuário recebe uma mensagem de aviso de segurança. Habilite visuais R somente se você confiar no autor e na fonte ou após examinar e compreender o script R.
     > 
     > 
 

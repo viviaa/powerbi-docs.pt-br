@@ -1,23 +1,23 @@
 ---
-title: 'Exemplo de Análise de Varejo para o Power BI: faça um tour'
-description: 'Exemplo de Análise de Varejo para o Power BI: faça um tour'
+title: 'Exemplo de Análise de Varejo do Power BI: Faça um tour'
+description: 'Exemplo de Análise de Varejo do Power BI: Faça um tour'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c07c33cb6ae859c9cf202ae67119dbfb8dd45e26
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717667"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291454"
 ---
-# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: faça um tour
+# <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo do Power BI: Faça um tour
 
 Este painel de exemplo do setor, juntamente com o relatório subjacente, analisam dados de vendas de varejo de itens vendidos em várias lojas e distritos. As métricas comparam o desempenho deste ano ao do ano passado nestas áreas: vendas, unidades, margem bruta e variação, bem como uma análise do novo estoque. Os exemplos são dados reais de obviEnce ([www.obvience.com](http://www.obvience.com)) que foram mantidos anônimos.
 
@@ -86,7 +86,7 @@ Também é possível [baixar apenas o conjunto de dados (pasta de trabalho do Ex
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Examinar um bloco criado com P e R do Power BI
 Vamos analisar mais detalhadamente.
 
-1. Adicione “vendas deste ano **por distrito**” à pergunta. Observe o resultado: ele coloca automaticamente a resposta em um gráfico de barras e sugere outras frases:
+1. Adicione “vendas deste ano **por distrito**” à pergunta. Observe o resultado: Ele coloca automaticamente a resposta em um gráfico de barras e sugere outras frases:
 
    ![](media/sample-retail-analysis/retail8.png)
 2. Agora, altere a pergunta para “vendas deste ano **por CEP e rede**”.

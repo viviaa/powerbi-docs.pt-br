@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6c47fb847ff5360031f4bfe2974db9c405a4ce5f
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670729"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278068"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery e SAP Business Warehouse (BW)
 Você pode se conectar a fontes de dados do **SAP Business Warehouse (BW)** diretamente usando o **DirectQuery**. Devido à natureza de OLAP/multidimensional do SAP BW, há várias diferenças importantes entre o DirectQuery com o SAP BW e com fontes relacionais, como o SQL Server. Essas diferenças são resumidas da seguinte maneira:
@@ -36,7 +36,7 @@ As principais restrições de modelagem adicionais ao se conectar ao SAP BW usan
 * **Limitações adicionais para medidas:** há limitações adicionais impostas sobre as expressões DAX que podem ser usadas em medidas para refletir o nível de suporte oferecido pelo SAP BW.
 * **Não há suporte para definição de relações:** as relações são inerentes na fonte externa do SAP e relações adicionais não podem ser definidas no modelo.
 * **Não há Exibição de Dados:** a **Exibição de Dados** normalmente exibe dados com nível de detalhe nas tabelas. Dada a natureza das fontes de OLAP como o SAP BW, essa exibição não está disponível com o SAP BW.
-* **Os detalhes das colunas e das medidas são fixos:** a lista de colunas e medidas vistas na lista de campos são fixas segundo a fonte subjacente e não podem ser modificadas. Por exemplo, não é possível excluir uma coluna ou alterar seu tipo de dados (no entanto, é possível renomeá-la).
+* **Detalhes de coluna e medidas são fixos:** a lista de colunas e medidas vistas na lista de campos são fixas segundo a fonte subjacente e não podem ser modificadas. Por exemplo, não é possível excluir uma coluna ou alterar seu tipo de dados (no entanto, é possível renomeá-la).
 * **Limitações adicionais no DAX:** há limitações adicionais no DAX que podem ser usadas em definições de medida para refletir as limitações na fonte. Por exemplo, não é possível usar uma função de agregação em uma tabela.
 
 ## <a name="additional-visualization-restrictions"></a>Restrições de visualização adicionais
@@ -44,7 +44,7 @@ As principais restrições de visualização adicionais ao se conectar ao SAP BW
 
 * **Não há agregação de colunas:** não é possível alterar a agregação para uma coluna em um visual; ela sempre é *Não Resumir*
 * **A filtragem de medidas fica desabilitada:** a filtragem de medidas fica desabilitada para refletir o suporte oferecido pelo SAP BW.
-* **Seleção múltipla e incluir/excluir:** a capacidade fazer a seleção múltipla de pontos de dados em um visual ficará desabilitada se os pontos representarem valores de mais de uma coluna. Por exemplo, dado um gráfico de barras que mostra Vendas por país, com a Categoria na Legenda, não seria possível selecionar o ponto relativo a (EUA, Bicicletas) e (França, Roupas). Da mesma forma, não seria possível selecionar o ponto relativo a (EUA, Bicicletas) e excluí-lo do visual. As duas limitações são impostas para refletir o suporte oferecido pelo SAP BW.
+* **Seleção múltipla e incluir/excluir:** a capacidade de fazer a seleção múltipla de pontos de dados em um visual ficará desabilitada se os pontos representarem valores de mais de uma coluna. Por exemplo, dado um gráfico de barras que mostra Vendas por país, com a Categoria na Legenda, não seria possível selecionar o ponto relativo a (EUA, Bicicletas) e (França, Roupas). Da mesma forma, não seria possível selecionar o ponto relativo a (EUA, Bicicletas) e excluí-lo do visual. As duas limitações são impostas para refletir o suporte oferecido pelo SAP BW.
 
 ## <a name="support-for-sap-bw-features"></a>Suporte para recursos do SAP BW
 A tabela a seguir lista todos os recursos do SAP BW que não têm suporte completo ou que têm comportamento diferente ao usar o Power BI.   

@@ -6,15 +6,15 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101245"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292443"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Novidades no Servidor de Relatório do Power BI
 
@@ -122,7 +122,7 @@ O suporte para DirectQuery de SSO do SAP HANA com o Kerberos já está disponív
 
 ### <a name="analytics"></a>Análise
 
-- [Nova função do DAX: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
+- [Nova função DAX: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Detalhamento de medida](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
 - [Formatação condicional usando um campo diferente](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingField)
 - [Formatação condicional usando valores](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingValue)
@@ -266,13 +266,13 @@ Esta versão é compatível com escalabilidade horizontal. Use um balanceador de
 
 Os administradores podem definir as seguintes propriedades nas Propriedades Avançadas do SSMS para o farm de servidores:
 
-* EnableCustomVisuals: True/False
-* EnablePowerBIReportEmbeddedModels: True/False
-* EnablePowerBIReportExportData: True/False
-* MaxFileSizeMb: o padrão agora é 1.000
-* ModelCleanupCycleMinutes: a frequência da verificação para remover modelos da memória
+* EnableCustomVisuals: Verdadeiro/Falso
+* EnablePowerBIReportEmbeddedModels: Verdadeiro/Falso
+* EnablePowerBIReportExportData: Verdadeiro/Falso
+* MaxFileSizeMb: agora, o padrão é 1000
+* ModelCleanupCycleMinutes: a frequência de verificação para remover modelos da memória
 * ModelExpirationMinutes: quanto tempo levará até o modelo expirar e ser removido, com base no último uso
-* ScheduleRefreshTimeoutMinutes: quanto tempo a atualização de dados de um modelo poderá demorar. Por padrão, duas horas.  Não há nenhum limite máximo.
+* ScheduleRefreshTimeoutMinutes: quanto tempo pode demorar a atualização de dados para um modelo. Por padrão, duas horas.  Não há nenhum limite máximo.
 
 **Arquivo de configuração rsreportserver.config**
 

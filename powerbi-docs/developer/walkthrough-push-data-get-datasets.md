@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 44fbf1e651c36c95694e397c64050977f3ee730a
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: f6396747dc21ddc94ab1abda6939e8e423c649e7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092542"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296169"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Etapa 4: Obter um conjunto de dados para adicionar linhas em uma tabela do Power BI
 Este artigo faz parte do passo a passo para [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
@@ -26,11 +26,11 @@ Para enviar dados por push para um conjunto de dados do Power BI, você precisa 
 Veja como obter um conjunto de dados.
 
 ## <a name="get-a-power-bi-dataset"></a>Obter um conjunto de dados do Power BI
-> **OBSERVAÇÃO**: antes de começar, lembre-se de seguir as etapas anteriores no passo a passo [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
+> **OBSERVAÇÃO**: Antes de começar, lembre-se de seguir as etapas anteriores no passo a passo [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
 > 
 > 
 
-1. No projeto de Aplicativo de Console que você criou na Etapa 2: Passo a passo para enviar dados por push, [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md), instale o pacote NuGet Newtonsoft.Json. Veja como instalar o pacote:
+1. No projeto de Aplicativo de Console que você criou na Etapa 2: passo a passo para enviar dados por push, [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md), instale o pacote NuGet Newtonsoft.Json. Veja como instalar o pacote:
    
      a. No Visual Studio 2015, escolha **Ferramentas** > **Gerenciador de Pacotes NuGet** > **Console do Gerenciador de Pacotes**.
    

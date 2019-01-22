@@ -4,17 +4,17 @@ description: Tutorial sobre como usar o Power BI P e r para criar novas visualiz
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c139d5561a19dab147610914bc11e1bfd9e9e481
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830000"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277355"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Tutorial: Como usar P e R para criar visualizações e relatórios
 A [Visão geral de P e R](consumer/end-user-q-and-a.md) apresentou você às P e R do Power BI e fez a distinção entre *consumidores* (que têm dashboards e relatórios compartilhados com eles) e *criadores* (proprietários de relatórios e conjuntos de dados subjacentes). A primeira parte deste tutorial é destinada principalmente a pessoas que consumem dashboards usando o serviço do Power BI. E a segunda parte é projetada para as pessoas que criam relatórios usando o serviço do Power BI ou Power BI Desktop. [A P e R e o Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) e [a P e R e o Power BI Embedded](developer/qanda.md) são abordados em artigos separados.
@@ -23,7 +23,7 @@ P e R é interativo e até mesmo divertido e, mais frequentemente do que o contr
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## <a name="part-1-use-qa-on-a-dashboard-in-power-bi-service-apppowerbicom"></a>Parte 1: usar P e R em um dashboard no serviço do Power BI (app.powerbi.com)
+## <a name="part-1-use-qa-on-a-dashboard-in-power-bi-service-apppowerbicom"></a>Parte 1: Usar P e R em um painel no serviço do Power BI (app.powerbi.com)
 Um dashboard contém blocos fixados de um ou mais conjuntos de dados, para que você possa fazer perguntas sobre os dados contidos em qualquer um desses conjuntos de dados. Para ver quais relatórios e conjuntos de dados foram usados para criar o dashboard, selecione **Exibir relacionados** na barra de menus.
 
 ![](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
@@ -58,7 +58,7 @@ A resposta à sua pergunta é exibida como uma visualização interativa e atual
 
    ![](media/power-bi-tutorial-q-and-a/pbi_qna_finish-typing-question.jpg)
 
-##    <a name="part-2-use-qa-in-a-report-in-power-bi-service-or-power-bi-desktop"></a>Parte 2: usar P e R em um relatório no serviço do Power BI ou no Power BI Desktop
+##    <a name="part-2-use-qa-in-a-report-in-power-bi-service-or-power-bi-desktop"></a>Parte 2: Usar P e R em um relatório no serviço do Power BI ou no Power BI Desktop
 
 Use P e R para explorar o conjunto de dados e adicionar visualizações ao relatório e aos dashboards. Um relatório se baseia em um único conjunto de dados e pode ser totalmente em branco ou conter páginas repletas de visualizações. Mas apenas o fato de um relatório estar em branco não significa que não exista nenhum dado para você explorar – o conjunto de dados é vinculado ao relatório e está esperando que você explore e crie visualizações.  Para ver qual conjunto de dados está sendo usado para criar um relatório, abra o relatório no modo de exibição de Leitura do serviço do Power BI e selecione **Exibir relacionados** na barra de menus.
 
@@ -104,7 +104,7 @@ Com P e R, você pode não apenas solicitar que seus dados falem por si próprio
 
 ## <a name="next-steps"></a>Próximas etapas
 Voltar a [P e R no Power BI](consumer/end-user-q-and-a.md)   
-[Tutorial: usar perguntas e respostas com o exemplo de Vendas de Varejo](power-bi-visualization-introduction-to-q-and-a.md)   
+[Tutorial: Tutorial: Usar P e R com o exemplo de Vendas de Varejo](power-bi-visualization-introduction-to-q-and-a.md)   
 [Dicas para fazer perguntas em P e R](consumer/end-user-q-and-a-tips.md)   
 [Preparar uma pasta de trabalho para Perguntas e respostas](service-prepare-data-for-q-and-a.md)  
 [Preparar um conjunto de dados local para P e R](service-q-and-a-direct-query.md)

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: d48df3287813229e673bbc523281cdb2218ec384
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649035"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277263"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)
 
@@ -76,7 +76,7 @@ Na janela **Adicionar atribuição de função**, selecione a função **Leitor*
 
 Você deve criar um sistema de arquivos denominado *powerbi* antes que sua conta de armazenamento possa ser adicionada ao Power BI. Há muitas maneiras de criar esse sistema de arquivos, incluindo o uso do Azure Databricks, HDInsight, AZCopy ou Gerenciador de Armazenamento do Microsoft Azure. Esta seção mostra uma maneira simples de criar um sistema de arquivos usando o Gerenciador de Armazenamento do Microsoft Azure.
 
-Esta etapa requer a instalação do Gerenciador de Armazenamento do Microsoft Azure versão 1.6.1 ou superior. Para instalar o Gerenciador de Armazenamento do Microsoft Azure para Windows, Macintosh ou Linux, consulte [Gerenciador de Armazenamento do Microsoft Azure](https://azure.microsoft.com/features/storage-explorer/).
+Esta etapa requer a instalação do Gerenciador de Armazenamento do Microsoft Azure versão 1.6.2 ou superior. Para instalar o Gerenciador de Armazenamento do Microsoft Azure para Windows, Macintosh ou Linux, consulte [Gerenciador de Armazenamento do Microsoft Azure](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Depois de instalar o Gerenciador de Armazenamento do Azure com sucesso, na primeira inicialização, é exibida a janela Gerenciador de Armazenamento do Microsoft Azure – Conectar. Embora o Gerenciador de Armazenamento forneça várias maneiras de se conectar às contas de armazenamento, atualmente apenas uma maneira é compatível com a configuração necessária. 
 

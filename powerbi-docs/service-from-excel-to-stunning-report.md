@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829977"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290373"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Da pasta de trabalho do Excel para um relatório incrível em um instante
 Sua gerente deseja ver um relatório sobre os números de vendas mais recentes combinado com as impressões da última campanha no final do dia. Porém, os dados mais recentes residem em vários sistemas de terceiros e em arquivos em seu laptop. Anteriormente, levava várias horas para criar visuais e formatar um relatório. Você está começando a ficar ansioso.
@@ -50,7 +50,7 @@ Na parte inferior do painel de navegação esquerdo, selecione **Obter Dados**. 
 
 Na página Arquivos, selecione **Arquivo Local**. Navegue até o arquivo de pasta de trabalho do Excel em seu computador e o selecione para carregar no Power BI. Selecione **Importar**.
 
-> **OBSERVAÇÃO**: para acompanhar o restante deste tutorial, use a [Pasta de trabalho de exemplo financeiro](sample-financial-download.md).
+> **OBSERVAÇÃO**: para acompanhar o restante deste tutorial, use a [Pasta de trabalho de exemplo Financeiro](sample-financial-download.md).
 > 
 > 
 
@@ -67,7 +67,7 @@ Agora você pode começar a criar visualizações. Sua gerente deseja ver o lucr
 
 ![gráfico de colunas no editor de relatório](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-> **Dica**: se o gráfico não tiver a aparência esperada, verifique suas agregações. Por exemplo, em **Valor**, clique com o botão direito do mouse no campo que você acabou de adicionar e verifique se os dados estão sendo agregados da maneira desejada.  Neste exemplo, estamos usando **Soma**.
+> **DICA**: se o gráfico não tiver a aparência esperada, verifique as suas agregações. Por exemplo, em **Valor**, clique com o botão direito do mouse no campo que você acabou de adicionar e verifique se os dados estão sendo agregados da maneira desejada.  Neste exemplo, estamos usando **Soma**.
 > 
 > 
 

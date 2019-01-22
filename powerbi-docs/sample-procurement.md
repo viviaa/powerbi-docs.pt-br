@@ -1,23 +1,23 @@
 ---
-title: 'Exemplo de Análise de compras: faça um tour'
-description: 'Exemplo de Análise de Varejo para o Power BI: faça um tour'
+title: 'Exemplo de análise de compras: Faça um tour'
+description: 'Exemplo de Análise de Varejo para o Power BI: Faça um tour'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717138"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287338"
 ---
-# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: faça um tour
+# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: Faça um tour
 
 ## <a name="overview-of-the-procurement-analysis-sample"></a>Visão geral do exemplo de Análise de Compras
 Este painel de exemplo do setor e relatório subjacente analisam as despesas da empresa fabricante com fornecedores por categoria e local. No exemplo, exploraremos essas áreas:
@@ -71,10 +71,10 @@ Primeiro, vamos analisar as tendências em gastos por categoria e local.
 
 Observe algumas coisas:
 
-* No gráfico de linhas **Total da fatura por mês e categoria** : a categoria **Direto** apresenta gastos bem consistentes, **Logística** apresenta um pico em dezembro e **Outros** demonstra um pico em fevereiro.
-* No mapa **Total da fatura por país/região** : a maioria de nossos gastos está concentrada nos EUA.
-* No gráfico de colunas **Total da fatura por subcategoria**: **Hardware** e **Serviços e produtos indiretos** são as categorias que apresentam os maiores gastos.
-* No gráfico de barras Total da fatura por camada: a maioria de nossos negócios é feita com nossos fornecedores da Camada 1 (os 10 primeiros). Isso ajuda a gerenciar melhor os relacionamentos com o fornecedor.
+* No gráfico de linhas **Total da fatura por mês e categoria**: a categoria **Direto** apresenta gastos muito consistentes, **Logística** apresenta um pico em dezembro e **Outros** apresenta um pico em fevereiro.
+* No mapa **Total da fatura por país/região**: A maioria dos nossos gastos estão nos EUA.
+* No gráfico de colunas **Total da fatura por subcategoria**: **Hardware** e **Serviços e produtos indiretos** são categorias com mais gastos.
+* No gráfico de barras Total da fatura por camada: A maioria dos nossos negócios é feito com nossos fornecedores de nível 1 (10 principais). Isso ajuda a gerenciar melhor os relacionamentos com o fornecedor.
 
 ## <a name="spending-in-mexico"></a>Gastos no México
 Vamos explorar as áreas de gastos no México.
@@ -139,5 +139,5 @@ Selecione **Editar relatório** no canto superior esquerdo e explore no Modo de 
 
 Este é um ambiente seguro para experimentar. Você pode optar por não salvar as alterações. Se você salvá-las, sempre é possível acessar **Obter Dados** para obter uma nova cópia desse exemplo.
 
-## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: conectar-se aos seus dados
+## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: Conecte-se aos seus dados
 Esperamos que esse tour tenha mostrado como os painéis e relatórios do Power BI podem fornecer informações sobre os dados de compras. Agora é sua vez &#151; conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Saiba mais sobre como [começar a usar o Power BI](service-get-started.md)

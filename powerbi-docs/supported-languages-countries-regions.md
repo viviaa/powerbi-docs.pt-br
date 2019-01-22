@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e474081a5f094bc04f6fc93b985b8d81efee1a0b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 98c637692b3c31e598a11c3039b60be3dec61348
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728101"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281173"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Idiomas com suporte e países/regiões para o Power BI
 
@@ -116,7 +116,7 @@ O Power BI detecta o idioma com base nas preferências de idioma no seu computad
    Talvez seja necessário fechar e reabrir o navegador para ver a alteração.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>Escolher a idioma ou localidade do Power BI Desktop
-Há duas maneiras de obter o Power BI Desktop: é possível baixá-lo ou instalá-lo por meio da Windows Store.
+Existem duas maneiras de obter o Power BI Desktop: por download ou instalando o programa pela Windows Store.
 
 * Quando você [instala o Power BI Desktop por meio da Windows Store](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), ele instala todos os idiomas e mostra o idioma correspondente ao idioma padrão do Windows.
 * Quando você [baixar o Power BI Desktop](#choose-a-language-when-you-download-power-bi-desktop), você escolherá o idioma quando o baixar. 
@@ -155,7 +155,7 @@ Baixando o Power BI Desktop ou instalando-o por meio da Windows Store, é possí
 
 Além de definir o idioma para o aplicativo de do Power BI Desktop, você também pode definir o idioma do modelo. O idioma do modelo afeta principalmente duas coisas:
 
-- Como podemos comparar e classificar cadeias de caracteres. Por exemplo, como o turco tem duas da letras i, dependendo do agrupamento do banco de dados, ambas podem terminar em ordens diferentes ao classificar. 
+- Como podemos comparar e classificar cadeias de caracteres. Por exemplo, como o turco tem duas das letras i, dependendo da ordenação do banco de dados, ambas podem terminar em ordens diferentes ao classificar. 
 - O idioma que o Power BI Desktop usa ao criar tabelas de data oculta em campos de data. Por exemplo, os campos são chamados de Mês/Month/Mois, etc.
 
 > [!NOTE]

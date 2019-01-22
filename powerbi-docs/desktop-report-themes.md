@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51027450"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277424"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Usar Temas de relatório no Power BI Desktop
 Com **Temas de Relatório**, você pode aplicar um tema de cor ao relatório inteiro, como as cores da empresa, uma coloração sazonal ou outros temas de cor. Quando você aplicar um **Tema de Relatório**, todos os visuais no relatório passarão a usar as cores do tema selecionado. Algumas exceções aplicam-se e são descritas neste artigo.
@@ -83,11 +83,11 @@ Agora que já importamos um arquivo de tema, vamos examinar a estrutura simples 
 
 Esse arquivo JSON tem as seguintes linhas necessários:
 
-* **name**: esse é o nome do tema, que é o único campo obrigatório.
+* **name**: o nome do tema, que é o único campo obrigatório.
 
-* **dataColors**: uma lista de códigos hexadecimais de cores a serem usados para dados nos visuais do Power BI Desktop. A lista pode ter quantas cores você desejar.
+* **dataColors**: a lista de códigos hexadecimais de cores a ser usada para dados nos visuais do Power BI Desktop. A lista pode ter quantas cores você desejar.
 
-* **background**, **foreground** e **tableAccent**: as cores que devem ser aplicadas em diversos tipos de visuais. 
+* **background**, **foreground** e **tableAccent**: as cores que devem ser aplicadas em diversos tipos de visual. 
   - **foreground** aplica-se ao texto da caixa de texto, o texto de meta de KPI, o texto de cartão de várias linhas, o texto do valor do cartão, o texto explicativo medidor, o texto do elemento de segmentação vertical e o texto dos valores e do total de **tabela** e **matriz**. 
   - **background** aplica-se ao preenchimento do botão e à tela de fundo do rótulo do gráfico de combinação. A maneira em que essas cores são usadas depende do estilo específico do visual aplicado. 
   - Os visuais de **tabela** e de **matriz** aplicam esses estilos por padrão.
@@ -133,7 +133,7 @@ Digamos que você aplique um conjunto de cores personalizado (ou uma cor individ
 
 Talvez você também precise definir manualmente a cor de um ponto de dados usando a seção Cores do tema. As cores *não* serão atualizadas quando você aplicar um novo Tema de Relatório. Se quiser retornar às cores padrão de modo que elas sejam atualizadas ao aplicar um novo Tema de Relatório, selecione **Reverter para padrão** na paleta **Cores do tema**.
 
-![Reverter para padrão](media/desktop-report-themes/report-themes_9.png)
+![Reverter para o padrão](media/desktop-report-themes/report-themes_9.png)
 
 Além disso, muitos **Visuais Personalizados** não se aplicam aos Temas de Relatório.
 
@@ -178,9 +178,9 @@ Aqui estão alguns mais temas de relatório, que você pode usar como pontos de 
 ## <a name="report-theme-json-file-format"></a>Formato de arquivo JSON de tema do relatório
 O arquivo JSON básico tem cinco linhas obrigatórias:
 
-* **name**: esse é o nome do tema, que é o único campo obrigatório.
-* **dataColors**: uma lista de códigos hexadecimais de cores a serem usados para dados nos visuais do Power BI Desktop. A lista pode ter quantas cores você desejar.
-* **background**, **foreground** e **tableAccent**: as cores que devem ser aplicadas em diversos tipos de visuais. O **foreground** aplica-se ao texto da caixa de texto, o texto de meta de KPI, o texto de cartão de várias linhas, o texto do valor do cartão, o texto explicativo medidor, o texto do elemento de segmentação vertical e o texto dos valores e do total de **tabela** e **matriz**. O **background** aplica-se ao preenchimento do botão e à tela de fundo do rótulo do gráfico de combinação. A maneira em que essas cores são usadas depende do estilo específico do visual aplicado. Os visuais de **tabela** e de **matriz** aplicam esses estilos por padrão.
+* **name**: o nome do tema, que é o único campo obrigatório.
+* **dataColors**: a lista de códigos hexadecimais de cores a ser usada para dados nos visuais do Power BI Desktop. A lista pode ter quantas cores você desejar.
+* **background**, **foreground** e **tableAccent**: as cores que devem ser aplicadas em diversos tipos de visual. O **foreground** aplica-se ao texto da caixa de texto, o texto de meta de KPI, o texto de cartão de várias linhas, o texto do valor do cartão, o texto explicativo medidor, o texto do elemento de segmentação vertical e o texto dos valores e do total de **tabela** e **matriz**. O **background** aplica-se ao preenchimento do botão e à tela de fundo do rótulo do gráfico de combinação. A maneira em que essas cores são usadas depende do estilo específico do visual aplicado. Os visuais de **tabela** e de **matriz** aplicam esses estilos por padrão.
 
 Para criar um arquivo JSON em um formato estendido, com um controle granular e mais detalhado sobre a formatação, você também precisa adicionar uma seção **visualStyles** ao arquivo JSON. Você aninha as especificações de formatação na seção **visualStyles**. A seção **visualStyles** é parecida com o seguinte formato:
 
@@ -248,25 +248,25 @@ A tabela a seguir define os valores de *cardName*. O primeiro valor em cada cél
 
 | **cardName** |
 | --- |
-| axis: eixo do Medidor |
+| axis: Eixo do medidor |
 | breakdown: Divisão |
 | bubbles: Bolhas |
 | calloutValue: Valor do Balão |
 | card: Cartão |
-| cardTitle: Título do Cartão |
+| cardTitle: Título do cartão |
 | categoryAxis: Eixo X |
-| categoryLabels: Rótulos de categoria |
+| categoryLabels: Rótulos da categoria |
 | columnFormatting: Formatação de campo |
-| columnHeaders: Cabeçalhos de coluna |
+| columnHeaders: Cabeçalhos da coluna |
 | dataLabels: Rótulos de dados |
-| fill: Preenchimento |
+| fill: Preencher |
 | fillPoint: Ponto de preenchimento |
 | forecast: Previsão |
 | general: Geral |
 | goals: Metas |
 | grid: Grade |
 | header: Cabeçalho |
-| imageScaling: Dimensionamento |
+| imageScaling: Dimensionando |
 | indicator: Indicador |
 | items: Itens |
 | labels: Rótulos de dados |
@@ -275,29 +275,29 @@ A tabela a seguir define os valores de *cardName*. O primeiro valor em cada cél
 | mapControls: Controles de mapa |
 | mapStyles: Estilos de mapa |
 | numericInputStyle: Entradas numéricas |
-| percentBarLabel: Rótulo de Taxa de Conversão |
+| percentBarLabel: Etiqueta de taxa de conversão |
 | plotArea: Área de Plotagem |
 | plotAreaShading: Sombreamento de simetria |
 | ratioLine: Linha de proporção |
-| referenceLine: Linha de constante |
+| referenceLine: Linha Constante |
 | ribbonChart: Faixas de opções |
 | rotation: Rotação |
-| rowHeaders: Cabeçalhos de linha |
+| rowHeaders: Cabeçalhos da linha |
 | selection: Controles de Seleção |
-| sentimentColors: Cores de sentimento |
+| sentimentColors: Cores de sentimentos |
 | shape: Forma |
 | slider: Controle deslizante |
 | status: Codificação de cores |
 | subTotals: Subtotais |
 | target: Destino |
 | total: Total geral |
-| trend: Linha de tendência |
-| trendline: Eixo de tendência |
+| trend: Linha de Tendência |
+| trendline: Eixo da tendência |
 | valueAxis: Eixo Y |
 | values: Valores |
 | wordWrap: Quebra automática de linha |
-| xAxisReferenceLine: Linha de Constante do Eixo X |
-| y1AxisReferenceLine: Linha de Constante |
+| xAxisReferenceLine: Linha constante do eixo X |
+| y1AxisReferenceLine: Linha Constante |
 | zoom: Zoom |
 
 ### <a name="properties-within-each-card"></a>Propriedades dentro de cada cartão

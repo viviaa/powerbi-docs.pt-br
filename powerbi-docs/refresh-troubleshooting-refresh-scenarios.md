@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 73d9d84552d49ca507fe4b6f9ec022bb7fb98866
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 8535787cb66ad2dc897ff3a3e4ecaccddfaa80f0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670844"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285106"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Solucionar problemas de atualização
 Aqui você pode encontrar informações sobre cenários diferentes que você pode encontrar ao atualizar dados no serviço Power BI.
@@ -37,7 +37,7 @@ Aguarde cerca de 10 a 15 minutos para a atualização ser refletida nos blocos d
 ## <a name="gatewaynotreachable-when-setting-credentials"></a>GatewayNotReachable ao definir credenciais
 Você pode encontrar GatewayNotReachable durante a tentativa de definir credenciais para uma fonte de dados. Isso pode ser o resultado de um gateway desatualizado.  Instale o gateway mais recente e tente novamente.
 
-## <a name="processing-error-the-following-system-error-occurred-type-mismatch"></a>Erro de processamento: o seguinte erro de sistema ocorreu: tipos incompatíveis
+## <a name="processing-error-the-following-system-error-occurred-type-mismatch"></a>Erro de processamento: ocorreu o seguinte erro de sistema: incompatibilidade de tipo
 Isso pode ser um problema com o script M em seu arquivo Power BI Desktop ou pasta de trabalho em Excel.  Também pode ser devido a uma versão do Power BI Desktop.
 
 ## <a name="tile-refresh-errors"></a>Erros de atualização de bloco
