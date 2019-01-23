@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679445"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282576"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Noções básicas do DAX no Power BI Desktop
 Este artigo é destinado aos novos usuários do Power BI Desktop. O objetivo é oferecer uma introdução rápida e fácil sobre como você pode usar expressões DAX (Data Analysis Expressions) para resolver vários problemas de análise de dados e de cálculo básico. Vamos examinar algumas informações conceituais e uma série de tarefas que você pode executar, além de alguns testes para verificar o que você aprendeu. Depois de ler este artigo, você deve ter uma boa compreensão dos conceitos fundamentais mais importantes no DAX.
@@ -36,7 +36,7 @@ Vamos nos concentrar em compreender as fórmulas DAX usadas em cálculos, mais e
 A melhor maneira de aprender sobre o DAX é criar algumas fórmulas básicas, usá-las com alguns dados reais e ver os resultados. Os exemplos e as tarefas aqui usam o Exemplo de Vendas da Contoso para o arquivo de Visualização do Power BI Desktop. Esse é o mesmo arquivo de exemplo usado no artigo [Tutorial: criar suas próprias medidas no Power BI Desktop](desktop-tutorial-create-measures.md). Veja o [arquivo de exemplo](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) para baixar.
 
 ## <a name="lets-begin"></a>Vamos começar!
-Vamos estruturar nossa compreensão do DAX em torno de três conceitos fundamentais: *Sintaxe*, *Funções* e *Contexto*. Claro que há outros conceitos importantes no DAX, mas entender esses três conceitos oferecerá a melhor base para desenvolver suas habilidades com o DAX.
+Vamos estruturar nossa compreensão do DAX em torno de três conceitos fundamentais: *sintaxe*, *funções* e *contexto*. Claro que há outros conceitos importantes no DAX, mas entender esses três conceitos oferecerá a melhor base para desenvolver suas habilidades com o DAX.
 
 ### <a name="syntax"></a>Sintaxe
 Antes de criar suas próprias fórmulas, vamos dar uma olhada na sintaxe das fórmulas DAX. A sintaxe inclui os vários elementos que compõem uma fórmula, ou mais resumidamente, o modo como a fórmula é escrita. Por exemplo, vamos examinar uma medida de uma fórmula DAX simples.
@@ -65,7 +65,7 @@ Ao tentar entender uma fórmula DAX, geralmente é útil decompor os elementos e
 
 Quando adicionada a um relatório, essa medida calcula e retorna valores somando as quantidades de vendas para cada um dos outros campos que são incluídos, por exemplo, “Cell Phones in the USA”.
 
-Você deve estar pensando: “Por acaso essa medida não faz a mesma coisa que adicionar o campo SalesAmount ao meu relatório?” Bem, sim. Porém, há um bom motivo para criar nossa própria medida que soma os valores do campo SalesAmount: podemos usar isso como um argumento em outras fórmulas. Isso pode parecer um pouco confuso agora, mas à medida que suas habilidades com fórmulas DAX aumentarem, saber disso tornará suas fórmulas e seu modelo mais eficientes. Na verdade, você verá mais tarde a medida Total Sales aparecendo como um argumento em outras fórmulas.
+Você deve estar pensando: “Por acaso essa medida não faz a mesma coisa que adicionar o campo SalesAmount ao meu relatório?” Bem, sim. Mas há um bom motivo para criar nossa própria medida que soma os valores do campo SalesAmount: podemos usar isso como um argumento em outras fórmulas. Isso pode parecer um pouco confuso agora, mas à medida que suas habilidades com fórmulas DAX aumentarem, saber disso tornará suas fórmulas e seu modelo mais eficientes. Na verdade, você verá mais tarde a medida Total Sales aparecendo como um argumento em outras fórmulas.
 
 Vamos dar uma olhada em mais alguns pontos sobre essa fórmula. Em especial, vale lembrar que introduzimos uma função, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funções são fórmulas gravadas previamente, que tornam mais fácil fazer cálculos complexos e manipulações com números, datas, hora, texto e muito mais. Você aprenderá mais sobre as funções mais tarde.
 
@@ -83,9 +83,9 @@ Vamos criar uma fórmula simples. Essa tarefa ajudará você a entender melhor a
 ### <a name="task-create-a-measure-formula"></a>Tarefa: criar uma fórmula de medida
 Para concluir esta tarefa, você precisará abrir o arquivo Exemplo de Vendas da Contoso para o Power BI Desktop.
     
-1. Na visualização de Relatório, na lista Campos, clique com o botão direito do mouse na tabela **Sales** e clique em Nova Medida.
+1. Na visualização de Relatório, na lista Campos, clique com o botão direito do mouse na tabela **Sales** e clique em **Nova Medida**.
     
-2. Na barra de fórmulas, substitua **Measure** digitando um novo nome de medida, Previous Quarter Sales.
+2. Na barra de fórmulas, substitua **Measure** digitando um novo nome de medida, **Previous Quarter Sales**.
     
 3. Após o sinal de igual, digite as primeiras letras **CAL** e, em seguida, clique duas vezes na função que você deseja usar. Nesta fórmula, você deseja usar a função **CALCULATE**.
 
@@ -134,7 +134,7 @@ As respostas são fornecidas no final deste artigo.
 ### <a name="functions"></a>Funções
 Funções são fórmulas predefinidas que realizam cálculos usando valores específicos, chamados argumentos, em uma determinada ordem ou estrutura. Argumentos podem ser outras funções, outra fórmula, expressão, referências de coluna, números, texto, valores lógicos como TRUE ou FALSE, ou constantes.
 
-O DAX inclui as seguintes categorias de funções: [Data e Hora](https://msdn.microsoft.com/library/ee634786.aspx), [Inteligência de Dados Temporais](https://msdn.microsoft.com/library/ee634763.aspx), [Informações](https://msdn.microsoft.com/library/ee634552.aspx), [Lógica](https://msdn.microsoft.com/library/ee634365.aspx), [Matemática](https://msdn.microsoft.com/library/ee634241.aspx), [Estatística](https://msdn.microsoft.com/library/ee634822.aspx), [Texto](https://msdn.microsoft.com/library/ee634938.aspx), [Pai/Filho](https://msdn.microsoft.com/library/mt150102.aspx) e [Outras](https://msdn.microsoft.com/library/mt150101.aspx). Se já estiver familiarizado com as funções em fórmulas do Excel, muitas das funções no DAX podem parecer semelhantes para você. No entanto, as funções DAX são exclusivas nos seguintes aspectos:
+O DAX inclui as seguintes categorias de funções: [Date and Time](https://msdn.microsoft.com/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/library/ee634763.aspx), [Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logical](https://msdn.microsoft.com/library/ee634365.aspx), [Mathematical](https://msdn.microsoft.com/library/ee634241.aspx), [Statistical](https://msdn.microsoft.com/library/ee634822.aspx), [Text](https://msdn.microsoft.com/library/ee634938.aspx), [Parent/Child](https://msdn.microsoft.com/library/mt150102.aspx) e [Other](https://msdn.microsoft.com/library/mt150101.aspx). Se já estiver familiarizado com as funções em fórmulas do Excel, muitas das funções no DAX podem parecer semelhantes para você. No entanto, as funções DAX são exclusivas nos seguintes aspectos:
 
 * Uma função DAX sempre referencia uma coluna ou uma tabela completa. Se desejar usar apenas valores específicos de uma tabela ou coluna, é possível adicionar filtros à fórmula.
 * Se precisar personalizar cálculos linha por linha, o DAX fornece funções que permitem usar o valor da linha atual ou um valor relacionado como um tipo de argumento, para realizar cálculos que variam de acordo com o contexto. Você aprenderá mais sobre contexto posteriormente.
@@ -160,7 +160,7 @@ Contexto é um dos conceitos do DAX mais importantes para se compreender. Há do
 
 **Contexto de filtro**
 
-O contexto do filtro é um pouco mais difícil de entender do que o contexto de linha. É mais fácil pensar no contexto de filtro como um ou mais filtros aplicados em um cálculo que determina um resultado ou valor.
+O contexto do filtro é um pouco mais difícil de entender do que o contexto de linha. Você pode pensar com facilidade no contexto de filtro como: um ou mais filtros aplicados em um cálculo para determinar um resultado ou valor.
 
 O contexto de filtro não existe no lugar do contexto de linha; em vez disso, eles são aplicados em conjunto. Por exemplo, para restringir ainda mais os valores a serem incluídos em um cálculo, você pode aplicar um contexto de filtro que não só especifica o contexto de linha, mas também especifica apenas um valor específico (filtro) nesse contexto de linha.
 
