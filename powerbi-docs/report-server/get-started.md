@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 4db2f7ca5a84563e86b3a3033daae6d83bffcf5e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23b78ba20666d1a1d942c7a5bd59991205991bc1
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291960"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394822"
 ---
 # <a name="what-is-power-bi-report-server"></a>O que é o Servidor de Relatórios do Power BI?
 
@@ -51,7 +51,7 @@ Um relatório do Power BI é uma exibição de um modelo de dados em várias per
 Instale o [Power BI Desktop otimizado para o Servidor de Relatórios do Power BI](quickstart-create-powerbi-report.md).
 
 ## <a name="paginated-reports"></a>Relatórios paginados
-Relatórios paginados (.RDL) são relatórios com estilo de documento com visualizações, em que tabelas são expandidas horizontal e verticalmente para exibir todos os dados, continuando de página a página conforme necessário. Isso é ótimo para gerar documentos com layout fixo e pixels perfeitos otimizados para impressão, como arquivos PDF e Word. 
+Relatórios paginados (.RDL) são relatórios com estilo de documento com visualizações, em que tabelas são expandidas horizontal e verticalmente para exibir todos os dados, continuando de página a página conforme necessário. Eles são ótimos para gerar documentos com layout fixo e pixels perfeitos otimizados para impressão, tais como arquivos PDF e Word. 
 
 ![Relatórios paginados no Servidor de Relatórios do Power BI](media/get-started/paginated-reports.png)
 

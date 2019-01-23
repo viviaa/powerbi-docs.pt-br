@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d4eeebca1505d376a403bf18f125782efb0d656d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283864"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394748"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Atualização agendada de relatório do Power BI no Servidor de Relatórios do Power BI
 A atualização agendada dos relatórios do Power BI permite que os dados de um relatório permaneçam atualizados.
@@ -49,7 +49,7 @@ Nem todos os relatórios do Power BI permitem a criação de um plano de atualiz
 * O relatório contém uma ou mais fontes de dados que usam o DirectQuery.
 * O relatório não contém nenhuma fonte de dados. Por exemplo, os dados são inseridos manualmente por meio da opção *Inserir Dados* ou um relatório contém apenas conteúdo estático, como imagens, texto, etc.
 
-Além da lista acima, há cenários específicos com fontes de dados no modo *Importar* para o qual não é possível criar planos de atualização.
+Além da lista acima, há cenários específicos com fontes de dados no modo *Importar* para os quais não é possível criar planos de atualização.
 
 * Se uma fonte de dados de *Arquivo* ou de *Pasta* for usada e o caminho do arquivo for um caminho local (por exemplo, C:\Users\user\Documents), não será possível criar um plano de atualização. O caminho deverá ser um caminho ao qual o servidor de relatório possa se conectar, como um compartilhamento de rede. Por exemplo, *\\myshare\Documents*.
 * Se for possível conectar a fonte de dados usando apenas o OAuth (por exemplo, Facebook, Google Analytics, Salesforce, etc.), o plano de atualização de cache não poderá ser criado. No momento, o Servidor de Relatórios não é compatível com a autenticação OAuth para nenhum tipo de fonte de dados, independentemente dos relatórios serem paginados, móveis ou do Power BI.

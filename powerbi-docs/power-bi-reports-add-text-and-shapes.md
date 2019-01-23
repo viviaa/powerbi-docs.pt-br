@@ -1,24 +1,24 @@
 ---
 title: Caixas de texto e formas nos relatórios do Power BI
 description: Documentação sobre como adicionar e criar caixas de texto e formas em um relatório usando o serviço do Microsoft Power BI.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/22/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 937e15f5cd56f7c720afa945598f9fc1641468f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295525"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406536"
 ---
-# <a name="static-content-in-power-bi-reports"></a>Conteúdo estático nos relatórios do Power BI
+# <a name="text-boxes-and-shapes-power-bi-reports"></a>Caixas de texto e formas nos relatórios do Power BI
 Formas e caixas de texto podem ser adicionadas a relatórios usando o serviço Power BI e o Power BI Desktop. Em ambos os casos, você deve ter permissões de edição para o relatório. Se um relatório tiver sido compartilhado com você no serviço do Power BI, você não terá permissões de edição. 
 
 Veja como Pedro usa o Power BI Desktop para [adicionar imagens estáticas a um relatório](guided-learning/visualizations.yml?tutorial-step=11) e, em seguida, siga as etapas abaixo para testá-lo por conta própria usando o serviço Power BI.

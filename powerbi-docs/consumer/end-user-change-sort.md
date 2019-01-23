@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: Conceptual
-ms.date: 12/06/2018
+ms.date: 01/17/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28dcba5a44da4d0acd8f1b6d0a1bfce655eb46bd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e648257ecd657b07d02fbff69a3424159b636059
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280092"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394677"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Altere como um gráfico é classificado em um relatório do Power BI
 Em um relatório do Power BI, você pode classificar a maioria das visualizações em ordem alfabética pelos nomes das categorias no gráfico, ou pelos valores numéricos de cada categoria. Por exemplo, este gráfico é classificado pela categoria **nome de loja**.
@@ -33,17 +33,17 @@ Em um relatório do Power BI, você pode classificar a maioria das visualizaçõ
    **OBSERVAÇÃO**: Nem todos os visuais podem ser classificados.  Por exemplo, os seguintes visuais não podem ser classificados: Mapa de Árvore, Mapa, Mapa Coroplético, Dispersão, Medidor, Cartão, de Várias Linhas e Cascata.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Salvar as alterações feitas na ordem de classificação
-Os relatórios do Power BI retêm os filtros, divisões, classificações e outras alterações de exibição de dados que você fizer. Portanto, se você sair de um relatório e retornar mais tarde, suas alterações serão salvas.  Se você quiser reverter as alterações para as configurações do criador do relatório, selecione **Redefinir para padrão** na barra de menus superior. 
+Os relatórios do Power BI retêm os filtros, divisões, classificações e outras alterações de exibição de dados que você fizer. Portanto, se você sair de um relatório e retornar mais tarde, suas alterações serão salvas.  Se você quiser reverter as alterações para as configurações do designer do relatório, selecione **Redefinir para padrão** na barra de menus superior. 
 
 ![classificação persistente](media/end-user-change-sort/power-bi-reset-to-default.png)
 
-Se, no entanto, o botão **Redefinir para padrão** estiver esmaecido, significará que o criador do relatório desabilitou a funcionalidade de salvar (persistir) as alterações.
+Se, no entanto, o botão **Redefinir para padrão** estiver esmaecido, significará que o designer do relatório desabilitou a funcionalidade de salvar (persistir) as alterações.
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Classificando o uso de outros critérios
 Às vezes, você deseja classificar seu visual usando um campo diferente ou outros critérios.  Por exemplo, talvez você queira classificar por mês (e não em ordem alfabética) ou talvez queira classificar por números inteiros em vez de por dígitos (exemplo, 0, 1, 9, 20 e não 0, 1, 20, 9).  
 
-Em alguns casos, é permitido classificar o visual da maneira desejada, por exemplo, por mês.  Caso não seja possível, o motivo poderá ser que o conjunto de dados subjacente ao relatório precisa de alguns ajustes. Solicitar ao criador do relatório a atualização do conjunto de dados.
+Em alguns casos, é permitido classificar o visual da maneira desejada, por exemplo, por mês.  Caso não seja possível, o motivo poderá ser que o conjunto de dados subjacente ao relatório precisa de alguns ajustes. Peça para o designer do relatório atualizar o conjunto de dados.
 
 ## <a name="next-steps"></a>Próximas etapas
 Mais sobre [Visualizações nos relatórios do Power BI](end-user-visualizations.md).

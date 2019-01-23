@@ -1,25 +1,25 @@
 ---
 title: Adicionar um hiperlink a uma caixa de texto em um relatório
 description: Adicionar um hiperlink a uma caixa de texto no serviço do Power BI e Desktop
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/23/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b438b9d9e66d336b94122fe96a707f0602261b4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6484046f6c69f47e01e14b56c38c4c9a5871b28b
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277960"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406582"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Adicionar um hiperlink a uma caixa de texto em um relatório
-Caixas de texto podem ser adicionadas a relatórios, fixadas em painéis dos relatórios e adicionadas diretamente a painéis. Hiperlinks podem ser adicionados a uma caixa de texto, independentemente de onde ele reside.  
+Você pode adicionar caixas de texto a relatórios, fixá-las em dashboards por meio de relatórios e adicioná-las diretamente aos dashboards. Onde quer que a caixa de texto esteja, você sempre poderá adicionar um hiperlink a ela.  
 
 > **OBSERVAÇÃO**: para saber mais sobre hiperlinks nas tabelas e matrizes do Power BI, consulte [Hiperlinks em tabelas](power-bi-hyperlinks-in-tables.md). Para obter informações sobre como adicionar caixas de texto a seu **painel**, veja [Adicionar um bloco diretamente do painel](service-dashboard-add-widget.md). 
 > 
@@ -30,26 +30,26 @@ Caixas de texto podem ser adicionadas a relatórios, fixadas em painéis dos rel
 
 ## <a name="to-add-a-hyperlink-to-a-text-box-in-a-report"></a>Para adicionar um hiperlink a uma caixa de texto em um relatório
 1. [Crie uma caixa de texto e adicione um texto](power-bi-reports-add-text-and-shapes.md). 
-2. Realce o texto existente ou adicione novo texto a ser usado como hiperlink.
+2. Selecione o texto existente ou adicione um novo texto a ser usado como hiperlink.
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
-3. Selecione o ícone de hiperlink ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png).
+   ![Selecionar o texto na caixa de texto](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
+3. Selecione o ícone de hiperlink ![Ícone de Hiperlink](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png).
 4. Digite ou cole a URL no campo hiperlink e selecione **Concluído**.
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
+   ![Digite ou cole a URL no campo de hiperlink](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
 5. Teste o link.  
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
+   ![Teste o link](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
    
    * Coloque o cursor em qualquer lugar no texto realçado para exibir a URL.  
      
-      ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
+      ![Coloque o cursor em qualquer lugar no texto realçado](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
    * Selecione a URL para abrir a página em uma nova janela do navegador.
 
 ## <a name="to-remove-the-hyperlink-but-leave-the-text"></a>Para remover o hiperlink, mas deixar o texto
 1. Na caixa de texto, selecione o hiperlink para realçá-lo,
    
-     ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
+     ![Remova o hiperlink](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
 2. Escolha **Remover**. 
 
 ## <a name="next-steps"></a>Próximas etapas

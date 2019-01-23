@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 4b8cd79eca1711b424d772737b27400f9291cef0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4d121a469257c79e37212ab0e357bb9ee8be68ec
+ms.sourcegitcommit: 19b4d45db8f55cdbb5d7de0d61f6be5163a2852e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279195"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54420776"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Início Rápido: Conectar-se a dados no Power BI Desktop
 
@@ -28,7 +28,7 @@ Se você não estiver inscrito no Power BI, [inscreva-se para uma avaliação gr
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas neste artigo, você precisará do seguinte:
-* Baixe e instale o **Power BI Desktop**, que é um aplicativo gratuito executado no computador local. Você pode [baixar o **Power BI Desktop**](https://powerbi.microsoft.com/desktop) diretamente ou você pode obtê-lo [da **Microsoft Store**](http://aka.ms/pbidesktopstore).
+* Baixe e instale o **Power BI Desktop**, que é um aplicativo gratuito executado no computador local. Você pode [baixar o **Power BI Desktop**](https://powerbi.microsoft.com/desktop) diretamente ou obtê-lo [na **Microsoft Store**](http://aka.ms/pbidesktopstore).
 * [Baixe esta pasta de trabalho do Excel de exemplo](http://go.microsoft.com/fwlink/?LinkID=521962) e crie uma pasta chamada *C:\PBID-qs*, na qual você pode armazenar o arquivo do Excel. As etapas posteriores neste início rápido pressupõem que esse é o local do arquivo da pasta de trabalho do Excel baixado.
 
 ## <a name="launch-power-bi-desktop"></a>Inicie o Power BI Desktop
@@ -39,13 +39,13 @@ Depois de instalar **Power BI Desktop**, inicie o aplicativo para que ele esteja
 
 ## <a name="connect-to-data"></a>Conectar-se a dados
 
-Com o **Power BI Desktop**, você pode se conectar a muitos tipos de dados diferentes. Você pode se conectar a fontes de dados básicos, como a um arquivo do Microsoft Excel, bem como a serviços online que contêm todos os tipos de dados, como o Salesforce, o Microsoft Dynamics, o Armazenamento de Blobs do Azure e muito mais. 
+Com o **Power BI Desktop**, você pode se conectar a muitos tipos de dados diferentes. Você pode se conectar a fontes de dados básicos, como a um arquivo do Microsoft Excel, bem como a serviços online que contêm todos os tipos de dados, como o Salesforce, o Microsoft Dynamics, o Armazenamento de Blobs do Azure e muito mais.
 
 Para se conectar a dados, selecione **Obter Dados** na faixa de opções **Início**.
 
 ![Obter Dados](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-É exibida a janela **Obter Dados**, na qual você pode escolher entre várias fontes de dados a que o **Power BI Desktop** pode se conectar. Neste início rápido, usamos a pasta de trabalho do Excel que você baixou, descrita a seção de *Pré-requisitos* no início deste artigo. 
+É exibida a janela **Obter Dados**, na qual você pode escolher entre várias fontes de dados a que o **Power BI Desktop** pode se conectar. Neste início rápido, usamos a pasta de trabalho do Excel que você baixou, descrita a seção de *Pré-requisitos* no início deste artigo.
 
 ![Obter Dados](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
@@ -69,10 +69,8 @@ Depois que você carregar as tabelas, o painel **Campos** mostrará os dados. Vo
 
 E isso é tudo! Você se conectou a dados no **Power BI Desktop**, carregou os dados e, agora, pode ver todos os campos disponíveis nessas tabelas.
 
-
 ## <a name="next-steps"></a>Próximas etapas
+
 Há inúmeras coisas que você pode fazer com o **Power BI Desktop** depois de se conectar aos dados, como criar relatórios e visuais. Veja o recurso a seguir para prosseguir:
 
 * [Guia de Introdução do Power BI Desktop](desktop-getting-started.md)
-
-

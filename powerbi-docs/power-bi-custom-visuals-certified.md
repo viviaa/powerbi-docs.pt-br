@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/21/2018
-ms.openlocfilehash: bfe3421b2c2328ee65cb8f34b43b34de8fe98723
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 03b18d4d603b09d34dd3f99decc841c3bae934f4
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280207"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394834"
 ---
 # <a name="certified-custom-visuals"></a>Visuais personalizados certificados
 
@@ -74,6 +74,10 @@ Para enviar um visual personalizado para certificação:
 | Link para AppSource | Link para o vídeo |
 | --- | --- |
 | [3AG Systems – Column Chart With Relative Variance](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381803) (Sistemas 3AG – gráfico de colunas com variação relativa) | |
+| [Visual de Rosca Avançado](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381941) | |
+| [Visualização de Rede Avançada](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381942) | |
+| [Visual de Série Temporal Avançada](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381943) | |
+| [Visual de Combinação Avançado](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381944) | |
 | [Aster Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft Calendar](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Vídeo](https://youtu.be/So5xKMSpVJI) |
