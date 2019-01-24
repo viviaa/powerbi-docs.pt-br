@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286371"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838452"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introdução aos pacotes de conteúdo organizacional no Power BI
 > [!NOTE]
@@ -41,8 +41,6 @@ Os dashboards, relatórios e pastas de trabalho do Excel são somente leitura, m
 A publicação de um pacote de conteúdo organizacional o adiciona ao AppSource.  Este repositório centralizado facilita para os membros navegar e descobrir painéis, relatórios e conjuntos de dados publicados para eles.  
 
 * Para exibir o AppSource, selecione **Obter Dados** > **Minha Organização** > **Obter**.
-
-Leia mais sobre como [encontrar e abrir pacotes de conteúdo organizacional](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>O ciclo de vida de um pacote de conteúdo organizacional
 Qualquer usuário do Power BI Pro pode criar, publicar e acessar pacotes de conteúdo organizacional. Apenas o criador do pacote de conteúdo pode modificar a pasta de trabalho e o conjunto de dados, bem como agendar a atualização e exclui-la.
