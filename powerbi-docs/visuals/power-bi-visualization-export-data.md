@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 06ff1326c902c723614b3b89c0b5c1217fa06ea3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295569"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838429"
 ---
 # <a name="export-data-from-visualizations"></a>Exportar dados de uma visualização
 Se desejar ver os dados usados para criar uma visualização, [você poderá exibi-los no Power BI](service-reports-show-data.md) ou exportá-los para o Excel como um arquivo .xlsx ou .csv. A opção de exportação de dados requer uma licença Pro ou Premium e a edição de permissões para o conjunto de dados e o relatório. 
@@ -83,7 +83,7 @@ O que você vê quando seleciona **Dados subjacentes** pode variar. Compreender 
 | O visual contém |                                                                              O que você verá na exportação                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Agregações    |                                                 os *primeiros* dados de agregação e não ocultos da tabela inteira para essa agregação                                                  |
-|   Agregações    | dados relacionados – se o visual usa dados de outras tabelas de dados que são *\*\*relacionados*\* à tabela de dados que contém a agregação (desde que essa relação seja \*: 1 ou 1:1) |
+|   Agregações    | Dados relacionados – Se o visual usa dados de outras tabelas de dados que são *relacionados* à tabela de dados que contém a agregação (desde que essa relação seja \*:1 ou 1:1) |
 |    Medidas     |                                      Todas as medidas no visual *e* todas as medidas de qualquer tabela de dados contendo uma medida usada no visual                                      |
 |    Medidas     |                                       Todos os dados não ocultos de tabelas que contêm essa medida (desde que essa relação é \*: 1 ou 1:1)                                       |
 |    Medidas     |                                      Todos os dados de todas as tabelas que estão relacionadas à tabela (contendo as medidas por meio de uma cadeia de \*: 1 de 1:1)                                      |

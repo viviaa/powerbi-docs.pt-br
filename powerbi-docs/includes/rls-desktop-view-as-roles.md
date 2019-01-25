@@ -1,20 +1,21 @@
-## <a name="validating-the-role-within-power-bi-desktop"></a>Validando a função no Power BI Desktop
-Depois de criar sua função, você poderá testar os resultados da função no Power BI Desktop. Para fazer isso, selecione **Exibir Como Funções**.
+## <a name="validate-the-roles-within-power-bi-desktop"></a>Validar as funções dentro do Power BI Desktop
+Depois de criar sua função, você poderá testar os resultados da função no Power BI Desktop.
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+1. Selecione  **Exibir como Funções**. 
 
-A caixa de diálogo **Exibir como funções** permite alterar a exibição do que você está vendo para esse usuário ou essa função específica. Você pode ver as funções que criou.
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    Em **Exibir como funções**, você pode ver as funções que criou.
 
-Selecione a função que criou e, em seguida, selecione **OK** para aplicar essa função ao que está sendo exibido. Os relatórios renderizam somente os dados relevantes para essa função.
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-Você também pode selecionar **Outro usuário** e fornecer um determinado usuário. É melhor fornecer o nome UPN, pois é ele que o serviço do Power BI usa. Selecione **OK** e os relatórios serão renderizados com base no que esse usuário pode ver. 
+3. Selecione uma função que você criou > **OK**  para aplicar essa função. Os relatórios renderizam somente os dados relevantes para essa função. 
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+4. Você também pode selecionar **Outro usuário** e fornecer um determinado usuário. É melhor fornecer o nome UPN, é ele que será usado pelo serviço do Power BI e pelo Servidor de Relatórios do Power BI.
 
-> [!NOTE]
-> No Power BI Desktop, essa opção somente exibirá resultados diferentes se você estiver usando a segurança dinâmica com base em expressões DAX.
-> 
-> 
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+
+1. Selecione  **OK**  e os relatórios serão renderizados com base no que esse usuário pode ver. 
+
+No Power BI Desktop, a opção **Outro usuário** somente exibirá resultados diferentes se você estiver usando a segurança dinâmica com base em expressões DAX. 
 

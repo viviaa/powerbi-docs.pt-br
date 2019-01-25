@@ -9,18 +9,41 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: edf953f2512550660fd914d2fe54c28dcd01fa24
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488858"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatório do Power BI
 
 Esse log de alterações é para o Servidor de Relatório do Power BI e lista novos itens juntamente com correções de bug para cada build lançado.
 
 Para obter informações detalhadas sobre os novos recursos, consulte [Novidades no Servidor de Relatório do Power BI](whats-new.md). 
+
+## <a name="january-2019"></a>Janeiro de 2019
+- **Servidor de Relatório do Power BI**            
+    - *Versão 1.4.6960.38798 (Build 15.0.1102.222), Lançamento: 22 de janeiro de 2019*
+        - Recursos
+            - Relatórios do Power BI 
+                - Suporte para Segurança em Nível de Linha
+                - Expandir e recolher nos cabeçalhos de linha de matriz
+                - Copiar e colar entre arquivos .pbix
+                - Guias de alinhamento inteligente
+                - Suporte para Conector SAP BW 2.0
+            - Administradores
+                - Capacidade de definir extensões de recursos que podem ser carregados para o servidor de relatório
+                - Capacidade de restringir os esquemas de hiperlink compatíveis
+        - Correções de bug
+            - Vulnerabilidade de injeção de HTML
+            - A exportação para PDF não está mostrando o símbolo de Euro
+            - A ação de salvar uma senha com várias fontes de dados em relatórios do Power BI invalida as senhas não alteradas
+            - Visuais exibem problemas no Aplicativo Power BI Mobile depois de ficarem ociosos
+
+- **Power BI Desktop (otimizado para o Servidor de Relatórios do Power BI)**
+    - *Versão: 2.65.5313.1421 (janeiro de 2019), lançamento: 22 de janeiro de 2019*
+        - Contém as alterações necessárias para conexão com o Servidor de Relatórios do Power BI (janeiro de 2019)  
 
 ## <a name="august-2018"></a>Agosto de 2018
 - **Servidor de Relatório do Power BI**

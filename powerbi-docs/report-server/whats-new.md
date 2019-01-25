@@ -8,31 +8,47 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/22/2019
+ms.openlocfilehash: 2a65baf94abcb79dac7bb9419ad67124f2b65bb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488927"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Novidades no Servidor de Relatório do Power BI
 
 Saiba quais são as novidades no Servidor de Relatório do Power BI. Este artigo aborda as principais áreas de recursos e é atualizado conforme novos itens são lançados.
 
-Para baixar o Servidor de Relatório do Power BI e o Power BI Desktop otimizado para o Servidor de Relatório do Power BI, acesse [Relatórios locais com o Servidor de Relatório do Power BI](https://powerbi.microsoft.com/report-server/).
-
-Consulte também essas fontes para ficar atualizado sobre os novos recursos no Servidor de Relatórios do Power BI.
-
-* [Blog do Microsoft Power BI](https://powerbi.microsoft.com/blog/)
-* [Blog da equipe do SQL Server Reporting Services](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* O [canal do YouTube Guy in a Cube](https://aka.ms/guyinacube)
+Para baixar as versões mais recentes do Servidor de Relatórios do Power BI e do Power BI Desktop otimizado para o Servidor de Relatórios do Power BI, acesse [Relatórios locais com o Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/report-server/).
 
 Para saber mais sobre as “Novidades” do Power BI, consulte:
 
 * [Novidades no serviço do Power BI](../service-whats-new.md)
 * [Novidades no Power BI Desktop](../desktop-latest-update.md)
 * [Novidades em aplicativos móveis para o Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2019"></a>Janeiro de 2019
+
+Suporte para esses recursos em relatórios do Power BI:
+
+[**Segurança em nível de linha**](row-level-security-report-server.md) Configurar a RLS (Segurança em Nível de Linha) com o Servidor de Relatórios do Microsoft Power BI pode restringir acesso a dados para determinados usuários. Os filtros restringem o acesso a dados no nível da linha e você pode definir filtros nas funções.
+
+[**Expandir e recolher os cabeçalhos de linha de matriz**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Adicionamos a capacidade de expandir e recolher cabeçalhos de linha individuais, um dos recursos visuais mais solicitados.
+
+[**Copiar e colar entre arquivos .pbix**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Você pode copiar os elementos visuais entre arquivos .pbix, no menu de contexto do visual ou com o atalho de teclado Ctrl + C padrão e colá-los em outro relatório com Ctrl + V.
+
+[**Guias de alinhamento inteligentes**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Você vê guias de alinhamento inteligentes ao mover objetos na sua página de relatório, assim como você vê no PowerPoint, para ajudá-lo a alinhar tudo na sua página. Você vê as guias inteligentes sempre que você arrasta ou redimensiona algo na página. Quando você move um objeto para perto de outro, ele se ajusta em uma posição alinhada com o outro objeto.
+
+**Recursos de acessibilidade** Há muitos recursos de acessibilidade para listar: por exemplo, [suporte de acessibilidade do painel de lista de campos](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). O painel de lista de campos é totalmente acessível. Você pode navegar pelo painel usando apenas o teclado e um leitor de tela e usar o menu de contexto para adicionar campos à sua página de relatório.
+
+### <a name="administrator-settings"></a>Configurações do administrador
+
+Os administradores podem definir as seguintes propriedades nas Propriedades Avançadas do SSMS para o farm de servidores:
+
+**AllowedResourceExtensionsForUpload** Definir extensões de recursos que podem ser carregados para o servidor de relatório. Extensões para tipos de arquivo internos, como &ast;.rdl e &ast;.pbix não devem ser incluídos. O padrão é "&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx". 
+
+**SupportedHyperlinkSchemes** Define uma lista separada por vírgulas dos esquemas de URI que têm permissão para serem definidos em ações de hiperlink que têm permissão para serem processados ou então "&ast;" para habilitar todos os esquemas de hiperlink. Por exemplo, definir "http,https" permitiria hiperlinks para "https://www. contoso.com", mas removeria hiperlinks para "mailto:bill@contoso.com" ou "javascript:window.open(‘www.contoso.com’, ‘_blank’)". O padrão é "&ast;".
 
 ## <a name="august-2018"></a>Agosto de 2018
 
@@ -325,10 +341,10 @@ O Servidor de Relatórios do Power BI agora é compatível com os novos elemento
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[O que é o Servidor de Relatórios do Power BI?](get-started.md) 
-[Manual do administrador](admin-handbook-overview.md)  
-[Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
-[Baixar o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Baixar o SSDT (SQL Server Data Tools)](http://go.microsoft.com/fwlink/?LinkID=616714)
+Verifique essas fontes para ficar atualizado sobre os novos recursos no Servidor de Relatórios do Power BI.
+
+* [Blog do Microsoft Power BI](https://powerbi.microsoft.com/blog/)
+* [Blog da equipe do SQL Server Reporting Services](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* O [canal do YouTube Guy in a Cube](https://aka.ms/guyinacube)
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

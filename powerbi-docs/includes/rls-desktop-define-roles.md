@@ -1,16 +1,16 @@
-## <a name="define-roles-and-rules-within-power-bi-desktop"></a>Definir funções e regras no Power BI Desktop
+## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Definir funções e regras no Power BI Desktop
 É possível definir funções e regras no Power BI Desktop. Quando você publica no Power BI, ele também publica as definições de função.
 
-Para definir funções de segurança, faça o seguinte:
+Para definir funções de segurança, siga estas etapas.
 
 1. Importe os dados para o relatório do Power BI Desktop ou configure uma conexão do DirectQuery.
    
    > [!NOTE]
-   > Você não pode definir funções no Power BI Desktop BI para as conexões dinâmicas do Analysis Services. Você precisará fazer isso no modelo do Analysis Services.
+   > Você não pode definir funções no Power BI Desktop BI para as conexões dinâmicas do Analysis Services. Você precisa fazer isso no modelo do Analysis Services.
    > 
    > 
-2. Selecione a guia **Modelagem**.
-3. Selecione **Gerenciar Funções**.
+1. Selecione a guia **Modelagem**.
+2. Selecione **Gerenciar Funções**.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security.png)
 4. Selecione **Criar**.
@@ -21,7 +21,7 @@ Para definir funções de segurança, faça o seguinte:
 7. Insira as expressões DAX. Essa expressão deve retornar true ou false. Por exemplo: [ID da Entidade] = “Valor”.
    
    > [!NOTE]
-   > Você pode usar o *username()* nesta expressão. Lembre-se de que *username()* terá o formato *DOMÍNIO\nomeusuário* no Power BI Desktop. No serviço do Power BI, ele estará no formato do UPN do usuário. Como alternativa, você pode usar *userprincipalname()*, que sempre retorna o usuário no formato de seu nome UPN.
+   > Você pode usar o *username()* nesta expressão. Lembre-se de que *username()* terá o formato *DOMÍNIO\nomedeusuário* no Power BI Desktop. Dentro do serviço do Power BI e do Servidor de Relatórios do Power BI, ele está no formato do nome UPN do usuário. Como alternativa, você pode usar *userprincipalname()*, que sempre retorna o usuário no formato de seu nome UPN, *username@contoso.com*.
    > 
    > 
    
@@ -31,5 +31,5 @@ Para definir funções de segurança, faça o seguinte:
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
 9. Selecione **Salvar**.
 
-Não é possível atribuir usuários a uma função no Power BI Desktop. Isso é feito no serviço do Power BI. É possível habilitar a segurança dinâmica no Power BI Desktop fazendo uso das funções DAX *username()* ou *userprincipalname()* e configurando as relações corretas.
+Não é possível atribuir usuários a uma função no Power BI Desktop. Você pode atribuí-los no serviço do Power BI. É possível habilitar a segurança dinâmica no Power BI Desktop fazendo uso das funções DAX *username()* ou *userprincipalname()* e configurando as relações corretas. 
 

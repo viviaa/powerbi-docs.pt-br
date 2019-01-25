@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 01/21/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e741076bf345f093e249b398995a72a683ae84d6
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 0b423310e88917c910d44f15247bbaec49732f2c
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394791"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838314"
 ---
 # <a name="apps-in-power-bi"></a>Aplicativos no Power BI
 ## <a name="what-is-a-power-bi-app"></a>O que é um aplicativo do Power BI?
@@ -26,12 +26,14 @@ Seus aplicativos são organizados na lista de conteúdo **Aplicativos**.
 
 ![Aplicativos no Power BI](./media/end-user-apps/power-bi-apps-nav.png)
 
+> [!NOTE]
+> O uso de recurso dos aplicativos exige uma licença do Power BI Pro. <!-- add link to how to figure out your license -->
+
 ## <a name="app-designers-and-app-consumers"></a>***Designers*** de aplicativo e ***consumidores*** de aplicativo
 Dependendo da função, você pode ser alguém que cria aplicativos (designer) para seu próprio uso ou para compartilhar com colegas. Você também pode ser alguém que recebe e baixa aplicativos (consumidor) criados por outras pessoas. Este artigo é para *consumidores* de aplicativos.
 
 ## <a name="advantages-of-apps"></a>Vantagens dos aplicativos
 Os aplicativos são fáceis de localizar e instalar no serviço do Power BI ([https://powerbi.com](https://powerbi.com)) e em seu dispositivo móvel. Depois de instalar um aplicativo, não será necessário lembrar os nomes dos muitos dashboards diferentes, uma vez que eles são reunidos no aplicativo, no navegador ou no dispositivo móvel.
-
 
 Com os aplicativos, sempre que o autor do aplicativo liberar atualizações, você verá automaticamente as alterações. O autor também controla a frequência com a qual os dados são atualizados, de forma que você não precisa se preocupar em manter-se atualizado. 
 
