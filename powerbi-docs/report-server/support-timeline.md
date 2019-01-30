@@ -8,22 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: e24cf43c5797293f83c7f678dee328d502ac2243
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/24/2019
+ms.openlocfilehash: b2ddf1e55f54b9c671a92df497c0a2ae1afdcced
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280529"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907501"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Linha do tempo de suporte para Servidor de Relatório do Power BI
 
-O Servidor de Relatório do Power BI será liberado algumas vezes por ano. As atualizações críticas e de segurança estarão disponíveis até que a próxima versão seja lançada para o público geral (GA). Após a próxima versão, a versão anterior continuará recebendo atualizações de segurança pelo restante do tempo de vida de 12 meses da versão.
+O Servidor de Relatórios do Power BI é liberado algumas vezes por ano. Atualizações críticas e de segurança estão disponíveis até que a próxima versão seja lançada para o público geral (GA). Após a próxima versão, a versão anterior continua recebendo atualizações de segurança pelo restante do tempo de vida de 12 meses da versão.
 
 Essa política de suporte nos permite fornecer inovação para os clientes em ritmo acelerado, além de flexibilidade para os clientes adotarem a inovação em seu ritmo.
 
-* Fase de manutenção das Atualizações críticas e de segurança – ao executar a última versão atual do Servidor de Relatório do Power BI, você receberá atualizações críticas e de segurança.
-* Fase de manutenção (somente) de atualizações de segurança – após o lançamento de uma nova versão, o suporte para versões mais antigas será reduzido às atualizações de segurança somente durante o restante do ciclo de vida de suporte de 12 meses (mostrado na figura 1).
+* Fase de manutenção das Atualizações críticas e de segurança – ao executar a última versão atual do Servidor de Relatórios do Power BI, você recebe atualizações críticas e de segurança.
+* Fase de manutenção (somente) de atualizações de segurança – após o lançamento de uma nova versão, o suporte para versões mais antigas é reduzido às atualizações de segurança somente durante o restante do ciclo de vida de suporte de 12 meses (mostrado na figura 1).
 
     ![Grafo ilustrando o período de tempo de suporte](media/support-timeline/report-server-support-timeline-overall.png)
 
@@ -31,10 +31,11 @@ Essa política de suporte nos permite fornecer inovação para os clientes em ri
 
 | **Versão** | **Data de disponibilidade** | **Data de término do suporte** |
 | --- | --- | --- |
-| Junho de 2017 |12 de junho de 2017 |Não compatível |
-| Outubro de 2017 |31 de outubro de 2017 |31 de outubro de 2018 |
+| Junho de 2017 |12 de junho de 2017 |Não é mais compatível |
+| Outubro de 2017 |31 de outubro de 2017 | Não é mais compatível |
 | Março de 2018 | 19 de março de 2018 | 19 de março de 2019 |
 | Agosto de 2018 | 15 de agosto de 2018 | 15 de agosto de 2019 |
+| Janeiro de 2019 | 23 de janeiro de 2019 | 23 de janeiro de 2020 |
 
 Para baixar o Servidor de Relatório do Power BI e o Power BI Desktop otimizado para o Servidor de Relatório do Power BI, acesse [Relatórios locais com o Servidor de Relatório do Power BI](https://powerbi.microsoft.com/report-server/).
 

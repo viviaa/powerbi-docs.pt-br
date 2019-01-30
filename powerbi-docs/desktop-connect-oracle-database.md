@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dc26d6de5ca22fdabfd80bd7ba1d9830e274f808
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284485"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899217"
 ---
 # <a name="connect-to-an-oracle-database"></a>Conectar-se a um banco de dados Oracle
 Para se conectar a um banco de dados Oracle com o **Power BI Desktop**, o software cliente Oracle correto deve estar instalado no computador que executa o Power BI Desktop. O software cliente Oracle que você usa depende de qual versão do Power BI Desktop está instalada – a versão de **32 bits** ou a de **64 bits**.
@@ -51,3 +51,11 @@ Depois de instalar o driver de cliente Oracle correspondente, você pode se cone
 4. Após as informações do seu banco de dados Oracle serem inseridas na caixa de diálogo Banco de Dados Oracle (incluindo informações opcionais, como um SID ou uma consulta de banco de dados nativo), selecione **OK** para se conectar.
 5. Se o banco de dados Oracle exigir credenciais de usuário do banco de dados, insira as credenciais na caixa de diálogo quando solicitado.
 
+
+## <a name="troubleshooting"></a>Solução de problemas
+
+Se você baixou o Power BI Desktop da Microsoft Store, talvez não possa se conectar aos bancos de dados Oracle devido a um problema de driver do Oracle. Se você encontrar esse problema, a mensagem de erro retornada será "Referência de objeto não definida". Para resolver o problema, siga um destes procedimentos:
+
+* Baixe o Power BI Desktop pela https://powerbi.microsoft.com/desktop.
+
+* Se desejar usar a versão da Microsoft Store: no computador local, copie oraons.dll de _12.X.X\client_X_ para _12.X.X\client_X\bin_. O X representa números de versão e diretório.

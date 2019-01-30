@@ -8,21 +8,21 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 70eb50c493c6828ca03b1161138e1a4f4b1fae8e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284395"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147394"
 ---
-# <a name="tour-of-the-report-editor-in-power-bi"></a>Visão geral do editor de relatório no Power BI
+# <a name="tour-the-report-editor-in-power-bi"></a>Visão geral do editor de relatório no Power BI
 
 O *editor de relatório* no serviço do Power BI e o editor de relatório no Power BI Desktop são semelhantes. O vídeo mostra o editor de relatório no Power BI Desktop e este artigo mostra o editor de relatório no serviço do Power BI. 
 
-Como criador do relatório, você cria e edita relatórios e dashboards. Em seguida, você os distribui aos consumidores de relatórios. Eles podem interagir com seus dashboards e relatórios no modo de exibição de Leitura no serviço do Power BI, mas não podem editá-los. Leia mais sobre as diferenças entre o [Modo de Exibição de Leitura e o Modo de Exibição de Edição de relatórios no serviço do Power BI](consumer/end-user-reading-view.md) 
+Como criador do relatório, você cria e edita relatórios e dashboards. Em seguida, você os distribui aos consumidores de relatórios. Eles podem interagir com seus dashboards e relatórios no modo de exibição de Leitura no serviço do Power BI, mas não podem editá-los. Leia mais [o que os consumidores do relatório podem fazer no serviço do Power BI](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -65,7 +65,7 @@ Para remover um campo da visualização, selecione o **X** à direita do nome do
 Para obter mais informações, veja [Adicionar visualizações a um relatório do Power BI](visuals/power-bi-report-add-visualizations-i.md)
 
 ### <a name="format-your-visuals"></a>Formatar os elementos visuais
-Selecione o ícone de rolo de pintura para exibir o painel Formatar. A opção disponível depende do tipo de visualização selecionada.
+Selecione o ícone de rolo de pintura para exibir o painel Formatar. As opções disponíveis dependem do tipo de visualização selecionada.
 
 ![Painel de formatação no editor de relatório](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
 
@@ -76,7 +76,7 @@ As possibilidades de formatação são quase infinitas.  Para saber mais, explor
 * [Personalização das propriedades dos eixos x e y](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Adicionar análises às suas visualizações
-Selecione o ícone de lupa para exibir o painel Análise. A opção disponível depende do tipo de visualização selecionada.
+Selecione o ícone de lupa para exibir o painel Análise. As opções disponíveis dependem do tipo de visualização selecionada.
 
 ![Painel de análise no editor de relatório](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
 Com o painel Análise no serviço do Power BI, você pode adicionar linhas de referência dinâmica às visualizações e destacar tendências ou ideias importantes. Para saber mais, consulte [Painel de análise no serviço do Power BI](service-analytics-pane.md) ou [Painel de análise no Power BI Desktop](desktop-analytics-pane.md).
@@ -85,7 +85,7 @@ Com o painel Análise no serviço do Power BI, você pode adicionar linhas de re
 ## <a name="the-filters-pane"></a>O painel Filtros
 Use o painel de filtros para exibir, configurar e modificar filtros persistentes para seus relatórios no nível de página, relatórios, detalhamento e visual. Sim, você pode fazer a filtragem local nas páginas de relatório e nos elementos visuais selecionando os elementos visuais ou usando ferramentas como as segmentações, mas ao usar o painel Filtros, o estado dos filtros é salvo com o relatório. 
 
-O painel Filtros tem outro recurso eficiente, a capacidade de filtrar usando um campo ***que ainda não está sendo usado em um dos elementos visuais em seu relatório***. Deixe-me explicar. Quando você cria uma página de relatório, o Power BI adiciona automaticamente todos os campos que você usa nas suas visualizações para a área de filtros de nível visual do painel Filtros.  Porém, se quiser definir um visual, página, detalhamento ou relatório, filtre usando um campo que não esteja sendo usado em uma visualização, simplesmente arrastando-o para um dos buckets de filtros.   
+O painel Filtros tem outro recurso eficiente – a capacidade de filtrar usando um campo ***que ainda não está sendo usado em um dos elementos visuais em seu relatório***. Deixe-me explicar. Quando você cria uma página de relatório, o Power BI adiciona automaticamente todos os campos que você usa nas suas visualizações para a área de filtros de nível visual do painel Filtros.  Porém, se quiser definir um visual, página, detalhamento ou relatório, filtre usando um campo que não esteja sendo usado em uma visualização, simplesmente arrastando-o para um dos buckets de filtros.   
 
 ![Painel Filtros](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
@@ -109,7 +109,7 @@ Para obter mais informações, veja [Agregações em relatórios do Power BI](se
 Cada campo calculado tem sua própria fórmula embutida em código. Não é possível alterar o cálculo; por exemplo, se ele for uma soma, ele só poderá ser uma soma. Para obter mais informações, [leia Noções básicas sobre medidas](desktop-measures.md)
 
 ![Ícone de campo exclusivo](media/service-the-report-editor-take-a-tour/icon.png) **Campos exclusivos**  
-Os campos com este ícone foram importados do Excel e são definidos para mostrar todos os valores, mesmo se contiverem duplicatas. Por exemplo, seus dados podem ter dois registros para pessoas chamadas “Mateus Rodrigues” e cada um deles será tratado como exclusivo – eles não serão somados.  
+Os campos com este ícone foram importados do Excel e são definidos para mostrar todos os valores, mesmo se contiverem duplicatas. Por exemplo, seus dados podem ter dois registros para pessoas chamadas 'Mateus Rodrigues' e cada um deles será tratado como exclusivo – eles não serão somados.  
 
 **![Ícone de geografia](media/service-the-report-editor-take-a-tour/pbi_geo_icon.png) Campos de geografia**  
 Campos de local podem ser usados para criar visualizações de mapa. 
