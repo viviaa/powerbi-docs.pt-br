@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: c662fea5bb343d835cffec126ffe6eb071be2218
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7f1c05e1c396b1126bffbf6e62798e679decdca9
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296629"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431167"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutorial: Inserir um relatório, um painel ou um bloco do Power BI em um aplicativo para seus clientes
 
@@ -30,7 +30,7 @@ Neste tutorial, você aprenderá a:
 
 Para começar, é necessária uma conta do **Power BI Pro** (essa conta é sua **conta mestre**) e uma assinatura do **Microsoft Azure**.
 
-* Se não estiver inscrito no **Power BI Pro**, [inscreva-se para uma avaliação gratuita](https://powerbi.microsoft.com/en-us/pricing/) antes de começar.
+* Se não estiver inscrito no **Power BI Pro**, [inscreva-se para uma avaliação gratuita](https://powerbi.microsoft.com/pricing/) antes de começar.
 * Caso você não tenha uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) antes de começar.
 * Você precisa ter seu próprio [locatário do Azure Active Directory](create-an-azure-active-directory-tenant.md) configurado.
 * Você precisa do [Visual Studio](https://www.visualstudio.com/) instalado (versão 2013 ou posterior).
@@ -104,7 +104,7 @@ Habilite permissões adicionais para seu aplicativo, incluindo as que foram conc
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurar seu ambiente do Power BI
 
-### <a name="create-an-app-workspace"></a>Criar workspace do aplicativo
+### <a name="create-an-app-workspace"></a>Criar um workspace de aplicativo
 
 Se você estiver inserindo relatórios, painéis ou blocos para seus clientes, precisará colocar o conteúdo dentro de um espaço de trabalho do aplicativo. A conta *mestre* precisa ser um administrador do workspace do aplicativo.
 

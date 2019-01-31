@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 3f2d0913095d61999bb85979770c69725b9f9b88
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b535e3cc42956818fce0c1c127fd775b6b4d4664
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283634"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431282"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutorial: Inserir um relatório, um painel ou um bloco do Power BI em um aplicativo para sua organização
 
@@ -32,7 +32,7 @@ Neste tutorial, você aprenderá as seguintes tarefas:
 
 Para começar, você precisa de uma conta Power BI Pro e uma assinatura do Microsoft Azure:
 
-* Se não estiver inscrito no Power BI Pro, [inscreva-se para uma avaliação gratuita](https://powerbi.microsoft.com/en-us/pricing/) antes de começar.
+* Se não estiver inscrito no Power BI Pro, [inscreva-se para uma avaliação gratuita](https://powerbi.microsoft.com/pricing/) antes de começar.
 * Caso você não tenha uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) antes de começar.
 * Configure seu próprio [locatário do Azure AD (Azure Active Directory)](create-an-azure-active-directory-tenant.md).
 * Instale [Visual Studio](https://www.visualstudio.com/) versão 2013 ou posterior.
@@ -101,7 +101,7 @@ Habilite permissões para seu aplicativo além do que é fornecido na página de
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurar seu ambiente do Power BI
 
-### <a name="create-an-app-workspace"></a>Criar workspace do aplicativo
+### <a name="create-an-app-workspace"></a>Criar um workspace de aplicativo
 
 Se você estiver inserindo relatórios, dashboards ou blocos para seus clientes, precisará colocar o conteúdo dentro de um workspace do aplicativo:
 

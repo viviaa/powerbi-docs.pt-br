@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c1671c820b6de4cddac169c67103168ac46ffc1f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c680ebea23c479202b8b49ed0376f2416a9cffa3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296031"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430615"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Conectar-se a dados usando interfaces genéricas no Power BI Desktop
 Conecte-se a uma variedade de fontes de dados diferentes no **Power BI Desktop**, usando conectores de dados internos que vão desde **bancos de dados do Access** até recursos do **Zendesk**, como mostra a janela **Obter Dados**. Conecte-se também a todos os *outros* tipos de fontes de dados para expandir ainda mais as opções de conectividade, com o uso das interfaces genéricas (como **ODBC** ou **APIs REST**) internas do **Power BI Desktop**.
@@ -49,7 +49,7 @@ A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às q
 | Conector genérico do Power BI Desktop | Fonte de dados externa | Link para mais informações |
 | --- | --- | --- |
 | ODBC |Cassandra |[Driver ODBC do Cassandra](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
-| ODBC |Couchbase DB |[Couchbase e Power BI](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| ODBC |Couchbase DB |[Couchbase e Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[Driver ODBC do DynamoDB](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[Driver ODBC do BigQuery](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
 | ODBC |Hbase |[Driver ODBC do Hbase](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
@@ -91,7 +91,7 @@ A lista a seguir fornece detalhes sobre alguns exemplos de fontes de dados às q
 
 | Conector genérico do Power BI Desktop | Fonte de dados externa | Link para mais informações |
 | --- | --- | --- |
-| APIs REST |Couchbase DB |[Informações sobre a API REST do Couchbase](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| APIs REST |Couchbase DB |[Informações sobre a API REST do Couchbase](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
 ## <a name="data-sources-accessible-through-r-script"></a>Fontes de dados acessíveis por meio do Script do R
 Use **scripts do R** para acessar fontes de dados e use esses dados no **Power BI Desktop**.

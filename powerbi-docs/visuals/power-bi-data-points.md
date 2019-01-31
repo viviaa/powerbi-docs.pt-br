@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52f679ee143e1009068c7de1ed9ce13e82e957dc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295364"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430431"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Limites de ponto de dados e estratégias por tipo de visual
 
@@ -40,7 +40,7 @@ Para cada estratégia, existem padrões baseados na forma e tipo de dados que es
 ## <a name="statistics"></a>Estatísticas
 Determinados modelos podem fornecer estatísticas sobre o número de valores para determinadas colunas. Quando essas informações estão presentes, aproveitamos essas informações para fornecer melhor equilíbrio entre várias hierarquias, se um visual não substituir explicitamente a contagem de valores para uma estratégia.
 
-Para saber mais, confira [Novidades no Analysis Services](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+Para saber mais, confira [Novidades no Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
 
 ## <a name="dynamic-limits"></a>Limites dinâmicos
 Além das estratégias acima, visuais com duas hierarquias de colunas de agrupamento (eixo e legenda, ou categoria e série) usam uma estratégia adicional chamada *limites dinâmicos*.  Os limites dinâmicos são projetados para equilibrar melhor os pontos de dados. 
@@ -128,7 +128,7 @@ Nenhuma estratégia de redução
 - Valores: Virtualização usando a janela de 200 linhas de cada vez
 
 ### <a name="scatter-chart-high-density"></a>Gráficos de dispersão (alta densidade)
-Confira [Dispersão de alta densidade](https://docs.microsoft.com/en-us/power-bi/visuals/desktop-high-density-scatter-charts)
+Confira [Dispersão de alta densidade](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
 
 ### <a name="pie"></a>Pizza
 - Máximo de pontos: 3,500

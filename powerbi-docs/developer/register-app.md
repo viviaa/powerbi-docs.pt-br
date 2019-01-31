@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 96f91eefeab038419ce64e31c7b4b5755d6adf2c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c05dddbddc2dd19fed1bfbec25bcd9e378df543f
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286578"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430086"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Registrar um aplicativo do Azure AD para inserir o conteúdo do Power BI
 
@@ -138,7 +138,7 @@ Convém entrar com a conta *mestra* usada para inserção, ou com uma conta de A
 
 ### <a name="applying-permissions-programmatically"></a>Aplicando permissões de forma programática
 
-1. É necessário obter as entidades de serviço existentes (usuários) no seu locatário. Para obter informações de como fazer isso, consulte [Obter servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. É necessário obter as entidades de serviço existentes (usuários) no seu locatário. Para obter informações de como fazer isso, consulte [Obter servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     É possível chamar a API *Get servicePrincipal* sem {id} e ela obterá todas as entidades de serviço no locatário.
 2. Procure uma entidade de serviço com a ID de cliente do seu aplicativo como a propriedade **appId**.

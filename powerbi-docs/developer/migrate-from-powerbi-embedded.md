@@ -7,17 +7,17 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: a52902e22572503b4be6c21f87abf62a90f60476
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: be1c1e489cd29fc67ade95886f77a5a08697ff99
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296606"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431006"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI Embedded
 Saiba como migrar da Coleção de workspaces do Power BI para o Power BI Embedded e aproveite os avanços para inserir em aplicativos.
 
-A Microsoft recentemente [anunciou o Power BI Embedded](https://powerbi.microsoft.com/en-us/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), um novo modelo de licenciamento com base em capacidade que aumenta a flexibilidade de como os usuários acessam, compartilham e distribuem conteúdo. A oferta também oferece desempenho e escalabilidade adicionais.
+A Microsoft recentemente [anunciou o Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), um novo modelo de licenciamento com base em capacidade que aumenta a flexibilidade de como os usuários acessam, compartilham e distribuem conteúdo. A oferta também oferece desempenho e escalabilidade adicionais.
 
 Com o Power BI Embedded, você terá uma superfície de API, um conjunto consistente de recursos e o acesso aos recursos mais recentes do Power BI, tais como dashboards, gateways e workspaces de aplicativo, ao inserir seu conteúdo. A seguir, você poderá começar a usar o Power BI Desktop e seguir para a implantação com o Power BI Embedded.
 

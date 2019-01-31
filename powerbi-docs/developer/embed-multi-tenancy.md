@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: d09312ecf462e557ef33851d9d2b1f91ec936dae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7bb805877cf2e7453148d667f863cbbc8b01ee52
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289200"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430707"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gerenciar multilocação com a análise integrada do Power BI
 
@@ -29,7 +29,7 @@ Este artigo descreve as várias abordagens e as analisa de acordo com vários cr
 
 ## <a name="concepts-and-terminology"></a>Conceitos e terminologia
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)**: Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)**: Azure Active Directory.
 
 **Aplicativo AAD**: uma identidade de aplicativo no AAD. É necessário ter um aplicativo AAD para autenticação.
 
@@ -105,7 +105,7 @@ O Power BI Embedded oferece suporte à implantação em várias áreas geográfi
 
 ### <a name="cost"></a>Custo
 
-O [Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) tem um modelo de compra baseado em recursos, como o **Power BI Premium**. Você compra uma ou mais capacidades com potência de computação e memória fixas. Essa capacidade é a principal despesa ao trabalhar com o **Power BI Embedded**. Não há nenhum limite de usuários na capacidade. O único limite é o desempenho da capacidade. É necessário ter uma [licença do Power BI Pro](../service-admin-licensing-organization.md) para cada usuário *mestre*, ou para usuários específicos que precisam acessar o portal do Power BI.
+O [Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/) tem um modelo de compra baseado em recursos, como o **Power BI Premium**. Você compra uma ou mais capacidades com potência de computação e memória fixas. Essa capacidade é a principal despesa ao trabalhar com o **Power BI Embedded**. Não há nenhum limite de usuários na capacidade. O único limite é o desempenho da capacidade. É necessário ter uma [licença do Power BI Pro](../service-admin-licensing-organization.md) para cada usuário *mestre*, ou para usuários específicos que precisam acessar o portal do Power BI.
 
 Recomendamos testar e medir a carga esperada em sua capacidade simulando o uso em um ambiente ativo, e executar um teste de carga na capacidade. Você pode medir a carga e o desempenho com várias métricas disponíveis na capacidade do Azure ou no [Aplicativo de métricas de capacidade Premium](../service-admin-premium-monitor-capacity.md).
 
@@ -132,17 +132,17 @@ Há duas abordagens principais para gerenciar dados do locatário.
 
 Se o armazenamento do aplicativos SaaS mantém um banco de dados por locatário, a escolha natural é usar conjuntos de dados de locatário único no Power BI, com a cadeia de conexão de cada conjunto de dados apontando para o banco de dados correspondente.
 
-Se o armazenamento do aplicativo SaaS está usando um banco de dados multilocatário para todos os locatários, é fácil separar os locatários por espaço de trabalho. Configure a conexão do banco de dados com o conjunto de dados do Power BI usando uma consulta de banco de dados com parâmetros para recuperar somente os dados relevantes do locatário. Atualize a conexão usando o [Power BI Desktop](../desktop-query-overview.md) ou a [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) com [parâmetros](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup) na consulta.
+Se o armazenamento do aplicativo SaaS está usando um banco de dados multilocatário para todos os locatários, é fácil separar os locatários por espaço de trabalho. Configure a conexão do banco de dados com o conjunto de dados do Power BI usando uma consulta de banco de dados com parâmetros para recuperar somente os dados relevantes do locatário. Atualize a conexão usando o [Power BI Desktop](../desktop-query-overview.md) ou a [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) com [parâmetros](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) na consulta.
 
 ### <a name="data-isolation"></a>Isolamento de dados
 
-Os dados nesse modelo de locação são separados no nível do espaço de trabalho. Um mapeamento simples entre um espaço de trabalho e um locatário impede que os usuários de um locatário vejam o conteúdo de outro locatário. O uso de um único usuário *mestre* exige que você tenha acesso a todos os diferentes espaços de trabalho. A configuração de quais dados mostrar a um usuário final é definida durante a [geração do token inserido](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), um processo somente back-end que os usuários finais não podem ver ou alterar.
+Os dados nesse modelo de locação são separados no nível do espaço de trabalho. Um mapeamento simples entre um espaço de trabalho e um locatário impede que os usuários de um locatário vejam o conteúdo de outro locatário. O uso de um único usuário *mestre* exige que você tenha acesso a todos os diferentes espaços de trabalho. A configuração de quais dados mostrar a um usuário final é definida durante a [geração do token inserido](https://docs.microsoft.com/rest/api/power-bi/embedtoken), um processo somente back-end que os usuários finais não podem ver ou alterar.
 
 Para adicionar mais isolamento, um desenvolvedor de aplicativos pode definir um usuário *mestre* ou um aplicativo por espaço de trabalho, ao invés de um único usuário *mestre* ou aplicativo com acesso a vários espaços de trabalho. Assim, você garante que qualquer erro humano ou vazamento de credencial não cause a exposição dos dados de vários clientes.
 
 ### <a name="scalability"></a>Escalabilidade
 
-Uma vantagem desse modelo é que a separação dos dados em vários conjuntos de dados para cada locatário supera o [limite de tamanho de um único conjunto de dados](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (atualmente, 10 GB em uma capacidade). Quando a capacidade fica sobrecarregada, [ela pode remover conjuntos de dados não utilizados](../service-premium-understand-how-it-works.md) para liberar a memória para conjuntos de dados ativos. Essa tarefa não é possível com um único conjunto de dados grande. Com vários conjuntos de dados, também é possível separar locatários em várias capacidades do Power BI, se for necessário. [Saiba mais sobre como a capacidade funciona](../service-admin-premium-manage.md).
+Uma vantagem desse modelo é que a separação dos dados em vários conjuntos de dados para cada locatário supera o [limite de tamanho de um único conjunto de dados](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (atualmente, 10 GB em uma capacidade). Quando a capacidade fica sobrecarregada, [ela pode remover conjuntos de dados não utilizados](../service-premium-understand-how-it-works.md) para liberar a memória para conjuntos de dados ativos. Essa tarefa não é possível com um único conjunto de dados grande. Com vários conjuntos de dados, também é possível separar locatários em várias capacidades do Power BI, se for necessário. [Saiba mais sobre como a capacidade funciona](../service-admin-premium-manage.md).
 
 Apesar dessas vantagens, é necessário considerar a expansão do aplicativo SaaS no futuro. Por exemplo, pode-se atingir o limite de artefatos que é possível gerenciar. Consulte [Limitações de implantação](#summary-comparison-of-the-different-approaches) mais adiante neste artigo para saber mais. A SKU da capacidade usada apresenta um limite no tamanho da memória ao qual os conjuntos de dados precisam se ajustar, [quantas atualizações podem ser executadas ao mesmo tempo](../service-premium-understand-how-it-works.md) e a frequência máxima de atualizações de dados. Recomendamos fazer testes ao gerenciar centenas ou milhares de conjuntos de dados. Também recomendamos considerar o volume de uso médio e de pico, bem como quaisquer locatários específicos com grandes conjuntos de dados, ou padrões de uso diferentes, que são gerenciados diferentemente de outros locatários.
 

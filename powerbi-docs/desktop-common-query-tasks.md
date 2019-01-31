@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 03fc8430317905294e735da928b8b65d93be3545
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0d78b38928ee807ca9c8b62a90645a1c21daab55
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277010"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431029"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tarefas comuns de consulta no Power BI Desktop
 Ao trabalhar na janela do **Editor de Consultas** do Power BI Desktop, há uma série de tarefas frequentemente usadas. Este documento demonstra as tarefas comuns e fornece links para informações adicionais. 
@@ -142,7 +142,7 @@ Todas as etapas aplicadas de cada consulta são mantidas pelo Editor de Consulta
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Veja aqui o **Editor Avançado**, com as etapas de consulta associadas à consulta **USA\_StudentEnrollment** exibida. Essas etapas são criadas na Linguagem de Fórmula do Power Query, frequentemente designada como **M**. Para obter informações, veja [Saiba mais sobre as fórmulas do Power Query](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Para exibir a especificação da linguagem, confira a [Especificação da Linguagem de Fórmula do Microsoft Power Query para Excel](http://go.microsoft.com/fwlink/?linkid=320633).
+Veja aqui o **Editor Avançado**, com as etapas de consulta associadas à consulta **USA\_StudentEnrollment** exibida. Essas etapas são criadas na Linguagem de Fórmula do Power Query, frequentemente designada como **M**. Para obter informações, veja [Saiba mais sobre as fórmulas do Power Query](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Para exibir a especificação da linguagem, confira a [Especificação da Linguagem de Fórmula do Microsoft Power Query para Excel](http://go.microsoft.com/fwlink/?linkid=320633).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

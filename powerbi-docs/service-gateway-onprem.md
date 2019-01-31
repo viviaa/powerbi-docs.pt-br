@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: f477cbd5f2d767333c16a43308b4793527665806
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899240"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430776"
 ---
 # <a name="on-premises-data-gateway"></a>Gateway de dados local
 
@@ -91,7 +91,7 @@ Quando você adiciona uma fonte de dados ao gateway, é necessário fornecer cre
 
 * No momento, não há suporte para a [Proteção de Informações do Azure](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 ).
-* No momento, não há suporte para o [Access Online](https://products.office.com/en-us/access).
+* No momento, não há suporte para o [Access Online](https://products.office.com/access).
 * Scripts do R têm suporte somente quando o gateway é executado no modo pessoal.
 
 ## <a name="tenant-level-administration"></a>Administração de nível de locatário
@@ -102,7 +102,7 @@ Opcionalmente, se você é um administrador de locatários, recomendamos que voc
 
 ## <a name="enabling-outbound-azure-connections"></a>Habilitando as conexões de saída do Azure
 
-O gateway de dados local se baseia no Barramento de Serviço do Azure para conectividade de nuvem e, de forma correspondente, estabelece conexões de saída com a região do Azure associada. Por padrão, esse é o local do seu locatário do Power BI. Confira [Onde está localizado meu locatário do Power BI?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+O gateway de dados local se baseia no Barramento de Serviço do Azure para conectividade de nuvem e, de forma correspondente, estabelece conexões de saída com a região do Azure associada. Por padrão, esse é o local do seu locatário do Power BI. Confira [Onde está localizado meu locatário do Power BI?](https://powerbi.microsoft.com/documentation/powerbi-admin-where-is-my-tenant-located/)
 Se um firewall estiver bloqueando as conexões de saída, será necessário configurá-lo para permitir conexões de saída do gateway de dados local com a região do Azure associada. Confira [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653) para obter detalhes sobre os intervalos de endereço IP de cada data center do Azure.
 > [!NOTE]
 > Os intervalos de endereço IP podem mudar ao longo do tempo, portanto, baixe as informações mais recentes regularmente. 

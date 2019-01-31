@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008570"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430799"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Conectar-se ao Salesforce com o Power BI
 Com o Power BI, você pode se conectar facilmente à sua conta do Salesforce.com. A criação dessa conexão recupera os dados, além de fornecer automaticamente um painel e relatórios relacionados com base nesses dados.
@@ -61,10 +61,8 @@ Você pode alterar esse painel para exibir os dados de qualquer modo que desejar
 **E agora?**
 
 * Tente [fazer uma pergunta na caixa de P e R](consumer/end-user-q-and-a.md) na parte superior do dashboard
-* [Altere os blocos](service-dashboard-edit-tile.md) no dashboard <<<<<<< HEAD
-* [Selecione um bloco](consumer/end-user-tiles.md) para abrir o relatório subjacente =======
+* [Alterar os blocos](service-dashboard-edit-tile.md) no dashboard
 * [Selecionar um bloco](service-dashboard-tiles.md) para abrir o relatório subjacente
->>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Enquanto seu conjunto de dados será agendado para ser atualizado diariamente, você pode alterar o agendamento de atualização ou tentar atualizá-lo sob demanda usando **Atualizar Agora**
 
 ## <a name="system-requirements-and-considerations"></a>Considerações e requisitos do sistema

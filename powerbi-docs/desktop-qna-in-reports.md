@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 474001a183540edb65d8e2b2ed4c0d6c55dc28d9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 440874b96b4bf01023c86e3ef053e8c77e9ef289
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283473"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430087"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Usar P e R no Power BI Desktop para consultas de linguagem natural
 Usar linguagem natural e expressões comuns para fazer perguntas sobre seus dados é eficiente. É ainda mais eficiente quando seus dados respondem, que é o que P e R no **Power BI Desktop** permite que você faça.
@@ -25,7 +25,7 @@ Para habilitar P e R para interpretar com êxito a coleção de perguntas a qual
 > [!NOTE]
 > As P e R estarão disponíveis apenas ao trabalhar com um modelo que contenha dados **importados**. Não há suporte para conexões dinâmicas com modelos SSAS e DirectQuery.
 >
-> P e R exigem a seguinte atualização do tempo de execução do C, quando você está usando uma versão do Windows anterior ao Windows 10. Você pode tentar instalar atualizações importantes do Windows Update ou instalar o componente necessário da Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
+> P e R exigem a seguinte atualização do tempo de execução do C, quando você está usando uma versão do Windows anterior ao Windows 10. Você pode tentar instalar atualizações importantes do Windows Update ou instalar o componente necessário da Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
 >
 >
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bb626d8afeb999c85d001abaa2e936314cff78e5
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295249"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431052"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Use o Kerberos para logon único (SSO) do Power BI para fontes de dados locais
 
@@ -44,7 +44,7 @@ Para habilitar SSO para o SAP HANA, siga estas etapas primeiro:
   * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 * No computador do gateway, instale o driver ODBC do HANA mais recente do SAP.  A versão mínima é o HANA ODBC versão 2.00.020.00 de agosto de 2017.
 
-Para saber mais sobre como configurar o logon único para SAP HANA usando o Kerberos, veja o tópico [Logon único usando Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) no Guia de Segurança do SAP HANA e os links da página, particularmente a Nota SAP 1837331 – COMO HANA DBSSO Kerberos/Active Directory].
+Para saber mais sobre como configurar o logon único para SAP HANA usando o Kerberos, veja o tópico [Logon único usando Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) no Guia de Segurança do SAP HANA e os links da página, particularmente a Nota SAP 1837331 – COMO HANA DBSSO Kerberos/Active Directory].
 
 ## <a name="preparing-for-kerberos-constrained-delegation"></a>Preparando-se para a delegação restrita de Kerberos
 
@@ -205,6 +205,9 @@ Agora que você entende como o Kerberos funciona com um gateway, pode configurar
 Este guia tenta ser o mais abrangente possível. Se você já tiver concluído algumas dessas etapas, ignore-as: Por exemplo, você já criou um Usuário de serviço para seu servidor BW e mapeou um SPN para ele, ou se já instalou a biblioteca gsskrb5.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>Configuração do gsskrb5 em computadores cliente e no servidor BW
+
+> [!NOTE]
+> gsskrb5 não tem mais suporte ativo pela SAP. Para saber mais, veja [Nota SAP 352295](https://launchpad.support.sap.com/#/notes/352295). Observe também que gsskrb5 não permite conexões de SSO entre o Gateway de dados e servidores de mensagens do BW. Apenas as conexões a servidores de aplicativos do BW são possíveis.
 
 O gsskrb5 deve estar em uso pelo cliente e pelo servidor para concluir uma conexão de SSO por meio do gateway. Atualmente, não há suporte para a Biblioteca de Criptografia Comum (sapcrypto).
 
