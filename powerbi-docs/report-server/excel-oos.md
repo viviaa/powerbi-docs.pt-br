@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 2a0fc921ba576803f02ede8fd269370584c61efe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 157808d7378b40cb097c2cb667eb9d237654e66d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284209"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234406"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configure seu servidor de relatório para hospedar pastas de trabalho do Excel usando o OOS (Servidor do Office Online)
 
@@ -57,7 +57,7 @@ Se você planeja usar os recursos do Excel Online que utilizam acesso a dados ex
 1. Baixar o Servidor do Office Online do [VLSC (Centro de Atendimento de Licenciamento por Volume)](http://go.microsoft.com/fwlink/p/?LinkId=256561). O download está localizado nesses produtos do Office no portal do VLSC. Para fins de desenvolvimento, você pode baixar o OOS dos downloads do assinante do MSDN.
 2. Execute o Setup.exe.
 3. Na página **Leia os termos de licença para Software Microsoft**, selecione **Aceito os termos deste contrato** e **Continuar**.
-4. Na página **Escolher um local do arquivo**, selecione a pasta na qual você deseja que os arquivos do Servidor do Office Online sejam instalados (por exemplo, C:\Program Files\Microsoft Office Web Apps*) e selecione **Instalar Agora**. Se a pasta especificada não existir, o assistente de instalação a criará para você.
+4. Na página **Escolher um local do arquivo**, selecione a pasta na qual você deseja que os arquivos do Servidor do Office Online sejam instalados (por exemplo, C:\Arquivos de Programas\Microsoft Office Web Apps\*) e selecione **Instalar Agora**. Se a pasta especificada não existir, o assistente de instalação a criará para você.
 
     É recomendável que você instale o Servidor do Office Online na unidade do sistema.
 

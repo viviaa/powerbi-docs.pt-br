@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 74d261098ee8385721a0b72d808a6ecb1b89be7c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283795"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234429"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrar relatórios usando parâmetros da cadeia de caracteres de consulta na URL
 
@@ -106,10 +106,10 @@ O Power BI dá suporte a diversos operadores além do '**and**'. A tabela a segu
 |**gt**     | maior que        |não | sim | sim  | product/price gt 20
 |**le**     |   menor ou igual      | não | sim | sim  | product/price le 100
 |**lt**     |  menor que       | não | sim | sim |  product/price lt 20
-|**in****     |  incluindo       | sim | sim |  sim | Student/Age in (27, 29)
+|**in\*\***     |  incluindo       | sim | sim |  sim | Student/Age in (27, 29)
 
 
-\** Quando **in** é usado, os valores à direita de **in** podem ser uma lista separada por vírgulas entre parênteses ou uma única expressão que retorna uma coleção.
+\*\* Quando **in** é usado, os valores à direita de **in** podem ser uma lista separada por vírgulas entre parênteses ou uma única expressão que retorna uma coleção.
 
 ### <a name="numeric-data-types"></a>Tipos de dados numéricos
 

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 01/18/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 085860fb9d8e9e01bf0694896a561f34a5627b53
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 7d76d874712f328344b60fc8b146f69e1aca55db
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394667"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234521"
 ---
 # <a name="add-comments-to-a-dashboard"></a>Adicionar comentários a um dashboard
 Adicione um comentário pessoal ou inicie uma conversa sobre um dashboard com seus colegas. O recurso **comentário** é apenas uma das maneiras como um *consumidor* pode colaborar com outras pessoas. 
@@ -73,7 +73,7 @@ Comentários podem ser adicionados a todo um dashboard ou a visuais separados em
 5. Selecione **Fechar** para voltar para o dashboard ou relatório.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Consiga a atenção de seus colegas usando o sinal @
-Se você estiver criando comentários de dashboard ou comentando sobre um visual específico, chame a atenção de seus colegas usando o símbolo "@".  Quando você digita o símbolo "@", o Power BI abre uma lista suspensa na qual você pode procurar e selecionar pessoas de sua organização. Qualquer nome verificado precedido pelo símbolo "@" aparece em fonte azul. 
+Se você estiver criando comentários de dashboard ou comentando sobre um visual específico, chame a atenção de seus colegas usando o símbolo "\@".  Quando você digita o símbolo "\@", o Power BI abre uma lista suspensa na qual você pode procurar e selecionar pessoas de sua organização. Qualquer nome verificado precedido pelo símbolo "\@" aparece em fonte azul. 
 
 Esta é uma conversa que estou tendo com o *designer* da visualização. Ele usa o símbolo @ para garantir que eu veja o comentário. Eu sei que esse comentário é para mim. Ao abrir o dashboard do aplicativo no Power BI, eu seleciono **Comentários** no cabeçalho. O painel **Comentários** exibe nossa conversa.
 

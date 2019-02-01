@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com visualizações
+title: Trabalhando com visualizações como um consumidor
 description: Conceitos e terminologia do Power BI – visualizações e visuais. O que é uma visualização ou um visual do Power BI.
 author: mihart
 manager: kvivek
@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 875f5cef31ea61fffff29404b03af5bbbfc9f0c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287616"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234337"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Visualizações para **consumidores** do Power BI
 
@@ -53,4 +53,5 @@ Mas primeiro, algumas palavras sobre a P e R. P e R é a ferramenta de pesquisa 
 
 ## <a name="next-steps"></a>Próximas etapas
 Voltar às [Noções básicas para consumidores](end-user-basic-concepts.md)    
-[Selecione uma visualização para abrir um relatório](end-user-report-open.md)
+[Selecione uma visualização para abrir um relatório](end-user-report-open.md)    
+[Tipos de visualizações disponíveis no Power BI](end-user-visual-type.md)
