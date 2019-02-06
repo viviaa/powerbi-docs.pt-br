@@ -2,21 +2,22 @@
 title: P e R no Power BI Embedded
 description: O Power BI Embedded oferece uma maneira de incorporar P e R em um aplicativo e permitir que os usuários façam perguntas usando um idioma natural.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: maghan
-ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23e0f7a938116185e05e583f5c7f208efed3ca4d
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277958"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761905"
 ---
 # <a name="qa-in-power-bi-embedded"></a>P e R no Power BI Embedded
+
 O Power BI Embedded oferece uma maneira de incorporar P e R em um aplicativo e permitir que os usuários façam perguntas usando um idioma natural e recebam respostas imediatas na forma de visuais como gráficos ou grafos.
 
 ![Pergunta interativa de P e R em um quadro inserido](media/qanda/embedded-qanda.gif)
@@ -47,13 +48,14 @@ var qna = powerbi.embed(qnaContainer, config);
 ```
 
 ## <a name="set-question"></a>Pergunta de conjunto
+
 Se você usou o **modo de resultados** com uma pergunta de conjunto, é possível injetar mais perguntas no quadro e receber imediatamente as respostas delas substituindo o resultado anterior. Um novo visual é renderizado, correspondendo à nova pergunta.
 
 Um exemplo dessa utilização seria uma lista de perguntas frequentes. O usuário poderia percorrer as perguntas e receber as respostas delas dentro da mesma parte inserida.
 
 **Snippet de código para uso do SDK do JS:**  
 
-```        
+```
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -70,6 +72,7 @@ qna.setQuestion("This year sales")
 ```
 
 ## <a name="visual-rendered-event"></a>Evento renderizado pelo visual
+
 Para o modo **interativo**, o aplicativo pode ser notificado com um evento de alteração de dados cada vez que o visual renderizado é alterado para direcionar a consulta de entrada atualizada enquanto ela é digitada.
 
 Escutar o evento *visualRendered* permite salvar perguntas para uso posterior. 
@@ -93,10 +96,11 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Token de inserção
+
 Crie um token de inserção de um conjunto de dados para iniciar uma parte de P e R. Para obter mais informações, confira [Gerar token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Próximas etapas
+
 Para experimentar a inserção de P e R, confira o [exemplo de inserção do JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-

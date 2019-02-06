@@ -1234,8 +1234,10 @@ items:
         href: service-admin-premium-purchase.md
       - name: Gerenciar o Power BI Premium
         href: service-admin-premium-manage.md
-      - name: Monitorar o Power BI Premium
+      - name: Monitorar as capacidades Premium com o aplicativo
         href: service-admin-premium-monitor-capacity.md
+      - name: Monitorar as capacidades Premium no portal de administração
+        href: service-admin-premium-monitor-portal.md
       - name: Reiniciar uma capacidade Premium
         href: service-admin-premium-restart.md
       - name: Suporte para grandes conjuntos de dados
@@ -1299,9 +1301,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 5b2dc80f12aba21c7d5a1f0da71f8eb31d242c5b
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: e5f1b5c6ac45f6f37b61692fe4bd7f5cc086aec5
+ms.sourcegitcommit: 01d08ddf9a437489f75501efda6b3b0d8cbd7864
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431098"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55760385"

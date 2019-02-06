@@ -4,19 +4,20 @@ description: Passo a passo para enviar dados por push - Adicionar linhas a uma t
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/01/2018
-ms.openlocfilehash: 798bfbb5d1ebf127e7b958e02166dea5f1af81ef
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430478"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761974"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Etapa 5: Adicionar linhas a uma tabela do Power BI
+
 Este artigo faz parte do passo a passo para [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
 
 Na **etapa 4**, [Obter um conjunto de dados para adicionar linhas a uma tabela do Power BI](walkthrough-push-data-get-datasets.md), de Enviar dados por push a um conjunto de dados, você usou a operação [Obter Conjuntos de Dados](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) e Newtonsoft.Json para obter uma ID de conjunto de dados. Nesta etapa, você usa a ID do conjunto de dados com a operação [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) para adicionar linhas a um conjunto de dados do **Power BI**. 
@@ -28,10 +29,9 @@ Ao chamar a operação [PostRows](https://docs.microsoft.com/rest/api/power-bi/p
 Veja como adicionar linhas a um conjunto de dados usando a API do Power BI.
 
 ## <a name="add-rows-to-a-power-bi-table"></a>Adicionar linhas a uma tabela do Power BI
+
 > [!NOTE]
 > Antes de começar, lembre-se de seguir as etapas anteriores no passo a passo [enviar dados por push a um conjunto de dados](walkthrough-push-data.md).
-> 
-> 
 
 1. No projeto de Aplicativo de Console que você criou na Etapa 2: o passo a passo para enviar dados por push, [Obter um token de acesso de autenticação](walkthrough-push-data-get-token.md), adicione o código abaixo.
 2. Execute o Aplicativo de Console e faça logon na sua conta do Power BI. Você deve ver **Linhas Adicionadas** na janela do Console. Você também pode fazer logon no Power BI para ver as linhas adicionadas ao conjunto de dados.
@@ -57,7 +57,8 @@ Adicione este código a Program.cs.
   
        //Add rows to a Power BI table
        AddRows(datasetId, "Product");
-   }     
+   }
+
   ```
 * Adicione um método AddRows():
 

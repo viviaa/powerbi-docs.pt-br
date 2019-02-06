@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: a53ddf70e82c191af520f2dbba5b5d3d1b0ced42
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431213"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762089"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Solucione problemas do aplicativo inserido
 
@@ -106,7 +106,7 @@ O back-end do aplicativo pode precisar atualizar o token de autenticação antes
 Para resolver esse problema, você deve cortar "oauth2/authorize/" no final da URL de autoridade, veja [Exemplos para Desenvolvedores do Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples) para referências.
 
  Confira [Melhor validação de autoridade](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) nas notas sobre a versão do ADAL 4.x.
- 
+
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Falha na autenticação com AADSTS70002 ou AADSTS50053
 
 **_(AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)_**

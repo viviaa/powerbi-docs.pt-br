@@ -2,22 +2,21 @@
 title: Layouts personalizados com conteúdo inserido do Power BI
 description: Saiba mais sobre layouts personalizados ao inserir conteúdo do Power BI em seu aplicativo.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e812fde896072762e113c81b1dd728091a8ff190
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288924"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762296"
 ---
 # <a name="custom-layouts"></a>Layouts personalizados
-
 
 Use layouts personalizados para inserir um relatório com layout diferente daquele usado em um relatório original. A definição de um novo layout varia entre definir apenas um tamanho de página, controlando tamanhos visuais ou posição e visibilidade.
 
@@ -115,7 +114,6 @@ enum VisualContainerDisplayMode {
 - `width`, altura: define o novo tamanho do visual.
 - `displayState`: define a visibilidade do visual.
 
-
 ## <a name="update-layout"></a>Atualizar layout
 
 Você pode usar o método updateSettings para atualizar o layout do relatório em qualquer momento enquanto o relatório é carregado. Consulte [Atualizar Configurações](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -173,9 +171,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## <a name="see-also"></a>Consulte também
 
 [Inserir painéis, relatórios e blocos do Power BI](embedding-content.md)   
 [Perguntar à Comunidade do Power BI](https://community.powerbi.com/)
-
