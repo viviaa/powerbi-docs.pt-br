@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
+ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234429"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55648687"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrar relatórios usando parâmetros da cadeia de caracteres de consulta na URL
 
@@ -40,6 +40,14 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 * Os nomes de **Tabela** e **Campo** diferenciam maiúsculas de minúsculas, o **valor** não.
 * Os campos ocultos na exibição de relatório ainda podem ser filtrados.
+
+### <a name="reports-in-apps"></a>Relatórios em aplicativos
+
+Para adicionar um filtro de URL a um relatório em um aplicativo, a formatação é um pouco diferente. Os links para relatórios em um aplicativo têm um parâmetro de consulta (ctid) que é adicionado à URL. Os parâmetros de consulta devem ser separados por um E comercial (&). Portanto, é necessário acrescentar "&filter=" (após o parâmetro ctid) à consulta, em vez de "?filter=", 
+
+como o seguinte exemplo:
+
+app.powerbi.com/groups/me/apps/*ID-do-aplicativo*/reports/*ID-do-relatório*/ReportSection?ctid=*ctid*&filter=*Tabela*/*Campo* eq '*valor*'
 
 ### <a name="field-types"></a>Tipos de campo
 
@@ -118,10 +126,10 @@ Um filtro de URL do Power BI pode incluir números nos formatos a seguir.
 |Tipo de número  |Exemplo  |
 |---------|---------|
 |**inteiro**     |   5      |
-|**longo**     |   5L ou 5l      |
+|**longo**     |   5 L ou 5 l      |
 |**duplo**     |   5.5 ou 55e-1 ou 0.55e+1 ou 5D ou 5d ou 0.5e1D ou 0.5e1d ou 5.5D ou 5.5d ou 55e-1D ou 55e-1d     |
-|**decimal**     |   5M ou 5m ou 5.5M ou 5.5m      |
-|**flutuante**     | 5F ou 5f ou 0.5e1F ou 0.5e-1d        |
+|**decimal**     |   5 M ou 5 m ou 5.5 M ou 5.5 m      |
+|**flutuante**     | 5 F ou 5 f ou 0.5e1 F ou 0.5e-1 d        |
 
 ### <a name="date-data-types"></a>Tipos de dados de data
 

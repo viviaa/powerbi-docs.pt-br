@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488858"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482742"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatório do Power BI
 
@@ -24,6 +24,17 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 
 ## <a name="january-2019"></a>Janeiro de 2019
 - **Servidor de Relatório do Power BI**            
+    - *Versão 1.4.6969.7395 (build 15.0.1102.235), Lançamento: 30 de janeiro de 2019*
+        - Correções de bug
+            - Relatórios do Power BI
+                - Correção de problema com credenciais básicas ao usar a Consulta Direta
+                - Correção de relações bidirecionais com filtros aplicados à Segurança em Nível de Linha
+                - Correção de dados obsoletos após a atualização de um modelo em um ambiente expandido
+                - Correção da barra de rolagem dupla para tabela/matriz no Firefox 63+
+                - Correção para aumentar ou reduzir (+/-) tamanho de ícone no Internet Explorer
+            - Relatórios paginados
+                - Correção de problema com a atualização de uso de uma fonte de dados compartilhada para um relatório
+
     - *Versão 1.4.6960.38798 (Build 15.0.1102.222), Lançamento: 22 de janeiro de 2019*
         - Recursos
             - Relatórios do Power BI 
@@ -35,6 +46,10 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
             - Administradores
                 - Capacidade de definir extensões de recursos que podem ser carregados para o servidor de relatório
                 - Capacidade de restringir os esquemas de hiperlink compatíveis
+            - Programação
+                - Nova API Web: /PowerBIReports({Id})/DataModelRoles (GET)
+                - Nova API Web: /PowerBIReports({Id})/DataModelRoleAssignments (GET e PUT)
+                - Para ver mais detalhes, confira [API REST do Servidor de Relatórios do Power BI](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0)
         - Correções de bug
             - Vulnerabilidade de injeção de HTML
             - A exportação para PDF não está mostrando o símbolo de Euro
@@ -42,6 +57,10 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
             - Visuais exibem problemas no Aplicativo Power BI Mobile depois de ficarem ociosos
 
 - **Power BI Desktop (otimizado para o Servidor de Relatórios do Power BI)**
+    - *Versão: 2.65.5313.1562 (janeiro de 2019). Lançamento: 30 de janeiro de 2019*
+        - O atalho e os ícones fixados permanecem após a desinstalação do Servidor de Relatórios do Power BI
+        - Correção para a fixação do Servidor de Relatórios do Power BI no menu Iniciar, que apresenta texto ou ícone em preto
+
     - *Versão: 2.65.5313.1421 (janeiro de 2019), lançamento: 22 de janeiro de 2019*
         - Contém as alterações necessárias para conexão com o Servidor de Relatórios do Power BI (janeiro de 2019)  
 
