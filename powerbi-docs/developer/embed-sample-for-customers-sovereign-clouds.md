@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: 790c06dd84d7db3a382ef547c8fcc16237273951
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 69ce8088903cbdddef504dbf5e9b2ecc2a8ab9d4
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431144"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762664"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Tutorial: Inserir um dashboard, bloco ou relatório do Power BI em seu aplicativo para nuvens soberanas
+# <a name="tutorial-embed-a-power-bi-content-into-your-application-for-sovereign-clouds"></a>Tutorial: Inserir conteúdo do Power BI a seu aplicativo para nuvens soberanas
 
 Saiba como incorporar conteúdo analítico dentro de seus aplicativos de processos de negócios para a nuvem soberana. Você pode usar o SDK do .NET do Power BI com a API do JavaScript do Power BI para inserir um relatório, painel ou bloco, em seus aplicativos Web.
 
@@ -37,7 +37,7 @@ As nuvens soberanas diferentes são:
 
 ![Dashboard inserido](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Para começar este passo a passo, você precisará de uma conta do **Power BI**. Se você não tiver uma conta configurada, dependendo do tipo de nuvem soberana, você poderá se inscrever em uma [conta do Power BI para o governo dos EUA](../service-govus-signup.md), em uma [conta do Power BI para a nuvem da Alemanha](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou em uma [conta do Power BI para a nuvem da China](http://www.21vbluecloud.com/powerbi/).
+Para começar este passo a passo, você precisará de uma conta do **Power BI**. Se você não tiver uma conta configurada, dependendo do tipo de governo ou país, você poderá escolher a nuvem soberana certa para você. Você pode se inscrever para uma [conta do Power BI do governo dos EUA](../service-govus-signup.md), uma [conta de nuvem do Power BI para a Alemanha](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou uma [conta do Power BI para a nuvem da China](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Buscando inserir um dashboard para sua organização em vez disso? Consulte [Inserir um dashboard do Power BI em um aplicativo para sua organização](integrate-dashboard.md).
@@ -435,7 +435,7 @@ Uma amostra de aplicativo disso está disponível na [amostra Inserindo para a o
 
 * [Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI](migrate-from-powerbi-embedded.md)
 
-Limitações e considerações
+Considerações e limitações
 
 * Agora as contas GCC são compatíveis apenas com as capacidades P e EM
 

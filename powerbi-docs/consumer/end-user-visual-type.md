@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 174886acf1d827497b48d660bb89e2b4057b09b9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234547"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794839"
 ---
 # <a name="visualization-types-in-power-bi"></a>Tipos de visualização no Power BI
 Você encontrará visualizações em relatórios, dashboards, aplicativos e P e R. Alguns desses tipos de visualização são empacotados com o Power BI e alguns são *visuais personalizados*. Visuais personalizados são criados fora do Power BI e de uma maneira que permite a *designers de relatório* adicioná-los a aplicativos, dashboards e relatórios do Power BI. 
@@ -26,7 +26,7 @@ Este artigo é uma visão geral de visualizações que são empacotadas com o Po
 > Para saber mais sobre visuais personalizados, pesquise-os na seção **Visuais do Power BI** do [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Para cada visual, você encontrará uma descrição, informações do criador e capturas de tela ou um vídeo. 
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Lista das visualizações disponíveis no Power BI
-Todas essas visualizações podem ser encontradas nos relatórios, dashboards e aplicativos do Power BI, bem como [especificadas em P e R](#gna).
+Todas essas visualizações podem ser encontradas nos relatórios, dashboards e aplicativos do Power BI, bem como [especificadas em P e R](#qna). Para saber como interagir com visualizações, veja [Interagir com visualizações em relatórios, dashboards e aplicativos](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Gráficos de área: básico (em camadas) e empilhado
 ![gráfico da área](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -232,5 +232,5 @@ Ao digitar consultas em linguagem natural com a P e R do Power BI, você pode es
 ![sessão de P e R](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Próximas etapas
-[Visualizações em relatórios do Power BI](end-user-visualizations.md)    
+[Interagir com as visualizações em relatórios, dashboards e aplicativos](end-user-visualizations.md)    
 [A referência visual correta de sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

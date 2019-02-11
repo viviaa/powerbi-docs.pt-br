@@ -2,21 +2,22 @@
 title: Criar um locatário do Azure Active Directory para usar com o Power BI
 description: Saiba como criar um novo locatário do Azure AD (Azure Active Directory) para usar com seu aplicativo personalizado que usa APIs REST do Power BI.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
-ms.author: maghan
-ms.openlocfilehash: 4adbca6bd7c0ac4fa1cc24d660275d0db41c9a26
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: eb5befbfc5e96867f0f4cf27eafd62829fb488f4
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279732"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762135"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Criar um locatário do Azure Active Directory para usar com o Power BI
+
 Saiba como criar um novo locatário do Azure AD (Azure Active Directory) para usar com seu aplicativo personalizado que usa APIs REST do Power BI.
 
 Um locatário é o representante de uma organização no Azure Active Directory. Ele é uma instância dedicada do serviço do Azure AD que uma organização recebe e detém quando se inscreve em um serviço de nuvem da Microsoft, como o Azure, Microsoft Intune ou Office 365. Cada locatário do Azure AD é diferente e separado de outros locatários do Azure AD.
@@ -26,6 +27,7 @@ Quando você tiver um locatário do Azure AD, será possível definir um aplicat
 Sua organização talvez já tenha um locatário do Azure AD que você pode usar para seu aplicativo. É possível usar esse locatário para as necessidades do seu aplicativo ou é possível criar um novo locatário especificamente para o seu aplicativo. Este artigo examina como criar um novo locatário.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Crie um locatário do Azure Active Directory
+
 Para integrar o Power BI em seu aplicativo personalizado, é necessário definir um aplicativo no Azure AD. Para fazer isso, é necessário um diretório dentro do Azure AD. Esse é o seu locatário. Se sua organização ainda não tiver um locatário, porque ela não está usando o Power BI ou o Office 365, [será necessário criar um](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Talvez seja necessário também criar um locatário se você não quiser que seu aplicativo se misture com o locatário da sua organização. Isso permite manter as coisas isoladas.
 
 Ou talvez você apenas deseje criar um locatário para fins de testes.
@@ -33,61 +35,64 @@ Ou talvez você apenas deseje criar um locatário para fins de testes.
 Para criar um novo locatário do Azure AD, faça o seguinte.
 
 1. Navegue até o [portal do Azure](https://portal.azure.com) e entre com uma conta que tenha uma assinatura do Azure.
+
 2. Selecione o **ícone de mais (+)** e pesquise *Azure Active Directory*.
-   
-    ![](media/create-an-azure-active-directory-tenant/new-directory.png)
+
+    ![Ícone de adição (+)](media/create-an-azure-active-directory-tenant/new-directory.png)
+
 3. Selecione **Azure Active Directory** nos resultados da pesquisa.
-   
-    ![](media/create-an-azure-active-directory-tenant/new-directory2.png)
+
+    ![Pesquisa do AAD](media/create-an-azure-active-directory-tenant/new-directory2.png)
+
 4. Selecione **Criar**.
+
 5. Forneça um **nome para a organização** juntamente com o **nome de domínio inicial**. Em seguida, selecione **Criar**. Isso criará seu diretório.
-   
-    ![](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
-   
+
+    ![Organização e domínio](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
+
    > [!NOTE]
    > Seu domínio inicial fará parte de onmicrosoft.com. É possível adicionar outros nomes de domínio mais tarde. O diretório, de um locatário, pode ter vários domínios atribuídos a ele.
-   > 
-   > 
+
 6. Após a conclusão da criação do seu diretório, marque a caixa de informações para gerenciar seu novo diretório.
 
 Agora seu diretório foi criado. A seguir, adicionaremos um usuário ao locatário.
 
 ## <a name="create-some-users-in-your-azure-active-directory-tenant"></a>Crie alguns usuários em seu locatário do Azure Active Directory
+
 Agora que temos um diretório, vamos criar pelo menos dois usuários. Um que seja um administrador global para o locatário e outro que seja o usuário mestre para ser inserido. Pense nisso como uma conta de serviço.
 
 1. No portal do Azure, certifique-se de que estamos na saída do Azure Active Directory.
-   
+
     ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
-   
+
     Se você não estiver, selecione o ícone do Azure Active Directory na barra de serviços esquerda.
-   
+
     ![](media/create-an-azure-active-directory-tenant/aad-service.png)
 2. Em **Gerenciar**, selecione **Usuários e grupos**.
-   
+
     ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
 3. Selecione **Todos os usuários** e, em seguida, selecione **+ Novo usuário**.
 4. Forneça um nome e um nome de usuário para este usuário. Esse será seu administrador global do locatário. Você também alterará a **Função do diretório** para *Administrador global*. Também é possível mostrar a senha temporária. Quando terminar, selecione **Criar**.
-   
+
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
+
 5. Você fará a mesma coisa novamente para um usuário regular em seu locatário. Isso também poderá ser usado para sua conta de inserção mestre. Dessa vez, para **Função do diretório**, a deixaremos como *Usuário*. Certifique-se de anotar a senha. Em seguida, selecione **Criar**.
-   
+
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 6. Inscreva-se no Power BI com sua conta de usuário criada na etapa 5. É possível fazer isso acessando [powerbi.com](https://powerbi.microsoft.com/get-started/) e selecionando **Experimente grátis** em *Power BI – Colaboração e compartilhamento em nuvem*.
-   
+
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
-   
+
     Quando você se inscrever, você será solicitado a experimentar o Power BI Pro gratuitamente por 60 dias. É possível optar por se tornar um usuário pro. Agora também será possível começar a desenvolver uma solução inserida se for isso o que você estiver procurando.
-   
+
    > [!NOTE]
    > Certifique-se de inscrever-se com o endereço de email fornecido à conta de usuário.
-   > 
-   > 
 
 ## <a name="next-steps"></a>Próximas etapas
+
 Agora que você tem um locatário do Azure AD, é possível usar esse locatário para testar itens no Power BI e/ou é possível avançar para inserir relatórios e dashboards do Power BI em seu aplicativo. Para obter mais informações sobre como inserir itens, consulte [Como inserir seus dashboards, relatórios e blocos do Power BI](embedding-content.md).
 
 [O que é um diretório do Azure AD?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
 [Como obter um locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-

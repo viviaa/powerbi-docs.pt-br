@@ -4,18 +4,18 @@ description: Este artigo compara os recursos do Servidor de Relatórios do Power
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/16/2018
+ms.date: 02/06/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 4c7724baf63b1ff4e9e6f3d566da113557ab1b06
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 66f8e03469b28ee4f29c9c679add02e326732943
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234383"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794346"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparando o Servidor de Relatórios do Power BI e o serviço do Power BI
 
@@ -23,37 +23,37 @@ O Servidor de Relatórios do Power BI e o serviço do Power BI têm muitas semel
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Recursos do Servidor de Relatórios do Power BI e do serviço do Power BI
 
-| Recursos | Servidor de Relatórios do Power BI | Serviço do Power BI | Observações
+| Recursos | Servidor de Relatórios do Power BI | Serviço do Power BI | Observações |
 |---------|---------|---------|---------|
-| Implantação | Local ou nuvem hospedada | Nuvem | O Servidor de Relatórios do Power BI pode ser implantado em VMs do Azure (nuvem hospedada) se licenciado por meio do Power BI Premium
-| Dados de origem | Nuvem e/ou local | Nuvem e/ou local |  
-| Licença | Power BI Premium ou EE do SQL Server com SA | Power BI Pro e/ou Power BI Premium |  
-| Ciclo de vida | Política de ciclo de vida moderna | Serviço totalmente gerenciado |  
-| Ciclo de lançamento | Uma vez a cada 4 meses | Uma vez por mês | Correções e recursos mais recentes são fornecidos para o serviço do Power BI primeiro. A maior parte das funcionalidades principais é fornecida para o Servidor de Relatórios do Power BI nas próximas versões; alguns recursos são destinados somente ao serviço do Power BI.
-| Criar relatórios do Power BI no Power BI Desktop | Sim | Sim |  
-| Criar relatórios do Power BI no navegador | Não | Sim |  
-| Gateway necessário | Não | Sim para fontes de dados locais |  
-| Streaming em tempo real | Não | Sim | [Streaming em tempo real no Power BI](../service-real-time-streaming.md)
-| Dashboards | Não | Sim | [Dashboards no serviço do Power BI](../consumer/end-user-dashboards.md) 
-| Distribuir grupo de relatórios usando aplicativos | Não | Sim | [Criar e publicar aplicativos com dashboards e relatórios](../service-create-distribute-apps.md) 
-| Pacotes de Conteúdo | Não | Sim | [Pacotes de conteúdo organizacional: introdução](../service-organizational-content-pack-introduction.md) 
-| Conectar-se a serviços como o Salesforce | Sim | Sim | [Conectar-se aos serviços que você usa](../service-connect-to-services.md) com os pacotes de conteúdos no serviço do Power BI. No Servidor de Relatórios do Microsoft Power BI, use conectores certificados para se conectar aos serviços. Consulte [Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI](data-sources.md) para obter mais informações.
+| Implantação | Local ou nuvem hospedada | Nuvem | O Servidor de Relatórios do Power BI pode ser implantado em VMs do Azure (nuvem hospedada) se licenciado por meio do Power BI Premium |
+| Dados de origem | Nuvem e/ou local | Nuvem e/ou local |  |
+| Licença | Power BI Premium ou EE do SQL Server com SA | Power BI Pro e/ou Power BI Premium | |  
+| Ciclo de vida | Política de ciclo de vida moderna | Serviço totalmente gerenciado |  |
+| Ciclo de lançamento | Uma vez a cada 4 meses | Uma vez por mês | Correções e recursos mais recentes são fornecidos para o serviço do Power BI primeiro. A maior parte das funcionalidades principais é fornecida para o Servidor de Relatórios do Power BI nas próximas versões; alguns recursos são destinados somente ao serviço do Power BI. |
+| Criar relatórios do Power BI no Power BI Desktop | Sim | Sim |  |
+| Criar relatórios do Power BI no navegador | Não | Sim |  |
+| Gateway necessário | Não | Sim para fontes de dados locais |  |
+| Streaming em tempo real | Não | Sim | [Streaming em tempo real no Power BI](../service-real-time-streaming.md) |
+| Dashboards | Não | Sim | [Dashboards no serviço do Power BI](../consumer/end-user-dashboards.md) |
+| Distribuir grupo de relatórios usando aplicativos | Não | Sim | [Criar e publicar aplicativos com dashboards e relatórios](../service-create-distribute-apps.md) |
+| Pacotes de Conteúdo | Não | Sim | [Pacotes de conteúdo organizacional: introdução](../service-organizational-content-pack-introduction.md) |
+| Conectar-se a serviços como o Salesforce | Sim | Sim | [Conectar-se aos serviços que você usa](../service-connect-to-services.md) com os pacotes de conteúdos no serviço do Power BI. No Servidor de Relatórios do Microsoft Power BI, use conectores certificados para se conectar aos serviços. Consulte [Fontes de dados de relatórios do Power BI no Servidor de Relatórios do Power BI](data-sources.md) para obter mais informações. |
 | P e R | Não | Sim | [P e R no serviço do Power BI e Power BI Desktop](../consumer/end-user-q-and-a.md) 
-| Insights rápidos | Não | Sim | [Gerar automaticamente as informações sobre os dados com o Power BI](../consumer/end-user-insights.md) 
+| Insights rápidos | Não | Sim | [Gerar automaticamente as informações sobre os dados com o Power BI](../consumer/end-user-insights.md) |
 | Analisar no Excel | Não | Sim | [Analisar no Excel](../service-analyze-in-excel.md) 
-| Relatórios paginados | Sim | Sim | [Os relatórios paginados estão disponíveis no serviço do Power BI](../paginated-reports-report-builder-power-bi.md) em versão prévia na capacidade Premium
-| Aplicativos móveis do Power BI | Sim | Sim | [Visão geral de aplicativos móveis no Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
-| Mapas do ARC GIS | Não | Sim | [Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI](../visuals/power-bi-visualization-arcgis.md)
-| Assinaturas de email para relatórios do Power BI | Não | Sim | [Assinar um relatório ou dashboard](../consumer/end-user-subscribe.md) no serviço do Power BI 
-| Assinaturas de email para relatórios paginados | Sim | Não | [Entrega de email no Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
+| Relatórios paginados | Sim | Sim | [Os relatórios paginados estão disponíveis no serviço do Power BI](../paginated-reports-report-builder-power-bi.md) em versão prévia na capacidade Premium |
+| Aplicativos móveis do Power BI | Sim | Sim | [Visão geral de aplicativos móveis no Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
+| Mapas do ARC GIS | Não | Sim | [Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI](../visuals/power-bi-visualization-arcgis.md) |
+| Assinaturas de email para relatórios do Power BI | Não | Sim | [Assine para você ou terceiros](../service-report-subscribe.md) um relatório ou um dashboard no serviço do Power BI |
+| Assinaturas de email para relatórios paginados | Sim | Não | [Entrega de email no Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Alertas de dados | Não | Sim | [Alertas de dados](../service-set-data-alerts.md) no serviço do Power BI
-| Segurança em nível de linha | Somente por meio da fonte de dados no modo DirectQuery | Disponível nos modos de DirectQuery (fonte de dados) e de Importação | [RLS (segurança em nível de linha)](../service-admin-rls.md) com o Power BI 
-| Modo de tela inteira | Não | Sim | [Modo de tela inteira](../consumer/end-user-focus.md) no serviço do Power BI 
-| Colaboração avançada com o Office 365 | Não | Sim | [Colaborar em um workspace de aplicativo](../service-collaborate-power-bi-workspace.md) com o Office 365 
-| Visuais do R | Não | Sim | [Criar visuais R](../desktop-r-visuals.md) no Power BI Desktop e publicá-los no serviço do Power BI. Você não pode salvar relatórios do Power BI com visuais R no Servidor de Relatórios do Power BI.  
-| Versões prévias dos recursos | Não | Sim | [Aceitar recursos de visualização do serviço](../consumer/end-user-preview-features.md) do Power BI 
-| Visuais personalizados | Sim | Sim | [Elementos visuais personalizados no Power BI](../power-bi-custom-visuals.md) 
-| Power BI Desktop | Versão otimizada para o Servidor de Relatório, disponível para download com o Servidor de Relatório | Versão otimizado para o serviço do Power BI, disponível na Windows Store | [Power BI Desktop para o servidor de relatório](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop para o serviço do Power BI](http://aka.ms/pbidesktopstore)
+| RLS (Segurança em nível de linha) | Sim | Sim | Disponível nos modos de DirectQuery (fonte de dados) e de Importação <br>Segurança em nível de linha do [serviço do Power BI](../service-admin-rls.md) <br>RLS (Segurança em Nível de Linha) no [Servidor de Relatórios do Power BI](row-level-security-report-server.md) |
+| Sair do modo de tela inteira | Não | Sim | [Modo de tela inteira](../consumer/end-user-focus.md) no serviço do Power BI |
+| Colaboração avançada com o Office 365 | Não | Sim | [Colaborar em um workspace de aplicativo](../service-collaborate-power-bi-workspace.md) com o Office 365 |
+| Visuais do R | Não | Sim | [Criar visuais R](../desktop-r-visuals.md) no Power BI Desktop e publicá-los no serviço do Power BI. Você não pode salvar relatórios do Power BI com visuais R no Servidor de Relatórios do Power BI.  |
+| Versões prévias dos recursos | Não | Sim | [Aceitar recursos de visualização do serviço](../consumer/end-user-preview-features.md) do Power BI |
+| Visuais personalizados | Sim | Sim | [Elementos visuais personalizados no Power BI](../power-bi-custom-visuals.md) |
+| Power BI Desktop | Versão otimizada para o Servidor de Relatório, disponível para download com o Servidor de Relatório | Versão otimizado para o serviço do Power BI, disponível na Windows Store | [Power BI Desktop para o servidor de relatório](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop para o serviço do Power BI](http://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Próximas etapas
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  

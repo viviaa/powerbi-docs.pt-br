@@ -8,17 +8,17 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 01/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: f7e83c2d0cd2f1c3344bf61f9f90ca43f09f7189
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234337"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794292"
 ---
-# <a name="visualizations-for-power-bi-consumers"></a>Visualizações para **consumidores** do Power BI
+# <a name="interact-with-visualizations-in-reports-dashboards-and-apps"></a>Interagir com as visualizações em relatórios, dashboards e aplicativos
 
 Em sua forma mais básica, uma ***visualização*** (ou *visual*), é um tipo de gráfico criado pelos *designers* do Power BI usando os dados presentes nos *relatórios* e *conjuntos de dados*. 
 
@@ -27,13 +27,14 @@ Em sua forma mais básica, uma ***visualização*** (ou *visual*), é um tipo de
 
 ## <a name="what-can-i-do-with-visualizations"></a>O que posso fazer com as visualizações?
 
-Visualizações são criadas pelos *designers* de relatórios e dashboards, e são compartilhadas com os *consumidores*. Como um consumidor, você tem várias opções para interagir com as visualizações, descobrir os insights e tomar decisões de negócios controladas por dados. Todas essas opções estão listadas abaixo com links para instruções passo a passo.
+Visualizações são criadas pelos *designers* de relatórios e dashboards, e são compartilhadas com os *consumidores*. Como um consumidor, você tem várias opções para interagir com as visualizações, descobrir os insights e tomar decisões de negócios controladas por dados. Todas essas opções estão listadas na tabela abaixo com links para instruções passo a passo.
 
-Mas primeiro, algumas palavras sobre a P e R. P e R é a ferramenta de pesquisa de idioma natural do Power BI. Você digita a pergunta usando o idioma natural e a P e R a responde na forma de uma visualização. A P e R é uma maneira para os consumidores criarem suas próprias visualizações. No entanto, as visualizações que você criar com a P e R não poderão ser salvas. Contudo, se houver algo específico que você deseja aprender com os dados e o designer não incluiu isso em um relatório ou em um dashboard, a P e R será uma ótima opção. Para saber mais sobre a P e R, consulte [P e R para consumidores](end-user-q-and-a.md).
+> [!IMPORTANT]
+> Mas primeiro, algumas palavras sobre a P e R. P e R é a ferramenta de pesquisa de idioma natural do Power BI. Você digita a pergunta usando o idioma natural e a P e R a responde na forma de uma visualização. A P e R é uma maneira para os consumidores criarem suas próprias visualizações. No entanto, as visualizações que você criar com a P e R não poderão ser salvas. Contudo, se houver algo específico que você deseja aprender com os dados e o designer não incluiu isso em um relatório ou em um dashboard, a P e R será uma ótima opção. Para saber mais sobre a P e R, consulte [P e R para consumidores](end-user-q-and-a.md).
 
 
 
-|Coluna1  |Em um dashboard  |Em um relatório  | Em P e R
+|Tarefa  |Em um dashboard  |Em um relatório  | Em P e R
 |---------|---------|---------|--------|
 |[Adicionar comentários a uma visualização por conta própria ou iniciar uma conversa sobre ela com os colegas](end-user-comment.md).     |  sim       |   não      |  não  |
 |[Abrir e explorar o relatório em que a visualização foi criada](end-user-tiles.md).     |    sim     |   N/A      |  N/A |
