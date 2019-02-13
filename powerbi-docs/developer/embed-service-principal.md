@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: a0b1722a54f1e5ea5bf01d8e5bb5fb4753351a60
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763032"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971661"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Entidade de serviço com o Power BI (Versão Prévia)
 
@@ -108,9 +108,6 @@ Diferente do uso tradicional de uma conta mestra, usar a entidade de serviço (t
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > Grupos de segurança do AAD só podem ser criados por um administrador global do AAD.
-
 3. Como um administrador do Power BI, você precisa habilitar a entidade de serviço nas **Configurações do desenvolvedor** no portal de administração do Power BI. Adicione o grupo de segurança que você criou no Azure AD para a seção **Grupo de segurança específico** nas **Configurações do desenvolvedor**.
 
    > [!Important]
@@ -173,6 +170,7 @@ Abaixo está um exemplo de script para recuperar a ID de objeto da entidade de s
 * Direitos de administrador do Power BI são necessários para habilitar a entidade de serviço nas configurações do desenvolvedor no portal do administrador do Power BI.
 * Você não pode instalar nem gerenciar um gateway de dados local usando a entidade de serviço.
 * Aplicativos [inseridos para sua organização](embed-sample-for-your-organization.md) não podem usar a entidade de serviço.
+* Não há suporte para gerenciamento de [fluxos de dados](../service-dataflows-overview.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

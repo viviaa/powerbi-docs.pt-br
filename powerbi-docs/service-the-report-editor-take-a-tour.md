@@ -1,6 +1,6 @@
 ---
 title: Fazer um tour pelo editor de relatório
-description: O editor de relatório no serviço do Power BI e o editor de relatório no Power BI Desktop são semelhantes.
+description: O editor de relatório do serviço do Power BI é semelhante ao editor de relatório do Power BI Desktop.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,21 +8,23 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147394"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971684"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Visão geral do editor de relatório no Power BI
 
-O *editor de relatório* no serviço do Power BI e o editor de relatório no Power BI Desktop são semelhantes. O vídeo mostra o editor de relatório no Power BI Desktop e este artigo mostra o editor de relatório no serviço do Power BI. 
+O *editor de relatório* no serviço do Power BI e o editor de relatório no Power BI Desktop são semelhantes. Normalmente, você começa criando relatórios no Power BI Desktop. Em seguida, você os publica no serviço do Power BI, onde pode continuar a modificá-los. O serviço do Power BI também é o local onde você cria os painéis baseados em relatórios.
 
-Como criador do relatório, você cria e edita relatórios e dashboards. Em seguida, você os distribui aos consumidores de relatórios. Eles podem interagir com seus dashboards e relatórios no modo de exibição de Leitura no serviço do Power BI, mas não podem editá-los. Leia mais [o que os consumidores do relatório podem fazer no serviço do Power BI](consumer/end-user-reading-view.md) 
+Depois de criar os painéis e relatórios, você os distribui aos consumidores dos relatórios. Dependendo de como você os compartilha, os usuários finais podem interagir com eles no Modo de Exibição de Leitura, mas não podem editá-los no serviço do Power BI. Leia mais sobre [o que os consumidores do relatório podem fazer no serviço do Power BI](consumer/end-user-reading-view.md). 
+
+Este vídeo mostra o editor de relatório no Power BI Desktop. Este artigo mostra o editor de relatório no serviço do Power BI. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -79,7 +81,7 @@ As possibilidades de formatação são quase infinitas.  Para saber mais, explor
 Selecione o ícone de lupa para exibir o painel Análise. As opções disponíveis dependem do tipo de visualização selecionada.
 
 ![Painel de análise no editor de relatório](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-Com o painel Análise no serviço do Power BI, você pode adicionar linhas de referência dinâmica às visualizações e destacar tendências ou ideias importantes. Para saber mais, consulte [Painel de análise no serviço do Power BI](service-analytics-pane.md) ou [Painel de análise no Power BI Desktop](desktop-analytics-pane.md).
+Com o painel Análise no serviço do Power BI, você pode adicionar linhas de referência dinâmica às visualizações e destacar tendências ou ideias importantes. Para saber mais, confira [Painel Análise no serviço do Power BI](service-analytics-pane.md) ou [Painel Análise no Power BI Desktop](desktop-analytics-pane.md).
 
 - - -
 ## <a name="the-filters-pane"></a>O painel Filtros
@@ -90,6 +92,12 @@ O painel Filtros tem outro recurso eficiente – a capacidade de filtrar usando 
 ![Painel Filtros](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 Para obter mais informações, veja [Adicionar um filtro a um relatório](power-bi-report-add-filter.md).
+
+Atualmente, há uma nova experiência de filtro em versão prévia. Nos novos filtros, você pode formatá-los para que eles tenham a aparência do próprio relatório. Você pode também bloquear filtros ou ocultá-los dos consumidores do relatório. 
+
+![Nova experiência de filtro](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+Leia mais sobre a [nova experiência de filtro](power-bi-report-filter-preview.md).
 
 - - -
 ## <a name="the-fields-pane"></a>O painel Campos

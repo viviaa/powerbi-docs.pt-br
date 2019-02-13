@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 02/07/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 82c1a719e757e471b5c278cb26132a3629ca0d74
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 2a38d53a121f0a58c18f627370bf81413cf36982
+ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794223"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55888200"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gerenciar capacidades no Power BI Premium e no Power BI Embedded
 
@@ -25,11 +25,11 @@ Saiba como gerenciar as capacidades do Power BI Premium e do Power BI Embedded, 
 
 ## <a name="what-is-capacity"></a>O que é capacidade?
 
-A *capacidade* é a essência das ofertas do Power BI Premium e do Power BI Embedded. É o conjunto de recursos reservados para uso exclusivo pela sua organização. Ter capacidade dedicada permite publicar dashboards, relatórios e conjuntos de dados para usuários de toda a organização sem precisar comprar licenças por usuário para eles. Ela também oferece desempenho confiável e consistente para o conteúdo hospedado na capacidade. Para obter mais informações, consulte [O que é Power BI Premium?](service-premium.md).
+A *capacidade* é a essência das ofertas do Power BI Premium e do Power BI Embedded. É um conjunto de recursos reservados para uso exclusivo de sua organização. Ter capacidade dedicada permite publicar dashboards, relatórios e conjuntos de dados para usuários de toda a organização sem precisar comprar licenças por usuário para eles. Ela também oferece desempenho confiável e consistente para o conteúdo hospedado na capacidade. Para obter mais informações, consulte [O que é Power BI Premium?](service-premium.md).
 
 ### <a name="capacity-admins"></a>Administradores de capacidade
 
-Quando você é atribuído a uma capacidade como *administrador de capacidade*, você tem controle total sobre a capacidade e seus recursos administrativos. No portal de administração do Power BI, é possível adicionar mais administradores de capacidade ou dar aos usuários permissões de atribuição de capacidade. É possível atribuir workspaces em massa a uma capacidade e exibir métricas de uso em uma capacidade.
+Quando você é atribuído a uma capacidade como *administrador de capacidade*, você tem controle total sobre a capacidade e seus recursos administrativos. No portal de administração do Power BI, é possível adicionar mais administradores de capacidade ou dar aos usuários permissões de atribuição de capacidade. É possível atribuir workspaces em massa a uma capacidade e exibir métricas de uso para uma capacidade.
 
 > [!NOTE]
 > Para o Power BI Embedded, os administradores de capacidade são definidos no portal do Microsoft Azure.
