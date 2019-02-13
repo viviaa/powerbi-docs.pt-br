@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762089"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223825"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Solucione problemas do aplicativo inserido
 
@@ -161,7 +161,7 @@ Para verificar qual é o problema, tente seguir as etapas abaixo.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: a concessão exige permissão de administrador
 
-**_Sintomas:_**</br>
+**_Sintomas:_**<br>
 quando um usuário não administrador tenta entrar em um aplicativo pela primeira vez ao conceder autorização, uma das seguintes mensagens de erro é exibida:
 
 * O ConsentTest precisa de permissão para acessar os recursos em sua organização que apenas um administrador pode conceder. Peça a um administrador para conceder permissão para este aplicativo antes de usá-lo.
@@ -171,7 +171,7 @@ quando um usuário não administrador tenta entrar em um aplicativo pela primeir
 
 Um usuário administrador pode entrar e dar o consentimento com êxito.
 
-**_Causa raiz:_**</br>
+**_Causa raiz:_**<br>
 O consentimento do usuário está desabilitado para o locatário.
 
 **_Várias correções são possíveis:_**

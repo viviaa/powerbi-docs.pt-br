@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b82f739d8e5dd5497ab2a41e44097fda12345bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1672df71d1b555a3ffcbc9f72bab5053d33c6bc3
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278206"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216874"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
@@ -2032,7 +2032,7 @@ Os seguintes recursos foram adicionados nesta atualização:
 
 -   Suporte para abrir Arquivos Recentes na Página Inicial e no menu “Arquivo -\> Abrir”.
 
--   Suporte para Credenciais de UPN do Exchange no conector do Exchange.
+-   Suporte para Troca de Credenciais de UPN no conector do Exchange.
 
 Além desses novos recursos, também estamos disponibilizando o **Power BI Desktop em 42 idiomas diferentes.** Obtenha a lista completa de idiomas e instale o idioma desejado por meio de [nossa página oficial de download](https://www.microsoft.com/download/details.aspx?id=45331).
 
@@ -2062,7 +2062,7 @@ Os seguintes recursos foram adicionados nesta atualização:
 
 -   Novos Filtros de Coluna de Texto - **Não Começa Com** e **Não Termina Com**
 
--   Caixa de diálogo Níveis de Privacidade aprimorados
+-   Diálogo Níveis de Privacidade aprimorado
 
 Assista ao seguinte vídeo para obter mais detalhes:
 
