@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-visuals
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 279fea3f1b36a86e7606f3b6d69f19ab42763805
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234546"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086576"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Mapas do ArcGIS no serviço do Power BI e no Power BI Desktop pelo ESRI
-Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](../consumer/power-bi-visualizations-arcgis.md).
+Este tutorial foi escrito do ponto de vista de uma pessoa que está criando um mapa do ArcGIS. Depois que um criador compartilha um mapa do ArcGIS com um colega, esse colega pode exibir e interagir com o mapa, mas não salvar as alterações. Para saber mais sobre como exibir um mapa do ArcGIS, consulte [Interagindo com mapas do ArcGIS](power-bi-visualizations-arcgis.md).
 
 A combinação de mapas do ArcGIS e do Power BI leva o mapeamento para além da apresentação de pontos em um mapa, para um nível totalmente novo. Escolha entre mapas de base, tipos de local, temas, estilos de símbolo e camadas de referência para criar visualizações de mapas informativas e bonitas. A combinação das camadas de dados competentes em um mapa com análise espacial transmite uma compreensão mais ampla dos dados na sua visualização.
 
- Embora não seja possível criar mapas do ArcGIS em um dispositivo móvel, é possível exibir e interagir com ele. Consulte [Interagindo com mapas do ArcGIS](../consumer/power-bi-visualizations-arcgis.md).
+ Embora não seja possível criar mapas do ArcGIS em um dispositivo móvel, é possível exibir e interagir com ele. Consulte [Interagindo com mapas do ArcGIS](power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > GIS significa Geographic Information System (Sistema de Informações Geográficas).
@@ -91,7 +91,7 @@ Assista ao Will criando algumas visualizações diferentes dos mapas do ArcGIS. 
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>Configurações e formatação de mapas do ArcGIS
 Para acessar os recursos de formatação do **ArcGIS Maps para Power BI**:
 
-1. Acesse recursos adicionais, selecionando as elipses no canto superior direito da visualização e escolhendo **Editar**.
+1. Acesse recursos adicionais selecionando as reticências no canto superior direito da visualização e escolhendo **Editar**.
    
    ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
@@ -175,7 +175,8 @@ O painel Tempo de viagem permite selecionar uma localização e, em seguida, det
     ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Selecione a guia **Tempo de viagem** e escolha a ferramenta de seleção única ou múltipla. Faça uma seleção única do marcador de Washington D.C.
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+
+   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Será mais fácil selecionar um local se você ampliar o mapa (usando o ícone +).
@@ -340,7 +341,7 @@ Não, o Power BI precisa de conectividade de rede para exibir os mapas.
 Ainda não. [Vote para essa ideia](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases) e nós lhe enviaremos um email quando iniciar o trabalho com esse recurso.  
 
 ## <a name="next-steps"></a>Próximas etapas
-[Interagindo com um mapa do ArcGIS que foi compartilhado com você](../consumer/power-bi-visualizations-arcgis.md)
+[Interagindo com um mapa do ArcGIS que foi compartilhado com você](power-bi-visualizations-arcgis.md)
 
 [Postagem do blog anunciando a disponibilidade do ArcGIS Maps para o Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

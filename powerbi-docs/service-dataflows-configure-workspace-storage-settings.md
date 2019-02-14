@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 96b6e1a8a92b19181463de404967625b37418582
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bcde69d25b6b73787a4b9d16e4ba2b39b183ffd7
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291937"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086415"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Definir configurações de fluxo de dados de espaço de trabalho (versão prévia)
 
 Com o Power BI e os fluxos de dados, você pode armazenar um arquivo de definição de fluxo de dados e arquivos de dados de um espaço de trabalho em sua conta do Azure Data Lake Storage Gen2. Os administradores de espaço de trabalho podem configurar o Power BI para fazer isso, e este artigo explica as etapas necessárias para chegar lá. 
 
-Antes de configurar o local de armazenamento de fluxo de dados do espaço de trabalho, administrador global da sua empresa deve conectar a conta de armazenamento da sua organização ao Power BI e habilitar as permissões de atribuição de armazenamento para essa conta de armazenamento. * [Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)](service-dataflows-connect-azure-data-lake-storage-gen2.md) 
+Antes de configurar o local de armazenamento de fluxo de dados do espaço de trabalho, administrador global da sua empresa deve conectar a conta de armazenamento da sua organização ao Power BI e habilitar as permissões de atribuição de armazenamento para essa conta de armazenamento. *[Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)](service-dataflows-connect-azure-data-lake-storage-gen2.md)* 
 
 Há duas maneiras de definir as configurações de armazenamento de fluxo de dados do espaço de trabalho: 
 
