@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 545e8f874cca18167ee260daa92eec3ef1c3e925
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0893d63c9f153b3b2810116a902a13afff3cb2ce
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291477"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223940"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop
 Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas que aparecem ao passar o mouse sobre visuais, com base nas páginas de relatório que você cria no **Power BI Desktop**. Ao criar uma página de relatório que sirva como dica de ferramenta, as dicas de ferramenta personalizadas poderão incluir elementos visuais, imagens e qualquer outra coleção de itens que você criar na página de relatório. 
@@ -81,7 +81,7 @@ Em seguida, na lista suspensa **Página**, selecione a página de dica de ferram
 
 ![Selecionar uma página de dica de ferramenta para a dica de ferramenta manual](media/desktop-tooltips/desktop-tooltips_10.png)
 
-A possibilidade de definir manualmente uma dica de ferramenta é muito útil. Você pode definir uma página em branco para uma dica de ferramenta e, assim, substituir a seleção de dica de ferramenta padrão do Power BI. Outro uso é quando você não quer que a dica de ferramenta selecionada automaticamente pelo Power BI seja a dica de ferramenta. Por exemplo, se você tiver um visual que inclui dois campos, e cada um desses campos tiver uma dica de ferramenta associada, o Power BI selecionará apenas uma para mostrar. Caso isso não seja conveniente, você poderá selecionar manualmente qual dica de ferramenta deverá ser exibida.
+A possibilidade de definir manualmente uma dica de ferramenta é muito útil. Você pode definir uma página em branco para uma dica de ferramenta e, assim, substituir a seleção de dica de ferramenta padrão do Power BI. Outro uso é quando você não quer que a dica de ferramenta selecionada automaticamente pelo Power BI seja a dica de ferramenta. Por exemplo, se você tiver um visual que inclua dois campos e ambos os campos tiverem uma dica de ferramenta associada, o Power BI selecionará apenas uma para exibição. Caso isso não seja conveniente, você poderá selecionar manualmente qual dica de ferramenta deverá ser exibida.
 
 ## <a name="reverting-to-default-tooltips"></a>Revertendo para as dicas de ferramentas padrão
 
@@ -97,7 +97,7 @@ Há algumas considerações para ter em mente quando as dicas de ferramentas de 
 
 Ao exibir uma dica de ferramenta de relatório para um gráfico de linhas, só é possível exibir uma dica de ferramenta para todas as linhas do gráfico. Esse comportamento é semelhante ao da dica de ferramenta padrão para gráficos de linhas, que também exibe apenas uma dica de ferramenta. 
 
-Isso ocorre porque o campo da legenda não é passado como um filtro para a dica de ferramenta. Na imagem a seguir, a dica de ferramenta que está sendo exibida está mostrando todas as unidades vendidas naquele dia, entre todas as três classes exibidas na dica de ferramenta de relatório (neste exemplo, Deluxe, Economy e Regular). 
+Isso ocorre porque o campo da legenda não é passado como um filtro para a dica de ferramenta. Na imagem a seguir, a dica de ferramenta exibida mostra todas as unidades vendidas no dia em todas as três classes exibidas na dica de ferramenta de relatório (neste exemplo, Deluxe, Economy e Regular). 
 
 ![Gráficos de linhas mostram somente dados agregados de dica de ferramenta](media/desktop-tooltips/desktop-tooltips_12.png)
 

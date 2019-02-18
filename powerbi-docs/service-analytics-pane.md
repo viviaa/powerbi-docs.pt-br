@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 842d29978fa6a4a714b42b1665112661e0704357
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ce99539e1804746970eae20dc9396f0f0536afea
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293731"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223687"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Criar linhas de referência dinâmica para visuais no serviço do Power BI
 
@@ -54,7 +54,7 @@ Para exibir as linhas de referência dinâmica disponíveis para um visual, siga
    
    ![personalizar a análise de linha média](media/service-analytics-pane/power-bi-average-line2.png)
 
-1. Observe o número que aparece ao lado do item **Linha média** no painel **Análise**. Que indica quantas linhas dinâmicas você tem atualmente no visual e qual o tipo delas. Se adicionarmos uma **Linha constante** como uma meta de contagem de loja igual a 9, veja que o painel **Análise** agora mostra que também temos uma linha de referência **Linha constante** aplicada nesse visual.
+1. Observe o número que aparece ao lado do item **Linha média** no painel **Análise**. Isso indica o número de linhas dinâmicas atualmente presentes no visual, bem como o tipo. Se adicionarmos uma **Linha constante** como uma meta de contagem de loja igual a 9, veja que o painel **Análise** agora mostra que também temos uma linha de referência **Linha constante** aplicada nesse visual.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    

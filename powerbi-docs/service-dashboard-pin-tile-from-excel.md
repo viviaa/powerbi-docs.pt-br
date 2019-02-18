@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ad044a5b3f6ddcb4b8e1dbffa1bb2a7dac01eb31
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284968"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56214988"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fixar um bloco em um painel do Power BI a partir do Excel
-Antes de fixar um bloco da sua pasta de trabalho do Excel, conecte-a ao serviço do Power BI (app.powerbi.com). Essencialmente, conectar uma pasta de trabalho gera uma versão somente leitura vinculada dessa pasta de trabalho no serviço do Power BI e permite fixar intervalos aos dashboards. É possível até fixar uma planilha inteira em um dashboard.  
+Antes de fixar um bloco da sua pasta de trabalho do Excel, conecte-a ao serviço do Power BI (app.powerbi.com). Essencialmente, a conexão com uma pasta de trabalho abre uma versão somente leitura vinculada dessa pasta de trabalho no serviço do Power BI e permite fixar intervalos nos dashboards. É possível até fixar uma planilha inteira em um dashboard.  
 Se uma pasta de trabalho foi compartilhada com você, será possível exibir os blocos fixados pelo proprietário, mas você não poderá criar blocos de dashboard. 
 
 Para obter informações mais aprofundadas sobre como o Excel e o Power BI funcionam em conjunto, consulte [Obter dados de arquivos de pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkID=521962).

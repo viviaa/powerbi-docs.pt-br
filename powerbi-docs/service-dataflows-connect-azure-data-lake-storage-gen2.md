@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d48df3287813229e673bbc523281cdb2218ec384
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8cc1201c506e98ae33b68ef0cf802dae20b6f493
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277263"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216506"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)
 
@@ -63,7 +63,7 @@ Siga as etapas do artigo [Criar uma conta de armazenamento do Azure Data Lake St
 
 ### <a name="grant-the-power-bi-service-a-reader-role"></a>Conceder a função de leitor ao serviço do Power BI
 
-Em seguida, você precisa conceder ao serviço do Power BI uma função de leitor na conta de armazenamento criada. É uma função interna, portanto, as etapas são simples. 
+Em seguida, você precisa conceder ao serviço do Power BI uma função de leitor na conta de armazenamento criada. É uma função interna e, portanto, as etapas são simples. 
 
 Siga as etapas no artigo [Atribuir uma função a uma entidade de segurança](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal).
 

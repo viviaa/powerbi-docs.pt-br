@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 3aa4047f5a4b0146c534a5734d8d13a42c46fe58
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e829d0cf174cc81148287ce1b25449246300606c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287797"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216690"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Solucionar problemas de atualização agendada no Servidor de Relatórios do Power BI
 Este artigo aborda os recursos disponíveis para solucionar problemas com a atualização agendada no Servidor de Relatórios do Power BI.
@@ -25,7 +25,7 @@ Conforme os problemas surgirem, este artigo será atualizado com informações p
 Veja a seguir os problemas mais comuns encontrados ao tentar agendar a atualização de um relatório. 
 
 ### <a name="driver-related-problems"></a>Problemas relacionados ao driver
-A conexão a fontes de dados diferentes pode exigir drivers de terceiros que precisam ser instalados para uma conexão bem-sucedida. Você não só precisará instalá-los no computador usando o Power BI Desktop, mas também precisará verificar se o driver está instalado no servidor de relatório.
+A conexão com diferentes fontes de dados pode exigir drivers de terceiros que precisam ser instalados para estabelecer uma conexão bem-sucedida. Você não só precisará instalá-los no computador usando o Power BI Desktop, mas também precisará verificar se o driver está instalado no servidor de relatório.
 
 Além disso, o driver pode ser de 32 e de 64 bits. Instale o driver de 64 bits, uma vez que Servidor de Relatórios do Power BI é de 64 bits.
 
@@ -60,7 +60,7 @@ As configurações a seguir podem ser usadas para impactar a atualização agend
 
 **Configurações em rsreportserver.config:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>
@@ -145,7 +145,7 @@ As entradas do log de execução dos relatórios do Power BI são diferentes das
     * **SaveToCatalog**: sempre que o modelo de dados é salvo para o catálogo.
 
 ## <a name="analysis-services"></a>Analysis Services
-Pode haver momentos que você deseja modificar o Analysis Services para diagnosticar problemas ou para ajustar os limites de memória.
+Em alguns momentos, talvez você deseje modificar o Analysis Services para diagnosticar problemas ou ajustar os limites de memória.
 
 > [!IMPORTANT]
 > Estas configurações serão redefinidas sempre que você atualizar o servidor de relatório. Mantenha sempre uma cópia das alterações e reaplique-as se necessário.

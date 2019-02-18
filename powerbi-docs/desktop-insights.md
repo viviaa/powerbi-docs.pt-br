@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b8c436088bcd7538c09d4acf0fd5d529f9c8a8f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f5896505d724c0704e22c95df132ee3318b23009
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278827"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56224009"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Usar insights no Power BI Desktop para explicar os aumentos e as diminuições exibidos nos visuais (versão prévia)
 
@@ -116,7 +116,7 @@ A lista a seguir é a coleção de cenários sem suporte no momento para **expli
 * Filtros de medida
 * Medidas não numéricas
 * Uso de "Mostrar valor como"
-* Medidas filtradas – são cálculos no nível do visual com um filtro específico aplicado (por exemplo, *Total de Vendas da França*) e são usados em alguns dos visuais criados pelo recurso de insights
+* Medidas filtradas – medidas filtradas são cálculos no nível do visual com um filtro específico aplicado (por exemplo, *Total de Vendas na França*) e são usadas em alguns dos visuais criados pelo recurso de insights
 * Colunas categóricas no eixo X, a menos que ele defina uma classificação por coluna que seja escalar. Se você estiver usando uma hierarquia, todas as colunas na hierarquia ativa deverão corresponder a essa condição
 
 

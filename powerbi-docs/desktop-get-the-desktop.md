@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0f2443ac5dff167e633d89834a23d186c19f858b
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281909"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216598"
 ---
 # <a name="get-power-bi-desktop"></a>Obter o Power BI Desktop
 O **Power BI Desktop** permite a criação de consultas, modelos e relatórios avançados que visualizam dados. Com o **Power BI Desktop**, você pode criar modelos de dados, criar relatórios e compartilhar seu trabalho publicando-o no serviço do Power BI.  **Power BI Desktop** é um download gratuito.
@@ -62,7 +62,7 @@ Há algumas vantagens em obter o **Power BI Desktop** na Microsoft Store:
 
 * **Atualizações automáticas**: assim que disponível, o Windows baixa a versão mais recente automaticamente em segundo plano, de modo que a sua versão permaneça sempre atualizada.
 * **Downloads menores**: a **Microsoft Store** garante que apenas os componentes alterados em cada atualização sejam baixados em seu computador, o que resulta em downloads menores para cada atualização.
-* **Não é necessário ter privilégio de administrador**: ao baixar o MSI diretamente e instalá-lo, é necessário ser administrador para que a instalação seja concluída com êxito. Ao obter o **Power BI Desktop** na Microsoft Store, o privilégio de administrador *não* é necessário.
+* **O privilégio de administrador não é necessário**: quando você baixa o MSI diretamente e o instala, é necessário ser administrador para que a instalação seja concluída com êxito. Quando você obtém o **Power BI Desktop** na Microsoft Store, o privilégio de administrador *não* é necessário.
 * **Disponibilização de TI habilitada**: a versão da **Microsoft Store** pode ser implantada, ou *disponibilizada*, mais facilmente para todos os membros da sua organização e pode disponibilizar o **Power BI Desktop** por meio da **Microsoft Store para Empresas**.
 * **Detecção de idioma**: a versão da **Microsoft Store** inclui todos os idiomas com suporte e verifica quais deles estão sendo usados no computador toda vez que ele é iniciado. Isso também afeta a localização de modelos criados no **Power BI Desktop**. Por exemplo, hierarquias de datas internas corresponderão ao idioma que o **Power BI Desktop** estava usando quando o arquivo .pbix foi criado.
 
@@ -112,7 +112,7 @@ Alguns usuários encontram um erro semelhante ao seguinte ao usar uma versão de
 A atualização para a versão atual do Power BI Desktop geralmente resolve esse problema.
 
 ### <a name="disabling-notifications"></a>Desabilitar as notificações
-Recomendamos a atualização para a versão mais recente do Power BI Desktop para tirar proveito dos avanços em recursos, desempenho, estabilidade e outros aprimoramentos. Talvez algumas organizações não queiram que os usuários atualizem a cada nova versão. Você pode desabilitar as notificações modificando o Registro com as seguintes etapas:
+Recomendamos a atualização para a versão mais recente do Power BI Desktop, a fim de aproveitar os avanços em recursos, desempenho, estabilidade e outras melhorias. Talvez algumas organizações não queiram que os usuários atualizem a cada nova versão. Você pode desabilitar as notificações modificando o Registro com as seguintes etapas:
 
 1. No Editor do Registro, navegue até *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
 2. Crie uma nova entrada com as seguintes configurações: *REG_DWORD: DisableUpdateNotification*

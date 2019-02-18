@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9901d5a60c0fe3127dada9523e659d48fbe7bf8b
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762181"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223595"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI Embedded
 
@@ -71,7 +71,7 @@ As seguintes contas precisarão existir no seu locatário.
     O back-end de aplicativos armazenará as credenciais dessa conta e a usará para adquirir um token do Azure AD para utilizar com as APIs REST do Power BI. Essa conta será usada para gerar o token de inserção para o aplicativo. Essa conta também precisa ser administrador dos Workspaces do aplicativo criados para a inserção.
 
 > [!NOTE]
-> Essa é apenas uma conta de usuário regular na sua organização que será usada para fins de inserção.
+> Essa é apenas uma conta de usuário regular em sua organização que será usada para fins de inserção.
 
 ## <a name="app-registration-and-permissions"></a>Registro do aplicativo e permissões
 

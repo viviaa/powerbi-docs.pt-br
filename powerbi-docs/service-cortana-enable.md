@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 130c18bb51c99813999f87c69c465dc59783e638
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ff99fc731b5388acd4dbb7c98fe13b227e7d5789
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276711"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216747"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Habilitar a Cortana para acessar os relatórios do Power BI (e seus conjuntos de dados subjacentes)
 Você já leu a [Introdução à Cortana e ao Power BI](service-cortana-intro.md) (se não, convém lê-la primeiro e depois voltar). E agora você deseja testá-la por conta própria.  Antes de fazer perguntas em linguagem natural na Cortana e encontrar respostas nos dados armazenados nos ***relatórios*** do Power BI, há alguns requisitos. Especificamente, você precisará fazer o seguinte.
@@ -75,7 +75,7 @@ Você precisará executar o Windows 10 versão 1511 ou superior.
    * Abra **Configurações** > **Contas**.
      
        ![Configurações – Contas](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Role para baixo e selecione **Adicionar uma conta corporativa ou de estudante**. Ou, na página **Contas**, selecione **Acessar trabalho ou escola > Conectar**.
+   * Role para baixo e selecione **Adicionar uma conta corporativa ou de estudante**. Outra opção é, na página **Contas**, selecionar **Acessar conta corporativa ou de estudante > Conectar**.
      
      ![Adicionar conta de trabalho](media/service-cortana-enable/power-bi-add-work-account2.png)
 

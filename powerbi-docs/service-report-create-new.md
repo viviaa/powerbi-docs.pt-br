@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 31a7221d3b284e6342b192384f92616a52e12631
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b46896a06c9d7ed66e643aa218ec7dbd3da8c9ee
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280230"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216943"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Criar um novo relatório no serviço do Power BI importando um conjunto de dados
 Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora deseja criar o seu próprio relatório. Há muitas maneiras diferentes para criar um relatório e, neste artigo, vamos começar criando um relatório muito básico com base em um conjunto de dados do Excel usando o serviço do Power BI. Depois de compreender os fundamentos da criação de um relatório, as **Próximas etapas** no final vão direcioná-lo para tópicos mais avançados sobre relatórios.  
@@ -73,7 +73,7 @@ Nossa CMO tem algumas perguntas adicionais para respondermos. Ela gostaria de ve
 2. Desmarque o medidor. No painel Campos, selecione **Vendas** > **Vendas Deste Ano** > **Valor** e selecione **Vendas** > **Vendas do Ano Passado**.
    
     ![editor de relatório com medidor e gráfico de barras](media/service-report-create-new/power-bi-report-step4.png)
-3. Converta o visual em um gráfico de área selecionando o modelo de gráfico de área ![ícone do gráfico](media/service-report-create-new/power-bi-areachart-icon.png) no painel **Visualizações**.
+3. Converta o visual em um gráfico de Área selecionando o modelo de Gráfico de áreas ![ícone de gráfico](media/service-report-create-new/power-bi-areachart-icon.png) no painel **Visualizações**.
 4. Selecione **Tempo** > **Período** para adicionar ao **Eixo** também.
    
     ![editor de relatório com gráfico de área ativo](media/service-report-create-new/power-bi-report-step5.png)

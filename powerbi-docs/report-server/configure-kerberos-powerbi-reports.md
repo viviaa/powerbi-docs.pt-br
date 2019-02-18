@@ -9,19 +9,19 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: b9fcd2dbd664ac4f119c3f00c3d1a173b9251bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5342f509fdd0705b2752aab3315a4968d610b681
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296170"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223756"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Configurar o Kerberos para usar relatórios do Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Saiba como configurar seu servidor de relatório para a autenticação Kerberos para fontes de dados usadas em relatórios do Power BI para um ambiente distribuído.
 
-O Servidor de Relatório do Power BI inclui a capacidade de hospedar relatórios do Power BI. Várias fontes de dados são compatíveis com o servidor de relatório. Embora este artigo concentre-se especificamente no SQL Server Analysis Services, você pode usar os conceitos e aplicá-los a outras fontes de dados, como o SQL Server.
+O Servidor de Relatório do Power BI inclui a capacidade de hospedar relatórios do Power BI. Várias fontes de dados são compatíveis com o servidor de relatório. Embora este artigo se concentre especificamente no SQL Server Analysis Services, você poderá usar os conceitos e aplicá-los a outras fontes de dados, como o SQL Server.
 
 É possível instalar o Servidor de Relatório do Power BI, SQL Server e o Analysis Services em um único computador e tudo deve funcionar sem configuração adicional. Isso é ótimo para um ambiente de teste. Talvez ocorram erros se esses serviços estiverem instalados em computadores separados, o que é chamado ambiente distribuído. Nesse ambiente, é necessário usar a autenticação Kerberos. Há uma configuração necessária para implementar isso. 
 
@@ -63,7 +63,7 @@ No arquivo rsreportserver.config, você encontrará a seção **Authentication/A
 
 Queremos garantir que o RSWindowsNegotiate esteja listado e seja o primeiro na lista de tipos de autenticação. Ela deve ser semelhante à seguinte.
 
-```
+```xml
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
     <RSWindowsNTLM/>

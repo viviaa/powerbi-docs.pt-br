@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281150"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225904"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.
@@ -77,11 +77,14 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (Beta)
-* Conector do BI
+* Dremio
 * Exasol
-* Dremio (Beta)
+* MarkLogic (Beta)
+* Cubos do AtScale (Beta)
+* Conector do BI
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
 
@@ -95,7 +98,7 @@ A imagem a seguir mostra a janela **Obter Dados** para **Banco de dados**.
 A categoria **Power BI** fornece as seguintes conexões de dados:
 
 * Conjuntos de dados do Power BI
-* Fluxos de dados do Power BI (beta)
+* Fluxos de dados do Power BI (Beta)
 
 A imagem a seguir mostra a janela **Obter Dados** do **Power BI**.
 
@@ -136,8 +139,6 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * Google Analytics
 * Adobe Analytics
 * appFigures (Beta)
-* comScore Digital Analytix (Beta)
-* Dynamics 365 for Customer Insights (Beta)
 * Data.World – Obter Conjunto de Dados (Beta)
 * Facebook
 * GitHub (Beta)
@@ -157,6 +158,8 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * Webtrends (Beta)
 * ZenDesk (Beta)
 * TeamDesk (Beta)
+* Fonte de dados do Emigo (Beta)
+* Segurança do Microsoft Graph (Beta)
 
 A imagem a seguir mostra a janela **Obter Dados** para **Online Services**.
 
@@ -164,7 +167,6 @@ A imagem a seguir mostra a janela **Obter Dados** para **Online Services**.
 
 A categoria **Outros** fornece as seguintes conexões de dados:
 
-* Vertica
 * Web
 * Lista do SharePoint
 * Feed OData
@@ -176,8 +178,12 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * Script Python
 * ODBC
 * OLE DB
+* Workforce Dimensions (Beta)
 * Denado
 * Paxata (Beta)
+* SurveyMonkey (Beta)
+* QubolePresto (Beta)
+* Quick Base (Beta)
 * Consulta em Branco
 
 A imagem a seguir mostra a janela **Obter Dados** para **Outros**.
@@ -190,7 +196,7 @@ A imagem a seguir mostra a janela **Obter Dados** para **Outros**.
 ## <a name="connecting-to-a-data-source"></a>Conectando a uma Fonte de Dados
 Para se conectar a uma fonte de dados, selecione a fonte de dados na janela **Obter Dados** e selecione **Conectar**. Na imagem a seguir, a opção **Web** é selecionada na categoria de conexão de dados **Outros** .
 
-![Conecte-se à Web](media/desktop-data-sources/data-sources_08a.png)
+![Conecte-se à Web](media/desktop-data-sources/data-sources_08.png)
 
 É exibida uma janela de conexão específica para o tipo de conexão de dados usado. Se as credenciais forem necessárias, será solicitado que você as forneça. A imagem a seguir mostra uma URL sendo inserida para conectar a uma fonte de dados da Web.
 

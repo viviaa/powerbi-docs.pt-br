@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bef307678c471303fde7382e3c1be1648d49f0db
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 457861d17aea03303df9c271c52e7f962f525bbc
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280299"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223250"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Usar elementos visuais para aprimorar os relatórios do Power BI
 
@@ -51,7 +51,7 @@ A **página** do relatório sempre fica em primeiro plano (em relação ao papel
 
 As configurações padrão para todos os novos relatórios são as seguintes:
 
-* A **página** do relatório é definida para **branco** e a transparência para **100%**
+* A **página** do relatório é definida como **branco** e a transparência como **100%**
 * O **papel de parede** é definido para **branco** e a transparência para **0%**
 
 Se você definir a transparência do plano de fundo da página para mais de 50%, uma borda pontilhada aparecerá enquanto você estiver criando ou editando o relatório, para mostrar o limite da borda da tela do relatório. 

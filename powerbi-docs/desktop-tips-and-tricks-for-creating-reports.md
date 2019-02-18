@@ -1,7 +1,7 @@
 ---
 title: Dicas e truques para criar relatórios no Power BI
 description: Conheça as práticas recomendadas para criação de relatórios no serviço do Power BI e no Power BI Desktop
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: bd1889605773b1d9eed888550676b8bbc9933b2f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fa3d24de1f54be127f3f9b23ca33677987464150
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295985"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223848"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Dicas e truques para criar relatórios no Power BI Desktop
 Para aproveitar ao máximo seus dados, às vezes você precisa de uma ajuda extra. Reunimos algumas dicas e truques que você pode usar ao criar relatórios no Microsoft Power BI Desktop *e* nas edições Pro-Plus do Microsoft Excel 2013 ou 2016 com o suplemento do Power Pivot habilitado e o Power Query instalado e habilitado. 
@@ -143,7 +143,7 @@ Para criar uma relação, nesse caso, precisamos criar um conjunto de dados lóg
 4. Na consulta **CustomerNames** , selecione a opção **Acrescentar** na faixa de opções e, em seguida, selecione a consulta **Temp**.
 5. Na consulta **CustomerNames** , selecione **Remover Duplicatas**.
 
-Agora você tem uma tabela de dimensões que pode ser usada para relacionar CustomerIndicents e WorkItems que contém todos os valores de cada um.  
+Agora você tem uma tabela de dimensões que pode ser usada para relacionar CustomerIncidents e WorkItems e que contém todos os valores de cada um.  
 
 ## <a name="patterns-to-jump-start-your-use-of-the-query-editor"></a>Padrões para acelerar seu uso do Editor de Consultas
 O Editor de Consultas é bastante eficiente em como ele pode manipular dados para formatar e limpá-los para que estejam prontos para serem visualizados ou modelados. Existem alguns padrões que você deve conhecer.

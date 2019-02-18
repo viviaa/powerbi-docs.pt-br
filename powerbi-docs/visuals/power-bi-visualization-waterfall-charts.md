@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c219a7ac9ce88d3dca9d01a09868835062fe93ce
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3835bedc1b4ab2df87abf4704ef338ff7f4abc5d
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291891"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215034"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Gráficos de cascata no Power BI
 O gráfico de cascata mostram uma duração total conforme os valores são adicionados ou subtraídos. É útil para entender como um valor inicial (por exemplo, a receita líquida) é afetado por uma série de alterações positivas e negativas.
@@ -51,7 +51,7 @@ Criaremos um gráfico de cascata que exibe a variação de vendas (vendas estima
    
     ![escolha classificar por > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![resultado da nova classificação crescente](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![resultado da nova classificação ascendente](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Aprofunde-se um pouco mais para ver o que está contribuindo mais para as alterações a cada mês. Arraste **Repositório** > **Região** para o bucket **Divisão**.
    
     ![Mostra Repositório no bucket de Divisão](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)

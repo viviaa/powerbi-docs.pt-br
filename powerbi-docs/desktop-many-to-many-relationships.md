@@ -1,53 +1,43 @@
 ---
-title: Relações muitos para muitos no Power BI Desktop (versão prévia)
-description: Usar relações muitos para muitos no Power BI Desktop
+title: Relações muitos para muitos no Power BI Desktop
+description: Usar relações com uma cardinalidade muitos para muitos no Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8d32ad24fd41c33d0b1e1f37f11be39292e82742
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291063"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225950"
 ---
-# <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Relações muitos para muitos no Power BI Desktop (versão prévia)
+# <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relações com uma cardinalidade muitos para muitos no Power BI Desktop
 
-Com o recurso *relações muitos para muitos* no Power BI Desktop, é possível unir tabelas que usam uma cardinalidade de *Muitos para muitos*. Você pode criar modelos de dados mais fáceis e intuitivos que contêm duas ou mais fontes de dados. O recurso *relações muitos para muitos* faz parte das funcionalidades mais amplas de *modelos compostos* no Power BI Desktop.
+Com o recurso *relações com uma cardinalidade muitos para muitos* no Power BI Desktop, você pode unir tabelas que usam uma cardinalidade igual a *muitos para muitos*. Você pode criar modelos de dados mais fáceis e intuitivos que contêm duas ou mais fontes de dados. O recurso *relações com uma cardinalidade muitos para muitos* faz parte das funcionalidades mais amplas de *modelos compostos* do Power BI Desktop.
 
 ![Uma relação muitos para muitos no painel “Editar relação”](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-A funcionalidade *relações muitos para muitos* no Power BI Desktop é uma de três recursos relacionados:
+A funcionalidade *relações com uma cardinalidade muitos para muitos* do Power BI Desktop é um de três recursos relacionados:
 
-* **Modelos Compostos**: permite que um relatório tenha duas ou mais conexões de dados, incluindo conexões DirectQuery ou Importação, em qualquer combinação. Para ver mais informações, confira [Modelos compostos no Power BI Desktop (versão prévia)](desktop-composite-models.md).
+* **Modelos compostos**: permite que um relatório tenha duas ou mais conexões de dados, incluindo conexões DirectQuery ou Importação, em qualquer combinação. Para ver mais informações, confira [Modelos compostos no Power BI Desktop (versão prévia)](desktop-composite-models.md).
 
-* **Relações muitos-para-muitos**: com *modelos compostos*, você pode estabelecer *relações muitos-para-muitos* entre as tabelas. Esta abordagem remove os requisitos de valores exclusivos nas tabelas. Ela também remove as soluções alternativas anteriores, como introduzir novas tabelas somente para estabelecer relações. O recurso é descrito em detalhes neste artigo.
+* **Relações com uma cardinalidade muitos para muitos**: Com os *modelos compostos*, você pode estabelecer *relações com uma cardinalidade muitos para muitos* entre tabelas. Esta abordagem remove os requisitos de valores exclusivos nas tabelas. Ela também remove as soluções alternativas anteriores, como introduzir novas tabelas somente para estabelecer relações. O recurso é descrito em detalhes neste artigo.
 
 * **Modo de armazenamento**: agora você pode especificar quais visuais exigem uma consulta para fontes de dados de back-end. Visuais que não exigem uma consulta serão importados, mesmo se forem baseados no DirectQuery. Esse recurso ajuda a melhorar o desempenho e reduzir a carga de back-end. Antes, mesmo visuais simples como as segmentações iniciavam consultas enviadas para fontes de back-end. Para mais informações, confira [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md).
 
-## <a name="enable-the-many-to-many-relationships-preview-feature"></a>Habilitar a versão prévia do recurso *relações muitos para muitos*
+## <a name="what-relationships-with-a-many-many-cardinality-solves"></a>O que as *relações com uma cardinalidade muitos para muitos* resolvem
 
-O recurso *relações muitos para muitos* precisa ser habilitado no Power BI Desktop. Para habilitar os modelos compostos, selecione **Arquivo** > **Opções e configurações** > **Opções** > **Versões prévias dos recursos** e marque a caixa de seleção **Modelos compostos**.
+Antes de o recurso *relações com uma cardinalidade muitos para muitos* ficar disponível, a relação entre duas tabelas era definida no Power BI. Pelo menos uma das colunas da tabela envolvidas na relação precisava conter valores exclusivos. Muitas vezes, no entanto, não há colunas contendo valores exclusivos. 
 
-![O painel “Recursos em versão prévia”](media/desktop-composite-models/composite-models_02.png)
+Por exemplo, duas tabelas podem ter uma coluna com o rótulo *País*, mas os valores de *País* não eram exclusivos em nenhuma das tabelas. Para unir essas tabelas, era necessário criar uma solução alternativa. Essa solução poderia ser introduzir tabelas adicional no modelo com os valores exclusivos necessários. Com o recurso *relações com uma cardinalidade muitos para muitos*, você pode unir essas tabelas diretamente usando uma relação com uma cardinalidade igual a **muitos para muitos**.  
 
-Para habilitar o recurso, é preciso reiniciar o Power BI Desktop.
-
-![A janela “O recurso exige uma reinicialização”](media/desktop-composite-models/composite-models_03.png)
-
-## <a name="what-many-to-many-relationships-solves"></a>O que as *relações muitos para muitos* resolvem
-
-Antes do recurso *relações muitos para muitos* ficar disponível, a relação entre duas tabelas era definida no Power BI. Pelo menos uma das colunas da tabela envolvidas na relação precisava conter valores exclusivos. Muitas vezes, no entanto, não há colunas contendo valores exclusivos. 
-
-Por exemplo, duas tabelas podem ter uma coluna com o rótulo *País*, mas os valores de *País* não eram exclusivos em nenhuma das tabelas. Para unir essas tabelas, era necessário criar uma solução alternativa. Essa solução poderia ser introduzir tabelas adicional no modelo com os valores exclusivos necessários. Com o recurso *relações muitos para muitos*, você pode unir essas tabelas diretamente usando uma relação com uma cardinalidade de **Muitos para muitos**.  
-
-## <a name="use-many-to-many-relationships"></a>Usar *relações muitos para muitos*
+## <a name="use-relationships-with-a-many-many-cardinality"></a>Usar *relações com uma cardinalidade muitos para muitos*
 
 Ao definir uma relação entre duas tabelas no Power BI, é preciso definir a cardinalidade da relação. Por exemplo, a relação entre *ProductSales* e *Produto*&mdash;usando as colunas *ProductSales[ProductCode]* e *Product[ProductCode]*&mdash;seria definida como *Muitos para um*. Definimos a relação dessa forma porque há muitas vendas para cada produto e a coluna na tabela *Produto* *(ProductCode)* é exclusiva. Ao definir uma cardinalidade da relação como *Muitos para um*, *Um para muitos* ou *Um para um*, o Power BI a valida para ajudar a garantir que a cardinalidade selecionada corresponda aos dados reais.
 
@@ -117,14 +107,11 @@ Se definirmos a nova tabela *Vendas* como a combinação de todos os *Estados* n
 
 ![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-Como podemos ver, os dados de *TX*&mdash;com *Vendas*, mas com os dados de *População* desconhecidos &mdash;e *Nova York*&mdash;com os dados de *População* conhecidos, mas não dados *Vendas*&mdash;seriam incluídos. Essa solução alternativa não é ideal, e tem vários problemas. Com a criação das relações muitos para muitos, os problemas resultantes são resolvidos conforme descrito na seção a seguir.
+Como podemos ver, os dados de *TX*&mdash;com *Vendas*, mas com os dados de *População* desconhecidos &mdash;e *Nova York*&mdash;com os dados de *População* conhecidos, mas não dados *Vendas*&mdash;seriam incluídos. Essa solução alternativa não é ideal, e tem vários problemas. Com a criação das relações com uma cardinalidade muitos para muitos, os problemas resultantes são resolvidos conforme descrito na próxima seção.
 
-## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>Usar *relações muitos para muitos* em vez da solução alternativa
+## <a name="use-relationships-with-a-many-many-cardinality-instead-of-the-workaround"></a>Usar *relações com uma cardinalidade muitos para muitos* em vez da solução alternativa
 
 A partir da versão de julho de 2018 do Power BI Desktop, é possível relacionar tabelas diretamente, como aquelas que descrevemos anteriormente, sem precisar recorrer a soluções alternativas semelhantes. Agora é possível definir a cardinalidade da relação para *Muitos para muitos*. Essa configuração indica que nenhuma tabela contém valores exclusivos. Para essas relações, você ainda pode controlar qual tabela filtra a outra tabela, ou aplicar filtragem bidirecional, em que ambas as tabelas se filtram entre si.  
-
-> [!NOTE]
-> A capacidade de criar *relações muitos para muitos* está em versão prévia. Enquanto ela estiver na versão prévia, não será possível publicar os modelos do serviço do Power BI que usam *relações muitos para muitos*. 
 
 No Power BI Desktop, a cardinalidade usa como padrão *Muitos para muitos* quando é determinado que nenhuma destas tabelas contém valores exclusivos para as colunas na relação. Nesses casos, um aviso é exibido, para confirmar se essa configuração de relação é o comportamento desejado, e não um efeito não intencional de um problema de dados. 
 
@@ -136,7 +123,7 @@ O modo de exibição **Relação** resultante conteria a relação direta, muito
 
 ![Visual da tabela](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
-A principal diferença entre as *relações muitos para muitos* e as relações *muitos para um* mais comuns é a seguinte:
+As principais diferenças entre as *relações com uma cardinalidade muitos para muitos* e as relações *muitos para um* mais comuns são as seguintes:
 
 * Os valores mostrados não incluem uma linha em branco que conta para as linhas incompatíveis na outra tabela. Nem esses valores consideram as linhas em que a coluna usada na relação na outra tabela é nula.
 * Não é possível usar a função `RELATED()`, pois mais de uma linha pode estar relacionada.
@@ -153,7 +140,7 @@ Com as diferenças anteriores em mente, verifique se os cálculos que usam `ALL(
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 
-Há algumas limitações nesta versão de *relações muitos para muitos* e modelos compostos.
+Há algumas limitações nesta versão das *relações com uma cardinalidade muitos para muitos* e dos modelos compostos.
 
 As seguintes fontes (multidimensionais) do Live Connect não podem ser usadas com os modelos compostos:
 
@@ -165,7 +152,7 @@ As seguintes fontes (multidimensionais) do Live Connect não podem ser usadas co
 
 Ao se conectar a essas fontes multidimensionais usando o DirectQuery, não é possível se conectar também à outra fonte do DirectQuery, nem combiná-la com os dados importados.
 
-As limitações existentes do uso do DirectQuery ainda se aplicam ao usar as *relações muitos para muitos*. Muitas dessas limitações agora são por tabela, dependendo do modo de armazenamento dela. Por exemplo, uma coluna calculada em uma tabela importada pode se referir a outras tabelas, mas uma coluna calculada em uma tabela do DirectQuery ainda se refere apenas às colunas na mesma tabela. Outras limitações serão aplicáveis ao modelo como um todo se quaisquer das tabelas no modelo forem DirectQuery. Por exemplo, os recursos QuickInsights e P e R não estarão disponíveis em um modelo se qualquer uma das tabelas nele tiver um modo de armazenamento do DirectQuery. 
+As limitações existentes do uso do DirectQuery ainda se aplicam quando você usa *relações com uma cardinalidade muitos para muitos*. Muitas dessas limitações agora são por tabela, dependendo do modo de armazenamento dela. Por exemplo, uma coluna calculada em uma tabela importada pode se referir a outras tabelas, mas uma coluna calculada em uma tabela do DirectQuery ainda se refere apenas às colunas na mesma tabela. Outras limitações serão aplicáveis ao modelo como um todo se quaisquer das tabelas no modelo forem DirectQuery. Por exemplo, os recursos QuickInsights e P e R não estarão disponíveis em um modelo se qualquer uma das tabelas nele tiver um modo de armazenamento do DirectQuery. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

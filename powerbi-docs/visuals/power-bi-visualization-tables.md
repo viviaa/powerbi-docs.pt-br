@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2c909f1f7d2c1b500d37de0e4617e10c79977c96
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0106c59c5fc4d122205a144d85a6e7f643c5a429
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284761"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223388"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabelas em relatórios e dashboards do Power BI
 Uma tabela é uma grade que contém dados relacionados em uma série de lógica de linhas e colunas. Ela também pode conter cabeçalhos e linhas de totais. As tabelas funcionam bem com comparações quantitativas em que você observa muitos valores de uma única categoria. Por exemplo, esta tabela exibe 5 medidas diferentes para a **Categoria**.
@@ -135,7 +135,7 @@ Sua tabela ou matriz pode ter conteúdo que você gostaria de usar em outros apl
 ![close-up de vídeo do redimensionamento da coluna](media/power-bi-visualization-tables/resizetable.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-* Ao aplicar a formatação de coluna, só é possível escolher uma opção de alinhamento por coluna: Automático, Esquerda, Centro, Direita. Normalmente, uma coluna contém todo o texto ou todos os números, e não uma combinação. Nos casos em que uma coluna contiver números e texto, **Auto** será alinhado à esquerda para texto e à direita para números. Esse comportamento é compatível com idiomas que a leitura ocorre da esquerda para a direita.   
+* Ao aplicar a formatação de coluna, só é possível escolher uma opção de alinhamento por coluna: Automático, Esquerda, Centro, Direita. Normalmente, uma coluna contém todo o texto ou todos os números, e não uma combinação. Nos casos em que uma coluna contiver números e texto, **Auto** será alinhado à esquerda para texto e à direita para números. Esse comportamento dá suporte a idiomas em que a leitura ocorre da esquerda para a direita.   
 
 ## <a name="next-steps"></a>Próximas etapas
 

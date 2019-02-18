@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f2c7cff36639007276622b095980a9460e539285
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275906"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216736"
 ---
 # <a name="manage-your-data-source---oracle"></a>Gerenciar sua fonte de dados – Oracle
 Depois de instalar o gateway de dados local, será necessário adicionar fontes de dados que podem ser usadas com o gateway. Este artigo abordará como trabalhar com gateways e fontes de dados. Você pode usar a fonte de dados do Oracle para uma atualização agendada ou para o DirectQuery.
@@ -155,7 +155,7 @@ Se você estiver listado na guia **Usuários** da fonte de dados configurada no 
 ![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="troubleshooting"></a>Solução de problemas
-Você pode encontrar vários erros do Oracle quando a sintaxe de nomenclatura estiver incorreta ou não configurada corretamente.
+Você poderá encontrar vários erros do Oracle quando a sintaxe de nomenclatura estiver incorreta ou não estiver configurada corretamente.
 
 * ORA-12154: TNS: não foi possível resolver o identificador de conexão especificado  
 * ORA-12514: O ouvinte TNS no momento não sabe sobre o serviço solicitado no descritor de conexão  

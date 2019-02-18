@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5c6acfb069e026e96dd9944e8001002548b83f8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fdb41a7d833ca14dd53b1043c08c244a704004da
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275492"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215379"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Usando o painel Análise no Power BI Desktop
 Com o painel **Análise** no **Power BI Desktop**, você pode adicionar *linhas de referência* dinâmica para visuais e destacar tendências ou ideias importantes. O painel **Análise** é localizado na área **Visualizações** do Power BI Desktop.
@@ -59,7 +59,7 @@ Para exibir as linhas de referência dinâmica disponíveis para um visual, siga
 4. Se você deseja que um rótulo de dados seja exibido, mova o controle deslizante **Rótulo de dados**. Ao fazer isso, você obterá uma vasta gama de opções adicionais para o rótulo de dados, conforme mostrado na imagem a seguir.
    
    ![](media/desktop-analytics-pane/analytics-pane_5.png)
-5. Observe o número que aparece ao lado do item **Linha média** no painel **Análise**. Que indica quantas linhas dinâmicas você tem atualmente no visual e qual o tipo delas. Se adicionarmos uma **Linha máxima** no *Custo de Vida*, você poderá ver que o painel **Análise** mostrará que agora também temos uma linha de referência dinâmica da **Linha máxima** aplicada neste visual.
+5. Observe o número que aparece ao lado do item **Linha média** no painel **Análise**. Isso indica o número de linhas dinâmicas atualmente presentes no visual, bem como o tipo. Se adicionarmos uma **Linha máxima** no *Custo de Vida*, você poderá ver que o painel **Análise** mostrará que agora também temos uma linha de referência dinâmica da **Linha máxima** aplicada neste visual.
    
    ![](media/desktop-analytics-pane/analytics-pane_6.png)
 

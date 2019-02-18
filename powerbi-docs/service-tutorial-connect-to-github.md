@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bad76adc42fc9f70c1439c6da0cfe2d149bbbe43
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8f44356f79b8a77ef06fe464671dbbaaaa4187e9
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295575"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215563"
 ---
 # <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Tutorial: Conectar-se a uma amostra do GitHub com o Power BI
 Neste tutorial, você se conecta a dados reais no serviço do GitHub com o Power BI, e Power BI cria dashboards e relatórios automaticamente. Conecte-se ao repositório público de conteúdo do Power BI (também conhecido como *repo*) e veja estas informações: Quantas pessoas contribuem com o conteúdo público do Power BI? Quem contribui mais? Qual dia da semana tem mais contribuições? E respostas para outras perguntas. 
@@ -31,7 +31,7 @@ Neste tutorial, você concluirá as etapas a seguir:
 > * Abrir o serviço do Power BI
 > * Encontrar o aplicativo GitHub
 > * Inserir as informações do repositório GitHub público do Power BI
-> * Exibir o dashboad e o relatório com os dados do GitHub
+> * Exibir o dashboard e o relatório com os dados do GitHub
 > * Limpar os recursos, excluindo o aplicativo
 
 Se você não estiver inscrito no Power BI, [inscreva-se para uma avaliação gratuita](https://app.powerbi.com/signupredirect?pbi_source=web) antes de começar.
@@ -69,7 +69,7 @@ Para concluir este tutorial, você precisará de uma conta do GitHub, caso ainda
  
    ![Bloco do GitHub do Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
 
-8. Selecione o ícone de navegação global para minimizar o painel de navegação esquerdo e aumentar o espaço disponível.
+8. Selecione o ícone de navegação global para minimizar o painel de navegação esquerdo, aumentando o espaço disponível.
 
     ![Ícone de navegação global](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 

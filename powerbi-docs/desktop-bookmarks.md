@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 95bbbd8402fd2f489af5d4276616ba045d1c938b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 509eebfdf2d96a2cc77d5c9413c664a10309ab9c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287721"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216402"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -117,7 +117,7 @@ No modo de edição, é possível usar Ctrl + clique para seguir o link; fora do
 
 A partir da versão de agosto de 2018 do **Power BI Desktop**, é possível criar e usar grupos de indicadores. Um grupo de indicadores é uma coleção de indicadores que você especifica, que pode ser mostrado e organizado como um grupo. 
 
-Para criar um grupo de indicadores, mantenha pressionada a tecla CTRL e selecione os indicadores que você deseja incluir no grupo; em seguida, clique nas reticências ao lado de qualquer um dos indicadores selecionados e selecione **Agrupar** no menu exibido.
+Para criar um grupo de indicadores, mantenha pressionada a tecla CTRL e selecione os indicadores que deseja incluir no grupo. Em seguida, clique nas reticências ao lado de um dos indicadores selecionados e selecione **Agrupar** no menu exibido.
 
 ![Criar um grupo de indicadores](media/desktop-bookmarks/bookmarks_15.png)
 

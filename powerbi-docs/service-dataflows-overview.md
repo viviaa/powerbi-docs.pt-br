@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 83961f3ad469a4a7a76ceb6e1e4dba846a6edb04
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 68d350035732d8335079bf76a859919d696e2721
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287614"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223664"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Preparação de dados de autoatendimento no Power BI (versão prévia)
 
@@ -23,7 +23,7 @@ Conforme o volume de dados continua a crescer, aumenta o desafio de estruturar e
 
 ![Usar fluxos de dados no Power BI](media/service-dataflows-overview/powerbi-dataflows_01.png)
 
-O Power BI apresenta **fluxos de dados** para ajudar as organizações a unificar dados de diferentes fontes e prepará-los para serem modelados. Os analistas podem criar fluxos de dados facilmente, usando ferramentas conhecidas de autoatendimento. Os fluxos de dados são usados para ingerir, transformar, integrar e enriquecer Big Data definindo conexões de fonte de dados, lógica ETL, cronogramas de atualização e muito mais. Além disso, o novo mecanismo de cálculo controlado por modelos que faz parte dos fluxos de dados torna o processo de preparação de dados mais gerenciável, mais determinista e menos incômodo para analistas de dados e criadores de relatório. Do mesmo modo que as planilhas lidam com recálculos em todas as fórmulas afetadas, os fluxos de dados gerenciam as alterações de uma entidade ou elemento de dados em seu nome, automatizando atualizações e atenuando o que costumava incluir verificações de lógica tediosas e demoradas até mesmo em uma atualização básica de dados. Com os fluxos de dados, as tarefas que antes exigiam a supervisão de cientistas de dados (e muitas horas ou dias para serem concluídas) agora podem ser tratadas com alguns cliques por analistas e criadores de relatório. 
+O Power BI apresenta **fluxos de dados** para ajudar as organizações a unificar dados de diferentes fontes e prepará-los para serem modelados. Os analistas podem criar fluxos de dados facilmente, usando ferramentas conhecidas de autoatendimento. Os fluxos de dados são usados para ingerir, transformar, integrar e enriquecer Big Data definindo conexões de fonte de dados, lógica ETL, cronogramas de atualização e muito mais. Além disso, o novo mecanismo de cálculo controlado por modelos que faz parte dos fluxos de dados torna o processo de preparação de dados mais gerenciável, mais determinista e menos complexo para analistas de dados e criadores de relatório. Do mesmo modo que as planilhas lidam com recálculos em todas as fórmulas afetadas, os fluxos de dados gerenciam as alterações de uma entidade ou elemento de dados em seu nome, automatizando atualizações e atenuando o que costumava incluir verificações de lógica tediosas e demoradas até mesmo em uma atualização básica de dados. Com os fluxos de dados, as tarefas que antes exigiam a supervisão de cientistas de dados (e muitas horas ou dias para serem concluídas) agora podem ser tratadas com alguns cliques por analistas e criadores de relatório. 
 
 Os dados são armazenados como entidades no [**Common Data Service**](https://docs.microsoft.com/powerapps/common-data-model/overview) no Azure Data Lake Storage Gen2. Os fluxos de dados são criados e gerenciados em espaços de trabalho do aplicativo usando o serviço do Power BI.  
 
@@ -92,7 +92,7 @@ A tabela a seguir descreve os recursos de fluxo de dados e suas capacidades ao u
 |Entidades vinculadas de fluxo de dados| |        +|
 |Esquema padronizado / Suporte interno para o Common Data Service|  +|  +|
 
-Para mais informações sobre como habilitar fluxos de trabalho dos fluxos de dados na capacidade premium, confira o artigo sobre [como configurar fluxos de trabalho](service-admin-premium-manage.md#configure-workloads) para o Power BI Premium. As cargas de trabalho do fluxo de dados não estão disponíveis no momento em capacidades com várias regiões.
+Para mais informações sobre como habilitar fluxos de trabalho dos fluxos de dados na capacidade premium, confira o artigo sobre [como configurar fluxos de trabalho](service-admin-premium-manage.md#configure-workloads) para o Power BI Premium. Atualmente, as cargas de trabalho do fluxo de dados não estão disponíveis em capacidades multigeográficas.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Resumo da preparação de dados de autoatendimento para Big Data no Power BI
 Conforme mencionado anteriormente neste artigo, há vários cenários e exemplos em que os **fluxos de dados** permitem que você tenha um melhor controle – e insights mais rápidos – de seus dados comerciais. Com um modelo de dados padrão (esquema) definido pelo Common Data Service, os fluxos de dados podem importar seus dados comerciais valiosos e preparar os dados para modelagem e criação de insights de BI em um período muito curto... o que costumava demorar meses ou até mais. 

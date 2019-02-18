@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 76e6ebec14d5feefd319213c05fddb0839a55ccd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762342"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216368"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Ferramenta de migração Power BI Embedded
 
@@ -143,7 +143,7 @@ Se alterar o prefixo, você precisará selecionar **Gerar Plano de Upload**.
 
 Você pode clicar com o botão direito do mouse em um grupo e escolher renomear o grupo diretamente no plano de upload, se desejado.
 
-![Carregar relatório e renomear item](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
+![Carregar o relatório e renomear o item](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [!NOTE]
 > O nome do *grupo* não pode conter espaços ou caracteres inválidos.
@@ -189,7 +189,7 @@ Após o workspace ser sido criado, você poderá passar para a guia **Carregar**
 
 Na guia **Carregar**, os relatórios serão carregados para o serviço do Power BI. Você verá uma lista dos relatórios baixados na guia Baixar, em conjunto com o nome do grupo de destino com base em seu plano de migração.
 
-![Guia Upload](media/migrate-tool/migrate-tool-upload-tab.png)
+![Guia Carregar](media/migrate-tool/migrate-tool-upload-tab.png)
 
 Você pode carregar relatórios selecionados ou pode carregar todos os relatórios. Você também pode redefinir o status de upload para carregar itens novamente.
 
@@ -207,7 +207,7 @@ Você precisará fechar a ferramenta de migração para fazer a alteração e, e
 
 No exemplo acima, um dos relatórios clonados falhou indicando que existe um relatório com o mesmo nome. Se examinarmos o XML do plano de migração, veremos o seguinte.
 
-```
+```xml
 <ReportMigrationData>
     <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
@@ -229,7 +229,7 @@ No exemplo acima, um dos relatórios clonados falhou indicando que existe um rel
 
 Para o item com falha, podemos alterar o nome do SaaSTargetReportName.
 
-```
+```xml
 <SaaSTargetReportName>cloned2</SaaSTargetReportName>
 ```
 
@@ -245,7 +245,7 @@ Voltando ao Power BI, podemos ver que os relatórios e conjuntos de dados foram 
 
 Você pode carregar uma versão local de um arquivo do Power BI Desktop. Você precisará fechar a ferramenta, editar o XML e colocar o caminho completo para seu PBIX local na propriedade **PbixPath**.
 
-```
+```xml
 <PbixPath>[Full Path to PBIX file]</PbixPath>
 ```
 
@@ -255,9 +255,9 @@ Depois de editar o xml, abra novamente o plano dentro da ferramenta de migraçã
 
 ### <a name="directquery-reports"></a>Relatórios do DirectQuery
 
-Você precisará atualizar a cadeia de conexão para relatórios do DirectQuery. Isso pode ser feito no *powerbi.com* ou você pode consultar programaticamente a cadeia de conexão usando o Power BI Embedded (PaaS). Para ver um exemplo, consulte [Extrair uma cadeia de conexão do DirectQuery do relatório de PaaS](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+Você precisará atualizar a cadeia de conexão para relatórios do DirectQuery. Faça isso no *powerbi.com* ou consulte a cadeia de conexão de forma programática usando o Power BI Embedded (PaaS). Para ver um exemplo, consulte [Extrair uma cadeia de conexão do DirectQuery do relatório de PaaS](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
-Você pode, então, atualizar a cadeia de conexão para o conjunto de dados no serviço do Power BI (SaaS) e definir as credenciais da fonte de dados. Você pode examinar os exemplos a seguir para saber como fazer isso.
+Em seguida, você poderá atualizar a cadeia de conexão do conjunto de dados no serviço do Power BI (SaaS) e definir as credenciais para a fonte de dados. Você pode examinar os exemplos a seguir para saber como fazer isso.
 
 * [Atualizar a cadeia de conexão do DirectQuery no workspace de SaaS](migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
 * [Definir credenciais do DirectQuery no workspace de SaaS](migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)

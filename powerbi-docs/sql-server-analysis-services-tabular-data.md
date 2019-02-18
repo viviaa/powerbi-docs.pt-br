@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 6e29e750a22bbd6843e203a5cd93b5c0628b1d05
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2716696f4884b967735778db46a2300385a86988
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288763"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215816"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Dados dinâmicos do SQL Server Analysis Services no Power BI
 No Power BI, há duas maneiras pelas quais você pode se conectar a um servidor do SQL Server Analysis Services dinâmico. Em **Obter dados**, você pode se conectar a um servidor do SQL Server Analysis Services ou se conectar [a um arquivo do Power BI Desktop](service-desktop-files.md) ou a uma [pasta de trabalho do Excel](service-excel-workbook-files.md) que já se conecta a um servidor do Analysis Services. Como uma prática recomendada, a Microsoft recomenda usar o Power BI Desktop devido à riqueza do conjunto de ferramentas e à capacidade de manter localmente uma cópia de backup do arquivo do Power BI Desktop.
@@ -35,14 +35,14 @@ No Power BI, há duas maneiras pelas quais você pode se conectar a um servidor 
 3. Selecione **SQL Server Analysis Services** > **Conectar**. 
    
    ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
-4. Selecione um servidor. Se você não vir servidores listados aqui, isso significa que um gateway e uma fonte de dados não estão configurados, ou que sua conta não está listada na guia **Usuários** da fonte de dados no gateway. Verifique com o administrador.
+4. Selecione um servidor. Se você não vir servidores listados aqui, isso significa que um gateway e uma fonte de dados não estão configurados, ou que sua conta não está listada na guia **Usuários** da fonte de dados no gateway. Verifique com o seu administrador.
 5. Selecione o modelo ao qual você deseja se conectar. Ele pode ser Tabela ou Multidimensional.
 
-Depois de se conectar ao modelo, ele será exibido no seu site do Power BI em **Meu Workspace/Conjuntos de Dados**. Se você fosse alternado para um workspace de grupo, o conjunto de dados seria exibido dentro do grupo.
+Depois de se conectar ao modelo, ele será exibido no seu site do Power BI em **Meu Workspace/Conjuntos de Dados**. Se você for alternado para um workspace de grupo, o conjunto de dados será exibido no grupo.
 
 ![](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
-## <a name="dashboard-tiles"></a>Blocos de painel
+## <a name="dashboard-tiles"></a>Blocos de dashboard
 Se você fixar visuais de um relatório no painel, os blocos fixos serão atualizados automaticamente a cada 10 minutos. Se os dados no servidor do Analysis Services local forem atualizados, os blocos serão atualizados automaticamente após 10 minutos.
 
 ## <a name="common-issues"></a>Problemas comuns

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 84e2bc663a4e3912608279c7315bc494b3c9844a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296514"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216299"
 ---
 # <a name="modeling-view-in-power-bi-desktop-preview"></a>Exibição de Modelagem no Power BI Desktop (versão prévia)
 
@@ -24,7 +24,7 @@ Com a **Exibição de Modelagem** no **Power BI Desktop**, você pode exibir e t
 
 ## <a name="enabling-the-modeling-view-preview-feature"></a>Habilitar a versão prévia do recurso Exibição de Modelagem
 
-O recurso Exibição de Modelagem está em versão prévia e deve ser habilitado no **Power BI Desktop**. Para habilitar a Exibição de Modelagem, selecione **Arquivo > Opções e Configurações > Opções > Recursos de visualização**, depois, marque a caixa de seleção **Exibição de Modelagem**, conforme mostrado na imagem a seguir.
+O recurso Exibição de Modelagem está em versão prévia e deve ser habilitado no **Power BI Desktop**. Para habilitar a Exibição de Modelagem, selecione **Arquivo > Opções e Configurações > Opções > Versão Prévia dos Recursos** e, em seguida, marque a caixa de seleção **Exibição de Modelagem**, conforme mostrado na imagem a seguir.
 
 ![Habilitar a versão prévia do recurso Exibição de Modelagem no Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
 

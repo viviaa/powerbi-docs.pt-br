@@ -1,6 +1,6 @@
 ---
 title: Usar insights para localizar onde a distribuição está diferente (versão prévia)
-description: Obtenha insights facilmente para localizar onde uma distribuição vista em um gráfico está diferente no Power BI Desktop
+description: Obtenha insights com facilidade para descobrir as diferenças de uma distribuição vista em um gráfico e no Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 416313f9271950c2f12a554107ab74933c5c31b7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 82844a1e928d30db12ba5659edcee7b07eaaf7b3
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277746"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215333"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Usar insights no Power BI Desktop para localizar onde uma distribuição está diferente (versão prévia)
 
@@ -38,7 +38,7 @@ Nesse exemplo, a análise automatizada mostra rapidamente que, para *Touring Bik
 > 
 
 ## <a name="using-insights"></a>Usando insights
-Para usar insights para localizar onde as distribuições vistas em gráficos estão diferente, basta clicar com o botão direito do mouse em qualquer ponto de dados (ou no visual como um todo) e selecionar **Analisar > Localizar onde a distribuição está diferente**.
+Para usar os insights a fim de descobrir as diferenças das distribuições vistas em gráficos, basta clicar com o botão direito do mouse em qualquer ponto de dados (ou no visual como um todo) e selecionar **Analisar > Descobrir as diferenças da distribuição**.
 
 ![Clique com o botão direito do mouse para obter insights](media/desktop-insights-find-where-different/find-where-different_03.png)
 
@@ -131,7 +131,7 @@ A seguinte lista é uma coleção de cenários atualmente sem suporte em **insig
 * Filtros de medida
 * Medidas não numéricas
 * Uso de "Mostrar valor como"
-* Medidas filtradas – são cálculos no nível do visual com um filtro específico aplicado (por exemplo, *Total de Vendas da França*) e são usados em alguns dos visuais criados pelo recurso de insights
+* Medidas filtradas – medidas filtradas são cálculos no nível do visual com um filtro específico aplicado (por exemplo, *Total de Vendas na França*) e são usadas em alguns dos visuais criados pelo recurso de insights
 
 Além disso, atualmente, não há suporte para os seguintes tipos de modelo e fontes de dados em insights:
 

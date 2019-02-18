@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dd7360761cc78aed9b01eb99165de9f0b4b91ffe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 892e056413212e319815341eb9ae95262ed54d46
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274756"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215398"
 ---
 # <a name="treemaps-in-power-bi"></a>Mapas de árvore no Power BI
 O treemaps exibe dados hierárquicos, como um conjunto de retângulos aninhados.  Cada nível da hierarquia é representado por um retângulo colorido (muitas vezes chamado uma "ramificação") que contém outros retângulos ("folhas").  O espaço dentro de cada retângulo é alocado com base no valor que está sendo medido. E os retângulos são organizados no tamanho da parte superior esquerda (maior) à parte inferior direita (menor).
@@ -52,7 +52,7 @@ Deseja ver alguém criar um mapa de árvore primeiro?  Pule para 2:10 neste víd
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Se preferir, crie seu próprio mapa de árvore. Essas instruções usam o exemplo de análise de varejo. Para acompanhar, entre no serviço Power BI e selecione **Obter Dados \> Exemplos \> Exemplo de Análise de Varejo \> Conectar \> Ir para o dashboard**. Criar uma visualização em um relatório requer permissões de edição para o conjunto de dados e o relatório. Felizmente, os exemplos do Power BI são editáveis. Mas você não pode adicionar visualizações a um relatório que alguém compartilhou com você.  
+Se preferir, crie seu próprio mapa de árvore. Essas instruções usam o exemplo de análise de varejo. Para acompanhar, entre no serviço Power BI e selecione **Obter Dados \> Exemplos \> Exemplo de Análise de Varejo \> Conectar \> Ir para o dashboard**. Criar uma visualização em um relatório requer permissões de edição para o conjunto de dados e o relatório. Felizmente, os exemplos do Power BI são editáveis. No entanto, você não pode adicionar visualizações a um relatório que alguém compartilhou com você.  
 
 1. Selecione o bloco "Armazenamentos Totais" para abrir o relatório Exemplo de Análise de Varejo.    
 2. Abra o [Modo de Exibição de Edição](../service-interact-with-a-report-in-editing-view.md) e selecione a medida **Vendas** > **Vendas do Ano Passado**.   

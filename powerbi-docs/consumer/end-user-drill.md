@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282346"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216575"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Modo de análise em uma visualização do Power BI
 
@@ -112,9 +112,9 @@ Esse método usa o ícone de fazer drill down que aparece no canto superior dire
 
 2. Selecione a *folha* para **TN**. Agora, o mapa de árvore exibe todas as cidades no Tennessee que têm uma loja. 
 
-    ![mapa de árvore que mostra dados apenas para Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![mapa de árvore mostrando dados apenas para o Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
-2. Agora, você pode continuar fazendo drill down de Tennessee ou de uma cidade específica desse estado. Outra opção é expandir (consulte **Expandir todos os campos de uma vez**, a seguir). Vamos continuar fazendo drill down de um campo de cada vez.  Selecione **Knoxville, TN**. O mapa de árvore agora exibe o CEP da loja em Knoxville. 
+2. Nesta altura, você poderá continuar fazendo drill down do Tennessee ou de uma cidade específica desse estado. Outra opção é expandi-lo (confira **Expandir todos os campos de uma vez** abaixo). Vamos continuar fazendo drill down de um campo de cada vez.  Selecione **Knoxville, TN**. O mapa de árvore agora exibe o CEP da loja em Knoxville. 
 
    ![mapa de árvore que mostra o CEP 37919](media/end-user-drill/power-bi-drill-down-one2.png)
 
@@ -127,18 +127,18 @@ Ter um mapa de árvore que mostra apenas um CEP não é informativo.  Então, ex
 
     ![mostrando o CEP e o nome da loja](./media/end-user-drill/power-bi-expand1.png)
 
-2. Para ver todos os quatro níveis de hierarquia dos dados para Tennessee, clique na seta de drill up até chegar ao segundo nível do mapa de árvore, **Total de unidades deste ano por território e cidade**. 
+2. Para ver todos os quatro níveis de hierarquia dos dados para o Tennessee, selecione a seta de drill up até chegar ao segundo nível do mapa de árvore, **Total de unidades deste ano por território e cidade**. 
 
-    ![mapa de árvore que mostra todos os dados de Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![mapa de árvore mostrando todos os dados do Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Verifique se o drill down ainda está ativo em ![ativar drill down](./media/end-user-drill/power-bi-drill-icon2.png) e selecione o ícone *expandir abaixo* ![ícone expandir abaixo](./media/end-user-drill/power-bi-drill-icon6.png). Agora, o mapa de árvore mostra detalhes adicionais. Ao invés de exibir apenas a cidade e o estado, ele também mostra o CEP. 
 
     ![ícone de análise dupla](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Selecione o ícone *expandir abaixo* mais uma vez para exibir todos os quatro níveis de hierarquia de detalhes para Tennessee no mapa de árvore. Passe o mouse sobre uma folha para ver ainda mais detalhes.
+4. Selecione o ícone *expandir para baixo* mais uma vez para exibir todos os quatro níveis de hierarquia de detalhes para o Tennessee no mapa de árvore. Passe o mouse sobre uma folha para ver ainda mais detalhes.
 
-   ![mapa de árvore mostrando dados de Tennessee](./media/end-user-drill/power-bi-expand-all.png)
+   ![mapa de árvore mostrando dados do Tennessee](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>O drilling filtra outros visuais
 Ao trabalhar no modo de análise, você precisa decidir como as ações de fazer drill down e expandir afetam outras visualizações na página. 

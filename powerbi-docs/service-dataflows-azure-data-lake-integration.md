@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 763b331fd0a5ff47263ea54d17f6cb17516de79d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1c503492da52592730b82857725b388ca440f2bd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296767"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215568"
 ---
 # <a name="dataflows-and-azure-data-lake-integration-preview"></a>Integração entre fluxos de dados e o Azure Data Lake (versão prévia)
 
@@ -65,7 +65,7 @@ Para criar e gerenciar pastas do CDM no sistema de arquivos do Power BI, são ne
 
 O compartilhamento de pastas do CDM com consumidores de dados, como usuários ou serviços que precisam ler os dados, é simplificado com os tokens de portador de OAuth do Active Directory e as ACLs POSIX. Isso fornece aos administradores a capacidade de monitorar quem acessou a pasta do CDM. A única ação necessária é conceder acesso a um objeto do Active Directory de sua escolha (como um grupo de usuários ou serviço) à pasta do CDM. É recomendável que todo o acesso à pasta do CDM, para qualquer identidade que não seja o produtor de dados, seja concedido como somente leitura. Isso protege a integridade dos dados que o produtor gera.
 
-Para adicionar pastas do CDM ao Power BI, o usuário que está adicionando a pasta do CDM deve ter ACLs de acesso *Ler* na pasta do CDM e em quaisquer arquivos ou pastas dentro dela. Além disso, ACLs de acesso *Executar* na pasta do CDM e em quaisquer pastas dentro dela. É recomendado conferir os artigos [Listas de controle de acesso nos arquivos e diretórios](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) e [Práticas recomendadas para usar o Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) para obter mais informações.
+Para adicionar pastas do CDM ao Power BI, o usuário que está adicionando a pasta do CDM deve ter ACLs de acesso *Ler* na pasta do CDM e em quaisquer arquivos ou pastas dentro dela. Além disso, ACLs de acesso *Executar* na pasta do CDM e em quaisquer pastas dentro dela. É recomendado que você examine os artigos [Listas de controle de acesso em arquivos e diretórios](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) e [Melhores práticas de uso do Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) para obter mais informações.
 
 
 ### <a name="alternative-forms-of-authorization"></a>Formas alternativas de autorização

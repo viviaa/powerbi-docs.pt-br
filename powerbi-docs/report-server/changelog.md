@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: 034fc149dcd76102ae83864fe65d53c55b57c96a
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482742"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56224032"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatório do Power BI
 
@@ -94,7 +94,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
                 - Os relatórios podem ser atualizados quando um servidor está configurado para usar a autenticação personalizada
                 - Modificar as propriedades de um relatório não redefine as credenciais da fonte de dados
             - Para relatórios paginados (RDL)
-                - O uso de funções `Lookup()` ou derivadas, como `LookupSet()` e `MultiLookup()`, em expressões RDL não resultam mais em `#Error`
+                - O uso de `Lookup()` ou funções derivadas, como `LookupSet()` e `MultiLookup()`, em expressões RDL não resulta mais em `#Error`
                 - Os relatórios vinculados respeitam o tamanho da página do relatório de destino ao imprimir
                 - É possível criar assinaturas para relatórios vinculados que usam parâmetros em cascata
                 - É possível alterar padrões de parâmetro com vários valores ao usar o IE11

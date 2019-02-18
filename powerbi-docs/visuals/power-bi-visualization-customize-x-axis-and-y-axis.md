@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6395785c3d3e386aa2ac735439a265f5fe3fb02
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286992"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223296"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personalizar as propriedades dos eixos x e y
 Neste tutorial, você aprenderá várias maneiras diferentes de personalizar os eixos X e Y das suas visualizações. Nem todas as visualizações têm eixos ou podem ser personalizadas; gráficos de pizza, por exemplo, não têm eixos. E opções de personalização variam de visualização para visualização, são muitas opções serem abordadas em um único artigo. Então vamos dar uma olhada em algumas das personalizações de eixos mais usadas e torná-lo familiarizado com a guia de formatação de visualização na tela de relatório do Power BI.  
@@ -70,7 +70,7 @@ Para reverter toda a personalização do eixo X feita até agora, selecione **Re
 3. Mova a **Posição** do eixo Y para a direita.
 4. Formate a fonte, o tamanho e a cor do texto. Neste exemplo, definimos a **Cor** do texto para preto, o **Tamanho do Texto** para 14 e a **Fonte** para Arial Black.  
 5. Mantenha as **Unidades de exibição** definidas como milhões e as **Casas decimais do valor** definidas como zero.
-6. Para esta visualização, ter um título de eixo Y não melhora o visual, portanto, deixe o **Título** desativado.  
+6. Para essa visualização, o fato de ter um título de eixo Y não melhora o visual; portanto, deixe o **Título** desativado.  
 7. Destacaremos as linhas de grade, alterando a **Cor** para um cinza escuro e aumentando o **Traço** para 2.
 
     Depois de todas essas personalizações, o gráfico de colunas deve ser parecido com isto:
@@ -136,7 +136,7 @@ Se o eixo X for categorizado pelo proprietário do relatório como um tipo de da
 ## <a name="next-steps"></a>Próximas etapas
 Mais sobre [Visualizações nos relatórios do Power BI](power-bi-report-visualizations.md)
 
-[Personalizar t](power-bi-visualization-customize-title-background-and-legend.md)[ítulos, telas de fundo e legendas](power-bi-visualization-customize-title-background-and-legend.md)
+[Personalizar títulos, telas de fundo e legendas](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Personalizar cores e propriedades de eixo](service-getting-started-with-color-formatting-and-axis-properties.md)
 
