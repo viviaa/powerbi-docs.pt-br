@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296307"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249035"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Solucionar problemas da Cortana para o Power BI
 Este artigo faz parte de uma série. Recomendamos que você confira os seguintes artigos, se ainda não os tiver lido.
@@ -79,7 +79,7 @@ Ainda está com problemas?  Agora é um bom momento para executar a ferramenta d
 
    ![Cartão de respostas](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Guia Cartão de respostas no Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Às vezes, na primeira vez que você digitar algo no campo **Expressão**, nada acontecerá. Pense nisso como uma desobstrução do sistema. Você está informando a ferramenta de solução de problemas que é hora de ser ativada. Recorte e cole ou redigite no campo **Expressão** novamente. Neste exemplo, o nome do nosso cartão de respostas é **Armazenamentos da Cortana**. Colar ou digitar **Armazenamentos da Cortana** na ferramenta produz um único resultado que é exibido no campo **Interpretações**. Clique para ver o cartão de respostas exibido na janela da Cortana – neste caso, **Repositórios da Cortana**.

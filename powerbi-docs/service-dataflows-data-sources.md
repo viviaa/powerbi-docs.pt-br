@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cef34e7be0767ce16b84b066663318b66bcbd2d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280530"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324911"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Conectar-se a fontes de dados para fluxos de dados do Power BI (versão prévia)
 
@@ -76,6 +76,7 @@ A categoria **Banco de dados** inclui as seguintes conexões de dados disponíve
 * Banco de dados do SQL Server
 * Banco de dados Sybase
 * Banco de dados Teradata
+* Vertica
 
 A categoria **Power BI** inclui as seguintes conexões de dados disponíveis para fluxos de dados:
 
@@ -91,7 +92,8 @@ A categoria **Azure** inclui as seguintes conexões de dados disponíveis para f
 
 A categoria **Serviços Online** inclui as seguintes conexões de dados disponíveis para fluxos de dados:
 
-* Common Data Service for Apps
+* Amazon Redshift
+* Common Data Service para Aplicativos
 * Microsoft Exchange Online
 * Objetos do Salesforce
 * Relatórios do Salesforce
@@ -154,12 +156,8 @@ E, em seguida, o script conecta-se à fonte de dados especificada.
 
 A lista a seguir mostra quais conectores você pode usar no momento copiando e colando a consulta M em uma consulta em branco:
 
-* Amazon Redshift
 * SAP Business Warehouse 
-* SAP HANA
-* Analysis Services
 * Azure Analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
@@ -170,7 +168,6 @@ A lista a seguir mostra quais conectores você pode usar no momento copiando e c
 * Azure HDInsight (HDFS)
 * Arquivo HDFS do Hadoop
 * Informix (beta)
-* Vertica
 
 Basta fazer isso para conectar-se a fontes de dados no Power BI Desktop.
 

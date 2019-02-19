@@ -1,20 +1,20 @@
 ---
 title: 'Tutorial: Explorar o Servidor de Relatórios do Power BI em uma VM'
 description: Neste tutorial, você cria uma máquina virtual com o Servidor de Relatórios do Power BI já instalado e explora o portal da Web.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
-ms.author: maggies
-ms.openlocfilehash: 4eb9f5dc7e45006d1b5697f35b79d0e9d11fa2df
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: 098aa1cd2c031a200e3ce246890a467a6e15149d
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281380"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325072"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutorial: Explorar o portal da Web do Servidor de Relatórios do Power BI em uma VM
 Neste tutorial, você cria uma máquina virtual do Azure com o Servidor de Relatórios do Power BI já instalado, para que possa experimentar a exibição, a edição e o gerenciamento de relatórios paginados e de exemplo do Power BI, bem como de KPIs.

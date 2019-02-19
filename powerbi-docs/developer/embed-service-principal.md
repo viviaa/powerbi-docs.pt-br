@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
-ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
+ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971661"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56248897"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Entidade de serviço com o Power BI (Versão Prévia)
 
@@ -53,7 +53,7 @@ Você só poderá usar a entidade de serviço se seus artefatos e recursos do Po
 
 Há diferenças entre o uso de uma entidade de serviço e uma conta mestra padrão (licença do Power BI Pro) para autenticação. A tabela a seguir destaca algumas diferenças significativas.
 
-| Função | Conta Mestra de Usuário </br> (licença do Power BI Pro) | Entidade de serviço </br> (token somente de aplicativo) |
+| Função | Conta Mestra de Usuário <br> (licença do Power BI Pro) | Entidade de serviço <br> (token somente de aplicativo) |
 |------------------------------------------------------|---------------------|-------------------|
 | Pode entrar no serviço do Power BI  | Sim | Não |
 | Habilitado no portal de Administração do Power BI | Não | Sim |
