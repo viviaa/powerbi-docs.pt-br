@@ -13,7 +13,7 @@ Selecione um visual na tela do relatório e um campo no painel **Campos**. A gui
 
 Há várias opções diferentes para a formatação de campos. Por exemplo, você pode alterar o formato de moeda para percentual.
 
-Além disso, é possível alterar o modo como o Power BI resume os dados. Selecione o ícone **Resumo Padrão** para alterar como um campo é resumido, incluindo a exibição de uma soma, contagem ou média.
+Altere também o modo como o Power BI resume os dados. Selecione o ícone **Resumo Padrão** para alterar como um campo é resumido, incluindo a exibição de uma soma, contagem ou média.
 
 ![](media/3-11d-customize-summarization-categorization/3-11d_3.png)
 

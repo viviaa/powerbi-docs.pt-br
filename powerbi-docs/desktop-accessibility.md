@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280046"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249104"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Acessibilidade dos relatórios do Power BI Desktop
 O Power BI tem recursos que permitem que pessoas com deficiências consumam e interajam mais facilmente com os relatórios do Power BI Desktop. Esses recursos incluem a capacidade de consumir um relatório usando o teclado ou um leitor de tela, usar a tabulação para focar em vários objetos em uma página e o uso cuidadoso de marcadores nas visualizações.
@@ -141,6 +141,11 @@ Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de 
 ### <a name="pane-navigation"></a>Navegação no painel
 | Para fazer isso           | Pressione                |
 | :------------------- | :------------------- |
+| Seleção múltipla | CTRL + Espaço |
+| Recolher uma tabela única | Seta para a esquerda |
+| Expandir uma tabela única | Seta para a direita |
+| Recolher todas as tabelas | Alt + Shift + 1 |
+| Expandir todas as tabelas | Alt + Shift + 9 |
 | Abrir um menu de contexto | <ul><li>Teclados Windows: tecla do menu de contexto do Windows+F10.  A tecla de contexto do Windows fica entre a tecla Alt esquerda e a tecla de direção para a esquerda</li><li>Outros teclados: Shift+F10</li></ul> |
 
 ### <a name="slicer"></a>Segmentação de Dados

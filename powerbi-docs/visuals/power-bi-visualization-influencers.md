@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a82bbc3e4b31dca0a304c1d3f64d4bc63e4e7fb3
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086760"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325141"
 ---
 # <a name="key-influencers-visualization"></a>Visualização de influenciadores principais
 O visual de influenciadores principais ajuda a entender os fatores que influenciam uma métrica na qual você está interessado. Ele analisa os dados, classifica os fatores importantes e os exibe como influenciadores principais. Por exemplo, você está interessado em descobrir o que influencia a rotatividade de funcionários. Um dos fatores pode ter a duração do contrato de trabalho e outro pode ser a idade do funcionário. 
@@ -167,11 +167,11 @@ Nesse grupo, 74,3% deram uma classificação baixa. O cliente médio dá uma cla
  
 Atualmente, o visual Influenciadores principais está em versão prévia pública e existem várias limitações das quais os usuários devem estar cientes. As funcionalidades não disponíveis no momento incluem: 
 - Análise de métricas que são agregações/medidas 
-- Consumo do visual no Power BI Embedded 
-- Consumo do visual no Power BI Mobile 
+- Consumindo o visual no Power BI Embedded
+- Consumindo o visual nos aplicativos móveis do Power BI
 - Suporte à RLS 
 - Suporte ao DirectQuery 
-- Suporte ao Live Query 
+- Suporte à Conexão Dinâmica 
  
 **Vejo um erro indicando que não nenhum influenciador/segmento foi encontrado. Por que isso acontece?**  
 
@@ -247,15 +247,16 @@ O motivo por trás disso é que a visualização também leva em consideração 
 
 **Como calcular os influenciadores principais?**
 
-Nos bastidores, a Visualização de IA executa uma regressão logística para calcular os influenciadores principais. Uma regressão logística é um modelo estatístico que compara diferentes grupos entre si. Se examinarmos o que influencia as classificações baixas, a regressão logística examinará as diferenças entre os clientes que deram uma pontuação baixa e aqueles que deram uma pontuação alta. Se tivermos várias categorias (pontuação alta, pontuação neutra, pontuação baixa), examinaremos as diferenças entre aqueles que deram uma classificação baixa e os clientes que não deram uma classificação baixa (as diferenças entre estes e aqueles que deram uma classificação alta OU uma classificação neutra). 
+Nos bastidores, a Visualização de IA usa o [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) para executar uma regressão logística e calcular os influenciadores principais. Uma regressão logística é um modelo estatístico que compara diferentes grupos entre si. Se examinarmos o que influencia as classificações baixas, a regressão logística examinará as diferenças entre os clientes que deram uma pontuação baixa e aqueles que deram uma pontuação alta. Se tivermos várias categorias (pontuação alta, pontuação neutra, pontuação baixa), examinaremos as diferenças entre aqueles que deram uma classificação baixa e os clientes que não deram uma classificação baixa (as diferenças entre estes e aqueles que deram uma classificação alta OU uma classificação neutra). 
  
 A regressão logística pesquisa padrões nos dados, procurando as diferenças entres os clientes que deram uma classificação baixa e aqueles que deram uma classificação alta. Por exemplo, ela pode descobrir que os clientes que têm mais tíquetes de suporte dão um percentual muito maior de classificações baixas do que aqueles que têm poucos tíquetes de suporte ou nenhum.
  
 A regressão logística também leva em consideração a quantidade de pontos de dados presentes. Se, por exemplo, os clientes que têm uma função de administrador derem proporcionalmente pontuações mais negativas, mas houver apenas alguns administradores, isso não será considerado um fator influente. Isso se deve ao fato de não haver pontos de dados suficientes disponíveis para inferir um padrão. Um teste estatístico (teste de Wald) é usado para determinar se um fator é considerado um influenciador. O visual usa um valor p de 0,05 para determinar o limite. 
- 
+
+
 **Como calcular os segmentos?**
 
-Nos bastidores, a Visualização de IA executa uma árvore de decisão para encontrar subgrupos interessantes. O objetivo da árvore de decisão é acabar com um subgrupo de pontos de dados que seja relativamente alto na métrica em que estamos interessados (por exemplo, os clientes que deram uma classificação baixa). 
+Nos bastidores, a Visualização de IA usa o [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) para executar uma árvore de decisão e encontrar subgrupos interessantes. O objetivo da árvore de decisão é acabar com um subgrupo de pontos de dados que seja relativamente alto na métrica em que estamos interessados (por exemplo, os clientes que deram uma classificação baixa). 
 
 A árvore de decisão usa cada fator explicativo e tenta inferir qual fator fornecerá a melhor ‘divisão’. Por exemplo, se filtrarmos os dados para incluir somente os clientes de empresas de grande porte, isso separará os clientes que deram uma classificação alta vs. classificação baixa? Ou talvez seja melhor filtrarmos os dados para incluir somente os clientes que comentaram sobre a segurança? 
 

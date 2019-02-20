@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0a2c1cb446a0a975a574f5d3f2684ddf80f4f273
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274710"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324474"
 ---
 # <a name="what-are-power-bi-gateways"></a>O que é um Power BI Gateway?
 
@@ -53,7 +53,7 @@ O gateway que você instalar é executado como um serviço Windows, o **Gateway 
 Consultas e fluxo de dados:
 
 1. Uma consulta é criada pelo serviço de nuvem com as credenciais criptografadas para a fonte de dados local. Em seguida, ela é enviada para uma fila para o gateway processar.
-2. O serviço de nuvem do gateway analisa a consulta e envia a solicitação para o Barramento de Serviço do Azure.
+2. O serviço de nuvem do gateway analisa a consulta e envia a solicitação para o Barramento de Serviço do Azure. O Power BI gerencia o Barramento de Serviço para você; portanto, não há custos adicionais nem a necessidade de etapas de configuração.
 3. O Gateway de dados local pesquisa o Barramento de Serviço do Azure em busca de solicitações pendentes.
 4. O gateway recebe a consulta, descriptografa as credenciais e conecta-se às fontes de dados com essas credenciais.
 5. O gateway envia a consulta à fonte de dados para execução.

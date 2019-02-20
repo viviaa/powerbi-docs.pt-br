@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4f9de49619a26e17fbdf2b0df47bc56ba23f4d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279310"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325004"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Detalhes sobre o gateway de dados local
 É possível que os usuários na sua organização acessem dados locais (para os quais eles já têm autorização de acesso), mas antes que eles possam se conectar à fonte de dados local, um gateway de dados local precisa ser instalado e configurado. O gateway facilita a comunicação nos bastidores, de maneira rápida e segura, de um usuário na nuvem para a fonte de dados local, retornando à nuvem em seguida.
@@ -90,7 +90,7 @@ O uso do Azure AD Connect garante que o UPN corresponderá entre o AAD e o Activ
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Agora, é aqui que entra o gateway
-O gateway atua como uma ponte entre a nuvem e o servidor local. A transferência de dados entre a nuvem e o gateway é protegida pelo [Barramento de Serviço do Azure](/azure/service-bus-messaging/service-bus-messaging-overview). O Barramento de Serviço cria um canal seguro entre a nuvem e o servidor local por meio de uma conexão de saída no gateway.  Não é necessário abrir nenhuma conexão de entrada no firewall local.
+O gateway atua como uma ponte entre a nuvem e o servidor local. A transferência de dados entre a nuvem e o gateway é protegida pelo [Barramento de Serviço do Azure](/azure/service-bus-messaging/service-bus-messaging-overview). O Barramento de Serviço cria um canal seguro entre a nuvem e o servidor local por meio de uma conexão de saída no gateway.  Não é necessário abrir nenhuma conexão de entrada no firewall local. O Power BI gerencia o Barramento de Serviço para você; portanto, não há custos adicionais nem a necessidade de etapas de configuração.
 
 Se você tiver uma fonte de dados do Analysis Services, você precisará instalar o gateway em um computador associado ao mesmo domínio/floresta que o servidor do Analysis Services.
 

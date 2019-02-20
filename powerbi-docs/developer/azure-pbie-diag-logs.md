@@ -1,5 +1,5 @@
 ---
-title: Log de diagnóstico do serviço Power BI Embedded no Microsoft Azure | Microsoft Docs
+title: Log de diagnóstico do serviço do Power BI Embedded no Azure | Microsoft Docs
 description: Saiba mais sobre como configurar o log de diagnóstico do serviço Power BI Embedded no Microsoft Azure.
 author: markingmyname
 ms.author: maghan
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: bdb9e2dcf5e8e22aaaa3bf35035b746777a387b9
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 93181a7ecaad0ec5bcd837f55ad7863fae53772c
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40126431"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249127"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Log de diagnóstico do serviço Power BI Embedded no Microsoft Azure
 
@@ -40,7 +40,7 @@ O uso do Diagnóstico pode atender a alguns cenários, como:
 
     * **Arquivar em uma conta de armazenamento** – Para usar esta opção, é necessário conectar-se a uma conta de armazenamento existente. Confira o tópico [Criar uma conta de armazenamento](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) e siga as instruções para criar uma conta de armazenamento. Em seguida, volte a esta página do portal e selecione essa conta. Pode levar alguns minutos para que a nova conta seja exibida no menu suspenso. O armazenamento do arquivo de log está em formato JSON.
     * **Transmitir para um hub de eventos** – Para usar esta opção, é necessário conectar-se a um Namespace de Hub de Eventos e a um hub de eventos. Para saber mais, confira o artigo [Criar um Namespace de Hub de Eventos e um hub de eventos no Portal do Azure](https://docs.microsoft.com/azure/event-hubs/event-hubs-create).
-    * **Enviar para o Log Analytics** – Para usar esta opção, use um espaço de trabalho existente ou crie um novo espaço de trabalho do Log Analytics, seguindo as etapas do tópico [Criar um espaço de trabalho](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace), no portal. Ele aproveita o [Log Analytics do Microsoft Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), que fornece funcionalidades internas de análise e criação de notificações e painéis. Use o Log Analytics para conectar mais dados de outros recursos e obter uma exibição completa e exclusiva dos dados em todos os recursos do aplicativo. É possível inclusive conectá-lo ao [Power BI com um único clique](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
+    * **Enviar para o Log Analytics** – Para usar esta opção, use um workspace existente ou crie um novo workspace do Log Analytics, seguindo as etapas do tópico [Criar um workspace](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace), no portal. Ele aproveita o [Log Analytics do Microsoft Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), que fornece funcionalidades internas de análise e criação de notificações e painéis. Use o Log Analytics para conectar mais dados de outros recursos e obter uma exibição completa e exclusiva dos dados em todos os recursos do aplicativo. É possível inclusive conectá-lo ao [Power BI com um único clique](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
     Para saber mais sobre como exibir os logs no Log Analytics, confira [Exibir logs no Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-activity).
     * **Mecanismo** – Selecione esta opção para registrar o conjunto de [eventos do mecanismo](#whats-logged) descrito abaixo.
     * **AllMetrics** – Selecione esta opção para armazenar dados detalhados em [Métricas](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). Se arquivar em uma conta de armazenamento, selecione o período de retenção dos logs de diagnóstico. Os logs são excluídos automaticamente quando expira o período de retenção.
@@ -73,13 +73,13 @@ Para habilitar métricas e logs de diagnóstico com o PowerShell, use os seguint
     {service bus resource ID}/authorizationrules/{key name}
     ```
 
-* Para habilitar o envio de logs de diagnóstico para um espaço de trabalho do Log Analytics, use o seguinte comando:
+* Para habilitar o envio de logs de diagnóstico para um workspace do Log Analytics, use o seguinte comando:
 
     ```powershell
         Set-AzureRmDiagnosticSetting -ResourceId [your resource id] -WorkspaceId [resource id of the log analytics workspace] -Enabled $true
     ```
 
-* Para obter a ID do recurso do espaço de trabalho do Log Analytics, use o seguinte comando:
+* Para obter a ID do recurso do workspace do Log Analytics, use o seguinte comando:
 
     ```powershell
     (Get-AzureRmOperationalInsightsWorkspace).ResourceId
@@ -114,13 +114,13 @@ A categoria do mecanismo instrui o recurso a registrar os seguintes eventos. Em 
 |    Auditoria de logoff    |    Registra todos o eventos "desconectar" do mecanismo desde o início do rastreamento.    |
 |    Error    |    Registra todos o eventos de erro do mecanismo desde o início do rastreamento.    |
 
-</br>
-</br>
+<br>
+<br>
 
 | Nome da propriedade | Exemplo de término de consulta Vertipaq | Descrição da propriedade |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | A Classe de Evento é usada para categorizar eventos. |
-| EventSubclass | 0 | A Subclasse de Evento fornece informações adicionais sobre cada classe de evento. (por exemplo, 0: exame do VertiPaq) |
+| EventSubclass | 0 | A Subclasse de Evento fornece informações adicionais sobre cada classe de evento. (por exemplo, 0: Exame do VertiPaq) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | ID da atividade raiz. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Hora em que o evento foi iniciado, quando disponível. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Hora em que o evento foi iniciado, quando disponível. |
@@ -138,7 +138,7 @@ A categoria do mecanismo instrui o recurso a registrar os seguintes eventos. Em 
 | Severidade | 0 | Nível de severidade de uma exceção. |
 | Êxito | 1 | 1 = êxito. 0 = falha (por exemplo, 1 significa êxito em uma verificação de permissões e 0 significa uma falha nessa verificação). |
 | Error | 0 | Número do erro de um determinado evento. |
-| TextData | SET DC_KIND=\"AUTO\"; SELECT [SalesLT.Customer (464)].[rowguid (606)] AS [SalesLT.Customer (464)$rowguid (606)] FROM [SalesLT.Customer (464)]; [Estimated size (volume marshalling bytes):850 6800] | Dados de texto associados ao evento. |
+| TextData | SET DC_KIND=\"AUTO\"; SELECT [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)] FROM [SalesLT Customer (464)]; [tamanho estimado (bytes de marshaling do volume): 850 6800] | Dados de texto associados ao evento. |
 | ConnectionID | 3 | ID de Conexão Exclusiva. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Conjunto de dados no qual a instrução do usuário está sendo executada. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | GUID de sessão. |

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: b48feeaacc5ec0beff3b9b250f22b1aa605de9f7
-ms.sourcegitcommit: 6c75e38660b1ab4c1af355c85709859ffde09e25
+ms.openlocfilehash: f4e6f0204ed9832a3ed3c3ed8347a44300f606df
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068041"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249380"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Instalar e usar aplicativos com dashboards e relatórios no Power BI
 Agora que você tem uma [noção básica sobre aplicativos](end-user-apps.md), vamos aprender a abrir e interagir com os aplicativos. 
@@ -25,7 +25,7 @@ Lembre-se de que há várias maneiras de obter um novo aplicativo. Um colega de 
 
 No Power BI em seu dispositivo móvel, você só pode instalar um aplicativo de um link direto, e não do AppSource. Se o autor do aplicativo instalar o aplicativo automaticamente, você o verá na sua lista de aplicativos.
 
-### <a name="install-an-app-from-a-direct-link"></a>Instalar um aplicativo por meio de um link direto
+## <a name="install-an-app-from-a-direct-link"></a>Instalar um aplicativo por meio de um link direto
 A maneira mais fácil de instalar um novo aplicativo é obter um link direto, no email, do autor do aplicativo.  
 
 **No computador** 
@@ -40,8 +40,8 @@ Quando você seleciona o link no email em seu dispositivo móvel, o aplicativo �
 
 ![Lista de conteúdo do aplicativo no dispositivo móvel](./media/end-user-app-view/power-bi-app-index-it-spend-360.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Obter o aplicativo no Microsoft AppSource
-Você também pode localizar e instalar aplicativos do Microsoft AppSource. Apenas os aplicativos aos quais você um acesso (ou seja, o autor do aplicativo forneceu permissão a você ou a qualquer pessoa) são exibidos.
+## <a name="get-the-app-from-microsoft-appsource"></a>Obter o aplicativo no Microsoft AppSource
+Você também pode localizar e instalar aplicativos do Microsoft AppSource. Apenas os aplicativos aos quais você tem acesso (ou seja, quando o autor do aplicativo forneceu permissão a você ou a todos) são exibidos.
 
 1. Selecione **Aplicativos** ![Aplicativos no painel de navegação à esquerda](./media/end-user-apps/power-bi-apps-bar.png) > **Obter aplicativos**. 
    

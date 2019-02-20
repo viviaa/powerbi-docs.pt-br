@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 280f60d0ae60a445d94a640af974a2624c73bb83
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429994"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408059"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Diretrizes para visuais do Power BI com compras adicionais
 
@@ -22,6 +22,10 @@ Até recentemente, o **Marketplace (AppSource)** aceitava apenas os visuais grat
 
 > [!Note]
 > Para o visual ser certificado, ele não deverá acessar serviços ou recursos externos.
+
+> [!Note]
+> Todos os visuais gratuitos devem manter os mesmos recursos gratuitos oferecidos anteriormente. Você pode adicionar recursos pagos avançados opcionais aos recursos gratuitos antigos. Recomendamos o envio dos visuais de IAP com os recursos avançados como novos visuais e a não atualização dos gratuitos antigos.
+
 
 ## <a name="whats-changing-in-the-submission-process"></a>O que está mudando no processo de envio?
 

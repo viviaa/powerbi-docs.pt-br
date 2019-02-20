@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430937"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408105"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Assine e obtenha assinaturas para terceiros de um relatório ou um dashboard no serviço do Power BI
 
@@ -60,12 +60,10 @@ Se você estiver assinando um dashboard ou um relatório, o processo será semel
 7. Selecione **Salvar e fechar**. Os inscritos receberão um email e o instantâneo da página de relatório ou dashboard para a frequência e a hora que você selecionou. No total, você pode criar até 24 assinaturas por relatório ou dashboard e pode fornecer frequências, horas e destinatários exclusivos para cada assinatura.  Todas as assinaturas definidas para **Após a atualização de dados** do seu dashboard ou relatório somente enviarão um email após a primeira atualização agendada.   
       
    > [!TIP]
-   > Deseja ver o email agora mesmo? Dispare um email ao atualizar um dos conjuntos de dados associados ao dashboard ou o conjunto de dados associado ao relatório. Se não tiver permissões de edição para o conjunto de dados, peça que alguém que as tenha atualize-o para você. Para ver os conjuntos de dados relacionados, selecione o ícone **Exibir relacionados** ![ícone de Exibir relacionados](media/service-report-subscribe/power-bi-view-related.png) para abrir o **Conteúdo relacionado** e, em seguida, selecione o ícone de atualização ![ícone de atualização](media/service-report-subscribe/power-bi-refresh.png). 
+   > Deseja enviar o email de uma assinatura imediatamente ou sob demanda a qualquer momento? Selecione **Executar Agora** para as assinaturas do dashboard ou do relatório que deseja enviar. Você verá uma notificação indicando que um email está sendo enviado a todos para essa assinatura específica.  Você pode fazer isso sempre que desejar. Isso não é calculado no limite de 24 execuções de assinatura agendadas por dia e por relatório ou dashboard. Observe que isso NÃO dispara uma atualização de dados do conjunto de dados subjacente. 
    > 
    > 
    
-   ![Conjuntos de dados relacionados](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## <a name="email-languages"></a>Idiomas do Email
 
 O instantâneo e o email usam o idioma definido nas configurações do Power BI (confira [Idiomas e países/regiões com suporte para o Power BI](supported-languages-countries-regions.md)). Se nenhum idioma for definido, o Power BI usará o idioma de acordo com a configuração de localidade no navegador atual. Para obter ou definir sua preferência de idioma, selecione o ícone de engrenagem ![ícone de engrenagem](media/service-report-subscribe/power-bi-settings-icon.png) > **Configurações > Geral > Idioma**. 
@@ -84,6 +82,7 @@ As assinaturas específicas exibidas dependerão de qual workspace está ativo n
 Uma assinatura será encerrada se a licença Pro expirar, se o proprietário excluir o dashboard ou o relatório ou se a conta de usuário usada para criar a assinatura for excluída.
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
+* Os dashboards com mais de 25 blocos fixos ou 4 páginas de relatório dinâmico fixas podem não ser renderizados totalmente nos emails de assinatura enviados aos usuários.  As assinaturas dos dashboards acima desses números de blocos não serão bloqueadas. No entanto, elas serão consideradas sem suporte caso você tenha problemas e deverão ser modificadas de acordo para se enquadrarem em um intervalo com suporte.
 * Para assinaturas de email do dashboard, se quaisquer blocos tiverem a RLS (Segurança em Nível de Linha) aplicada, esses blocos não serão exibidos.  Para assinaturas de email do relatório, se o conjunto de dados usar a RLS, não será possível criar uma assinatura.
 * As assinaturas da página de relatório são vinculadas ao nome da página de relatório. Se você assinar uma página de relatório e renomeá-la, precisará recriar sua assinatura.
 * Sua organização pode definir certas configurações no Azure Active Directory que limitam a capacidade de usar assinaturas de email no Power BI.  Essas limitações incluem, sem limitação, ter autenticação multifator ou restrições de intervalo de IP ao acessar recursos.

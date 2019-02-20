@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086461"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408174"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
@@ -172,11 +172,11 @@ A imagem a seguir mostra a opção para exportar dados de um bloco.
 > [!NOTE]
 > Desabilitar a opção **Exportar dados** também impede os usuários de usar o recurso **Analisar no Excel**, bem como de usar a conexão dinâmica do serviço do Power BI.
 
-### <a name="export-reports-as-powerpoint-presentations"></a>Exportar relatórios como apresentações do PowerPoint
+### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exportar relatórios como apresentações do PowerPoint ou documentos PDF
 
-Os usuários na organização podem exportar relatórios do Power BI como arquivos do PowerPoint. [Saiba mais](consumer/end-user-powerpoint.md)
+Os usuários da organização podem exportar relatórios do Power BI como arquivos do PowerPoint ou documentos PDF. [Saiba mais](consumer/end-user-powerpoint.md)
 
-A imagem a seguir mostra o menu **Arquivo** de um relatório quando a configuração **Exportar relatórios como apresentações do PowerPoint** está habilitada.
+A imagem a seguir mostra o menu **Arquivo** de um relatório quando a configuração **Exportar relatórios como apresentações do PowerPoint ou documentos PDF** está habilitada.
 
 ![Exportar relatórios como apresentações do PowerPoint](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -202,9 +202,9 @@ A imagem a seguir mostra a opção **Minha organização inteira** durante a cri
 
 ![Publicar o pacote de conteúdo na organização](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Criar aplicativos e pacotes de conteúdo organizacional de modelo
+### <a name="create-template-apps"></a>Criar aplicativos de modelo
 
-Os usuários na organização podem criar pacotes de conteúdo de modelo que usam conjuntos de dados criados no Power BI Desktop. [Saiba mais](template-content-pack-authoring.md)
+Os usuários da organização podem criar aplicativos de modelo que usam conjuntos de dados criados no Power BI Desktop. Saiba mais sobre [aplicativos de modelo](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Enviar aplicativos por push para usuários finais
 
@@ -301,6 +301,18 @@ Os usuários na organização podem criar e usar fluxos de dados. Para obter uma
 
 > [!NOTE]
 > Essa configuração se aplica a toda a organização e não pode ser limitada a grupos específicos.
+
+## <a name="template-apps-settings-preview"></a>Configurações do aplicativo de modelo (versão prévia)
+
+Duas configurações controlam os aplicativos de modelo. 
+
+![Configurações de aplicativos de modelo do portal de administração do Power BI](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+A primeira configuração, **Criar aplicativos de modelo**, controla quem pode criar aplicativos de modelo em sua organização. Em seguida, os criadores de aplicativos de modelo podem distribuí-los para clientes fora de sua organização por meio do AppSource ou de outro método de distribuição.
+
+![Portal de administração do Power BI, configuração Criar aplicativos de modelo](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+Com a segunda configuração, **Instalar aplicativos de modelo**, você controla quem, em sua organização, pode baixar e instalar aplicativos de modelo no AppSource ou em outra fonte
 
 ## <a name="capacity-settings"></a>Configurações de capacidade
 

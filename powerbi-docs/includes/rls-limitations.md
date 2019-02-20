@@ -1,3 +1,16 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+ms.openlocfilehash: 44ef0aa9d436f3a8a02f9a6b831847d5c996558a
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56334041"
+---
 ## <a name="limitations"></a>Limitações
 
 Veja a seguir uma lista com as limitações atuais da Segurança em Nível de Linha nos modelos de nuvem.
@@ -8,7 +21,7 @@ Veja a seguir uma lista com as limitações atuais da Segurança em Nível de Li
 
 * Somente há suporte para conexões ETL e DirectQuery. Conexões dinâmicas do Analysis Services são tratadas no modelo local.
 
-* No momento, não há suporte para a P e R e Cortana com RLS. Você não verá a caixa de entrada da P e R para os dashboards se todos os modelos tiverem a RLS configurada. Isso está em nossos planos, mas ainda não há um cronograma disponível.
+* No momento, não há suporte para a RLS na Cortana.
 
 ## <a name="known-issues"></a>Problemas conhecidos
 
@@ -20,4 +33,4 @@ Há um problema conhecido em que você obterá uma mensagem de erro se tentar pu
 
 1. Sara recebe um erro.
 
-**Solução alternativa:** publique novamente o arquivo do Power BI Desktop no serviço do Power BI até que esse problema seja resolvido. Você pode fazer isso selecionando **Obter Dados** > **Arquivos**.
+**Solução alternativa:** Publique novamente o arquivo do Power BI Desktop por meio do serviço do Power BI até que esse problema seja resolvido. Você pode fazer isso selecionando **Obter Dados** > **Arquivos**.

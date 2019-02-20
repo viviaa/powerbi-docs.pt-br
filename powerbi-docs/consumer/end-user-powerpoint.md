@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8dd9af8b44e74aafb97e3265b9ee1c32a05edc64
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9e1ed67302b3fc4d7bf990040259e9e4615794a5
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281541"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298904"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportar relatórios do Power BI para o PowerPoint
 Com o Power BI, você pode publicar seu relatório no **Microsoft PowerPoint** e criar facilmente um conjunto de slides com base em seu relatório do Power BI. Quando você **exporta para o PowerPoint**, ocorre o seguinte:
@@ -35,6 +35,10 @@ No serviço do Power BI, selecione um relatório para exibi-lo na tela. Você ta
 Quando o relatório que você deseja exportar para o PowerPoint for exibido na tela, selecione **Arquivo > Exportar para o PowerPoint** na barra de menus do serviço do Power BI.
 
 ![Aproximação da barra de navegação esquerda com o Meu Espaço de Trabalho selecionado e o menu suspenso Arquivo selecionado](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+   
+Um pop-up será exibido, em que você tem a opção de selecionar a **Exibição atual** ou a **Exibição padrão**.  A **Exibição atual** exporta o relatório no estado atual, que inclui as alterações ativas feitas nos valores de segmentação e filtro.  A maioria dos usuários seleciona essa opção.  Alternativamente, a seleção de **Exibição padrão** exporta o relatório em seu estado original (como o autor o compartilhou) e não reflete as alterações feitas no estado original.
+    
+Além disso, há uma caixa de seleção para marcar se você deseja ou não exportar as guias ocultas de um relatório.  Basta marcar essa caixa se desejar exportar somente as guias de relatório visíveis para você no navegador.  Se preferir obter todas as guias ocultas como parte da exportação, deixe-a desmarcada.  Se a caixa de seleção estiver esmaecida, não haverá guias ocultas no relatório.  Depois de fazer as seleções, clique em **Exportar** para continuar.
 
 Você verá uma faixa de notificação no canto superior direito da janela do navegador de serviço do Power BI de que o relatório está sendo exportado para o PowerPoint. Isso pode levar alguns minutos e você pode continuar a trabalhar no Power BI enquanto o relatório está sendo exportado.
 
@@ -74,7 +78,6 @@ O que fazer com seu material do PowerPoint daí em diante, ou com qualquer uma d
 ## <a name="limitations"></a>Limitações
 Há algumas considerações e limitações para ter em mente ao trabalhar com o recurso **Exportar para o PowerPoint**.
 
-* A interatividade na sessão, assim como o realce e filtragem, drill down e assim por diante, ainda não têm suporte ao exportar para o PowerPoint. O PowerPoint exportado mostra os visuais originais como eles tivessem sido salvos no relatório. Se você aplicou filtros e segmentações de dados e deseja que isso seja preservado na exportação, salve o relatório e faça a exportação.
 * No momento, não há suporte para **visuais do R**. Esses visuais são exportados como uma imagem em branco para o PowerPoint com uma mensagem de erro que afirma que não há suporte para o visual.
 * Há suporte para **visuais personalizados** que foram **certificados**. Para obter mais informações sobre visuais personalizados certificados, incluindo como obter um visual personalizado certificado, consulte [Certificando um visual personalizado](../power-bi-custom-visuals-certified.md). Não há suporte para visuais personalizados que não foram certificados e eles são exportados como uma imagem em branco para o PowerPoint com uma mensagem de erro que afirma que não há suporte para o visual.
 * No momento, não é possível exportar relatórios com mais de 30 páginas de relatório.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 509eebfdf2d96a2cc77d5c9413c664a10309ab9c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216402"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325030"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -61,7 +61,7 @@ O **Power BI Desktop** cria um indicador e concede a ele um nome genérico. Voc�
 
 Uma vez que um indicador, você pode exibi-lo, simplesmente clicando no indicador no painel **Indicadores**. 
 
-Você também pode selecionar se cada indicador aplicará propriedades de *dados*, como filtros e segmentações de dados, propriedades de *exibição*, como destaques e visibilidade, e alterações de página que apresentam a página que estava visível quando o indicador foi adicionado. Esses recursos são úteis quando você usa indicadores para alternar entre os tipos visuais - nesse caso, convém desativar as propriedades dos dados, para que os filtros não sejam redefinidos quando os usuários alterarem os tipos de visual. 
+Você também pode selecionar se cada indicador aplicará propriedades de *dados*, como filtros e segmentações de dados, propriedades de *exibição*, como destaques e visibilidade, e alterações de página que apresentam a página que estava visível quando o indicador foi adicionado. Essas funcionalidades são úteis quando você usa indicadores para alternar entre exibições de relatório ou seleções de visuais – nesse caso, provavelmente você desejará desativar a propriedades de dados, de modo que os filtros não sejam redefinidos quando os usuários alternarem as exibições selecionando um indicador. 
 
 Para fazer essas alterações, selecione as reticências ao lado do nome do indicador, conforme mostra a imagem anterior, depois marque ou desmarque as marcas de seleção ao lado de *Dados*, *Exibição* e outros controles. 
 
