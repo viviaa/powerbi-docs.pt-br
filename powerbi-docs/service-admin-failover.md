@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7446cb9db0f4ebbb20e316365263fa6f09de71bb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55448211"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426552"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Perguntas frequentes de recuperação de desastre, failover e alta disponibilidade do Power BI
 
@@ -29,7 +29,7 @@ Power BI é um SaaS (Software como Serviço) totalmente gerenciado.  A Microsoft
 
 O Power BI mantém várias instâncias de cada componente em datacenters do Azure (também conhecidos como regiões) para garantir a continuidade dos negócios. Se houver uma interrupção ou um problema que faça com que o Power BI fique inacessível ou inoperante em uma região, o Power BI falhará todos os seus componentes nessa região para uma instância de backup. O failover restaura a disponibilidade e capacidade de operação da instância do serviço do Power BI em uma nova região (geralmente dentro do mesmo local geográfico, como observado no [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)).
 
-Uma instância do serviço do Power BI que sofreu failover dá suporte apenas a _operações de leitura_, o que significa que as operações a seguir não têm suporte durante o failover: atualizações, operações de publicação de relatório, modificações de dashboard ou de relatório e outras operações que exigem alterações nos metadados do Power BI (por exemplo, inserção de um comentário em um relatório).  Operações de leitura, tais como exibição de dashboards e de relatórios (que não são baseados em DirectQuery no Live Connect para fontes de dados locais) continuarão a funcionar normalmente.
+Uma instância do serviço do Power BI que sofreu failover dá suporte apenas a _operações de leitura_, o que significa que as operações a seguir não têm suporte durante o failover: atualizações, operações de publicação de relatório, modificações de dashboard ou de relatório e outras operações que exigem alterações nos metadados do Power BI (por exemplo, inserção de um comentário em um relatório).  Operações de leitura, como exibição de dashboards e de relatórios (que não são baseados em DirectQuery ou no Live Connect para fontes de dados locais) continuarão a funcionar normalmente.
 
 ## <a name="how-are-backup-instances-kept-in-sync-with-my-data"></a>Como as instâncias de backup são mantidas em sincronia com meus dados?
 

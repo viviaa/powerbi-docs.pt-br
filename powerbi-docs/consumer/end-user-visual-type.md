@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794839"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426759"
 ---
 # <a name="visualization-types-in-power-bi"></a>Tipos de visualização no Power BI
 Você encontrará visualizações em relatórios, dashboards, aplicativos e P e R. Alguns desses tipos de visualização são empacotados com o Power BI e alguns são *visuais personalizados*. Visuais personalizados são criados fora do Power BI e de uma maneira que permite a *designers de relatório* adicioná-los a aplicativos, dashboards e relatórios do Power BI. 
@@ -98,10 +98,12 @@ Os medidores radiais são uma ótima opção para:
 - mostrar a integridade de uma única medida
 - exibir informações que podem ser examinadas e compreendidas rapidamente
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### <a name="key-influencers-chart"></a>Gráficos de influenciadores principais
+![Influenciador principal](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+Um gráfico de influenciador principal exibe os principais colaboradores para um resultado ou valor selecionado.
+
+Os influenciadores principais são uma ótima opção para ajudar você a entender os fatores que influenciam uma métrica principal. Por exemplo, *o que influencia os clientes a fazer um segundo pedido *ou* por que as vendas foram tão altas em junho passado*. 
 
 ### <a name="kpis"></a>KPIs
 ![kpi](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)

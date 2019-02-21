@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8cc1201c506e98ae33b68ef0cf802dae20b6f493
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216506"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426713"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)
 
@@ -70,6 +70,8 @@ Siga as etapas no artigo [Atribuir uma função a uma entidade de segurança](ht
 Na janela **Adicionar atribuição de função**, selecione a função **Leitor** para atribuir ao serviço do Power BI. Em seguida, use a pesquisa para localizar o **serviço do Power BI**. A imagem a seguir mostra a função **Leitor** atribuída ao serviço do Power BI.
 
 ![Serviço do Power BI com a função de Leitor](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
+
+Observação: Aguarde no mínimo 30 minutos para a permissão se propagar para o Power BI do Portal. Sempre que você alterar a permissão no Portal, deverá aguardar 30 minutos para exibir o mesmo no Power BI e tentar novamente. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Criar um sistema de arquivos para o Power BI

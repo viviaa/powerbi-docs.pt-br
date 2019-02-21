@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 4cbd17a08a8cb7c7253f60f29a19341598c9800f
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408059"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426529"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Diretrizes para visuais do Power BI com compras adicionais
 
@@ -33,7 +33,10 @@ Os desenvolvedores carregam seus visuais de IAP para o AppSource por meio do Pai
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>O que é um visual do Power BI com recursos de IAP?
 
-Um visual do IAP é um visual gratuito e oferece recursos gratuitos, mas também tem recursos adicionais cuja operação exija encargos adicionais. Os desenvolvedores devem notificar os usuários na descrição do visual quais recursos exigem compras adicionais para operar. Atualmente, a Microsoft não fornece APIs (interfaces de programação de aplicativo) nativas para dar suporte à compra em suplementos e aplicativos. Os desenvolvedores podem usar qualquer sistema de pagamento de terceiros para essas compras. Consulte a [política](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) da nossa loja.
+Um visual do IAP é um visual gratuito e oferece recursos gratuitos, mas também tem recursos adicionais avançados cuja operação exija encargos adicionais. Os desenvolvedores devem notificar os usuários na descrição do visual quais recursos exigem compras adicionais para operar. Atualmente, a Microsoft não fornece APIs (interfaces de programação de aplicativo) nativas para dar suporte à compra em suplementos e aplicativos. Os desenvolvedores podem usar qualquer sistema de pagamento de terceiros para essas compras. Consulte a [política](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) da nossa loja.
+
+> [!NOTE]
+> As marcas d'água não são permitidas nos recursos gratuitos. Os desenvolvedores poderão exibir uma janela pop-up ou a marca-d'água se os recursos pagos avançados forem usados sem uma licença válida.  
 
 ## <a name="logo-guidelines"></a>Diretrizes de logotipo
 

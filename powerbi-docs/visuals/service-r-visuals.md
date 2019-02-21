@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 02/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 48e1ddbc498e234c43bf755d3a23a2e10e4cc856
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1e997f5ac7e916f10c98756f142b9f563adea05a
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290190"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426598"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Criar visuais do R no serviço do Power BI
 O serviço do Power BI dá suporte à exibição e interação com visuais criados com scripts do R. Os visuais criados com scripts do R, normalmente chamados de *visuais do R*, podem apresentar formatação e análise de dados avançadas, como previsão, usando o poder da análise e da visualização avançadas do R.
@@ -33,7 +33,7 @@ Os visuais do R são criados em um [relatório do Power BI Desktop](../desktop-g
 
 ![](media/service-r-visuals/r-visuals-service_2a.png)
 
-Depois que o relatório for criado no **Power BI Desktop**, será possível publicar o relatório contendo um ou mais visuais do R no serviço do Power BI. Atualmente, os visuais do R só podem ser criados no **Power BI Desktop** e, em seguida, publicados no serviço do Power BI. Para obter mais informações sobre como criar visuais do R, veja [Create Power BI visuals using R (Power BI Desktop)](../desktop-r-visuals.md) (Criar visuais do Power BI usando o R [Power BI Desktop]).
+Depois que o relatório for criado no **Power BI Desktop**, será possível publicar o relatório contendo um ou mais visuais do R no serviço do Power BI. No momento, os visuais do R só podem ser criados no **Power BI Desktop** e publicados no serviço do Power BI. Para obter mais informações sobre como criar visuais do R, veja [Create Power BI visuals using R (Power BI Desktop)](../desktop-r-visuals.md) (Criar visuais do Power BI usando o R [Power BI Desktop]).
 
 Observe que, no serviço, nem todos os pacotes do R têm suporte. Confira os pacotes com suporte ao final deste artigo para obter a lista dos pacotes atualmente com suporte no serviço do Power BI.
 
@@ -66,11 +66,19 @@ Como outro exemplo, a imagem a seguir mostra a mensagem de erro que aparece quan
 ## <a name="licensing"></a>Licenças
 Os visuais do R exigem uma licença [Power BI Pro](../service-self-service-signup-for-power-bi.md) para serem renderizados em relatórios, na atualização, no filtro e no filtro cruzado. Para obter mais informações sobre licenças do Power BI Pro e como elas diferem das licenças gratuitas, veja [Conteúdo do Power BI Pro – o que é isto?](../service-premium.md)
 
-Os usuários da versão gratuita do Power BI só poderão consumir blocos compartilhados com eles. Veja [Comprando o Power BI Pro](../service-admin-purchasing-power-bi-pro.md) para obter mais informações.
+Os usuários da versão gratuita do Power BI só poderão consumir blocos compartilhados com eles nos workspaces Premium. Veja [Comprando o Power BI Pro](../service-admin-purchasing-power-bi-pro.md) para obter mais informações.
 
 A tabela a seguir descreve as funcionalidades dos visuais do R com base em licenciamento.
 
-![](media/service-r-visuals/r-visuals-service_6a.png)
+
+|  |Criar visuais do R no Power BI Desktop  | Criar relatórios de serviço PBI com visuais do R |Exibir visuais R em relatórios  | Exibir blocos do R em dashboards |
+|---------|---------|---------|---------|--------|
+|**Convidado** (Power BI Embedded)     |  Não relevante|  Não relevante       | Não compatível  | Não relevante |
+|**Locatário não gerenciado** (domínio não verificado) | Compatível | Não compatível |  Não compatível |Compatível (cenário B2B) |
+|**Locatário gerenciado** com licença gratuita    |  Compatível       |  Não compatível       |    Compatível apenas na capacidade Premium    | Compatível |
+**Locatário gerenciado** com licença Pro     |   Compatível      | Compatível      | Compatível    |Compatível|
+
+
 
 ## <a name="known-limitations"></a>Limitações Conhecidas
 Os visuais do R no serviço do Power BI têm algumas limitações:

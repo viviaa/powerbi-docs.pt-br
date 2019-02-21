@@ -3,19 +3,19 @@ title: Tutorial de visualizações de influenciadores principais
 description: Tutorial – Criar uma visualização de influenciadores principais no Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: justyna
+ms.reviewer: juluczni
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/10/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: c937104d570409023373a5ccbcf94e1b66e6aaab
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325141"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426782"
 ---
 # <a name="key-influencers-visualization"></a>Visualização de influenciadores principais
 O visual de influenciadores principais ajuda a entender os fatores que influenciam uma métrica na qual você está interessado. Ele analisa os dados, classifica os fatores importantes e os exibe como influenciadores principais. Por exemplo, você está interessado em descobrir o que influencia a rotatividade de funcionários. Um dos fatores pode ter a duração do contrato de trabalho e outro pode ser a idade do funcionário. 
@@ -46,7 +46,7 @@ A métrica que está sendo analisada precisa ser um campo categórico.
 
 6. ***Painel direito*** – o painel direito contém um visual. Nesse caso, o gráfico de colunas exibe todos os valores para o **influenciador principal**, o **Tema** selecionado no painel esquerdo. O valor específico (**Usabilidade**) no painel esquerdo está em verde e todos os outros valores do **Tema** estão em preto.
 
-7. ***Linha média*** – a média é calculada para todos os outros valores possíveis do **Tema**, exceto **usabilidade**. Portanto, o cálculo se aplica a todos os valores em preto. Ele nos informa qual percentual dos outros **Temas** nos deu uma classificação baixa. Em outras palavras, quando uma classificação é dada por um cliente, esse cliente também descreve o motivo ou o **tema** para a classificação. Alguns temas são usabilidade, velocidade, segurança etc. O **Tema** é **Usabilidade** é o segundo maior influenciador principal para uma classificação baixa, de acordo com o visual no painel esquerdo. Se extrairmos a média de todos os temas e de sua contribuição para uma classificação igual a **baixa**, obteremos o resultado observado aqui em vermelho. 
+7. ***Linha média*** – a média é calculada para todos os outros valores possíveis do **Tema**, exceto **usabilidade**. Portanto, o cálculo se aplica a todos os valores em preto. Ele nos informa qual percentual dos outros **Temas** nos deu uma classificação baixa. Em outras palavras, quando uma classificação é dada por um cliente, esse cliente também descreve o motivo ou o **tema** para a classificação. Alguns temas são usabilidade, velocidade, segurança etc. O **Tema** é **Usabilidade** é o segundo maior influenciador principal para uma classificação baixa, de acordo com o visual no painel esquerdo. Se extrairmos a média de todos os temas e de sua contribuição para uma classificação igual a **baixa**, obteremos o resultado observado aqui em vermelho. De todos os outros temas fornecidos, apenas 11,35% deles são maiores que **usabilidade**. 
 
 8. ***Caixa de seleção*** – mostra apenas valores que são influenciadores.
 
@@ -217,7 +217,7 @@ Mais precisamente, os clientes que não usam o navegador para consumir o serviç
 
 ![erro – resolvido](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**Vejo um aviso indicando que as medidas não foram incluídas na análise. Por que isso acontece?** [2052261] 
+**Vejo um aviso indicando que as medidas não foram incluídas na análise. Por que isso acontece?** 
 
 ![erro – medidas não incluídas](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 
