@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b973fcde9c01c683ff45ad8117935358a4735986
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275032"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661642"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Blocos de painel no Power BI
 Um bloco é um instantâneo dos dados fixados no dashboard por um *designer*. Um bloco pode ser criado de relatórios, conjuntos de dados, dashboards, caixas de P e R, SSRS (SQL Server Reporting Services) e muito mais.  Essa captura de tela mostra vários blocos diferentes fixados a um dashboard.
