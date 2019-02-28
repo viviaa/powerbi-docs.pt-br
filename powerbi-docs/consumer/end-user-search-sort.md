@@ -4,22 +4,22 @@ description: documentação para pesquisar e classificar conteúdo nos workspace
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ef8d7c61d35f15517db4fdbbea347a525a130f31
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2f8c2468b56db190f9e794ed2d81ce86449a970d
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288211"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661872"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navegação: pesquisando, buscando e classificando seu conteúdo no serviço do Power BI
-Há muitas maneiras de navegar pelo seu conteúdo no serviço do Power BI. O conteúdo é organizado em entre workspaces por tipo: painéis, relatórios, pastas de trabalho e conjuntos de dados.  E o conteúdo também é organizado por uso: favoritos, recentes, aplicativos, compartilhado comigo e em destaque. Para uma parada de navegação, a Home page organiza o conteúdo todo em uma única página. Esses caminhos diferentes em seu conteúdo permitem que você localize rapidamente aquilo de que precisa no serviço do Power BI.  
+Há muitas maneiras de navegar pelo seu conteúdo no serviço do Power BI. O conteúdo é organizado dentro do seu espaço de trabalho por tipo: painéis, relatórios, pastas de trabalho e conjuntos de dados.  E o conteúdo também é organizado por uso: favoritos, recentes, aplicativos, compartilhado comigo e em destaque. Para uma parada de navegação, a Home page organiza o conteúdo todo em uma única página. Esses caminhos diferentes em seu conteúdo permitem que você localize rapidamente aquilo de que precisa no serviço do Power BI.  
 
 ## <a name="navigation-within-workspaces"></a>Navegação em workspaces
 

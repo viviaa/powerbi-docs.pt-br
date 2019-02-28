@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: ad3025b9649529566972f75e9c447bb7558132b8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325187"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662447"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Novidades no Servidor de Relatório do Power BI
 
@@ -41,6 +41,10 @@ Suporte para esses recursos em relatórios do Power BI:
 [**Guias de alinhamento inteligentes**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Você vê guias de alinhamento inteligentes ao mover objetos na sua página de relatório, assim como você vê no PowerPoint, para ajudá-lo a alinhar tudo na sua página. Você vê as guias inteligentes sempre que você arrasta ou redimensiona algo na página. Quando você move um objeto para perto de outro, ele se ajusta em uma posição alinhada com o outro objeto.
 
 **Recursos de acessibilidade** Há muitos recursos de acessibilidade para listar: por exemplo, [suporte de acessibilidade do painel de lista de campos](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). O painel de lista de campos é totalmente acessível. Você pode navegar pelo painel usando apenas o teclado e um leitor de tela e usar o menu de contexto para adicionar campos à sua página de relatório.
+
+#### <a name="custom-visuals"></a>Visuais Personalizados
+
+- A versão da API fornecida com esta versão é a 2.3.
 
 ### <a name="administrator-settings"></a>Configurações do administrador
 
