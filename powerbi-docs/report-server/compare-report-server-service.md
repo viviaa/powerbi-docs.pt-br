@@ -4,18 +4,18 @@ description: Este artigo compara os recursos do Servidor de Relatórios do Power
 keywords: ''
 author: markingmyname
 ms.author: maghan
-ms.date: 02/06/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 11b910d687830e525e0495a785153daa32db042d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.date: 02/06/2019
+ms.openlocfilehash: ba10e13062e4071e5afcc5d395836c96ed1401fd
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324451"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327908"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparando o Servidor de Relatórios do Power BI e o serviço do Power BI
 
@@ -56,7 +56,5 @@ O Servidor de Relatórios do Power BI e o serviço do Power BI têm muitas semel
 | Power BI Desktop | Versão otimizada para o Servidor de Relatório, disponível para download com o Servidor de Relatório | Versão otimizado para o serviço do Power BI, disponível na Windows Store | [Power BI Desktop para o servidor de relatório](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop para o serviço do Power BI](http://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
-
-
-

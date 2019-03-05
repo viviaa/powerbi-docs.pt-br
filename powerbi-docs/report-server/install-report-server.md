@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 12/07/2018
-ms.openlocfilehash: 377e601bde58c0e0a8e5634cd798e3373ebee7b7
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324888"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014428"
 ---
 # <a name="install-power-bi-report-server"></a>Instalar o Servidor de Relatório do Power BI
 
@@ -37,11 +37,11 @@ Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que vo
 
 Se você adquiriu o Power BI Premium, dentro da guia **Configurações Premium** do portal do administrador do Power BI, você terá acesso à sua chave do produto (Product Key) do Servidor de Relatórios do Microsoft Power BI. Isso está disponível somente para os administradores globais ou usuários atribuídos à função de administrador de serviços do Power BI.
 
-![Configurações Premium](../media/service-admin-premium-manage/pbirs-product-key.png "Chave do Servidor de Relatórios do Power BI nas configurações Premium")
+![Configurações Premium](../report-server/media/install-report-server/pbirs-product-key.png "Chave do Servidor de Relatórios do Power BI nas configurações Premium")
 
 Quando você seleciona **Chave do Servidor de Relatórios do Microsoft Power BI**, é exibida uma caixa de diálogo que contém a chave do produto (Product Key). É possível copiá-la e usá-la com a instalação.
 
-![Chave do produto (Product Key)](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Chave do produto (Product Key) do Servidor de Relatórios do Power BI")
+![Chave do produto (Product Key)](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Chave do produto (Product Key) do Servidor de Relatórios do Power BI")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise SA (Software Assurance)
 

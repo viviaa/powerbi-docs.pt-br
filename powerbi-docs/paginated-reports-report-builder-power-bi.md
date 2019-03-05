@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 12/05/2018
-ms.openlocfilehash: d3563b80813b0c08377e7ecaec89439197c2014f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 1b8653b4493e0a6de904ecb0f5bb8ec5bb6f7904
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324592"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014175"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>O que são os relatórios paginados no Power BI Premium? (Versão prévia)
 
@@ -24,7 +24,7 @@ Os relatórios paginados podem ter muitas páginas. Por exemplo, esse relatório
 
 ![Relatório paginado no serviço do Power BI](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Você pode visualizar o relatório no Construtor de Relatórios e publicá-lo no serviço do Power BI, http://app.powerbi.com. Você precisa de uma licença do Power BI Pro para publicar um relatório no serviço. É possível publicar e compartilhar relatórios paginados em Meu Workspace ou em espaços de trabalho do aplicativo, desde que o espaço de trabalho esteja em uma capacidade do Power BI Premium. Além disso, um administrador do Power BI precisa habilitar relatórios paginados no portal de administração do Power BI. Sabia mais sobre a [configuração de cargas de trabalho](service-admin-premium-manage.md#configure-workloads). 
+Você pode visualizar o relatório no Construtor de Relatórios e publicá-lo no serviço do Power BI, http://app.powerbi.com. Você precisa de uma licença do Power BI Pro para publicar um relatório no serviço. É possível publicar e compartilhar relatórios paginados em Meu Workspace ou em espaços de trabalho do aplicativo, desde que o espaço de trabalho esteja em uma capacidade do Power BI Premium. Além disso, um administrador do Power BI precisa habilitar relatórios paginados no portal de administração do Power BI. 
 
 ## <a name="create-reports-in-report-builder"></a>Criar relatórios no Construtor de Relatórios
 

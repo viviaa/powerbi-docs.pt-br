@@ -2,20 +2,21 @@
 title: Assinar relatórios e dashboards
 description: Saiba como obter para você e seus colegas uma assinatura de um instantâneo enviado por email de um relatório ou um dashboard do Power BI.
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/14/2019
+ms.date: 02/14/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e8d849c711bb190951feffca072a883137275af7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: 99501c6acc54188e2e87f0ae93354cac8116273c
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661774"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327931"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Assinar um relatório ou dashboard no serviço do Power BI 
 Nunca foi tão fácil manter-se atualizado sobre seus dashboards e relatórios mais importantes. Assine os dashboards e as páginas de relatório mais importantes para você e o Power BI enviará um email com um instantâneo para sua caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: diária, semanal ou quando os dados forem atualizados. Você pode até mesmo definir um horário específico para o Power BI enviar os emails ou executá-lo agora.  
