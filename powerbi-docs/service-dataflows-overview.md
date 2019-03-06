@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324797"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892334"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Preparação de dados de autoatendimento no Power BI (versão prévia)
 
@@ -69,7 +69,7 @@ O Azure Data Lake Storage Gen2 vem incluído em cada assinatura paga do Power BI
 
 O Power BI pode ser configurado para armazenar dados de fluxo de dados na conta do Azure Data Lake Storage Gen2 da sua organização. Quando o Power BI é conectado à assinatura do Azure, os desenvolvedores e cientistas de dados podem aproveitar os produtos avançados do Azure, como o Azure Machine Learning, Azure Databricks, Azure Data Factory e muito mais.
 
-O Power BI também pode se conectar a pastas com dados esquematizados no formato Common Data Service, que são armazenados na conta do Azure Data Lake Storage da sua organização. Essas pastas podem ser criadas por serviços como os serviços de dados do Azure. Ao se conectarem a essas pastas, os analistas podem trabalhar perfeitamente com esses dados no Power BI. 
+O Power BI também pode se conectar a pastas com os dados esquematizados no formato Common Data Service, que são armazenados na conta do Azure Data Lake Storage da sua organização. Essas pastas podem ser criadas por serviços como os serviços de dados do Azure. Ao se conectarem a essas pastas, os analistas podem trabalhar perfeitamente com esses dados no Power BI. 
 
 Para obter mais informações sobre Azure Data Lake Storage Gen2 e integração de fluxos de dados, incluindo como criar fluxos de dados que residem no Azure Data Lake de sua organização, confira [fluxos de dados e a integração do Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md).
 
