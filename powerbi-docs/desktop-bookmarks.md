@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325030"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892403"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Usar indicadores para compartilhar insights e criar histórias no Power BI 
 Os **indicadores** no Power BI ajudam você a capturar a exibição de uma página de relatório atualmente configurada, incluindo a filtragem e o estado dos visuais e, posteriormente, voltar a esse estado, apenas selecionando esse indicador salvo. 
@@ -25,6 +25,9 @@ Você também pode criar uma coleção de indicadores, organizá-los na ordem de
 ![Indicadores no Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
 Há muitos usos para indicadores. Você pode usá-los para acompanhar seu próprio progresso na criação de relatórios (indicadores são fáceis de adicionar, excluir e renomear) e, além disso, pode criar indicadores para criar uma apresentação de PowerPoint que percorre os indicadores em ordem, contando assim uma história com o seu relatório. Pode haver outros usos também, com base em como você acha que os indicadores podem ser melhor utilizados.
+
+> [!TIP]
+> Para obter informações sobre como usar indicadores pessoais no serviço do Power BI, leia o [comunicado no blog](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) do recurso Indicadores Pessoais. 
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Habilitar a versão prévia dos indicadores (versões anteriores a março de 2018)
 Após a versão de março de 2018 do Power BI Desktop, os indicadores foram disponibilizados ao público. 

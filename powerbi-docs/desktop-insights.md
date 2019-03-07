@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f5896505d724c0704e22c95df132ee3318b23009
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 28db4891ad2ca67fefb0f6ec7d993977bbba7043
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224009"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892242"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Usar insights no Power BI Desktop para explicar os aumentos e as diminuições exibidos nos visuais (versão prévia)
 
 Muitas vezes nos visuais, você vê um grande aumento e, em seguida, uma queda brusca nos valores e questiona a causa dessas flutuações. Com os **insights** no **Power BI Desktop** você pode saber a causa com apenas alguns cliques.
 
-Por exemplo, considere o seguinte visual que mostra *Valor de Vendas* por *Ano* e *País*. Uma grande diminuição nas vendas ocorre em 2014, com as vendas caindo bruscamente no *1º Trimestre* e no *2º Trimestre*. Nesses casos, você pode explorar os dados para explicar a alteração ocorrida. 
+Por exemplo, considere o seguinte visual que mostra *Valor de Vendas* por *Ano* e *Trimestre*. Uma grande diminuição nas vendas ocorre em 2014, com as vendas caindo bruscamente no *1º Trimestre* e no *2º Trimestre*. Nesses casos, você pode explorar os dados para explicar a alteração ocorrida. 
 
 ![Visual com aumentos e diminuições](media/desktop-insights/insights_01a.png)
 
