@@ -1,5 +1,5 @@
 ---
-title: Conectar-se aos dados do Azure Consumption Insights (Beta)
+title: Conectar-se ao custo e ao uso do Azure no Power BI Desktop
 description: Conectar-se com facilidade ao Azure e obter insights sobre consumo e uso usando o Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -11,21 +11,27 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1302ede9c28cc42b3605e55705f07620f2974990
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216046"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327977"
 ---
-# <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Conectar-se ao Azure Consumption Insights no Power BI Desktop (Beta)
-Com o conector do **Azure Consumption Insights**, você pode usar o **Power BI Desktop** para se conectar ao Azure e obter dados e informações detalhadas sobre o uso de serviços do Azure por sua organização. Você também pode criar medidas, colunas personalizadas e visuais para relatar e compartilhar sobre o uso do Azure por sua organização. Esta versão do conector do **Azure Consumption and Insights** está na versão Beta e está sujeita a alterações.
+# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analisar dados de uso e custo do Azure no Power BI Desktop
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
+O Power BI Desktop pode se conectar ao Azure e obter dados detalhados sobre o uso do serviço do Azure de sua organização. Com ele, você pode criar medidas e relatórios personalizados para entender melhor e analisar seus gastos do Azure.
 
-Neste artigo, você saberá como se conectar usando o conector do **Azure Consumption Insights** e obter os dados necessários, como migrar do uso do Conector do Azure Enterprise, além de encontrar um mapeamento das *colunas de detalhes de uso* disponíveis na API do **ACI** (Azure Consumption Insights).
+Atualmente, o Power BI dá suporte à conexão com contas de cobrança do Contrato Enterprise e do Contrato de Cliente.
 
-## <a name="connect-to-azure-consumption-insights"></a>Conectar-se ao Azure Consumption Insights
+Os usuários do Contrato Enterprise devem se conectar com o conector do Azure Consumption Insights. Os usuários da conta do contrato de cliente devem se conectar com o conector do Gerenciamento de Custos do Azure.
+
+## <a name="connect-with-azure-consumption-insights"></a>Conectar-se com o Azure Consumption Insights
+
+O Azure Consumption Insights permite que você se conecte às contas de cobrança do Contrato Enterprise do Azure.
+
+Nesta seção, você aprenderá a se conectar para obter os dados necessários, como migrar do uso do Conector do Azure Enterprise, além de encontrar um mapeamento das *colunas de detalhes de uso* disponíveis na API do **ACI** (Azure Consumption Insights).
+
 Para se conectar com êxito usando o conector do **Azure Consumption Insights**, é necessário ter acesso aos recursos do Enterprise no portal do Azure.
 
 Para se conectar usando o conector do **Azure Consumption Insights**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**. Selecione **Serviços Online** nas categorias à esquerda e você verá **Microsoft Azure Consumption Insights (Beta)**. Selecione **Conectar**.
@@ -70,7 +76,7 @@ Selecione uma caixa de seleção ao lado de qualquer tabela para ver uma visuali
 > 
 > 
 
-Quando você seleciona **Carregar**, os dados são carregados no **Power BI Desktop**.  O conector carregará os dados de acordo com o período de tempo padrão da tabela.  Caso precise personalizar o período de tempo, [é possível configurar uma consulta personalizada](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
+Quando você seleciona **Carregar**, os dados são carregados no **Power BI Desktop**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
@@ -201,6 +207,71 @@ As colunas e os nomes dos detalhes no Portal do Azure são semelhantes na API e 
 | Ano | |Ano |Não |
 | SubscriptionId |subscriptionId |SubscriptionId |Sim |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Não |
+
+## <a name="connect-with-azure-cost-management"></a>Conectar-se com o Gerenciamento de Custos do Azure
+
+Nesta seção, você aprenderá a se conectar à sua conta de cobrança do Contrato de Cliente.
+
+Para se conectar usando o conector do **Gerenciamento de Custos do Azure**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**.  Selecione **Azure** nas categorias à esquerda e você verá **Gerenciamento de Custos do Azure (Beta)**. Selecione **Conectar**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
+
+Na caixa de diálogo exibida, insira sua *ID do perfil de cobrança*.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+
+Obtenha sua ID do perfil de cobrança no [portal do Azure](https://portal.azure.com).  Navegue para **Gerenciamento de Custos + Cobrança**, selecione sua conta de cobrança e, em seguida, selecione **Perfis de Cobrança** na barra lateral.  Selecione seu perfil de cobrança e **Propriedades** na barra lateral.  Copie sua ID do perfil de cobrança.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+
+Você deverá fazer logon com seu email do Azure e a senha.  Após a autenticação, será exibida uma janela **Navegador** com as doze tabelas disponíveis para você:
+
+* **Eventos de cobrança**: Fornece um log de eventos do novas faturas, compras de crédito, entre outros.
+* **Budgets**: fornece detalhes sobre o orçamento para ver os custos reais ou uso em relação às metas de orçamento existentes. 
+* **Encargos**: Fornece um resumo mensal do uso do Azure, encargos do marketplace e encargos cobrados separadamente.
+* **Lotes de crédito**: Fornece detalhes da compra de lote do crédito Azure para o perfil de cobrança fornecido.
+* **Resumo de crédito**: Fornece o resumo de crédito para o perfil de cobrança fornecido.
+* **Marketplace**: fornece os encargos do Azure Marketplace com base no uso.
+* **Tabelas de preços**: Fornece as taxas aplicáveis por medidor para o perfil de cobrança fornecido.
+* **Encargos de RI**: fornece os encargos associados às suas Instâncias Reservadas nos últimos 24 meses.
+* **Recomendações de RI (única)**: fornece recomendações de compra de Instância Reservada fornece com base em suas tendências de uso em uma única assinatura nos últimos 7, 30 ou 60 dias.
+* **Recomendações de RI (compartilhada)**: fornece recomendações de compra de Instância Reservada com base nas suas tendências de uso em todas as suas assinaturas nos últimos 7, 30 ou 60 dias.
+* **Uso de RI**: fornece detalhes de consumo para suas Instâncias Reservadas existentes no último mês.
+* **Detalhes de uso**: Fornece um detalhamento das quantidades consumidas e dos encargos estimados para a ID do perfil de cobrança fornecida.
+
+Marque uma caixa de seleção ao lado de qualquer tabela para uma visualização.  Selecione uma ou mais tabelas marcando a caixa ao lado de seu nome e selecionando **Carregar**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
+
+Quando você seleciona **Carregar**, os dados são carregados no **Power BI Desktop**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
+
+Depois que os dados selecionados forem carregados, as tabelas e os campos selecionados poderão ser vistos no painel **Campos**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
+
+## <a name="writing-custom-queries"></a>Escrevendo consultas personalizadas
+
+Caso você deseje personalizar o número de meses, alterar a versão da API ou realizar uma lógica mais avançada nos dados retornados, crie uma consulta M personalizada.
+
+Acesse a faixa de opções **Página Inicial** do **Power BI Desktop**, selecione a lista suspensa em **Obter Dados** e, em seguida, selecione **Consulta em Branco**.  Faça isso também no **Editor de Consultas** clicando com o botão direito do mouse no painel **Consultas** à esquerda e selecionando **Nova Consulta > Menu em Branco** no menu exibido.
+
+Na **Barra de fórmulas**, digite os valores mostrados a seguir, substituindo `billingProfileId` pela ID real e "encargos" por qualquer nome de tabela válido (lista acima).
+
+```
+let
+    Source = AzureCostManagement.Tables(billingProfileId, [ numberOfMonths = 3 ]),
+    charges = Source{[Key="charges"]}[Data]
+in
+    charges
+```
+
+Além de modificar o `numberOfMonths` para qualquer valor entre 1 e 36, você também pode fornecer:
+
+* `apiVersion` para personalizar qual versão da API será chamada pela consulta.
+* `lookbackWindow`, a fim de obter recomendações de RI (única ou compartilhada), para modificar a janela na qual as recomendações serão geradas (opções válidas: 7, 30 ou 60 dias)
+
 
 ## <a name="next-steps"></a>Próximas etapas
 Há todos os tipos de dados aos quais você pode se conectar usando o Power BI Desktop. Para obter mais informações sobre fontes de dados, confira os seguintes recursos:

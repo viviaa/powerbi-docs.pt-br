@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42e9f69c3cdab945c0f000a0cc2ae4654d9ec9b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296100"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196426"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Pacotes de conteúdo organizacional: Copiar, atualizar e obter acesso
 
@@ -36,6 +36,12 @@ Crie sua própria cópia do pacote de conteúdo, invisível para outros usuário
 2. Selecione **Salvar**.  
 
 Agora você tem uma cópia que pode alterar. Ninguém verá as alterações feitas.
+
+> [!NOTE]
+> Anteriormente, sempre que você instalava um pacote de conteúdo ou criava uma cópia de um, um novo conjunto de dados era exibido na lista de conteúdo do workspace. Uma atualização recente simplificou a experiência para mostrar apenas um item usando o novo ícone do conjunto de dados referenciado:
+>
+> ![banco de dados com o ícone de link](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
+> 
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Ajuda!  Eu não consigo mais acessar o pacote de conteúdo
 Isso pode ocorrer por diversos motivos:

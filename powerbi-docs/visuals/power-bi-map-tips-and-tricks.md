@@ -8,15 +8,15 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 02/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23e237428b86046cf75b02e2e98082da18d671cf
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286671"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014451"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Dicas e truques para visualizações de mapa do Power BI
 O Power BI é integrado ao Bing Mapas para fornecer as coordenadas de mapa padrão (um processo chamado codificação geográfica) para a criação de mapas. Juntos, eles usam algoritmos para identificar a localização correta, mas, às vezes, é a melhor estimativa. Se o Power BI tentar, mas não puder criar a visualização de mapa por conta própria, ele conseguirá a ajuda do Bing Mapas. 
@@ -31,8 +31,8 @@ Para aumentar a probabilidade de uma codificação geográfica correta, use as s
 ## <a name="what-is-sent-to-bing-maps"></a>O que é enviado ao Bing Mapas?
 O serviço do Power BI e o Power BI Desktop enviam ao Bing os dados geográficos necessários para criar a visualização de mapa. Isso pode incluir os dados nos buckets **Local**, **Latitude** e **Longitude** e campos geográficos em qualquer um dos buckets de filtro **Nível de relatório**, **Nível de página** ou **Nível de visual**. Exatamente o que é enviado varia segundo o tipo do mapa. Para obter mais informações, consulte [Privacidade do Bing Maps](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Para mapas (mapas de bolhas), se a latitude e a longitude forem fornecidas, nenhum dado será enviado ao Bing. Caso contrário, nenhum dado nos buckets Localização (e de filtro) será enviado ao Bing.     
-* Os mapas coropléticos exigem um campo no bucket Localização, mesmo se a latitude e a longitude são fornecidas. Todos os dados existentes nos buckets Localização, Latitude ou Longitude são enviados ao Bing.
+* Para mapas (mapas de bolhas), se a latitude e a longitude forem fornecidas, nenhum dado será enviado ao Bing. Caso contrário, nenhum dado nos buckets **Localização** (e de filtro) será enviado ao Bing.     
+* Os mapas coropléticos exigem um campo no bucket **Localização**, mesmo se a latitude e a longitude são fornecidas. Todos os dados existentes nos buckets **Localização**, **Latitude** ou **Longitude** são enviados ao Bing.
   
     No exemplo a seguir, o campo **Vendor** (Fornecedor) está sendo usado para codificação geográfica, de modo que todos os dados dos fornecedores serão enviados ao Bing. Dados dos buckets **Size** (Tamanho) e **Color saturation** (Saturação de cores) não são enviados ao Bing.
   

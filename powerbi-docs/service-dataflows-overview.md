@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 03/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892334"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226079"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Preparação de dados de autoatendimento no Power BI (versão prévia)
 
@@ -75,9 +75,7 @@ Para obter mais informações sobre Azure Data Lake Storage Gen2 e integração 
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Capacidades de fluxo de dados no Power BI Premium
 
-Para que os recursos de fluxo de dados e as cargas de trabalho funcionem em uma assinatura do Power BI Premium, a carga de trabalho do fluxo de dados dessa capacidade Premium precisa ser ativada. Saiba mais sobre o Power BI Premium no artigo [O que é o Power BI Premium](service-premium.md). 
-
-A tabela a seguir descreve os recursos de fluxo de dados e suas capacidades ao usar uma conta do Power BI Pro e como isso se compara ao uso do Power BI Premium.
+Para que os recursos de fluxo de dados e as cargas de trabalho funcionem em uma assinatura do Power BI Premium, a carga de trabalho do fluxo de dados dessa capacidade Premium precisa ser ativada. A tabela a seguir descreve os recursos de fluxo de dados e suas capacidades ao usar uma conta do Power BI Pro e como isso se compara ao uso do Power BI Premium.
 
 
 |Capacidade do fluxo de dados | Power BI Pro |   Power BI Premium |
@@ -95,7 +93,7 @@ A tabela a seguir descreve os recursos de fluxo de dados e suas capacidades ao u
 |Entidades vinculadas de fluxo de dados| |        +|
 |Esquema padronizado / Suporte interno para o Common Data Service|  +|  +|
 
-Para mais informações sobre como habilitar fluxos de trabalho dos fluxos de dados na capacidade premium, confira o artigo sobre [como configurar fluxos de trabalho](service-admin-premium-manage.md#configure-workloads) para o Power BI Premium. Atualmente, as cargas de trabalho do fluxo de dados não estão disponíveis em capacidades multigeográficas.
+Para mais informações sobre como habilitar as cargas de trabalho de fluxos de dados na capacidade Premium, confira [Configure workloads in a Premium capacity](service-admin-premium-workloads.md) (Configurar cargas de trabalho em uma capacidade Premium). Atualmente, as cargas de trabalho do fluxo de dados não estão disponíveis em capacidades multigeográficas.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Resumo da preparação de dados de autoatendimento para Big Data no Power BI
 Conforme mencionado anteriormente neste artigo, há vários cenários e exemplos em que os **fluxos de dados** permitem que você tenha um melhor controle – e insights mais rápidos – de seus dados comerciais. Com um modelo de dados padrão (esquema) definido pelo Common Data Service, os fluxos de dados podem importar seus dados comerciais valiosos e preparar os dados para modelagem e criação de insights de BI em um período muito curto... o que costumava demorar meses ou até mais. 

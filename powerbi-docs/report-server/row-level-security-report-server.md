@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 8fe48becd106a91c0a57d145eab4b546985e2ba6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 254b0c5c2e5a9b39f5d04f002a2791f1cd432c52
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324934"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226194"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>RLS (Segurança em Nível de Linha) no Servidor de Relatórios do Power BI
 
@@ -48,7 +48,7 @@ Depois de salvar seu relatório no Servidor de Relatórios do Power BI, você ge
 1. No Power BI Desktop, salve o relatório no Servidor de Relatórios do Power BI. Você precisa usar a versão do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI.
 2. No Servidor de Relatórios do Power BI, selecione as reticências (**...**) ao lado do relatório. 
 
-3. Selecione  **Gerenciar** > **Segurança em nível de linha**. 
+3. Selecione **Gerenciar** > **Segurança em Nível de Linha**. 
 
      ![Gerenciar a segurança de nível de linha](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
 
