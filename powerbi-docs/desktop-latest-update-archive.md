@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/11/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 50dd529366a06cc46b2ca906bfc8987a3988cb72
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 92b2026be33a6be25c4ad27c0d563a811eb0f4e6
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226065"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580325"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Atualizações mensais anteriores ao Power BI Desktop
 
@@ -107,6 +107,7 @@ O canal de vídeo a seguir descreve e mostra cada uma dessas atualizações. Voc
 
 > [!NOTE]
 > Saiba [o que há de novo no serviço do Power BI](service-whats-new.md) e confira as [novidades dos aplicativos móveis do Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
 
 ## <a name="november-2018-update-2645285461"></a>Atualização de novembro de 2018 (2.64.5285.461)
 
