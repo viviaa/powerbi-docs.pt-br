@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555923"
+---
 Uma diferença significativa entre a linguagem de fórmula do **DAX** e do Excel é que o DAX permite passar *tabelas inteiras* entre expressões, em vez de serem restritas a um único valor. Um efeito poderoso é que o DAX permite filtrar tabelas em suas expressões e, em seguida, trabalhar com o conjunto filtrado de valores.
 
 ![](media/7-6-dax-tables-and-filtering/dax-tables-filtering_1.png)
@@ -13,7 +21,7 @@ O DAX tem um conjunto avançado de funções de **tabela**, incluindo as seguint
 * DISTINCT
 * RELATEDTABLE
 
-Essas funções retornam uma tabela completa, em vez de um valor. Normalmente, você usará os resultados de uma função de **tabela** em uma análise detalhada como parte de uma expressão maior, em vez de usar a tabela retornada como um valor final. É importante observar que, quando você usa uma função de tabela, os resultados herdam as relações de suas colunas.
+Essas funções retornam uma tabela completa em vez de um valor. Normalmente, você usará os resultados de uma função de **tabela** em uma análise detalhada como parte de uma expressão maior, em vez de usar a tabela retornada como um valor final. É importante observar que, quando você usa uma função de tabela, os resultados herdam as relações de suas colunas.
 
 É possível combinar funções de tabela na expressão, desde que cada função use e retorne uma tabela. Por exemplo, considere a seguinte expressão DAX:
 

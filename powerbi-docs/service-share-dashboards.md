@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4f10253619393ffd9807b1e33730a4dd37a47ff
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277378"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580233"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Compartilhe seus painéis e os relatórios do Power BI com colegas e outras pessoas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir painéis e relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -98,13 +98,15 @@ Quando você compartilha um painel com pessoas fora de sua organização, elas r
 
 Depois de entrar, elas poderão ver o painel ou relatório compartilhado em sua própria janela do navegador sem o painel de navegação à esquerda, e não no portal do Power BI normal. Elas precisam marcar o link para acessar esse painel ou relatório no futuro.
 
-Elas não podem editar nenhum conteúdo nesse painel ou relatório. Eles podem interagir com os gráficos e alterar filtros ou segmentações no relatório, mas não podem salvar suas alterações.
+Elas não podem editar nenhum conteúdo nesse painel ou relatório. Eles podem interagir com os gráficos e alterar filtros ou segmentações no relatório, mas não podem salvar suas alterações. 
 
 Somente os destinatários diretos podem ver o painel ou relatório compartilhado. Por exemplo, se você enviou o email para Vicki@contoso.com, somente Valentina poderá ver o dashboard. Ninguém mais poderá ver esse painel, mesmo se tiver o link, e a Clara terá de usar o mesmo endereço de email para acessar o painel. Se ela se inscrever com qualquer outro endereço de email, não terá acesso ao painel.
 
 As pessoas fora de sua organização não poderão ver os dados se a segurança em nível de linha ou de função for implementada nos modelos de tabela locais do Analysis Services.
 
 Se você enviar um link em um aplicativo móvel do Power BI para pessoas fora de sua organização, quando elas clicarem no link, o dashboard será aberto em um navegador, não no aplicativo móvel do Power BI.
+
+Se os usuários convidados forem habilitados usando o recurso [Permitir que os usuários externos convidados editem e gerenciem o conteúdo da organização](service-admin-portal.md#export-and-sharing-settings), a experiência de apenas consumo padrão não se aplicará a eles. [Saiba mais](service-admin-azure-ad-b2b.md)
 
 ## <a name="limitations-and-considerations"></a>Limitações e considerações
 Coisas para se lembrar a respeito do compartilhamento de painéis e relatórios:

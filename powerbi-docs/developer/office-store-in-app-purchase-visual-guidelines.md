@@ -1,30 +1,34 @@
 ---
-title: Compra adicional pode ser necessária – Diretrizes de visuais do Power BI
+title: Diretrizes para visuais do Power BI
 description: Saiba como você pode publicar seu visual personalizado no AppSource para que outros possam descobrir e usá-lo por meio de uma compra.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.openlocfilehash: 92d4320026164e523297cbe48ee87ce33d9ab2f7
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.date: 03/10/2019
+ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826573"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757290"
 ---
-# <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Diretrizes para visuais do Power BI com compras adicionais
+# <a name="guidelines-for-power-bi-visuals"></a>Diretrizes para visuais do Power BI
 
-Até recentemente, o Marketplace (AppSource) aceitava apenas os visuais gratuitos do Power BI. Esta política foi alterada, para que você também possa enviar os visuais para o AppSource com uma marca de preço "compra adicional pode ser necessária". 
+## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Diretrizes para visuais do Power BI com compras adicionais
+
+Até recentemente, o Marketplace (AppSource) aceitava apenas os visuais gratuitos do Power BI. Essa política foi alterada (em dezembro de 2018) para que você também possa enviar os visuais para o AppSource com uma etiqueta de preço "uma compra adicional pode ser necessária". 
 
 Os visuais "compra adicional pode ser necessária" são semelhantes a suplementos de IAP (compra no aplicativo) na Office Store. Os desenvolvedores também podem enviar esses visuais para a certificação após a equipe do AppSource aprova-los e depois de verificar se eles estão em conformidade com os requisitos de certificação. Para obter mais informações sobre os requisitos, confira [Elementos visuais personalizados certificados](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
-> * Para o visual ser certificado, ele não deverá acessar serviços ou recursos externos.
-> * Todos os visuais gratuitos devem manter os mesmos recursos gratuitos oferecidos anteriormente. Você pode adicionar recursos avançados opcionais pagos, além dos recursos gratuitos existentes. Recomendamos que você envie os visuais de IAP com os recursos avançados como novos visuais e não atualize os existentes gratuitos.
+> Para o visual ser certificado, ele não deverá acessar serviços ou recursos externos.
+
+>[!IMPORTANT]  
+> Se você atualizar seu visual de gratuito para "Uma compra adicional pode ser necessária", os usuários precisarão receber o mesmo nível de funcionalidade gratuita que tinham antes da atualização. Você pode adicionar recursos avançados opcionais pagos, além dos recursos gratuitos existentes. Recomendamos que você envie os visuais de IAP com os recursos avançados como novos visuais e não atualize os existentes gratuitos.
 
 
 ## <a name="what-changed-in-the-submission-process"></a>O que mudou no processo de envio?
@@ -33,19 +37,19 @@ Os desenvolvedores carregam seus visuais de IAP para o AppSource por meio do Pai
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>O que é um visual do Power BI com recursos de IAP?
 
-Um visual de IAP é um visual grátis que oferece recursos gratuitos. Ele também possui alguns recursos avançados para os quais podem ser aplicados custos extras para operá-los. Na descrição do visual, os desenvolvedores devem notificar os usuários sobre os recursos que exigem compras adicionais para operar. Atualmente, a Microsoft não fornece APIs nativas compatíveis com a compra de aplicativos e suplementos.
+Um visual de IAP é um visual **grátis** que oferece **recursos gratuitos**. Ele também possui alguns recursos avançados para os quais podem ser aplicados custos extras para operá-los. Na descrição do visual, os desenvolvedores devem notificar os usuários sobre os recursos que exigem compras adicionais para operar. Atualmente, a Microsoft não fornece APIs nativas compatíveis com a compra de aplicativos e suplementos.
 
 Os desenvolvedores podem usar qualquer sistema de pagamento de terceiros para essas compras. Para obter mais informações, confira [nossa política de loja](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
-> As marcas d'água não são permitidas nos recursos gratuitos. Os desenvolvedores poderão exibir uma janela pop-up ou uma marca-d'água se os recursos pagos avançados forem usados sem uma licença válida.  
+> As marcas d'água não são permitidas nos recursos gratuitos de visuais gratuitos. As marcas d'água podem ser usadas somente em recursos pagos que são usados sem uma licença válida. É recomendável exibir uma janela pop-up com todas as informações relacionadas à licença, se os recursos pagos avançados são usados sem uma licença válida.  
 
 ## <a name="logo-guidelines"></a>Diretrizes de logotipo
 
 Esta seção descreve as especificações para adicionar logos e logotipos em elementos visuais.
 
-> [!NOTE]
-> Logotipos são permitidos apenas no modo de edição. Logotipos não podem ser exibidos no modo de exibição.
+> [!IMPORTANT]
+> Os logotipos são permitidos **somente no modo de edição**. Logotipos **não podem** ser exibidos no modo de exibição.
 
 ![Definições](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 

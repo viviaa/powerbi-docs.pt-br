@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e71844110eb3452cbcb3b224bbca9db57475367e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 08536d412796b1516b689ed728af0126330edf93
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282162"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580118"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado meu locatário do Power BI?
 
@@ -29,7 +29,7 @@ Para localizar em qual região seu locatário está, execute estas etapas.
 
 1. No serviço do Power BI, no menu superior, selecione a Ajuda (**?**), em seguida, **Sobre o Power BI**.
 
-1. Procure o valor ao lado de **Seus dados são armazenados em**. Essa é a região onde seu locatário está localizado.
+1. Procure o valor ao lado de **Seus dados são armazenados em**. Essa é a região onde seu locatário está localizado. Essa também é a região na qual os dados estão armazenados, a menos que você esteja usando capacidades dedicadas em regiões diferentes para seus workspaces.
 
     ![Região de dados](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 
