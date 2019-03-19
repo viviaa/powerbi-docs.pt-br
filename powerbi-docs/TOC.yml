@@ -398,6 +398,10 @@ items:
       href: service-get-started.md
     - name: Conecte-se a um exemplo do GitHub
       href: service-tutorial-connect-to-github.md
+    - name: Como usar os Serviços Cognitivos no Power BI
+      href: service-tutorial-use-cognitive-services.md
+    - name: Integração de Machine Learning no Power BI
+      href: service-tutorial-invoke-machine-learning-model.md
   - name: Conceitos
     items:
     - name: O que há de novo no serviço do Power BI
@@ -646,6 +650,10 @@ items:
         href: service-dataflows-configure-workspace-storage-settings.md
       - name: Adicionar uma pasta do CDM ao Power BI como um fluxo de dados (versão prévia)
         href: service-dataflows-add-cdm-folder.md
+      - name: Integrar Machine Learning no Power BI
+        href: service-machine-learning-integration.md
+      - name: Usar Serviços Cognitivos no Power BI
+        href: service-cognitive-services.md
     - name: Relatórios paginados no Power BI
       items:
       - name: O que são relatórios paginados? (Versão prévia)
@@ -722,7 +730,7 @@ items:
         href: service-delete.md
       - name: Conectar aos serviços
         items:
-        - name: Conectar aos serviços
+        - name: Acumatica
           href: service-connect-to-services.md
         - name: Acumatica
           href: service-connect-to-acumatica.md
@@ -1317,9 +1325,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 45e6ec57f6fd9a0b02c6139b1bb6e3249edcbadc
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: ad67a7951e15d579cdea824a3eee69fe2ac0ff11
+ms.sourcegitcommit: cd7a027b532b1bb2dbbcae9e92426c80f80810d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757428"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57964906"
