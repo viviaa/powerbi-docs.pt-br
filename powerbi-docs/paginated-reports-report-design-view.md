@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2ee381cae5bd0c0ed1e6a8cab1cd33361a05814f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324796"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174765"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
 
@@ -22,12 +22,12 @@ O modo de exibição Design de Relatório no Construtor de Relatórios é o espa
 
 ![Modo de exibição Design de Relatório do Construtor de Relatórios](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
-1. [Painel de dados do relatório](#report-data-pane) 
-2. [Superfície de design de relatório](#report-design-surface)  
-3. [Painel de Parâmetros](#parameters-pane) 
-4. [Painel de Propriedades](#properties-pane) 
-5. [Painel de Agrupamento](#grouping-pane) 
-6. [Barra de status do relatório atual](#current-report-status-bar)  
+1. [Painel de dados do relatório](#1-report-data-pane) 
+2. [Superfície de design de relatório](#2-report-design-surface)  
+3. [Painel de Parâmetros](#3-parameters-pane) 
+4. [Painel de Propriedades](#4-properties-pane) 
+5. [Painel de Agrupamento](#5-grouping-pane) 
+6. [Barra de status do relatório atual](#6-current-report-status-bar)  
   
 ## <a name="1-report-data-pane"></a>1 Painel de dados do relatório  
  No painel de dados do relatório, você pode definir os dados e recursos que você precisa para um relatório antes de criar o layout dele. Por exemplo, é possível adicionar fontes de dados, conjuntos de dados, campos calculados, parâmetros de relatório e imagens ao painel de dados do relatório.  
