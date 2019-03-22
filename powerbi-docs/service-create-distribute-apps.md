@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 051609c59e155cb6d5c2a982483a7e6d2d91a665
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293989"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964676"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicar aplicativos com dashboards e relatórios no Power BI
 
@@ -121,6 +121,11 @@ Aqui estão algumas coisas para se ter em mente ao enviar aplicativos por push p
 
 ## <a name="unpublish-an-app"></a>Cancelar a publicação de um aplicativo
 Qualquer membro de um workspace do aplicativo pode cancelar a publicação do aplicativo.
+
+>[!NOTE]
+>Quando você cancela a publicação de um aplicativo, os usuários do aplicativo perdem as personalizações. Isso significa que todos os favoritos, comentários ou assinaturas pessoais associados ao conteúdo do aplicativo serão perdidos. Só cancele a publicação de um aplicativo se você precisar removê-la.
+> 
+> 
 
 * No workspace do aplicativo, selecione as reticências (**...**) no canto superior direito &gt; **Cancelar a publicação do aplicativo**.
   

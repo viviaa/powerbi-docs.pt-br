@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430270"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980417"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
@@ -84,7 +84,7 @@ Há três cenários que podem se aplicar aos usuários em sua organização:
 
 Há etapas que você pode tomar, como administrador, para impedir que os usuários ingressem em seu locatário existente do Office 365. Se você bloquear o acesso, as tentativas de inscrição dos usuários falharão e eles serão orientados a entrar em contato com o administrador da organização. Você não precisa repetir esse processo se já tiver desabilitado a distribuição automática de licenças (por exemplo, pelo Office 365 educacional para estudantes, docentes e funcionários).
 
-Use o seguinte script do PowerShell para impedir que novos usuários ingressem em um locatário gerenciado. [Saiba mais sobre o PowerShell](#basic-powershell-information)
+Use o seguinte script do PowerShell para impedir que novos usuários ingressem em um locatário gerenciado. ([Saiba mais sobre o PowerShell][1]).
 
 ```powershell
 $msolcred = get-credential
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Como permitir que usuários ingressem em meu locatário existente do Office 365?
 
-Use o script do PowerShell a seguir para permitir que novos usuários ingressem em um locatário gerenciado. [Saiba mais sobre o PowerShell](#basic-powershell-information)
+Use o script do PowerShell a seguir para permitir que novos usuários ingressem em um locatário gerenciado. ([Saiba mais sobre o PowerShell][1]).
 
 ```powershell
 $msolcred = get-credential
@@ -109,7 +109,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Como posso verificar se tenho o bloqueio ativado em meu locatário?
 
-Use o seguinte script do PowerShell para verificar as configurações. *AllowEmailVerifiedUsers* deve ser false. [Saiba mais sobre o PowerShell](#basic-powershell-information)
+Use o seguinte script do PowerShell para verificar as configurações. *AllowEmailVerifiedUsers* deve ser false. ([Saiba mais sobre o PowerShell][1]).
 
 ```powershell
 $msolcred = get-credential
@@ -122,7 +122,7 @@ Get-MsolCompanyInformation | fl allow*
 
 A configuração do Azure AD que controla isso é **AllowAdHocSubscriptions**. Essa configuração está definida como true para a maioria dos locatários, o que significa que ela está habilitada. Se você adquiriu o Power BI por meio de um parceiro, ela pode estar definida como false, o que significa que ela está desabilitada.
 
-Use o seguinte script do PowerShell para desabilitar assinaturas ad hoc. [Saiba mais sobre o PowerShell](#basic-powershell-information)
+Use o seguinte script do PowerShell para desabilitar assinaturas ad hoc. ([Saiba mais sobre o PowerShell][1]).
 
 1. Entre no Azure Active Directory usando suas credenciais do Office 365. A primeira linha do script do PowerShell a seguir solicita suas credenciais. Na segunda linha, você será conectado ao Azure Active Directory.
 
@@ -270,3 +270,5 @@ O Power BI foi criado de acordo com a base do Office 365, que por sua vez baseia
 [Gerenciamento de grupo do Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

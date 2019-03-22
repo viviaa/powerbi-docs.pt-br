@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7264ef7b1057f64d6eb51ccc77cbec2a74be6d0e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2122ce9bd6eb850a51a06188ca1c10faf78f4bb1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283979"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964653"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Definindo as configurações de proxy do gateway de dados locais
 Seu ambiente de trabalho poderá exigir que você passe por um proxy para acessar a Internet. Isso pode impedir que o gateway de dados local se conecte ao serviço.
@@ -46,24 +46,41 @@ O segundo refere-se ao serviço Windows real que interage com o serviço do Powe
 ## <a name="configuring-proxy-settings"></a>Definindo as configurações de proxy
 A configuração de proxy padrão é a seguinte:
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true" />
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true" />
+</system.net>
+```
+
 
 A configuração padrão funciona com a autenticação do Windows. Se o proxy usar outra forma de autenticação, você precisará alterar as configurações. Se você não tiver certeza, entre em contato com o administrador da rede. A autenticação de proxy básica não é recomendada e a tentativa de usá-la pode causar erros de autenticação de proxy fazendo com que o gateway não seja configurado corretamente. Use um mecanismo de autenticação de proxy mais forte para resolver.
 
 Além de usar as credenciais padrão, você pode adicionar um elemento <proxy> para definir as configurações do servidor proxy em mais detalhes. Por exemplo, você pode especificar que o gateway de dados local deve sempre usar o proxy mesmo para recursos locais definindo o parâmetro bypassonlocal como false. Isso pode ajudar em situações de solução de problemas caso você queira controlar todas as solicitações https provenientes de um gateway de dados local nos arquivos de log do proxy. A configuração de exemplo a seguir especifica que todas as solicitações precisam passar por um proxy específico com o endereço IP 192.168.1.10.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true">
-            <proxy  
-                autoDetect="false"  
-                proxyaddress="http://192.168.1.10:3128"  
-                bypassonlocal="false"  
-                usesystemdefault="true"
-            />  
-        </defaultProxy>
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true">
+        <proxy  
+            autoDetect="false"  
+            proxyaddress="http://192.168.1.10:3128"  
+            bypassonlocal="false"  
+            usesystemdefault="true"
+        />  
+    </defaultProxy>
+</system.net>
+```
+
+Além disso, para o gateway se conectar a fontes de dados na nuvem por meio de um proxy, atualize o arquivo a seguir: *C:\Arquivos de Programas\Gateway de dados locais\Microsoft.Mashup.Container.NetFX45.exe*. No arquivo, expanda a seção `<configurations>` para incluir o conteúdo abaixo e atualize o atributo `proxyaddress` com as informações de seu proxy. O exemplo a seguir rotearia todas as solicitações da nuvem por meio de um proxy específico com o endereço IP 192.168.1.10.
+
+```
+<configuration>
+<system.net>
+    <defaultProxy useDefaultCredentials="true" enabled="true">
+    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    </defaultProxy>
+</system.net>
+</configuration>
+```
 
 Para saber mais sobre a configuração dos elementos de proxy para os arquivos de configuração do .NET, veja [Elemento defaultProxy (Configurações de Rede)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

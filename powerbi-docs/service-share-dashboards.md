@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 61aedc6c6bce52b172a92b938f9a2f278c841d6f
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580233"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964745"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Compartilhe seus painéis e os relatórios do Power BI com colegas e outras pessoas
 O *compartilhamento* é uma boa maneira de conceder acesso a algumas pessoas aos dashboards e relatórios. O Power BI também oferece [várias outras maneiras para colaborar e distribuir painéis e relatórios](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -38,12 +38,18 @@ Veja Amanda compartilhando seu dashboard com os colegas dentro e fora da empresa
 
 1. Em uma lista de painéis ou relatórios ou em um painel ou relatório, selecione **Compartilhar** ![Ícone de compartilhamento](media/service-share-dashboards/power-bi-share-icon.png).
 
-1. Na caixa superior, insira os endereços de email completos dos indivíduos, grupos de distribuição ou grupos de segurança. Você não pode compartilhar com listas de distribuição dinâmicas. 
+2. Na caixa superior, insira os endereços de email completos dos indivíduos, grupos de distribuição ou grupos de segurança. Você não pode compartilhar com listas de distribuição dinâmicas. 
    
    Você pode compartilhar com as pessoas cujos endereços estejam fora da organização, mas verá um aviso.
    
    ![Aviso sobre o compartilhamento externo](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
+   >[!NOTE]
+   >A caixa de entrada oferece suporte a, no máximo, 100 usuários ou grupos. Você pode compartilhar várias vezes ou com um grupo de usuários se precisar compartilhar com um grande número de pessoas.
+   > 
+   > 
+
+
 3. Adicione uma mensagem, se desejar. É opcional.
 4. Para permitir que seus colegas compartilhem o conteúdo com outras pessoas, marque a opção **Permitir que os destinatários compartilhem seu painel/relatório**.
    
@@ -119,6 +125,7 @@ Coisas para se lembrar a respeito do compartilhamento de painéis e relatórios:
 * Os colegas que têm o mesmo domínio de email que você e os colegas cujos domínios são diferentes, mas que estão registrados no mesmo locatário, podem compartilhar o dashboard com outras pessoas. Por exemplo, digamos que os domínios contoso.com e contoso2.com estejam registrados no mesmo locatário. Se seu endereço de email for konrads@contoso.com, ravali@contoso.com e gustav@contoso2.com poderão compartilhar, desde que você tenha dado a eles permissão para compartilhar.
 * Se seus colegas já tiverem acesso a um painel ou relatório específico, você poderá enviar um link direto apenas copiando a URL quando estiver no painel ou relatório. Por exemplo: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Da mesma forma, se seus colegas já tiverem acesso a um dashboard específico, você poderá [enviar um link direto para o relatório subjacente](service-share-reports.md). 
+* Você pode compartilhar com, no máximo, 100 usuários ou grupos em uma única ação de compartilhamento. No entanto, pode-se conceder acesso a mais de 500 usuários a um item. Para isso, compartilhe várias vezes especificando os usuários individualmente ou compartilhe com um grupo de usuários que contém todos os usuários.
 
 ## <a name="troubleshoot-sharing"></a>Solucionar problemas de compartilhamento
 

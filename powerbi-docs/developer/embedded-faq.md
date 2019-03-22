@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: da5394c0d1e63619229542b914ae7fd4deed7447
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9663c7eb6921718ac4b9690ddc50d78e59c6db3b
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223733"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174880"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Perguntas frequentes sobre o Power BI Embedded
 
@@ -137,7 +137,7 @@ Sim, há cmdlets do Powershell e APIs do Azure Resource Manager que você pode u
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>O que é a função de capacidade dedicada do PBI Incorporado em uma solução de PBI Incorporado?
 
-Para [promover sua solução para produção](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), você precisa que o conteúdo do Power BI (workspace do aplicativo que você está usando em seus aplicativos) seja atribuído a uma capacidade do Power BI Embedded (uma SKU).
+Para [promover sua solução para produção](embed-sample-for-customers.md#move-to-production), é preciso que o conteúdo do Power BI (workspace do aplicativo) que você está usando em seus aplicativos seja atribuído a uma capacidade do Power BI Embedded (uma SKU).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Quais são as regiões do Azure que o PBI Incorporado está disponível?
 
@@ -167,7 +167,7 @@ Para obter um token do AAD, você pode usar uma das [Bibliotecas de Autenticaç�
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Meu aplicativo já utiliza o AAD para autenticação do usuário. Como podemos usar essa identidade ao fazer a autenticação com o Power BI em um cenário "User Owns Data"?
 
-É um fluxo padrão "em nome de" do OAuth (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)O aplicativo precisa ser configurado para exigir as permissões para o serviço do Power BI (com os escopos necessários) e, após ter um token de usuário para seu aplicativo, você simplesmente chama o AcquireTokenAsync da API ADAL usando o token de acesso do usuário e especifica a URL de recurso do Power BI como a ID de recurso. Veja a seguir um trecho de código que mostra como isso pode ser feito:
+É o OAuth padrão em nome do fluxo (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). O Aplicativo precisa ser configurado para exigir permissões para o serviço do Power BI (com os escopos necessários). Quando tiver o token de usuário no aplicativo, bastará chamar a API do ADAL AcquireTokenAsync usando o token de acesso de usuário e especificar a URL do recurso do Power BI como a ID do recurso. Confira o trecho de código a seguir que mostra como isso pode ser feito:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -344,7 +344,7 @@ Se você estiver trabalhando com a experiência **Inserir para a organização**
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Como posso editar meu aplicativo registrado?
 
-Você pode aprender a editar aplicativos registrados no AAD [aqui](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+Confira como editar os aplicativos registrados no Azure AD no [Guia de Início Rápido: Atualizar um aplicativo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Como editar meu perfil do usuário os dados no Power BI?
 

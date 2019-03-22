@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 3e8a4f443a6784020467ef1cf3a918ef5410b209
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 5bb4a739b6a333ecaf0ddc3ee2596fc210033470
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757405"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174949"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutorial: Inserir conteúdo do Power BI em um aplicativo para seus clientes
 
@@ -214,7 +214,7 @@ Para obter o **ApplicationSecret**, siga estas etapas:
 
 Esse atributo é necessário somente para a [entidade de serviço](embed-service-principal.md) AuthenticationType.
 
-Preencha as informações do **locatário** com sua ID de locatário do Azure. Você pode obter essas informações do [portal do Azure AD](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id#use-the-azure-ad-portal) quando conectado ao serviço do Power BI ou usando o Powershell.
+Preencha as informações do **locatário** com sua ID de locatário do Azure. Essas informações podem ser obtidas no [centro de administração do Azure AD](/onedrive/find-your-office-365-tenant-id) quando você estiver conectado ao serviço do Power BI ou usando o Powershell.
 
 ### <a name="run-the-application"></a>Execute o aplicativo
 
@@ -304,7 +304,7 @@ Para obter um exemplo completo de como usar a API JavaScript, use a [ferramenta 
 
 Aqui está uma amostra que usa um modelo de **EmbedConfig** e de **TileEmbedConfig**, juntamente com as exibições de um relatório.
 
-*Um exemplo de adição de uma exibição de um bloco, relatório ou dashboard está disponível nos arquivos Exibições\Início\EmbedReport.cshtml, Exibições\Início\EmbedDashboard.cshtml ou Exibições\Início\Embedtile.cshtml no [aplicativo de exemplo](#embed-your-content-within-a-sample-application).*
+*Um exemplo de adição de uma exibição de um bloco, relatório ou painel está disponível nos arquivos Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml ou Views\Home\Embedtile.cshtml no [aplicativo de exemplo](#embed-content-using-the-sample-application).*
 
 ```javascript
 <script src="~/scripts/powerbi.js"></script>

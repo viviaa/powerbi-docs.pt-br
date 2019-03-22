@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 24701392b6cfa3400ed96be8a496791d250204d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291155"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980394"
 ---
 # <a name="using-auditing-within-your-organization"></a>Usando a auditoria dentro da sua organização
 
@@ -56,7 +56,7 @@ Os logs de auditoria do Power BI estão disponíveis diretamente no [Centro de C
 
 ## <a name="search-only-power-bi-activities"></a>Pesquisar somente as atividades do Power BI
 
-Restrinja os resultados apenas para as atividades do Power BI fazendo o seguinte. Para obter uma lista de atividades, confira a [lista de atividades auditadas pelo Power BI](#list-of-activities-audited-by-power-bi) mais adiante neste artigo.
+Restrinja os resultados apenas para as atividades do Power BI fazendo o seguinte. Confira uma lista de atividades em [lista de atividades auditadas pelo Power BI](#activities-audited-by-power-bi) mais adiante neste artigo.
 
 1. Na página **Pesquisa de log de auditoria**, em **Pesquisa**, selecione o menu suspenso para **Atividades**.
 

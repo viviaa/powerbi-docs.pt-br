@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/25/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 032fae40a7e2328879ba01b6d94c3c532369b3ab
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826665"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174903"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Monitorar as capacidades Premium com o aplicativo
 
@@ -97,7 +97,7 @@ O dashboard inclui as seguintes métricas:
 | Contagem de alta utilização dinâmica/DirectQuery| O número de vezes que as conexões dinâmicas/DirectQuery excederam 80% dos limites nos últimos sete dias, divididas em buckets de três minutos. |
 | Contagem de máxima utilização dinâmica/DirectQuery| A maioria das vezes em que as conexões dinâmicas/DirectQuery excederam 80% nos últimos sete dias, divididas em buckets de uma hora. |
 | Alta utilização máxima dinâmica/DirectQuery | O número máximo de vezes que as conexões dinâmicas/DirectQuery excederam 80% dos limites nos últimos sete dias, divididas em buckets de três minutos.|
-| Tempo máximo ocorrido dinâmico/DirectQuery | Hora local em que as conexões dinâmicas/DirectQuery excederam 80% mais vezes em uma hora. |
+| Tempo máximo ocorrido dinâmico/DirectQuery | A hora UTC em que as conexões dinâmicas/DirectQuery excederam 80% mais vezes em uma hora. |
 | Total de atualizações | Número total de atualizações nos últimos sete dias. |
 | Atualização de confiabilidade (%) | Número de atualizações bem-sucedidas dividido pelo número total de atualizações nos últimos sete dias. |
 | Duração média das atualizações (minutos) | Valor médio de tempo para completar a atualização. |
@@ -162,8 +162,8 @@ A página Conjuntos de Dados tem diferentes *áreas*, que incluem **Atualizaçõ
 | Atualizações |  Contagem total: o total é atualizado para cada conjunto de dados.<br>  Confiabilidade: o percentual de atualizações concluídas para cada conjunto de dados.<br>  Tempo de espera médio: a latência média entre o horário agendado e o início de uma atualização para o conjunto de dados, em minutos.<br>  Tempo de espera máximo: o tempo de espera máximo para o conjunto de dados, em minutos.<br>  Duração média: a duração média da atualização para o conjunto de dados, em minutos.<br>  Duração máxima: a duração da atualização de execução mais longa para o conjunto de dados, em minutos. |
 | Os cinco principais conjuntos de dados por duração média (minutos) |  Os cinco conjuntos de dados com a duração média mais longa de atualização, em minutos. |
 | Os cinco principais conjuntos de dados por tempo médio de espera (minutos) |  Os cinco conjuntos de dados com o tempo de espera médio mais longo de atualização, em minutos. |
-| Contagem de atualizações por hora e consumo de memória (GB) |  Sucessos, falhas e consumo de memória, dividido em buckets de uma hora, relatado em hora local. |
-| Tempo de espera médio de atualização por hora (minutos) |  O tempo de espera médio de atualização, dividido em buckets de uma hora, relatados no horário local. Vários picos elevados de tempo de espera de atualização são uma indicação de que a capacidade de execução está sobrecarregada. |
+| Contagem de atualizações por hora e consumo de memória (GB) |  Os sucessos, as falhas e o consumo de memória, divididos em buckets de uma hora, relatados na hora UTC. |
+| Tempo de espera médio de atualização por hora (minutos) |  O tempo de espera médio de atualização, dividido em buckets de uma hora, relatados na hora UTC. Vários picos elevados de tempo de espera de atualização são uma indicação de que a capacidade de execução está sobrecarregada. |
 |  |  |
 
 #### <a name="query-durations-area"></a>Área Durações de Consulta
@@ -173,8 +173,8 @@ A página Conjuntos de Dados tem diferentes *áreas*, que incluem **Atualizaçõ
 | Durações das consultas |  Os dados nessa seção são divididos por conjuntos de dados, espaço de trabalho e buckets de uma hora nos últimos sete dias.<br>  Total: o número total de consultas executadas para o conjunto de dados.<br>  Média: a duração média de consulta do conjunto de dados, em milissegundos<br>  Máx.: a duração da consulta de execução mais longa no conjunto de dados, em milissegundos.|
 | Distribuição de duração da consulta |  O histograma da duração da consulta é dividido em intervalos de consulta em milissegundos nas seguintes categorias: <= 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 s, 1-3 s, 3-10 s, 10-30 s e > 30 segundos. Longas durações de consulta e longos tempos de espera indicam que a capacidade está se aproximando do limite. Também pode indicar que um único conjunto de dados está causando problemas e mais investigação é necessária. |
 | Os cinco principais conjuntos de dados por duração média |  Os cinco conjuntos de dados com a duração de consulta média mais longa, em milissegundos. |
-| Distribuições de duração da consulta por hora |  Contagens de consultas e duração média (em milissegundos) versus consumo de memória em GB divididos em buckets de uma hora relatados no horário local. |
-| Conexões dinâmicas/DirectQuery (> 80% da utilização) |  As ocasiões em que uma conexão dinâmica ou DirectQuery excedeu 80% da utilização da CPU divididos em buckets de uma hora, relatado em hora local. |
+| Distribuições de duração da consulta por hora |  Contagens de consultas e duração média (em milissegundos) versus consumo de memória em GB divididos em buckets de uma hora relatados na hora UTC. |
+| Conexões dinâmicas/DirectQuery (> 80% da utilização) |  As ocasiões em que uma conexão dinâmica ou DirectQuery excedeu 80% da utilização da CPU divididos em buckets de uma hora, relatado em hora UTC. |
 |  |  |
 
 #### <a name="query-waits-area"></a>Área Esperas de Consulta
@@ -184,7 +184,7 @@ A página Conjuntos de Dados tem diferentes *áreas*, que incluem **Atualizaçõ
 | Tempos de espera de consulta |  Os dados nessa seção são divididos por conjuntos de dados, espaço de trabalho e buckets de uma hora nos últimos sete dias.<br>  Total: o número total de consultas executadas para o conjunto de dados.<br>  Contagem de espera: o número de consultas no conjunto de dados que aguardou recursos do sistema antes de iniciar a execução.<br>  Média: o tempo médio de espera da consulta para o conjunto de dados, em milissegundos.<br>  Máx.: a duração da consulta de espera mais longa no conjunto de dados, em milissegundos.|
 | Os cinco principais conjuntos de dados por tempo médio de espera |  Os cinco conjuntos de dados com o maior tempo médio de espera para iniciar a execução de uma consulta, em milissegundos. |
 | Distribuições do tempo de espera |  O histograma da duração da consulta é dividido em intervalos de consulta em milissegundos nas seguintes categorias: <= 50 ms , 50-100 ms , 100-200 ms , 200-400 ms 400 ms-1 s, 1-5 s e > 5 segundos. |
-| Distribuições de tempo de espera de consulta por hora |  Contagens de esperas de consultas e tempo de espera médio (em milissegundos) versus consumo de memória em GB divididos em buckets de uma hora relatados no horário local. |
+| Distribuições de tempo de espera de consulta por hora |  As contagens de esperas de consultas e tempo de espera médio (em milissegundos) versus o consumo de memória em GB divididos em buckets de uma hora relatados na hora UTC. |
 |  |  |
 
 #### <a name="datasets-area"></a>Área de Conjuntos de Dados
@@ -193,8 +193,8 @@ A página Conjuntos de Dados tem diferentes *áreas*, que incluem **Atualizaçõ
 | --- | --- |
 | Tamanhos de conjunto de dados  |  Tamanho máximo: o tamanho máximo do conjunto de dados em MB para o período exibido. |
 | Contagens de remoção do conjunto de dados |  Total: o número total de *remoções* de conjunto de dados para cada capacidade. Quando uma capacidade enfrenta a pressão de memória, o nó remove um ou mais conjuntos de dados da memória. Conjuntos de dados que estão inativos (sem nenhuma operação de atualização/consulta em execução no momento) são removidos primeiro. Em seguida, a ordem de remoção se baseia em uma medida de LRU (“menos utilizado recentemente”).|
-| Contagens de conjunto de dados carregados por hora |  Número de conjuntos de dados carregados na memória versus o consumo de memória em GB, dividido em buckets de uma hora, relatados na hora local. |
-| Remoções de conjunto de dados e consumo de memória por hora |  Remoções de conjunto de dados versus consumo de memória em GB, dividido em buckets de uma hora, relatado em hora local. |
+| Contagens de conjunto de dados carregados por hora |  O número de conjuntos de dados carregados na memória versus o consumo de memória em GB, dividido em buckets de uma hora, relatados na hora UTC. |
+| Remoções de conjunto de dados e consumo de memória por hora |  As remoções de conjunto de dados versus consumo de memória em GB, divididos em buckets de uma hora, relatado em hora UTC. |
 | Percentuais de memória consumida |  Total de conjuntos de dados ativos na memória como um percentual do total de memória. O delta entre o Active Directory e Todos define os conjuntos de dados que podem ser removidos. Mostrado por hora para os sete dias anteriores. |
 |  |  |
 
@@ -205,8 +205,8 @@ A página Conjuntos de Dados tem diferentes *áreas*, que incluem **Atualizaçõ
 | Uso geral |  Total de exibições: o número de vezes que o relatório foi exibido pelos usuários.<br>  Contagem de linhas: o número de linhas de dados no relatório.<br>  Recuperação (méd.): a quantidade média de tempo que leva para recuperar dados para o relatório, em milissegundos. Durações longas podem indicar consultas lentas ou outros problemas de fonte de dados. <br>  Processamento (méd.): a quantidade média de tempo que leva para processar os dados para um relatório, em milissegundos.<br> Renderização (méd.): a quantidade média de tempo necessária para renderizar um relatório no navegador, em milissegundos.<br>  Tempo total: o tempo necessário para todas as fases do relatório, em milissegundos. |
 | Os cinco principais relatórios por tempo médio de recuperação de dados |  Os cinco relatórios com o tempo de recuperação de dados médio mais longo, em milissegundos. |
 | Os cinco principais relatórios por tempo médio de processamento de relatório |  Os cinco relatórios com o tempo de processamento médio mais longo, em milissegundos. |
-| Resultados por hora |  Sucessos, falhas e consumo de memória, dividido em buckets de uma hora, relatado em hora local. |
-| Durações por hora |  Recuperação de dados versus tempo de renderização e processamento, dividido em buckets de uma hora, relatado em hora local. |
+| Resultados por hora |  Os sucessos, as falhas e o consumo de memória, divididos em buckets de uma hora, relatados na hora UTC. |
+| Durações por hora |  A recuperação de dados versus o tempo de renderização e o processamento, divididos em buckets de uma hora, relatados na hora UTC. |
 |  |  |
 
 ### <a name="dataflows"></a>Fluxos de dados
@@ -216,8 +216,8 @@ A página Conjuntos de Dados tem diferentes *áreas*, que incluem **Atualizaçõ
 | Atualizações |  Total: o total é atualizado para cada fluxo de dados.<br>  Confiabilidade: o percentual de atualizações que foram concluídas para cada fluxo de dados.<br>  Tempo de espera médio: a latência média entre o horário agendado e o início de uma atualização para o fluxo de dados, em minutos.<br>  Tempo de espera máximo: o tempo de espera máximo para o fluxo de dados, em minutos.<br>  Duração média: a duração média da atualização para o fluxo de dados, em minutos.<br>  Duração máxima: a duração da atualização de execução mais longa para o fluxo de dados, em minutos. |
 | Os cinco principais fluxos de dados por duração média de atualização |  Os cinco fluxos de dados com a duração média mais longa de atualização, em minutos. |
 | Os cinco principais fluxos de dados por tempo médio de espera |  Os cinco fluxos de dados com o tempo de espera médio mais longo de atualização, em minutos. |
-| Tempo médio de espera de atualização por hora |  O tempo de espera médio de atualização, dividido em buckets de uma hora, relatados no horário local. Vários picos elevados de tempo de espera de atualização são uma indicação de que a capacidade de execução está sobrecarregada. |
-| Contagem de atualização por hora e Consumo da memória |  Sucessos, falhas e consumo de memória, dividido em buckets de uma hora, relatado em hora local. |
+| Tempo médio de espera de atualização por hora |  O tempo de espera médio de atualização, dividido em buckets de uma hora, relatados na hora UTC. Vários picos elevados de tempo de espera de atualização são uma indicação de que a capacidade de execução está sobrecarregada. |
+| Contagem de atualização por hora e Consumo da memória |  Os sucessos, as falhas e o consumo de memória, divididos em buckets de uma hora, relatados na hora UTC. |
 |  |  |
 
 ### <a name="resource-consumption"></a>Consumo de recursos

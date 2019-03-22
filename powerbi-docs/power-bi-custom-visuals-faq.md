@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d17a5875569f29da41d62ca61efcbdae3b9242e9
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757313"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980348"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Perguntas frequentes sobre os visuais personalizados do Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "57757313"
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>De que maneira o administrador pode gerenciar os visuais personalizados da organização?
 
-Na guia “Elementos visuais personalizados da organização” do Portal de Administração, o administrador consegue visualizar e [gerenciar todos os elementos visuais personalizados da organização na empresa](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): adicionar, desabilitar, habilitar e excluir.
+Na guia “Elementos visuais personalizados da organização” do Portal de Administração, o administrador consegue visualizar e [gerenciar todos os elementos visuais personalizados da organização na empresa](service-admin-portal.md#organizational-visuals): adicionar, desabilitar, habilitar e excluir.
 Não há mais necessidade de compartilhar esses visuais por emails ou por pastas compartilhadas! Uma vez implantados no repositório da organização, os usuários podem localizá-los facilmente e importar os visuais personalizados da organização para os próprios relatórios diretamente do Serviço do Power BI ou do Power BI Desktop. Os visuais personalizados da organização podem ser encontrados no repositório interno (no serviço ou desktop) na guia *MINHA ORGANIZAÇÃO*. Quando o administrador carrega uma nova versão de um visual personalizado da organização, todos recebem a mesma versão atualizada. Os autores de relatórios não precisam excluir os visuais nos próprios relatórios para obter a nova versão, já que todos os relatórios que usam esses visuais são atualizados automaticamente! O mecanismo de atualização é semelhante ao dos visuais do marketplace.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Se um administrador carregar um visual personalizado do marketplace público para o repositório da organização, ele será automaticamente atualizado quando um fornecedor atualizar o visual no marketplace público?
