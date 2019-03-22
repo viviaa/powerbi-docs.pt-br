@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277792"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220944"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Uso de entidades computadas no Power BI Premium (versão prévia)
 
@@ -79,7 +79,9 @@ E é isso — a transformação é executada nos dados no fluxo de dados que res
 
 Ao trabalharem com fluxos de dados criados especificamente em uma conta do Azure Data Lake Storage Gen2 da organização, entidades vinculadas e entidades computadas só funcionam corretamente quando residem na mesma conta de armazenamento. Par obter mais informações, confira [Conectar-se ao Azure Data Lake Storage Gen2 para armazenamento de fluxo de dados (versão prévia)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-Além disso, entidades vinculadas não estão disponíveis para fluxos de dados criados a partir de pastas do CDM. Confira [Adicionar uma pasta do CDM ao Power BI como um fluxo de dados (versão prévia)](service-dataflows-add-cdm-folder.md).
+Entidades vinculadas não estão disponíveis para fluxo de dados criados de pastas do CDS (Common Data Service). Para mais informações, veja [adicionar uma pasta do CDS ao Power BI como um fluxo de dados (versão prévia)](service-dataflows-add-cdm-folder.md).
+
+Como prática recomendada, ao fazer cálculos nos dados unidos por dados locais e na nuvem, crie uma nova entidade para executar esses cálculos. Isso fornece uma experiência melhor do que usar uma entidade existente para cálculos, como uma entidade que também está consultando dados de ambas as fontes e fazendo transformações in-lake.
 
 ## <a name="next-steps"></a>Próximas etapas
 
