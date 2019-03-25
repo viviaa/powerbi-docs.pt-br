@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 3a5a84bdb22996fc3b773a861a85e82985cd036c
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964699"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220967"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -39,6 +39,10 @@ Tenha uma introdução com estes webinars populares sob demanda
 **Introdução ao Power BI**
 <br>por Miguel Martinez
 <br>[Registre-se e assista agora](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
+
+**Comece a usar o aplicativo do Power BI Mobile**
+<br>por Maya Shenhav
+<br>[Registre-se e assista agora](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
 
 **Aprenda a navegar por um dashboard do Power BI em 20 minutos**
 <br>por Miguel Martinez
