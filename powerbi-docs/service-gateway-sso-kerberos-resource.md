@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e1d8d240e4fd5bc05fc015f1c12971a8646370dd
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226102"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383350"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Use o Kerberos baseado em recurso para logon único (SSO) do Power BI para fontes de dados locais
 
@@ -23,7 +23,7 @@ Use a [delegação restrita de Kerberos baseada em recursos](/windows-server/sec
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Preparar para delegação restrita de Kerberos baseada em recursos
 
-Vários itens devem ser configurados para que a delegação restrita de Kerberos funcione corretamente, incluindo os _SPNs_ (nomes das entidades de serviço) e as configurações de delegação nas contas de serviço.
+Vários itens devem ser configurados para que a delegação restrita de Kerberos funcione corretamente, incluindo os _SPNs_ (nomes das entidades de serviço) e as configurações de delegação nas contas de serviço. 
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Pré-requisito 1: requisitos do sistema operacional
 
@@ -105,8 +105,8 @@ Considerando os nomes e as configurações do exemplo, use as seguintes etapas d
 1. Abra o prompt de comando e execute os seguintes comandos no controlador de domínio para o domínio **PBIEgwTestBack-end** para atualizar o atributo msDS-AllowedToActOnBehalfOfOtherIdentity da conta de serviço de back-end:
 
     ```powershell
-    $c=get-adgroupResourceDelGroup
-    set-aduser **SQLService** -principalsAllowedToDelegateToAccount$c
+    $c = Get-ADGroup ResourceDelGroup
+    Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
 1. Você pode verificar que a atualização será refletida na guia "Editor de atributo", nas propriedades da conta de serviço de back-end em **Usuários e computadores do Active Directory.**
