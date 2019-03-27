@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980394"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383475"
 ---
 # <a name="using-auditing-within-your-organization"></a>Usando a auditoria dentro da sua organização
 
@@ -34,7 +34,7 @@ Você deve atender a esses requisitos para acessar logs de auditoria:
 
     Para fornecer contas não pertencentes ao administrador com acesso ao log de auditoria, você deve adicionar o usuário como um membro de um desses grupos de função. Como alternativa, crie um grupo de função personalizada no centro de administração do Exchange, atribua a função de Logs de Auditoria ou Logs de Auditoria Somente para Exibição a esse grupo e, em seguida, adicione a conta de não administrador para o novo grupo de função. Para obter mais informações, veja [Gerenciar grupos de função no Exchange Online](/Exchange/permissions-exo/role-groups).
 
-    Se você não conseguir acessar o centro de administração do Exchange no centro de administração do Office 365, vá para https://outlook.office365.com/ecp e entre usando suas credenciais.
+    Se você não conseguir acessar o Centro de administração do Exchange no Centro de administração do Microsoft 365, vá para https://outlook.office365.com/ecp e entre usando suas credenciais.
 
 * Se você tiver acesso ao log de auditoria, mas não for um administrador global ou administrador de serviço do Power BI, você não terá acesso ao portal de administração do Power BI. Nesse caso, você deve usar um link direto para o [Centro de Conformidade e Segurança do Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
@@ -50,9 +50,9 @@ Os logs de auditoria do Power BI estão disponíveis diretamente no [Centro de C
 
 1. Selecione **Logs de Auditoria**.
 
-1. Selecione **Ir para o Centro de Administração do O365**.
+1. Selecione **Ir para o Centro de administração do Microsoft 365**.
 
-   ![Acessar o Centro de Administração do O365](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Ir para o Centro de administração do Microsoft 365](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Pesquisar somente as atividades do Power BI
 
@@ -214,7 +214,7 @@ As atividades a seguir são auditadas pelo Power BI.
 | Assumiu uma fonte de dados do Power BI                   | TakeOverDatasource                          |                                          |
 | Assumiu um conjunto de dados do Power BI                        | TakeOverDataset                             |                                          |
 | Aplicativo do Power BI não publicado                          | UnpublishApp                                |                                          |
-| Atualizar configurações de governança de recursos de capacidade      | UpdateCapacityResourceGovernanceSettings    | Atualmente não está no portal de administração do Office 365 |
+| Atualizar configurações de governança de recursos de capacidade      | UpdateCapacityResourceGovernanceSettings    | Atualmente não está no Centro de administração do Microsoft 365 |
 | Administrador de capacidade atualizado                            | UpdateCapacityAdmins                        |                                          |
 | Nome de exibição de capacidade atualizado                     | UpdateCapacityDisplayName                   |                                          |
 | Configurações do Power BI da organização atualizadas          | UpdatedAdminFeatureSwitch                   |                                          |

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661918"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306471"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportar relatórios do Power BI para PDF
 Com o Power BI, você pode publicar seu relatório em formato PDF e criar facilmente um documento baseado no relatório do Power BI. Quando você **exportar para PDF**, cada página no relatório do Power BI se torna uma página individual no seu documento PDF.
@@ -64,7 +64,7 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
 
 * Se você compartilhar um dashboard com alguém fora de sua organização (e, portanto, um usuário que não está em seu locatário do Power BI), esse usuário não poderá exportar os relatórios associados ao painel compartilhado para o PDF. Por exemplo, se você for aaron@contoso.com, poderá compartilhar com cassie@cohowinery.com. No entanto, cassie@cohowinery.com não poderá exportar os relatórios associados para o PDF.
 
-* Ao exportar para PDF com relatórios que contêm uma imagem de plano de fundo, você poderá ver uma imagem distorcida na exportação se estiver usando a opção "Ajuste" para o Plano de fundo da página.  Para obter melhores resultados, é recomendável usar as opções "Normal" ou "Preencher" para evitar problemas no documento exportado.
+* Ao exportar para PDF com relatórios que contêm uma imagem de segundo plano, você poderá ver uma imagem distorcida na exportação se estiver usando as opções "Normal" ou "Ajuste" para o segundo plano da página.  Para obter melhores resultados, é recomendável usar a opção "Ajuste" para evitar problemas no documento exportado.
 
 * O serviço Power BI usa a configuração de idioma do Power BI como o idioma para a exportação do PDF. Para obter ou definir sua preferência de idioma, selecione o ícone de engrenagem **Configurações** > **Geral** > **Idioma**.
 

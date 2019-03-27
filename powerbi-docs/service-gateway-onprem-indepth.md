@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: fa7d10403ca6bd8dc94729b7b4fd631475a3671e
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325004"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383406"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Detalhes sobre o gateway de dados local
 É possível que os usuários na sua organização acessem dados locais (para os quais eles já têm autorização de acesso), mas antes que eles possam se conectar à fonte de dados local, um gateway de dados local precisa ser instalado e configurado. O gateway facilita a comunicação nos bastidores, de maneira rápida e segura, de um usuário na nuvem para a fonte de dados local, retornando à nuvem em seguida.
@@ -77,7 +77,7 @@ Os serviços de nuvem conhecem apenas as contas no Azure Active Directory. Não 
 
 1. É possível adicionar contas manualmente ao Azure Active Directory.
    
-   É possível criar uma conta no portal do Azure ou no Portal de Administração do Office 365, e o nome da conta corresponderá ao UPN da conta do Active Directory local.
+   É possível criar uma conta no portal do Azure ou no Centro de administração do Microsoft 365 e o nome da conta corresponde ao UPN da conta do Active Directory local.
 2. Você pode usar a ferramenta [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) para sincronizar contas locais ao seu locatário do Azure Active Directory.
    
    A ferramenta Azure AD Connect fornece opções para sincronização de diretório e a configuração de autenticação, incluindo a sincronização de hash de senha, autenticação de pass-through e federação. Se você não for um administrador de locatários nem um administrador de domínio local, precisará entrar em contato com seu administrador de TI para obter essa configuração.

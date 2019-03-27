@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 65889d1082cee75ed56edc67ece9c99b5f344a6e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430211"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383228"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Licenciamento do Power BI na sua organização
 
@@ -35,7 +35,7 @@ Licenças do Power BI Pro são adquiridas por meio do Microsoft Office 365 ou de
 
 Os indivíduos da sua organização podem se inscrever para uma avaliação do Power BI Pro. Para obter mais informações, consulte [Inscrever-se no Power BI como indivíduo](service-self-service-signup-for-power-bi.md).
 
-Os usuários que aproveitam esta avaliação do Power BI Pro dentro do produto não aparecem no portal de administração do Office 365 como usuários da Avaliação do Power BI Pro (eles aparecem como usuários da versão gratuita do Power BI). No entanto, eles aparecerão como usuários da versão de Avaliação do Power BI Pro na página de gerenciamento do armazenamento do Power BI.
+Os usuários que aproveitam esta avaliação do Power BI Pro dentro do produto não aparecem no Centro de administração do Microsoft 365 como usuários da Avaliação do Power BI Pro (eles aparecem como usuários da versão gratuita do Power BI). No entanto, eles aparecerão como usuários da versão de Avaliação do Power BI Pro na página de gerenciamento do armazenamento do Power BI.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Avaliação do Power BI Pro para organizações
 
@@ -47,7 +47,7 @@ Tenha em mente o seguinte antes de seguir as etapas para se inscrever:
 
 * Há um limite de uma avaliação organizacional por locatário. Isso significa que se alguém já aplicou a Avaliação do Power BI Pro para o seu locatário, você não poderá aplicar novamente. Se precisar de assistência com isso, contate o [Suporte de cobrança do Office 365](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
-1. Navegue até o [Centro de administração do Office 365](https://portal.office.com/adminportal/home#/homepage).
+1. Navegue até o [Centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
 1. No painel de navegação esquerdo, selecione **Cobrança** e, em seguida, **Assinaturas**.
 
@@ -71,7 +71,7 @@ Também é possível [atribuir licenças no Office 365](https://support.office.c
 
 Os usuários da sua organização podem obter acesso a licenças gratuitas do Power BI de duas maneiras diferentes:
 
-* É possível atribuir uma licença do Power BI a eles no portal de administração do Office 365.
+* É possível atribuir uma licença do Power BI a eles no Centro de administração do Microsoft 365.
 
 * Se um usuário [se inscrever para uma versão de avaliação do Power BI Pro](service-self-service-signup-for-power-bi.md) e a avaliação expirar, ele receberá uma licença gratuita.
 
@@ -81,7 +81,7 @@ Se planeja gerenciar solicitações de licença e atribuições de forma central
 
 Este bloco de licenças estará disponível após a primeira vez que alguém se inscrever no Power BI como um indivíduo. Durante esse processo, este bloco de licenças será anexado à sua organização e uma licença será atribuída ao usuário que está se inscrevendo.
 
-1. No Centro de Administração do Office 365, em **Cobrança** > **Licenças**, procure **Ilimitado**.
+1. No Centro de administração do Microsoft 365, em **Cobrança** > **Licenças**, procure **Ilimitado**.
 
     ![Bloco de licença gratuita ilimitado](media/service-admin-licensing-organization/unlimited-licenses.png)
 
@@ -93,7 +93,7 @@ Este bloco de licenças estará disponível após a primeira vez que alguém se 
 
 Se o bloco de licenças ilimitado do Power BI (Gratuito) não estiver disponível e você não quiser realizar uma inscrição individual, siga este procedimento.
 
-1. Navegue até o [Centro de administração do Office 365](https://portal.office.com/admin/default.aspx).
+1. Navegue até o [Centro de administração do Microsoft 365](https://portal.office.com/admin/default.aspx).
 
 1. No painel de navegação esquerdo, selecione **Cobrança** > **Assinaturas**.
 

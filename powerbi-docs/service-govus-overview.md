@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b017ae02ee88df47e426466c212ed6d87a2f92a
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580026"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430244"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI para clientes do Governo dos EUA
 O **serviço do Power BI** tem uma versão disponível para clientes do Governo dos Estados Unidos como parte das assinaturas da **Comunidade do Governo dos EUA do Office 365**. A versão do **serviço do Power BI** discutida neste artigo é desenvolvida especificamente para clientes do Governo dos EUA e é separada e diferente da versão comercial do **serviço do Power BI**.
@@ -39,7 +39,7 @@ Os seguintes recursos estão disponíveis para clientes do **Power BI do Governo
 * Todos os dados são criptografados no SQL Azure e no Armazenamento de Blobs para o Power BI
 * Conectar serviços a [pacotes de conteúdo](service-connect-to-services.md)
 
-## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Conectividade entre os Serviços de Nuvem Públicos e Governamentais do Azure 
+## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Conectividade entre os Serviços de Nuvem globais e Governamentais do Azure 
 
 O Azure é distribuído entre várias nuvens. Por padrão, é permitido que os locatários abram as regras de firewall para uma instância específica a uma nuvem, mas a rede entre nuvens é diferente e requer a abertura de regras de firewall específicas para a comunicação entre os serviços. Se você for um cliente do Power BI e tiver instâncias existentes do SQL na nuvem pública que precisará acessar, será preciso abrir regras de firewall específicas no SQL para o espaço de IP de Nuvem do Azure Governamental para os datacenters a seguir:
 
@@ -93,7 +93,7 @@ As seguintes perguntas (e respostas) são fornecidas para ajudá-lo a obter rapi
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Pergunta:** Minha conta é provisionada em mais de uma nuvem soberana. Ao usar o **Power BI Desktop**, como fazer para selecionar a nuvem a qual posso me conectar?
+**Pergunta:** Minha conta é provisionada em mais de uma nuvem nacional. Ao usar o **Power BI Desktop**, como fazer para selecionar a nuvem a qual posso me conectar?
 
 **Resposta:** A partir da versão de julho de 2018 do **Power BI Desktop**, é possível escolher qual nuvem deseja usar ao entrar no **Power BI Desktop**.
 

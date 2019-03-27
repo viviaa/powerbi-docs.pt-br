@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216851"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383705"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>O que há de novo no serviço do Power BI
@@ -346,7 +346,7 @@ Hoje lançamos uma longa lista dos recursos mais solicitados. [Ler a postagem do
 
 ***Portal de Administração***
 
-* Gerenciamento fácil de usuários com um link para o Centro de administração do O365
+* Gerenciamento fácil de usuários com um link para o Centro de administração do Microsoft 365
 * Capacidade de desabilitar a publicação na Web
 * Impedir que os usuários publiquem pacotes de conteúdo para toda a organização
 * Capacidade de desabilitar o compartilhamento de conteúdo para usuários externos
@@ -508,7 +508,7 @@ Para obter todos os detalhes, visite o [Blog do Power BI](http://blogs.msdn.com/
 * Novo site para a documentação do Power BI, localizado
 * Tempo de carregamento aprimorado para relatórios
 * Atualizar pacotes de conteúdo organizacional com alterações somente de relatório
-* Status de integridade do Power BI no Portal do Administrador do Office 365
+* Status de integridade do Power BI no Centro de administração do Microsoft 365
 * KPIs e imagens em tabelas, matrizes e cartões
 
 Para obter todos os detalhes, visite o [Blog do Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)

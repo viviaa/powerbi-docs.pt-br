@@ -1,6 +1,6 @@
 ---
 title: Portal de administração do Power BI
-description: O portal de administração permite o gerenciamento de locatário do Power BI em sua organização. Inclui itens como métricas de uso, o acesso ao centro de administração do Office 365 e configurações.
+description: O portal de administração permite o gerenciamento de locatário do Power BI em sua organização. Ele inclui itens como métricas de uso, acesso ao Centro de administração do Microsoft 365 e configurações.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d592cca246b7d8bf348a9cdd889b6d8ba0e248c1
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980371"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383544"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
-O portal de administração permite que você gerencie um *locatário* do Power BI para sua organização. O portal inclui itens como métricas de uso, acesso ao centro de administração do Office 365 e configurações.
+O portal de administração permite que você gerencie um *locatário* do Power BI para sua organização. O portal inclui itens como métricas de uso, acesso ao centro de administração do Microsoft 365 e configurações.
 
 O portal de administração completo é acessível a todos os usuários que sejam administradores globais no Office 365 ou que detenham a função de administrador de serviços do Power BI. Se você não estiver em uma dessas funções, verá apenas **Configurações de capacidade** no portal. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
 
@@ -83,9 +83,9 @@ Com essas informações, você fica sabendo como as pessoas estão usando o Powe
 
 ## <a name="users"></a>Usuários
 
-O gerenciamento de administradores, grupos e usuários do Power BI é feito no centro de administração do Office 365. A guia **Usuários** fornece um link para o centro de administração para seu locatário.
+O gerenciamento de administradores, grupos e usuários do Power BI é feito no Centro de administração do Microsoft 365. A guia **Usuários** fornece um link para o centro de administração para seu locatário.
 
-![Acessar o Centro de Administração do O365](media/service-admin-portal/powerbi-admin-manage-users.png)
+![Ir para o Centro de administração do Microsoft 365](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Logs de auditoria
 

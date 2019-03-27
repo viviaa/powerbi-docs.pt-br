@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 54bdc0cb3490cf2149f2fda51939c201cd51518f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980417"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383429"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administrando o Power BI – perguntas frequentes
 
@@ -60,7 +60,7 @@ Alguns dos procedimentos nesta seção exigem scripts do Windows PowerShell. Se 
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Como os usuários podem se inscrever para obter o Power BI?
 
-Como administrador, você pode se inscrever no Power BI no [site do Power BI](https://powerbi.microsoft.com) ou na página [Comprar serviços](https://admin.microsoft.com/AdminPortal/Home#/catalog) do Centro de administração do Office 365. Quando um administrador se inscreve para o Power BI, ele pode atribuir licenças de usuário para usuários que devem ter acesso.
+Como administrador, você pode se inscrever no Power BI no [site do Power BI](https://powerbi.microsoft.com) ou na página [Comprar serviços](https://admin.microsoft.com/AdminPortal/Home#/catalog) do Centro de administração do Microsoft 365. Quando um administrador se inscreve para o Power BI, ele pode atribuir licenças de usuário para usuários que devem ter acesso.
 
 Além disso, usuários individuais em sua organização poderão se inscrever no Power BI por meio do [site do Power BI](https://powerbi.microsoft.com). Quando um usuário de sua organização se inscreve para o Power BI, ele recebe automaticamente uma licença do Power BI. Para saber mais, confira [Inscrever-se no Power BI como um indivíduo](service-self-service-signup-for-power-bi.md) e [licenciamento do Power BI em sua organização](service-admin-licensing-organization.md).
 
@@ -169,7 +169,7 @@ Há três cenários que podem se aplicar aos usuários em sua organização:
 
 ### <a name="how-do-we-manage-power-bi"></a>Como podemos gerenciar o Power BI?
 
-O Power BI fornece um portal de administração que permite que você exiba estatísticas de uso, fornece um link para o Centro de administração do Office 365 para gerenciar usuários e grupos e fornece a capacidade de controlar configurações de locatário.
+O Power BI fornece um portal de administração que permite que você exiba estatísticas de uso, fornece um link para o Centro de administração do Microsoft 365 para gerenciar usuários e grupos e fornece a capacidade de controlar configurações de locatário.
 
 Para acessar o Portal de administração do Power BI, sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI. Para saber mais, confira [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md) e [Portal de administração do Power BI](service-admin-portal.md).
 
@@ -196,7 +196,7 @@ Se você não fizer nada, um locatário será criado para cada domínio de email
 
 Se um usuário se inscrever no Power BI, mas você não quiser mais que ele tenha acesso ao Power BI, remova a licença do Power BI desse usuário.
 
-1. Navegue até o [Centro de administração do Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Navegue até o [Centro de administração do Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Na barra de navegação à esquerda, selecione **Usuários** > **Usuários ativos**.
 
@@ -214,7 +214,7 @@ Se um usuário se inscrever no Power BI, mas você não quiser mais que ele tenh
 
 Os usuários que ingressarem em seu locatário como parte desse programa receberão uma licença exclusiva, que você poderá filtrar dentro no painel do usuário ativo, no painel do administrador. Para criar essa nova exibição, execute estas etapas.
 
-1. Navegue até o [Centro de administração do Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Navegue até o [Centro de administração do Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Na barra de navegação à esquerda, selecione **Usuários** > **Usuários ativos**.
 
@@ -232,7 +232,7 @@ Os usuários que ingressarem em seu locatário como parte desse programa receber
 
 Você pode perceber um aumento nas solicitações de redefinição de senha. Para obter informações sobre esse processo, consulte [Redefinir a senha do usuário](/office365/admin/add-users/reset-passwords).
 
-Você pode remover um usuário do seu locatário pelo processo padrão no centro de administração do Office 365. No entanto, se o usuário ainda tiver um endereço de email ativo de sua organização, ele poderá reingressar, a menos que você bloqueie o ingresso de todos os usuários.
+Você pode remover um usuário do seu locatário pelo processo padrão no centro de administração do Microsoft 365. No entanto, se o usuário ainda tiver um endereço de email ativo de sua organização, ele poderá reingressar, a menos que você bloqueie o ingresso de todos os usuários.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Onde está localizado meu locatário do Power BI?
 
