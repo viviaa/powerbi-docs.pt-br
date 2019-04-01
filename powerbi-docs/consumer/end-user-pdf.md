@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306471"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473719"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exportar relatórios do Power BI para PDF
 Com o Power BI, você pode publicar seu relatório em formato PDF e criar facilmente um documento baseado no relatório do Power BI. Quando você **exportar para PDF**, cada página no relatório do Power BI se torna uma página individual no seu documento PDF.
@@ -67,6 +67,8 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
 * Ao exportar para PDF com relatórios que contêm uma imagem de segundo plano, você poderá ver uma imagem distorcida na exportação se estiver usando as opções "Normal" ou "Ajuste" para o segundo plano da página.  Para obter melhores resultados, é recomendável usar a opção "Ajuste" para evitar problemas no documento exportado.
 
 * O serviço Power BI usa a configuração de idioma do Power BI como o idioma para a exportação do PDF. Para obter ou definir sua preferência de idioma, selecione o ícone de engrenagem **Configurações** > **Geral** > **Idioma**.
+
+* No momento, os filtros de URL não são respeitados ao escolher "Valores atuais" para a exportação.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Imprimir um relatório](end-user-print.md)

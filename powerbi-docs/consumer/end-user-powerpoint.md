@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 385a2cb41c0fa58ec3df4ea675a6f43a5b868935
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014290"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473788"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exportar relatórios do Power BI para o PowerPoint
 Com o Power BI, você pode publicar seu relatório no **Microsoft PowerPoint** e criar facilmente um conjunto de slides com base em seu relatório do Power BI. Quando você **exporta para o PowerPoint**, ocorre o seguinte:
 
 * Cada página no relatório do Power BI se torna um slide individual no PowerPoint
-* Cada página no relatório do Power BI é exportada como uma única imagem de alta resolução no PowerPoint <!-- * The filters and slicers settings that you added to the report are preserved. -->
+* Cada página no relatório do Power BI é exportada como uma única imagem de alta resolução no PowerPoint
+<!-- * The filters and slicers settings that you added to the report are preserved. -->
 * É criado um link no PowerPoint que é vinculado ao relatório do Power BI 
 
 Obter o **relatório do Power BI** exportado no **PowerPoint** é rápido. Basta seguir as etapas descritas na próxima seção.
@@ -91,6 +92,7 @@ Há algumas considerações e limitações para ter em mente ao trabalhar com o 
 * Conforme mencionado anteriormente, cada página do relatório é exportada como uma única imagem no arquivo do PowerPoint.
 * O serviço Power BI usa a configuração de idioma do Power BI como o idioma para a exportação do PowerPoint. Para ver ou definir sua preferência de idioma, selecione o ![ícone de engrenagem](media/end-user-powerpoint/power-bi-settings-icon.png) **> Configurações > Geral > Idioma**.
 * A informação de **Baixado em** (horário) no slide capa para o arquivo exportado do PowerPoint é definido de acordo com o fuso horário do computador no momento da exportação.
+* No momento, os filtros de URL não são respeitados ao escolher "Valores atuais" para a exportação.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Imprimir um relatório](end-user-print.md)
