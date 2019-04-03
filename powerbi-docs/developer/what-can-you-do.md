@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-ms.date: 09/17/2018
-ms.openlocfilehash: a32bdceb317f2d6a2f5945dc3911f683a306605e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 03/15/2019
+ms.openlocfilehash: 63ee9ed96ed699d116b8d81b0cd612f76994a68d
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282461"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872675"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>O que os desenvolvedores podem fazer com o Power BI?
 
@@ -58,10 +58,10 @@ Para ver algumas das coisas que você pode fazer com as APIs do Power BI, consul
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Inserindo com o Power BI](embedding.md)  
+[Inserção com o Power BI](embedding.md)  
 
 [Desenvolvimento de um visual personalizado do Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
 [O que os desenvolvedores podem fazer com a API do Power BI?](overview-of-power-bi-rest-api.md)
 
-[Central de Desenvolvedores do Power BI](https://powerbi.microsoft.com/developers/)
+[Central de desenvolvedores do Power BI](https://powerbi.microsoft.com/developers/)
