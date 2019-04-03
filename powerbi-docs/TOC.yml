@@ -880,6 +880,18 @@ items:
         href: developer/embedding.md
       - name: O que é o Power BI Embedded no Azure?
         href: developer/azure-pbie-what-is-power-bi-embedded.md
+    - name: Início rápido
+      items:
+      - name: Gerenciar capacidades no Azure
+        items:
+        - name: Criar uma capacidade no Azure
+          href: developer/azure-pbie-create-capacity.md
+        - name: Criar uma capacidade usando o Multi-Geo no Azure
+          href: developer/embedded-multi-geo.md
+        - name: Dimensionar uma capacidade no Azure
+          href: developer/azure-pbie-scale-capacity.md
+        - name: Pausar e iniciar uma capacidade no Azure
+          href: developer/azure-pbie-pause-start.md
     - name: Tutoriais
       items:
       - name: Inserir o conteúdo para clientes
@@ -1034,6 +1046,16 @@ items:
       items:
       - name: Enviar dados por push a um conjunto de dados
         href: developer/walkthrough-push-data.md
+      - name: Registrar um aplicativo com o Azure AD
+        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+      - name: Obter um token de acesso de autenticação
+        href: developer/walkthrough-push-data-get-token.md
+      - name: Crie um conjunto de dados
+        href: developer/walkthrough-push-data-create-dataset.md
+      - name: Obter um conjunto de dados para adicionar linhas
+        href: developer/walkthrough-push-data-get-datasets.md
+      - name: Adicionar linhas a uma tabela
+        href: developer/walkthrough-push-data-add-rows.md
     - name: Conceitos
       items:
       - name: Política de retenção automática para dados em tempo real
@@ -1048,16 +1070,6 @@ items:
           href: developer/api-data-model-versioning.md
     - name: Como
       items:
-      - name: Registrar um aplicativo com o Azure AD
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: Obter um token de acesso de autenticação
-        href: developer/walkthrough-push-data-get-token.md
-      - name: Crie um conjunto de dados
-        href: developer/walkthrough-push-data-create-dataset.md
-      - name: Obter um conjunto de dados para adicionar linhas
-        href: developer/walkthrough-push-data-get-datasets.md
-      - name: Adicionar linhas a uma tabela
-        href: developer/walkthrough-push-data-add-rows.md
       - name: Configurar credenciais
         href: developer/configure-credentials.md
       - name: Criptografar credenciais
@@ -1331,9 +1343,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 82627f07ebaca2c0d80444c979e660802b8dd561
-ms.sourcegitcommit: 8525b6365f3e224176730f4b8e5dae83f540a4ff
+ms.openlocfilehash: acffbdf5b7a4951baae0dc6a4afc624371da560b
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58795741"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872583"
