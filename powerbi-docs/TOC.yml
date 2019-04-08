@@ -596,11 +596,11 @@ items:
         href: service-insights-optimize.md
     - name: Colaborar no Power BI
       items:
+      - name: Criar os novos workspaces
+        href: service-create-the-new-workspaces.md
       - name: Criar workspaces do aplicativo
         href: service-create-workspaces.md
-      - name: Criar os novos workspaces (visualização)
-        href: service-create-the-new-workspaces.md
-      - name: Criar e compartilhar aplicativos
+      - name: Publicar aplicativos de workspaces
         href: service-create-distribute-apps.md
       - name: Gerenciar o armazenamento de dados em workspaces
         href: service-admin-manage-your-data-storage-in-power-bi.md
@@ -882,18 +882,6 @@ items:
         href: developer/embedding.md
       - name: O que é o Power BI Embedded no Azure?
         href: developer/azure-pbie-what-is-power-bi-embedded.md
-    - name: Início rápido
-      items:
-      - name: Gerenciar capacidades no Azure
-        items:
-        - name: Criar uma capacidade no Azure
-          href: developer/azure-pbie-create-capacity.md
-        - name: Criar uma capacidade usando o Multi-Geo no Azure
-          href: developer/embedded-multi-geo.md
-        - name: Dimensionar uma capacidade no Azure
-          href: developer/azure-pbie-scale-capacity.md
-        - name: Pausar e iniciar uma capacidade no Azure
-          href: developer/azure-pbie-pause-start.md
     - name: Tutoriais
       items:
       - name: Inserir o conteúdo para clientes
@@ -930,6 +918,8 @@ items:
         href: developer/get-azuread-access-token.md
       - name: Incorporação de P e R
         href: developer/qanda.md
+      - name: Solucione problemas do aplicativo inserido
+        href: developer/embedded-troubleshoot.md
       - name: Gerenciar capacidades no Azure
         items:
         - name: Criar uma capacidade no Azure
@@ -940,8 +930,6 @@ items:
           href: developer/azure-pbie-scale-capacity.md
         - name: Pausar e iniciar uma capacidade no Azure
           href: developer/azure-pbie-pause-start.md
-        - name: Solucione problemas do aplicativo inserido
-          href: developer/embedded-troubleshoot.md
       - name: Migrar de Coleções de Workspaces
         items:
         - name: Como migrar de Coleções de workspaces do Power BI?
@@ -1048,8 +1036,6 @@ items:
       items:
       - name: Enviar dados por push a um conjunto de dados
         href: developer/walkthrough-push-data.md
-      - name: Registrar um aplicativo com o Azure AD
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: Obter um token de acesso de autenticação
         href: developer/walkthrough-push-data-get-token.md
       - name: Crie um conjunto de dados
@@ -1345,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 9790d4bc855411ed54ce12123d03f5ef731d4689
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
+ms.openlocfilehash: a804129b06b4eb92e67ae18251cbb9f950fe1beb
+ms.sourcegitcommit: ce59fa2b49658d67a2cbc77f81c53a8266a34e36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914203"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59053428"

@@ -9,19 +9,29 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826711"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872721"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
 
 * [Blog da equipe do Power BI para os aplicativos móveis](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Novidades no Power BI Desktop](../../desktop-latest-update.md)  
-* [Novidades no serviço do Power BI](../../service-whats-new.md)  
+* [O que há de novo no serviço do Power BI](../../service-whats-new.md)  
+
+## <a name="march-2019"></a>Março de 2019
+
+### <a name="supporting-external-guest-users-in-power-bi-apps-ios-android"></a>Suporte a usuários convidados externos em aplicativos do Power BI (iOS, Android)
+
+Você pode acessar o conteúdo do Power BI compartilhado com você de outra organização diretamente do aplicativo (também conhecido como B2B). Leia mais sobre B2B em aplicativos móveis do Power BI [aqui](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Aprimorando o modo de apresentação do Windows com a apresentação de slides (Windows)
+
+Com o [apresentação de slides](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/), você pode usar telas públicas localizadas no seu escritório para executar os relatórios do Power BI em tela inteira, que alternarão automaticamente entre as páginas do relatório.  
 
 ## <a name="january---february-2019"></a>Janeiro – Fevereiro de 2019
  
@@ -117,7 +127,7 @@ O SSO (logon único) é um dos recursos mais solicitados para o Power BI Mobile 
 
 Agora você pode receber relatórios com segmentações e filtros compartilhados.
 
-**Suporte de imagem em segundo plano**
+**Suporte de imagem de tela de fundo**
 
 Quando você exibe um relatório no modo paisagem em seu dispositivo móvel, vê as mesmas imagens em segundo plano que vê no Power BI na Web.
 
@@ -316,7 +326,7 @@ Se você digitalizar um código QR para um dashboard ao qual você não tenha ac
 Agora é possível rolar em gráficos de barras e colunas em um relatório ao tocar no próprio gráfico, em vez de tocar na barra de rolagem na lateral.
 
 #### <a name="ios-devices"></a>Dispositivos iOS
-**Faça perguntas sobre seus dados com uma visualização de P e R** 
+**Faça perguntas sobre seus dados com uma versão prévia de P e R** 
 
 Com P e R, faça perguntas sobre seus dados usando suas próprias palavras e o Power BI dará as respostas. P e R já está no serviço do Power BI em http://powerbi.com. Agora, ele também está [disponível no aplicativo móvel em seu iPhone ou iPad](mobile-apps-ios-qna.md).
 

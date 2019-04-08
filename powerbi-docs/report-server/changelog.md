@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: 3897464cbc2a233f7b1aa6ee2f0fd70d39ff16aa
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327954"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872491"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatório do Power BI
 
@@ -24,8 +24,15 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 
 ## <a name="january-2019"></a>Janeiro de 2019
 
+- **Servidor de Relatório do Power BI**          
+    - *Versão 1.4.7024.16477 (build 15.0.1102.299), lançamento: 28 de março de 2019*
+        - Correções de bug
+            - Relatórios do Power BI
+                - Correção de problema com credenciais básicas ao usar a consulta direta para SAP Hana e SAP BW
+                - Correção de atualização de dados de feed OData falha com "Não foi possível carregar o arquivo ou o assembly ' Microsoft.OData.Core.NetFX35.V7'"
+
 - **Servidor de Relatório do Power BI**            
-    - *Versão 1.4.6969.7395 (build 15.0.1102.235), Lançamento: 30 de janeiro de 2019*
+    - *Versão 1.4.6969.7395 (build 15.0.1102.235), lançamento: 30 de janeiro de 2019*
         - Correções de bug
             - Relatórios do Power BI
                 - Correção de problema com credenciais básicas ao usar a Consulta Direta
@@ -36,7 +43,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
             - Relatórios paginados
                 - Correção de problema com a atualização de uso de uma fonte de dados compartilhada para um relatório
 
-    - *Versão 1.4.6960.38798 (Build 15.0.1102.222), Lançamento: 22 de janeiro de 2019*
+    - *Versão 1.4.6960.38798 (build 15.0.1102.222), lançamento: 22 de janeiro de 2019*
         - Recursos
             - Relatórios do Power BI 
                 - Suporte para Segurança em Nível de Linha
@@ -68,7 +75,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 ## <a name="august-2018"></a>Agosto de 2018
 
 - **Servidor de Relatório do Power BI**
-    - *Versão 1.3.6816.37243 (Build 15.0.2.557), lançamento: 30 de agosto de 2018*
+    - *Versão 1.3.6816.37243 (build 15.0.2.557), lançamento: 30 de agosto de 2018*
         - Correções de bug
             - Foi corrigido um problema que ocorria quando o servidor era atualizado de versões anteriores do Servidor de Relatórios de PBI em que um redirecionamento de associação não era atualizado e o cliente via isto:      
             *`
@@ -77,7 +84,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
              
             - O bug de transparência de rótulo de dados agora foi corrigido.
             
-    - *Versão 1.3.6801.38816 (Build 15.0.2.540), lançamento: 15 de agosto de 2018*
+    - *Versão 1.3.6801.38816 (build 15.0.2.540), lançamento: 15 de agosto de 2018*
         - Recursos
             - O suporte para DirectQuery de SSO do SAP HANA com o Kerberos já está disponível para relatórios do Power BI
             - API de visual personalizado fornecida com a versão 1.13.0
@@ -90,7 +97,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 ## <a name="march-2018"></a>Março de 2018
 
 - **Servidor de Relatório do Power BI**
-    - *Versão 1.2.6690.34729 (Build 15.0.2.402), lançamento: 27 de abril de 2018*
+    - *Versão 1.2.6690.34729 (build 15.0.2.402), lançamento: 27 de abril de 2018*
         - Correções de bug
             - Habilitar a migração de catálogos do SQL Server Reporting Services 2017
             - Para relatórios do Power BI (PBIX)
@@ -108,13 +115,13 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
                 - As linhas de tendência são atualizadas com os dados
             - Melhorias na estabilidade geral
 
-    - *Versão 1.2.6660.39920 (Build 15.0.2.389), lançamento: 28 de março de 2018*
+    - *Versão 1.2.6660.39920 (build 15.0.2.389), lançamento: 28 de março de 2018*
         - Correções de bug
             - Para Relatórios do Power BI (PBIX), correção para Exportar Dados que não está funcionando em Visuais do Power BI
             - Para Relatórios do Power BI (PBIX), correção para filtros de URL não estão funcionando
             - Para Relatórios Paginados (RDL), correção para imagens que não são exibidas corretamente no IE11 após a atualização para a versão de março do Servidor de Relatórios do Power BI
 
-    - *Versão 1.2.6648.38132 (Build 15.0.2.378), lançamento: 19 de março de 2018*
+    - *Versão 1.2.6648.38132 (build 15.0.2.378), lançamento: 19 de março de 2018*
         - Atualizações de Segurança
         - Aprimoramentos de acessibilidade
         - Correções de bug
@@ -133,30 +140,30 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 ## <a name="october-2017"></a>Outubro de 2017
 
 - **Servidor de Relatório do Power BI**
-    - *Versão 1.1.6582.41691 (Build 14.0.600.442), lançamento: 10 de janeiro de 2018*
+    - *Versão 1.1.6582.41691 (build 14.0.600.442), lançamento: 10 de janeiro de 2018*
         - Atualizações de Segurança
         - Correções de bug
             - Correção para Model.GetParameters retornando 400
             - Correção para configurar o conjunto de dados compartilhado para Relatórios Paginados existentes (RDL)
             - Correção para ExecutionNotFoundException ao exportar o relatório com valores de parâmetros diferentes para PDF
 
-    - *Versão 1.1.6551.5155 (Build 14.0.600.438), lançamento: 11 de dezembro de 2017*
+    - *Versão 1.1.6551.5155 (build 14.0.600.438), lançamento: 11 de dezembro de 2017*
         - Correções de bug
             - Falha ao salvar dados após a atualização para determinados relatórios do Power BI Desktop.
 
-    - *Versão 1.1.6530.30789 (Build 14.0.600.437), lançamento: 17 de novembro de 2017*
+    - *Versão 1.1.6530.30789 (build 14.0.600.437), lançamento: 17 de novembro de 2017*
         - Correções de bug
             - Correção para Cenários de Autenticação Básica 
             - A correção para dias da semana não pode ser selecionada na página de agendamentos para Assinaturas, Planos de Atualização de Cache e Instantâneos de Histórico no Portal
             - Para Relatórios Paginados (RDL), correção para expressões na caixa de texto com a propriedade CanGrow configurada como false resulta em valores que não mostram cores e fontes inadequadas
             - Para Relatórios do Power BI (PBIX), a correção para adicionar Legendas de gráfico de linhas renderiza um visual vazio
 
-    - *Versão 1.1.6514.9163 (Build 14.0.600.434), lançamento: 1º de novembro de 2017*
+    - *Versão 1.1.6514.9163 (build 14.0.600.434), lançamento: 1º de novembro de 2017*
         - Correções de bug
             - Corrigir problemas de confiabilidade de upload para relatórios PBIX acima de 500 MB
             - Corrigir problemas de carregamento de problema para relatórios PBIX acima de 1GB
 
-    - *Versão 1.1.6513.3500 (Build 14.0.600.433), lançamento: 31 de outubro de 2017*
+    - *Versão 1.1.6513.3500 (build 14.0.600.433), lançamento: 31 de outubro de 2017*
         - Recursos
             - Suporte para modelo de dados inserido
             - Exibição de pasta de trabalho do Excel (com a integração do Servidor do Office Online habilitada)
@@ -213,7 +220,7 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 
 [O que é o Servidor de Relatórios do Power BI?](get-started.md)
 [Visão geral do administrador](admin-handbook-overview.md)  
-[Instalar o Servidor de Relatório do Power BI](install-report-server.md)  
+[Instalar o Servidor de Relatórios do Power BI](install-report-server.md)  
 [Baixar o Construtor de Relatórios](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Baixar o SSDT (SQL Server Data Tools)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

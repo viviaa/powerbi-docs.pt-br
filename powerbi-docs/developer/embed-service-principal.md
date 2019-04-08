@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/05/2019
-ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.date: 03/29/2019
+ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014405"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872537"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Entidade de serviço com o Power BI (Versão Prévia)
 
@@ -111,13 +111,15 @@ Diferente do uso tradicional de uma conta mestra, usar a entidade de serviço (t
 3. Como um administrador do Power BI, você precisa habilitar a entidade de serviço nas **Configurações do desenvolvedor** no portal de administração do Power BI. Adicione o grupo de segurança que você criou no Azure AD para a seção **Grupo de segurança específico** nas **Configurações do desenvolvedor**.
 
    > [!Important]
-   > As entidades de serviço herdam as permissões para todas as configurações de locatário do Power BI de seu grupo de segurança. Para restringir permissões, crie um grupo de segurança dedicado para entidades de serviço e adicione-o à lista "Exceto grupos de segurança específicos" para as configurações relevantes habilitadas do Power BI.
+   > As entidades de serviço tem acesso a quaisquer configurações de locatário que estão habilitadas para toda a organização ou habilitadas para grupos de segurança que têm as entidades de serviço como parte do grupo. Para restringir o acesso à entidade de serviço para configurações de locatário específicas, permita acesso apenas a grupos de segurança específicos ou crie um grupo de segurança dedicado para entidades de serviço e exclua-o.
 
-    ![Portal de administração](media/embed-service-principal/admin-portal.png)
+    ![Portal de Administração](media/embed-service-principal/admin-portal.png)
 
 4. Configurar seu [ambiente do Power BI](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
 5. Adicionar a entidade de serviço como um **administrador** para o novo workspace que você criou. Você pode gerenciar essa tarefa por meio de [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) ou com o serviço do Power BI.
+
+    ![Adicionar uma entidade de serviço a um workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Agora, escolha inserir o conteúdo dentro de um aplicativo de exemplo ou em seu próprio aplicativo.
 
@@ -171,6 +173,7 @@ Abaixo está um exemplo de script para recuperar a ID de objeto da entidade de s
 * Você não pode instalar nem gerenciar um gateway de dados local usando a entidade de serviço.
 * Aplicativos [inseridos para sua organização](embed-sample-for-your-organization.md) não podem usar a entidade de serviço.
 * Não há suporte para gerenciamento de [fluxos de dados](../service-dataflows-overview.md).
+* A entidade de serviço não dá suporte a APIs do administrador.
 
 ## <a name="next-steps"></a>Próximas etapas
 

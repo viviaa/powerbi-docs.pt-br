@@ -1,6 +1,6 @@
 ---
 title: Análise integrada com o Power BI
-description: O Power BI oferece APIs para usar análises integradas para seus dashboards e relatórios nos aplicativos. Saiba mais sobre a integração com o Power BI em ambientes de PaaS e SaaS usando software de análise integrada, ferramentas de análise incorporadas ou ferramentas de business intelligence incorporadas.
+description: O Power BI oferece APIs para usar análises integradas para seus dashboards e relatórios nos aplicativos. Saiba mais sobre a integração com o Power BI em ambientes de PaaS e SaaS usando software de análise integrada, ferramentas de análise integrada ou ferramentas de business intelligence inseridas.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,14 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
+helpviewer_keywords:
+- embedded analytics
+- embedding
+- Power BI embedding
+- app owns data
+- user owns data
+- Power BI APIs
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: ca159fb8cea26f4c707aabc99d9fa2c308a32e1a
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 0a4b43bd02697472a0bbdf16171ba655fc014dbc
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762434"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872698"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Análise integrada com o Power BI
 
@@ -42,7 +49,7 @@ Para exibir uma amostra de como a inserção funciona, consulte a [amostra de in
 
 A **inserção para a organização** permite que você estenda o serviço do Power BI. A inserção para a organização requer que os usuários do aplicativo entrem no serviço do Power BI quando eles desejarem exibir o conteúdo. Depois que alguém na organização se conectar, esse usuário só terá acesso aos dashboards e relatórios dos quais ele é proprietário ou que alguém compartilhou com ele no serviço do Power BI.
 
-*Os exemplos de inserção para a organização incluem aplicativos internos, como [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [integração do Microsoft Teams (é necessário ter direitos de administrador)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) e [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).*
+*Os exemplos de inserção para a organização incluem aplicativos internos, como [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [integração do Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) (é necessário ter direitos de administrador) e [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).*
 
 Para inserir para a organização, consulte o seguinte:
 
