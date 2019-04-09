@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 7f919234f7635c76ce50d0bfffa393498f141da8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
+ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324382"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59070012"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Criar uma fonte de dados incorporada para relatórios paginados no serviço do Power BI (versão prévia)
 
@@ -22,7 +22,8 @@ Neste artigo, você aprenderá como criar e modificar uma fonte de dados incorpo
 
 - Banco de Dados SQL do Azure e SQL Data Warehouse do Azure
 - SQL Server
-- SQL Server Analysis Services 
+- SQL Server Analysis Services
+- Azure Analysis Services
 
 Os relatórios paginados se conectam a fontes de dados locais por meio de um gateway. Você configura o gateway após publicar o relatório no serviço do Power BI. Saiba mais sobre os [gateways do Power BI](service-gateway-getting-started.md). 
 
@@ -61,4 +62,4 @@ Os relatórios paginados se conectam a fontes de dados locais por meio de um gat
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI](paginated-reports-create-embedded-dataset.md)
-- [O que são os relatórios paginados no Power BI Premium? (versão prévia)](paginated-reports-report-builder-power-bi.md)
+- [O que são os relatórios paginados no Power BI Premium? (Versão prévia)](paginated-reports-report-builder-power-bi.md)
