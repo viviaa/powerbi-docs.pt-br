@@ -240,6 +240,8 @@ items:
         href: desktop-what-if.md
       - name: Usar detalhamento
         href: desktop-drillthrough.md
+      - name: Usar detalhamento de relatório cruzado
+        href: desktop-cross-report-drill-through.md
       - name: Usar um filtro e uma segmentação de datas relativas
         href: visuals/desktop-slicer-filter-date-range.md
       - name: Usar agrupamento e compartimentalização
@@ -278,6 +280,8 @@ items:
         href: power-bi-hyperlinks-in-tables.md
       - name: Formatação condicional de tabela
         href: desktop-conditional-table-formatting.md
+      - name: Formatação condicional de título baseada em expressão
+        href: desktop-conditional-format-visual-titles.md
       - name: Classificação por coluna no Power BI Desktop
         href: desktop-sort-by-column.md
       - name: Criar relatórios otimizados para aplicativos móveis
@@ -1331,9 +1335,9 @@ items:
       href: service-admin-governance.md
     - name: Segurança do Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a804129b06b4eb92e67ae18251cbb9f950fe1beb
-ms.sourcegitcommit: ce59fa2b49658d67a2cbc77f81c53a8266a34e36
+ms.openlocfilehash: 5943c0bb07142be76241c2d4ed415920c99bc382
+ms.sourcegitcommit: 42892c281c7b1682a02efb3613fc1a75530c4830
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59053428"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59479278"
