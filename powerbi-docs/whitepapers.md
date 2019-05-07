@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: c0cc6b19e69ebe6400d25b77c15cf577d765c415
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "65201168"
 ---
 # <a name="whitepapers-for-power-bi"></a>White papers para o Power BI
 
@@ -24,12 +24,12 @@ White papers permitem que você explore os tópicos do Power BI em um nível mai
 | --- | --- | --- |
 | [Os fluxos de dados e o Power BI](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Este white paper descreve em detalhes técnicos os fluxos de dados e as funcionalidades e iniciativas por trás dos recursos e funções dos fluxo de dados. | Novembro de 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Descreve o Power BI Premium, tanto como ele é quando lançado quanto como ele evoluirá. | Outubro de 2017 |
-| [Planejamento e Implantação do Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Este documento fornece diretrizes e as melhores práticas para o planejamento e a implantação da capacidade premium para cargas de trabalho bem definidas.| Novembro de 2017 |
+| [Planejamento e Implantação do Power BI Premium](whitepaper-powerbi-premium-deployment.md)| Este documento fornece diretrizes e as melhores práticas para o planejamento e a implantação da capacidade premium para cargas de trabalho bem definidas.| Março de 2019 |
 | [Planejar a capacidade para análise inserida com o Power BI Premium](https://aka.ms/pbiewhitepaper) |Este documento fornece orientações para o desenvolvedor de aplicativos/ISV determinar a capacidade mais apropriada para seu negócio. | Outubro de 2017 |
 | [Planejando uma implantação do Power BI Enterprise](https://go.microsoft.com/fwlink/?linkid=2057861) |Este white paper técnico descreve as considerações para uma implantação organizacional segura e com bom desempenho do Power BI. | Julho de 2018 |
 | [Diretrizes de planejamento de capacidade do Servidor de Relatórios do Power BI](report-server/capacity-planning.md) |Este documento tem como objetivo oferecer diretrizes de planejamento de capacidade do Servidor de Relatórios do Power BI, com o compartilhamento de resultados de diversas execuções de teste de carga de várias cargas de trabalho em um servidor de relatório. | Março de 2018 |
 | [Segurança](service-admin-power-bi-security.md) |Fornece uma explicação detalhada de segurança no Power BI. | Março de 2019 |
-| [Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|Este documento explica como distribuir conteúdos para os usuários de fora da organização usando a integração do Azure Active Directory Business-to-business (AAD B2B).| Março de 2018 |
+| [Distribuir o conteúdo do Power BI para usuários convidados externo com o Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|Este documento explica como distribuir conteúdos para os usuários de fora da organização usando a integração do Azure Active Directory Business-to-business (AAD B2B).| Março de 2019 |
 | [Análises avançadas com o Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Descreve os recursos analíticos avançados do Power BI, incluindo análise preditiva, visualizações personalizadas, integração com o R e expressões de análise de dados. | Fevereiro de 2017 |
 | [Práticas recomendadas para criação de relatórios e visuais](visuals/power-bi-visualization-best-practices.md) |Fornece práticas recomendadas para criação de relatórios no Power BI. | Junho de 2018 |
 | [Filtragem bidirecional](desktop-bidirectional-filtering.md) |Explica a filtragem cruzada bidirecional no Power BI Desktop (o white paper também aborda o SQL Server Analysis Services 2016, pois ambos têm o mesmo comportamento). | Julho de 2018 |
