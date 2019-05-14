@@ -10,18 +10,18 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306494"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533696"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Use SAML (Security Assertion Markup Language) para SSO (logon único) do Power BI para fontes de dados locais
 
 Use [SAML (Security Assertion Markup Language)](https://www.onelogin.com/pages/saml) para habilitar a conectividade ininterrupta de logon único. Habilitar SSO torna mais fácil para relatórios e dashboards do Power BI atualizar os dados de fontes locais.
 
-## <a name="supported-data-sources"></a>Fontes de dados para as quais há suporte
+## <a name="supported-data-sources"></a>Fontes de dados com suporte
 
 Atualmente, há suporte para SAP HANA com SAML. Para obter mais informações sobre como configurar e definir logon único para SAP HANA usando SAML, confira o tópico [SSO do SAML para a Plataforma BI para HANA](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA) na documentação do SAP HANA.
 
@@ -75,7 +75,7 @@ O certificado de IdP resultante será válido por um ano (consulte a opção -da
 
     ![Configurar SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Selecione o provedor de identidade que você criou na etapa 2. Para **Identidade Externa**, insira o nome UPN do usuário do Power BI e selecione **Adicionar**.
+1. Selecione o provedor de identidade que você criou na etapa 2. Para **identidade externa**, insira o UPN do usuário do Power BI (normalmente o endereço de email do usuário faz logon no Power BI com) e selecione **Add**. Observe que, se você tiver configurado seu Gateway para usar a opção de configuração ADUserNameReplacementProperty deve inserir o valor que substituirá o Power BI UPN do usuário original. Por exemplo, se você definir o ADUserNameReplacementProperty como SAMAccountName, você deve inserir SAMAccountName do usuário.
 
     ![Selecionar o provedor de identidade](media/service-gateway-sso-saml/select-identity-provider.png)
 
@@ -179,7 +179,7 @@ Os rastreamentos de autenticação fornecem informações detalhadas para soluç
 
 Para obter mais informações sobre o **Gateway de dados local** e o **DirectQuery**, confira os seguintes recursos:
 
-* [Gateway de dados local](service-gateway-onprem.md)
+* [On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)
 * [DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery e SAP BW](desktop-directquery-sap-bw.md)
