@@ -1,7 +1,7 @@
 ---
 title: Inserir dados diretamente em um relatório paginado no Construtor de Relatórios (versão prévia)
 description: Neste artigo, você verá como inserir dados diretamente em um relatório paginado no Construtor de Relatórios.
-author: markingmyname
+author: maggiesMSFT
 ms.author: maggies
 manager: kfile
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
-ms.openlocfilehash: 27f8434b336c2d1281fb087d4e9acf83958f7329
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61424226"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Inserir dados diretamente em um relatório paginado no Construtor de Relatórios (versão prévia) – Power BI
 
@@ -23,7 +23,7 @@ Neste artigo, você aprenderá sobre um recurso na nova versão do SQL Server 20
 ## <a name="prerequisites"></a>Pré-requisitos
 
 - Para inserir dados diretamente em um relatório paginado, instale a nova versão do [Construtor de Relatórios do Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=53613). 
-- Para salvar seu relatório paginado no serviço do Power BI, você precisa de uma [conta do Power BI Pro](service-self-service-signup-for-power-bi.md) e acesso de gravação a um workspace em uma [capacidade do Power BI Premium](service-premium.md).
+- Para salvar seu relatório paginado no serviço do Power BI, você precisa de uma [conta do Power BI Pro](service-self-service-signup-for-power-bi.md) e acesso de gravação a um workspace em uma [capacidade do Power BI Premium](service-premium-what-is.md).
 - Para salvar seu relatório paginado em um servidor de relatório, você precisa de permissões para [editar o arquivo RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
 ## <a name="get-started"></a>Começar

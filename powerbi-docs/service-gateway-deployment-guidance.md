@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279839"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051151"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Diretrizes para implantar um gateway de dados para o Power BI
 
@@ -42,7 +42,7 @@ Há uma restrição no **Power BI** que permite apenas *um* gateway por *relató
 ### <a name="connection-type"></a>Tipo de conexão
 O **Power BI** oferece dois tipos de conexão: **DirectQuery** e **Importação**. Nem todas as fontes de dados dão suporte aos dois tipos de conexão e muitos motivos podem contribuir para escolher um em vez do outro, como requisitos de segurança, desempenho, limites de dados e tamanhos de modelo de dados. Você pode saber mais sobre o tipo de conexão e as fontes de dados com suporte na seção *lista de tipos de fontes de dados disponíveis* do [artigo Gateway de dados local](service-gateway-onprem.md).
 
-Dependendo de qual tipo de conexão for usado, o uso do gateway poderá ser diferente. Por exemplo, você deve tentar experimentar separar as fontes de dados do **DirectQuery** das fontes de dados de **Atualização agendada** sempre que possível (supondo que eles estejam em relatórios diferentes e possam ser separadas). Fazer isso impede que o gateway tenha milhares de solicitações do DirectQuery em fila no mesmo tempo que a atualização agendada da manhã de um modelo de dados de tamanho grande usada para o dashboard principal da empresa. Veja o que considerar para cada uma:
+Dependendo de qual tipo de conexão é usado, o uso do gateway pode ser diferente. Por exemplo, você deve tentar experimentar separar as fontes de dados do **DirectQuery** das fontes de dados de **Atualização agendada** sempre que possível (supondo que eles estejam em relatórios diferentes e possam ser separadas). Isso impede que o gateway tenha milhares de **DirectQuery** solicitações em fila, ao mesmo tempo que a atualização agendada da manhã de um modelo de dados de tamanho grande que é usado para o dashboard principal da empresa. Veja o que considerar para cada uma:
 
 * Para **Atualização agendada**: dependendo do tamanho da sua consulta e do número de atualizações que ocorrem diariamente, é possível escolher ficar entre os requisitos mínimos de hardware recomendados ou atualizar para um computador de melhor desempenho. Se uma determinada consulta não for fechada, ocorrem transformações no computador do gateway e, dessa forma, ele se beneficia de ter mais RAM disponível.
 * Para **DirectQuery**: uma consulta deverá ser enviada sempre que um usuário abrir o relatório ou examinar dados. Portanto, se você previr que mais de 1.000 usuários acessarão os dados ao mesmo tempo, certifique-se de que seu computador tenha componentes de hardware robustos e compatíveis. Mais núcleos de CPU resultará em uma melhor taxa de transferência para uma conexão do **DirectQuery**.

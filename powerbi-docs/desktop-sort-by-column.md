@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5deca1a92836e442bfa9beeb90fe8a2bc2a74841
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 53fc561e2f8dcb4869eff6e6fd172c8a3663840d
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285911"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65513965"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Classificação por coluna no Power BI Desktop
 No **Power BI Desktop** e no **serviço do Power BI**, você pode alterar a aparência de um visual, classificando-o por diferentes campos de dados. Ao alterar a maneira como você classifica um visual, é possível realçar as informações que você deseja transmitir e garantir de que o visual reflita essa tendência (ou ênfase).

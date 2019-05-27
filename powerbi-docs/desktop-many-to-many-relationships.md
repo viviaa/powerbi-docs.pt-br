@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
+ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225950"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941443"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relações com uma cardinalidade muitos para muitos no Power BI Desktop
 
@@ -25,7 +25,7 @@ Com o recurso *relações com uma cardinalidade muitos para muitos* no Power BI 
 
 A funcionalidade *relações com uma cardinalidade muitos para muitos* do Power BI Desktop é um de três recursos relacionados:
 
-* **Modelos compostos**: permite que um relatório tenha duas ou mais conexões de dados, incluindo conexões DirectQuery ou Importação, em qualquer combinação. Para ver mais informações, confira [Modelos compostos no Power BI Desktop (versão prévia)](desktop-composite-models.md).
+* **Modelos compostos**: permite que um relatório tenha duas ou mais conexões de dados, incluindo conexões DirectQuery ou Importação, em qualquer combinação. Para ver mais informações, confira [Modelos compostos no Power BI Desktop](desktop-composite-models.md).
 
 * **Relações com uma cardinalidade muitos para muitos**: Com os *modelos compostos*, você pode estabelecer *relações com uma cardinalidade muitos para muitos* entre tabelas. Esta abordagem remove os requisitos de valores exclusivos nas tabelas. Ela também remove as soluções alternativas anteriores, como introduzir novas tabelas somente para estabelecer relações. O recurso é descrito em detalhes neste artigo.
 
@@ -157,7 +157,7 @@ As limitações existentes do uso do DirectQuery ainda se aplicam quando você u
 ## <a name="next-steps"></a>Próximas etapas
 
 Para obter mais informações sobre modelos compostos e DirectQuery, confira os seguintes artigos:
-* [Modelos compostos no Power BI Desktop (versão prévia)](desktop-composite-models.md)
+* [Modelos compostos no Power BI Desktop](desktop-composite-models.md)
 * [Modo de armazenamento no Power BI Desktop (versão prévia)](desktop-storage-mode.md)
 * [Usar o DirectQuery no Power BI Desktop](desktop-directquery-about.md)
 * [Fontes de dados compatíveis com o DirectQuery no Power BI Desktop](desktop-directquery-data-sources.md)

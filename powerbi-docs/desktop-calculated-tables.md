@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: ffa49cc65c28e0fafb8ca72cb7a1a5bbde798861
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 7c7d3b04b8c954ae220fb8b157b183f615abd39c
+ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65239471"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Usando tabelas calculadas no Power BI Desktop
 Com tabelas calculadas, você pode adicionar uma nova tabela ao modelo. Mas em vez de consultar e carregar valores nas colunas de sua nova tabela por meio de uma fonte de dados, você cria uma fórmula DAX (Data Analysis Expressions) que define os valores da tabela. No Power BI Desktop, as tabelas calculadas são criadas usando o recurso Nova Tabela na Exibição de Relatório ou Exibição de Dados.

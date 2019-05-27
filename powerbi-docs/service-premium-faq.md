@@ -1,8 +1,8 @@
 ---
 title: Perguntas Frequentes do Power BI Premium
 description: Navegue por uma lista de perguntas frequentes e suas respostas sobre a oferta do Power BI Premium.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,16 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 6aa9265a006135ad87a61979b39a709c874f8d48
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
+ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383327"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565376"
 ---
 # <a name="power-bi-premium-faq"></a>Perguntas Frequentes do Power BI Premium
 
-Este artigo aborda perguntas frequentes sobre o Power BI Premium. Para obter uma visão geral, confira [O que é o Power BI Premium?](service-premium.md).
+Este artigo aborda perguntas frequentes sobre o Power BI Premium. Para obter uma visão geral, confira [O que é o Power BI Premium?](service-premium-what-is.md).
 
 * Se você tiver outras dúvidas, [experimente perguntar à comunidade do Power BI](http://community.powerbi.com/).
 * Ainda tem um problema? Visite a [página de suporte do Power BI](https://powerbi.microsoft.com/support/).
@@ -84,7 +84,7 @@ Para obter mais informações, consulte [Introdução ao Servidor de Relatório 
 
 **Próximas etapas**
 
-[O que é o Power BI Premium?](service-premium.md)
+[O que é o Power BI Premium?](service-premium-what-is.md)
 [Notas sobre a versão do Power BI Premium](service-premium-release-notes.md)
 [White paper sobre o Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 [White paper sobre como planejar uma implantação do Power BI Enterprise](https://aka.ms/pbienterprisedeploy)
