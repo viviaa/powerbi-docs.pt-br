@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 63924dd4769b4ce452d2d8de4252228bb6d37d37
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 846f783e2a022504f192cf0c03179ce3f3c00e22
+ms.sourcegitcommit: 1dfabc8596ec2eb66ccccceb11419361f704b607
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625072"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Conectar-se aos exemplos no serviço do Power BI
 
@@ -78,7 +78,7 @@ Agora, explore o dashboard, o conjunto de dados e o relatório por conta própri
     ![página de relatório com visual correspondente realçado](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Se o bloco tivesse sido criado usando [P e R do Power BI](consumer/end-user-q-and-a.md), a página de P e R teria sido aberta. Se o bloco estivesse [fixado do Excel](service-dashboard-pin-tile-from-excel.md), o Excel Online teria sido aberto dentro do Power BI.
+   > Se o bloco tivesse sido criado usando [P e R do Power BI](power-bi-tutorial-q-and-a.md), a página de P e R teria sido aberta. Se o bloco estivesse [fixado do Excel](service-dashboard-pin-tile-from-excel.md), o Excel Online teria sido aberto dentro do Power BI.
    > 
    > 
 1. De volta à guia **Conjuntos de dados**, você tem várias opções para explorar seu conjunto de dados.  Você não conseguirá abri-lo e ver todas as linhas e colunas (como no Power BI Desktop ou Excel).  Quando uma pessoa compartilha um pacote de conteúdo com os colegas, ela normalmente deseja compartilhar as ideias, e não fornecer acesso direto aos dados para seus colegas. Mas isso não significa que você não pode explorar o conjunto de dados.  
@@ -129,11 +129,9 @@ Agora, explore o conjunto de dados, as relações e o relatório por conta próp
 
 
 ## <a name="next-steps"></a>Próximas etapas
-[Conceitos básicos do Power BI](consumer/end-user-basic-concepts.md)
 
-[Exemplos para o serviço do Power BI](sample-datasets.md)
-
-[Fontes de dados do Power BI](service-get-data.md)
+- [Conceitos básicos do Power BI](consumer/end-user-basic-concepts.md)
+- [Exemplos para o serviço do Power BI](sample-datasets.md)
+- [Fontes de dados do Power BI](service-get-data.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
-

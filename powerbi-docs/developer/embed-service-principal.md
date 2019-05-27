@@ -1,20 +1,21 @@
 ---
 title: Entidade de serviço com o Power BI
 description: Saiba como registrar um aplicativo no Azure Active Directory usando a entidade de serviço para uso com a inserção de conteúdo do Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
-ms.subservice: power-bi-developer
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
+ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872537"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710513"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Entidade de serviço com o Power BI (Versão Prévia)
 
@@ -113,7 +114,7 @@ Diferente do uso tradicional de uma conta mestra, usar a entidade de serviço (t
    > [!Important]
    > As entidades de serviço tem acesso a quaisquer configurações de locatário que estão habilitadas para toda a organização ou habilitadas para grupos de segurança que têm as entidades de serviço como parte do grupo. Para restringir o acesso à entidade de serviço para configurações de locatário específicas, permita acesso apenas a grupos de segurança específicos ou crie um grupo de segurança dedicado para entidades de serviço e exclua-o.
 
-    ![Portal de Administração](media/embed-service-principal/admin-portal.png)
+    ![Portal de administração](media/embed-service-principal/admin-portal.png)
 
 4. Configurar seu [ambiente do Power BI](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
