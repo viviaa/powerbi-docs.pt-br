@@ -12,23 +12,24 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
-ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280111"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608271"
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Início Rápido: saiba mais sobre as funcionalidades do Power BI para ***consumidores***
 Neste início rápido, você aprenderá como interagir com o Power BI para descobrir informações de negócios controladas por dados. Este artigo não visa ser um aprofundamento do tema, mas sim uma passagem rápida por muitas das ações disponíveis para **consumidores** do Power BI.
 
 Se você não estiver inscrito no Power BI, [inscreva-se para uma avaliação gratuita](https://app.powerbi.com/signupredirect?pbi_source=web) antes de começar.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-- Serviço do Power BI (app.powerbi.com) <!-- app from AppSource -->
+- Serviço do Power BI (app.powerbi.com)
+<!-- app from AppSource -->
 
 ## <a name="reading-view"></a>Exibição de leitura
 O Modo de Exibição de Leitura está disponível no serviço do Power BI para *consumidores* de relatório. Quando um colega compartilhar um relatório com você, o Modo de Exibição de Leitura será sua maneira de explorar e interagir com o relatório. 
@@ -185,7 +186,7 @@ Uma visualização do Power BI é construída usando dados dos conjuntos de dado
 1. No serviço do Power BI, abra um relatório e selecione um visual.  
 2. Para exibir os dados por trás do visual, selecione as reticências (...) e escolha **Mostrar dados**.
    
-   ![selecionar Mostrar dados](./media/end-user-show-data/power-bi-show-data2.png)
+   ![selecionar Mostrar dados](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 Essa foi uma visão geral rápida de apenas algumas das coisas que os **consumidores** podem fazer com o serviço do Power BI.  
 
