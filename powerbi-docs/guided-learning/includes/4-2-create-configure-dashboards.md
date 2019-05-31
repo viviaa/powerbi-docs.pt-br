@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 94ff18339d2eb14faebf124786cab7f9ac66393e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262896"
+---
 Os **dashboards** no Power BI são coleções de uma página de visualizações criadas com o serviço do Power BI. Você cria dashboards **fixando** as visualizações dos relatórios criados e publicados usando o Power BI Desktop, ou as visualizações criadas no próprio serviço do Power BI. A **anexação** de um visual em um dashboard é muito parecida com a fixação de uma imagem em uma placa de cortiça em uma parede – ela prende o visual lá, em um local específico, para que outras pessoas vejam. Para fixar um visual, abra o relatório no serviço do Power BI. Focalize o visual que você deseja fixar e selecione o ícone de **marcador**.
 
 ![](media/4-2-create-configure-dashboards/4-2_1.png)

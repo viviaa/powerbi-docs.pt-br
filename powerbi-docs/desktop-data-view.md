@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: c8a96918049f2f1898ab80a9368a8d2f0a8fe53a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 567beb29ecdcaf8a07023c8c8c9b32995623534c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286127"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454478"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Exibição de Dados no Power BI Desktop
 A **Exibição de Dados** ajuda a inspecionar, explorar e compreender os dados no modelo do **Power BI Desktop**. É diferente do modo como você exibe tabelas, colunas e dados no **Editor de Consultas**. Com a Exibição de Dados, você está olhando para seus dados *após* eles terem sido carregados no modelo.
@@ -28,7 +28,7 @@ Vamos examinar com mais detalhes alguns dos elementos encontrados na **Exibiçã
 
 1. **Ícone da Exibição de Dados** – selecionar esse ícone para inserir a Exibição de Dados.
 
-2. **Grade de Dados** – mostra a tabela selecionada e todas as colunas e linhas presentes nela. As colunas ocultadas na **Exibição de Relatório** ficam esmaecidas. Você pode clicar com o botão direito do mouse em uma coluna para ver as opções.
+2. **Grade de Dados** – mostra a tabela selecionada e todas as colunas e linhas presentes nela. As colunas ocultadas na **Exibição de Relatório** ficam esmaecidas. Clique duas vezes em uma coluna para as opções.
 
 3. **Faixa de opções de modelagem** – aqui você pode gerenciar relações, criar cálculos e alterar o tipo de dados, o formato e a categoria de dados de uma coluna.
 
