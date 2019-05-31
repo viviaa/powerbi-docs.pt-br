@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.openlocfilehash: 383d28a9e24165b12cda73ee254541a32db4391c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61323990"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analisar dados de uso e custo do Azure no Power BI Desktop
 
@@ -24,7 +24,9 @@ O Power BI Desktop pode se conectar ao Azure e obter dados detalhados sobre o us
 
 Atualmente, o Power BI dá suporte à conexão com contas de cobrança do Contrato Enterprise e do Contrato de Cliente.
 
-Os usuários do Contrato Enterprise devem se conectar com o conector do Azure Consumption Insights. Os usuários da conta do contrato de cliente devem se conectar com o conector do Gerenciamento de Custos do Azure.
+* **Enterprise Agreement** os usuários devem se conectar com o **conector do Azure Consumption Insights**.
+
+* **Contrato do cliente** os usuários devem se conectar com o **conector de gerenciamento de custos do Azure**.
 
 ## <a name="connect-with-azure-consumption-insights"></a>Conectar-se com o Azure Consumption Insights
 
@@ -34,7 +36,7 @@ Nesta seção, você aprenderá a se conectar para obter os dados necessários, 
 
 Para se conectar com êxito usando o conector do **Azure Consumption Insights**, é necessário ter acesso aos recursos do Enterprise no portal do Azure.
 
-Para se conectar usando o conector do **Azure Consumption Insights**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**. Selecione **Serviços Online** nas categorias à esquerda e você verá **Microsoft Azure Consumption Insights (Beta)**. Selecione **Conectar**.
+Para se conectar usando o conector do **Azure Consumption Insights**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**. Selecione **Serviços Online** nas categorias à esquerda e você verá **Microsoft Azure Consumption Insights (Beta)** . Selecione **Conectar**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -107,7 +109,7 @@ Ao trabalhar com relatórios e criar consultas, use o seguinte:
 * *Não* use *numberOfMonth* junto com *startBillingDataWindow* ou *endBillingDataWindow*
 
 ## <a name="migrating-from-the-azure-enterprise-connector"></a>Migrando do Conector do Azure Enterprise
-Alguns clientes criaram visuais usando o *Conector do Azure Enterprise (Beta)*, que, em última análise, será descontinuado e está sendo substituído pelo conector do **Azure Consumption Insights**. O conector do **Azure Consumption Insights** tem recursos e melhorias que incluem os seguintes:
+Alguns clientes criaram visuais usando o *Conector do Azure Enterprise (Beta)* , que, em última análise, será descontinuado e está sendo substituído pelo conector do **Azure Consumption Insights**. O conector do **Azure Consumption Insights** tem recursos e melhorias que incluem os seguintes:
 
 * Fontes de dados adicionais disponíveis para *Resumo de Saldo* e *Compras do Marketplace*
 * Novos e avançados parâmetros, como *startBillingDataWindow* e *endBillingDataWindow*
@@ -155,7 +157,7 @@ Muitos dashboards têm tabelas adicionais que são usadas para pesquisa ou filtr
 Depois de chegar até aqui, a maioria dos visuais, das tabelas e drill downs originais deverá funcionar conforme esperado. No entanto, pode ser que alguns ajustes secundários sejam necessários para a formatação, para fazer com que tudo fique exatamente como desejado. Reserve algum tempo para examinar cada um dos dashboards e visuais, para garantir que eles tenham a aparência desejada.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Usando a API do ACI (Azure Consumption and Insights) para obter dados de consumo
-O Azure também fornece a [**API do ACI (Azure Consumption and Insights)**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Crie suas próprias soluções personalizadas para coleta, relatório e visualização de informações de consumo do Azure usando a API do ACI.
+O Azure também fornece a [**API do ACI (Azure Consumption and Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Crie suas próprias soluções personalizadas para coleta, relatório e visualização de informações de consumo do Azure usando a API do ACI.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Mapeamento de nomes e detalhes de uso entre o portal, o conector e a API
 As colunas e os nomes dos detalhes no Portal do Azure são semelhantes na API e no conector, mas não são sempre idênticos. Para ajudar a esclarecer isso, a tabela a seguir fornece um mapeamento entre a API, o conector e as colunas vistas no Portal do Azure. Também é indicado se a coluna é obsoleta. Para obter mais informações e definições desses termos, examine o [dicionário de dados de cobrança do Azure](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
@@ -212,7 +214,12 @@ As colunas e os nomes dos detalhes no Portal do Azure são semelhantes na API e 
 
 Nesta seção, você aprenderá a se conectar à sua conta de cobrança do Contrato de Cliente.
 
-Para se conectar usando o conector do **Gerenciamento de Custos do Azure**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**.  Selecione **Azure** nas categorias à esquerda e você verá **Gerenciamento de Custos do Azure (Beta)**. Selecione **Conectar**.
+> [!NOTE]
+> O conector de gerenciamento de custos do Azure atualmente dá suporte aos clientes sobre o **contrato de cliente**.  **Enterprise Agreement** os clientes devem usar o conector do Microsoft Azure Consumption Insights.
+> 
+> 
+
+Para se conectar usando o conector do **Gerenciamento de Custos do Azure**, selecione **Obter Dados** na faixa de opções **Página Inicial** do **Power BI Desktop**.  Selecione **Azure** nas categorias à esquerda e você verá **Gerenciamento de Custos do Azure (Beta)** . Selecione **Conectar**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
@@ -234,8 +241,8 @@ Você deverá fazer logon com seu email do Azure e a senha.  Após a autenticaç
 * **Marketplace**: fornece os encargos do Azure Marketplace com base no uso.
 * **Tabelas de preços**: Fornece as taxas aplicáveis por medidor para o perfil de cobrança fornecido.
 * **Encargos de RI**: fornece os encargos associados às suas Instâncias Reservadas nos últimos 24 meses.
-* **Recomendações de RI (única)**: fornece recomendações de compra de Instância Reservada fornece com base em suas tendências de uso em uma única assinatura nos últimos 7, 30 ou 60 dias.
-* **Recomendações de RI (compartilhada)**: fornece recomendações de compra de Instância Reservada com base nas suas tendências de uso em todas as suas assinaturas nos últimos 7, 30 ou 60 dias.
+* **Recomendações de RI (única)** : fornece recomendações de compra de Instância Reservada fornece com base em suas tendências de uso em uma única assinatura nos últimos 7, 30 ou 60 dias.
+* **Recomendações de RI (compartilhada)** : fornece recomendações de compra de Instância Reservada com base nas suas tendências de uso em todas as suas assinaturas nos últimos 7, 30 ou 60 dias.
 * **Uso de RI**: fornece detalhes de consumo para suas Instâncias Reservadas existentes no último mês.
 * **Detalhes de uso**: Fornece um detalhamento das quantidades consumidas e dos encargos estimados para a ID do perfil de cobrança fornecida.
 

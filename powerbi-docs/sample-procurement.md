@@ -11,11 +11,11 @@ ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287338"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61233533"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: Faça um tour
 
@@ -72,9 +72,9 @@ Primeiro, vamos analisar as tendências em gastos por categoria e local.
 Observe algumas coisas:
 
 * No gráfico de linhas **Total da fatura por mês e categoria**: a categoria **Direto** apresenta gastos muito consistentes, **Logística** apresenta um pico em dezembro e **Outros** apresenta um pico em fevereiro.
-* No mapa **Total da fatura por país/região**: A maioria dos nossos gastos estão nos EUA.
+* No mapa **Total da fatura por país/região**: Maioria de nossos gastos está concentrada nos EUA.
 * No gráfico de colunas **Total da fatura por subcategoria**: **Hardware** e **Serviços e produtos indiretos** são categorias com mais gastos.
-* No gráfico de barras Total da fatura por camada: A maioria dos nossos negócios é feito com nossos fornecedores de nível 1 (10 principais). Isso ajuda a gerenciar melhor os relacionamentos com o fornecedor.
+* No gráfico de barras Total da fatura por camada: A maioria dos nossos negócios é feito com nossos fornecedores da camada 1 (10 principais). Isso ajuda a gerenciar melhor os relacionamentos com o fornecedor.
 
 ## <a name="spending-in-mexico"></a>Gastos no México
 Vamos explorar as áreas de gastos no México.

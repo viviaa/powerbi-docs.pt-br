@@ -7,21 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872721"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991051"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Novidades em aplicativos móveis para o Power BI
 Para informações sobre “Novidades” relacionadas, consulte:
 
 * [Blog da equipe do Power BI para os aplicativos móveis](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Novidades no Power BI Desktop](../../desktop-latest-update.md)  
-* [O que há de novo no serviço do Power BI](../../service-whats-new.md)  
+* [Novidades no serviço do Power BI](../../service-whats-new.md)  
+
+## <a name="april-2019"></a>Abril de 2019
+
+### <a name="key-influencers-visual"></a>Influenciadores principais visual 
+Os influenciadores principais visual agora está disponível no seu aplicativo móvel. Este visual permite que você executar a análise de fatores importantes sobre seus dados com apenas alguns toques.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Adicionar comentários ao conteúdo do relatório (Android e iOS)
+Agora você pode usar comentários para colaborar e compartilhar seus comentários sobre as páginas do relatório e elementos visuais. Leia mais sobre o relatório de comentários no serviço do Power BI e Mobile [neste blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maximizar a exibição com o modo de tela inteira (Android e iOS)
+Adicionamos o novo botão que permitem que você controle quando se concentrar em seus dados, removendo cabeçalhos e rodapés e dando a você o espaço máximo para exibir seus relatórios.
 
 ## <a name="march-2019"></a>Março de 2019
 
@@ -31,7 +42,20 @@ Você pode acessar o conteúdo do Power BI compartilhado com você de outra orga
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Aprimorando o modo de apresentação do Windows com a apresentação de slides (Windows)
 
-Com o [apresentação de slides](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/), você pode usar telas públicas localizadas no seu escritório para executar os relatórios do Power BI em tela inteira, que alternarão automaticamente entre as páginas do relatório.  
+Com o [apresentação de slides](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) você pode usar exibe público, localizado no seu escritório para executar os relatórios do Power BI em tela cheia que serão automaticamente girar entre as páginas do relatório.  
+
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>Suporte a relatórios de PBI-RS em detrimento da configuração do ADFS e WAP (somente iOS)
+
+Relatórios do Power BI (PBIX) hospedado no PBI-RS em detrimento da configuração do AD FS agora pode ser acessado do aplicativo do Power BI iOS.
+
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Permitindo a interação de toque único com visuais de relatório
+
+Alteramos a interação de relatórios, ela exigirá apenas um toque de um visual, botão ou segmentação de dados para interagir com seus dados imediatamente. Os usuários não precisarão de toque em um visual para selecioná-lo e toque novamente para interagir com ele, um único toque será fazer ambos.
+
+![Interação de toque único](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Os usuários existentes serão necessário ativar esse comportamento na configuração de aplicativo. Para obter mais informações, consulte o [como configurar a interação de relatório único toque](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) artigo.
 
 ## <a name="january---february-2019"></a>Janeiro – Fevereiro de 2019
  
@@ -127,7 +151,7 @@ O SSO (logon único) é um dos recursos mais solicitados para o Power BI Mobile 
 
 Agora você pode receber relatórios com segmentações e filtros compartilhados.
 
-**Suporte de imagem de tela de fundo**
+**Suporte de imagem em segundo plano**
 
 Quando você exibe um relatório no modo paisagem em seu dispositivo móvel, vê as mesmas imagens em segundo plano que vê no Power BI na Web.
 
@@ -326,7 +350,7 @@ Se você digitalizar um código QR para um dashboard ao qual você não tenha ac
 Agora é possível rolar em gráficos de barras e colunas em um relatório ao tocar no próprio gráfico, em vez de tocar na barra de rolagem na lateral.
 
 #### <a name="ios-devices"></a>Dispositivos iOS
-**Faça perguntas sobre seus dados com uma versão prévia de P e R** 
+**Faça perguntas sobre seus dados com uma visualização de P e R** 
 
 Com P e R, faça perguntas sobre seus dados usando suas próprias palavras e o Power BI dará as respostas. P e R já está no serviço do Power BI em http://powerbi.com. Agora, ele também está [disponível no aplicativo móvel em seu iPhone ou iPad](mobile-apps-ios-qna.md).
 

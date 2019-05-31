@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: dda23e6b41613e76d5507d272e792f9f9130f982
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d900d8622f086ef28f39ee050e9e9f1639dfd53d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282231"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61231483"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gerenciar seu workspace de aplicativo no Power BI e no Office 365
 Como criador ou administrador de um [workspace de aplicativo no Power BI](service-create-distribute-apps.md) ou no Office 365, você gerencia alguns aspectos do seu workspace no Power BI. Outros aspectos que você gerencia no Office 365. 
@@ -36,10 +36,10 @@ Como criador ou administrador de um [workspace de aplicativo no Power BI](servic
 * Ver o endereço de email do grupo.
 * Excluir o grupo.
 
-Você precisa de uma [licença do Power BI Pro](service-features-license-type.md) para ser um administrador ou um membro de um workspace do aplicativo. Os usuários de seu aplicativo também precisam de uma licença do Power BI Pro, a menos que seu workspace do aplicativo esteja em uma capacidade do Power BI Premium. Leia [O que é o Power BI Premium?](service-premium.md) para obter detalhes.
+Você precisa de uma [licença do Power BI Pro](service-features-license-type.md) para ser um administrador ou um membro de um workspace do aplicativo. Os usuários de seu aplicativo também precisam de uma licença do Power BI Pro, a menos que seu workspace do aplicativo esteja em uma capacidade do Power BI Premium. Leia [O que é o Power BI Premium?](service-premium-what-is.md) para obter detalhes.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Editar seu workspace de aplicativo no Power BI
-1. No serviço do Power BI, selecione a seta ao lado de **Workspaces** &gt; selecione as reticências (**...**) ao lado do nome do workspace &gt; **Editar workspace**. 
+1. No serviço do Power BI, selecione a seta ao lado de **Workspaces** &gt; selecione as reticências ( **...** ) ao lado do nome do workspace &gt; **Editar workspace**. 
    
    ![Editar workspaces no Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
@@ -53,14 +53,14 @@ Você precisa de uma [licença do Power BI Pro](service-features-license-type.md
 3. Selecione **Salvar** ou **Cancelar**.
 
 ## <a name="edit-power-bi-app-workspace-properties-in-office-365"></a>Editar as propriedades do workspace de aplicativo do Power BI no Office 365
-1. No serviço do Power BI, selecione a seta ao lado de **Workspaces** &gt; selecione as reticências (**...**) ao lado do nome do workspace &gt; **Membros**. 
+1. No serviço do Power BI, selecione a seta ao lado de **Workspaces** &gt; selecione as reticências ( **...** ) ao lado do nome do workspace &gt; **Membros**. 
    
    ![Editar workspaces no Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
    Isso abre a exibição de grupo do Outlook para Office 365 do seu workspace de aplicativo.
    
    Talvez seja necessário entrar em sua conta corporativa.
-2. Toque nas reticências (**...**) ao lado do nome do membro para tornar o membro um administrador ou excluir o membro do workspace do aplicativo. 
+2. Toque nas reticências ( **...** ) ao lado do nome do membro para tornar o membro um administrador ou excluir o membro do workspace do aplicativo. 
    
    ![Editar um grupo no Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 

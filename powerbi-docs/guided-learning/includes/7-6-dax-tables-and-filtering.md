@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
-ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57555923"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273162"
 ---
 Uma diferença significativa entre a linguagem de fórmula do **DAX** e do Excel é que o DAX permite passar *tabelas inteiras* entre expressões, em vez de serem restritas a um único valor. Um efeito poderoso é que o DAX permite filtrar tabelas em suas expressões e, em seguida, trabalhar com o conjunto filtrado de valores.
 

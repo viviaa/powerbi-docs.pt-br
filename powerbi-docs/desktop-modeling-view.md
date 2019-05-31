@@ -1,5 +1,5 @@
 ---
-title: Usar a Exibição de Modelagem no Power BI Desktop (versão prévia)
+title: Use o modo de exibição de modelagem no Power BI Desktop
 description: Usar a Exibição de Modelagem para ver conjuntos de dados complexos em um formato visual no Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,30 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216299"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941348"
 ---
-# <a name="modeling-view-in-power-bi-desktop-preview"></a>Exibição de Modelagem no Power BI Desktop (versão prévia)
+# <a name="modeling-view-in-power-bi-desktop"></a>Modo de exibição de modelagem no Power BI Desktop
 
-Com a **Exibição de Modelagem** no **Power BI Desktop**, você pode exibir e trabalhar com conjuntos de dados complexos que contêm muitas tabelas. Com a Exibição de Modelagem, você pode fazer o seguinte:
+Com a **Exibição de Modelagem** no **Power BI Desktop**, você pode exibir e trabalhar com conjuntos de dados complexos que contêm muitas tabelas.
 
-
-## <a name="enabling-the-modeling-view-preview-feature"></a>Habilitar a versão prévia do recurso Exibição de Modelagem
-
-O recurso Exibição de Modelagem está em versão prévia e deve ser habilitado no **Power BI Desktop**. Para habilitar a Exibição de Modelagem, selecione **Arquivo > Opções e Configurações > Opções > Versão Prévia dos Recursos** e, em seguida, marque a caixa de seleção **Exibição de Modelagem**, conforme mostrado na imagem a seguir.
-
-![Habilitar a versão prévia do recurso Exibição de Modelagem no Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
-
-Você será solicitado a reinicializar o **Power BI Desktop** para que a versão prévia do recurso seja habilitada. 
-
-![Reiniciar o Power BI Desktop para habilitar a versão prévia do recurso](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## <a name="using-modeling-view"></a>Usando a Exibição de Modelagem
 
@@ -40,7 +30,7 @@ Para acessar a Exibição de Modelagem, selecione o ícone de Exibição de Mode
 
 ## <a name="creating-separate-diagrams"></a>Criando diagramas separados
 
-Com a Exibição de Modelagem, você pode criar diagramas do modelo, que contêm apenas um subconjunto das tabelas no modelo. Isso pode ajudar a fornecer uma exibição mais clara das tabelas com as quais você deseja trabalhar e facilita o trabalho com conjuntos de dados complexos. Para criar um novo diagrama com apenas um subconjunto das tabelas, clique no sinal **+**, ao lado da guia **Todas as tabelas**, na parte inferior da janela do Power BI Desktop.
+Com a Exibição de Modelagem, você pode criar diagramas do modelo, que contêm apenas um subconjunto das tabelas no modelo. Isso pode ajudar a fornecer uma exibição mais clara das tabelas com as quais você deseja trabalhar e facilita o trabalho com conjuntos de dados complexos. Para criar um novo diagrama com apenas um subconjunto das tabelas, clique no sinal **+** , ao lado da guia **Todas as tabelas**, na parte inferior da janela do Power BI Desktop.
 
 ![Criar um novo diagrama clicando no sinal + na seção de guias](media/desktop-modeling-view/modeling-view_03.png)
 
@@ -66,9 +56,9 @@ Por exemplo, para alterar o [modo de armazenamento](desktop-storage-mode.md) de 
 Os artigos a seguir tratam mais sobre os modelos de dados e também descrevem detalhadamente o DirectQuery.
 
 * [Agregações no Power BI Desktop (versão prévia)](desktop-aggregations.md)
-* [Modelos compostos no Power BI Desktop (prévia)](desktop-composite-models.md)
+* [Modelos compostos no Power BI Desktop](desktop-composite-models.md)
 * [Modo de armazenamento no Power BI Desktop (prévia)](desktop-storage-mode.md)
-* [Relações muitos para muitos no Power BI Desktop (prévia)](desktop-many-to-many-relationships.md)
+* [Relações muitos para muitos no Power BI Desktop](desktop-many-to-many-relationships.md)
 
 
 Artigos do DirectQuery:

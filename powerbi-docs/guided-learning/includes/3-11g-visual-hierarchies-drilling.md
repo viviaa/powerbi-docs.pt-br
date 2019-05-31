@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9aac366f04d53da56b62c10fdb85229d0d412834
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396104"
+---
 Quando você adiciona um campo de *data* a um visual no bucket do campo *Eixo*, o Power BI adiciona automaticamente uma hierarquia de tempo que inclui *Ano*, *Trimestre*, *Mês* e *Dia*. Ao fazer isso, o Power BI permite que os visuais tenham uma interação baseada em tempo com as pessoas que exibem os relatórios, permitindo que os usuários façam drill down nesses diferentes níveis de tempo.
 
 ![](media/3-11g-visual-hierarchies-drilling/3-11g_1.png)

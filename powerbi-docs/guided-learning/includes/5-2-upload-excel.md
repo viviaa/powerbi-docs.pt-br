@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cff8e70e43496b264fd0dd549759f939bf90e33f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271204"
+---
 Neste tópico, primeiro vamos dar uma olhada em como você pode importar um arquivo de pasta de trabalho do Excel contendo uma **tabela** simples de uma unidade local para o Power BI. Em seguida, você aprenderá como é possível começar a explorar os dados dessa tabela no Power BI criando um relatório.
 
 ## <a name="make-sure-your-data-is-formatted-as-a-table"></a>Verifique se seus dados estão formatados como uma tabela

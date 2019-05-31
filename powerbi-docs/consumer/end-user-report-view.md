@@ -8,111 +8,43 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/10/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d3f526b79f6029943743e66b13745a9d037fe9b9
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661504"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608102"
 ---
-# <a name="change-the-size-of-a-report-page"></a>Alterar o tamanho de uma página de relatório
-No [artigo e vídeo anterior](../power-bi-report-display-settings.md), você aprendeu duas maneiras diferentes de controlar a exibição de página nos relatórios do Power BI: **Exibir** e **Tamanho da Página**. A exibição de Página e o Tamanho da Página estão disponíveis no serviço do Power BI e no Power BI Desktop e têm aparência e funcionamento quase idênticos, mas para este tutorial, estamos usando o serviço do Power BI.
+# <a name="change-the-display-of-a-report-page"></a>Alterar a exibição de uma página de relatório
+Relatórios são exibidos em vários dispositivos diferentes com diferentes tamanhos de tela e proporções.  Alterar a maneira como uma página de relatório é exibida para atender às suas necessidades.    
 
-### <a name="prerequisites"></a>Pré-requisitos
-- Serviço do Power BI   
-- [Relatório de Exemplo de Análise de Varejo](../sample-retail-analysis.md)
+![relatório exibe na tela](media/end-user-report-view/power-bi-report.png)
 
-## <a name="first-lets-change-the-page-view-setting"></a>Primeiro, vamos alterar a configuração do modo de exibição de página
+## <a name="explore-the-view-menu"></a>Explorar menu Exibir
+As opções no menu Exibir oferecem flexibilidade para exibir páginas de relatório no tamanho e largura que você escolher.
 
-1. Abra o relatório no modo de exibição de Leitura ou no modo de exibição de Edição e selecione a guia de relatório de **Novos Repositórios**. Por padrão, essa página de relatório é exibida usando a configuração **Ajustar à Página**.  Nesse caso, Ajustar à Página exibe a página de relatório sem barras de rolagem, mas alguns dos detalhes e títulos são pequenos demais para leitura.
+- Digamos que você está exibindo um relatório em um dispositivo pequeno e é difícil ver títulos e legendas.  Selecione **modo de exibição** > **tamanho real** para aumentar o tamanho da página do relatório. Use as barras de rolagem para mover-se o relatório. 
 
-   ![relatório exibido na tela](media/end-user-report-view/pbi_fit_to_page.png)
-2. Certifique-se de que nenhuma visualização seja selecionada na tela. Selecione **Exibição** e revise as opções de exibição.
+    ![relatório exibido na tela, com duas barras de rolagem](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   * No Modo de Exibição de Leitura, você verá isto.
 
-     ![Menu suspenso Exibir com a opção Ajustar à página selecionada](media/end-user-report-view/power-bi-page-view-menu-new.png)
-   * No Modo de Edição de Exibição, você verá isto.
+- Outra opção é ajustar o relatório para a largura da tela, selecionando **ajustar à largura**. Isso ainda pode exigir o uso de uma barra de rolagem vertical.
 
-     ![Menu suspenso Exibir com a opção Ajustar à página selecionada](media/end-user-report-view/power-bi-view-editing-view.png)
+  ![relatório exibe usando a largura de tela inteira](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-3. Vamos ver como a página aparece usando a configuração **Tamanho real**.
+- Se você não deseja que qualquer barras de rolagem, mas deseja fazer o melhor uso de seu tamanho da tela.  Selecione **ajustar à página**.
 
-   ![relatório exibido na tela, com duas barras de rolagem](media/end-user-report-view/power-bi-actal-size2.png)
+   ![Exibe relatório sem barras de rolagem](media/end-user-report-view/power-bi-fit-to-width.png)
 
-   Não é boa, pois o dashboard agora tem barras de rolagem duplas.
-4. Alterne para **Ajustar à largura**.
+   
+- A última opção, **tela inteira**, exibe a página de relatório sem barras de menu e cabeçalhos. Tela inteira pode ser uma boa opção para pequenas telas em que os detalhes são difíceis de ver.  Tela inteira também pode ser uma boa opção ao projetar páginas do relatório em telas grandes de pessoas para exibir, mas não interagir.  
 
-   ![relatório exibido sem barras de rolagem, apenas uma barra de rolagem](media/end-user-report-view/pbi_fit_to_width.png)
+    ![relatório exibido em tela inteira](media/end-user-report-view/power-bi-full-screen.png)
 
-   Ficou melhor. Ainda temos uma barra de rolagem, mas fica mais fácil de ler os detalhes.
-
-## <a name="change-the-default-view-for-a-report-page"></a>Alterar a exibição padrão para uma página de relatório
-Se você for um *criador* de relatório, você poderá alterar a exibição padrão das páginas do relatório. Quando você compartilha seu relatório com outras pessoas, as páginas do relatório serão abertas usando o modo de exibição que você definiu. Os *consumidores* do relatório poderão alterar o modo de exibição, mas não poderão salvar as alterações feitas por eles depois de saírem do relatório.
-
-1. Na página **Novos armazenamentos** do relatório, retorne para a exibição **Tamanho real**.
-
-   ![Menu suspenso Exibir com a opção Tamanho Real selecionada](media/end-user-report-view/power-bi-actual-size.png)
-
-2. Na página de relatório **Vendas Mensais do Distrito**, defina o modo de exibição como **Ajustar à largura**.
-
-3. Na página do relatório **visão geral**, mantenha a configuração de exibição padrão.
-
-4. Agora, salve o relatório selecionando **Arquivo > Salvar**. Na próxima vez que você abrir esse relatório, as páginas serão exibidas usando as novas configurações de exibição. Vamos ver.
-
-   ![Lista suspensa Arquivo com a opção Salvar selecionada](media/end-user-report-view/power-bi-save.png)
-3. Selecione o nome do workspace atual na barra de navegação superior para retornar a esse workspace.  
-
-   ![Barra de menus superior mostrando trilhas](media/end-user-report-view/power-bi-my-workspace.png)
-4. Selecione a guia **Relatórios** e escolha o mesmo relatório (Exemplo de Análise de Varejo).
-
-    ![Exibição de conteúdo com a guia Relatórios selecionada](media/end-user-report-view/power-bi-new-report2.png)
-5. Abra cada página do relatório para ver as novas configurações.
-
-   ![vídeo mostrando como alterar as opções de Exibir](media/end-user-report-view/power-bi-page-view.gif)
-
-## <a name="now-lets-explore-the-page-size-setting"></a>Agora, vamos explorar a configuração do modo do *tamanho da página*
-As configurações de tamanho de página só estão disponíveis no [modo de exibição de Edição](../service-interact-with-a-report-in-editing-view.md), portanto, você deve ter permissões de edição (*criador*) para o relatório para que possa alterar as configurações de tamanho da página. Se você tiver se conectado a qualquer um dos nossos [exemplos](../sample-datasets.md), você terá permissões de *criador* para esses relatórios.
-
-1. Abra a página de "Vendas mensais por distrito" do [Exemplo de Análise de Varejo](../sample-retail-analysis.md) no Modo de Exibição de Edição.
-2. Certifique-se de que nenhuma visualização seja selecionada na tela.  No painel **Visualizações**, selecione o ícone de rolo de pintura ![](media/end-user-report-view/power-bi-paintroller.png).
-3. Selecione **Tamanho da Página** &gt; **Tipo** para exibir as opções de tamanho da página.
-
-   ![Cartão no tamanho de página expandido e 16:9 selecionado](media/end-user-report-view/power-bi-page-size-menu-new.png)
-4. Selecione **Letra**.  Na tela, somente o conteúdo que se encaixa em 816 x 1056 pixels (tamanho de Carta) permanecerá na posição branca da tela.
-
-   ![Tela Relatório com cartão Tamanho da Página expandido e Tipo > Carta selecionado](media/end-user-report-view/power-bi-letter-new.png)
-5. Selecione a proporção do **Tamanho da Página** **16:9**.
-
-   ![Cartão Tamanho da Página expandido e Tipo > 16:9 selecionado](media/end-user-report-view/power-bi-16-to-9-new.png)
-
-   A página de relatório é exibida com uma razão de 16 de largura por 9 de altura. Para ver o tamanho de pixel real que está sendo usado, dê uma olha nos campos de largura e altura acinzentados (1280x720). Há muito espaço vazio ao redor da tela de relatório. Isso ocorre porque definimos anteriormente **Exibição** como "Ajustar à largura".
-7. Continue explorando as opções de **Tamanho da Página**
-
-## <a name="use-page-view-and-page-size-together"></a>Usar o modo de Exibição de página e Tamanho de Página juntos
-Use o modo de Exibição de página e Tamanho de Página juntos para criar um relatório que tenha a melhor aparência quando compartilhado com colegas ou inserido em outro aplicativo.
-
-Neste exercício, você criará uma página de relatório que será exibido em um aplicativo com espaço para 500 pixels de largura por 750 pixels de altura.
-
-Lembre-se que, na etapa anterior, vimos que nossa página de relatório é exibida atualmente com 1280 de largura por 720 de altura. Então, sabemos que precisaremos redimensionar e reorganizar muitos itens se quisermos que todos os elementos visuais se ajustem à página.
-
-1. Redimensione e mova os elementos visuais para que caibam em menos da metade da área da tela atual.
-
-    ![vídeo mostrando os elementos visuais sendo redimensionados e movimentados pela tela](media/end-user-report-view/power-bi-custom-view.gif)
-2. Selecione **Tamanho da Página**  &gt;**Personalizado**.
-3. Defina a largura para 500 e a altura para 750.
-
-    ![Painel Formatação com cartão Tamanho da Página expandido](media/end-user-report-view/power-bi-custom-new.png)
-4. Ajuste a página de relatório de modo que ela tenha a melhor aparência. Alterne entre **Exibir > Tamanho real** e **Exibir > Ajustar à página** para fazer ajustes.
-
-    ![tela Relatório com o painel Formatação expandido](media/end-user-report-view/power-bi-final-new.png)
+Quando você sair do relatório, suas configurações de exibição não serão salvas, mas reverte para o padrão. Se for importante para você para salvar essas configurações, use [indicadores](end-user-bookmarks.md). 
 
 ## <a name="next-steps"></a>Próximas etapas
 [Criar relatórios para Cortana](../service-cortana-answer-cards.md)
-
-Voltar a [Configurações de exibição de página em um relatório do Power BI](../power-bi-report-display-settings.md)
-
-Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

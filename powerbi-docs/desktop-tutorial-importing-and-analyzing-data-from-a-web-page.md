@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514625"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutorial: Analisar dados de página da Web usando o Power BI Desktop
@@ -127,7 +127,7 @@ A consulta é carregada na **Exibição de Relatório** do Power BI Desktop, pod
    ![Painel Campos](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 >[!TIP]
 >Você sempre pode voltar para o **Power Query Editor** para editar e refinar sua consulta:
->- Selecionando as reticências (**...**) de **Mais opções** ao lado de **Euro Cup Winners** no painel **Campos** e selecionando **Editar Consulta** na lista suspensa, ou
+>- Selecionando as reticências ( **...** ) de **Mais opções** ao lado de **Euro Cup Winners** no painel **Campos** e selecionando **Editar Consulta** na lista suspensa, ou
 >- Selecionando **Editar Consultas** > **Editar Consultas** no grupo **Dados externos** da guia de faixa de opções **Início** na Exibição de Relatório. 
 
 ## <a name="create-a-visualization"></a>Criar uma visualização
@@ -163,7 +163,7 @@ Você pode alterar a aparência de uma visualização selecionando-a e, em segui
    ![Alterar cor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
    
 3. Selecione **Título** para expandir as opções de título e, no campo **Texto do título**, digite **Euro Cup Winners** no lugar do título atual. 
-4. Altere a **Cor da fonte** para vermelho, o **Tamanho do texto** para **12** e a **Família de fontes** para **Segoe (Negrito)**. 
+4. Altere a **Cor da fonte** para vermelho, o **Tamanho do texto** para **12** e a **Família de fontes** para **Segoe (Negrito)** . 
    
    ![Formatar cores de dados](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
    
@@ -181,7 +181,7 @@ Para alterar o mapa para um gráfico de pizza, selecione-o e, em seguida, seleci
 
 >[!TIP]
 >- Você pode usar as opções de formatação de **Cores de dados** para deixar "Germany" e "West Germany" com a mesma cor. 
->- Para agrupar os países com mais vitórias no gráfico de pizza, selecione as reticências (**...**) no canto superior direito da visualização e, em seguida, selecione **Classificar por contagem de anos** na lista suspensa. 
+>- Para agrupar os países com mais vitórias no gráfico de pizza, selecione as reticências ( **...** ) no canto superior direito da visualização e, em seguida, selecione **Classificar por contagem de anos** na lista suspensa. 
 
 O Power BI Desktop fornece uma experiência perfeita de ponta a ponta, desde a obtenção de dados por meio de uma ampla variedade de fontes de dados e a modelagem desses dados para atender às suas necessidades de análise, até a visualização de tais dados de maneiras avançadas e interativas. Quando seu relatório estiver pronto, você poderá [carregá-lo no Power BI](desktop-upload-desktop-files.md) e criar painéis baseados nele, que poderão ser compartilhados com outros usuários do Power BI.
 

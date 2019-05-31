@@ -1,20 +1,20 @@
 ---
 title: Registrar um aplicativo para inserir o conteúdo do Power BI
 description: Saiba como registrar um aplicativo no Azure Active Directory para uso com a inserção de conteúdo do Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 2fb633c8f23d5d9d70dc6a01c2467debb169da54
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762365"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269463"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrar um aplicativo do Azure AD para usar com o Power BI
 
@@ -53,7 +53,7 @@ Veja aqui como registrar seu aplicativo com a Ferramenta de Registro de Aplicati
 
     ![Tipo de aplicativo](media/register-app/register-app-new-design-app-type.png)
 
-5. Se você selecionou **Aplicativo Web do lado do servidor** para o tipo de aplicativo, continue com a inserção de um valor para **URL da Página Inicial** e **URL de Redirecionamento**. O **URL de redirecionamento** funciona com qualquer URL válida e deve corresponder ao aplicativo que você criou. Se você selecionou **nativo**, vá para a etapa 6.
+5. Se você selecionou **Aplicativo Web do lado do servidor** para o tipo de aplicativo, continue com a inserção de um valor para **URL da Página Inicial** e **URL de Redirecionamento**. O **URL de redirecionamento** funciona com qualquer URL válida e deve corresponder com o aplicativo que você criou. Se você selecionou **nativo**, vá para a etapa 6.
 
 6. Escolha as APIs do Power BI de que seu aplicativo precisa. Para obter mais informações sobre as permissões de acesso do Power BI, veja [Permissões do Power BI](power-bi-permissions.md). Em seguida, selecione **Registrar**.
 
@@ -62,7 +62,7 @@ Veja aqui como registrar seu aplicativo com a Ferramenta de Registro de Aplicati
     > [!Important]
     > Se você habilitar as entidades de serviço a serem usadas com o Power BI, as permissões do Azure Active Directory não estarão mais em vigor. As permissões são gerenciadas por meio do portal de administração do Power BI.
 
-7. Se você escolher **Nativo** para o tipo de aplicativo, receberá uma **ID do aplicativo**. Se você selecionar **Aplicativo Web do lado do servidor** para o tipo de aplicativo, receberá uma **ID do Aplicativo** e um **Segredo do aplicativo**.
+7. Se você escolher **nativos** para o tipo de aplicativo, em seguida, você está, em seguida, forneceu um **ID do aplicativo**. Se você selecionar **Aplicativo Web do lado do servidor** para o tipo de aplicativo, receberá uma **ID do Aplicativo** e um **Segredo do aplicativo**.
 
     > [!Note]
     > A **ID do Aplicativo** pode ser recuperada no portal do Azure, mais tarde, se necessário. Se você perder o **Segredo do aplicativo**, será necessário criar um novo no portal do Azure.
@@ -83,16 +83,11 @@ Sua outra opção para registrar seu aplicativo é fazer isso diretamente no por
 
 3. Para escolher o locatário do Azure AD, selecione sua conta no canto superior direito da página.
 
-4. No painel de navegação esquerdo, **Todos os serviços**, **Azure Active Directory** selecione **Registros de Aplicativo** e, em seguida, selecione **Novo registro de aplicativo**.
-
-    ![Registro de novo aplicativo](media/register-app/azuread-new-app-registration.png)
+4. No painel de navegação à esquerda, acesse **todos os serviços**, selecione **registros de aplicativo** e, em seguida, selecione **novo registro**.
 
 5. Siga os prompts e crie um novo aplicativo.
 
-   * Para aplicativos Web, forneça a URL de logon, que é a URL base do aplicativo, na qual os usuários podem entrar (por exemplo, `http://localhost:13526`).
-   * Para aplicativos nativos, forneça um **URI de redirecionamento**, que usa o Azure AD para retornar respostas de token. Insira um valor específico para o aplicativo (por exemplo, `http://myapplication/Redirect`).
-
-Para obter mais informações sobre como registrar aplicativos no Azure Active Directory, consulte [Integrando aplicativos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
+   Para obter mais informações sobre como registrar aplicativos no Azure Active Directory, consulte [registrar um aplicativo com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Como obter a ID do Aplicativo
 
@@ -112,30 +107,21 @@ Convém entrar com a conta *mestra* usada para inserção, ou com uma conta de A
 
 1. Navegue até [Registros de aplicativo](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) no portal do Azure e selecione o aplicativo que você está usando para inserção.
 
-    ![Aplicativos registrados no Microsoft Azure AD](media/register-app/powerbi-embedded-azuread-registered-apps.png)
-2. Selecione **Permissões necessárias** em **Acesso à API**.
+2. Selecione **permissões de API** sob **gerenciar**.
 
-    ![Permissões necessárias do aplicativo no Microsoft Azure AD](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
-
-3. Em **Permissões necessárias**, selecione **Serviço do Power BI (Power BI)**.
+3. Dentro de **permissões de API**, selecione **adicionar uma permissão**, em seguida, selecione **serviço do Power BI**.
 
     ![Permissões do aplicativo 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-   > [!NOTE]
-   > Se você tiver criado o aplicativo diretamente no portal do Azure AD, o **Serviço do Power BI (Power BI)** poderá não estar presente. Se ele não estiver selecionado, selecione **+ Adicionar** e **1 Selecionar e API**. Selecione **Serviço do Power BI** na lista de APIs e **Selecionar**.  Se o **Serviço do Power BI (Power BI)** não estiver disponível em **+ Adicionar**, inscreva-se no Power BI com pelo menos um usuário.
+4. Selecione as permissões específicas que você precisa sob **permissões delegadas**. Selecionar uma a uma para salvar as seleções. Selecione **Salvar** quando terminar.
 
-4. Selecione todas as permissões em **Permissões Delegadas**. Selecionar uma a uma para salvar as seleções. Selecione **Salvar** quando terminar.
+5. Selecione **conceder consentimento**.
 
-    ![Permissões do aplicativo 04](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
-5. Em **Permissões necessárias**, selecione **Conceder Permissões**.
-
-    A ação **Conceder permissões** é necessária para a *conta mestre*, a fim de evitar solicitações de consentimento pelo Azure AD. Se a conta que executar essa ação for um Administrador Global, você concederá permissões para todos os usuários da organização a esse aplicativo. Se a conta que executa essa ação é a *conta mestre* e não é um Administrador Global, você concede permissões apenas para a *conta mestre* a esse aplicativo.
-
-    ![Conceder permissões na caixa de diálogo Permissões necessárias](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
+    O **conceder consentimento** precisa de ação para o *conta mestre* para evitar prompts de consentimento pelo Azure AD. Se a conta que executar essa ação for um Administrador Global, você concederá permissões para todos os usuários da organização a esse aplicativo. Se a conta que executa essa ação é a *conta mestre* e não é um Administrador Global, você concede permissões apenas para a *conta mestre* a esse aplicativo.
 
 ### <a name="applying-permissions-programmatically"></a>Aplicando permissões de forma programática
 
-1. É necessário obter as entidades de serviço existentes (usuários) no seu locatário. Para obter informações de como fazer isso, consulte [Obter servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. É necessário obter as entidades de serviço existentes (usuários) no seu locatário. Para obter informações sobre como fazer isso, consulte [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     É possível chamar a API *Get servicePrincipal* sem {ID} e ela obterá todas as entidades de serviço no locatário.
 
@@ -161,7 +147,7 @@ Convém entrar com a conta *mestra* usada para inserção, ou com uma conta de A
    O valor de **consentType** pode fornecer **AllPrincipals** ou **Principal**.
 
    * **AllPrincipals** somente pode ser usado por um administrador do locatário para conceder permissões em nome de todos os usuários no locatário.
-   * **Principal** é usado para conceder permissões em nome de um usuário específico. Nesse caso, uma propriedade adicional deve ser adicionada ao corpo da solicitação – *principalId={User_ObjectId}*.
+   * **Principal** é usado para conceder permissões em nome de um usuário específico. Nesse caso, uma propriedade adicional deve ser adicionada ao corpo da solicitação – *principalId={User_ObjectId}* .
 
      Você deve *Conceder permissões* à conta mestra para impedir que o Microsoft Azure AD solicite consentimento, o que não é possível ao entrar de forma não interativa.
 
@@ -190,8 +176,8 @@ Convém entrar com a conta *mestra* usada para inserção, ou com uma conta de A
 
    O valor de **consentType** pode fornecer **AllPrincipals** ou **Principal**.
 
-   * **AllPrincipals** somente pode ser usado por um administrador do locatário para conceder permissões em nome de todos os usuários no locatário.
-   * **Principal** é usado para conceder permissões em nome de um usuário específico. Nesse caso, uma propriedade adicional deve ser adicionada ao corpo da solicitação – *principalId={User_ObjectId}*.
+   * **AllPrincipals** só pode ser usado por um administrador de locatário para conceder permissões para todos os usuários no locatário.
+   * **Entidade** é usado para conceder permissões para um usuário específico. Nesse caso, uma propriedade adicional deve ser adicionada ao corpo da solicitação – *principalId={User_ObjectId}* .
 
    Você deve *Conceder permissões* à conta mestra para impedir que o Microsoft Azure AD solicite consentimento, o que não é possível ao entrar de forma não interativa.
 

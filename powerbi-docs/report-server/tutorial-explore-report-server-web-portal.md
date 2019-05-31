@@ -1,20 +1,20 @@
 ---
 title: 'Tutorial: Explorar o Servidor de Relatórios do Power BI em uma VM'
 description: Neste tutorial, você cria uma máquina virtual com o Servidor de Relatórios do Power BI já instalado e explora o portal da Web.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
-ms.date: 05/18/2018
-ms.author: maghan
-ms.openlocfilehash: 098aa1cd2c031a200e3ce246890a467a6e15149d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/06/2019
+ms.author: maggies
+ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325072"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65240026"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutorial: Explorar o portal da Web do Servidor de Relatórios do Power BI em uma VM
 Neste tutorial, você cria uma máquina virtual do Azure com o Servidor de Relatórios do Power BI já instalado, para que possa experimentar a exibição, a edição e o gerenciamento de relatórios paginados e de exemplo do Power BI, bem como de KPIs.
@@ -37,32 +37,38 @@ Para este tutorial, você precisará de uma assinatura do Azure. Se não tiver u
 
 Felizmente, a equipe do Power BI criou uma VM que vem com o Servidor de Relatórios do Power BI já instalado.
 
-1. No Azure Marketplace, abra o [Servidor de Relatórios do Power BI](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. No Azure Marketplace, selecione o servidor de relatório do Power BI. Esse link abre-lo diretamente: [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Selecione **Obter agora**.
 3. Para aceitar os termos de uso e a política de privacidade do provedor, selecione **Continuar**.
 
-    ![Criar VM do Servidor de Relatórios do Power BI](media/tutorial-explore-report-server-web-portal/power-bi-report-server-virtual-machine-create.png)
+4. Selecione **Criar**.
 
-4. **Etapa 1, Básico**, para **Nome da VM**, insira **reportservervm**.
+    ![Criar VM do Servidor de Relatórios do Power BI](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
+
+5. Na **etapa 1, básico**, para **nome da VM**, chamá-lo **reportservervm**.
+
+    O nome da VM de servidor de relatório do Power BI não pode conter traços.
 
 5. Crie um nome de usuário e senha.
 
-6. Para **Grupo de recursos**, mantenha **Criar novo** e chame-o de **reportserverresourcegroup**.
+6. Para **grupo de recursos**, selecione **criar novo**e chamá-lo **reportserverresourcegroup** > **Okey**.
 
     Se você usar o tutorial mais de uma vez, será necessário dar um nome diferente ao grupo de recursos. Você não pode repetir o nome do grupo de recursos em uma assinatura. 
 
-7. Mantenha os outros valores padrão > **OK**.
-
     ![Nomeie a VM e o grupo de recursos](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
 
-8. **Etapa 2, Configurações**, mantenha os valores padrão > **OK**.
+7. Mantenha os outros valores padrão > **OK**.
 
-9. **Etapa 3, Resumo** > **OK**.
+8. Na **etapa 2 configurações**, mantenha os padrões > **Okey**.
+ 
+    O **conta de armazenamento do SQL** e **conta de armazenamento de diagnóstico** valores também devem ser exclusivos. Se você percorrer o tutorial mais de uma vez, você precisa dar-lhes nomes diferentes.
 
-10. **Etapa 4**, examinar os Termos do usuário e a política de privacidade > **Criar**.
+9. Na **etapa 3 resumo**, examine suas seleções > **Okey**.
 
-    O processo **Enviando implantação para Servidor de Relatórios do Power BI** leva alguns minutos.
+10. Na **comprar o etapa 4**, revise os termos da política de privacidade e de usuário > **criar**.
+
+    O **enviando implantação para o servidor de relatório do Power BI** processo pode levar vários minutos.
 
 ## <a name="connect-to-your-virtual-machine"></a>Conectar-se à sua máquina virtual
 
@@ -78,11 +84,13 @@ Felizmente, a equipe do Power BI criou uma VM que vem com o Servidor de Relatór
 
     ![Conectar-se à máquina virtual](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. Na caixa de diálogo Conexão de Área de Trabalho Remota, selecione **Conectar**.
+5. No **conectar-se a máquina virtual** painel, mantenha os padrões e selecione **baixar arquivo RDP**.
+
+1. No **Conexão de área de trabalho remota** caixa de diálogo, selecione **Connect**.
 
 6. Insira o nome e a senha que você criou para a VM > **OK**.
 
-7. A caixa de diálogo seguinte diz que a identidade do computador remoto não pode ser identificada. Selecione **Sim**.
+7. A próxima caixa de diálogo diz **a identidade do computador remoto não pode ser identificada**. Selecione **Sim**.
 
    Pronto! Sua nova VM é aberta.
 
@@ -90,15 +98,15 @@ Felizmente, a equipe do Power BI criou uma VM que vem com o Servidor de Relatór
 
 Quando sua VM abrir, estes são os itens que você verá na área de trabalho.
 
-![Máquina virtual do Servidor de Relatórios do Power BI é iniciada](media/tutorial-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
+![Máquina virtual do Servidor de Relatórios do Power BI é iniciada](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
 |Número  |O que é  |
 |---------|---------|
-|![Número 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Inicia o SQL Server Data Tools para criar relatórios paginados (.RDL) |
-|![Número 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Relatórios de exemplo do Power BI (.PBIX)  |
-|![Número 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Links para documentação do Servidor de Relatórios do Power BI   |
-|![Número 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Iniciar o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI (março de 2018)  |
-|![Número 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Abre o portal da Web do Servidor de Relatórios do Power BI no navegador   |
+|![Número 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Relatórios de exemplo do Power BI (.PBIX) |
+|![Número 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links para documentação do Servidor de Relatórios do Power BI |
+|![Número 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Inicia o Power BI Desktop otimizado para o servidor de relatório do Power BI (de janeiro de 2019) |
+|![Número 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Abre o portal da Web do Servidor de Relatórios do Power BI no navegador |
+|![Número 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Inicia o SQL Server Data Tools para criar relatórios paginados (.RDL) |
 
 Clique duas vezes no ícone **Portal da Web do Servidor de Relatórios**. O navegador abre `http://localhost/reports/browse`. No portal da Web, você verá vários arquivos agrupados por tipo. 
 
@@ -117,7 +125,7 @@ Clique duas vezes no ícone **Portal da Web do Servidor de Relatórios**. O nave
 ## <a name="tag-your-favorites"></a>Marcar seus favoritos
 É possível marcar os relatórios e os KPIs que você deseja que sejam favoritos. Eles são mais fáceis de localizar porque são reunidos em uma única pasta de favoritos, no portal da Web e nos aplicativos móveis do Power BI. 
 
-1. Selecione as reticências (**...**) no canto superior direito de **Margem de Lucro** KPI > **Adicionar aos Favoritos**.
+1. Selecione as reticências ( **...** ) no canto superior direito de **Margem de Lucro** KPI > **Adicionar aos Favoritos**.
    
     ![Adicionar aos Favoritos](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Selecione **Favoritos** na faixa de opções do portal da web para vê-lo junto com os outros favoritos na página Favoritos no portal da web.
@@ -155,11 +163,9 @@ Você pode exibir e interagir com relatórios do Power BI no portal da Web e ini
 
 1. Selecione **Permitir** para permitir que este site abra um programa em seu computador. 
 
-     O relatório é aberto no Power BI Desktop. Observe o nome na barra superior, "Power BI Desktop (março de 2018)". Trata-se da versão otimizada para o Servidor de Relatórios do Power BI.
+     O relatório é aberto no Power BI Desktop. Anote o nome na barra superior, "Power BI Desktop (de janeiro de 2019)". Trata-se da versão otimizada para o Servidor de Relatórios do Power BI.
 
-    ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
-
-     Use a versão do Power BI Desktop instalada na VM. Você não pode entrar em vários domínios para carregar um relatório.
+    Use a versão do Power BI Desktop instalada na VM. Você não pode entrar em vários domínios para carregar um relatório.
 
 3. No painel Campos, expanda a tabela Clientes e arraste o campo Ocupação para os filtros de nível de Relatório.
 

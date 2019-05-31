@@ -1,32 +1,102 @@
 ---
 title: Novidades no Servidor de Relatório do Power BI
 description: Saiba quais são as novidades no Servidor de Relatório do Power BI. Elas abrangem as principais áreas de recurso e são atualizadas conforme novos itens são lançados.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2019
-ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662447"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187307"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Novidades no Servidor de Relatório do Power BI
 
-Saiba quais são as novidades no Servidor de Relatório do Power BI. Este artigo aborda as principais áreas de recursos e é atualizado conforme novos itens são lançados.
-
-Para baixar as versões mais recentes do Servidor de Relatórios do Power BI e do Power BI Desktop otimizado para o Servidor de Relatórios do Power BI, acesse [Relatórios locais com o Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/report-server/).
+Saiba mais sobre o que há de novo no servidor de relatório do Power BI e Power BI Desktop otimizado para o servidor de relatório do Power BI. Este artigo aborda as principais áreas de recursos e é atualizado conforme novos itens são lançados.
 
 Para saber mais sobre as “Novidades” do Power BI, consulte:
 
 * [Novidades no serviço do Power BI](../service-whats-new.md)
 * [Novidades no Power BI Desktop](../desktop-latest-update.md)
 * [Novidades em aplicativos móveis para o Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Maio de 2019: Área de trabalho do Power BI para Power BI Report Server
+
+Consulte a [servidor de relatório do Power BI de maio de 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) postagem de blog para obter detalhes sobre os novos recursos.
+
+Aqui estão alguns dos destaques da versão:
+
+### <a name="performance-analyzer"></a>Analisador de desempenho 
+
+Se o relatório é executado mais lentamente do que o esperado, tente o analisador de desempenho no Power BI Desktop. Quando você iniciá-lo, ele cria um arquivo de log com informações sobre cada ação realizada no relatório. Leia mais sobre o [Performance Analyzer](../desktop-performance-analyzer.md).
+
+### <a name="new-modeling-view"></a>Novo modo de exibição de modelagem
+
+Na nova exibição de modelagem no Power BI Desktop, você pode exibir e trabalhar com conjuntos de dados complexos que contêm muitas tabelas. Destaques incluem vários layouts de diagrama e em massa de edição de colunas, medidas e tabelas. Leia mais sobre [exibição da modelagem](../desktop-modeling-view.md).
+
+### <a name="accessible-visual-interaction"></a>Interação visual acessível
+
+Você pode agora pontos de dados de acesso em muitos dos visuais internos usando a navegação de teclado. Leia mais sobre [acessibilidade nos relatórios do Power BI](../desktop-accessibility.md).
+
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Formatação de títulos e ações de URL da web condicional
+
+Relatórios do Power BI são interativos. Faz sentido que os títulos em um relatório seria dinâmicos, para refletir o estado atual do relatório. Você pode usar a mesma expressão ligada à formatação para tornar as URLs de imagens, formas e botões dinâmicos. Leia mais sobre [baseadas em expressão títulos](../desktop-conditional-format-visual-titles.md).
+
+### <a name="cross-highlight-by-axis-labels"></a>Realce cruzado por rótulos de eixo
+
+Selecione os rótulos de eixo de categoria em um visual para os outros elementos em uma página, realce cruzado, exatamente como você selecionaria os pontos de dados em um visual. Leia mais sobre [realce cruzado](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### <a name="all-the-new-features"></a>Todos os novos recursos
+
+Aqui está a lista de todos os novos recursos:
+
+### <a name="reporting"></a>Relatórios
+
+- Realce cruzado em um único ponto em gráficos de linhas 
+- Quebra automática de linha em títulos 
+- Atualizar interação visual padrão para filtro cruzado ¬
+- Cantos arredondados para bordas visuais 
+- Selecione segmentação de dados única  
+- Suporte ao mapa de calor para o Bing maps  
+- Realce cruzado por rótulos de eixo  
+- Dica de ferramenta padrão de formatação  
+- Suporte de URL com a web estático para botões, imagens e formas  
+- Opções de alinhamento de página   
+- Aprimoramentos do painel de seleção  
+- Interação visual acessível  
+- Formatação de títulos de visuais condicional  
+- Formatação para ações de URL da web para botões, imagens e formas condicional
+- Painel do analisador de desempenho
+- Navegação de teclado de tabela e matriz
+- Controle de posição de rótulo de dados de linha
+- Controle de tamanho de texto de indicador visual de KPI
+
+### <a name="analytics"></a>Análise
+
+- Mostrar datas como uma hierarquia geralmente disponível  
+
+### <a name="modeling"></a>Modelagem
+
+- Modelagem novo modo de exibição já está disponível
+- Novas funções do DAX
+- Atualizar para a função ALLSELECTED DAX
+- Desabilitar as tabelas de data automática de novos relatórios
+
+## <a name="may-2019-power-bi-report-server"></a>Maio de 2019: Servidor de Relatórios do Power BI
+
+### <a name="support-for-trusted-visuals"></a>Suporte para visuais confiáveis
+
+Adicionamos suporte para visuais confiável no servidor de relatório do Power BI. Atualmente, damos suporte a elementos visuais Mapbox e PowerOn. ESRI, Visio e o PowerApps não têm suporte para esta versão.)
+
+### <a name="improved-security-features"></a>Recursos de segurança aprimorada
+
+**RestrictedResourceMimeTypeForUpload**, quais os administradores podem usar para especificar uma lista separada por vírgulas de tipos de mime proibidos, por exemplo, texto/html.
 
 ## <a name="january-2019"></a>Janeiro de 2019
 

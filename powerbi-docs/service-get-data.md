@@ -11,11 +11,11 @@ ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 26c7c1b428f513fe2b79a3377085004506412604
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899286"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61235307"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Fontes de dados do serviço do Power BI
 Dados são o coração do Power BI. Sempre que você está explorando dados, criando gráficos e dashboards, fazendo perguntas com P e R, todas essas visualizações e respostas que você vê estão, na verdade, extraindo dados subjacentes de um conjunto de dados. Mas de onde vem esse conjunto de dados? Bem, de uma fonte de dados.
@@ -48,7 +48,7 @@ Pacotes de conteúdo contêm todos os dados e relatórios de que você precisa j
 
 **Organizacional** – se você e outros usuários da organização têm uma conta do Power BI Pro, vocês podem criar, compartilhar e usar pacotes de conteúdo. Para saber mais, veja [Pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md).
 
-## <a name="databases"></a>Bancos de Dados
+## <a name="databases"></a>Bancos de dados
 ![](media/service-get-data/pbi_getdata_databases.png)
 
 **Bancos de dados na nuvem** – por meio do serviço do Power BI, você pode se conectar ao Banco de Dados SQL do Azure, SQL Data Warehouse do Azure, Spark no Azure HD Insight e SQL Server Analysis Services usando o DirectQuery. As conexões do Power BI com esses bancos de dados ocorrem em tempo real, ou seja, quando você se conecta, digamos, a um Banco de Dados SQL do Azure e começa a explorar os dados criando relatórios no Power BI, quando você fatia os dados ou adiciona outro campo a uma visualização, é feita uma consulta diretamente ao banco de dados. Para saber mais, veja [Azure e Power BI](service-azure-and-power-bi.md).

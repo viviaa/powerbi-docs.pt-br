@@ -1,28 +1,31 @@
 ---
-title: Localizar e exibir rapidamente relatórios e painéis usando a Cortana
+title: Usar o Cortana para localizar e exibir relatórios e painéis - Power BI
 description: Use o Cortana com o Power BI para obter respostas de seus dados. Atualmente funciona com dashboards e relatórios.
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 26bd41c8fa2d1300a0f9e106c7899777ac5950f7
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
-ms.translationtype: HT
+ms.openlocfilehash: 6d53ddcfc4121e8937810bd6f734f91cd7a9fa39
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482719"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375299"
 ---
-# <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Localize e exiba rapidamente seus dados do Power BI usando a Cortana para o Power BI
+# <a name="find-and-view-your-power-bi-data-with-cortana-for-power-bi"></a>Localizar e exibir dados do Power BI com o Cortana para o Power BI
 Use a Cortana em seus dispositivos Windows 10 para obter respostas instantâneas para suas perguntas de negócios importantes. Ao se integrar ao Power BI, a Cortana pode recuperar informações importantes diretamente dos relatórios e dashboards do Power BI. Tudo o que você vai precisar é do Windows 10 com a versão de novembro de 2015 ou posterior, da Cortana, do Power BI e de acesso a, pelo menos, um conjunto de dados.
+
+> [!IMPORTANT]
+> Integração com o Cortana está sendo preterida no Power BI. A partir de 11 de junho, Cortana deixarão de funcionar para todos os painéis e relatórios.
 
 ![Campo de pesquisa da Cortana](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## <a name="preview-the-new-cortana-dashboard-search-experience-for-windows-10"></a>Visualize a nova experiência de pesquisa do *dashboard* da Cortana para o Windows 10
-Por um tempo, você conseguiu [usar a Cortana para recuperar determinados tipos de páginas de relatórios](service-cortana-answer-cards.md). Agora, adicionamos uma **nova experiência** – a capacidade de recuperar dashboards também. Experimente e [envie comentários por meio do Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi). Eventualmente, a *nova experiência* será estendida para incluir a pesquisa de relatórios da Cortana também.  Um dos principais benefícios da nova experiência é que você não precisa fazer nada especial para configurá-la, não é preciso habilitar a Cortana ou configurar o Windows 10. Ela simplesmente funciona.
+Por um tempo, você conseguiu [usar a Cortana para recuperar determinados tipos de páginas de relatórios](service-cortana-answer-cards.md). Agora, adicionamos uma **nova experiência** – a capacidade de recuperar dashboards também. Experimente-o e [enviar comentários em ideias do Power BI](https://ideas.powerbi.com/forums/265200-power-bi). Eventualmente, a *nova experiência* será estendida para incluir a pesquisa de relatórios da Cortana também.  Um dos principais benefícios da nova experiência é que você não precisa fazer nada especial para configurá-la, não é preciso habilitar a Cortana ou configurar o Windows 10. Ela simplesmente funciona.
 
 > [!NOTE]
 > Se ela não “funcionar”, consulte o [Artigo de solução de problemas](service-cortana-troubleshoot.md) para obter ajuda.
@@ -31,20 +34,20 @@ Por um tempo, você conseguiu [usar a Cortana para recuperar determinados tipos 
 
 A tecnologia subjacente está usando o [Serviço Microsoft Azure Search](https://docs.microsoft.com/azure/search/). Esse serviço de pesquisa fornece recursos adicionais como classificação inteligente, correção de erros e preenchimento automático.
 
-Ambas as experiências da Cortana existirão de modo paralelo.
+Ambas as experiências da Cortana podem existir lado a lado.
 
 ## <a name="cortana-for-power-bi-documentation"></a>Documentação da Cortana para o Power BI
-Temos quatro documentos que orientam você durante a configuração e o uso da Cortana para o Power BI. Esta série de artigos o guiará pelas etapas para
+Quatro documentos guiá-lo configurando e usando a Cortana para o Power BI.
 
 **Artigo 1** (este artigo): Compreender como a Cortana e o Power BI funcionam juntos
 
-**Artigo 2**: [pesquisar relatórios do Power BI: Habilitar a integração Cortana – Power BI – Windows](service-cortana-enable.md)
+**Artigo 2**: [Pesquisar relatórios do Power BI: Habilitar a integração Cortana – Power BI – Windows](service-cortana-enable.md)
 
-**Artigo 3**: [pesquisar relatórios do Power BI: criar cartões de respostas especiais da *Cortana*](service-cortana-answer-cards.md)
+**Artigo 3**: [Pesquisar relatórios do Power BI: criar especial *cartões de respostas da Cortana*](service-cortana-answer-cards.md)
 
 **Artigo 4**: [solucionar problemas](service-cortana-troubleshoot.md)
 
-## <a name="how-do-cortana-and-power-bi-work-together"></a>Como o Cortana e o Power BI funcionam juntos?
+## <a name="how-cortana-and-power-bi-work-together"></a>Como o Cortana e o Power BI funcionam juntos
 Quando você usa a Cortana para fazer uma pergunta, o Power BI pode ser um dos locais em que a Cortana procura por respostas. No Power BI, a Cortana pode encontrar respostas orientadas a dados detalhados nos relatórios do Power BI (que contêm um tipo especial de página de relatório chamada *Cartão de respostas da Cortana*) e de dashboards do Power BI.
 
 Se a Cortana encontrar uma correspondência, ela exibirá o nome da página do dashboard ou do relatório diretamente na tela da Cortana. A página do dashboard ou do relatório pode ser aberta no Power BI. As páginas do relatório também podem ser exploradas à direita na Cortana – elas são interativas.
@@ -58,16 +61,16 @@ Sua pergunta deve ter pelo menos duas palavras para que a Cortana encontre uma r
 
 Se o título do dashboard tiver mais de uma palavra, a Cortana retornará esse dashboard apenas se a pesquisa corresponder a pelo menos duas das palavras ou a uma das palavras mais o nome do proprietário. Para um dashboard chamado “Exemplo de lucratividade do cliente”: 
 
-* a expressão “mostrar cliente” *não* retornará um resultado de dashboard do Power BI.   
-* expressões como “mostrar lucratividade do cliente”, ”cliente p”, “cliente s”, ”exemplo de lucratividade”, “exemplo de michele hart”, “mostrar exemplo de lucratividade do cliente” e “mostrar cliente p” *retornarão* um resultado do Power BI.
-* Adicionar a palavra "powerbi" conta como uma das duas palavras necessárias, portanto a expressão "amostra do powerbi" *retornará* um resultado do Power BI. 
+* "Mostrar cliente" *não* retornar um resultado de dashboard do Power BI.   
+* "declarações, como"mostram lucratividade do cliente ","cliente p","cliente s","exemplo de lucratividade","exemplo de michele hart","Mostrar exemplo de lucratividade do cliente"e"Mostrar cliente p" *fazer* retornar um resultado do Power BI.
+* Adicionando a palavra "powerbi" conta como uma das duas palavras necessárias, portanto, "amostra do powerbi" *faz* retornar um resultado do Power BI. 
   
     ![Pesquisa da Cortana com pelo menos duas palavras](media/service-cortana-intro/power-bi-cortana-2-words.png)
 
 ### <a name="cortana-and-reports"></a>Cortana e Relatórios
  A Cortana pode encontrar respostas nos relatórios que têm [páginas criadas especificamente para exibição pela Cortana](service-cortana-answer-cards.md). Basta fazer perguntas usando o título ou palavras-chave de uma dessas páginas de relatórios de especialidade.  
 
-A tecnologia subjacente para relatórios está usando [P e R do Microsoft Power BI](consumer/end-user-q-and-a.md).
+A tecnologia subjacente para o uso de relatórios [Power BI Q & A](power-bi-tutorial-q-and-a.md).
 
 Quando você faz uma pergunta na Cortana, o Power BI responde das páginas do relatório projetadas especificamente para a Cortana. As respostas possíveis são determinadas pela Cortana no mesmo instante, diretamente dos *cartões de resposta* da Cortana já criados no Power BI.  Para explorar mais uma resposta, abra um resultado no Power BI.
 
@@ -122,7 +125,7 @@ Quando você faz uma pergunta na Cortana, o Power BI responde das páginas do re
      ![Abra o relatório da Cortana](media/service-cortana-intro/power-bi-cortana-open2.png "O cartão de respostas da Cortana abre na pesquisa da Cortana")
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
-* A Cortana não terá acesso a nenhum cartão da Cortana que não tenha sido [habilitado para o Power BI](service-cortana-enable.md).
+* Cortana não tem acesso a nenhum cartão da Cortana que ainda não foram [habilitada para o Power BI](service-cortana-enable.md).
 * Ainda não consegue fazer com que a Cortana funcione com o Power BI?  Experimente a [solução de problemas da Cortana](service-cortana-troubleshoot.md).
 * Atualmente, a Cortana para o Power BI está disponível apenas em inglês.
 * A Cortana para o Power BI está disponível somente em dispositivos móveis do Windows.

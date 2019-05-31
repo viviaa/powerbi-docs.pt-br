@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279218"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61137676"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Exibir painéis e relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -87,7 +87,7 @@ Você pode usar o gesto de pinçar para ampliar e reduzir áreas diferentes do s
    
    * As estrelas amarelas ![Estrela de Favorito](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) mostram quais dashboards são favoritos. 
    * A notação embaixo de cada nome de dashboard (neste caso, "MBI") ![Classificação de dados](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) mostra como os dados em cada dashboard são classificados. Leia mais sobre [classificação de dados no Power BI](../../service-data-classification.md).
-3. Você pode compartilhar um dashboard em seu workspace. Toque nas reticências (**...**) no canto inferior direito do bloco do dashboard e toque em **Convidar Outras Pessoas**.
+3. Você pode compartilhar um dashboard em seu workspace. Toque nas reticências ( **...** ) no canto inferior direito do bloco do dashboard e toque em **Convidar Outras Pessoas**.
    
    ![Ícone Convidar](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Você também pode tocar em um dashboard para abri-lo e ver os blocos. No dashboard, é possível interagir com:

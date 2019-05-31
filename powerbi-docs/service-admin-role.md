@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: aad02103903837afbb7bbce48ab9607b5dbf62c3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58382795"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099631"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Noções básicas sobre a função de administrador de serviços do Power BI
 
@@ -39,7 +39,7 @@ A função do administrador de serviço do Power BI não fornece os seguintes re
 
 Para atribuir usuários à função de administrador do Power BI no Centro de administração do Microsoft 365, siga estas etapas.
 
-1. No Centro de administração do Microsoft 365, selecione **Usuários** > **Usuários Ativos**.
+1. No [Centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage), selecione **usuários** > **usuários ativos**.
 
     ![Centro de administração do Microsoft 365](media/service-admin-role/powerbi-admin-users.png)
 
@@ -63,7 +63,12 @@ Deverá aparecer **Administrador de serviços do Power BI** listado para a funç
 
 Você também pode atribuir usuários a funções usando o PowerShell. Os usuários são gerenciados no Azure Active Directory (Azure AD). Se você ainda não tiver o módulo PowerShell do Azure AD, [baixe e instale a versão mais recente](https://www.powershellgallery.com/packages/AzureAD/).
 
-1. Primeiro obtenha a **ObjectId** da função **Administrador de serviços do Power BI**. Você pode executar [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) para obter a **ObjectId**
+1. Primeiro, conecte-se ao AD do Azure:
+   ```
+   PS C:\Windows\system32> Connect-AzureAD
+   ```
+
+1. Em segundo lugar, obtenha o **ObjectId** para o **administrador de serviço do Power BI** função. Você pode executar [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) para obter a **ObjectId**
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole
@@ -85,7 +90,7 @@ Você também pode atribuir usuários a funções usando o PowerShell. Os usuár
 1. Em seguida, obtenha o **ObjectId** do usuário. Ele pode ser descoberto executando [Get-AzureADUser](/powershell/module/azuread/get-azureaduser).
 
     ```
-    PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
+    PS C:\Windows\system32> Get-AzureADUser -ObjectId 'tim@contoso.com'
 
     ObjectId                             DisplayName UserPrincipalName      UserType
     --------                             ----------- -----------------      --------

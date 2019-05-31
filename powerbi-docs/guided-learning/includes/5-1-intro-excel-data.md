@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e29076a33a17b6097fd3fbf1db411f97ff45818
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271203"
+---
 Bem-vindo à seção **Power BI e Excel** do curso **Aprendizagem interativa** sobre o Power BI.
 
 É bem provável que você já usou o **Excel**. Talvez você tenha usado o Excel para criar ou exibir relatórios ou para criar gráficos de pizza ou outros visuais. Ou talvez você tenha usado o **Power Pivot** ou o **Power Query** para criar soluções que eram um pouco mais técnicas. Sendo assim, você se sentirá como se estivesse em casa no Power BI, bem como suas pastas de trabalho.

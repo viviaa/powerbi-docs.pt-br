@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5cabb57af08ba197c7f70598e988fb3249815ab8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271201"
+---
 Nesta coleção de tópicos, você aprendeu como é fácil utilizar os arquivos de pasta de trabalho do Excel existentes, carregando-os e explorando-os no Power BI. Você pode carregar pastas de trabalho do Excel com tabelas simples ou pastas de trabalho criadas com recursos mais avançados para o BI do Excel como o Power Pivot e Power View.
 
 Você também aprendeu como se conectar a arquivos do **Excel** que residem no **OneDrive for Business**, além de usar os recursos de atualização **automática** do Power BI para manter seus relatórios e dashboards atualizados, à medida que você faz alterações à sua pasta de trabalho.

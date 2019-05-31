@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 12/19/2018
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 55415126ae4c87381f788729f6f4b23807ac6572
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61400776"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Monitorar as métricas de uso de relatórios e dashboards do Power BI
 
@@ -105,7 +105,7 @@ Ainda melhor, o conjunto de dados subjacente inclui os detalhes de uso de todos 
 
 ### <a name="what-is-created-when-using-save-as"></a>O que é criado usando "Salvar como"?
 
-Quando o Power BI cria o relatório completo, ele também cria um novo conjunto de dados **composto por todos os dashboards ou todos os relatórios contidos no workspace atual** que foram acessados nos últimos 90 dias. Por exemplo, digamos que você tem um workspace chamado "Vendas" e que ele contém três dashboards e dois relatórios, e você cria um relatório de métricas de uso no dashboard "Nordeste". Em seguida, você usa **Salvar como** para personalizar e convertê-lo em um relatório completo. O conjunto de dados para esse novo relatório contém as métricas de uso *não apenas desse dashboard chamado "Nordeste"*, mas de todos os três dashboards no workspace "Vendas". Por padrão, o relatório exibe dados do dashboard "Nordeste" e você precisará [remover um filtro](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (clique simples) para exibir os dados dos três dashboards.
+Quando o Power BI cria o relatório completo, ele também cria um novo conjunto de dados **composto por todos os dashboards ou todos os relatórios contidos no workspace atual** que foram acessados nos últimos 90 dias. Por exemplo, digamos que você tem um workspace chamado "Vendas" e que ele contém três dashboards e dois relatórios, e você cria um relatório de métricas de uso no dashboard "Nordeste". Em seguida, você usa **Salvar como** para personalizar e convertê-lo em um relatório completo. O conjunto de dados para esse novo relatório contém as métricas de uso *não apenas desse dashboard chamado "Nordeste"* , mas de todos os três dashboards no workspace "Vendas". Por padrão, o relatório exibe dados do dashboard "Nordeste" e você precisará [remover um filtro](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (clique simples) para exibir os dados dos três dashboards.
 
 ### <a name="create-a-copy-of-the-usage-report-using-save-as"></a>Criar uma cópia do relatório de uso usando "Salvar como"
 
@@ -159,7 +159,7 @@ Ao desabilitar as métricas de uso para toda a sua organização, os administrad
 
 ## <a name="usage-metrics-in-national-clouds"></a>Métricas de uso em nuvens nacionais
 
-O Power BI está disponível em nuvens nacionais separadas. Essas nuvens oferecem os mesmos níveis de segurança, privacidade, conformidade e transparência como a versão global do Power BI, combinado com um modelo exclusivo para regulações locais na entrega do serviço, residência de dados, acesso e controle. Devido a esse modelo exclusivo para regulamentações locais, as métricas de uso não estão disponíveis em nuvens nacionais. Para obter mais informações, confira [nuvens nacionais](https://powerbi.microsoft.com/clouds/).
+O Power BI está disponível em nuvens nacionais separadas. Essas nuvens oferecem os mesmos níveis de segurança, privacidade, conformidade e transparência como a versão global do Power BI, combinado com um modelo exclusivo para regulações locais na entrega de serviço, residência de dados, acesso e controle. Devido a esse modelo exclusivo para regulamentações locais, as métricas de uso não estão disponíveis em nuvens nacionais. Para obter mais informações, confira [nuvens nacionais](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 

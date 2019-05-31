@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514549"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Tutorial: Criar colunas calculadas no Power BI Desktop
@@ -44,7 +44,7 @@ No Relatório de vendas, você quer exibir categorias e subcategorias de produto
     
     ![Barra de fórmulas](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-2.  Por padrão, uma nova coluna calculada é nomeada simplesmente como Coluna. Se você não a renomear, as novas colunas serão nomeadas Coluna 2, Coluna 3 e assim por diante. Como você quer que sua coluna seja mais identificável, como o nome **Coluna** já está destacado na barra de fórmula, renomeie-o digitando **ProductFullCategory** e digite um sinal de igual (**=**).
+2.  Por padrão, uma nova coluna calculada é nomeada simplesmente como Coluna. Se você não a renomear, as novas colunas serão nomeadas Coluna 2, Coluna 3 e assim por diante. Como você quer que sua coluna seja mais identificável, como o nome **Coluna** já está destacado na barra de fórmula, renomeie-o digitando **ProductFullCategory** e digite um sinal de igual ( **=** ).
     
 3.  Você quer que os valores na coluna nova comecem com o nome ProductCategory. Como esta coluna está em uma tabela diferente, mas relacionada, você pode usar a função [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) para conseguir obtê-la.
     
@@ -56,19 +56,19 @@ No Relatório de vendas, você quer exibir categorias e subcategorias de produto
     
     ![Escolha ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-4.  Você quer a coluna **ProductCategory** da tabela **ProductCategory**. Selecione **ProductCategory[ProductCategory]**, pressione **Enter** e, em seguida, digite um parêntese de fechamento.
+4.  Você quer a coluna **ProductCategory** da tabela **ProductCategory**. Selecione **ProductCategory[ProductCategory]** , pressione **Enter** e, em seguida, digite um parêntese de fechamento.
     
     > [!TIP]
     > Os erros de sintaxe são causados com mais frequência por um parêntese de fechamento ausente ou mal-posicionado, embora às vezes o Power BI Desktop os adicione para você.
     
-4. É preciso usar traços e espaços para separar as ProductCategories e ProductSubcategories nos novos valores; portanto, após o parêntese de fechamento da primeira expressão, digite um espaço, e comercial (**&**), aspas duplas (**"**), espaço, tracejado (**-**), outro espaço, aspas duplas outra e outro e comercial. Sua fórmula agora deve ter essa aparência:
+4. É preciso usar traços e espaços para separar as ProductCategories e ProductSubcategories nos novos valores; portanto, após o parêntese de fechamento da primeira expressão, digite um espaço, e comercial ( **&** ), aspas duplas ( **"** ), espaço, tracejado ( **-** ), outro espaço, aspas duplas outra e outro e comercial. Sua fórmula agora deve ter essa aparência:
     
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
     > Se precisar de mais espaço, selecione a divisa inferior no lado direito da barra de fórmulas para expandir o editor de fórmulas. No editor, pressione **Alt + Enter** para mover uma linha para baixo e pressione **Tab** para mudar a posição das coisas.
     
-5.  Insira outro colchete de abertura (**[**) e selecione a coluna **[ProductSubcategory]** para concluir a fórmula. 
+5.  Insira outro colchete de abertura ( **[** ) e selecione a coluna **[ProductSubcategory]** para concluir a fórmula. 
     
     ![Escolha ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
@@ -102,19 +102,19 @@ Felizmente, a tabela Stores tem uma coluna denominada **Status**, com valores de
 
 1.  Crie uma nova coluna calculada chamada **Stores** na tabela **Active StoreName** na barra de fórmulas.
     
-2.  Após o sinal **=**, comece digitando **IF**. A lista de sugestões mostrará o que você pode adicionar. Selecione **IF**.
+2.  Após o sinal **=** , comece digitando **IF**. A lista de sugestões mostrará o que você pode adicionar. Selecione **IF**.
     
     ![Selecione IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-3.  O primeiro argumento para IF é um teste lógico de se o status de um repositório estiver "Ativado". Digite um colchete de abertura **[**, que lista as colunas da tabela Stores e selecione **[Status]**.
+3.  O primeiro argumento para IF é um teste lógico de se o status de um repositório estiver "Ativado". Digite um colchete de abertura **[** , que lista as colunas da tabela Stores e selecione **[Status]** .
     
     ![Selecione Status](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-4.  Logo após **[Status]**, digite **= "On"** e, em seguida, digite uma vírgula (**,**) para terminar o argumento. A dica de ferramenta sugere que agora você precisa adicionar um valor a ser retornado quando o resultado for TRUE.
+4.  Logo após **[Status]** , digite **= "On"** e, em seguida, digite uma vírgula ( **,** ) para terminar o argumento. A dica de ferramenta sugere que agora você precisa adicionar um valor a ser retornado quando o resultado for TRUE.
     
     ![Adicionar o valor TRUE](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-5.  Se o status do repositório for "On", isso significará que você quer que o nome desse repositório seja exibido. Digite um colchete de abertura (**[**) e selecione a coluna **[StoreName]**, então digite outra vírgula. A dica de ferramenta agora indica que você precisa adicionar um valor a ser retornado quando o resultado for FALSE. 
+5.  Se o status do repositório for "On", isso significará que você quer que o nome desse repositório seja exibido. Digite um colchete de abertura ( **[** ) e selecione a coluna **[StoreName]** , então digite outra vírgula. A dica de ferramenta agora indica que você precisa adicionar um valor a ser retornado quando o resultado for FALSE. 
     
     ![Adicionar um valor FALSE](media/desktop-tutorial-create-calculated-columns/if4.png)
     

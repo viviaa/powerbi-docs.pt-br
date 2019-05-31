@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 033436e7078723508d6b9481807ace424c3f109f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396111"
+---
 O Power BI tem dois tipos diferentes de visualizações de mapa: um mapa de bolhas que coloca uma bolha sobre um ponto geográfico e um mapa de formas que, na verdade, mostra o contorno da área que você deseja visualizar.
 
 ![](media/3-5-create-map-visualizations/3-5_1.png)

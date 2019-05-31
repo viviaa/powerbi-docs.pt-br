@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8af5b1cf243d599ab68e9c2db1a3c6003f82c29f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273161"
+---
 Bem-vindo à seção **Aprendizado Interativo** do Power BI, desenvolvida para apresentá-lo ao **DAX**.
 
 **DAX** significa **Data Analysis Expressions** e é a linguagem de fórmula usada no Power BI (também usada pelo Power BI nos bastidores). O DAX também pode ser encontrado em outras ofertas da Microsoft, como o Power Pivot e SSAS de Tabela, mas esta coleção de tópicos do Aprendizado Interativo se concentra em como o DAX é usado – e pode ser usado por você – no Power BI.
@@ -16,11 +24,11 @@ O DAX é uma *linguagem funcional*, o que significa que o código executado comp
 
 No DAX, as funções podem conter outras funções aninhadas, instruções condicionais e referências de valor. A execução no DAX começa na função ou parâmetro mais interno e trabalha para fora. No Power BI, as fórmulas DAX são escritas em uma única linha e, portanto, a formatação correta das funções é importante para facilitar a leitura.
 
-O DAX foi projetado para funcionar com tabelas e, dessa forma, tem apenas dois tipos de dados primários: **Numéricos** e **Outros**. **Numéricos** podem incluir *inteiros*, *decimais* e *moeda*. **Outros** podem incluir *cadeias de caracteres* e *objetos binários*. Isso significa que, se você criar a função DAX para funcionar em um tipo de número, você poderá ter certeza de que ela funcionará em todos os outros dados Numéricos.
+DAX foi projetado para trabalhar com tabelas, portanto, tem apenas dois tipos de dados primário: **Numérico** e **outros**. **Numéricos** podem incluir *inteiros*, *decimais* e *moeda*. **Outros** podem incluir *cadeias de caracteres* e *objetos binários*. Isso significa que, se você criar a função DAX para funcionar em um tipo de número, você poderá ter certeza de que ela funcionará em todos os outros dados Numéricos.
 
 O DAX usa a sobrecarga de operador, o que significa que é possível combinar tipos de dados em seus cálculos e os resultados serão alterados com base no tipo de dados usado nas entradas. A conversão ocorre automaticamente. Isso indica que você não precisa conhecer os tipos de dados das colunas com as quais está trabalhando no Power BI, mas também significa que, às vezes, a conversão poderá ocorrer de maneiras inesperadas. É uma boa prática entender os dados que estão sendo usados para garantir que os operadores estão se comportando como previsto.
 
-Em particular, há um tipo de dados com o qual você provavelmente trabalhará muito no Power BI: **DateTime**. **DateTime** é armazenado como um valor de ponto flutuante com partes de inteiro e decimal. DateTime pode ser usado com precisão para cálculos de qualquer período após 1º de março de 1900.
+Há um tipo de dados específico que você provavelmente trabalhará com muito no Power BI: **Data e hora**. **DateTime** é armazenado como um valor de ponto flutuante com partes de inteiro e decimal. DateTime pode ser usado com precisão para cálculos de qualquer período após 1º de março de 1900.
 
 > Conteúdo do vídeo gentilmente cedido por [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
 > 
