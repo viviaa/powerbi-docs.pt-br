@@ -1,47 +1,63 @@
 ---
-title: Capturando de informações adicionais de diagnóstico
-description: Capturando de informações adicionais de diagnóstico
+title: Capturar informações adicionais de diagnóstico
+description: Estas instruções fornecem duas opções possíveis para coletar manualmente as informações adicionais de diagnóstico do cliente Web Power BI.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 04/25/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: b38e1e73b9829b4b86237f826b4245a6b95cfa36
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 710fb4cdcf9efb051434966d47c2eaced17ac9ba
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65100193"
 ---
-# <a name="capturing-additional-diagnostic-information"></a>Capturando de informações adicionais de diagnóstico
-## <a name="capturing-additional-diagnostic-information-for-power-bi"></a>Capturar Informações de Diagnóstico Adicionais para o Power BI
-Estas instruções fornecem duas opções possíveis para coletar manualmente as informações adicionais de diagnóstico do cliente Web Power BI.  Somente uma dessas opções deve ser seguida.
+# <a name="capture-additional-diagnostic-information-for-power-bi"></a>Capturar informações de diagnóstico adicionais para o Power BI
 
-## <a name="network-capture---edge--internet-explorer"></a>Captura de rede – Edge e Internet Explorer
-1. Navegue até [Power BI](https://app.powerbi.com) com o Microsoft Edge ou Internet Explorer.
-2. Abra as ferramentas de desenvolvedor do Edge pressionando F12.
-3. Isso abrirá a janela de Ferramentas de Desenvolvedor: 
-   
-   ![Ferramentas de desenvolvedor](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
-4. Mude para a guia Rede. Ele listará o tráfego que já foi capturado. 
-   
-   ![Guia de rede do Microsoft Edge](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
-5. É possível navegar na janela e reproduzir qualquer problema que talvez você esteja enfrentando. Você pode ocultar e mostrar a janela de ferramentas de desenvolvedor a qualquer momento durante a sessão, pressionando F12.
-6. Para interromper a captura, é possível selecionar o quadrado vermelho na guia Rede da área de ferramentas de desenvolvedor.
-   
-   ![Interromper a captura](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
-7. Selecione o ícone de disquete para **Exportar como HAR**
-   
-   ![Exportar o arquivo](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
-8. Forneça um nome de arquivo e salve o arquivo HAR.
-   
-    O arquivo HAR contém todas as informações sobre solicitações de rede entre a janela do navegador e o Power BI.  Isso incluirá as IDs de atividade para cada solicitação, o carimbo de data/hora preciso para cada solicitação e qualquer informação de erro retornado ao cliente.  Este rastreamento também conterá os dados usados para preencher os elementos visuais mostrados na tela.
-9. Você pode fornecer o arquivo HAR para dar suporte à análise.
+Este artigo fornece instruções para coletar manualmente as informações adicionais de diagnóstico do cliente web do Power BI.
+
+1. Navegue até [Power BI](https://app.powerbi.com) com Microsoft Edge ou Internet Explorer.
+
+1. Pressione **F12** para abrir as ferramentas de desenvolvedor do Microsoft Edge.
+
+   ![Guia de elementos de ferramentas de captura de tela de desenvolvedor de borda da Microsoft.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+
+1. Selecione a guia **Rede**. Ele listará o tráfego que já foi capturado.
+
+   ![Guia de rede de ferramentas de captura de tela de desenvolvedor de borda da Microsoft.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+
+    Você pode:
+
+    * Navegar na janela e reproduzir qualquer problema que você pode se deparar com.
+
+    * Ocultar e mostrar o desenvolvedor ferramentas janela a qualquer momento durante a sessão pressionando F12.
+
+1. Para interromper a sessão de criação de perfil, você pode selecionar o quadrado vermelho sobre o **rede** área de ferramentas da guia do desenvolvedor.
+
+   ![Guia de rede de ferramentas de captura de tela de desenvolvedor de borda da Microsoft com uma chamada fora do botão Parar.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+
+1. Selecione o ícone de disquete para exportar os dados como um arquivo do arquivo morto HTTP (HAR).
+
+   ![Guia de rede de ferramentas de captura de tela de desenvolvedor de borda da Microsoft com um balão do ícone de disquete.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+
+1. Forneça um nome de arquivo e salve o arquivo HAR.
+
+    O arquivo HAR contém todas as informações sobre solicitações de rede entre a janela do navegador e incluindo o Power BI:
+
+    * As IDs de atividade para cada solicitação.
+
+    * O carimbo de hora preciso para cada solicitação.
+
+    * Qualquer informação de erro é retornado ao cliente.
+
+    Este rastreamento também conterá os dados usados para preencher os elementos visuais mostrados na tela.
+
+1. Você pode fornecer o arquivo HAR para dar suporte à análise.
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-

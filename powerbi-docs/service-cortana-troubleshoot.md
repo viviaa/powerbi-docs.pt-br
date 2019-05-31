@@ -8,26 +8,23 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375225"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Solucionar problemas da Cortana para o Power BI
-Este artigo faz parte de uma série. Recomendamos que você confira os seguintes artigos, se ainda não os tiver lido.
+Este artigo faz parte de uma série. 
 
-**Artigo 1**: [Entenda como a Cortana e o Power BI funcionam juntos para pesquisar dashboards e relatórios do Power BI](service-cortana-intro.md)
+> [!IMPORTANT]
+> Integração com o Cortana está sendo preterida no Power BI. A partir de 11 de junho, Cortana deixarão de funcionar para todos os painéis e relatórios.
 
-**Artigo 2**: [Para pesquisar relatórios: habilitar a integração entre Cortana – Power BI – Windows](service-cortana-enable.md)
-
-**Artigo 3**: [Para pesquisar relatórios: criar cartões de respostas especiais da *Cortana*](service-cortana-answer-cards.md)
-
-Se ainda estiver com problemas para integrar a Cortana com o Power BI, você veio ao lugar certo. Siga as etapas abaixo para diagnosticar e corrigir o problema.
+Se você estiver tendo problemas ao obter o Cortana para integrar com o Power BI, você veio ao lugar certo. Siga as etapas abaixo para diagnosticar e corrigir o problema.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Por que a Cortana não encontra respostas nos meus relatórios ou dashboards do Power BI?
 1. Você tem uma conta do Power BI?  Caso não tenha, [inscreva-se em uma avaliação gratuita](https://powerbi.microsoft.com/get-started/).

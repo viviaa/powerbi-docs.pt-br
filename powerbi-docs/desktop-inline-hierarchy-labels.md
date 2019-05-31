@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454245"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Usar rótulos de hierarquia embutida no Power BI Desktop
@@ -51,7 +51,7 @@ Agora vamos examinar um gráfico diferente – usando dados com hierarquias info
 
 ![Gráfico com hierarquia informal](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Selecionar **Expandir para o próximo nível** mostra o próximo nível com a exibição embutida dos rótulos de hierarquia. Por padrão, as hierarquias embutidas são classificadas pelo valor de medida que, nesse caso, é **Quantidade**. Com os rótulos de hierarquia embutida habilitados, você também pode optar por classificar os dados pela hierarquia selecionando as reticências (**...**) no canto superior direito e, em seguida, selecionando **Classificar por ProductName ShipCountry**, conforme é mostrado na imagem a seguir.
+Selecionar **Expandir para o próximo nível** mostra o próximo nível com a exibição embutida dos rótulos de hierarquia. Por padrão, as hierarquias embutidas são classificadas pelo valor de medida que, nesse caso, é **Quantidade**. Com os rótulos de hierarquia embutida habilitados, você também pode optar por classificar os dados pela hierarquia selecionando as reticências ( **...** ) no canto superior direito e, em seguida, selecionando **Classificar por ProductName ShipCountry**, conforme é mostrado na imagem a seguir.
 
 ![Gráfico com a hierarquia informal classificada por padrão](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 
