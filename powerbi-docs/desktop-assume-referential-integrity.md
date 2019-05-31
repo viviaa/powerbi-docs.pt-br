@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 1e4e13ddf098d68d48fcbe968c325e9a9458b3df
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239890"
 ---
 # <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Configurações Pressupor integridade referencial no Power BI Desktop
@@ -35,10 +35,10 @@ Nesse contexto, a coluna **From** é *muitos* em uma relação *um-para-muitos*,
 ## <a name="example-of-using-assume-referential-integrity"></a>Exemplo de uso de Pressuposição de integridade referencial
 O exemplo a seguir demonstra como **Pressupor integridade referencial** se comporta quando usado em conexões de dados. O exemplo conecta-se a uma fonte de dados que inclui uma tabela **Orders**, uma tabela **Products** e uma tabela **Depots**.
 
-1. Na imagem a seguir, que mostra a tabela **Orders** e a tabela **Products**, observe que a integridade referencial existe entre **Orders[ProductID]** e **Products[ProductID]**. A coluna **[ProductID]** na tabela **Orders** nunca é *nula* e cada valor aparece também na tabela **Products**. Como tal, **Pressupor integridade referencial** deve ser definido para obter consultas mais eficientes (usar essa configuração não altera os valores mostrados em elementos visuais).
+1. Na imagem a seguir, que mostra a tabela **Orders** e a tabela **Products**, observe que a integridade referencial existe entre **Orders[ProductID]** e **Products[ProductID]** . A coluna **[ProductID]** na tabela **Orders** nunca é *nula* e cada valor aparece também na tabela **Products**. Como tal, **Pressupor integridade referencial** deve ser definido para obter consultas mais eficientes (usar essa configuração não altera os valores mostrados em elementos visuais).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. Na próxima imagem, observe que nenhuma integridade referencial existe entre **Orders [DepotID]** e **Depots[DepotID]**, pois o **DepotID** é *nulo* para alguns *Orders*. Como tal, **Pressupor integridade referencial** não*deve* ser definido.
+2. Na próxima imagem, observe que nenhuma integridade referencial existe entre **Orders [DepotID]** e **Depots[DepotID]** , pois o **DepotID** é *nulo* para alguns *Orders*. Como tal, **Pressupor integridade referencial** não*deve* ser definido.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
 3. Por fim, não há integridade referencial entre **Orders[CustomerID]** e **Customers[CustID]** nas tabelas a seguir; o **CustomerID** contém alguns valores (nesse caso, *CustX*) que não existem na tabela *Customers*. Como tal, **Pressupor integridade referencial** não*deve* ser definido.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
-ms.translationtype: HT
+ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853445"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Fontes de dados no Power BI Desktop
 O Power BI Desktop permite se conectar a dados de várias fontes diferentes. Veja uma lista completa das fontes de dados disponíveis na parte inferior desta página.
@@ -51,7 +51,7 @@ A categoria **Arquivo** fornece as seguintes conexões de dados:
 * XML
 * JSON
 * Pasta
-* PDF (beta)
+* PDF
 * Pasta do SharePoint
 
 A imagem a seguir mostra a janela **Obter Dados** para **Arquivo**.
@@ -79,14 +79,16 @@ A categoria **Banco de dados** fornece as seguintes conexões de dados:
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbase (Beta)
-* Dremio
-* Exasol
-* MarkLogic (Beta)
+* Essbase
 * Cubos do AtScale (Beta)
 * Conector do BI
+* Dremio
+* Exasol
+* Indexima (Beta)
+* InterSystems IRIS (Beta)
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
+* MarkLogic (Beta)
 
 > [!NOTE]
 > Alguns conectores de banco de dados exigem que você os habilite selecionando **Arquivo > Opções e configurações > Opções**, em seguida, **Recursos de Visualização** e habilitando o conector. Se você não vir alguns dos conectores mencionados acima e quiser usá-los, verifique suas configurações de **Recursos de Visualização**. Observe também que toda fonte de dados marcada como *Beta* ou *Visualização* tem suporte e funcionalidade limitados e não deve ser usada em ambientes de produção.
@@ -98,7 +100,7 @@ A imagem a seguir mostra a janela **Obter Dados** para **Banco de dados**.
 A categoria **Power BI** fornece as seguintes conexões de dados:
 
 * Conjuntos de dados do Power BI
-* Fluxos de dados do Power BI (Beta)
+* Fluxos de dados do Power BI
 
 A imagem a seguir mostra a janela **Obter Dados** do **Power BI**.
 
@@ -112,11 +114,12 @@ A categoria **Azure** fornece as seguintes conexões de dados:
 * Armazenamento de Blobs do Azure
 * Armazenamento de Tabelas do Azure
 * Azure Cosmos DB (Beta)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * Consulta Interativa do HDInsight
-* Azure Data Explorer (Beta)
+* Gerenciador de dados do Azure (Kusto)
+* Gerenciamento de custos do Azure (Beta)
 
 A imagem a seguir mostra a janela **Obter Dados** para **Azure**.
 
@@ -157,9 +160,10 @@ A categoria **Serviços Online** fornece as seguintes conexões de dados:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * ZenDesk (Beta)
-* TeamDesk (Beta)
 * Fonte de dados do Emigo (Beta)
+* IndustrialAppStore (Beta)
 * Segurança do Microsoft Graph (Beta)
+* TeamDesk (Beta)
 
 A imagem a seguir mostra a janela **Obter Dados** para **Online Services**.
 
@@ -178,12 +182,16 @@ A categoria **Outros** fornece as seguintes conexões de dados:
 * Script Python
 * ODBC
 * OLE DB
-* Workforce Dimensions (Beta)
+* BI360 - orçamento e financeiro Reporting (Beta)
 * Denado
-* Paxata (Beta)
-* SurveyMonkey (Beta)
+* Grade de informações (Beta)
+* Paxata 
 * QubolePresto (Beta)
 * Quick Base (Beta)
+* Roamler (Beta)
+* SurveyMonkey (Beta)
+* Tenforce (Beta)
+* Workforce Dimensions (Beta)
 * Consulta em Branco
 
 A imagem a seguir mostra a janela **Obter Dados** para **Outros**.

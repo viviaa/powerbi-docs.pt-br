@@ -1,24 +1,22 @@
 ---
 title: Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI
 description: Saiba como instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2019
-ms.openlocfilehash: 7abf679c663f9c71c277c74960fe65c9aee6568d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 54713c9c978554521d68aeb7b4c25d681ddb3d69
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324957"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187419"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI
-
-Saiba como instalar o Power BI Desktop otimizado para o Servidor de Relatório do Power BI.
 
 Para criar relatórios do Power BI para o Servidor de Relatórios do Power BI você precisa baixar e instalar o Power BI Desktop otimizado para o Servidor de Relatórios do Power BI. Essa versão é diferente do Power BI Desktop usado com o serviço do Power BI. Por exemplo, a versão do Power BI Desktop para o serviço do Power BI inclui a versão prévia dos recursos que não estão na versão do Servidor de Relatórios do Power BI até que sejam liberados. Usar essa versão garante que o servidor de relatórios pode interagir com uma versão conhecida dos relatórios e do modelo. 
 
@@ -32,7 +30,7 @@ A maneira mais fácil de ter certeza que você tem a versão mais recente do Pow
 
     ![Baixe o Power BI Desktop no portal da Web](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Ou acesse diretamente o [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2055039) (Otimizado para o Servidor de Relatórios do Microsoft Power BI – janeiro de 2019) no Centro de Download da Microsoft.
+    Ou vá diretamente para [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (otimizado para o servidor de relatório do Power BI – maio de 2019) no Microsoft Download Center.
 
 2. Na página do Centro de Download, selecione **Baixar**.
 
@@ -42,16 +40,16 @@ A maneira mais fácil de ter certeza que você tem a versão mais recente do Pow
 
     - **PBIDesktopRS_x64.msi** (a versão de 64 bits).
 
-1. Depois de baixar o instalador, execute o Assistente de Instalação do Power BI Desktop (janeiro de 2019).
+1. Depois de baixar o instalador, execute o Assistente de instalação do Power BI Desktop (maio de 2019).
 
-2. No final da instalação, marque **Iniciar o Power BI Desktop agora**.
+2. No final da instalação, selecione **inicie o Power BI Desktop**.
 
     Ele é iniciado automaticamente e você está pronto para começar.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Verifique se você está usando a versão correta
 É fácil verificar se você está usando o Power BI Desktop correto: Observe a tela de inicialização ou a barra de título no Power BI Desktop. A barra de título indica o mês e o ano do lançamento. Além disso, as cores de logotipo do Power BI estão invertidas; amarelo em preto, em vez do preto em amarelo.
 
-![Barra de título do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
+![Barra de título do Power BI Desktop otimizada para o Servidor de Relatórios do Power BI](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
 
 A versão do Power BI Desktop para o serviço do Power BI não possui o mês nem o ano na barra de título.
 
@@ -62,7 +60,7 @@ Se você tiver o Power BI Desktop e, em seguida, instalar o Power BI Desktop oti
 
 Sempre é possível abrir a versão do Power BI Desktop que você deseja usar primeiro. E, em seguida, abra o arquivo no Power BI Desktop.
 
-Editar um relatório do Power BI no Servidor de Relatórios do Power BI ou criar um novo relatório do Power BI no portal da Web sempre abre a versão correta do Power BI Desktop.
+Editando um relatório do Power BI no servidor de relatório do Power BI ou criar um novo relatório do Power BI no portal da web, sempre é aberta a versão correta do Power BI Desktop.
 
 ## <a name="considerations-and-limitations"></a>Considerações e limitações
 
@@ -70,11 +68,7 @@ Os relatórios do Power BI no Servidor de Relatórios do Microsoft Power BI e no
 
 ### <a name="in-a-browser"></a>Em um navegador
 
-Os relatórios do Servidor de Relatório do Power BI dão suporte a todas as visualizações, inclusive:
-
-* Elementos visuais personalizados
-
-Os relatórios do Servidor de Relatório do Power BI não dão suporte a:
+Os relatórios do Power BI Report Server dão suporte a quase todas as visualizações, incluindo elementos visuais personalizados. Os relatórios do Servidor de Relatório do Power BI não dão suporte a:
 
 * Visuais do R
 * Mapas ArcGIS
@@ -95,13 +89,13 @@ Os relatórios do Servidor de Relatório do Power BI não dão suporte a estes r
 * Mapas ArcGIS
 * Elementos visuais personalizados
 * Trilhas
-* Filtragem geográfica ou códigos de barra
+* Geográfica filtragem ou códigos de barra
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop para versões anteriores do Servidor de Relatórios do Power BI
 
-Se seu servidor de relatório é de uma versão anterior, você precisa da versão correspondente do Power BI Desktop. Aqui está a versão anterior.
+Se seu servidor de relatório é de uma versão anterior, você precisa da versão correspondente do Power BI Desktop. Aqui está o link para baixar a versão anterior.
 
-- Microsoft Power BI Desktop ([otimizado para o Servidor de Relatórios do Power BI – agosto de 2018](https://www.microsoft.com/download/details.aspx?id=57271))
+- Microsoft Power BI Desktop ([otimizado para o Power BI Report Server – janeiro de 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## <a name="next-steps"></a>Próximas etapas
 

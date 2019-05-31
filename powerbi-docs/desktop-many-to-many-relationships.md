@@ -11,10 +11,10 @@ ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
-ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65941443"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relações com uma cardinalidade muitos para muitos no Power BI Desktop
@@ -39,7 +39,7 @@ Por exemplo, duas tabelas podem ter uma coluna com o rótulo *País*, mas os val
 
 ## <a name="use-relationships-with-a-many-many-cardinality"></a>Usar *relações com uma cardinalidade muitos para muitos*
 
-Ao definir uma relação entre duas tabelas no Power BI, é preciso definir a cardinalidade da relação. Por exemplo, a relação entre *ProductSales* e *Produto*&mdash;usando as colunas *ProductSales[ProductCode]* e *Product[ProductCode]*&mdash;seria definida como *Muitos para um*. Definimos a relação dessa forma porque há muitas vendas para cada produto e a coluna na tabela *Produto* *(ProductCode)* é exclusiva. Ao definir uma cardinalidade da relação como *Muitos para um*, *Um para muitos* ou *Um para um*, o Power BI a valida para ajudar a garantir que a cardinalidade selecionada corresponda aos dados reais.
+Ao definir uma relação entre duas tabelas no Power BI, é preciso definir a cardinalidade da relação. Por exemplo, a relação entre *ProductSales* e *Produto*&mdash;usando as colunas *ProductSales[ProductCode]* e *Product[ProductCode]* &mdash;seria definida como *Muitos para um*. Definimos a relação dessa forma porque há muitas vendas para cada produto e a coluna na tabela *Produto* *(ProductCode)* é exclusiva. Ao definir uma cardinalidade da relação como *Muitos para um*, *Um para muitos* ou *Um para um*, o Power BI a valida para ajudar a garantir que a cardinalidade selecionada corresponda aos dados reais.
 
 Por exemplo, confira o modelo simples na imagem a seguir:
 

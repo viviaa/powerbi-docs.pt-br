@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5fc013df4526c62a9f2e1aa25328119983aaa30e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278091"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65239752"
 ---
 # <a name="customizing-tooltips-in-power-bi-desktop"></a>Personalizando Dicas de Ferramenta no Power BI Desktop
 Dicas de ferramenta são uma maneira elegante de fornecer mais informações contextuais e detalhes sobre pontos de dados em um visual. A imagem a seguir mostra uma dica de ferramenta aplicada a um gráfico no Power BI Desktop.
 
 ![Dica de ferramenta padrão](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-Quando uma visualização é criada, a dica de ferramenta padrão exibe a categoria e o valor do ponto de dados. Há muitas situações em poder personalizar as informações nas dicas de ferramenta seria útil e forneceria contexto e informações adicionais para usuários que veem o visual. Dicas de ferramentas personalizadas permitem que você especifique os pontos de dados adicionais que são exibidos como parte da dica de ferramenta.
+Quando uma visualização é criada, a dica de ferramenta padrão exibe a categoria e o valor do ponto de dados. Há muitas instâncias ao personalizar as informações de dica de ferramenta é útil e pode fornecer contexto adicional e informações para os usuários veem o visual. Dicas de ferramentas personalizadas permitem que você especifique os pontos de dados adicionais que são exibidos como parte da dica de ferramenta.
 
 ## <a name="how-to-customize-tooltips"></a>Como personalizar dicas de ferramentas
-Para criar uma dica de ferramenta personalizada, nos **Campos** do painel **Visualizações**, basta arrastar um campo para o bucket **Dicas de ferramenta**, mostrado na imagem a seguir. Na imagem a seguir, dois campos foram colocados no bucket **Dicas de ferramenta**.
+Para criar uma dica de ferramenta personalizada na **campos** do **visualizações** painel arraste um campo para o **dicas de ferramenta** bucket, mostrado na imagem a seguir. Na imagem a seguir, dois campos foram colocados no bucket **Dicas de ferramenta**.
 
 ![Campos Adicionar dica de ferramenta](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -38,5 +38,5 @@ Você pode personalizar mais a dica de ferramenta selecionando uma função de a
 
 ![Dica de ferramenta com o Cálculo Rápido](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-Há muitas maneiras de personalizar **Dicas de ferramenta**, usando qualquer campo disponível no conjunto de dados, para transmitir informações e ideias rápidas para usuários que veem seus dashboards ou relatórios.
+Há várias maneiras de personalizar **dicas de ferramenta**, usando qualquer campo disponível no conjunto de dados, para transmitir informações rápidas e insights para usuários que veem seus dashboards ou relatórios.
 

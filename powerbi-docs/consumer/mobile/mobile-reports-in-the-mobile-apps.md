@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 04/21/2019
 ms.author: mshenhav
-ms.openlocfilehash: 037cab2435abddc0988d076f6598ab8313b4dda6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bee60dd6f3254b049f2445e6e985c625933caf5b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565541"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorar relatórios nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -32,89 +32,78 @@ Um relatório do Power BI é uma exibição interativa de seus dados, com visuai
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Abrir um relatório do Power BI no aplicativo móvel
 Os relatórios do Power BI são armazenados em locais diferentes no aplicativo móvel, dependendo de onde eles foram obtidos. Eles podem estar em Aplicativos, Compartilhado comigo, Workspaces (incluindo Meu Workspace) ou em um servidor de relatório. Às vezes, você percorre um dashboard relacionado para obter um relatório e, às vezes, ele é listado.
 
-* Em um dashboard, toque nas reticências (...) no canto superior direito de um bloco > **Abrir relatório**.
+Listas e menus, você encontrará um ícone ao lado de um nome de relatório, ajudando você a entender que este item é um relatório. 
+
+![relatórios no meu espaço de trabalho](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+
+Há dois ícones para relatórios nos aplicativos móveis do Power BI:
+
+* ![ícone de relatório](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indica um relatório que será apresentado na orientação paisagem no aplicativo e terão a mesma aparência como ela aparece no navegador.
+
+* ![Ícone de relatório do telefone](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indica um relatório que tenha pelo menos uma página de relatório otimizado para telefone, que será apresentada em retrato. 
+
+Observação: Com seu telefone em paisagem, você sempre obterá o layout de paisagem, mesmo se a página de relatório tem o layout do telefone. 
+
+Para obter um relatório de um dashboard, toque nas reticências (...) no canto superior direito de um bloco > **abrir relatório**.
   
   ![Abrir relatório](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Nem todos os blocos têm a opção de serem abertos em um relatório. Por exemplo, os blocos criados por meio de uma pergunta na caixa de P e R não abrem relatórios quando você toca neles. 
   
-  Em um telefone, o relatório é aberto no modo paisagem, a menos que seja [otimizado para exibição em um telefone](mobile-reports-in-the-mobile-apps.md#view-reports-optimized-for-phones).
-  
-  ![Relatório para telefone no modo paisagem](./media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
+## <a name="interacting-with-reports"></a>Interagir com relatórios
+Quando você tiver um relatório aberto no aplicativo, você pode começar a trabalhar com ele. Há muitas coisas que você pode fazer com seu relatório e seus dados. No rodapé do relatório, você encontrará as ações que você pode executar no relatório e tocar e os dados mostrados no relatório, você também pode fatiar e dividir os dados de um toque longo.
 
-## <a name="view-reports-optimized-for-phones"></a>Exibir relatórios otimizados para telefones
-Os autores de relatório do Power BI podem criar um layout de relatório especificamente otimizado para telefones. As páginas de relatório otimizadas para telefones têm funcionalidade adicionada: por exemplo, você pode fazer uma busca detalhada de visuais e classificá-los, além de acessar os [filtros que o autor do relatório adicionou à página do relatório](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). O relatório é aberto no seu telefone, filtrado para os valores filtrados no relatório na Web, com uma mensagem de que há filtros ativos na página. É possível alterar os filtros no seu telefone.
+### <a name="using-tap-and-long-tap"></a>Usando o toque e toque longa
+Clique em toque igual a um mouse. Portanto, se você quiser realizar o realce cruzado do relatório com base em um ponto de dados, toque no ponto de dados.
+Tocando em um valor de segmentação de dados, torna o valor selecionado e o restante do relatório de divisão por aquele valor. Tocando em um link, botão ou indicador será ativá-lo com base na ação definida pelo autor.
 
-Em uma lista de relatórios, um relatório otimizado tem um ícone especial ![Ícone de relatório para telefone](./media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Você deve ter notado que quando você toca em um visual, uma borda é exibida. No canto superior direito da borda, não há botão de reticências (...). Tocar nele, trará um menu com as ações que você pode fazer no visual.
 
-![Abrir relatório para telefone](./media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
+![visual do relatório e menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-Quando você exibe esse relatório em um telefone, ele é aberto no modo retrato.
+### <a name="tooltip-and-drill-actions"></a>Dica de ferramenta e simulação de ações
 
-![Relatório no modo de exibição de retrato](./media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
+Quando você longa toca (tap e hold) um ponto de dados, uma dica de ferramenta aparecerá apresentar os valores que representa este ponto de dados. 
 
- Um relatório pode ter uma combinação de páginas que são e não são otimizadas para telefones. Nesse caso, quando você percorre o relatório, a exibição será alternada de retrato para paisagem em cada página.
+![Dica de ferramenta de relatório](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Leia mais sobre os [relatórios otimizados para exibição do telefone](mobile-apps-view-phone-report.md).
+Os autores de relatório podem definir hierarquias dos dados e as relações entre as páginas do relatório. Hierarquia permite o detalhamento, análise e drill-through outra página de relatório de um visual e um valor. Dessa forma, quando você toca longa em um valor, além de dicas de ferramentas, as opções de análise relevante serão exibida no rodapé. 
 
-## <a name="use-slicers-to-filter-a-report"></a>Usar segmentações para filtrar um relatório
-Ao criar um relatório no Power BI Desktop ou serviço Power BI, [adicione segmentações a uma página do relatório](../../visuals/power-bi-visualization-slicers.md). Você e seus colegas podem usar as segmentações para filtrar a página em um navegador e nos aplicativos móveis. Quando você exibir o relatório em um telefone, poderá ver e interagir com as segmentações em modo paisagem e em uma página otimizada para o modo de retrato do telefone. Se você selecionar um valor em uma segmentação ou filtro no navegador, o valor será selecionado quando você visualizar a página no aplicativo móvel também. Você verá uma mensagem informando que existem filtros ativos na página.  
+![Relate ações de drill](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-* Quando você seleciona um valor em uma segmentação na página do relatório, ela filtra os outros visuais da página.
-  
-  ![Segmentação de relatório](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-slicer.png)
-  
-  Nesta ilustração, a segmentação está filtrando o gráfico de colunas para mostrar apenas os valores de julho.
-
-## <a name="cross-filter-and-highlight-a-report"></a>Realizar filtragem cruzada e destacar um relatório
-Quando você seleciona um valor em um visual, ele não filtra os outros visuais. Ele realça os valores relacionados nos outros visuais.
-
-* Toque em um valor de um visual.
-  
-  ![Realizar filtragem cruzada de uma página](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-highlight.png)
-  
-  Tocar na coluna Grande de um visual realça os valores relacionados nos outros visuais. 
-
-## <a name="sort-a-visual-on-an-ipad-or-a-tablet"></a>Classificar um visual em um iPad ou tablet
-* Toque no gráfico, toque nas reticências (**...**) e toque no nome do campo.
-  
-   ![Classificar um visual](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
-* Para inverter a ordem de classificação, toque nas reticências (**...**) novamente e, depois, toque no mesmo nome de campo novamente.
-
-## <a name="drill-down-and-up-in-a-visual"></a>Fazer drill down e up em um visual
-Se o autor de um relatório tiver adicionado a funcionalidade de drill down a um visual, você poderá fazer drill down no visual para ver os valores que compõem uma parte dele. Você [adiciona o drill down em um visual](../end-user-drill.md) no Power BI Desktop ou no serviço do Power BI. 
-
-* Toque e segure uma barra ou um ponto específico em um visual para exibir sua dica de ferramenta. Se ele tiver drill down, a parte inferior da dica de ferramenta terá setas que podem ser tocadas. 
-  
-  ![Fazer drill down em um visual](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
-
-* Para fazer drill up, toque na seta para cima na dica de ferramenta.
-  
-  ![Fazer drill up](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
-
-* Você também pode fazer drill down em todos os pontos de dados em um visual. Abra-o no modo de foco, toque no ícone Explorar e, em seguida, escolha mostrar todos os próximos níveis ou expanda para mostrar o nível atual e o próximo.
-
-   ![Fazer drill down em todos no Power BI](./media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
-
-## <a name="drill-through-from-one-page-to-another"></a>Fazer drill down de uma página para outra
-
-Com o *detalhamento*, quando você toca em uma parte específica de um visual, o Power BI leva a uma página diferente no relatório, filtrada com o valor tocado. O autor de um relatório pode definir uma ou mais opções de detalhamento, cada uma levando a uma página diferente. Nesse caso, você pode escolher para qual delas deseja exibir o detalhamento. No exemplo a seguir, ao tocar o valor no medidor, você pode escolher entre o detalhamento de **gasto por área de negócios** ou de **planejamento por área de negócios**.
-
-![Relatório detalhado do Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
-
-Quando você faz o detalhamento, o botão Voltar retorna à página anterior do relatório.
+Com o *detalhamento*, quando você toca em uma parte específica de um visual, o Power BI leva a uma página diferente no relatório, filtrada com o valor tocado.  O autor de um relatório pode definir uma ou mais opções de detalhamento, cada uma levando a uma página diferente. Nesse caso, você pode escolher para qual delas deseja exibir o detalhamento. O botão Voltar o levará de volta à página do relatório anterior.
 
 Veja como [Adicionar o detalhamento no Power BI Desktop](../../desktop-drillthrough.md).
+   
+   > [!IMPORTANT]
+   > No aplicativo móvel do Power BI, drill em visuais de matriz e tabela está habilitado por meio de um valor de célula e não por cabeçalhos de coluna e linha.
+   
+   
+   
+### <a name="using-the-actions-in-the-report-footer"></a>Usando as ações no rodapé do relatório
+O rodapé do relatório tem ações que você pode fazer na página do relatório atual ou em todo o relatório. O rodapé tem acesso rápido às ações mais úteis e todas as ações podem ser acessadas no botão de reticências (...).
 
-## <a name="show-data-and-copy-values"></a>Mostrar valores de dados e cópia
+![rodapé do relatório](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-Ao selecionar as reticências das opções de menu (**...**) no canto superior direito de uma visualização em um relatório de telefone, depois selecionar **Mostrar dados**, você pode ver os dados subjacentes a uma visualização.
+As ações que você pode executar no rodapé são:
+1) Redefina o filtro de relatório e seleções de volta ao estado original de realce cruzado.
+2) Abra o painel de conversa para exibir ou adicionar comentários neste relatório.
+3) Abra o painel de filtro para exibir e modificar o filtro aplicado no momento no relatório.
+4) Liste todas as páginas neste relatório. Toque no nome da página carregará e apresentar nessa página.
+Mover entre as páginas de relatório pode ser feito passando o dedo da borda da tela para o centro.
+5) Exiba todas as ações de relatório.
 
-![Opção de menu Mostrar dados, do Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+#### <a name="all-report-actions"></a>Todas as ações de relatório
+Tocando na... opção no rodapé do relatório, exibirá todas as ações que você pode executar em um relatório. 
 
-Um toque longo em uma célula na tabela exibida mostra o menu nativo de seleção e cópia, assim você poderá escolher copiar alguns dados da tabela (ou a tabela inteira).
+![todas as ações de relatório](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-![Relatório detalhado do Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
+Algumas das ações podem ser desabilitadas, pois são dependentes nos recursos de relatório específico.
+Por exemplo:
+1) **Filtrar por localização atual** estará habilitada se os dados em seu relatório foi categorizados pelo autor com dados geográficos. [Saiba como identificar dados geográficos em seu relatório](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Verificação para filtrar o relatório por código de barras** estará habilitada apenas se o conjunto de dados em seu relatório foi marcado como código de barras. [Como marcar códigos de barras no Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Convidar** estará habilitada apenas se você tem permissão para compartilhar este relatório com outras pessoas. Você terá permissão somente se você for o proprietário do relatório ou se você recebeu permissão de compartilhar novamente pelo proprietário.
+4) **Anotar e compartilhar** pode ser disable se não houver uma [política de proteção Intune](https://docs.microsoft.com/intune/app-protection-policies) em sua organização que proibidos de compartilhamento do aplicativo móvel do Power BI. 
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Exibir e interagir com relatórios do Power BI otimizados para seu telefone](mobile-apps-view-phone-report.md)

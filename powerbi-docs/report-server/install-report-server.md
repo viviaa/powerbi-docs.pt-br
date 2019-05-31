@@ -1,30 +1,32 @@
 ---
 title: Instalar o Servidor de Relatório do Power BI
 description: Saiba como instalar o Servidor de Relatório do Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2018
-ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014428"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187734"
 ---
 # <a name="install-power-bi-report-server"></a>Instalar o Servidor de Relatório do Power BI
 
 Saiba como instalar o Servidor de Relatório do Power BI.
 
- **Baixe** ![baixe](media/install-report-server/download.png "baixe")
+## <a name="download-power-bi-report-server"></a>Fazer o download do Servidor de Relatórios do Power BI
 
-Para baixar o Servidor de Relatório do Power BI, acesse [Relatórios locais com o Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/report-server/) e selecione **Baixar avaliação gratuita**. 
+[Baixar o Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) do Centro de Download da Microsoft.
 
-## <a name="before-you-begin"></a>Antes de começar
+Também é uma versão de avaliação gratuita. Sobre o [relatórios com o servidor de relatório do Power BI locais](https://powerbi.microsoft.com/report-server/) página, selecione **Baixe a avaliação gratuita**.
+
+## <a name="before-you-install"></a>Antes de instalar
 
 Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que você examine os [Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI](system-requirements.md).
 
@@ -32,6 +34,13 @@ Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que vo
  > Embora você possa instalar o Servidor de Relatórios do Microsoft Power BI em um ambiente que tenha um RODC (Controlador de domínio somente leitura), o Servidor de Relatórios do Microsoft Power BI precisa acessar um Controlador de Domínio Leitura-Gravação para funcionar adequadamente. Se o Servidor de Relatórios do Power BI só tiver acesso a um RODC, talvez ocorram erros ao tentar administrar o serviço.
 
 ### <a name="power-bi-report-server-product-key"></a>Chave do produto (Product Key) do Servidor de Relatório do Power BI
+
+Você pode obter a chave do produto para o servidor de relatório do Power BI de duas fontes diferentes:
+
+- Power BI Premium
+- SQL Server Enterprise SA (Software Assurance)
+
+Continue lendo para obter detalhes.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -66,8 +75,8 @@ Não é necessário que um servidor do Mecanismo de Banco de Dados do SQL Server
 
     ![Edição 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Caso contrário, é possível inserir uma chave do produto (Product Key) para o servidor que você obteve do serviço do Power BI ou do Centro de Serviços de Licenciamento por Volume. Para obter mais informações sobre como obter a sua chave do produto (Product Key), consulte a seção [Antes de começar](#before-you-begin).
-4. Leia e concorde com os termos e condições e, em seguida, selecione **Avançar**.
+    Caso contrário, insira a chave do produto que você obteve no serviço do Power BI ou o Centro de serviços de licença de Volume. Para obter mais informações sobre como obter a chave do produto, consulte o [antes de instalar o](#before-you-install) seção acima.
+4. Ler e concordar com os termos de licença e condições e selecione **próxima**.
 
     ![Termos de licença](media/install-report-server/pbireportserver-eula.png)
 5. É necessário ter um Mecanismo de Banco de Dados disponível para armazenar o banco de dados do servidor de relatório. Selecione **Avançar** para instalar somente o servidor de relatório.
@@ -83,7 +92,7 @@ Não é necessário que um servidor do Mecanismo de Banco de Dados do SQL Server
 
     ![Configurar o servidor de relatório](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configuring-your-report-server"></a>Configurando o servidor de relatório
+## <a name="configure-your-report-server"></a>Configurar seu servidor de relatório
 
 Depois de selecionar **Configurar o servidor de relatório** na instalação, será exibido o Gerenciador de Configurações do Reporting Services. Para obter mais informações, consulte [Gerenciador de Configurações do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 

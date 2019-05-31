@@ -1,36 +1,34 @@
 ---
-title: Criar workspaces com seus colegas no Power BI
-description: Saiba como criar workspaces, coleções de dashboards e relatórios criados para oferecer métricas-chave para sua organização.
+title: Criar espaços de trabalho clássicos no Power BI
+description: Saiba como criar espaços de trabalho, coleções de dashboards, relatórios e relatórios paginados criados para fornecer métricas importantes para sua organização.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23c011eded113a0249f5e4a354f909a30bc97148
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: dcf9b8befabfec98fcae154e6276f8e698b3ddc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277889"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61150735"
 ---
-# <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Criar workspaces com seus colegas no Power BI
+# <a name="create-classic-workspaces-in-power-bi"></a>Criar espaços de trabalho clássicos no Power BI
 
-No Power BI, é possível criar *workspaces*, lugares para colaborar com colegas para criar e refinar coleções de dashboards e de relatórios. Em seguida, você agrupa a coleção em *aplicativos* que podem ser distribuídos para toda a organização ou para pessoas ou grupos específicos. 
+No Power BI, você pode criar *espaços de trabalho*, coloca para colaborar com colegas para criar e refinar as coleções de dashboards, relatórios e relatórios paginados. Em seguida, você pode agrupar a coleção em *aplicativos* que você pode distribuir para toda a organização ou para pessoas ou grupos específicos. 
 
-![Aplicativos do Power BI](media/service-create-workspaces/power-bi-apps-left-nav.png)
+**Você sabia?** Power BI oferece uma nova experiência de espaço de trabalho, que agora é o padrão. Leia [organizar o trabalho em espaços de trabalho novo](service-new-workspaces.md) para obter detalhes sobre os novos espaços de trabalho. 
 
-Quando você cria um workspace, você está criando um grupo do Office 365 associado e subjacente. Toda a administração do espaço de trabalho é feita no Office 365. Você pode adicionar colegas a esses workspaces como membros ou administradores. No workspace, todos podem colaborar em dashboards, relatórios e outros artigos que você planeja distribuir para um público-alvo maior. Todos que você adicionar a um workspace de aplicativo precisam de uma licença do Power BI Pro. 
-
-**Você sabia?** O Power BI está com uma nova experiência de workspace em versão prévia. Leia [Organizar o trabalho em novos workspaces (versão prévia)](service-new-workspaces.md) para obter detalhes sobre os novos workspaces. 
+Quando você cria um espaço de trabalho clássico, você está criando um grupo do Office 365 subjacente, associado. Toda a administração do espaço de trabalho é feita no Office 365. Você pode adicionar colegas a esses workspaces como membros ou administradores. No workspace, todos podem colaborar em dashboards, relatórios e outros artigos que você planeja distribuir para um público-alvo maior. Todos que você adicionar a um workspace de aplicativo precisam de uma licença do Power BI Pro. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Vídeo: Aplicativos e workspaces de aplicativo
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Criar um workspace de aplicativo com base em um grupo do Office 365
+## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Criar um espaço de trabalho do aplicativo clássico com base em um grupo do Office 365
 
 Quando você cria um workspace de aplicativo, ele é criado em um grupo do Office 365.
 
@@ -52,6 +50,8 @@ Por padrão, o Power BI cria um pequeno círculo colorido com as iniciais do seu
 3. Selecione o ícone de lápis novamente e localize a imagem que você deseja usar.
    
      ![Selecionar o lápis novamente](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Imagens podem ser arquivos. bmp,. jpg ou. PNG. Tamanho do arquivo pode ser grande, backup para 3 MB. 
 
 4. Selecione **Salvar**.
    
@@ -77,9 +77,16 @@ Nos workspaces atuais, também é possível conectar usando pacotes de conteúdo
 
 ## <a name="distribute-an-app"></a>Distribuir um aplicativo
 
-Quando o conteúdo estiver pronto, escolha quais dashboards e relatórios você deseja publicar e, em seguida, publique-o como um *aplicativo*. Seus colegas podem obter seus aplicativos de diferentes maneiras. Você poderá instalá-los automaticamente nas contas do Power BI dos seus colegas se o administrador do Power BI der permissão. Caso contrário, eles podem localizar e instalar seus aplicativos no Microsoft AppSource ou você pode enviar um link direto. Eles recebem atualizações automaticamente e você pode controlar a frequência com que os dados são atualizados. Consulte [Publicar aplicativos com dashboards e relatórios no Power BI](service-create-distribute-apps.md) para obter detalhes.
+Se você quiser distribuir o conteúdo oficial para um grande público dentro de sua organização, você pode publicar um aplicativo do seu espaço de trabalho.  Quando o conteúdo estiver pronto, escolha quais painéis e relatórios que você deseja publicar e, em seguida, publicá-lo como um *aplicativo*. Você pode criar um aplicativo de cada workspace.
 
-## <a name="power-bi-apps-faq"></a>Perguntas frequentes sobre os aplicativos do Power BI
+A lista de aplicativos no painel de navegação à esquerda mostra todos os aplicativos que você instalou. Seus colegas podem obter seu aplicativo de algumas maneiras diferentes. 
+- Eles podem localizar e instalar seu aplicativo no Microsoft AppSource
+- Você pode enviar um link direto. 
+- Você poderá instalá-lo automaticamente nas contas do Power BI de seus colegas, se o administrador do Power BI lhe der permissão. 
+
+Os usuários veem o conteúdo de aplicativo atualizado automaticamente depois de publicar uma atualização do espaço de trabalho. Você pode controlar a frequência com que os dados são atualizados, definindo a agenda de atualização nos conjuntos de dados usados pelo conteúdo do aplicativo em seu espaço de trabalho. Ver [publicar um aplicativo de novos espaços de trabalho no Power BI](service-create-distribute-apps.md) para obter detalhes.
+
+## <a name="power-bi-classic-apps-faq"></a>Aplicativos do Power BI clássicos perguntas Frequentes
 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Qual a diferença entre os aplicativos e os pacotes de conteúdo organizacional?
 Os aplicativos são a evolução dos pacotes de conteúdo organizacional. Se você já tem pacotes de conteúdo organizacional, eles continuarão a funcionar lado a lado com os aplicativos. Aplicativos e pacotes de conteúdo têm poucas diferenças importantes. 

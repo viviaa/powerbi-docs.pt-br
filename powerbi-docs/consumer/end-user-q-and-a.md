@@ -1,5 +1,5 @@
 ---
-title: Visão geral de P e R no serviço do Power BI
+title: P e r para os consumidores do Power BI
 description: Tópico de visão geral da documentação para consultas de linguagem naturais de P e R do Power BI.
 author: mihart
 manager: kvivek
@@ -8,19 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/01/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: e6f95eedbd84ad5f512bbc1a1255cee7130a60d7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 35ff71d5956c1c48c304324c121f79addf04cb56
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65625129"
 ---
 # <a name="qa-for-power-bi-consumers"></a>P e R para **consumidores** do Power BI
 ## <a name="what-is-qa"></a>O que é P e R?
-Às vezes, a maneira mais rápida de obter uma resposta de seus dados é fazer uma pergunta usando o idioma natural. Por exemplo, "qual foi o total de vendas no ano passado".  
+Às vezes, a maneira mais rápida de obter uma resposta de seus dados é fazer uma pergunta usando o idioma natural. Por exemplo, "qual foi o total de vendas no ano passado".
+
 Use P e R para explorar seus dados do Excel usando recursos intuitivos em idioma natural e receba as respostas na forma de quadros e gráficos. P e R é diferente de um mecanismo de pesquisa - P e R fornece apenas resultados sobre os dados no Power BI.
 
 A **P e R do Power BI** só dá suporte a responder consultas em linguagem natural perguntadas em inglês. Há uma versão prévia disponível para espanhol que pode ser habilitada pelo administrador do Power BI.
@@ -35,7 +36,7 @@ A pergunta é apenas o começo.  Divirta-se viajando através de seus dados refi
 A experiência é verdadeiramente interativa... e rápida! Equipada com um armazenamento na memória, a resposta é quase instantânea.
 
 ## <a name="where-can-i-use-qa"></a>Onde posso usar as P e R?
-Você encontrará as P e R em dashboards no serviço do Power BI, na parte inferior do dashboard no Power BI Mobile e acima da visualização no Power BI Embedded. A menos que o designer tenha lhe concedido permissões de edição, você poderá usar as P e R para explorar dados, mas não poderá salvar nenhuma visualização criada com as P e R.
+Você encontrará p e r em painéis e relatórios no serviço do Power BI e, na parte inferior do painel no Power BI móvel. A menos que o designer tenha lhe concedido permissões de edição, você poderá usar as P e R para explorar dados, mas não poderá salvar nenhuma visualização criada com as P e R.
 
 ![caixa de perguntas](media/end-user-q-and-a/powerbi-qna.png)
 
@@ -68,7 +69,7 @@ Você também pode informar ao P e R a visualização que será usada, adicioná
 **Resposta 1**: se você não vê uma caixa de pergunta, verifique primeiro suas configurações. Para fazer isso, selecione o ícone de engrenagem no canto superior direito da barra de ferramentas do Power BI.   
 ![ícone de engrenagem](media/end-user-q-and-a/power-bi-settings.png)
 
-Em seguida, escolha **Configurações** > **Dashboards**. Verifique se há uma marca de seleção ao lado de **Mostrar a caixa de pesquisa de P e R neste dashboard**.
+Em seguida, escolha **Configurações** > **Dashboards**. Verifique se há uma marca de seleção ao lado de **Mostrar a caixa de pesquisa de P e R neste dashboard**.    
 ![Configurações de P e R para dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 

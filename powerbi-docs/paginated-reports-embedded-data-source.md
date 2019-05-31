@@ -1,20 +1,20 @@
 ---
 title: Fontes de dados incorporadas para relatórios paginados no serviço do Power BI (versão prévia)
 description: Neste artigo, você aprenderá como criar e modificar uma fonte de dados incorporada em um relatório paginado no serviço do Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
-ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
-ms.translationtype: HT
+ms.date: 05/16/2019
+ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59070012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853394"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Criar uma fonte de dados incorporada para relatórios paginados no serviço do Power BI (versão prévia)
 
@@ -23,13 +23,19 @@ Neste artigo, você aprenderá como criar e modificar uma fonte de dados incorpo
 - Banco de Dados SQL do Azure e SQL Data Warehouse do Azure
 - SQL Server
 - SQL Server Analysis Services
+- Oracle 
+- Teradata 
+
+Para essas fontes de dados, use o [conexão do SQL Server Analysis Services](service-premium-connect-tools.md) opção:
+
 - Azure Analysis Services
+- Conjuntos de dados do Power BI Premium
 
 Os relatórios paginados se conectam a fontes de dados locais por meio de um gateway. Você configura o gateway após publicar o relatório no serviço do Power BI. Saiba mais sobre os [gateways do Power BI](service-gateway-getting-started.md). 
 
 ## <a name="create-an-embedded-data-source"></a>Criar uma fonte de dados incorporados
   
-1. Abra o Construtor de Relatórios.
+1. Abra o construtor Power BI.
 
 1. Na barra de ferramentas do painel Dados do Relatório, selecione **Novo** > **Fonte de Dados**. A caixa de diálogo **Propriedades da Fonte de Dados** é aberta.
 
@@ -62,4 +68,4 @@ Os relatórios paginados se conectam a fontes de dados locais por meio de um gat
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI](paginated-reports-create-embedded-dataset.md)
-- [O que são os relatórios paginados no Power BI Premium? (Versão prévia)](paginated-reports-report-builder-power-bi.md)
+- [O que são os relatórios paginados no Power BI Premium? (versão prévia)](paginated-reports-report-builder-power-bi.md)

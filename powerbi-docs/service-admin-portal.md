@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 6c9d59bbc2c6bf81242166bef4cd7584f52fb633
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941601"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
@@ -34,7 +34,7 @@ Sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azu
 
     ![Configurações do portal de administração](media/service-admin-portal/powerbi-admin-settings.png)
 
-Há sete guias no portal. O restante deste artigo fornece informações sobre cada uma dessas guias.
+Há nove guias no portal. O restante deste artigo fornece informações sobre cada uma dessas guias.
 
 ![Navegação do portal de administração](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -44,7 +44,9 @@ Há sete guias no portal. O restante deste artigo fornece informações sobre ca
 * [Configurações de locatário](#tenant-settings)
 * [Configurações de capacidade](#capacity-settings)
 * [Códigos de inserção](#embed-codes)
-* [Elementos visuais organizacionais](#organizational-visuals)
+* [Elementos visuais da organização](#organization-visuals)
+* [Fluxo de dados armazenamento (visualização)](#dataflowStorage)
+* [Workspaces](#workspaces)
 
 ## <a name="usage-metrics"></a>Métricas de uso
 
@@ -126,15 +128,27 @@ As configurações podem ter três estados:
 
 As próximas seções fornecem uma visão geral dos diferentes tipos de configurações de locatário.
 
-## <a name="workspace-settings"></a>Configurações de workspace
+## <a name="help-and-support-settings"></a>Ajuda e suporte a configurações
 
-### <a name="create-workspaces-preview"></a>Criar workspaces (versão prévia)
+### <a name="publish-get-help-information"></a>Publicar as informações de "Ajuda"
 
-Os usuários na organização podem criar workspaces de aplicativo para colaborar em dashboards, relatórios e outros tipos de conteúdo. [Saiba mais](service-create-the-new-workspaces.md)
+Os usuários da organização podem ir para a Ajuda interna e dar suporte a recursos no menu Ajuda do Power BI. Especificamente, esses parâmetros altera o comportamento dos itens de menu de ajuda Get, comunidade e saiba mais.
+
+Também é possível especificar uma URL para direcionar usuários a uma solução personalizada para solicitações de licenciamento. Esse parâmetro personaliza a URL de destino do botão de atualização de conta que um usuário sem uma licença do Power BI Pro pode encontrar na atualização para a caixa de diálogo do Power BI Pro, bem como na página Gerenciar armazenamento pessoal.
+
+## <a name="workspace-settings"></a>Configurações do workspace
+
+### <a name="create-workspaces"></a>Criar espaços de trabalho
+
+Os administradores usam o **criar espaços de trabalho** configuração para indicar quais usuários na organização podem criar espaços de trabalho de aplicativo para colaborar em dashboards, relatórios e outro conteúdo. Saiba mais sobre [espaços de trabalho do aplicativo](service-create-the-new-workspaces.md).
+
+O portal de administração tem outra seção de configurações sobre os espaços de trabalho em seu locatário. Nesta seção, você pode classificar e filtrar a lista de espaços de trabalho e exibir os detalhes de cada espaço de trabalho. Ver [espaços de trabalho](#workspaces) para obter detalhes.
+
+No portal de administração, você também controlar quais usuários têm permissões para distribuir aplicativos para a organização. Ver [publicar aplicativos e pacotes de conteúdo em toda a organização](#publish-content-packs-and-apps-to-the-entire-organization) neste artigo para obter detalhes.
 
 ## <a name="export-and-sharing-settings"></a>Configurações de exportação e compartilhamento
 
-### <a name="share-content-to-external-users"></a>Compartilhar conteúdo com usuários externos
+### <a name="share-content-with-external-users"></a>Compartilhar conteúdo com usuários externos
 
 Os usuários da organização podem compartilhar dashboards com usuários fora da organização. [Saiba mais](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
@@ -142,7 +156,7 @@ Os usuários da organização podem compartilhar dashboards com usuários fora d
 
 A imagem a seguir mostra a mensagem exibida quando você compartilha com um usuário externo.
 
-![Compartilhar com usuário externo](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Compartilhar com usuário externo](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### <a name="publish-to-web"></a>Publicar na Web
 
@@ -203,19 +217,19 @@ A imagem a seguir mostra a opção de permitir que os usuários externos convida
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicar aplicativos e pacotes de conteúdo em toda a organização
 
-Os usuários na organização podem publicar pacotes de conteúdo e aplicativos para toda a organização, em vez de apenas grupos específicos. [Saiba mais](service-organizational-content-pack-manage-update-delete.md)
+Admins. use essa configuração para decidir quais usuários podem publicar pacotes de conteúdo e aplicativos a toda a organização, em vez de apenas determinados grupos. Saiba mais sobre [publicação de aplicativos](service-create-distribute-apps.md).
 
 A imagem a seguir mostra a opção **Minha organização inteira** durante a criação de um pacote de conteúdo.
 
 ![Publicar o pacote de conteúdo na organização](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-apps"></a>Criar aplicativos de modelo
+### <a name="create-template-apps-and-organizational-content-packs"></a>Criar modelo de aplicativos e pacotes de conteúdo organizacional
 
-Os usuários da organização podem criar aplicativos de modelo que usam conjuntos de dados criados no Power BI Desktop. Saiba mais sobre [aplicativos de modelo](template-content-pack-authoring.md)
+Os usuários na organização podem criar aplicativos de modelo e os pacotes de conteúdo organizacional que usam conjuntos de dados criados em uma fonte de dados no Power BI Desktop. Saiba mais sobre [aplicativos de modelo](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Enviar aplicativos por push para usuários finais
 
-Os usuários podem compartilhar aplicativos diretamente com os usuários finais sem exigir a instalação do AppSource. [Saiba mais](service-create-distribute-apps.md)
+Criadores de relatório podem compartilhar aplicativos diretamente com os usuários finais sem exigir a instalação do [AppSource](https://appsource.microsoft.com). Saiba mais sobre [instalar aplicativos automaticamente para os usuários finais](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## <a name="integration-settings"></a>Configurações de integração
 
@@ -335,11 +349,18 @@ Os usuários na organização podem marcar painéis com classificações indican
 
 Usuários da organização podem inserir relatórios e dashboards do Power BI em aplicativos de SaaS (software como serviço). Desabilitar essa configuração impede os usuários de usar as APIs REST para inserir conteúdo do Power BI em seus aplicativos. [Saiba mais](developer/embedding.md)
 
-## <a name="dataflow-settings-preview"></a>Configurações de fluxo de dados (versão prévia)
+### <a name="allow-service-principals-to-use-power-bi-apis"></a>Permitir que as entidades de serviço usem APIs do Power BI
 
-### <a name="create-and-use-dataflows-preview"></a>Criar e usar fluxos de dados (versão prévia)
+Aplicativos Web registrados no Azure Active Directory (Azure AD) usará uma entidade de serviço atribuída para acessar APIs do Power BI sem um usuário conectado. Para permitir que um aplicativo para usar a autenticação de entidade de serviço sua entidade de serviço deve ser incluído em um grupo de segurança permitidos. [Saiba mais](developer/embed-service-principal.md)
 
-Os usuários na organização podem criar e usar fluxos de dados. Para obter uma visão geral dos fluxos de dados, consulte [Preparação de dados de autoatendimento no Power BI (versão prévia)](service-dataflows-overview.md). Para habilitar os fluxos de dados em uma capacidade Premium, consulte [Configurar cargas de trabalho](service-admin-premium-workloads.md).
+> [!NOTE]
+> As entidades de serviço herdam as permissões para todas as configurações de locatário do Power BI de seu grupo de segurança. Para restringir permissões, crie um grupo de segurança dedicado para entidades de serviço e adicione-o à lista "Exceto grupos de segurança específicos" para as configurações relevantes habilitadas do Power BI.
+
+## <a name="dataflow-settings"></a>Configurações do fluxo de dados
+
+### <a name="create-and-use-dataflows"></a>Criar e usar fluxos de dados
+
+Os usuários na organização podem criar e usar fluxos de dados. Para obter uma visão geral dos fluxos de dados, consulte [preparação de dados de autoatendimento no Power BI](service-dataflows-overview.md). Para habilitar os fluxos de dados em uma capacidade Premium, consulte [Configurar cargas de trabalho](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Essa configuração se aplica a toda a organização e não pode ser limitada a grupos específicos.
@@ -350,11 +371,18 @@ Duas configurações controlam os aplicativos de modelo.
 
 ![Configurações de aplicativos de modelo do portal de administração do Power BI](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-A primeira configuração, **Criar aplicativos de modelo**, controla quem pode criar aplicativos de modelo em sua organização. Em seguida, os criadores de aplicativos de modelo podem distribuí-los para clientes fora de sua organização por meio do AppSource ou de outro método de distribuição.
+### <a name="create-template-apps-preview"></a>Criar Aplicativos de Modelo (versão prévia)
+
+Os usuários na organização podem criar aplicativos de modelo. Os criadores de aplicativos de modelo, em seguida, podem distribuí-los aos clientes fora da sua organização por meio de [AppSource](https://appsource.microsoft.com) ou outros métodos de distribuição.
 
 ![Portal de administração do Power BI, configuração Criar aplicativos de modelo](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-Com a segunda configuração, **Instalar aplicativos de modelo**, você controla quem, em sua organização, pode baixar e instalar aplicativos de modelo no AppSource ou em outra fonte
+### <a name="install-template-apps-preview"></a>Instalar aplicativos de modelo (visualização)
+
+Os usuários da organização podem baixar e instalar o modelo de aplicativos [AppSource](https://appsource.microsoft.com) ou de outra fonte.
+
+> [!NOTE]
+> Essa configuração determina quais usuários podem instalar aplicativos de modelo em suas contas do Power BI.
 
 ## <a name="capacity-settings"></a>Configurações de capacidade
 
@@ -366,7 +394,7 @@ A guia **Power BI Premium** permite que você gerencie qualquer capacidade do Po
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-A guia **Power BI Embedded** permite que você exiba suas capacidades do Power BI Embedded (SKU A) que comprou para o cliente. Como você só pode comprar SKUs A do Azure, [gerencia capacidades incorporadas no Azure](developer/azure-pbie-create-capacity.md) do **Portal do Azure**.
+A guia **Power BI Embedded** permite que você exiba suas capacidades do Power BI Embedded (SKU A) que comprou para o cliente. Uma vez que você só poderá comprar um SKUs do Azure, você [gerenciar capacidades incorporadas no Azure](developer/azure-pbie-create-capacity.md) partir **portal do Azure**.
 
 Para saber mais sobre como gerenciar as configurações do Power BI Embedded (SKU A), confira [O que é o Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -376,9 +404,9 @@ Como administrador, você pode exibir os códigos de inserção que são gerados
 
 ![Códigos de inserção dentro do portal de administração do Power BI](media/service-admin-portal/embed-codes.png)
 
-## <a name="organizational-visuals"></a>Elementos visuais organizacionais
+## <a name="organizational-visuals">Elementos visuais da organização</a>
 
-A guia **Elementos visuais organizacionais** permite implantar e gerenciar elementos visuais personalizados dentro da sua organização. Com elementos visuais da organização, você pode implantar visuais proprietários em sua organização, que os autores de relatório podem, em seguida, descobrir e importar em seus relatórios do Power BI Desktop. [Saiba mais](power-bi-custom-visuals-organization.md)
+A guia **Elementos visuais da organização** permite implantar e gerenciar elementos visuais personalizados dentro da sua organização. Com elementos visuais da organização, você pode implantar visuais proprietários em sua organização, que os autores de relatório podem, em seguida, descobrir e importar em seus relatórios do Power BI Desktop. [Saiba mais](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Um elemento visual personalizado pode conter código com riscos de segurança ou privacidade; verifique se você confia no autor e a fonte do visual personalizado antes de implantá-lo no repositório da organização.
@@ -436,19 +464,21 @@ Verifique se a ID do Visual permanece inalterada. O novo arquivo substitui o arq
 
 Para saber mais, acesse [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals) (Perguntas frequentes sobre os visuais personalizados de organização)
 
-## <a name="dataflow-storage-preview"></a>Armazenamento de fluxo de dados (versão prévia)
+## <a name="dataflowStorage">Fluxo de dados armazenamento (visualização)</a>
 
 Por padrão, os dados usados com o Power BI são armazenados no armazenamento interno fornecido pelo Power BI. Com a integração de fluxos de dados e o Azure Data Lake Storage Gen2 (ADLS Gen2), você pode armazenar seus fluxos de dados na conta do Azure Data Lake Storage Gen2 da sua organização. Para saber mais, confira [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md).
 
-## <a name="workspaces-preview"></a>Workspaces (versão prévia)
+## <a name="workspaces"></a>Workspaces
 
-Como administrador, você pode exibir os workspaces que existem em seu locatário. É possível classificar e filtrar a lista de workspaces e exibir os detalhes de cada um deles. Observe que as colunas da tabela correspondem às propriedades retornadas pela [API REST do administrador do Power BI](/rest/api/power-bi/admin) para workspaces. Workspaces pessoais são do tipo **PersonalGroup**, workspaces herdados são do tipo **Group** e workspaces modernos são do tipo **Workspace**. Para saber mais, confira [Create the new workspaces (preview) in Power BI](service-create-the-new-workspaces.md) (Criar os novos workspaces (versão prévia) no Power BI).
+Como administrador, você pode exibir os workspaces que existem em seu locatário. É possível classificar e filtrar a lista de workspaces e exibir os detalhes de cada um deles. As colunas da tabela correspondem às propriedades retornadas pela [API de Rest do administrador do Power BI](/rest/api/power-bi/admin) para espaços de trabalho. Espaços de trabalho pessoais são do tipo **PersonalGroup**, os espaços de trabalho clássicos são do tipo **grupo**, e os espaços de trabalho de experiência do novo espaço de trabalho são do tipo **espaço de trabalho**. Para obter mais informações, consulte [criar novos espaços de trabalho no Power BI](service-create-the-new-workspaces.md).
 
 ![Lista de workspaces](media/service-admin-portal/workspaces-list.png)
 
+
 ## <a name="next-steps"></a>Próximas etapas
 
-[Administração do Power BI em sua organização](service-admin-administering-power-bi-in-your-organization.md)  [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md)  
+[Administração do Power BI em sua organização](service-admin-administering-power-bi-in-your-organization.md)  
+[Noções básicas sobre a função de administrador do Power BI](service-admin-role.md)  
 [Auditoria do Power BI em sua organização](service-admin-auditing.md)  
 
-Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
+Mais perguntas? [Experimente perguntar à Comunidade do Power BI](https://community.powerbi.com/)

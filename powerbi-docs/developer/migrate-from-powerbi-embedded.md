@@ -1,18 +1,18 @@
 ---
 title: Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI
 description: Saiba como migrar da Coleção de workspaces do Power BI para o Power BI Embedded e aproveitar os avanços para inserir em aplicativos.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223595"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61270413"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Como migrar conteúdo da Coleção de workspaces do Power BI para o Power BI Embedded
 
@@ -131,7 +131,7 @@ Conjuntos de dados armazenados em cache referem-se a arquivos PBIX que tinham im
 3. Salve o PBIX.
 4. Chame Importar PBIX para o workspace SaaS.
 5. Atualizar a cadeia de conexão chamando - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Obter id de GW e id de fonte de dados chamando - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Obter identificadores de GW e a fonte de dados chamando – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Atualizar credenciais do usuário chamando - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Relatórios e conjunto de dados antigos
@@ -200,7 +200,7 @@ Você deve fazer uma limpeza no Azure.
 [Ferramenta de migração da Coleção de workspaces do Power BI](migrate-tool.md)  
 [Snippets de código para migrar conteúdo da Coleção de workspaces do Power BI](migrate-code-snippets.md)  
 [Como inserir seus dashboards, relatórios e blocos do Power BI](embedding-content.md)  
-[Power BI Premium – o que é?](../service-premium.md)  
+[Power BI Premium – o que é?](../service-premium-what-is.md)  
 [Repositório Git de API do JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Repositório Git de C# do Power BI](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemplo inserido do JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

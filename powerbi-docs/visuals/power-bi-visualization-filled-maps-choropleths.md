@@ -12,11 +12,11 @@ ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143400"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Mapas coropléticos no Power BI
 Um mapa coroplético usa sombreamento ou tonalidade ou padrões para exibir como um valor difere na proporção em uma localização geográfica ou região.  Exiba rapidamente essas diferenças relativas com sombreamento que varia de claro (menos frequente/inferior) para escuro (mais frequente/mais).    

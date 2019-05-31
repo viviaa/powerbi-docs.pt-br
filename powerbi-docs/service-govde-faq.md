@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5c4bf7c1e1abb8fd87b97c48bfa94b57d5481b00
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 16114793b190996b3ef9e800e562dd0caf62089c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295793"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514822"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Perguntas frequentes de clientes do Power BI para Germany Cloud
 O **serviço do Power BI** tem uma versão disponível para clientes da UE/EFTA (União Europeia/Associação Europeia de Livre Comércio), geralmente mencionada como MCD (Microsoft Cloud Deutschland). A versão de **serviço do Power BI** discutida neste artigo é específica a clientes da UE/EFTA e separada e diferente da versão comercial do **serviço do Power BI**, ou serviços do Power BI fornecidos a clientes do governo.
@@ -32,10 +32,10 @@ As perguntas e respostas a seguir oferecem informações importantes para o serv
    O serviço do Power BI para clientes da UE/EFTA, também conhecido como MCD (Microsoft Cloud Deutschland), é uma nuvem em conformidade com a UE/EFTA, com o serviço do Power BI entregue por datacenters da Alemanha. Todos os dados do cliente no serviço do Power BI para a nuvem UE/EFTA são armazenados em repouso na Alemanha com T-Systems trabalhando como administradores de dados independentes alemães e com acesso físico e lógico a dados controlados por leis da Alemanha. O serviço do Power BI para a nuvem da UE/EFTA requer uma conta separada e distinta da versão comercial do serviço do Power BI. Saiba mais sobre o Microsoft Cloud Deutschland [aqui](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud).
 2. **Onde encontrar informações de preços e inscrição do Power BI Germany Cloud?**
    
-   Você pode encontrar muitas informações na [página inicial do Power BI Germany Cloud](https://powerbi.microsoft.com/power-bi-germany/), incluindo informações de preços. Nessa página, você também pode encontrar um link para se inscrever para uma avaliação de 30 dias do **serviço Power BI Pro** com 25 licenças de usuário. Como parte da avaliação de inscrição, você tem uma opção de comprar ou adicionar licenças, conforme necessário. Também oferecemos EA (Enterprise Agreement), preços de governo e sem fins lucrativos. Entre em contato com o representante do cliente na Microsoft para mais detalhes.
+   Você pode encontrar muitas informações na [página inicial do Power BI Germany Cloud](https://powerbi.microsoft.com/power-bi-germany/), incluindo informações de preços. Nessa página, você também pode encontrar um link para se inscrever **serviço do Power BI Pro** avaliação de 30 dias com 25 licenças de usuário. Como parte da inscrição da avaliação, você tem uma opção para comprar ou adicionar licenças adicionais conforme necessário. Também oferecemos EA (Enterprise Agreement), preços de governo e sem fins lucrativos. Entre em contato com seu representante do cliente Microsoft para obter mais detalhes.
 3. **Eu tenho um locatário do Germany Cloud como parte das assinaturas do Azure Germany e/ou Office 365 Germany. Posso usar o locatário existente para me inscrever no Power BI Germany?**
    
-   Sim. Como parte do processo de inscrição, você terá uma opção de fazer logon com uma conta de administrador de locatário do Germany Cloud existente e adicionar licenças de serviço do Power BI Pro ao locatário existente no Germany Cloud. Observe que locatários e contas de usuário do Germany Cloud são diferentes do serviço do Power BI para Germany Cloud.
+   Sim. Como parte do processo de inscrição, você terá uma opção de fazer logon com uma conta de administrador de locatário do Germany Cloud existente e adicionar licenças de serviço do Power BI Pro ao locatário existente no Germany Cloud. Observe que os locatários de nuvem da Alemanha e contas de usuário são diferentes de serviço do Power BI para Germany cloud.
 4. **Há um serviço gratuito no serviço do Power BI para Germany Cloud?**
    
    Não. Não oferecemos versões de licença gratuita no serviço do Power BI para Germany Cloud. No entanto, recomendamos que você se inscreva para uma [oferta gratuita do Power BI em nossa nuvem pública](https://powerbi.microsoft.com/get-started/) se suas necessidades de negócios forem atendidas com a oferta gratuita do Power BI.
@@ -45,7 +45,7 @@ As perguntas e respostas a seguir oferecem informações importantes para o serv
    
    * [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
    * [Power BI para Celulares](https://powerbi.microsoft.com/mobile/)
-   * [Gateway de dados local](https://powerbi.microsoft.com/gateway/)
+   * [On-premises data gateway (Gateway de dados local)](https://powerbi.microsoft.com/gateway/)
    * [Power BI Publisher para Excel](https://powerbi.microsoft.com/excel-dashboard-publisher/)
 6. **Há limitações de recurso de serviço do Power BI para Germany Cloud?**
    
@@ -56,7 +56,7 @@ As perguntas e respostas a seguir oferecem informações importantes para o serv
    * Power BI Embedded (licenciamento de ISV com medidor separado será oferecido no [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) futuramente)
 7. **Onde encontrar informações de configuração específicas de serviço do Power BI para Germany Cloud para uso e integração em meus aplicativos?**
    
-   Atualizamos nossos [exemplos de desenvolvedor de incorporação de SaaS](https://github.com/Microsoft/PowerBI-Developer-Samples) com informações de configuração específicas de nuvens da Alemanha e do Power BI. Examine a pasta **Configurações do Cloud** nos exemplos de pontos de extremidade de configuração específica de nuvem. A tabela a seguir lista vários pontos de extremidade de configuração para o serviço do Power BI para Germany Cloud (e nuvem pública para referência cruzada).
+   Atualizamos nossos [exemplos de desenvolvedor de incorporação de SaaS](https://github.com/Microsoft/PowerBI-Developer-Samples) com informações de configuração específicas de nuvens da Alemanha e do Power BI. Examine os **configurações de nuvem** pasta nos exemplos para pontos de extremidade de configuração específicas da nuvem. A tabela a seguir lista vários pontos de extremidade de configuração para o serviço do Power BI para Germany Cloud (e nuvem pública para referência cruzada).
 
 | **Nome e/ou uso do ponto de extremidade** | **URL de serviço do Power BI para Germany Cloud** | **URL equivalente na nuvem pública (para referência cruzada)** |
 | --- | --- | --- |

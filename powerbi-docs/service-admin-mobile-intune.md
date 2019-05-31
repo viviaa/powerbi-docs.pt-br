@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710932"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Configurar aplicativos móveis com o Microsoft Intune
@@ -50,11 +50,11 @@ Para obter a URL do aplicativo para iOS, precisaremos obtê-la no iTunes.
 
     ![URL do aplicativo do iTunes](media/service-admin-mobile-intune/itunes-url.png)
 
-Ela deve ser semelhante à seguinte: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8*.
+Ela deve ser semelhante à seguinte: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8* .
 
 ### <a name="get-android-url"></a>Obter URL do Android
 
-É possível obter a URL para o Google Play na [página do Power BI Mobile](https://powerbi.microsoft.com/mobile/). Selecione **Baixar do Google Play** para acessar a página do aplicativo. Você pode copiar a URL da barra de endereços do navegador. Ela deve ser semelhante à seguinte: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
+É possível obter a URL para o Google Play na [página do Power BI Mobile](https://powerbi.microsoft.com/mobile/). Selecione **Baixar do Google Play** para acessar a página do aplicativo. Você pode copiar a URL da barra de endereços do navegador. Ela deve ser semelhante à seguinte: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
 ## <a name="step-2-create-a-mobile-application-management-policy"></a>Etapa 2: criar uma política de gerenciamento de aplicativos móveis
 
@@ -66,7 +66,7 @@ Você pode criar o aplicativo ou a política primeiro. Não importa a ordem que 
 
     ![Portal do Intune](media/service-admin-mobile-intune/intune-policy.png)
 
-1. Selecione **Adicionar...**.
+1. Selecione **Adicionar...** .
 
 1. Em **Software** , você pode selecionar o Gerenciamento de aplicativos móveis para Android ou iOS. Para começar rapidamente, você pode selecionar **Criar uma política com as configurações recomendadas**, ou você pode criar uma política personalizada.
 

@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c074d6aa4fc7bdc530aa52f125f7f3d898b402c0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514515"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop
@@ -27,7 +27,7 @@ Você pode criar tantas páginas de dica de ferramenta quanto desejar. Cada pág
 Há inúmeras coisas interessantes que você pode fazer com dicas de ferramentas de relatório. Vamos ver como criar dicas de ferramenta e o que você deve fazer para configurá-las.
 
 ## <a name="create-a-report-tooltip-page"></a>Criar uma página de dica de ferramenta de relatório
-Para começar, crie uma nova página de relatório clicando no botão **+**, que se encontra na parte inferior da tela do **Power BI Desktop**, na área de guias da página. O botão fica ao lado da última página no relatório. 
+Para começar, crie uma nova página de relatório clicando no botão **+** , que se encontra na parte inferior da tela do **Power BI Desktop**, na área de guias da página. O botão fica ao lado da última página no relatório. 
 
 ![Criar uma nova página de relatório para a dica de ferramenta](media/desktop-tooltips/desktop-tooltips_02.png)
 

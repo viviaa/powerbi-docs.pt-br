@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295920"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710819"
 ---
 # <a name="slicers-in-power-bi"></a>Segmentação de Dados no Power BI
 Seus leitores de relatório devem poder examinar as métricas gerais de vendas, mas também realçar o desempenho de cada gerente regional individual e em diferentes períodos. Você poderia criar relatórios separados ou gráficos comparativos, ou então usar segmentação. Uma segmentação é uma forma alternativa de filtragem que restringe a parte do conjunto de dados que é mostrada em outras visualizações em um relatório. 
@@ -42,7 +42,7 @@ As segmentações do Power BI têm as seguintes limitações:
 
 ## <a name="create-slicers"></a>Criar segmentações
 
-Para criar uma segmentação, selecione o ícone de segmentação e escolha o campo de dados a ser filtrado (ou então, arraste-os para a caixa **Campos** no painel **Visualizações**), selecione ou arraste o campo de dados primeiramente para criar uma visualização e escolha o ícone de segmentação para transformar a visualização em uma segmentação. Tipos de dados diferentes criam tipos diferentes de segmentação, com efeitos e opções também diferentes. 
+Para criar uma nova segmentação de dados, você pode selecionar o ícone de segmentação de dados e, em seguida, selecione o campo de dados para filtrar em (ou arraste-o para o **filtros** caixa de **visualizações** painel), ou você pode selecionar ou arrastar o campo de dados pela primeira vez para criar uma visualização e, em seguida, selecione o ícone de segmentação para transformar a visualização em uma segmentação de dados. Tipos de dados diferentes criam tipos diferentes de segmentação, com efeitos e opções também diferentes. 
 
 Na primeira vez que você alterar um relatório, o botão para **Redefinir para padrão** acenderá. Este é um lembrete de que você fez uma alteração nas configurações originais do relatório. Se você sair do relatório, essa alteração será salva (persistirá). Ao retornar ao relatório, você não terá que fatiá-lo novamente.  No entanto, se você deseja redefinir o relatório para as configurações padrão do autor, selecione o botão **Redefinir para padrão** na barra de menus superior.
 
@@ -51,26 +51,30 @@ Na primeira vez que você alterar um relatório, o botão para **Redefinir para 
 > [!NOTE]
 > Se o botão **Redefinir para padrão** permanecer desabilitado, isso significará que o autor do relatório desabilitou esse recurso ou que o relatório contém um visual personalizado. Basta passar o mouse sobre o botão para ler a dica de ferramenta e obter uma explicação. 
 
-**Para criar uma segmentação para filtrar os dados por gerente regional**
+**Criar uma segmentação para filtrar os dados por gerente regional**
 
-1. No Power BI Desktop ou no serviço do Power BI, abra o [Exemplo de análise de varejo](../sample-retail-analysis.md). (No serviço do Power BI, selecione **Editar Relatório** na parte superior esquerda.)
-2. Na página **Visão geral**, sem ter nada selecionado na tela, escolha o ícone **Segmentação** ![ícone de segmentação](media/power-bi-visualization-slicers/slicer-icon.png) no painel **Visualizações** para criar uma segmentação. 
-3. Com a nova segmentação selecionada, escolha **Gerente regional** em **Distrito** no painel **Campos** para popular a segmentação. A nova segmentação é uma lista com caixas de seleção antes dos nomes. 
+1. No Power BI Desktop ou no serviço do Power BI, abra o [exemplo de análise de varejo](../sample-retail-analysis.md). (No serviço do Power BI, selecione **Editar Relatório** na parte superior esquerda.)
+2. Na página de visão geral, sem nada selecionado na tela, selecione a **segmentação** ícone ![ícone de segmentação de dados](media/power-bi-visualization-slicers/slicer-icon.png) no **visualizações** painel para criar uma nova segmentação de dados. 
+3. Com a nova segmentação selecionada, no painel campos, selecione **Distrito** > **DM** para popular a segmentação de dados. A nova segmentação é uma lista com caixas de seleção antes dos nomes. 
     
-    ![nova segmentação](media/power-bi-visualization-slicers/2-slicer.png)
+    ![nova segmentação](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Redimensione e arraste a segmentação e outros elementos na tela para liberar espaço para a segmentação. Observe que os itens de segmentação serão cortados se, quando você redimensionar a segmentação, ela ficar pequena demais. 
-5. Selecione os nomes na segmentação e observe os efeitos sobre as outras visualizações na página. Selecione os nomes novamente para desmarcá-los e mantenha pressionada a tecla **Ctrl** para selecionar mais de um nome. Selecionar todos os nomes tem o mesmo efeito de não selecionar nenhum. 
+5. Selecione os nomes na segmentação e observe os efeitos sobre as outras visualizações na página. Selecione os nomes novamente para desmarcá-los e mantenha pressionada a tecla **Ctrl** para selecionar mais de um nome. Selecionar todos os nomes tem o mesmo efeito de não selecionar nenhum. \
 
+6. Como alternativa, selecione o ícone de rolo de pintura para formatar a segmentação. Há simplesmente muitas opções para descrevê-los tudo aqui – portanto, experimentar e criar uma segmentação de dados que funciona para você. Nos exemplos a seguir, a segmentação de dados primeiro foi convertida em uma lista suspensa para conservar o espaço e a opção "Selecionar tudo" foi adicionada.  A segunda segmentação de dados tiver sido formatada com cores, tamanhos de fontes e permite apenas uma única seleção.
+
+   ![nova segmentação](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
 >Itens de segmentação de lista são classificados em ordem alfanumérica crescente por padrão. Para inverter a ordem de classificação para decrescente, selecione as reticências **(…)** no canto superior direito da segmentação e escolha **Classificar por gerente regional** na lista suspensa. 
 
 **Para criar uma segmentação para filtrar os dados por intervalo de datas**
 
-1. Sem nada selecionado na tela, selecione **Hora** no painel Campos e arraste **Mês** (ou **Data** no serviço do Power BI) para a caixa **Valores** no painel Visualizações para criar uma visualização.
+1. Sem nada selecionado na tela, a lista suspensa **data** no painel campos e arraste **data** para o **valores** caixa no painel de visualizações para criar uma nova visualização.
 2. Com a nova visualização selecionada, escolha o ícone **Segmentação** para converter a nova visualização em uma segmentação. Esta segmentação é um controle deslizante com o intervalo de datas populado.
     
-    ![nova segmentação de intervalo](media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![nova segmentação de intervalo](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+
     
 4. Redimensione e arraste a segmentação e outros elementos na tela para liberar espaço para a segmentação. Observe que o controle deslizante é redimensionado conforme o tamanho da segmentação, mas ele desaparecerá e as datas serão cortadas se a segmentação for redimensionada para um formato pequeno demais. 
 4. Selecione intervalos de datas diferentes com o controle deslizante ou escolha um campo de data para digitar um valor ou defini-lo no calendário pop-up para uma seleção mais precisa. Observe como isso afeta as outras visualizações na página.
@@ -78,8 +82,11 @@ Na primeira vez que você alterar um relatório, o botão para **Redefinir para 
     >[!NOTE]
     >Tipos de dados numéricos e de data/hora produzem segmentações de controle deslizante no intervalo por padrão. A partir da atualização de fevereiro de 2018 do Power BI, controles deslizantes de intervalos de tipos de dados de números inteiros agora transformam os valores em números inteiros em vez de mostrar casas decimais. 
 
->[!TIP]
->Embora o campo **Mês** produza um tipo de segmentação de controle deslizante de intervalo **Entre** por padrão, é possível alterá-lo para outros tipos de segmentação e opções de seleção. Para alterar o tipo de segmentação, com a segmentação selecionada, passe o mouse sobre a parte superior direita da segmentação, selecione o símbolo mostrado e escolha uma das outras opções, como **Lista** ou **Antes de**. Observe como as opções de aparência e de seleção da segmentação mudam. 
+
+5. Agora, altere o valor do campo **data** à **MonthIndex**.  Isso produz um **entre** tipo de segmentação de dados do controle deslizante de intervalo por padrão, mas você pode alterá-lo para outros tipos de segmentação e opções de seleção. Para alterar o tipo de segmentação, com a segmentação selecionada, passe o mouse sobre a parte superior direita da segmentação, selecione o símbolo mostrado e escolha uma das outras opções, como **Lista** ou **Antes de**. Observe como as opções de aparência e de seleção da segmentação mudam. 
+ 
+    ![nova segmentação de intervalo](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+
 
 Para obter mais informações sobre como criar e usar segmentações de intervalo numérico e de datas, assista ao vídeo a seguir e consulte [Usar a segmentação de intervalo numérico no Power BI Desktop](../desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 

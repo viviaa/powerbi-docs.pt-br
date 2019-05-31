@@ -1,21 +1,21 @@
 ---
 title: Análise integrada para inserir conteúdo do Power BI em seu aplicativo para seus clientes
 description: Aprenda a integrar ou inserir um painel, um bloco ou um relatório em um aplicativo usando as APIs do Power BI para análise integrada para seus clientes. Saiba como integrar o Power BI ao seu aplicativo usando o software de análise integrada, ferramentas de análise integrada ou ferramentas de business intelligence integrada.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.topic: tutorial
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
-ms.openlocfilehash: 5bb4a739b6a333ecaf0ddc3ee2596fc210033470
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174949"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710967"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutorial: Inserir conteúdo do Power BI em um aplicativo para seus clientes
 
@@ -192,23 +192,19 @@ Para obter o **ApplicationSecret**, siga estas etapas:
 
 2. No painel de navegação esquerdo, selecione **Todos os serviços** e **Registros de aplicativo**.
 
-    ![Pesquisa de registro de aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Pesquisa de registro de aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Selecione o aplicativo que precisa usar o **ApplicationSecret**.
 
-    ![Escolha um aplicativo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Escolha um aplicativo](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Selecione **Configurações**.
+4. Selecione **certificados e segredos** sob **gerenciar**.
 
-    ![Selecionar Configurações](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Selecione **Chaves**.
-
-    ![Selecionar Chaves](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Selecione **novos segredos de cliente**.
 
 6. Insira um nome na caixa **Descrição** e selecione uma duração. Em seguida, selecione **Salvar** para obter o **Valor** para seu aplicativo. Quando você fecha o painel **Chaves** depois de salvar o valor da chave, o campo de valor é mostrado como oculto. Neste ponto, você não pode recuperar o valor da chave. Se você perder o valor da chave, crie uma nova no portal do Azure.
 
-    ![Valor da chave](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Valor da chave](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
 ### <a name="tenant"></a>Locatário
 
@@ -369,7 +365,7 @@ Use a tabela a seguir para determinar qual capacidade do Power BI Embedded melho
 | A5 |16 núcleos virtuais |8 núcleos, 50 GB de RAM |8 núcleos |60 por segundo |
 | A6 |32 núcleos virtuais |16 núcleos, 100 GB de RAM |16 núcleos |120 por segundo |
 
-**_Com os SKUs A, não é possível acessar o conteúdo do Power BI com uma licença do Power BI GRATUITA._**
+**_Com os SKUs A, não é possível acessar o conteúdo do Power BI com uma licença do Power BI GRATUITA._ **
 
 Usar tokens inseridos com licenças PRO destina-se a teste de desenvolvimento, portanto, o número de tokens inseridos que uma conta mestra ou entidade de serviço do Power BI pode gerar é limitado. Uma capacidade dedicada requer inserção em um ambiente de produção. Não há limite para a quantidade de tokens inseridos que você pode gerar com uma capacidade dedicada. Acesse [Recursos Disponíveis](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) para verificar o valor de uso que indica o uso inserido atual, em percentual. A quantidade de uso é por conta mestre.
 

@@ -1,85 +1,86 @@
 ---
 title: Publicar na Web por meio do Power BI
 description: Com o recurso Publicar na Web do Power BI, você pode inserir facilmente visualizações interativas online do Power BI, como postagens no blog e sites, por meio de emails ou mídia social, em qualquer dispositivo.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 19a45a1cf61ae3286f66528d38d830b3649b1d00
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 1b5dfc0b05595e96c9a297a5be3700e71cdbe229
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051572"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicar na Web por meio do Power BI
 
-Com o recurso **Publicar na Web** do Power BI, você pode inserir facilmente visualizações interativas online do Power BI, como postagens no blog e sites, por meio de emails ou mídia social, em qualquer dispositivo.
-
-Também é possível editar, atualizar ou descompartilhar com facilidade os visuais publicados.
+Com o Power BI **publicar na web** opção, você pode inserir facilmente visualizações interativas do Power BI online, como em postagens no blog, sites, por meio de emails ou mídia social, de qualquer dispositivo. Também é possível editar, atualizar ou descompartilhar com facilidade os visuais publicados.
 
 > [!WARNING]
-> Quando você usa **Publicar na Web**, o relatório ou visual publicado pode ser exibido por qualquer pessoa na Internet. Não há nenhuma autenticação usada ao exibir esses relatórios. Somente use Publicar na Web com relatórios e dados que qualquer pessoa na Internet (membros não autenticados do público) possa ver. Isso inclui dados com nível de detalhe que são agregados nos relatórios. Antes de publicar este relatório, verifique se você tem o direito de compartilhar os dados e as visualizações publicamente. Não publique informações confidenciais nem proprietárias. Em caso de dúvida, verifique as políticas de sua organização antes da publicação.
+> Quando você usa **publicar na web**, qualquer pessoa na Internet pode exibir o relatório publicado ou o visual. Isso não necessita de autenticação e inclui exibir dados de nível de detalhe seus relatórios agregados. Antes de publicar um relatório, verifique se que ele está okey para você compartilhar os dados e as visualizações publicamente. Não publique informações confidenciais nem proprietárias. Em caso de dúvida, verifique as políticas de sua organização antes da publicação.
 
 >[!Note]
 >Para inserir seu conteúdo com segurança em um portal ou site interno, use as opções [Inserir](service-embed-secure.md) ou [Inserir no SharePoint Online](service-embed-report-spo.md). Isso garante que todas as permissões e segurança de dados sejam aplicadas quando seus usuários estiverem exibindo seus dados internos.
 
 ## <a name="how-to-use-publish-to-web"></a>Como usar o recurso Publicar na Web
 
-**Publicar na Web** está disponível nos relatórios de seus workspaces pessoais ou de grupo que você pode editar.  Você não pode usar o recurso Publicar na Web em relatórios que foram compartilhados com você ou em relatórios que se baseiam na segurança em nível de linha para proteger os dados. Veja a seção **Limitações** abaixo para obter uma lista completa de casos em que não há suporte para o recurso Publicar na Web. Leia o **Aviso** indicado anteriormente neste artigo antes de usar o recurso Publicar na Web.
+**Publicar na web** está disponível para relatórios em seus espaços de trabalho pessoais ou de grupo que você pode editar.  Ele não está disponível para relatórios compartilhados com você, ou aqueles em segurança em nível de linha de terceira parte confiável para proteger os dados. Consulte a [ **limitações** ](#limitations) seção abaixo para obter uma lista completa de casos em que **publicar na web** não tem suporte. Examine os **aviso** anteriormente neste artigo antes de usar **publicar na web**.
 
-Você pode ver como esse recurso funciona no *breve vídeo*a seguir. Depois, siga as etapas abaixo para testá-lo por conta própria.
+O seguinte *breve vídeo* mostra como esse recurso funciona. Em seguida, experimente você mesmo as etapas a seguir.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 As etapas a seguir descrevem como usar o recurso **Publicar na Web**.
 
-1. Em um relatório de seu workspace que você pode editar, selecione **Arquivo &gt; Publicar na Web**.
+1. Abra um relatório no espaço de trabalho que você pode editar e selecione **arquivo > Publicar na web**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
 
-2. Examine o conteúdo da diálogo e selecione **Criar código de inserção** , conforme mostrado no diálogo a seguir.
+2. Examine o conteúdo e selecione a caixa de diálogo **criar código de inserção**.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Leia o aviso, mostrado no diálogo a seguir, e confirme se os dados estão corretos para ser inseridos em um site público. Em caso afirmativo, selecione **Publicar**.
+3. Leia o aviso, conforme mostrado aqui e confirme que os dados são okey inserir em um site público. Se estiver, selecione **publicar**.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. Será exibido um diálogo que fornece um link que pode ser enviado por email, inserido no código (como um iFrame) ou colado diretamente em sua página da Web ou em seu blog.
+4. Uma caixa de diálogo é exibida com um link. Você pode enviar este link por email, inseri-lo em código como um iFrame ou colá-lo diretamente em uma página da web ou o blog.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. Se você tiver criado anteriormente um código de inserção para o relatório, ele será exibido rapidamente. Você pode criar apenas um código de inserção para cada relatório.
+5. Se você criou anteriormente um código de inserção para um relatório e selecionar **publicar na web**, você não verá as caixas de diálogo nas etapas 2 a 4. Em vez disso, o **código de inserção** caixa de diálogo aparece:
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
-## <a name="tips-and-tricks-for-view-modes"></a>Dicas e truques para modos de Exibição
+   Você pode criar apenas um código de inserção para cada relatório.
 
-Quando você insere o conteúdo em uma postagem no blog, normalmente, é necessário ajustá-lo em um tamanho específico da tela.  Você também pode ajustar a altura e a largura na marca iFrame, conforme necessário, mas também precisa garantir que seu relatório se ajuste na área determinada do iFrame; por isso, é necessário definir um Modo de Exibição apropriado ao editar o relatório.
+
+## <a name="tips-and-tricks-for-view-modes"></a>Dicas e truques para modos de exibição
+
+Quando você insere o conteúdo dentro de uma postagem de blog, você normalmente precisará ajustá-lo em um tamanho de tela específica.  Você pode ajustar a altura e a largura na marca iFrame, conforme necessário. No entanto, você precisa garantir que seu relatório se ajuste na área determinada do iFrame, portanto, você também precisa definir um modo de exibição apropriado ao editar o relatório.
 
 A tabela a seguir fornece diretrizes sobre o Modo de Exibição e como ele aparecerá quando for inserido.
 
 | Modo de Exibição | Sua aparência quando inserido |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Ajustar à página** respeitará a altura e a largura da página de seu relatório. Se você definir a página como taxas 'Dinâmicas', como 16:9 ou 4:3, o conteúdo será ajustado para caber no iFrame fornecido. Quando inserido em um iFrame, o uso de **Ajustar à página** pode resultar na **aplicação do formato letterbox**, no qual uma tela de fundo cinza é mostrada nas áreas do iFrame depois que o conteúdo é ajustado para caber no iFrame. Para minimizar a aplicação do formato letterbox, defina a altura/largura do iFrame de modo condizente. |
-| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Tamanho real** garantirá que o relatório preserve seu tamanho, conforme definido na página do relatório. Isso pode resultar na exibição de barras de rolagem no iFrame. Defina a altura e a largura do iFrame para evitar o uso de barras de rolagem. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Ajustar à largura** garante que o conteúdo se ajusta na área horizontal do iFrame. Uma borda ainda será mostrada, mas o conteúdo será dimensionado para usar todo o espaço horizontal disponível. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Ajustar à página** respeitará a altura da página e a largura de seu relatório. Se você definir sua página como taxas 'Dynamic' como 16:9 ou 4:3, seu conteúdo será ajustado para caber no iFrame. Quando inserido em um iFrame, o uso **ajustar à página** pode resultar em **letterboxing**, em que um plano de fundo cinza é mostrado nas áreas do iFrame depois do conteúdo ajustado para caber no iFrame. Para minimizar a aplicação do formato letterbox, defina altura e a largura do iFrame adequadamente. |
+| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Tamanho real** garante que o relatório preserve seu tamanho, conforme definido na página do relatório. Isso pode resultar em barras de rolagem apareçam em seu iFrame. Defina a altura do iFrame e largura para evitar as barras de rolagem. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Ajustar à largura** garante que o conteúdo se ajusta na área de horizontal do iFrame. Uma borda ainda é mostrada, mas o conteúdo é dimensionado para usar todo o espaço horizontal disponível. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Dicas e truques para a altura e largura do iFrame
 
-O código de inserção recebido depois que você Publicar na Web será semelhante ao seguinte:
+Um **publicar na web** incorporar o código a seguinte aparência:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
+ 
+Você pode editar a largura e altura manualmente para garantir que ele é exatamente como você deseja que ele se ajuste a página em que você está inserindo.
 
-É possível editar a largura e a altura manualmente para garantir que o código se ajuste exatamente da forma como você deseja na página em que é inserido.
-
-Para obter um ajuste ideal, tente adicionar 56 pixels à dimensão de altura do iFrame. Isso acomoda o tamanho atual da barra inferior. Se sua página de relatório usar o tamanho Dinâmico, a tabela abaixo fornecerá alguns tamanhos que podem ser usados para obter um ajuste sem a aplicação do formato letterbox.
+Para obter um ajuste ideal, tente adicionar 56 pixels à altura do iFrame para acomodar o tamanho atual da barra de ferramentas inferior. Se sua página de relatório usar o tamanho Dinâmico, a tabela abaixo fornecerá alguns tamanhos que podem ser usados para obter um ajuste sem a aplicação do formato letterbox.
 
 | Taxa | Tamanho | Dimensões (Largura x Altura) |
 | --- | --- | --- |
@@ -90,97 +91,94 @@ Para obter um ajuste ideal, tente adicionar 56 pixels à dimensão de altura do 
 | 4:3 |Médio |800 x 656 px |
 | 4:3 |Grande |960 x 776 px |
 
-## <a name="managing-embed-codes"></a>Gerenciando códigos de inserção
+## <a name="manage-embed-codes"></a>Gerenciar códigos de inserção
 
-Depois de criar um código de inserção no recurso **Publicar na Web** , será possível gerenciar os códigos criados no menu **Configurações** do serviço do Power BI. O gerenciamento de códigos de inserção inclui a capacidade de remover o visual ou relatório de destino de um código (tornando o código de inserção inutilizável) ou de obter o código de inserção novamente.
+Depois de criar uma **publicar na web** inserir o código, você pode gerenciar seus códigos da **configurações** menu no Power BI. Gerenciar códigos de inserção inclui a capacidade de remover o destino visual ou relatório de código (tornando o código de inserção inutilizável), ou obter o código de inserção.
 
 1. Para gerenciar seus códigos de inserção de **Publicar na Web** , abra a engrenagem **Configurações** e selecione **Gerenciar códigos de inserção**.
 
    ![PtW8](media/service-publish-to-web/publish_to_web8.png)
 
-2. A lista de códigos de inserção que você criou será exibida, conforme mostrado na imagem a seguir.
+2. Os códigos de inserção é exibida.
 
    ![PtW9](media/service-publish-to-web/publish_to_web9.png)
 
-3. Para cada código de inserção de **Publicar na Web** na lista, é possível recuperar ou excluir o código de inserção e, portanto, fazer com que todos os links para esse relatório ou visual não funcionem mais.
+3. Você pode recuperar ou excluir um código de inserção. Excluí-lo desabilita todos os links para o relatório ou visualização.
 
    ![PtW10](media/service-publish-to-web/publish_to_web10.png)
 
-4. Se você selecionar **Excluir**, será solicitado que você confirme se deseja excluir o código de inserção.
+4. Se você selecionar **excluir**, é solicitado que uma confirmação.
 
    ![PtW11](media/service-publish-to-web/publish_to_web11.png)
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Atualizações em relatórios e atualização de dados
 
-Depois de criar seu código de inserção de **Publicar na Web** e compartilhá-lo, o relatório será atualizado com todas as alterações feitas. No entanto, é importante saber que pode levar algum tempo até que a atualização esteja visível para os usuários. As atualizações em um relatório ou visual levam aproximadamente uma hora para serem refletidas nos códigos de inserção de Publicar na Web.
-
-Quando você usa inicialmente o recurso **Publicar na Web** para obter um código de inserção, o link do código de inserção fica imediatamente ativo e pode ser exibido por qualquer pessoa que abrir o link.  Após a ação inicial de Publicar na Web, as atualizações posteriores em relatórios ou visuais para os quais um link Publicar na Web é apontado podem levar aproximadamente uma hora para estar visíveis para os usuários.
-
-Para saber mais, veja a seção **Como isso funciona** mais adiante neste artigo. Se você precisar que as atualizações sejam disponibilizadas imediatamente, poderá excluir o código de inserção e criar um novo.
+Depois de criar sua **publicar na web** código de inserção e compartilhamento, o relatório é atualizada com todas as alterações feitas e o link do código de inserção fica imediatamente ativo e qualquer pessoa que abrir o link pode exibi-lo. Depois dessa ação inicial, no entanto, as atualizações em relatórios ou visuais podem levar aproximadamente uma hora antes de se tornar visível para os usuários. Se você precisar que as atualizações sejam disponibilizadas imediatamente, poderá excluir o código de inserção e criar um novo. Para obter mais informações, consulte o [ **como ele funciona** ](#howitworks) seção mais adiante neste artigo. 
 
 ## <a name="data-refresh"></a>Atualização de dados
 
-As atualizações de dados são refletidas automaticamente no relatório ou visual inserido. Pode levar aproximadamente uma hora para que os dados atualizados estejam visíveis nos códigos de inserção. Você pode desabilitar a atualização automática escolhendo **não atualizar** no agendamento do conjunto de dados usado pelo relatório.  
+As atualizações de dados são refletidas automaticamente no relatório ou visual inserido. Pode levar aproximadamente uma hora para que os dados atualizados estejam visíveis nos códigos de inserção. Para desabilitar a atualização automática, você pode selecionar **não são atualizadas** no agendamento do conjunto de dados que usa o relatório.  
 
 ## <a name="custom-visuals"></a>Visuais personalizados
 
-Há suporte para visuais personalizados no recurso **Publicar na Web**. Quando você usa Publicar na Web, os usuários com os quais você compartilha seu visual publicado não precisam habilitar visuais personalizados para exibir o relatório.
+Há suporte para visuais personalizados no recurso **Publicar na Web**. Quando você usa **publicar na web**, os usuários com quem você compartilha seu visual publicado não precisam habilitar visuais personalizados exibir o relatório.
 
 ## <a name="limitations"></a>Limitações
 
-Há suporte para o recurso **Publicar na Web** para a maioria das fontes de dados e relatórios no serviço do Power BI; no entanto, veja abaixo o que **não tem suporte ou o que não está disponível atualmente** com Publicar na Web:
+**Publicar na web** há suporte para a grande maioria dos dados de fontes e os relatórios no serviço do Power BI, no entanto, a seguir estão **não atualmente com suporte ou disponíveis** com **publicar na web** :
 
 - Relatórios que usam a segurança em nível de linha.
 - Relatórios que usam qualquer fonte de dados de Conexão Dinâmica, incluindo Tabulares do Analysis Services hospedados localmente no Analysis Service Multidimensional e o Azure Analysis Services.
 - Relatórios compartilhados com você diretamente ou por meio de um pacote de conteúdo organizacional.
 - Relatórios em um grupo no qual você não é um membro de edição.
-- Atualmente, não há suporte para os visuais do “R” em relatórios Publicar na Web.
-- Exportar dados de visuais em um relatório que foi publicado na Web
-- Visuais do ArcGIS Maps for Power BI
-- Relatórios que contêm medidas DAX no nível de relatório
-- Modelos de consulta de dados de logon único
-- [Informações confidenciais ou proprietárias](#publish-to-web-from-power-bi)
+- "R" visuais atualmente não têm suporte no **publicar na web** relatórios.
+- Exportar dados de visuais em um relatório, que foi publicado na Web.
+- ArcGIS Maps for Power BI visuais.
+- Relatórios que contêm medidas DAX de nível de relatório.
+- Modelos de consulta de dados de logon único.
+- [Proteger informações confidenciais ou proprietárias](#publish-to-web-from-power-bi).
 - O recurso de autenticação automática fornecido com a opção **Inserir** não funciona com a API JavaScript do Power BI. Para a API JavaScript do Power BI, use a abordagem [o usuário possui dados](developer/embed-sample-for-your-organization.md) para inserção. Saiba mais sobre a abordagem [o usuário possui dados](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Configuração de locatário
 
-Os administradores do Power BI podem habilitar ou desabilitar o recurso de publicar na Web. Eles também podem restringir o acesso a grupos específicos. Sua capacidade de criar um código de inserção altera conforme essa configuração.
+Os administradores do Power BI podem habilitar ou desabilitar a **publicar na web** recurso. Eles também podem restringir o acesso a grupos específicos, que podem afetar sua capacidade de criar um código de inserção.
 
-|Recurso |Habilitado para toda a organização |Desabilitado para toda a organização |Especificar grupos de segurança   |
+|Recurso |Habilitado para toda a organização |Desabilitado para toda a organização |Grupos de segurança específicos   |
 |---------|---------|---------|---------|
-|**Publicar na Web** no menu **Arquivo** do relatório.|Habilitado para todos|Não visível para todos|Visível somente para usuários ou grupos autorizados.|
-|**Gerenciar códigos de inserção** em **Configurações**|Habilitado para todos|Habilitado para todos|Habilitado para todos<br><br>Opção * **Excluir** somente para usuários ou grupos autorizados.<br>* **Obter códigos** habilitados para todos.|
+|**Publicar na web** sob do relatório **arquivo** menu|Habilitado para todos|Não visível para todos|Visível somente para usuários ou grupos autorizados.|
+|**Gerenciar códigos de inserção** em **Configurações**|Habilitado para todos|Habilitado para todos|Ativado para todos.<br><br>Opção * **Excluir** somente para usuários ou grupos autorizados.<br>* **Obter códigos** habilitados para todos.|
 |**Códigos de inserção** no portal de administração|O status refletirá o seguinte:<br>* Ativo<br>* Sem suporte<br>* Bloqueado|O status exibirá **Desabilitado**|O status refletirá o seguinte:<br>* Ativo<br>* Sem suporte<br>* Bloqueado<br><br>Se um usuário não estiver autorizado conforme a configuração do locatário, o status exibirá **violado**.|
 |Relatórios publicados existentes|Tudo habilitado|Tudo desabilitado|Os relatórios continuam a ser renderizados para todos.|
 
 ## <a name="understanding-the-embed-code-status-column"></a>Noções básicas sobre a coluna de status do código de inserção
 
-Ao exibir a página **Gerenciar códigos de inserção** de seus códigos de inserção de **Publicar na Web** , uma coluna de status será fornecida. Os códigos de inserção estão ativos por padrão, mas você pode encontrar qualquer um dos estados listados abaixo.
+O **gerenciar códigos de inserção** página inclui uma coluna de status. Por padrão, códigos de inserção são **Active**, mas também pode ser um dos status listados abaixo.
 
 | Status | Descrição |
 | --- | --- |
 | **Ativo** |O relatório está disponível para que os usuários da Internet o vejam e interajam com ele. |
-| **Bloqueado** |O conteúdo do relatório viola os [Termos de Serviço do Power BI](https://powerbi.microsoft.com/terms-of-service). Ele foi bloqueado pela Microsoft. Entre em contato com o suporte se acreditar que o conteúdo foi bloqueado por engano. |
-| **Sem suporte** |O conjunto de dados do relatório está usando a segurança em nível de linha ou outra configuração sem suporte. Veja a seção **Limitações** para obter uma lista completa. |
-| **Violado** |O código de inserção está fora da política de locatário definida. Isso normalmente ocorre quando um código de inserção foi criado e, em seguida, a configuração Publicar na Web foi alterada para excluir o usuário que possui o código de inserção. Se a configuração de locatário estiver desabilitada ou o usuário não tem mais permissão para criar códigos de inserção, os códigos de inserção existentes mostrarão o status de **Violado**. |
+| **Bloqueado** |O conteúdo do relatório viola os [termos de serviço do Power BI](https://powerbi.microsoft.com/terms-of-service). Microsoft bloqueou a ele. Entre em contato com o suporte se acreditar que o conteúdo foi bloqueado por engano. |
+| **Sem suporte** |O conjunto de dados do relatório está usando a segurança em nível de linha ou outra configuração sem suporte. Consulte a [ **limitações** ](#limitations) seção para obter uma lista completa. |
+| **Violado** |O código de inserção está fora de política de locatário definida. Isso normalmente ocorre quando um código de inserção foi criado e, em seguida, o **publicar na web** configuração de locatário foi alterado para excluir o usuário que possui o código de inserção. Se a configuração de locatário está desabilitado ou o usuário não tem permissão para criar códigos de inserção, mostrar os códigos de inserção existentes uma **violado** status. |
 
 ## <a name="how-to-report-a-concern-with-publish-to-web-content"></a>Como relatar um problema com o conteúdo de Publicar na Web
 
-Para relatar um problema relacionado ao conteúdo de **Publicar na Web** inserido em um site ou blog, use o ícone **Sinalizador** na barra inferior, mostrada na imagem a seguir. Será solicitado que você envie um email à Microsoft explicando o problema. A Microsoft avaliará o conteúdo com base nos Termos de Serviço do Power BI e tomará as devidas providências.
+Para relatar um problema relacionado ao **publicar na web** conteúdo inserido em um site ou blog, use o **sinalizador** ícone na barra inferior, conforme mostrado na imagem a seguir. Você será solicitado a enviar um email à Microsoft explicando sua preocupação. Microsoft avaliará o conteúdo com base nos termos de serviço do Power BI e tomar as devidas providências.
 
-Para relatar um problema, selecione o ícone **sinalizador** na barra inferior do relatório de Publicar na Web exibido.
+Para relatar um problema, selecione a **sinalizador** ícone na barra inferior do **publicar na web** você ver de relatório.
 
 ![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
 ## <a name="licensing-and-pricing"></a>Licenciamento e preços
 
-Você precisa ser um usuário do Microsoft Power BI para usar o recurso **Publicar na Web**. Os consumidores de seu relatório (os leitores, as pessoas que verão o relatório) não precisam ser usuários do Power BI.
+Você precisa ser um usuário do Microsoft Power BI para usar o recurso **Publicar na Web**. Visualizadores do relatório não precisará ser usuários do Power BI.
 
+<a name="howitworks"></a>
 ## <a name="how-it-works-technical-details"></a>Como isso funciona (detalhes técnicos)
 
-Quando você cria um código de inserção usando **Publicar na Web**, o relatório fica visível para os usuários na Internet. Está disponível publicamente e, portanto, você pode esperar que as pessoas que verão seu relatório o compartilhem com facilidade por meio da mídia social no futuro. Conforme os usuários exibem o relatório, abrindo a URL pública direta ou exibindo-o inserido em uma página da Web ou em um blog, o Power BI armazena em cache a definição do relatório e os resultados das consultas necessárias para exibi-lo. Essa abordagem garante que o relatório pode ser exibido por milhares de usuários simultâneos, sem nenhum impacto sobre o desempenho.
+Quando você cria um código de inserção usando **publicar na web**, o relatório fica visível para os usuários da Internet. Ele está disponível publicamente, então você pode esperar visualizadores e compartilhar facilmente o relatório por meio de mídia social no futuro. Conforme os usuários exibem o relatório, abrindo a URL pública direta ou exibindo-o inserido em uma página da Web ou em um blog, o Power BI armazena em cache a definição do relatório e os resultados das consultas necessárias para exibi-lo. Isso garante que milhares de usuários simultâneos podem exibir o relatório sem afetar o desempenho.
 
-O cache é duradouro; portanto, se você atualizar a definição do relatório (por exemplo, se alterar seu modo de Exibição) ou se atualizar os dados do relatório, poderá levar aproximadamente uma hora até que as alterações sejam refletidas na versão do relatório exibida pelos usuários. Portanto, é recomendável que você teste seu trabalho antecipadamente e crie o código de inserção de **Publicar na Web** somente quando estiver satisfeito com as configurações.
+O cache é duradouro; portanto, se você atualizar a definição de relatório (por exemplo, se você alterar seu modo de exibição) ou atualizar os dados de relatório, pode levar aproximadamente uma hora antes das alterações são refletidas na versão do relatório que exibir seus usuários. Portanto, é recomendável que você teste seu trabalho antecipadamente e crie o código de inserção de **Publicar na Web** somente quando estiver satisfeito com as configurações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

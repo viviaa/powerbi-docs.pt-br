@@ -12,11 +12,11 @@ ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56214988"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61138012"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fixar um bloco em um painel do Power BI a partir do Excel
 Antes de fixar um bloco da sua pasta de trabalho do Excel, conecte-a ao serviço do Power BI (app.powerbi.com). Essencialmente, a conexão com uma pasta de trabalho abre uma versão somente leitura vinculada dessa pasta de trabalho no serviço do Power BI e permite fixar intervalos nos dashboards. É possível até fixar uma planilha inteira em um dashboard.  

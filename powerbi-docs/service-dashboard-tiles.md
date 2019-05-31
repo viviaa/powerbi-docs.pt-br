@@ -12,11 +12,11 @@ ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: c8b5728c951bc1a25e71da8885997814c5485cd4
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61138267"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introdução aos blocos de dashboard para designers do Power BI
 
@@ -43,7 +43,7 @@ Há diversas maneiras de adicionar (fixar) um bloco em um dashboard. Os blocos p
 * [outro dashboard](service-pin-tile-to-another-dashboard.md)
 * [uma pasta de trabalho do Excel no OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher para Excel](publisher-for-excel.md)
-* [Insights Rápidos](service-insights.md)
+* [Quick Insights (Insights Rápidos)](service-insights.md)
 * [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Além disso, blocos autônomos para imagens, caixas de texto, vídeos, dados de streaming e o conteúdo da Web podem ser criados diretamente no dashboard usando a opção [Adicionar bloco](service-dashboard-add-widget.md).
