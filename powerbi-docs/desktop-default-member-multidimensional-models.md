@@ -11,11 +11,11 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 01b0cdf70c985169d474a130ed4ad846ad708963
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284738"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61308792"
 ---
 # <a name="default-member-in-multidimensional-models-in-power-bi"></a>Membro padrão em modelos multidimensionais no Power BI
 
@@ -36,7 +36,7 @@ Por exemplo, imagine que temos uma *Moeda* que tenha um membro padrão definido 
 * Nesse caso de exemplo, se tivermos um cartão que mostre *Total de Vendas*, o valor terá o membro padrão aplicado e poderemos ver as vendas que correspondem a "USD".
 * Se arrastarmos *Moeda* para o painel do cartão de filtro, veremos *USD* como o valor padrão selecionado. O valor de *Total de Vendas* permanecerá igual, uma vez que o membro padrão está aplicado.
 * No entanto, se desmarcamos o valor *USD* do cartão de filtro, o membro padrão para *Moeda* será limpo e o *Total de Vendas* refletirá todas as moedas.
-* Consequentemente, quando selecionamos outro valor no cartão de filtro (digamos que selecionamos *EURO*) do membro padrão, o *Total de Vendas* refletirá o filtro *Moeda EM {USD, EURO}*.
+* Consequentemente, quando selecionamos outro valor no cartão de filtro (digamos que selecionamos *EURO*) do membro padrão, o *Total de Vendas* refletirá o filtro *Moeda EM {USD, EURO}* .
 
 ## <a name="grouping-behavior"></a>Comportamento do agrupamento
 

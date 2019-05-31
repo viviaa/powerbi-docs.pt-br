@@ -1,5 +1,5 @@
 ---
-title: Conectar-se ao arquivo PDF no Power BI Desktop (versão prévia)
+title: Conectar a um arquivo PDF no Power BI Desktop
 description: Conecte-se facilmente e use dados de arquivos PDF no Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,36 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ff61c4d2cc8ec3570e7eee45b7e43ec81f8f7161
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514038"
 ---
-# <a name="connect-to-a-pdf-file-in-power-bi-desktop-preview"></a>Conectar-se ao arquivo PDF no Power BI Desktop (versão prévia)
+# <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Conectar a um arquivo PDF no Power BI Desktop
 No Power BI Desktop, é possível se conectar a um **arquivo PDF** e usar os dados incluídos do arquivo, como qualquer outra fonte de dados no Power BI Desktop.
 
 ![Conectar-se aos dados em arquivos PDF](media/desktop-connect-pdf/connect-pdf_04.png)
 
 As seguintes seções descrevem como conectar-se a um **arquivo PDF**, selecionar dados e trazê-los para o **Power BI Desktop**.
 
-## <a name="enable-the-pdf-connector"></a>Habilitar o conector PDF
-O conector PDF está em versão prévia para o **Power BI Desktop** e deve ser habilitado. Para habilitar o conector PDF, selecione **Arquivo > Opções e Configurações > Opções > Versão prévia dos recursos**, em seguida, marque a caixa de seleção ao lado de **Obter dados de arquivos PDF**. 
-
-![Habilite o conector PDF em Opções > Versão prévia dos recursos](media/desktop-connect-pdf/connect-pdf_01.png)
-
-Você precisará reiniciar o **Power BI Desktop** depois de fazer a seleção.
-
-Quando você usar o conector **PDF (beta)** pela primeira vez, será informado de que o conector PDF ainda está em desenvolvimento e poderá mudar no futuro. Selecione **Continuar** para usar o conector.
-
 É recomendável sempre atualizar para a versão mais recente do **Power BI Desktop**, que pode ser obtida de um link em [obter o Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="connect-to-a-pdf-file"></a>Conectar-se a um arquivo PDF
-Para se conectar a um arquivo **PDF**, selecione **Obter dados** na faixa de opções **Início** no Power BI Desktop. Selecione **Arquivo** nas categorias à esquerda e você verá o **PDF (beta)**.
+Para se conectar a um arquivo **PDF**, selecione **Obter dados** na faixa de opções **Início** no Power BI Desktop. Selecione **Arquivo** nas categorias à esquerda e você verá o **PDF (beta)** .
 
 ![Selecionar PDF em Obter dados](media/desktop-connect-pdf/connect-pdf_01.png)
 

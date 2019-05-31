@@ -1,20 +1,20 @@
 ---
 title: Atualização agendada de relatório do Power BI no Servidor de Relatórios do Power BI
 description: Os relatórios do Power BI podem conectar-se a fontes de dados diferentes. Dependendo de como os dados são usados, fontes de dados diferentes estão disponíveis.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
-ms.translationtype: HT
+ms.author: mblythe
+ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394748"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051013"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Atualização agendada de relatório do Power BI no Servidor de Relatórios do Power BI
 A atualização agendada dos relatórios do Power BI permite que os dados de um relatório permaneçam atualizados.
@@ -34,6 +34,7 @@ Vários componentes são envolvidos ao usar a atualização agendada dos relató
 * O modelo de dados é carregado em uma instância do Analysis Services.
 * Para algumas fontes de dados, o mecanismo de mashup do Power Query é usado para os processos de conexão a fontes de dados e de transformação dos dados. Outras fontes de dados podem ser conectadas diretamente de um serviço do Analysis Services usado para hospedar os modelos de dados do Servidor de Relatórios do Power BI.
 * Os novos dados são carregados no modelo de dados do Analysis Services.
+* Em uma configuração de expansão, o modelo de dados pode ser replicado entre os nós.
 * O Analysis Services processa os dados e executa os cálculos necessários.
 
 O Servidor de Relatórios do Power BI mantém uma fila de eventos para todas as operações agendadas. Ele pesquisa a fila em intervalos regulares para verificar novos eventos. Por padrão, a fila é verificada em intervalos de 10 segundos. Você pode alterar o intervalo modificando as definições de configuração de **PollingInterval**, de **IsNotificationService** e de **IsEventService** no arquivo RSReportServer.config. **IsDataModelRefreshService** também pode ser usado para definir se um processo do servidor de relatório agendou eventos.

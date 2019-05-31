@@ -11,11 +11,11 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 3e7169e1aa54db93488f0c55e701188667f70305
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289246"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61285855"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Usar um IDE do Python externo com o Power BI
 Com o **Power BI Desktop**, você pode usar um IDE do Python externo (ambiente de desenvolvimento integrado) para criar e refinar scripts do Python e então usar esses scripts no Power BI.
