@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8fc17759ea38cc96c69e7639ed25172e782a9d4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262889"
+---
 Depois de criar um dashboard, você pode editar seus **Blocos* no serviço do Power BI para fazer algumas alterações de formatação.
 
 Para fazer alterações a um bloco, focalize o bloco e selecione as reticências (três pontos) para mostrar uma coleção de ícones que permitem fazer alterações ao bloco.

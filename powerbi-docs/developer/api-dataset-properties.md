@@ -1,20 +1,20 @@
 ---
 title: Propriedades do conjunto de dados do Power BI
 description: Saiba mais sobre as propriedades das APIs do conjunto de dados do Power BI
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: d272914fc41c8bd4abc78ae36a46de9e53817c81
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248920"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61386283"
 ---
 # <a name="dataset-properties"></a>Propriedades do conjunto de dados
 
@@ -31,7 +31,7 @@ ID     |  GUID       | Identificador exclusivo do sistema todo para o conjunto d
 Nome     | Cadeia de caracteres        | Nome do conjunto de dados definido pelo usuário.        | False        | True        
 tabelas     | Tabela[]        | Coleção de tabelas.        |  False       | False        
 relacionamentos     | Relação[]        | Coleção de relações entre tabelas.        | False        |  False  
-defaultMode     | Cadeia de caracteres        | Determina se o conjunto de dados é enviado, transmitido ou as duas opções, com valores de "Push", "Fluxo" e "PushStreaming".         | False        |  False
+defaultMode     | Cadeia de caracteres        | Determina se o conjunto de dados é enviado, transmitido, ou ambos, com valores de "Push" e "Streaming".         | False        |  False
 
 ## <a name="table"></a>Table
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215725"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989095"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Usar Temas de relatório no Power BI Desktop
 Com **Temas de Relatório**, você pode aplicar um tema de cor ao relatório inteiro, como as cores da empresa, uma coloração sazonal ou outros temas de cor. Quando você aplicar um **Tema de Relatório**, todos os visuais no relatório passarão a usar as cores do tema selecionado. Algumas exceções aplicam-se e são descritas neste artigo.
@@ -24,21 +24,7 @@ Com **Temas de Relatório**, você pode aplicar um tema de cor ao relatório int
 
 Quando você aplica um **Tema de Relatório**, é necessário ter um arquivo JSON que usa uma estrutura básica. Em seguida, você pode importar esse arquivo JSON para o Power BI Desktop e aplicá-lo ao seu relatório. A estrutura do arquivo JSON e o processo de importação são rápidos e fáceis (apenas alguns cliques de botão).
 
-A partir da versão de setembro de 2017 do **Power BI Desktop**, você pode definir ainda mais elementos de tema de relatório usando um arquivo JSON. Você também pode personalizar e padronizar quase todos os elementos. Para personalizar, você usa o arquivo JSON que ajusta manualmente no painel **Formatação**. A meta da versão de setembro de 2017 (e posterior) é dar a você o controle completo sobre a aparência dos relatórios em um nível granular.
-
-### <a name="enable-report-themes"></a>Habilitar temas de relatórios
-A partir da versão de agosto de 2018 do **Power BI Desktop**, os temas de relatório estão disponíveis para o público geral e não precisam ser habilitados. 
-
-Se você estiver usando uma versão anterior do **Power BI Desktop**, poderá habilitá-la como uma versão prévia do recurso por meio das seguintes etapas: 
-
-1. Selecione **Arquivo > Opções e Configurações > Opções > Recursos de Preview**. 
-2. Em seguida, marque a caixa de seleção ao lado de **Temas de relatório personalizados**. 
-
-Você precisará reiniciar o **Power BI Desktop** depois de fazer a seleção.
-
-![Temas de relatório personalizados](media/desktop-report-themes/report-themes_2.png)
-
-É recomendável sempre atualizar para a versão mais recente do **Power BI Desktop**, que pode ser obtida de um link em [Obter o Power BI Desktop](desktop-get-the-desktop.md). 
+Você também pode personalizar e padronizar quase todos os elementos. Para personalizar, você usa o arquivo JSON que ajusta manualmente no painel **Formatação**. O objetivo é oferecer a você controle total sobre como seus relatórios de aparência e, em um nível granular.
 
 ## <a name="how-report-themes-work"></a>Como os temas de relatório funcionam
 Para aplicar um tema de relatório a um relatório do Power BI Desktop, selecione dentre os temas de relatório internos disponíveis ou importe um tema personalizado.
@@ -113,7 +99,7 @@ Aqui está o texto do arquivo *St Patrick's Day.json* que você pode usar para c
 
 Daí, é possível inserir seu próprio código hexadecimal de cor para as cores selecionadas.
 
-A partir da versão de setembro de 2017 do **Power BI Desktop**, o arquivo JSON pode ser muito mais sofisticado. No arquivo JSON, você apenas define a formatação que deseja ajustar e tudo *não* especificado no arquivo JSON simplesmente é revertido para as configurações padrão do Power BI.
+No arquivo JSON, você apenas define a formatação que deseja ajustar e tudo *não* especificado no arquivo JSON simplesmente é revertido para as configurações padrão do Power BI.
 
 As vantagens de criar um arquivo JSON são muitas. Por exemplo, você pode especificar que todos os gráficos usem o tamanho da fonte 12, que alguns visuais usem uma família de fontes específica. Ou você pode desativar os rótulos de dados para tipos de gráfico específicos.
 
@@ -230,7 +216,7 @@ Os boolianos são *true* ou *false*. As cadeias de caracteres devem estar entre 
 | medidor |
 | hundredPercentStackedBarChart |
 | hundredPercentStackedColumnChart |
-| image |
+| imagem |
 | kpi |
 | lineChart |
 | lineClusteredColumnComboChart |

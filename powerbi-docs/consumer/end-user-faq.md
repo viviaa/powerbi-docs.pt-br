@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ef29c6b73a9a430fda35c2274dd278d11bd29dcc
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: f32a5704d611153e5b4a0f3a485f2a4a25f93e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661941"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61059939"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Perguntas frequentes sobre o Power BI
 * Se você tiver outras dúvidas, [experimente perguntar à comunidade do Power BI](http://community.powerbi.com/).
@@ -31,8 +31,9 @@ O Power BI Pro é uma licença individual que permite acesso a todo o conteúdo 
 O Premium oferece capacidade dedicada para entregar um desempenho mais consistente e dar suporte a volumes maiores de dados no Power BI. Para usuários individuais, o Premium também possibilita a distribuição difundida de conteúdo por usuários Pro, sem a necessidade de licenças por usuário para os destinatários exibirem o conteúdo.
 
 ## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>O que acontece se minha licença do Power BI Pro expirar?
-Há um período de carência de 30 dias após a expiração de uma licença do Power BI Pro.
-O Power BI Pro tem o mesmo ciclo de vida de assinatura que o Office 365. Para obter mais informações, consulte [O que acontece com meus dados e o acesso quando termina minha assinatura do Office 365 para empresas?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+Há um período de carência após a expiração de uma licença do Power BI Pro. Para licenças que fazem parte de uma compra de licença de volume, o período de carência é de 90 dias. Se você adquiriu a licença diretamente, o período de carência é de 30 dias.
+
+O Power BI Pro tem o mesmo ciclo de vida de assinatura que o Office 365. Para obter mais informações, consulte [o que acontece com meus dados e o acesso quando termina minha Office 365 para a assinatura de negócios?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>E se eu tiver dúvidas sobre o Power BI Premium?
 Para solucionar dúvidas relacionadas ao Power BI Premium, consulte [Perguntas Frequentes sobre o Power BI Premium](../service-premium-faq.md).
@@ -90,11 +91,6 @@ Veja uma lista completa de [regiões e idiomas com suporte no Power BI](../suppo
 É possível comprar licenças do Power BI Pro diretamente ou conversar com um representante no [www.powerbi.com](http://www.powerbi.com).
 
 Você também pode encontrar um [Microsoft Partner](https://partner.microsoft.com/) para ajudá-lo com a implementação do Power BI.
-
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>O que acontece se minha licença do Power BI Pro expirar?
-Há um período de carência após a expiração de uma licença do Power BI Pro. Para licenças que fazem parte de uma compra de licença de volume, o período de carência é de 90 dias. Se você adquiriu a licença diretamente, o período de carência é de 30 dias.
-
-O Power BI Pro tem o mesmo ciclo de vida de assinatura que o Office 365. Para obter mais informações, consulte [O que acontece com meus dados e o acesso quando termina minha assinatura do Office 365 para empresas?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>O Power BI atende aos requisitos de conformidade regional, nacional e específicos do setor?
 Para saber mais sobre a conformidade do Power BI, veja na [Central de Confiabilidade da Microsoft](http://go.microsoft.com/fwlink/?LinkId=785324).

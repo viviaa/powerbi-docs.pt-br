@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 68645069b22163ca7ae2a64310e43f1a801434f5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61254213"
+---
 Você pode atualizar relatórios e conjuntos de dados já publicados por meio do Power BI Desktop no serviço do Power BI. Para fazer isso, selecione **Publicar** na guia **Página Inicial** da faixa de opções.
 
 ![](media/4-5-manually-republish-reports/4-5_0.png)

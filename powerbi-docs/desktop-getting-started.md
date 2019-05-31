@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454513"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Introdução ao Power BI Desktop
@@ -148,7 +148,7 @@ Precisamos fazer mais algumas alterações para obtermos a consulta onde desejam
 
 * *Alterar o Nome da Tabela* – **Tabela 0** não é um descritor útil, mas é simples modificá-lo
 
-Cada uma dessas etapas é demonstrada em **[Formatar e combinar dados no Power BI Desktop](desktop-shape-and-combine-data.md)**. Fique à vontade para verificar essa página, ou prossiga neste documento para ver o que você faria em seguida. A próxima seção retoma após a aplicação das alterações acima.
+Cada uma dessas etapas é demonstrada em **[Formatar e combinar dados no Power BI Desktop](desktop-shape-and-combine-data.md)** . Fique à vontade para verificar essa página, ou prossiga neste documento para ver o que você faria em seguida. A próxima seção retoma após a aplicação das alterações acima.
 
 ## <a name="combine-data"></a>Combinar dados
 Esses dados sobre vários estados são interessantes e serão úteis para a criação de consultas e esforços de análise adicionais. Mas há um problema: a maioria dos dados usam uma abreviação de duas letras para códigos de estado, em vez de utilizar o nome completo do estado. Precisamos de alguma maneira de associar os nomes de estado às suas abreviações.
@@ -161,7 +161,7 @@ Na faixa de opções **Página Inicial** no **Editor de Consultas**, selecionamo
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 
-Selecionamos **Tabela[editar]** porque isso inclui os dados que queremos, mas será necessária bastante formatação para que os dados da tabela sejam equivalentes ao que desejamos. Cada uma dessas etapas também é demonstrada em **[Formatar e combinar dados no Power BI Desktop](desktop-shape-and-combine-data.md)**. Para resumir essas etapas, eis aqui o que fazemos:
+Selecionamos **Tabela[editar]** porque isso inclui os dados que queremos, mas será necessária bastante formatação para que os dados da tabela sejam equivalentes ao que desejamos. Cada uma dessas etapas também é demonstrada em **[Formatar e combinar dados no Power BI Desktop](desktop-shape-and-combine-data.md)** . Para resumir essas etapas, eis aqui o que fazemos:
 
 Selecionamos **Editar**e depois:
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f66cc9f911c63703accb348e49133dbf3587d58a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264309"
+---
 O **Power BI Desktop** pode se conectar a uma grande variedade de fontes de dados, incluindo bancos de dados locais, pastas de trabalho do Excel e serviços de nuvem. Atualmente, mais de 59 serviços de nuvem diferentes, como GitHub e Marketo, tem conectores específicos, e você pode se conectar a fontes genéricas por meio de XML, CSV, texto e ODBC. O Power BI até mesmo extrairá dados de tabela diretamente de uma URL do site! Mas vamos começar do início, abrindo o Power BI Desktop e conectando-se a dados.
 
 Quando você inicia o **Power BI Desktop** e passa pela Tela Iniciar, é possível optar por Obter Dados na faixa de opções, na guia **Página Inicial**.

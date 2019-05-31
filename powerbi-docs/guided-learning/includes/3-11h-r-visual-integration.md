@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 226fdd59b00dc2daa625f9b1941599d21cc35087
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396097"
+---
 Com o Power BI Desktop, é possível executar uma análise estatística e analítica e criar visuais interessantes integrando o R. Você pode hospedar as visualizações do R no relatório do Power BI Desktop.
 
 Quando você seleciona o ícone de **visual do R** no painel **Visualizações**, o Power BI cria um espaço reservado na tela para hospedar o visual do R e, em seguida, apresenta um editor de scripts R para uso diretamente na tela. Conforme você adiciona campos ao visual do R, o Power BI Desktop os adiciona ao painel do editor de scripts R.

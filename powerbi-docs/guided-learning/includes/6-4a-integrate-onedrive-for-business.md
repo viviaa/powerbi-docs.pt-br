@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 6ce1c53fa1206f7cc828bfcdb26f5f4cd9d3c524
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61254216"
+---
 Em um artigo anterior, examinamos a criação de grupos para ajudar sua organização a gerenciar e colaborar usando o conteúdo do Power BI. Você também pode usar os grupos do Power BI/Office 365 para colaborar e compartilhar usando o **OneDrive for Business**.
 
 O uso do OneDrive for Business como uma fonte para o conteúdo do Power BI fornece acesso a diversas ferramentas úteis, como o histórico de versão. Você também pode compartilhar seus arquivos com um grupo do Office 365 no OneDrive for Business para fornecer acesso e permitir que várias pessoas trabalhem nos mesmos arquivos do Power BI ou Excel.

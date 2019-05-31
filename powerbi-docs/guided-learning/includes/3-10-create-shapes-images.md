@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7415008e3e1faf3aa2665c643523db2e861bfe85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396094"
+---
 Juntamente com os visuais associados aos dados, você também pode adicionar elementos estáticos, tais como caixas de texto, imagens e formas, para aprimorar o design visual de seus relatórios. Para adicionar um elemento visual, selecione **Caixa de Texto**, **Imagem** ou **Formas** na guia **Página Inicial**.
 
 ![](media/3-10-create-shapes-images/3-10_1.png)

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6755233733c4500865615c28850793aae7972d9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262892"
+---
 Já vimos como o Power BI ajuda a encontrar dados, coletá-los em um modelo de dados e criar relatórios e visualizações usando esses dados. Também vimos como você pode publicar esses relatórios no serviço do Power BI e criar dashboards que vão ajudá-lo a monitorar suas informações ao longo do tempo. Todos esses recursos são ainda mais eficientes quando você compartilha suas análises com outras pessoas em sua organização. Felizmente, é fácil compartilhar seus dashboards.
 
 Para compartilhar um dashboard, abra-o no serviço do Power BI e selecione o link **Compartilhar** no canto superior direito.

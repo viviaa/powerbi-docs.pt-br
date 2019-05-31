@@ -7,15 +7,15 @@ ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: ''
-ms.openlocfilehash: fbfd8c98743144e0c9604aca4174d6ef32916e77
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
-ms.translationtype: HT
+ms.openlocfilehash: c981a3e2a05129a470c8d26675226bfb42c1bb68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914266"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769544"
 ---
 # <a name="query-caching-in-power-bi-premium"></a>Cache de consulta no Power BI Premium
 
@@ -26,9 +26,7 @@ As organizações com o Power BI Premium podem aproveitar o *cache de consulta* 
 
 Os resultados da consulta em cache são específicos ao contexto do conjunto de dados e do usuário e sempre respeitam as regras de segurança. No momento, o serviço apenas consulta o cache para a página inicial à qual você é levado. Em outras palavras, consultas não são armazenadas em cache quando você interage com o relatório. O cache reflete indicadores pessoais e filtros persistentes. [Blocos de dashboard](service-dashboard-tiles.md) que são ativados pelas mesmas consultas também são beneficiados quando a consulta é armazenada em cache. O desempenho é especialmente beneficiado quando um conjunto de dados é acessado com frequência e não precisa ser atualizado com frequência. O cache de consulta também pode reduzir a carga em sua capacidade Premium, reduzindo o número total de consultas.
 
-Você controla o comportamento de cache de consulta na página **Configurações** para o conjunto de dados no serviço do Power BI. Ele tem três configurações possíveis:
-
-- **Padrão de Capacidade**: O conjunto de dados herda a configuração da capacidade Premium. O padrão de capacidade é controlado pelo administrador de capacidade do Power BI Premium.
+Você controla o comportamento de cache de consulta na página **Configurações** para o conjunto de dados no serviço do Power BI. Ele tem duas configurações possíveis:
 
 - **Desligado**: Não use cache de consulta para esse conjunto de dados.
 

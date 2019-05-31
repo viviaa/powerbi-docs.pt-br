@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 8172934357c24516a40a670c68e008521bd4d82d
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61051094"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Conceitos básicos para ***consumidores*** do serviço do Power BI
 
@@ -104,7 +104,7 @@ Alguns exemplos das visualizações que você encontrará no Power BI são: casc
 
    ![8 visuais de exemplo](media/end-user-basic-concepts/power-bi-visuals.png)
 
-As visualizações também são disponibilizadas pela comunidade e são chamadas *visuais personalizados*. Se você receber um relatório com um visual que não reconhece, provavelmente será um visual personalizado. Se precisar de ajuda para interpretar o visual personalizado, <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->pesquise o nome do *designer* do relatório ou do dashboard e entre em contato com ele.
+As visualizações também são disponibilizadas pela comunidade e são chamadas *visuais personalizados*. Se você receber um relatório com um visual que não reconhece, provavelmente será um visual personalizado. Se precisar de ajuda para interpretar o visual personalizado, <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->Pesquisar o nome do relatório ou dashboard *designer* e entre em contato com ele ou ela.
 
 **UMA** visualização em um relatório...
 

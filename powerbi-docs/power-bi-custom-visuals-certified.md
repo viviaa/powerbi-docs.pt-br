@@ -9,17 +9,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
-ms.openlocfilehash: a9f8c6248f9754192009e12bab34d3f1427269c2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 05/9/2019
+ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174788"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454554"
 ---
 # <a name="certified-custom-visuals"></a>Visuais personalizados certificados
 
-## <a name="what-are-certified-custom-visuals"></a>O que são visuais personalizados **_certificados_**?
+## <a name="what-are-certified-custom-visuals"></a>O que são visuais personalizados **_certificados_** ?
 
 Visuais personalizados certificados são visuais nos **Marketplace** que cumprem determinados requisitos de **código especificado** que a **equipe do Microsoft Power BI** testou e aprovou. Depois que um visual personalizado é certificado, ele oferece mais recursos. Assim, você pode [exportar para o PowerPoint](consumer/end-user-powerpoint.md) e pode exibir o visual em emails recebidos quando um usuário [assina páginas do relatório](consumer/end-user-subscribe.md).
 
@@ -31,7 +31,7 @@ O processo de certificação é opcional e fica a critério dos desenvolvedores 
 
 **Visuais personalizados não certificados** não necessariamente significam visuais não seguros. Alguns visuais não são certificados, pois não são compatíveis com um ou mais dos [requisitos de certificação](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Por exemplo, conectar-se a um serviço externo, como o mapa de visuais, ou usar bibliotecas comerciais ou visuais.
 
-Você é um desenvolvedor da Web e está interessado em criar suas próprias visualizações e adicioná-las ao  **[Microsoft AppSource](https://appsource.microsoft.com)**? Veja  **[Desenvolvimento de um visual personalizado do Power BI](developer/custom-visual-develop-tutorial.md)** para saber mais.
+Você é um desenvolvedor da Web e está interessado em criar suas próprias visualizações e adicioná-las ao  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Veja  **[Desenvolvimento de um visual personalizado do Power BI](developer/custom-visual-develop-tutorial.md)** para saber mais.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Remoção dos Visuais personalizados certificados do Power BI
 
@@ -44,11 +44,34 @@ A Microsoft pode remover um elemento visual da [lista de certificados](#list-of-
 Para [certificar](#certified-custom-visuals) seu visual personalizado, verifique se ele cumpre o seguinte:  
 
 * Aprovado pelo Microsoft AppSource. Seu visual personalizado deve estar no nosso [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* O visual personalizado é escrito com a API com controle de versão 1.2 ou superior.
-* Repositório de código disponível para análise pela equipe do Power BI (por exemplo, código-fonte – JavaScript ou TypeScript – em formato legível por humanos, disponível para nós, por meio do GitHub).
+* Visual personalizado é escrito com controle de versão **v2.5 API** ou superior.
+* Repositório de código está disponível para análise pela equipe do Power BI (por instância, o código-fonte (JavaScript ou TypeScript) em formato legível está disponível para nós, por meio do GitHub).
 
     >[!Note]
     > Você não precisa compartilhar publicamente seu código no Github.
+* Requisitos de repositório de código:
+   * Deve incluir o conjunto mínimo necessário de arquivos:
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * package-lock.json
+      * tsconfig.json
+   * Não deve incluir a pasta node_modules (Adicionar node_modules .gitingore arquivo)
+   * **instalar o NPM** comando não deve retornar erros.
+   * **auditoria de NPM** comando deve retornar todos os avisos com nível alto ou moderado.
+   * **pacote pbiviz** comando não deve retornar erros.
+   * Deve incluir [TSlint da Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) sem nenhuma configuração substituída, e esse comando não deve retornar erros lint.
+   * O pacote compilado do Visual personalizado deve corresponder ao pacote enviado (hash de md5 dos dois arquivos deve ser igual).
+* Requisitos de código de origem:
+   * O visual deve dar suporte à [API de eventos de renderização](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Certifique-se de que nenhum código arbitrário/dinâmico é executado (incorreta: Eval (), não é seguro usar setTimeout (), requestAnimationFrame(), setinterval (alguma função com a entrada do usuário), entrada/dados de usuário em execução).
+   * Certifique-se de DOM é manipulado com segurança (incorreta: innerHTML, D3.html (< algum usuário/entrada de dados >), use a limpeza para entrada de usuário/data antes de adicioná-lo para o DOM.
+   * Certifique-se de que não há nenhuma exceções/erros de javascript no console do navegador para quaisquer dados de entrada. Os usuários podem usar seu visual com um intervalo diferente de dados inesperados, portanto, o visual não deve falhar. Você pode usar [esse relatório de exemplo](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) como um conjunto de dados de teste.
+
+* Se as propriedades na capabilities.json forem alteradas, certifique-se de que eles não interrompam relatórios do usuário existente.
+
+* Certifique-se de que o visual é compatível com o [diretrizes para visuais do Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Nenhuma marca d'água é permitidas**.
 
 * Usa somente componentes OSS analisáveis públicos (bibliotecas JS ou TypeScript públicos. O código-fonte está disponível para revisão e não tem vulnerabilidades conhecidas). Não podemos verificar um visual personalizado usando um componente comercial.
 

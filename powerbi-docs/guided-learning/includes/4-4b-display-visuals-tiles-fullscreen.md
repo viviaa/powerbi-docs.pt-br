@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d44e24e1f81ab03e85438ef8e5505c308b01e1d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262888"
+---
 Ao observar dashboards ou relatórios do Power BI no serviço, às vezes, pode ser útil se concentrar em um gráfico ou uma visualização individual. Você pode fazer isso de duas maneiras diferentes.
 
 Quando estiver em um dashboard, focalize um bloco para ver algumas opções de ícone diferentes no canto superior direito. Ao selecionar as reticências (três pontos), você verá uma coleção de ícones que representam as ações que podem ser executadas no bloco.

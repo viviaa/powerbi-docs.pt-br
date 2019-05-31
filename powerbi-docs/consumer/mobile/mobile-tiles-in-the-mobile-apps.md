@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286394"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977771"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorar blocos nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -71,7 +71,7 @@ Em seguida, nos aplicativos móveis do Power BI, abra os blocos no modo de foco 
    * Toque no gráfico para mover a barra em um gráfico de linhas, barras, colunas ou bolhas, para exibir os valores de um ponto específico na visualização.  
    * Toque no ícone Compartilhar instantâneo ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) para [anotar e compartilhar o bloco](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) com outras pessoas.
    * Toque no ícone Abrir relatório ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) para [exibir o relatório](mobile-reports-in-the-mobile-apps.md) no aplicativo móvel.
-3. Às vezes, o criador do dashboard adicionou um link a um bloco. Nesse caso, quando você toca nas reticências na vertical, (**...**) vê **Abrir link** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
+3. Às vezes, o criador do dashboard adicionou um link a um bloco. Nesse caso, quando você toca nas reticências na vertical, ( **...** ) vê **Abrir link** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ea958349988cade1045e80b073254ab1f29bbe9e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262894"
+---
 Nos tópicos anteriores, examinamos como é possível usar o Power BI para se conectar a fontes de dados e como atualizar manualmente os conjuntos de dados no serviço do Power BI. No entanto, você não vai querer atualizar tudo manualmente sempre que os dados forem alterados; assim, é possível usar o Power BI para configurar uma atualização agendada que se conectará às suas fontes de dados e as publicará no serviço do Power BI automaticamente. Isso também fornece uma maneira de se conectar ao serviço com quaisquer fonte de dados locais, incluindo arquivos do Excel, bancos de dados do Access, bancos de dados SQL e muito mais.
 
 O sistema que permite a conexão das fontes de dados locais ao serviço do Power BI é chamado de **gateway de dados**. É um pequeno aplicativo executado no computador que usa um agendamento predefinido para se conectar aos dados, coletar todas as atualizações e enviá-las por push ao serviço do Power BI. O **gateway pessoal** é uma versão do **gateway de dados** que pode ser usada sem nenhuma configuração do administrador.

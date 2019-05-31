@@ -1,20 +1,20 @@
 ---
 title: O que os desenvolvedores podem fazer com o Power BI?
 description: O Power BI oferece uma ampla variedade de opções para desenvolvedores. Isso vai desde a inserção até elementos visuais personalizados e conjuntos de dados de streaming.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 63ee9ed96ed699d116b8d81b0cd612f76994a68d
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: d2e3ba69cde609638e54eaa1206714f0fb420d18
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872675"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262606"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>O que os desenvolvedores podem fazer com o Power BI?
 
@@ -58,10 +58,10 @@ Para ver algumas das coisas que você pode fazer com as APIs do Power BI, consul
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Inserção com o Power BI](embedding.md)  
+[Inserindo com o Power BI](embedding.md)  
 
 [Desenvolvimento de um visual personalizado do Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
 [O que os desenvolvedores podem fazer com a API do Power BI?](overview-of-power-bi-rest-api.md)
 
-[Central de desenvolvedores do Power BI](https://powerbi.microsoft.com/developers/)
+[Central de Desenvolvedores do Power BI](https://powerbi.microsoft.com/developers/)

@@ -1,20 +1,20 @@
 ---
 title: Usar segurança em nível de linha com conteúdo inserido do Power BI
 description: Saiba mais sobre as etapas necessárias para inserir o conteúdo do Power BI em seu aplicativo.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.date: 03/27/2019
+ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57328000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61352392"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Segurança em nível de linha com o Power BI Embedded
 
@@ -49,7 +49,7 @@ A seguir, veja alguns itens a serem observados com esse esquema:
 
 * Todas as medidas, como **Total de Vendas**, são armazenadas na tabela de fatos **Vendas**.
 * Há quatro tabelas de dimensões relacionadas adicionais: **Item**, **Hora**, **Loja** e **Distrito**.
-* As setas nas linhas de relacionamento indicam em que direção os filtros podem fluir de uma tabela para outra. Por exemplo, se um filtro for colocado em **Hora[Data]**, no esquema atual, ele apenas filtrará valores da tabela **Vendas**. Nenhuma outra tabela é afetada por esse filtro, pois todas as setas nas linhas de relacionamento apontam para a tabela de vendas e não para outra.
+* As setas nas linhas de relacionamento indicam em que direção os filtros podem fluir de uma tabela para outra. Por exemplo, se um filtro for colocado em **Hora[Data]** , no esquema atual, ele apenas filtrará valores da tabela **Vendas**. Nenhuma outra tabela é afetada por esse filtro, pois todas as setas nas linhas de relacionamento apontam para a tabela de vendas e não para outra.
 * A tabela **Distrito** indica quem é o gerente de cada distrito:
   
     ![Linhas dentro da tabela Distrito](media/embedded-row-level-security/powerbi-embedded-district-table.png)
@@ -64,7 +64,7 @@ Aqui está como:
 2. Crie uma nova função chamada **Gerente**.
 
     ![Criar nova função](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. Na tabela **Distrito**, insira a expressão DAX: **[Gerente Regional] = USERNAME()**.
+3. Na tabela **Distrito**, insira a expressão DAX: **[Gerente Regional] = USERNAME()** .
 
     ![Instrução DAX para a regra de RLS](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
 4. Para verificar se as regras estão funcionando, na guia **Modelagem**, selecione **Exibir como funções**, depois selecione a função **Gerente** que você criou, juntamente com **Outros usuários**. Insira **AndrewMa** como o usuário.
@@ -98,7 +98,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
 ```
 
-para
+to
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -145,9 +145,9 @@ O recurso CustomData funciona apenas para os modelos que residem no **Azure Anal
 
 O recurso CustomData permite adicionar um filtro de linha ao exibir dados do Power BI em seu aplicativo ao usar o **Azure Analysis Services** como sua fonte de dados (exibição de dados do Power BI conectados ao Azure Analysis Services em seu aplicativo).
 
-O recurso CustomData permite passar texto livre (cadeia de caracteres) usando a propriedade de cadeia de caracteres de conexão CustomData. O Analysis Services usa este valor por meio da função *CUSTOMDATA()*.
+O recurso CustomData permite passar texto livre (cadeia de caracteres) usando a propriedade de cadeia de caracteres de conexão CustomData. O Analysis Services usa este valor por meio da função *CUSTOMDATA()* .
 
-A única maneira de ter RLS dinâmica (que usa valores dinâmicos para a avaliação de filtro) no **Azure Analysis Services** é usando a função *CUSTOMDATA()*.
+A única maneira de ter RLS dinâmica (que usa valores dinâmicos para a avaliação de filtro) no **Azure Analysis Services** é usando a função *CUSTOMDATA()* .
 
 É possível usá-lo dentro da consulta DAX de função e usá-lo sem qualquer função em uma consulta DAX de medida.
 O recurso CustomData faz parte de nossa funcionalidade de geração de token para os seguintes artefatos: dashboard, relatório e bloco. Dashboards podem ter várias identidades CustomData (um por bloco/modelo).
@@ -191,7 +191,7 @@ Aqui estão as etapas para começar a configurar o recurso CustomData() com seu 
 
     ![Crie um banco de dados do Azure Analysis Services](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
-    ![Banco de dados do Analysis Services](media/embedded-row-level-security/azure-analysis-services-database.png)
+    ![O banco de dados do Analysis Services](media/embedded-row-level-security/azure-analysis-services-database.png)
 
 2. Crie uma Função no servidor do Analysis Services.
 
@@ -205,7 +205,7 @@ Aqui estão as etapas para começar a configurar o recurso CustomData() com seu 
 
     ![Criar Função – definir configurações de associação](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
-5. Defina sua consulta DAX de **Filtros de linha** usando a função *CUSTOMDATA()*.
+5. Defina sua consulta DAX de **Filtros de linha** usando a função *CUSTOMDATA()* .
 
     ![Criar Função - definir filtros de linha](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
@@ -214,6 +214,8 @@ Aqui estão as etapas para começar a configurar o recurso CustomData() com seu 
     ![Relatório PBI de exemplo](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 7. Use as APIs do Power BI para usar o recurso CustomData em seu aplicativo.  Ao gerar um token com o recurso Custom Data, é preciso ter um nome de usuário. O nome de usuário deve ser igual ao UPN do usuário mestre. O usuário mestre deve ser membro da(s) função(ões) criadas por você. Se nenhuma função for especificada, todas as funções de que usuário mestre for membro serão usadas para avaliação de RLS.
+
+    Ao trabalhar com um [entidade de serviço](embed-service-principal.md), você também precisará fazer as etapas acima em vez de usar uma conta mestre. Quando a geração de token de inserção, use o [ID de objeto de entidade de serviço](embed-service-principal.md#how-to-get-the-service-principal-object-id) como o nome de usuário.
 
     > [!Note]
     > Quando estiver pronto para implantar o aplicativo para produção, a opção ou o campo de conta de usuário mestre não deverá ficar visível para o usuário final.

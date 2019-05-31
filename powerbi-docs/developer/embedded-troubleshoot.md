@@ -1,20 +1,20 @@
 ---
 title: Solucionando problemas do aplicativo inserido
 description: Este artigo aborda alguns problemas comuns que podem ser encontrados ao inserir conteúdo do Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770479"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Solucione problemas do aplicativo inserido
 
@@ -109,7 +109,7 @@ Para resolver esse problema, você deve cortar "oauth2/authorize/" no final da U
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Falha na autenticação com AADSTS70002 ou AADSTS50053
 
-**_(AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)_**
+** _(AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)_ **
 
 Se você estiver usando o Power BI Embedded e a autenticação direta do Azure AD e estiver recebendo mensagens ao fazer logon, como ***error:unauthorized_client, error_description:AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta***. Isso acontece porque a autenticação direta não está mais em uso desde 14 de junho de 2018 por padrão.
 
@@ -161,7 +161,7 @@ Para verificar qual é o problema, tente seguir as etapas abaixo.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: a concessão exige permissão de administrador
 
-**_Sintomas:_**<br>
+**_Sintomas:_ **<br>
 quando um usuário não administrador tenta entrar em um aplicativo pela primeira vez ao conceder autorização, uma das seguintes mensagens de erro é exibida:
 
 * O ConsentTest precisa de permissão para acessar os recursos em sua organização que apenas um administrador pode conceder. Peça a um administrador para conceder permissão para este aplicativo antes de usá-lo.
@@ -171,10 +171,10 @@ quando um usuário não administrador tenta entrar em um aplicativo pela primeir
 
 Um usuário administrador pode entrar e dar o consentimento com êxito.
 
-**_Causa raiz:_**<br>
+**_Causa raiz:_ **<br>
 O consentimento do usuário está desabilitado para o locatário.
 
-**_Várias correções são possíveis:_**
+**_Várias correções são possíveis:_ **
 
 *Habilitar o consentimento do usuário para todo o locatário (todos os usuários, todos os aplicativos)*
 
@@ -184,6 +184,10 @@ O consentimento do usuário está desabilitado para o locatário.
     ![Correção do teste de consentimento](media/embedded-troubleshoot/consent-test-02.png)
 
 *Conceda permissões* ao aplicativo por um administrador – para todo o locatário ou um usuário específico.
+
+### <a name="cs1061-error"></a>Erro CS1061
+
+Baixe [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) se você tiver um "'AuthenticationContext' não contém uma definição para 'AcquireToken' e não acessível 'AcquireToken' aceitando um primeiro argumento do tipo ' AuthenticationContext' pôde ser encontrado (está faltando um usando diretiva ou uma referência de assembly?) "erro.
 
 ## <a name="data-sources"></a>Fontes de dados
 
@@ -203,12 +207,12 @@ Depois de adquirir o objeto IError, você deve examinar a tabela de erros comuns
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | O token de acesso expirou; reenvie com um novo token de acesso | 403 | Token expirado  |
 | PowerBIEntityNotFound | Falha ao obter relatório | 404 | <li> ID de Relatório incorreta <li> O relatório não existe  |
-| Parâmetros inválidos | Parâmetro powerbiToken não especificado | N/A | <li> Nenhum token de acesso fornecido <li> Nenhuma ID de Relatório fornecida |
+| Parâmetros inválidos | Parâmetro powerbiToken não especificado | N/D | <li> Nenhum token de acesso fornecido <li> Nenhuma ID de Relatório fornecida |
 | LoadReportFailed | Falha ao inicializar – não foi possível resolver o cluster | 403 | * Token de acesso inválido * O tipo de inserção não corresponde ao tipo de token |
 | PowerBINotAuthorizedException | Falha ao obter relatório | 401 | <li> ID de grupo incorreta <li> Grupo não autorizado |
-| TokenExpired | O token de acesso expirou. Reenvie com um novo token de acesso. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/A | Token expirado de consulta de dados |
-| OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/A | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/A | <li> Capacidade em pausa <li> Capacidade excluída |
+| TokenExpired | O token de acesso expirou. Reenvie com um novo token de acesso. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/D | Token expirado de consulta de dados |
+| OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/D | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/D | <li> Capacidade em pausa <li> Capacidade excluída |
 
 ### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Erros típicos durante a inserção para usuários que não são do Power BI (usando um Token de Inserção)
 
@@ -218,12 +222,12 @@ Depois de adquirir o objeto IError, você deve examinar a tabela de erros comuns
 | LoadReportFailed | Falha ao obter relatório | 404 | <li> ID de Relatório incorreta <li> O relatório não existe  |
 | LoadReportFailed | Falha ao obter relatório | 403 | A ID do relatório não corresponde ao token |
 | LoadReportFailed | Falha ao obter relatório | 500 | A ID de relatório fornecida não é um GUID |
-| Parâmetros inválidos | Parâmetro powerbiToken não especificado | N/A | <li> Nenhum token de acesso fornecido <li> Nenhuma ID de Relatório fornecida |
+| Parâmetros inválidos | Parâmetro powerbiToken não especificado | N/D | <li> Nenhum token de acesso fornecido <li> Nenhuma ID de Relatório fornecida |
 | LoadReportFailed | Falha ao inicializar – não foi possível resolver o cluster | 403 | Tipo de token errado, Token inválido |
 | PowerBINotAuthorizedException | Falha ao obter relatório | 401 | ID de grupo incorreta/desautorizada |
-| TokenExpired | O token de acesso expirou. Reenvie com um novo token de acesso. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/A | Token expirado de consulta de dados |
-| OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/A | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/A | <li> Capacidade em pausa <li> Capacidade excluída |
+| TokenExpired | O token de acesso expirou. Reenvie com um novo token de acesso. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/D | Token expirado de consulta de dados |
+| OpenConnectionError | Não é possível exibir o visual. Não foi possível renderizar um visual de relatório intitulado: <visual title> | N/D | Capacidade em pausa ou excluída enquanto um relatório relacionado à capacidade estava aberto em uma sessão |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Não foi possível carregar o esquema de modelo associado a este relatório. Verifique se você tem uma conexão com o servidor e tente novamente. | N/D | <li> Capacidade em pausa <li> Capacidade excluída |
 
 ## <a name="content-rendering"></a>Renderização de conteúdo
 

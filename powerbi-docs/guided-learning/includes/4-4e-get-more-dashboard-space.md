@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 605ef74cc97843cc475a677f5fa2ebdbdaec909a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262891"
+---
 Você pode achar que, em certas ocasiões, ao criar seus dashboards, há mais conteúdo do que o que é possível ajustar na tela. Existem algumas soluções que o ajudam a gerenciar como o espaço de seu dashboard é exibido, para que você possa obter um modo de exibição completo do conteúdo do dashboard.
 
 O método mais fácil para exibir todo o dashboard em uma tela é selecionar o botão **Modo de Tela Inteira** no canto superior direito do dashboard.

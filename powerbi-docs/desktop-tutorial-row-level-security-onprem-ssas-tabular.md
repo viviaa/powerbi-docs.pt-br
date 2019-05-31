@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57a285b075b17b2229ec4267a476cdd4b86ea7ad
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513602"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Segurança em nível de linha dinâmica com o modelo de tabela do Analysis Services
@@ -32,10 +32,10 @@ Durante este tutorial, as seguintes etapas são descritas detalhadamente, ajudan
 * Criar um novo dashboard baseado no relatório e, por último,
 * Compartilhar o dashboard com seus colegas
 
-Para seguir as etapas deste tutorial, você precisa do banco de dados **AdventureworksDW2012**, que pode ser baixado no **[repositório](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)**.
+Para seguir as etapas deste tutorial, você precisa do banco de dados **AdventureworksDW2012**, que pode ser baixado no **[repositório](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)** .
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Tarefa 1: criar a tabela de segurança de usuário e definir a relação de dados
-Há vários artigos publicados que descrevem como definir a segurança dinâmica em nível de linha com o modelo de **tabela do SSAS (SQL Server Analysis Services)**. Para nossa amostra, seguimos o artigo [Implementar a segurança dinâmica usando filtros de linha](https://msdn.microsoft.com/library/hh479759.aspx). As etapas a seguir mostrarão a primeira tarefa deste tutorial:
+Há vários artigos publicados que descrevem como definir a segurança dinâmica em nível de linha com o modelo de **tabela do SSAS (SQL Server Analysis Services)** . Para nossa amostra, seguimos o artigo [Implementar a segurança dinâmica usando filtros de linha](https://msdn.microsoft.com/library/hh479759.aspx). As etapas a seguir mostrarão a primeira tarefa deste tutorial:
 
 1. No nosso exemplo, usaremos o banco de dados relacional **AdventureworksDW2012**. Nesse banco de dados, crie a tabela **DimUserSecurity**, conforme mostrado na imagem a seguir. Para esta amostra, estamos usando o SSMS (SQL Server Management Studio) para criar a tabela.
    
@@ -56,7 +56,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
 5. Observe que a imagem acima mostra informações, como qual usuário é responsável por qual região de vendas. Esses dados são exibidos devido à relação que criamos na **Etapa 2**. Além disso, observe que o usuário **Carlos Silva faz parte da região de vendas Austrália**. Voltaremos a Carlos Silva em tarefas e etapas futuras.
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Tarefa 2: criar o modelo de tabela com tabelas de fatos e dimensão
-1. Depois de implementar o data warehouse relacional, é hora de definir o modelo de tabela. O modelo pode ser criado usando o **SSDT (SQL Server Data Tools)**. Para obter mais informações sobre como definir um modelo de tabela, consulte [Criar um novo projeto de modelo de tabela](https://msdn.microsoft.com/library/hh231689.aspx).
+1. Depois de implementar o data warehouse relacional, é hora de definir o modelo de tabela. O modelo pode ser criado usando o **SSDT (SQL Server Data Tools)** . Para obter mais informações sobre como definir um modelo de tabela, consulte [Criar um novo projeto de modelo de tabela](https://msdn.microsoft.com/library/hh231689.aspx).
 2. Importe todas as tabelas necessárias no modelo, conforme mostrado abaixo.
    
     ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
@@ -70,7 +70,7 @@ Há vários artigos publicados que descrevem como definir a segurança dinâmica
 6. Nesta etapa, usamos a função **LOOKUPVALUE** para retornar valores de uma coluna na qual o nome de usuário do Windows é o mesmo que o nome de usuário retornado pela função **USERNAME**. As consultas poderão ser restringidas nos casos em que os valores retornados por **LOOKUPVALUE** corresponderem aos valores na mesma tabela ou em uma tabela relacionada. Na coluna **Filtro DAX**, digite a seguinte fórmula:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-    Nesta fórmula, a função **LOOKUPVALUE** retorna todos os valores da coluna **DimUserSecurity[SalesTerritoryID]**, em que o **DimUserSecurity[UserName]** é o mesmo nome de usuário atual do Windows conectado, e a **DimUserSecurity[SalesTerritoryID]** é igual a **DimSalesTerritory[SalesTerritoryKey]**.
+    Nesta fórmula, a função **LOOKUPVALUE** retorna todos os valores da coluna **DimUserSecurity[SalesTerritoryID]** , em que o **DimUserSecurity[UserName]** é o mesmo nome de usuário atual do Windows conectado, e a **DimUserSecurity[SalesTerritoryID]** é igual a **DimSalesTerritory[SalesTerritoryKey]** .
    
     > [!IMPORTANT]
     > Lembre-se de que a função DAX [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) não tem suporte ao usar a segurança em nível de linha.

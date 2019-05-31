@@ -1,30 +1,30 @@
 ---
 title: Criar um conjunto de dados inseridos para um relatório paginado do Power BI (versão prévia)
 description: Neste artigo, você aprenderá como criar um conjunto de dados inserido, com base em uma fonte de dados inseridos para um relatório paginado no serviço do Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: c625f394fd35c0b1c6b7ccf0fc617f5653533ea1
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 3e095da10e9f96c7ec0f10ffbb94995d44effab4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324543"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423682"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Criar um conjunto de dados inseridos para um relatório paginado no serviço do Power BI (versão prévia)
 
-Neste artigo, você aprenderá como criar um conjunto de dados inserido, com base em uma fonte de dados inseridos para um relatório paginado no serviço do Power BI. Os conjuntos de dados inseridos estão contidos em um único relatório paginado, para uso nesse relatório. Atualmente, os relatórios paginados publicados no serviço do Power BI precisam de conjuntos de dados e fontes de dados inseridos. Você cria a fonte de dados inserida e o conjunto de dados no Construtor de Relatórios, enquanto você estiver criando o relatório. 
+Neste artigo, você aprenderá como criar um conjunto de dados inserido, com base em uma fonte de dados inseridos para um relatório paginado no serviço do Power BI. Os conjuntos de dados inseridos estão contidos em um único relatório paginado, para uso nesse relatório. Atualmente, os relatórios paginados publicados no serviço do Power BI precisam de conjuntos de dados e fontes de dados inseridos. Você criar o conjunto de dados e fonte de dados inserida no construtor de relatórios do Power BI, enquanto você estiver criando o relatório. 
 
 Antes de criar o conjunto de dados, você precisará criar uma fonte de dados. Confira [Fontes de dados inseridos para relatórios paginados no serviço do Power BI](paginated-reports-embedded-data-source.md) para saber mais.
   
 ## <a name="create-an-embedded-dataset"></a>Criar um conjunto de dados incorporados
   
-1. No painel de dados de relatório no Construtor de Relatórios, selecione **Novo** > **Conjunto de Dados**.
+1. No painel de dados de relatório no construtor de relatórios do Power BI, selecione **New** > **conjunto de dados**.
 
 1. Na guia **Consulta** da caixa de diálogo **Propriedades do Conjunto de Dados**, nomeie o conjunto de dados. A fonte de dados inserida já está na caixa **Fonte de Dados** ou você pode selecionar **Novo** para criar uma fonte de dados inseridos diferente.
  
@@ -41,7 +41,7 @@ Antes de criar o conjunto de dados, você precisará criar uma fonte de dados. C
 
 5. No Designer de Consultas, selecione **Executar Consulta** para testá-lo e selecione **OK**.
 
-1. De volta na caixa de diálogo Propriedades do Conjunto de Dados, a caixa **Atingir tempo limite (em segundos)**, digite o número de segundos até que a consulta expire. O padrão é 30 segundos. O valor para **Atingir tempo limite** deve ser vazio ou maior que zero. Se ele estiver vazio, a consulta não terá tempo limite.
+1. De volta na caixa de diálogo Propriedades do Conjunto de Dados, a caixa **Atingir tempo limite (em segundos)** , digite o número de segundos até que a consulta expire. O padrão é 30 segundos. O valor para **Atingir tempo limite** deve ser vazio ou maior que zero. Se ele estiver vazio, a consulta não terá tempo limite.
 
 7.  Você pode definir outras propriedades para o conjunto de dados nas outras guias:
     - Criar campos calculados na guia **Campos**.

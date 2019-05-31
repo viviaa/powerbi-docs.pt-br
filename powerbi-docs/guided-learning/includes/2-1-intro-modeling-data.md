@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a98c06ac1e164328a9a88081e2b4b734b4d62ef1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61253417"
+---
 Bem-vindo à seção **Modelagem** do curso **Aprendizagem interativa** sobre o Power BI. Esta seção mostra como fazer com que seus dados sejam conectados e estejam prontos para uso por meio do Power BI Desktop. Em geral, você se conectará a mais de uma fonte de dados para criar seus relatórios e precisará que todos esses dados trabalhem em conjunto. A modelagem é a maneira como você fará isso.
 
 Para criar uma conexão lógica entre fontes de dados diferentes, você cria uma **relação**. Uma relação entre as fontes de dados permite que o Power BI saiba como as tabelas se relacionam, permitindo que você crie relatórios e visuais interessantes. Esta seção explica as *relações* (embora explique somente aquelas centrados em dados) e até mesmo mostra como criar relações quando não houver nenhuma.

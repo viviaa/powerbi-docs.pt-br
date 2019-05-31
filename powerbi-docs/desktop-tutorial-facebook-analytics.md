@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513682"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Tutorial: Análise do Facebook com o Power BI Desktop
@@ -23,7 +23,7 @@ Neste tutorial, você aprenderá a importar dados do Facebook e usá-los no Powe
 
 ## <a name="connect-to-a-facebook-page"></a>Conectar-se a uma página do Facebook
 
-Este tutorial usa dados da [página do Facebook do Microsoft Power BI](https://www.facebook.com/microsoftbi) (*https://www.facebook.com/microsoftbi*). Você não precisa de credenciais especiais para se conectar e importar dados dessa página, com exceção de uma conta pessoal do Facebook.
+Este tutorial usa dados da [página do Facebook do Microsoft Power BI](https://www.facebook.com/microsoftbi) ( *https://www.facebook.com/microsoftbi* ). Você não precisa de credenciais especiais para se conectar e importar dados dessa página, com exceção de uma conta pessoal do Facebook.
 
 1. Abra o Power BI Desktop e selecione **Obter dados** na caixa de diálogo **Introdução**, ou na guia **Página Inicial** da faixa de opções, selecione **Obter Dados** e, em seguida, selecione **Mais...** .
    
@@ -147,7 +147,7 @@ Agora que você importou os dados da página do Facebook, conseguirá obter info
    
    ![Classificar por número de comentários](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
-5. Observe que a maioria dos comentários foi associada a mensagens **Em branco** (essas postagens podem ter sido histórias, links, vídeos ou outro conteúdo diferente de texto). Para filtrar a linha Em branco, selecione **message (all)** em **Filtros** na parte inferior do painel de Visualizações, selecione **Selecionar tudo** e, depois, selecione **Em branco** para cancelar a seleção dessa opção. A entrada em Filtros muda para **message is not (Blank)**, e a linha Em branco desaparece da visualização do gráfico. 
+5. Observe que a maioria dos comentários foi associada a mensagens **Em branco** (essas postagens podem ter sido histórias, links, vídeos ou outro conteúdo diferente de texto). Para filtrar a linha Em branco, selecione **message (all)** em **Filtros** na parte inferior do painel de Visualizações, selecione **Selecionar tudo** e, depois, selecione **Em branco** para cancelar a seleção dessa opção. A entrada em Filtros muda para **message is not (Blank)** , e a linha Em branco desaparece da visualização do gráfico. 
    
    ![Filtrar em branco](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
@@ -220,7 +220,7 @@ Você decide dar o gráfico um título mais descritivo e atrativo.
 1. Com o gráfico selecionado, selecione o ícone **Formato** e selecione a seta suspensa para expandir **Título**.
 2. Altere o **Texto do título** para **Comentários por postagem**. 
 3. Selecione a seta suspensa ao lado de **Cor da fonte** e selecione uma cor verde para corresponder às barras verdes da visualização.
-4. Aumente o **Tamanho do texto** para **10** e altere a **Família de fontes** para **Segoe (Negrito)**.
+4. Aumente o **Tamanho do texto** para **10** e altere a **Família de fontes** para **Segoe (Negrito)** .
 
 ![Formatar título do gráfico](media/desktop-tutorial-facebook-analytics/formatting1.png)
 

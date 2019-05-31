@@ -1,36 +1,36 @@
 ---
-title: 'Criar um novo relatório por meio de um conjunto de dados '
-description: Criar um novo relatório do Power BI com base em um conjunto de dados.
+title: Criar um relatório com base em um conjunto de dados
+description: Crie um relatório do Power BI de um conjunto de dados.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/24/2018
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: b46896a06c9d7ed66e643aa218ec7dbd3da8c9ee
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 6b69c2b1fa811d395a26403de852c44af33491c7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216943"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770239"
 ---
-# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Criar um novo relatório no serviço do Power BI importando um conjunto de dados
-Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora deseja criar o seu próprio relatório. Há muitas maneiras diferentes para criar um relatório e, neste artigo, vamos começar criando um relatório muito básico com base em um conjunto de dados do Excel usando o serviço do Power BI. Depois de compreender os fundamentos da criação de um relatório, as **Próximas etapas** no final vão direcioná-lo para tópicos mais avançados sobre relatórios.  
+# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Criar um relatório no serviço do Power BI importando um conjunto de dados
+Você já leu [Relatórios no Power BI](consumer/end-user-reports.md) e agora deseja criar o seu próprio relatório. Há diferentes maneiras de criar um relatório. Neste artigo, vamos começar criando um relatório básico no serviço do Power BI de um conjunto de dados do Excel. Depois de compreender os fundamentos da criação de um relatório, confira a [próximas etapas](#next-steps) no final para obter mais informações avançadas tópicos de relatório.  
 
 ## <a name="prerequisites"></a>Pré-requisitos
-> - Serviço do Power BI (para criar relatórios usando o Power BI Desktop, confira [Exibição de relatório do Desktop](desktop-report-view.md))  
-> - Conjunto de dados Exemplo de Análise de Varejo
+- [Inscreva-se no serviço do Power BI](service-self-service-signup-for-power-bi.md). Para criar relatórios usando o Power BI Desktop, confira [exibição de relatório da área de trabalho](desktop-report-view.md). 
+- [Baixe o conjunto de dados do Excel de exemplo análise de varejo](http://go.microsoft.com/fwlink/?LinkId=529778) e salve-o para o OneDrive for Business ou localmente.
 
 ## <a name="import-the-dataset"></a>Importar o conjunto de dados
-Esse método para a criação de um relatório começa com um conjunto de dados e uma tela de relatório em branco. Para acompanhar, [baixe o conjunto de dados de exemplo do Excel, Análise de Varejo](http://go.microsoft.com/fwlink/?LinkId=529778) e salve-o no OneDrive for Business (de preferência) ou localmente.
+Esse método para a criação de um relatório começa com um conjunto de dados e uma tela de relatório em branco. Você pode acompanhar o conjunto de dados do Excel de exemplo análise de varejo.
 
-1. Criaremos o relatório em um workspace do serviço do Power BI, portanto, selecione um workspace existente ou crie um novo.
+1. Devemos criar o relatório em um espaço de trabalho de serviço do Power BI, então, selecione um espaço de trabalho existente ou criar uma um.
    
    ![lista de workspaces do aplicativo](media/service-report-create-new/power-bi-workspaces2.png)
-2. Na parte inferior do painel de navegação à esquerda, selecione **Obter dados**.
+2. Na parte inferior do painel de navegação esquerdo, selecione **obter dados**.
    
    ![Obter dados](media/service-report-create-new/power-bi-get-data3.png)
 3. Selecione **Arquivos** e navegue até o local em que você salvou o exemplo Análise de Varejo.
@@ -46,8 +46,8 @@ Esse método para a criação de um relatório começa com um conjunto de dados 
    
    ![editor de relatório](media/service-report-create-new/power-bi-blank-report.png)
 
-> **DICA:** se você não está familiarizado com a tela de edição de relatório ou precisa de um lembrete, [faça um tour pelo editor de relatório ](service-the-report-editor-take-a-tour.md) antes de continuar.
-> 
+> [!TIP]
+> Se você não estiver familiarizado com a tela de edição de relatório ou precisar de um lembrete [faça um tour pelo editor de relatório](service-the-report-editor-take-a-tour.md) antes de continuar. > 
 > 
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Adicionar um Medidor Radial ao relatório
@@ -62,7 +62,7 @@ Agora que nosso conjunto de dados foi importado, vamos começar respondendo algu
 3. Arraste **Vendas** > **Vendas Deste Ano** > **Meta** para a seção **Valor de Destino**. Parece que estamos muito perto de alcançar a nossa meta.
    
     ![Visual de medidor com valor Meta como destino](media/service-report-create-new/power-bi-report-step3.png)
-4. Agora seria um bom momento para [salvar seu relatório](service-report-save.md).
+4. Agora seria um bom momento para salvar seu relatório.
    
    ![Menu Arquivo](media/service-report-create-new/powerbi-save.png)
 
@@ -78,7 +78,7 @@ Nossa CMO tem algumas perguntas adicionais para respondermos. Ela gostaria de ve
    
     ![editor de relatório com gráfico de área ativo](media/service-report-create-new/power-bi-report-step5.png)
 5. Para classificar a visualização por período de tempo, selecione as reticências e escolha **Classificar por Período**.
-6. Agora vamos adicionar a segmentação de dados. Selecione uma área vazia na tela e escolha a segmentação ![Modelo de ícone](media/service-report-create-new/power-bi-slicer-icon.png)    de segmentação. Isso adiciona uma segmentação de dados vazia à nossa tela.
+6. Agora vamos adicionar a segmentação de dados. Selecione uma área vazia na tela e escolha a segmentação ![Modelo de ícone](media/service-report-create-new/power-bi-slicer-icon.png) de segmentação. Agora temos uma segmentação de dados vazia em nossa tela.
    
     ![tela de relatório](media/service-report-create-new/power-bi-report-step6.png)    
 7. No painel Campos, selecione **Distrito** > **Distrito**. Mova e redimensione a segmentação de dados.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306287"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770422"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Acessibilidade dos relatórios do Power BI Desktop
 O Power BI tem recursos que permitem que pessoas com deficiências consumam e interajam mais facilmente com os relatórios do Power BI Desktop. Esses recursos incluem a capacidade de consumir um relatório usando o teclado ou um leitor de tela, usar a tabulação para focar em vários objetos em uma página e o uso cuidadoso de marcadores nas visualizações.
@@ -144,6 +144,12 @@ Em nosso esforço contínuo para melhorar a acessibilidade, a lista anterior de 
 | Seleção múltipla | Ctrl + Enter ou Ctrl + Espaço |
 | Clicar com o botão direito do mouse | <ul><li>Teclados Windows: tecla do menu de contexto do Windows+F10.  A tecla de contexto do Windows fica entre a tecla Alt esquerda e a tecla de direção para a esquerda</li><li>Outros teclados: Shift+F10</li></ul> |
 | Limpar seleção | Ctrl + Shift + C |
+
+### <a name="table--matrix-navigation"></a>Tabela de & navegação de matriz
+| Para fazer isso           | Pressione                |
+| :------------------- | :------------------- |
+| Move o foco para cima / para baixo de uma célula (em todas as células em todas as áreas)  | Seta para a chave / para baixo do tecla de seta para cima |
+| Mover o foco para a esquerda / direita de uma célula (em todas as células em todas as áreas)  | Tecla de seta para a esquerda / seta para a direita |
 
 ### <a name="pane-navigation"></a>Navegação no painel
 | Para fazer isso           | Pressione                |

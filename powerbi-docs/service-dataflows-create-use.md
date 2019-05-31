@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61142995"
 ---
-# <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Criação e uso de fluxos de dados no Power BI (Prévia)
+# <a name="creating-and-using-dataflows-in-power-bi"></a>Criação e uso de fluxos de dados no Power BI
 
 Com a preparação de dados avançada disponível no **Power BI**, é possível criar uma coleção de dados chamada de fluxo de dados, que você pode usar para conectar-se com dados comerciais de várias fontes, limpar os dados, transformá-los e, em seguida, carregá-los em um armazenamento do Power BI.
 
@@ -34,9 +34,6 @@ Há três etapas principais para usar um fluxo de dados:
 3. Criar o conjunto de dados usando seu fluxo de dados, por meio do Power BI Desktop 
 
 Nas seções a seguir, examinaremos cada uma dessas etapas e nos familiarizaremos com as ferramentas fornecidas para concluir cada etapa. Vamos começar.
-
-> [!NOTE]
-> A funcionalidade de fluxo de dados está em versão prévia e está sujeita a alterações e atualizações antes da disponibilidade geral.
 
 ## <a name="creating-a-dataflow"></a>Criar um fluxo de dados
 Para criar um fluxo de dados, abra o serviço do Power BI em um navegador e selecione um **espaço de trabalho do aplicativo** (fluxos de dados não estão disponíveis em *meu espaço de trabalho* no serviço do Power BI) no painel de navegação à esquerda, como mostrado na tela a seguir. Você também pode criar um novo espaço de trabalho no qual criará seu novo fluxo de dados. 
@@ -133,7 +130,7 @@ Confira mais informações sobre o agendamento de atualização no artigo sobre 
 
 Depois que você tiver criado seu fluxo de dados e agendado a frequência de atualização para cada fonte de dados que preencherá o modelo, estará pronto para a terceira e última etapa, que é conectar-se ao seu fluxo de dados dentro do **Power BI Desktop**. 
 
-Para conectar-se ao fluxo de dados, no Power BI Desktop, selecione **Obter dados > Power BI > Fluxos de dados do Power BI (beta)**, conforme mostrado na imagem a seguir.
+Para conectar-se ao fluxo de dados, no Power BI Desktop, selecione **Obter dados > Power BI > Fluxos de dados do Power BI (beta)** , conforme mostrado na imagem a seguir.
 
 ![Conectar-se aos fluxos de dados do Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
@@ -165,9 +162,9 @@ Pode haver ocasiões em que a conexão a fontes de dados para fluxos de dados ap
 Este artigo descreveu como criar seu próprio **fluxo de dados**, bem como um conjunto de dados e relatório no **Power BI Desktop** para tirar proveito dele. Os artigos a seguir são úteis para ver cenários e obter mais informações ao usar fluxos de dados:
 
 * [Preparação de dados de autoatendimento com fluxos de dados](service-dataflows-overview.md)
-* [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
-* [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
-* [Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)](service-dataflows-developer-resources.md)
+* [Usando entidades computadas no Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Usando fluxos de dados com fontes de dados locais](service-dataflows-on-premises-gateways.md)
+* [Recursos do desenvolvedor para fluxos de dados do Power BI](service-dataflows-developer-resources.md)
 * [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md)
 
 Leia este artigo de visão geral para saber mais sobre o Common Data Service:

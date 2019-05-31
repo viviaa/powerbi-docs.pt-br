@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220898"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136399"
 ---
-# <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Vincular entidades entre fluxos de dados no Power BI (versão prévia)
+# <a name="link-entities-between-dataflows-in-power-bi"></a>Vincular entidades entre fluxos de dados no Power BI
 
 Com fluxos de dados no Power BI, você pode ter uma única fonte de armazenamento de dados organizacionais em que os analistas de negócios podem preparar e gerenciar seus dados uma vez e, em seguida, reutilizá-los entre aplicativos de análise diferentes na organização. 
 
@@ -29,7 +29,7 @@ As entidades vinculadas são **somente leitura**. Se você quiser criar transfor
 
 ## <a name="linked-entity-availability"></a>Disponibilidade da entidade vinculada
 
-As entidades vinculadas exigem uma assinatura [Power BI Premium](service-premium.md) para atualizar. As entidades vinculadas estão disponíveis em qualquer fluxo de dados em um espaço de trabalho que está hospedado na capacidade do Power BI Premium. Não há nenhuma limitação no fluxo de dados de origem.
+As entidades vinculadas exigem uma assinatura [Power BI Premium](service-premium-what-is.md) para atualizar. As entidades vinculadas estão disponíveis em qualquer fluxo de dados em um espaço de trabalho que está hospedado na capacidade do Power BI Premium. Não há nenhuma limitação no fluxo de dados de origem.
 
 As entidades vinculadas só funcionam corretamente em novos workspaces do Power BI. Saiba mais sobre os [novos workspaces do Power BI](service-create-the-new-workspaces.md). Todos os fluxos de dados vinculados devem estar localizados em novos espaços de trabalho para funcionar corretamente.
 
@@ -88,11 +88,11 @@ Há algumas limitações para ter em mente ao trabalhar com entidades vinculadas
 
 Os artigos a seguir podem ser úteis para criar ou trabalhar com fluxos de dados. 
 
-* [Preparação de dados de autoatendimento no Power BI (versão prévia)](service-dataflows-overview.md)
+* [Preparação de dados de autoatendimento no Power BI](service-dataflows-overview.md)
 * [Criação e uso de fluxos de dados no Power BI](service-dataflows-create-use.md)
-* [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
-* [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
-* [Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)](service-dataflows-developer-resources.md)
+* [Usando entidades computadas no Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Usando fluxos de dados com fontes de dados locais](service-dataflows-on-premises-gateways.md)
+* [Recursos do desenvolvedor para fluxos de dados do Power BI](service-dataflows-developer-resources.md)
 
 Confira mais informações sobre o Power Query e a atualização agendada nestes artigos:
 * [Visão geral da Consulta no Power BI Desktop](desktop-query-overview.md)

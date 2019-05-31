@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 2a19cc832f7e03acfd224c6ab2409016ce8da770
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008710"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61179663"
 ---
 # <a name="connect-to-appfigures-with-power-bi"></a>Conectar-se ao appFigures com o Power BI
 É fácil acompanhar estatísticas importantes sobre seus aplicativos com o Power BI e o pacote de conteúdo do appFigures. O Power BI recupera seus dados, incluindo vendas de aplicativo, downloads e estatísticas de anúncios, e cria um painel padrão e relatórios relacionados com base nesses dados.

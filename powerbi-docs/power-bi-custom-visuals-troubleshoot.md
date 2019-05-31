@@ -10,11 +10,11 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.openlocfilehash: cbda8cca80c32056f06788e53540d7f2d6ed972d
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695002"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61421760"
 ---
 # <a name="troubleshoot-power-bi-custom-visuals"></a>Solucionar problemas dos visuais personalizados do Power BI
 
@@ -39,7 +39,7 @@ Se ele não estiver visível, verifique se você o habilitou nas configurações
 
 Execute o servidor de visual com o comando `pbiviz start` na linha de comando do terminal na raiz do projeto de visual. Se o servidor não estiver em execução, provavelmente os certificados SSL não foram instalados corretamente.
 
-Fique à vontade para contatar a equipe de suporte de visuais personalizados: *pbicvsupport@microsoft.com* caso tenha perguntas, comentários ou problemas.
+Fique à vontade para contatar a equipe de suporte de visuais personalizados: *pbicvsupport@microsoft.com*  caso tenha perguntas, comentários ou problemas.
 
 ## <a name="next-steps"></a>Próximas etapas
 

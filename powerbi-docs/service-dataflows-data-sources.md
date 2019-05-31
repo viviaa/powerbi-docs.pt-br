@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324911"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61140899"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Conectar-se a fontes de dados para fluxos de dados do Power BI (versão prévia)
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Conectar-se a fontes de dados para fluxos de dados do Power BI
 
 Com os fluxos de dados do Power BI, você pode se conectar a várias fontes de dados para criar fluxos de dados ou adicionar novas entidades a um fluxo de dados existente.
 
 Este artigo lista várias fontes de dados disponíveis para criar fluxos de dados ou a serem adicionadas a eles e descreve como criar esses fluxos de dados usando essas fontes de dados.
 
-Para obter uma visão geral de como criar e usar fluxos de dados, confira [Criando e usando fluxos de dados no Power BI (versão prévia)](service-dataflows-create-use.md).
+Para obter uma visão geral de como criar e usar fluxos de dados, consulte [criando e usando fluxos de dados no Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Criar um fluxo de dados usando uma fonte de dados
 
@@ -176,11 +176,11 @@ Basta fazer isso para conectar-se a fontes de dados no Power BI Desktop.
 
 Este artigo mostrou a quais fontes de dados você pode se conectar para fluxos de dados. Os artigos a seguir oferecem mais detalhes sobre cenários de uso comuns para fluxos de dados. 
 
-* [Preparação de dados de autoatendimento no Power BI (versão prévia)](service-dataflows-overview.md)
+* [Preparação de dados de autoatendimento no Power BI](service-dataflows-overview.md)
 * [Criação e uso de fluxos de dados no Power BI](service-dataflows-create-use.md)
-* [Uso de entidades computadas no Power BI Premium (versão prévia)](service-dataflows-computed-entities-premium.md)
-* [Uso de fluxos de dados com fontes de dados locais (versão prévia)](service-dataflows-on-premises-gateways.md)
-* [Recursos de desenvolvedor para fluxos de dados do Power BI (versão prévia)](service-dataflows-developer-resources.md)
+* [Usando entidades computadas no Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Usando fluxos de dados com fontes de dados locais](service-dataflows-on-premises-gateways.md)
+* [Recursos do desenvolvedor para fluxos de dados do Power BI](service-dataflows-developer-resources.md)
 * [Integração entre fluxos de dados e o Azure Data Lake (versão prévia)](service-dataflows-azure-data-lake-integration.md)
 
 Confira mais informações sobre o Power Query e a atualização agendada nestes artigos:

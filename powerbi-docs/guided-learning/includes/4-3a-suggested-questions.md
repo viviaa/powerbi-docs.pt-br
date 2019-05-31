@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4a9d873632853a69c835d7326653102107dd239f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262890"
+---
 Com o Power BI, você pode adicionar suas próprias sugestões de perguntas para outros usuários que usam a caixa de consulta em linguagem natural de um dashboard, frequentemente chamada de caixa de **P e R**. Essas sugestões de perguntas são o que os usuários verão quando clicarem na caixa de entrada na parte superior de um dashboard.
 
 ![](media/4-3a-suggested-questions/4-3a_1.png)

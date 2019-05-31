@@ -1,20 +1,20 @@
 ---
 title: Usando o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao SSRS
 description: Saiba como configurar seu ambiente para dar suporte à autenticação OAuth com o aplicativo móvel do Power BI para conectar-se ao SQL Server Reporting Services 2016 ou posterior.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: 6e0b1c5d4a067925e4898cf23968cc14fd3f8fd6
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383613"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770355"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Usando o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao SSRS
 
@@ -25,7 +25,7 @@ Saiba como configurar seu ambiente para dar suporte à autenticação OAuth com 
 Você pode usar o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao Reporting Services para exibir relatórios móveis ou KPIs. O Windows Server 2016 oferece algumas melhorias à função do WAP (Proxy de Aplicativo Web) para permitir esse tipo de autenticação.
 
    > [!NOTE]
-   > No momento, não compatibilidade oficialmente com a exibição de Relatórios do Power BI hospedados no Servidor de Relatórios do Power BI que usa o WAP para autenticação.
+   > Exibindo relatórios do Power BI hospedados no servidor de relatório do Power BI usando o WAP autentiquem tem suporte atualmente apenas no aplicativo do iOS. Aplicativo do Android não é oficialmente suportado neste momento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,7 +118,7 @@ Na tela Gerenciamento do AD FS, crie um grupo de aplicativos para o Reporting Se
    > [!NOTE]
    > Esta URL diferencia maiúsculas de minúsculas!
 
-   *https://<url to report server>/reports*
+   *https://<; url do servidor de relatório > / relatórios*
 
    ![Assistente de Grupo de Aplicativos do ADFS 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Selecione **Avançar**.
@@ -191,7 +191,7 @@ Para configurar a delegação restrita, faça o seguinte.
 Embora seja possível publicar aplicativos no Console de gerenciamento de acesso a relatórios, nós queremos criar o aplicativo por meio do PowerShell. Este é o comando para adicionar o aplicativo.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parâmetro | Comentários |

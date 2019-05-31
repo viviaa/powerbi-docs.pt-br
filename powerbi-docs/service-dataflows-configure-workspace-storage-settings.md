@@ -1,21 +1,21 @@
 ---
 title: Definir configurações de fluxo de dados de espaço de trabalho
-description: Configurar um espaço de trabalho do aplicativo no Power BI para armazenar sua definição de fluxo de dados e arquivos de dados no Azure Data Lake Storage Gen2
+description: Configurar um espaço de trabalho do aplicativo no Power BI para armazenar sua definição de fluxo de dados e os arquivos de dados no armazenamento do Azure Data Lake Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223618"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61168427"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Definir configurações de fluxo de dados de espaço de trabalho (versão prévia)
 
@@ -47,14 +47,11 @@ Na caixa de diálogo exibida, você pode dar um nome exclusivo seu novo espaço 
 
 ![Dê um nome ao novo espaço de trabalho](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Em seguida, expanda a área **Avançado** da caixa de diálogo **Criar um espaço de trabalho de aplicativo**, em que você pode ativar a configuração **Armazenamento de fluxo de dados (versão prévia)**.
+Em seguida, expanda a área **Avançado** da caixa de diálogo **Criar um espaço de trabalho de aplicativo**, em que você pode ativar a configuração **Armazenamento de fluxo de dados (versão prévia)** .
 
 ![Configurações avançadas para o novo espaço de trabalho](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
 Selecione **Salvar** para criar o novo espaço de trabalho. Qualquer fluxo de dados novo criado nesse espaço de trabalho agora armazena seu arquivo de definição (o arquivo Model.json) e os dados da conta do Azure Data Lake Storage Gen2 da sua organização. 
-
-> [!NOTE]
-> A funcionalidade de fluxo de dados está em versão prévia e está sujeita a alterações e atualizações antes da disponibilidade geral.
 
 ## <a name="update-dataflow-storage-for-an-existing-workspace"></a>Atualizar o armazenamento de fluxo de dados para um espaço de trabalho
 

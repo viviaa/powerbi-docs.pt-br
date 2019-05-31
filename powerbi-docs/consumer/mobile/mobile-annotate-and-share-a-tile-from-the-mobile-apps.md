@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: b3f0232fdf377ba75a31f5057f1e094bf9fac39d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8d48f7c42ac88f5a3b659bf4aff2ece65a2010e5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54273583"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61342699"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anotar e compartilhar um bloco, relatório ou visual nos aplicativos móveis do Power BI
 Aplica-se a:
@@ -29,7 +29,7 @@ Aplica-se a:
 
 *Um relatório com anotações*
 
-O email com o instantâneo do bloco, relatório ou visual também inclui um link para o objeto real no serviço do Power BI ([https://powerbi.com](https://powerbi.com)). Se seus destinatários tiverem licenças do Power BI Pro ou se o conteúdo estiver em uma [capacidade Premium](../../service-premium.md) e você já tiver compartilhado um item com eles, eles poderão clicar no link e ir diretamente para o bloco, relatório ou visualização. 
+O email com o instantâneo do bloco, relatório ou visual também inclui um link para o objeto real no serviço do Power BI ([https://powerbi.com](https://powerbi.com)). Se seus destinatários tiverem licenças do Power BI Pro ou se o conteúdo estiver em uma [capacidade Premium](../../service-premium-what-is.md) e você já tiver compartilhado um item com eles, eles poderão clicar no link e ir diretamente para o bloco, relatório ou visualização. 
 
 Você também pode [compartilhar um bloco do aplicativo móvel do Power BI para dispositivos Windows 10](mobile-windows-10-phone-app-get-started.md), mas não pode anotá-los.
 

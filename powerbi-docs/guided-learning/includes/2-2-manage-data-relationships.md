@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b1658a9351c05a8673c6cc582a4e54ad982791fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61253421"
+---
 O Power BI permite definir visualmente a relação entre tabelas ou elementos. Para ver uma exibição diagramática de seus dados, use o **Modo de exibição relações**, localizado no lado esquerdo da tela ao lado da tela do Relatório.
 
 ![](media/2-2-manage-data-relationships/2-2_1.png)

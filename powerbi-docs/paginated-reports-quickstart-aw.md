@@ -1,24 +1,24 @@
 ---
 title: 'Tutorial: criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)'
 description: Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325233"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989465"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutorial: criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)
 
-Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado com uma tabela que encapsula para várias páginas. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI. Os relatórios paginados no serviço do Power BI estão no momento em versão prévia.
+Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, usar um assistente no construtor de relatórios do Power BI para criar um relatório paginado com uma tabela que encapsula a várias páginas. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI. Os relatórios paginados no serviço do Power BI estão no momento em versão prévia.
 
 ![Relatório paginado no serviço do Power BI](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Aqui estão as etapas que você deverá concluir este tutorial:
 
 > [!div class="checklist"]
 > * Crie um banco de dados de exemplo do Azure.
-> * Crie uma matriz no Construtor de Relatórios com a ajuda de um assistente.
+> * Crie uma matriz no construtor de relatórios do Power BI com a Ajuda de um assistente.
 > * Formate o relatório com o título, os números de página e os títulos de coluna em cada página.
 > * Formate a moeda.
 > * Carregue o relatório no serviço do Power BI.
@@ -37,18 +37,18 @@ Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://a
 
 Aqui estão os pré-requisitos para criar o relatório paginado:
 
-- Instale o [Construtor de Relatórios no Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Instale [construtor de relatórios de BI do Centro de Download da Microsoft de energia](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Siga o guia de início rápido [Criar um exemplo de banco de dados SQL do Azure no portal do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copie e salve o valor na caixa **Nome do servidor** na guia **Visão geral**. Lembre-se do nome de usuário e da senha que você criou no Azure.
 
 Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço do Power BI:
 
 - Você precisa de uma [licença do Power BI Pro](service-admin-power-bi-pro-in-your-organization.md).
-- Você precisa de um espaço de trabalho de aplicativo no serviço em uma [capacidade do Power BI Premium](service-premium.md). Ele tem um ícone de losango ![ícone de losango Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) ao lado do nome do espaço de trabalho.
+- Você precisa de um espaço de trabalho de aplicativo no serviço em uma [capacidade do Power BI Premium](service-premium-what-is.md). Ele tem um ícone de losango ![ícone de losango Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) ao lado do nome do espaço de trabalho.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Criar a matriz com um assistente
   
-1.  Inicie o Construtor de Relatórios no computador.  
+1.  Inicie o construtor de relatórios do Power BI do seu computador.  
   
      A caixa de diálogo **Guia de Introdução** é aberta.  
   
@@ -109,7 +109,7 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
     - Endereço
     - Cliente
     - Produto
-    - ProductCategory
+    - CategoriaDoProduto
     - SalesOrderDetail
     - SalesOrderHeader
 
@@ -177,7 +177,7 @@ Para ver os valores reais, você precisará executar o relatório.
 
 1. Selecione **Executar** na barra de ferramentas **Página inicial**.
 
-   Agora você pode ver os valores. A matriz tem muito mais linhas do que você viu no modo de exibição de Design! Observou que o Construtor de Relatórios diz que é a página **1** de **2?**. O Construtor de Relatórios carrega o relatório o mais rápido possível, de modo que só recupera dados suficientes para algumas páginas por vez. O ponto de interrogação indica que o Construtor de Relatórios não carregou todos os dados ainda.
+   Agora você pode ver os valores. A matriz tem muito mais linhas do que você viu no modo de exibição de Design! Observou que o Construtor de Relatórios diz que é a página **1** de **2?** . O Construtor de Relatórios carrega o relatório o mais rápido possível, de modo que só recupera dados suficientes para algumas páginas por vez. O ponto de interrogação indica que o Construtor de Relatórios não carregou todos os dados ainda.
 
    ![Executar o relatório](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -249,7 +249,7 @@ Se você observou quando executou o relatório, o valor em dólar ainda não est
 
     ![Selecionar as células com valores de moeda](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. Na guia **Página inicial**, selecione o símbolo de moeda como o sinal de cifrão (**$**), em seguida, selecione a seta ao lado de **Estilos de espaço reservado** > **Valores de Exemplo**.
+2. Na guia **Página inicial**, selecione o símbolo de moeda como o sinal de cifrão ( **$** ), em seguida, selecione a seta ao lado de **Estilos de espaço reservado** > **Valores de Exemplo**.
  
     ![Mostrar valores de exemplo](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 

@@ -11,11 +11,11 @@ ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: cd5026a1bb3bca4781be1e3f61b4a71364190f8a
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215885"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61135811"
 ---
 # <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Mova e redimensione uma visualização em um relatório no serviço do Power BI Desktop
 Somente os criadores de relatório e proprietários podem mover e redimensionar visualizações. No serviço do Power BI (app.powerbi.com), isso significa abrir o relatório no [Modo de exibição de edição](../consumer/end-user-reading-view.md).

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a7bce8eb24534974fe6a06a8bada4ba9fb708
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264307"
+---
 Neste tópico, vamos examinar mais detalhadamente como as primeiras duas partes do Power BI se encaixam:
 
 * Criar um relatório no **Power BI Desktop**
@@ -41,7 +49,7 @@ Será solicitado que você entre no Power BI.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_7.png)
 
-Depois de entrar e o processo de publicação estiver concluído, você verá a caixa de diálogo a seguir. Você pode selecionar o link (abaixo **Êxito!**) para ser direcionado para o serviço do Power BI, no qual poderá ver o relatório que acabou de ser publicado.
+Depois de entrar e o processo de publicação estiver concluído, você verá a caixa de diálogo a seguir. Você pode selecionar o link (abaixo **Êxito!** ) para ser direcionado para o serviço do Power BI, no qual poderá ver o relatório que acabou de ser publicado.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_8.png)
 

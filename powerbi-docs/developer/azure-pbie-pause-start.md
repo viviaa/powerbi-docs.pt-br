@@ -2,20 +2,20 @@
 title: Pausar e iniciar a capacidade do Power BI Embedded no portal do Azure | Microsoft Docs
 description: Este artigo explica como pausar e iniciar uma capacidade do Power BI Embedded no Microsoft Azure.
 services: power-bi-embedded
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 09/28/2017
-ms.openlocfilehash: 9f939c0eae4f7ea1f24eec473549dc00191f1b67
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
-ms.translationtype: HT
+ms.openlocfilehash: 8a02654f264fb83f501679e4e205e08017f083f6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360111"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61386953"
 ---
 # <a name="pause-and-start-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Pausar e iniciar a capacidade do Power BI Embedded no portal do Azure
 
@@ -28,7 +28,7 @@ Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://a
 A pausa da sua capacidade evita que você seja cobrado. A pausa da sua capacidade é ideal quando você não precisa usar a capacidade durante um período de tempo. Use as etapas a seguir para pausar a capacidade.
 
 > [!NOTE]
-> A pausa de um capacidade pode impedir que o conteúdo fique disponível no Power BI. Cancele a atribuição dos espaços de trabalho da sua capacidade antes de pausar para evitar interrupção.
+> A pausa de um capacidade pode impedir que o conteúdo fique disponível no Power BI. Cancele a atribuição dos workspaces da sua capacidade antes de pausar para evitar interrupção.
 
 1. Entre no [Portal do Azure](https://portal.azure.com/).
 

@@ -1,21 +1,21 @@
 ---
 title: Atualizar dados no Power BI
 description: Atualizar dados no Power BI
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/21/2019
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2f5680df2077a306532165c62367fcc09c517227
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.openlocfilehash: 149f6963cc59c70342bee824579f6ae4c97a16d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892472"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60974105"
 ---
 # <a name="data-refresh-in-power-bi"></a>Atualizar dados no Power BI
 Certificando-se de que sempre obterá os dados mais recentes que costumam ser fundamentais para tomar as decisões corretas. Você provavelmente já usou Obter Dados no Power BI para conectar e carregar alguns dados, criou alguns relatórios e um painel de controle. Agora, você deseja certificar-se de que seus dados são realmente mais recentes e maiores.
@@ -31,7 +31,7 @@ Uma *fonte de dados* é onde os dados que você explora em seus relatórios e pa
 
 Um *conjunto de dados* é criado automaticamente no Power BI, quando você usa Obter Dados para se conectar ao e carregar dados de um pacote de conteúdo, arquivo ou se conectar a uma fonte de dados ao vivo. No Power BI Desktop e Excel 2016, também é possível publicar seu arquivo direitamente no serviço do Power BI, que é semelhante ao uso do recurso Obter Dados.
 
-Em cada caso, um conjunto de dados é criado e exibido nos contêineres Meu Workspace ou Grupo do serviço do Power BI. Ao selecionar as **reticências (...)**, é possível explorar os dados em um relatório, editar as configurações e configurar a atualização.
+Em cada caso, um conjunto de dados é criado e exibido nos contêineres Meu Workspace ou Grupo do serviço do Power BI. Ao selecionar as **reticências (...)** , é possível explorar os dados em um relatório, editar as configurações e configurar a atualização.
 
 ![](media/refresh-data/dataset-menu.png)
 
@@ -273,7 +273,7 @@ Para obter mais informações sobre como solucionar problemas, veja [Ferramentas
 [Ferramentas para solucionar problemas de atualização](service-gateway-onprem-tshoot.md)  
 [Solucionar problemas de atualização](refresh-troubleshooting-refresh-scenarios.md)  
 [Gateway do Power BI – Pessoal](service-gateway-personal-mode.md)  
-[Gateway de dados local](service-gateway-onprem.md)  
+[On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
 

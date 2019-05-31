@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d600581b9d1df8c8436da45e9629fccb79873c21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260091"
+---
 Como aprendemos, o fluxo comum de trabalho no Power BI é criar um relatório no Power BI Desktop, publicá-lo no serviço do Power BI e compartilhá-lo com outras pessoas para que elas possam exibi-lo no serviço ou em um aplicativo móvel.
 
 Algumas pessoas começam no serviço do Power BI; no entanto, vamos dar uma olhada rápida no serviço e aprender sobre uma maneira fácil e popular de criar rapidamente visuais no Power BI: *pacotes de conteúdo*.

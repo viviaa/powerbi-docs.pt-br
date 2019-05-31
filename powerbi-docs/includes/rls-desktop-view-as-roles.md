@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eb7cba03daee47f6772fc46be50419731b41765e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193500"
+---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Validar as funções dentro do Power BI Desktop
 Depois de criar sua função, você poderá testar os resultados da função no Power BI Desktop.
 

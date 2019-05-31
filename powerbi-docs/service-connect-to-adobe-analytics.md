@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: bcd92dc0288fc347c5f5931d40b94cf769f5293f
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61180101"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Conectar-se ao Adobe Analytics com o Power BI
 A conexão ao Adobe Analytics por meio do Power BI começa pela conexão à sua conta do Adobe Analytics Marketing Cloud. Você obterá um aplicativo com um dashboard e um conjunto de relatórios do Power BI que fornecem insights sobre as dimensões de usuários e de tráfego do site. Os dados são atualizados automaticamente uma vez por dia. Você pode interagir com o dashboard e os relatórios, mas não pode salvar as alterações.
@@ -91,7 +91,7 @@ Da [documentação](https://marketing.adobe.com/resources/help/en_US/reference/n
 ## <a name="troubleshooting"></a>Solução de problemas
 Caso veja um erro depois de fornecer suas credenciais indicando que você não tem permissões, confirme com o administrador se você tem acesso à API do Adobe Analytics. Além disso, confirme se a ID do Adobe fornecida está vinculada à sua ID organizacional do Marketing Cloud (associada a uma empresa do Adobe Analytics).
 
-Se você tiver acessado a tela de credenciais antes de receber um erro, isso significa que, provavelmente, os relatórios estão levando muito tempo para serem concluídos. Um erro comum está no formulário *"Falha ao obter dados do relatório do Adobe Analytics. O conteúdo incluiu &quot;referenciador, página&quot;; a duração aproximada foi xx segundos"*. Examine a seção “O que está incluído” e compare com o tamanho da instância do Adobe. Infelizmente, não existe uma maneira de resolver esse tempo limite hoje. No entanto, estamos considerando fazer atualizações para proporcionar melhor compatibilidade com instâncias maiores. Envie seus comentários para a equipe do Power BI em https://ideas.powerbi.com
+Se você tiver acessado a tela de credenciais antes de receber um erro, isso significa que, provavelmente, os relatórios estão levando muito tempo para serem concluídos. Um erro comum está no formulário *"Falha ao obter dados do relatório do Adobe Analytics. O conteúdo incluiu &quot;referenciador, página&quot;; a duração aproximada foi xx segundos"* . Examine a seção “O que está incluído” e compare com o tamanho da instância do Adobe. Infelizmente, não existe uma maneira de resolver esse tempo limite hoje. No entanto, estamos considerando fazer atualizações para proporcionar melhor compatibilidade com instâncias maiores. Envie seus comentários para a equipe do Power BI em https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Próximas etapas
 * [O que são aplicativos no Power BI?](service-create-distribute-apps.md)

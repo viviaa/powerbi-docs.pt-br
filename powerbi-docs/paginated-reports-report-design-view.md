@@ -1,24 +1,24 @@
 ---
 title: Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
 description: O modo de exibição Design de Relatório no Construtor de Relatórios é o espaço de design para a criação de relatórios paginados que podem ser publicados no serviço do Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174765"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423326"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
 
-O modo de exibição Design de Relatório no Construtor de Relatórios é o espaço de design para a criação de relatórios paginados que podem ser publicados no serviço do Power BI. A superfície de design fica no centro do Construtor de Relatórios, com a faixa de opções e os painéis em torno dela. A superfície de design é onde você pode adicionar e organizar os itens do seu relatório. Este artigo explica os painéis usados para adicionar, selecionar e organizar os recursos de relatório e alterar as propriedades de itens de relatório.  
+Exibição de Design do relatório no construtor de relatórios do Power BI é o espaço de design para a criação de relatórios paginados que você pode publicar o serviço do Power BI. A superfície de design fica no centro do Construtor de Relatórios, com a faixa de opções e os painéis em torno dela. A superfície de design é onde você pode adicionar e organizar os itens do seu relatório. Este artigo explica os painéis usados para adicionar, selecionar e organizar os recursos de relatório e alterar as propriedades de itens de relatório.  
 
 ![Modo de exibição Design de Relatório do Construtor de Relatórios](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 

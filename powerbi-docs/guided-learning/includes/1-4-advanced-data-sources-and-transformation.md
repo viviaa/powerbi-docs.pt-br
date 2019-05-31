@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 9eff90168ea221a269a8b5ded712645cca01cd9f
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54083957"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264303"
 ---
 Neste artigo, investigamos algumas técnicas avançadas de importação e limpeza de dados do **Power BI Desktop**. Depois de formatar seus dados no **Editor de Consultas** e inseri-los no **Power BI Desktop**, é possível examiná-los de maneiras diferentes. Há três modos de exibição no Power BI Desktop: **Relatório**, **Dados** e **Relações**. Você verá cada modo de exibição selecionando seu ícone no canto superior esquerdo da tela. Na imagem a seguir, o modo de exibição **Relatório** está selecionado. A barra amarela ao lado do ícone indica qual modo de exibição está ativo.
 

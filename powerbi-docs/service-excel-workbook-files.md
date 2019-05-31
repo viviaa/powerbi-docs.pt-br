@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513119"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obter dados de arquivos de pasta de trabalho do Excel
@@ -119,7 +119,7 @@ O uso do recurso **Publicar no Power BI no Excel 2016** é praticamente o mesmo 
 ## <a name="troubleshooting"></a>Solução de problemas
 O arquivo de pasta de trabalho é muito grande? Confira [Reduzir o tamanho de uma pasta de trabalho do Excel para exibi-la no Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-Atualmente, ao escolher a opção Importar, o Power BI importa somente os dados que fazem parte de uma tabela ou de um modelo de dados nomeado. Consequentemente, se a pasta de trabalho não contém tabelas nomeadas, planilhas do Power View ou modelos de dados do Excel, você pode ver este erro: **"Não foi possível encontrar nenhum dado em sua pasta de trabalho do Excel"**. [Este artigo](service-admin-troubleshoot-excel-workbook-data.md) explica como corrigir a pasta de trabalho e importá-la novamente.
+Atualmente, ao escolher a opção Importar, o Power BI importa somente os dados que fazem parte de uma tabela ou de um modelo de dados nomeado. Consequentemente, se a pasta de trabalho não contém tabelas nomeadas, planilhas do Power View ou modelos de dados do Excel, você pode ver este erro: **"Não foi possível encontrar nenhum dado em sua pasta de trabalho do Excel"** . [Este artigo](service-admin-troubleshoot-excel-workbook-data.md) explica como corrigir a pasta de trabalho e importá-la novamente.
 
 ## <a name="next-steps"></a>Próximas etapas
 **Explore os dados** – Depois de obter dados e relatórios de seu arquivo no Power BI, é hora de explorá-los. Basta clicar com o botão direito do mouse no novo conjunto de dados e clicar em Explorar. Caso você tenha decidido se conectar a um arquivo de pasta de trabalho no OneDrive na etapa 4, a pasta de trabalho será exibida em Relatórios. Ao clicar nela, ela será aberta no Power BI, da mesma forma como seria aberta se estivesse no Excel Online.

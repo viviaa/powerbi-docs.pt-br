@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513879"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutorial: Criar suas próprias medidas no Power BI Desktop
@@ -97,7 +97,7 @@ Você deseja analisar as vendas líquidas subtraindo descontos e devoluções do
     
     
 5.  Para subtrair as outras duas colunas:
-    1. Após o parêntese de fechamento para a primeira expressão, digite um espaço, um operador de subtração (**-**) e outro espaço. 
+    1. Após o parêntese de fechamento para a primeira expressão, digite um espaço, um operador de subtração ( **-** ) e outro espaço. 
     2. Insira outra função SUM e comece a digitar "DiscountAmount" até que você possa escolher a coluna **Sales[DiscountAmount]** como argumento. Adicione um parêntese de fechamento. 
     3. Digite um espaço, outro operador de subtração, espaço, outra função SUM com **Sales[ReturnAmount]** como o argumento e um parêntese de fechamento.
     
@@ -160,15 +160,15 @@ Você quer descobrir quais produtos têm o maior valor de vendas líquidas por u
 
 1.  Crie uma nova medida chamada **Net Sales per Unit** na tabela Sales.
     
-2.  Na barra de fórmulas, comece digitando **Net Sales**. A lista de sugestões mostrará o que você pode adicionar. Selecione **[Net Sales]**.
+2.  Na barra de fórmulas, comece digitando **Net Sales**. A lista de sugestões mostrará o que você pode adicionar. Selecione **[Net Sales]** .
     
     ![Fórmula usando Net Sales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    Você também pode fazer referência a medidas digitando apenas um colchete de abertura (**[**). A lista de sugestões mostrará apenas as medidas para adicionar à sua fórmula.
+    Você também pode fazer referência a medidas digitando apenas um colchete de abertura ( **[** ). A lista de sugestões mostrará apenas as medidas para adicionar à sua fórmula.
     
     ![Colchete mostra apenas as medidas](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-3.  Insira um espaço, um operador de divisão (**/**), outro espaço, uma função SUM e, em seguida, digite **Quantity**. A lista de sugestões mostra todas as colunas com "Quantity" no nome. Selecione **Sales[SalesQuantity]**, digite o parêntese de fechamento e pressione ENTER, ou selecione a marca de seleção para validar a fórmula. A fórmula deve ter essa aparência:
+3.  Insira um espaço, um operador de divisão ( **/** ), outro espaço, uma função SUM e, em seguida, digite **Quantity**. A lista de sugestões mostra todas as colunas com "Quantity" no nome. Selecione **Sales[SalesQuantity]** , digite o parêntese de fechamento e pressione ENTER, ou selecione a marca de seleção para validar a fórmula. A fórmula deve ter essa aparência:
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     

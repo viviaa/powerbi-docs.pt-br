@@ -1,20 +1,20 @@
 ---
 title: Gerenciar multilocação com a análise integrada do Power BI
 description: Crie um aplicativo multilocatário com análise integrada.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 60441e950eb8ddea386e38731b794a58c2342620
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374638"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gerenciar multilocação com a análise integrada do Power BI
 
@@ -29,11 +29,11 @@ Este artigo descreve as várias abordagens e as analisa de acordo com vários cr
 
 ## <a name="concepts-and-terminology"></a>Conceitos e terminologia
 
-**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)**: Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** : Azure Active Directory.
 
 **Aplicativo AAD**: uma identidade de aplicativo no AAD. É necessário ter um aplicativo AAD para autenticação.
 
-**Aplicativo SaaS (software como serviço)**: um sistema implementado por uma empresa ou ISV que geralmente é um serviço online. Também está relacionado a sistemas de software para atender vários locatários de cliente (organizações). Neste artigo, **o aplicativo SaaS usa o Power BI Embedded para fornecer análises aos seus diferentes locatários**. O Power BI Embedded também funciona com todos os tipos de aplicativos quando eles tiverem uma conexão online.
+**Aplicativo SaaS (software como serviço)** : um sistema implementado por uma empresa ou ISV que geralmente é um serviço online. Também está relacionado a sistemas de software para atender vários locatários de cliente (organizações). Neste artigo, **o aplicativo SaaS usa o Power BI Embedded para fornecer análises aos seus diferentes locatários**. O Power BI Embedded também funciona com todos os tipos de aplicativos quando eles tiverem uma conexão online.
 
 **Locatário**: um único cliente (organização) que usa o aplicativo SaaS e quaisquer recursos ou dados que o cliente traz para o aplicativo SaaS.
 
@@ -41,23 +41,23 @@ Este artigo descreve as várias abordagens e as analisa de acordo com vários cr
 
 **Locatário do Power BI**: um conjunto de recursos do Power BI associado a um único locatário do AAD.
 
-**[Workspace do Power BI](../service-create-workspaces.md)**: um contêiner para o conteúdo no Power BI.
+**[Workspace do Power BI](../service-create-workspaces.md)** : um contêiner para o conteúdo no Power BI.
 
 **Artefatos do Power BI**: há vários artefatos do Power BI em espaços de trabalho do Power BI como dashboards, relatórios, conjuntos de dados e fluxos de dados.
 
-**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)**: um conjunto de APIs públicas que permite aos desenvolvedores compilar aplicativos que gerenciam o conteúdo do Power BI e inserir elementos do Power BI.
+**[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)** : um conjunto de APIs públicas que permite aos desenvolvedores compilar aplicativos que gerenciam o conteúdo do Power BI e inserir elementos do Power BI.
 
-**[RLS (Segurança no nível da linha)](embedded-row-level-security.md)**: permite controlar o acesso do usuário aos dados para linhas individuais em uma tabela. Você pode implementar a segurança no nível da linha no nível da fonte de dados ou no modelo semântico do Power BI.
+**[RLS (Segurança no nível da linha)](embedded-row-level-security.md)** : permite controlar o acesso do usuário aos dados para linhas individuais em uma tabela. Você pode implementar a segurança no nível da linha no nível da fonte de dados ou no modelo semântico do Power BI.
 
 **Usuário mestre**: a identidade que representa o aplicativo SaaS no Power BI e que o aplicativo SaaS usa ao chamar APIs do Power BI. É preciso ser usuário do AAD com uma licença do Power BI Pro.
 
-**Usuário do Aplicativo AAD (entidade de serviço)**: a identidade que representa o aplicativo SaaS no Power BI e que o aplicativo SaaS usa ao chamar APIs do Power BI. Precisa ser um aplicativo Web do AAD. Pode substituir o uso de um usuário *mestre* para autenticar com o Power BI.
+**Usuário do Aplicativo AAD (entidade de serviço)** : a identidade que representa o aplicativo SaaS no Power BI e que o aplicativo SaaS usa ao chamar APIs do Power BI. Precisa ser um aplicativo Web do AAD. Pode substituir o uso de um usuário *mestre* para autenticar com o Power BI.
 
-**Capacidade**: um conjunto de recursos dedicado à execução do serviço do Power BI. [Capacidades do Power BI Premium](../service-premium.md) Destinadas às empresas que usam o Power BI internamente. Já as[capacidades do Power BI Embedded](azure-pbie-create-capacity.md) servem para desenvolvedores de aplicativos desenvolverem aplicativos SaaS para terceiros.
+**Capacidade**: um conjunto de recursos dedicado à execução do serviço do Power BI. [Capacidades do Power BI Premium](../service-premium-what-is.md) Destinadas às empresas que usam o Power BI internamente. Já as[capacidades do Power BI Embedded](azure-pbie-create-capacity.md) servem para desenvolvedores de aplicativos desenvolverem aplicativos SaaS para terceiros.
 
-**[Licença do Power BI Pro](../service-admin-purchasing-power-bi-pro.md)**: licença para um usuário, que concede direitos para publicar conteúdo em espaços de trabalho do aplicativo, consumir aplicativos sem capacidade Premium, compartilhar dashboards e se inscrever em dashboards e relatórios.
+**[Licença do Power BI Pro](../service-admin-purchasing-power-bi-pro.md)** : licença para um usuário, que concede direitos para publicar conteúdo em espaços de trabalho do aplicativo, consumir aplicativos sem capacidade Premium, compartilhar dashboards e se inscrever em dashboards e relatórios.
 
-**[Modos de conectividade de dados](../desktop-directquery-about.md)**: a conexão de fontes de dados com o Power BI pode ser feita de vários modos:
+**[Modos de conectividade de dados](../desktop-directquery-about.md)** : a conexão de fontes de dados com o Power BI pode ser feita de vários modos:
 
    * Importação: a maneira mais comum para obter dados.
    * DirectQuery: conectar-se diretamente aos dados no repositório de origem.
@@ -142,9 +142,9 @@ Para adicionar mais isolamento, um desenvolvedor de aplicativos pode definir um 
 
 ### <a name="scalability"></a>Escalabilidade
 
-Uma vantagem desse modelo é que a separação dos dados em vários conjuntos de dados para cada locatário supera o [limite de tamanho de um único conjunto de dados](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (atualmente, 10 GB em uma capacidade). Quando a capacidade fica sobrecarregada, [ela pode remover conjuntos de dados não utilizados](../service-premium-understand-how-it-works.md) para liberar a memória para conjuntos de dados ativos. Essa tarefa não é possível com um único conjunto de dados grande. Com vários conjuntos de dados, também é possível separar locatários em várias capacidades do Power BI, se for necessário.
+Uma vantagem desse modelo é que a separação dos dados em vários conjuntos de dados para cada locatário supera o [limite de tamanho de um único conjunto de dados](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (atualmente, 10 GB em uma capacidade). Quando a capacidade está sobrecarregada, ele pode remover os conjuntos de dados não utilizados para liberar memória para conjuntos de dados ativos. Essa tarefa não é possível com um único conjunto de dados grande. Com vários conjuntos de dados, também é possível separar locatários em várias capacidades do Power BI, se for necessário.
 
-Apesar dessas vantagens, é necessário considerar a expansão do aplicativo SaaS no futuro. Por exemplo, pode-se atingir o limite de artefatos que é possível gerenciar. Consulte [Limitações de implantação](#summary-comparison-of-the-different-approaches) mais adiante neste artigo para saber mais. A SKU da capacidade usada apresenta um limite no tamanho da memória ao qual os conjuntos de dados precisam se ajustar, [quantas atualizações podem ser executadas ao mesmo tempo](../service-premium-understand-how-it-works.md) e a frequência máxima de atualizações de dados. Recomendamos fazer testes ao gerenciar centenas ou milhares de conjuntos de dados. Também recomendamos considerar o volume de uso médio e de pico, bem como quaisquer locatários específicos com grandes conjuntos de dados, ou padrões de uso diferentes, que são gerenciados diferentemente de outros locatários.
+Apesar dessas vantagens, é necessário considerar a expansão do aplicativo SaaS no futuro. Por exemplo, pode-se atingir o limite de artefatos que é possível gerenciar. Consulte [Limitações de implantação](#summary-comparison-of-the-different-approaches) mais adiante neste artigo para saber mais. A capacidade usada SKU apresenta um limite no tamanho da memória que precisam de conjuntos de dados para se ajustar em quantas atualizações podem executar ao mesmo tempo e a frequência máxima de atualizações de dados. Recomendamos fazer testes ao gerenciar centenas ou milhares de conjuntos de dados. Também recomendamos considerar o volume de uso médio e de pico, bem como quaisquer locatários específicos com grandes conjuntos de dados, ou padrões de uso diferentes, que são gerenciados diferentemente de outros locatários.
 
 ### <a name="automation--operational-complexity"></a>Automação e complexidade operacional
 
@@ -245,17 +245,17 @@ A principal despesa com o isolamento com base em segurança no nível da linha �
 
 **Considerações e limitações da capacidade do Power BI:**
 
-* Cada capacidade só pode usar sua memória e núcleos virtuais alocados, de acordo com a [SKU adquirida](../service-premium.md).
-* Para saber o tamanho do conjunto de dados recomendado para cada SKU, consulte [Conjuntos de dados Premium grandes](../service-premium-large-datasets.md).
+* Cada capacidade só pode usar sua memória e núcleos virtuais alocados, de acordo com a [SKU adquirida](../service-premium-what-is.md).
+* Para saber o tamanho do conjunto de dados recomendado para cada SKU, consulte [Conjuntos de dados Premium grandes](../service-premium-what-is.md#large-datasets).
 * O tamanho máximo do conjunto de dados em uma capacidade dedicada é de 10 GB.
 * O número de atualizações agendadas de um conjunto de dados no *modo de importação* em um dia é de 48.
 * O tempo entre as atualizações agendadas de um conjunto de dados no *modo de importação* é de 30.
-* Para saber o número de atualizações que podem ser executadas simultaneamente em uma capacidade, consulte [gerenciamento e otimização de recursos](../service-premium-understand-how-it-works.md).
+* Para saber o número de atualizações que podem ser executadas simultaneamente em uma capacidade, consulte [gerenciamento e otimização de recursos](../service-premium-what-is.md#capacity-nodes).
 * O tempo médio de dimensionamento de uma capacidade está entre um e dois minutos. Durante esse tempo, a capacidade fica indisponível. Recomendamos usar uma abordagem de expansão para [evitar tempo de inatividade](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * [Análise integrada com o Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../service-premium.md)
+* [Power BI Premium](../service-premium-what-is.md)
 * [Segurança no nível da linha](embedded-row-level-security.md)

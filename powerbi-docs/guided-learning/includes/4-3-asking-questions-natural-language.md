@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2a0ec80120e30d8d652eb2bd28461b9f88f7610a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262887"
+---
 O Power BI é fornecido com um mecanismo avançado de reconhecimento de linguagem que permite fazer perguntas sobre os dados usando perguntas e expressões de conversação. Portanto, junto com a criação de relatórios e visualizações do Power BI, você pode criar gráficos apenas fazendo perguntas simples.
 
 Para fazer uma pergunta sobre os dados, abra um dashboard no Power BI e, na parte superior da tela, você verá uma caixa de entrada, em que poderá fazer perguntas sobre os dados exibidos. Às vezes, esse recurso é chamado de *Perguntas e Respostas*, ou mais frequentemente, chamado apenas de **P e R**.

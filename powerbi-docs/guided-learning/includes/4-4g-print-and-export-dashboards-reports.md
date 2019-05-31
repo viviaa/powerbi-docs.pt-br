@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 87a55881a9b6551dc9c7814696aa8d8252482a09
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61253805"
+---
 Às vezes, convém levar um relatório ou dashboard impresso para uma reunião ou para que você possa compartilhá-lo com outras pessoas. Com o Power BI, há algumas maneiras pelas quais você pode fazer cópias impressas de seus visuais.
 
 No serviço do Power BI, selecione as reticências (três pontos) no canto superior direito do serviço e selecione **Imprimir dashboard**.

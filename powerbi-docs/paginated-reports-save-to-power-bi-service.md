@@ -1,20 +1,20 @@
 ---
 title: Publicar um relatório paginado no serviço do Power BI (versão prévia)
 description: Neste tutorial, você aprende a publicar um relatório paginado no serviço do Power BI fazendo o upload do computador local.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174535"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423858"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicar um relatório paginado no serviço do Power BI (versão prévia)
 
@@ -26,7 +26,7 @@ Se sua fonte de dados de relatório está no local, você precisará [criar um g
 
 Se o espaço de trabalho não tem o ícone de losango ![Ícone de losango da capacidade do Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ao lado do nome, você precisará adicionar o espaço de trabalho a uma capacidade Premium. 
 
-1. Selecione **Espaços de Trabalho**, selecione as reticências (**...**) ao lado do nome do espaço de trabalho e, em seguida, selecione **Editar Espaço de Trabalho**.
+1. Selecione **Espaços de Trabalho**, selecione as reticências ( **...** ) ao lado do nome do espaço de trabalho e, em seguida, selecione **Editar Espaço de Trabalho**.
 
     ![Selecionar Editar Espaço de Trabalho](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 

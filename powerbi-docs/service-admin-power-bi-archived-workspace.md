@@ -11,11 +11,11 @@ ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d2eeab8241de06f9a4d0e654696173d076e01ad2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187044"
 ---
 # <a name="power-bi-archived-workspace"></a>Workspace Arquivado do Power BI
 
@@ -29,9 +29,9 @@ O Power BI não exclui o conteúdo do Workspace arquivado. Você pode continuar 
 
 * **OneDrive for Business**: para conjunto de dados em seu Workspace Arquivado, você não poderá obter dados ou atualizá-los pelo OneDrive for Business.  Se você tentar se conectar a essa fonte, você receberá um aviso.
 
-* **Compartilhando dashboards**: Não é possível compartilhar painéis com outros usuários por meio do Workspace Arquivado.  Todos os usuários que já têm acesso continuarão a exibir painéis compartilhados, acessando seu Workspace Arquivado.
+* **Compartilhando dashboards**: É possível compartilhar dashboards com outros usuários do espaço de trabalho arquivado.  Todos os usuários que já têm acesso continuarão a exibir painéis compartilhados, acessando seu Workspace Arquivado.
 
-* **Criando grupos**: Você não pode criar grupos no Workspace Arquivado.
+* **Criando grupos**: Você não pode criar grupos no espaço de trabalho arquivado.
 
 * **Acesso em aplicativos móveis do Power BI**: embora você ainda possa exibir o conteúdo na Web no Workspace Arquivado, esse conteúdo não aparece mais nos aplicativos móveis do Power BI.
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e8b920763ea619fe74af2b71730164183f333a95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264308"
+---
 O **Power BI Desktop** inclui o **Editor de Consultas**, uma ferramenta avançada para formatação e transformação dos dados de modo que eles estejam prontos para seus modelos e suas visualizações. Ao selecionar Editar do Navegador, o Editor de Consulta é iniciado e populado com as tabelas ou outras entidades selecionadas na fonte de dados.
 
 Você também pode iniciar o **Editor de Consultas** diretamente no **Power BI Desktop**, usando o botão **Editar Consultas** na faixa de opções **Página Inicial**.

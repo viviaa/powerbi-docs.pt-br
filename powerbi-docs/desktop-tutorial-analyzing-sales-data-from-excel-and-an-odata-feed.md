@@ -11,11 +11,11 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285750"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61368173"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: combinar dados de vendas do Excel e de um feed OData
 
@@ -47,7 +47,7 @@ Primeiro, importe os dados de produto da pasta de trabalho Products.xlsx do Exce
    
 Uma visualização da tabela é aberta no **Power Query Editor**, no qual é possível aplicar transformações para limpar os dados. 
    
-![Editor do Power Query](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
+![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
 >[!NOTE]
 >Também é possível abrir o **Power Query Editor** selecionando **Editar Consultas** > **Editar Consultas** na faixa de opções **Início** do Power BI Desktop, clicando com o botão direito do mouse ou escolhendo **Mais opções** ao lado de qualquer consulta em **Exibição de Relatório** e selecionando **Editar Consulta**.
@@ -114,7 +114,7 @@ O Power Query Editor permite criar cálculos e campos personalizados para enriqu
    
 2. Na caixa de diálogo **Coluna Personalizada**, digite **LineTotal** no campo **Nome da nova coluna**.
 
-3. No campo **Fórmula de coluna personalizada** depois de **=**, insira **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]**. (Você também pode selecionar os nomes dos campos na caixa de rolagem **Colunas disponíveis** e selecionar **<< Inserir** em vez de digitá-los.) 
+3. No campo **Fórmula de coluna personalizada** depois de **=** , insira **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Você também pode selecionar os nomes dos campos na caixa de rolagem **Colunas disponíveis** e selecionar **<< Inserir** em vez de digitá-los.) 
 3. Selecione **OK**.
    
    ![Caixa de diálogo Coluna Personalizada](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
@@ -208,7 +208,7 @@ Primeiro, crie um gráfico de colunas empilhadas que usa campos das duas consult
    
 2. Selecione **ProductName** de **Produtos** no painel **Campos** ou arraste-o para o gráfico para mostrar a quantidade de cada produto pedido. 
    
-3. Para classificar os produtos dos mais para os menos pedidos, selecione as reticências (**...**) em **Mais opções** no canto superior direito da visualização e, em seguida, selecione **Classificar por Quantidade**.
+3. Para classificar os produtos dos mais para os menos pedidos, selecione as reticências ( **...** ) em **Mais opções** no canto superior direito da visualização e, em seguida, selecione **Classificar por Quantidade**.
    
 4. Use as alças nos cantos do gráfico para aumentá-lo para que mais nomes de produtos fiquem visíveis. 
    
