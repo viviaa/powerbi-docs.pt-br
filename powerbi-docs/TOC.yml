@@ -257,8 +257,6 @@
               href: desktop-add-column-from-example.md
             - name: Adicionar uma coluna personalizada
               href: desktop-add-custom-column.md
-            - name: Crie elementos visuais responsivos no Power BI
-              href: visuals/desktop-create-responsive-visuals.md
             - name: Usar rótulos de hierarquia embutida no Power BI Desktop
               href: desktop-inline-hierarchy-labels.md
             - name: Usar a segmentação de intervalo numérico
@@ -689,24 +687,6 @@
               href: service-machine-learning-automated.md
         - name: Relatórios paginados no Power BI
           items:
-            - name: O que são relatórios paginados? (Versão prévia)
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Perguntas frequentes sobre relatórios paginados (Versão prévia)
-              href: paginated-reports-faq.md
-            - name: Criar e carregar um relatório paginado (Versão prévia)
-              href: paginated-reports-quickstart-aw.md
-            - name: Explorar o modo de exibição de Design do Relatório (Versão prévia)
-              href: paginated-reports-report-design-view.md
-            - name: Inserir dados diretamente em um relatório paginado (Versão prévia)
-              href: paginated-reports-enter-data.md
-            - name: Criar uma fonte de dados incorporados (Versão prévia)
-              href: paginated-reports-embedded-data-source.md
-            - name: Criar um conjunto de dados incorporados (Versão prévia)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Criar parâmetros (Versão prévia)
-              href: paginated-reports-parameters.md
-            - name: Publicar um relatório paginado (Versão prévia)
-              href: paginated-reports-save-to-power-bi-service.md
             - name: Exibir um relatório paginado (Versão prévia)
               href: paginated-reports-view-power-bi-service.md
             - name: Interagir com parâmetros (Versão prévia)
@@ -931,6 +911,52 @@
           href: service-admin-premium-restart.md
         - name: Conectar-se a conjuntos de dados com ferramentas e aplicativos cliente
           href: service-premium-connect-tools.md
+- name: Construtor de Relatórios Paginados do Power BI
+  items:
+    - name: Visão geral
+      items:
+        - name: O que são relatórios paginados?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Construtor de Relatórios no Power BI
+          href: report-builder-power-bi.md
+    - name: Tutoriais
+      items:
+        - name: Criar um relatório paginado e carregá-lo
+          href: paginated-reports-quickstart-aw.md
+    - name: Conceitos
+      items:
+        - name: Como explorar o modo Design do Relatório
+          href: paginated-reports-report-design-view.md
+        - name: Planejar um relatório
+          href: report-builder-planning-report.md
+        - name: Dados do Construtor de Relatórios
+          href: report-builder-data.md
+        - name: Dicas de design
+          href: report-builder-design-tips.md
+        - name: 'Tabelas, matrizes, listas'
+          href: report-builder-tables-matrices-lists.md
+        - name: Parâmetros
+          href: report-builder-parameters.md
+        - name: Expressões
+          href: report-builder-expressions.md
+        - name: Exemplos de expressões
+          href: report-builder-expression-examples.md
+        - name: Como visualizar relatórios
+          href: report-builder-previewing-reports.md
+        - name: Perguntas frequentes sobre relatórios paginados
+          href: paginated-reports-faq.md
+    - name: Como
+      items:
+        - name: Inserir dados diretamente em um relatório paginado
+          href: paginated-reports-enter-data.md
+        - name: Criar uma fonte de dados incorporados
+          href: paginated-reports-embedded-data-source.md
+        - name: Criar um conjunto de dados incorporados
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Criar parâmetros
+          href: paginated-reports-parameters.md
+        - name: Publicar um relatório paginado
+          href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI para desenvolvedores
   items:
     - name: O que os desenvolvedores podem fazer com o Power BI
