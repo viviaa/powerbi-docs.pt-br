@@ -681,9 +681,9 @@
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: Adicionar uma pasta do CDM ao Power BI como um fluxo de dados (versão prévia)
               href: service-dataflows-add-cdm-folder.md
-            - name: Integrar Machine Learning no Power BI (versão prévia)
+            - name: Integrar Machine Learning no Power BI
               href: service-machine-learning-integration.md
-            - name: Usar os Serviços Cognitivos no Power BI (versão prévia)
+            - name: Usar Serviços Cognitivos no Power BI
               href: service-cognitive-services.md
             - name: Machine Learning Automatizada no Power BI (Versão Prévia)
               href: service-machine-learning-automated.md
@@ -745,8 +745,6 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Solucionando problemas de fonte de dados sem suporte para atualização
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Solução de problemas de valores aninhados retornados como texto
-              href: service-troubleshooting-nested-values.md
             - name: Solucionando problemas da atualização agendada para Bancos de Dados SQL do Azure
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: 'Erro: Não foi possível localizar nenhum dado na sua pasta de trabalho do Excel'
@@ -927,6 +925,8 @@
           href: service-premium-incremental-refresh.md
         - name: Configurar o Multi-Geo
           href: service-admin-premium-multi-geo.md
+        - name: Traga suas próprias chaves de criptografia
+          href: service-encryption-byok.md
         - name: Reiniciar uma capacidade Premium
           href: service-admin-premium-restart.md
         - name: Conectar-se a conjuntos de dados com ferramentas e aplicativos cliente
