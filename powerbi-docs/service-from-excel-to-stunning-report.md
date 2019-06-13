@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cd75aebb09c7b6c54c1ff3f68635bfd5033c7f80
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139102"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721472"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Da pasta de trabalho do Excel para um relatório incrível em um instante
 Sua gerente deseja ver um relatório sobre os números de vendas mais recentes combinado com as impressões da última campanha no final do dia. Porém, os dados mais recentes residem em vários sistemas de terceiros e em arquivos em seu laptop. Anteriormente, levava várias horas para criar visuais e formatar um relatório. Você está começando a ficar ansioso.
@@ -98,6 +98,6 @@ Próximas etapas
 
 * [Introdução ao serviço do Power BI](service-get-started.md)
 * [Introdução ao Power BI Desktop](desktop-getting-started.md)
-* [Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
+* [Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

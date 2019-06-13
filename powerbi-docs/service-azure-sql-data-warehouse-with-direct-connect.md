@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 896e58b95f253c403bf7cd4bc3e1c069b3628f69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69b40b81677de8af259f9c8ce871c39f5303c09a
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770254"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448437"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>SQL Data Warehouse do Azure com DirectQuery
 
@@ -40,7 +40,7 @@ Essas restrições e observações podem mudar conforme continuamos a aprimorar 
 
 A maneira mais fácil de alternar entre o SQL Data Warehouse e o Power BI é com o botão **Abrir no Power BI** no Portal do Azure. Esse botão permite que você comece diretamente a criar novos painéis no Power BI.
 
-1. Para começar, navegue até sua instância do SQL Data Warehouse no Portal do Azure. No momento, o SQL Data Warehouse tem apenas uma presença na Versão Prévia do Portal do Azure.
+1. Para começar, navegue até sua instância do SQL Data Warehouse no Portal do Azure. No momento, observe que o SQL Data Warehouse tem apenas uma presença no portal do Azure.
 
 2. Clique no botão **Abrir no Power BI**
 
@@ -56,7 +56,7 @@ O SQL Data Warehouse também está listado na página Obter Dados do Power BI.
 
 1. Selecione **Obter Dados** na parte inferior do painel de navegação esquerdo.  
 
-    ![Botão obter dados](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
+    ![Botão Obter Dados](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
 
 2. Em **Bancos de dados**, selecione **Obter**.
 
@@ -64,13 +64,13 @@ O SQL Data Warehouse também está listado na página Obter Dados do Power BI.
 
 3. Selecione **SQL Data Warehouse** \> **Conectar**.
 
-    ![Conectar SQL DW do Azure com o direct](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+    ![Azure SQL DW com a conexão direta](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
-4. Insira as informações necessárias para se conectar. A seção **Localizando Parâmetros** a seguir mostra onde esses dados podem estar localizados em seu Portal do Azure.
+4. Insira as informações necessárias para se conectar. A seção **Como encontrar parâmetros** abaixo mostra o local em que esses dados podem estar localizados no portal do Azure.
 
     ![Nome do servidor](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
 
-    ![Nome de servidor avançada](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
+    ![Nome do servidor avançado](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
 
     ![Nome de usuário](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
 
@@ -83,16 +83,18 @@ O SQL Data Warehouse também está listado na página Obter Dados do Power BI.
 
 6. Você pode explorar todas as tabelas e colunas. Selecionar uma coluna resultará no envio de uma consulta de volta para a fonte, criando dinamicamente seu visual. Filtros também serão convertidos em consultas de volta para o data warehouse. Esses elementos visuais podem ser salvos em um novo relatório e fixados de volta em seu painel.
 
-    ![Explore 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
+    ![Explorar 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Localizando Valores de Parâmetro
 
-Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados no Portal do Azure. No momento, o SQL Data Warehouse tem apenas uma presença na Versão Prévia do Portal do Azure.
+Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados no Portal do Azure. No momento, observe que o SQL Data Warehouse tem apenas uma presença no portal do Azure.
 
 ![Portal do Azure](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > Se o seu locatário do Power BI estiver na mesma região que o SQL Data Warehouse do Azure, não haverá nenhum encargo pela saída. Você pode descobrir onde seu locatário do Power BI está localizado usando [estas instruções](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Próximas etapas
 

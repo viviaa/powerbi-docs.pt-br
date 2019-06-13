@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 04676ee789b90eb09cbed3bafb623e8e9b89e4e4
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61237814"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720859"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo do Power BI: Faça um tour
 
@@ -165,5 +165,5 @@ Esparamos que este tour tenha mostardo como os painéis, P e R e relatório do P
 * [Baixar um arquivo zip de todos os arquivos de exemplo](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Baixar a pasta de trabalho do Excel para esta amostra do Power BI](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Obter dados (para o Power BI)](service-get-data.md)    
-* [Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)    
+* [Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)    
 * Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)

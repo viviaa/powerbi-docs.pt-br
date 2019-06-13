@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a4bc58a5be385e22c68aa29a8a366231c8434bba
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d5237ebbaf1be6aac7fcde252754436067ae932e
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61407235"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720820"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Salvar um relatório no serviço do Power BI e no Power BI Desktop
 Depois de fazer alterações em um relatório no Power BI, você poderá salvá-lo, salvá-lo com um novo nome ou apenas fechá-lo sem salvar as alterações. Digamos que você abra o relatório, cria uma visualização e fixa-o em seu painel. Se você fechá-lo agora sem salvar as alterações, o bloco permanece no painel, mas a visualização não será salva no relatório. Ao clicar nesse bloco no painel, o relatório é aberto, mas a visualização não existe mais no relatório.
@@ -39,7 +39,7 @@ Depois de fazer alterações em um relatório no Power BI, você poderá salvá-
 ### <a name="next-steps"></a>Próximas etapas
 Leia mais sobre [relatórios no Power BI](consumer/end-user-reports.md)
 
-[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
+[Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

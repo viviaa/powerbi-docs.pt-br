@@ -1,6 +1,6 @@
 ---
 title: Adicionar hiperlinks a uma tabela
-description: Use o Power BI Desktop para criar hyperlinks. Em seguida, use o Power BI Desktop ou serviço do Power BI para adicioná-los às suas tabelas de relatório e matrizes.
+description: Use o Power BI Desktop para criar hyperlinks. Depois, use o serviço do Power BI ou o Power BI Desktop para adicioná-los às suas tabelas e matrizes de relatório.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9611d8cd45eba89854fd6cbb485c52097f77f4c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421446"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721365"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Adicionar hiperlinks a uma tabela
 Este tópico ensina como usar o Power BI Desktop para criar hiperlinks. Depois, use o serviço do Power BI ou Power BI Desktop para adicioná-los às suas tabelas e matrizes de relatório. 
@@ -24,11 +24,11 @@ Este tópico ensina como usar o Power BI Desktop para criar hiperlinks. Depois, 
 ![Tabela com hiperlinks](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Você pode criar hiperlinks em [blocos nos painéis](service-dashboard-edit-tile.md) e [caixas de texto nos painéis](service-dashboard-add-widget.md) em dinamicamente usando o serviço do Power BI. Você pode criar hiperlinks em [nas caixas de texto em relatórios](service-add-hyperlink-to-text-box.md) em dinamicamente usando o serviço do Power BI e Power BI Desktop.
+> É possível criar hiperlinks em [blocos em dashboards](service-dashboard-edit-tile.md) e em [caixas de texto em dashboards](service-dashboard-add-widget.md) com facilidade usando o serviço do Power BI. É possível criar hiperlinks em [caixas de texto nos relatórios](service-add-hyperlink-to-text-box.md) com facilidade usando o serviço do Power BI e o Power BI Desktop.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Para criar um hiperlink em uma tabela ou matriz usando o Power BI Desktop
-Você pode criar hiperlinks em tabelas e matrizes no Power BI Desktop, mas não no serviço do Power BI. Você também pode criar hiperlinks no Excel Power Pivot antes de importar a pasta de trabalho no Power BI. Ambos os métodos são descritos abaixo.
+É possível criar hiperlinks em tabelas e em matrizes no Power BI Desktop, mas não no serviço do Power BI. Também é possível criar hiperlinks no Excel Power Pivot antes de importar a pasta de trabalho no Power BI. Ambos os métodos são descritos abaixo.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Criar um hiperlink de tabela ou matriz no Power BI Desktop
 O procedimento para adicionar um hiperlink depende se você importou os dados ou os conectou usando DirectQuery. Ambos os cenários são descritos abaixo.
@@ -55,7 +55,7 @@ O procedimento para adicionar um hiperlink depende se você importou os dados ou
 
     Expanda **Valores**, localize o **ícone de URL** e altere-o para **Ativado**.
 
-    ![Ativar o ícone de URL](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+    ![Ícone da URL Ativar](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
 1. (Opcional) [Publique o relatório do Power BI Desktop no serviço do Power BI](guided-learning/publishingandsharing.yml?tutorial-step=2) e abra o relatório no serviço do Power BI. Os hiperlinks funcionarão lá também.
 
@@ -99,7 +99,7 @@ R: Não. Você pode usar um ícone de link. Se precisar de texto personalizado p
 ## <a name="next-steps"></a>Próximas etapas
 [Visualizações em relatórios do Power BI](visuals/power-bi-report-visualizations.md)
 
-[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
+[Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)
 
 Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
 

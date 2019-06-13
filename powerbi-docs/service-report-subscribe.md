@@ -1,6 +1,6 @@
 ---
-title: Inscrever-se por conta própria e outros relatórios e painéis - Power BI
-description: Saiba como assinar um instantâneo de uma página de relatório do Power BI, painel ou relatório paginado por conta própria e outros.
+title: Obtenha uma assinatura para você e para outras pessoas de relatórios e dashboards – Power BI
+description: Saiba como obter uma assinatura para você e para outras pessoas de um instantâneo de uma página de relatório, de um dashboard ou de um relatório paginado do Power BI.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a344e3cdd93fbd237387b61fb4735b41f22625e3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991128"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498078"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Obtenha uma assinatura para você e outras pessoas de relatórios e dashboards no serviço do Power BI
 
-Você pode inscrever-se por conta própria e seus colegas para as páginas de relatórios, painéis e relatórios paginados mais importantes para você. Power BI envia por email um instantâneo na caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: diária, semanal ou uma vez ao dia quando os dados forem atualizados.  Se você escolher diária ou semanal, você pode escolher a hora você gostaria que a execução de assinatura.  No total, você pode definir até 24 assinaturas diferentes por dia, para cada página de relatório e dashboard.
+É possível obter uma assinatura para si mesmo e para seus colegas das páginas de relatório, de dashboards e de relatórios paginados que são mais importantes para você. O Power BI envia um instantâneo por email para sua caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: diária, semanal ou uma vez ao dia quando os dados forem atualizados.  Se escolher diária ou semanal, será possível escolher o momento em que você gostaria de executar a assinatura.  No total, você pode definir até 24 assinaturas diferentes por dia, para cada página de relatório e dashboard.
 
 ![instantâneo de email de dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -30,13 +30,12 @@ Você só pode criar assinaturas no serviço do Power BI. Você receberá um ema
 
 - A **Criação** de assinaturas é um recurso do Power BI Pro.
 - Você não precisa editar permissões para o conteúdo (dashboard ou relatório) para criar uma assinatura para si próprio, mas precisa ter permissões de edição para criar uma para outra pessoa. 
-- Desde janeiro de 2019, você não precisa ter a atualização de conjunto de dados configurada para executar uma assinatura.  Ela será executada independentemente de quaisquer atualizações agendadas que você tiver configurado.  
 
-## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Assinar um dashboard, uma página de relatório ou um relatório paginado
+## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Assine um dashboard, uma página de relatório ou um relatório paginado
 
-Se você estiver assinando um dashboard, relatório, ou relatório paginado, o processo é semelhante. O mesmo botão permite que você assine os dashboards e relatórios do serviço do Power BI.
+Se você está assinando um dashboard, um relatório ou um relatório paginado, o processo é semelhante. O mesmo botão permite que você assine os dashboards e relatórios do serviço do Power BI.
 
-Assinar relatórios paginados é um pouco diferente. Ver [inscrever-se por conta própria e outros em um relatório paginado no serviço do Power BI](paginated-reports-subscriptions.md) para obter detalhes.
+Assinar relatórios paginados é um pouco diferente. Confira [Obter uma assinatura para você e para outras pessoas de um relatório paginado no serviço do Power BI](paginated-reports-subscriptions.md) para obter detalhes.
  
 ![selecione o ícone Assinar](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -64,7 +63,7 @@ Assinar relatórios paginados é um pouco diferente. Ver [inscrever-se por conta
 7. Selecione **Salvar e fechar**. Os inscritos receberão um email e o instantâneo da página de relatório ou dashboard para a frequência e a hora que você selecionou. No total, você pode criar até 24 assinaturas por relatório ou dashboard e pode fornecer frequências, horas e destinatários exclusivos para cada assinatura.  Todas as assinaturas definidas para **Após a atualização de dados** do seu dashboard ou relatório somente enviarão um email após a primeira atualização agendada.   
       
    > [!TIP]
-   > Deseja enviar o email de uma assinatura imediatamente ou sob demanda a qualquer momento? Selecione **Executar Agora** para as assinaturas do dashboard ou do relatório que deseja enviar. Você verá uma notificação indicando que um email está sendo enviado a todos para essa assinatura específica.  Você pode fazer isso quantas vezes desejar. Isso não é calculado no limite de 24 execuções de assinatura agendadas por dia e por relatório ou dashboard. Ela não dispare uma atualização de dados do conjunto de dados subjacente. 
+   > Deseja enviar o email de uma assinatura imediatamente ou sob demanda a qualquer momento? Selecione **Executar Agora** para as assinaturas do dashboard ou do relatório que deseja enviar. Você verá uma notificação indicando que um email está sendo enviado a todos para essa assinatura específica.  Você poderá fazer isso sempre que desejar. Isso não é calculado no limite de 24 execuções de assinatura agendadas por dia e por relatório ou dashboard. Isso NÃO dispara uma atualização de dados do conjunto de dados subjacente. 
    > 
    > 
    
@@ -87,10 +86,11 @@ Uma assinatura será encerrada se a licença Pro expirar, se o proprietário exc
 
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 
-* Os dashboards com mais de 25 blocos fixos ou 4 páginas de relatório dinâmico fixas podem não ser renderizados totalmente nos emails de assinatura enviados aos usuários.  Assinaturas de dashboards ao longo desses número de blocos não serão bloqueadas. No entanto, eles são considerados sem suporte se você encontrar problemas. Considere modificá-los adequadamente para se enquadram dentro de um intervalo com suporte.
-* Durante a configuração de suas assinaturas de email, tenha em mente que há um atraso entre quando o trabalho de assinatura é iniciado e a hora exata que o email é enviado.  Para minimizar o atraso entre os dois, defina um momento diferente para a atualização de dados agendada que quando sua assinatura de email está agendada para ser executado.
-* Para assinaturas de email do dashboard, se os blocos tem aplicada, de segurança de nível de linha (RLS) não exibem esses blocos.  
-* Para assinaturas de email de relatório, se o conjunto de dados usa a RLS, você pode criar uma assinatura por conta própria. Você não pode assinar outros a um relatório com segurança em nível de linha (RLS) aplicada.
+* Os dashboards com mais de 25 blocos fixos ou 4 páginas de relatório dinâmico fixas podem não ser renderizados totalmente nos emails de assinatura enviados aos usuários.  As assinaturas de dashboards que ultrapassam esse número de blocos não são bloqueadas. No entanto, elas serão consideradas sem suporte se você encontrar erros. Considere modificá-las de acordo com isso para se enquadrarem em um intervalo compatível.
+* Esta hora refere-se ao momento em que o trabalho de assinatura é iniciado. Pode levar alguns minutos até que o email seja entregue à sua caixa de entrada em alguns cenários.
+* Em raras ocasiões, as assinaturas de email podem levar mais de quinze minutos para serem entregues aos destinatários. Caso isso aconteça, recomendamos a execução da atualização de dados e da assinatura de email em momentos diferentes para garantir a entrega em tempo hábil. Se o problema persistir, contate o suporte do Power BI.
+* Para assinaturas de email do dashboard, se os blocos tiverem a RLS (segurança em nível de linha) aplicada, esses blocos não serão exibidos.  
+* Para assinaturas de email do relatório, se o conjunto de dados usar a RLS, será possível criar uma assinatura para você mesmo. Não é possível obter uma assinatura para outras pessoas de um relatório com a RLS (segurança em nível de linha) aplicada.
 * As assinaturas da página de relatório são vinculadas ao nome da página de relatório. Se você assinar uma página de relatório e renomeá-la, precisará recriar sua assinatura.
 * Sua organização pode definir certas configurações no Azure Active Directory que limitam a capacidade de usar assinaturas de email no Power BI.  Essas limitações incluem, sem limitação, ter autenticação multifator ou restrições de intervalo de IP ao acessar recursos.
 * Atualmente, as assinaturas de email para relatórios/dashboards que usam conjuntos de dados de conexão dinâmica não têm suporte para inscrever outros usuários, exceto a si próprio.
@@ -105,6 +105,6 @@ Uma assinatura será encerrada se a licença Pro expirar, se o proprietário exc
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Inscrever-se por conta própria e outros em um relatório paginado no serviço do Power BI](paginated-reports-subscriptions.md)
+- [Obter uma assinatura para você e para outras pessoas de um relatório paginado no serviço do Power BI](paginated-reports-subscriptions.md)
 - Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)    
 - [Ler a postagem no blog](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

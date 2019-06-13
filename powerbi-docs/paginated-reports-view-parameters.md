@@ -1,5 +1,5 @@
 ---
-title: Exibir parâmetros para relatórios paginados no serviço do Power BI (versão prévia)
+title: Exibir parâmetros de relatórios paginados no serviço do Power BI
 description: Neste artigo, você aprenderá a interagir com os parâmetros de relatórios paginados no serviço do Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: ea186b5fa3bbbe7968c386604066f91b90ec5821
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 100d8b5d25f7d844ea4f44d63a4d2cb9737f57a9
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61422188"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839516"
 ---
-# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Exibir parâmetros para relatórios paginados no serviço do Power BI (versão prévia)
+# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Exibir parâmetros de relatórios paginados no serviço do Power BI
 
 Neste artigo, você aprenderá a interagir com os parâmetros de relatórios paginados no serviço do Power BI.  Um parâmetro de relatório oferece uma maneira de filtrar dados em relatórios. Os parâmetros oferecem uma lista de valores disponíveis da qual você pode escolher um ou vários valores. Às vezes, os parâmetros têm um valor padrão e pode ser preciso escolher um valor antes de poder ver o relatório.  
 

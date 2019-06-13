@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375096"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720346"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Entidade de serviço com o Power BI (Versão Prévia)
 
@@ -120,7 +120,7 @@ Diferente do uso tradicional de uma conta mestra, usar a entidade de serviço (t
 
 5. Adicionar a entidade de serviço como um **administrador** para o novo workspace que você criou. Você pode gerenciar essa tarefa por meio de [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) ou com o serviço do Power BI.
 
-    ![Adicionar uma entidade de serviço como um administrador a um espaço de trabalho](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Adicionar uma entidade de serviço como um administrador a um workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Agora, escolha inserir o conteúdo dentro de um aplicativo de exemplo ou em seu próprio aplicativo.
 
@@ -168,17 +168,17 @@ Abaixo está um exemplo de script para recuperar a ID de objeto da entidade de s
 
 * A entidade de serviço só funciona com [novos workspaces do aplicativo](../service-create-the-new-workspaces.md).
 * Não há suporte para **Meu Workspace** ao usar a entidade de serviço.
-* É necessário ter a capacidade Premium Dedicada ao migrar para produção.
+* É necessária capacidade dedicada ao passar para produção.
 * Você não pode entrar no portal do Power BI usando a entidade de serviço.
 * Direitos de administrador do Power BI são necessários para habilitar a entidade de serviço nas configurações do desenvolvedor no portal do administrador do Power BI.
 * Você não pode instalar nem gerenciar um gateway de dados local usando a entidade de serviço.
 * Aplicativos [inseridos para sua organização](embed-sample-for-your-organization.md) não podem usar a entidade de serviço.
 * Não há suporte para gerenciamento de [fluxos de dados](../service-dataflows-overview.md).
-* Entidade de serviço atualmente não suporta qualquer administrador APIs.
+* No momento, a entidade de serviço não dá suporte a nenhuma API de administrador.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * [Registrar um aplicativo](register-app.md)
 * [Power BI Embedded para seus clientes](embed-sample-for-customers.md)
 * [Aplicativo e objetos de entidade de serviço no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Segurança de nível de linha usando o gateway de dados locais com a entidade de serviço (versão prévia)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Segurança em nível de linha usando o gateway de dados local com a entidade de serviço (versão prévia)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

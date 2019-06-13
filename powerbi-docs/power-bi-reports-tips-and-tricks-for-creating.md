@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d88a455b5448b92d86719251bfada6bd807a4c91
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60973473"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721361"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Dicas e truques para criar relatórios no Power BI Desktop e no serviço do Power BI
 Para aproveitar ao máximo seus dados, às vezes você precisa de uma ajuda extra. Reunimos algumas dicas e truques que você pode usar ao criar relatórios no Microsoft Power BI Desktop, serviço do Power BI *e* nas edições Pro-Plus do Microsoft Excel 2013 ou 2016 com o suplemento do Power Pivot habilitado e o Power Query instalado e habilitado.
@@ -222,7 +222,7 @@ Alguns dos nossos livros favoritos incluem:
 * *Advanced Presentations Design* por Andrew Abela   
 
 ## <a name="next-steps"></a>Próximas etapas
-[Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
+[Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)
 
 [Relatórios no Power BI](consumer/end-user-reports.md)
 

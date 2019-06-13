@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f03f4933566a8c18510ef0ce07b71db61ecfa8fd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770605"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448416"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Banco de Dados SQL do Azure com DirectQuery
 
@@ -42,28 +42,15 @@ Essas restrições e observações podem mudar conforme continuamos a aprimorar 
 
 Para se conectar ao Banco de Dados SQL do Azure usando DirectQuery, você precisará usar o Power BI Desktop. Essa abordagem fornece mais flexibilidade e funcionalidades adicionais. Os relatórios criados com o Power BI Desktop podem ser publicados no serviço do Power BI. Você pode aprender mais sobre como se conectar ao [Banco de Dados SQL do Azure usando DirectQuery](desktop-use-directquery.md) dentro do Power BI Desktop.
 
-## <a name="single-sign-on"></a>Logon único
-
-Depois de publicar um conjunto de dados DirectQuery do SQL do Azure para o serviço, você pode habilitar o logon único (SSO) por meio do OAuth2 do Azure Active Directory (Azure AD) para os usuários finais.
-
-Para habilitar o SSO, acesse as configurações para o conjunto de dados, abra a guia **Fontes de dados** e marque a caixa SSO.
-
-![Configure as caixa de diálogo DQ do SQL do Azure](media/service-azure-sql-database-with-direct-connect/sso-dialog.png)
-
-Quando a opção de SSO está habilitada e os usuários acessam relatórios construídos sobre a fonte de dados, o Power BI envia suas credenciais autenticadas do Azure AD às consultas no banco de dados do SQL do Azure. Isso permite que o Power BI respeite as configurações de segurança que são configuradas no nível da fonte de dados.
-
-A opção de SSO entra em vigor em todos os conjuntos de dados que usam essa fonte de dados. Isso não afeta o método de autenticação usado para cenários de importação.
-
-> [!Note]
-> Não há suporte para Autenticação Multifator do Microsoft Azure (MFA). Os usuários que quiserem usar o SSO com o DirectQuery para SQL do Microsoft Azure devem ser isentos de MFA.
-
 ## <a name="finding-parameter-values"></a>Localizando Valores de Parâmetro
 
 Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados no Portal do Azure.
 
-![Nova atualização de porta do Azure](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Nova atualização do portal do Azure](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
 ![Atualização do portal do Azure](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,6 +1,6 @@
 ---
 title: Encontrar usuários do Power BI que entraram
-description: Se você for um administrador de locatário e quiser ver quem entrou no Power BI, você pode usar os relatórios de acesso e uso do Azure Active Directory para ganhar visibilidade.
+description: Se for um administrador de locatários e quiser ver quem entrou no Power BI, você poderá usar os relatórios de acesso e de uso do Azure Active Directory para ter essa visibilidade.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,21 +10,19 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e513607dd89aee15f10145cf62bd461621cc12c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7149d8601aa7a834f91a8d98f3a7a9deac7bf43b
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906738"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721322"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Encontrar usuários do Power BI que entraram
 
-Se você for um administrador de locatário e quiser ver quem entrou no Power BI, use o [relatórios de acesso e uso do Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) ganhe visibilidade.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+Se for um administrador de locatários e quiser ver quem entrou no Power BI, use os [relatórios de acesso e uso do Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) para ter essa visibilidade.
 
 > [!NOTE]
-> O **entradas** relatório fornece informações úteis, mas ela não identifica o tipo de licença que cada usuário tem. Use o centro de administração do Microsoft 365 para ver as licenças.
+> O relatório de **Entradas** fornece informações úteis, mas não identifica o tipo de licença que cada usuário tem. Use o centro de administração do Microsoft 365 para ver as licenças.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,29 +40,29 @@ Para exibir a atividade de entrada, siga estas etapas.
 
 1. Em **Monitoramento**, selecione **Entradas**.
    
-    ![Captura de tela da interface do usuário do Azure com as opções do Azure Active Directory e entradas realçadas.](media/service-admin-access-usage/azure-portal-sign-ins.png)
+    ![Captura de tela da interface do usuário do Azure com o Azure Active Directory e opções de Entradas realçadas.](media/service-admin-access-usage/azure-portal-sign-ins.png)
 
 1. Filtre o aplicativo segundo **Microsoft Power BI** ou **Power BI Gateway** e selecione **Aplicar**.
 
-    **Microsoft Power BI** filtros de atividade de entrada relacionados ao serviço, enquanto **Power BI Gateway** filtros de atividade de entrada específico para o gateway de dados local.
+    O **Microsoft Power BI** filtra a atividade de conexão relacionada ao serviço, enquanto o **Power BI Gateway** filtra atividades de conexão específicas para o gateway de dados local.
    
-    ![Captura de tela do filtro entradas com o campo de aplicativos realçado.](media/service-admin-access-usage/sign-in-filter.png)
+    ![Captura de tela do filtro Entradas com o campo Aplicativos realçado.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Exportar os dados
 
-Você pode [baixar um relatório de entrada](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) em qualquer um dos dois formatos: um arquivo CSV ou um arquivo JSON.
+É possível [baixar um relatório de conexão](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) em qualquer um dos dois formatos: um arquivo CSV ou um arquivo JSON.
 
 ![Captura de tela do botão de download.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
-Na parte superior a **entradas** relatório, selecione **baixar** e, em seguida, selecione uma das seguintes opções:
+Na parte superior do relatório **Entradas**, selecione **Baixar** e, em seguida, selecione uma das seguintes opções:
 
-* **CSV** para baixar um arquivo CSV para os dados filtrados no momento.
+* **CSV** para baixar um arquivo CSV dos dados filtrados no momento.
 
-* **JSON** para baixar um arquivo JSON para os dados filtrados no momento.
+* **JSON** para baixar um arquivo JSON dos dados filtrados no momento.
 
 ## <a name="data-retention"></a>Retenção de dados
 
-Dados relacionados às entradas estão disponíveis por até 30 dias. Para obter mais informações, consulte [políticas de retenção de relatório do Azure Active Directory](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+Dados relacionados às entradas estão disponíveis por até 30 dias. Para obter mais informações, confira [Políticas de retenção de relatórios do Azure Active Directory](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Próximas etapas
 

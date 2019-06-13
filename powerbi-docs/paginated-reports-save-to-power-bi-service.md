@@ -1,5 +1,5 @@
 ---
-title: Publicar um relatório paginado no serviço do Power BI (versão prévia)
+title: Publicar um relatório paginado no serviço do Power BI
 description: Neste tutorial, você aprende a publicar um relatório paginado no serviço do Power BI fazendo o upload do computador local.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423858"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839613"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicar um relatório paginado no serviço do Power BI (versão prévia)
+# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicar um relatório paginado no serviço do Power BI
 
 Neste artigo, você aprende a publicar um relatório paginado no serviço do Power BI fazendo o upload do computador local. Você pode carregar relatórios paginados para o Meu Espaço de Trabalho ou qualquer outro espaço de trabalho, desde que o espaço de trabalho esteja em uma capacidade Premium. Localize o ícone de losango ![Ícone de losango da capacidade do Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ao lado do nome do espaço de trabalho. 
 
@@ -89,5 +89,5 @@ Atualmente, os gateways não dão suporte a parâmetros de vários valores.
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Exibir um relatório paginado no serviço do Power BI](paginated-reports-view-power-bi-service.md)
-- [O que são os relatórios paginados no Power BI Premium? (versão prévia)](paginated-reports-report-builder-power-bi.md)
+- [O que são os relatórios paginados no Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

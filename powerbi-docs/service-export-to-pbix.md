@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 5c42b633b3c8746d2e26656eb5310b1f74cb2500
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 296970466505f01ae9ad11f994fe2008563f4884
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61159700"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720212"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exportar um relatório do serviço do Power BI para o Desktop (visualização)
 No Power BI Desktop, você pode exportar (também conhecido como *baixar*) um relatório para o serviço do Power BI ao salvá-lo e selecionar **Publicar**. Também é possível exportar de volta e baixar um relatório do serviço do Power BI para o Desktop. A extensão para os arquivos exportados, em qualquer direção, é *.pbix*.
@@ -68,7 +68,7 @@ Assista ao vídeo de um minuto **Guy in a Cube** sobre esse recurso:
 Além disso, estes são alguns outros artigos que podem ajudá-lo a saber como usar o **serviço do Power BI**:
 
 * [Relatórios no Power BI](consumer/end-user-reports.md)
-* [Power BI – conceitos básicos](consumer/end-user-basic-concepts.md)
+* [Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)
 
 Depois que você instalar o **Power BI Desktop**, o conteúdo a seguir poderá ajudá-lo a colocar ele em funcionamento rapidamente:
 
