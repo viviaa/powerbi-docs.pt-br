@@ -703,6 +703,8 @@
               href: service-template-apps-tips.md
             - name: Instalar e distribuir aplicativos de modelo
               href: service-template-apps-install-distribute.md
+            - name: 'Atualizar, excluir e extrair um aplicativo de modelo do Power BI'
+              href: service-template-update-delete-extract.md
         - name: Solucionar problemas
           items:
             - name: Esqueceu sua senha para o Power BI?
