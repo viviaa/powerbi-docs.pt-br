@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61312207"
