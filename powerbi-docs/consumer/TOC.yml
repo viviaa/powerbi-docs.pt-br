@@ -106,6 +106,8 @@
       items:
         - name: Glossário e terminologia
           href: end-user-glossary.md
+        - name: Perguntas frequentes
+          href: end-user-faq.md
         - name: Navegadores compatíveis
           href: end-user-browsers.md
         - name: Tipos de Quick Insights com suporte do Power BI
