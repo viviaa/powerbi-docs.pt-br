@@ -6,15 +6,15 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.subservice: powerbi - developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374638"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751031"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gerenciar multilocação com a análise integrada do Power BI
 
@@ -142,9 +142,9 @@ Para adicionar mais isolamento, um desenvolvedor de aplicativos pode definir um 
 
 ### <a name="scalability"></a>Escalabilidade
 
-Uma vantagem desse modelo é que a separação dos dados em vários conjuntos de dados para cada locatário supera o [limite de tamanho de um único conjunto de dados](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (atualmente, 10 GB em uma capacidade). Quando a capacidade está sobrecarregada, ele pode remover os conjuntos de dados não utilizados para liberar memória para conjuntos de dados ativos. Essa tarefa não é possível com um único conjunto de dados grande. Com vários conjuntos de dados, também é possível separar locatários em várias capacidades do Power BI, se for necessário.
+Uma vantagem desse modelo é que a separação dos dados em vários conjuntos de dados para cada locatário supera o [limite de tamanho de um único conjunto de dados](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (atualmente, 10 GB em uma capacidade). Quando a capacidade fica sobrecarregada, ela pode remover conjuntos de dados não usados para liberar a memória para conjuntos de dados ativos. Essa tarefa não é possível com um único conjunto de dados grande. Com vários conjuntos de dados, também é possível separar locatários em várias capacidades do Power BI, se for necessário.
 
-Apesar dessas vantagens, é necessário considerar a expansão do aplicativo SaaS no futuro. Por exemplo, pode-se atingir o limite de artefatos que é possível gerenciar. Consulte [Limitações de implantação](#summary-comparison-of-the-different-approaches) mais adiante neste artigo para saber mais. A capacidade usada SKU apresenta um limite no tamanho da memória que precisam de conjuntos de dados para se ajustar em quantas atualizações podem executar ao mesmo tempo e a frequência máxima de atualizações de dados. Recomendamos fazer testes ao gerenciar centenas ou milhares de conjuntos de dados. Também recomendamos considerar o volume de uso médio e de pico, bem como quaisquer locatários específicos com grandes conjuntos de dados, ou padrões de uso diferentes, que são gerenciados diferentemente de outros locatários.
+Apesar dessas vantagens, é necessário considerar a expansão do aplicativo SaaS no futuro. Por exemplo, pode-se atingir o limite de artefatos que é possível gerenciar. Consulte [Limitações de implantação](#summary-comparison-of-the-different-approaches) mais adiante neste artigo para saber mais. A SKU da capacidade usada apresenta um limite no tamanho da memória ao qual os conjuntos de dados precisam se ajustar, quantas atualizações podem ser executadas ao mesmo tempo e a frequência máxima de atualizações de dados. Recomendamos fazer testes ao gerenciar centenas ou milhares de conjuntos de dados. Também recomendamos considerar o volume de uso médio e de pico, bem como quaisquer locatários específicos com grandes conjuntos de dados, ou padrões de uso diferentes, que são gerenciados diferentemente de outros locatários.
 
 ### <a name="automation--operational-complexity"></a>Automação e complexidade operacional
 

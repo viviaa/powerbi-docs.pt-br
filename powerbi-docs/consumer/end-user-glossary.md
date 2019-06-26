@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412911"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751015"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossário do serviço do Power BI
 O serviço do Power BI pode apresentar terminologia confusa ou desconhecida. O glossário é um ótimo lugar para pesquisar sobre a terminologia, por isso pode ser útil até mesmo salvá-lo como favorito. Outro excelente recurso para aprender sobre os blocos de construção que compõem o serviço do Power BI são os [Conceitos básicos](end-user-basic-concepts.md). O artigo com Conceitos básicos fornece uma visão geral de alto nível das *partes* do Power BI e como elas estão conectadas.
@@ -142,7 +142,7 @@ Não há problemas em usar o ambiente do Power BI (locatário) na documentação
 ## <a name="h"></a>H
 **high-density visuals (visuais de alta densidade)** Visuais com mais pontos de dados que o Power BI pode renderizar. O Power BI realiza amostragem dos dados para mostrar a forma e as exceções.
 
-**Página inicial** a idade dos usuários do serviço do Power BI de aterrissagem padrão. Não modifique nada. Pode ser chamado do Power BI, casa ou simplesmente Home.
+**Página Inicial** A página de aterrissagem para usuários de serviço do Power BI. Não modifica nada. Pode ser chamado de Página Inicial do Power BI ou simplesmente Página Inicial.
 
 ## <a name="i"></a>I
 

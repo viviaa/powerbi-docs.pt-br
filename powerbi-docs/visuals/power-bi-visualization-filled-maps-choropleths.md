@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143400"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839827"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Mapas coropléticos no Power BI
 Um mapa coroplético usa sombreamento ou tonalidade ou padrões para exibir como um valor difere na proporção em uma localização geográfica ou região.  Exiba rapidamente essas diferenças relativas com sombreamento que varia de claro (menos frequente/inferior) para escuro (mais frequente/mais).    
 
-![Mapa dos EUA](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![Mapa dos EUA](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>O que é enviado ao Bing
 O Power BI é integrado ao Bing para fornecer as coordenadas de mapa padrão (um processo chamado geocódigo). Quando você cria uma visualização de mapa no serviço do Power BI ou no Power BI Desktop, os dados nos buckets **Local**, **Latitude** e **Longitude** (que estão sendo usados para criar essa visualização) são enviados ao Bing.
@@ -55,10 +55,11 @@ Neste vídeo, Kim cria um mapa básico e o converte em um mapa coroplético.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Obter dados e adicionar uma nova página em branco ao relatório
-1. Para criar seu próprio mapa coroplético, [baixe o exemplo Vendas e Marketing](../sample-datasets.md) conectando-se ao Power BI e selecionando **Obter Dados \> Exemplos \> Vendas e Marketing \> Conectar**.
-2. Quando a mensagem de êxito for exibida, feche-o e selecione a guia **Relatórios**. Em seguida, escolha **Exemplo de Vendas e Marketing** para abrir o relatório.
+1. Para criar seu próprio mapa coroplético, [baixe o exemplo Vendas e Marketing](../sample-datasets.md) conectando-se ao Power BI e selecionando **Obter Dados \> Exemplos \> Vendas e Marketing \> Conectar**. Ou obtenha o aplicativo **Vendas e Marketing do Power BI** em appsource.com. 
 
-   ![Lista de conteúdo de relatórios](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Abra o relatório de Vendas e Marketing.
+
+   ![O relatório de Vendas e Marketing é aberto](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. O Power BI abre o relatório. Selecione **Editar relatório** para abrir o relatório no modo de [Exibição de Edição](../service-interact-with-a-report-in-editing-view.md).
 
 4. Adicione uma nova página selecionando o sinal de adição amarelo na parte inferior da tela do relatório.
@@ -123,13 +124,13 @@ Realçar um local em um Mapa coroplético faz a filtragem cruzada com outras vis
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 Dados de mapa podem ser ambíguos.  Por exemplo, há uma Paris, França, mas também há uma Paris, no Texas. Seus dados geográficos provavelmente são armazenados em colunas separadas – uma coluna de nomes de cidades, uma coluna de nomes de estado ou província, etc. – portanto, o Bing pode não ser capaz de dizer qual Paris é. Se o seu conjunto de dados já contém dados de latitude e longitude, o Power BI tem campos especiais para ajudar a tornar os dados do mapa inequívocos. Basta arrastar o campo que contém os dados de latitude na área Visualizações \> Latitude.  E faça o mesmo para os dados de longitude.    
 
-![Painéis Campos e Visualizações](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Painéis Campos e Visualizações](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 Se você tiver permissões para editar o conjunto de dados no Power BI Desktop, assista a este vídeo para obter ajuda e resolver a ambiguidade de mapa.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-Se você não tiver acesso a dados de latitude e longitude, [siga estas instruções para atualizar o conjunto de dados](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+Se você não tiver acesso a dados de latitude e longitude, mas tiver acesso de edição ao conjunto de dados, [siga estas instruções para atualizar o conjunto de dados](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 Para obter mais ajuda com Visualizações de mapa, veja [Tips and tricks for map visualizations](../power-bi-map-tips-and-tricks.md) (Dicas e truques para visualizações de mapa).
 

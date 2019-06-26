@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)'
+title: 'Tutorial: Criar um relatório paginado e fazer upload dele no serviço do Power BI'
 description: Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios para criar um relatório paginado. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989465"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839747"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutorial: criar um relatório paginado e carregá-lo no serviço do Power BI (versão prévia)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutorial: Criar um relatório paginado e fazer upload dele no serviço do Power BI
 
-Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, usar um assistente no construtor de relatórios do Power BI para criar um relatório paginado com uma tabela que encapsula a várias páginas. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI. Os relatórios paginados no serviço do Power BI estão no momento em versão prévia.
+Neste tutorial, você se conecta a um banco de dados do SQL do Azure de exemplo. Em seguida, use um assistente no Construtor de Relatórios do Power BI para criar um relatório paginado com uma tabela que encapsula para várias páginas. Em seguida, carregue o relatório paginado em um espaço de trabalho em uma capacidade Premium no serviço do Power BI.
 
 ![Relatório paginado no serviço do Power BI](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Aqui estão as etapas que você deverá concluir este tutorial:
 
 > [!div class="checklist"]
 > * Crie um banco de dados de exemplo do Azure.
-> * Crie uma matriz no construtor de relatórios do Power BI com a Ajuda de um assistente.
+> * Crie uma matriz no Construtor de Relatórios do Power BI com a ajuda de um assistente.
 > * Formate o relatório com o título, os números de página e os títulos de coluna em cada página.
 > * Formate a moeda.
 > * Carregue o relatório no serviço do Power BI.
@@ -37,7 +37,7 @@ Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://a
 
 Aqui estão os pré-requisitos para criar o relatório paginado:
 
-- Instale [construtor de relatórios de BI do Centro de Download da Microsoft de energia](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Instale o [Construtor de Relatórios do Power BI no Centro de Download da Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Siga o guia de início rápido [Criar um exemplo de banco de dados SQL do Azure no portal do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copie e salve o valor na caixa **Nome do servidor** na guia **Visão geral**. Lembre-se do nome de usuário e da senha que você criou no Azure.
 
@@ -48,7 +48,7 @@ Aqui estão os pré-requisitos para carregar seu relatório paginado no serviço
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Criar a matriz com um assistente
   
-1.  Inicie o construtor de relatórios do Power BI do seu computador.  
+1.  Inicie o Construtor de Relatórios do Power BI no computador.  
   
      A caixa de diálogo **Guia de Introdução** é aberta.  
   
@@ -329,5 +329,5 @@ Agora que você criou esse relatório paginado, é hora de carregá-lo no servi�
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[O que são os relatórios paginados no Power BI Premium? (versão prévia)](paginated-reports-report-builder-power-bi.md)
+[O que são os relatórios paginados no Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 
