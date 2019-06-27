@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: d62ad0624a19666e4ac1e59927df9eade6e4df33
-ms.sourcegitcommit: 8054aa9622d97b196ef6cd087fd9e1d8dad3d9de
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67144926"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389546"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -23,10 +23,6 @@ Registre-se para os próximos webinars ao vivo ou assista a nossas sessões grav
 ## <a name="upcoming-webinars"></a>Próximos webinars
 
 Registre-se para ouvir especialistas do Power BI e participar de sessões ao vivo de P e R.
-
-**Execuções da Microsoft no Power BI: Usando o Power BI no Modern Treasury**
-<br>por Pankaj Gudimella e Guru Kirthigavasan
-<br>[Registre-se para assistir em 25 de junho, das 10h às 11h PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: Como obter insights de seus dados de RH de jornada de trabalho**
 <br>por Iman Eftekhari, Julia Paton do Agile Analytics e Shahram Karimi do QBE Insurance
@@ -61,6 +57,10 @@ Tenha uma introdução com estes webinars populares sob demanda
 **Execuções da Microsoft em Power BI – análise e planejamento financeiro facilitados**
 <br>por Cory Hrncirik e Miguel Martinez
 <br>[Registre-se e assista agora](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Execuções da Microsoft no Power BI: Usando o Power BI no Modern Treasury**
+<br>por Pankaj Gudimella e Guru Kirthigavasan
+<br>[Registre-se e assista agora](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Potencialização de aplicativos usando a API do JavaScript do Power BI**
 <br>por Nimrod Shalit
