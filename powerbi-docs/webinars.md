@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d62ad0624a19666e4ac1e59927df9eade6e4df33
+ms.sourcegitcommit: 8054aa9622d97b196ef6cd087fd9e1d8dad3d9de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750997"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67144926"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -141,17 +141,9 @@ Assista a sessões gravadas a qualquer momento
 <br>por Stephen Cracknell e Stuart Macanliss do US Medical IT
 <br>[Registre-se e assista agora](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Impulsione seu BI com inteligência de localização**
-<br>por Scott Ball da Esri e Enrique Plaza da Microsoft
-<br>[Registre-se e assista agora](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Inteligência aplicada a vendas e serviços**
 <br>por Ed Bobrin da Avanade
 <br>[Registre-se e assista agora](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**Cinco hábitos de um coletor de tendências bem-sucedido – Rohit Bhargava**
-<br>por Rohit Bhargava, da Non-Obvious
-<br>[Registre-se e assista agora](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Fabricantes: seu setor está passando por uma transformação digital, mantenha a liderança utilizando a análise para maximizar os lucros**
 <br>por Jon Thompson do Blue Margin e Jim Pastor do Elgin Fastener Group
@@ -160,6 +152,14 @@ Assista a sessões gravadas a qualquer momento
 **Visualizar conjuntos de dados públicos ou privados com o novo conector do Power BI e data.world**
 <br>por Patrick McGarry e Miguel Martinez
 <br>[Registre-se e assista agora](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Impulsione seu BI com inteligência de localização**
+<br>por Scott Ball da Esri e Enrique Plaza da Microsoft
+<br>[Registre-se e assista agora](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**Cinco hábitos de um coletor de tendências bem-sucedido – Rohit Bhargava**
+<br>por Rohit Bhargava, da Non-Obvious
+<br>[Registre-se e assista agora](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### <a name="community"></a>Comunidade ###
 
