@@ -1,7 +1,7 @@
 ---
 title: Log de alterações para o Servidor de Relatório do Power BI
 description: Esse log de alterações é para o Servidor de Relatório do Power BI e lista novos itens juntamente com correções de bug para cada build lançado.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65990612"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751121"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Log de alterações para o Servidor de Relatório do Power BI
 
@@ -25,31 +25,31 @@ Para obter informações detalhadas sobre os novos recursos, consulte [Novidades
 ## <a name="may-2019"></a>Maio de 2019
 
 - **Servidor de Relatório do Power BI**          
-    - *Versão 1.5.7074.36177 (Build 15.0.1102.371), lançado: 21 de maio de 2019*
+    - *Versão 1.5.7074.36177 (Build 15.0.1102.371), lançamento: 21 de maio de 2019*
         - Correções de bug
             - Relatórios paginados
                 - Correção para sempre habilitar a inserção de fonte do pdf.
-                - Corrigir para definir cookies enviados via https como Secure
-                - Corrigir problemas com pop no-break devido a erros de script
-                - Correção para problemas de exibição com o aplicativo móvel em telefones Android
-                - Correção para o navegador de tempo de relatório móvel mostrar os números de semana correta, independentemente do início do Ano Fiscal
-                - Adicionado 'RestrictedResourceMimeTypeForUpload' proibida de propriedade configurável para que os administradores especificar tipos de mime
+                - Correção para definir cookies enviados via https como Seguro
+                - Correção de problemas com pop-ups devido a erros de script
+                - Correção de problemas de exibição com o Aplicativo Móvel em telefones Android
+                - Correção para o Navegador de Tempo de Relatório Móvel mostrar os números de semana corretos, independentemente do início do ano fiscal
+                - A propriedade configurável 'RestrictedResourceMimeTypeForUpload' foi adicionada para que os administradores especifiquem tipos de mime banidos
          - Recursos
-            - Adicionando suporte para visuais confiáveis a PBIRS
+            - Adicionando suporte para Visuais Confiáveis ao PBIRS
 
 - **Power BI Desktop (otimizado para o Servidor de Relatórios do Power BI)**
-    - *Versão: 2.69.5467.1801 (maio de 2019), lançado: 21 de maio de 2019*
+    - *Versão: 2.69.5467.1801 (maio de 2019), lançamento: 21 de maio de 2019*
         - Correções de bug
-            - Correção para evitar a reinserção de credenciais durante o carregamento PBIX PBIRS
-            - Correções de abrir documentos com # no nome do arquivo
-            - Link adicionado a mais fácil para navegação regressiva na janela de seleção de PBIRS
-            - Correção para o modo de alto contraste no PBIRS para exibir o botão Voltar, Mostrar visual mensagens de aviso.
+            - Correção para evitar a reinserção de credenciais durante ao fazer upload de PBIX para PBIRS
+            - Correções para abrir documentos com # no nome do arquivo
+            - Adicionado link mais fácil para navegação de volta para a janela de seleção PBIRS
+            - Correção para o modo de Alto Contraste no PBIRS para exibir o botão Voltar, exibir mensagens visuais de aviso.
             - Correções de interface do usuário ao painel de seleção, tela de dimensionamento.
 
 ## <a name="january-2019"></a>Janeiro de 2019
 
 - **Servidor de Relatório do Power BI**          
-    - *Versão 1.4.7024.16477 (Build 15.0.1102.299), lançado: 28 de março de 2019*
+    - *Versão 1.4.7024.16477 (Build 15.0.1102.299), lançamento: 28 de março de 2019*
         - Correções de bug
             - Relatórios do Power BI
                 - Correção de problema com credenciais básicas ao usar a consulta direta para SAP Hana e SAP BW

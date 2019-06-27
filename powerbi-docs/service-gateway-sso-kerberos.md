@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174972"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809266"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Use o Kerberos para logon único (SSO) do Power BI para fontes de dados locais
 
@@ -146,7 +146,7 @@ Por fim, no computador que executa o serviço do gateway (**PBIEgwTestGW** em no
 
     Clique com o botão direito do mouse e abra **Propriedades**. Verifique a lista de contas. A conta de serviço do gateway (**PBIEgwTest\GatewaySvc**) deverá estar incluída nela.
 
-1. Em **Atribuição de Direitos de Usuário**, na lista de políticas, selecione **Atuar como parte do sistema operacional (SeTcbPrivilege)**. Verifique se a conta de serviço do gateway também está incluída na lista de contas.
+1. Em **Atribuição de Direitos de Usuário**, na lista de políticas, selecione **Atuar como parte do sistema operacional (SeTcbPrivilege)** . Verifique se a conta de serviço do gateway também está incluída na lista de contas.
 
 1. Reinicie o processo do serviço do **gateway de dados local**.
 
@@ -195,9 +195,7 @@ Este guia tenta ser o mais abrangente possível. Se você já concluiu algumas d
 ### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>Configurar o gsskrb5 em computadores cliente e no servidor SAP BW
 
 > [!NOTE]
-> Não há mais suporte ativo para o `gsskrb5` pela SAP. Para saber mais, veja [Nota SAP 352295](https://launchpad.support.sap.com/#/notes/352295). Observe também que `gsskrb5` não permite conexões de SSO do gateway de dados com Servidores de Mensagens do SAP BW. Apenas as conexões com Servidores de Aplicativos do SAP BW são possíveis.
-
-O `gsskrb5` precisa estar em uso pelo cliente e pelo servidor para concluir uma conexão de SSO por meio do gateway. Atualmente, não há suporte para a Biblioteca de Criptografia Comum (sapcrypto).
+> Não há mais suporte ativo para o `gsskrb5` pela SAP. Para saber mais, veja [Nota SAP 352295](https://launchpad.support.sap.com/#/notes/352295). Observe também que `gsskrb5` não permite conexões de SSO do gateway de dados com Servidores de Mensagens do SAP BW. Apenas as conexões com Servidores de Aplicativos do SAP BW são possíveis. O `gsskrb5` precisa estar em uso pelo cliente e pelo servidor para concluir uma conexão de SSO por meio do gateway. Agora há compatibilidade com a Biblioteca de Criptografia Comum (sapcrypto) para SAP BW.
 
 1. Baixe `gsskrb5` - `gx64krb5` em [Nota SAP 2115486](https://launchpad.support.sap.com/) (é necessário ser um usuário s do SAP). Verifique se você tem pelo menos a versão 1.0.11.x de gsskrb5.dll e gx64krb5.dll.
 
@@ -398,7 +396,7 @@ O resultado é que o gateway não consegue representar o usuário de origem corr
 
 Para obter mais informações sobre o **Gateway de dados local** e o **DirectQuery**, confira os seguintes recursos:
 
-* [Gateway de dados local](service-gateway-onprem.md)
+* [On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)
 * [DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery e SAP BW](desktop-directquery-sap-bw.md)

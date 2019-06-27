@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 67678a150b4fce802bef2b287211cf438b832e82
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
+ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66459576"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66826625"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicar um aplicativo no Power BI
 
@@ -61,9 +61,17 @@ Quando os dashboards e relatórios em seu workspace estiverem prontos, escolha q
    
      ![Navegação do aplicativo](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
-5. Em **Permissão**, decida quem tem acesso ao aplicativo e o que ele pode fazer com ele. 
+5. Em **Permissões**, decida quem tem acesso ao aplicativo e o que pode ser feito nele. 
     - Em [workspaces clássicos](service-create-workspaces.md): todos em sua organização, pessoas específicas ou grupos de segurança do AAD (Azure Active Directory).
-    - Em [workspaces da nova experiência](service-create-the-new-workspaces.md): pessoas específicas, listas de distribuição e grupos de segurança do AAD e grupos do Office 365.
+    - Em [workspaces da nova experiência](service-create-the-new-workspaces.md): pessoas específicas, listas de distribuição e grupos de segurança do AAD e grupos do Office 365. Todos os usuários do workspace recebem automaticamente acesso ao aplicativo para o workspace.
+    - Você pode permitir que os usuários do aplicativo se conectem aos conjuntos de dados subjacentes do aplicativo usando a permissão de build. Esses conjuntos de dados aparecerão nas experiências de pesquisa do conjunto de dados.
+    - Você pode permitir que os usuários do aplicativo façam uma cópia dos relatórios neste aplicativo no Meu workspace deles. 
+    
+    >[!IMPORTANT]
+    >Se o aplicativo depende de conjuntos de dados de outros workspaces, é sua responsabilidade assegurar que todos os usuários do aplicativo tenham acesso aos conjuntos de dados subjacentes.
+> 
+>     
+
 
 6. Você poderá instalar o aplicativo automaticamente para os destinatários se o administrador do Power BI tiver habilitado essa configuração para você no Portal de Administração do Power BI. Leia mais sobre como [instalar um aplicativo automaticamente](#automatically-install-apps-for-end-users) neste artigo.
 
@@ -151,6 +159,14 @@ Aqui estão algumas coisas para se ter em mente ao enviar aplicativos por push p
 * Tente não sobrecarregar os usuários. Tenha cuidado para não enviar muitos aplicativos por push para que seus usuários entendam que os aplicativos pré-instalados são úteis para eles. É melhor controlar quem pode enviar aplicativos por push para os usuários finais para coordenar o tempo. Estabeleça um ponto de contato para enviar aplicativos por push em sua organização aos usuários finais.
 
 * Os aplicativos não são instalados automaticamente para os usuários convidados que não aceitaram um convite.  
+
+## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Como permitir que usuários se conectem a conjuntos de dados subjacentes do aplicativo
+Ao marcar a opção para permitir que todos os usuários se conectem aos conjuntos de dados subjacentes do aplicativo, os usuários do aplicativo recebem a permissão de build no conjunto de dados subjacente. Isso permite que os usuários [usem os conjuntos de dados do aplicativo entre workspaces](service-datasets-across-workspaces.md) para pesquisar esses conjuntos de dados no Power BI Desktop e o serviço obtenha experiências de dados, além de ser possível criar relatórios e dashboards usando esses conjuntos de dados. 
+
+Ao desmarcar essa opção, novos usuários que você adicionar ao aplicativo não receberão a permissão de build. No entanto, as permissões existentes nos conjuntos de dados subjacentes não serão alteradas. Você pode usar a interface do usuário fornecida para remover a permissão de build manualmente de usuários do aplicativo que não deveriam mais ter a permissão. Leia mais sobre a [Permissão Criar](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Como permitir que usuários façam uma cópia dos relatórios no aplicativo
+Ao marcar a opção **Permitir que os usuários façam uma cópia dos relatórios neste aplicativo**, você permite que os usuários salvem relatórios do aplicativo no Meu Workspace deles. Em seguida, eles podem personalizar os relatórios de acordo com suas necessidades exclusivas. Essa opção exige que **Permitir que todos os usuários se conectem aos conjuntos de dados subjacentes do aplicativo usando a permissão de build** esteja habilitada. Essa funcionalidade se comporta como a nova funcionalidade [Copiar relatórios de outros workspaces](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Cancelar a publicação de um aplicativo
 Qualquer membro de um workspace do aplicativo pode cancelar a publicação do aplicativo.

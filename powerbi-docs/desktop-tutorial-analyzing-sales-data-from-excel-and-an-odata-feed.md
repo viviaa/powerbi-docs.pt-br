@@ -7,32 +7,37 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/21/2018
-ms.author: v-thepet
+ms.date: 05/31/2019
+ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61368173"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814348"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutorial: combinar dados de vendas do Excel e de um feed OData
 
-É comum ter dados distribuídos em várias fontes de dados, como informações de produtos em um banco de dados e informações de vendas em outro. Com o **Power BI Desktop**, é possível combinar dados de diferentes origens para criar visualizações e análises de dados interessantes e atrativas. 
+É comum ter dados em várias fontes de dados. Por exemplo, você poderia ter dois bancos de dados, um para informações sobre o produto e outro para informações de vendas. Com o **Power BI Desktop**, é possível combinar dados de diferentes origens para criar visualizações e análises de dados interessantes e atrativas. 
 
-Neste tutorial, você aprenderá a combinar dados de duas fontes: uma pasta de trabalho do Excel incluindo informações de produto e um feed OData contendo dados de pedidos. Após importar cada conjunto de dados e executar as etapas de transformação e agregação, você usará dados das duas fontes para produzir um relatório de análise de vendas com visualizações interativas. Essas técnicas também podem ser aplicadas a consultas de SQL Server, arquivos CSV e qualquer outra fonte de dados no Power BI Desktop.
+Neste tutorial, você combinará dados de duas fontes de dados: 
+
+1. Uma pasta de trabalho do Excel com informações sobre o produto
+2. Um feed OData contendo dados de pedidos
+
+Você vai importar cada conjunto de dados e realizar operações de transformação e agregação. Em seguida, você usará os dados das duas fontes para produzir um relatório de análise de vendas com visualizações interativas. Depois, você pode aplicar essas técnicas a consultas de SQL Server, arquivos CSV e outras fontes de dados no Power BI Desktop.
 
 >[!NOTE]
->No Power BI Desktop, normalmente há algumas maneiras de realizar uma mesma tarefa. Por exemplo, várias seleções da faixa de opções também estão disponíveis por meio de um clique com o botão direito do mouse ou de um menu **Mais opções** em uma coluna ou célula. Vários métodos alternativos são descritos nas etapas abaixo. 
+>No Power BI Desktop, normalmente há algumas maneiras de realizar uma mesma tarefa. Por exemplo, você pode clicar com o botão direito do mouse ou usar um menu **Mais opções** em uma coluna ou célula para ver mais seleções da faixa de opções. Vários métodos alternativos são descritos nas etapas abaixo. 
 
-## <a name="import-the-product-data-from-excel"></a>Importar os dados de produto do Excel
+## <a name="import-excel-product-data"></a>Importar dados de produto do Excel
 
-Primeiro, importe os dados de produto da pasta de trabalho Products.xlsx do Excel para o Power BI Desktop.
+Primeiro, importe os dados de produto da pasta de trabalho do Excel Products.xlsx no Power BI Desktop.
 
 1. [Baixe a pasta de trabalho Products.xlsx do Excel](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) e salve-a como **Products.xlsx**.
    
-2. Selecione a seta suspensa ao lado de **Obter Dados** na guia **Início** da faixa de opções do Power BI Desktop e, em seguida, selecione **Excel** no menu suspenso **Mais Comum**. 
+2. Selecione a seta suspensa ao lado de **Obter Dados** na guia **Página Inicial** da faixa de opções do Power BI Desktop e, em seguida, selecione **Excel** no menu suspenso **Mais Comum**. 
    
    ![Obter dados](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
    
@@ -45,7 +50,7 @@ Primeiro, importe os dados de produto da pasta de trabalho Products.xlsx do Exce
    
    ![Painel Navegador do Excel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
    
-Uma visualização da tabela é aberta no **Power Query Editor**, no qual é possível aplicar transformações para limpar os dados. 
+Uma visualização de tabela é aberta no **Power Query Editor**, no qual é possível aplicar transformações para limpar os dados.
    
 ![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
@@ -54,24 +59,24 @@ Uma visualização da tabela é aberta no **Power Query Editor**, no qual é pos
 
 ## <a name="clean-up-the-products-columns"></a>Limpar as colunas de produtos
 
-Seu relatório combinado usará apenas as colunas **ProductID**, **ProductName**, **QuantityPerUnit** e **UnitsInStock** da pasta de trabalho do Excel, de modo que você pode remover as outras colunas. 
+Seu relatório combinado usará as colunas **ProductID**, **ProductName**, **QuantityPerUnit** e **UnitsInStock** da pasta de trabalho do Excel. Você pode remover as outras colunas. 
 
-1. No **Power Query Editor**, selecione as colunas **ProductID**, **ProductName**, **QuantityPerUnit** e **UnitsInStock** (use **Ctrl**+**clique** para selecionar mais de uma coluna ou **Shift**+**clique** para selecionar colunas que estão ao lado umas das outras).
+1. No **Power Query Editor**, selecione as colunas **ProductID**, **ProductName**, **QuantityPerUnit** e **UnitsInStock**. Você pode usar **Ctrl**+**Clique** para selecionar mais de uma coluna ou **Shift**+**Clique** para selecionar colunas próximas umas das outras.
    
-2. Clique com o botão direito do mouse em qualquer um dos cabeçalhos selecionados e selecione **Remover Outras Colunas** no menu suspenso para remover todas as colunas da tabela, exceto pelas selecionadas. 
+2. Clique com o botão direito do mouse em qualquer um dos cabeçalhos selecionados. Selecione **Remover Outras Colunas** na lista suspensa. 
    Também é possível selecionar **Remover Colunas** > **Remover Outras Colunas** do grupo **Gerenciar Colunas** na guia de faixa de opções **Início**. 
    
    ![Remover outras colunas](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png)
 
-## <a name="import-the-order-data-from-an-odata-feed"></a>Importar os dados de pedido de um feed OData
+## <a name="import-the-odata-feeds-order-data"></a>Importar os dados de pedidos do feed OData
 
 Em seguida, importe os dados de pedido do feed OData de exemplo do sistema de vendas da Northwind. 
 
-1. No **Power Query Editor**, selecione **Nova Fonte** e, em seguida, selecione **Feed OData** na lista suspensa **Mais Comum**. 
+1. No **Power Query Editor**, selecione **Nova Fonte** e, em seguida, na lista suspensa **Mais Comum**, selecione **Feed OData**. 
    
    ![Obter OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Na caixa de diálogo **Feed OData**, cole a URL do feed OData da Northwind, `http://services.odata.org/V3/Northwind/Northwind.svc/`, e selecione **OK**.
+2. Na caixa de diálogo **Feed OData**, cole a URL do feed OData da Northwind, `http://services.odata.org/V3/Northwind/Northwind.svc/`. Selecione **OK**.
    
    ![Caixa de diálogo do feed OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -84,9 +89,9 @@ Em seguida, importe os dados de pedido do feed OData de exemplo do sistema de ve
 
 ## <a name="expand-the-order-data"></a>Expandir os dados de pedido
 
-Quando se conecta a fontes de dados com várias tabelas, como bancos de dados relacionais ou o feed OData da Northwind, você pode usar referências entre as tabelas para criar suas consultas. A tabela **Orders** contém referências a várias tabelas relacionadas. Você pode adicionar as colunas **ProductID**, **UnitPrice** e **Quantity** da tabela relacionada **Order_Details** na tabela em questão (**Orders**) usando a operação **Expandir**. 
+Você pode usar referências de tabela para criar consultas ao se conectar a fontes de dados com várias tabelas, como bancos de dados relacionais ou o feed OData da Northwind. A tabela **Orders** contém referências a várias tabelas relacionadas. Você pode usar a operação **Expandir** para adicionar as colunas **ProductID**, **UnitPrice** e **Quantity** da tabela relacionada **Order_Details** na tabela em questão (**Orders**). 
 
-1. Role para a direita na tabela **Orders** até ver a coluna **Order_Details**. Observe que, em vez de dados, ela contém referências a outra tabela.
+1. Role para a direita na tabela **Orders** até ver a coluna **Order_Details**. Ela contém referências a outra tabela e não dados.
    
    ![Coluna Order_Details](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/7.png)
    
@@ -100,13 +105,13 @@ Quando se conecta a fontes de dados com várias tabelas, como bancos de dados re
       
       ![Caixa de diálogo Expandir](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)
 
-Após você expandir a tabela **Order_Details**, a coluna **Order_Details** será substituída pelas três novas colunas da tabela aninhada e você verá novas linhas na tabela para os dados adicionados de cada pedido. 
+Depois de expandir a tabela **Order_Details**, três novas colunas de tabela aninhada substituirão a coluna **Order_Details**. Há novas linhas na tabela de dados para cada dado de pedido adicionado. 
 
 ![Colunas expandidas](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/9.png)
 
 ## <a name="create-a-custom-calculated-column"></a>Criar uma coluna calculada personalizada
 
-O Power Query Editor permite criar cálculos e campos personalizados para enriquecer seus dados. Você criará uma coluna personalizada que calcula o preço total de cada item de linha de um pedido multiplicando o preço unitário pela quantidade de itens.
+O Power Query Editor permite criar cálculos e campos personalizados para enriquecer seus dados. Você criará uma coluna personalizada que multiplicará o preço unitário pela quantidade de itens a fim de calcular o preço total de cada item de linha do pedido.
 
 1. Na guia de faixa de opções **Adicionar Coluna** do Power Query Editor, selecione **Coluna Personalizada**.
    
@@ -114,18 +119,19 @@ O Power Query Editor permite criar cálculos e campos personalizados para enriqu
    
 2. Na caixa de diálogo **Coluna Personalizada**, digite **LineTotal** no campo **Nome da nova coluna**.
 
-3. No campo **Fórmula de coluna personalizada** depois de **=** , insira **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Você também pode selecionar os nomes dos campos na caixa de rolagem **Colunas disponíveis** e selecionar **<< Inserir** em vez de digitá-los.) 
-3. Selecione **OK**.
+3. No campo **Fórmula de coluna personalizada**, depois do **=, insira **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Você também pode selecionar os nomes dos campos na caixa de rolagem **Colunas disponíveis** e selecionar **<< Inserir** em vez de digitá-los.) 
+
+4. Selecione **OK**.
    
    ![Caixa de diálogo Coluna Personalizada](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
 
-O novo campo **LineTotal** aparece como a última coluna na tabela **Orders**.
+   O novo campo **LineTotal** aparece como a última coluna na tabela **Orders**.
 
-## <a name="set-the-data-type-for-the-new-field"></a>Defina o tipo de dados do novo campo
+## <a name="set-the-new-fields-data-type"></a>Definir o tipo de dados do novo campo
 
-Quando se conecta aos dados, o Power Query Editor determina o melhor tipo de dados para cada campo e exibe os dados de acordo com o que determinar. É possível ver os tipos de dados atribuídos aos campos pelos ícones nos cabeçalhos ou em **Tipo de Dados** no grupo **Transformar** da guia de faixa de opções **Início**. 
+Quando o Power Query Editor se conecta a dados, ele faz uma suposição sobre o tipo de dados de cada campo para fins de exibição. Um ícone de cabeçalho indica o tipo de dados atribuído a cada campo. Você também pode verificar em **Tipo de Dados** no grupo **Transformar** da guia de faixa de opções **Página Inicial**. 
 
-Sua nova coluna **LineTotal** tem o tipo de dados **Qualquer**, mas seus valores são de moeda. Para atribuir um tipo de dados, clique com o botão direito do mouse no cabeçalho da coluna **LineTotal**, selecione **Alterar Tipo de Dados** na lista suspensa e selecione **Número decimal fixo**. 
+Sua nova coluna **LineTotal** tem o tipo de dados **Qualquer**, mas tem valores de moeda. Para atribuir um tipo de dados, clique com o botão direito do mouse no cabeçalho da coluna **LineTotal**, selecione **Alterar Tipo** na lista suspensa e, em seguida, selecione **Número decimal fixo**. 
 
 ![Alterar tipo de dados](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/12.png)
 
@@ -134,14 +140,25 @@ Sua nova coluna **LineTotal** tem o tipo de dados **Qualquer**, mas seus valores
 
 ## <a name="clean-up-the-orders-columns"></a>Limpar as colunas de pedidos
 
-Para facilitar o trabalho com seu modelo nos relatórios, você pode excluir, renomear e reordenar algumas das colunas.
+Para facilitar o trabalho com seu modelo nos relatórios, você pode excluir, renomear e reordenar algumas colunas.
 
-Seu relatório usará apenas as colunas **OrderDate**, **ShipCity**, **ShipCountry**, **Order_Details.ProductID**, **Order_Details.UnitPrice** e **Order_Details.Quantity**. Você pode selecionar essas colunas e usar **Remover Outras Colunas**, como fez com os dados do Excel ou pode selecionar todas as colunas, exceto pelas listadas, clicar com o botão direito do mouse em uma delas e selecionar **Remover Colunas** para remover todas elas. 
+O relatório usará as seguintes colunas:
 
-Você pode facilitar a identificação das colunas **Order_Details.ProductID**, **Order_Details.UnitPrice** e **Order_Details.Quantity** removendo os prefixos *Order_Details.* dos nomes das colunas. Para renomear as colunas como **ProductID**, **UnitPrice** e **Quantity**, respectivamente:
+* **OrderDate**
+* **ShipCity**
+* **ShipCountry**
+* **Order_Details.ProductID**
+* **Order_Details.UnitPrice**
+* **Order_Details.Quantity**
+* **LineTotal**
+
+Selecione essas colunas e use **Remover Outras Colunas**, como você fez com os dados do Excel. Ou, selecione as colunas não listadas, clique com o botão direito do mouse em uma delas e selecione **Remover Colunas**. 
+
+Você pode renomear as colunas prefixadas com "**Order_Details.** " para torná-las mais fáceis de ler:
 
 1. Clique duas vezes ou toque e segure o cabeçalho de cada coluna ou, ainda, clique com o botão direito do mouse no cabeçalho da coluna e selecione **Renomear** na lista suspensa. 
-2. Exclua o prefixo *Order_Details.* de cada nome e, em seguida, pressione **Enter**.
+
+2. Exclua o prefixo **Order_Details.** de cada nome e, em seguida, pressione **Enter**.
 
 Por fim, para tornar a coluna **LineTotal** mais fácil de acessar, arraste e solte-a à esquerda, logo à direita da coluna **ShipCountry**.
 
@@ -149,36 +166,36 @@ Por fim, para tornar a coluna **LineTotal** mais fácil de acessar, arraste e so
 
 ## <a name="review-the-query-steps"></a>Examinar as etapas de consulta
 
-Conforme você moldou e transformou os dados no Power Query Editor, cada etapa foi registrada na área **Etapas Aplicadas** do painel **Config. Consulta** no lado direito do Power Query Editor. Você pode percorrer novamente as Etapas Aplicadas para examinar as alterações feitas e editar, excluir ou reorganizá-las se for necessário (embora isso possa ser arriscado, pois alterar etapas anteriores pode invalidar etapas posteriores). 
+Suas ações no Power Query Editor para formatar e transformar dados serão registradas. Cada ação é exibida à direita no painel **Configurações de Consulta** em **Etapas Aplicadas**. Você pode retornar em **Etapas Aplicadas** para examinar as etapas e editar, excluir ou reorganizá-las se necessário. No entanto, alterar as etapas anteriores é arriscado, pois poderá prejudicar as etapas posteriores.
 
-Selecione cada uma de suas consultas na lista **Consultas** no lado esquerdo do Power Query Editor e examine as **Etapas Aplicadas** em **Config. Consulta**. Após a aplicação das transformações de dados anteriores, as Etapas Aplicadas de suas duas consultas devem ser semelhantes ao seguinte:
+Selecione cada uma de suas consultas na lista **Consultas** no lado esquerdo do Power Query Editor e examine as **Etapas Aplicadas** em **Config. Consulta**. Após a aplicação das transformações de dados anteriores, as **Etapas Aplicadas** de suas duas consultas deverão ser semelhantes a isso:
 
 ![Etapas Aplicadas de consulta de produtos](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Etapas Aplicadas de consulta de pedidos](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 >[!TIP]
->As Etapas Aplicadas são formadas por fórmulas escritas na **Linguagem do Power Query**, também conhecida como linguagem **M**. Para ver e editar as fórmulas, selecione **Editor Avançado** no grupo **Consulta** da guia Página Inicial da faixa de opções. 
+>As Etapas Aplicadas são formadas por fórmulas escritas na **Linguagem do Power Query**, também conhecida como [linguagem **M**](https://docs.microsoft.com/powerquery-m/power-query-m-reference). Para ver e editar as fórmulas, selecione **Editor Avançado** no grupo **Consulta** da guia Página Inicial da faixa de opções. 
 
 ## <a name="import-the-transformed-queries"></a>Importar as consultas transformadas
 
-Quando estiver satisfeito com os dados transformados, selecione **Fechar e Aplicar** > **Fechar e Aplicar** no grupo **Fechar** da guia de faixa de opções **Início** para importar os dados para a Exibição de Relatório do Power BI Desktop. 
+Quando estiver satisfeito com os dados transformados e pronto para importá-los para a Exibição de Relatório do Power BI Desktop, selecione **Fechar e Aplicar** > **Fechar e Aplicar** no grupo **Fechar** da guia de faixa de opções **Página Inicial**. 
 
 ![Fechar e Aplicar](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
 
-Após os dados serem carregados, as consultas aparecem na lista **Campos** na Exibição de Relatório do Power BI Desktop.
+Após os dados serem carregados, as consultas aparecerão na lista **Campos** na Exibição de Relatório do Power BI Desktop.
 
 ![Consultas na lista Campos](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
 ## <a name="manage-the-relationship-between-the-datasets"></a>Gerenciar a relação entre conjuntos de dados
 
-O Power BI Desktop não requer que você combine consultas para relatar informações sobre elas. No entanto, você pode usar as relações entre conjuntos de dados, com base nos campos que eles têm em comum, para estender e enriquecer seus relatórios. O Power BI Desktop pode detectar relações automaticamente ou você pode criá-las na caixa de diálogo **Gerenciar Relações** do Power BI Desktop. Para obter mais informações sobre relações no Power BI Desktop, confira [Criar e gerenciar relações](desktop-create-and-manage-relationships.md).
+O Power BI Desktop não requer que você combine consultas para relatar informações sobre elas. No entanto, você pode usar as relações entre conjuntos de dados, com base em campos comuns, para estender e enriquecer seus relatórios. O Power BI Desktop pode detectar relações automaticamente ou você pode criá-las na caixa de diálogo **Gerenciar Relações** do Power BI Desktop. Para obter mais informações, veja [Criar e gerenciar relações no Power BI Desktop](desktop-create-and-manage-relationships.md).
 
-Os conjuntos de dados Orders e Products neste tutorial compartilham um campo *ProductID* comum, portanto, há uma relação entre eles com base nessa coluna. 
+O campo **ProductID** compartilhado cria uma relação entre os conjuntos de dados Products e Orders deste tutorial. 
 
-1. Na Exibição de Relatório do Power BI Desktop, selecione **Gerenciar Relações** na área **Relações** da guia de faixa de opções **Início**.
+1. Na Exibição de Relatório do Power BI Desktop, selecione **Gerenciar Relações** na área **Relações** da guia de faixa de opções **Página Inicial**.
    
    ![Faixa de opções Gerenciar Relações](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_5.png)
    
-2. Na caixa de diálogo **Gerenciar Relações**, observe que Power BI Desktop já detectou e listou uma relação ativa entre as tabelas Products e Orders. Para exibir a relação, selecione **Editar**. 
+2. Na caixa de diálogo **Gerenciar Relações**, veja que Power BI Desktop já detectou e listou uma relação ativa entre as tabelas Products e Orders. Para exibir a relação, selecione **Editar**. 
    
    ![Caixa de diálogo Gerenciar Relações](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_6.png)
    
@@ -186,27 +203,27 @@ Os conjuntos de dados Orders e Products neste tutorial compartilham um campo *Pr
    
    ![Caixa de diálogo Editar Relação](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_7.png)
    
-3. O Power BI Desktop detectou automaticamente a relação corretamente, de modo que você pode selecionar **Cancelar** e **Fechar** para sair das caixas de diálogo de relação.
+3. O Power BI Desktop detectou automaticamente a relação corretamente, de modo que você pode selecionar **Cancelar** e **Fechar**.
 
-Você também pode exibir e gerenciar as relações entre as consultas selecionando a exibição **Relação** no lado esquerdo da janela do Power BI Desktop. Clique duas vezes na seta na linha que conecta as duas consultas para abrir a caixa de diálogo **Editar Relação** e exibir ou alterar a relação. 
+No Power BI Desktop, no lado esquerdo, selecione **Modelo** para exibir e gerenciar relações de consulta. Clique duas vezes na seta na linha que conecta as duas consultas para abrir a caixa de diálogo **Editar Relação** e exibir ou alterar a relação. 
 
 ![Exibição de Relação](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_8.png)
 
-Para sair da Exibição de Relações e voltar à Exibição de Relatório, selecione o ícone de **Exibição de Relatório**. 
+Para sair da Exibição de Relações e voltar à Exibição de Relatório, selecione o ícone **Relatório**. 
 
 ![Ícone de Exibição de Relatório](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_9.png)
 
 ## <a name="create-visualizations-using-your-data"></a>Criar visualizações usando seus dados
 
-Na Exibição de Relatório do Power BI Desktop, você pode criar diversas visualizações para obter insights de seus dados. Você pode criar relatórios com várias páginas e cada página pode ter vários visuais. Você e outras pessoas podem interagir com suas visualizações para ajudar a analisar e compreender seus dados. Para obter mais informações sobre como exibir e editar relatórios no Serviço do Power BI (seu site), confira [Editar um Relatório](service-interact-with-a-report-in-editing-view.md).
+Você pode criar diferentes visualizações na Exibição de Revisão do Power BI Desktop para obter insights sobre os dados. Os relatórios podem ter várias páginas e cada página pode ter vários visuais. Você e outras pessoas podem interagir com suas visualizações para ajudar a analisar e compreender os dados. Para obter mais informações, confira [Interagir com um relatório no modo de exibição de Edição no serviço do Power BI](service-interact-with-a-report-in-editing-view.md).
 
 Você pode usar seus dois conjuntos de dados, bem como a relação entre eles, para ajudar a visualizar e analisar seus dados de vendas. 
 
 Primeiro, crie um gráfico de colunas empilhadas que usa campos das duas consultas para mostrar a quantidade de cada produto pedido. 
 
-1. Selecione o campo **Quantity** de **Orders** no painel **Campos** painel à direita ou arraste-o para um espaço em branco na tela. Isso cria um gráfico de colunas empilhadas mostrando a quantidade total de todos os produtos pedidos. 
+1. Selecione o campo **Quantity** de **Orders** no painel **Campos** painel à direita ou arraste-o para um espaço em branco na tela. Um gráfico de colunas empilhadas é criado, mostrando a quantidade total de todos os produtos pedidos. 
    
-2. Selecione **ProductName** de **Produtos** no painel **Campos** ou arraste-o para o gráfico para mostrar a quantidade de cada produto pedido. 
+2. Para mostrar a quantidade de cada produto pedido, selecione **ProductName** de **Produtos** no painel **Campos** ou arraste-o para o gráfico. 
    
 3. Para classificar os produtos dos mais para os menos pedidos, selecione as reticências ( **...** ) em **Mais opções** no canto superior direito da visualização e, em seguida, selecione **Classificar por Quantidade**.
    
@@ -218,9 +235,9 @@ Em seguida, crie um gráfico mostrando os valores em dinheiro dos pedidos (**Lin
 
 1. Sem nada selecionado na tela, selecione **LineTotal** de **Orders** no painel **Campos** ou arraste-o para um espaço em branco na tela. O gráfico de colunas empilhadas mostra o valor em dinheiro total de todos os pedidos. 
    
-2. Com o gráfico selecionado, selecione **OrderDate** em **Orders** ou arraste-o para o gráfico. Agora, o gráfico mostra os totais de linha para cada data de pedido. 
+2. Selecione o gráfico empilhado, depois selecione **OrderDate** em **Orders** ou arraste-o para o gráfico. Agora, o gráfico mostra os totais de linha para cada data de pedido. 
    
-3. Redimensione a visualização arrastando os cantos para conseguir ver mais dados. 
+3. Arraste os cantos para redimensionar a visualização e ver mais dados. 
    
    ![Gráfico de linhas LineTotals por OrderDate](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
    
@@ -229,29 +246,29 @@ Em seguida, crie um gráfico mostrando os valores em dinheiro dos pedidos (**Lin
 
 Por fim, crie uma visualização de mapa mostrando as quantidades de pedidos de cada país. 
 
-1. Sem nada selecionado na tela, selecione **ShipCountry** de **Orders** no painel **Campos** ou arraste-o para um espaço em branco na tela. O Power BI Desktop detecta que os dados são nomes de países e cria automaticamente uma visualização de mapa com um ponto de dados para cada país com pedidos. 
+1. Sem nada selecionado na tela, selecione **ShipCountry** de **Orders** no painel **Campos** ou arraste-o para um espaço em branco na tela. O Power BI Desktop detecta que os dados são nomes de países. Em seguida, ele cria automaticamente uma visualização de mapa, com um ponto de dados para cada país com pedidos. 
    
-2. Para fazer com que os tamanhos dos pontos de dados reflitam o total de pedidos de cada país, arraste o campo **LineTotal** para o mapa (ou arraste-o até **Arraste campos de dados aqui** em **Tamanho**, na metade inferior do painel **Visualizações**). Agora, os tamanhos dos círculos no mapa refletem os valores em dinheiro dos pedidos de cada país. 
+2. Para fazer com que os tamanhos dos pontos de dados correspondam às quantidades de pedidos de cada país, arraste o campo **LineTotal** para o mapa. Você também pode arrastá-lo para **Arrastar os campos de dados aqui** em **Tamanho**, no painel **Visualizações**. Agora, os tamanhos dos círculos no mapa refletem os valores em dinheiro dos pedidos de cada país. 
    
    ![Visualização de mapa LineTotals por ShipCountry](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/21.png)
 
 ## <a name="interact-with-your-report-visuals-to-analyze-further"></a>Interagir com os elementos visuais de seu relatório para analisar com mais profundidade
 
-O Power BI Desktop permite descobrir mais tendências interagindo com visuais que realizam ações cruzadas de realce e de filtragem entre si. Para obter mais detalhes, veja [Filtragem e realce em relatórios](power-bi-reports-filters-and-highlighting.md). 
+No Power BI Desktop você pode interagir com elementos visuais que realizam ações cruzadas de realce e filtragem entre si para revelar outras tendências. Para obter mais detalhes, veja [Filtragem e realce em relatórios do Power BI](power-bi-reports-filters-and-highlighting.md). 
 
-Devido à relação entre as consultas, interações com uma visualização afetam todas as outras visualizações na página. 
+Devido à relação entre as consultas, as interações com uma visualização afetam todas as outras visualizações na página. 
 
-Na visualização de mapa, selecione o círculo centralizado no **Canadá**. Observe que as outras duas visualizações são filtradas de forma a realçar os totais de linha e as quantidades de pedidos apenas para o Canadá.
+Na visualização de mapa, selecione o círculo centralizado no **Canadá**. As outras duas visualizações são filtradas de forma a realçar os totais de linha e as quantidades de pedidos canadenses.
 
 ![Dados de vendas filtrados para o Canadá](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/22.png)
 
-Se você selecionar um dos produtos no gráfico **Quantity by ProductName**, o mapa e o gráfico de data serão filtrados de forma a refletir os dados relativos ao produto e se você selecionar uma das datas no gráfico **LineTotal by OrderDate**, o mapa e o gráfico de produto serão filtrados de forma a mostrar os dados relativos a essa data. 
+Selecione um produto do gráfico **Quantidade por ProductName** para ver o mapa e o filtro de gráfico de data para exibir os dados desse produto. Selecione uma data do gráfico **LineTotal por OrderDate** para ver o mapa e o filtro do gráfico de produto para mostrar os dados dessa data. 
 >[!TIP]
 >Para cancelar uma seleção, selecione-a novamente ou selecione uma das outras visualizações. 
 
 ## <a name="complete-the-sales-analysis-report"></a>Concluir o relatório de análise de vendas
 
-Seu relatório concluído combina dados do arquivo do Excel Products.xlsx e do feed OData da Northwind em elementos visuais que ajudam a analisar informações de pedidos relacionadas a diferentes países, períodos e produtos. Quando seu relatório estiver pronto, você poderá [fazer upload dele no serviço do Power BI](desktop-upload-desktop-files.md) ou compartilhá-lo com outros usuários do Power BI.
+Seu relatório concluído combina dados do arquivo do Excel Products.xlsx e do feed OData da Northwind em elementos visuais que ajudam a analisar informações de pedidos, períodos e produtos de diferentes países. Quando seu relatório estiver pronto, você poderá [fazer upload dele no serviço do Power BI](desktop-upload-desktop-files.md) ou compartilhá-lo com outros usuários do Power BI.
 
 ## <a name="next-steps"></a>Próximas etapas
 * [Leia outros tutoriais do Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)

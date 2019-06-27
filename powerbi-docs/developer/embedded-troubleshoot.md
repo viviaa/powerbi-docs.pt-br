@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770479"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823325"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Solucione problemas do aplicativo inserido
 
@@ -80,6 +80,7 @@ Uma captura do fiddler pode ser necessária para uma investigação mais aprofun
 * O token de autenticação do Azure AD expirou.
 * O usuário autenticado não é membro do grupo (workspace do aplicativo).
 * O usuário autenticado não é administrador do grupo (workspace do aplicativo).
+* O usuário autenticado não tem permissões. As permissões podem ser atualizadas usando a [API refreshUserPermissions](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * O cabeçalho de autorização talvez não esteja exibido corretamente. Verifique se não há erros de digitação.
 
 O back-end do aplicativo pode precisar atualizar o token de autenticação antes de chamar GenerateToken.
@@ -187,7 +188,7 @@ O consentimento do usuário está desabilitado para o locatário.
 
 ### <a name="cs1061-error"></a>Erro CS1061
 
-Baixe [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) se você tiver um "'AuthenticationContext' não contém uma definição para 'AcquireToken' e não acessível 'AcquireToken' aceitando um primeiro argumento do tipo ' AuthenticationContext' pôde ser encontrado (está faltando um usando diretiva ou uma referência de assembly?) "erro.
+Baixe [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) se obter um erro "'AuthenticationContext' não contém uma definição para 'AcquireToken' e nenhum 'AcquireToken' acessível aceitando um primeiro argumento do tipo 'AuthenticationContext' pôde ser encontrado (está faltando uma referência de assembly ou uma diretiva de uso?)".
 
 ## <a name="data-sources"></a>Fontes de dados
 

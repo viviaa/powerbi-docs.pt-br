@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/20/2017
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 201e4e75c9a1ce0d05c85112457191a8d306c596
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c2ccbf8eaa272d6e5a57f88c76c79b5d06bb3892
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61247978"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839670"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Alterar o tipo de visualização em um relatório do Power BI
 Tente diferentes tipos de visualizações no serviço do Power BI e do Power BI Desktop para ver qual demonstra melhor os seus dados. 
@@ -24,7 +24,7 @@ Tente diferentes tipos de visualizações no serviço do Power BI e do Power BI 
 2. Selecione a visualização para ativá-la. Uma visualização ativa tem identificadores e uma borda.    
 3. No painel de Visualizações, selecione o novo tipo de visualização. 
    
-   ![](media/power-bi-report-change-visualization-type/changeviz.gif).
+   ![vídeo mostrando uma alteração de gráfico de colunas para gráfico de linhas](media/power-bi-report-change-visualization-type/changeviz.gif).
 4. (Opcional) [Fixe a visualização](../service-dashboard-pin-tile-from-report.md) ao dashboard como um bloco. 
 
 Se você alterar o tipo de visualização do relatório depois de tê-lo fixado em seu dashboard, o bloco não atualizará automaticamente. Portanto, se você fixou a visualização como um gráfico de linhas e em seguida, no relatório, foi alterado para um gráfico de barras, a versão fixada desses dados permanecerá um gráfico de linhas. Fixe o gráfico de barras para vê-lo também no painel.

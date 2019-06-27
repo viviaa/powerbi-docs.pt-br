@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578522"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751090"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>O que são os aplicativos de modelo do Power BI? (versão prévia)
 
@@ -24,10 +24,10 @@ Os aplicativos de modelo são uma substituição dos atuais pacotes de conteúdo
 
 Você cria aplicativos de modelo que permitem aos clientes se conectarem e criar uma instância com suas próprias contas. Como especialistas de domínio, eles podem desbloquear os dados de modo que sejam consumíveis com facilidade pelos usuários empresariais.  
 
-Enviar seus aplicativos de modelo para o Portal do Cloud Partner. Em seguida, os aplicativos se tornam disponíveis publicamente na galeria de Aplicativos do Power BI (app.powerbi.com/getdata/services) e no Microsoft AppSource (appsource.microsoft.com). Aqui está uma visão de alto nível a experiência de criação do aplicativo de modelo público.  
+Você envia seus aplicativos de modelo ao Portal do Cloud Partner. Em seguida, os aplicativos se tornam disponíveis publicamente na galeria de Aplicativos do Power BI (app.powerbi.com/getdata/services) e no Microsoft AppSource (appsource.microsoft.com). Aqui está uma visão de alto nível da experiência de criação do aplicativo de modelo público.  
 
 ## <a name="process"></a>Processo
-O processo geral para desenvolver e enviar um aplicativo de modelo envolve várias etapas. Alguns estágios podem incluir mais de uma atividade ao mesmo tempo.
+O processo geral para desenvolver e enviar um aplicativo de modelo envolve vários estágios. Alguns estágios podem incluir mais de uma atividade ao mesmo tempo.
 
 
 | Estágio | Power BI Desktop |  |Serviço do Power BI  |  |Portal do Cloud Partner  |

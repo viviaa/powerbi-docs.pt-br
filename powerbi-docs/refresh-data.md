@@ -1,279 +1,327 @@
 ---
 title: Atualizar dados no Power BI
-description: Atualizar dados no Power BI
+description: Este artigo descreve as funcionalidades de atualização de dados do Power BI e suas dependências no nível conceitual.
 author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 149f6963cc59c70342bee824579f6ae4c97a16d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60974105"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67039216"
 ---
 # <a name="data-refresh-in-power-bi"></a>Atualizar dados no Power BI
-Certificando-se de que sempre obterá os dados mais recentes que costumam ser fundamentais para tomar as decisões corretas. Você provavelmente já usou Obter Dados no Power BI para conectar e carregar alguns dados, criou alguns relatórios e um painel de controle. Agora, você deseja certificar-se de que seus dados são realmente mais recentes e maiores.
 
-Em muitos casos, você não precisa fazer absolutamente nada. Alguns dados, como provenientes do pacote de conteúdo Salesforce ou Marketo são atualizados automaticamente para você. Caso sua conexão utilize uma conexão dinâmica ou o DirectQuery, os dados estarão atualizados até o momento. Mas, em outros casos, como ocorre com uma pasta de trabalho do Excel ou um arquivo do Power BI Desktop que se conecta a uma fonte de dados externa online ou local, você precisará atualizar manualmente ou configurar um agendamento de atualização para o que o Power BI possa atualizar os dados em seus relatórios e dashboards para você.
+O Power BI permite que você vá rapidamente dos dados para insights e, então, para a ação. Ainda assim, você precisa garantir que os dados em seus relatórios e dashboards do Power BI sejam recentes. Frequentemente, saber como atualizar os dados é essencial para fornecer resultados precisos.
 
-Neste artigo, juntamente com alguns outros, destinam-se a ajudá-lo a entender como a atualização de dados no Power BI realmente funciona, ou o que não é necessário para configurar uma agenda de atualização e o que precisa ser in-loco para atualizar os dados com êxito.
+Este artigo descreve as funcionalidades de atualização de dados do Power BI e suas dependências no nível conceitual. Ele também traz melhores práticas e dicas para evitar problemas comuns com a atualização. O conteúdo estabelece uma base para ajudar você a entender como a atualização de dados funciona. Para obter instruções passo a passo direcionadas para configurar a atualização de dados, confira os tutoriais e guias de instruções listados na seção “Próximas etapas”, no final do artigo.
 
 ## <a name="understanding-data-refresh"></a>Entendendo a atualização de dados
-Antes de configurar a atualização, é importante entender o que você está atualizando e onde você está obtendo os dados.
 
-Uma *fonte de dados* é onde os dados que você explora em seus relatórios e painéis realmente são provenientes; por exemplo, um serviço online, como Google Analytics ou QuickBooks, um banco de dados na nuvem como banco de dados do SQL Azure, ou um banco de dados ou arquivo em um computador local ou servidor em sua própria organização. Essas são todas as fontes de dados. O tipo de fonte de dados determina como os dados são atualizados. Passaremos a atualização para cada tipo de fonte de dados em [O que pode ser atualizado?](#what-can-be-refreshed) seção.
+Sempre que você atualiza os dados, o Power BI precisa consultar as fontes de dados subjacentes, possivelmente carregar os dados de origem em um conjunto de dados e, em seguida, atualizar as visualizações em seus relatórios ou dashboards que se baseiam no conjunto de dados atualizado. Todo o processo é composto por várias fases, dependendo dos modos de armazenamento de seus conjuntos de dados, conforme explicado nas seções a seguir.
 
-Um *conjunto de dados* é criado automaticamente no Power BI, quando você usa Obter Dados para se conectar ao e carregar dados de um pacote de conteúdo, arquivo ou se conectar a uma fonte de dados ao vivo. No Power BI Desktop e Excel 2016, também é possível publicar seu arquivo direitamente no serviço do Power BI, que é semelhante ao uso do recurso Obter Dados.
+Para entender como o Power BI atualiza os dashboards, relatórios e conjuntos de dados, você precisa conhecer os seguintes conceitos:
 
-Em cada caso, um conjunto de dados é criado e exibido nos contêineres Meu Workspace ou Grupo do serviço do Power BI. Ao selecionar as **reticências (...)** , é possível explorar os dados em um relatório, editar as configurações e configurar a atualização.
+- **Modos de armazenamento e tipos de conjuntos de dados**: os modos de armazenamento e os tipos de conjuntos de dados com suporte do Power BI têm requisitos de atualização diferentes. Você pode escolher entre reimportar os dados para o Power BI para ver as alterações que ocorreram ou consultar os dados diretamente na fonte.
+- **Tipos de atualização do Power BI**: independentemente das informações específicas sobre o conjunto de dados, conhecer os diferentes tipos de atualização pode ajudar você a entender onde o Power BI pode gastar o tempo durante uma operação de atualização. E combinar esses detalhes com informações específicas sobre o modo de armazenamento ajuda a entender o que exatamente o Power BI faz quando você seleciona **Atualizar agora** para um conjunto de dados.
 
-![](media/refresh-data/dataset-menu.png)
+### <a name="storage-modes-and-dataset-types"></a>Modos de armazenamento e tipos de conjuntos de dados
 
-Um conjunto de dados pode obter dados de uma ou mais fontes de dados. Por exemplo, você pode usar a área de trabalho do Power BI para obter dados de um banco de dados SQL em sua organização e obter outros dados de online do feed OData. Em seguida, ao publicar o arquivo para o Power BI, um único conjunto de dados é criado, mas ele terá fontes de dados para o banco de dados SQL e o feed OData.
+Um conjunto de dados do Power BI pode operar de um dos modos a seguir para acessar dados de uma variedade de fontes de dados. Para mais informações, confira [Modo de armazenamento no Power BI Desktop](desktop-storage-mode.md).
 
-Um conjunto de dados contém informações sobre as fontes de dados, credenciais de fonte de dados, e na maioria dos casos, um sub conjunto de dados copiados da fonte de dados. Ao criar visualizações em relatórios e dashboards, você observa os dados no conjunto de dados ou, no caso de uma conexão dinâmica com o Banco de Dados SQL do Azure, o conjunto de dados define os dados que você verá diretamente por meio da fonte de dados. Para uma conexão dinâmica com o Analysis Services, a definição do conjunto de dados é recebida diretamente do Analysis Services.
+- Modo de importação
+- Modo DirectQuery
+- Modo LiveConnect
+- Modo de envio por push
 
-> *Ao atualizar os dados, você está atualizando os dados no conjunto de dados que é armazenado no Power BI por meio da fonte de dados. Essa atualização é uma atualização completa e não incremental.*
-> 
-> 
+O diagrama a seguir ilustra diferentes fluxos de dados com base no modo de armazenamento. O aspecto mais significativo é que apenas os conjuntos de dados no Modo de importação exigem atualização dos dados de origem. Eles exigem a atualização porque apenas este tipo de conjunto de dados importa dados de suas fontes de dados. Os dados importados podem ser atualizados de modo regular ou ad hoc. Conjuntos de dados nos modos DirectQuery e LiveConnect com o Analysis Services não importam dados, eles consultam a fonte de dados subjacente a cada interação do usuário. Conjuntos de dados no modo de envio por push não acessam nenhuma fonte de dados diretamente, mas esperam que você envie os dados por push para o Power BI. Os requisitos de atualização de conjunto de dados variam dependendo do tipo de conjunto de dados/modo de armazenamento.
 
-Sempre que você atualizar os dados em um conjunto de dados, ao usar Atualizar Agora ou configurar uma agenda de atualização, o Power BI usa informações do conjunto de dados para se conectar às fontes de dados definidas para ela, consultar para dados atualizados, e em seguida, carrega os dados atualizados no conjunto de dados. Qualquer visualizações em seus relatórios ou painéis baseados nos dados são atualizadas automaticamente.
+![Modos de armazenamento e tipos de conjuntos de dados](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
-Antes de continuarmos, precisamos abordar algo que é muito importante compreender:
+#### <a name="datasets-in-import-mode"></a>Conjuntos de dados no Modo de importação
 
-> *Independentemente da frequência com que você atualiza o conjunto de dados ou examina dados dinâmicos, são os dados na fonte de dados que devem estar atualizados primeiro.*
-> 
-> 
+O Power BI importa os dados das fontes de dados originais para o conjunto de dados. As consultas de relatório e de dashboard do Power BI enviadas para o conjunto de dados retornam resultados das tabelas e colunas importadas. Você pode considerar esse conjunto de dados uma cópia pontual. Como o Power BI copia os dados, você precisa atualizar o conjunto de dados para buscar as alterações nas fontes de dados subjacentes.
 
-A maioria das organizações processa os dados uma vez por dia, geralmente durante a noite. Se você agendara atualização de um conjunto de dados criado a partir de um arquivo do Power BI Desktop que conecta a um banco de dados local e seu departamento de TI executa o processamento naquele banco de dados SQL, uma vez durante a noite, você só precisa configurara  atualização agendada para ser executada uma vez por dia. Por exemplo, após o processamento do banco de dados ocorrer, mas antes de você entrar no trabalho. É claro que isso nem sempre é o caso. O Power BI fornece várias maneiras de se conectar a fontes de dados que são atualizadas com frequência ou até mesmo em tempo real.
+Como o Power BI armazena os dados em cache, o tamanho do conjunto de dados no Modo de importação pode ser significativo. Confira a tabela a seguir para conhecer os tamanhos máximos do conjunto de dados por capacidade. Fique bem abaixo dos tamanhos máximos dos conjuntos de dados para evitar problemas de atualização que poderão ocorrer se os conjuntos de dados exigirem mais do que os recursos máximos disponíveis durante uma operação de atualização.
 
-## <a name="types-of-refresh"></a>Tipos de atualização
-Há quatro tipos principais de atualização que ocorrem no Power BI. Atualização de pacotes, atualização de modelo/dados, atualização de blocos e atualização de contêineres de visuais.
+| Tipo de capacidade | Tamanho máximo do conjunto de dados |
+| --- | --- |
+| Compartilhado, A1, A2 ou A3 | 1 GB |
+| A4 ou P1 | 3 GB |
+| A4 ou P2 | 6 GB |
+| A6 ou P3 | 10 GB |
+| | |
 
-### <a name="package-refresh"></a>Atualização de pacotes
-Isso sincroniza o arquivo do Power BI Desktop ou do Excel entre o serviço do Power BI e o OneDrive ou SharePoint Online. Isso não efetua pull de dados da fonte de dados original. O conjunto de dados no Power BI só será atualizado com o conteúdo dfo arquivo no OneDrive ou SharePoint Online.
+#### <a name="datasets-in-directqueryliveconnect-mode"></a>Conjuntos de dados no modo DirectQuery/LiveConnect
 
-![](media/refresh-data/package-refresh.png)
+O Power BI não importa dados usando conexões que operam no modo DirectQuery/LiveConnect. Em vez disso, o conjunto de dados retorna resultados da fonte de dados subjacente sempre que um relatório ou dashboard o consulta. O Power BI transforma e encaminha as consultas à fonte de dados.
 
-### <a name="modeldata-refresh"></a>Atualização de dados/modelo
-Isso se refere à atualização do conjunto de dados, no serviço do Power BI, com dados da fonte de dados original. Isso é feito por meio da atualização agendada ou do recurso Atualizar Agora. Isso exige um gateway para fontes de dados locais.
+Embora os modos DirectQuery e LiveConnect sejam semelhantes porque o Power BI encaminha as consultas para a fonte, é importante observar que o Power BI não precisa transformar as consultas no modo LiveConnect. As consultas vão diretamente para a instância do Analysis Services que hospeda o banco de dados, sem consumir recursos em uma capacidade compartilhada ou uma capacidade Premium.
 
-### <a name="tile-refresh"></a>Atualização de bloco
-A atualização de blocos atualiza o cache dos visuais do bloco, no dashboard, após as alterações de dados. Isso ocorre, aproximadamente, a cada quinze minutos. Também é possível forçar uma atualização do bloco selecionando as **reticências (...)** no canto superior direito de um dashboard e selecionando **Atualizar os blocos de dashboard**.
+Uma vez que o Power BI não importa os dados, você não precisa executar uma atualização de dados. No entanto, o Power BI ainda executa atualizações de bloco e, possivelmente, atualizações de relatório, conforme explicado na próxima seção sobre tipos de atualização. Um bloco é um visual de relatório fixado em um dashboard. As atualizações dos blocos do dashboard acontecem aproximadamente de hora em hora para que eles mostrem resultados recentes. Você pode alterar o agendamento nas configurações do conjunto de dados, conforme mostrado na captura de tela abaixo, ou forçar uma atualização do dashboard manualmente usando a opção **Atualizar agora**.
 
-![](media/refresh-data/dashboard-tile-refresh.png)
-
-Para obter detalhes sobre os erros comuns de atualização de bloco, veja [Solucionar problemas de erros de bloco](refresh-troubleshooting-tile-errors.md).
-
-### <a name="visual-container-refresh"></a>Atualização de contêineres de visuais
-A atualização do contêiner de visuais atualiza também os visuais do relatório armazenados em cache, em um relatório, após as alterações de dados.
-
-## <a name="what-can-be-refreshed"></a>O que pode ser atualizado?
-No Power BI, normalmente, você usará Obter Dados para importar dados de um arquivo em uma unidade local, no OneDrive ou SharePoint Online, publicar um relatório por meio do Power BI Desktop ou conectar-se diretamente a um banco de dados na nuvem em sua própria organização. Praticamente, quaisquer dados no Power BI podem ser atualizados, mas saber se isso será necessário dependerá de se o conjunto de dados foi criado por meio de fontes de dados e das fontes de dados às quais ele se conecta. Vamos ver como cada um atualiza os dados.
-
-Antes de ir adiante, aqui estão algumas definições importantes para entender:
-
-**Atualização automática**  -  significa que nenhuma configuração de usuário é necessária para o conjunto de dados a ser atualizado regularmente. As configurações de atualização de dados são configuradas para você pelo Power BI. Para provedores de serviços online, a atualização normalmente ocorre uma vez por dia. Para arquivos carregados a partir do OneDrive, a atualização automática ocorre sobre a cada hora por dados que não seja proveniente de uma fonte de dados externa. Enquanto você pode definir as configurações de atualização de agenda diferentes e atualizar manualmente, você provavelmente não precisará.
-
-**Atualização manual ou agendada configurada pelo usuário** – isso significa que você pode atualizar um conjunto de dados usando Atualizar agora manualmente ou configurar uma atualização agendada usando Atualizar programação em configurações do conjunto de dados. Esse tipo de atualização é necessário para arquivos de área de trabalho do Power BI e pastas de trabalho do Excel que se conectam a fontes de dados locais e online externas.
+![Agendamento de atualização](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> Quando você configura um horário para a atualização agendada, pode haver um atraso de até uma hora antes do início da atualização.
-> 
-> 
+> A seção **Atualização do cache agendada** da guia **Conjuntos de dados** não está disponível para conjuntos de dados no modo de importação. Esses conjuntos de dados não exigem uma atualização de bloco separada porque o Power BI atualiza os blocos automaticamente durante cada atualização de dados agendada ou sob demanda.
 
-**Live/DirectQuery** – Isso significa que há uma conexão dinâmica entre Power BI e a fonte de dados. Para fontes de dados locais, os Administradores precisarão ter uma fonte de dados configurada em um gateway corporativo, porém, a interação do usuário pode não ser necessária.
+#### <a name="push-datasets"></a>Conjuntos de dados por push
 
-> [!NOTE]
-> Para melhorar o desempenho, os dashboards com os dados conectados usando o DirectQuery são atualizados automaticamente. Você também pode atualizar manualmente um bloco a qualquer momento, usando o menu **Mais** no bloco.
-> 
-> 
-
-## <a name="local-files-and-files-on-onedrive-or-sharepoint-online"></a>Arquivos locais e arquivos no OneDrive ou SharePoint Online
-A atualização de dados é suportada para arquivos do Power Bi Desktop e pastas de trabalho do Excel que se conectam a fontes de dados locais ou online externas. Isso atualizará apenas os dados do conjunto de dados no serviço do Power BI. Não atualizará o arquivo local.
-
-Manter seus arquivos no OneDrive ou SharePoint Online e se conectar a eles por meio do Power BI é um meio de fornecer uma grande quantidade de flexibilidade. Mas com toda essa flexibilidade, também se torna uma das mais desafiadores de entender. A atualização agendada para os arquivos armazenados no OneDrive ou SharePoint Online é diferente da atualização de pacotes. É possível saber mais na seção [Tipos de atualização](#types-of-refresh).
-
-### <a name="power-bi-desktop-file"></a>Arquivo do Power BI Desktop
-
-| **Fonte de dados** | **Atualização automática** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| Obter Dados (na faixa de opções) é usado para conectar e consultar dados de qualquer fonte de dados online listados. |Não |Sim |Não (veja abaixo) |
-| O recurso Obter Dados é usado para se conectar a um banco de dados dinâmico do Analysis Services e explorá-lo. |Sim |Não |Sim |
-| O recurso Obter Dados é usado para se conectar a uma fonte de dados local do DirectQuery com suporte e explorá-la. |Sim |Não |Sim |
-| Obter Dados é usado para conectar e consultar dados a partir de um Spark do Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight. |Sim |Sim |Não |
-| O recurso Obter Dados é usado para se conectar a dados de qualquer fonte de dados local listada e explorá-los, exceto o arquivo do Hadoop (HDFS) e o Microsoft Exchange. |Não |Sim |Sim |
+Conjuntos de dados por push não contêm uma definição formal de fonte de dados e, portanto, não exigem que você execute uma atualização de dados no Power BI. Você os atualiza enviando os dados por push para o conjunto de dados usando um serviço ou processo externo, como o Azure Stream Analytics. Essa é uma abordagem comum para a análise em tempo real com o Power BI. O Power BI ainda executa atualizações de cache para os blocos usados acima de um conjunto de dados por push. Para ver um passo a passo detalhado, confira [Tutorial: Stream Analytics e Power BI: um dashboard de análise em tempo real para dados de streaming](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Se estiver usando a função [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx), você precisará de um gateway se tiver republicado o conjunto de dados ou o relatório após 18 de novembro de 2016.
-> 
-> 
+> O Modo de envio por push tem várias limitações, conforme documentado em [Limitações da API REST do Power BI](developer/api-rest-api-limitations.md).
 
-Para obter detalhes, veja [Atualizar um conjunto de dados criado com base em um arquivo do Power BI Desktop no OneDrive](refresh-desktop-file-onedrive.md).
+### <a name="power-bi-refresh-types"></a>Tipos de atualização do Power BI
 
-### <a name="excel-workbook"></a>Pasta de trabalho do Excel
+Uma operação de atualização do Power BI pode ser composta por vários tipos de atualização, incluindo atualização de dados, atualização do OneDrive, atualização dos caches de consulta, atualização do bloco e atualização dos visuais de relatório. Embora o Power BI determine automaticamente quais são as etapas de atualização necessárias para um determinado conjunto de dados, você precisa saber como elas contribuem para a complexidade e a duração de uma operação de atualização. Para obter uma referência rápida, confira a tabela a seguir.
 
-| **Fonte de dados** | **Atualização automática** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| Tabelas de dados em uma planilha não carregadas no modelo de dados Excel |Sim, por hora *(somente OneDrive/SharePointOnline)* |Somente manual *(somente OneDrive/SharePoint Online)* |Não |
-| Tabelas de dados em uma planilha vinculada a uma tabela no modelo de dados do Excel (tabelas vinculadas). |Sim, por hora *(somente OneDrive/SharePoint Online)* |Somente manual *(somente OneDrive/SharePoint Online)* |Não |
-| Power Query* é usada para se conectar e consultar dados de qualquer fonte de dados online listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Não |
-| O Power Query* é usado para carregar dados no modelo de dados do Excel e para conectar-se a e consultar dados de qualquer fonte de dados listada local, exceto o arquivo do Hadoop (HDFS) e o Microsoft Exchange. |Não |Sim |Sim |
-| Power Pivot é usada para se conectar e consultar dados de qualquer fonte de dados online listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Não |
-| Power Pivot é usada para se conectar e consultar dados de qualquer fonte de dados no local listada e carregar dados para o modelo de dados do Excel. |Não |Sim |Sim |
+| Modo de armazenamento | Atualização de dados | Atualização do OneDrive | Caches de consulta | Atualização de bloco | Visuais de relatório |
+| --- | --- | --- | --- | --- | --- |
+| Importar | Agendada e sob demanda | Sim, para conjuntos de dados conectados | Se habilitada na capacidade Premium | Automaticamente e sob demanda | Não |
+| DirectQuery | Não aplicável | Sim, para conjuntos de dados conectados | Se habilitada na capacidade Premium | Automaticamente e sob demanda | Não |
+| LiveConnect | Não aplicável | Sim, para conjuntos de dados conectados | Se habilitada na capacidade Premium | Automaticamente e sob demanda | Sim |
+| Push | Não aplicável | Não aplicável | Não é prático | Automaticamente e sob demanda | Não |
+| | | | | | |
 
-*\* Power Query é conhecida como Obter & transformar dados no Excel 2016.*
+#### <a name="data-refresh"></a>Atualização de dados
 
-Para obter informações mais detalhadas, veja [Atualizar um conjunto de dados criado com base em uma pasta do Excel no OneDrive](refresh-excel-file-onedrive.md).
+Para usuários do Power BI, atualização de dados normalmente significa importar dados das fontes de dados originais para um conjunto de dados, seja com base em um agendamento de atualização ou sob demanda. Você pode executar várias atualizações de conjuntos de dados diariamente, o que poderá ser necessário se os dados de origem subjacentes forem alterados com frequência. O Power BI limita os conjuntos de dados na capacidade compartilhada a oito atualizações diárias. Se o conjunto de dados residir em uma capacidade Premium, você poderá executar até 48 atualizações por dia. Para obter mais informações, confira Configurando a atualização agendada mais adiante neste artigo.
 
-### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Arquivo .csv (valores separados por vírgula) no OneDrive ou SharePoint Online
+Também é importante ressaltar que a limitação de atualizações diária se aplica às atualizações agendadas e sob demanda, combinadas. Você pode disparar uma atualização sob demanda selecionando **Atualizar agora** no menu do conjunto de dados, como ilustrado na captura de tela a seguir. Também é possível disparar uma atualização de dados de maneira programática usando a API REST do Power BI. Confira [Conjuntos de dados – atualizar o conjunto de dados](/rest/api/power-bi/datasets/refreshdataset) se tiver interesse em criar sua própria solução de atualização.
 
-| **Fonte de dados** | **Atualização automática** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| Valor separado por vírgulas simples |Sim, por hora |Apenas manual |Não |
-
-Para obter informações mais detalhadas, veja [Atualizar um conjunto de dados criado com base em um arquivo .csv (valores separados por vírgula) no OneDrive](refresh-csv-file-onedrive.md).
-
-## <a name="content-packs"></a>Pacotes de Conteúdo
-Há dois tipos de pacotes de conteúdo no Power BI:
-
-**Pacotes de conteúdo dos serviços online**: como Adobe Analytics, SalesForce e Dynamics CRM Online. Conjuntos de dados criados a partir de serviços online são atualizados automaticamente uma vez por dia. Embora provavelmente não seja necessário, você pode atualizar manualmente ou configurar uma agenda de atualização. Como os serviços online estão na nuvem, um gateway não é necessário.
-
-**Pacotes de conteúdo organizacionais**: criados e compartilhados por usuários em sua organização. Os consumidores de conteúdo do pacote não podem configurar para atualizar uma programação ou atualizar manualmente. Apenas o criador do conteúdo do pacote pode configurar a atualização para os conjuntos de dados no pacote de conteúdo. Atualizar as configurações são herdadas com o conjunto de dados.
-
-### <a name="content-packs-from-online-services"></a>Pacotes de conteúdo de serviços online
-
-| **Fonte de dados** | **Atualização automática** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| Serviços online em Obter Dados &gt; Serviços |Sim |Sim |Não |
-
-### <a name="organizational-content-packs"></a>Pacotes de conteúdo organizacional
-As funcionalidades de atualização de um conjunto de dados incluídas em um pacote de conteúdo organizacional dependem do conjunto de dados. Veja as informações acima em relação aos arquivos locais, OneDrive ou SharePoint Online.
-
-Para saber mais, veja [Introdução aos pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md).
-
-## <a name="live-connections-and-directquery-to-on-premises-data-sources"></a>Conexões dinâmicas e DirectQuery para fontes de dados locais
-Com o gateway de dados local, é possível emitir consultas do Power BI para fontes de dados locais. Quando você interage com uma visualização, as consultas são enviadas do Power BI diretamente para o banco de dados. Os dados atualizados são retornados e as visualizações são atualizadas. Como há uma conexão direta entre o Power BI e o banco de dados, não é necessário atualizar programar a atualização.
-
-Ao conectar-se a uma fonte de dados do SSAS (SQL Server Analysis Services) usando uma conexão dinâmica, diferentemente do DirectQuery, a conexão dinâmica com uma fonte do SSAS pode ser executada no cache, mesmo após um relatório ser carregado. Esse comportamento melhora o desempenho da carga para o relatório. É possível solicitar os dados mais recentes da fonte de dados do SSAS usando o botão **atualizar**. Os proprietários das fontes de dados do SSAS podem configurar a frequência de atualização agendada do cache para o conjunto de dados para garantir que os relatórios estejam tão atualizados quanto seja necessário. 
-
-Ao configurar uma fonte de dados com o gateway de dados local, é possível usar essa fonte de dados como a opção de atualização agendada. Isso seria usado em vez do gateway pessoal.
+![Atualizar agora](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Se o conjunto de dados estiver configurado para uma conexão dinâmica ou DirectQuery, os conjuntos de dados serão atualizados aproximadamente a cada hora ou quando ocorrer a interação com os dados. Você pode ajustar manualmente a *frequência de atualização* na opção *Atualização do cache agendada*, no serviço do Power BI.
-> 
-> 
+> As atualizações de dados precisam ser concluídas em menos de 2 horas. Se os conjuntos de dados precisarem de operações de atualização mais longas, considere mover o conjunto de dados para uma capacidade Premium. No Premium, a duração máxima da atualização é de 5 horas.
 
-| **Fonte de dados** | **Live/DirectQuery** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| Tabela do Analysis Services |Sim |Sim |Sim |
-| Multidimensional do Analysis Services |Sim |Sim |Sim |
-| SQL Server |Sim |Sim |Sim |
-| SAP HANA |Sim |Sim |Sim |
-| Oracle |Sim |Sim |Sim |
-| Teradata |Sim |Sim |Sim |
+#### <a name="onedrive-refresh"></a>Atualização do OneDrive
 
-Para obter mais informações, veja [Gateway de dados local](service-gateway-onprem.md)
+Se você tiver criado seus conjuntos de dados e relatórios com base em um arquivo do Power BI Desktop, pasta de trabalho do Excel ou arquivo de valores separados por vírgula (.csv) no OneDrive ou no SharePoint Online, o Power BI executará outro tipo de atualização, conhecida como atualização do OneDrive. Para obter mais informações, confira [Obter dados de arquivos para o Power BI](service-get-data-from-files.md).
 
-## <a name="databases-in-the-cloud"></a>Bancos de dados na nuvem
-Com o DirectQuery, há uma conexão dinâmica entre o Power BI e o banco de dados na nuvem. Quando você interage com uma visualização, as consultas são enviadas do Power BI diretamente para o banco de dados. Os dados atualizados são retornados e as visualizações são atualizadas. E, como o serviço do Power BI e a fonte de dados estão na nuvem, não é necessário  um Gateway de Pessoal.
+Diferente de uma atualização de conjunto de dados durante a qual o Power BI importa dados de uma fonte de dados para um conjunto de dados, a atualização do OneDrive sincroniza relatórios e conjuntos de dados com seus arquivos de origem. Por padrão, o Power BI verifica de hora em hora se um conjunto de dados conectado a um arquivo no OneDrive ou SharePoint Online requer sincronização. Para examinar ciclos de sincronização anteriores, verifique a guia do OneDrive no histórico de atualização. A captura de tela a seguir mostra um ciclo de sincronização concluído para um conjunto de dados de exemplo.
 
-Se não houver nenhuma interação do usuário em uma visualização, os dados serão atualizados automaticamente, aproximadamente a cada hora. Você pode alterar essa frequência de atualização usando a opção *Atualização do cache agendada* e definir a frequência de atualização.
+![Histórico de atualização](media/refresh-data/refresh-history.png)
 
-Para definir a frequência, selecione o ícone **engrenagem** no canto superior direito do serviço do Power BI e escolha **Configurações**.
+Conforme ilustrado na captura de tela acima, o Power BI identificou essa atualização do OneDrive como uma atualização **Agendada**, mas não é possível configurar o intervalo de atualização. Só é possível desativar a atualização do OneDrive nas configurações do conjunto de dados. Desativar a atualização é útil quando você não quer que seus conjuntos de dados e relatórios no Power BI acompanhem as alterações dos arquivos de origem automaticamente.
 
-![](media/refresh-data/refresh-data_2.png)
+Observe que a página de configurações do conjunto de dados mostra as seções **Credenciais do OneDrive** e **Atualização do OneDrive** apenas quando o conjunto de dados está conectado a um arquivo no OneDrive ou SharePoint Online, conforme mostrado na captura de tela a seguir. Conjuntos de dados que não estão conectados aos arquivos de origem no OneDrive ou SharePoint Online não mostram essas seções.
 
-A página **Configurações** será exibida, permitindo selecionar o conjunto de dados para o qual deseja ajustar a frequência. Nessa página, selecione a guia **Conjuntos de dados** na parte superior.
+![Credenciais e atualização do OneDrive](media/refresh-data/onedrive-credentials-refresh.png)
 
-![](media/refresh-data/refresh-data_3.png)
+Se desabilitar a atualização do OneDrive para um conjunto de dados, você ainda poderá sincronizar seu conjunto de dados sob demanda selecionando **Atualizar agora** no menu do conjunto de dados. Como parte da atualização sob demanda, o Power BI verifica se o arquivo de origem no OneDrive ou SharePoint Online é mais recente do que o conjunto de dados no Power BI e, se esse for o caso, sincroniza o conjunto de dados. O **Histórico de atualização** lista essas atividades como atualizações sob demanda na guia **OneDrive**.
 
-Selecione o conjunto de dados e, no painel direito, aparecerá uma coleção de opções para esse conjunto de dados. Para a conexão Dinâmica/DirectQuery, você pode definir a frequência de atualização desde 15 minutos até semanal, usando o menu suspenso associado, conforme é mostrado na imagem a seguir.
+Tenha em mente que a atualização do OneDrive não efetua pull de dados das fontes de dados originais. A atualização do OneDrive simplesmente atualiza os recursos no Power BI com os metadados e dados do arquivo .pbix, .xlsx ou .csv, como ilustra o diagrama a seguir. Para garantir que o conjunto de dados tenha os dados mais recentes das fontes de dados, o Power BI também dispara uma atualização de dados como parte de uma atualização sob demanda. Você poderá ver isso no **Histórico de atualização** se alternar para a guia **Agendado**.
 
-![](media/refresh-data/refresh-data_1.png)
+![Diagrama de atualização do OneDrive](media/refresh-data/onedrive-refresh-diagram.png)
 
-| **Fonte de dados** | **Live/DirectQuery** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| SQL Azure Data Warehouse |Sim |Sim |Não |
-| Sparks no HDInsight |Sim |Sim |Não |
+Se você mantiver a atualização do OneDrive habilitada para um conjunto de dados conectado ao OneDrive ou SharePoint Online e quiser executar a atualização de dados de forma programada, não deixe de configurar o agendamento para que o Power BI execute a atualização de dados após a atualização do OneDrive. Por exemplo, se tivesse criado seu próprio serviço ou processo para atualizar o arquivo de origem no OneDrive ou SharePoint Online toda noite à 1h, você poderia configurar a atualização agendada para as 2h30 para dar ao Power BI tempo suficiente para concluir a atualização do OneDrive antes de iniciar a atualização de dados.
 
-Para saber mais, veja [Azure e Power BI](service-azure-and-power-bi.md).
+#### <a name="refresh-of-query-caches"></a>Atualização de caches de consulta
 
-## <a name="real-time-dashboards"></a>Painéis em tempo real
-Os dashboards em tempo real usam a API REST do Microsoft Power BI ou o Microsoft Stream Analytics para garantir que os dados estão atualizados. Uma vez que os painéis em tempo real não exigem que os usuários configurarem a atualização, eles estão fora do escopo deste artigo.
+Se o conjunto de dados residir em uma capacidade Premium, você poderá melhorar o desempenho dos relatórios e dashboards associados habilitando o cache de consulta, como mostrado na captura de tela a seguir. O cache de consulta instrui a capacidade de Premium a usar o seu serviço de cache local para manter os resultados da consulta, evitando fazer com que fonte de dados subjacente calcule esses resultados. Para obter mais informações, confira [Cache de consulta no Power BI Premium](power-bi-query-caching.md).
 
-| **Fonte de dados** | **Automático** | **Atualização manual ou agendada configurada pelo usuário** | **Gateway necessário** |
-| --- | --- | --- | --- |
-| Aplicativos personalizados desenvolvidos com o API Rest do Power BI ou  Microsoft Stream Analytics |Sim, transmissão ao vivo |Não |Não |
+![Cache de consulta](media/refresh-data/query-caching.png)
+
+Após uma atualização de dados, no entanto, os resultados da consulta armazenados em cache anteriormente deixam de ser válidos. O Power BI descarta esses resultados armazenados em cache e precisa recriá-los. Por esse motivo, o cache de consulta pode não ser tão vantajoso para relatórios e dashboards associados a conjuntos de dados que você atualiza com muita frequência, como 48 vezes por dia.
+
+#### <a name="tile-refresh"></a>Atualização de bloco
+
+O Power BI mantém um cache para cada visual de bloco em seus dashboards e atualiza proativamente os caches de bloco quando dados são alterados. Em outras palavras, a atualização dos blocos ocorre automaticamente após uma atualização de dados. Isso vale para operações de atualização agendadas e sob demanda. Também é possível forçar uma atualização do bloco selecionando as reticências (...) no canto superior direito de um dashboard e selecionando **Atualizar os blocos de painel**.
+
+![Atualizar blocos do dashboard](media/refresh-data/refresh-dashboard-tiles.png)
+
+Como isso acontece automaticamente, você pode considerar a atualização do bloco uma parte intrínseca da atualização de dados. Entre outras coisas, você poderá notar que a duração da atualização aumenta com o número de blocos. A sobrecarga da atualização de bloco pode ser significativa.
+
+Por padrão, o Power BI mantém um cache único para cada bloco, mas se você usar a segurança dinâmica para restringir o acesso a dados com base em funções de usuário, conforme abordado no artigo sobre [RLS (segurança em nível de linha) com o Power BI](service-admin-rls.md), o Power BI deverá manter um cache para cada função e cada bloco. O número de caches de bloco é multiplicado pelo número de funções.
+
+A situação poderá ficar ainda mais complexa se o conjunto de dados usar uma conexão ativa com um modelo de dados do Analysis Services com RLS, como destacado no tutorial [Segurança em nível de linha dinâmica com o modelo de tabela do Analysis Services](desktop-tutorial-row-level-security-onprem-ssas-tabular.md). Nessa situação, o Power BI precisa manter e atualizar um cache para cada bloco e para cada usuário que já visualizou o dashboard. Não é incomum que a parte correspondente à atualização de blocos de uma operação de atualização de dados desse tipo ultrapasse muito o tempo necessário para buscar os dados na fonte. Para obter detalhes sobre a atualização de blocos, confira [Solução de problemas de erros de bloco](refresh-troubleshooting-tile-errors.md).
+
+#### <a name="refresh-of-report-visuals"></a>Atualização de visuais de relatório
+
+Esse processo de atualização é menos importante porque só é relevante para conexões dinâmicas com o Analysis Services. Para essas conexões, o Power BI armazena em cache o último estado dos visuais do relatório para que, quando você exibir o relatório novamente, o Power BI não precise consultar o modelo de tabela do Analysis Services. Quando você interage com o relatório, por exemplo, ao alterar um filtro, o Power BI consulta o modelo de tabela e atualiza os visuais do relatório automaticamente. Se suspeitar de que um relatório está mostrando dados obsoletos, você também poderá selecionar o botão Atualizar do relatório para disparar uma atualização de todos os visuais, como mostrado na captura de tela a seguir.
+
+![Atualizar visuais de relatório](media/refresh-data/refresh-report-visuals.png)
+
+## <a name="review-data-infrastructure-dependencies"></a>Examinar as dependências da infraestrutura de dados
+
+Independentemente de modos de armazenamento, nenhuma atualização de dados poderá ser bem-sucedida a menos que as fontes de dados subjacentes sejam acessíveis. Há três cenários principais de acesso a dados:
+
+- Um conjunto de dados usa fontes de dados que residem localmente
+- Um conjunto de dados usa fontes de dados na nuvem
+- Um conjunto de dados usa dados de fontes locais e na nuvem
+
+### <a name="connecting-to-on-premises-data-sources"></a>Conexão com fontes de dados locais
+
+Se o conjunto de dados usar uma fonte de dados que o Power BI não pode acessar com uma conexão de rede direta, você precisará configurar uma conexão de gateway para este conjunto de dados antes de habilitar uma agenda de atualização ou executar uma atualização de dados sob demanda. Para obter mais informações sobre gateways de dados e como eles funcionam, confira [O que são gateways de dados locais?](service-gateway-getting-started.md)
+
+Você tem as seguintes opções:
+
+- Escolher um gateway de dados corporativos com a definição de fonte de dados necessária
+- Implantar um gateway de dados pessoal
+
+> [!NOTE]
+> Há uma lista dos tipos de fonte de dados que exigem um gateway de dados no artigo [Gerenciar sua fonte de dados – Importar/Atualização Agendada](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+#### <a name="using-an-enterprise-data-gateway"></a>Usando um gateway de dados corporativos
+
+A Microsoft recomenda usar um gateway de dados corporativos em vez de um gateway pessoal para conectar um conjunto de dados a uma fonte de dados local. Certifique-se de que o gateway esteja configurado corretamente, o que significa que o gateway deve ter as atualizações mais recentes e todas as definições de fonte de dados necessárias. Uma definição de fonte de dados fornece ao Power BI informações de conexão sobre uma determinada fonte, incluindo os pontos de extremidade de conexão, o modo de autenticação e as credenciais. Para obter mais informações sobre como gerenciar fontes de dados em um gateway, confira [Gerenciar sua fonte de dados – Importar/Atualização Agendada](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+Conectar um conjunto de dados a um gateway corporativo é relativamente simples se você é um administrador de gateway. Com permissões de administrador, você pode atualizar imediatamente o gateway e adicionar fontes de dados ausentes, se necessário. De fato, você pode adicionar uma fonte de dados ausente ao seu gateway diretamente na página de configurações do conjunto de dados. Expanda o botão de alternância para exibir as fontes de dados e selecione o link **Adicionar ao gateway**, como mostrado na captura de tela a seguir. Se você não for um administrador do gateway, use as informações de contato exibidas para enviar uma solicitação a um administrador do gateway para adicionar a definição de fonte de dados necessária.
+
+![Adicionar ao gateway](media/refresh-data/add-to-gateway.png)
+
+> [!NOTE]
+> Um conjunto de dados só pode usar uma conexão de gateway. Em outras palavras, não é possível acessar fontes de dados locais usando várias conexões de gateway. Dessa forma, você precisa adicionar todas as definições de fonte de dados necessárias ao mesmo gateway.
+
+#### <a name="deploying-a-personal-data-gateway"></a>Implantando um gateway de dados pessoal
+
+Se não tiver acesso a um gateway de dados corporativos e for a única pessoa que gerencia conjuntos de dados, de forma que não precisa compartilhar as fontes de dados com outras pessoas, você poderá implantar um gateway de dados no modo pessoal. Na seção **Conexão de gateway**, em **Você não tem um gateway pessoal instalado**, selecione **Instalar agora**. O gateway de dados pessoal tem várias limitações, conforme documentado em [Gateway de dados local (modo pessoal)](service-gateway-personal-mode.md).
+
+Diferente de um gateway de dados corporativos, você não precisa adicionar definições de fonte de dados para um gateway pessoal. Em vez disso, você gerencia a configuração de fonte de dados usando a seção **Credenciais da fonte de dados** nas configurações do conjunto de dados, como mostrado na captura de tela a seguir.
+
+![Configurar credenciais da fonte de dados para o gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
+
+> [!NOTE]
+> O gateway de dados pessoal não dá suporte a conjuntos de dados no modo DirectQuery/LiveConnect. A página de configurações do conjunto de dados pode solicitar que você o instale, mas se tiver apenas um gateway pessoal, você não poderá configurar uma conexão de gateway. Certifique-se de que você tem um gateway de dados corporativos para dar suporte a esses tipos de conjuntos de dados.
+
+### <a name="accessing-cloud-data-sources"></a>Acessando fontes de dados de nuvem
+
+Conjuntos de dados que usam fontes de dados de nuvem, como o Azure SQL DB, não exigem um gateway de dados quando o Power BI pode estabelecer uma conexão de rede direta com a fonte. Da mesma forma, você pode gerenciar a configuração dessas fontes de dados usando a seção **Credenciais da fonte de dados** nas configurações do conjunto de dados. Como mostrado na captura de tela a seguir, você não precisa configurar uma conexão de gateway.
+
+![Configurar credenciais da fonte de dados sem um gateway](media/refresh-data/configure-data-source-credentials.png)
+
+### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Acessando fontes locais e na nuvem na mesma consulta de origem
+
+Um conjunto de dados pode obter dados de várias fontes, as quais podem residir localmente ou na nuvem. No entanto, conforme mencionado anteriormente, um conjunto de dados pode usar apenas uma conexão de gateway. Embora as fontes de dados de nuvem não exijam necessariamente um gateway, o gateway é necessário se o conjunto de dados se conecta a fontes locais e na nuvem em uma única consulta de mashup. Nesse cenário, o Power BI também precisa usar um gateway para as fontes de dados de nuvem. O diagrama a seguir ilustra como um conjunto de dados desse tipo acessa suas fontes de dados.
+
+![Fontes de dados locais e na nuvem](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
+
+> [!NOTE]
+> Se um conjunto de dados usar consultas de mashup separadas para se conectar a fontes locais e de nuvem, o Power BI usará uma conexão de gateway para acessar as fontes locais e uma conexão de rede direta para as fontes de nuvem. Se uma consulta de mashup mesclar ou acrescentar dados de fontes locais e de nuvem, o Power BI passará a usar a conexão de gateway mesmo para as fontes de nuvem.
+
+Conjuntos de dados do Power BI se baseiam no Power Query para acessar e recuperar dados de origem. A lista de mashup a seguir mostra um exemplo básico de consulta que mescla dados de uma fonte local e uma fonte de nuvem.
+
+```
+Let
+
+    OnPremSource = Sql.Database("on-premises-db", "AdventureWorks"),
+
+    CloudSource = Sql.Databases("cloudsql.database.windows.net", "AdventureWorks"),
+
+    TableData1 = OnPremSource{[Schema="Sales",Item="Customer"]}[Data],
+
+    TableData2 = CloudSource {[Schema="Sales",Item="Customer"]}[Data],
+
+    MergedData = Table.NestedJoin(TableData1, {"BusinessEntityID"}, TableData2, {"BusinessEntityID"}, "MergedData", JoinKind.Inner)
+
+in
+
+    MergedData
+```
+
+Há duas opções para configurar um gateway de dados de modo a dar suporte à mesclagem ou ao acréscimo de dados de fontes locais e de nuvem:
+
+- Adicionar uma definição de fonte de dados para a fonte de nuvem ao gateway de dados, além das fontes de dados locais.
+- Marcar a caixa de seleção **Permitir que as fontes de dados de nuvem do usuário sejam atualizadas por meio deste cluster de gateway**.
+
+![Atualizar usando o cluster de gateway](media/refresh-data/refresh-gateway-cluster.png)
+
+Se você marcar a caixa de seleção **Permitir que as fontes de dados de nuvem do usuário sejam atualizadas por meio deste cluster de gateway** na configuração do gateway, como mostrado na captura de tela acima, o Power BI poderá usar a configuração que o usuário definiu para a fonte de nuvem em **Credenciais da fonte de dados** nas configurações do conjunto de dados. Isso pode ajudar a reduzir a sobrecarga da configuração do gateway. Por outro lado, se quiser ter mais controle sobre as conexões que o gateway estabelece, você não deverá marcar esta caixa de seleção. Nesse caso, você precisa adicionar uma definição de fonte de dados explícita para cada fonte de nuvem a que deseja dar suporte ao seu gateway. Também é possível marcar a caixa de seleção e adicionar definições explícitas de fonte de dados para suas fontes de nuvem a um gateway. Nesse caso, o gateway usa as definições de fonte de dados para todas as fontes correspondentes.
+
+### <a name="configuring-query-parameters"></a>Configurando parâmetros de consulta
+
+As consultas de mashup, ou M, que você cria usando o Power Query podem variar em complexidade, indo de etapas simples a constructos parametrizados. A lista a seguir mostra um pequeno exemplo de consulta de mashup que usa dois parâmetros chamados _SchemaName_ e _TableName_ para acessar uma determinada tabela em um banco de dados AdventureWorks.
+
+```
+let
+
+    Source = Sql.Database("SqlServer01", "AdventureWorks"),
+
+    TableData = Source{[Schema=SchemaName,Item=TableName]}[Data]
+
+in
+
+    TableData
+```
+
+> [!NOTE]
+> Parâmetros de consulta têm suporte apenas para conjuntos de dados no Modo de importação. O modo DirectQuery/LiveConnect não dá suporte a definições de parâmetro de consulta.
+
+Para garantir que um conjunto de dados com parâmetros acesse os dados corretos, você precisa definir os parâmetros da consulta de mashup nas configurações do conjunto de dados. Também é possível atualizar os parâmetros de maneira programática usando a [API REST do Power BI](/rest/api/power-bi/datasets/updateparametersingroup). A captura de tela a seguir mostra a interface do usuário para configurar os parâmetros de consulta para um conjunto de dados que usa a consulta de mashup acima.
+
+![Configurar parâmetros de consulta](media/refresh-data/configure-query-parameters.png)
+
+> [!NOTE]
+> Atualmente, o Power BI não tem suporte para definições de fonte de dados com parâmetros, também conhecidas como fontes de dados dinâmicas. Por exemplo, não é possível parametrizar a função de acesso a dados Sql.Database("SqlServer01", "AdventureWorks"). Se o conjunto de dados depender de fontes de dados dinâmicas, o Power BI informará que detectou fontes de dados desconhecidas ou sem suporte. Você precisará substituir os parâmetros em suas funções de acesso a dados por valores estáticos se quiser que o Power BI seja capaz de identificar e se conectar às fontes de dados. Para obter mais informações, confira [Solucionando problemas de fonte de dados sem suporte para atualização](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## <a name="configure-scheduled-refresh"></a>Configurar a atualização agendada
-Para saber como configurar a atualização agendada, veja [Configurar a atualização agendada](refresh-scheduled-refresh.md)
 
-## <a name="common-data-refresh-scenarios"></a>Cenários de atualização de dados comuns
-Às vezes, a melhor maneira de aprender sobre a atualização de dados no Power BI é ver exemplos. Aqui estão alguns dos cenários de atualização de dados mais comuns:
+Estabelecer a conectividade entre o Power BI e suas fontes de dados é, de longe, a tarefa mais desafiadora da configuração de uma atualização de dados. As etapas restantes são relativamente simples e incluem configurar o agendamento de atualização e habilitar notificações de falha de atualização. Para obter instruções passo a passo, confira o guia de instruções [Configurando a atualização agendada](refresh-scheduled-refresh.md).
 
-### <a name="excel-workbook-with-tables-of-data"></a>Pasta de trabalho do Excel com tabelas de dados
-Você tem uma pasta de trabalho do Excel com várias tabelas de dados, mas nenhuma delas são carregadas no modelo de dados do Excel. Use Obter Dados para carregar o arquivo de pasta de trabalho de sua unidade local no Power BI e criar um painel de controle. Mas, agora você fez algumas alterações em algumas tabelas da pasta de trabalho em sua unidade local, e você deseja atualizar o painel no Power BI com os novos dados.
+### <a name="setting-a-refresh-schedule"></a>Configurando um agendamento de atualização
 
-Infelizmente, a atualização não é suportada neste cenário. Para atualizar o conjunto de dados para o seu painel, você precisará carregar novamente a pasta de trabalho. No entanto, há uma excelente solução: coloque o arquivo de pasta de trabalho no OneDrive ou SharePoint Online!
+Na seção **Atualização agendada**, você define a frequência e os slots de tempo para atualizar o conjunto de dados. Conforme mencionado anteriormente, você poderá configurar até oito slots de tempo diários se estiver na capacidade compartilhada ou 48 slots no Power BI Premium. A captura de tela a seguir mostra um agendamento de atualização com intervalo de doze horas.
 
-Quando você se conectar a um arquivo no OneDrive ou SharePoint Online, os relatórios e dashboards mostrarão os dados como estão no arquivo. Neste caso, sua pasta do Excel. O Power BI verifica automaticamente se há atualizações ao arquivo em intervalos aproximados de sessenta minutos. Se você fizer alterações à pasta de trabalho (armazenada no OneDrive ou SharePoint Online), essas alterações serão refletidas no dashboard e os relatórios em menos uma hora. Você não precisa de instalação de atualização. No entanto, se você precisar ver suas atualizações no Power BI imediatamente, você pode atualizar manualmente o conjunto de dados usando Atualizar Agora.
+![Configurar a atualização agendada](media/refresh-data/configure-scheduled-refresh.png)
 
-Para saber mais, consulte [Dados de Excel no Power BI](service-excel-workbook-files.md) ou [Atualizar um conjunto de dados criado com base em uma pasta de trabalho do Excel no OneDrive](refresh-excel-file-onedrive.md).
+Após a configuração de um agendamento de atualização, a página de configurações do conjunto de dados informa o horário da próxima atualização, como na captura de tela acima. Se você quiser atualizar os dados mais cedo, por exemplo, para testar sua configuração de gateway e fonte de dados, execute uma atualização sob demanda usando a opção Atualizar agora no menu de conjunto de dados no painel de navegação esquerdo. Atualizações sob demanda não afetam o horário da próxima atualização agendada, mas são contabilizadas com relação ao limite de atualizações diárias, conforme explicado anteriormente neste artigo.
 
-### <a name="excel-workbook-connects-to-a-sql-database-in-your-company"></a>A pasta de trabalho do Excel se conecta a um banco de dados SQL em sua empresa
-Digamos que você tenha uma planilha do Excel denominada SalesReport.xlsx no computador local. Power Query no Excel foi usada para se conectar a um banco de dados SQL em um servidor em sua empresa e consultar dados de vendas que são carregados no modelo de dados. Todas as manhãs, abra a pasta de trabalho e clique em atualizar para atualizar suas PivotTables.
-
-Agora que você quer explorar seus dados de vendas no Power BI para usar Obter Dados para conectar e carregar a pasta de trabalho SalesReport.xlsx de sua unidade local.
-
-Nesse caso, manualmente pode atualizar os dados no conjunto de dados SalesReport.xlsx ou configurar uma agenda de atualização. Visto que os dados são, de fato, recebidos do banco de dados SQL em sua empresa, você precisará baixar e instalar um gateway. Depois de instalado e configurado o gateway, você precisará entrar nas configurações do conjunto de dados SalesReport e inscrever-se à fonte de dados; mas você só precisa fazer isso uma vez. Você pode então configurar uma atualização de programação para que o Power BI se conecte automaticamente ao banco de dados do SQL e obtenha dados atualizados. Os relatórios e painéis também serão atualizados automaticamente.
+Observe também que o horário de atualização configurado talvez não seja o horário exato em que o Power BI iniciará o próximo processo agendado. O Power BI inicia as atualizações agendadas com base no melhor esforço. O objetivo é iniciar a atualização dentro de 15 minutos do slot de horário agendado, mas um atraso de até uma hora poderá ocorrer se o serviço não puder alocar os recursos necessários mais cedo.
 
 > [!NOTE]
-> Isso atualizará apenas os dados no conjunto de dados no serviço do Power BI. O arquivo local não será atualizado como parte da atualização.
-> 
-> 
+> O Power BI desativa seu agendamento de atualização após quatro falhas consecutivas ou quando o serviço detecta um erro irrecuperável que requer uma atualização de configuração, como credenciais inválidas ou vencidas. Não é possível alterar o limite de falhas consecutivas.
 
-Para obter mais informações, veja [Dados do Excel no Power BI](service-excel-workbook-files.md), [Power BI Gateway – Personal](service-gateway-personal-mode.md), [Gateway de dados local](service-gateway-onprem.md) e [Atualizar um conjunto de dados criado com base em uma pasta de trabalho do Excel em uma unidade local](refresh-excel-file-local-drive.md).
+### <a name="getting-refresh-failure-notifications"></a>Obtendo notificações de falha de atualização
 
-### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Arquivo do Power BI Desktop com dados a partir de um feed OData
-Nesse caso, você usa Obter Dados na área de trabalho do Power BI para conectar e importar dados de censo de um feed OData.  Criar vários relatórios na área de trabalho do Power BI, em seguida, nomeie o arquivo WACensus e salvá-lo em um compartilhamento em sua empresa. Em seguida, você publica o arquivo no serviço do Power BI.
+Por padrão, o Power BI envia notificações de falha de atualização por email para o proprietário do conjunto de dados para que ele possa agir de maneira ágil no caso de problemas de atualização. O Power BI também lhe envia uma notificação quando o serviço desabilita seu agendamento devido a falhas consecutivas. A Microsoft recomenda que você deixe a caixa de seleção **Enviar-me emails de notificação de falha na atualização** habilitada.
 
-Nesse caso, manualmente pode atualizar os dados no conjunto de dados WACensus ou configurar uma agenda de atualização. Como os dados na fonte de dados são recebidos de um feed online OData, não é necessário instalar um gateway; no entanto, você precisará ir para as configurações do conjunto de dados do WACensus e entrar na fonte de dados do OData. Você pode então configurar uma atualização de programação para que o Power BI se conecte automaticamente ao feed do OData e obter os dados atualizados. Os relatórios e painéis também serão atualizados automaticamente.
+Observe que o Power BI não apenas envia notificações de falhas de atualização, mas também quando o serviço pausa uma atualização agendada devido à inatividade. Após dois meses, se nenhum usuário tiver visitado nenhum dashboard ou relatório criado com base no conjunto de dados, o Power BI considerará o conjunto de dados inativo. Nesta situação, o Power BI envia uma mensagem de email ao proprietário do conjunto de dados indicando que o serviço desabilitou o agendamento de atualização do conjunto de dados. Veja na captura de tela a seguir um exemplo de notificação.
 
-Para saber mais, veja [Publicar por meio do Power BI Desktop](desktop-upload-desktop-files.md), [Atualizar um conjunto de dados criado com base em um arquivo do Power BI Desktop em uma unidade local](refresh-desktop-file-local-drive.md) e [Atualizar um conjunto de dados criado com base em um arquivo do Power BI Desktop no OneDrive](refresh-desktop-file-onedrive.md).
+![Email de atualização em pausa](media/refresh-data/email-paused-refresh.png)
 
-### <a name="shared-content-pack-from-another-user-in-your-organization"></a>Pacote de conteúdo compartilhado a partir de outro usuário em nossa organização.
-Você se conectou a um pacote de conteúdo organizacional. Isso inclui um painel, vários relatórios e um conjunto de dados.
+Para retomar a atualização agendada, visite um relatório ou dashboard criado usando o conjunto de dados ou atualize-o manualmente usando a opção **Atualizar agora**.
 
-Nesse cenário, você não pode configurar a atualização ao conjunto de dados. Analistas de dados que criou o pacote de conteúdo é responsável por verificar se o conjunto de dados é atualizado, dependendo das fontes de dados usadas.
+### <a name="checking-refresh-status-and-history"></a>Verificando o status e o histórico de atualização
 
-Se os seus painéis e relatórios do pacote de conteúdo não estiver atualizados, você deverá conversar com o analista de dados que criou o pacote de conteúdo.
+Além das notificações de falha, é uma boa ideia verificar seus conjuntos de dados periodicamente para ver se há erros de atualização. Uma maneira rápida é exibir a lista de conjuntos de dados em um workspace. Conjuntos de dados com erros mostram um pequeno ícone de aviso. Selecione o ícone de aviso para obter informações adicionais, como na seguinte captura de tela. Para obter mais informações sobre como solucionar erros de atualização específicos, confira [Solucionar problemas em cenários de atualização](refresh-troubleshooting-refresh-scenarios.md).
 
-Para saber mais, veja [Introdução aos pacotes de conteúdo organizacional](service-organizational-content-pack-introduction.md) e [Trabalhar com pacotes de conteúdo organizacional](service-organizational-content-pack-copy-refresh-access.md).
+![Aviso de status de atualização](media/refresh-data/refresh-status-warning.png)
 
-### <a name="content-pack-from-an-online-service-provider-like-salesforce"></a>Pacote de conteúdo de um provedor de serviços online como o Salesforce
-No Power BI, você usou Obter Dados para se conectar a seus dados e importá-los de um provedor de serviços online como o Salesforce. Bem, não há muito o que fazer aqui. O seu conjunto de dados do Salesforce é atualizado automaticamente para atualizar uma vez por dia. 
+O ícone de aviso ajuda a indicar problemas atuais no conjunto de dados, mas também é uma boa ideia verificar ocasionalmente o histórico de atualização. Como o nome indica, o histórico de atualização permite que você examine o status de êxito ou falha de ciclos de sincronização anteriores. Por exemplo, um administrador de gateway pode ter atualizado um conjunto expirado de credenciais de banco de dados. Como você pode ver na captura de tela a seguir, o histórico de atualização mostra quando uma atualização afetada começou a funcionar novamente.
 
-Como a maioria dos provedores de serviços, o Salesforce atualiza os dados uma vez por dia, geralmente à noite. Você pode atualizar manualmente seu conjunto de dados do Salesforce ou configurar uma agenda de atualização, mas não é necessário porque o Power BI atualizará automaticamente o conjunto de dados e os relatórios e painéis também são atualizados.
+![Mensagens do histórico de atualização](media/refresh-data/refresh-history-messages.png)
 
-Para saber mais, veja [Pacote de conteúdo do Salesforce para o Power BI](service-connect-to-salesforce.md).
+> [!NOTE]
+> Há um link para exibir o histórico de atualização nas configurações do conjunto de dados. Também é possível recuperar um histórico de atualização de maneira programática usando a [API REST do Power BI](/rest/api/power-bi/datasets/getrefreshhistoryingroup). Usando uma solução personalizada, você pode monitorar o histórico de atualização de vários conjuntos de dados de forma centralizada.
 
-## <a name="troubleshooting"></a>Solução de problemas
-Quando as coisas dão errado, normalmente, isso se deve ao fato de o Power BI não conseguir entrar em fontes de dados. Outra razão é que se o conjunto de dados se conecta a uma fonte de dados local, o gateway fica offline. Verifique se o Power BI pode entrar em fontes de dados. Se uma senha que você usa para entrar em uma fonte de dados for alterada ou o Power BI for desconectado de uma fonte de dados, certifique-se de tentar entrar novamente em suas fontes de dados novamente nas Credenciais da Fonte de Dados.
+## <a name="best-practices"></a>Práticas recomendadas
 
-Para obter mais informações sobre como solucionar problemas, veja [Ferramentas para solucionar problemas de atualização](service-gateway-onprem-tshoot.md) e [Cenários de solução de problemas de atualização](refresh-troubleshooting-refresh-scenarios.md).
+Verificar regularmente o histórico de atualização de seus conjuntos de dados é uma das melhores práticas mais importantes que você pode adotar para garantir que os relatórios e dashboards usem dados atuais. Se descobrir problemas, resolva-os imediatamente e faça o acompanhamento com os proprietários da fonte de dados e os administradores do gateway, se necessário.
+
+Além disso, considere as seguintes recomendações para estabelecer e manter processos de atualização de dados confiáveis para seus conjuntos de dados:
+
+- Agende suas atualizações para horários menos ocupados, especialmente se os conjuntos de dados estiverem no Power BI Premium. Se distribuir os ciclos de atualização de seus conjuntos de dados em uma janela de tempo mais ampla, você poderá ajudar a evitar picos que, de outra forma, poderiam sobrecarregar os recursos disponíveis. Atrasos no início de um ciclo de atualização são um indicador de sobrecarga de recursos. Se uma capacidade Premium for esgotada completamente, o Power BI poderá até mesmo ignorar um ciclo de atualização.
+- Lembre-se dos limites de atualização. Se os dados de origem forem alterados com frequência ou o volume de dados for significativo, considere usar o modo DirectQuery/LiveConnect em vez do Modo de importação se o aumento da carga na fonte e o impacto sobre o desempenho da consulta forem aceitáveis. Evite atualizar constantemente um conjunto de dados no Modo de importação. No entanto, o modo DirectQuery/LiveConnect tem várias limitações, como um limite de um milhão de linhas para retornar dados e um limite de tempo de resposta de 225 segundos para executar consultas, conforme documentado em [Usar o DirectQuery no Power BI Desktop](desktop-use-directquery.md). Essas limitações podem exigir que você use o Modo de importação de qualquer maneira. Para volumes de dados muito grandes, considere usar [agregações no Power BI](desktop-aggregations.md).
+- Verifique se o seu tempo de atualização do conjunto de dados não ultrapassa a duração máxima de atualização. Use o Power BI Desktop para verificar a duração da atualização. Se demorar mais de 2 horas, considere mover o conjunto de dados para o Power BI Premium. Talvez o conjunto de dados não seja atualizável na capacidade compartilhada. Considere também usar a [atualização incremental no Power BI Premium](service-premium-incremental-refresh.md) para conjuntos de dados com mais de 1 GB ou que demoram várias horas para serem atualizados.
+- Otimize seus conjuntos de dados de modo a incluir somente as tabelas e colunas que seus relatórios e dashboards usam. Otimize as consultas de mashup e, se possível, evite definições de fontes de dados dinâmicas e cálculos de DAX caros. Especificamente, evite funções DAX que testam todas as linhas de uma tabela devido ao alto consumo de memória e à sobrecarga de processamento.
+- Aplique as mesmas configurações de privacidade do Power BI Desktop para garantir que o Power BI possa gerar consultas de fonte eficientes. Tenha em mente que o Power BI Desktop não publica configurações de privacidade. Você precisa reaplicar manualmente as configurações nas definições da fonte de dados após publicar seu conjunto de dados.
+- Limite o número de visuais em seus dashboards, especialmente se você usa [RLS (segurança em nível de linha)](service-admin-rls.md). Conforme explicado anteriormente neste artigo, um número excessivo de blocos de dashboard pode aumentar significativamente a duração da atualização.
+- Use uma implantação de gateway de dados corporativos confiável para conectar seus conjuntos de dados a fontes de dados locais. Se observar falhas de atualização relacionadas ao gateway, como gateway não disponível ou sobrecarregado, confira os administradores do gateway para adicionar mais gateways a um cluster existente ou implantar um novo cluster (escalar verticalmente versus expandir).
+- Use gateways de dados separados para os conjuntos de dados de importação e os de DirectQuery/LiveConnect, para que importações de dados durante a atualização agendada não afetem o desempenho de relatórios e dashboards baseados em conjuntos de dados de DirectQuery/LiveConnect, que consultam as fontes de dados a cada interação do usuário.
+- Certifique-se de que o Power BI possa enviar notificações de falha de atualização para sua caixa de correio. Filtros de spam podem bloquear as mensagens de email ou movê-las para uma pasta separada em que você pode não notá-las imediatamente.
 
 ## <a name="next-steps"></a>Próximas etapas
+
+[Configuração de atualização agendada](refresh-scheduled-refresh.md)  
 [Ferramentas para solucionar problemas de atualização](service-gateway-onprem-tshoot.md)  
 [Solucionar problemas de atualização](refresh-troubleshooting-refresh-scenarios.md)  
-[Gateway do Power BI – Pessoal](service-gateway-personal-mode.md)  
-[On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)  
 
 Mais perguntas? [Experimente perguntar à Comunidade do Power BI](http://community.powerbi.com/)
-

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e24218e2a465619fdfbfc279d3cc45370202dd6e
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814713"
+---
 ## <a name="sign-in-account"></a>Conta de entrada
 
 Os usuários entram com uma conta corporativa ou de estudante. Essa conta é **de sua organização**. Se você se inscreveu para uma oferta do Office 365 e não forneceu seu email de trabalho real, ela poderá ser semelhante a nancy@contoso.onmicrosoft.com. Sua conta é armazenada em um locatário no AAD (Azure Active Directory). Na maioria dos casos, o UPN de sua conta do AAD corresponderá ao endereço de email.
@@ -15,33 +23,40 @@ Caso encontre problemas de autenticação com seu servidor proxy, experimente al
 
 O gateway cria uma conexão de saída para o Barramento de Serviço do Azure. Ele se comunica nas portas de saída: TCP 443 (padrão), 5671, 5672 e 9350 até 9354.  O gateway não requer portas de entrada.
 
-É recomendável colocar os endereços IP no seu firewall, para sua região de dados, na lista de permissões. É possível baixar a [lista de IPs de data centers do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653), que é atualizada semanalmente. O gateway se comunicará com o Barramento de Serviço do Azure usando o endereço IP junto com o nome de domínio totalmente qualificado (FQDN). Se você estiver forçando o gateway a se comunicar usando HTTPS, ele usará apenas o FQDN de forma exclusiva e nenhuma comunicação acontecerá usando endereços IP.
+É recomendável adicionar os endereços IP a uma lista de permissões no seu firewall, para sua região de dados. É possível baixar a [lista de IPs de data centers do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653), que é atualizada semanalmente. Como alternativa, você pode obter a lista de portas necessárias executando o [Teste de porta de rede](../service-gateway-onprem-tshoot.md#network-ports-test) no aplicativo do gateway de dados local. O gateway se comunicará com o Barramento de Serviço do Azure usando o endereço IP junto com o nome de domínio totalmente qualificado (FQDN). Se você estiver forçando o gateway a se comunicar usando HTTPS, ele usará apenas o FQDN de forma exclusiva e nenhuma comunicação acontecerá usando endereços IP.
+
 
 > [!NOTE]
 > Os Endereços IP listados na lista de IP do Data Center do Azure estão na notação CIDR. Por exemplo, 10.0.0.0/24 não significa 10.0.0.0 até 10.0.0.24. Saiba mais sobre a [notação CIDR](http://whatismyipaddress.com/cidr).
 
 Esta é uma lista dos nomes de domínio totalmente qualificados usados pelo gateway.
 
-| Nomes de domínio | Portas de saída | Descrição |
-| --- | --- | --- |
-| *.download.microsoft.com |80 |HTTP usado para baixar o instalador. |
-| *.powerbi.com |443 |HTTPS |
-| *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
-| *.servicebus.windows.net |443, 9350-9354 |Ouvintes na Retransmissão do Barramento de Serviço por TCP (requer 443 para aquisição de token de Controle de Acesso) |
-| *.frontend.clouddatahub.net |443 |HTTPS |
-| *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
-| *.msftncsi.com |443 |Usado para testar a conectividade com a Internet se o gateway não estiver acessível pelo serviço do Power BI. |
-| *.microsoftonline-p.com |443 |Usado para autenticação, dependendo da configuração. |
+| Nomes de domínio | Portas de saída | Descrição |  |
+|-----------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|---|
+| *.download.microsoft.com | 80 | Usado para baixar o instalador. Também é usado pelo aplicativo de gateway de dados para verificar a versão e a região do gateway. |  |
+| *.powerbi.com | 443 | Usado para identificar o cluster pertinente do Power BI. |  |
+| *.analysis.windows.net | 443 | Usado para identificar o cluster pertinente do Power BI. |  |
+| *.login.windows.net | 443 | Usado para autenticar o aplicativo do gateway de dados com o Azure Active Directory / OAuth2. |  |
+| *.servicebus.windows.net | 5671-5672 | Usado pelo AMQP (Advanced Message Queuing Protocol). |  |
+| *.servicebus.windows.net | 443, 9350-9354 | Usado pelos ouvintes na Retransmissão do Barramento de Serviço por TCP (exige a 443 para aquisição de token de controle de acesso). |  |
+| *.frontend.clouddatahub.net | 443 | Preterido – não é mais necessário. Será removido da documentação no futuro. |  |
+| *.core.windows.net | 443 | Usado por fluxos de dados no Power BI para gravar dados no Azure Data Lake. |  |
+| login.microsoftonline.com | 443 | Usado para autenticar o aplicativo do gateway de dados com o Azure Active Directory / OAuth2. |  |
+| *.msftncsi.com | 443 | Usado para testar a conectividade com a Internet e testar se o gateway não está acessível pelo serviço do Power BI. |  |
+| *.microsoftonline-p.com | 443 | Usado para autenticar o aplicativo do gateway de dados com o Azure Active Directory / OAuth2. |  |
+| | |
 
 > [!NOTE]
-> O tráfego direcionado para visualstudio.com ou visualstudioonline.com é para o App Insights e não é necessário para que o gateway funcione.
+> Depois que o gateway está instalado e registrado, as únicas portas/IPs requeridos são aqueles necessários pelo Barramento de Serviço do Azure (servicebus.windows.net acima). Você pode obter a lista de portas necessárias executando o [Teste de porta de rede](../service-gateway-onprem-tshoot.md#network-ports-test) no aplicativo do gateway de dados local.
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>Forçar a comunicação HTTPS com o Barramento de Serviço do Azure
 
-Você pode forçar o gateway a se comunicar com o Barramento de Serviço do Azure usando HTTPS em vez de TCP direto. usar HTTPS pode ter um impacto no desempenho. Para fazer isso, modifique o arquivo *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, alterando o valor de `AutoDetect` para `Https`, conforme mostrado no snippet de código logo após este parágrafo. Este arquivo está localizado (por padrão) em *C:\Arquivos de Programas\Gateway de dados local*.
+Você pode forçar o gateway a se comunicar com o Barramento de Serviço do Azure usando HTTPS em vez de TCP direto.
+
+> [!NOTE]
+> Começando com a versão de junho de 2019, as novas instalações (não atualizações) usarão HTTPS em vez de TCP por padrão, com base nas recomendações do Barramento de Serviço do Azure.
+
+Para forçar comunicação por HTTPS, modifique o arquivo *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, alterando o valor de `AutoDetect` para `Https`, conforme mostrado no snippet de código logo após este parágrafo. Este arquivo está localizado (por padrão) em *C:\Arquivos de Programas\Gateway de dados local*.
 
 ```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">

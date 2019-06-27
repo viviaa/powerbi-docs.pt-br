@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 8cee670028da828e052d8fe30c594882555c5d53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770163"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839706"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Atualizar o Servidor de Relatório do Power BI
 
@@ -31,21 +31,21 @@ Antes de atualizar um servidor de relatório, é recomendável que você execute
 
 ### <a name="backing-up-the-encryption-keys"></a>Fazendo backup das chaves de criptografia
 
-Você deve fazer backup das chaves de criptografia ao configurar uma instalação do servidor de relatório pela primeira vez. Você também deve fazer backup das chaves sempre que você altera a identidade das contas de serviço ou renomear o computador. Para obter mais informações, consulte [Backup e restauração das chaves de criptografia do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Você precisa fazer backup das chaves de criptografia ao configurar uma instalação do servidor de relatório pela primeira vez. Você também precisa fazer backup das chaves sempre que alterar a identidade das contas de serviço ou renomear o computador. Para obter mais informações, consulte [Backup e restauração das chaves de criptografia do Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Fazendo backup dos bancos de dados do servidor de relatório
 
-Como um servidor de relatório é um servidor sem monitoração de estado, todos os dados do aplicativo são armazenados nos bancos de dados **reportserver** e **reportservertempdb** que são executados em uma instância do Mecanismo de Banco de Dados do SQL Server. Você pode fazer backup de **reportserver** e **reportservertempdb** bancos de dados usando um dos métodos com suporte para fazer backup de bancos de dados do SQL Server. Recomendações específicas aos bancos de dados do servidor de relatório incluem o seguinte:
+Como um servidor de relatório é um servidor sem monitoração de estado, todos os dados do aplicativo são armazenados nos bancos de dados **reportserver** e **reportservertempdb** que são executados em uma instância do Mecanismo de Banco de Dados do SQL Server. Você pode fazer backup dos bancos de dados **reportserver** e **reportservertempdb** usando um dos métodos compatíveis para fazer backup de bancos de dados do SQL Server. Recomendações específicas aos bancos de dados do servidor de relatório incluem o seguinte:
 
-* Use o modelo de recuperação completo para fazer backup de **reportserver** banco de dados.
-* Use o modelo de recuperação simples para fazer backup de **reportservertempdb** banco de dados.
-* Você pode usar diferentes cronogramas de backup para cada banco de dados. O único motivo para fazer backup de **reportservertempdb** é evitar ter que recriá-lo se houver uma falha de hardware. No caso de uma falha de hardware, não será necessário recuperar os dados em **reportservertempdb**, mas você precisará da estrutura de tabela. Se você perder **reportservertempdb**, a única maneira de recuperá-lo será recriar o banco de dados do servidor de relatório. Se você recriar o **reportservertempdb**, é importante que ele tenha o mesmo nome que o banco de dados do servidor de relatório primário.
+* Use o modelo de recuperação completa para fazer backup do banco de dados **reportserver**.
+* Use o modelo de recuperação simples para fazer backup do banco de dados **reportservertempdb**.
+* Você pode usar diferentes cronogramas de backup para cada banco de dados. A única razão para fazer backup de **reportservertempdb** é evitar ter que recriá-lo caso ocorra uma falha de hardware. No caso de uma falha de hardware, não será necessário recuperar os dados em **reportservertempdb**, mas você precisará da estrutura de tabela. Se você perder **reportservertempdb**, a única maneira de recuperá-lo será recriar o banco de dados do servidor de relatório. Se você recriar o **reportservertempdb**, é importante que ele tenha o mesmo nome que o banco de dados do servidor de relatório primário.
 
 Para obter mais informações sobre backup e recuperação de bancos de dados relacionais do SQL Server, consulte [Backup e restauração de bancos de dados do SQL Server](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Fazendo backup dos arquivos de configuração
 
-O Servidor de Relatório do Power BI usa arquivos de configuração para armazenar configurações de aplicativo. Quando você configura o servidor pela primeira vez e depois de implantar todas as extensões personalizadas, você deve fazer backup dos arquivos. Os arquivos para backup incluem:
+O Servidor de Relatório do Power BI usa arquivos de configuração para armazenar configurações de aplicativo. Faça backup dos arquivos quando configurar o servidor pela primeira vez e depois de implantar uma extensão personalizada. Os arquivos para backup incluem:
 
 * config.json
 * RSHostingService.exe.config
@@ -63,11 +63,11 @@ A atualização do Servidor de Relatório do Power BI é simples. Há apenas alg
 
 2. Selecione **Atualizar o Servidor de Relatório do Power BI**.
 
-    ![Atualizar o servidor de relatório do BI de Power](media/upgrade/reportserver-upgrade1.png "atualizar o Power BI Report Server")
+    ![Atualizar o Servidor de Relatórios do Microsoft Power BI](media/upgrade/reportserver-upgrade1.png "Upgrade Power BI Report Server")
 
 3. Leia e concorde com os termos e condições da licença e, em seguida, selecione **Atualizar**.
 
-    ![Contrato de licença](media/upgrade/reportserver-upgrade-eula.png "contrato de licença")
+    ![Contrato de licença](media/upgrade/reportserver-upgrade-eula.png "License agreement")
 
 4. Após uma atualização bem-sucedida, você pode selecionar **Configurar o Servidor de Relatório** para iniciar o Gerenciador de Configurações do Reporting Services ou pode selecionar **Fechar** para sair do instalador.
 

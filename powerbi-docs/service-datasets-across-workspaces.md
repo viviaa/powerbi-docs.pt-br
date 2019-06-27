@@ -7,19 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a5e4b41b36dfbf6cca14a348268b96eaad21b00e
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461846"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816662"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Usar conjuntos de dados em workspaces (versão prévia)
 
 Business intelligence é uma atividade colaborativa. É importante estabelecer conjuntos de dados padronizados que possam ser a 'única fonte de verdade'. É fundamental descobrir e reutilizar esses conjuntos de dados padronizados. Quando os modeladores de dados especialistas em sua organização criam e compartilham conjuntos de dados otimizados, os criadores de relatórios podem começar com esses conjuntos de dados para criar relatórios precisos. Em seguida, sua organização terá dados consistentes para tomar decisões e uma cultura de dados íntegra.
+
+![Selecionar um conjunto de dados compartilhado](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 O Power BI facilita para os criadores de conjunto de dados certificar ou promover conjuntos de dados para que outras pessoas possam descobri-los. Em seguida, os autores de relatórios encontrarão conjuntos de dados oficiais e de qualidade que poderão usar, seja qual for o local em que estejam no Power BI. Os proprietários de conjunto de dados podem manter o controle de quem tem acesso aos seus dados usando a opção [Permissão Criar](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Os administradores de locatários têm uma nova configuração de locatário para [controlar o uso de conjuntos de dados em workspaces](service-datasets-admin-across-workspaces.md).
 

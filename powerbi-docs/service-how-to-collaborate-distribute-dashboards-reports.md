@@ -1,6 +1,6 @@
 ---
 title: Maneiras de compartilhar seu trabalho no Power BI
-description: No Power BI, você pode trabalhar em colaboração e compartilhar painéis, relatórios, blocos e aplicativos de diferentes maneiras. Cada uma tem suas vantagens.
+description: No Power BI, você pode trabalhar em colaboração e compartilhar painéis, relatórios, blocos e aplicativos de diferentes maneiras. Cada maneira tem suas vantagens.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -8,57 +8,54 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 06/07/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 10f287c72cbdec8885952dd7cec766420eabfb2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234706"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816531"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Maneiras de compartilhar seu trabalho no Power BI
 
-Você criou painéis e relatórios. Talvez você também tenha colaborado neles com seus colegas de trabalho. Agora você deseja que outras pessoas tenham acesso a eles. Qual é a melhor maneira de distribuí-los?
+Você criou painéis e relatórios. Talvez você também tenha colaborado neles com seus colegas de trabalho. Agora você deseja que outras pessoas tenham acesso a eles. Qual é a melhor maneira de distribuí-los? Nesse artigo, comparamos essas opções para colaborar e compartilhar no Power BI:
 
-Nesse artigo, comparamos essas opções para colaborar e compartilhar no Power BI:
+* Colabore com colegas de trabalho para criar relatórios e dashboards significativos em *workspaces*.
+* Agrupe esses dashboards e relatórios em *aplicativos* e distribua-os para um grupo maior ou para toda a organização.
+* Crie *conjuntos de dados compartilhados* que seus colegas de trabalho possam usar como base para seus próprios relatórios, em seus próprios workspaces.
+* Criar um *aplicativo de modelo* que você possa distribuir a usuários externos do Power BI por meio do Microsoft AppSource.
+* Compartilhe dashboards ou relatórios com algumas pessoas, por meio do serviço ou de aplicativos móveis do Power BI.
+* Imprima relatórios.
+* *Insira* relatórios em portais seguros ou sites públicos.
 
-* Colaborando com colegas de trabalho para criar relatórios e dashboards significativos em *workspaces*.
-* O agrupamento desses dashboards e relatórios em *aplicativos* e sua publicação para um grupo maior ou para toda a organização.
-* Compartilhamento de dashboards e relatórios com algumas pessoas, por meio do serviço ou de aplicativos móveis do Power BI.
-* Imprimindo relatórios.
-* Inserir relatórios em portais seguros ou sites públicos.
-
-Não importa qual opção você escolher, para compartilhar um dashboard, você precisa de uma [licença do Power BI Pro](service-features-license-type.md) ou então o conteúdo precisa estar em uma [capacidade Premium](service-premium-what-is.md). Os requisitos de licença variam para os colegas que exibem seus dashboards, dependendo da opção escolhida. As seções a seguir apresentam mais detalhes. 
+Não importa qual opção você escolher, para compartilhar seu conteúdo você precisa de uma [licença do Power BI Pro](service-features-license-type.md) ou então o conteúdo precisa estar em uma [capacidade Premium](service-premium-what-is.md). Os requisitos de licença variam para os colegas que exibem o conteúdo que você compartilha, dependendo da opção escolhida. As seções a seguir apresentam mais detalhes. 
 
 ![Aplicativos no serviço do Power BI](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
 *Aplicativos de serviço do Power BI*
 
-## <a name="collaborate-with-coworkers-in-a-workspace"></a>Colaborar com colegas de trabalho em um workspace
+## <a name="collaborate-in-a-workspace"></a>Colaborar em um workspace
 
-Quando as equipes trabalham juntas, elas precisam de acesso aos mesmos documentos para uma colaboração rápida. Em espaços de trabalho do Power BI, as equipes se reúnem para compartilhar a propriedade e o gerenciamento de seus painéis, relatórios, conjuntos de dados e pastas de trabalho. Às vezes, os usuários do Power BI organizam seus workspaces com base em estruturas organizacionais; outras vezes, eles os criam para projetos específicos. Ainda assim, outras organizações usam vários workspaces para armazenar versões diferentes de relatórios ou de dashboards que elas usam. 
+Quando as equipes trabalham juntas, elas precisam de acesso aos mesmos documentos para uma colaboração rápida. Nos workspaces do Power BI, as equipes se reúnem para compartilhar a propriedade e o gerenciamento de dashboards, relatórios, conjuntos de dados e pastas de trabalho. Às vezes, os usuários do Power BI organizam seus workspaces com base em estruturas organizacionais; outras vezes, eles os criam para projetos específicos. Ainda assim, outras organizações usam vários workspaces para armazenar versões diferentes de relatórios ou de dashboards que elas usam. 
 
-Os workspaces fornecem funções que determinam quais permissões seus colegas de trabalho têm. É possível usar essas funções para determinar quem pode gerenciar todo o workspace ou apenas fornecer conteúdo para ele.
+Os workspaces fornecem funções que determinam quais permissões seus colegas de trabalho têm. Você pode usar essas funções para determinar quem pode gerenciar todo o workspace ou editar e distribuir seu conteúdo.
 
 ![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Naturalmente, alguns usuários colocam o conteúdo no Meu workspace e o compartilham. Os workspaces são melhores para colaboração do que o Meu Workspace, porque eles oferecem a propriedade conjunta do conteúdo. Você e toda a sua equipe podem fazer atualizações facilmente ou conceder acesso aos outros. O Meu workspace é mais bem usado por indivíduos para conteúdo pessoal ou pontual.
+É comum você colocar conteúdo no Meu Workspace e compartilhá-lo. Mas os workspaces são melhores para colaboração do que o Meu Workspace, porque eles permitem a propriedade conjunta do conteúdo. Você e toda a sua equipe podem fazer atualizações facilmente ou conceder acesso aos outros. O Meu workspace é mais bem usado por indivíduos para conteúdo pessoal ou pontual.
 
 Vamos imaginar que você tem um dashboard concluído que precisa compartilhar com seus colegas. Qual é a melhor maneira de conceder acesso ao dashboard a eles? A resposta depende de vários fatores. 
 
-- Se precisam de seus colegas manter o painel atualizado ou precisam de acesso a todo o conteúdo no espaço de trabalho, considere adicioná-los ao espaço de trabalho. 
-- Se seus colegas apenas precisam ver esse painel e não todo o conteúdo no espaço de trabalho, você tem novamente alternativas. 
-- Se o dashboard fizer parte de um conjunto maior de conteúdo que você precisa distribuir para muitos colegas, então a publicação de um aplicativo provavelmente será a melhor opção. 
-- No entanto, se seus colegas precisam apenas desse dashboard, compartilhamento, em seguida, o painel pode ser a melhor solução.
+- Se os colegas precisarem manter o dashboard atualizado ou precisarem de acesso a todo o conteúdo do workspace, considere adicioná-los ao workspace. 
+- Se os colegas precisam apenas ver esse dashboard e não todo o conteúdo do workspace, você tem alternativas. Se algumas pessoas precisam apenas de um dashboard específico, o compartilhamento do dashboard pode ser a melhor solução.
+- Entretanto, se o dashboard fizer parte de um conjunto maior de conteúdo que você precisa distribuir para muitos colegas, então a publicação de um *aplicativo* provavelmente será a melhor opção.
 
-Leia mais sobre a [criação de workspaces](service-create-workspaces.md).
+O Power BI tem uma nova experiência de workspace. Leia [Criar os novos workspaces](service-create-the-new-workspaces.md) para ver como eles foram alterados. 
 
-**Você sabia?** O Power BI tem uma nova experiência de espaço de trabalho. Leia [criar novos espaços de trabalho](service-create-the-new-workspaces.md) para ver como os espaços de trabalho estão mudando. 
+## <a name="distribute-insights-in-an-app"></a>Distribuir insights em um aplicativo
 
-## <a name="distribute-data-and-insights-by-creating-an-app"></a>Distribuir dados e insights criando um aplicativo
-
-Digamos que você deseja distribuir seu dashboard para um público amplo. Você e seus colegas criaram um *workspace* e, em seguida, criaram e refinaram dashboards, relatórios e conjuntos de dados no workspace. Agora você seleciona os dashboards e relatórios desejados e os publica como um aplicativo &#151; em um grupo ou em toda a sua organização.
+Digamos que você deseja distribuir o dashboard para um público-alvo amplo da sua organização. Você e seus colegas criaram um *workspace* e, em seguida, criaram e refinaram dashboards, relatórios e conjuntos de dados no workspace. Agora você seleciona os dashboards e relatórios desejados e os publica como um aplicativo &#151; em um grupo ou em toda a sua organização.
 
 ![Ícone Publicar aplicativo](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -68,7 +65,13 @@ Após instalarem um aplicativo, eles poderão vê-lo em seu navegador ou disposi
 
 Para que seus usuários exibam seu aplicativo, eles também precisam ter uma licença do Power BI Pro ou o aplicativo precisa ser armazenado em uma capacidade do Power BI Premium. Leia [O que é o Power BI Premium?](service-premium-what-is.md) para obter detalhes.
 
-É possível publicar aplicativos para os que estão fora de sua organização também. Eles podem exibir e interagir com o conteúdo do aplicativo, mas não podem compartilhá-lo com outras pessoas.
+É possível publicar aplicativos para os que estão fora de sua organização também. Eles podem exibir e interagir com o conteúdo do aplicativo, mas não podem compartilhá-lo com outras pessoas. Agora você pode criar *aplicativos de modelo* e implantá-los para qualquer cliente do Power BI.
+
+## <a name="share-a-dataset"></a>Compartilhar um conjunto de dados
+
+Sejamos francos, algumas pessoas têm maior habilidade na criação de modelos de dados bem projetado de alta qualidade em seus relatórios. Talvez você seja essa pessoa. Toda a organização pode se beneficiar do uso dos mesmos modelos de dados bem projetados. Os *conjuntos de dados compartilhados* preenchem essa função. Quando você cria um relatório com um modelo de dados que todos devem usar, você pode salvar o relatório no serviço do Power BI e dar às pessoas certas a permissão para usá-lo. Em seguida, eles podem criar relatórios com base no seu conjunto de dados. Dessa forma, todas as pessoas baseiam os relatórios nos mesmos dados, observando a mesma "versão da verdade".
+
+Leia mais sobre [criação e uso de conjuntos de dados compartilhados](service-datasets-across-workspaces.md).
 
 ## <a name="share-dashboards-and-reports"></a>Compartilhar dashboards e relatórios
 
@@ -98,20 +101,29 @@ Também é possível [compartilhar um instantâneo de um bloco](consumer/mobile/
 
 Você pode imprimir ou salvar como PDF (ou outro formato de arquivo estático) um dashboard inteiro, um bloco do dashboard, uma página de relatório ou uma visualização do serviço do Power BI. Relatórios podem ser impressos somente com uma página por vez – não é possível imprimir o relatório inteiro ao mesmo tempo. Mais sobre como [imprimir ou salvar como um arquivo estático](consumer/end-user-print.md).
 
-## <a name="embed-reports-in-secure-portals-or-public-websites"></a>Inserir relatórios em portais seguros ou sites públicos
+## <a name="embed-reports-in-secure-portals-or-public-web-sites"></a>Inserir relatórios em portais seguros ou sites públicos
 
-Você pode inserir relatórios do Power BI nos portais ou sites em que os usuários esperam vê-los.  
+### <a name="embed-in-secure-portals"></a>Inserir em portais seguros
+
+Você pode inserir relatórios do Power BI em portais ou sites em que os usuários esperam vê-los.  
 As opções **Inserir no SharePoint Online** e **Inserção** no serviço do Power BI permitem que você insira relatórios para seus usuários internos com segurança. 
 
-- **Inserir no SharePoint Online** funciona com a web part do Power BI para o SharePoint Online. Ele fornece uma experiência de logon único com o controle sobre como o relatório será inserido. 
-- **Inserir** funciona com qualquer portal ou site que dá suporte a incorporação de conteúdo usando uma URL ou um iFrame. 
+- A opção **Inserir no SharePoint Online** funciona com a web part do Power BI para o SharePoint Online. Ela fornece uma experiência de logon único com controle de como o relatório é inserido. 
+- A opção **Inserção** funciona com qualquer portal ou site compatível com a inserção de conteúdo usando uma URL ou um iFrame. 
 
-Acordo com a opção escolhida, Power BI aplica todas as permissões e segurança de dados antes dos usuários podem ver o conteúdo. A pessoa que está exibindo o relatório precisa da licença apropriada. Saiba mais sobre [inserir no SharePoint Online](service-embed-report-spo.md) e o [inserção](service-embed-secure.md) opção no Power BI.
+Qualquer que seja a opção escolhida, o Power BI aplicará todas as permissões e a segurança de dados antes que os usuários vejam o conteúdo. A pessoa que está exibindo o relatório precisa da licença apropriada. Mais informações sobre as opções [Inserção no SharePoint Online](service-embed-report-spo.md) e [Inserção](service-embed-secure.md) no Power BI.
 
-Com **Publicar na Web**, você pode publicar relatórios do Power BI em toda a Internet inserindo elementos visuais interativos em postagens de blog, sites, mídia social e outras comunicações online, em qualquer dispositivo. Qualquer pessoa na Internet pode ver seus relatórios, e você não tem controle sobre quem pode ver o que você publicou. Eles não precisam de uma licença do Power BI. A publicação na Web só está disponível para relatórios que você pode editar. Você não pode publicar relatórios na Web se eles são compartilhados com você ou se estiverem em um aplicativo. Mais sobre a [publicação na Web](service-publish-to-web.md).
+### <a name="publish-to-public-web-sites"></a>Publicar em sites públicos
+
+Com a opção **Publicar na Web**, você pode publicar relatórios do Power BI em toda a Internet inserindo elementos visualizações interativas em postagens em blogs, sites, mídia social e outras comunicações online, em qualquer dispositivo. Qualquer pessoa na Internet pode ver seus relatórios, e você não tem controle sobre quem pode ver o que você publicou. Eles não precisam de uma licença do Power BI. A publicação na Web só está disponível para relatórios que você pode editar. Você não pode publicar relatórios na Web se eles são compartilhados com você ou se estiverem em um aplicativo. Mais sobre a [publicação na Web](service-publish-to-web.md).
 
 >[!Warning]
 >Use [Publicar na Web](service-publish-to-web.md) apenas para compartilhar o conteúdo publicamente, não internamente.
+
+## <a name="create-and-deploy-template-apps"></a>Criar e implantar aplicativos de modelo
+
+Os *aplicativos de modelo* são projetados para serem distribuídos publicamente, geralmente no Microsoft AppSource. Você cria um aplicativo e com pouco ou quase nenhum código, você pode implantá-lo para qualquer cliente do Power BI. Os clientes se conectam em seus próprios dados e criam instâncias de suas próprias contas. Leia mais sobre [aplicativos de modelo do Power BI](service-template-apps-overview.md).
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

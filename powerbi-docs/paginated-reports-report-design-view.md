@@ -1,5 +1,5 @@
 ---
-title: Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
+title: Conheça o modo de exibição Design de Relatório para relatórios paginados
 description: O modo de exibição Design de Relatório no Construtor de Relatórios é o espaço de design para a criação de relatórios paginados que podem ser publicados no serviço do Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423326"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839538"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados (versão prévia)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Conheça o modo de exibição Design de Relatório para relatórios paginados
 
-Exibição de Design do relatório no construtor de relatórios do Power BI é o espaço de design para a criação de relatórios paginados que você pode publicar o serviço do Power BI. A superfície de design fica no centro do Construtor de Relatórios, com a faixa de opções e os painéis em torno dela. A superfície de design é onde você pode adicionar e organizar os itens do seu relatório. Este artigo explica os painéis usados para adicionar, selecionar e organizar os recursos de relatório e alterar as propriedades de itens de relatório.  
+O modo de exibição de Design de Relatório no Construtor de Relatórios do Power BI é o espaço de design para a criação de relatórios paginados que podem ser publicados no serviço do Power BI. A superfície de design fica no centro do Construtor de Relatórios, com a faixa de opções e os painéis em torno dela. A superfície de design é onde você pode adicionar e organizar os itens do seu relatório. Este artigo explica os painéis usados para adicionar, selecionar e organizar os recursos de relatório e alterar as propriedades de itens de relatório.  
 
 ![Modo de exibição Design de Relatório do Construtor de Relatórios](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -109,7 +109,7 @@ A barra de status do relatório atual mostra o nome do servidor a que de relató
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[O que são os relatórios paginados no Power BI Premium? (versão prévia)](paginated-reports-report-builder-power-bi.md) 
+[O que são os relatórios paginados no Power BI Premium?](paginated-reports-report-builder-power-bi.md) 
 
   
   

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187734"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839447"
 ---
 # <a name="install-power-bi-report-server"></a>Instalar o Servidor de Relatório do Power BI
 
@@ -22,11 +22,11 @@ Saiba como instalar o Servidor de Relatório do Power BI.
 
 ## <a name="download-power-bi-report-server"></a>Fazer o download do Servidor de Relatórios do Power BI
 
-[Baixar o Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) do Centro de Download da Microsoft.
+[Baixar o Servidor de Relatórios do Power BI](https://www.microsoft.com/download/details.aspx?id=56722) no Centro de Download da Microsoft.
 
-Também é uma versão de avaliação gratuita. Sobre o [relatórios com o servidor de relatório do Power BI locais](https://powerbi.microsoft.com/report-server/) página, selecione **Baixe a avaliação gratuita**.
+Também há uma versão de avaliação gratuita. Na página [Relatórios locais com o Servidor de Relatórios do Power BI](https://powerbi.microsoft.com/report-server/), selecione **Baixar avaliação gratuita**.
 
-## <a name="before-you-install"></a>Antes de instalar
+## <a name="before-you-install"></a>Antes da instalação
 
 Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que você examine os [Requisitos de hardware e de software para a instalação do Servidor de Relatórios do Power BI](system-requirements.md).
 
@@ -35,12 +35,12 @@ Antes de instalar o Servidor de Relatórios do Power BI, é recomendável que vo
 
 ### <a name="power-bi-report-server-product-key"></a>Chave do produto (Product Key) do Servidor de Relatório do Power BI
 
-Você pode obter a chave do produto para o servidor de relatório do Power BI de duas fontes diferentes:
+Você pode obter a chave do produto (Product Key) do Servidor de Relatórios do Power BI de duas fontes diferentes:
 
 - Power BI Premium
 - SQL Server Enterprise SA (Software Assurance)
 
-Continue lendo para obter detalhes.
+Leia para mais detalhes.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -75,8 +75,8 @@ Não é necessário que um servidor do Mecanismo de Banco de Dados do SQL Server
 
     ![Edição 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Caso contrário, insira a chave do produto que você obteve no serviço do Power BI ou o Centro de serviços de licença de Volume. Para obter mais informações sobre como obter a chave do produto, consulte o [antes de instalar o](#before-you-install) seção acima.
-4. Ler e concordar com os termos de licença e condições e selecione **próxima**.
+    Caso contrário, insira uma chave do produto (Product Key) que você obteve do serviço do Power BI ou do Centro de Atendimento de Licenciamento por Volume. Para obter mais informações sobre como obter sua chave do produto (Product Key), confira a seção [Antes da instalação](#before-you-install) acima.
+4. Leia e concorde com os termos e condições de licença, em seguida, selecione **Avançar**.
 
     ![Termos de licença](media/install-report-server/pbireportserver-eula.png)
 5. É necessário ter um Mecanismo de Banco de Dados disponível para armazenar o banco de dados do servidor de relatório. Selecione **Avançar** para instalar somente o servidor de relatório.
