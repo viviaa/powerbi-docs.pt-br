@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578556"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751245"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Instalar e distribuir aplicativos de modelo em sua organização – Power BI (versão prévia)
 
-Você é um analista de Power BI? Se assim, este artigo explica como você instala *aplicativos de modelo* para se conectar a muitos dos serviços que você usa para executar seus negócios, como Salesforce, Microsoft Dynamics e Google Analytics. Você pode modificar o painel e relatórios para atender às necessidades da sua organização e, em seguida, distribuí-los aos seus colegas como uma *aplicativo*. 
+Você é um analista do Power BI? Caso seja, este artigo explica como instalar *aplicativos de modelo* para se conectar a muitos dos serviços que você usa para administrar sua empresa, como Salesforce, Microsoft Dynamics e Google Analytics. Você pode modificar o dashboard e os relatórios para atender às necessidades da sua organização e, depois, distribuí-los aos seus colegas como um *aplicativo*. 
 
 ![Aplicativos do Power BI instalados](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Caso esteja interessado em criar aplicativos de modelo para distribuí-los por conta própria, confira [Criar um aplicativo de modelo no Power BI](service-template-apps-create.md). Parceiros Power BI podem criar aplicativos do Power BI com pouca ou nenhuma codificação e implantá-los para clientes do Power BI. 
+Caso esteja interessado em criar aplicativos de modelo para distribuí-los por conta própria, confira [Criar um aplicativo de modelo no Power BI](service-template-apps-create.md). Parceiros Power BI podem criar aplicativos do Power BI com pouca ou nenhuma codificação e implantá-los em clientes do Power BI. 
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 
@@ -106,6 +106,6 @@ Depois de atualizar o aplicativo para sua organização, você estará pronto pa
 
 
 
-￼ 
+  
 
  
