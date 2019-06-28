@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051556"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418697"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper de segurança do Power BI
 
@@ -137,7 +137,7 @@ A autenticação do usuário para o serviço do Power BI consiste em uma série 
 
 A sequência de autenticação de usuário para o serviço do Power BI ocorre conforme descrito nas próximas etapas, que são ilustradas nas imagens a seguir.
 
-1. Um usuário inicia uma conexão ao serviço do Power BI de um navegador digitando o endereço do Power BI na barra de endereços (como https://app.powerbi.com) ou selecionando _Entrar_ da página de aterrissagem do Power BI https://powerbi.microsoft.com)). A conexão é estabelecida usando HTTPS e TLS 1.2, e todas as comunicações subsequentes entre o navegador e o serviço do Power BI usam HTTPS. A solicitação é enviada para o **Gerenciador de Tráfego do Azure**.
+1. Um usuário inicia uma conexão ao serviço do Power BI de um navegador digitando o endereço do Power BI na barra de endereços (como https://app.powerbi.com) ou selecionando _Entrar_ da página de aterrissagem do Power BI https://powerbi.microsoft.com) ). A conexão é estabelecida usando HTTPS e TLS 1.2, e todas as comunicações subsequentes entre o navegador e o serviço do Power BI usam HTTPS. A solicitação é enviada para o **Gerenciador de Tráfego do Azure**.
 
 2. O **Gerenciador de Tráfego do Azure** verifica o registro DNS do usuário para determinar o datacenter mais próximo em que o Power BI é implantado e responde ao DNS com o endereço IP do WFE do cluster para o qual o usuário deve ser enviado.
 
@@ -380,7 +380,7 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
 **Como os usuários se conectam e obtêm acesso a fontes de dados durante o uso do Power BI?**
 
-* **Credenciais do Power BI e credenciais de domínio:** Os usuários entram no Power BI usando um endereço de email; quando um usuário tenta se conectar a um recurso de dados, o Power BI passa o endereço de email de logon do Power BI como credenciais. Para recursos conectados ao domínio (locais ou baseados em nuvem), o email de logon é combinado com um _nome UPN_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) pelo serviço de diretório para determinar se há credenciais suficientes para permitir o acesso. Para organizações que usam endereços de email com base no trabalho para entrar no Power BI (o mesmo email que usam para fazer logon em recursos de trabalho, como _david@contoso.com_), o mapeamento pode ocorrer diretamente; para organizações que não usam endereços de email baseados no trabalho (como _david@contoso.onmicrosoft.com_), o mapeamento de diretório deve ser estabelecido para permitir o acesso a recursos locais com credenciais de logon do Power BI.
+* **Credenciais do Power BI e credenciais de domínio:** Os usuários entram no Power BI usando um endereço de email; quando um usuário tenta se conectar a um recurso de dados, o Power BI passa o endereço de email de logon do Power BI como credenciais. Para recursos conectados ao domínio (locais ou baseados em nuvem), o email de logon é combinado com um _nome UPN_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) pelo serviço de diretório para determinar se há credenciais suficientes para permitir o acesso. Para organizações que usam endereços de email com base no trabalho para entrar no Power BI (o mesmo email que usam para fazer logon em recursos de trabalho, como _david@contoso.com_ ), o mapeamento pode ocorrer diretamente; para organizações que não usam endereços de email baseados no trabalho (como _david@contoso.onmicrosoft.com_ ), o mapeamento de diretório deve ser estabelecido para permitir o acesso a recursos locais com credenciais de logon do Power BI.
 
 * **SQL Server Analysis Services e Power BI:** Para organizações que usam o SQL Server Analysis Services local, p Power BI oferece o gateway de dados local do Power BI (que é um **Gateway**, conforme mencionado nas seções anteriores).  O gateway de dados local do Power BI pode impor RLS (Segurança em Nível de Função) em fontes de dados. Para obter mais informações sobre RLS, veja **Autenticação do usuário para fontes de dados** anteriormente neste documento. Você também pode ler um artigo detalhado sobre o [Power BI Gateway](service-gateway-manage.md).
 
@@ -402,7 +402,7 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
 **E quanto à segurança baseada em função, o compartilhamento de relatórios ou dashboards e as conexões de dados? Como isso funciona em termos de acesso a dados, exibição de dashboard, acesso a relatório ou atualização?**
 
-* Para fontes de dados não habilitadas para **RLS (Segurança em Nível de Função)**, se um dashboard, relatório ou modelo de dados for compartilhado com outros usuários por meio do Power BI, os dados então estarão disponíveis para usuários com os quais eles são compartilhados para exibição e interação. O Power BI *não* autentica novamente os usuários com relação à fonte original dos dados. Depois que os dados são carregados para o Power BI, o usuário autenticado em relação aos dados de origem é responsável por gerenciar que outros usuários e grupos podem ser exibir os dados.
+* Para fontes de dados não habilitadas para **RLS (Segurança em Nível de Função)** , se um dashboard, relatório ou modelo de dados for compartilhado com outros usuários por meio do Power BI, os dados então estarão disponíveis para usuários com os quais eles são compartilhados para exibição e interação. O Power BI *não* autentica novamente os usuários com relação à fonte original dos dados. Depois que os dados são carregados para o Power BI, o usuário autenticado em relação aos dados de origem é responsável por gerenciar que outros usuários e grupos podem ser exibir os dados.
 
   Quando as conexões de dados são feitas em uma fonte de dados com capacidade para **RLS**, como uma fonte de dados do Analysis Services, apenas dados do dashboard são armazenados em cache no Power BI. Sempre que é exibido ou acessado no Power BI um relatório ou conjunto de dados que usa dados da fonte de dados compatíveis com RLS, o serviço do Power BI acessa a fonte de dados para obter os dados com base nas credenciais do usuário e, se houver permissões suficientes, os dados serão carregados no relatório ou modelo de dados para esse usuário. Se a autenticação falhar, o usuário verá um erro.
 
@@ -426,14 +426,11 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
 **Ao trabalhar com o gateway de dados local, como as chaves de recuperação são usadas e em que local são armazenadas? E quanto ao gerenciamento de credenciais seguras?**
 
-* Durante a configuração e a instalação do gateway, o administrador de digita **Chave de Recuperação** de um gateway. Essa **Chave de Recuperação** é usada para gerar os dois conjuntos de chaves muito mais fortes:
+* Durante a configuração e a instalação do gateway, o administrador de digita **Chave de Recuperação** de um gateway. Que **chave de recuperação** é usado para gerar um forte **AES** chave simétrica. Uma **RSA** chave assimétrica também é criada ao mesmo tempo.
 
-  - Uma chave assimétrica **RSA**
-  - Uma chave assimétrica **AES**
+    Essas chaves geradas (**RSA** e **AES**) são armazenadas em um arquivo localizado no computador local. Esse arquivo também é criptografado. O conteúdo do arquivo só pode ser descriptografado por aquele computador Windows em particular e somente por aquela conta de serviço de gateway específica.
 
-  Essas chaves geradas (**RSA** e **AES**) são armazenadas em um arquivo localizado no computador local. Esse arquivo também é criptografado. O conteúdo do arquivo só pode ser descriptografado por aquele computador Windows em particular e somente por aquela conta de serviço de gateway específica.
-
-  Quando um usuário insere credenciais da fonte de dados na interface do usuário do serviço do Power BI, as credenciais são criptografadas com a chave pública no navegador. O gateway criptografa novamente as credenciais (já criptografadas) com uma chave simétrica de AES antes que os dados sejam armazenados no Power BI. Com esse processo, o serviço do Power BI nunca tem acesso aos dados não criptografados.
+    Quando um usuário insere credenciais da fonte de dados na interface do usuário do serviço do Power BI, as credenciais são criptografadas com a chave pública no navegador. O gateway descriptografa as credenciais usando a chave privada do RSA e criptografa novamente com uma chave simétrica de AES antes que os dados são armazenados no serviço do Power BI. Com esse processo, o serviço do Power BI nunca tem acesso aos dados não criptografados.
 
 **Quais protocolos de comunicação são usados pelo gateway de dados local e como eles são protegidos?**
 
