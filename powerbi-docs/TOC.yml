@@ -223,14 +223,16 @@
               href: desktop-qna-in-reports.md
             - name: Painel de análise no Power BI Desktop
               href: desktop-analytics-pane.md
-            - name: Uso de insights para explicar aumentos e reduções
+            - name: Use insights para explicar aumentos e reduções
               href: desktop-insights.md
-            - name: Uso de insights para localizar onde a distribuição está diferente nos gráficos
+            - name: Use insights para localizar em que parte dos gráficos a distribuição está diferente
               href: desktop-insights-find-where-different.md
             - name: Indicadores no Power BI
               href: desktop-bookmarks.md
             - name: Usar temas de relatórios
               href: desktop-report-themes.md
+            - name: Tipos de filtros
+              href: power-bi-report-filter-types.md
             - name: Experimentar a nova experiência de filtro
               href: power-bi-report-filter-preview.md
             - name: Usar medidas rápidas
@@ -451,8 +453,7 @@
               href: service-support-options.md
             - name: Dez dicas para obter ajuda
               href: service-tips-for-finding-help.md
-        - name: |
-            Estenda o Power BI
+        - name: Estenda o Power BI
           items:
             - name: Microsoft Flow e Power BI
               href: service-flow-integration.md
@@ -524,8 +525,6 @@
               href: refresh-csv-file-onedrive.md
             - name: Cache de consulta no Power BI Premium
               href: power-bi-query-caching.md
-            - name: Solucionar problemas de atualização
-              href: refresh-troubleshooting-refresh-scenarios.md
         - name: Dashboards
           items:
             - name: Introdução aos painéis
@@ -706,6 +705,8 @@
           items:
             - name: Esqueceu sua senha para o Power BI?
               href: service-admin-forgot-your-password.md
+            - name: Não consegue entrar?
+              href: power-bi-cannot-sign-in.md
             - name: Capturar informações de diagnóstico adicionais para o Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Endereço de email alternativo para o Power BI
@@ -714,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: Office 365 dedicado - problemas conhecidos
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Solucionar problemas da Cortana
-              href: service-cortana-troubleshoot.md
-            - name: Solução de problemas de análises no Excel
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Solução de problemas do gateway de dados local
-              href: service-gateway-onprem-tshoot.md
-            - name: Solução de problemas do gateway do Power BI — pessoal
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
-            - name: Solucionando problemas de fonte de dados sem suporte para atualização
+            - name: Solucionar problemas de cenários de atualização
+              href: refresh-troubleshooting-refresh-scenarios.md
+            - name: Solucionar problemas de fonte de dados sem suporte para atualização
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Solucionando problemas da atualização agendada para Bancos de Dados SQL do Azure
+            - name: Solucionar problemas da atualização agendada para Bancos de Dados SQL do Azure
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+            - name: Solucionar problemas de erros de bloco
+              href: refresh-troubleshooting-tile-errors.md
+            - name: Solucionar problemas do gateway de dados local
+              href: service-gateway-onprem-tshoot.md
+            - name: Solucionar problemas do gateway do Power BI Gateway – Pessoal
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Análise de solução de problemas no Excel
+              href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Erro: Não foi possível localizar nenhum dado na sua pasta de trabalho do Excel'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Solucionando problemas de erros de bloco
-              href: refresh-troubleshooting-tile-errors.md
+            - name: Solucionar problemas da Cortana
+              href: service-cortana-troubleshoot.md
             - name: Como atualizar suas credenciais do pacote de conteúdo Xero se a atualização tiver falhado
               href: service-refresh-xero-credentials.md
-            - name: Não consegue entrar
-              href: power-bi-cannot-sign-in.md
         - name: Outras tarefas
           items:
             - name: Renomear conteúdo no Power BI
@@ -856,9 +857,9 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Remover uma conexão com um pacote de conteúdo
                   href: service-organizational-content-pack-disconnect.md
-        - name: Referência
-          items:
-            - name: Idiomas e países/regiões compatíveis
+    - name: Referência
+      items:
+        - name: Idiomas e países/regiões compatíveis
           href: supported-languages-countries-regions.md
     - name: Recursos
       items:
@@ -1332,7 +1333,7 @@
           href: service-gateway-personal-mode.md
         - name: Conectores personalizados
           href: service-gateway-custom-connectors.md
-        - name: Solução de problemas do gateway de dados local
+        - name: Solucionar problemas do gateway de dados local
           href: service-gateway-onprem-tshoot.md
     - name: Recursos
       items:
