@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 202fa85fa930de45f4f6838202733d8d1098256d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c039f4adc196e619dc81af38fb52cd07e89992f0
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61388735"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161204"
 ---
 # <a name="visualization-types-in-power-bi"></a>Tipos de visualização no Power BI
 ## <a name="power-bi-visualizations"></a>Visualizações do Power BI
@@ -27,7 +27,7 @@ Além disso, confira o [Microsoft AppSource](https://appsource.microsoft.com/mar
 Todas essas visualizações podem ser adicionadas aos relatórios do Power BI, especificadas em P e R e fixadas a painéis.
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Gráficos de área: básico (em camadas) e empilhado
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
+![gráficos de área](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 >[!TIP]
 >O gráfico de Área Básico baseia-se no gráfico de linhas com a área entre o eixo e a linha preenchida.
@@ -35,23 +35,23 @@ Todas essas visualizações podem ser adicionadas aos relatórios do Power BI, e
 Para obter mais informações, veja [Gráfico de área básica](power-bi-visualization-basic-area-chart.md).
 
 ### <a name="bar-and-column-charts"></a>Gráficos de barras e colunas
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
+![gráfico de barras](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
 
- ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
+ ![gráfico de colunas](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
 
 >[!TIP]
 >Gráficos de barras são o padrão para observar um valor específico entre categorias diferentes.
 
 ### <a name="cards-multi-row"></a>Cartões: linha múltipla
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
+![cartão com várias linhas](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 ### <a name="cards-single-number"></a>Cartões: número único
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
+![cartão de número](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
-Para obter mais informações, consulte [Criar um Cartão (bloco de número grande)](power-bi-visualization-card.md).
+Para obter mais informações, confira [Criar um Cartão (bloco de número grande)](power-bi-visualization-card.md).
 
 ### <a name="combo-charts"></a>Gráficos de combinação
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)
+![gráficos de combinação](media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)
 
 >[!TIP]
 >Um gráfico de combinação combina um gráfico de colunas e um gráfico de linhas. Escolha *Colunas Empilhadas e Linha* e *Colunas Agrupadas e Linha*.
@@ -59,7 +59,7 @@ Para obter mais informações, consulte [Criar um Cartão (bloco de número gran
 Para obter mais informações, veja [Gráficos de combinação no Power BI](power-bi-visualization-combo-chart.md).
 
 ### <a name="doughnut-charts"></a>Gráficos de rosca
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
+![gráfico de rosca](media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
 
 >[!TIP]
 >Gráficos de rosca são semelhantes aos Gráficos de pizza.  Eles mostram a relação das partes com um todo.
@@ -67,7 +67,7 @@ Para obter mais informações, veja [Gráficos de combinação no Power BI](powe
 Para obter mais informações, veja [Gráficos de rosca no Power BI](power-bi-visualization-doughnut-charts.md).
 
 ### <a name="funnel-charts"></a>Gráficos de funil
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
+![gráfico de funil](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
 
 >[!TIP]
 >Funis ajudam a visualizar um processo contendo estágios e itens que seguem uma sequência de um estágio para o próximo.  Use um funil quando houver um fluxo sequencial entre estágios, como um processo de vendas que começa com clientes potenciais e termina com a realização da compra.
@@ -75,7 +75,7 @@ Para obter mais informações, veja [Gráficos de rosca no Power BI](power-bi-vi
 Para obter mais informações, veja [Gráficos de funil no Power BI](power-bi-visualization-funnel-charts.md).
 
 ### <a name="gauge-charts"></a>Gráficos de medidor
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
+![gráficos de medidor radial](media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
 
 >[!TIP]
 >Exibe o status atual no contexto de uma meta.
@@ -87,10 +87,10 @@ Para obter mais informações, veja [Gráficos de medidor no Power BI](power-bi-
 
 Um gráfico de influenciador principal exibe os principais colaboradores para um resultado ou valor selecionado.
 
-Para obter mais informações, consulte [Gráficos de influenciador principal no Power BI](power-bi-visualization-influencers.md)
+Para obter mais informações, confira [Gráficos de influenciador principal no Power BI](power-bi-visualization-influencers.md)
 
 ### <a name="kpis"></a>KPIs
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
+![Gráfico KPI](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
 >[!TIP]
 >Exibe o progresso em direção a uma meta mensurável.
@@ -98,13 +98,13 @@ Para obter mais informações, consulte [Gráficos de influenciador principal no
 Para obter mais informações, veja [KPIs no Power BI](power-bi-visualization-kpi.md).
 
 ### <a name="line-charts"></a>Gráficos de linhas
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
+![gráfico de linhas](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
 
 >[!TIP]
 >Enfatizam o formato geral de uma série inteira de valores, geralmente ao longo do tempo.
 
 ### <a name="maps-basic-maps"></a>Mapas: mapas básicos
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
+![mapa básico](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
 
 >[!TIP]
 >Usados para associar informações categóricas e quantitativas a locais espaciais.
@@ -112,12 +112,12 @@ Para obter mais informações, veja [KPIs no Power BI](power-bi-visualization-kp
 Para obter mais informações, confira as [Dicas e truques para visualizações de mapa](power-bi-map-tips-and-tricks.md).
 
 ### <a name="maps-arcgis-maps"></a>Mapas: Mapas ArcGIS
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
+![Mapa ArcGiS](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 Para obter mais informações, veja [Mapas de ArcGIS no Power BI](power-bi-visualization-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Mapas: mapas preenchidos (Coropléticos)
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
+![mapa coroplético](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]
 >Quanto mais intensa a cor, maior o valor.
@@ -125,7 +125,7 @@ Para obter mais informações, veja [Mapas de ArcGIS no Power BI](power-bi-visua
 Para obter mais informações, veja [Mapas preenchidos no Power BI](power-bi-visualization-filled-maps-choropleths.md).
 
 ### <a name="maps-shape-maps"></a>Mapas: mapas de formas
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
+![mapa de formas do Texas](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
 
 >[!TIP]
 >Compara regiões por cor.
@@ -134,22 +134,37 @@ Para obter mais informações, veja [Mapas de forma no Power BI](desktop-shape-m
 
 
 ### <a name="matrix"></a>Matriz
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+![matriz](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+
+>[!TIP]
+>Uma tabela dá suporte a duas dimensões, mas uma matriz facilita significativamente a exibição dos dados entre várias dimensões – ela dá suporte a um layout em níveis. A matriz agrega automaticamente os dados e permite fazer drill down. 
 
 Para obter mais informações, veja [Visuais de matriz no Power BI](desktop-matrix-visual.md).
 
 ### <a name="pie-charts"></a>Gráficos de pizza
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+![gráficos de pizza](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
 
-Gráficos de pizza mostram a relação das partes com um todo. 
+>[!TIP]
+>Gráficos de pizza mostram a relação das partes com um todo. 
+
+### <a name="r-script-visuals"></a>Visuais de script R
+![Visuais do R](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
+
+>[!TIP]
+>Os visuais criados com scripts do R, normalmente chamados de *visuais do R*, podem apresentar formatação e análise de dados avançadas, como previsão, usando o poder da análise e da visualização avançadas do R. Os visuais do R podem ser criados no Power BI Desktop e publicados no serviço do Power BI.   
+
+Para saber mais, confira [Visuais do R no Power BI](service-r-visuals.md).
 
 ### <a name="ribbon-chart"></a>Gráfico da faixa de opções
 ![gráfico de faixa de opções](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
 
-Gráficos de faixa de opções cuja categoria de dados tem a classificação mais alta (maior valor). Gráficos de faixa de opções são eficazes para mostrar alterações na classificação, com o maior intervalo (valor) sempre exibido na parte superior de cada período.
+>[!TIP]
+>Gráficos de faixa de opções cuja categoria de dados tem a classificação mais alta (maior valor). Gráficos de faixa de opções são eficazes para mostrar alterações na classificação, com o maior intervalo (valor) sempre exibido na parte superior de cada período.
+
+Para saber mais, confira [Gráficos da Faixa de Opções no Power BI](desktop-ribbon-charts.md).
 
 ### <a name="scatter-and-bubble-charts"></a>Gráficos de Dispersão e Bolhas
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
+![gráfico de bolhas](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
 
 >[!TIP]
 >Exiba relações entre medidas quantitativas, duas de (dispersão) ou três de (bolhas) – sim ou não, em qual ordem, etc.
@@ -157,7 +172,7 @@ Gráficos de faixa de opções cuja categoria de dados tem a classificação mai
 Para obter mais informações, veja [Gráficos de dispersão no Power BI](power-bi-visualization-scatter.md).
 
 ### <a name="scatter-high-density"></a>Dispersão de alta densidade
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
+![gráficos de dispersão de alta densidade](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
 
 >[!TIP]
 >Pontos de dados demais em um visual podem sobrecarregá-lo, portanto, um algoritmo de amostragem sofisticado é usado para garantir a precisão da visualização.
@@ -165,25 +180,25 @@ Para obter mais informações, veja [Gráficos de dispersão no Power BI](power-
 Para obter mais informações, veja [Gráficos de dispersão de alta densidade no Power BI](desktop-high-density-scatter-charts.md).
 
 ### <a name="slicers"></a>Segmentações
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
+![segmentação de dados](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
 Para obter mais informações, veja [Segmentação de dados no Power BI](power-bi-visualization-slicers.md).
 
 ### <a name="standalone-images"></a>Imagens autônomas
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
+![visual de imagem autônoma](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
 Para obter mais informações, veja [Adicionar um widget de imagem a um dashboard](../service-dashboard-add-widget.md).
 
 ### <a name="tables"></a>Tabelas
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
+![tabela visual](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]
 >Trabalhe bem com comparações quantitativas entre itens em que há várias categorias.
 
-Para obter mais informações, consulte [Trabalhando com tabelas no Power BI](power-bi-visualization-tables.md).
+Para obter mais informações, confira [Trabalhando com tabelas no Power BI](power-bi-visualization-tables.md).
 
 ### <a name="treemaps"></a>Treemaps
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
+![mapa de árvore](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
 Para obter mais informações, veja [Mapas de árvore no Power BI](power-bi-visualization-treemaps.md).
 
@@ -191,7 +206,7 @@ Para obter mais informações, veja [Mapas de árvore no Power BI](power-bi-visu
 >São gráficos de retângulos coloridos, com um tamanho que representa o valor.  Eles podem ser hierárquicos, com retângulos aninhados nos retângulos principais.
 
 ### <a name="waterfall-charts"></a>Gráfico de cascata
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
+![gráfico de cascata](media/power-bi-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
 
 >[!TIP]
 >Os gráficos de cascata mostram o total em execução à medida que os valores são adicionados ou subtraídos.

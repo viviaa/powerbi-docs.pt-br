@@ -9,18 +9,20 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66838938"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345494"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Criar uma fonte de dados incorporada para relatórios paginados no serviço do Power BI
 
 Neste artigo, você aprenderá como criar e modificar uma fonte de dados incorporada para um relatório paginado no serviço do Power BI. Você define uma fonte de dados incorporada em um único relatório e a usa somente nesse relatório. Atualmente, os relatórios paginados publicados no serviço do Power BI precisam de conjuntos de dados e fontes de dados incorporadas. Eles podem se conectar às seguintes fontes de dados:
 
-- Banco de Dados SQL do Azure e SQL Data Warehouse do Azure
+- Azure Analysis Services
+- Banco de Dados SQL do Azure e 
+- SQL Data Warehouse do Azure
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -28,7 +30,6 @@ Neste artigo, você aprenderá como criar e modificar uma fonte de dados incorpo
 
 Para as seguintes fontes de dados, use a opção [Conexão do SQL Server Analysis Services](service-premium-connect-tools.md):
 
-- Azure Analysis Services
 - Conjuntos de dados do Power BI Premium
 
 Os relatórios paginados se conectam a fontes de dados locais por meio de um [gateway do Power BI](service-gateway-getting-started.md). Você configura o gateway após publicar o relatório no serviço do Power BI.
@@ -66,6 +67,30 @@ Confira [Dados de relatório no Construtor de Relatórios do Power BI](report-bu
 5.  Selecione **OK**.  
   
      A fonte de dados é exibida no painel Dados do Relatório.  
+     
+## <a name="limitations-and-considerations"></a>Limitações e considerações
+
+Os relatórios paginados que se conectam aos conjuntos de dados do Power BI seguem as regras para conjuntos de dados compartilhados no Power BI com algumas pequenas alterações.  Para que os usuários exibam corretamente os relatórios paginados usando conjuntos de dados do Power BI e garantam que a Segurança em Nível de Linha (RLS) esteja habilitada e imposta para os visualizadores, certifique-se de seguir estas regras:
+
+### <a name="classic-apps-and-app-workspaces"></a>Aplicativos clássicos e espaços de trabalho de aplicativo
+
+- .rdl no mesmo espaço de trabalho que o conjunto de dados (mesmo proprietário): Compatível
+- .rdl em um espaço de trabalho diferente daquele do conjunto de dados (mesmo proprietário): Compatível
+- .rdl compartilhado: Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados
+- Aplicativo compartilhado: Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados
+- .rdl no mesmo espaço de trabalho que o conjunto de dados (outro usuário): Compatível
+- .rdl em um espaços de trabalho diferente daquele do conjunto de dados (usuário diferente): você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados
+- Segurança em nível de função: Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados para que ele seja imposto.
+
+### <a name="new-experience-apps-and-app-workspaces"></a>Novos aplicativos e espaços de trabalho de aplicativo
+
+- .rdl no mesmo espaço de trabalho que o conjunto de dados: Compatível
+- .rdl em um espaço de trabalho diferente daquele do conjunto de dados (mesmo proprietário): Compatível
+- .rdl compartilhado: Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados
+- Aplicativo compartilhado: Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados
+- .rdl no mesmo espaço de trabalho que o conjunto de dados (outro usuário) - Compatível
+- .rdl em um espaço de trabalho diferente daquele do conjunto de dados (outro usuário): Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados
+- Segurança em nível de função: Você precisa criar permissões atribuídas a cada usuário que visualiza o relatório no nível do conjunto de dados para que ele seja imposto
 
 ## <a name="next-steps"></a>Próximas etapas
 

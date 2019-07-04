@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067547"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161118"
 ---
 # <a name="funnel-charts"></a>Gráficos de funil
 Um gráfico de funil ajuda você a visualizar um processo linear com estágios conectados sequenciais. Por exemplo, um funil de vendas que acompanha clientes pelos estágios: Oportunidade \> Oportunidade qualificada \> Cliente potencial \> Contrato \> Fechamento.  Em um relance, a forma do funil transmite a integridade do processo que você está controlando.
@@ -61,7 +61,7 @@ Essas instruções usam o Exemplo de Análise de Oportunidade. Para acompanhar, 
 2. [Converta o gráfico](power-bi-report-change-visualization-type.md) em um funil. Observe que **Estágio de Vendas** está no contêiner **Grupo** . 
 3. No painel **Campos**, selecione **Fato** \> **Contagem de Oportunidades**.
    
-    ![criar o gráfico de funil](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![criar o gráfico de funil](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Passar o mouse sobre uma barra exibe uma variedade de informações.
    
    * O nome do estágio

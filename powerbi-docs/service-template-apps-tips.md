@@ -1,22 +1,22 @@
 ---
-title: Dicas para a criação de aplicativos de modelo no Power BI (versão prévia)
+title: Dicas para a criação de aplicativos de modelo no Power BI
 description: Dicas sobre a criação de consultas, modelos de dados, relatórios e dashboards para criar ótimos aplicativos de modelo
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/26/2019
+ms.author: tebercov
+ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514858"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408347"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Dicas para a criação de aplicativos de modelo no Power BI (versão prévia)
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Dicas para a criação de aplicativos de modelo no Power BI
 
 Quando você estiver [criando o aplicativo de modelo](service-template-apps-create.md) no Power BI, uma parte dele será a logística de criação, teste e produção do workspace. Porém, a outra parte importante é, obviamente, a criação do relatório e do dashboard. Podemos dividir o processo de criação em quatro componentes principais. O trabalho nesses componentes ajuda você a criar o melhor aplicativo de modelo possível:
 
@@ -24,7 +24,7 @@ Quando você estiver [criando o aplicativo de modelo](service-template-apps-crea
 * No **modelo de dados**, você cria [relações](desktop-create-and-manage-relationships.md), [medidas](desktop-measures.md) e melhorias da P e R.  
 * As **[páginas de relatório](desktop-report-view.md)** incluem visuais e filtros para fornecer insights sobre seus dados.  
 * Os **[dashboards](consumer/end-user-dashboards.md)** e os [blocos](service-dashboard-create.md) oferecem uma visão geral dos insights incluídos.
-* Dados de exemplo tornam seu aplicativo podem ser descobertos imediatamente após a instalação.
+* Dados de amostra tornam seu aplicativo detectável imediatamente após a instalação.
 
 Talvez você esteja familiarizado com cada uma das partes como recursos existentes no Power BI. Ao criar um aplicativo de modelo, há considerações adicionais a serem feitas para cada parte. Veja cada seção abaixo para obter mais detalhes.
 
@@ -36,12 +36,10 @@ Para aplicativos de modelo, as consultas desenvolvidas no Power BI Desktop são 
 ### <a name="connect-to-your-api"></a>Conectar-se à sua API
 Para começar, você precisará se conectar à sua API por meio do Power BI Desktop para iniciar a criação das consultas.
 
-Você pode usar os Conectores de Dados que estão prontos para uso no Power BI Desktop para conectar-se à sua API. Você pode usar o Conector de Dados da Web (Obter Dados -> Web) para conectar-se ao seu conector da API REST ou do OData (Obter Dados -> Feed OData) para conectar-se ao seu feed OData. Esses conectores prontos para uso só funcionarão se a API der suporte à Autenticação Básica.
+Você pode usar os Conectores de Dados disponíveis no Power BI Desktop para conectar-se à sua API. Você pode usar o Conector de Dados da Web (Obter Dados -> Web) para conectar-se ao seu conector da API REST ou do OData (Obter Dados -> Feed OData) para conectar-se ao seu feed OData.
 
 > [!NOTE]
-> Se a API usar qualquer outro tipo de autenticação, como OAuth 2.0 ou Chave de API Web, você precisará desenvolver seu próprio Conector de Dados para permitir que o Power BI Desktop se conecte à API e se autentique nela com êxito. O conector personalizado deve ser adicionado ao serviço PBI para que ele seja acessado pelo instalador de aplicativo do modelo. <br> Para obter detalhes de como desenvolver seu próprio Conector de Dados para o aplicativo de modelo, confira a [documentação dos Conectores de Dados](https://aka.ms/DataConnectors). 
->
->
+> No momento, aplicativos de modelo não dão suporte a conectores personalizados, é recomendável explorar usando Odatafeed Auth 2.0 como uma mitigação para alguns dos casos de uso de conexão ou enviar seus conectores para certificação. Para obter detalhes sobre como desenvolver um conector e certificá-lo, verifique a [documentação Conectores de Dados](https://aka.ms/DataConnectors).
 
 ### <a name="consider-the-source"></a>Considere o código-fonte
 As consultas definem os dados que serão incluídos no modelo de dados. Dependendo do tamanho do seu sistema, essas consultas também devem incluir filtros para garantir que seus clientes estejam lidando com um tamanho gerenciável adequado ao seu cenário de negócios.
@@ -115,41 +113,41 @@ Para criar um dashboard para o aplicativo de modelo, basta carregar o PBIX por m
 * Todos os blocos de dashboard devem ter títulos/subtítulos apropriados.  
 * Considere a possibilidade de agrupamentos no dashboard para diferentes cenários, vertical ou horizontalmente.  
 
-## <a name="sample-data"></a>dados de exemplo
-Modelo de aplicativos, como parte da fase de criação de aplicativo, encapsula os dados do cache no espaço de trabalho como parte do aplicativo:
+## <a name="sample-data"></a>Dados de exemplo
+Os aplicativos de modelo, como parte da fase de criação de aplicativo, encapsula os dados do cache no espaço de trabalho como parte do aplicativo:
 
-* Permite que o instalador entender a funcionalidade e a finalidade do aplicativo antes de se conectar a dados.
-* Cria uma experiência que conduz o instalador para explorar ainda mais os recursos de aplicativo, que leva para conectar o conjunto de dados do aplicativo.
+* Permite que o instalador entenda a funcionalidade e a finalidade do aplicativo antes de se conectar a dados.
+* Cria uma experiência que conduz o instalador para explorar ainda mais os recursos do aplicativo, o que leva à conexão do conjunto de dados do aplicativo.
 
-É recomendável ter dados de exemplo de qualidade antes de criar o aplicativo. Verifique se o relatório de aplicativo e os painéis são preenchidos com dados.
+É recomendável ter dados de exemplo de qualidade antes de criar o aplicativo. Verifique se o relatório do aplicativo e os painéis estão preenchidos com dados.
 
 ## <a name="publishing-on-appsource"></a>Publicação no AppSource
-Aplicativos de modelo podem ser publicadas no AppSource, siga estas diretrizes antes de enviar seu aplicativo no AppSource:
+Os aplicativos de modelo podem ser publicados no AppSource. Siga estas diretrizes antes de enviar seu aplicativo para o AppSource:
 
-* Certifique-se de criar um aplicativo de modelo com o envolvimento de dados de exemplo que podem ajudar o instalador a entender o que o aplicativo pode fazer (relatório vazio e o painel não aprovados).
-Aplicativos de modelo dão suporte a aplicativos somente de dados de exemplo, certifique-se de marcar a caixa de seleção de aplicativo estático. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Tem instruções para a equipe de validação a seguir que inclui as credenciais e parâmetros que são necessárias para se conectar aos dados.
-* Aplicativo deve incluir um ícone de aplicativo no Power BI e em sua oferta CPP. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Verifique se criou um aplicativo de modelo com o envolvimento de dados de exemplo que pode ajudar o instalador a entender a função do aplicativo (relatório vazio e painel não são aprovados).
+Os aplicativos de modelo dão suporte a aplicativos somente de dados de exemplo. Marque a caixa de seleção de aplicativo estático. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Forneça à a equipe de validação instruções sobre credenciais e parâmetros necessários para se conectar aos dados.
+* O aplicativo deve incluir um ícone de Aplicativo no Power BI e em sua oferta CPP. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Página de aterrissagem configurada. [Saiba mais](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Certifique-se de seguir a documentação [oferta de aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-* No caso de um painel for parte de seu aplicativo, certifique-se de não está vazio.
-* Instalar o aplicativo usando o link do aplicativo antes de enviá-lo, verifique se você pode conectar o conjunto de dados e a experiência de aplicativo é como planejado.
-* Antes de carregar bpix no espaço de trabalho de aplicativo do modelo, certifique-se de descarregar todas as conexões desnecessárias.
-* Siga o Power BI [práticas recomendadas para relatórios e visuais de design](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) para atingir o máximo impacto sobre os usuários e obter a aprovação para distribuição.
+* Siga a documentação [Oferta de aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* Caso um painel faça parte do seu aplicativo, verifique se ele não está vazio.
+* Instale o aplicativo usando o link do aplicativo antes de enviá-lo, verifique se você pode conectar o conjunto de dados e a experiência de aplicativo conforme planejado.
+* Antes de carregar bpix no espaço de trabalho do aplicativo de modelo, descarregue todas as conexões desnecessárias.
+* Siga as [Práticas recomendadas para criação de relatórios e visuais](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) do Power BI para alcançar o máximo impacto sobre os usuários e obter a aprovação para distribuição.
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
 | Recurso | Limitações conhecidas |
 |---------|---------|
 |Conteúdo:  Conjuntos de dados   | É necessário que exatamente um conjunto de dados esteja presente. Apenas conjuntos de dados criados no Power BI Desktop (arquivos .pbix) são permitidos. <br>Sem suporte: Conjuntos de dados de outros aplicativos de modelo, conjuntos de dados entre workspaces, relatórios paginados (arquivos .rdl) e pastas de trabalho do Excel |
-|Conteúdo: Dashboards | Os blocos em tempo real não são permitidos (em outras palavras, não há suporte para envio por push ou conjuntos de dados de streaming) |
+|Conteúdo: Dashboards | Blocos em tempo real não são permitidos (em outras palavras, não há suporte para conjunto de dados de streaming ou push) |
 |Conteúdo: Fluxos de dados | Sem suporte: Fluxos de dados |
 |Conteúdo de arquivos | Apenas arquivos PBIX são permitidos. <br>Sem suporte: arquivos .rdl (relatórios paginados) e pastas de trabalho do Excel   |
-| Fontes de dados | Fontes de dados compatíveis com a atualização de Dados Agendada na nuvem são permitidas. <br>Sem suporte: <li> DirectQuery</li><li>Conexões dinâmicas (sem o Azure AS)</li> <li>Fontes de dados (gateways pessoais e corporativos não são suportados) no local</li> <li>Em tempo real (não há suporte para o conjunto de dados por push)</li> <li>Modelos compostos</li></ul> |
+| Fontes de dados | Fontes de dados compatíveis com a atualização de Dados Agendada na nuvem são permitidas. <br>Sem suporte: <li> DirectQuery</li><li>Conexões dinâmicas (sem o Azure AS)</li> <li>Fontes de dados locais (não há suporte para gateways pessoais e empresariais)</li> <li>Em tempo real (não há suporte para conjunto de dados de push)</li> <li>Modelos compostos</li></ul> |
 | Conjunto de dados: entre workspaces | Conjuntos de dados entre workspaces não são permitidos  |
 | Parâmetros de consulta | Sem suporte: Parâmetros do tipo "Qualquer" ou "Binário" bloqueiam a operação de atualização do conjunto de dados |
 | Visuais personalizados | Somente há suporte para visuais personalizados disponíveis publicamente. Não há suporte para [visuais personalizados organizacionais](power-bi-custom-visuals-organization.md) |
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[O que são os aplicativos de modelo do Power BI? (versão prévia)](service-template-apps-overview.md)
+[O que são os aplicativos de modelo do Power BI?](service-template-apps-overview.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2412fe72d62549277001b64121ecf9db2ea5502
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239563"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408547"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Adicionar uma coluna personalizada no Power BI Desktop
 Você pode adicionar facilmente uma nova coluna personalizada de dados ao modelo usando o **Editor de Consultas** no **Power BI Desktop**. É possível criar e renomear sua coluna personalizada usando botões fáceis para criar [fórmulas M](https://msdn.microsoft.com/library/mt270235.aspx) que definam a coluna personalizada. A fórmula M tem um [conjunto de conteúdo de referência de função abrangente](https://msdn.microsoft.com/library/mt779182.aspx). 
@@ -65,9 +65,8 @@ Você também pode criar uma coluna personalizada (e modificar qualquer etapa de
 O **Editor Avançado** lhe dá total controle sobre sua consulta.
 
 ## <a name="next-steps"></a>Próximas etapas
-Existem outras maneiras de criar uma coluna personalizada, incluindo a criação de uma coluna com base nos exemplos fornecidos no **Editor de Consultas**. Consulte o seguinte artigo para obter mais informações sobre como criar colunas personalizadas com base em exemplos:
+Existem outras maneiras de criar uma coluna personalizada, incluindo a criação de uma coluna com base nos exemplos fornecidos no **Editor de Consultas**. Confira o seguinte artigo para obter mais informações sobre como criar colunas personalizadas com base em exemplos:
 
 * [Adicionar uma coluna de um exemplo no Power BI Desktop](desktop-add-column-from-example.md)
-* [Introdução à linguagem de fórmula M](https://msdn.microsoft.com/library/mt270235.aspx)
-* [Referência da função M](https://msdn.microsoft.com/library/mt779182.aspx)  
+* [Referência do Power Query M](/powerquery-m/power-query-m-reference)  
 

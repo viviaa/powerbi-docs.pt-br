@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389177"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389739"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Criar visuais do R no serviço do Power BI
 O serviço do Power BI dá suporte à exibição e interação com visuais criados com scripts do R. Os visuais criados com scripts do R, normalmente chamados de *visuais do R*, podem apresentar formatação e análise de dados avançadas, como previsão, usando o poder da análise e da visualização avançadas do R.
@@ -64,7 +64,7 @@ Como outro exemplo, a imagem a seguir mostra a mensagem de erro que aparece quan
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Licenças
-Os visuais do R exigem uma licença [Power BI Pro](../service-self-service-signup-for-power-bi.md) para serem renderizados em relatórios, na atualização, no filtro e no filtro cruzado. Para obter mais informações sobre licenças do Power BI Pro e como elas diferem das licenças gratuitas, veja [Conteúdo do Power BI Pro – o que é isto?](../service-premium-what-is.md)
+Os visuais do R exigem uma licença [Power BI Pro](../service-self-service-signup-for-power-bi.md) para serem renderizados em relatórios, na atualização, no filtro e no filtro cruzado. Para obter mais informações sobre licenças do Power BI Pro e como elas diferem das licenças gratuitas, veja [Conteúdo do Power BI Pro – o que é isto?](../service-admin-purchasing-power-bi-pro.md)
 
 Os usuários da versão gratuita do Power BI só poderão consumir blocos compartilhados com eles nos workspaces Premium. Veja [Comprando o Power BI Pro](../service-admin-purchasing-power-bi-pro.md) para obter mais informações.
 
@@ -73,7 +73,7 @@ A tabela a seguir descreve as funcionalidades dos visuais do R com base em licen
 
 |  |Criar visuais do R no Power BI Desktop  | Criar relatórios de serviço PBI com visuais do R |Exibir visuais R em relatórios  | Exibir blocos do R em dashboards |
 |---------|---------|---------|---------|--------|
-|**Convidado** (Power BI Embedded)     |  Não relevante|  Não relevante       | Não compatível  | Não relevante |
+|**Convidado** (Power BI Embedded)     |  Compatível|  Não compatível      | Compatível apenas na capacidade Premium/Azure  | Compatível apenas na capacidade Premium/Azure |
 |**Locatário não gerenciado** (domínio não verificado) | Compatível | Não compatível |  Não compatível |Compatível (cenário B2B) |
 |**Locatário gerenciado** com licença gratuita    |  Compatível       |  Não compatível       |    Compatível apenas na capacidade Premium    | Compatível |
 **Locatário gerenciado** com licença Pro     |   Compatível      | Compatível      | Compatível    |Compatível|

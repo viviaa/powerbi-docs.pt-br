@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7adcfeec771796aa9fe322512f8ca8584559cea0
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829378"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264495"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Traga suas próprias chaves de criptografia para o Power BI (versão prévia)
 
@@ -27,18 +27,17 @@ O BYOK torna mais fácil atender aos requisitos de conformidade que especificam 
 
 ## <a name="data-source-and-storage-considerations"></a>Considerações sobre armazenamento e fonte de dados
 
-Para usar o BYOK, você deve fazer upload dos dados no serviço do Power BI em um arquivo do Power BI Desktop (PBIX). Ao conectar-se a fontes de dados no Power BI Desktop, você deve especificar um modo de armazenamento da importação. Não é possível usar o BYOK nos seguintes cenários:
+Para usar o BYOK, você deve fazer upload dos dados no serviço do Power BI em um arquivo do Power BI Desktop (PBIX). Não é possível usar o BYOK nos seguintes cenários:
 
-- DirectQuery
 - Conexão dinâmica do Analysis Services
 - Pastas de trabalho do Excel (a menos que os dados sejam primeiramente importados no Power BI Desktop)
 - Conjuntos de dados por push
 
-Na próxima seção, você aprenderá como configurar o Azure Key Vault, que é o local no qual você armazena as chaves de criptografia para o BYOK.
+BYOK aplica-se apenas ao conjunto de dados associado ao arquivo PBIX, não aos caches de resultado da consulta para blocos e visuais.
 
 ## <a name="configure-azure-key-vault"></a>Configurar o Azure Key Vault
 
-O Azure Key Vault é uma ferramenta para armazenar e acessar segredos com segurança, como chaves de criptografia. Você pode usar um cofre de chaves existente para armazenar chaves de criptografia ou pode criar um novo especificamente para uso com o Power BI.
+Nesta seção, você aprenderá como configurar o Azure Key Vault, uma ferramenta para armazenar e acessar segredos com segurança, como chaves de criptografia. Você pode usar um cofre de chaves existente para armazenar chaves de criptografia ou pode criar um novo especificamente para uso com o Power BI.
 
 As instruções nesta seção pressupõem conhecimento básico do Azure Key Vault. Para obter mais informações, veja [O que é o Azure Key Vault?](/azure/key-vault/key-vault-whatis). Configure o cofre de chaves da seguinte maneira:
 
@@ -80,13 +79,13 @@ As instruções nesta seção pressupõem conhecimento básico do Azure Key Vaul
 
 ### <a name="soft-delete-option"></a>Opção de exclusão reversível
 
-É recomendável que você habilite a [exclusão reversível](/azure/key-vault/key-vault-ovw-soft-delete) no cofre de chaves para proteção contra perda de dados em caso de exclusão acidental da chave ou do cofre de chaves. Você deve usar o [PowerShell para habilitar a propriedade de "exclusão reversível"](/azure/key-vault/key-vault-soft-delete-powershell) no cofre de chaves porque essa opção ainda não está disponível no portal do Azure.
+É recomendável que você habilite a [exclusão reversível](/azure/key-vault/key-vault-ovw-soft-delete) no cofre de chaves para proteção contra perda de dados em caso de exclusão acidental da chave ou do cofre de chaves. Você precisa usar o [PowerShell para habilitar a propriedade de "exclusão reversível"](/azure/key-vault/key-vault-soft-delete-powershell) no cofre de chaves porque essa opção ainda não está disponível no portal do Azure.
 
 Com o Azure Key Vault configurado corretamente, você está pronto para habilitar o BYOK em seu locatário.
 
 ## <a name="enable-byok-on-your-tenant"></a>Habilitar o BYOK em seu locatário
 
-Habilite o BYOK no nível do locatário com o PowerShell inserindo as chaves de criptografia que você criou e armazenou no Azure Key Vault no seu locatário do Power BI. Em seguida, atribua essas chaves de criptografia por capacidade Premium para criptografar o conteúdo na capacidade.
+Habilite o BYOK no nível do locatário com o [PowerShell](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt.Admin) inserindo as chaves de criptografia que você criou e armazenou no Azure Key Vault no seu locatário do Power BI. Em seguida, atribua essas chaves de criptografia por capacidade Premium para criptografar o conteúdo na capacidade.
 
 ### <a name="important-considerations"></a>Considerações importantes
 
@@ -98,35 +97,39 @@ Antes de habilitar o BYOK, tenha as seguintes considerações em mente:
 
 ### <a name="enable-byok"></a>Habilitar o BYOK
 
-Para habilitar o BYOK, você deve ser um administrador de locatário do serviço do Power BI, conectado usando o cmdlet `Connect-PowerBIServiceAccount`. Em seguida, use `Add-PowerBIEncryptionKey` para habilitar o BYOK, conforme mostrado no exemplo a seguir:
+Para habilitar o BYOK, você deve ser um administrador de locatário do serviço do Power BI, conectado usando o cmdlet `Connect-PowerBIServiceAccount`. Em seguida, use [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) para habilitar o BYOK, conforme mostrado no exemplo a seguir:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
-O cmdlet aceita que três parâmetros de opção que afetam a criptografia para as capacidades atuais e futuras. Por padrão, nenhuma das opções é definida:
+O cmdlet aceita dois parâmetros de opção que afetam a criptografia para as capacidades atuais e futuras. Por padrão, nenhuma das opções é definida:
 
 - `-Activate`: Indica que essa chave será usada para todas as capacidades existentes no locatário.
 
 - `-Default`: Indica que essa chave agora é o padrão para todo o locatário. Quando você cria uma nova capacidade, a capacidade herda essa chave.
 
-- `-DefaultAndActivate`: Indica que essa chave será usada para todas as capacidades existentes, bem como para novas capacidades.
+Se você especificar `-Default`, todas as capacidades criadas neste locatário, neste ponto, serão criptografadas usando a chave que você especificar (ou uma chave padrão atualizada). Não é possível desfazer a operação padrão, portanto, você perde a capacidade de criar uma capacidade Premium que não usa o BYOK em seu locatário.
 
-Se você especificar `-Default` ou `-DefaultAndActivate`, todas as capacidades criadas neste locatário, neste ponto, serão criptografadas usando a chave que você especificar (ou uma chave padrão atualizada). Não é possível desfazer a operação padrão, portanto, você perde a capacidade de criar uma capacidade Premium que não usa o BYOK em seu locatário.
-
-Você tem controle sobre como usar o BYOK em seu locatário. Por exemplo, para criptografar uma capacidade única, chame `Add-PowerBIEncryptionKey` sem `-Activate`, `-Default` ou `-DefaultAndActivate`. Em seguida, chame `Set-PowerBICapacityEncryptionKey` para a capacidade do local em que você deseja habilitar o BYOK.
+Você tem controle sobre como usar o BYOK em seu locatário. Por exemplo, para criptografar uma capacidade única, chame `Add-PowerBIEncryptionKey` sem `-Activate` ou `-Default`. Em seguida, chame `Set-PowerBICapacityEncryptionKey` para a capacidade do local em que você deseja habilitar o BYOK.
 
 ## <a name="manage-byok"></a>Gerenciar o BYOK
 
 O Power BI fornece cmdlets adicionais para ajudar a gerenciar o BYOK em seu locatário:
 
-- Use `Get-PowerBIEncryptionKey` para obter a chave que seu locatário está usando atualmente:
+- Use [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) para obter a chave que uma capacidade está usando atualmente:
+
+    ```powershell
+    Get-PowerBICapacity -Scope Organization -ShowEncryptionKey
+    ```
+
+- Use [`Get-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiencryptionkey) para obter a chave que seu locatário está usando atualmente:
 
     ```powershell
     Get-PowerBIEncryptionKey
     ```
 
-- Use `Get-PowerBIWorkspaceEncryptionStatus` para ver se os conjuntos de dados em um workspace são criptografados e se o seu status de criptografia está em sincronia com o workspace:
+- Use [`Get-PowerBIWorkspaceEncryptionStatus`](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus) para ver se os conjuntos de dados em um espaço de trabalho são criptografados e se o seu status de criptografia está em sincronia com o espaço de trabalho:
 
     ```powershell
     Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
@@ -134,13 +137,13 @@ O Power BI fornece cmdlets adicionais para ajudar a gerenciar o BYOK em seu loca
 
     Observe que a criptografia está habilitada no nível de capacidade, mas você obtém o status de criptografia no nível do conjunto de dados para o workspace especificado.
 
-- Use `Set-PowerBICapacityEncryptionKey` para atualizar a chave de criptografia para a capacidade do Power BI:
+- Use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) para atualizar a chave de criptografia para a capacidade do Power BI:
 
     ```powershell
     Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
     ```
 
-- `Use Switch-PowerBIEncryptionKey` para mudar (ou _girar_) a chave usada no momento para criptografia. O cmdlet simplesmente atualiza o `-KeyVaultKeyUri` para uma chave `-Name`:
+- Use [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) para alternar (ou _girar_) a versão da chave usada para criptografia. O cmdlet simplesmente atualiza o `-KeyVaultKeyUri` para uma chave `-Name`:
 
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'

@@ -1,22 +1,22 @@
 ---
-title: Criar aplicativos de modelo no Power BI (versão prévia)
+title: Criar aplicativos de modelo no Power BI
 description: Como criar aplicativos de modelo no Power BI que podem ser distribuídos para qualquer cliente do Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: maggies
-ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751199"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264555"
 ---
-# <a name="create-a-template-app-in-power-bi-preview"></a>Criar um aplicativo de modelo no Power BI (versão prévia)
+# <a name="create-a-template-app-in-power-bi"></a>Criar um aplicativo de modelo no Power BI
 
 Os novos *aplicativos de modelo* do Power BI permitem que os parceiros do Power BI criem aplicativos do Power BI com pouca ou nenhuma codificação e implante-os para qualquer cliente do Power BI.  Este artigo contém instruções passo a passo para a criação de um aplicativo de modelo do Power BI.
 
@@ -31,20 +31,7 @@ Estes são os requisitos para a criação de um aplicativo de modelo:
 - Uma [licença do Power BI Pro](service-self-service-signup-for-power-bi.md)
 - Uma [instalação do Power BI Desktop](desktop-get-the-desktop.md) (opcional)
 - Familiaridade com os [conceitos básicos do Power BI](service-basic-concepts.md)
-- Permissões para criar um aplicativo de modelo. Confira o [portal de administração do Power BI, configurações de Aplicativo de modelo](service-admin-portal.md#template-apps-settings-preview) para obter mais detalhes.
-
-## <a name="enable-app-developer-mode"></a>Habilitar o modo de desenvolvedor de aplicativos
-
-Para criar um aplicativo de modelo que pode ser distribuído para outros locatários do Power BI, você precisa estar no modo de Desenvolvedor de Aplicativos. Caso contrário, você está apenas criando um aplicativo para os consumidores do Power BI em sua própria organização.
-
-1. Abra o serviço do Power BI em um navegador.
-2. Acesse **Configurações** > **Geral** > **Desenvolvedor** > **Habilitar modo de desenvolvimento de aplicativos de modelo**.
-
-    ![Habilitar aplicativos de modelo](media/service-template-apps-create/power-bi-dev-template-app.png)
-
-    Se essa opção não for exibida, contate o administrador do Power BI para que ele conceda [permissões de desenvolvimento de aplicativos de modelo](service-admin-portal.md#template-apps-settings-preview) no portal de administração.
-
-3. Selecione **Aplicar**.
+- Permissões para compartilhar um aplicativo de modelo publicamente. Confira o [portal de administração do Power BI, configurações de Aplicativo de modelo](service-admin-portal.md#template-apps-settings) para obter mais detalhes.
 
 ## <a name="create-the-template-app-workspace"></a>Criar o workspace do aplicativo de modelo
 
@@ -54,9 +41,9 @@ Para criar um aplicativo de modelo que pode ser distribuído para outros locatá
 
     ![Criar workspace do aplicativo](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Em **Criar um workspace do aplicativo**, em **Visualizar workspaces aprimorados**, selecione **Experimentar agora**.
+2. Em **Criar espaço de trabalho de aplicativo**, selecione **Atualizar para novo**.
 
-    ![Experimentar os novos workspaces](media/service-template-apps-create/power-bi-try-now-new-workspace.png)
+    ![Experimentar os novos workspaces](media/service-template-apps-create/power-bi-upgrade-new.png)
 
 3. Insira um nome, uma descrição (opcional) e a imagem de logotipo (opcional) para o workspace do aplicativo.
 
@@ -70,13 +57,13 @@ Para criar um aplicativo de modelo que pode ser distribuído para outros locatá
 
 ## <a name="create-the-content-in-your-template-app"></a>Criar o conteúdo no aplicativo de modelo
 
-Assim como ocorre com um workspace comum do aplicativo do Power BI, a próxima etapa é criar o conteúdo no workspace.  Nesta versão prévia dos aplicativos de modelo, damos suporte a apenas um de cada tipo: um conjunto de dados, um relatório e um dashboard.
+Assim como ocorre com um workspace comum do aplicativo do Power BI, a próxima etapa é criar o conteúdo no workspace.  
 
 - [Crie o conteúdo do Power BI](power-bi-creator-landing.md) no workspace do aplicativo.
 
 Caso esteja usando parâmetros no Power Query, verifique se eles têm um tipo bem definido (por exemplo, Texto). Não há suporte para os tipos Qualquer e Binário.
 
-O artigo [Dicas para a criação de aplicativos de modelo no Power BI (versão prévia)](service-template-apps-tips.md) traz sugestões a serem consideradas ao criar relatórios e dashboards para o aplicativo de modelo.
+O artigo [Dicas para a criação de aplicativos de modelo no Power BI](service-template-apps-tips.md) traz sugestões a serem consideradas ao criar relatórios e painéis para o aplicativo de modelo.
 
 ## <a name="create-the-test-template-app"></a>Criar o aplicativo de modelo de teste
 
@@ -174,10 +161,10 @@ Vamos percorrer os estágios:
 10. Quando estiver pronto para promover o aplicativo à pré-produção para testes adicionais fora do locatário, volte ao painel **Release Management** e selecione **Promover aplicativo**. 
 
     ![Promover aplicativo à pré-produção](media/service-template-apps-create/power-bi-template-app-promote.png)
-
     >[!NOTE]
     > Quando o aplicativo é promovido, ele se torna disponível publicamente fora da sua organização.
 
+    Se essa opção não for exibida, contate o administrador do Power BI para que ele conceda [permissões de desenvolvimento de aplicativos de modelo](service-admin-portal.md#template-apps-settings) no portal de administração.
 11. Selecione **Promover** para confirmar sua escolha.
 12. Copie essa nova URL para compartilhamento fora do locatário para teste. Esse link também é aquele que você enviará para iniciar o processo de distribuição do aplicativo no AppSource ao criar uma [nova oferta do Portal do Cloud Partner](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Envie somente links de pré-produção para Portal do Cloud Partner. Somente depois que o aplicativo for aprovado e receber notificação de que está publicado no AppSource, você poderá promover esse pacote para produção no Power BI.
 13. Quando o aplicativo estiver pronto para produção ou compartilhamento por meio do AppSource, volte ao painel **Gerenciamento de Versão** e selecione **Promover aplicativo** ao lado de **Pré-produção**.
@@ -188,25 +175,6 @@ Vamos percorrer os estágios:
     ![Aplicativo em produção](media/service-template-apps-create/power-bi-template-app-production.png)
 
 Para disponibilizar o aplicativo amplamente para milhares de usuários do Power BI no mundo, recomendamos que você o envie ao AppSource. Confira a [oferta do Aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) para obter mais detalhes.
-
-## <a name="update-your-app"></a>Atualizar o aplicativo
-
-Agora que o aplicativo está em produção, você poderá recomeçar na fase de teste, sem interromper o aplicativo em produção.
-
-1. No painel **Gerenciamento de versão**, selecione **Criar aplicativo**.
-2. Volte ao processo de criação do aplicativo.
-3. Depois de definir **Identidade Visual**, **Conteúdo**, **Controle** e **Acesso**, selecione novamente **Criar aplicativo**.
-4. Selecione **Fechar** e volte a **Gerenciamento de versão**.
-
-   Você verá que tem duas versões agora: A versão em produção e uma nova versão em teste.
-
-    ![Duas versões de um aplicativo de modelo](media/service-template-apps-create/power-bi-template-app-2-versions.png)
-
-5. Quando estiver pronto para promover o aplicativo à pré-produção para testes adicionais fora do locatário, volte ao painel Release Management e selecione **Promover aplicativo** ao lado de **Teste**.
-6. Seu link agora está ativo. Envie-o novamente para o Portal do Cloud Partner, seguindo as etapas em [atualização de oferta do Aplicativo do Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-
->[!NOTE]
->Promova seu aplicativo para o estágio de produção somente depois que seu aplicativo for aprovado pelo Portal do Cloud Partner e você o publicou.
 
 ## <a name="next-steps"></a>Próximas etapas
 

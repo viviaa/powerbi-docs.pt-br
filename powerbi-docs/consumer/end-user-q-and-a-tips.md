@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048124"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408183"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Dicas para fazer perguntas na P e R do Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Palavras e terminologia reconhecida pela P e R
-Esta lista de palavras-chave na página não é abrangente.  A melhor maneira de ver se o Power BI reconhece uma palavra-chave é testá-la digitando-a na caixa de perguntas.  Se a palavra ou o termo estiver esmaecido, o Power BI não o reconhece.
+A lista de palavras-chave nesta página não é abrangente.  A melhor maneira de ver se o Power BI reconhece uma palavra-chave é testá-la digitando-a na caixa de perguntas.  Se a palavra ou o termo estiver esmaecido, o Power BI não o reconhece.
 
-A lista abaixo usa o presente do indicativo, mas, na maioria dos casos, todos os tempos verbais são reconhecidos. Por exemplo, "é" inclui: **são**, **foi**, **foram**, **será**, **tem**, **têm**, **tinha**, **terão**, **teve**, **fazem**, **faz**, **fez**.  Além disso, "classifica" inclui **classificou** e **classificando**.  Além disso, o Power BI reconhece e inclui as versões singular e plural de uma palavra. 
+A lista abaixo usa o presente do indicativo, mas, na maioria dos casos, todos os tempos verbais são reconhecidos. Por exemplo, "é" inclui: **são**, **foi**, **foram**, **será**, **tem**, **têm**, **tinha**, **terão**, **teve**, **fazem**, **faz**, **fez**.  Além disso, "classifica" inclui **classificou** e **classificando**.  O Power BI também reconhece e inclui as versões singular e plural de uma palavra. 
 
 > [!NOTE]
 > P e R também está disponível no [aplicativo do Microsoft Power BI para iOS nos dispositivos iPod Touch, iPhones e iPads](mobile/mobile-apps-ios-qna.md).
@@ -41,7 +41,7 @@ A lista abaixo usa o presente do indicativo, mas, na maioria dos casos, todos os
 |     |         |         |
 |**Conjunções**     |  e, ou, cada um de, com, versus, mas, nem, juntamente com, além de       |         
 |          |         |
-|**Contrações**     |  P e R reconhece quase todas as contrações, é só experimentar.  Aqui estão alguns exemplos: da/do, daquele, daquela, daquilo, dele, dela, dentre, desse/deste, dessa/desta, disso/disto, na/no, naquele, naquela          |
+|**Contrações**     |  P e R reconhece quase todas as contrações, é só experimentar.  Aqui estão alguns exemplos: não fiz, não tenho, ele fez, ele é, ele não é, isso é, ela vai, eles fizeram, não eram, quem é, não vai, não iria          |
 |        |         |
 |**Datas**     |       O Power BI reconhece a maioria dos termos de data (dia, semana, mês, ano, trimestre, década, etc.) e datas escritas em vários formatos diferentes (veja abaixo). O Power BI também reconhece as seguintes palavras-chave: MonthName, Dias 1 a 31, década. Exemplos: 3 de janeiro de 1995, 3 janeiro 1995, 3 jan 1995, 03 jan 95, 3 de janeiro, janeiro de 1995, jan 1995, 1995/01, 01/95, nomes de meses         |
 |        |         |
@@ -62,27 +62,27 @@ A lista abaixo usa o presente do indicativo, mas, na maioria dos casos, todos os
 |**Intervalo**     |      maior que, mais que, acima de, superior a, >, menos que, menor que, abaixo de, sob, <, pelo menos, não menor que, >=, no máximo, não mais que, <=, em, entre, no intervalo de, a partir de, posterior a, anterior a, após, em, às, depois, antes de, desde, com início em, com término em           |
 |        |         |
 **Vezes**  |am, pm, horas, em ponto, meio-dia, meia-noite, hora, minuto, segundo, hh:mm:ss  |
-|  |  Exemplos: 22h, 10pm, 22h35, 10:35:15pm, 22h35min15s, 10 da noite, meio-dia, meia-noite, hora, minuto, segundo.  |
+|  |  Exemplos: 22h, 22h35, 22h35min15s, 10 da noite, meio-dia, meia-noite, hora, minuto, segundo.  |
 |  |  |
 |**N superior**     |     (ordem, classificação): superior, inferior, o maior, o menor, o primeiro, o último, o próximo, o mais recente, o mais antigo, o mais novo            |
 |        |         |
-|**Tipos de visual**     |  todos os tipos de visual nativos do Power BI.  Se esta for uma opção no painel Visualizações, você poderá incluí-la em sua pergunta.  A exceção são [visuais personalizados](../power-bi-custom-visuals.md) que você adicionou manualmente ao painel Visualização.  |
+|**Tipos de visual**     |  todos os tipos de visual nativos do Power BI.  Se esta for uma opção no painel Visualizações, você poderá incluí-la em sua pergunta.  A exceção a esta regra são [visuais personalizados](../power-bi-custom-visuals.md) que você adicionou manualmente ao painel Visualização.  |
 |  |  Exemplo: mostrar distritos por mês e vendas total como um gráfico de barras               |
 |        |         |
 |**Palavras interrogativas (relação, qualificada)**  | quando, onde, qual, quem, quanto, quantos, quantas vezes, com que frequência, qual valor, quantidade, número, valor, quanto tempo, o que                |
 
 ## <a name="qa-helps-you-phrase-the-question"></a>A P e R ajuda a formular a pergunta
-A P e R faz todo o possível para entender e responder à pergunta que está sendo feita. Ela faz isso de várias maneiras. Para todos esses, é possível aceitar a ação completa, a ação parcial ou não aceitá-la. Ao digitar sua pergunta, a P e R:
+A P e R faz todo o possível para entender e responder à pergunta que está sendo feita. Tenta entender de várias maneiras. Para todas essas frases, é possível aceitar a ação completa, a ação parcial ou não aceitá-la. Ao digitar sua pergunta, a P e R:
 
-* preenche automaticamente palavras e perguntas. Ela usa várias estratégias, incluindo o preenchimento automático de palavras reconhecidas e perguntas usadas anteriormente que retornaram respostas válidas. Se houver mais de uma opção de preenchimento automático disponível, elas serão apresentadas em uma lista suspensa.
+* preenche automaticamente palavras e perguntas. Ela usa várias estratégias, incluindo o preenchimento automático de palavras reconhecidas, perguntas armazenadas e perguntas usadas anteriormente que retornaram respostas válidas. Se houver mais de uma opção de preenchimento automático disponível, elas serão apresentadas em uma lista suspensa.
 * corrige a ortografia.
-* fornece uma visualização da resposta na forma de uma visualização. A visualização é atualizada conforme você digita e edita a pergunta (ela não aguarda até que você pressione Enter).
+* fornece uma visualização da resposta na forma de um visual. O visual é atualizado conforme você digita e edita a pergunta (ele não aguarda até que você pressione Enter).
 * sugere termos de substituição do(s) conjunto(s) de dados subjacente(s) quando você move o cursor de volta para a caixa de pergunta.
 * reformula a pergunta com base nos dados do(s) conjunto(s) de dados subjacente(s). A P e R substitui as palavras usadas por sinônimos do(s) conjunto(s) de dados subjacente(s). Ao ler a reformulação, você sabe se a P e R entendeu sua pergunta ou não. 
 * esmaece as palavras que não são entendidas.
 
 ## <a name="dont-stop-now"></a>Não parar agora
-Depois que a P e R exibir os resultados, é só conversar! Use os recursos interativos da visualização e das P e R para descobrir mais informações.
+Depois que a P e R exibir os resultados, é só conversar! Use os recursos interativos do visual e da P e R para descobrir mais informações.
 
 ## <a name="next-steps"></a>Próximas etapas
 Voltar a [P e R no Power BI](end-user-q-and-a.md)  

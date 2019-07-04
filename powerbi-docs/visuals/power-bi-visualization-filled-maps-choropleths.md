@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839827"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299345"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Mapas coropléticos no Power BI
 Um mapa coroplético usa sombreamento ou tonalidade ou padrões para exibir como um valor difere na proporção em uma localização geográfica ou região.  Exiba rapidamente essas diferenças relativas com sombreamento que varia de claro (menos frequente/inferior) para escuro (mais frequente/mais).    
@@ -31,7 +31,7 @@ Você ou seu administrador talvez precise atualizar o firewall para permitir o a
 - https://platform.bing.com/geo/spatial/v1/public/Geodata    
 - https://www.bing.com/api/maps/mapcontrol
 
-Para obter mais informações sobre os dados enviados ao Bing e ver dicas sobre como aumentar seu sucesso com o geocódigo, consulte [Dicas e truques para visualizações de mapa](power-bi-map-tips-and-tricks.md).
+Para obter mais informações sobre os dados enviados ao Bing e ver dicas sobre como aumentar seu sucesso com o geocódigo, confira [Dicas e truques para visualizações de mapa](power-bi-map-tips-and-tricks.md).
 
 ## <a name="when-to-use-a-filled-map"></a>Quando usar um mapa coroplético
 Mapas coropléticos são uma ótima opção:
@@ -70,10 +70,10 @@ Neste vídeo, Kim cria um mapa básico e o converte em um mapa coroplético.
 1. No painel Campos, selecione o campo **Área geográfica** \> **Estado**.    
 
    ![marca de seleção amarela ao lado de Estado](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Converta o gráfico](power-bi-report-change-visualization-type.md) em um mapa coroplético. Observe que o **Estado** agora está no contêiner **Local**. O Bing Maps usa o campo no contêiner **Local** para criar o mapa.  O local pode ser uma variedade de locais válidos: países, estados, condados, cidades, CEPs ou outros códigos postais, etc. O Bing Maps fornece formas de mapa coroplético para locais em todo o mundo. Sem uma entrada válida no Local, o Power BI não pode criar o mapa coroplético.  
+2. [Converta o gráfico](power-bi-report-change-visualization-type.md) em um mapa coroplético. Observe que o **Estado** agora está no contêiner **Local**. O Bing Maps usa o campo no contêiner **Local** para criar o mapa.  O local pode ser uma variedade de locais válidos: países, estados, condados, cidades, CEPs ou outros códigos postais, etc. O Bing Maps fornece formas de mapa coroplético para locais em todo o mundo. Sem uma entrada válida no Local, o Power BI não pode criar o mapa coroplético.  
 
    ![modelos com o ícone para o mapa coroplético realçado](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Filtre o mapa para exibir somente os Estados Unidos.
+3. Filtre o mapa para exibir somente os Estados Unidos.
 
    a.  Na parte inferior do painel Visualizações, procure a área **Filtros** .
 
@@ -83,21 +83,24 @@ Neste vídeo, Kim cria um mapa básico e o converte em um mapa coroplético.
    c.  Coloque uma marca de seleção ao lado de **Todos** e remova a marca de seleção ao lado de **AK**.
 
    ![Lista suspensa Estado com as opções Todos e AK não selecionadas](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Selecione **SalesFact** \> **Sentimento** para adicioná-la à seção **Saturação de cores** também. O campo na **Saturação de cores** controla bem o sombreamento do mapa.  
-   ![Sentimento no campo Saturação de cores](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. O mapa coroplético é sombreado em verde e vermelho, sendo que vermelho representa os números de sentimento inferiores e verde representando os sentimentos superiores, mais positivos.  Aqui, destacamos o estado do Wyoming (WY) e vemos que o Sentimento é muito bom, 74.  
-   ![caixa de diálogo preta mostrando o estado e o sentimento](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Salve o relatório](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>Ajustar a formatação de cor
-O Power BI fornece muito controle sobre a aparência de seu mapa coroplético.
-1. Selecione o ícone de rolo de pintura para abrir o painel Formatação.
+4. Selecione o ícone de rolo de tinta para abrir o painel Formatação e escolha **Cores de dados**.
 
-    ![Painel Formatação](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Painel Formatação mostrando a opção Cores de dados](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Selecione **Cores de dados** para exibir as opções de cor.
-3. Defina as cores Mínima e Máxima como amarela e azul. E adicione os valores Mínimo e Máximo, com base em seus dados. Familiarize-se com esses controles até obter a aparência desejada. 
+5. Selecione os três pontos verticais e escolha **Formatação condicional**.
 
-    ![cores não divergentes](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Botão de formatação condicional de cores de dados](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Use a tela **Cor padrão – Cores de dados** para determinar como seu mapa coroplético será sombreado. As opções disponíveis para você incluem em qual campo basear o sombreamento e como aplicar o sombreamento. Neste exemplo, estamos usando o campo **SalesFact** > **Sentimento** e definindo o valor mais baixo para sentimento como vermelho e o valor mais alto como verde. Os valores que ficam entre o máximo e o mínimo serão sombreados de vermelho e verde. A ilustração na parte inferior da tela mostra o intervalo de cores que serão usados. 
+
+    ![Painel Cor padrão com Sentimento selecionado](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. O mapa coroplético é sombreado em verde e vermelho, sendo que vermelho representa os números de sentimento inferiores e verde representando os sentimentos superiores, mais positivos.  Para exibir detalhes adicionais, arraste um campo para o espaço Dicas de ferramenta.  Aqui, adicionei **Lacuna de Sentimento** e destaquei o estado de Idaho (ID), e vi que essa lacuna de sentimento está baixa, em 6.
+   ![mapa coroplético mostrando as dicas de ferramenta de Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Salve o relatório](../service-report-save.md).
+
+O Power BI fornece muito controle sobre a aparência de seu mapa coroplético. Familiarize-se com esses controles de cores de dados até obter a aparência desejada. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Realce e filtragem cruzada
 Para obter informações sobre como usar o painel Filtros, veja [Adicionar um filtro a um relatório](../power-bi-report-add-filter.md).

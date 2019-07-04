@@ -1,6 +1,6 @@
 ---
-title: Obter uma assinatura de relatórios e dashboards para você e outras pessoas
-description: Saiba como obter para você e seus colegas uma assinatura de um instantâneo enviado por email de um relatório ou um dashboard do Power BI.
+title: Assinar relatórios e dashboards
+description: Saiba como assinar um instantâneo enviado por email de um relatório ou de um painel do Power BI.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497963"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408512"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Assinar um relatório ou dashboard no serviço do Power BI 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Assinar um relatório ou painel no serviço do Power BI 
 Nunca foi tão fácil manter-se atualizado sobre seus dashboards e relatórios mais importantes. Assine as páginas de relatório e os dashboards mais importantes para você, e o Power BI enviará um email com um instantâneo para sua caixa de entrada. Informe ao Power BI a frequência com que deseja receber os emails: diária, semanal ou quando os dados forem atualizados. Você pode até mesmo definir um horário específico para o Power BI enviar os emails ou executá-lo agora.  
 
 O instantâneo e o email usarão o idioma definido nas configurações do Power BI (confira [Idiomas e países/regiões com suporte para o Power BI](../supported-languages-countries-regions.md)). Se nenhum idioma for definido, o Power BI usará o idioma de acordo com a configuração de localidade no navegador atual. Para obter ou definir sua preferência de idioma, selecione o ícone de engrenagem ![ícone de engrenagem](./media/end-user-subscribe/power-bi-settings-icon.png) > **Configurações > Geral > Idioma**. 
@@ -29,7 +29,7 @@ Quando você receber o email, ele incluirá um link para "acessar o relatório o
 
 
 ## <a name="requirements"></a>Requisitos
-A **Criação** de assinaturas é um recurso do Power BI Pro.   
+**Criar** uma assinatura por conta própria exige uma licença do Power BI Pro. Os usuários que exibem conteúdo em um espaço de trabalho ou aplicativo Premium também podem assinar conteúdo localizado lá, mesmo sem uma licença do Power BI Pro. **Assinar outras** só está disponível para o proprietário do painel. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Assine um dashboard ou uma página de relatório
 Se você estiver assinando um dashboard ou um relatório, o processo será semelhante. O mesmo botão permite que você assine os dashboards e relatórios do serviço do Power BI.
@@ -41,15 +41,13 @@ Se você estiver assinando um dashboard ou um relatório, o processo será semel
    
    ![Ícone Assinar](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Janela Assinar](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![Janela Assinar](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     A tela à esquerda é exibida quando você está em um dashboard e seleciona **Assinar**. A tela à direita é exibida quando você está em uma página de relatório e seleciona **Assinar**. Para assinar mais de uma página em um relatório, selecione **Adicionar outra assinatura** e selecione uma página diferente. 
 
 4. Use o controle deslizante amarelo para ativar e desativar a assinatura.  Definir o controle deslizante como Desativado não exclui a assinatura. Para excluir a assinatura, selecione o ícone de cesto de lixo.
 
-4. Seu endereço de email é adicionado automaticamente ao campo **Assinar**. Para obter uma assinatura para outras pessoas em sua organização, adicione seus endereços de email aqui também. 
-
-5. Outra opção é preencher os detalhes da mensagem de email. 
+5. Outra opção é adicionar os detalhes da mensagem de email ou o assunto. 
 
 5. Selecione uma **Frequência** para sua assinatura.  Você pode escolher Diária, Semanal ou Após a atualização de dados (Diária).  Para receber o email de assinatura somente em determinados dias, selecione **Semanal** e escolha em quais dias você gostaria de recebê-lo.  Por exemplo, se você quiser receber o email de assinatura somente em dias úteis, selecione **Semanal** como a sua frequência e desmarque as caixas Sáb e Dom.   
 
@@ -59,7 +57,7 @@ Se você estiver assinando um dashboard ou um relatório, o processo será semel
 
 8. Para examinar a sua assinatura e testá-la, selecione **Executar agora**.  Isso envia o email a você imediatamente. 
 
-8. Se tudo estiver correto, selecione **Salvar e fechar** para salvar a assinatura. Você e seus colegas com assinaturas receberão um email e um instantâneo do dashboard ou do relatório de acordo com o agendamento definido. Todas as assinaturas com a frequência definida para **Após a atualização de dados** somente enviarão um email após a primeira atualização agendada naquele dia.
+8. Se tudo estiver correto, selecione **Salvar e fechar** para salvar a assinatura. Você receberá um email e um instantâneo do painel ou do relatório no agendamento que definir. Todas as assinaturas com a frequência definida para **Após a atualização de dados** somente enviarão um email após a primeira atualização agendada naquele dia.
    
    ![instantâneo de email de dashboard](media/end-user-subscribe/power-bi-subscribe-email.png)
    

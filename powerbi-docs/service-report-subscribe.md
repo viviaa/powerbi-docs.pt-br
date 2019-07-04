@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498078"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264630"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Obtenha uma assinatura para você e outras pessoas de relatórios e dashboards no serviço do Power BI
 
@@ -28,8 +28,12 @@ Você só pode criar assinaturas no serviço do Power BI. Você receberá um ema
 
 ## <a name="requirements"></a>Requisitos
 
-- A **Criação** de assinaturas é um recurso do Power BI Pro.
-- Você não precisa editar permissões para o conteúdo (dashboard ou relatório) para criar uma assinatura para si próprio, mas precisa ter permissões de edição para criar uma para outra pessoa. 
+A **criação** de uma assinatura pode ser feita por:
+
+- Usuários com uma licença do Power BI Pro
+- Os usuários que exibem conteúdo em um espaço de trabalho ou aplicativo Premium também podem assinar conteúdo localizado lá, mesmo sem uma licença do Power BI Pro.
+
+Você não precisa editar permissões para o conteúdo (dashboard ou relatório) para criar uma assinatura para si próprio, mas precisa ter permissões de edição para criar uma para outra pessoa. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Assine um dashboard, uma página de relatório ou um relatório paginado
 
@@ -87,7 +91,6 @@ Uma assinatura será encerrada se a licença Pro expirar, se o proprietário exc
 ## <a name="considerations-and-troubleshooting"></a>Considerações e solução de problemas
 
 * Os dashboards com mais de 25 blocos fixos ou 4 páginas de relatório dinâmico fixas podem não ser renderizados totalmente nos emails de assinatura enviados aos usuários.  As assinaturas de dashboards que ultrapassam esse número de blocos não são bloqueadas. No entanto, elas serão consideradas sem suporte se você encontrar erros. Considere modificá-las de acordo com isso para se enquadrarem em um intervalo compatível.
-* Esta hora refere-se ao momento em que o trabalho de assinatura é iniciado. Pode levar alguns minutos até que o email seja entregue à sua caixa de entrada em alguns cenários.
 * Em raras ocasiões, as assinaturas de email podem levar mais de quinze minutos para serem entregues aos destinatários. Caso isso aconteça, recomendamos a execução da atualização de dados e da assinatura de email em momentos diferentes para garantir a entrega em tempo hábil. Se o problema persistir, contate o suporte do Power BI.
 * Para assinaturas de email do dashboard, se os blocos tiverem a RLS (segurança em nível de linha) aplicada, esses blocos não serão exibidos.  
 * Para assinaturas de email do relatório, se o conjunto de dados usar a RLS, será possível criar uma assinatura para você mesmo. Não é possível obter uma assinatura para outras pessoas de um relatório com a RLS (segurança em nível de linha) aplicada.
