@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389546"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418644"
 ---
 # <a name="power-bi-webinars"></a>Webinars do Power BI
 
@@ -22,11 +22,7 @@ Registre-se para os próximos webinars ao vivo ou assista a nossas sessões grav
 
 ## <a name="upcoming-webinars"></a>Próximos webinars
 
-Registre-se para ouvir especialistas do Power BI e participar de sessões ao vivo de P e R.
-
-**Power BI: Como obter insights de seus dados de RH de jornada de trabalho**
-<br>por Iman Eftekhari, Julia Paton do Agile Analytics e Shahram Karimi do QBE Insurance
-<br>[Registre-se para assistir em 27 de junho, das 13h30 às 14h30 PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Nenhum webinar agendado ainda. Volte em breve para saber se há eventos futuros.
 
 >[Próximos webinars na comunidade do Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Assista a sessões gravadas a qualquer momento
 
 ### <a name="partner-solutions-series"></a>Série de soluções de parceiros ###
 [Assista a esta série](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: Como obter insights de seus dados de RH de jornada de trabalho**
+<br>por Iman Eftekhari, Julia Paton do Agile Analytics e Shahram Karimi do QBE Insurance
+<br>[Registre-se e assista agora](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Resultados vantajosos tanto para fabricantes de bens de consumo quanto varejistas**
 <br>por Liz McCreesh da Thorogood
