@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039216"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418778"
 ---
 # <a name="data-refresh-in-power-bi"></a>Atualizar dados no Power BI
 
@@ -34,7 +34,7 @@ Para entender como o Power BI atualiza os dashboards, relatórios e conjuntos de
 
 ### <a name="storage-modes-and-dataset-types"></a>Modos de armazenamento e tipos de conjuntos de dados
 
-Um conjunto de dados do Power BI pode operar de um dos modos a seguir para acessar dados de uma variedade de fontes de dados. Para mais informações, confira [Modo de armazenamento no Power BI Desktop](desktop-storage-mode.md).
+Um conjunto de dados do Power BI pode operar de um dos modos a seguir para acessar dados de uma variedade de fontes de dados. Para mais informações, veja o [modo de Armazenamento no Power BI Desktop](desktop-storage-mode.md).
 
 - Modo de importação
 - Modo DirectQuery
@@ -234,7 +234,7 @@ Há duas opções para configurar um gateway de dados de modo a dar suporte à m
 
 ![Atualizar usando o cluster de gateway](media/refresh-data/refresh-gateway-cluster.png)
 
-Se você marcar a caixa de seleção **Permitir que as fontes de dados de nuvem do usuário sejam atualizadas por meio deste cluster de gateway** na configuração do gateway, como mostrado na captura de tela acima, o Power BI poderá usar a configuração que o usuário definiu para a fonte de nuvem em **Credenciais da fonte de dados** nas configurações do conjunto de dados. Isso pode ajudar a reduzir a sobrecarga da configuração do gateway. Por outro lado, se quiser ter mais controle sobre as conexões que o gateway estabelece, você não deverá marcar esta caixa de seleção. Nesse caso, você precisa adicionar uma definição de fonte de dados explícita para cada fonte de nuvem a que deseja dar suporte ao seu gateway. Também é possível marcar a caixa de seleção e adicionar definições explícitas de fonte de dados para suas fontes de nuvem a um gateway. Nesse caso, o gateway usa as definições de fonte de dados para todas as fontes correspondentes.
+Se você habilitar a caixa de seleção **Permitir que as fontes de dados de nuvem do usuário sejam atualizadas por meio deste cluster de gateway na configuração do gateway**, como mostrado na captura de tela acima, o Power BI poderá usar a configuração que o usuário definiu para a fonte de nuvem em **Credenciais da fonte de dados** nas configurações do conjunto de dados. Isso pode ajudar a reduzir a sobrecarga da configuração do gateway. Por outro lado, se quiser ter mais controle sobre as conexões que o gateway estabelece, você não deverá marcar esta caixa de seleção. Nesse caso, você precisa adicionar uma definição de fonte de dados explícita para cada fonte de nuvem a que deseja dar suporte ao seu gateway. Também é possível marcar a caixa de seleção e adicionar definições explícitas de fonte de dados para suas fontes de nuvem a um gateway. Nesse caso, o gateway usa as definições de fonte de dados para todas as fontes correspondentes.
 
 ### <a name="configuring-query-parameters"></a>Configurando parâmetros de consulta
 
@@ -272,7 +272,7 @@ Na seção **Atualização agendada**, você define a frequência e os slots de 
 
 ![Configurar a atualização agendada](media/refresh-data/configure-scheduled-refresh.png)
 
-Após a configuração de um agendamento de atualização, a página de configurações do conjunto de dados informa o horário da próxima atualização, como na captura de tela acima. Se você quiser atualizar os dados mais cedo, por exemplo, para testar sua configuração de gateway e fonte de dados, execute uma atualização sob demanda usando a opção Atualizar agora no menu de conjunto de dados no painel de navegação esquerdo. Atualizações sob demanda não afetam o horário da próxima atualização agendada, mas são contabilizadas com relação ao limite de atualizações diárias, conforme explicado anteriormente neste artigo.
+Após a configuração de um agendamento de atualização, a página de configurações do conjunto de dados informa o horário da próxima atualização, como na captura de tela acima. Se você quiser atualizar os dados mais cedo, por exemplo, para testar sua configuração de gateway e fonte de dados, execute uma atualização sob demanda usando a opção **Atualizar agora** no menu de conjunto de dados no painel de navegação esquerdo. Atualizações sob demanda não afetam o horário da próxima atualização agendada, mas são contabilizadas com relação ao limite de atualizações diárias, conforme explicado anteriormente neste artigo.
 
 Observe também que o horário de atualização configurado talvez não seja o horário exato em que o Power BI iniciará o próximo processo agendado. O Power BI inicia as atualizações agendadas com base no melhor esforço. O objetivo é iniciar a atualização dentro de 15 minutos do slot de horário agendado, mas um atraso de até uma hora poderá ocorrer se o serviço não puder alocar os recursos necessários mais cedo.
 
@@ -283,7 +283,7 @@ Observe também que o horário de atualização configurado talvez não seja o h
 
 Por padrão, o Power BI envia notificações de falha de atualização por email para o proprietário do conjunto de dados para que ele possa agir de maneira ágil no caso de problemas de atualização. O Power BI também lhe envia uma notificação quando o serviço desabilita seu agendamento devido a falhas consecutivas. A Microsoft recomenda que você deixe a caixa de seleção **Enviar-me emails de notificação de falha na atualização** habilitada.
 
-Observe que o Power BI não apenas envia notificações de falhas de atualização, mas também quando o serviço pausa uma atualização agendada devido à inatividade. Após dois meses, se nenhum usuário tiver visitado nenhum dashboard ou relatório criado com base no conjunto de dados, o Power BI considerará o conjunto de dados inativo. Nesta situação, o Power BI envia uma mensagem de email ao proprietário do conjunto de dados indicando que o serviço desabilitou o agendamento de atualização do conjunto de dados. Veja na captura de tela a seguir um exemplo de notificação.
+Observe que o Power BI não apenas envia notificações de falhas de atualização, mas também quando o serviço pausa uma atualização agendada devido à inatividade. Após dois meses, se nenhum usuário tiver visitado nenhum dashboard ou relatório criado com base no conjunto de dados, o Power BI considerará o conjunto de dados inativo. Nesta situação, o Power BI envia uma mensagem de email ao proprietário do conjunto de dados indicando que o serviço de agendar atualização do conjunto de dados está em pausa. Veja na captura de tela a seguir um exemplo de notificação.
 
 ![Email de atualização em pausa](media/refresh-data/email-paused-refresh.png)
 
