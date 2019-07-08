@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5c93a50ce481c5fad899c1911b30100dca7cb841
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264495"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498966"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Traga suas próprias chaves de criptografia para o Power BI (versão prévia)
 
@@ -103,13 +103,22 @@ Para habilitar o BYOK, você deve ser um administrador de locatário do serviço
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
 
+Para adicionar várias chaves, execute `Add-PowerBIEncryptionKey` com valores diferentes para -`-Name` e `-KeyVaultKeyUri`. 
+
 O cmdlet aceita dois parâmetros de opção que afetam a criptografia para as capacidades atuais e futuras. Por padrão, nenhuma das opções é definida:
 
-- `-Activate`: Indica que essa chave será usada para todas as capacidades existentes no locatário.
+- `-Activate`: Indica que essa chave será usada para todas as capacidades existentes no locatário que ainda não estão criptografadas.
 
 - `-Default`: Indica que essa chave agora é o padrão para todo o locatário. Quando você cria uma nova capacidade, a capacidade herda essa chave.
 
-Se você especificar `-Default`, todas as capacidades criadas neste locatário, neste ponto, serão criptografadas usando a chave que você especificar (ou uma chave padrão atualizada). Não é possível desfazer a operação padrão, portanto, você perde a capacidade de criar uma capacidade Premium que não usa o BYOK em seu locatário.
+> [!IMPORTANT]
+> Se você especificar `-Default`, todas as capacidades criadas no locatário, neste ponto, serão criptografadas usando a chave que você especificar (ou uma chave padrão atualizada). Não é possível desfazer a operação padrão, portanto, você perde a capacidade de criar uma capacidade Premium em seu locatário que não usa o BYOK.
+
+Depois de habilitar o BYOK em seu locatário, use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) para definir a chave de criptografia para uma ou mais capacidades do Power BI:
+
+```powershell
+Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
+```
 
 Você tem controle sobre como usar o BYOK em seu locatário. Por exemplo, para criptografar uma capacidade única, chame `Add-PowerBIEncryptionKey` sem `-Activate` ou `-Default`. Em seguida, chame `Set-PowerBICapacityEncryptionKey` para a capacidade do local em que você deseja habilitar o BYOK.
 
@@ -136,12 +145,6 @@ O Power BI fornece cmdlets adicionais para ajudar a gerenciar o BYOK em seu loca
     ```
 
     Observe que a criptografia está habilitada no nível de capacidade, mas você obtém o status de criptografia no nível do conjunto de dados para o workspace especificado.
-
-- Use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) para atualizar a chave de criptografia para a capacidade do Power BI:
-
-    ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-    ```
 
 - Use [`Switch-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) para alternar (ou _girar_) a versão da chave usada para criptografia. O cmdlet simplesmente atualiza o `-KeyVaultKeyUri` para uma chave `-Name`:
 

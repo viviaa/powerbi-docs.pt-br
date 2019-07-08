@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418778"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561816"
 ---
 # <a name="data-refresh-in-power-bi"></a>Atualizar dados no Power BI
 
@@ -177,6 +177,8 @@ A Microsoft recomenda usar um gateway de dados corporativos em vez de um gateway
 Conectar um conjunto de dados a um gateway corporativo é relativamente simples se você é um administrador de gateway. Com permissões de administrador, você pode atualizar imediatamente o gateway e adicionar fontes de dados ausentes, se necessário. De fato, você pode adicionar uma fonte de dados ausente ao seu gateway diretamente na página de configurações do conjunto de dados. Expanda o botão de alternância para exibir as fontes de dados e selecione o link **Adicionar ao gateway**, como mostrado na captura de tela a seguir. Se você não for um administrador do gateway, use as informações de contato exibidas para enviar uma solicitação a um administrador do gateway para adicionar a definição de fonte de dados necessária.
 
 ![Adicionar ao gateway](media/refresh-data/add-to-gateway.png)
+
+Verifique se você mapeou a definição de fonte de dados correta para sua fonte de dados. Como ilustra a captura de tela acima, os administradores de gateway podem criar várias definições em um único gateway se conectando à mesma fonte de dados, cada um com credenciais diferentes. No exemplo mostrado, um proprietário de conjunto de dados do departamento de vendas escolheria a definição de fonte de dados de vendas de AdventureWorksProducts, enquanto um proprietário de conjunto de dados no departamento de suporte mapearia o conjunto de dados para definição de fonte de dados de suporte do AdventureWorksProducts. Se os nomes de definição de fonte de dados não forem intuitivos, entre em contato com seu administrador do gateway para esclarecer qual definição escolher.
 
 > [!NOTE]
 > Um conjunto de dados só pode usar uma conexão de gateway. Em outras palavras, não é possível acessar fontes de dados locais usando várias conexões de gateway. Dessa forma, você precisa adicionar todas as definições de fonte de dados necessárias ao mesmo gateway.

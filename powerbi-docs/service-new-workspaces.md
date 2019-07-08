@@ -1,5 +1,5 @@
 ---
-title: Organizar o trabalho em novos espaços de trabalho – Power BI
+title: Organizar o trabalho em novos espaços de trabalho no Power BI
 description: Saiba mais sobre novos espaços de trabalho, coleções de painéis e relatórios criados para oferecer métricas-chave para sua organização.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345534"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418668"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organizar o trabalho em novos espaços de trabalho no Power BI
 
@@ -135,7 +135,7 @@ Alguns recursos funcionam de forma diferente dos workspaces atuais nos novos wor
 - Os membros podem ou não compartilhar novamente: substituídos pela função Colaborador
 - Workspaces somente leitura: Em vez de conceder aos usuários o acesso somente leitura a um espaço de trabalho, atribua aos usuários uma função de Visualizador que permite acesso somente leitura semelhante ao conteúdo de um espaço de trabalho.
 - Os usuários sem uma licença do Pro poderão acessar o espaço de trabalho se ele estiver em uma capacidade Power BI Premium, mesmo se os usuários tiverem somente a função de Visualizador.
-- Para permitir que os usuários com a função de Visualizador exportem dados, verifique se eles têm a permissão Criar nos conjuntos de dados no espaço de trabalho.
+- Para permitir que os usuários com a função de Visualizador exportem dados, verifique se eles têm a permissão Criar nos conjuntos de dados no espaço de trabalho. Leia mais sobre a [Permissão Criar em conjuntos de dados](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Nenhum botão **Sair do workspace**.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
