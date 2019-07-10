@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137252"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67499005"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Introdução ao aplicativo móvel do Power BI em dispositivos iOS
 O aplicativo Microsoft Power BI para iOS no iPhone, iPad ou iPod Touch oferece a experiência móvel do BI para Power BI, Servidor de Relatórios do Power BI e Reporting Services. Exiba e interaja com os dashboards de sua empresa localmente e na nuvem em qualquer lugar, com acesso móvel dinâmico e habilitado para toque. Explore os dados em dashboards e compartilhe com seus colegas em mensagens de email ou de texto. Além disso, mantenha atualizado com seus dados mais recentes em seu [Apple Watch](mobile-apple-watch.md).  
@@ -33,7 +33,7 @@ Descubra as [novidades nos aplicativos móveis do Power BI](mobile-whats-new-in-
 ## <a name="download-the-app"></a>Baixar o aplicativo
 [Baixe o aplicativo iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Baixe o aplicativo iOS") na Apple App Store para seu iPhone, iPad ou iPod Touch.
 
-Você pode executar o aplicativo do Power BI para iOS no iPhone 5 e posterior, com iOS 10 ou posterior. Você também pode executá-lo em um iPad ou iPod Touch com iOS 10 ou posterior. 
+Você pode executar o aplicativo do Power BI para iOS em qualquer dispositivo com iOS 11 ou posterior. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Inscreva-se no serviço do Power BI
 Se ainda não se inscreveu, acesse [powerbi.com](https://powerbi.microsoft.com/get-started/) e, em **Power BI – Colaboração e compartilhamento em nuvem**, selecione **Experimentar gratuitamente**.

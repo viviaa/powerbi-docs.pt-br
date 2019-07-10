@@ -9,14 +9,14 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448416"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468087"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Banco de Dados SQL do Azure com DirectQuery
 
@@ -26,12 +26,12 @@ Com o DirectQuery, as consultas serão enviadas de volta para o Banco de Dados S
 
 **Observações:**
 
-* Especifique o nome totalmente qualificado do servidor ao estabelecer a conexão (consulte abaixo para obter mais detalhes)
-* Garanta que as regras de firewall para o banco de dados estejam configuradas para "[Permitir acesso aos serviços do Azure](https://msdn.microsoft.com/library/azure/ee621782.aspx)"
-* Toda ação, como selecionar uma coluna ou adicionar um filtro, enviará uma consulta de volta ao banco de dados
-* Os blocos são atualizados a cada hora (a atualização não precisa ser agendada). Isso pode ser ajustado nas Configurações avançadas quando você se conectar.
-* P e R não estão disponíveis para conjuntos de dados do DirectQuery
-* Alterações de esquema não são aplicadas automaticamente
+* Especifique o nome do servidor totalmente qualificado ao estabelecer a conexão (consulte abaixo para obter mais detalhes).
+* Garanta que as regras de firewall para o banco de dados estejam configuradas para "[Permitir acesso aos serviços do Azure](https://msdn.microsoft.com/library/azure/ee621782.aspx)".
+* Toda ação, como selecionar uma coluna ou adicionar um filtro, enviará uma consulta de volta ao banco de dados.
+* Os blocos são atualizados a cada hora (a atualização não precisa ser agendada). Você pode ajustar a frequência de atualização nas Configurações avançadas quando você se conectar.
+* P e R não estão disponíveis para conjuntos de dados do DirectQuery.
+* As alterações de esquema não são selecionadas automaticamente.
 
 Essas restrições e observações podem mudar conforme continuamos a aprimorar as experiências. As etapas para conectar são detalhadas abaixo.
 
@@ -40,13 +40,13 @@ Essas restrições e observações podem mudar conforme continuamos a aprimorar 
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop e DirectQuery
 
-Para se conectar ao Banco de Dados SQL do Azure usando DirectQuery, você precisará usar o Power BI Desktop. Essa abordagem fornece mais flexibilidade e funcionalidades adicionais. Os relatórios criados com o Power BI Desktop podem ser publicados no serviço do Power BI. Você pode aprender mais sobre como se conectar ao [Banco de Dados SQL do Azure usando DirectQuery](desktop-use-directquery.md) dentro do Power BI Desktop.
+Para se conectar ao Banco de Dados SQL do Azure usando DirectQuery, você precisa usar o Power BI Desktop. Essa abordagem fornece mais flexibilidade e funcionalidades adicionais. Os relatórios criados com o Power BI Desktop podem ser publicados no serviço do Power BI. Você pode aprender mais sobre como se conectar ao [Banco de Dados SQL do Azure usando DirectQuery](desktop-use-directquery.md) dentro do Power BI Desktop.
 
-## <a name="finding-parameter-values"></a>Localizando Valores de Parâmetro
+## <a name="find-parameter-values"></a>Encontrar valores de parâmetros
 
-Seu nome do servidor totalmente qualificado e o nome do banco de dados podem ser encontrados no Portal do Azure.
+É possível encontrar seu nome do servidor totalmente qualificado e o nome do banco de dados no portal do Azure.
 
-![Nova atualização do portal do Azure](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Atualização do novo portal do Azure](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
 ![Atualização do portal do Azure](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
 

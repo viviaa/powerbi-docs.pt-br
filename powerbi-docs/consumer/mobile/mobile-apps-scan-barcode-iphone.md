@@ -1,5 +1,5 @@
 ---
-title: Digitalizar um código de barras com um iPhone no aplicativo móvel do Power BI
+title: Digitalizar um código de barras no aplicativo móvel do Power BI
 description: A digitalização de códigos de barras no mundo real o leva para as informações de BI filtradas no aplicativo móvel do Power BI.
 author: mshenhav
 manager: kfile
@@ -9,21 +9,28 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 3fd2d4888f76490a01c0742e68e6820c7055326e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 432b65f8d7f461ac1942cf8996f9cc67e756fc7f
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137182"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559002"
 ---
-# <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Digitalizar um código de barras com seu iPhone no aplicativo móvel do Power BI
+# <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Digitalizar um código de barras com seu dispositivo no aplicativo móvel do Power BI
 A digitalização de códigos de barras no mundo real o leva para as informações de BI filtradas no aplicativo móvel do Power BI.
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Aplica-se a:
+
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
+|:--- |:--- |
+| iPhone | Android (celular, tablet) | 
 
 Digamos que um colega tenha [marcado um campo de código de barras em um relatório do Power BI Desktop](../../desktop-mobile-barcodes.md) e compartilhou esse relatório com você. 
 
-Quando você digitaliza o código de barras de um produto com o scanner no aplicativo do Power BI no iPhone, você vê o relatório (ou a lista de relatórios) com esse código de barras. Você pode abrir o relatório no iPhone, filtrado nesse código de barras.
+![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Quando você digitaliza o código de barras de um produto com o scanner no aplicativo do Power BI no seu dispositivo, você vê o relatório (ou a lista de relatórios) com esse código de barras. Você pode abrir o relatório filtrado nesse código de barras.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Digitalizar um código de barras com o scanner do Power BI
 1. No aplicativo móvel do Power BI, abra o menu de navegação principal ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) na parte superior esquerda. 
@@ -34,10 +41,10 @@ Quando você digitaliza o código de barras de um produto com o scanner no aplic
 4. Aponte o scanner para um código de barras em um produto. 
    
     Você verá uma lista dos relatórios associados a esse código de barras.
-5. Toque no nome do relatório para abri-lo no iPhone, filtrado automaticamente nesse código de barras.
+5. Toque no nome do relatório para abri-lo no dispositivo, filtrado automaticamente nesse código de barras.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrar por outros códigos de barras enquanto estiver em um relatório
-Ao observar um relatório filtrado por um código de barras no iPhone, é recomendável filtrar o mesmo relatório por um código de barras diferente.
+Ao observar um relatório filtrado por um código de barras no dispositivo, é recomendável filtrar o mesmo relatório por um código de barras diferente.
 
 * Se o ícone de código de barras tiver um filtro ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), o filtro estará ativo e o relatório já será filtrado por um código de barras. 
 * Se o ícone não contiver um filtro ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), o filtro não estará ativo e o relatório não será filtrado por um código de barras. 

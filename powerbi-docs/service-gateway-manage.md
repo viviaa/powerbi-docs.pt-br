@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469807"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559058"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Gerenciar um gateway local do Power BI
 
@@ -31,6 +31,8 @@ Se você acabou de instalar um gateway, é recomendável [adicionar uma fonte de
 
 O Power BI oferece suporte a várias fontes de dados no local, e cada uma tem seus próprios requisitos. Um gateway pode ser usado para uma única fonte de dados ou para várias fontes de dados. Neste exemplo, mostraremos como adicionar o SQL Server como uma fonte de dados, mas as etapas são semelhantes para outras fontes de dados.
 
+> [!NOTE]
+> Agora os administradores de gateway podem criar várias fontes de dados conectando-se à mesma fonte, cada um com uma credencial diferente e adicionar usuários a cada uma dessas fontes de dados com base em seu nível de acesso.
 
 ### <a name="add-a-data-source"></a>Adicionar uma fonte de dados
 
@@ -53,6 +55,11 @@ O Power BI oferece suporte a várias fontes de dados no local, e cada uma tem se
 
 1. Para o SQL Server, você escolheria um **Método de Autenticação** **Windows** ou **Básico** (Autenticação SQL).  Se você escolher **Básico**, insira as credenciais para a fonte de dados.
 
+1. Se essa fonte de dados estiver atualmente indisponível ou lenta, selecione **Ignorar Conexão de Teste**. Caso contrário, a criação da fonte de dados poderá falhar.
+
+    > [!NOTE]
+    > Não há suporte para ignorar a conexão de teste no Analysis Services.
+
 1. Opcionalmente, em **Configurações avançadas**, configure o [nível de privacidade](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) para sua fonte de dados (não se aplica a [DirectQuery](desktop-directquery-about.md)).
 
     ![Configurações avançadas](media/service-gateway-manage/advanced-settings.png)
@@ -74,7 +81,7 @@ Para remover uma fonte de dados, vá para a fonte de dados e selecione **Remover
 
 ## <a name="manage-users-and-administrators"></a>Gerenciar usuários e administradores
 
-Depois de adicionar uma fonte de dados a um gateway, você dá acesso a usuários e grupos de segurança para a fonte de dados específica (não o gateway inteiro). A lista de usuários da fonte de dados controla somente quem tem permissão para publicar relatórios que incluem dados da fonte de dados. Os proprietários de relatório podem criar painéis, pacotes de conteúdo e aplicativos e, em seguida, compartilhá-los com outros usuários.
+Depois de adicionar uma fonte de dados a um gateway, você dá acesso a usuários e grupos de segurança habilitados por email para a fonte de dados específica (não o gateway inteiro). A lista de usuários da fonte de dados controla somente quem tem permissão para publicar relatórios que incluem dados da fonte de dados. Os proprietários de relatório podem criar painéis, pacotes de conteúdo e aplicativos e, em seguida, compartilhá-los com outros usuários.
 
 Você também pode dar acesso administrativo a usuários e grupos de segurança para o gateway.
 
@@ -98,14 +105,14 @@ E isso é tudo o que é necessário. Lembre-se de que você precisa adicionar us
 
 ### <a name="remove-users-from-a-data-source"></a>Remover usuários de uma fonte de dados
 
-Na guia **Usuários** para a fonte de dados, você pode remover usuários e grupos de segurança que usam essa fonte de dados.
+Na guia **Usuários** para a fonte de dados, você pode remover usuários e grupos de segurança habilitados por email que usam essa fonte de dados.
 
 ![Remover usuário](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Adicionar e remover administradores
 
-Na guia **Administradores**, para o gateway, adicione e remova os usuários (ou grupos de segurança) que podem administrar o gateway.
+Na guia **Administradores**, para o gateway, adicione e remova os usuários (ou grupos de segurança habilitados por email) que podem administrar o gateway.
 
 ![Guia Administradores](media/service-gateway-manage/administrators-tab.png)
 

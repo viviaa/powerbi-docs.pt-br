@@ -1,5 +1,5 @@
 ---
-title: Usar mapas de formas no Power BI Desktop (Preview)
+title: Usar mapas de Formas no Power BI Desktop (versão prévia)
 description: Criar comparações relativas de regiões usando mapas de formas no Power BI Desktop
 author: mihart
 manager: kvivek
@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 2e0fc8ae6a6d2b01121ffb1c52c29652af21f21e
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839230"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67533087"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Mapas de formas no Power BI Desktop (Preview)
 Crie um visual de **Mapa de Formas** para comparar as regiões em um mapa usando cores. Ao contrário do visual **Mapa**, o **Mapa de Formas** não consegue mostrar localizações geográficas precisas de pontos de dados em um mapa. Em vez disso, sua finalidade principal é mostrar comparações relativas de regiões em um mapa colorindo-as de modo diferente.
@@ -108,11 +108,12 @@ Há algumas considerações e requisitos para essa versão de Preview do **Mapa 
 * O visual do **Mapa de Formas** plotará até um máximo de 1.000 pontos de dados.
 
 ## <a name="region-keys"></a>Chaves de região
-Use as **Chaves de região** a seguir nesta versão de Preview para testar o **Mapa de Formas**.
+
+Use as **Chaves de região** a seguir nesta versão prévia para testar o **Mapa de Formas**.
 
 ### <a name="australia-states"></a>Austrália: estados
 
-| `id` | `abbr` | `iso` | `name` | `postal` |
+| ID | Abr. | ISO | Nome | CEP |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Austrália Ocidental |WA |
 | au-vic |Vic |AU-VIC |Vitória |VIC |
@@ -125,7 +126,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="austria-states"></a>Áustria: estados
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| ID | ISO | Nome | Nome (pt) | CEP |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Viena |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -139,7 +140,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="brazil-states"></a>Brasil: estados
 
-| `id` |
+| ID |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -175,7 +176,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="canada-provinces"></a>Canadá: províncias
 
-| `id` | `iso` | `name` | `postal` |
+| ID | ISO | Nome | CEP |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Territórios do Norte |NT |
@@ -193,7 +194,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="france-regions"></a>França: regiões
 
-| `id` | `name` | `name-en` |
+| ID | Nome | Nome (pt) |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Ródano-Alpes |
@@ -220,7 +221,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="germany-states"></a>Alemanha: estados
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| ID | ISO | Nome | Nome (pt) | CEP |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlim |BE |
 | de-th |DE-TH |Thüringen |Turíngia |TH |
@@ -241,7 +242,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="ireland-counties"></a>Irlanda: municípios
 
-| `id` |
+| ID |
 | --- |
 | Wicklow |
 | Wexford |
@@ -272,7 +273,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="italy-regions"></a>Itália: regiões
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| ID | ISO | Nome | Nome (pt) | CEP |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Vale de Aosta |VD |
@@ -297,7 +298,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="mexico-states"></a>México: estados
 
-| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
+| ID | Abreviatura | ISO | Nome | Nome (pt) | CEP |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatán |YU |
@@ -334,7 +335,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="netherlands-provinces"></a>Países Baixos: províncias
 
-| `id` | `iso` | `name` | `name-en` |
+| ID | ISO | Nome | Nome (pt) |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |Holanda do Sul |
 | nl-ze |NL-ZE |Zeeland |Zelândia |
@@ -351,7 +352,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="uk-countries"></a>Reino unido: Países
 
-| `id` | `iso` | `name` |
+| ID | ISO | Nome |
 | --- | --- | --- |
 | gb-wls |GB-WLS |País de Gales |
 | gb-sct |GB-SCT |Escócia |
@@ -360,7 +361,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 
 ### <a name="usa-states"></a>EUA: estados
 
-| `id` | `name` | `postal` |
+| ID | Nome | CEP |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alasca |AK |
@@ -415,6 +416,7 @@ Use as **Chaves de região** a seguir nesta versão de Preview para testar o **M
 | us-wa |Washington |WA |
 
 ## <a name="next-steps"></a>Próximas etapas
-[Matriz visual no Power BI](desktop-matrix-visual.md)
 
-[Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Matriz visual no Power BI](desktop-matrix-visual.md)
+
+* [Tipos de visualização no Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0cad14c9d00c6d027c0235714305fb33847b5f8a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1a1cb84d889b5f4df4ec53ee9a2a53b95a5daf8a
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143014"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67533172"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Adicionar imagem, texto, vídeo e muito mais no seu dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -119,7 +119,7 @@ Cole ou digite qualquer conteúdo HTML.  O Power BI adiciona o conteúdo, como u
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* Esse código insere um tweet e mantém (como links separados no painel) links para: o podcast **AFK**, para a página do Twitter do **@GuyInACube** , **Seguir**, **#analytics**, **responder**, **retweetar** e **curtir**.  Selecionar o bloco propriamente dito leva você até o podcast no Twitter.
+* Esse código incorpora um tweet e mantém, como links separados no painel, links para o podcast **AFK**, a **\@página do Twitter do GuyInACube**, **Seguir**, **#analytics**, **responder**, **retweetar** e **curtir**.  Selecionar o bloco propriamente dito leva você até o podcast no Twitter.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">

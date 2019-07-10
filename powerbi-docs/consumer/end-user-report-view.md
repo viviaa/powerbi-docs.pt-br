@@ -8,43 +8,52 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d740dd012c6041893a2fa5fc5f1a97a74dcf1566
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608102"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532416"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Alterar a exibição de uma página de relatório
-Relatórios são exibidos em vários dispositivos diferentes com diferentes tamanhos de tela e proporções.  Alterar a maneira como uma página de relatório é exibida para atender às suas necessidades.    
 
-![relatório exibe na tela](media/end-user-report-view/power-bi-report.png)
+As pessoas visualizam os relatórios em vários dispositivos diferentes, com diferentes tamanhos de tela e taxas de proporção. Alterar a maneira como uma página de relatório é exibida para atender às suas necessidades.
 
-## <a name="explore-the-view-menu"></a>Explorar menu Exibir
-As opções no menu Exibir oferecem flexibilidade para exibir páginas de relatório no tamanho e largura que você escolher.
+![Captura de tela de como um relatório é exibido na tela.](media/end-user-report-view/power-bi-report.png)
 
-- Digamos que você está exibindo um relatório em um dispositivo pequeno e é difícil ver títulos e legendas.  Selecione **modo de exibição** > **tamanho real** para aumentar o tamanho da página do relatório. Use as barras de rolagem para mover-se o relatório. 
+## <a name="explore-the-view-menu"></a>Explorar o menu Exibir
 
-    ![relatório exibido na tela, com duas barras de rolagem](media/end-user-report-view/power-bi-actual-size-new.png)
+![Captura de tela das opções de exibição da lista suspensa.](media/end-user-report-view/power-bi-view-menu.png)
 
 
-- Outra opção é ajustar o relatório para a largura da tela, selecionando **ajustar à largura**. Isso ainda pode exigir o uso de uma barra de rolagem vertical.
+As opções no menu **Exibir** oferecem flexibilidade para exibir páginas de relatório no tamanho e na largura que você escolher:
 
-  ![relatório exibe usando a largura de tela inteira](media/end-user-report-view/power-bi-fit-to-width-new.png)
+- Digamos que você está exibindo um relatório em um dispositivo pequeno e é difícil ver títulos e legendas.  Selecione **Exibição** > **Tamanho real** para aumentar o tamanho da página do relatório. Use as barras de rolagem para percorrer o relatório.
 
-- Se você não deseja que qualquer barras de rolagem, mas deseja fazer o melhor uso de seu tamanho da tela.  Selecione **ajustar à página**.
+    ![Captura de tela de um relatório definido como Tamanho real com duas barras de rolagem destacadas.](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   ![Exibe relatório sem barras de rolagem](media/end-user-report-view/power-bi-fit-to-width.png)
+- Outra opção é ajustar o relatório para a largura da tela, selecionando **Ajustar à largura**. Como essa opção é apenas a largura e não a altura, você ainda precisará usar a barra de rolagem vertical.
 
-   
-- A última opção, **tela inteira**, exibe a página de relatório sem barras de menu e cabeçalhos. Tela inteira pode ser uma boa opção para pequenas telas em que os detalhes são difíceis de ver.  Tela inteira também pode ser uma boa opção ao projetar páginas do relatório em telas grandes de pessoas para exibir, mas não interagir.  
+  ![Captura de tela de um relatório definido como Ajustar à largura com a barra de rolagem vertical destacada.](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-    ![relatório exibido em tela inteira](media/end-user-report-view/power-bi-full-screen.png)
+- Se você não desejar barras de rolagem, mas desejar fazer o melhor uso do tamanho da tela, selecione **Ajustar à Página**.
 
-Quando você sair do relatório, suas configurações de exibição não serão salvas, mas reverte para o padrão. Se for importante para você para salvar essas configurações, use [indicadores](end-user-bookmarks.md). 
+   ![Captura de tela de um relatório definido como Ajustar à página.](media/end-user-report-view/power-bi-fit-to-width.png)
+
+- Você também pode escolher entre quatro **Cores de alto contraste**: Alto contraste nº 1, Alto contraste nº 2, Preto em alto contraste e Branco em alto contraste. É um recurso de acessibilidade que você pode usar para que as pessoas que podem ser portadores de deficiência visual possam ver os relatórios melhor:
+
+    ![Captura de tela de um relatório definido como Alto contraste nº 1.](media/end-user-report-view/power-bi-high-contrast-1.png)![Captura de tela de um relatório definido como Alto contraste nº 2.](media/end-user-report-view/power-bi-high-contrast-2.png)
+    ![Captura de tela de um relatório definido como Preto em alto contraste.](media/end-user-report-view/power-bi-high-contrast-black.png)![Captura de tela de um relatório definido como Branco em alto contraste.](media/end-user-report-view/power-bi-high-contrast-white.png)
+
+- A última opção, **Tela inteira**, exibe a página de relatório sem barras de menus e cabeçalhos. Tela inteira pode ser uma boa opção para telas pequenas em que os detalhes são difíceis de ver.  Tela inteira também pode ser uma boa opção ao projetar páginas do relatório em telas grandes para que as pessoas possam ver, mas não interagir.  
+
+    ![o relatório é exibido em tela inteira](media/end-user-report-view/power-bi-full-screen.png)
+
+Quando você sair do relatório, suas configurações de **Exibição** não serão salvas, mas serão revertidas para o padrão. Se for importante para você para salvar essas configurações, use [indicadores](end-user-bookmarks.md).
 
 ## <a name="next-steps"></a>Próximas etapas
-[Criar relatórios para Cortana](../service-cortana-answer-cards.md)
+
+* [Faça um tour pelo painel Filtros do relatório](end-user-report-filter.md)

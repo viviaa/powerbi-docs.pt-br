@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770355"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559076"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Usando o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao SSRS
 
@@ -25,7 +25,7 @@ Saiba como configurar seu ambiente para dar suporte à autenticação OAuth com 
 Você pode usar o OAuth para conectar-se ao Servidor de Relatórios do Power BI e ao Reporting Services para exibir relatórios móveis ou KPIs. O Windows Server 2016 oferece algumas melhorias à função do WAP (Proxy de Aplicativo Web) para permitir esse tipo de autenticação.
 
    > [!NOTE]
-   > Exibindo relatórios do Power BI hospedados no servidor de relatório do Power BI usando o WAP autentiquem tem suporte atualmente apenas no aplicativo do iOS. Aplicativo do Android não é oficialmente suportado neste momento.
+   > Agora há suporte para a exibição de Relatórios do Power BI hospedados no Servidor de Relatórios do Power BI que usa o WAP para autenticação para aplicativos do iOS e Android.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Para obter informações sobre como configurar o SPN (Nome da Entidade de Servi�
 
 ### <a name="enabling-negotiate-authentication"></a>Habilitando a autenticação do tipo negociar
 
-Para habilitar um servidor de relatório para usar a autenticação Kerberos, será necessário configurar o tipo de autenticação do servidor de relatório para ser RSWindowsNegotiate. Isso é feito no arquivo rsreportserver.config.
+Para habilitar um servidor de relatório para usar a autenticação Kerberos, será necessário configurar o tipo de autenticação do servidor de relatório para ser RSWindowsNegotiate. Faça isso no arquivo rsreportserver.config.
 
 ```xml
 <AuthenticationTypes>  
@@ -81,7 +81,7 @@ Será necessário configurar o AD FS em um servidor do Windows 2016 em seu ambie
 
 ### <a name="create-an-application-group"></a>Criar um grupo de aplicativos
 
-Na tela Gerenciamento do AD FS, crie um grupo de aplicativos para o Reporting Services, que incluirá as informações dos aplicativos Power BI para Celulares.
+Na tela Gerenciamento do AD FS, crie um grupo de aplicativos para o Reporting Services, que incluirá as informações dos aplicativos Power BI Mobile.
 
 É possível criar o grupo de aplicativos com as etapas a seguir.
 
@@ -118,7 +118,7 @@ Na tela Gerenciamento do AD FS, crie um grupo de aplicativos para o Reporting Se
    > [!NOTE]
    > Esta URL diferencia maiúsculas de minúsculas!
 
-   *https://<; url do servidor de relatório > / relatórios*
+   *https://< report server url >/reports*
 
    ![Assistente de Grupo de Aplicativos do ADFS 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Selecione **Avançar**.
@@ -239,7 +239,7 @@ Depois de selecionar **Entrar**, você verá os elementos do seu servidor do Rep
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Você recebe o erro Falha ao fazer logon no servidor SSRS. Verifique a configuração do servidor.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Você recebe o erro Falha ao fazer logon no servidor SSRS. Verifique a configuração do servidor.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
