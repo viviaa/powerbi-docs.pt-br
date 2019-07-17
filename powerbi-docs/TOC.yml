@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Solucionar problemas de erros de bloco
               href: refresh-troubleshooting-tile-errors.md
-            - name: Solucionar problemas do gateway de dados local
-              href: service-gateway-onprem-tshoot.md
-            - name: Solucionar problemas do gateway do Power BI Gateway – Pessoal
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Análise de solução de problemas no Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Erro: Não foi possível localizar nenhum dado na sua pasta de trabalho do Excel'
@@ -1279,38 +1275,38 @@
   items:
     - name: Visão geral
       items:
-        - name: O que é um Power BI Gateway?
-          href: service-gateway-getting-started.md
-    - name: Tutoriais
-      items:
-        - name: Conectar aos dados do SQL Server
-          href: service-gateway-sql-tutorial.md
+        - name: O que é um gateway de dados local?
+          href: service-gateway-onprem.md
     - name: Conceitos
       items:
         - name: Diretrizes para implantar um gateway de dados
           href: service-gateway-deployment-guidance.md
         - name: Perguntas frequentes sobre o gateway de dados local
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Como
       items:
-        - name: Instalar gateways
-          href: service-gateway-install.md
-        - name: Gerenciar gateways
-          href: service-gateway-manage.md
-        - name: Monitorar o desempenho do gateway
-          href: service-gateway-performance-monitoring.md
-        - name: Gerenciar sua fonte de dados corporativa - Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: Gerenciar sua fonte de dados corporativa - SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: Gerenciar sua fonte de dados corporativa - SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: Gerenciar sua fonte de dados – Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: Gerenciar sua fonte de dados corporativa — atualização importada/agendada
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Mesclar fontes de dados locais e em nuvem
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Detalhes sobre o gateway de dados local
+          href: service-gateway-onprem-indepth.md
+        - name: Gateway de dados local (modo pessoal)
+          href: service-gateway-personal-mode.md
+        - name: Gerenciar usuários e administradores
+          href: service-gateway-manage-admins.md
+        - name: Gerenciar fontes de dados
+          items:
+            - name: Gerenciar fontes de dados
+              href: service-gateway-data-sources.md
+            - name: Gerenciar sua fonte de dados corporativa - Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: Gerenciar sua fonte de dados corporativa - SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: Gerenciar sua fonte de dados corporativa - SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: Gerenciar sua fonte de dados – Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: Gerenciar sua fonte de dados corporativa — atualização importada/agendada
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Mesclar fontes de dados locais e em nuvem
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Habilitar o logon único (SSO)
           items:
             - name: Logon único (SSO) – visão geral
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: Logon único (SSO) – SAML
               href: service-gateway-sso-saml.md
-        - name: Definindo as configurações de proxy
-          href: service-gateway-proxy.md
-        - name: Clusters de alta disponibilidade para gateway de dados locais
-          href: service-gateway-high-availability-clusters.md
-        - name: Gateway de dados local
-          href: service-gateway-onprem.md
-        - name: Detalhes sobre o gateway de dados local
-          href: service-gateway-onprem-indepth.md
-        - name: Gateway de dados local (modo pessoal)
-          href: service-gateway-personal-mode.md
-        - name: Conectores personalizados
-          href: service-gateway-custom-connectors.md
-        - name: Solucionar problemas do gateway de dados local
+        - name: Solucionar problemas do gateway
           href: service-gateway-onprem-tshoot.md
+        - name: Solucionar problemas do gateway (modo pessoal)
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Usar conectores personalizados
+          href: service-gateway-custom-connectors.md
     - name: Recursos
       items:
         - name: Atualizações mensais de gateway
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Administração
   items:
     - name: Visão geral
