@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418697"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271999"
 ---
 # <a name="power-bi-security-whitepaper"></a>White paper de segurança do Power BI
 
@@ -382,7 +382,7 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
 * **Credenciais do Power BI e credenciais de domínio:** Os usuários entram no Power BI usando um endereço de email; quando um usuário tenta se conectar a um recurso de dados, o Power BI passa o endereço de email de logon do Power BI como credenciais. Para recursos conectados ao domínio (locais ou baseados em nuvem), o email de logon é combinado com um _nome UPN_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) pelo serviço de diretório para determinar se há credenciais suficientes para permitir o acesso. Para organizações que usam endereços de email com base no trabalho para entrar no Power BI (o mesmo email que usam para fazer logon em recursos de trabalho, como _david@contoso.com_ ), o mapeamento pode ocorrer diretamente; para organizações que não usam endereços de email baseados no trabalho (como _david@contoso.onmicrosoft.com_ ), o mapeamento de diretório deve ser estabelecido para permitir o acesso a recursos locais com credenciais de logon do Power BI.
 
-* **SQL Server Analysis Services e Power BI:** Para organizações que usam o SQL Server Analysis Services local, p Power BI oferece o gateway de dados local do Power BI (que é um **Gateway**, conforme mencionado nas seções anteriores).  O gateway de dados local do Power BI pode impor RLS (Segurança em Nível de Função) em fontes de dados. Para obter mais informações sobre RLS, veja **Autenticação do usuário para fontes de dados** anteriormente neste documento. Você também pode ler um artigo detalhado sobre o [Power BI Gateway](service-gateway-manage.md).
+* **SQL Server Analysis Services e Power BI:** Para organizações que usam o SQL Server Analysis Services local, p Power BI oferece o gateway de dados local do Power BI (que é um **Gateway**, conforme mencionado nas seções anteriores).  O gateway de dados local do Power BI pode impor RLS (Segurança em Nível de Função) em fontes de dados. Para obter mais informações sobre RLS, veja **Autenticação do usuário para fontes de dados** anteriormente neste documento. Para obter mais informações sobre gateways, consulte [gateway de dados locais](service-gateway-onprem.md).
 
   Além disso, as organizações podem usar Kerberos para SSO (**logon único**) e conectar-se diretamente do Power BI a fontes de dados locais, como SQL Server, SAP HANA e Teradata. Para obter mais informações e os requisitos de configuração específicos, veja [**Usar Kerberos para SSO do Power BI para fontes de dados locais**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -422,7 +422,7 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
 **Que portas são usadas pelo gateway de dados local e pelo gateway pessoal? Existem nomes de domínio que precisam ser permitidos para fins de conectividade?**
 
-* A resposta detalhada para essa pergunta está disponível no seguinte link: [Power BI Gateway](service-gateway-manage.md)
+* A resposta detalhada para essa pergunta está disponível no seguinte link: [Portas de gateway](/data-integration/gateway/service-gateway-communication#ports)
 
 **Ao trabalhar com o gateway de dados local, como as chaves de recuperação são usadas e em que local são armazenadas? E quanto ao gerenciamento de credenciais seguras?**
 
@@ -438,7 +438,7 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
   - **AMQP 1.0 – TCP + TLS**: Esse protocolo exige que as portas 443, 5671 5672 e 9350 a 9354 estejam abertas para comunicação de saída. Esse protocolo é preferível, já que tem menor sobrecarga de comunicação.
 
-  - **HTTPS – WebSockets por HTTPS + TLS**: Esse protocolo usa a porta 443 apenas. O WebSocket é iniciado por uma única mensagem HTTP CONNECT. Quando o canal é estabelecido, a comunicação é essencialmente TCP+TLS. Você pode forçar o gateway a usar esse protocolo modificando uma configuração descrita no [artigo de Gateway Local](service-gateway-manage.md).
+  - **HTTPS – WebSockets por HTTPS + TLS**: Esse protocolo usa a porta 443 apenas. O WebSocket é iniciado por uma única mensagem HTTP CONNECT. Quando o canal é estabelecido, a comunicação é essencialmente TCP+TLS. Você pode forçar o gateway para usar esse protocolo, modificando uma configuração descrita na [artigo de gateway local](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Qual é a função da CDN do Azure no Power BI?**
 
@@ -448,14 +448,14 @@ As perguntas a seguir são perguntas e respostas de segurança comuns para o Pow
 
 **Para visuais personalizados, a Microsoft executa alguma avaliação de segurança ou privacidade do código visual personalizado antes de publicar itens na Galeria?**
 
-* Não. É responsabilidade do cliente examinar e determinar se código visual personalizado deve ser usado. Todo o código visual personalizado é operado em um ambiente de área restrita, de modo que qualquer código errôneo em um visual personalizado não afeta negativamente o restante do serviço do Power BI.
+* Nº É responsabilidade do cliente examinar e determinar se código visual personalizado deve ser usado. Todo o código visual personalizado é operado em um ambiente de área restrita, de modo que qualquer código errôneo em um visual personalizado não afeta negativamente o restante do serviço do Power BI.
 
 **Há outros visuais do Power BI que enviam informações fora da rede do cliente?**
 
 * Sim. Bing Mapas e visuais ESRI transmitem dados fora do serviço do Power BI para visuais que usam esses serviços. Para obter mais informações e descrições detalhadas de tráfego do locatário de fora do Power BI, veja [**Power BI e ExpressRoute**](service-admin-power-bi-expressroute.md).
 
 **Para aplicativos de modelo, o Microsoft executa qualquer segurança ou avaliação de privacidade do aplicativo antes de publicar itens na Galeria do modelo?**
-* Não. O Editor do aplicativo é responsável pelo conteúdo durante a responsabilidade do cliente para revisar e determinar se deve confiar no Editor de aplicativo do modelo. 
+* Nº O Editor do aplicativo é responsável pelo conteúdo durante a responsabilidade do cliente para revisar e determinar se deve confiar no Editor de aplicativo do modelo. 
 
 **Há aplicativos de modelo que podem enviar informações de fora da rede de cliente?**
 * Sim. É responsabilidade do cliente para examinar a política de privacidade do Editor e determinar se deseja instalar o modelo de aplicativo no locatário. Além disso, o publicador é responsável por notificar de comportamento e as capacidades do aplicativo.
@@ -486,10 +486,9 @@ Para obter mais informações sobre o Power BI, veja os seguintes recursos.
 
 - [Grupos no Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Introdução ao Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](service-gateway-manage.md)
 - [API REST do Power BI – Visão Geral](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Referência da API do Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Gateway de dados local)](service-gateway-manage.md)
+- [On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)
 - [Power BI e ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nuvens nacionais do Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
