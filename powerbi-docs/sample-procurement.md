@@ -7,137 +7,140 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 17a4a3770cb2c3e2adff2bcce64c3e101688e002
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61233533"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791856"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo para o Power BI: Faça um tour
 
-## <a name="overview-of-the-procurement-analysis-sample"></a>Visão geral do exemplo de Análise de Compras
-Este painel de exemplo do setor e relatório subjacente analisam as despesas da empresa fabricante com fornecedores por categoria e local. No exemplo, exploraremos essas áreas:
+O pacote de conteúdo de amostra da Análise de Compras contém um painel, relatório e conjunto de dados que analisa os gastos de uma empresa de fabricação em fornecedores por categoria e local. No exemplo, exploraremos essas áreas:
 
 * Quem são os principais fornecedores
 * Em quais categorias ocorrem a maioria das despesas
 * Quais fornecedores fornecem o desconto mais alto e quando
 
-Este exemplo faz parte de uma série de exemplos que ilustra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Os exemplos são dados reais de obviEnce ([www.obvience.com)](http://www.obvience.com/) que foram mantidos anônimos.
+![Painel para o exemplo de Análise de Compras](media/sample-procurement/procurement1.png)
 
-![](media/sample-procurement/procurement1.png)
+Este exemplo faz parte de uma série que mostra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Ele foi criado usando dados reais da [obviEnce](http://www.obvience.com/) que foram mantidos anônimos. Os dados estão disponíveis em vários formatos: pacote de conteúdo, arquivo .pbix do Power BI Desktop ou pasta de trabalho do Excel. Confira [Exemplos para o Power BI](sample-datasets.md). 
 
-## <a name="prerequisites"></a>Pré-requisitos
+Este tutorial explora o pacote de conteúdo de exemplo de Análise de Compras no serviço do Power BI. Como as experiências de relatório são muito semelhantes no Power BI Desktop e no serviço, você também pode acompanhar usando o arquivo de exemplo .pbix no Power BI Desktop. 
 
- Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [arquivo .pbix](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) ou [pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkId=529784).
+Você não precisa de uma licença do Power BI para explorar os exemplos no Power BI Desktop. Se você não tiver uma licença do Power BI Pro, poderá salvar a amostra em Meu Espaço de Trabalho no serviço do Power BI. 
+
+## <a name="get-the-sample"></a>Obter o exemplo
+
+Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](#get-the-content-pack-for-this-sample), [arquivo .pbix](#get-the-pbix-file-for-this-sample) ou [pasta de trabalho do Excel](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Obter o pacote de conteúdo para este exemplo
 
-1. Abra o serviço do Power BI (app.powerbi.com) e faça logon.
-2. No canto inferior esquerdo, selecione **Obter dados**.
-   
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Na página Obter Dados que aparece, selecione o ícone **Exemplos**.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Selecione o **exemplo de Análise de Compras** e, em seguida, escolha **Conectar**.  
+1. Abra o serviço do Power BI (app.powerbi.com), entre e abra o workspace em que você deseja salvar o exemplo. 
+
+    Se você não tiver uma licença do Power BI Pro, poderá salvar a amostra em Meu Espaço de Trabalho.
+
+2. No canto inferior esquerdo, selecione **Obter Dados**.
+
+    ![Selecionar Obter Dados](media/sample-datasets/power-bi-get-data.png)
+3. Na página **Obter Dados** que aparece, selecione **Exemplos**.
+
+4. Selecione **Exemplo de Análise de Compras** e, em seguida, escolha **Conectar**.  
   
-   ![Obter Dados](media/sample-procurement/procurement1a.png)
+   ![Conectar-se ao exemplo](media/sample-procurement/procurement1a.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo painel, um relatório e um conjunto de dados ao seu espaço de trabalho atual.
    
-   ![Asterisco](media/sample-procurement/procurement1b.png)
+   ![Entrada Exemplo de Análise de Compras](media/sample-procurement/procurement-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Obter o arquivo. pbix para este exemplo
 
-Como alternativa, você pode baixar o exemplo como um arquivo .pbix, que é projetado para uso com o Power BI Desktop. 
-
- * [Exemplo de Análise de Compras](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+Como alternativa, você pode baixar o exemplo de Análise de Compras como um [arquivo .pbix](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), que foi projetado para uso com o Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Obter a pasta de trabalho do Excel para este exemplo
-Também é possível [baixar apenas o conjunto de dados (pasta de trabalho do Excel)](http://go.microsoft.com/fwlink/?LinkId=529784) para este exemplo A pasta de trabalho contém planilhas do Power View que você pode exibir e modificar. Para ver os dados brutos, selecione **Power Pivot > Gerenciar**.
+
+Se quiser exibir a fonte de dados deste exemplo, ela também está disponível como uma [Pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkId=529784). A pasta de trabalho contém planilhas do Power View que você pode exibir e modificar. Para ver os dados brutos, habilite os suplementos de Análise de Dados e, em seguida, selecione **Power Pivot > Gerenciar**. Para habilitar os suplementos Power View e Power Pivot, confira [Dar uma olhada nos exemplos do Excel dentro do próprio Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) para obter detalhes.
 
 
 ## <a name="spending-trends"></a>Tendências de gastos
 Primeiro, vamos analisar as tendências em gastos por categoria e local.  
 
-1. Em seu workspace, abra a guia **Dashboards** e selecione o dashboard de Análise de Compras.
-2. Selecione o bloco do painel **Total da fatura por país/região**. Abre a página "Visão Geral de Gasto" do relatório "Exemplo de análise de compras".
+1. No espaço de trabalho onde você salvou o exemplo, abra a guia **Painéis**, localize o painel **Exemplo de Análise de Compras** e selecione-o. 
+2. Selecione o bloco do painel, **Total da fatura por país/região**, que abre a página **Visão geral de gastos** do relatório **Exemplo de Análise de Compras**.
 
-    ![](media/sample-procurement/procurement2.png)
+    ![Página Visão geral de gastos](media/sample-procurement/procurement2.png)
 
-Observe algumas coisas:
+Observe o seguintes detalhes:
 
-* No gráfico de linhas **Total da fatura por mês e categoria**: a categoria **Direto** apresenta gastos muito consistentes, **Logística** apresenta um pico em dezembro e **Outros** apresenta um pico em fevereiro.
-* No mapa **Total da fatura por país/região**: Maioria de nossos gastos está concentrada nos EUA.
-* No gráfico de colunas **Total da fatura por subcategoria**: **Hardware** e **Serviços e produtos indiretos** são categorias com mais gastos.
-* No gráfico de barras Total da fatura por camada: A maioria dos nossos negócios é feito com nossos fornecedores da camada 1 (10 principais). Isso ajuda a gerenciar melhor os relacionamentos com o fornecedor.
+* No gráfico de linhas **Total da fatura por mês e categoria**: a categoria **Direto** apresenta gastos consistentes, **Logística** apresenta um pico em dezembro e **Outros** demonstra um pico em fevereiro.
+* No mapa **Total da Fatura por País/Região**: a maioria de nossos gastos está concentrada nos EUA.
+* No gráfico de colunas **Total da Fatura por Subcategoria**, **Hardware** e **Serviços e produtos indiretos** são as categorias que apresentam os maiores gastos.
+* No gráfico de barras **Total da Fatura por Camada**, a maioria de nossos negócios é feita com nossos fornecedores da Camada 1 (os 10 primeiros). Isso nos permite gerenciar melhor relacionamentos com fornecedores.
 
 ## <a name="spending-in-mexico"></a>Gastos no México
 Vamos explorar as áreas de gastos no México.
 
-1. No gráfico de pizza, selecione a bolha do **México** no mapa. Observe que, no gráfico de colunas “Total da fatura por subcategoria”, a maior parte dos gastos está concentrada na subcategoria **Serviços e produtos indiretos**.
+1. No mapa **Total de Faturas por País/Região**, selecione a bolha **México**. Observe que, no gráfico de colunas **Fatura Total por Subcategoria**, a maioria dos gastos está na subcategoria de **Produtos e serviços indiretos**.
 
-   ![](media/sample-procurement/pbi_procsample_spendmexico.png)
+   ![Selecione México na página Visão geral de gastos](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. Faça uma busca detalhada na coluna **Serviços e produtos indiretos**:
 
-   * Selecione a seta de busca detalhada ![](media/sample-procurement/pbi_drilldown_icon.png) no canto superior direito do gráfico.
+   * No gráfico **Fatura Total por Subcategoria**, selecione a seta de busca ![Seta de busca detalhada](media/sample-procurement/pbi_drilldown_icon.png) no canto superior direito do gráfico.
    * Selecione a coluna **Serviços e produtos indiretos**.
 
-      Por uma grande margem de diferença, os maiores gastos nesta categoria geral são os de Vendas e marketing.
+      Como você pode ver, os gastos mais altos, de longe, são para a subcategoria **Vendas e Marketing**.
    * Selecione **México** no mapa novamente.
 
-      Os maiores gastos nessa categoria no México são os de Manutenção e reparo.
+      Para o México, os maiores gastos estão na subcategoria **Manutenção e Reparo**.
 
-      ![](media/sample-procurement/pbi_procsample_drill_mexico.png)
+      ![Busca detalhada de Bens Indiretos e Serviços para o México](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Selecione a seta para cima no canto superior esquerdo do gráfico para fazer drill up.
 4. Selecione a seta novamente para desativar os detalhes.  
-5. Selecione **Power BI** na barra de navegação superior para retornar ao seu workspace.
+5. Na barra de navegação superior, selecione **Exemplo de Análise de Compras** para retornar ao painel.
 
 ## <a name="evaluate-different-cities"></a>Avaliar cidades diferentes
 Podemos usar o realce para avaliar cidades diferentes.
 
-1. Selecione o bloco do painel **Total da fatura, % de desconto por mês**. O relatório é aberto para a página de "Análise de desconto".
-2. Selecione as cidades diferentes no mapa de árvore **Total da fatura por cidade** para ver uma comparação delas. Quase todas as faturas de Miami são provenientes de fornecedores da Camada 1.
+1. Selecione o bloco do painel, **Percentual do total da fatura e desconto por mês**, que abre a página **Visão geral de desconto** do relatório **Exemplo de Análise de Compras**.
+2. No mapa de árvore **Total de faturas por cidade**, selecione cada cidade para ver como elas se comparam. Observe que quase todas as faturas de Miami são de fornecedores de nível 1.
 
-   ![](media/sample-procurement/pbi_procsample_miamitreemap2.png)
+   ![Cidade vs % de desconto por nível](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## <a name="vendor-discounts"></a>Descontos de fornecedor
-Também vamos explorar os descontos disponíveis de fornecedores e os períodos de tempo quando chegarmos a maioria dos descontos.
-
-![](media/sample-procurement/procurement4.png)
-
-Especificamente, estas perguntas:
-
-* Os descontos são diferentes ou iguais a cada mês?
+Também vamos explorar os descontos disponíveis de fornecedores e os períodos de tempo quando chegarmos a maioria dos descontos:
+* Os descontos são diferentes a cada mês ou permanecem os mesmos?
 * Algumas cidades obtêm mais descontos do que outras?
 
-### <a name="discount-by-month"></a>Desconto por mês
-Observando o gráfico de combinação **Total da fatura e % de desconto por mês** , podemos ver que **Fevereiro** é o mês mais movimentado e que **Setembro** , o menos movimentado. Agora examine a porcentagem de desconto durante esses meses.
-Observe que quando o volume aumenta, o desconto é reduzido e quando o volume está baixo, o desconto aumenta. Quanto mais precisarmos de desconto, a negociação é pior.
+![Página Análise de desconto](media/sample-procurement/procurement4.png)
 
-![](media/sample-procurement/procurement5.png)
+### <a name="discount-by-month"></a>Desconto por mês
+Se você observar o gráfico de combinação **Total da fatura e % de desconto por mês**, podemos ver que Fevereiro é o mês mais movimentado e que Setembro, o menos movimentado. 
+
+Observe a porcentagem de desconto durante esses meses: quando o volume aumenta, o desconto diminui e quando o volume está baixo, o desconto aumenta. Quanto mais precisarmos de desconto, a negociação é pior.
+
+![Gráfico Percentual do total da fatura e desconto por mês](media/sample-procurement/procurement5.png)
 
 ### <a name="discount-by-city"></a>Desconto por cidade
-Outra área para explorar é desconto por cidade. Selecione cada cidade no mapa de árvore e veja como os outros gráficos são alterados.
+Outra área a explorar é o desconto por cidade. Selecione cada cidade, por sua vez, no mapa da árvore e veja como os outros gráficos mudam:
 
-* St. Louis, MO tinha um grande aumento no total da fatura em fevereiro e uma grande diminuição de economia de desconto em abril.
-* Cidade do México no México tem a maior porcentagem de desconto (% 11,05) e Atlanta, GA tem a menor (% 0,08).
+* St. Louis teve um grande aumento no total de faturas em fevereiro e uma grande queda nas economias de desconto em abril.
+* A cidade do México tem a porcentagem de desconto mais alta (11,05%) e Atlanta a menor (0,08%).
 
-![](media/sample-procurement/procurement6.png)
+![Gráficos de desconto para a cidade do México](media/sample-procurement/procurement6.png)
 
 ### <a name="edit-the-report"></a>Editar o relatório
-Selecione **Editar relatório** no canto superior esquerdo e explore no Modo de Exibição de Edição.
+Selecione **Editar relatório** no canto superior esquerdo e explore no Modo de Exibição de Edição:
 
-* Veja como as páginas são criadas
-* Adicionar páginas e gráficos com base nos mesmos dados
-* Alterar o tipo de visualização de um gráfico – por exemplo, alterar o mapa de árvore para um gráfico de rosca
-* Fixá-los no dashboard
-
-Este é um ambiente seguro para experimentar. Você pode optar por não salvar as alterações. Se você salvá-las, sempre é possível acessar **Obter Dados** para obter uma nova cópia desse exemplo.
+* Veja como as páginas são feitas.
+* Adicione páginas e gráficos com base nos mesmos dados.
+* Altere o tipo de visualização para um gráfico; por exemplo, mude o mapa da árvore para um gráfico de rosca.
+* Fixe gráficos no seu painel.
 
 ## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: Conecte-se aos seus dados
-Esperamos que esse tour tenha mostrado como os painéis e relatórios do Power BI podem fornecer informações sobre os dados de compras. Agora é sua vez &#151; conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Saiba mais sobre como [começar a usar o Power BI](service-get-started.md)
+Esse ambiente é seguro para teste, pois você pode optar por não salvar as alterações. Mas se você salvá-las, sempre é possível selecionar **Obter Dados** para ter uma nova cópia deste exemplo.
+
+Esperamos que este tour tenha mostrado como os painéis, P e R e relatórios do Power BI podem fornecer informações sobre os dados de exemplo. Agora é sua vez – conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Para saber mais, confira [Introdução ao serviço do Power BI](service-get-started.md).
+

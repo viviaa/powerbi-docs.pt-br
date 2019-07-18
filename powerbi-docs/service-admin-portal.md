@@ -8,25 +8,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 06/27/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409184"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67568131"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Como administrar o Power BI no portal de administração
 
 O portal de administração permite que você gerencie um *locatário* do Power BI para sua organização. O portal inclui itens como métricas de uso, acesso ao centro de administração do Microsoft 365 e configurações.
 
-O portal de administração completo é acessível a todos os usuários que sejam administradores globais no Office 365 ou que detenham a função de administrador de serviços do Power BI. Se você não estiver em uma dessas funções, verá apenas **Configurações de capacidade** no portal. Para obter mais informações sobre a função de administrador de serviços do Power BI, confira [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
+O portal de administração completo é acessível a todos os usuários que sejam administradores globais no Office 365 ou que detenham a função de administrador de serviços do Power BI. Se você não estiver em uma dessas funções, verá apenas **Configurações de capacidade** no portal. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Como obter o portal de administração
 
-Sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI, para obter acesso ao portal de administração do Power BI. Para obter mais informações sobre a função de administrador de serviços do Power BI, confira [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md). Para acessar o portal de administração do Power BI, faça o seguinte:
+Sua conta deve ser marcada como **Administrador Global** no Office 365 ou no Azure Active Directory ou ter recebido a função de administrador de serviços do Power BI, para obter acesso ao portal de administração do Power BI. Para obter mais informações sobre a função de administrador de serviços do Power BI, consulte [Noções básicas sobre a função de administrador do Power BI](service-admin-role.md). Para acessar o portal de administração do Power BI, faça o seguinte:
 
 1. Selecione a engrenagem de configurações na parte superior direita do serviço do Power BI.
 
@@ -50,7 +50,7 @@ Há nove guias no portal. O restante deste artigo fornece informações sobre ca
 
 ## <a name="usage-metrics"></a>Métricas de uso
 
-As **Métricas de uso** permitem que você monitore o uso do Power BI para sua organização. Ele também fornece a capacidade de ver quais usuários e grupos são mais ativos no Power BI para sua organização.
+As **Métricas de uso** permitem que você monitore o uso do Power BI para sua organização. Ele também fornece a capacidade de ver quais usuários e grupos são mais ativos no Power BI para sua organização. 
 
 > [!NOTE]
 > Na primeira vez que acessar o dashboard ou depois de visitar novamente após um longo período de não exibição do dashboard, você provavelmente encontrará uma tela de carregamento enquanto carregamos o dashboard.
@@ -82,6 +82,40 @@ Aqui está uma análise do que você verá em cada bloco:
 A segunda seção mostra o mesmo tipo de informação, mas com base em grupos. Isso permite que você veja quais grupos em sua organização são mais ativos e os tipos de conteúdos que estão consumindo.
 
 Com essas informações, você fica sabendo como as pessoas estão usando o Power BI em toda a organização e consegue reconhecer esses usuários e grupos que são muito ativos na organização.
+
+## <a name="control-usage-metrics"></a>Controlar métricas de uso
+
+Os relatórios de métrica de uso são um recurso que o administrador do Power BI ou do Office 365 pode ativar ou desativar. Os administradores têm controle granular sobre quais usuários dispõem de acesso às métricas de uso. Eles estão **ativados** por padrão para todos os usuários na organização.
+
+Os administradores também podem determinar se os criadores de conteúdo podem ver dados por usuário nas métricas de uso. 
+
+Confira [Monitorar as métricas de uso dos painéis e relatórios do Power BI](service-usage-metrics.md) para obter detalhes sobre os próprios relatórios.
+
+### <a name="usage-metrics-for-content-creators"></a>Métricas de uso para criadores de conteúdo
+
+1. No portal de Administração, selecione **Configurações do locatário** > **Métrica de uso para criadores de conteúdo**.
+
+    ![Métricas de uso das configurações do locatário do portal de administração](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+
+1. Habilitar (ou desabilitar) métrica de uso > **Aplicar**.
+
+    ![Métricas de uso habilitadas](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+
+### <a name="per-user-data-in-usage-metrics"></a>Dados por usuário nas métricas de uso
+
+Por padrão, os dados por usuário estão habilitados para as métricas de uso e as informações de conta do consumidor do conteúdo estão incluídas no relatório de métricas. Se você não quiser incluir essa informação para alguns ou todos os usuários, desabilite o recurso para grupos de segurança especificados ou para toda a organização. Em seguida, as informações da conta serão mostradas no relatório como *Sem nome*.
+
+![Dados de uso por usuário](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
+
+### <a name="delete-all-existing-usage-metrics-content"></a>Excluir todo o conteúdo de métricas de uso existente
+
+Ao desabilitar as métricas de uso para toda a organização, os administradores também podem escolher uma ou ambas as opções para:
+
+- **Excluir todo o conteúdo existente de métricas de uso** para excluir todos os relatórios e blocos de painéis existentes que foram criados usando os relatórios de métricas de uso e os conjuntos de dados. Esta opção remove todo o acesso aos dados de métricas de uso para todos os usuários da organização que já podem estar usando esses dados. 
+- **Excluir todos os dados existentes por usuário no conteúdo atual das métricas de uso** Essa opção remove todo o acesso a dados por usuário de todos os usuários da organização que já podem estar usando-o. 
+
+Tenha cuidado, pois a exclusão do uso existente e do conteúdo de métricas por usuário é irreversível.
 
 ## <a name="users"></a>Usuários
 

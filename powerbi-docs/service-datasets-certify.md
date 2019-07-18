@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461317"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567334"
 ---
 # <a name="certify-datasets-preview"></a>Certificar conjuntos de dados (versão prévia)
 
@@ -23,8 +23,8 @@ Sua organização pode certificar conjuntos de dados que são a fonte autorizada
 
 Agora os usuários do Power BI podem ter acesso a muitos conjuntos de dados diferentes e, portanto, as empresas precisam orientá-los aos conjuntos de dados confiáveis e de alta qualidade. O Power BI fornece duas maneiras de *endossar* conjuntos de dados:
 
-- **Promoção**: Os proprietários de conjuntos de dados poderão promover seus próprios conjuntos de dados quando eles estiverem prontos para uso amplamente difundido. Confira [Promover seu conjunto de dados](service-datasets-promote.md) para obter detalhes. 
-- **Certificação**: Os proprietários de conjuntos de dados podem solicitar a certificação de um conjunto de dados promovido. Um grupo seleto de usuários definidos na configuração do administrador de locatários **Certificação do Conjunto de Dados** decide quais conjuntos de dados serão certificados.
+- **Promoção**: Os proprietários de conjuntos de dados e outros em um espaço de trabalho podem promover seus conjuntos de dados quando estiverem prontos para uso generalizado. Confira [Promover seu conjunto de dados](service-datasets-promote.md) para obter detalhes. 
+- **Certificação**: Os proprietários de conjuntos de dados podem solicitar a certificação de um conjunto de dados promovido. Um grupo seleto de usuários definidos na configuração do administrador de locatários **Certificação do Conjunto de Dados** decide quais conjuntos de dados serão certificados. O nome da pessoa que certificou um conjunto de dados é exibido em uma dica de ferramenta durante a experiência de descoberta do conjunto de dados; passe o mouse sobre o rótulo **Certificado** e você o verá.
 
 ## <a name="certify-a-dataset"></a>Certificar um conjunto de dados
 

@@ -7,163 +7,161 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2018
+ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 04676ee789b90eb09cbed3bafb623e8e9b89e4e4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 310afbf845550eaca666543397dd78eb0a0d15dc
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720859"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791967"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemplo de Análise de Varejo do Power BI: Faça um tour
 
-Este painel de exemplo do setor, juntamente com o relatório subjacente, analisam dados de vendas de varejo de itens vendidos em várias lojas e distritos. As métricas comparam o desempenho deste ano ao do ano passado nestas áreas: vendas, unidades, margem bruta e variação, bem como uma análise do novo estoque. Os exemplos são dados reais de obviEnce ([www.obvience.com](http://www.obvience.com)) que foram mantidos anônimos.
+O pacote de conteúdo de exemplo de Análise de Varejo contém um painel, um relatório e um conjunto de dados que analisa os dados de vendas no varejo de itens vendidos em várias lojas e distritos. As métricas comparam o desempenho deste ano ao do ano passado em vendas, unidades, margem bruta e variação, assim como uma análise da nova loja. 
 
-![](media/sample-retail-analysis/retail1.png)
+![Painel para o exemplo de Análise de Varejo](media/sample-retail-analysis/retail1.png)
 
-## <a name="prerequisites"></a>Pré-requisitos
+Este exemplo faz parte de uma série que mostra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Ele foi criado usando dados reais da [obviEnce](http://www.obvience.com/) que foram mantidos anônimos. Os dados estão disponíveis em vários formatos: pacote de conteúdo, arquivo .pbix do Power BI Desktop ou pasta de trabalho do Excel. Confira [Exemplos para o Power BI](sample-datasets.md). 
 
- Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [arquivo .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) ou [pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkId=529778).
+Este tutorial explora o pacote de conteúdo de exemplo de Análise de Varejo no serviço do Power BI. Como as experiências de relatório são muito semelhantes no Power BI Desktop e no serviço, você também pode acompanhar usando o arquivo de exemplo .pbix no Power BI Desktop. 
 
+Você não precisa de uma licença do Power BI para explorar os exemplos no Power BI Desktop. Se você não tiver uma licença do Power BI Pro, poderá salvar a amostra em Meu Espaço de Trabalho no serviço do Power BI. 
+
+## <a name="get-the-sample"></a>Obter o exemplo
+
+ Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](#get-the-content-pack-for-this-sample), [arquivo .pbix](#get-the-pbix-file-for-this-sample) ou [pasta de trabalho do Excel](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Obter o pacote de conteúdo para este exemplo
 
-1. Abra o serviço do Power BI (app.powerbi.com) e faça logon.
-2. No canto inferior esquerdo, selecione **Obter dados**.
+1. Abra o serviço do Power BI (app.powerbi.com), entre e abra o workspace em que você deseja salvar o exemplo. 
+
+    Se você não tiver uma licença do Power BI Pro, poderá salvar a amostra em Meu Espaço de Trabalho.
+
+2. No canto inferior esquerdo, selecione **Obter Dados**.
+
+    ![Selecionar Obter Dados](media/sample-datasets/power-bi-get-data.png)
+3. Na página **Obter Dados** que aparece, selecione **Exemplos**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Na página Obter Dados que aparece, selecione o ícone **Exemplos**.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Selecione o **exemplo de Análise de Varejo** e escolha **Conectar**.  
+4. Selecione **Exemplo de Análise de Varejo** e escolha **Conectar**.  
   
-   ![Exemplo de Análise de Varejo](media/sample-retail-analysis/retail16.png)
+   ![Conectar-se ao exemplo](media/sample-retail-analysis/retail16.png)
    
-5. O Power BI importa o pacote de conteúdo e adiciona um novo dashboard, um relatório e um conjunto de dados ao seu workspace atual. O novo conteúdo é marcado com um asterisco amarelo. 
+5. O Power BI importa o pacote de conteúdo e adiciona um novo painel, um relatório e um conjunto de dados ao seu espaço de trabalho atual.
    
-   ![Exemplo de Análise de Varejo](media/sample-retail-analysis/retail17.png)
+   ![Entrada Exemplo de Análise de Varejo](media/sample-retail-analysis/retail-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Obter o arquivo. pbix para este exemplo
 
-Como alternativa, você pode baixar o exemplo como um arquivo .pbix, que é projetado para uso com o Power BI Desktop. 
-
- * [Exemplo de Análise de Varejo](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+Como alternativa, você pode baixar o exemplo de Análise de Varejo como um [arquivo .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), que foi projetado para uso com o Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Obter a pasta de trabalho do Excel para este exemplo
-Também é possível [baixar apenas o conjunto de dados (pasta de trabalho do Excel)](http://go.microsoft.com/fwlink/?LinkId=529778) para este exemplo A pasta de trabalho contém planilhas do Power View que você pode exibir e modificar. Para ver os dados brutos, selecione **Power Pivot > Gerenciar**.
+
+Se quiser exibir a fonte de dados deste exemplo, ela também está disponível como uma [Pasta de trabalho do Excel](http://go.microsoft.com/fwlink/?LinkId=529778). A pasta de trabalho contém planilhas do Power View que você pode exibir e modificar. Para ver os dados brutos, habilite os suplementos de Análise de Dados e, em seguida, selecione **Power Pivot > Gerenciar**. Para habilitar os suplementos Power View e Power Pivot, confira [Dar uma olhada nos exemplos do Excel dentro do próprio Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) para obter detalhes.
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Iniciar no painel e abrir o relatório
-1. No painel, selecione o bloco “Total de Lojas”:
 
-   ![](media/sample-retail-analysis/retail-analysis-7.png)  
+1. No espaço de trabalho onde você salvou o exemplo, abra a guia **Painéis**, localize o painel **Exemplo de Análise de Varejo** e selecione-o. 
+2. No painel, selecione o bloco **Total de Lojas, Lojas Novas & Existentes**, que é aberto na página **Visão Geral de Vendas da Loja** no relatório Amostra de Análise de Varejo. 
 
-   Isso leva você à página “Visão geral das vendas da loja” no relatório. Veja que temos 104 lojas no total, sendo que 10 delas são novas. Temos duas redes, Fashions Direct e Lindseys. Em média, as lojas Fashions Direct são maiores.
-2. No gráfico de pizza, selecione **Fashions Direct**.
+   ![Bloco Total de lojas](media/sample-retail-analysis/retail-analysis-7.png)  
 
-   ![](media/sample-retail-analysis/retail3.png)  
+   Nesta página de relatório, você vê que temos um total de 104 lojas, 10 das quais são novas. Temos duas redes, Fashions Direct e Lindseys. Em média, as lojas Fashions Direct são maiores.
+3. No gráfico de pizza **Vendas deste Ano por Cadeia**, selecione **Fashions Direct**.
 
-   Observe o resultado no gráfico de bolhas:
+   ![Gráfico Vendas deste Ano por Cadeia](media/sample-retail-analysis/retail3.png)  
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
+   Observe o resultado no gráfico de bolhas **Percentual de Variação Total de Vendas**:
 
-   O distrito FD-01 tem a maior média de vendas por metro quadrado, FD-02 tem a menor variação em vendas em comparação ao ano passado, FD-03 e FD-04 têm os piores desempenhos gerais.
-3. Selecione algumas das bolhas individuais ou outros gráficos para ver o realce cruzado revelando o impacto de suas seleções.
-4. Para retornar ao dashboard, selecione seu nome na barra de navegação superior (trilhas).
+   ![Gráfico Percentual de Variação Total de Vendas](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
 
-   ![](media/sample-retail-analysis/power-bi-breadcrumbs.png)
-5. No painel, selecione o bloco que contém “Vendas deste ano”.
+   O distrito **FD-01** tem a maior média de **Vendas por Pé Quadrado** e o FD-02 tem a menor **Variação Total de Vendas** em relação ao ano passado. O FD-03 e o FD-04 são os de pior desempenho geral.
+4. Selecione algumas das bolhas individuais ou outros gráficos para ver o realce cruzado revelando o impacto de suas seleções.
+5. Para retornar ao painel, selecione **Exemplo de Análise de Varejo** na barra de navegação superior para retornar ao painel.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
+   ![Barra de navegação](media/sample-retail-analysis/power-bi-breadcrumbs.png)
+6. No painel, selecione o bloco **Vendas deste Ano nas Lojas Novas & Existentes**, o que equivale a digitar *This year sales* na caixa de perguntas e respostas.
 
-   Isso é equivalente a digitar “Vendas deste ano” na caixa de pergunta.
+   ![Bloco Vendas deste Ano](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
 
-   Você verá esta tela:
+   Os resultados da sessão de perguntas e respostas aparecem:
 
-   ![](media/sample-retail-analysis/retail7.png)
+   ![Vendas deste ano nas Perguntas e Respostas](media/sample-retail-analysis/retail7.png)
 
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Examinar um bloco criado com P e R do Power BI
 Vamos analisar mais detalhadamente.
 
-1. Adicione “vendas deste ano **por distrito**” à pergunta. Observe o resultado: Ele coloca automaticamente a resposta em um gráfico de barras e sugere outras frases:
+1. Mude a pergunta para *vendas deste ano**por distrito***. Observe o resultado: Perguntas e Respostas coloca automaticamente a resposta em um gráfico de barras e sugere outras frases:
 
-   ![](media/sample-retail-analysis/retail8.png)
-2. Agora, altere a pergunta para “vendas deste ano **por CEP e rede**”.
+   ![As vendas deste ano por distrito nas Perguntas e Respostas](media/sample-retail-analysis/retail8.png)
+2. Agora mude a pergunta para *vendas deste ano **por cep e cadeia***.
 
-   Observe como ele responde à pergunta conforme você digita com os gráficos apropriados.
-3. Experimente com mais perguntas e veja que tipo de resultados são obtidos.
+   Observe como o Power BI responde à pergunta enquanto você digita e exibe o gráfico apropriado.
+3. Experimente mais perguntas e confira que tipo de resultados você recebe.
 4. Quando estiver pronto, retorne ao dashboard.
 
 ## <a name="dive-deeper-into-the-data"></a>Aprofundar-se nos dados
 Agora vamos explorar em um nível mais detalhado, observando os desempenhos dos distritos.
 
-1. No painel, selecione o bloco, comparando as vendas deste ano às vendas do ano passado.
+1. No painel, selecione o bloco **Vendas deste ano, Vendas do ano passado**, que abre a página **Vendas mensais do distrito** do relatório.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
+   ![Bloco Vendas deste ano, Vendas do ano passado](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
 
-   Observe a grande variabilidade na % de Variação em relação ao ano passado, com janeiro, abril e julho apresentando especificamente um desempenho ruim.
+   No gráfico **Percentual de Variação de Vendas total por Mês Fiscal**, observe a grande variabilidade no percentual da variância em relação ao ano passado, com janeiro, abril e julho sendo meses particularmente ruins.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
+   ![Gráfico Percentual de Variação de Vendas total por Mês Fiscal](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
 
    Vamos ver se podemos chegar até onde os problemas podem estar.
-2. Selecione o gráfico de bolhas e escolha **020-Mens**.
+2. No gráfico de bolhas, selecione a bolha **020-Mens**.
 
-   ![](media/sample-retail-analysis/retail11.png)  
+   ![Selecionar 020-Mens](media/sample-retail-analysis/retail11.png)  
 
-   Observe que a categoria Masculino não foi tão prejudicada em abril como os negócios em geral, mas janeiro e julho ainda foram meses com problemas.
-3. Agora, selecione a **bolha 010-Womens**.
+   Observe que, embora a categoria masculina não tenha sido tão severamente afetada em abril como o negócio geral, janeiro e julho ainda foram meses problemáticos.
+1. Selecione a bolha**010-Womens**.
 
-   ![](media/sample-retail-analysis/retail12.png)
+   ![Selecionar 010-Womens](media/sample-retail-analysis/retail12.png)
 
-   Observe que a categoria Feminino teve desempenho muito pior do que os negócios em geral em todos os meses, e muito pior em quase todos os meses, em comparação com o ano interior.
-4. Selecione a bolha novamente para limpar o filtro.
+   Observe que a categoria feminina teve um desempenho muito pior que o dos negócios gerais em todos os meses e em quase todos os meses em comparação com o ano anterior.
+1. Selecione a bolha novamente para limpar o filtro.
 
 ## <a name="try-out-the-slicer"></a>Experimentar a segmentação
 Vejamos o desempenho de distritos específicos.
 
-1. Clique em Artur Gomes na parte superior esquerda da segmentação.
+1. Selecione **Allan Guinot** na segmentação do **Gerente do Distrito** no canto superior esquerdo.
 
-   ![](media/sample-retail-analysis/retail13.png)
+   ![Selecionar Allan Guinot](media/sample-retail-analysis/retail13.png)
 
-   Observe que o distrito de Artur teve um desempenho superior no Ano Passado em março e junho.
-2. Agora, com Artur ainda selecionado, selecione a bolha Feminino.
+   Observe que o distrito de Allan teve um desempenho superior em março e junho, em comparação ao ano passado.
+2. Com o item **Allan Guinot** ainda selecionado, selecione a bolha **Womens-10** no gráfico de bolhas.
 
-   ![](media/sample-retail-analysis/power-bi-allan.png)
+   ![Itens Allan Guinot e Womens-10 selecionados](media/sample-retail-analysis/power-bi-allan.png)
 
-   Observe que para a categoria Feminino, seu distrito nunca atendeu o volume do ano passado.
+   Observe que com relação à categoria Womens-10, o distrito de Allan não alcançou o volume do ano passado.
 3. Explore os outros gerentes e categorias de distrito – quais outras informações você pode encontrar?
 4. Quando estiver pronto, retorne ao painel.
 
-## <a name="what-is-our-data-telling-us-about-sales-growth-this-year"></a>O que nossos dados estão nos dizendo sobre o crescimento de vendas deste ano?
-A última área que desejamos explorar é nosso crescimento – as novas lojas abertas neste ano.
+## <a name="what-the-data-says-about-sales-growth-this-year"></a>O que os dados dizem sobre o crescimento de vendas este ano
+A última área que queremos explorar é o nosso crescimento, examinando as novas lojas abertas este ano.
 
-1. Selecione o bloco “Lojas abertas neste ano”
+1. Selecione o bloco **Lojas abertas este ano por mês aberto, cadeia**, que abre a página **Análise de novas lojas** do relatório.
 
-   ![](media/sample-retail-analysis/retail15.png)
+   ![Página Análise de Novas Lojas](media/sample-retail-analysis/retail15.png)
 
-   Como pode ser viso no bloco - foram abertas mais lojas Fashion Direct do que Lindseys este ano.
-2. Observe o gráfico “Vendas por pés quadrados por nome”:
+   Como fica evidente na telha, mais lojas da Fashions Direct do que as lojas da Lindseys abriram este ano.
+2. Observe o gráfico **Vendas por pés quadrados por nome**:
 
-   ![](media/sample-retail-analysis/retail14.png)
+   ![Gráfico Vendas por Pé Quadrado por Nome](media/sample-retail-analysis/retail14.png)
 
-    Há bastante diferença na Média de Vendas por Pés Quadrados entre as novas lojas.
-3. Clique no item de legenda Fashions Direct no gráfico à direita superior. Observe, que mesmo para a mesma rede, a melhor loja (Winchester Fashions Direct), em desempenho, significativamente supera a pior loja (Cincinnati 2 Fashions Direct): US$ 21,22 vs. US$ 12,86, respectivamente.
+    Observe a diferença na média de vendas/pé quadrado nas novas lojas.
+3. Selecione o item de legenda **Fashions Direct** no gráfico **Abrir Contagem de Lojas por Mês Aberto e Cadeia** no canto superior direito. Observe, que mesmo para a mesma rede, a melhor loja (Winchester Fashions Direct), em desempenho, significativamente supera a pior loja (Cincinnati 2 Fashions Direct) por US$ 21,22 vs. US$ 12,86, respectivamente.
 
-   ![](media/sample-retail-analysis/power-bi-lindseys.png)
-4. Clique em Winchester Fashions Direct na segmentação e observe o gráfico de linhas. Os primeiros números de vendas foram relatados em fevereiro.
-5. Clique em Cincinnati 2 Fashions Direct na segmentação e você verá no gráfico de linhas que ela foi aberta em junho e parece ser a loja com o pior desempenho.
-6. Como antes, explore clicando nas outras barras, linhas e bolhas em todo os gráficos e veja quais informações você poderá descobrir.
+   ![Opção Fashions Direct selecionada](media/sample-retail-analysis/power-bi-lindseys.png)
+4. Selecione **Winchester Fashions Direct** na segmentação **Nome** e observe o gráfico de linhas. Os primeiros números de vendas foram relatados em fevereiro.
+5. Selecione **Cincinnati 2 Fashions Direct** na segmentação e você observe no gráfico de linhas que ela foi aberta em junho e parece ser a loja com o pior desempenho.
+6. Explore selecionando outras barras, linhas e bolhas nos gráficos e veja quais insights você pode descobrir.
 
-Este é um ambiente seguro para experimentar. Você pode optar por não salvar as alterações. Mas se você salvá-las, sempre é possível acessar Obter Dados para ter uma nova cópia deste exemplo.
+## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: Conecte-se aos seus dados
+Esse ambiente é seguro para teste, pois você pode optar por não salvar as alterações. Mas se você salvá-las, sempre é possível selecionar **Obter Dados** para ter uma nova cópia deste exemplo.
 
-## <a name="connect-to-your-data"></a>Conecte-se aos seus dados
-Esparamos que este tour tenha mostardo como os painéis, P e R e relatório do Power BI podem fornecer informações sobre os dados de varejo. Agora é sua vez - conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Saiba mais sobre como [começar a usar o Power BI](service-get-started.md)
-
-## <a name="next-steps"></a>Próximas etapas
-* [Baixar o pacote de conteúdo de exemplo de Análise de Varejo](sample-tutorial-connect-to-the-samples.md)
-* [Baixar um arquivo zip de todos os arquivos de exemplo](http://go.microsoft.com/fwlink/?LinkId=535020)    
-* [Baixar a pasta de trabalho do Excel para esta amostra do Power BI](http://go.microsoft.com/fwlink/?LinkId=529778)    
-* [Obter dados (para o Power BI)](service-get-data.md)    
-* [Conceitos básicos para designers no serviço do Power BI](service-basic-concepts.md)    
-* Mais perguntas? [Experimente a Comunidade do Power BI](http://community.powerbi.com/)
+Esperamos que este tour tenha mostrado como os painéis, P e R e relatórios do Power BI podem fornecer informações sobre os dados de exemplo. Agora é sua vez – conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Para saber mais, confira [Introdução ao serviço do Power BI](service-get-started.md).

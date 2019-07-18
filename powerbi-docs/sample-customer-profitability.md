@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418757"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67792000"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemplo de Rentabilidade do Cliente para o Power BI: Faça um tour
 
@@ -23,17 +23,21 @@ O pacote de conteúdo do exemplo de Rentabilidade do Cliente contém um painel, 
 
 ![Dashboard para o exemplo de Rentabilidade do Cliente](media/sample-customer-profitability/power-bi-dash.png)
 
-Este exemplo faz parte de uma série que mostra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Ele foi criado usando dados reais da [obviEnce](http://www.obvience.com/) que foram mantidos anônimos. Os dados estão disponíveis em vários formatos: aplicativo/pacote de conteúdo, arquivo .pbix do Power BI Desktop ou pasta de trabalho do Excel. Confira [Exemplos para o Power BI](sample-datasets.md). 
+Este exemplo faz parte de uma série que mostra como o Power BI pode ser usado com dados, relatórios e painéis orientados aos negócios. Ele foi criado usando dados reais da [obviEnce](http://www.obvience.com/) que foram mantidos anônimos. Os dados estão disponíveis em vários formatos: pacote de conteúdo, arquivo .pbix do Power BI Desktop ou pasta de trabalho do Excel. Confira [Exemplos para o Power BI](sample-datasets.md). 
 
-Este tutorial usa o serviço do Power BI e o pacote de conteúdo de exemplo do Rentabilidade do Cliente. Como as experiências de relatório são muito semelhantes, você também pode acompanhar usando o Power BI Desktop e o arquivo de exemplo .pbix. 
+Este tutorial explora o pacote de conteúdo de exemplo Rentabilidade do Cliente no serviço do Power BI. Como as experiências de relatório são muito semelhantes no Power BI Desktop e no serviço, você também pode acompanhar usando o arquivo de exemplo .pbix no Power BI Desktop. 
 
-## <a name="prerequisites"></a>Pré-requisitos
+Você não precisa de uma licença do Power BI para explorar os exemplos no Power BI Desktop. Se você não tiver uma licença do Power BI Pro, poderá salvar a amostra em Meu Espaço de Trabalho no serviço do Power BI. 
+
+## <a name="get-the-sample"></a>Obter o exemplo
 
 Antes de usar o exemplo, primeiro você deve baixá-lo como um [pacote de conteúdo](#get-the-content-pack-for-this-sample), [arquivo .pbix](#get-the-pbix-file-for-this-sample) ou [pasta de trabalho do Excel](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Obter o pacote de conteúdo para este exemplo
 
 1. Abra o serviço do Power BI (app.powerbi.com), entre e abra o workspace em que você deseja salvar o exemplo.
+
+   Se você não tiver uma licença do Power BI Pro, poderá salvar a amostra em Meu Espaço de Trabalho.
 
 2. No canto inferior esquerdo, selecione **Obter Dados**.
 
@@ -135,8 +139,8 @@ Vejamos os dois membros da equipe em detalhes e quais informações podem ser ob
 1. Na segmentação **Executivo** à esquerda, selecione nome de Andrew para filtrar a página do relatório e exibir apenas os dados sobre ele:
 
    * Para um KPI rápido, examine o **Status de Receita (Total do Ano)** ; está verde, o que significa que ele tem um bom desempenho.
-   * O gráfico **% de Variação da Receita do Orçamento por Mês e Executivo** mostra que, exceto por uma queda em fevereiro, Andrew está indo bem no geral. Sua região dominante é o leste e ele lida com 49 clientes e com 5 de 7 produtos. Seu % de GM não é o mais alto nem o mais baixo.
-   * O gráfico **RevenueTY e % de Receita Var para Orçamento por Mês** mostra um histórico de lucratividade estável. No entanto, se filtrar selecionando o quadrado referente a **Central** no mapa de árvore da região, você descobrirá que Andrew tem receita apenas em março e apenas em Indiana. Isso é intencional ou é algo que precisa ser examinado?
+   * O gráfico **% de Variação da Receita do Orçamento por Mês e Executivo** mostra que, exceto por uma queda em fevereiro, Andrew está indo bem. Sua região dominante é o leste e ele lida com 49 clientes e com cinco de sete produtos. Seu % de GM não é o mais alto nem o mais baixo.
+   * O gráfico **RevenueTY e % de Receita Var para Orçamento por Mês** mostra um histórico de lucratividade estável. No entanto, se filtrar selecionando o quadrado referente a **Central** no mapa de árvore da região, você descobrirá que Andrew tem receita apenas em março e apenas em Indiana. Essa tendência é intencional ou é algo que precisa ser examinado?
 
 2. Agora a diante com Valery. Na segmentação **Executivo**, selecione nome de Valery para filtrar a página do relatório e exibir apenas os dados sobre ela. 
 
@@ -205,5 +209,5 @@ Vamos dar uma olhada no setor de Distribuição.
 ## <a name="next-steps-connect-to-your-data"></a>Próximas etapas: Conecte-se aos seus dados
 Esse ambiente é seguro para teste, pois você pode optar por não salvar as alterações. Mas se você salvá-las, sempre é possível selecionar **Obter Dados** para ter uma nova cópia deste exemplo.
 
-Esperamos que este tour tenha mostrado como os painéis do Power BI, perguntas e respostas, e os relatórios podem fornecer ideias sobre dados do cliente. Agora é sua vez – conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Para saber mais, confira [Introdução ao serviço do Power BI](service-get-started.md).
+Esperamos que este tour tenha mostrado como os painéis, P e R e relatórios do Power BI podem fornecer informações sobre os dados de exemplo. Agora é sua vez – conecte-se aos seus próprios dados. Com o Power BI, é possível se conectar a uma grande variedade de fontes de dados. Para saber mais, confira [Introdução ao serviço do Power BI](service-get-started.md).
 

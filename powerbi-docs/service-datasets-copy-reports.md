@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461455"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567404"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Copiar relatórios de outros workspaces (versão prévia)
 
-Saiba como você pode copiar um relatório de um workspace e salvá-lo em outro workspace. Em seguida, você pode modificar esse relatório, adicionando ou excluindo visuais e outros elementos.
-
-Quando você encontrar um relatório de seu interesse, em um workspace ou um aplicativo, você poderá fazer uma cópia dele e, em seguida, modificá-lo de acordo com suas necessidades. Você não precisa se preocupar com a criação do modelo de dados. Ele já foi criado para você. Além disso, é muito mais fácil modificar um relatório existente do que começar do zero.
+Quando você encontrar um relatório de sua preferência, em um espaço de trabalho ou aplicativo, poderá fazer uma cópia dele e salvá-lo em um espaço de trabalho diferente. Em seguida, você pode modificar esse relatório, adicionando ou excluindo visuais e outros elementos. Você não precisa se preocupar com a criação do modelo de dados. Ele já foi criado para você. Além disso, é muito mais fácil modificar um relatório existente do que começar do zero. No entanto, você não pode publicar sua cópia do relatório em um aplicativo a partir do novo espaço de trabalho. Confira a lista de outras [considerações e limitações](service-datasets-across-workspaces.md#considerations-and-limitations) no artigo "Usar conjuntos de dados em espaço de trabalhos".
 
 ## <a name="save-a-copy-of-a-report"></a>Salvar uma cópia de um relatório
 
@@ -61,6 +59,21 @@ Quando você tiver um relatório no workspace, talvez você precise saber em qua
 1. A caixa de diálogo **Conteúdo relacionado** mostra todos os itens relacionados. Nessa lista, o conjunto de dados se parece com qualquer outro. Você não pode saber se ele reside em outro workspace. Esse problema é conhecido.
  
     ![Caixa de diálogo Conteúdo relacionado](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Excluir um relatório e seu conjunto de dados compartilhado
+
+Você pode decidir que não deseja mais o relatório e seu conjunto de dados compartilhado associado no espaço de trabalho.
+
+1. Exclua o relatório. Na lista de relatórios no espaço de trabalho, selecione o ícone **Excluir**.
+
+    ![Excluir ícone de relatório](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. Na lista de conjuntos de dados, você vê que os conjuntos de dados compartilhados não têm ícones **Excluir**. Atualize a página ou vá para uma página diferente e retorne. O conjunto de dados será eliminado. Caso contrário, verifique **Exibição relacionada**. Pode estar relacionado a outra tabela em seu espaço de trabalho.
+
+    ![Ícone Exibir relacionados](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > A exclusão do conjunto de dados compartilhado neste espaço de trabalho não exclui o conjunto de dados. Ela exclui apenas a referência a ele.
 
 
 ## <a name="next-steps"></a>Próximas etapas

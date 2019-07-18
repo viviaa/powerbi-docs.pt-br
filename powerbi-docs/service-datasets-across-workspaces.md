@@ -7,29 +7,29 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816662"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567839"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Usar conjuntos de dados em workspaces (versão prévia)
 
-Business intelligence é uma atividade colaborativa. É importante estabelecer conjuntos de dados padronizados que possam ser a 'única fonte de verdade'. É fundamental descobrir e reutilizar esses conjuntos de dados padronizados. Quando os modeladores de dados especialistas em sua organização criam e compartilham conjuntos de dados otimizados, os criadores de relatórios podem começar com esses conjuntos de dados para criar relatórios precisos. Em seguida, sua organização terá dados consistentes para tomar decisões e uma cultura de dados íntegra.
+Business intelligence é uma atividade colaborativa. É importante estabelecer conjuntos de dados padronizados que possam ser a 'única fonte de verdade'. Em seguida, descobrir e reutilizar esses conjuntos de dados padronizados é fundamental. Quando os modeladores de dados especialistas em sua organização criam e compartilham conjuntos de dados otimizados, os criadores de relatórios podem começar com esses conjuntos de dados para criar relatórios precisos. Em seguida, sua organização terá dados consistentes para tomar decisões e uma cultura de dados íntegra.
 
 ![Selecionar um conjunto de dados compartilhado](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-O Power BI facilita para os criadores de conjunto de dados certificar ou promover conjuntos de dados para que outras pessoas possam descobri-los. Em seguida, os autores de relatórios encontrarão conjuntos de dados oficiais e de qualidade que poderão usar, seja qual for o local em que estejam no Power BI. Os proprietários de conjunto de dados podem manter o controle de quem tem acesso aos seus dados usando a opção [Permissão Criar](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Os administradores de locatários têm uma nova configuração de locatário para [controlar o uso de conjuntos de dados em workspaces](service-datasets-admin-across-workspaces.md).
+No Power BI, os criadores de conjunto de dados podem *certificar* ou *promover* conjuntos de dados para que outras pessoas possam descobri-los. Dessa forma, os autores do relatório sabem quais conjuntos de dados são de alta qualidade e oficiais, e eles podem usar esses conjuntos de dados sempre que criarem no Power BI. Os proprietários de conjunto de dados podem manter o controle de quem tem acesso aos seus dados usando a opção [Permissão Criar](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Os administradores de locatários têm uma nova configuração de locatário para [controlar o uso de conjuntos de dados em workspaces](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Compartilhamento de conjuntos de dados e a nova experiência de workspace
 
 A criação de relatórios com base em conjuntos de dados em diferentes workspaces e a cópia de relatórios para diferentes workspaces estão estreitamente ligados à [nova experiência de workspace](service-create-the-new-workspaces.md):
 
-- No serviço, quando você abre o catálogo do conjunto de dados em uma nova experiência de workspace, o catálogo do conjunto de dados mostra os conjuntos de dados que estão em Meu Workspace e nos workspaces da nova experiência de workspace. 
+- No serviço, quando você abre o catálogo do conjunto de dados em uma nova experiência de espaço de trabalho, o catálogo do conjunto de dados mostra os conjuntos de dados que estão em Meu Espaço de Trabalho e outros espaço de trabalhos da nova experiência de espaço de trabalho. 
 - Quando você abre o catálogo do conjunto de dados em um workspace clássico, você vê apenas os conjuntos de dados desse workspace, não aqueles de outros workspaces.
 - No Desktop, você pode publicar relatórios do Live Connect em diferentes workspaces, desde que os conjuntos de dados estejam em workspaces da nova experiência.
 - Ao copiar relatórios em workspaces, o workspace de destino precisa ser um workspace da nova experiência.

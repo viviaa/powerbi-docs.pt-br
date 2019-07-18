@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721064"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596542"
 ---
 # <a name="what-is-power-bi-premium"></a>O que é o Power BI Premium?
 
 O Power BI Premium oferece recursos dedicados e aprimorados para executar o serviço do Power BI para sua organização. Por exemplo:
 
-- Maior dimensionamento e desempenho
-- Flexibilidade para licença por capacidade
-- Unifique o BI corporativo e de autoatendimento
-- Estenda o BI local com o Servidor de Relatórios do Power BI
-- Suporte para residência de dados por região (Multi-Geo)
-- Compartilhe dados com qualquer pessoa sem comprar uma licença por usuário
+> [!div class="checklist"]
+> * Maior dimensionamento e desempenho
+> * Flexibilidade para licença por capacidade
+> * Unifique o BI corporativo e de autoatendimento
+> * Estenda o BI local com o Servidor de Relatórios do Power BI
+> * Suporte para residência de dados por região (Multi-Geo)
+> * Compartilhe dados com qualquer pessoa sem comprar uma licença por usuário
 
-Este artigo não se destina a fornecer detalhes aprofundados sobre cada recurso do Power BI Premium – na verdade, ele só oferece uma visão geral. Quando necessário, serão fornecidos links para outros artigos com informações mais detalhadas.
+Este artigo apresenta os principais recursos do Power BI Premium. Quando necessário, serão fornecidos links para outros artigos com informações mais detalhadas.
 
 ## <a name="subscriptions-and-licensing"></a>Assinaturas e licenciamento
 
@@ -52,7 +53,7 @@ As assinaturas do Power BI Premium são compradas por administradores no centro 
 
 Com o Power BI Premium, você obtém *capacidades dedicadas*. Em contraste com uma capacidade compartilhada em que cargas de trabalho são executadas em recursos computacionais compartilhados com outros clientes, uma capacidade dedicada é para uso exclusivo de uma organização. Ela é isolada com recursos computacionais dedicados que oferecem desempenho confiável e consistente para conteúdo hospedado. 
 
-Os workspaces residem dentro de capacidades. Cada usuário do Power BI tem um workspace pessoal, conhecido como **Meu workspace**. Workspaces adicionais podem ser criados para habilitar a colaboração e a implantação. Eles são conhecidos como **Workspaces do Aplicativo**. Por padrão, os workspaces, incluindo os pessoais, são criados na capacidade compartilhada. Quando você tem capacidades Premium, o Meu workspaces e os Workspaces do Aplicativo podem ser atribuídos a capacidades Premium.
+Os workspaces residem dentro de capacidades. Cada usuário do Power BI tem um workspace pessoal, conhecido como **Meu workspace**. Os espaços de trabalho adicionais, conhecidos como **Espaços de Trabalho do Aplicativo**, podem ser criados para habilitar a colaboração e a implantação. Por padrão, os workspaces, incluindo os pessoais, são criados na capacidade compartilhada. Quando você tem capacidades Premium, o Meu workspaces e os Workspaces do Aplicativo podem ser atribuídos a capacidades Premium.
 
 ### <a name="capacity-nodes"></a>Nós de capacidade
 
@@ -102,7 +103,7 @@ Modelos de importação, portanto, são carregados no e removidos da memória de
 
 A remoção de um modelo de memória é conhecida como *remoção*. É uma operação que o Power BI pode executar rapidamente dependendo do tamanho dos modelos. Se a capacidade não estiver enfrentando nenhuma pressão de memória, os modelos serão simplesmente carregados na memória e permanecerão lá. No entanto, quando uma memória insuficiente estiver disponível para carregar um modelo, o serviço do Power BI precisará liberar memória primeiro. Ele libera memória por meio da detecção de modelos que se tornaram inativos procurando modelos que não foram usados nos últimos três minutos \[[1](#endnote-1)\] e, em seguida, removendo-os. Se não houver nenhum modelo inativo para remover, o serviço do Power BI buscará remover modelos carregados para operações em segundo plano. Um último recurso, após 30 segundos de tentativas falhas \[[1](#endnote-1)\], é falhar a operação interativa. Nesse caso, o usuário de relatório é notificado sobre a falha com uma sugestão para tentar novamente em breve. Em alguns casos, os modelos podem ser descarregados da memória devido a operações de serviço.
 
-É importante enfatizar que a remoção do conjunto de dados é um comportamento normal e esperado. Ela busca maximizar o uso de memória carregando e descarregando modelos cujos tamanhos combinados podem exceder a memória disponível. Isso ocorre por design e é completamente transparente para os usuários de relatório. Altas taxas de remoção não necessariamente significam que a capacidade tem recursos insuficientes. Elas poderão, contudo, tornar-se uma preocupação se a capacidade de resposta da consulta ou da atualização estiver apresentando problemas devido a altas taxas de remoção.
+É importante enfatizar que a remoção do conjunto de dados é um comportamento normal e esperado. Ela busca maximizar o uso de memória carregando e descarregando modelos cujos tamanhos combinados podem exceder a memória disponível. Isso ocorre por design e é transparente para os usuários de relatório. Altas taxas de remoção não necessariamente significam que a capacidade tem recursos insuficientes. Elas poderão, contudo, tornar-se uma preocupação se a capacidade de resposta da consulta ou da atualização estiver apresentando problemas devido a altas taxas de remoção.
 
 As atualizações de modelos de importação sempre fazem uso intensivo de memória, pois os modelos devem ser carregados na memória. É necessário ter memória adicional para processamento. Uma atualização completa pode usar aproximadamente o dobro da quantidade de memória exigida pelo modelo. Isso garante que o modelo possa ser consultado até mesmo quando estiver sendo processado, pois as consultas são enviadas para o modelo existente até que a atualização tenha sido concluída e os dados do modelo novo estejam disponíveis. Uma atualização incremental exigirá menos memória e poderia ser concluída mais rapidamente; portanto, isso poderá reduzir substancialmente a pressão sobre os recursos de capacidade. As atualizações também podem fazer uso intensivo da CPU para modelos, principalmente aqueles com transformações complexas de Power Query ou colunas/tabelas calculadas que são complexas ou baseadas em grandes tabelas.
 
@@ -145,7 +146,7 @@ O aplicativo **Métricas de Capacidade do Power BI Premium** oferece as informa�
 
 ![Dashboard do aplicativo de métricas](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-No dashboard do aplicativo, é possível clicar em uma célula de métrica para abrir um relatório aprofundado. Os relatórios oferecem métricas e capacidade de filtragem aprofundadas para fazer drill down nas informações mais importantes de que você precisa para manter suas capacidades em execução sem problemas.
+No painel do aplicativo, é possível clicar em uma célula de métrica para abrir um relatório aprofundado. Os relatórios oferecem métricas e capacidade de filtragem aprofundadas para fazer drill down nas informações mais importantes de que você precisa para manter suas capacidades em execução sem problemas.
 
 ![Contagens de tempo de espera de picos periódicos de consulta indicam uma possível saturação da CPU](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
@@ -175,7 +176,7 @@ A tabela a seguir descreve os SKUs recomendados para vários tamanhos .pbix:
    |P2    | < 6 GB        |
    |P3, P4, P5    | até 10 GB   |
 
-O SKU A4 do Power BI Embedded é igual ao SKU P1, o A5 = P2 e o A6 = P3. Observe que a publicação de grandes modelos em SKUs A e EM pode retornar erros que não são específicos para o erro de limitação de tamanho do modelo na capacidade compartilhada. Erros de atualização de modelos grandes em SKUs A e EM provavelmente são resultados de atingimento de tempos limite. 
+O SKU A4 do Power BI Embedded é igual ao SKU P1, o A5 = P2 e o A6 = P3. A publicação de grandes modelos em SKUs A e EM pode retornar erros que não são específicos para o erro de limitação de tamanho do modelo na capacidade compartilhada. Erros de atualização de modelos grandes em SKUs A e EM provavelmente são resultados de atingimento de tempos limite. 
 
 Os arquivos .pbix representam dados em um *estado altamente compactado*. Os dados provavelmente expandirão várias vezes quando carregados na memória e, a partir daí, eles podem expandir várias vezes mais durante a atualização de dados.
 
