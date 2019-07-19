@@ -110,7 +110,7 @@ Para resolver esse problema, você deve cortar "oauth2/authorize/" no final da U
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Falha na autenticação com AADSTS70002 ou AADSTS50053
 
-** _(AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)_ **
+** _(AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta)_**
 
 Se você estiver usando o Power BI Embedded e a autenticação direta do Azure AD e estiver recebendo mensagens ao fazer logon, como ***error:unauthorized_client, error_description:AADSTS70002: Erro ao validar credenciais. AADSTS50053: você tentou entrar muitas vezes com uma ID de usuário ou senha incorreta***. Isso acontece porque a autenticação direta não está mais em uso desde 14 de junho de 2018 por padrão.
 
@@ -162,7 +162,7 @@ Para verificar qual é o problema, tente seguir as etapas abaixo.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: a concessão exige permissão de administrador
 
-**_Sintomas:_ **<br>
+**_Sintomas:_**<br>
 quando um usuário não administrador tenta entrar em um aplicativo pela primeira vez ao conceder autorização, uma das seguintes mensagens de erro é exibida:
 
 * O ConsentTest precisa de permissão para acessar os recursos em sua organização que apenas um administrador pode conceder. Peça a um administrador para conceder permissão para este aplicativo antes de usá-lo.
@@ -172,10 +172,10 @@ quando um usuário não administrador tenta entrar em um aplicativo pela primeir
 
 Um usuário administrador pode entrar e dar o consentimento com êxito.
 
-**_Causa raiz:_ **<br>
+**_Causa raiz:_**<br>
 O consentimento do usuário está desabilitado para o locatário.
 
-**_Várias correções são possíveis:_ **
+**_Várias correções são possíveis:_**
 
 *Habilitar o consentimento do usuário para todo o locatário (todos os usuários, todos os aplicativos)*
 
