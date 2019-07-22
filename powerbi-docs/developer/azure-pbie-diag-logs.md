@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385250"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289858"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Log de diagnóstico do serviço Power BI Embedded no Microsoft Azure
 
@@ -22,7 +22,6 @@ Com os [logs de diagnóstico de recurso do Azure](https://docs.microsoft.com/azu
 O uso do Diagnóstico pode atender a alguns cenários, como:
 
 * Detecção de consultas com problemas ou de execução longa.
-* Detecção de erros ao atingir o limite da capacidade.
 * Derivação das [métricas de capacidade](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/).
 * Controle de uso de conjunto de dados específicos.
 
@@ -127,9 +126,6 @@ A categoria do mecanismo instrui o recurso a registrar os seguintes eventos. Em 
 | JobID | 0 | ID do trabalho para o andamento. |
 | ObjectID | 464 | ID de objeto |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT.Customer | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT.Customer | Caminho do objeto. Uma lista de componentes principais separados por vírgula, começando pelo componente principal do objeto. |
-| ObjectReference | <Object><Table>SalesLT.Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Referência de objeto. Codificar como XML para todos os componentes principais, usando marcações para descrever o objeto. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Hora em que o evento foi encerrado. |
 | Duração | 0 | Quantidade de tempo (em milissegundos) tomada pelo evento. |
 | SessionType | Usuário | Tipo de sessão (que entidade causou a operação). |
@@ -138,7 +134,6 @@ A categoria do mecanismo instrui o recurso a registrar os seguintes eventos. Em 
 | Severidade | 0 | Nível de severidade de uma exceção. |
 | Êxito | 1 | 1 = êxito. 0 = falha (por exemplo, 1 significa êxito em uma verificação de permissões e 0 significa uma falha nessa verificação). |
 | Error | 0 | Número do erro de um determinado evento. |
-| TextData | SET DC_KIND=\"AUTO\"; SELECT [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)] FROM [SalesLT Customer (464)]; [tamanho estimado (bytes de marshaling do volume): 850 6800] | Dados de texto associados ao evento. |
 | ConnectionID | 3 | ID de Conexão Exclusiva. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Conjunto de dados no qual a instrução do usuário está sendo executada. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | GUID de sessão. |
@@ -146,8 +141,7 @@ A categoria do mecanismo instrui o recurso a registrar os seguintes eventos. Em 
 | ClientProcessID | nulo | A ID de processo do aplicativo cliente. |
 | ApplicationName | nulo | Nome do aplicativo cliente que criou a conexão com o servidor. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | O nome do recurso da capacidade do Power BI Embedded. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>AllMetrics
 

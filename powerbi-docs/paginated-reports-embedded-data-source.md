@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345494"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270846"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Criar uma fonte de dados incorporada para relatórios paginados no serviço do Power BI
 
@@ -32,7 +32,7 @@ Para as seguintes fontes de dados, use a opção [Conexão do SQL Server Analysi
 
 - Conjuntos de dados do Power BI Premium
 
-Os relatórios paginados se conectam a fontes de dados locais por meio de um [gateway do Power BI](service-gateway-getting-started.md). Você configura o gateway após publicar o relatório no serviço do Power BI.
+Os relatórios paginados se conectam a fontes de dados locais por meio de um [gateway do Power BI](service-gateway-onprem.md). Você configura o gateway após publicar o relatório no serviço do Power BI.
 
 Confira [Dados de relatório no Construtor de Relatórios do Power BI](report-builder-data.md) para obter mais informações.
 
