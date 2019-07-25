@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 03/05/2019
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
-ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
+ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533696"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289935"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Use SAML (Security Assertion Markup Language) para SSO (logon único) do Power BI para fontes de dados locais
 
 Use [SAML (Security Assertion Markup Language)](https://www.onelogin.com/pages/saml) para habilitar a conectividade ininterrupta de logon único. Habilitar SSO torna mais fácil para relatórios e dashboards do Power BI atualizar os dados de fontes locais.
 
-## <a name="supported-data-sources"></a>Fontes de dados com suporte
+## <a name="supported-data-sources"></a>Fontes de dados para as quais há suporte
 
 Atualmente, há suporte para SAP HANA com SAML. Para obter mais informações sobre como configurar e definir logon único para SAP HANA usando SAML, confira o tópico [SSO do SAML para a Plataforma BI para HANA](https://wiki.scn.sap.com/wiki/display/SAPHANA/SAML+SSO+for+BI+Platform+to+HANA) na documentação do SAP HANA.
 
@@ -31,32 +31,33 @@ Observe que, para o HANA, é **altamente** recomendável que a criptografia seja
 
 ## <a name="configuring-the-gateway-and-data-source"></a>Como configurar a fonte de dados e o gateway
 
-Para usar SAML, você precisa estabelecer uma relação de confiança entre os servidores do HANA para os quais você deseja habilitar o SSO e o Gateway, que serve como o IdP (provedor de identidade) SAML nesse cenário. Há várias maneiras para estabelecer essa relação, tais como importar o certificado x509 do IdP do gateway para o repositório de confiança dos servidores HANA ou fazer com que o certificado x509 do gateway seja assinado por uma AC (autoridade de certificação) raiz considerada confiável pelos servidores do HANA. Descrevemos a segunda abordagem neste guia, mas você poderá usar outra abordagem se preferir.
+Para usar SAML, você precisa estabelecer uma relação de confiança entre os servidores do HANA para os quais você deseja habilitar o SSO e o gateway, que serve como o IdP (provedor de identidade) SAML nesse cenário. Há várias maneiras para estabelecer essa relação, tais como importar o certificado X509 do IdP do gateway para o repositório de confiança dos servidores HANA ou fazer com que o certificado X509 do gateway seja assinado por uma AC (autoridade de certificação) raiz considerada confiável pelos servidores do HANA. Descrevemos a segunda abordagem neste guia, mas você poderá usar outra abordagem se preferir.
 
 Observe também que embora este guia use OpenSSL como provedor de criptografia do servidor do HANA, também é possível usar a biblioteca criptográfica do SAP (também conhecida como CommonCryptoLib ou sapcrypto) em vez de OpenSSL para concluir as etapas de configuração em que podemos estabelecer a relação de confiança. Para obter mais informações, consulte a documentação oficial do SAP.
 
-As etapas a seguir descrevem como estabelecer uma relação de confiança entre um servidor do HANA e o IdP do gateway assinando o certificado x509 do IdP do gateway usando uma AC raiz considerada confiável pelo servidor do HANA.
+As etapas a seguir descrevem como estabelecer uma relação de confiança entre um servidor do HANA e o IdP do gateway assinando o certificado X509 do IdP do gateway usando uma AC raiz considerada confiável pelo servidor do HANA.
 
 1. Crie a chave privada e o certificado X509 da AC raiz. Por exemplo, para criar o certificado X509 da AC raiz e a chave privada no formato .pem:
 
-```
-openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
-```
+   ```
+   openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
+   ```
+  Verifique se o certificado da AC raiz está protegido adequadamente – se foi obtido por terceiros, ele pode ser usado para obter acesso não autorizado ao servidor HANA. 
 
-Adicione o certificado (por exemplo, CA_Cert.pem) ao repositório de confiança do servidor do HANA para que o servidor do HANA confie em todos os certificados assinados pela AC raiz que você acabou de criar. O local do repositório de confiança do seu servidor do HANA pode ser encontrado examinando a definição de configuração **ssltruststore**. Se você seguiu a documentação do SAP que aborda como configurar o OpenSSL, o servidor do HANA talvez já confie em uma AC raiz que você pode reutilizar. [Veja como configurar o Open SSL para SAP HANA Studio para o servidor do SAP HANA](https://archive.sap.com/documents/docs/DOC-39571) para obter detalhes. Se você tiver vários servidores do HANA para os quais deseja habilitar o logon único do SAML, verifique se cada um dos servidores confia nessa AC raiz.
+  Adicione o certificado (por exemplo, CA_Cert.pem) ao repositório de confiança do servidor do HANA para que o servidor do HANA confie em todos os certificados assinados pela AC raiz que você acabou de criar. O local do repositório de confiança do seu servidor do HANA pode ser encontrado examinando a definição de configuração **ssltruststore**. Se você seguiu a documentação do SAP que aborda como configurar o OpenSSL, o servidor do HANA talvez já confie em uma AC raiz que você pode reutilizar. Veja [Como configurar o Open SSL para SAP HANA Studio para o servidor do SAP HANA](https://archive.sap.com/documents/docs/DOC-39571) para obter detalhes. Se você tiver vários servidores do HANA para os quais deseja habilitar o logon único do SAML, verifique se cada um dos servidores confia nessa AC raiz.
 
-1. Crie o certificado x509 do IdP do gateway. Por exemplo, para criar uma solicitação de assinatura de certificado (IdP_Req.pem) e uma chave privada (IdP_Key.pem) válidas por um ano, execute o seguinte comando:
+1. Crie o certificado X509 do IdP do gateway. Por exemplo, para criar uma solicitação de assinatura de certificado (IdP_Req.pem) e uma chave privada (IdP_Key.pem) válidas por um ano, execute o seguinte comando:
 
-```
- openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
-```
+   ```
+   openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
+   ```
 
+   Assine a solicitação de assinatura de certificado usando a AC raiz que você configurou como confiável pelos servidores do HANA. Por exemplo, para assinar IdP_Req.pem usando CA_Cert.pem e CA_Key.pem (o certificado e a chave da AC raiz), execute o seguinte comando:
 
-Assine a solicitação de assinatura de certificado usando a AC raiz que você configurou como confiável pelos servidores do HANA. Por exemplo, para assinar IdP_Req.pem usando CA_Cert.pem e CA_Key.pem (o certificado e a chave da AC raiz), execute o seguinte comando:
+   ```
+   openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
+   ```
 
-  ```
-openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
-```
 O certificado de IdP resultante será válido por um ano (consulte a opção -days). Agora, importe certificado do IdP no HANA Studio para criar um novo provedor de identidade SAML.
 
 1. No SAP HANA Studio, clique com o botão direito do mouse no servidor SAP HANA e, em seguida, navegue até **Segurança** > **Abrir Console de Segurança** > **Provedor de Identidade SAML**  >  **Biblioteca Criptográfica do OpenSSL**.
@@ -75,11 +76,11 @@ O certificado de IdP resultante será válido por um ano (consulte a opção -da
 
     ![Configurar SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Selecione o provedor de identidade que você criou na etapa 2. Para **identidade externa**, insira o UPN do usuário do Power BI (normalmente o endereço de email do usuário faz logon no Power BI com) e selecione **Add**. Observe que, se você tiver configurado seu Gateway para usar a opção de configuração ADUserNameReplacementProperty deve inserir o valor que substituirá o Power BI UPN do usuário original. Por exemplo, se você definir o ADUserNameReplacementProperty como SAMAccountName, você deve inserir SAMAccountName do usuário.
+1. Selecione o provedor de identidade que você criou na etapa 2. Para **Identidade Externa**, insira o UPN do usuário do Power BI (normalmente, o endereço de email com o qual o usuário faz logon no Power BI) e, em seguida, selecione **Adicionar**. Observe que, se tiver configurado seu gateway para usar a opção de configuração *ADUserNameReplacementProperty*, você deverá inserir o valor que substituirá o UPN original do usuário do Power BI. Por exemplo, se definir *ADUserNameReplacementProperty* como **SAMAccountName**, você deverá inserir o **SAMAccountName** do usuário.
 
     ![Selecionar o provedor de identidade](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Agora que você tem o certificado e a identidade configurados, converta o certificado em um formato pfx e configure o computador do gateway para usar o certificado.
+Agora que você tem o certificado e a identidade do gateway configurados, converta o certificado em um formato pfx e configure o computador do gateway para usar o certificado.
 
 1. Converta o certificado para o formato pfx executando o comando a seguir. Observe que esse comando define "raiz" como a senha do arquivo pfx.
 
@@ -132,7 +133,7 @@ Por fim, siga estas etapas para adicionar a impressão digital do certificado pa
     ```
 1. Copie a impressão digital do certificado criado.
 
-1. Navegue até o diretório de gateway, que assume como padrão C:\Arquivos de Programas\On-premises data gateway.
+1. Navegue até o diretório de gateway, que assume como padrão C:\Arquivos de Programas\gateway de dados local.
 
 1. Abra PowerBI.DataMovement.Pipeline.GatewayCore.dll.config e localize a seção \*SapHanaSAMLCertThumbprint\*. Cole a impressão digital copiada.
 
@@ -148,7 +149,7 @@ Agora você pode usar a página **Gerenciar Gateway** no Power BI para configura
 
 Depois de configurar o SSO, talvez você veja o seguinte erro no portal do Power BI: "As credenciais fornecidas não podem ser usadas para a fonte SAP HANA". Esse erro indica que a credencial do SAML foi rejeitada pelo SAP HANA.
 
-Os rastreamentos de autenticação fornecem informações detalhadas para solução de problemas com credenciais no SAP HANA. Siga estas etapas para configurar o rastreamento no servidor SAP HANA.
+Os rastreamentos de autenticação do lado do servidor fornecem informações detalhadas para solução de problemas com credenciais no SAP HANA. Siga estas etapas para configurar o rastreamento no servidor SAP HANA.
 
 1. No servidor SAP HANA, ative o rastreamento de autenticação executando a consulta a seguir.
 
@@ -177,9 +178,9 @@ Os rastreamentos de autenticação fornecem informações detalhadas para soluç
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para obter mais informações sobre o **Gateway de dados local** e o **DirectQuery**, confira os seguintes recursos:
+Para obter mais informações sobre o **gateway de dados local** e o **DirectQuery**, confira os seguintes recursos:
 
-* [On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)
+* [O que é um gateway de dados local?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery e SAP BW](desktop-directquery-sap-bw.md)

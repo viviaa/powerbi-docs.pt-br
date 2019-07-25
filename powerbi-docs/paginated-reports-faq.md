@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
-ms.openlocfilehash: 10ac6ed9f49241103d03f2667ccc8db5d619db6c
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.date: 07/15/2019
+ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345523"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270793"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Relatórios paginados no Power BI: PERGUNTAS FREQUENTES 
 
@@ -119,10 +119,10 @@ Você recebe uma mensagem de erro se tentar carregar um arquivo que tenha um rec
 
 Damos suporte para as seguintes fontes de dados - 
 
-- Conjuntos de dados do Power BI Premium
+- Conjuntos de dados do Power BI (por meio de SSO (logon único))
 - Azure Analysis Services (por meio de logon único (SSO) e oAuth)
 - SQL Data Warehouse do Azure
-- Banco de Dados SQL do Microsoft Azure (nome de usuário/senha e oAuth)
+- Banco de Dados SQL do Azure (nome de usuário/senha, SSO e oAuth)
 - SQL Server*
 - Modelos de tabela (DAX) e multidimensionais (MDX) do SQL Server Analysis Services (SSAS)* 
 - Oracle* 
@@ -134,11 +134,11 @@ Ao acessar o SSAS por meio do gateway, o usuário cujas credenciais estão armaz
 
 ### <a name="what-authentication-methods-do-you-support"></a>Quais métodos de autenticação têm suporte?
 
-Damos suporte a SSO para o Azure Analysis Services e fontes de dados do Power BI Premium. Também damos suporte a oAuth e SSO para o Banco de Dados SQL do Azure.  Para as outras fontes de dados, você precisa armazenar um nome de usuário e uma senha com a fonte de dados no portal ou gateway.  
+Damos suporte ao SSO para o Azure Analysis Services, o Banco de Dados SQL do Azure e fontes de dados do Power BI.  Também damos suporte a OAuth para o Banco de Dados SQL do Azure e o Azure Analysis Services.  Para as outras fontes de dados, você precisa armazenar um nome de usuário e uma senha com a fonte de dados no portal ou gateway.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Posso usar um conjunto de dados do Power BI como fonte de dados para meu relatório paginado?
 
-Sim, damos suporte a conjuntos de dados do Power BI Premium como fontes de dados para seus relatórios paginados.
+Sim, damos suporte a conjuntos de dados do Power BI como fontes de dados para seus relatórios paginados.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Posso usar procedimentos armazenados pelo gateway?
 
@@ -179,10 +179,6 @@ A intenção é que os relatórios suportem os mesmos cenários principais no se
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>É uma ferramenta de migração planejada para que os clientes do SSRS possam mover seus relatórios e ativos existentes para o Power BI?
 
 Estamos avaliando opções para permitir que o conteúdo seja movido para o Power BI de maneira automatizada, mas isso não estará disponível até depois da GA.
-
-### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>No futuro poderei criar relatórios paginados e relatórios do Power BI em uma única ferramenta de criação?
-
-Vimos maneiras de habilitar esse cenário, mas isso não faz parte dos nossos planos no momento.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Existe um controle de visualizador de relatórios para relatórios paginados no serviço do Power BI?
 

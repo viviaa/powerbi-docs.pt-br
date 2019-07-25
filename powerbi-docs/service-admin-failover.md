@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196869"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270599"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Perguntas frequentes de recuperação de desastre, failover e alta disponibilidade do Power BI
 
@@ -65,7 +65,7 @@ Instâncias de serviço do Power BI retornam para as respectivas regiões origin
 Se a solução do Power BI usada em sua organização envolve um dos elementos a seguir, você precisa executar algumas medidas para garantir que a solução permaneça altamente disponível:
 
 - Se sua organização usa o Power BI Premium, você precisa garantir que a capacidade Premium seja dimensionada para atender às demandas de carga da sua implantação.  O [white paper de planejamento e implantação do Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment) e o [aplicativo de métricas de capacidade do Power BI Premium](service-admin-premium-monitor-capacity.md) podem ajudar você a planejar e atender a esse requisito. Regularmente, adicionamos novos recursos para o aplicativo de métricas e o portal de administração no Power BI para ajudar.
-- Se sua organização acessar fontes de dados locais usando o gateway local do Power BI, você precisará configurar o gateway [conforme descrito neste artigo](service-gateway-high-availability-clusters.md) para dar suporte a alta disponibilidade. Siga estas diretrizes se você estiver atualizando relatórios no modo de importação ou estiver acessando dados ou modelos de dados usando o DirectQuery ou Live Connect.
+- Se sua organização acessar fontes de dados locais usando o gateway de dados local, você precisará configurar o gateway [conforme descrito neste artigo](/data-integration/gateway/service-gateway-high-availability-clusters) para dar suporte a alta disponibilidade. Siga estas diretrizes se você estiver atualizando relatórios no modo de importação ou estiver acessando dados ou modelos de dados usando o DirectQuery ou Live Connect.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Os gateways funcionarão no modo de failover?
 

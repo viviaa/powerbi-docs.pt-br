@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809266"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325140"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Use o Kerberos para logon único (SSO) do Power BI para fontes de dados locais
 
@@ -60,14 +60,14 @@ Em uma instalação padrão, o gateway é executado como uma conta de serviço l
 
 ![Captura de tela da conta de serviço](media/service-gateway-sso-kerberos/service-account.png)
 
-Para habilitar a delegação restrita de Kerberos, o gateway precisa ser executado como uma conta de domínio, a menos que a instância do Azure AD (Azure Active Directory) já esteja sincronizada com a instância do Active Directory local (usando o Azure AD DirSync/Connect). Para alternar para uma conta de domínio, confira [Alternar o gateway para uma conta de domínio](#switch-the-gateway-to-a-domain-account) mais adiante neste artigo.
+Para habilitar a delegação restrita de Kerberos, o gateway precisa ser executado como uma conta de domínio, a menos que a instância do Azure AD (Azure Active Directory) já esteja sincronizada com a instância do Active Directory local (usando o Azure AD DirSync/Connect). Para alternar para uma conta de domínio, confira [Alterar a conta de serviço de gateway](/data-integration/gateway/service-gateway-service-account).
 
 > [!NOTE]
 > Se o Azure AD Connect estiver configurado e as contas de usuário estiverem sincronizadas, o serviço de gateway não precisará executar pesquisas no Azure AD local em tempo de execução. Você pode usar o SID de serviço local (em vez de uma conta de domínio) para o serviço do gateway. As etapas de configuração da delegação restrita de Kerberos descritas neste artigo são as mesmas que a configuração. Elas são simplesmente aplicadas ao objeto de computador do gateway no Azure AD, em vez de na conta de domínio.
 
 ### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Pré-requisito 3: ter direitos de administrador de domínio para configurar definições de SPNs (SetSPN) e da delegação restrita de Kerberos
 
-Não é recomendado que um administrador de domínio conceda direitos temporária ou permanentemente para alguém configurar SPNs e a delegação de Kerberos sem exigir direitos de administrador de domínio. Na seção a seguir, abordaremos as etapas de configuração recomendadas mais detalhadamente.
+Não é recomendado que um administrador de domínio conceda temporária ou permanentemente direitos para outra pessoa configurar SPNs e a delegação de Kerberos sem exigir direitos de administrador de domínio. Na seção a seguir, abordaremos as etapas de configuração recomendadas mais detalhadamente.
 
 ## <a name="configure-kerberos-constrained-delegation-for-the-gateway-and-data-source"></a>Configurar a delegação restrita de Kerberos para o gateway e a fonte de dados
 
@@ -99,7 +99,7 @@ O segundo requisito de configuração são as configurações de delegação na 
 
 Precisamos configurar a delegação restrita de Kerberos com o trânsito de protocolos. Com a delegação restrita, é preciso ser explícito sobre para quais serviços você deseja delegar. Por exemplo, somente o SQL Server ou o servidor SAP HANA aceita chamadas de delegação da conta de serviço do gateway.
 
-Esta seção pressupõe que você já tenha configurado SPNs para as fontes de dados subjacentes (como SQL Server, SAP HANA, Teradata e Spark). Para saber como configurar os SPNs do servidor de fonte de dados, confira a documentação técnica do respectivo servidor de banco de dados. Confira também a postagem no blog [De qual SPN seu aplicativo precisa?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
+Esta seção pressupõe que você já tenha configurado SPNs para as fontes de dados subjacentes (como SQL Server, SAP HANA, Teradata e Spark). Para saber como configurar os SPNs do servidor de fonte de dados, confira a documentação técnica do respectivo servidor de banco de dados. Você também pode ver o título *Que SPN seu aplicativo exige?* na postagem no blog [Minha Lista de Verificação do Kerberos](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160).
 
 Nas etapas a seguir, presumimos um ambiente local com dois computadores: um computador do gateway e um servidor de banco de dados executando o SQL Server. Para este exemplo, vamos também supor as configurações e os nomes a seguir:
 
@@ -118,21 +118,21 @@ Defina as configurações de delegação da seguinte maneira:
 
 4. Selecione **Confiar neste computador para delegação apenas a serviços especificados** > **Usar qualquer protocolo de autenticação**.
 
-6. Em **Serviços aos quais esta conta pode apresentar credenciais delegadas**, selecione **Adicionar**.
+5. Em **Serviços aos quais esta conta pode apresentar credenciais delegadas**, selecione **Adicionar**.
 
-7. Na nova caixa de diálogo, selecione **Usuários ou Computadores**.
+6. Na nova caixa de diálogo, selecione **Usuários ou Computadores**.
 
-8. Insira a conta de serviço da fonte de dados do SQL Server (**PBIEgwTest\SQLService**) e selecione **OK**.
+7. Insira a conta de serviço para a fonte de dados, por exemplo, uma fonte de dados SQL Server pode ter uma conta de serviço como **PBIEgwTest\SQLService**. Depois que a conta tiver sido adicionada, selecione **OK**.
 
-9. Selecione o SPN que você criou para o servidor de banco de dados. Em nosso exemplo, o SPN começa com **MSSQLSvc**. Se você tiver adicionado o SPN NetBIOS e o FQDN para o serviço de banco de dados, selecione ambos. Talvez você veja apenas um.
+8. Selecione o SPN que você criou para o servidor de banco de dados. Em nosso exemplo, o SPN começa com **MSSQLSvc**. Se você tiver adicionado o SPN NetBIOS e o FQDN para o serviço de banco de dados, selecione ambos. Talvez você veja apenas um.
 
-10. Selecione **OK**. Agora você verá o SPN na lista.
+9. Selecione **OK**. Agora você verá o SPN na lista.
 
     Como opção, é possível selecionar **Expandido** para mostrar o SPN do NetBIOS e o FQDN. A caixa de diálogo é semelhante à mostrada a seguir se você seleciona **Expandido**. Selecione **OK**.
 
     ![Captura de tela da caixa de diálogo Propriedades do Conector de Gateway](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Por fim, no computador que executa o serviço do gateway (**PBIEgwTestGW** em nosso exemplo), é necessário conceder à conta de serviço do gateway a política local **Representar um cliente após a autenticação**. Execute e verifique isso com o Editor de Política de Grupo Local (**gpedit**).
+Por fim, no computador que executa o serviço do gateway (**PBIEgwTestGW** em nosso exemplo), é necessário conceder à conta de serviço do gateway a política local **Representar um cliente após a autenticação** e **Atuar como parte do sistema operacional (SeTcbPrivilege)** . Execute e verifique essa configuração com o Editor de Política de Grupo Local (**gpedit**).
 
 1. No computador do gateway, execute: *gpedit.msc*.
 
@@ -170,40 +170,26 @@ Depois de concluir todas as etapas de configuração, use a página **Gerenciar 
 
 Essa configuração funciona na maioria dos casos. No entanto, dependendo do ambiente, pode haver configurações diferentes com o Kerberos. Se o relatório ainda não for carregado, contate o administrador de domínio para investigar o caso.
 
-## <a name="switch-the-gateway-to-a-domain-account"></a>Alternar o gateway para uma conta de domínio
-
-Se necessário, alterne o gateway de uma conta de serviço local para ser executado como uma conta de domínio usando a interface do usuário do **gateway de dados local**. Aqui está como:
-
-1. Abra a ferramenta de configuração do **gateway de dados local**.
-
-   ![Captura de tela da opção para iniciar o aplicativo da área de trabalho do gateway](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
-
-2. Selecione o botão **Entrar** na página principal e entre usando sua conta do Power BI.
-
-3. Em seguida, selecione a guia **Configurações do Serviço**.
-
-4. Selecione **Alterar conta** para iniciar o passo a passo guiado.
-
-   ![Captura de tela do aplicativo da área de trabalho do gateway de dados local com a opção Alterar conta realçada](media/service-gateway-sso-kerberos/change-account.png)
-
 ## <a name="configure-sap-bw-for-sso"></a>Configurar o SAP BW para SSO
 
 Agora que você entende como o Kerberos funciona com um gateway, pode configurar o SSO para seu SAP BW (SAP Business Warehouse). As etapas a seguir pressupõem que você já [se preparou para a delegação restrita do Kerberos](#prepare-for-kerberos-constrained-delegation), conforme descrito anteriormente neste artigo.
 
 Este guia tenta ser o mais abrangente possível. Se você já concluiu algumas destas etapas, ignore-as. Por exemplo, você já pode ter criado um usuário de serviço para o servidor SAP BW e mapeado um SPN para ele ou já ter instalado a biblioteca `gsskrb5`.
 
-### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>Configurar o gsskrb5 em computadores cliente e no servidor SAP BW
+### <a name="set-up-gsskrb5gx64krb5-on-client-machines-and-the-sap-bw-server"></a>Configurar o gsskrb5/gx64krb5 em computadores cliente e no servidor SAP BW
 
 > [!NOTE]
-> Não há mais suporte ativo para o `gsskrb5` pela SAP. Para saber mais, veja [Nota SAP 352295](https://launchpad.support.sap.com/#/notes/352295). Observe também que `gsskrb5` não permite conexões de SSO do gateway de dados com Servidores de Mensagens do SAP BW. Apenas as conexões com Servidores de Aplicativos do SAP BW são possíveis. O `gsskrb5` precisa estar em uso pelo cliente e pelo servidor para concluir uma conexão de SSO por meio do gateway. Agora há compatibilidade com a Biblioteca de Criptografia Comum (sapcrypto) para SAP BW.
+> Não há mais suporte ativo para o `gsskrb5/gx64krb5` pela SAP. Para saber mais, veja [Nota SAP 352295](https://launchpad.support.sap.com/#/notes/352295). Observe também que `gsskrb5/gx64krb5` não permite conexões de SSO do gateway de dados com Servidores de Mensagens do SAP BW. Apenas as conexões com Servidores de Aplicativos do SAP BW são possíveis. Agora é possível usar sapcrypto/CommonCryptoLib como a Biblioteca SNC que simplifica o processo de instalação. 
 
-1. Baixe `gsskrb5` - `gx64krb5` em [Nota SAP 2115486](https://launchpad.support.sap.com/) (é necessário ser um usuário s do SAP). Verifique se você tem pelo menos a versão 1.0.11.x de gsskrb5.dll e gx64krb5.dll.
+O `gsskrb5` precisa estar em uso pelo cliente e pelo servidor para concluir uma conexão de SSO por meio do gateway.
+
+1. Baixe `gsskrb5` ou `gx64krb5` dependendo do seu número de bit desejado da [Nota SAP 2115486](https://launchpad.support.sap.com/) (é necessário um s-user da SAP). Verifique se você tem pelo menos a versão 1.0.11.x.
 
 1. Coloque a biblioteca em uma localização no computador do gateway que seja acessível pela instância do gateway (e também pela GUI do SAP, caso deseje testar a conexão de SSO usando o Logon do SAP).
 
 1. Coloque outra cópia no computador do servidor SAP BW em uma localização acessível pelo servidor SAP BW.
 
-1. Nos computadores cliente e de servidor, defina as variáveis de ambiente `SNC\_LIB` e `SNC\_LIB\_64` para que apontem para as localizações de gsskrb5.dll e gx64krb5.dll, respectivamente.
+1. Nos computadores cliente e de servidor, defina a variável de ambiente `SNC_LIB` ou `SNC_LIB_64` para que aponte para o local de gsskrb5.dll ou gx64krb5.dll, respectivamente. Observe que você só precisa de uma dessas bibliotecas, não de ambas.
 
 ### <a name="create-a-sap-bw-service-user-and-enable-snc-communication"></a>Criar um usuário do serviço do SAP BW e habilitar a comunicação SNC
 
@@ -262,7 +248,7 @@ Mapeie um usuário do Active Directory para um usuário do Servidor de Aplicativ
 
     ![Captura de tela da tela Manutenção de usuário do SAP BW](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Selecione a guia **SNC**. Na caixa de entrada do nome SNC, insira p:\<seu usuário do Active Directory\>@\<seu domínio\>. Observe o p: obrigatório que deve preceder o UPN do usuário do Active Directory. O usuário do Active Directory especificado deve pertencer à pessoa ou à organização para a qual você deseja habilitar o acesso SSO ao Servidor de Aplicativos do SAP BW. Por exemplo, se você quiser habilitar o acesso SSO para o usuário [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), insira p:testuser@TESTDOMAIN.COM.
+1. Selecione a guia **SNC**. Na caixa de entrada do nome SNC, insira p:\<seu usuário do Active Directory\>@\<seu domínio\>. Observe o p: obrigatório que deve preceder o UPN do usuário do Active Directory. O usuário do Active Directory especificado deve pertencer à pessoa ou à organização para a qual você deseja habilitar o acesso SSO ao Servidor de Aplicativos do SAP BW. Por exemplo, se você quiser habilitar o acesso SSO para o usuário testuser\@TESTDOMAIN.com, insira p:testuser@TESTDOMAIN.COM.
 
     ![Captura de tela da tela Manter usuários do SAP BW](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -290,17 +276,17 @@ Verifique se você pode entrar no servidor. Use o Logon do SAP por meio do SSO c
 
 Caso tenha problemas, siga estas etapas para solucionar problemas da instalação do gsskrb5 e de conexões de SSO no Logon do SAP.
 
-- A exibição dos logs do servidor (…work\dev\_w0 no computador do servidor) pode ser útil para solucionar os erros encontrados na conclusão das etapas de instalação do gsskrb5. Isso se aplica especialmente se o servidor SAP BW não é iniciado após a alteração dos parâmetros de perfil.
+* A exibição dos logs do servidor (…work\dev\_w0 no computador do servidor) pode ser útil para solucionar os erros encontrados na conclusão das etapas de instalação do gsskrb5. Isso se aplica especialmente se o servidor SAP BW não é iniciado após a alteração dos parâmetros de perfil.
 
-- Se você não puder iniciar o serviço SAP BW devido a uma falha de logon, talvez você tenha fornecido a senha incorreta ao definir o usuário "iniciar como" do SAP BW. Verifique a senha fazendo logon em um computador no ambiente do Active Directory como o usuário de serviço do SAP BW.
+* Se você não puder iniciar o serviço SAP BW devido a uma falha de logon, talvez você tenha fornecido a senha incorreta ao definir o usuário "iniciar como" do SAP BW. Verifique a senha fazendo logon em um computador no ambiente do Active Directory como o usuário de serviço do SAP BW.
 
-- Se você receber erros sobre as credenciais do SQL impedindo a inicialização do servidor, verifique se você permitiu acesso ao usuário de serviço ao banco de dados do SAP BW.
+* Se você receber erros sobre as credenciais do SQL impedindo a inicialização do servidor, verifique se você permitiu acesso ao usuário de serviço ao banco de dados do SAP BW.
 
-- Você poderá receber a seguinte mensagem: "(GSS-API) O destino especificado é desconhecido ou inacessível". Isso geralmente significa que o nome SNC incorreto foi especificado. Use apenas "p", não "p:CN =" nem qualquer outro valor no aplicativo cliente que não seja o UPN do usuário de serviço.
+* Você poderá receber a seguinte mensagem: "(GSS-API) O destino especificado é desconhecido ou inacessível". Isso geralmente significa que o nome SNC incorreto foi especificado. Use apenas "p", não "p:CN =" nem qualquer outro valor no aplicativo cliente que não seja o UPN do usuário de serviço.
 
-- Você poderá receber a seguinte mensagem: "(GSS-API) Um nome inválido foi fornecido". Garanta que "p:" esteja no valor do parâmetro de perfil da identidade SNC do servidor.
+* Você poderá receber a seguinte mensagem: "(GSS-API) Um nome inválido foi fornecido". Garanta que "p:" esteja no valor do parâmetro de perfil da identidade SNC do servidor.
 
-- Você poderá receber a seguinte mensagem: "(Erro do SNC) O módulo especificado não pôde ser encontrado". Isso geralmente é causado pela colocação do `gsskrb5.dll/gx64krb5.dll` em um lugar que exija privilégios elevados (direitos de administrador) para o acesso.
+* Você poderá receber a seguinte mensagem: "(Erro do SNC) O módulo especificado não pôde ser encontrado". Isso geralmente é causado pela colocação do `gsskrb5.dll/gx64krb5.dll` em um lugar que exija privilégios elevados (direitos de administrador) para o acesso.
 
 ### <a name="add-registry-entries-to-the-gateway-machine"></a>Adicionar entradas de registro ao computador do gateway
 
@@ -356,13 +342,13 @@ Caso você não tenha o Azure AD Connect configurado, siga estas etapas para tod
 
 Adicione a fonte de dados do SAP BW ao gateway seguindo as instruções descritas anteriormente neste artigo sobre como [executar um relatório](#run-a-power-bi-report).
 
-1. Na janela de configuração da fonte de dados, insira o **Nome do host**, o **Número do Sistema** e a **ID do cliente** do Servidor de Aplicativos, como faria para entrar no servidor SAP BW por meio do Power BI Desktop. Como o **Método de Autenticação**, selecione **Windows**.
+1. Na janela de configuração da fonte de dados, insira o **Nome do host**, o **Número do Sistema** e a **ID do cliente** do Servidor de Aplicativos, como faria para entrar no servidor SAP BW por meio do Power BI Desktop.
 
 1. No campo **Nome do Parceiro SNC**, insira p: \<o SPN mapeado para o usuário de serviço do SAP BW\>. Por exemplo, se o SPN for SAP/BWServiceUser@MYDOMAIN.COM, você deve inserir p:SAP/BWServiceUser@MYDOMAIN.COM no campo **Nome do Parceiro SNC**.
 
-1. Para a biblioteca SNC, selecione **SNC\_LIB** ou **SNC\_LIB\_64**.
+1. Para a biblioteca SNC, selecione **SNC_LIB** ou **SNC_LIB_64**. Use **SNC_LIB** para cenários de 32 bits e **SNC_LIB_64** para cenários de 64 bits. Verifique se essas variáveis de ambiente apontam para gsskrb5.dll ou gx64krb5.dll, respectivamente, dependendo de seu número de bit.
 
-1. O **Nome de usuário** e a **Senha** devem ser o nome de usuário e a senha de um usuário do Active Directory com permissão para entrar no servidor SAP BW com o SSO. Em outras palavras, eles devem pertencer a um usuário do Active Directory que foi mapeado para um usuário do SAP BW por meio da transação SU01. Essas credenciais são usadas apenas se a caixa **Usar SSO via Kerberos para consultas do DirectQuery** não está marcada.
+1. Se você tiver selecionado **Windows** para **Método de Autenticação**, o **Nome de usuário** e a **Senha** deverão ser o nome de usuário e a senha do usuário do Active Directory com permissão para entrar no servidor SAP BW com SSO. Em outras palavras, eles devem pertencer a um usuário do Active Directory que foi mapeado para um usuário do SAP BW por meio da transação SU01. Se você tiver selecionado **Básico**, o **Nome de usuário** e a **Senha** deverão ser definidos como um nome de usuário e senha do SAP BW, respectivamente. Essas credenciais são usadas apenas se a caixa **Usar SSO via Kerberos para consultas do DirectQuery** não está marcada.
 
 1. Marque a caixa **Usar SSO via Kerberos para consultas do DirectQuery** e selecione **Aplicar**. Se a conexão de teste não for bem-sucedida, verifique se as etapas de instalação e de configuração anteriores foram concluídas corretamente.
 
@@ -394,9 +380,9 @@ O resultado é que o gateway não consegue representar o usuário de origem corr
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para obter mais informações sobre o **Gateway de dados local** e o **DirectQuery**, confira os seguintes recursos:
+Para obter mais informações sobre o **gateway de dados local** e o **DirectQuery**, confira os seguintes recursos:
 
-* [On-premises data gateway (Gateway de dados local)](service-gateway-onprem.md)
+* [O que é um gateway de dados local?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery no Power BI](desktop-directquery-about.md)
 * [Fontes de dados com suporte do DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery e SAP BW](desktop-directquery-sap-bw.md)

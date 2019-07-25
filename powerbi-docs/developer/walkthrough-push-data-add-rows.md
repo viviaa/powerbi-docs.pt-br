@@ -311,7 +311,7 @@ Apresentamos abaixo a [listagem de código completa](#code).
     }
 ```
 
-Embora seja possível especificar ** _//Get the first id_** no código acima, o certo é pesquisar no conjunto de dados por nome.
+Embora seja possível especificar **_//Get the first id_** no código acima, o certo é pesquisar no conjunto de dados por nome.
 
 ## <a name="next-steps"></a>Próximas etapas
 [Enviar dados por push a um Dashboard do Power BI](walkthrough-push-data.md)  

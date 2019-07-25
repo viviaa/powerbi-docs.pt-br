@@ -7,24 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7b863af882604be8c2c59fd21f26cd8441f9e170
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
+ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54272640"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352182"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Mesclar ou acrescentar fontes de dados locais e na nuvem
 
-O gateway de dados local permite mesclar ou acrescentar fontes de dados locais e na nuvem na mesma consulta. Isso é útil quando você deseja fazer mashup de dados de várias fontes sem precisar usar consultas separadas.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
+O gateway de dados local permite mesclar ou acrescentar fontes de dados locais e na nuvem na mesma consulta. Isso é útil quando você deseja combinar dados de várias fontes sem precisar usar consultas separadas.
+
+>[!NOTE]
+>Este artigo aplica-se somente a conjuntos de dados que têm fontes de dados locais e em nuvem mescladas ou acrescentadas em uma única consulta. Para conjuntos de dados que incluem consultas separadas, uma conectando-se a um local e outra conectando-se a uma fonte de dados de nuvem, a consulta que usa a fonte de dados de nuvem não será executada usando o gateway.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Um [gateway instalado](service-gateway-install.md) em um computador local.
+- Um [gateway instalado](/data-integration/gateway/service-gateway-install) em um computador local.
 - Um arquivo do Power BI Desktop com consultas que combinam fontes de dados locais e na nuvem.
+
+>[!NOTE]
+>Para acessar qualquer fonte de dados de nuvem, você deve garantir que o gateway tenha acesso a essas fontes de dados.
 
 1. No canto superior direito do serviço do Power BI, selecione o ícone de engrenagem ![Configurações](media/service-gateway-mashup-on-premises-cloud/icon-gear.png)  >  **Gerenciar gateways**.
 
@@ -46,10 +54,11 @@ O gateway de dados local permite mesclar ou acrescentar fontes de dados locais e
 
    - Em **Credenciais da fonte de dados**, edite as credenciais da fonte de dados na nuvem, conforme o necessário.
 
+    Verifique se os níveis de privacidade para fontes de dados locais e na nuvem estão definidos adequadamente para garantir que as junções sejam tratadas com segurança.
+
      ![Configurações do conjunto de dados](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
 7. Com o conjunto de credenciais de nuvem, agora você pode atualizar o conjunto de dados usando a opção **Atualizar agora** ou agendá-la para atualizar periodicamente.
-
 
 ## <a name="next-steps"></a>Próximas etapas
 

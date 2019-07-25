@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e91c162c9b748fd0ef122aed8fc7ffee6dba5fc
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
-ms.translationtype: MT
+ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448295"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271865"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Visão geral de SSO (logon único) para gateways no Power BI
 
@@ -24,23 +24,19 @@ Você pode obter conectividade ininterrupta de logon único, habilitando relató
 No momento, damos suporte para as seguintes fontes de dados:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) e [SAML](service-gateway-sso-saml.md)
-* SAP BW ([Kerberos](service-gateway-sso-kerberos.md)
+* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) e [SAML](service-gateway-sso-saml.md))
+* SAP BW ([Kerberos](service-gateway-sso-kerberos.md))
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
-* O SSO também é possível [outras fontes de dados](desktop-directquery-data-sources.md#single-sign-on-sso-for-directquery-sources) sem usar um gateway de dados
 
-Quando um usuário interage com um relatório do DirectQuery no serviço do Power BI, cada operação de filtro cruzado, de fatia, de classificação e de edição de relatório pode resultar em consultas de execução dinâmica com relação à fonte de dados local subjacente.  Quando o SSO é configurado para a fonte de dados, as consultas são executadas na identidade do usuário que interage com o Power BI (isto é, por meio da experiência na Web ou de aplicativos móveis do Power BI). Dessa forma, cada usuário vê precisamente os dados para os quais têm permissões na fonte de dados subjacente. Com o logon único configurado, não há cache de dados compartilhados entre usuários diferentes.
+Quando um usuário interage com um relatório do DirectQuery no serviço do Power BI, cada operação de filtro cruzado, de fatia, de classificação e de edição de relatório pode resultar em consultas de execução dinâmica com relação à fonte de dados local subjacente. Quando o SSO é configurado para a fonte de dados, as consultas são executadas na identidade do usuário que interage com o Power BI (isto é, por meio da experiência na Web ou de aplicativos móveis do Power BI). Dessa forma, cada usuário vê precisamente os dados para os quais têm permissões na fonte de dados subjacente. Com o logon único configurado, não há cache de dados compartilhados entre usuários diferentes.
 
 ## <a name="query-steps-when-running-sso"></a>Etapas de consulta ao executar SSO
 
 Uma consulta executada com SSO é formada por três etapas, conforme mostrado no diagrama a seguir.
 
 ![Etapas de consulta SSO](media/service-gateway-sso-overview/sso-query-steps.png)
-
-> [!NOTE]
-> SSO para Oracle ainda não está habilitado, mas está em desenvolvimento e será lançado em breve.
 
 Veja abaixo mais detalhes sobre essas etapas:
 
@@ -59,4 +55,5 @@ Veja abaixo mais detalhes sobre essas etapas:
 Agora que você entende as noções básicas de SSO, leia informações mais detalhadas sobre Kerberos e SAML:
 
 * [Logon único (SSO) – Kerberos](service-gateway-sso-kerberos.md)
+* [Logon único (SSO) – Kerberos – baseado em recurso](service-gateway-sso-kerberos-resource.md)
 * [Logon único (SSO) – SAML](service-gateway-sso-saml.md)

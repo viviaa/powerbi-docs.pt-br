@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 05/03/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596633"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307394"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Atualizar os dados de um banco de dados do SQL Server local
 
@@ -36,7 +36,7 @@ Neste tutorial, você concluirá as etapas a seguir:
 - Se você não tiver uma, inscreva-se em uma [avaliação gratuita do Power BI](https://app.powerbi.com/signupredirect?pbi_source=web) antes de começar.
 - [Instalar o Power BI Desktop](https://powerbi.microsoft.com/desktop/) em um computador local.
 - [Instalar o SQL Server](/sql/database-engine/install-windows/install-sql-server) em um computador local e restaure o [banco de dados de exemplo de um backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). Para obter mais informações sobre a AdventureWorks, consulte [Instalação e configuração da AdventureWorks](/sql/samples/adventureworks-install-configure).
-- [Instalar um gateway de dados local](service-gateway-install.md) no mesmo computador local como SQL Server (na produção, normalmente seria em um computador diferente).
+- [Instalar um gateway de dados local](service-gateway-onprem.md) no mesmo computador local como SQL Server (na produção, normalmente seria em um computador diferente).
 
 > [!NOTE]
 > Se você não for um administrador de gateway e não quiser instalar um gateway por conta própria, contate um administrador de gateway em sua organização. Ele pode criar a definição de fonte de dados necessária para conectar a seu conjunto de dados ao seu banco de dados do SQL Server.
@@ -202,6 +202,6 @@ Se você não quiser mais usar os dados de exemplo, descarte o banco de dados no
 
 Neste tutorial, você explorou como importar dados de um banco de dados do SQL Server local para um conjunto de dados do Power BI e como atualizar esse conjunto de dados por agendamento e sob demanda para manter os relatórios e dashboards que usam esse conjunto de dados atualizados no Power BI. Agora você pode aprender mais sobre como gerenciar gateways de dados e fontes de dados no Power BI. Também pode ser uma boa ideia examinar o artigo conceitual de atualização de dados no Power BI.
 
-- [Gerenciar um gateway local do Power BI](service-gateway-manage.md)
+- [Gerenciar um gateway de dados local](/data-integration/gateway/service-gateway-manage)
 - [Gerenciar sua fonte de dados – Importar/Atualização agendada](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Atualizar dados no Power BI](refresh-data.md)
