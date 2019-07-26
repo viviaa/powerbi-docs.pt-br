@@ -44,13 +44,13 @@ Ao exibir um relatório que tenha parâmetros, a barra de ferramentas visualizad
   
 1. **Painel de parâmetros** A barra de ferramentas do Visualizador de Relatórios exibe um prompt e um valor padrão para cada parâmetro. Você pode personalizar o layout dos parâmetros no painel de parâmetros.  
   
-2. **Parâmetro @SalesDate** O parâmetro @SalesDate é o tipo de dados **DateTime**. O prompt Selecione a Data é exibido ao lado da caixa de texto. Para modificar a data, digite uma nova data na caixa de texto ou use o controle de calendário.  
+2. **@SalesDate parâmetro** o parâmetro @SalesDate é o tipo de dados **DateTime**. O prompt Selecione a Data é exibido ao lado da caixa de texto. Para modificar a data, digite uma nova data na caixa de texto ou use o controle de calendário.  
   
-3. **Parâmetro @ShowAll** O parâmetro @ShowAll é o tipo de dados **Boolean**. Use os botões de opção para especificar **True** ou **False**.  
+3. **@ShowAll parâmetro** o parâmetro @ShowAll é o tipo de dados **booliano**. Use os botões de opção para especificar **True** ou **False**.  
   
 4. **Identificador Mostrar ou Ocultar Área de Parâmetros** Na barra de ferramentas do Visualizador de Relatórios, clique nessa seta para mostrar ou ocultar o painel de parâmetros.  
   
-5. **Parâmetro @CategoryQuota** O parâmetro @CategoryQuota é o tipo de dados **Float**, portanto, usa um valor numérico.  @CategoryQuota é definido para permitir vários valores.  
+5. **@CategoryQuota parâmetro** o parâmetro @CategoryQuota é o tipo de dados **Float**, portanto, ele usa um valor numérico.  @CategoryQuota é definido para permitir vários valores.  
   
 6. **Exibir Relatório** Depois de inserir valores de parâmetro, clique em **Exibir Relatório** para executar o relatório. Se todos os parâmetros tiverem valores padrão, o relatório será executado automaticamente na primeira exibição.  
   
