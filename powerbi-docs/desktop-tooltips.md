@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c074d6aa4fc7bdc530aa52f125f7f3d898b402c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f18ed2b0e370ad4617b7eccae4fbf043233fe4c0
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514515"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590518"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Criar dicas de ferramenta com base nas páginas de relatório no Power BI Desktop
 Você pode criar **dicas de ferramentas de relatório** visualmente sofisticadas que aparecem ao passar o mouse sobre visuais, com base nas páginas de relatório que você cria no **Power BI Desktop**. Ao criar uma página de relatório que sirva como dica de ferramenta, as dicas de ferramenta personalizadas poderão incluir elementos visuais, imagens e qualquer outra coleção de itens que você criar na página de relatório. 
@@ -113,7 +113,6 @@ Quando se faz realce cruzado em um visual em um relatório, as dicas de ferramen
 Há algumas limitações e considerações para **dicas de ferramentas** para se ter em mente.
 
 * Começando com a versão de dezembro de 2018 do **Power BI Desktop**, os visuais de botão também dão suporte a dicas de ferramenta.
-* Não há suporte para dicas de ferramentas de relatório ao exibir relatórios em aplicativos móveis. 
 * Dicas de ferramentas de relatório não são compatíveis com visuais personalizados. 
 * Atualmente não há suporte para usar clusters como campos que podem ser mostrados nas dicas de ferramentas de relatório. 
 * Ao escolher um campo a ser mostrado como dicas de ferramentas de relatório, usando-o em vez de usar uma categoria, os visuais que contém esse campo só mostrarão a dica de ferramenta especificada quando houver correspondência entre os campos selecionados e o resumo. 
