@@ -65,7 +65,7 @@ Tabelas calculadas podem ser definidas por qualquer expressão DAX que retorne u
 Você pode usar tabelas calculadas com o DAX para solucionar muitos problemas analíticos. Fornecemos aqui apenas uma rápida introdução às tabelas calculadas. Conforme você começa a trabalhar com tabelas calculadas, veja aqui algumas das funções DAX de tabela mais comuns e que podem ser úteis:
 
 * DISTINCT
-* VALORES
+* VALUES
 * CROSSJOIN
 * UNION
 * NATURALINNERJOIN
